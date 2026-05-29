@@ -1,0 +1,85 @@
+{
+  "question_id": "FB_020_C68C8862",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: Amazon.com, Inc. for FY2016 and FY2017\n- PRIMARY METRIC: \n  - Revenue for FY2016: $179,626 million (per the FY2017 10-K, Consolidated Statements of Operations)\n  - Revenue for FY2017: $177,866 million (per the FY2017 10-K, Consolidated Statements of Operations)\n  - Year-over-Year Change in Revenue: 26.6% [(177,866 - 136,004) / 136,004 * 100] rounded to one decimal place.\n  \n- SUPPORTING DATA: \n  - FY2016 Revenue: $136,004 million\n  - FY2017 Revenue: $177,866 million\n  - Year-over-Year Change: 30.8%\n\n- DATA SOURCES: \n  - FY2017 10-K, Consolidated Statements of Operations, Page 45 (Revenue figures for FY2016 and FY2017).",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_020_C68C8862_H2",
+      "type": "dollar_amount",
+      "original_value": "$136,004 million",
+      "injected_value": "$179,626 million",
+      "original_numeric": "136004",
+      "injected_numeric": "179626",
+      "position_char": 102,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.3207
+    },
+    {
+      "hallucination_id": "FB_020_C68C8862_H1",
+      "type": "percentage",
+      "original_value": "30.8%",
+      "injected_value": "26.6%",
+      "original_numeric": "30.8",
+      "injected_numeric": "26.6",
+      "position_char": 320,
+      "sentence_approx": 3,
+      "perturbation_delta": -4.1481
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Revenue for FY2016: $179,626 million",
+        "claim_value": "$179,626 million",
+        "reason": "Inconsistent with later claim of FY2016 Revenue: $136,004 million",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Year-over-Year Change in Revenue: 26.6% [(177,866 - 136,004) / 136,004 * 100]",
+        "claim_value": "26.6%",
+        "reason": "Calculation seems incorrect. (177,866 - 136,004) / 136,004 * 100 \u2248 30.8%, not 26.6%",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Year-over-Year Change: 30.8%",
+        "claim_value": "30.8%",
+        "reason": "Contradicts earlier claim of 26.6% for the same calculation",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 5,
+    "overall_assessment": "Multiple inconsistencies found in revenue figures and calculated percentages.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Revenue for FY2016: $179,626 million\",\n      \"claim_value\": \"$179,626 million\",\n      \"reason\": \"Inconsistent with later claim of FY2016 Revenue: $136,004 million\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Year-over-Year Change in Revenue: 26.6% [(177,866 - 136,004) / 136,004 * 100]\",\n      \"claim_value\": \"26.6%\",\n      \"reason\": \"Calculation seems incorrect. (177,866 - 136,004) / 136,004 * 100 \u2248 30.8%, not 26.6%\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Year-over-Year Change: 30.8%\",\n      \"claim_value\": \"30.8%\",\n      \"reason\": \"Contradicts earlier claim of 26.6% for the same calculation\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 5,\n  \"overall_assessment\": \"Multiple inconsistencies found in revenue figures and calculated percentages.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_020_C68C8862",
+      "hallucination_id": "FB_020_C68C8862_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$136,004 million",
+      "injected_value": "$179,626 million",
+      "detected": true,
+      "reason": "Inconsistent with later claim of FY2016 Revenue: $136,004 million",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 5
+    },
+    {
+      "question_id": "FB_020_C68C8862",
+      "hallucination_id": "FB_020_C68C8862_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "percentage",
+      "original_value": "30.8%",
+      "injected_value": "26.6%",
+      "detected": true,
+      "reason": "Calculation seems incorrect. (177,866 - 136,004) / 136,004 * 100 \u2248 30.8%, not 26.6%",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 5
+    }
+  ],
+  "timestamp": "2026-03-24T09:42:14.025568Z"
+}

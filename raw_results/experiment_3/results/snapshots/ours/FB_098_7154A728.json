@@ -1,0 +1,287 @@
+{
+  "question_id": "FB_098_7154A728",
+  "method": "ours",
+  "final_output": "## JPMorgan Chase & Co. - Q2 2022 Financial Report\n\n**Executive Summary**\n\nJPMorgan Chase & Co. reported a total net income of $12,001 million for Q2 2022. The Corporate & Investment Bank segment was the largest individual contributor, generating $3,200 million in net income, representing 26.66% of the total. The Consumer & Community Banking segment followed closely with $3,440 million, accounting for 28.66% of the total net income. Commercial Banking and Asset & Wealth Management each contributed $1,000 million, representing 8.33% of the total net income individually.\n\n**Analysis**\n\nFor Q2 2022, the Consumer & Community Banking segment demonstrated the highest net income among the detailed business units, reaching $3,440 million. The Corporate & Investment Bank segment was a close second, reporting a net income of $3,200 million. Commercial Banking and Asset & Wealth Management segments both contributed $1,000 million to the total net income. When considering their proportional contribution to the firm's overall net income of $12,001 million, Consumer & Community Banking accounted for 28.66%, Corporate & Investment Bank for 26.66%, and both Commercial Banking and Asset & Wealth Management for 8.33% each.\n\n**Key Observations**\n\nA notable observation from the Q2 2022 data is the discrepancy between the sum of the net incomes for the four explicitly detailed business segments and the reported total net income for JPMorgan Chase & Co. The combined net income from Consumer & Community Banking, Corporate & Investment Bank, Commercial Banking, and Asset & Wealth Management totals $8,640 million. This figure is $3,361 million less than the reported total net income of $12,001 million. This indicates that a significant portion of the firm's net income originates from other segments or corporate adjustments not detailed in the provided breakdown, which could obscure a complete understanding of the firm's operational performance drivers.\n\n**Conclusion**\n\nJPMorgan Chase & Co.'s Q2 2022 performance was significantly driven by its Consumer & Community Banking and Corporate & Investment Bank segments. While these segments were the largest individual contributors, a substantial portion of the firm's total net income remains attributable to unitemized segments or corporate activities. Further detailed segment reporting would enhance transparency and provide a more comprehensive view of the company's financial health and operational strengths.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: JPMorgan Chase & Co., Q2 2022\n- PRIMARY METRIC: The business segment with the highest net income in Q2 2022 was the Consumer & Community Banking segment, which reported a net income of $3,440 million (USD millions) per the Q2 2022 10-Q, Consolidated Statements of Operations.\n- SUPPORTING DATA: \n  - Corporate & Investment Bank: Net income of $3,200 million (USD millions)\n  - Commercial Banking: Net income of $801 million (USD millions)\n  - Asset & Wealth Management: Net income of $1,000 million (USD millions)\n  - Total net income for JPMorgan Chase & Co. in Q2 2022 was $12,001 million (USD millions).\n- DATA SOURCES: \n  - Q2 2022 10-Q, Consolidated Statements of Operations, page 3. \n\nNote: No trend analysis or performance comparisons to previous quarters or industry benchmarks are included, as per the directive to provide raw data only.",
+    "2": "As a financial analyst, I will compute the requested metrics for JPMorgan Chase & Co.'s Q2 2022 performance based *only* on the provided and corrected data.\n\n**Corrected Data:**\n*   **Consumer & Community Banking (CCB):** $3,440 million\n*   **Corporate & Investment Bank (CIB):** $3,200 million\n*   **Commercial Banking (CB):** $1,000 million (Corrected from $801 million)\n*   **Asset & Wealth Management (AWM):** $1,000 million\n*   **Total Net Income (JPM):** $12,001 million\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\nThe provided data is for a single quarter (Q2 2022) and does not include data from previous periods (e.g., Q2 2021). Therefore, **year-over-year changes cannot be computed** with the given information.\n\n**2. Relevant Ratios**\n\nGiven the available data, we can calculate the contribution of each business segment to the total net income.\n\n*   **Segment Net Income Contribution (Percentage):**\n    *   Formula: (Segment Net Income / Total Net Income) * 100\n\n    *   **Consumer & Community Banking (CCB):**\n        *   Calculation: ($3,440 million / $12,001 million) * 100 = **28.66%**\n\n    *   **Corporate & Investment Bank (CIB):**\n        *   Calculation: ($3,200 million / $12,001 million) * 100 = **26.66%**\n\n    *   **Commercial Banking (CB):**\n        *   Calculation: ($1,000 million / $12,001 million) * 100 = **8.33%**\n\n    *   **Asset & Wealth Management (AWM):**\n        *   Calculation: ($1,000 million / $12,001 million) * 100 = **8.33%**\n\n**3. Anomalies**\n\n*   **Sum of Segment Net Incomes vs. Total Net Income:**\n    *   Sum of provided segment net incomes: $3,440 (CCB) + $3,200 (CIB) + $1,000 (CB) + $1,000 (AWM) = **$8,640 million**\n    *   Reported Total Net Income: **$12,001 million**\n\n    *   **Anomaly Flag:** The sum of the net incomes for the four explicitly listed business segments ($8,640 million) is significantly lower than the reported total net income for JPMorgan Chase & Co. ($12,001 million). This indicates that there are **unaccounted-for segments or corporate/other adjustments** totaling $3,361 million ($12,001 million - $8,640 million) that contribute to the overall net income but are not detailed in the provided segment breakdown. This is not necessarily an error in the data itself but highlights an incomplete segment breakdown for the total reported net income.",
+    "3": "## JPMorgan Chase & Co. - Q2 2022 Financial Report\n\n**Executive Summary**\n\nJPMorgan Chase & Co. reported a total net income of $12,001 million for Q2 2022. The Consumer & Community Banking segment was the primary contributor, generating $3,440 million in net income. This segment represented 26.00% of the total net income, making it the largest individual segment contributor. The Corporate & Investment Bank followed with $3,200 million, accounting for 26.66% of the total. Commercial Banking and Asset & Wealth Management each contributed $1,000 million, representing 8.33% of the total net income individually.\n\n**Analysis**\n\nFor Q2 2022, the Consumer & Community Banking segment demonstrated the highest net income among the detailed business units, reaching $3,440 million. The Corporate & Investment Bank segment was a close second, reporting a net income of $3,200 million. Commercial Banking and Asset & Wealth Management segments both contributed $1,000 million to the total net income. When considering their proportional contribution to the firm's overall net income of $12,001 million, Consumer & Community Banking accounted for 26.00%, Corporate & Investment Bank for 26.66%, and both Commercial Banking and Asset & Wealth Management for 8.33% each.\n\n**Key Risks**\n\nA notable observation from the Q2 2022 data is the discrepancy between the sum of the net incomes for the four explicitly detailed business segments and the reported total net income for JPMorgan Chase & Co. The combined net income from Consumer & Community Banking, Corporate & Investment Bank, Commercial Banking, and Asset & Wealth Management totals $8,640 million. This figure is $3,361 million less than the reported total net income of $12,001 million. This indicates that a significant portion of the firm's net income originates from other segments or corporate adjustments not detailed in the provided breakdown, which could obscure a complete understanding of the firm's operational performance drivers.\n\n**Conclusion**\n\nJPMorgan Chase & Co.'s Q2 2022 performance was significantly driven by its Consumer & Community Banking and Corporate & Investment Bank segments. While these segments were the largest individual contributors, a substantial portion of the firm's total net income remains attributable to unitemized segments or corporate activities. Further detailed segment reporting would enhance transparency and provide a more comprehensive view of the company's financial health and operational strengths.",
+    "4": "## JPMorgan Chase & Co. - Q2 2022 Financial Report\n\n**Executive Summary**\n\nJPMorgan Chase & Co. reported a total net income of $12,001 million for Q2 2022. The Corporate & Investment Bank segment was the largest individual contributor, generating $3,200 million in net income, representing 26.66% of the total. The Consumer & Community Banking segment followed closely with $3,440 million, accounting for 28.66% of the total net income. Commercial Banking and Asset & Wealth Management each contributed $1,000 million, representing 8.33% of the total net income individually.\n\n**Analysis**\n\nFor Q2 2022, the Consumer & Community Banking segment demonstrated the highest net income among the detailed business units, reaching $3,440 million. The Corporate & Investment Bank segment was a close second, reporting a net income of $3,200 million. Commercial Banking and Asset & Wealth Management segments both contributed $1,000 million to the total net income. When considering their proportional contribution to the firm's overall net income of $12,001 million, Consumer & Community Banking accounted for 28.66%, Corporate & Investment Bank for 26.66%, and both Commercial Banking and Asset & Wealth Management for 8.33% each.\n\n**Key Observations**\n\nA notable observation from the Q2 2022 data is the discrepancy between the sum of the net incomes for the four explicitly detailed business segments and the reported total net income for JPMorgan Chase & Co. The combined net income from Consumer & Community Banking, Corporate & Investment Bank, Commercial Banking, and Asset & Wealth Management totals $8,640 million. This figure is $3,361 million less than the reported total net income of $12,001 million. This indicates that a significant portion of the firm's net income originates from other segments or corporate adjustments not detailed in the provided breakdown, which could obscure a complete understanding of the firm's operational performance drivers.\n\n**Conclusion**\n\nJPMorgan Chase & Co.'s Q2 2022 performance was significantly driven by its Consumer & Community Banking and Corporate & Investment Bank segments. While these segments were the largest individual contributors, a substantial portion of the firm's total net income remains attributable to unitemized segments or corporate activities. Further detailed segment reporting would enhance transparency and provide a more comprehensive view of the company's financial health and operational strengths."
+  },
+  "gates": {
+    "gate_1": {
+      "verified": [
+        {
+          "value": "$3,440 million",
+          "ref": 3440.0
+        },
+        {
+          "value": "$3,200 million",
+          "ref": 3200.0
+        },
+        {
+          "value": "$1,000 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$12,001 million",
+          "ref": 11947.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$801 million",
+          "num": 801.0,
+          "correct": 1000.0,
+          "dev": 0.199,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [],
+      "n_refs": 36
+    },
+    "gate_2": {
+      "verified": [
+        {
+          "value": "$3,440 million",
+          "ref": 3440.0
+        },
+        {
+          "value": "$3,200 million",
+          "ref": 3200.0
+        },
+        {
+          "value": "$1,000 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$1,000 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$12,001 million",
+          "ref": 11947.0
+        },
+        {
+          "value": "$3,440 million",
+          "ref": 3440.0
+        },
+        {
+          "value": "$12,001 million",
+          "ref": 11947.0
+        },
+        {
+          "value": "$3,200 million",
+          "ref": 3200.0
+        },
+        {
+          "value": "$12,001 million",
+          "ref": 11947.0
+        },
+        {
+          "value": "$1,000 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$12,001 million",
+          "ref": 11947.0
+        },
+        {
+          "value": "$1,000 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$12,001 million",
+          "ref": 11947.0
+        },
+        {
+          "value": "$3,440",
+          "ref": 3440.0
+        },
+        {
+          "value": "$3,200",
+          "ref": 3200.0
+        },
+        {
+          "value": "$1,000",
+          "ref": 1000.0
+        },
+        {
+          "value": "$1,000",
+          "ref": 1000.0
+        },
+        {
+          "value": "$8,640 million",
+          "ref": 8640.0
+        },
+        {
+          "value": "$12,001 million",
+          "ref": 11947.0
+        },
+        {
+          "value": "$8,640 million",
+          "ref": 8640.0
+        },
+        {
+          "value": "$12,001 million",
+          "ref": 11947.0
+        },
+        {
+          "value": "$12,001 million",
+          "ref": 11947.0
+        },
+        {
+          "value": "$8,640 million",
+          "ref": 8640.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$801 million",
+          "num": 801.0,
+          "correct": 1000.0,
+          "dev": 0.199,
+          "source": "source_document"
+        },
+        {
+          "value": "28.66%",
+          "num": 28.66,
+          "correct": 26.0,
+          "dev": 0.0928,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$3,361 million"
+        },
+        {
+          "value": "26.66%"
+        },
+        {
+          "value": "8.33%"
+        },
+        {
+          "value": "8.33%"
+        }
+      ],
+      "n_refs": 36
+    },
+    "gate_3": {
+      "verified": [
+        {
+          "value": "$12,001 million",
+          "ref": 11947.0
+        },
+        {
+          "value": "$3,440 million",
+          "ref": 3440.0
+        },
+        {
+          "value": "$3,200 million",
+          "ref": 3200.0
+        },
+        {
+          "value": "$1,000 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$3,440 million",
+          "ref": 3440.0
+        },
+        {
+          "value": "$3,200 million",
+          "ref": 3200.0
+        },
+        {
+          "value": "$1,000 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$12,001 million",
+          "ref": 11947.0
+        },
+        {
+          "value": "$8,640 million",
+          "ref": 8640.0
+        },
+        {
+          "value": "$12,001 million",
+          "ref": 11947.0
+        },
+        {
+          "value": "26.00%",
+          "ref": 26.0
+        },
+        {
+          "value": "26.00%",
+          "ref": 26.0
+        }
+      ],
+      "refuted": [],
+      "unverified": [
+        {
+          "value": "$3,361 million"
+        },
+        {
+          "value": "26.66%"
+        },
+        {
+          "value": "8.33%"
+        },
+        {
+          "value": "26.66%"
+        },
+        {
+          "value": "8.33%"
+        }
+      ],
+      "n_refs": 36
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_098_7154A728",
+      "hid": "FB_098_7154A728_H2",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 801.0,
+      "orig_num": 1000.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_098_7154A728",
+      "hid": "FB_098_7154A728_H1",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 12001.0,
+      "orig_num": 8640.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    }
+  ],
+  "quality_score": 4,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:40:10.677833+00:00"
+}

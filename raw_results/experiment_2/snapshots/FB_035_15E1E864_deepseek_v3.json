@@ -1,0 +1,109 @@
+{
+  "question_id": "FB_035_15E1E864",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: Advanced Micro Devices, Inc. (AMD) - Fiscal Year 2022\n- PRIMARY METRIC: Operating Margin for FY2022 was 6.4% (USD 1,825 million Operating Income on USD 13,031 million Total Revenue) per the FY2022 10-K, Consolidated Statements of Operations.\n- SUPPORTING DATA: \n  - FY2021: Operating Margin was 17.0% (USD 2,445 million Operating Income on USD 10,965 million Total Revenue) per the FY2021 10-K, Consolidated Statements of Operations.\n  - FY2020: Operating Margin was 9.0% (USD 974 million Operating Income on USD 12,160 million Total Revenue) per the FY2020 10-K, Consolidated Statements of Operations.\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Statements of Operations\n  - FY2020 10-K, Consolidated Statements of Operations\n\n**Note:** The analysis of factors influencing changes in operating margin, the appropriateness of operating margin as a metric for AMD, and any further insights are not included as per the directive to present raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_035_15E1E864_H3",
+      "type": "percentage",
+      "original_value": "14.0%",
+      "injected_value": "6.4%",
+      "original_numeric": "14.0",
+      "injected_numeric": "6.4",
+      "position_char": 124,
+      "sentence_approx": 2,
+      "perturbation_delta": -7.6351
+    },
+    {
+      "hallucination_id": "FB_035_15E1E864_H2",
+      "type": "large_number",
+      "original_value": "1,832",
+      "injected_value": "2,445",
+      "original_numeric": "1832",
+      "injected_numeric": "2445",
+      "position_char": 327,
+      "sentence_approx": 5,
+      "perturbation_delta": 0.3349
+    },
+    {
+      "hallucination_id": "FB_035_15E1E864_H1",
+      "type": "large_number",
+      "original_value": "9,763",
+      "injected_value": "12,160",
+      "original_numeric": "9763",
+      "injected_numeric": "12160",
+      "position_char": 534,
+      "sentence_approx": 7,
+      "perturbation_delta": 0.2456
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Operating Margin for FY2022 was 6.4% (USD 1,825 million Operating Income on USD 13,031 million Total Revenue)",
+        "claim_value": "6.4%",
+        "reason": "Operating margin dropped significantly from 17.0% in FY2021 to 6.4% in FY2022, which is a very sharp decline for a major semiconductor company. This warrants verification as such drastic changes are unusual without major corporate events.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "FY2021: Operating Margin was 17.0% (USD 2,445 million Operating Income on USD 10,965 million Total Revenue)",
+        "claim_value": "17.0%",
+        "reason": "17.0% operating margin in FY2021 seems unusually high for AMD historically, as its margins have typically been lower. This could be correct but merits double-checking.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "FY2020: Operating Margin was 9.0% (USD 974 million Operating Income on USD 12,160 million Total Revenue)",
+        "claim_value": "9.0%",
+        "reason": "Revenue of USD 12,160 million in FY2020 with only USD 974 million Operating Income yielding a 9.0% margin seems plausible, but the jump to 17.0% in FY2021 is suspicious without context.",
+        "confidence": "low"
+      }
+    ],
+    "total_claims_reviewed": 3,
+    "overall_assessment": "Several operating margin claims show unusual volatility that may warrant source verification, particularly the drastic drop from 17.0% to 6.4% between FY2021 and FY2022.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Operating Margin for FY2022 was 6.4% (USD 1,825 million Operating Income on USD 13,031 million Total Revenue)\",\n      \"claim_value\": \"6.4%\",\n      \"reason\": \"Operating margin dropped significantly from 17.0% in FY2021 to 6.4% in FY2022, which is a very sharp decline for a major semiconductor company. This warrants verification as such drastic changes are unusual without major corporate events.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"FY2021: Operating Margin was 17.0% (USD 2,445 million Operating Income on USD 10,965 million Total Revenue)\",\n      \"claim_value\": \"17.0%\",\n      \"reason\": \"17.0% operating margin in FY2021 seems unusually high for AMD historically, as its margins have typically been lower. This could be correct but merits double-checking.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"FY2020: Operating Margin was 9.0% (USD 974 million Operating Income on USD 12,160 million Total Revenue)\",\n      \"claim_value\": \"9.0%\",\n      \"reason\": \"Revenue of USD 12,160 million in FY2020 with only USD 974 million Operating Income yielding a 9.0% margin seems plausible, but the jump to 17.0% in FY2021 is suspicious without context.\",\n      \"confidence\": \"low\"\n    }\n  ],\n  \"total_claims_reviewed\": 3,\n  \"overall_assessment\": \"Several operating margin claims show unusual volatility that may warrant source verification, particularly the drastic drop from 17.0% to 6.4% between FY2021 and FY2022.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_035_15E1E864",
+      "hallucination_id": "FB_035_15E1E864_H3",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "percentage",
+      "original_value": "14.0%",
+      "injected_value": "6.4%",
+      "detected": true,
+      "reason": "Operating margin dropped significantly from 17.0% in FY2021 to 6.4% in FY2022, which is a very sharp decline for a major semiconductor company. This warrants verification as such drastic changes are unusual without major corporate events.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 3
+    },
+    {
+      "question_id": "FB_035_15E1E864",
+      "hallucination_id": "FB_035_15E1E864_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "large_number",
+      "original_value": "1,832",
+      "injected_value": "2,445",
+      "detected": true,
+      "reason": "17.0% operating margin in FY2021 seems unusually high for AMD historically, as its margins have typically been lower. This could be correct but merits double-checking.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 3
+    },
+    {
+      "question_id": "FB_035_15E1E864",
+      "hallucination_id": "FB_035_15E1E864_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "large_number",
+      "original_value": "9,763",
+      "injected_value": "12,160",
+      "detected": true,
+      "reason": "Revenue of USD 12,160 million in FY2020 with only USD 974 million Operating Income yielding a 9.0% margin seems plausible, but the jump to 17.0% in FY2021 is suspicious without context.",
+      "confidence": "low",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 3
+    }
+  ],
+  "timestamp": "2026-03-24T09:44:38.775356Z"
+}

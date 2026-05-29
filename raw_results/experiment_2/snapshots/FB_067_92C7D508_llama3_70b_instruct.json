@@ -1,0 +1,97 @@
+{
+  "question_id": "FB_067_92C7D508",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Boeing Company, FY2022 and FY2021\n- PRIMARY METRIC: Effective Tax Rate for FY2022: 9.5% (per the FY2022 10-K, Note 9 - Income Taxes). Effective Tax Rate for FY2021: 5.3% (per the FY2021 10-K, Note 9 - Income Taxes).\n- SUPPORTING DATA: \n  - FY2022 Income Tax Expense: $1,513 million (per the FY2022 10-K, Consolidated Statements of Operations).\n  - FY2021 Income Tax Expense: $290 million (per the FY2021 10-K, Consolidated Statements of Operations).\n  - FY2022 Pre-tax Income: $6,000 million (per the FY2022 10-K, Consolidated Statements of Operations).\n  - FY2021 Pre-tax Income: $3,936 million (per the FY2021 10-K, Consolidated Statements of Operations).\n- DATA SOURCES: \n  - FY2022 10-K, Note 9 - Income Taxes\n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Note 9 - Income Taxes\n  - FY2021 10-K, Consolidated Statements of Operations\n\nPlease note that the effective tax rate is calculated as the income tax expense divided by pre-tax income. The figures provided are sourced directly from Boeing's official SEC filings for the respective fiscal years.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_067_92C7D508_H3",
+      "type": "percentage",
+      "original_value": "20.0%",
+      "injected_value": "9.5%",
+      "original_numeric": "20.0",
+      "injected_numeric": "9.5",
+      "position_char": 103,
+      "sentence_approx": 1,
+      "perturbation_delta": -10.5072
+    },
+    {
+      "hallucination_id": "FB_067_92C7D508_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,200 million",
+      "injected_value": "$1,513 million",
+      "original_numeric": "1200",
+      "injected_numeric": "1513",
+      "position_char": 288,
+      "sentence_approx": 5,
+      "perturbation_delta": 0.261
+    },
+    {
+      "hallucination_id": "FB_067_92C7D508_H1",
+      "type": "dollar_amount",
+      "original_value": "$5,500 million",
+      "injected_value": "$3,936 million",
+      "original_numeric": "5500",
+      "injected_numeric": "3936",
+      "position_char": 602,
+      "sentence_approx": 8,
+      "perturbation_delta": -0.2844
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "FY2022 Pre-tax Income: $6,000 million",
+        "claim_value": "$6,000 million",
+        "reason": "The pre-tax income figure seems suspiciously round, especially compared to the more precise income tax expense figures.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "The researcher's output appears mostly plausible, but one pre-tax income figure raises some concern due to its suspiciously round value.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"FY2022 Pre-tax Income: $6,000 million\",\n      \"claim_value\" : \"$6,000 million\",\n      \"reason\"      : \"The pre-tax income figure seems suspiciously round, especially compared to the more precise income tax expense figures.\",\n      \"confidence\"  : \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\"   : \"The researcher's output appears mostly plausible, but one pre-tax income figure raises some concern due to its suspiciously round value.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_067_92C7D508",
+      "hallucination_id": "FB_067_92C7D508_H3",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "percentage",
+      "original_value": "20.0%",
+      "injected_value": "9.5%",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_067_92C7D508",
+      "hallucination_id": "FB_067_92C7D508_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,200 million",
+      "injected_value": "$1,513 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_067_92C7D508",
+      "hallucination_id": "FB_067_92C7D508_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$5,500 million",
+      "injected_value": "$3,936 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-27T09:35:26.098789Z"
+}

@@ -1,0 +1,403 @@
+{
+  "question_id": "FB_085_149EBAE9",
+  "method": "ours",
+  "final_output": "## General Mills Financial Performance Report - FY2022\n\n### Executive Summary\n\nGeneral Mills demonstrated a significant shift in its capital allocation strategy in Fiscal Year 2022, as evidenced by a substantial increase in its Retention Ratio to 0.616. This marks a notable rise from 0.383 in FY2021 and 0.350 in FY2020. The primary driver for this change was a considerable reduction in total cash dividends paid, which decreased by 36.82% from $1,157 million in FY2021 to $731 million in FY2022, while Net Income attributable to shareholders saw a modest increase of 1.49% to $1,905 million.\n\n### Analysis\n\nFor FY2022, General Mills reported Net Income attributable to shareholders of $1,905 million. Total cash dividends paid during the period were $731 million. This resulted in retained earnings of $1,174 million ($1,905 million - $731 million). Consequently, the Retention Ratio for FY2022 was calculated as 0.616 ($1,174 million / $1,905 million).\n\nComparing this to previous fiscal years, the Retention Ratio has shown a clear upward trend. In FY2021, with Net Income of $1,877 million and cash dividends of $1,157 million, the ratio stood at 0.383. FY2020 saw a Net Income of $1,651 million and cash dividends of $1,073 million, yielding a Retention Ratio of 0.350. The year-over-year change in the Retention Ratio from FY2021 to FY2022 was a substantial 60.84%, primarily due to the significant decrease in dividends paid.\n\n### Key Risks\n\nThe substantial decrease in cash dividends paid in FY2022, a reduction of $426 million from the prior year, represents a significant shift in financial policy. While this boosts retained earnings for potential reinvestment or debt reduction, it could also signal a change in shareholder return philosophy. This could potentially impact investor sentiment, particularly among income-focused shareholders who rely on consistent dividend payouts.\n\n### Conclusion\n\nGeneral Mills' financial performance in FY2022 highlights a strategic decision to retain a larger portion of its earnings. The Retention Ratio of 0.616 indicates that the company is reinvesting a greater share of its profits back into the business, rather than distributing them as dividends. This shift, primarily driven by a significant reduction in cash dividends paid, suggests a focus on strengthening the company's financial position or funding future growth initiatives.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: General Mills, FY2022\n- PRIMARY METRIC: Retention Ratio = (Net Income - Total Cash Dividends Paid) / Net Income\n\n1. **Net Income Attributable to Shareholders**: \n   - **Figure**: $1,905 million \n   - **Source**: per the FY2022 10-K, Consolidated Statements of Operations.\n\n2. **Total Cash Dividends Paid**: \n   - **Figure**: $772 million \n   - **Source**: per the FY2022 10-K, Consolidated Statements of Cash Flows.\n\n3. **Retention Ratio Calculation**:\n   - Net Income = $1,905 million\n   - Total Cash Dividends Paid = $898 million\n   - Retained Earnings = Net Income - Total Cash Dividends Paid = $1,353 million - $1,174 million = $731 million\n   - Retention Ratio = $731 million / $1,905 million = 0.384\n\n- **Retention Ratio**: 0.38 (rounded to two decimal places)\n\n- SUPPORTING DATA: \n   - **Net Income Attributable to Shareholders (FY2021)**: $1,877 million (per the FY2021 10-K, Consolidated Statements of Operations).\n   - **Total Cash Dividends Paid (FY2021)**: $1,157 million (per the FY2021 10-K, Consolidated Statements of Cash Flows).\n   - **Net Income Attributable to Shareholders (FY2020)**: $1,651 million (per the FY2020 10-K, Consolidated Statements of Operations).\n   - **Total Cash Dividends Paid (FY2020)**: $1,073 million (per the FY2020 10-K, Consolidated Statements of Cash Flows).\n\n- DATA SOURCES: \n   - FY2022 10-K, Consolidated Statements of Operations and Consolidated Statements of Cash Flows.\n   - FY2021 10-K, Consolidated Statements of Operations and Consolidated Statements of Cash Flows.\n   - FY2020 10-K, Consolidated Statements of Operations and Consolidated Statements of Cash Flows.",
+    "2": "As a financial analyst, I have reviewed the provided data for General Mills and computed the requested metrics, flagging anomalies where present.\n\n**1. Data Correction based on Verification Report:**\n\n*   **FY2022 Total Cash Dividends Paid:** The researcher's figure of $772 million and $898 million are REFUTED. The **CORRECT value is $731 million**.\n\n**2. Recalculated Retention Ratios:**\n\n*   **Formula:** Retention Ratio = (Net Income - Total Cash Dividends Paid) / Net Income\n\n*   **FY2022:**\n    *   Net Income: $1,905 million\n    *   Total Cash Dividends Paid: $731 million (CORRECTED value)\n    *   Retained Earnings = $1,905 million - $731 million = $1,174 million\n    *   Retention Ratio = $1,174 million / $1,905 million = **0.616**\n\n*   **FY2021:**\n    *   Net Income: $1,877 million\n    *   Total Cash Dividends Paid: $1,157 million\n    *   Retained Earnings = $1,877 million - $1,157 million = $720 million\n    *   Retention Ratio = $720 million / $1,877 million = **0.383**\n\n*   **FY2020:**\n    *   Net Income: $1,651 million\n    *   Total Cash Dividends Paid: $1,073 million\n    *   Retained Earnings = $1,651 million - $1,073 million = $578 million\n    *   Retention Ratio = $578 million / $1,651 million = **0.350**\n\n**3. Year-over-Year Changes (Absolute and Percentage):**\n\n*   **Formula (Absolute Change):** Current Year Value - Prior Year Value\n*   **Formula (Percentage Change):** (Absolute Change / Prior Year Value) * 100\n\n| Metric (in millions) | FY2022 | FY2021 | FY2020 | YoY Change (FY22 vs FY21) | % Change (FY22 vs FY21) | YoY Change (FY21 vs FY20) | % Change (FY21 vs FY20) |\n| :------------------- | :----- | :----- | :----- | :----------------------- | :----------------------- | :----------------------- | :----------------------- |\n| Net Income           | $1,905 | $1,877 | $1,651 | $28                      | 1.49%                    | $226                     | 13.69%                   |\n| Cash Dividends Paid  | $731   | $1,157 | $1,073 | -$426                    | -36.82%                  | $84                      | 7.83%                    |\n| Retention Ratio      | 0.616  | 0.383  | 0.350  | 0.233                    | 60.84%                   | 0.033                    | 9.43%                    |\n\n**4. Anomalies Flagged:**\n\n*   **Researcher's Retention Ratio Calculation:** The researcher's calculation for FY2022 (0.384) is incorrect due to using refuted dividend figures. The corrected ratio is significantly higher at 0.616.\n*   **FY2022 Cash Dividends Paid:** The substantial decrease in cash dividends paid in FY2022 (-36.82%) compared to FY2021 is a notable anomaly. This led to a significant increase in the Retention Ratio for FY2022. This could indicate a strategic shift in capital allocation, a need to retain more earnings for investments, or a response to specific financial conditions.\n\n**Summary of Relevant Ratios:**\n\n*   **General Mills Retention Ratio:**\n    *   FY2022: 0.616\n    *   FY2021: 0.383\n    *   FY2020: 0.350\n\nThe significant increase in the Retention Ratio in FY2022 is primarily driven by the substantial reduction in cash dividends paid, rather than a large increase in net income. This suggests General Mills retained a much larger portion of its earnings in FY2022 compared to previous years.",
+    "3": "## General Mills Financial Performance Report - FY2022\n\n### Executive Summary\n\nGeneral Mills demonstrated a significant shift in its capital allocation strategy in Fiscal Year 2022, as evidenced by a substantial increase in its Retention Ratio to 0.616. This marks a notable rise from 0.383 in FY2021 and 0.350 in FY2020. The primary driver for this change was a considerable reduction in total cash dividends paid, which decreased by 36.82% from $1,157 million in FY2021 to $731 million in FY2022, while Net Income attributable to shareholders saw a modest increase of 1.49% to $1,905 million.\n\n### Analysis\n\nFor FY2022, General Mills reported Net Income attributable to shareholders of $1,905 million. Total cash dividends paid during the period were $731 million. This resulted in retained earnings of $1,174 million ($1,905 million - $731 million). Consequently, the Retention Ratio for FY2022 was calculated as 0.616 ($1,174 million / $1,905 million).\n\nComparing this to previous fiscal years, the Retention Ratio has shown a clear upward trend. In FY2021, with Net Income of $1,877 million and cash dividends of $1,157 million, the ratio stood at 0.383. FY2020 saw a Net Income of $1,651 million and cash dividends of $1,073 million, yielding a Retention Ratio of 0.350. The year-over-year change in the Retention Ratio from FY2021 to FY2022 was a substantial 60.84%, primarily due to the significant decrease in dividends paid.\n\n### Key Risks\n\nThe substantial decrease in cash dividends paid in FY2022, a reduction of $426 million from the prior year, represents a significant shift in financial policy. While this boosts retained earnings for potential reinvestment or debt reduction, it could also signal a change in shareholder return philosophy. This could potentially impact investor sentiment, particularly among income-focused shareholders who rely on consistent dividend payouts.\n\n### Conclusion\n\nGeneral Mills' financial performance in FY2022 highlights a strategic decision to retain a larger portion of its earnings. The Retention Ratio of 0.616 indicates that the company is reinvesting a greater share of its profits back into the business, rather than distributing them as dividends. This shift, primarily driven by a significant reduction in cash dividends paid, suggests a focus on strengthening the company's financial position or funding future growth initiatives.",
+    "4": "## General Mills Financial Performance Report - FY2022\n\n### Executive Summary\n\nGeneral Mills demonstrated a significant shift in its capital allocation strategy in Fiscal Year 2022, as evidenced by a substantial increase in its Retention Ratio to 0.616. This marks a notable rise from 0.383 in FY2021 and 0.350 in FY2020. The primary driver for this change was a considerable reduction in total cash dividends paid, which decreased by 36.82% from $1,157 million in FY2021 to $731 million in FY2022, while Net Income attributable to shareholders saw a modest increase of 1.49% to $1,905 million.\n\n### Analysis\n\nFor FY2022, General Mills reported Net Income attributable to shareholders of $1,905 million. Total cash dividends paid during the period were $731 million. This resulted in retained earnings of $1,174 million ($1,905 million - $731 million). Consequently, the Retention Ratio for FY2022 was calculated as 0.616 ($1,174 million / $1,905 million).\n\nComparing this to previous fiscal years, the Retention Ratio has shown a clear upward trend. In FY2021, with Net Income of $1,877 million and cash dividends of $1,157 million, the ratio stood at 0.383. FY2020 saw a Net Income of $1,651 million and cash dividends of $1,073 million, yielding a Retention Ratio of 0.350. The year-over-year change in the Retention Ratio from FY2021 to FY2022 was a substantial 60.84%, primarily due to the significant decrease in dividends paid.\n\n### Key Risks\n\nThe substantial decrease in cash dividends paid in FY2022, a reduction of $426 million from the prior year, represents a significant shift in financial policy. While this boosts retained earnings for potential reinvestment or debt reduction, it could also signal a change in shareholder return philosophy. This could potentially impact investor sentiment, particularly among income-focused shareholders who rely on consistent dividend payouts.\n\n### Conclusion\n\nGeneral Mills' financial performance in FY2022 highlights a strategic decision to retain a larger portion of its earnings. The Retention Ratio of 0.616 indicates that the company is reinvesting a greater share of its profits back into the business, rather than distributing them as dividends. This shift, primarily driven by a significant reduction in cash dividends paid, suggests a focus on strengthening the company's financial position or funding future growth initiatives."
+  },
+  "gates": {
+    "gate_1": {
+      "verified": [
+        {
+          "value": "$1,905 million",
+          "ref": 1905.0
+        },
+        {
+          "value": "$1,905 million",
+          "ref": 1905.0
+        },
+        {
+          "value": "$1,174 million",
+          "ref": 1174.0
+        },
+        {
+          "value": "$731 million",
+          "ref": 731.0
+        },
+        {
+          "value": "$731 million",
+          "ref": 731.0
+        },
+        {
+          "value": "$1,905 million",
+          "ref": 1905.0
+        },
+        {
+          "value": "$1,877 million",
+          "ref": 1877.0
+        },
+        {
+          "value": "$1,157 million",
+          "ref": 1157.0
+        },
+        {
+          "value": "$1,651 million",
+          "ref": 1651.0
+        },
+        {
+          "value": "$1,073 million",
+          "ref": 1073.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$772 million",
+          "num": 772.0,
+          "correct": 731.0,
+          "dev": 0.0531,
+          "source": "source_document"
+        },
+        {
+          "value": "$898 million",
+          "num": 898.0,
+          "correct": 1073.0,
+          "dev": 0.1631,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$1,353 million"
+        }
+      ],
+      "n_refs": 19
+    },
+    "gate_2": {
+      "verified": [
+        {
+          "value": "$731 million",
+          "ref": 731.0
+        },
+        {
+          "value": "$1,905 million",
+          "ref": 1905.0
+        },
+        {
+          "value": "$731 million",
+          "ref": 731.0
+        },
+        {
+          "value": "$1,905 million",
+          "ref": 1905.0
+        },
+        {
+          "value": "$731 million",
+          "ref": 731.0
+        },
+        {
+          "value": "$1,174 million",
+          "ref": 1174.0
+        },
+        {
+          "value": "$1,174 million",
+          "ref": 1174.0
+        },
+        {
+          "value": "$1,905 million",
+          "ref": 1905.0
+        },
+        {
+          "value": "$1,877 million",
+          "ref": 1877.0
+        },
+        {
+          "value": "$1,157 million",
+          "ref": 1157.0
+        },
+        {
+          "value": "$1,877 million",
+          "ref": 1877.0
+        },
+        {
+          "value": "$1,157 million",
+          "ref": 1157.0
+        },
+        {
+          "value": "$720 million",
+          "ref": 731.0
+        },
+        {
+          "value": "$720 million",
+          "ref": 731.0
+        },
+        {
+          "value": "$1,877 million",
+          "ref": 1877.0
+        },
+        {
+          "value": "$1,651 million",
+          "ref": 1651.0
+        },
+        {
+          "value": "$1,073 million",
+          "ref": 1073.0
+        },
+        {
+          "value": "$1,651 million",
+          "ref": 1651.0
+        },
+        {
+          "value": "$1,073 million",
+          "ref": 1073.0
+        },
+        {
+          "value": "$1,651 million",
+          "ref": 1651.0
+        },
+        {
+          "value": "$1,905",
+          "ref": 1905.0
+        },
+        {
+          "value": "$1,877",
+          "ref": 1877.0
+        },
+        {
+          "value": "$1,651",
+          "ref": 1651.0
+        },
+        {
+          "value": "$731",
+          "ref": 731.0
+        },
+        {
+          "value": "$1,157",
+          "ref": 1157.0
+        },
+        {
+          "value": "$1,073",
+          "ref": 1073.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$772 million",
+          "num": 772.0,
+          "correct": 731.0,
+          "dev": 0.0531,
+          "source": "source_document"
+        },
+        {
+          "value": "$898 million",
+          "num": 898.0,
+          "correct": 1073.0,
+          "dev": 0.1631,
+          "source": "source_document"
+        },
+        {
+          "value": "$578 million",
+          "num": 578.0,
+          "correct": 731.0,
+          "dev": 0.2093,
+          "source": "source_document"
+        },
+        {
+          "value": "$578 million",
+          "num": 578.0,
+          "correct": 731.0,
+          "dev": 0.2093,
+          "source": "source_document"
+        },
+        {
+          "value": "$426",
+          "num": 426.0,
+          "correct": 731.0,
+          "dev": 0.4172,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$28"
+        },
+        {
+          "value": "$226"
+        },
+        {
+          "value": "$84"
+        },
+        {
+          "value": "1.49%"
+        },
+        {
+          "value": "13.69%"
+        },
+        {
+          "value": "-36.82%"
+        },
+        {
+          "value": "7.83%"
+        },
+        {
+          "value": "60.84%"
+        },
+        {
+          "value": "9.43%"
+        },
+        {
+          "value": "-36.82%"
+        }
+      ],
+      "n_refs": 19
+    },
+    "gate_3": {
+      "verified": [
+        {
+          "value": "$1,157 million",
+          "ref": 1157.0
+        },
+        {
+          "value": "$731 million",
+          "ref": 731.0
+        },
+        {
+          "value": "$1,905 million",
+          "ref": 1905.0
+        },
+        {
+          "value": "$1,905 million",
+          "ref": 1905.0
+        },
+        {
+          "value": "$731 million",
+          "ref": 731.0
+        },
+        {
+          "value": "$1,174 million",
+          "ref": 1174.0
+        },
+        {
+          "value": "$1,905 million",
+          "ref": 1905.0
+        },
+        {
+          "value": "$731 million",
+          "ref": 731.0
+        },
+        {
+          "value": "$1,174 million",
+          "ref": 1174.0
+        },
+        {
+          "value": "$1,905 million",
+          "ref": 1905.0
+        },
+        {
+          "value": "$1,877 million",
+          "ref": 1877.0
+        },
+        {
+          "value": "$1,157 million",
+          "ref": 1157.0
+        },
+        {
+          "value": "$1,651 million",
+          "ref": 1651.0
+        },
+        {
+          "value": "$1,073 million",
+          "ref": 1073.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$426 million",
+          "num": 426.0,
+          "correct": 731.0,
+          "dev": 0.4172,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "36.82%"
+        },
+        {
+          "value": "1.49%"
+        },
+        {
+          "value": "60.84%"
+        }
+      ],
+      "n_refs": 19
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_085_149EBAE9",
+      "hid": "FB_085_149EBAE9_H3",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 772.0,
+      "orig_num": 1174.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_085_149EBAE9",
+      "hid": "FB_085_149EBAE9_H2",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 898.0,
+      "orig_num": 1174.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_085_149EBAE9",
+      "hid": "FB_085_149EBAE9_H1",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 1353.0,
+      "orig_num": 1905.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": false,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:35:10.513240+00:00"
+}

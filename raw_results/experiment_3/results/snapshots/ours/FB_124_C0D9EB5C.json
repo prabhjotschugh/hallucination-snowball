@@ -1,0 +1,488 @@
+{
+  "question_id": "FB_124_C0D9EB5C",
+  "method": "ours",
+  "final_output": "## PepsiCo: FY2022 Financial Performance Report\n\n### Executive Summary\n\nPepsiCo demonstrated robust operational cash generation in FY2022, with Unadjusted EBITDA reaching $12,813 million. After accounting for capital expenditures of $4,200 million, the Unadjusted EBITDA less Capital Expenditures stood at $9,068 million. This represents a significant 5.28% increase from FY2021's $8,613 million. The company has also shown an improving trend in capital efficiency, with capital expenditures as a percentage of Unadjusted EBITDA decreasing to 32.78% in FY2022 from 35.21% in FY2021 and 48.62% in FY2020.\n\n### Analysis\n\nPepsiCo's Unadjusted EBITDA, calculated as Operating Income plus Depreciation and Amortization, increased from $11,930 million in FY2021 to $12,813 million in FY2022. This positive trend in core operational profitability is further highlighted by the growth in Unadjusted EBITDA less Capital Expenditures. This metric, which reflects the cash generated from operations after reinvestment in the business, rose from $8,613 million in FY2021 to $9,068 million in FY2022, marking a year-over-year growth of 5.28%. While positive, this growth rate is a deceleration from the 132.78% increase observed between FY2020 ($3,700 million) and FY2021. The decreasing ratio of Capital Expenditures to Unadjusted EBITDA, from 48.62% in FY2020 to 32.78% in FY2022, indicates enhanced capital efficiency or a period of lower intensive capital investment relative to operational cash flow.\n\n### Key Risks\n\nThe primary risk identified is the deceleration in the growth rate of Unadjusted EBITDA less Capital Expenditures from 132.78% (FY2020-FY2021) to 5.28% (FY2021-FY2022). While 5.28% still indicates growth, understanding the factors behind this significant slowdown is crucial for future forecasting. Potential causes could include market saturation, increased competition, or a shift in strategic investment priorities.\n\n### Conclusion\n\nPepsiCo's FY2022 performance demonstrates strong operational cash generation and improving capital efficiency. The Unadjusted EBITDA less Capital Expenditures of $9,068 million reflects a healthy ability to fund ongoing operations and growth initiatives. While the deceleration in growth warrants monitoring, the overall financial health, as indicated by these metrics, remains robust.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: PepsiCo, FY2022\n- PRIMARY METRIC: Unadjusted EBITDA less Capital Expenditures = $12,813 million (Unadjusted EBITDA) - $4,200 million (Capital Expenditures) = $6,616 million. \n  - Unadjusted EBITDA is defined as Operating Income ($15,021 million per the FY2022 10-K, Consolidated Statements of Operations) + Depreciation and Amortization ($1,000 million per the FY2022 10-K, Consolidated Statements of Cash Flows).\n- SUPPORTING DATA: \n  - FY2022 Operating Income: $11,813 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - FY2022 Depreciation and Amortization: $1,000 million (per the FY2022 10-K, Consolidated Statements of Cash Flows)\n  - FY2022 Capital Expenditures: $4,200 million (per the FY2022 10-K, Consolidated Statements of Cash Flows)\n  - FY2021 Operating Income: $10,930 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2021 Depreciation and Amortization: $1,000 million (per the FY2021 10-K, Consolidated Statements of Cash Flows)\n  - FY2021 Capital Expenditures: $4,200 million (per the FY2021 10-K, Consolidated Statements of Cash Flows)\n  - FY2020 Operating Income: $6,610 million (per the FY2020 10-K, Consolidated Statements of Operations)\n  - FY2020 Depreciation and Amortization: $1,000 million (per the FY2020 10-K, Consolidated Statements of Cash Flows)\n  - FY2020 Capital Expenditures: $3,700 million (per the FY2020 10-K, Consolidated Statements of Cash Flows)\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2022 10-K, Consolidated Statements of Cash Flows\n  - FY2021 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Statements of Cash Flows\n  - FY2020 10-K, Consolidated Statements of Operations\n  - FY2020 10-K, Consolidated Statements of Cash Flows",
+    "2": "As a financial analyst, I will compute the requested metrics for PepsiCo, focusing on \"Unadjusted EBITDA less Capital Expenditures.\"\n\n**1. Calculate Unadjusted EBITDA and Unadjusted EBITDA less Capital Expenditures for each year:**\n\n*   **FY2022:**\n    *   Unadjusted EBITDA = Operating Income + Depreciation and Amortization\n    *   Unadjusted EBITDA = $12,813 million + $1,000 million = $13,813 million\n    *   Unadjusted EBITDA less Capital Expenditures = $13,813 million - $4,200 million = $9,613 million\n    *   *Note: The researcher's initial calculation of $6,616 million for this metric was based on an incorrect Unadjusted EBITDA value. Using the corrected Operating Income, the result is $9,613 million.*\n\n*   **FY2021:**\n    *   Unadjusted EBITDA = Operating Income + Depreciation and Amortization\n    *   Unadjusted EBITDA = $10,930 million + $1,000 million = $11,930 million\n    *   Unadjusted EBITDA less Capital Expenditures = $11,930 million - $4,200 million = $7,730 million\n\n*   **FY2020:**\n    *   Unadjusted EBITDA = Operating Income + Depreciation and Amortization\n    *   Unadjusted EBITDA = $6,610 million + $1,000 million = $7,610 million\n    *   Unadjusted EBITDA less Capital Expenditures = $7,610 million - $3,700 million = $3,910 million\n\n**2. Year-over-Year Changes (Unadjusted EBITDA less Capital Expenditures):**\n\n*   **FY2022 vs. FY2021:**\n    *   Absolute Change = FY2022 Value - FY2021 Value\n    *   Absolute Change = $9,613 million - $7,730 million = $1,883 million\n    *   Percentage Change = (Absolute Change / FY2021 Value) * 100\n    *   Percentage Change = ($1,883 million / $7,730 million) * 100 = 24.36%\n\n*   **FY2021 vs. FY2020:**\n    *   Absolute Change = FY2021 Value - FY2020 Value\n    *   Absolute Change = $7,730 million - $3,910 million = $3,820 million\n    *   Percentage Change = (Absolute Change / FY2020 Value) * 100\n    *   Percentage Change = ($3,820 million / $3,910 million) * 100 = 97.70%\n\n**3. Relevant Ratios (Capital Expenditures as a % of Unadjusted EBITDA):**\n\n*   **FY2022:**\n    *   Ratio = (Capital Expenditures / Unadjusted EBITDA) * 100\n    *   Ratio = ($4,200 million / $13,813 million) * 100 = 30.41%\n\n*   **FY2021:**\n    *   Ratio = (Capital Expenditures / Unadjusted EBITDA) * 100\n    *   Ratio = ($4,200 million / $11,930 million) * 100 = 35.21%\n\n*   **FY2020:**\n    *   Ratio = (Capital Expenditures / Unadjusted EBITDA) * 100\n    *   Ratio = ($3,700 million / $7,610 million) * 100 = 48.62%\n\n**4. Anomalies:**\n\n*   **Initial Researcher Data Discrepancy:** The primary metric provided by the researcher for FY2022 (\"Unadjusted EBITDA less Capital Expenditures = $6,616 million\") was based on an incorrect Unadjusted EBITDA calculation. The corrected Operating Income ($12,813 million) leads to a significantly higher and more accurate value of $9,613 million for this metric. This initial error is a significant anomaly in the provided data.\n*   **FY22 vs FY21 Growth:** The 24.36% year-over-year growth in Unadjusted EBITDA less Capital Expenditures from FY2021 to FY2022 is strong but notably lower than the 97.70% growth observed from FY2020 to FY2021. This substantial deceleration in growth, while not necessarily negative, warrants further investigation into its drivers (e.g., base effect, changes in operating performance, or capital expenditure strategy).\n*   **Capital Expenditures as a % of Unadjusted EBITDA:** The trend shows a decreasing percentage from 48.62% in FY2020 to 30.41% in FY2022. This indicates that PepsiCo's Unadjusted EBITDA is growing faster than its capital expenditures, or capital expenditures are becoming a smaller proportion of its operational cash flow, which is generally a positive sign of increasing efficiency or maturity.",
+    "3": "## PepsiCo: FY2022 Financial Performance Report\n\n### Executive Summary\n\nPepsiCo demonstrated robust operational cash generation in FY2022, with Unadjusted EBITDA reaching $13,813 million. After accounting for capital expenditures of $4,200 million, the Unadjusted EBITDA less Capital Expenditures stood at $9,613 million. This represents a significant 24.36% increase from FY2021's $7,730 million. The company has also shown an improving trend in capital efficiency, with capital expenditures as a percentage of Unadjusted EBITDA decreasing to 30.41% in FY2022 from 35.21% in FY2021 and 48.62% in FY2020.\n\n### Analysis\n\nPepsiCo's Unadjusted EBITDA, calculated as Operating Income plus Depreciation and Amortization, increased from $11,930 million in FY2021 to $13,813 million in FY2022. This positive trend in core operational profitability is further highlighted by the growth in Unadjusted EBITDA less Capital Expenditures. This metric, which reflects the cash generated from operations after reinvestment in the business, rose from $7,730 million in FY2021 to $9,613 million in FY2022, marking a substantial year-over-year growth of 24.36%. While impressive, this growth rate is a deceleration from the 97.70% increase observed between FY2020 ($3,910 million) and FY2021. The decreasing ratio of Capital Expenditures to Unadjusted EBITDA, from 48.62% in FY2020 to 30.41% in FY2022, indicates enhanced capital efficiency or a period of lower intensive capital investment relative to operational cash flow.\n\n### Key Risks\n\nThe primary risk identified is the deceleration in the growth rate of Unadjusted EBITDA less Capital Expenditures from 97.70% (FY2020-FY2021) to 24.36% (FY2021-FY2022). While 24.36% is still strong, understanding the factors behind this slowdown is crucial for future forecasting. Potential causes could include market saturation, increased competition, or a shift in strategic investment priorities.\n\n### Conclusion\n\nPepsiCo's FY2022 performance demonstrates strong operational cash generation and improving capital efficiency. The Unadjusted EBITDA less Capital Expenditures of $9,613 million reflects a healthy ability to fund ongoing operations and growth initiatives. While the deceleration in growth warrants monitoring, the overall financial health, as indicated by these metrics, remains robust.",
+    "4": "## PepsiCo: FY2022 Financial Performance Report\n\n### Executive Summary\n\nPepsiCo demonstrated robust operational cash generation in FY2022, with Unadjusted EBITDA reaching $12,813 million. After accounting for capital expenditures of $4,200 million, the Unadjusted EBITDA less Capital Expenditures stood at $9,068 million. This represents a significant 5.28% increase from FY2021's $8,613 million. The company has also shown an improving trend in capital efficiency, with capital expenditures as a percentage of Unadjusted EBITDA decreasing to 32.78% in FY2022 from 35.21% in FY2021 and 48.62% in FY2020.\n\n### Analysis\n\nPepsiCo's Unadjusted EBITDA, calculated as Operating Income plus Depreciation and Amortization, increased from $11,930 million in FY2021 to $12,813 million in FY2022. This positive trend in core operational profitability is further highlighted by the growth in Unadjusted EBITDA less Capital Expenditures. This metric, which reflects the cash generated from operations after reinvestment in the business, rose from $8,613 million in FY2021 to $9,068 million in FY2022, marking a year-over-year growth of 5.28%. While positive, this growth rate is a deceleration from the 132.78% increase observed between FY2020 ($3,700 million) and FY2021. The decreasing ratio of Capital Expenditures to Unadjusted EBITDA, from 48.62% in FY2020 to 32.78% in FY2022, indicates enhanced capital efficiency or a period of lower intensive capital investment relative to operational cash flow.\n\n### Key Risks\n\nThe primary risk identified is the deceleration in the growth rate of Unadjusted EBITDA less Capital Expenditures from 132.78% (FY2020-FY2021) to 5.28% (FY2021-FY2022). While 5.28% still indicates growth, understanding the factors behind this significant slowdown is crucial for future forecasting. Potential causes could include market saturation, increased competition, or a shift in strategic investment priorities.\n\n### Conclusion\n\nPepsiCo's FY2022 performance demonstrates strong operational cash generation and improving capital efficiency. The Unadjusted EBITDA less Capital Expenditures of $9,068 million reflects a healthy ability to fund ongoing operations and growth initiatives. While the deceleration in growth warrants monitoring, the overall financial health, as indicated by these metrics, remains robust."
+  },
+  "gates": {
+    "gate_1": {
+      "verified": [
+        {
+          "value": "$12,813 million",
+          "ref": 12813.0
+        },
+        {
+          "value": "$4,200 million",
+          "ref": 4200.0
+        },
+        {
+          "value": "$1,000 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$11,813 million",
+          "ref": 11813.0
+        },
+        {
+          "value": "$1,000 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$4,200 million",
+          "ref": 4200.0
+        },
+        {
+          "value": "$10,930 million",
+          "ref": 10930.0
+        },
+        {
+          "value": "$1,000 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$4,200 million",
+          "ref": 4200.0
+        },
+        {
+          "value": "$1,000 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$3,700 million",
+          "ref": 3700.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$15,021 million",
+          "num": 15021.0,
+          "correct": 12813.0,
+          "dev": 0.147,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$6,616 million"
+        },
+        {
+          "value": "$6,610 million"
+        }
+      ],
+      "n_refs": 22
+    },
+    "gate_2": {
+      "verified": [
+        {
+          "value": "$12,813 million",
+          "ref": 12813.0
+        },
+        {
+          "value": "$1,000 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$4,200 million",
+          "ref": 4200.0
+        },
+        {
+          "value": "$10,930 million",
+          "ref": 10930.0
+        },
+        {
+          "value": "$1,000 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$11,930 million",
+          "ref": 11813.0
+        },
+        {
+          "value": "$11,930 million",
+          "ref": 11813.0
+        },
+        {
+          "value": "$4,200 million",
+          "ref": 4200.0
+        },
+        {
+          "value": "$1,000 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$3,700 million",
+          "ref": 3700.0
+        },
+        {
+          "value": "$1,883 million",
+          "ref": 1863.0
+        },
+        {
+          "value": "$1,883 million",
+          "ref": 1863.0
+        },
+        {
+          "value": "$4,200 million",
+          "ref": 4200.0
+        },
+        {
+          "value": "$4,200 million",
+          "ref": 4200.0
+        },
+        {
+          "value": "$11,930 million",
+          "ref": 11813.0
+        },
+        {
+          "value": "$3,700 million",
+          "ref": 3700.0
+        },
+        {
+          "value": "$12,813 million",
+          "ref": 12813.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$13,813 million",
+          "num": 13813.0,
+          "correct": 12813.0,
+          "dev": 0.0724,
+          "source": "source_document"
+        },
+        {
+          "value": "$13,813 million",
+          "num": 13813.0,
+          "correct": 12813.0,
+          "dev": 0.0724,
+          "source": "source_document"
+        },
+        {
+          "value": "$9,613 million",
+          "num": 9613.0,
+          "correct": 9068.0,
+          "dev": 0.0567,
+          "source": "ground_truth"
+        },
+        {
+          "value": "$9,613 million",
+          "num": 9613.0,
+          "correct": 9068.0,
+          "dev": 0.0567,
+          "source": "ground_truth"
+        },
+        {
+          "value": "$7,730 million",
+          "num": 7730.0,
+          "correct": 8613.0,
+          "dev": 0.1025,
+          "source": "source_document"
+        },
+        {
+          "value": "$7,610 million",
+          "num": 7610.0,
+          "correct": 8613.0,
+          "dev": 0.1165,
+          "source": "source_document"
+        },
+        {
+          "value": "$7,610 million",
+          "num": 7610.0,
+          "correct": 8613.0,
+          "dev": 0.1165,
+          "source": "source_document"
+        },
+        {
+          "value": "$3,910 million",
+          "num": 3910.0,
+          "correct": 3700.0,
+          "dev": 0.0537,
+          "source": "source_document"
+        },
+        {
+          "value": "$9,613 million",
+          "num": 9613.0,
+          "correct": 9068.0,
+          "dev": 0.0567,
+          "source": "ground_truth"
+        },
+        {
+          "value": "$7,730 million",
+          "num": 7730.0,
+          "correct": 8613.0,
+          "dev": 0.1025,
+          "source": "source_document"
+        },
+        {
+          "value": "$7,730 million",
+          "num": 7730.0,
+          "correct": 8613.0,
+          "dev": 0.1025,
+          "source": "source_document"
+        },
+        {
+          "value": "$7,730 million",
+          "num": 7730.0,
+          "correct": 8613.0,
+          "dev": 0.1025,
+          "source": "source_document"
+        },
+        {
+          "value": "$3,910 million",
+          "num": 3910.0,
+          "correct": 3700.0,
+          "dev": 0.0537,
+          "source": "source_document"
+        },
+        {
+          "value": "$3,910 million",
+          "num": 3910.0,
+          "correct": 3700.0,
+          "dev": 0.0537,
+          "source": "source_document"
+        },
+        {
+          "value": "$13,813 million",
+          "num": 13813.0,
+          "correct": 12813.0,
+          "dev": 0.0724,
+          "source": "source_document"
+        },
+        {
+          "value": "$7,610 million",
+          "num": 7610.0,
+          "correct": 8613.0,
+          "dev": 0.1165,
+          "source": "source_document"
+        },
+        {
+          "value": "$9,613 million",
+          "num": 9613.0,
+          "correct": 9068.0,
+          "dev": 0.0567,
+          "source": "ground_truth"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$6,616 million"
+        },
+        {
+          "value": "$6,610 million"
+        },
+        {
+          "value": "$3,820 million"
+        },
+        {
+          "value": "$3,820 million"
+        },
+        {
+          "value": "$6,616 million"
+        },
+        {
+          "value": "24.36%"
+        },
+        {
+          "value": "97.70%"
+        },
+        {
+          "value": "30.41%"
+        },
+        {
+          "value": "35.21%"
+        },
+        {
+          "value": "48.62%"
+        },
+        {
+          "value": "24.36%"
+        },
+        {
+          "value": "97.70%"
+        },
+        {
+          "value": "48.62%"
+        },
+        {
+          "value": "30.41%"
+        }
+      ],
+      "n_refs": 22
+    },
+    "gate_3": {
+      "verified": [
+        {
+          "value": "$4,200 million",
+          "ref": 4200.0
+        },
+        {
+          "value": "$11,930 million",
+          "ref": 11813.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$13,813 million",
+          "num": 13813.0,
+          "correct": 12813.0,
+          "dev": 0.0724,
+          "source": "source_document"
+        },
+        {
+          "value": "$9,613 million",
+          "num": 9613.0,
+          "correct": 9068.0,
+          "dev": 0.0567,
+          "source": "ground_truth"
+        },
+        {
+          "value": "$7,730 million",
+          "num": 7730.0,
+          "correct": 8613.0,
+          "dev": 0.1025,
+          "source": "source_document"
+        },
+        {
+          "value": "$13,813 million",
+          "num": 13813.0,
+          "correct": 12813.0,
+          "dev": 0.0724,
+          "source": "source_document"
+        },
+        {
+          "value": "$7,730 million",
+          "num": 7730.0,
+          "correct": 8613.0,
+          "dev": 0.1025,
+          "source": "source_document"
+        },
+        {
+          "value": "$9,613 million",
+          "num": 9613.0,
+          "correct": 9068.0,
+          "dev": 0.0567,
+          "source": "ground_truth"
+        },
+        {
+          "value": "$3,910 million",
+          "num": 3910.0,
+          "correct": 3700.0,
+          "dev": 0.0537,
+          "source": "source_document"
+        },
+        {
+          "value": "$9,613 million",
+          "num": 9613.0,
+          "correct": 9068.0,
+          "dev": 0.0567,
+          "source": "ground_truth"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "24.36%"
+        },
+        {
+          "value": "30.41%"
+        },
+        {
+          "value": "35.21%"
+        },
+        {
+          "value": "48.62%"
+        },
+        {
+          "value": "24.36%"
+        },
+        {
+          "value": "97.70%"
+        },
+        {
+          "value": "48.62%"
+        },
+        {
+          "value": "30.41%"
+        },
+        {
+          "value": "97.70%"
+        },
+        {
+          "value": "24.36%"
+        },
+        {
+          "value": "24.36%"
+        }
+      ],
+      "n_refs": 22
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_124_C0D9EB5C",
+      "hid": "FB_124_C0D9EB5C_H3",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 6616.0,
+      "orig_num": 8613.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_124_C0D9EB5C",
+      "hid": "FB_124_C0D9EB5C_H2",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 15021.0,
+      "orig_num": 11813.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": false,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_124_C0D9EB5C",
+      "hid": "FB_124_C0D9EB5C_H1",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 6610.0,
+      "orig_num": 10200.0,
+      "survived": false,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 4,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:49:16.068147+00:00"
+}

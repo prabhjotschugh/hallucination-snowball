@@ -1,0 +1,470 @@
+{
+  "question_id": "FB_068_46FFC913",
+  "method": "ours",
+  "final_output": "## Financial Report: The Coca-Cola Company, FY2017\n\n### Executive Summary\n\nThe Coca-Cola Company reported a Net Income of $1,247 million for Fiscal Year 2017. The Return on Assets (ROA) for the period was 1.45%, reflecting the company's efficiency in generating profit from its asset base. Total Revenue saw a modest increase to $35,410 million, while Total Assets remained largely stable at $86,176 million.\n\n### Analysis\n\nFor FY2017, The Coca-Cola Company's Net Income stood at $1,247 million, a slight decrease from the FY2016 Net Income of $1,249 million. Total Revenue, however, experienced an increase, rising from $35,119 million in FY2016 to $35,410 million in FY2017. Total Assets showed minimal fluctuation, moving from $86,185 million in FY2016 to $86,176 million in FY2017.\n\nThe Return on Assets (ROA) for FY2017 was calculated using the Net Income of $1,247 million and the average total assets of $86,180.5 million (derived from FY2016 Total Assets of $86,185 million and FY2017 Total Assets of $86,176 million). This resulted in an ROA of 1.45%. The Asset Turnover ratio for FY2017 was 0.41 times, indicating that for every dollar of assets, the company generated $0.41 in revenue.\n\n### Key Risks\n\nThe slight decline in Net Income from $1,249 million in FY2016 to $1,247 million in FY2017, despite an increase in Total Revenue, warrants further investigation into cost management or non-operating factors. While the change is small, a sustained trend could impact profitability. The asset turnover ratio for FY2017 was 0.41 times ($35,410 million / $86,180.5 million), indicating that for every dollar of assets, the company generated $0.41 in revenue. This relatively low ratio suggests that the company may not be fully optimizing its asset utilization to generate sales.\n\n### Conclusion\n\nThe Coca-Cola Company demonstrated stable asset management in FY2017, with Total Assets remaining consistent. The company achieved a Net Income of $1,247 million and an ROA of 1.45%. While revenue saw a modest increase, the slight dip in net income highlights areas for potential operational efficiency improvements. The asset turnover ratio of 0.41 times also points to opportunities for enhancing asset utilization to drive sales growth.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: The Coca-Cola Company, FY2017\n- PRIMARY METRIC: \n  - Net Income: $1,247 million (per the FY2017 10-K, Consolidated Statements of Operations)\n  - Total Assets (FY2016): $86,185 million (per the FY2017 10-K, Consolidated Balance Sheets)\n  - Total Assets (FY2017): $86,176 million (per the FY2017 10-K, Consolidated Balance Sheets)\n  - Average Total Assets: ($86,185 million + $86,176 million) / 2 = $58,656.0 million\n\nROA Calculation:\n- ROA = Net Income / Average Total Assets\n- ROA = $1,247 million / $86,180.5 million = 0.0145 or 0.01%\n\n- SUPPORTING DATA: \n  - FY2016 Net Income: $1,249 million (per the FY2017 10-K, Consolidated Statements of Operations)\n  - FY2016 Total Assets: $86,185 million (as stated above)\n  - FY2017 Total Revenue: $35,410 million (per the FY2017 10-K, Consolidated Statements of Operations)\n  - FY2016 Total Revenue: $35,119 million (per the FY2017 10-K, Consolidated Statements of Operations)\n\n- DATA SOURCES: \n  - The Coca-Cola Company FY2017 10-K, Consolidated Statements of Operations\n  - The Coca-Cola Company FY2017 10-K, Consolidated Balance Sheets\n\nNote: The ROA for FY2017 is 1.45% when rounded to two decimal places.",
+    "2": "As a financial analyst, I've computed the year-over-year changes and relevant ratios for The Coca-Cola Company, FY2017, using the provided and corrected data.\n\n**1. Year-over-Year Changes (FY2016 to FY2017)**\n\n*   **Net Income:**\n    *   FY2017 Net Income: $1,247 million\n    *   FY2016 Net Income: $1,249 million\n    *   **Absolute Change:** FY2017 Net Income - FY2016 Net Income = $1,247 million - $1,249 million = **-$2 million**\n    *   **Percentage Change:** (Absolute Change / FY2016 Net Income) * 100 = (-$2 million / $1,249 million) * 100 = **-0.16%**\n\n*   **Total Assets:**\n    *   FY2017 Total Assets: $86,176 million\n    *   FY2016 Total Assets: $86,185 million\n    *   **Absolute Change:** FY2017 Total Assets - FY2016 Total Assets = $86,176 million - $86,185 million = **-$9 million**\n    *   **Percentage Change:** (Absolute Change / FY2016 Total Assets) * 100 = (-$9 million / $86,185 million) * 100 = **-0.01%**\n\n*   **Total Revenue:**\n    *   FY2017 Total Revenue: $35,410 million\n    *   FY2016 Total Revenue: $35,119 million\n    *   **Absolute Change:** FY2017 Total Revenue - FY2016 Total Revenue = $35,410 million - $35,119 million = **$291 million**\n    *   **Percentage Change:** (Absolute Change / FY2016 Total Revenue) * 100 = ($291 million / $35,119 million) * 100 = **0.83%**\n\n**2. Relevant Ratios (FY2017)**\n\n*   **Average Total Assets (Corrected):**\n    *   FY2016 Total Assets: $86,185 million\n    *   FY2017 Total Assets: $86,176 million\n    *   **Average Total Assets:** (FY2016 Total Assets + FY2017 Total Assets) / 2 = ($86,185 million + $86,176 million) / 2 = **$86,180.5 million**\n    *   *Note: The researcher's initial calculation of $58,656.0 million for Average Total Assets was refuted. The correct value is $86,180.5 million, not the provided correction of $50,677.00, as that correction was for the researcher's incorrect average, not the underlying asset values.*\n\n*   **Return on Assets (ROA):**\n    *   Net Income (FY2017): $1,247 million\n    *   Average Total Assets (FY2017): $86,180.5 million\n    *   **ROA:** Net Income / Average Total Assets = $1,247 million / $86,180.5 million = 0.014469 or **1.45%**\n\n*   **Asset Turnover:**\n    *   Total Revenue (FY2017): $35,410 million\n    *   Average Total Assets (FY2017): $86,180.5 million\n    *   **Asset Turnover:** Total Revenue / Average Total Assets = $35,410 million / $86,180.5 million = **0.41 times**\n\n**3. Anomalies Flagged**\n\n*   **Researcher's Average Total Assets Calculation:** The initial calculation of Average Total Assets as $58,656.0 million was incorrect. The correct calculation using the provided FY2016 and FY2017 Total Assets is $86,180.5 million. This significantly impacts the ROA calculation.\n*   **ROA Discrepancy:** The researcher's stated ROA of \"0.0145 or 0.01%\" and \"1.45% when rounded to two decimal places\" is confusing. While 0.0145 is 1.45%, stating it as \"0.01%\" is incorrect. My calculated ROA of 1.45% aligns with the correct value.\n*   **Net Income Decline:** While small in absolute terms (-$2 million), the slight year-over-year decrease in Net Income (-0.16%) despite a modest increase in Total Revenue (0.83%) could warrant further investigation into cost structures or non-operating income/expenses.\n*   **Minimal Asset Change:** The total assets remained remarkably stable, with only a $9 million decrease, representing a negligible -0.01% change. This suggests consistent asset management or minimal capital expenditure/disposal activity in",
+    "3": "## Financial Report: The Coca-Cola Company, FY2017\n\n### Executive Summary\n\nThe Coca-Cola Company reported a Net Income of $1,247 million for Fiscal Year 2017. The Return on Assets (ROA) for the period was 1.45%, reflecting the company's efficiency in generating profit from its asset base. Total Revenue saw a modest increase to $35,410 million, while Total Assets remained largely stable at $86,176 million.\n\n### Analysis\n\nFor FY2017, The Coca-Cola Company's Net Income stood at $1,247 million, a slight decrease from the FY2016 Net Income of $1,249 million. Total Revenue, however, experienced an increase, rising from $35,119 million in FY2016 to $35,410 million in FY2017. Total Assets showed minimal fluctuation, moving from $86,185 million in FY2016 to $86,176 million in FY2017.\n\nThe Return on Assets (ROA) for FY2017 was calculated using the Net Income of $1,247 million and the average total assets of $86,180.5 million (derived from FY2016 Total Assets of $86,185 million and FY2017 Total Assets of $86,176 million). This resulted in an ROA of 1.45%. The Asset Turnover ratio for FY2017 was 0.41 times, indicating that for every dollar of assets, the company generated $0.41 in revenue.\n\n### Key Risks\n\nThe slight decline in Net Income from $1,249 million in FY2016 to $1,247 million in FY2017, despite an increase in Total Revenue, warrants further investigation into cost management or non-operating factors. While the change is small, a sustained trend could impact profitability. The relatively low asset turnover ratio of 0.41 times suggests that the company may not be fully optimizing its asset utilization to generate sales.\n\n### Conclusion\n\nThe Coca-Cola Company demonstrated stable asset management in FY2017, with Total Assets remaining consistent. The company achieved a Net Income of $1,247 million and an ROA of 1.45%. While revenue saw a modest increase, the slight dip in net income highlights areas for potential operational efficiency improvements.",
+    "4": "## Financial Report: The Coca-Cola Company, FY2017\n\n### Executive Summary\n\nThe Coca-Cola Company reported a Net Income of $1,247 million for Fiscal Year 2017. The Return on Assets (ROA) for the period was 1.45%, reflecting the company's efficiency in generating profit from its asset base. Total Revenue saw a modest increase to $35,410 million, while Total Assets remained largely stable at $86,176 million.\n\n### Analysis\n\nFor FY2017, The Coca-Cola Company's Net Income stood at $1,247 million, a slight decrease from the FY2016 Net Income of $1,249 million. Total Revenue, however, experienced an increase, rising from $35,119 million in FY2016 to $35,410 million in FY2017. Total Assets showed minimal fluctuation, moving from $86,185 million in FY2016 to $86,176 million in FY2017.\n\nThe Return on Assets (ROA) for FY2017 was calculated using the Net Income of $1,247 million and the average total assets of $86,180.5 million (derived from FY2016 Total Assets of $86,185 million and FY2017 Total Assets of $86,176 million). This resulted in an ROA of 1.45%. The Asset Turnover ratio for FY2017 was 0.41 times, indicating that for every dollar of assets, the company generated $0.41 in revenue.\n\n### Key Risks\n\nThe slight decline in Net Income from $1,249 million in FY2016 to $1,247 million in FY2017, despite an increase in Total Revenue, warrants further investigation into cost management or non-operating factors. While the change is small, a sustained trend could impact profitability. The asset turnover ratio for FY2017 was 0.41 times ($35,410 million / $86,180.5 million), indicating that for every dollar of assets, the company generated $0.41 in revenue. This relatively low ratio suggests that the company may not be fully optimizing its asset utilization to generate sales.\n\n### Conclusion\n\nThe Coca-Cola Company demonstrated stable asset management in FY2017, with Total Assets remaining consistent. The company achieved a Net Income of $1,247 million and an ROA of 1.45%. While revenue saw a modest increase, the slight dip in net income highlights areas for potential operational efficiency improvements. The asset turnover ratio of 0.41 times also points to opportunities for enhancing asset utilization to drive sales growth."
+  },
+  "gates": {
+    "gate_1": {
+      "verified": [
+        {
+          "value": "$1,247 million",
+          "ref": 1247.0
+        },
+        {
+          "value": "$86,185 million",
+          "ref": 86185.0
+        },
+        {
+          "value": "$86,176 million",
+          "ref": 86176.0
+        },
+        {
+          "value": "$86,185 million",
+          "ref": 86185.0
+        },
+        {
+          "value": "$86,176 million",
+          "ref": 86176.0
+        },
+        {
+          "value": "$1,247 million",
+          "ref": 1247.0
+        },
+        {
+          "value": "$86,180.5 million",
+          "ref": 86180.5
+        },
+        {
+          "value": "$1,249 million",
+          "ref": 1249.0
+        },
+        {
+          "value": "$86,185 million",
+          "ref": 86185.0
+        },
+        {
+          "value": "$35,410 million",
+          "ref": 35410.0
+        },
+        {
+          "value": "$35,119 million",
+          "ref": 35119.0
+        },
+        {
+          "value": "1.45%",
+          "ref": 1.45
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$58,656.0 million",
+          "num": 58656.0,
+          "correct": 50677.0,
+          "dev": 0.136,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "0.01%"
+        }
+      ],
+      "n_refs": 22
+    },
+    "gate_2": {
+      "verified": [
+        {
+          "value": "$1,247 million",
+          "ref": 1247.0
+        },
+        {
+          "value": "$1,249 million",
+          "ref": 1249.0
+        },
+        {
+          "value": "$1,247 million",
+          "ref": 1247.0
+        },
+        {
+          "value": "$1,249 million",
+          "ref": 1249.0
+        },
+        {
+          "value": "$1,249 million",
+          "ref": 1249.0
+        },
+        {
+          "value": "$86,176 million",
+          "ref": 86176.0
+        },
+        {
+          "value": "$86,185 million",
+          "ref": 86185.0
+        },
+        {
+          "value": "$86,176 million",
+          "ref": 86176.0
+        },
+        {
+          "value": "$86,185 million",
+          "ref": 86185.0
+        },
+        {
+          "value": "$86,185 million",
+          "ref": 86185.0
+        },
+        {
+          "value": "$35,410 million",
+          "ref": 35410.0
+        },
+        {
+          "value": "$35,119 million",
+          "ref": 35119.0
+        },
+        {
+          "value": "$35,410 million",
+          "ref": 35410.0
+        },
+        {
+          "value": "$35,119 million",
+          "ref": 35119.0
+        },
+        {
+          "value": "$35,119 million",
+          "ref": 35119.0
+        },
+        {
+          "value": "$86,185 million",
+          "ref": 86185.0
+        },
+        {
+          "value": "$86,176 million",
+          "ref": 86176.0
+        },
+        {
+          "value": "$86,185 million",
+          "ref": 86185.0
+        },
+        {
+          "value": "$86,176 million",
+          "ref": 86176.0
+        },
+        {
+          "value": "$86,180.5 million",
+          "ref": 86180.5
+        },
+        {
+          "value": "$86,180.5 million",
+          "ref": 86180.5
+        },
+        {
+          "value": "$50,677.00",
+          "ref": 50677.0
+        },
+        {
+          "value": "$1,247 million",
+          "ref": 1247.0
+        },
+        {
+          "value": "$86,180.5 million",
+          "ref": 86180.5
+        },
+        {
+          "value": "$1,247 million",
+          "ref": 1247.0
+        },
+        {
+          "value": "$86,180.5 million",
+          "ref": 86180.5
+        },
+        {
+          "value": "$35,410 million",
+          "ref": 35410.0
+        },
+        {
+          "value": "$86,180.5 million",
+          "ref": 86180.5
+        },
+        {
+          "value": "$35,410 million",
+          "ref": 35410.0
+        },
+        {
+          "value": "$86,180.5 million",
+          "ref": 86180.5
+        },
+        {
+          "value": "$86,180.5 million",
+          "ref": 86180.5
+        },
+        {
+          "value": "1.45%",
+          "ref": 1.45
+        },
+        {
+          "value": "1.45%",
+          "ref": 1.45
+        },
+        {
+          "value": "1.45%",
+          "ref": 1.45
+        },
+        {
+          "value": "1.45%",
+          "ref": 1.45
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$2 million",
+          "num": 2.0,
+          "correct": 1.45,
+          "dev": 0.275,
+          "source": "source_document"
+        },
+        {
+          "value": "$2 million",
+          "num": 2.0,
+          "correct": 1.45,
+          "dev": 0.275,
+          "source": "source_document"
+        },
+        {
+          "value": "$291 million",
+          "num": 291.0,
+          "correct": 466.0,
+          "dev": 0.3755,
+          "source": "evidence"
+        },
+        {
+          "value": "$291 million",
+          "num": 291.0,
+          "correct": 466.0,
+          "dev": 0.3755,
+          "source": "evidence"
+        },
+        {
+          "value": "$58,656.0 million",
+          "num": 58656.0,
+          "correct": 50677.0,
+          "dev": 0.136,
+          "source": "evidence"
+        },
+        {
+          "value": "$58,656.0 million",
+          "num": 58656.0,
+          "correct": 50677.0,
+          "dev": 0.136,
+          "source": "evidence"
+        },
+        {
+          "value": "$2 million",
+          "num": 2.0,
+          "correct": 1.45,
+          "dev": 0.275,
+          "source": "source_document"
+        },
+        {
+          "value": "-0.16%",
+          "num": 0.16,
+          "correct": 0.25,
+          "dev": 0.36,
+          "source": "evidence"
+        },
+        {
+          "value": "0.83%",
+          "num": 0.83,
+          "correct": 1.45,
+          "dev": 0.4276,
+          "source": "source_document"
+        },
+        {
+          "value": "-0.16%",
+          "num": 0.16,
+          "correct": 0.25,
+          "dev": 0.36,
+          "source": "evidence"
+        },
+        {
+          "value": "0.83%",
+          "num": 0.83,
+          "correct": 1.45,
+          "dev": 0.4276,
+          "source": "source_document"
+        },
+        {
+          "value": "014469",
+          "num": 14469.0,
+          "correct": 11205.0,
+          "dev": 0.2256,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$9 million"
+        },
+        {
+          "value": "$9 million"
+        },
+        {
+          "value": "$9 million"
+        },
+        {
+          "value": "-0.01%"
+        },
+        {
+          "value": "0.01%"
+        },
+        {
+          "value": "0.01%"
+        },
+        {
+          "value": "-0.01%"
+        }
+      ],
+      "n_refs": 22
+    },
+    "gate_3": {
+      "verified": [
+        {
+          "value": "$1,247 million",
+          "ref": 1247.0
+        },
+        {
+          "value": "$35,410 million",
+          "ref": 35410.0
+        },
+        {
+          "value": "$86,176 million",
+          "ref": 86176.0
+        },
+        {
+          "value": "$1,247 million",
+          "ref": 1247.0
+        },
+        {
+          "value": "$1,249 million",
+          "ref": 1249.0
+        },
+        {
+          "value": "$35,119 million",
+          "ref": 35119.0
+        },
+        {
+          "value": "$35,410 million",
+          "ref": 35410.0
+        },
+        {
+          "value": "$86,185 million",
+          "ref": 86185.0
+        },
+        {
+          "value": "$86,176 million",
+          "ref": 86176.0
+        },
+        {
+          "value": "$1,247 million",
+          "ref": 1247.0
+        },
+        {
+          "value": "$86,180.5 million",
+          "ref": 86180.5
+        },
+        {
+          "value": "$86,185 million",
+          "ref": 86185.0
+        },
+        {
+          "value": "$86,176 million",
+          "ref": 86176.0
+        },
+        {
+          "value": "$1,249 million",
+          "ref": 1249.0
+        },
+        {
+          "value": "$1,247 million",
+          "ref": 1247.0
+        },
+        {
+          "value": "$1,247 million",
+          "ref": 1247.0
+        },
+        {
+          "value": "1.45%",
+          "ref": 1.45
+        },
+        {
+          "value": "1.45%",
+          "ref": 1.45
+        },
+        {
+          "value": "1.45%",
+          "ref": 1.45
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$0.41",
+          "num": 0.41,
+          "correct": 0.25,
+          "dev": 0.3902,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [],
+      "n_refs": 22
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_068_46FFC913",
+      "hid": "FB_068_46FFC913_H2",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 58656.0,
+      "orig_num": 86180.5,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_068_46FFC913",
+      "hid": "FB_068_46FFC913_H1",
+      "method": "ours",
+      "type": "percentage",
+      "inj_num": 0.01,
+      "orig_num": 1.45,
+      "survived": false,
+      "corrected": true,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:28:17.513423+00:00"
+}

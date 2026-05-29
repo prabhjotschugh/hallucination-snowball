@@ -1,0 +1,85 @@
+{
+  "question_id": "FB_012_41487F3A",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Adobe Inc., FY2016\n- PRIMARY METRIC: Operating Income for FY2016: $2,035 million (per the FY2016 10-K, Consolidated Statements of Operations)\n- SUPPORTING DATA: \n  - Operating Income for FY2015: $2,329 million (per the FY2015 10-K, Consolidated Statements of Operations)\n  - Year-over-Year Change in Operating Income: \n    - Calculation: (($2,825 million - $2,329 million) / $2,329 million) * 100 = 32.8%\n    - Rounded Percentage Change: 21.3%\n- DATA SOURCES: \n  - FY2016 10-K, Consolidated Statements of Operations\n  - FY2015 10-K, Consolidated Statements of Operations\n\nNote: The analysis and benchmarking against industry standards were not performed as per the directive to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_012_41487F3A_H2",
+      "type": "dollar_amount",
+      "original_value": "$2,825 million",
+      "injected_value": "$2,035 million",
+      "original_numeric": "2825",
+      "injected_numeric": "2035",
+      "position_char": 86,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.2796
+    },
+    {
+      "hallucination_id": "FB_012_41487F3A_H1",
+      "type": "percentage",
+      "original_value": "21.3%",
+      "injected_value": "32.8%",
+      "original_numeric": "21.3",
+      "injected_numeric": "32.8",
+      "position_char": 419,
+      "sentence_approx": 2,
+      "perturbation_delta": 11.4575
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Operating Income for FY2016: $2,035 million",
+        "claim_value": "$2,035 million",
+        "reason": "Internal inconsistency: The calculation section uses $2,825 million for FY2016 operating income instead of $2,035 million. Additionally, if $2,035 million is correct, the change from $2,329 million (FY2015) should be negative, not positive.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Calculation: (($2,825 million - $2,329 million) / $2,329 million) * 100 = 32.8%",
+        "claim_value": "32.8%",
+        "reason": "Arithmetic hallucination: The formula provided actually equals approximately 21.3%, not 32.8%. This indicates a failure in basic mathematical reasoning.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Rounded Percentage Change: 21.3%",
+        "claim_value": "21.3%",
+        "reason": "Internal contradiction: This figure contradicts the stated calculation result of 32.8% immediately above it, suggesting the agent is hallucinating multiple conflicting outcomes.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 5,
+    "overall_assessment": "The output contains critical internal inconsistencies and arithmetic errors that invalidate the financial analysis.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Operating Income for FY2016: $2,035 million\",\n      \"claim_value\": \"$2,035 million\",\n      \"reason\": \"Internal inconsistency: The calculation section uses $2,825 million for FY2016 operating income instead of $2,035 million. Additionally, if $2,035 million is correct, the change from $2,329 million (FY2015) should be negative, not positive.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Calculation: (($2,825 million - $2,329 million) / $2,329 million) * 100 = 32.8%\",\n      \"claim_value\": \"32.8%\",\n      \"reason\": \"Arithmetic hallucination: The formula provided actually equals approximately 21.3%, not 32.8%. This indicates a failure in basic mathematical reasoning.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Rounded Percentage Change: 21.3%\",\n      \"claim_value\": \"21.3%\",\n      \"reason\": \"Internal contradiction: This figure contradicts the stated calculation result of 32.8% immediately above it, suggesting the agent is hallucinating multiple conflicting outcomes.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 5,\n  \"overall_assessment\": \"The output contains critical internal inconsistencies and arithmetic errors that invalidate the financial analysis.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_012_41487F3A",
+      "hallucination_id": "FB_012_41487F3A_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$2,825 million",
+      "injected_value": "$2,035 million",
+      "detected": true,
+      "reason": "Internal inconsistency: The calculation section uses $2,825 million for FY2016 operating income instead of $2,035 million. Additionally, if $2,035 million is correct, the change from $2,329 million (FY2015) should be negative, not positive.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 5
+    },
+    {
+      "question_id": "FB_012_41487F3A",
+      "hallucination_id": "FB_012_41487F3A_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "percentage",
+      "original_value": "21.3%",
+      "injected_value": "32.8%",
+      "detected": true,
+      "reason": "Arithmetic hallucination: The formula provided actually equals approximately 21.3%, not 32.8%. This indicates a failure in basic mathematical reasoning.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 5
+    }
+  ],
+  "timestamp": "2026-03-24T10:19:20.463265Z"
+}

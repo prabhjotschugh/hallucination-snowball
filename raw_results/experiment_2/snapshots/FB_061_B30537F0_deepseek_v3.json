@@ -1,0 +1,109 @@
+{
+  "question_id": "FB_061_B30537F0",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: Boeing Company, FY2022\n- PRIMARY METRIC: Total Revenue: $66,610 million (per the FY2022 10-K, Consolidated Statements of Operations)\n\n**Revenue Breakdown by Product and Service Category for FY2022:**\n1. Commercial Airplanes: $27,068 million (per the FY2022 10-K, Note 2 - Revenue)\n2. Defense, Space & Security: $26,197 million (per the FY2022 10-K, Note 2 - Revenue)\n3. Global Services: $15,345 million (per the FY2022 10-K, Note 2 - Revenue)\n\n**Analysis of 20% Threshold:**\n- Total Revenue for FY2022: $66,610 million\n- Categories exceeding 20% of Total Revenue:\n  - Commercial Airplanes: $27,068 million (40.7% of Total Revenue)\n  - Defense, Space & Security: $26,197 million (39.3% of Total Revenue)\n\n**SUPPORTING DATA: Multi-Period Revenue Breakdown**\n- FY2021 Total Revenue: $52,278 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - Commercial Airplanes: $14,811 million\n  - Defense, Space & Security: $26,153 million\n  - Global Services: $13,434 million\n\n- FY2020 Total Revenue: $58,658 million (per the FY2020 10-K, Consolidated Statements of Operations)\n  - Commercial Airplanes: $39,164 million\n  - Defense, Space & Security: $26,965 million\n  - Global Services: $15,529 million\n\n**Trends in Revenue Distribution:**\n- Commercial Airplanes:\n  - FY2022: $27,068 million (40.7%)\n  - FY2021: $14,811 million (23.8%)\n  - FY2020: $39,164 million (66.8%)\n\n- Defense, Space & Security:\n  - FY2022: $26,197 million (39.3%)\n  - FY2021: $26,153 million (42.0%)\n  - FY2020: $26,965 million (46.0%)\n\n- Global Services:\n  - FY2022: $15,345 million (14.4%)\n  - FY2021: $21,319 million (34.2%)\n  - FY2020: $15,529 million (26.5%)\n\n**DATA SOURCES:**\n- FY2022 10-K, Consolidated Statements of Operations, Note 2 - Revenue\n- FY2021 10-K, Consolidated Statements of Operations, Note 2 - Revenue\n- FY2020 10-K, Consolidated Statements of Operations, Note 2 - Revenue\n\n**Conclusion:**\nIn FY2022, both the Commercial Airplanes and Defense, Space & Security categories exceeded the 20% revenue threshold, representing 40.7% and 39.3% of total revenue, respectively.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_061_B30537F0_H3",
+      "type": "dollar_amount",
+      "original_value": "$62,283 million",
+      "injected_value": "$52,278 million",
+      "original_numeric": "62283",
+      "injected_numeric": "52278",
+      "position_char": 800,
+      "sentence_approx": 6,
+      "perturbation_delta": -0.1606
+    },
+    {
+      "hallucination_id": "FB_061_B30537F0_H2",
+      "type": "dollar_amount",
+      "original_value": "$21,319 million",
+      "injected_value": "$13,434 million",
+      "original_numeric": "21319",
+      "injected_numeric": "13434",
+      "position_char": 987,
+      "sentence_approx": 6,
+      "perturbation_delta": -0.3699
+    },
+    {
+      "hallucination_id": "FB_061_B30537F0_H1",
+      "type": "percentage",
+      "original_value": "23.0%",
+      "injected_value": "14.4%",
+      "original_numeric": "23.0",
+      "injected_numeric": "14.4",
+      "position_char": 1587,
+      "sentence_approx": 12,
+      "perturbation_delta": -8.5814
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Global Services: $15,345 million (14.4%)",
+        "claim_value": "14.4%",
+        "reason": "The percentage does not match the stated dollar amount ($15,345 million) relative to the total revenue ($66,610 million), which should be approximately 23.0%.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Global Services: FY2021: $21,319 million (34.2%)",
+        "claim_value": "$21,319 million",
+        "reason": "The dollar amount does not match the previously stated FY2021 Global Services revenue of $13,434 million, indicating an inconsistency.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Global Services: FY2021: $21,319 million (34.2%)",
+        "claim_value": "34.2%",
+        "reason": "The percentage does not match the stated dollar amount ($21,319 million) relative to the total revenue ($52,278 million), which would be approximately 40.8%. Additionally, the dollar amount itself is inconsistent with prior data.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 14,
+    "overall_assessment": "Several inconsistencies found in the Global Services revenue figures and percentages across different years, requiring verification.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Global Services: $15,345 million (14.4%)\",\n      \"claim_value\": \"14.4%\",\n      \"reason\": \"The percentage does not match the stated dollar amount ($15,345 million) relative to the total revenue ($66,610 million), which should be approximately 23.0%.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Global Services: FY2021: $21,319 million (34.2%)\",\n      \"claim_value\": \"$21,319 million\",\n      \"reason\": \"The dollar amount does not match the previously stated FY2021 Global Services revenue of $13,434 million, indicating an inconsistency.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Global Services: FY2021: $21,319 million (34.2%)\",\n      \"claim_value\": \"34.2%\",\n      \"reason\": \"The percentage does not match the stated dollar amount ($21,319 million) relative to the total revenue ($52,278 million), which would be approximately 40.8%. Additionally, the dollar amount itself is inconsistent with prior data.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 14,\n  \"overall_assessment\": \"Several inconsistencies found in the Global Services revenue figures and percentages across different years, requiring verification.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_061_B30537F0",
+      "hallucination_id": "FB_061_B30537F0_H3",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$62,283 million",
+      "injected_value": "$52,278 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 14
+    },
+    {
+      "question_id": "FB_061_B30537F0",
+      "hallucination_id": "FB_061_B30537F0_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$21,319 million",
+      "injected_value": "$13,434 million",
+      "detected": true,
+      "reason": "The dollar amount does not match the previously stated FY2021 Global Services revenue of $13,434 million, indicating an inconsistency.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 14
+    },
+    {
+      "question_id": "FB_061_B30537F0",
+      "hallucination_id": "FB_061_B30537F0_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "percentage",
+      "original_value": "23.0%",
+      "injected_value": "14.4%",
+      "detected": true,
+      "reason": "The percentage does not match the stated dollar amount ($15,345 million) relative to the total revenue ($66,610 million), which should be approximately 23.0%.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 14
+    }
+  ],
+  "timestamp": "2026-03-24T09:48:57.560029Z"
+}

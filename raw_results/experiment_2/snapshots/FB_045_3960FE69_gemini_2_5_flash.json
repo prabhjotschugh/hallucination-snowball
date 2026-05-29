@@ -1,0 +1,79 @@
+{
+  "question_id": "FB_045_3960FE69",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: American Express, Fiscal Year 2022\n- PRIMARY METRIC: The total number of card members at the end of 2022 was 127.8 million, as reported in the FY2022 10-K, \"Consolidated Financial Statements\" section.\n- SUPPORTING DATA: \n  - Total number of card members at the end of 2021: 121.6 million (per the FY2021 10-K, \"Consolidated Financial Statements\").\n  - Total number of card members at the end of 2020: 114.4 million (per the FY2020 10-K, \"Consolidated Financial Statements\").\n  - Year-over-year growth in card members from 2021 to 2022: 6.2 million (0.0% increase).\n  - Year-over-year growth in card members from 2020 to 2021: 7.2 million (0.1% increase).\n\n- DATA SOURCES: \n  - FY2022 10-K, \"Consolidated Financial Statements\" (page 45).\n  - FY2021 10-K, \"Consolidated Financial Statements\" (page 43).\n  - FY2020 10-K, \"Consolidated Financial Statements\" (page 41).\n\nNote: No retention rate percentages were explicitly provided in the filings; the analysis is based on the total number of card members. If further details or specific retention rates are required, please clarify, as they may not be directly stated in the filings.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_045_3960FE69_H2",
+      "type": "percentage",
+      "original_value": "5.1%",
+      "injected_value": "0.0%",
+      "original_numeric": "5.1",
+      "injected_numeric": "0.0",
+      "position_char": 569,
+      "sentence_approx": 8,
+      "perturbation_delta": -10.4222
+    },
+    {
+      "hallucination_id": "FB_045_3960FE69_H1",
+      "type": "percentage",
+      "original_value": "6.3%",
+      "injected_value": "0.1%",
+      "original_numeric": "6.3",
+      "injected_numeric": "0.1",
+      "position_char": 659,
+      "sentence_approx": 11,
+      "perturbation_delta": -6.1559
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Year-over-year growth in card members from 2021 to 2022: 6.2 million (0.0% increase).",
+        "claim_value": "0.0%",
+        "reason": "The reported percentage increase of 0.0% is inconsistent with the absolute growth of 6.2 million card members from a base of 121.6 million. (6.2 / 121.6) * 100% is approximately 5.1%, not 0.0%. This is a significant arithmetic error.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Year-over-year growth in card members from 2020 to 2021: 7.2 million (0.1% increase).",
+        "claim_value": "0.1%",
+        "reason": "The reported percentage increase of 0.1% is inconsistent with the absolute growth of 7.2 million card members from a base of 114.4 million. (7.2 / 114.4) * 100% is approximately 6.3%, not 0.1%. This is a significant arithmetic error.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 10,
+    "overall_assessment": "The absolute card member figures and their year-over-year differences appear plausible and internally consistent, but the calculated percentage growth rates are significantly incorrect, indicating a clear hallucination or calculation error.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Year-over-year growth in card members from 2021 to 2022: 6.2 million (0.0% increase).\",\n      \"claim_value\": \"0.0%\",\n      \"reason\": \"The reported percentage increase of 0.0% is inconsistent with the absolute growth of 6.2 million card members from a base of 121.6 million. (6.2 / 121.6) * 100% is approximately 5.1%, not 0.0%. This is a significant arithmetic error.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Year-over-year growth in card members from 2020 to 2021: 7.2 million (0.1% increase).\",\n      \"claim_value\": \"0.1%\",\n      \"reason\": \"The reported percentage increase of 0.1% is inconsistent with the absolute growth of 7.2 million card members from a base of 114.4 million. (7.2 / 114.4) * 100% is approximately 6.3%, not 0.1%. This is a significant arithmetic error.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 10,\n  \"overall_assessment\": \"The absolute card member figures and their year-over-year differences appear plausible and internally consistent, but the calculated percentage growth rates are significantly incorrect, indicating a clear hallucination or calculation error.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_045_3960FE69",
+      "hallucination_id": "FB_045_3960FE69_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "percentage",
+      "original_value": "5.1%",
+      "injected_value": "0.0%",
+      "detected": true,
+      "reason": "The reported percentage increase of 0.0% is inconsistent with the absolute growth of 6.2 million card members from a base of 121.6 million. (6.2 / 121.6) * 100% is approximately 5.1%, not 0.0%. This is a significant arithmetic error.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 10
+    },
+    {
+      "question_id": "FB_045_3960FE69",
+      "hallucination_id": "FB_045_3960FE69_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "percentage",
+      "original_value": "6.3%",
+      "injected_value": "0.1%",
+      "detected": true,
+      "reason": "The reported percentage increase of 0.1% is inconsistent with the absolute growth of 7.2 million card members from a base of 114.4 million. (7.2 / 114.4) * 100% is approximately 6.3%, not 0.1%. This is a significant arithmetic error.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 10
+    }
+  ],
+  "timestamp": "2026-03-25T07:44:44.385694Z"
+}

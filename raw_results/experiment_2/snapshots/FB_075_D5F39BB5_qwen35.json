@@ -1,0 +1,85 @@
+{
+  "question_id": "FB_075_D5F39BB5",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Costco Wholesale Corporation, Fiscal Year 2021\n- PRIMARY METRIC: Total Assets: $38,256 million (per the FY2021 10-K, Consolidated Balance Sheets)\n- SUPPORTING DATA: \n  - Total Assets FY2020: $41,694 million (per the FY2020 10-K, Consolidated Balance Sheets)\n  - Total Assets FY2019: $47,192 million (per the FY2019 10-K, Consolidated Balance Sheets)\n- DATA SOURCES: \n  - FY2021 10-K, Consolidated Balance Sheets\n  - FY2020 10-K, Consolidated Balance Sheets\n  - FY2019 10-K, Consolidated Balance Sheets\n\nNote: No financial ratios or analysis have been computed as per the directive to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_075_D5F39BB5_H2",
+      "type": "dollar_amount",
+      "original_value": "$59,431 million",
+      "injected_value": "$38,256 million",
+      "original_numeric": "59431",
+      "injected_numeric": "38256",
+      "position_char": 99,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.3563
+    },
+    {
+      "hallucination_id": "FB_075_D5F39BB5_H1",
+      "type": "dollar_amount",
+      "original_value": "$53,189 million",
+      "injected_value": "$41,694 million",
+      "original_numeric": "53189",
+      "injected_numeric": "41694",
+      "position_char": 211,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2161
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Total Assets: $38,256 million (per the FY2021 10-K, Consolidated Balance Sheets)",
+        "claim_value": "$38,256 million",
+        "reason": "Highly implausible. Costco is a growth-oriented retailer that typically expands its balance sheet annually. A total asset figure of $38B is inconsistent with FY2021 revenue scales (~$195B), implying an unrealistically high asset turnover ratio. Actual FY2021 assets were significantly higher (approx. $59B).",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Assets FY2020: $41,694 million (per the FY2020 10-K, Consolidated Balance Sheets)",
+        "claim_value": "$41,694 million",
+        "reason": "Suspicious trend implication. This figure suggests a year-over-year decline from FY2019. Costco did not undergo major divestitures or balance sheet contractions during the pandemic period; assets typically grew during this time.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Assets FY2019: $47,192 million (per the FY2019 10-K, Consolidated Balance Sheets)",
+        "claim_value": "$47,192 million",
+        "reason": "Inconsistent historical trend. Positioning FY2019 as the peak of a three-year decline contradicts Costco's long-term strategy of warehouse expansion and inventory growth. FY2019 assets should be the lowest of the three periods, not the highest.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 3,
+    "overall_assessment": "All reported asset figures are suspicious due to a fabricated downward trend that contradicts Costco's known growth trajectory and fundamental financial ratios.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Total Assets: $38,256 million (per the FY2021 10-K, Consolidated Balance Sheets)\",\n      \"claim_value\": \"$38,256 million\",\n      \"reason\": \"Highly implausible. Costco is a growth-oriented retailer that typically expands its balance sheet annually. A total asset figure of $38B is inconsistent with FY2021 revenue scales (~$195B), implying an unrealistically high asset turnover ratio. Actual FY2021 assets were significantly higher (approx. $59B).\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Assets FY2020: $41,694 million (per the FY2020 10-K, Consolidated Balance Sheets)\",\n      \"claim_value\": \"$41,694 million\",\n      \"reason\": \"Suspicious trend implication. This figure suggests a year-over-year decline from FY2019. Costco did not undergo major divestitures or balance sheet contractions during the pandemic period; assets typically grew during this time.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Assets FY2019: $47,192 million (per the FY2019 10-K, Consolidated Balance Sheets)\",\n      \"claim_value\": \"$47,192 million\",\n      \"reason\": \"Inconsistent historical trend. Positioning FY2019 as the peak of a three-year decline contradicts Costco's long-term strategy of warehouse expansion and inventory growth. FY2019 assets should be the lowest of the three periods, not the highest.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 3,\n  \"overall_assessment\": \"All reported asset figures are suspicious due to a fabricated downward trend that contradicts Costco's known growth trajectory and fundamental financial ratios.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_075_D5F39BB5",
+      "hallucination_id": "FB_075_D5F39BB5_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$59,431 million",
+      "injected_value": "$38,256 million",
+      "detected": true,
+      "reason": "Highly implausible. Costco is a growth-oriented retailer that typically expands its balance sheet annually. A total asset figure of $38B is inconsistent with FY2021 revenue scales (~$195B), implying an unrealistically high asset turnover ratio. Actual FY2021 assets were significantly higher (approx. $59B).",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 3
+    },
+    {
+      "question_id": "FB_075_D5F39BB5",
+      "hallucination_id": "FB_075_D5F39BB5_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$53,189 million",
+      "injected_value": "$41,694 million",
+      "detected": true,
+      "reason": "Suspicious trend implication. This figure suggests a year-over-year decline from FY2019. Costco did not undergo major divestitures or balance sheet contractions during the pandemic period; assets typically grew during this time.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 3
+    }
+  ],
+  "timestamp": "2026-03-24T11:44:46.652265Z"
+}

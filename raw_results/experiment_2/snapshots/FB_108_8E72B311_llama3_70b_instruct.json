@@ -1,0 +1,73 @@
+{
+  "question_id": "FB_108_8E72B311",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: MGM Resorts International, FY2022\n- PRIMARY METRIC: Adjusted EBIT for FY2022 was $1,158 million (per the FY2022 10-K, Consolidated Statements of Operations). Annual Interest Expense for FY2022 was $438 million (per the FY2022 10-K, Note 8 - Debt).\n- INTEREST COVERAGE RATIO: The interest coverage ratio for FY2022 is calculated as Adjusted EBIT / Interest Expense = $793 million / $438 million = 2.64.\n- SUPPORTING DATA:\n  - Adjusted EBIT for FY2021: $1,063 million (per the FY2021 10-K, Consolidated Statements of Operations).\n  - Interest Expense for FY2021: $301 million (per the FY2021 10-K, Note 8 - Debt).\n  - Adjusted EBIT for FY2020: $1,020 million (per the FY2020 10-K, Consolidated Statements of Operations).\n  - Interest Expense for FY2020: $474 million (per the FY2020 10-K, Note 8 - Debt).\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations, Note 8 - Debt.\n  - FY2021 10-K, Consolidated Statements of Operations, Note 8 - Debt.\n  - FY2020 10-K, Consolidated Statements of Operations, Note 8 - Debt.\n\nPlease note that I have provided the exact figures and supporting data as requested, but I have not included any analysis or benchmarking against industry peers, as per your directive.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_108_8E72B311_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,158 million",
+      "injected_value": "$793 million",
+      "original_numeric": "1158",
+      "injected_numeric": "793",
+      "position_char": 386,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.3155
+    },
+    {
+      "hallucination_id": "FB_108_8E72B311_H1",
+      "type": "dollar_amount",
+      "original_value": "$410 million",
+      "injected_value": "$301 million",
+      "original_numeric": "410",
+      "injected_numeric": "301",
+      "position_char": 583,
+      "sentence_approx": 6,
+      "perturbation_delta": -0.267
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "The interest coverage ratio for FY2022 is calculated as Adjusted EBIT / Interest Expense = $793 million / $438 million = 2.64.",
+        "claim_value": "2.64",
+        "reason": "The numerator and denominator do not match the calculation. Adjusted EBIT is $1,158 million and Interest Expense is $438 million, which would result in a ratio of 2.65, not 2.64.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 7,
+    "overall_assessment": "The researcher's output appears to be mostly accurate, but contains a minor calculation error in the interest coverage ratio.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"The interest coverage ratio for FY2022 is calculated as Adjusted EBIT / Interest Expense = $793 million / $438 million = 2.64.\",\n      \"claim_value\" : \"2.64\",\n      \"reason\"      : \"The numerator and denominator do not match the calculation. Adjusted EBIT is $1,158 million and Interest Expense is $438 million, which would result in a ratio of 2.65, not 2.64.\",\n      \"confidence\"  : \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 7,\n  \"overall_assessment\"   : \"The researcher's output appears to be mostly accurate, but contains a minor calculation error in the interest coverage ratio.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_108_8E72B311",
+      "hallucination_id": "FB_108_8E72B311_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,158 million",
+      "injected_value": "$793 million",
+      "detected": true,
+      "reason": "The numerator and denominator do not match the calculation. Adjusted EBIT is $1,158 million and Interest Expense is $438 million, which would result in a ratio of 2.65, not 2.64.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_108_8E72B311",
+      "hallucination_id": "FB_108_8E72B311_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$410 million",
+      "injected_value": "$301 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 7
+    }
+  ],
+  "timestamp": "2026-03-27T09:41:24.345428Z"
+}

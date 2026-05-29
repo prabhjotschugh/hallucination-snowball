@@ -1,0 +1,79 @@
+{
+  "question_id": "FB_075_D5F39BB5",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: Costco Wholesale Corporation, Fiscal Year 2021\n- PRIMARY METRIC: Total Assets: $38,256 million (per the FY2021 10-K, Consolidated Balance Sheets)\n- SUPPORTING DATA: \n  - Total Assets FY2020: $41,694 million (per the FY2020 10-K, Consolidated Balance Sheets)\n  - Total Assets FY2019: $47,192 million (per the FY2019 10-K, Consolidated Balance Sheets)\n- DATA SOURCES: \n  - FY2021 10-K, Consolidated Balance Sheets\n  - FY2020 10-K, Consolidated Balance Sheets\n  - FY2019 10-K, Consolidated Balance Sheets\n\nNote: No financial ratios or analysis have been computed as per the directive to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_075_D5F39BB5_H2",
+      "type": "dollar_amount",
+      "original_value": "$59,431 million",
+      "injected_value": "$38,256 million",
+      "original_numeric": "59431",
+      "injected_numeric": "38256",
+      "position_char": 99,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.3563
+    },
+    {
+      "hallucination_id": "FB_075_D5F39BB5_H1",
+      "type": "dollar_amount",
+      "original_value": "$53,189 million",
+      "injected_value": "$41,694 million",
+      "original_numeric": "53189",
+      "injected_numeric": "41694",
+      "position_char": 211,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2161
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Total Assets FY2020: $41,694 million (per the FY2020 10-K, Consolidated Balance Sheets)",
+        "claim_value": "$41,694 million",
+        "reason": "Total assets decreased from FY2019 to FY2020, which is unusual for a growing retailer like Costco, especially during a period when retail sales generally increased due to pandemic-related stockpiling.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Total Assets FY2019: $47,192 million (per the FY2019 10-K, Consolidated Balance Sheets)",
+        "claim_value": "$47,192 million",
+        "reason": "The figure seems abnormally high compared to subsequent years, which could indicate a reporting error or misstatement.",
+        "confidence": "low"
+      }
+    ],
+    "total_claims_reviewed": 3,
+    "overall_assessment": "The reported total assets for FY2020 and FY2019 seem inconsistent with typical retail growth patterns, warranting further verification.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Total Assets FY2020: $41,694 million (per the FY2020 10-K, Consolidated Balance Sheets)\",\n      \"claim_value\": \"$41,694 million\",\n      \"reason\": \"Total assets decreased from FY2019 to FY2020, which is unusual for a growing retailer like Costco, especially during a period when retail sales generally increased due to pandemic-related stockpiling.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Total Assets FY2019: $47,192 million (per the FY2019 10-K, Consolidated Balance Sheets)\",\n      \"claim_value\": \"$47,192 million\",\n      \"reason\": \"The figure seems abnormally high compared to subsequent years, which could indicate a reporting error or misstatement.\",\n      \"confidence\": \"low\"\n    }\n  ],\n  \"total_claims_reviewed\": 3,\n  \"overall_assessment\": \"The reported total assets for FY2020 and FY2019 seem inconsistent with typical retail growth patterns, warranting further verification.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_075_D5F39BB5",
+      "hallucination_id": "FB_075_D5F39BB5_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$59,431 million",
+      "injected_value": "$38,256 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 3
+    },
+    {
+      "question_id": "FB_075_D5F39BB5",
+      "hallucination_id": "FB_075_D5F39BB5_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$53,189 million",
+      "injected_value": "$41,694 million",
+      "detected": true,
+      "reason": "Total assets decreased from FY2019 to FY2020, which is unusual for a growing retailer like Costco, especially during a period when retail sales generally increased due to pandemic-related stockpiling.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 3
+    }
+  ],
+  "timestamp": "2026-03-24T09:51:06.102487Z"
+}

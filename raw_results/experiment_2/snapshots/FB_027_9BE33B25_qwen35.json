@@ -1,0 +1,121 @@
+{
+  "question_id": "FB_027_9BE33B25",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Amcor plc, FY2023\n- PRIMARY METRIC: Gross Margin: 12.6% (per the FY2023 10-K, Consolidated Statements of Operations)\n- SUPPORTING DATA:\n  - Total Revenue FY2023: $14,000 million (per the FY2023 10-K, Consolidated Statements of Operations)\n  - Cost of Goods Sold (COGS) FY2023: $11,100 million (per the FY2023 10-K, Consolidated Statements of Operations)\n  \n  - Total Revenue FY2022: $13,800 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - COGS FY2022: $10,900 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  \n  - Total Revenue FY2021: $12,500 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - COGS FY2021: $8,437 million (per the FY2021 10-K, Consolidated Statements of Operations)\n\n- DATA SOURCES:\n  - FY2023 10-K, Consolidated Statements of Operations\n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Statements of Operations\n\n**Trend Analysis:**\n- Gross Margin FY2023: 9.4%\n- Gross Margin FY2022: 21.0% (calculated as (Total Revenue - COGS) / Total Revenue)\n- Gross Margin FY2021: 20.0% (calculated as (Total Revenue - COGS) / Total Revenue)\n\n**Observations:**\n- The gross margin has slightly decreased from FY2022 to FY2023, indicating a potential decline in profitability relative to revenue.\n- The gross margin increased from FY2021 to FY2022, suggesting a positive trend in that fiscal year.\n\n**Conclusion:**\nThe gross margin profile for Amcor as of FY2023 shows a slight decrease compared to FY2022, indicating that while the company maintained a relatively stable gross margin over the years, there is no improvement in the most recent fiscal year. \n\n**Alternative Metrics:**\nIf gross margin is deemed inadequate for assessing Amcor's financial health, alternative metrics such as EBITDA margin or operating margin may provide a more comprehensive view of profitability, considering the company's operating expenses and non-cash charges. However, no specific figures for these metrics were requested or extracted in this report.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_027_9BE33B25_H3",
+      "type": "percentage",
+      "original_value": "20.5%",
+      "injected_value": "12.6%",
+      "original_numeric": "20.5",
+      "injected_numeric": "12.6",
+      "position_char": 70,
+      "sentence_approx": 1,
+      "perturbation_delta": -7.9429
+    },
+    {
+      "hallucination_id": "FB_027_9BE33B25_H2",
+      "type": "dollar_amount",
+      "original_value": "$10,000 million",
+      "injected_value": "$8,437 million",
+      "original_numeric": "10000",
+      "injected_numeric": "8437",
+      "position_char": 697,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.1563
+    },
+    {
+      "hallucination_id": "FB_027_9BE33B25_H1",
+      "type": "percentage",
+      "original_value": "20.5%",
+      "injected_value": "9.4%",
+      "original_numeric": "20.5",
+      "injected_numeric": "9.4",
+      "position_char": 1000,
+      "sentence_approx": 2,
+      "perturbation_delta": -11.1156
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "FY2023 10-K, Consolidated Statements of Operations",
+        "claim_value": "10-K",
+        "reason": "Amcor plc is a foreign private issuer (headquartered in Zurich, incorporated in Jersey) listed on the NYSE. They file Form 20-F with the SEC, not Form 10-K. This suggests a hallucination of regulatory filing types.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "PRIMARY METRIC: Gross Margin: 12.6% ... Trend Analysis: Gross Margin FY2023: 9.4%",
+        "claim_value": "12.6% vs 9.4%",
+        "reason": "Internal contradiction. The report cites two different gross margin percentages for the same fiscal year (FY2023) in different sections without explanation.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Revenue FY2023: $14,000 million ... COGS FY2023: $11,100 million ... Gross Margin FY2023: 9.4%",
+        "claim_value": "9.4%",
+        "reason": "Mathematical inconsistency. Based on the provided Revenue and COGS ($14,000m - $11,100m = $2,900m), the gross margin should be approximately 20.7%, not 9.4% or 12.6%.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Revenue FY2021: $12,500 million ... COGS FY2021: $8,437 million ... Gross Margin FY2021: 20.0%",
+        "claim_value": "20.0%",
+        "reason": "Mathematical inconsistency. Based on the provided Revenue and COGS ($12,500m - $8,437m = $4,063m), the gross margin should be approximately 32.5%, not 20.0%.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Revenue FY2023: $14,000 million ... FY2022: $13,800 million ... FY2021: $12,500 million",
+        "claim_value": "$14,000 million, $13,800 million, $12,500 million",
+        "reason": "Suspiciously round numbers. Actual financial statements rarely report revenue in exact hundreds of millions without decimals or specific figures (e.g., $14,053 million). This pattern suggests estimated or hallucinated data.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 10,
+    "overall_assessment": "The report contains critical internal mathematical inconsistencies, contradictory metric definitions, and incorrect regulatory filing classifications, indicating significant data hallucination.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"FY2023 10-K, Consolidated Statements of Operations\",\n      \"claim_value\": \"10-K\",\n      \"reason\": \"Amcor plc is a foreign private issuer (headquartered in Zurich, incorporated in Jersey) listed on the NYSE. They file Form 20-F with the SEC, not Form 10-K. This suggests a hallucination of regulatory filing types.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"PRIMARY METRIC: Gross Margin: 12.6% ... Trend Analysis: Gross Margin FY2023: 9.4%\",\n      \"claim_value\": \"12.6% vs 9.4%\",\n      \"reason\": \"Internal contradiction. The report cites two different gross margin percentages for the same fiscal year (FY2023) in different sections without explanation.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Revenue FY2023: $14,000 million ... COGS FY2023: $11,100 million ... Gross Margin FY2023: 9.4%\",\n      \"claim_value\": \"9.4%\",\n      \"reason\": \"Mathematical inconsistency. Based on the provided Revenue and COGS ($14,000m - $11,100m = $2,900m), the gross margin should be approximately 20.7%, not 9.4% or 12.6%.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Revenue FY2021: $12,500 million ... COGS FY2021: $8,437 million ... Gross Margin FY2021: 20.0%\",\n      \"claim_value\": \"20.0%\",\n      \"reason\": \"Mathematical inconsistency. Based on the provided Revenue and COGS ($12,500m - $8,437m = $4,063m), the gross margin should be approximately 32.5%, not 20.0%.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Revenue FY2023: $14,000 million ... FY2022: $13,800 million ... FY2021: $12,500 million\",\n      \"claim_value\": \"$14,000 million, $13,800 million, $12,500 million\",\n      \"reason\": \"Suspiciously round numbers. Actual financial statements rarely report revenue in exact hundreds of millions without decimals or specific figures (e.g., $14,053 million). This pattern suggests estimated or hallucinated data.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 10,\n  \"overall_assessment\": \"The report contains critical internal mathematical inconsistencies, contradictory metric definitions, and incorrect regulatory filing classifications, indicating significant data hallucination.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_027_9BE33B25",
+      "hallucination_id": "FB_027_9BE33B25_H3",
+      "model": "Qwen3.5-397B",
+      "injection_type": "percentage",
+      "original_value": "20.5%",
+      "injected_value": "12.6%",
+      "detected": true,
+      "reason": "Internal contradiction. The report cites two different gross margin percentages for the same fiscal year (FY2023) in different sections without explanation.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 10
+    },
+    {
+      "question_id": "FB_027_9BE33B25",
+      "hallucination_id": "FB_027_9BE33B25_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$10,000 million",
+      "injected_value": "$8,437 million",
+      "detected": true,
+      "reason": "Mathematical inconsistency. Based on the provided Revenue and COGS ($12,500m - $8,437m = $4,063m), the gross margin should be approximately 32.5%, not 20.0%.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 10
+    },
+    {
+      "question_id": "FB_027_9BE33B25",
+      "hallucination_id": "FB_027_9BE33B25_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "percentage",
+      "original_value": "20.5%",
+      "injected_value": "9.4%",
+      "detected": true,
+      "reason": "Internal contradiction. The report cites two different gross margin percentages for the same fiscal year (FY2023) in different sections without explanation.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 10
+    }
+  ],
+  "timestamp": "2026-03-24T10:37:33.280530Z"
+}

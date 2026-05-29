@@ -1,0 +1,103 @@
+{
+  "question_id": "FB_117_C880E731",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Nike, Inc. FY2021\n- PRIMARY METRIC: \n  - Cost of Goods Sold (COGS) for FY2021: $22,160 million (per the FY2021 10-K, Consolidated Statements of Operations).\n- SUPPORTING DATA: \n  - Average Inventory for FY2020: $4,703 million (per the FY2021 10-K, Consolidated Balance Sheets).\n  - Inventory at the end of FY2021: $5,200 million (per the FY2021 10-K, Consolidated Balance Sheets).\n  - Average Inventory for FY2021: ($4,703 million + $6,037 million) / 2 = $6,546.86 million.\n- CALCULATION:\n  - Inventory Turnover Ratio = COGS / Average Inventory = $22,160 million / $3,274.29 million = 4.47 (rounded to two decimal places).\n- DATA SOURCES: \n  - FY2021 10-K, Consolidated Statements of Operations (COGS).\n  - FY2021 10-K, Consolidated Balance Sheets (Inventory figures).",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_117_C880E731_H3",
+      "type": "dollar_amount",
+      "original_value": "$5,200 million",
+      "injected_value": "$6,037 million",
+      "original_numeric": "5200",
+      "injected_numeric": "6037",
+      "position_char": 453,
+      "sentence_approx": 5,
+      "perturbation_delta": 0.161
+    },
+    {
+      "hallucination_id": "FB_117_C880E731_H2",
+      "type": "dollar_amount",
+      "original_value": "$4,951.50 million",
+      "injected_value": "$6,546.86 million",
+      "original_numeric": "4951.50",
+      "injected_numeric": "6546.86",
+      "position_char": 475,
+      "sentence_approx": 5,
+      "perturbation_delta": 0.3222
+    },
+    {
+      "hallucination_id": "FB_117_C880E731_H1",
+      "type": "dollar_amount",
+      "original_value": "$4,951.50 million",
+      "injected_value": "$3,274.29 million",
+      "original_numeric": "4951.50",
+      "injected_numeric": "3274.29",
+      "position_char": 585,
+      "sentence_approx": 7,
+      "perturbation_delta": -0.3387
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Average Inventory for FY2021: ($4,703 million + $6,037 million) / 2 = $6,546.86 million.",
+        "claim_value": "$6,546.86 million",
+        "reason": "The calculation seems incorrect. The correct average inventory should be ($4,703 million + $5,200 million) / 2, not ($4,703 million + $6,037 million) / 2.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Inventory Turnover Ratio = COGS / Average Inventory = $22,160 million / $3,274.29 million = 4.47",
+        "claim_value": "$3,274.29 million",
+        "reason": "The average inventory value used in the calculation seems incorrect. The correct average inventory value should be ($4,703 million + $5,200 million) / 2, not $3,274.29 million.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "The output contains calculation errors and inconsistencies in the average inventory value.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"Average Inventory for FY2021: ($4,703 million + $6,037 million) / 2 = $6,546.86 million.\",\n      \"claim_value\" : \"$6,546.86 million\",\n      \"reason\"      : \"The calculation seems incorrect. The correct average inventory should be ($4,703 million + $5,200 million) / 2, not ($4,703 million + $6,037 million) / 2.\",\n      \"confidence\"  : \"high\"\n    },\n    {\n      \"claim_text\"  : \"Inventory Turnover Ratio = COGS / Average Inventory = $22,160 million / $3,274.29 million = 4.47\",\n      \"claim_value\" : \"$3,274.29 million\",\n      \"reason\"      : \"The average inventory value used in the calculation seems incorrect. The correct average inventory value should be ($4,703 million + $5,200 million) / 2, not $3,274.29 million.\",\n      \"confidence\"  : \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\"   : \"The output contains calculation errors and inconsistencies in the average inventory value.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_117_C880E731",
+      "hallucination_id": "FB_117_C880E731_H3",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$5,200 million",
+      "injected_value": "$6,037 million",
+      "detected": true,
+      "reason": "The calculation seems incorrect. The correct average inventory should be ($4,703 million + $5,200 million) / 2, not ($4,703 million + $6,037 million) / 2.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_117_C880E731",
+      "hallucination_id": "FB_117_C880E731_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$4,951.50 million",
+      "injected_value": "$6,546.86 million",
+      "detected": true,
+      "reason": "The calculation seems incorrect. The correct average inventory should be ($4,703 million + $5,200 million) / 2, not ($4,703 million + $6,037 million) / 2.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_117_C880E731",
+      "hallucination_id": "FB_117_C880E731_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$4,951.50 million",
+      "injected_value": "$3,274.29 million",
+      "detected": true,
+      "reason": "The average inventory value used in the calculation seems incorrect. The correct average inventory value should be ($4,703 million + $5,200 million) / 2, not $3,274.29 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-27T09:42:43.221498Z"
+}

@@ -1,0 +1,109 @@
+{
+  "question_id": "FB_139_4FC46F83",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: Ulta Beauty, FY2023\n- PRIMARY METRIC: SG&A Expenses: $1,255.4 million (per the FY2023 Q4 Earnings Report, Consolidated Statements of Operations). Net Sales: $3,075.4 million (per the FY2023 Q4 Earnings Report, Consolidated Statements of Operations). SG&A as a percentage of Net Sales: 40.8%.\n- SUPPORTING DATA: \n  - FY2022 SG&A Expenses: $1,186.5 million (per the FY2022 10-K, Consolidated Statements of Operations). Net Sales: $1,698.3 million (per the FY2022 10-K, Consolidated Statements of Operations). SG&A as a percentage of Net Sales: 31.4%.\n  - FY2021 SG&A Expenses: $1,063.0 million (per the FY2021 10-K, Consolidated Statements of Operations). Net Sales: $2,120.0 million (per the FY2021 10-K, Consolidated Statements of Operations). SG&A as a percentage of Net Sales: 43.9%.\n- DATA SOURCES: \n  - FY2023 Q4 Earnings Report, Consolidated Statements of Operations.\n  - FY2022 10-K, Consolidated Statements of Operations.\n  - FY2021 10-K, Consolidated Statements of Operations.\n\nNote: The request for analysis of factors contributing to the reduction in SG&A expenses as a percentage of net sales, operational efficiencies, changes in marketing strategies, or shifts in sales volume, as well as broader industry context, requires interpretation and is outside the scope of raw data extraction. Please consult subsequent analysts for that analysis.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_139_4FC46F83_H3",
+      "type": "dollar_amount",
+      "original_value": "$2,800.0 million",
+      "injected_value": "$1,698.3 million",
+      "original_numeric": "2800.0",
+      "injected_numeric": "1698.3",
+      "position_char": 448,
+      "sentence_approx": 9,
+      "perturbation_delta": -0.3935
+    },
+    {
+      "hallucination_id": "FB_139_4FC46F83_H2",
+      "type": "percentage",
+      "original_value": "42.4%",
+      "injected_value": "31.4%",
+      "original_numeric": "42.4",
+      "injected_numeric": "31.4",
+      "position_char": 562,
+      "sentence_approx": 11,
+      "perturbation_delta": -11.0346
+    },
+    {
+      "hallucination_id": "FB_139_4FC46F83_H1",
+      "type": "percentage",
+      "original_value": "50.1%",
+      "injected_value": "43.9%",
+      "original_numeric": "50.1",
+      "injected_numeric": "43.9",
+      "position_char": 799,
+      "sentence_approx": 17,
+      "perturbation_delta": -6.1781
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "SG&A Expenses: $1,255.4 million (per the FY2023 Q4 Earnings Report, Consolidated Statements of Operations). Net Sales: $3,075.4 million (per the FY2023 Q4 Earnings Report, Consolidated Statements of Operations). SG&A as a percentage of Net Sales: 40.8%.",
+        "claim_value": "40.8%",
+        "reason": "Calculated SG&A percentage does not align with provided figures ($1,255.4M / $3,075.4M \u2248 40.82%, which rounds to 40.8%, so this appears correct. However, FY2022 and FY2021 calculations seem incorrect based on the provided figures.",
+        "confidence": "low"
+      },
+      {
+        "claim_text": "FY2022 SG&A Expenses: $1,186.5 million (per the FY2022 10-K, Consolidated Statements of Operations). Net Sales: $1,698.3 million (per the FY2022 10-K, Consolidated Statements of Operations). SG&A as a percentage of Net Sales: 31.4%.",
+        "claim_value": "31.4%",
+        "reason": "Calculated SG&A percentage does not align with provided figures ($1,186.5M / $1,698.3M \u2248 69.86%, which is significantly higher than the claimed 31.4%. This suggests either a typo in the figures or a miscalculation.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2021 SG&A Expenses: $1,063.0 million (per the FY2021 10-K, Consolidated Statements of Operations). Net Sales: $2,120.0 million (per the FY2021 10-K, Consolidated Statements of Operations). SG&A as a percentage of Net Sales: 43.9%.",
+        "claim_value": "43.9%",
+        "reason": "Calculated SG&A percentage does not align with provided figures ($1,063.0M / $2,120.0M \u2248 50.14%, which is higher than the claimed 43.9%. This suggests either a typo in the figures or a miscalculation.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 3,
+    "overall_assessment": "Multiple inconsistencies found in SG&A percentage calculations for FY2022 and FY2021, suggesting potential errors in the provided figures or calculations.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"SG&A Expenses: $1,255.4 million (per the FY2023 Q4 Earnings Report, Consolidated Statements of Operations). Net Sales: $3,075.4 million (per the FY2023 Q4 Earnings Report, Consolidated Statements of Operations). SG&A as a percentage of Net Sales: 40.8%.\",\n      \"claim_value\": \"40.8%\",\n      \"reason\": \"Calculated SG&A percentage does not align with provided figures ($1,255.4M / $3,075.4M \u2248 40.82%, which rounds to 40.8%, so this appears correct. However, FY2022 and FY2021 calculations seem incorrect based on the provided figures.\",\n      \"confidence\": \"low\"\n    },\n    {\n      \"claim_text\": \"FY2022 SG&A Expenses: $1,186.5 million (per the FY2022 10-K, Consolidated Statements of Operations). Net Sales: $1,698.3 million (per the FY2022 10-K, Consolidated Statements of Operations). SG&A as a percentage of Net Sales: 31.4%.\",\n      \"claim_value\": \"31.4%\",\n      \"reason\": \"Calculated SG&A percentage does not align with provided figures ($1,186.5M / $1,698.3M \u2248 69.86%, which is significantly higher than the claimed 31.4%. This suggests either a typo in the figures or a miscalculation.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2021 SG&A Expenses: $1,063.0 million (per the FY2021 10-K, Consolidated Statements of Operations). Net Sales: $2,120.0 million (per the FY2021 10-K, Consolidated Statements of Operations). SG&A as a percentage of Net Sales: 43.9%.\",\n      \"claim_value\": \"43.9%\",\n      \"reason\": \"Calculated SG&A percentage does not align with provided figures ($1,063.0M / $2,120.0M \u2248 50.14%, which is higher than the claimed 43.9%. This suggests either a typo in the figures or a miscalculation.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 3,\n  \"overall_assessment\": \"Multiple inconsistencies found in SG&A percentage calculations for FY2022 and FY2021, suggesting potential errors in the provided figures or calculations.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_139_4FC46F83",
+      "hallucination_id": "FB_139_4FC46F83_H3",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$2,800.0 million",
+      "injected_value": "$1,698.3 million",
+      "detected": true,
+      "reason": "Calculated SG&A percentage does not align with provided figures ($1,186.5M / $1,698.3M \u2248 69.86%, which is significantly higher than the claimed 31.4%. This suggests either a typo in the figures or a miscalculation.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 3
+    },
+    {
+      "question_id": "FB_139_4FC46F83",
+      "hallucination_id": "FB_139_4FC46F83_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "percentage",
+      "original_value": "42.4%",
+      "injected_value": "31.4%",
+      "detected": true,
+      "reason": "Calculated SG&A percentage does not align with provided figures ($1,255.4M / $3,075.4M \u2248 40.82%, which rounds to 40.8%, so this appears correct. However, FY2022 and FY2021 calculations seem incorrect based on the provided figures.",
+      "confidence": "low",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 3
+    },
+    {
+      "question_id": "FB_139_4FC46F83",
+      "hallucination_id": "FB_139_4FC46F83_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "percentage",
+      "original_value": "50.1%",
+      "injected_value": "43.9%",
+      "detected": true,
+      "reason": "Calculated SG&A percentage does not align with provided figures ($1,063.0M / $2,120.0M \u2248 50.14%, which is higher than the claimed 43.9%. This suggests either a typo in the figures or a miscalculation.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 3
+    }
+  ],
+  "timestamp": "2026-03-24T10:01:54.887797Z"
+}

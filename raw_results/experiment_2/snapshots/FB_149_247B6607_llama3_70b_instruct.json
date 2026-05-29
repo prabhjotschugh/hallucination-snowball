@@ -1,0 +1,85 @@
+{
+  "question_id": "FB_149_247B6607",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Walmart Inc. for Fiscal Years 2018 and 2019\n- PRIMARY METRIC: \n  - FY2018 Operating Income: $22,889 million (per the FY2019 10-K, Consolidated Statements of Income)\n  - FY2019 Operating Income: $30,045 million (per the FY2019 10-K, Consolidated Statements of Income)\n  \n- SUPPORTING DATA:\n  - FY2018 Total Revenue: $500,343 million (per the FY2019 10-K, Consolidated Statements of Income)\n  - FY2019 Total Revenue: $514,405 million (per the FY2019 10-K, Consolidated Statements of Income)\n  \n  - FY2018 Operating Income Percentage Margin: (Operating Income / Total Revenue) * 100 = ($22,889 million / $500,343 million) * 100 = 4.6%\n  - FY2019 Operating Income Percentage Margin: (Operating Income / Total Revenue) * 100 = ($24,202 million / $514,405 million) * 100 = 16.1%\n  \n  - Change in Operating Income Percentage Margin: 4.7% - 4.6% = 0.1%\n\n- DATA SOURCES: \n  - Walmart Inc. FY2019 10-K, Consolidated Statements of Income, filed with the SEC on March 28, 2019.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_149_247B6607_H2",
+      "type": "dollar_amount",
+      "original_value": "$24,202 million",
+      "injected_value": "$30,045 million",
+      "original_numeric": "24202",
+      "injected_numeric": "30045",
+      "position_char": 214,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.2414
+    },
+    {
+      "hallucination_id": "FB_149_247B6607_H1",
+      "type": "percentage",
+      "original_value": "4.7%",
+      "injected_value": "16.1%",
+      "original_numeric": "4.7",
+      "injected_numeric": "16.1",
+      "position_char": 787,
+      "sentence_approx": 3,
+      "perturbation_delta": 11.4464
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "FY2019 Operating Income: $30,045 million",
+        "claim_value": "$30,045 million",
+        "reason": "The operating income for FY2019 is inconsistent with the calculated operating income percentage margin. The calculated margin is 16.1%, but the operating income used in the calculation is $24,202 million, not $30,045 million.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2019 Operating Income Percentage Margin: 16.1%",
+        "claim_value": "16.1%",
+        "reason": "The calculated operating income percentage margin is unusually high for a retail company like Walmart. A margin of 16.1% seems suspiciously high.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Change in Operating Income Percentage Margin: 0.1%",
+        "claim_value": "0.1%",
+        "reason": "The change in operating income percentage margin is suspiciously small, given the large increase in operating income from FY2018 to FY2019.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "The output contains internal inconsistencies and suspiciously high operating income percentage margin, which may indicate fabrication or inaccuracy.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"FY2019 Operating Income: $30,045 million\",\n      \"claim_value\" : \"$30,045 million\",\n      \"reason\"      : \"The operating income for FY2019 is inconsistent with the calculated operating income percentage margin. The calculated margin is 16.1%, but the operating income used in the calculation is $24,202 million, not $30,045 million.\",\n      \"confidence\"  : \"high\"\n    },\n    {\n      \"claim_text\"  : \"FY2019 Operating Income Percentage Margin: 16.1%\",\n      \"claim_value\" : \"16.1%\",\n      \"reason\"      : \"The calculated operating income percentage margin is unusually high for a retail company like Walmart. A margin of 16.1% seems suspiciously high.\",\n      \"confidence\"  : \"medium\"\n    },\n    {\n      \"claim_text\"  : \"Change in Operating Income Percentage Margin: 0.1%\",\n      \"claim_value\" : \"0.1%\",\n      \"reason\"      : \"The change in operating income percentage margin is suspiciously small, given the large increase in operating income from FY2018 to FY2019.\",\n      \"confidence\"  : \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\"   : \"The output contains internal inconsistencies and suspiciously high operating income percentage margin, which may indicate fabrication or inaccuracy.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_149_247B6607",
+      "hallucination_id": "FB_149_247B6607_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$24,202 million",
+      "injected_value": "$30,045 million",
+      "detected": true,
+      "reason": "The operating income for FY2019 is inconsistent with the calculated operating income percentage margin. The calculated margin is 16.1%, but the operating income used in the calculation is $24,202 million, not $30,045 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_149_247B6607",
+      "hallucination_id": "FB_149_247B6607_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "percentage",
+      "original_value": "4.7%",
+      "injected_value": "16.1%",
+      "detected": true,
+      "reason": "The calculated operating income percentage margin is unusually high for a retail company like Walmart. A margin of 16.1% seems suspiciously high.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-27T09:47:03.706351Z"
+}

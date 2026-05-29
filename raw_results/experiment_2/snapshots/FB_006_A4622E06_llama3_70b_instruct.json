@@ -1,0 +1,73 @@
+{
+  "question_id": "FB_006_A4622E06",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: 3M Company, Q2 FY2023\n- PRIMARY METRIC: Quick Ratio: 0.92 (per the Q2 FY2023 10-Q, Consolidated Balance Sheets)\n- SUPPORTING DATA: \n  - Current Assets: $5,902 million (per the Q2 FY2023 10-Q, Consolidated Balance Sheets)\n  - Current Liabilities: $9,227 million (per the Q2 FY2023 10-Q, Consolidated Balance Sheets)\n  - Cash and Cash Equivalents: $1,032 million (per the Q2 FY2023 10-Q, Consolidated Balance Sheets)\n  - Accounts Receivable: $5,576 million (per the Q2 FY2023 10-Q, Consolidated Balance Sheets)\n  - Inventories: $3,147 million (per the Q2 FY2023 10-Q, Consolidated Balance Sheets)\n\n- DATA SOURCES: \n  - 3M Company Q2 FY2023 10-Q, Consolidated Balance Sheets\n\n**Note:** The quick ratio is calculated as (Current Assets - Inventories) / Current Liabilities. In this case, the quick ratio of 0.92 indicates that 3M has $0.92 in liquid assets for every $1.00 of current liabilities. \n\n**Limitations of the Quick Ratio:** \nWhile the quick ratio provides insight into a company's ability to meet short-term obligations without relying on inventory sales, it may not fully capture the liquidity position. For instance, it does not consider the timing of cash flows or the company's ability to generate cash from operations. Additionally, it may not reflect the company's overall financial health if other liabilities or long-term obligations are significant.\n\n**Alternative Metrics:** \n- Current Ratio: This metric includes all current assets and provides a broader view of liquidity.\n- Cash Ratio: This focuses solely on cash and cash equivalents relative to current liabilities, offering a more conservative measure of liquidity.\n\nThis report presents the requested data accurately and without interpretation, as per the guidelines.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_006_A4622E06_H2",
+      "type": "dollar_amount",
+      "original_value": "$8,492 million",
+      "injected_value": "$5,902 million",
+      "original_numeric": "8492",
+      "injected_numeric": "5902",
+      "position_char": 172,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.305
+    },
+    {
+      "hallucination_id": "FB_006_A4622E06_H1",
+      "type": "dollar_amount",
+      "original_value": "$4,313 million",
+      "injected_value": "$5,576 million",
+      "original_numeric": "4313",
+      "injected_numeric": "5576",
+      "position_char": 460,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.2929
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Current Assets: $5,902 million",
+        "claim_value": "$5,902 million",
+        "reason": "The reported current assets figure seems suspiciously round, as it ends with two zeros. While it's possible that the actual figure is indeed $5,902 million, it's unusual for financial figures to be this precise.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 5,
+    "overall_assessment": "The report appears to be generally plausible, but the suspiciously round current assets figure warrants further verification.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"Current Assets: $5,902 million\",\n      \"claim_value\" : \"$5,902 million\",\n      \"reason\"      : \"The reported current assets figure seems suspiciously round, as it ends with two zeros. While it's possible that the actual figure is indeed $5,902 million, it's unusual for financial figures to be this precise.\",\n      \"confidence\"  : \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 5,\n  \"overall_assessment\"   : \"The report appears to be generally plausible, but the suspiciously round current assets figure warrants further verification.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_006_A4622E06",
+      "hallucination_id": "FB_006_A4622E06_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$8,492 million",
+      "injected_value": "$5,902 million",
+      "detected": true,
+      "reason": "The reported current assets figure seems suspiciously round, as it ends with two zeros. While it's possible that the actual figure is indeed $5,902 million, it's unusual for financial figures to be this precise.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 5
+    },
+    {
+      "question_id": "FB_006_A4622E06",
+      "hallucination_id": "FB_006_A4622E06_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$4,313 million",
+      "injected_value": "$5,576 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 5
+    }
+  ],
+  "timestamp": "2026-03-27T09:26:38.988084Z"
+}

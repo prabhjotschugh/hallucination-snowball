@@ -1,0 +1,337 @@
+{
+  "question_id": "FB_147_D81E1F94",
+  "method": "ours",
+  "final_output": "## Verizon Communications Inc. Financial Report: FY2021-FY2022\n\n### Executive Summary\n\nVerizon Communications Inc. exhibited a stable debt and equity position between Fiscal Year 2021 and Fiscal Year 2022. Total Debt remained at $232,000 million and Total Equity at $70,000 million for both periods. Total Assets experienced a slight decrease of $2,000 million, or -0.85%, from $234,000 million in FY2021 to $232,000 million in FY2022. Key financial ratios, including Debt-to-Assets and Debt-to-Equity, remained largely consistent, indicating a stable but highly leveraged capital structure.\n\n### Analysis\n\nAs of December 31, 2022, Verizon's Total Debt stood at $232,000 million, unchanged from December 31, 2021. Similarly, Total Equity remained constant at $70,000 million across both fiscal years. Total Assets decreased by $2,000 million, representing a -0.85% decline, from $234,000 million in FY2021 to $232,000 million in FY2022.\n\nThe Debt-to-Assets ratio for FY2022 was 1.00, indicating that Total Debt equaled Total Assets. This represents a slight increase from the FY2021 ratio of 0.99 ($232,000 million / $234,000 million). The Debt-to-Equity ratio remained constant at 3.31 for both FY2021 and FY2022, highlighting a substantial reliance on debt financing relative to equity.\n\n### Key Risks\n\nThe Debt-to-Assets ratio of 1.00 in FY2022 is a critical concern, implying that Total Assets equal Total Debt. This suggests a potential imbalance in the balance sheet equation, as it would leave no room for equity financing if Total Debt is the sole liability. This high leverage could expose Verizon to increased financial risk, particularly in a rising interest rate environment or during economic downturns, potentially impacting its ability to service debt or secure additional financing.\n\n### Conclusion\n\nVerizon Communications Inc. maintained consistent Total Debt and Total Equity levels between FY2021 and FY2022, while experiencing a modest reduction in Total Assets. The Debt-to-Assets ratio of 1.00 in FY2022, coupled with a Debt-to-Equity ratio of 3.31, indicates a highly leveraged financial position. While stability in debt and equity is noted, the high reliance on debt financing warrants close monitoring for potential solvency and liquidity risks.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Verizon Communications Inc., Fiscal Years 2021 and 2022\n- PRIMARY METRIC: \n  - Total Debt as of December 31, 2022: $214,715 million (per the FY2022 10-K, Consolidated Balance Sheets).\n  - Total Debt as of December 31, 2021: $212,971 million (per the FY2021 10-K, Consolidated Balance Sheets).\n- SUPPORTING DATA: \n  - Total Assets as of December 31, 2022: $232,000 million (per the FY2022 10-K, Consolidated Balance Sheets).\n  - Total Assets as of December 31, 2021: $234,000 million (per the FY2021 10-K, Consolidated Balance Sheets).\n  - Total Equity as of December 31, 2022: $70,000 million (per the FY2022 10-K, Consolidated Balance Sheets).\n  - Total Equity as of December 31, 2021: $50,809 million (per the FY2021 10-K, Consolidated Balance Sheets).\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Balance Sheets, Page 38.\n  - FY2021 10-K, Consolidated Balance Sheets, Page 37.\n\n**Note:** The figures presented are exact as reported in the respective filings.",
+    "2": "As a financial analyst, I've computed the year-over-year changes and relevant ratios for Verizon Communications Inc. for Fiscal Years 2021 and 2022, using the provided and corrected data.\n\n**Corrected Data Summary:**\n\n| Metric               | FY2022 (million) | FY2021 (million) |\n| :------------------- | :--------------- | :--------------- |\n| Total Debt           | $232,000         | $232,000         |\n| Total Assets         | $232,000         | $234,000         |\n| Total Equity         | $70,000          | $70,000          |\n\n---\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\n*   **Total Debt:**\n    *   Absolute Change = FY2022 Total Debt - FY2021 Total Debt\n        *   $232,000 - $232,000 = **$0 million**\n    *   Percentage Change = (Absolute Change / FY2021 Total Debt) * 100\n        *   ($0 / $232,000) * 100 = **0.00%**\n\n*   **Total Assets:**\n    *   Absolute Change = FY2022 Total Assets - FY2021 Total Assets\n        *   $232,000 - $234,000 = **-$2,000 million**\n    *   Percentage Change = (Absolute Change / FY2021 Total Assets) * 100\n        *   (-$2,000 / $234,000) * 100 = **-0.85%**\n\n*   **Total Equity:**\n    *   Absolute Change = FY2022 Total Equity - FY2021 Total Equity\n        *   $70,000 - $70,000 = **$0 million**\n    *   Percentage Change = (Absolute Change / FY2021 Total Equity) * 100\n        *   ($0 / $70,000) * 100 = **0.00%**\n\n---\n\n**2. Relevant Ratios**\n\n*   **Debt-to-Assets Ratio:** Measures the proportion of assets financed by debt.\n    *   Formula = Total Debt / Total Assets\n    *   FY2022: $232,000 / $232,000 = **1.00**\n    *   FY2021: $232,000 / $234,000 = **0.99**\n\n*   **Debt-to-Equity Ratio:** Indicates the relative proportion of shareholders' equity and debt used to finance a company's assets.\n    *   Formula = Total Debt / Total Equity\n    *   FY2022: $232,000 / $70,000 = **3.31**\n    *   FY2021: $232,000 / $70,000 = **3.31**\n\n---\n\n**3. Anomalies**\n\nThe most significant anomaly is the **identical Total Debt and Total Equity figures for both FY2021 and FY2022** after applying the corrections.\n\n*   **Total Debt:** The corrected value for Total Debt is $232,000 million for both years. This implies no change in total debt, which is unusual for a large, active company like Verizon.\n*   **Total Equity:** Similarly, the corrected value for Total Equity is $70,000 million for both years, suggesting no change in equity, which is also highly improbable given typical business operations (e.g., net income, dividends, share repurchases/issuances).\n*   **Debt-to-Assets Ratio of 1.00 in FY2022:** A Debt-to-Assets ratio of 1.00 (or 100%) implies that all assets are financed by debt, with zero equity. This directly contradicts the reported Total Equity of $70,000 million for FY2022. This suggests a potential data entry or reporting inconsistency within the corrected figures, as Total Assets should equal Total Liabilities + Total Equity. If Total Debt is the only liability, then Total Assets = Total Debt + Total Equity.\n    *   For FY2022: $232,000 (Assets) = $232,000 (Debt) + $70,000 (Equity) is incorrect.\n    *   This indicates that the corrected \"Total Debt\" figure of $232,000 million for FY2022 might actually be the \"Total Assets\" figure, or there are other liabilities not accounted for in the \"Total Debt\" figure that would reconcile the balance sheet equation.\n\nThe corrected data, particularly the identical values across years for Total Debt and Total Equity, and the resulting Debt-to-Assets ratio of 1.00 in FY2022, presents a highly unusual and likely inconsistent financial picture for Verizon.",
+    "3": "## Verizon Communications Inc. Financial Report: FY2021-FY2022\n\n### Executive Summary\n\nVerizon Communications Inc. exhibited a stable debt and equity position between Fiscal Year 2021 and Fiscal Year 2022, with Total Debt remaining at $232,000 million and Total Equity at $70,000 million for both periods. Total Assets experienced a slight decrease of -$4,039 million, or -1.73%, from $234,000 million in FY2021 to $232,000 million in FY2022. Key financial ratios, including Debt-to-Assets and Debt-to-Equity, remained largely consistent, indicating a stable but highly leveraged capital structure.\n\n### Analysis\n\nAs of December 31, 2022, Verizon's Total Debt stood at $232,000 million, unchanged from December 31, 2021. Similarly, Total Equity remained constant at $70,000 million across both fiscal years. Total Assets decreased by -$4,039 million, representing a -1.73% decline, from $234,000 million in FY2021 to $232,000 million in FY2022.\n\nThe Debt-to-Assets ratio for FY2022 was 1.00, indicating that all assets were financed by debt. This is a significant increase from the FY2021 ratio of 0.99. The Debt-to-Equity ratio remained constant at 3.31 for both FY2021 and FY2022, highlighting a substantial reliance on debt financing relative to equity.\n\n### Key Risks\n\nThe Debt-to-Assets ratio of 1.00 in FY2022 is a critical concern, implying that Total Assets equal Total Debt. This suggests a potential imbalance in the balance sheet equation, as it would leave no room for equity financing if Total Debt is the sole liability. This high leverage could expose Verizon to increased financial risk, particularly in a rising interest rate environment or during economic downturns, potentially impacting its ability to service debt or secure additional financing.\n\n### Conclusion\n\nVerizon Communications Inc. maintained consistent Total Debt and Total Equity levels between FY2021 and FY2022, while experiencing a modest reduction in Total Assets. The Debt-to-Assets ratio of 1.00 in FY2022, coupled with a Debt-to-Equity ratio of 3.31, indicates a highly leveraged financial position. While stability in debt and equity is noted, the high reliance on debt financing warrants close monitoring for potential solvency and liquidity risks.",
+    "4": "## Verizon Communications Inc. Financial Report: FY2021-FY2022\n\n### Executive Summary\n\nVerizon Communications Inc. exhibited a stable debt and equity position between Fiscal Year 2021 and Fiscal Year 2022. Total Debt remained at $232,000 million and Total Equity at $70,000 million for both periods. Total Assets experienced a slight decrease of $2,000 million, or -0.85%, from $234,000 million in FY2021 to $232,000 million in FY2022. Key financial ratios, including Debt-to-Assets and Debt-to-Equity, remained largely consistent, indicating a stable but highly leveraged capital structure.\n\n### Analysis\n\nAs of December 31, 2022, Verizon's Total Debt stood at $232,000 million, unchanged from December 31, 2021. Similarly, Total Equity remained constant at $70,000 million across both fiscal years. Total Assets decreased by $2,000 million, representing a -0.85% decline, from $234,000 million in FY2021 to $232,000 million in FY2022.\n\nThe Debt-to-Assets ratio for FY2022 was 1.00, indicating that Total Debt equaled Total Assets. This represents a slight increase from the FY2021 ratio of 0.99 ($232,000 million / $234,000 million). The Debt-to-Equity ratio remained constant at 3.31 for both FY2021 and FY2022, highlighting a substantial reliance on debt financing relative to equity.\n\n### Key Risks\n\nThe Debt-to-Assets ratio of 1.00 in FY2022 is a critical concern, implying that Total Assets equal Total Debt. This suggests a potential imbalance in the balance sheet equation, as it would leave no room for equity financing if Total Debt is the sole liability. This high leverage could expose Verizon to increased financial risk, particularly in a rising interest rate environment or during economic downturns, potentially impacting its ability to service debt or secure additional financing.\n\n### Conclusion\n\nVerizon Communications Inc. maintained consistent Total Debt and Total Equity levels between FY2021 and FY2022, while experiencing a modest reduction in Total Assets. The Debt-to-Assets ratio of 1.00 in FY2022, coupled with a Debt-to-Equity ratio of 3.31, indicates a highly leveraged financial position. While stability in debt and equity is noted, the high reliance on debt financing warrants close monitoring for potential solvency and liquidity risks."
+  },
+  "gates": {
+    "gate_1": {
+      "verified": [
+        {
+          "value": "$232,000 million",
+          "ref": 232000.0
+        },
+        {
+          "value": "$234,000 million",
+          "ref": 234000.0
+        },
+        {
+          "value": "$70,000 million",
+          "ref": 70000.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$214,715 million",
+          "num": 214715.0,
+          "correct": 232000.0,
+          "dev": 0.0745,
+          "source": "source_document"
+        },
+        {
+          "value": "$212,971 million",
+          "num": 212971.0,
+          "correct": 232000.0,
+          "dev": 0.082,
+          "source": "source_document"
+        },
+        {
+          "value": "$50,809 million",
+          "num": 50809.0,
+          "correct": 70000.0,
+          "dev": 0.2742,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [],
+      "n_refs": 23
+    },
+    "gate_2": {
+      "verified": [
+        {
+          "value": "$232,000",
+          "ref": 232000.0
+        },
+        {
+          "value": "$232,000",
+          "ref": 232000.0
+        },
+        {
+          "value": "$232,000",
+          "ref": 232000.0
+        },
+        {
+          "value": "$234,000",
+          "ref": 234000.0
+        },
+        {
+          "value": "$70,000",
+          "ref": 70000.0
+        },
+        {
+          "value": "$70,000",
+          "ref": 70000.0
+        },
+        {
+          "value": "$232,000",
+          "ref": 232000.0
+        },
+        {
+          "value": "$232,000",
+          "ref": 232000.0
+        },
+        {
+          "value": "$232,000",
+          "ref": 232000.0
+        },
+        {
+          "value": "$232,000",
+          "ref": 232000.0
+        },
+        {
+          "value": "$234,000",
+          "ref": 234000.0
+        },
+        {
+          "value": "$234,000",
+          "ref": 234000.0
+        },
+        {
+          "value": "$70,000",
+          "ref": 70000.0
+        },
+        {
+          "value": "$70,000",
+          "ref": 70000.0
+        },
+        {
+          "value": "$70,000",
+          "ref": 70000.0
+        },
+        {
+          "value": "$232,000",
+          "ref": 232000.0
+        },
+        {
+          "value": "$232,000",
+          "ref": 232000.0
+        },
+        {
+          "value": "$232,000",
+          "ref": 232000.0
+        },
+        {
+          "value": "$234,000",
+          "ref": 234000.0
+        },
+        {
+          "value": "$232,000",
+          "ref": 232000.0
+        },
+        {
+          "value": "$70,000",
+          "ref": 70000.0
+        },
+        {
+          "value": "$232,000",
+          "ref": 232000.0
+        },
+        {
+          "value": "$70,000",
+          "ref": 70000.0
+        },
+        {
+          "value": "$232,000 million",
+          "ref": 232000.0
+        },
+        {
+          "value": "$70,000 million",
+          "ref": 70000.0
+        },
+        {
+          "value": "$70,000 million",
+          "ref": 70000.0
+        },
+        {
+          "value": "$232,000",
+          "ref": 232000.0
+        },
+        {
+          "value": "$232,000",
+          "ref": 232000.0
+        },
+        {
+          "value": "$70,000",
+          "ref": 70000.0
+        },
+        {
+          "value": "$232,000 million",
+          "ref": 232000.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$2,000 million",
+          "num": 2000.0,
+          "correct": 4039.0,
+          "dev": 0.5048,
+          "source": "evidence"
+        },
+        {
+          "value": "$2,000",
+          "num": 2000.0,
+          "correct": 4039.0,
+          "dev": 0.5048,
+          "source": "evidence"
+        },
+        {
+          "value": "-0.85%",
+          "num": 0.85,
+          "correct": 1.0,
+          "dev": 0.15,
+          "source": "evidence"
+        },
+        {
+          "value": "100%",
+          "num": 100.0,
+          "correct": 229.0,
+          "dev": 0.5633,
+          "source": "ground_truth"
+        }
+      ],
+      "unverified": [],
+      "n_refs": 23
+    },
+    "gate_3": {
+      "verified": [
+        {
+          "value": "$232,000 million",
+          "ref": 232000.0
+        },
+        {
+          "value": "$70,000 million",
+          "ref": 70000.0
+        },
+        {
+          "value": "$4,039 million",
+          "ref": 4039.0
+        },
+        {
+          "value": "$234,000 million",
+          "ref": 234000.0
+        },
+        {
+          "value": "$232,000 million",
+          "ref": 232000.0
+        },
+        {
+          "value": "$232,000 million",
+          "ref": 232000.0
+        },
+        {
+          "value": "$70,000 million",
+          "ref": 70000.0
+        },
+        {
+          "value": "$4,039 million",
+          "ref": 4039.0
+        },
+        {
+          "value": "$234,000 million",
+          "ref": 234000.0
+        },
+        {
+          "value": "$232,000 million",
+          "ref": 232000.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "-1.73%",
+          "num": 1.73,
+          "correct": 2.2,
+          "dev": 0.2136,
+          "source": "evidence"
+        },
+        {
+          "value": "-1.73%",
+          "num": 1.73,
+          "correct": 2.2,
+          "dev": 0.2136,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [],
+      "n_refs": 23
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_147_D81E1F94",
+      "hid": "FB_147_D81E1F94_H3",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 214715.0,
+      "orig_num": 164000.0,
+      "survived": false,
+      "corrected": false,
+      "g1_det": true,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": false,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_147_D81E1F94",
+      "hid": "FB_147_D81E1F94_H2",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 212971.0,
+      "orig_num": 159000.0,
+      "survived": false,
+      "corrected": false,
+      "g1_det": true,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": false,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_147_D81E1F94",
+      "hid": "FB_147_D81E1F94_H1",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 50809.0,
+      "orig_num": 75000.0,
+      "survived": false,
+      "corrected": false,
+      "g1_det": true,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": false,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 2,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:57:51.506283+00:00"
+}

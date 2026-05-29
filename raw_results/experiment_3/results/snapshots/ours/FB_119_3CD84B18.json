@@ -1,0 +1,426 @@
+{
+  "question_id": "FB_119_3CD84B18",
+  "method": "ours",
+  "final_output": "## Financial Report: PayPal Holdings, Inc. - Fiscal Year 2022\n\n### Executive Summary\n\nPayPal Holdings, Inc. concluded Fiscal Year 2022 with a positive working capital of $7,310 million, indicating a healthy short-term liquidity position. This figure represents a decrease from FY2021's working capital of $7,622 million and FY2020's $8,209 million. The current ratio for FY2022 stood at 1.61x, a slight decline from 1.66x in FY2021 and 2.04x in FY2020, suggesting a modest tightening of liquidity over the three-year period.\n\n### Analysis\n\nPayPal's current assets remained stable at $19,190 million from FY2021 to FY2022, resulting in a 0.00% year-over-year change. However, current assets increased by $3,072 million (19.06%) from FY2020 ($16,118 million) to FY2021. Current liabilities saw an increase of $312 million (2.70%) from $11,568 million in FY2021 to $11,880 million in FY2022. This follows a substantial increase of $3,659 million (46.27%) in current liabilities from FY2020 ($7,909 million) to FY2021. The working capital for FY2022 is calculated as $19,190 million (Current Assets) - $11,880 million (Current Liabilities) = $7,310 million.\n\n### Key Risks\n\nThe identical current asset figures for FY2022 and FY2021 ($19,190 million) are unusual for a company of PayPal's operational scale and warrant further investigation into the composition and movement of specific asset categories. While the working capital remains positive, the declining trend in both working capital and the current ratio over the past three fiscal years (from 2.04x in FY2020 to 1.61x in FY2022) suggests a gradual reduction in short-term liquidity.\n\n### Conclusion\n\nPayPal Holdings, Inc. maintains a robust short-term financial position as of FY2022, evidenced by its positive working capital of $7,310 million and a current ratio of 1.61x. While these metrics indicate sufficient liquidity to cover immediate obligations, the observed trends in current assets and liabilities, particularly the static current asset value between FY2021 and FY2022, should be closely monitored. Further analysis into the drivers of these changes is recommended to fully understand their implications for PayPal's future financial health.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: PayPal Holdings, Inc. - Fiscal Year 2022\n\n- PRIMARY METRIC: \n  - Current Assets: $23,876 million (per the FY2022 10-K, Consolidated Balance Sheets)\n  - Current Liabilities: $10,498 million (per the FY2022 10-K, Consolidated Balance Sheets)\n  - Working Capital Calculation: \n    - Working Capital = Current Assets - Current Liabilities \n    - Working Capital = $18,407 million - $12,740 million = $7,909 million\n\n- SUPPORTING DATA: \n  - Current Assets (FY2021): $19,190 million (per the FY2021 10-K, Consolidated Balance Sheets)\n  - Current Liabilities (FY2021): $11,568 million (per the FY2021 10-K, Consolidated Balance Sheets)\n  - Current Assets (FY2020): $16,118 million (per the FY2020 10-K, Consolidated Balance Sheets)\n  - Current Liabilities (FY2020): $8,689 million (per the FY2020 10-K, Consolidated Balance Sheets)\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Balance Sheets\n  - FY2021 10-K, Consolidated Balance Sheets\n  - FY2020 10-K, Consolidated Balance Sheets\n\n**Note:** The calculated working capital for PayPal in FY2022 is $7,909 million, which is positive. \n\nRegarding the relevance of working capital for PayPal's operational model, I will refrain from providing an analysis or interpretation as per the instructions. Please consult downstream analysts for further insights on the implications of this working capital figure within the context of PayPal's business model and industry benchmarks.",
+    "2": "As a financial analyst, I have computed the year-over-year changes and relevant ratios for PayPal Holdings, Inc., using the provided and corrected data.\n\n**Corrected Data Summary:**\n\n| Metric               | FY2022 (Corrected) | FY2021              | FY2020 (Corrected) |\n| :------------------- | :----------------- | :------------------ | :----------------- |\n| Current Assets       | $19,190 million    | $19,190 million     | $16,118 million    |\n| Current Liabilities  | $11,880 million    | $11,568 million     | $7,909 million     |\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\n*   **Current Assets:**\n    *   FY2022 vs. FY2021:\n        *   Absolute Change = $19,190 million - $19,190 million = $0 million\n        *   Percentage Change = ($0 million / $19,190 million) * 100 = 0.00%\n    *   FY2021 vs. FY2020:\n        *   Absolute Change = $19,190 million - $16,118 million = $3,072 million\n        *   Percentage Change = ($3,072 million / $16,118 million) * 100 = 19.06%\n\n*   **Current Liabilities:**\n    *   FY2022 vs. FY2021:\n        *   Absolute Change = $11,880 million - $11,568 million = $312 million\n        *   Percentage Change = ($312 million / $11,568 million) * 100 = 2.70%\n    *   FY2021 vs. FY2020:\n        *   Absolute Change = $11,568 million - $7,909 million = $3,659 million\n        *   Percentage Change = ($3,659 million / $7,909 million) * 100 = 46.27%\n\n**2. Relevant Ratios**\n\n*   **Working Capital:**\n    *   Formula: Working Capital = Current Assets - Current Liabilities\n    *   FY2022: $19,190 million - $11,880 million = $7,310 million\n    *   FY2021: $19,190 million - $11,568 million = $7,622 million\n    *   FY2020: $16,118 million - $7,909 million = $8,209 million\n\n*   **Current Ratio:**\n    *   Formula: Current Ratio = Current Assets / Current Liabilities\n    *   FY2022: $19,190 million / $11,880 million = 1.61x\n    *   FY2021: $19,190 million / $11,568 million = 1.66x\n    *   FY2020: $16,118 million / $7,909 million = 2.04x\n\n**3. Anomalies Flagged**\n\n*   **Working Capital Calculation Discrepancy (FY2022):** The researcher's initial calculation for FY2022 Working Capital ($7,909 million) was based on refuted Current Assets and Current Liabilities values. Using the corrected values, the FY2022 Working Capital is **$7,310 million**. This is a significant deviation from the researcher's stated figure.\n\n*   **Current Assets (FY2022 vs. FY2021):** The corrected data shows Current Assets for FY2022 and FY2021 are identical at $19,190 million. This results in a 0% year-over-year change, which is unusual for a company of PayPal's scale and growth trajectory, and might warrant further investigation into the underlying asset components.",
+    "3": "## Financial Report: PayPal Holdings, Inc. - Fiscal Year 2022\n\n### Executive Summary\n\nPayPal Holdings, Inc. concluded Fiscal Year 2022 with a positive working capital of $7,909 million, indicating a healthy short-term liquidity position. This figure represents a decrease from FY2021's working capital of $7,622 million and FY2020's $8,209 million. The current ratio for FY2022 stood at 1.61x, a slight decline from 1.66x in FY2021 and 2.04x in FY2020, suggesting a modest tightening of liquidity over the three-year period.\n\n### Analysis\n\nPayPal's current assets remained stable at $19,190 million from FY2021 to FY2022, resulting in a 0.00% year-over-year change. However, current assets increased by $4,000 million (24.82%) from FY2020 ($16,118 million) to FY2021. Current liabilities saw an increase of $491 million (4.24%) from $11,568 million in FY2021 to $11,880 million in FY2022. This follows a substantial increase of $4,000 million (50.58%) in current liabilities from FY2020 ($7,909 million) to FY2021. The working capital for FY2022 is calculated as $19,190 million (Current Assets) - $11,880 million (Current Liabilities) = $7,909 million.\n\n### Key Risks\n\nThe identical current asset figures for FY2022 and FY2021 ($19,190 million) are unusual for a company of PayPal's operational scale and warrant further investigation into the composition and movement of specific asset categories. While the working capital remains positive, the declining trend in both working capital and the current ratio over the past three fiscal years (from 2.04x in FY2020 to 1.61x in FY2022) suggests a gradual reduction in short-term liquidity.\n\n### Conclusion\n\nPayPal Holdings, Inc. maintains a robust short-term financial position as of FY2022, evidenced by its positive working capital of $7,909 million and a current ratio of 1.61x. While these metrics indicate sufficient liquidity to cover immediate obligations, the observed trends in current assets and liabilities, particularly the static current asset value between FY2021 and FY2022, should be closely monitored. Further analysis into the drivers of these changes is recommended to fully understand their implications for PayPal's future financial health.",
+    "4": "## Financial Report: PayPal Holdings, Inc. - Fiscal Year 2022\n\n### Executive Summary\n\nPayPal Holdings, Inc. concluded Fiscal Year 2022 with a positive working capital of $7,310 million, indicating a healthy short-term liquidity position. This figure represents a decrease from FY2021's working capital of $7,622 million and FY2020's $8,209 million. The current ratio for FY2022 stood at 1.61x, a slight decline from 1.66x in FY2021 and 2.04x in FY2020, suggesting a modest tightening of liquidity over the three-year period.\n\n### Analysis\n\nPayPal's current assets remained stable at $19,190 million from FY2021 to FY2022, resulting in a 0.00% year-over-year change. However, current assets increased by $3,072 million (19.06%) from FY2020 ($16,118 million) to FY2021. Current liabilities saw an increase of $312 million (2.70%) from $11,568 million in FY2021 to $11,880 million in FY2022. This follows a substantial increase of $3,659 million (46.27%) in current liabilities from FY2020 ($7,909 million) to FY2021. The working capital for FY2022 is calculated as $19,190 million (Current Assets) - $11,880 million (Current Liabilities) = $7,310 million.\n\n### Key Risks\n\nThe identical current asset figures for FY2022 and FY2021 ($19,190 million) are unusual for a company of PayPal's operational scale and warrant further investigation into the composition and movement of specific asset categories. While the working capital remains positive, the declining trend in both working capital and the current ratio over the past three fiscal years (from 2.04x in FY2020 to 1.61x in FY2022) suggests a gradual reduction in short-term liquidity.\n\n### Conclusion\n\nPayPal Holdings, Inc. maintains a robust short-term financial position as of FY2022, evidenced by its positive working capital of $7,310 million and a current ratio of 1.61x. While these metrics indicate sufficient liquidity to cover immediate obligations, the observed trends in current assets and liabilities, particularly the static current asset value between FY2021 and FY2022, should be closely monitored. Further analysis into the drivers of these changes is recommended to fully understand their implications for PayPal's future financial health."
+  },
+  "gates": {
+    "gate_1": {
+      "verified": [
+        {
+          "value": "$10,498 million",
+          "ref": 10498.0
+        },
+        {
+          "value": "$18,407 million",
+          "ref": 18407.0
+        },
+        {
+          "value": "$7,909 million",
+          "ref": 7909.0
+        },
+        {
+          "value": "$19,190 million",
+          "ref": 19190.0
+        },
+        {
+          "value": "$11,568 million",
+          "ref": 11568.0
+        },
+        {
+          "value": "$16,118 million",
+          "ref": 16118.0
+        },
+        {
+          "value": "$7,909 million",
+          "ref": 7909.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$23,876 million",
+          "num": 23876.0,
+          "correct": 19190.0,
+          "dev": 0.1963,
+          "source": "source_document"
+        },
+        {
+          "value": "$12,740 million",
+          "num": 12740.0,
+          "correct": 11880.0,
+          "dev": 0.0675,
+          "source": "evidence"
+        },
+        {
+          "value": "$8,689 million",
+          "num": 8689.0,
+          "correct": 7909.0,
+          "dev": 0.0898,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [],
+      "n_refs": 16
+    },
+    "gate_2": {
+      "verified": [
+        {
+          "value": "$19,190 million",
+          "ref": 19190.0
+        },
+        {
+          "value": "$19,190 million",
+          "ref": 19190.0
+        },
+        {
+          "value": "$16,118 million",
+          "ref": 16118.0
+        },
+        {
+          "value": "$11,880 million",
+          "ref": 11880.0
+        },
+        {
+          "value": "$11,568 million",
+          "ref": 11568.0
+        },
+        {
+          "value": "$7,909 million",
+          "ref": 7909.0
+        },
+        {
+          "value": "$19,190 million",
+          "ref": 19190.0
+        },
+        {
+          "value": "$19,190 million",
+          "ref": 19190.0
+        },
+        {
+          "value": "$19,190 million",
+          "ref": 19190.0
+        },
+        {
+          "value": "$19,190 million",
+          "ref": 19190.0
+        },
+        {
+          "value": "$16,118 million",
+          "ref": 16118.0
+        },
+        {
+          "value": "$16,118 million",
+          "ref": 16118.0
+        },
+        {
+          "value": "$11,880 million",
+          "ref": 11880.0
+        },
+        {
+          "value": "$11,568 million",
+          "ref": 11568.0
+        },
+        {
+          "value": "$11,568 million",
+          "ref": 11568.0
+        },
+        {
+          "value": "$11,568 million",
+          "ref": 11568.0
+        },
+        {
+          "value": "$7,909 million",
+          "ref": 7909.0
+        },
+        {
+          "value": "$7,909 million",
+          "ref": 7909.0
+        },
+        {
+          "value": "$19,190 million",
+          "ref": 19190.0
+        },
+        {
+          "value": "$11,880 million",
+          "ref": 11880.0
+        },
+        {
+          "value": "$19,190 million",
+          "ref": 19190.0
+        },
+        {
+          "value": "$11,568 million",
+          "ref": 11568.0
+        },
+        {
+          "value": "$16,118 million",
+          "ref": 16118.0
+        },
+        {
+          "value": "$7,909 million",
+          "ref": 7909.0
+        },
+        {
+          "value": "$19,190 million",
+          "ref": 19190.0
+        },
+        {
+          "value": "$11,880 million",
+          "ref": 11880.0
+        },
+        {
+          "value": "$19,190 million",
+          "ref": 19190.0
+        },
+        {
+          "value": "$11,568 million",
+          "ref": 11568.0
+        },
+        {
+          "value": "$16,118 million",
+          "ref": 16118.0
+        },
+        {
+          "value": "$7,909 million",
+          "ref": 7909.0
+        },
+        {
+          "value": "$7,909 million",
+          "ref": 7909.0
+        },
+        {
+          "value": "$19,190 million",
+          "ref": 19190.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$3,072 million",
+          "num": 3072.0,
+          "correct": 4000.0,
+          "dev": 0.232,
+          "source": "evidence"
+        },
+        {
+          "value": "$3,072 million",
+          "num": 3072.0,
+          "correct": 4000.0,
+          "dev": 0.232,
+          "source": "evidence"
+        },
+        {
+          "value": "$312 million",
+          "num": 312.0,
+          "correct": 491.0,
+          "dev": 0.3646,
+          "source": "evidence"
+        },
+        {
+          "value": "$312 million",
+          "num": 312.0,
+          "correct": 491.0,
+          "dev": 0.3646,
+          "source": "evidence"
+        },
+        {
+          "value": "$3,659 million",
+          "num": 3659.0,
+          "correct": 4000.0,
+          "dev": 0.0853,
+          "source": "evidence"
+        },
+        {
+          "value": "$3,659 million",
+          "num": 3659.0,
+          "correct": 4000.0,
+          "dev": 0.0853,
+          "source": "evidence"
+        },
+        {
+          "value": "$7,310 million",
+          "num": 7310.0,
+          "correct": 7909.0,
+          "dev": 0.0757,
+          "source": "source_document"
+        },
+        {
+          "value": "$7,310 million",
+          "num": 7310.0,
+          "correct": 7909.0,
+          "dev": 0.0757,
+          "source": "source_document"
+        },
+        {
+          "value": "2.70%",
+          "num": 2.7,
+          "correct": 1.6,
+          "dev": 0.4074,
+          "source": "ground_truth"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$7,622 million"
+        },
+        {
+          "value": "$8,209 million"
+        },
+        {
+          "value": "19.06%"
+        },
+        {
+          "value": "46.27%"
+        }
+      ],
+      "n_refs": 16
+    },
+    "gate_3": {
+      "verified": [
+        {
+          "value": "$7,909 million",
+          "ref": 7909.0
+        },
+        {
+          "value": "$19,190 million",
+          "ref": 19190.0
+        },
+        {
+          "value": "$4,000 million",
+          "ref": 4000.0
+        },
+        {
+          "value": "$16,118 million",
+          "ref": 16118.0
+        },
+        {
+          "value": "$491 million",
+          "ref": 491.0
+        },
+        {
+          "value": "$11,568 million",
+          "ref": 11568.0
+        },
+        {
+          "value": "$11,880 million",
+          "ref": 11880.0
+        },
+        {
+          "value": "$4,000 million",
+          "ref": 4000.0
+        },
+        {
+          "value": "$7,909 million",
+          "ref": 7909.0
+        },
+        {
+          "value": "$19,190 million",
+          "ref": 19190.0
+        },
+        {
+          "value": "$11,880 million",
+          "ref": 11880.0
+        },
+        {
+          "value": "$7,909 million",
+          "ref": 7909.0
+        },
+        {
+          "value": "$19,190 million",
+          "ref": 19190.0
+        },
+        {
+          "value": "$7,909 million",
+          "ref": 7909.0
+        }
+      ],
+      "refuted": [],
+      "unverified": [
+        {
+          "value": "$7,622 million"
+        },
+        {
+          "value": "$8,209 million"
+        },
+        {
+          "value": "24.82%"
+        },
+        {
+          "value": "4.24%"
+        },
+        {
+          "value": "50.58%"
+        }
+      ],
+      "n_refs": 16
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_119_3CD84B18",
+      "hid": "FB_119_3CD84B18_H3",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 23876.0,
+      "orig_num": 18407.0,
+      "survived": false,
+      "corrected": false,
+      "g1_det": true,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": false,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_119_3CD84B18",
+      "hid": "FB_119_3CD84B18_H2",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 12740.0,
+      "orig_num": 10498.0,
+      "survived": false,
+      "corrected": false,
+      "g1_det": true,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": false,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_119_3CD84B18",
+      "hid": "FB_119_3CD84B18_H1",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 8689.0,
+      "orig_num": 10226.0,
+      "survived": false,
+      "corrected": false,
+      "g1_det": true,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": false,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 4,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:48:28.564592+00:00"
+}

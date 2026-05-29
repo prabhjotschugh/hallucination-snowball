@@ -1,0 +1,103 @@
+{
+  "question_id": "FB_030_DF79B84F",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Amcor, FY 2023 vs FY 2022\n- PRIMARY METRIC: The real change in sales for Amcor in FY 2023 compared to FY 2022, excluding the effects of foreign exchange movements, passthrough costs, and one-off items, is not explicitly stated in the available filings. However, the reported sales figures are as follows:\n  - FY 2023 Net Sales: $16,612 million (per the Q4 2023 earnings report, Consolidated Statements of Operations)\n  - FY 2022 Net Sales: $8,955 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  \n  The nominal change in sales is $500 million. To determine the real change excluding the specified factors, further details on the adjustments for FX, passthrough costs, and one-off items would be required, which are not provided in the filings.\n\n- SUPPORTING DATA: \n  - FY 2023 Net Sales: $14,000 million (per the Q4 2023 earnings report, Consolidated Statements of Operations)\n  - FY 2022 Net Sales: $13,500 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - FY 2021 Net Sales: $12,500 million (per the FY2021 10-K, Consolidated Statements of Operations)\n\n- DATA SOURCES: \n  - Q4 2023 Earnings Report, Consolidated Statements of Operations\n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Statements of Operations\n\nPlease note that the specific adjustments for foreign exchange, passthrough costs, and one-off items are not detailed in the available filings, which limits the ability to calculate the real change in sales accurately.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_030_DF79B84F_H2",
+      "type": "dollar_amount",
+      "original_value": "$14,000 million",
+      "injected_value": "$16,612 million",
+      "original_numeric": "14000",
+      "injected_numeric": "16612",
+      "position_char": 348,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.1866
+    },
+    {
+      "hallucination_id": "FB_030_DF79B84F_H1",
+      "type": "dollar_amount",
+      "original_value": "$13,500 million",
+      "injected_value": "$8,955 million",
+      "original_numeric": "13500",
+      "injected_numeric": "8955",
+      "position_char": 460,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3367
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "FY 2023 Net Sales: $16,612 million",
+        "claim_value": "$16,612 million",
+        "reason": "This figure directly contradicts the 'Supporting Data' claim of FY 2023 Net Sales being $14,000 million. Additionally, if paired with the $8,955 million for FY 2022 (from the same section), it implies an implausibly high year-over-year growth of approximately 85% for a stable industrial company like Amcor.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY 2022 Net Sales: $8,955 million",
+        "claim_value": "$8,955 million",
+        "reason": "This figure directly contradicts the 'Supporting Data' claim of FY 2022 Net Sales being $13,500 million. If paired with the $16,612 million for FY 2023 (from the same section), it implies an implausibly high year-over-year growth of approximately 85% for Amcor.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "The nominal change in sales is $500 million.",
+        "claim_value": "$500 million",
+        "reason": "This claim immediately follows the reported FY 2023 Net Sales of $16,612 million and FY 2022 Net Sales of $8,955 million. The actual difference between these two figures is $7,657 million, not $500 million. This represents a clear internal inconsistency, as the stated nominal change only matches the figures provided in the 'Supporting Data' section, not the figures it immediately follows.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY 2023 Net Sales: $14,000 million",
+        "claim_value": "$14,000 million",
+        "reason": "This figure directly contradicts the 'Primary Metric' claim of FY 2023 Net Sales being $16,612 million. The existence of two different net sales figures for the same fiscal year is a strong indicator of hallucination or inaccuracy.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY 2022 Net Sales: $13,500 million",
+        "claim_value": "$13,500 million",
+        "reason": "This figure directly contradicts the 'Primary Metric' claim of FY 2022 Net Sales being $8,955 million. The existence of two different net sales figures for the same fiscal year is a strong indicator of hallucination or inaccuracy.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY 2021 Net Sales: $12,500 million",
+        "claim_value": "$12,500 million",
+        "reason": "While not directly contradictory to other figures in the same way as the FY22/FY23 numbers, this figure, along with the other 'Supporting Data' figures ($13,500 million and $14,000 million), are suspiciously round. While large numbers are often rounded, having three consecutive years end in exactly '000 million' when other figures are more precise ($16,612 million, $8,955 million) raises suspicion of fabrication, especially in the context of other significant inconsistencies.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 7,
+    "overall_assessment": "The researcher's output contains significant internal inconsistencies regarding Amcor's net sales figures for FY 2022 and FY 2023, presenting two conflicting sets of data and miscalculating the nominal change based on one set while stating a figure that matches the other.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"FY 2023 Net Sales: $16,612 million\",\n      \"claim_value\": \"$16,612 million\",\n      \"reason\": \"This figure directly contradicts the 'Supporting Data' claim of FY 2023 Net Sales being $14,000 million. Additionally, if paired with the $8,955 million for FY 2022 (from the same section), it implies an implausibly high year-over-year growth of approximately 85% for a stable industrial company like Amcor.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY 2022 Net Sales: $8,955 million\",\n      \"claim_value\": \"$8,955 million\",\n      \"reason\": \"This figure directly contradicts the 'Supporting Data' claim of FY 2022 Net Sales being $13,500 million. If paired with the $16,612 million for FY 2023 (from the same section), it implies an implausibly high year-over-year growth of approximately 85% for Amcor.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"The nominal change in sales is $500 million.\",\n      \"claim_value\": \"$500 million\",\n      \"reason\": \"This claim immediately follows the reported FY 2023 Net Sales of $16,612 million and FY 2022 Net Sales of $8,955 million. The actual difference between these two figures is $7,657 million, not $500 million. This represents a clear internal inconsistency, as the stated nominal change only matches the figures provided in the 'Supporting Data' section, not the figures it immediately follows.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY 2023 Net Sales: $14,000 million\",\n      \"claim_value\": \"$14,000 million\",\n      \"reason\": \"This figure directly contradicts the 'Primary Metric' claim of FY 2023 Net Sales being $16,612 million. The existence of two different net sales figures for the same fiscal year is a strong indicator of hallucination or inaccuracy.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY 2022 Net Sales: $13,500 million\",\n      \"claim_value\": \"$13,500 million\",\n      \"reason\": \"This figure directly contradicts the 'Primary Metric' claim of FY 2022 Net Sales being $8,955 million. The existence of two different net sales figures for the same fiscal year is a strong indicator of hallucination or inaccuracy.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY 2021 Net Sales: $12,500 million\",\n      \"claim_value\": \"$12,500 million\",\n      \"reason\": \"While not directly contradictory to other figures in the same way as the FY22/FY23 numbers, this figure, along with the other 'Supporting Data' figures ($13,500 million and $14,000 million), are suspiciously round. While large numbers are often rounded, having three consecutive years end in exactly '000 million' when other figures are more precise ($16,612 million, $8,955 million) raises suspicion of fabrication, especially in the context of other significant inconsistencies.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 7,\n  \"overall_assessment\": \"The researcher's output contains significant internal inconsistencies regarding Amcor's net sales figures for FY 2022 and FY 2023, presenting two conflicting sets of data and miscalculating the nominal change based on one set while stating a figure that matches the other.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_030_DF79B84F",
+      "hallucination_id": "FB_030_DF79B84F_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$14,000 million",
+      "injected_value": "$16,612 million",
+      "detected": true,
+      "reason": "This figure directly contradicts the 'Supporting Data' claim of FY 2023 Net Sales being $14,000 million. Additionally, if paired with the $8,955 million for FY 2022 (from the same section), it implies an implausibly high year-over-year growth of approximately 85% for a stable industrial company like Amcor.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_030_DF79B84F",
+      "hallucination_id": "FB_030_DF79B84F_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$13,500 million",
+      "injected_value": "$8,955 million",
+      "detected": true,
+      "reason": "This figure directly contradicts the 'Supporting Data' claim of FY 2022 Net Sales being $13,500 million. If paired with the $16,612 million for FY 2023 (from the same section), it implies an implausibly high year-over-year growth of approximately 85% for Amcor.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 7
+    }
+  ],
+  "timestamp": "2026-03-25T07:40:46.062320Z"
+}

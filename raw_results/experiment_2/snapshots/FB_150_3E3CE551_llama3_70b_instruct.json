@@ -1,0 +1,73 @@
+{
+  "question_id": "FB_150_3E3CE551",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Walmart Inc., FY2018 to FY2020\n\n- PRIMARY METRIC: \n  - FY2018 Unadjusted EBITDA: $22,165 million (Operating Income: $20,370 million + Depreciation and Amortization: $1,795 million) per the FY2018 10-K, Consolidated Statements of Operations and Consolidated Statements of Cash Flows.\n  - FY2019 Unadjusted EBITDA: $23,174 million (Operating Income: $21,000 million + Depreciation and Amortization: $2,174 million) per the FY2019 10-K, Consolidated Statements of Operations and Consolidated Statements of Cash Flows.\n  - FY2020 Unadjusted EBITDA: $24,035 million (Operating Income: $22,000 million + Depreciation and Amortization: $2,035 million) per the FY2020 10-K, Consolidated Statements of Operations and Consolidated Statements of Cash Flows.\n\n- SUPPORTING DATA: \n  - Total Revenue:\n    - FY2018: $500,343 million per the FY2018 10-K, Consolidated Statements of Operations.\n    - FY2019: $514,405 million per the FY2019 10-K, Consolidated Statements of Operations.\n    - FY2020: $523,964 million per the FY2020 10-K, Consolidated Statements of Operations.\n  - Unadjusted EBITDA Margin Calculation:\n    - FY2018: (Unadjusted EBITDA / Total Revenue) * 100 = ($14,431 million / $500,343 million) * 100 = 4.4%\n    - FY2019: (Unadjusted EBITDA / Total Revenue) * 100 = ($23,174 million / $347,115 million) * 100 = 4.5%\n    - FY2020: (Unadjusted EBITDA / Total Revenue) * 100 = ($24,035 million / $523,964 million) * 100 = 4.6%\n  \n- AVERAGE EBITDA MARGIN: \n  - (4.4% + 4.5% + 4.6%) / 3 = 4.5% (rounded to one decimal place).\n\n- DATA SOURCES: \n  - Walmart FY2018 10-K, Consolidated Statements of Operations and Consolidated Statements of Cash Flows.\n  - Walmart FY2019 10-K, Consolidated Statements of Operations and Consolidated Statements of Cash Flows.\n  - Walmart FY2020 10-K, Consolidated Statements of Operations and Consolidated Statements of Cash Flows.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_150_3E3CE551_H2",
+      "type": "dollar_amount",
+      "original_value": "$22,165 million",
+      "injected_value": "$14,431 million",
+      "original_numeric": "22165",
+      "injected_numeric": "14431",
+      "position_char": 1181,
+      "sentence_approx": 8,
+      "perturbation_delta": -0.3489
+    },
+    {
+      "hallucination_id": "FB_150_3E3CE551_H1",
+      "type": "dollar_amount",
+      "original_value": "$514,405 million",
+      "injected_value": "$347,115 million",
+      "original_numeric": "514405",
+      "injected_numeric": "347115",
+      "position_char": 1307,
+      "sentence_approx": 9,
+      "perturbation_delta": -0.3252
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "FY2019 Unadjusted EBITDA: $23,174 million",
+        "claim_value": "$23,174 million",
+        "reason": "The calculation for FY2019 Unadjusted EBITDA Margin uses a Total Revenue of $347,115 million, which is inconsistent with the provided Total Revenue of $514,405 million for FY2019.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 9,
+    "overall_assessment": "The output appears to have an internal inconsistency in the calculation of FY2019 Unadjusted EBITDA Margin.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"FY2019 Unadjusted EBITDA: $23,174 million\",\n      \"claim_value\" : \"$23,174 million\",\n      \"reason\"      : \"The calculation for FY2019 Unadjusted EBITDA Margin uses a Total Revenue of $347,115 million, which is inconsistent with the provided Total Revenue of $514,405 million for FY2019.\",\n      \"confidence\"  : \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 9,\n  \"overall_assessment\"   : \"The output appears to have an internal inconsistency in the calculation of FY2019 Unadjusted EBITDA Margin.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_150_3E3CE551",
+      "hallucination_id": "FB_150_3E3CE551_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$22,165 million",
+      "injected_value": "$14,431 million",
+      "detected": true,
+      "reason": "The calculation for FY2019 Unadjusted EBITDA Margin uses a Total Revenue of $347,115 million, which is inconsistent with the provided Total Revenue of $514,405 million for FY2019.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_150_3E3CE551",
+      "hallucination_id": "FB_150_3E3CE551_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$514,405 million",
+      "injected_value": "$347,115 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 9
+    }
+  ],
+  "timestamp": "2026-03-27T09:47:11.775217Z"
+}

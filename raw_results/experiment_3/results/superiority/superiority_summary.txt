@@ -1,0 +1,17 @@
+
+SUPERIORITY METRICS — PAPER SUMMARY
+=====================================
+
+1. HALLUCINATION-FREE REPORTS (% with zero injected values remaining):
+   Vanilla    : 18.6%
+   End-Check  : 20.0%
+   Ours       : 68.6%
+
+2. HEAD-TO-HEAD (Ours catches more hallucinations per question):
+   vs Vanilla  : 98/140 wins (70.0%), 7 losses
+   vs End-Check: 96/140 wins (68.6%), 9 losses
+
+3. AVG CAUGHT PER QUESTION:
+   Vanilla    : 0.97 / 2.5
+   End-Check  : 1.03 / 2.5
+   Ours       : 2.07 / 2.5

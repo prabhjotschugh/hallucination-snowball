@@ -1,0 +1,85 @@
+{
+  "question_id": "FB_142_54C31BE1",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Ulta Beauty, FY2023\n- PRIMARY METRIC: Wages Expense: $830.6 million (per the FY2023 Q4 Earnings, Consolidated Statements of Operations)\n- SUPPORTING DATA: \n  - Net Sales: $3,829.0 million (per the FY2023 Q4 Earnings, Consolidated Statements of Operations)\n  - Wages Expense as a Percentage of Net Sales: 28.3% (calculated as $1,083.5 million / $4,411.0 million)\n- DATA SOURCES: \n  - Ulta Beauty FY2023 Q4 Earnings, Consolidated Statements of Operations\n\n**Note:** The analysis of trends over the fiscal year and the computation of changes in the ratio is not included as per the directive to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_142_54C31BE1_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,083.5 million",
+      "injected_value": "$830.6 million",
+      "original_numeric": "1083.5",
+      "injected_numeric": "830.6",
+      "position_char": 73,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2334
+    },
+    {
+      "hallucination_id": "FB_142_54C31BE1_H1",
+      "type": "dollar_amount",
+      "original_value": "$3,829.0 million",
+      "injected_value": "$4,411.0 million",
+      "original_numeric": "3829.0",
+      "injected_numeric": "4411.0",
+      "position_char": 366,
+      "sentence_approx": 5,
+      "perturbation_delta": 0.152
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Wages Expense as a Percentage of Net Sales: 28.3% (calculated as $1,083.5 million / $4,411.0 million)",
+        "claim_value": "28.3%",
+        "reason": "The calculation provided does not match the given values for Wages Expense and Net Sales. The correct calculation would be $830.6 million / $3,829.0 million, not $1,083.5 million / $4,411.0 million.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Wages Expense as a Percentage of Net Sales: 28.3% (calculated as $1,083.5 million / $4,411.0 million)",
+        "claim_value": "$1,083.5 million",
+        "reason": "This value is not consistent with the provided PRIMARY METRIC value of $830.6 million for Wages Expense.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Wages Expense as a Percentage of Net Sales: 28.3% (calculated as $1,083.5 million / $4,411.0 million)",
+        "claim_value": "$4,411.0 million",
+        "reason": "This value is not consistent with the provided SUPPORTING DATA value of $3,829.0 million for Net Sales.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 5,
+    "overall_assessment": "The researcher's output contains internal inconsistencies and incorrect calculations, raising concerns about the accuracy of the provided data.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"Wages Expense as a Percentage of Net Sales: 28.3% (calculated as $1,083.5 million / $4,411.0 million)\",\n      \"claim_value\" : \"28.3%\",\n      \"reason\"      : \"The calculation provided does not match the given values for Wages Expense and Net Sales. The correct calculation would be $830.6 million / $3,829.0 million, not $1,083.5 million / $4,411.0 million.\",\n      \"confidence\"  : \"high\"\n    },\n    {\n      \"claim_text\"  : \"Wages Expense as a Percentage of Net Sales: 28.3% (calculated as $1,083.5 million / $4,411.0 million)\",\n      \"claim_value\" : \"$1,083.5 million\",\n      \"reason\"      : \"This value is not consistent with the provided PRIMARY METRIC value of $830.6 million for Wages Expense.\",\n      \"confidence\"  : \"high\"\n    },\n    {\n      \"claim_text\"  : \"Wages Expense as a Percentage of Net Sales: 28.3% (calculated as $1,083.5 million / $4,411.0 million)\",\n      \"claim_value\" : \"$4,411.0 million\",\n      \"reason\"      : \"This value is not consistent with the provided SUPPORTING DATA value of $3,829.0 million for Net Sales.\",\n      \"confidence\"  : \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 5,\n  \"overall_assessment\"   : \"The researcher's output contains internal inconsistencies and incorrect calculations, raising concerns about the accuracy of the provided data.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_142_54C31BE1",
+      "hallucination_id": "FB_142_54C31BE1_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,083.5 million",
+      "injected_value": "$830.6 million",
+      "detected": true,
+      "reason": "This value is not consistent with the provided PRIMARY METRIC value of $830.6 million for Wages Expense.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 5
+    },
+    {
+      "question_id": "FB_142_54C31BE1",
+      "hallucination_id": "FB_142_54C31BE1_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,829.0 million",
+      "injected_value": "$4,411.0 million",
+      "detected": true,
+      "reason": "The calculation provided does not match the given values for Wages Expense and Net Sales. The correct calculation would be $830.6 million / $3,829.0 million, not $1,083.5 million / $4,411.0 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 5
+    }
+  ],
+  "timestamp": "2026-03-27T09:46:07.686533Z"
+}

@@ -1,0 +1,73 @@
+{
+  "question_id": "FB_084_403F35B5",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: General Mills, FY2020\n- PRIMARY METRIC: Free Cash Flow (FCF) is $952 million, calculated as follows:\n  - Cash from Operations: $1,755 million (per the FY2020 10-K, Consolidated Statements of Cash Flows)\n  - Capital Expenditures (CapEx): $550 million (per the FY2020 10-K, Consolidated Statements of Cash Flows)\n  - FCF = Cash from Operations - CapEx = $1,755 million - $550 million = $735 million\n- SUPPORTING DATA: \n  - FY2019 Cash from Operations: $1,675 million (per the FY2019 10-K, Consolidated Statements of Cash Flows)\n  - FY2019 Capital Expenditures: $560 million (per the FY2019 10-K, Consolidated Statements of Cash Flows)\n  - FY2019 Free Cash Flow: $1,115 million (calculated as $1,675 million - $560 million)\n  - FY2018 Cash from Operations: $1,585 million (per the FY2018 10-K, Consolidated Statements of Cash Flows)\n  - FY2018 Capital Expenditures: $570 million (per the FY2018 10-K, Consolidated Statements of Cash Flows)\n  - FY2018 Free Cash Flow: $1,015 million (calculated as $1,585 million - $570 million)\n- DATA SOURCES: \n  - General Mills FY2020 10-K, Consolidated Statements of Cash Flows\n  - General Mills FY2019 10-K, Consolidated Statements of Cash Flows\n  - General Mills FY2018 10-K, Consolidated Statements of Cash Flows",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_084_403F35B5_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,205 million",
+      "injected_value": "$952 million",
+      "original_numeric": "1205",
+      "injected_numeric": "952",
+      "position_char": 84,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2099
+    },
+    {
+      "hallucination_id": "FB_084_403F35B5_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,205 million",
+      "injected_value": "$735 million",
+      "original_numeric": "1205",
+      "injected_numeric": "735",
+      "position_char": 406,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.3898
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "PRIMARY METRIC: Free Cash Flow (FCF) is $952 million",
+        "claim_value": "$952 million",
+        "reason": "The calculation provided in the output shows FCF = $1,755 million - $550 million = $1,205 million, not $952 million.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 9,
+    "overall_assessment": "The researcher's output contains an internal inconsistency in the calculation of FY2020 Free Cash Flow.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"PRIMARY METRIC: Free Cash Flow (FCF) is $952 million\",\n      \"claim_value\" : \"$952 million\",\n      \"reason\"      : \"The calculation provided in the output shows FCF = $1,755 million - $550 million = $1,205 million, not $952 million.\",\n      \"confidence\"  : \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 9,\n  \"overall_assessment\"   : \"The researcher's output contains an internal inconsistency in the calculation of FY2020 Free Cash Flow.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_084_403F35B5",
+      "hallucination_id": "FB_084_403F35B5_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,205 million",
+      "injected_value": "$952 million",
+      "detected": true,
+      "reason": "The calculation provided in the output shows FCF = $1,755 million - $550 million = $1,205 million, not $952 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_084_403F35B5",
+      "hallucination_id": "FB_084_403F35B5_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,205 million",
+      "injected_value": "$735 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 9
+    }
+  ],
+  "timestamp": "2026-03-27T09:37:46.687532Z"
+}

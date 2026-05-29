@@ -1,0 +1,109 @@
+{
+  "question_id": "FB_138_1767BBA1",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Ulta Beauty, FY2022 and FY2023\n- PRIMARY METRIC: \n  - In FY2022, Ulta Beauty acquired **Dermstore** for **$350 million** in cash, as reported in the FY2022 10-K, under the \"Acquisitions\" section.\n  - In FY2023, Ulta Beauty did not report any major acquisitions in the FY2023 10-K.\n\n- SUPPORTING DATA: \n  - For FY2022:\n    - Total Revenue: **$5,245.6 million** (per the FY2022 10-K, Consolidated Statements of Operations)\n    - Net Income: **$489.5 million** (per the FY2022 10-K, Consolidated Statements of Operations)\n    - Total Assets: **$2,212.1 million** (per the FY2022 10-K, Consolidated Balance Sheets)\n  \n  - For FY2023:\n    - Total Revenue: **$4,200.0 million** (per the FY2023 10-K, Consolidated Statements of Operations)\n    - Net Income: **$550.0 million** (per the FY2023 10-K, Consolidated Statements of Operations)\n    - Total Assets: **$2,497.7 million** (per the FY2023 10-K, Consolidated Balance Sheets)\n\n- DATA SOURCES: \n  - FY2022 10-K, \"Acquisitions\" section, Consolidated Statements of Operations, Consolidated Balance Sheets\n  - FY2023 10-K, Consolidated Statements of Operations, Consolidated Balance Sheets\n\nNote: No additional acquisitions were reported for FY2023 in the filings.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_138_1767BBA1_H3",
+      "type": "dollar_amount",
+      "original_value": "$3,900.5 million",
+      "injected_value": "$5,245.6 million",
+      "original_numeric": "3900.5",
+      "injected_numeric": "5245.6",
+      "position_char": 361,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.3449
+    },
+    {
+      "hallucination_id": "FB_138_1767BBA1_H2",
+      "type": "dollar_amount",
+      "original_value": "$3,200.2 million",
+      "injected_value": "$2,212.1 million",
+      "original_numeric": "3200.2",
+      "injected_numeric": "2212.1",
+      "position_char": 561,
+      "sentence_approx": 5,
+      "perturbation_delta": -0.3088
+    },
+    {
+      "hallucination_id": "FB_138_1767BBA1_H1",
+      "type": "dollar_amount",
+      "original_value": "$3,500.0 million",
+      "injected_value": "$2,497.7 million",
+      "original_numeric": "3500.0",
+      "injected_numeric": "2497.7",
+      "position_char": 873,
+      "sentence_approx": 8,
+      "perturbation_delta": -0.2864
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "In FY2022, Ulta Beauty acquired Dermstore for $350 million in cash",
+        "claim_value": "$350 million",
+        "reason": "The acquisition amount seems suspiciously round, and without access to the actual filing, it's difficult to verify.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Total Revenue: $4,200.0 million (per the FY2023 10-K, Consolidated Statements of Operations)",
+        "claim_value": "$4,200.0 million",
+        "reason": "The revenue figure seems suspiciously round, and a 20% year-over-year decline in revenue is unusual for a stable company like Ulta Beauty.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Net Income: $550.0 million (per the FY2023 10-K, Consolidated Statements of Operations)",
+        "claim_value": "$550.0 million",
+        "reason": "The net income figure seems suspiciously round, and a 12% year-over-year increase in net income is unusual given the 20% decline in revenue.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 7,
+    "overall_assessment": "Some financial claims seem suspiciously round or inconsistent, warranting further verification.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"In FY2022, Ulta Beauty acquired Dermstore for $350 million in cash\",\n      \"claim_value\" : \"$350 million\",\n      \"reason\"      : \"The acquisition amount seems suspiciously round, and without access to the actual filing, it's difficult to verify.\",\n      \"confidence\"  : \"medium\"\n    },\n    {\n      \"claim_text\"  : \"Total Revenue: $4,200.0 million (per the FY2023 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\" : \"$4,200.0 million\",\n      \"reason\"      : \"The revenue figure seems suspiciously round, and a 20% year-over-year decline in revenue is unusual for a stable company like Ulta Beauty.\",\n      \"confidence\"  : \"high\"\n    },\n    {\n      \"claim_text\"  : \"Net Income: $550.0 million (per the FY2023 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\" : \"$550.0 million\",\n      \"reason\"      : \"The net income figure seems suspiciously round, and a 12% year-over-year increase in net income is unusual given the 20% decline in revenue.\",\n      \"confidence\"  : \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 7,\n  \"overall_assessment\"   : \"Some financial claims seem suspiciously round or inconsistent, warranting further verification.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_138_1767BBA1",
+      "hallucination_id": "FB_138_1767BBA1_H3",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,900.5 million",
+      "injected_value": "$5,245.6 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_138_1767BBA1",
+      "hallucination_id": "FB_138_1767BBA1_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,200.2 million",
+      "injected_value": "$2,212.1 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_138_1767BBA1",
+      "hallucination_id": "FB_138_1767BBA1_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,500.0 million",
+      "injected_value": "$2,497.7 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 7
+    }
+  ],
+  "timestamp": "2026-03-27T09:45:23.189537Z"
+}

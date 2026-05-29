@@ -1,0 +1,109 @@
+{
+  "question_id": "FB_094_62DF77C2",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Johnson & Johnson, Q2 FY2023 and Q2 FY2022\n- PRIMARY METRIC: \n  - Q2 FY2023 Net Earnings: $5,068 million (per the JOHNSON_JOHNSON_2023Q2_EARNINGS, Consolidated Statements of Operations)\n  - Q2 FY2023 Sales: $32,304 million (per the JOHNSON_JOHNSON_2023Q2_EARNINGS, Consolidated Statements of Operations)\n  - Net Earnings as a Percentage of Sales for Q2 FY2023: 21.11% (calculated as $5,068 million / $24,000 million * 100)\n\n  - Q2 FY2022 Net Earnings: $4,691 million (per the JOHNSON_JOHNSON_2022Q2_EARNINGS, Consolidated Statements of Operations)\n  - Q2 FY2022 Sales: $23,600 million (per the JOHNSON_JOHNSON_2022Q2_EARNINGS, Consolidated Statements of Operations)\n  - Net Earnings as a Percentage of Sales for Q2 FY2022: 26.36% (calculated as $4,691 million / $23,600 million * 100)\n\n- SUPPORTING DATA:\n  - Q2 FY2023:\n    - Net Earnings: $5,068 million\n    - Sales: $24,000 million\n    - Net Earnings as a Percentage of Sales: 21.11%\n  \n  - Q2 FY2022:\n    - Net Earnings: $4,691 million\n    - Sales: $23,600 million\n    - Net Earnings as a Percentage of Sales: 19.87%\n\n  - Percentage Change in Net Earnings: \n    - ((5,068 - 4,691) / 4,691) * 100 = 8.04%\n  \n  - Percentage Change in Sales: \n    - ((24,000 - 23,600) / 23,600) * 100 = 1.69%\n\n- DATA SOURCES:\n  - JOHNSON_JOHNSON_2023Q2_EARNINGS, Consolidated Statements of Operations\n  - JOHNSON_JOHNSON_2022Q2_EARNINGS, Consolidated Statements of Operations\n\nIn conclusion, Johnson & Johnson's net earnings as a percentage of sales increased from 25.10% in Q2 FY2022 to 21.11% in Q2 FY2023.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_094_62DF77C2_H3",
+      "type": "dollar_amount",
+      "original_value": "$24,000 million",
+      "injected_value": "$32,304 million",
+      "original_numeric": "24000",
+      "injected_numeric": "32304",
+      "position_char": 227,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.346
+    },
+    {
+      "hallucination_id": "FB_094_62DF77C2_H2",
+      "type": "percentage",
+      "original_value": "19.87%",
+      "injected_value": "26.36%",
+      "original_numeric": "19.87",
+      "injected_numeric": "26.36",
+      "position_char": 743,
+      "sentence_approx": 2,
+      "perturbation_delta": 6.4922
+    },
+    {
+      "hallucination_id": "FB_094_62DF77C2_H1",
+      "type": "percentage",
+      "original_value": "19.87%",
+      "injected_value": "25.10%",
+      "original_numeric": "19.87",
+      "injected_numeric": "25.10",
+      "position_char": 1518,
+      "sentence_approx": 7,
+      "perturbation_delta": 5.2279
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Q2 FY2023 Sales: $32,304 million",
+        "claim_value": "$32,304 million",
+        "reason": "Inconsistent sales figure, $24,000 million is mentioned later in the supporting data section",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Net Earnings as a Percentage of Sales for Q2 FY2023: 21.11% (calculated as $5,068 million / $24,000 million * 100)",
+        "claim_value": "21.11%",
+        "reason": "Calculation seems incorrect, the correct calculation would be $5,068 million / $32,304 million * 100",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Net Earnings as a Percentage of Sales for Q2 FY2022: 26.36%",
+        "claim_value": "26.36%",
+        "reason": "Inconsistent with the supporting data section, which mentions 19.87%",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 10,
+    "overall_assessment": "The researcher's output contains inconsistencies and calculation errors, which raise concerns about the accuracy of the conclusions drawn.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"Q2 FY2023 Sales: $32,304 million\",\n      \"claim_value\" : \"$32,304 million\",\n      \"reason\"      : \"Inconsistent sales figure, $24,000 million is mentioned later in the supporting data section\",\n      \"confidence\"  : \"high\"\n    },\n    {\n      \"claim_text\"  : \"Net Earnings as a Percentage of Sales for Q2 FY2023: 21.11% (calculated as $5,068 million / $24,000 million * 100)\",\n      \"claim_value\" : \"21.11%\",\n      \"reason\"      : \"Calculation seems incorrect, the correct calculation would be $5,068 million / $32,304 million * 100\",\n      \"confidence\"  : \"high\"\n    },\n    {\n      \"claim_text\"  : \"Net Earnings as a Percentage of Sales for Q2 FY2022: 26.36%\",\n      \"claim_value\" : \"26.36%\",\n      \"reason\"      : \"Inconsistent with the supporting data section, which mentions 19.87%\",\n      \"confidence\"  : \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 10,\n  \"overall_assessment\"   : \"The researcher's output contains inconsistencies and calculation errors, which raise concerns about the accuracy of the conclusions drawn.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_094_62DF77C2",
+      "hallucination_id": "FB_094_62DF77C2_H3",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$24,000 million",
+      "injected_value": "$32,304 million",
+      "detected": true,
+      "reason": "Inconsistent sales figure, $24,000 million is mentioned later in the supporting data section",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 10
+    },
+    {
+      "question_id": "FB_094_62DF77C2",
+      "hallucination_id": "FB_094_62DF77C2_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "percentage",
+      "original_value": "19.87%",
+      "injected_value": "26.36%",
+      "detected": true,
+      "reason": "Inconsistent with the supporting data section, which mentions 19.87%",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 10
+    },
+    {
+      "question_id": "FB_094_62DF77C2",
+      "hallucination_id": "FB_094_62DF77C2_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "percentage",
+      "original_value": "19.87%",
+      "injected_value": "25.10%",
+      "detected": true,
+      "reason": "Inconsistent with the supporting data section, which mentions 19.87%",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 10
+    }
+  ],
+  "timestamp": "2026-03-27T09:39:20.055149Z"
+}

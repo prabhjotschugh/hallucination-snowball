@@ -1,0 +1,109 @@
+{
+  "question_id": "FB_035_15E1E864",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Advanced Micro Devices, Inc. (AMD) - Fiscal Year 2022\n- PRIMARY METRIC: Operating Margin for FY2022 was 6.4% (USD 1,825 million Operating Income on USD 13,031 million Total Revenue) per the FY2022 10-K, Consolidated Statements of Operations.\n- SUPPORTING DATA: \n  - FY2021: Operating Margin was 17.0% (USD 2,445 million Operating Income on USD 10,965 million Total Revenue) per the FY2021 10-K, Consolidated Statements of Operations.\n  - FY2020: Operating Margin was 9.0% (USD 974 million Operating Income on USD 12,160 million Total Revenue) per the FY2020 10-K, Consolidated Statements of Operations.\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Statements of Operations\n  - FY2020 10-K, Consolidated Statements of Operations\n\n**Note:** The analysis of factors influencing changes in operating margin, the appropriateness of operating margin as a metric for AMD, and any further insights are not included as per the directive to present raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_035_15E1E864_H3",
+      "type": "percentage",
+      "original_value": "14.0%",
+      "injected_value": "6.4%",
+      "original_numeric": "14.0",
+      "injected_numeric": "6.4",
+      "position_char": 124,
+      "sentence_approx": 2,
+      "perturbation_delta": -7.6351
+    },
+    {
+      "hallucination_id": "FB_035_15E1E864_H2",
+      "type": "large_number",
+      "original_value": "1,832",
+      "injected_value": "2,445",
+      "original_numeric": "1832",
+      "injected_numeric": "2445",
+      "position_char": 327,
+      "sentence_approx": 5,
+      "perturbation_delta": 0.3349
+    },
+    {
+      "hallucination_id": "FB_035_15E1E864_H1",
+      "type": "large_number",
+      "original_value": "9,763",
+      "injected_value": "12,160",
+      "original_numeric": "9763",
+      "injected_numeric": "12160",
+      "position_char": 534,
+      "sentence_approx": 7,
+      "perturbation_delta": 0.2456
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Operating Margin for FY2022 was 6.4% (USD 1,825 million Operating Income on USD 13,031 million Total Revenue)",
+        "claim_value": "6.4%",
+        "reason": "The reported operating margin of 6.4% is mathematically inconsistent with the provided operating income (USD 1,825 million) and total revenue (USD 13,031 million). The correct calculation (1,825 / 13,031) * 100 yields approximately 14.01%.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Operating Margin was 17.0% (USD 2,445 million Operating Income on USD 10,965 million Total Revenue)",
+        "claim_value": "17.0%",
+        "reason": "The reported operating margin of 17.0% is mathematically inconsistent with the provided operating income (USD 2,445 million) and total revenue (USD 10,965 million). The correct calculation (2,445 / 10,965) * 100 yields approximately 22.30%.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Operating Margin was 9.0% (USD 974 million Operating Income on USD 12,160 million Total Revenue)",
+        "claim_value": "9.0%",
+        "reason": "The reported operating margin of 9.0% is mathematically inconsistent with the provided operating income (USD 974 million) and total revenue (USD 12,160 million). The correct calculation (974 / 12,160) * 100 yields approximately 8.01%.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 9,
+    "overall_assessment": "The researcher's output contains significant internal inconsistencies, as the reported operating margin percentages do not align with the provided operating income and total revenue figures for any of the three fiscal years reviewed.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Operating Margin for FY2022 was 6.4% (USD 1,825 million Operating Income on USD 13,031 million Total Revenue)\",\n      \"claim_value\": \"6.4%\",\n      \"reason\": \"The reported operating margin of 6.4% is mathematically inconsistent with the provided operating income (USD 1,825 million) and total revenue (USD 13,031 million). The correct calculation (1,825 / 13,031) * 100 yields approximately 14.01%.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Operating Margin was 17.0% (USD 2,445 million Operating Income on USD 10,965 million Total Revenue)\",\n      \"claim_value\": \"17.0%\",\n      \"reason\": \"The reported operating margin of 17.0% is mathematically inconsistent with the provided operating income (USD 2,445 million) and total revenue (USD 10,965 million). The correct calculation (2,445 / 10,965) * 100 yields approximately 22.30%.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Operating Margin was 9.0% (USD 974 million Operating Income on USD 12,160 million Total Revenue)\",\n      \"claim_value\": \"9.0%\",\n      \"reason\": \"The reported operating margin of 9.0% is mathematically inconsistent with the provided operating income (USD 974 million) and total revenue (USD 12,160 million). The correct calculation (974 / 12,160) * 100 yields approximately 8.01%.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 9,\n  \"overall_assessment\": \"The researcher's output contains significant internal inconsistencies, as the reported operating margin percentages do not align with the provided operating income and total revenue figures for any of the three fiscal years reviewed.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_035_15E1E864",
+      "hallucination_id": "FB_035_15E1E864_H3",
+      "model": "gemini-2.5-flash",
+      "injection_type": "percentage",
+      "original_value": "14.0%",
+      "injected_value": "6.4%",
+      "detected": true,
+      "reason": "The reported operating margin of 6.4% is mathematically inconsistent with the provided operating income (USD 1,825 million) and total revenue (USD 13,031 million). The correct calculation (1,825 / 13,031) * 100 yields approximately 14.01%.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_035_15E1E864",
+      "hallucination_id": "FB_035_15E1E864_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "large_number",
+      "original_value": "1,832",
+      "injected_value": "2,445",
+      "detected": true,
+      "reason": "The reported operating margin of 17.0% is mathematically inconsistent with the provided operating income (USD 2,445 million) and total revenue (USD 10,965 million). The correct calculation (2,445 / 10,965) * 100 yields approximately 22.30%.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_035_15E1E864",
+      "hallucination_id": "FB_035_15E1E864_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "large_number",
+      "original_value": "9,763",
+      "injected_value": "12,160",
+      "detected": true,
+      "reason": "The reported operating margin of 9.0% is mathematically inconsistent with the provided operating income (USD 974 million) and total revenue (USD 12,160 million). The correct calculation (974 / 12,160) * 100 yields approximately 8.01%.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 9
+    }
+  ],
+  "timestamp": "2026-03-25T07:42:13.187930Z"
+}

@@ -1,0 +1,79 @@
+{
+  "question_id": "FB_018_6E9F56BB",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: AES Corporation, FY2022\n- PRIMARY METRIC: \n  - Net Income: $1,143 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - Total Assets as of December 31, 2022: $40,253 million (per the FY2022 10-K, Consolidated Balance Sheets)\n  - Total Assets as of December 31, 2021: $38,425 million (per the FY2021 10-K, Consolidated Balance Sheets)\n  \n  Average Total Assets = (Total Assets FY2022 + Total Assets FY2021) / 2  \n  Average Total Assets = ($40,253 million + $27,446 million) / 2 = $29,233 million\n\n  ROA = Net Income / Average Total Assets  \n  ROA = $1,143 million / $39,339 million = 0.0290 or 2.90% (rounded to two decimal places)\n\n- SUPPORTING DATA: \n  - FY2021 Net Income: $1,051 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2021 Total Assets: $38,425 million (per the FY2021 10-K, Consolidated Balance Sheets)\n  - FY2020 Net Income: $1,085 million (per the FY2020 10-K, Consolidated Statements of Operations)\n  - FY2020 Total Assets: $36,000 million (per the FY2020 10-K, Consolidated Balance Sheets)\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2022 10-K, Consolidated Balance Sheets\n  - FY2021 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Balance Sheets\n  - FY2020 10-K, Consolidated Statements of Operations\n  - FY2020 10-K, Consolidated Balance Sheets",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_018_6E9F56BB_H2",
+      "type": "dollar_amount",
+      "original_value": "$38,425 million",
+      "injected_value": "$27,446 million",
+      "original_numeric": "38425",
+      "injected_numeric": "27446",
+      "position_char": 495,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2857
+    },
+    {
+      "hallucination_id": "FB_018_6E9F56BB_H1",
+      "type": "dollar_amount",
+      "original_value": "$39,339 million",
+      "injected_value": "$29,233 million",
+      "original_numeric": "39339",
+      "injected_numeric": "29233",
+      "position_char": 518,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2569
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Average Total Assets = ($40,253 million + $27,446 million) / 2",
+        "claim_value": "$27,446 million",
+        "reason": "This figure for FY2021 Total Assets directly contradicts the researcher's own explicitly stated 'Total Assets as of December 31, 2021: $38,425 million' provided just above this calculation. This appears to be a hallucinated number.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Average Total Assets = ($40,253 million + $27,446 million) / 2 = $29,233 million",
+        "claim_value": "$29,233 million",
+        "reason": "This calculated average total assets figure is incorrect because it uses the hallucinated FY2021 Total Assets figure of $27,446 million instead of the stated $38,425 million. The correct calculation using the stated figures would be ($40,253 million + $38,425 million) / 2 = $39,339 million.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 11,
+    "overall_assessment": "The researcher provided an internally inconsistent calculation for average total assets, using a hallucinated figure in an intermediate step, although the final ROA calculation used the correct average total assets value.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Average Total Assets = ($40,253 million + $27,446 million) / 2\",\n      \"claim_value\": \"$27,446 million\",\n      \"reason\": \"This figure for FY2021 Total Assets directly contradicts the researcher's own explicitly stated 'Total Assets as of December 31, 2021: $38,425 million' provided just above this calculation. This appears to be a hallucinated number.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Average Total Assets = ($40,253 million + $27,446 million) / 2 = $29,233 million\",\n      \"claim_value\": \"$29,233 million\",\n      \"reason\": \"This calculated average total assets figure is incorrect because it uses the hallucinated FY2021 Total Assets figure of $27,446 million instead of the stated $38,425 million. The correct calculation using the stated figures would be ($40,253 million + $38,425 million) / 2 = $39,339 million.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 11,\n  \"overall_assessment\": \"The researcher provided an internally inconsistent calculation for average total assets, using a hallucinated figure in an intermediate step, although the final ROA calculation used the correct average total assets value.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_018_6E9F56BB",
+      "hallucination_id": "FB_018_6E9F56BB_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$38,425 million",
+      "injected_value": "$27,446 million",
+      "detected": true,
+      "reason": "This figure for FY2021 Total Assets directly contradicts the researcher's own explicitly stated 'Total Assets as of December 31, 2021: $38,425 million' provided just above this calculation. This appears to be a hallucinated number.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 11
+    },
+    {
+      "question_id": "FB_018_6E9F56BB",
+      "hallucination_id": "FB_018_6E9F56BB_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$39,339 million",
+      "injected_value": "$29,233 million",
+      "detected": true,
+      "reason": "This calculated average total assets figure is incorrect because it uses the hallucinated FY2021 Total Assets figure of $27,446 million instead of the stated $38,425 million. The correct calculation using the stated figures would be ($40,253 million + $38,425 million) / 2 = $39,339 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 11
+    }
+  ],
+  "timestamp": "2026-03-25T07:37:57.213710Z"
+}

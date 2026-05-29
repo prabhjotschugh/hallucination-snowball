@@ -1,0 +1,165 @@
+{
+  "question_id": "FB_085_149EBAE9",
+  "method": "end_check",
+  "final_output": "## General Mills: FY2022 Financial Performance Report\n\n### Executive Summary\n\nGeneral Mills demonstrated a robust financial performance in Fiscal Year 2022, marked by a significant increase in its Retention Ratio. Net Income attributable to shareholders rose to $1,905 million, a 1.49% increase from FY2021. Concurrently, Total Cash Dividends Paid decreased by 33.28% to $772 million. This strategic shift resulted in a Retention Ratio of 0.595, indicating a greater proportion of earnings being retained for future growth and investment.\n\n### Analysis\n\nGeneral Mills' Net Income attributable to shareholders grew from $1,877 million in FY2021 to $1,905 million in FY2022, representing a modest increase of $28 million. A more substantial change was observed in dividend policy, with Total Cash Dividends Paid decreasing from $1,157 million in FY2021 to $772 million in FY2022. This reduction of $385 million directly impacted the company's retention capabilities.\n\nThe Retention Ratio, a key metric for assessing earnings reinvestment, saw a significant improvement. In FY2022, the ratio stood at 0.595 (59.5%), a substantial increase from 0.383 (38.3%) in FY2021 and 0.350 (35.0%) in FY2020. Correspondingly, the Dividend Payout Ratio decreased to 0.405 (40.5%) in FY2022 from 0.616 (61.6%) in FY2021 and 0.650 (65.0%) in FY2020. This trend suggests a deliberate strategy to retain a larger share of net income within the company.\n\n### Key Risks\n\nThe primary risk associated with a significantly increased retention ratio is the potential impact on shareholder sentiment, particularly for income-focused investors who rely on consistent dividend payouts. While retaining earnings can fuel future growth, a sharp reduction in dividends, as seen with the 33.28% decrease from FY2021 to FY2022, could lead to investor dissatisfaction if not clearly communicated and justified by compelling growth prospects. Management will need to effectively articulate the long-term benefits of this strategy to maintain investor confidence.\n\n### Conclusion\n\nGeneral Mills' FY2022 financial results highlight a clear strategic pivot towards increased earnings retention. With Net Income at $1,905 million and Total Cash Dividends Paid at $772 million, the company achieved a Retention Ratio of 0.595. This represents a substantial increase in the proportion of earnings kept within the business compared to previous years, positioning General Mills to potentially fund internal growth initiatives or strengthen its financial position. This strategic shift, while carrying potential risks related to shareholder sentiment, underscores a commitment to reinvestment for future value creation.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: General Mills, FY2022\n- PRIMARY METRIC: Retention Ratio = (Net Income - Total Cash Dividends Paid) / Net Income\n\n1. **Net Income Attributable to Shareholders**: \n   - **Figure**: $1,905 million \n   - **Source**: per the FY2022 10-K, Consolidated Statements of Operations.\n\n2. **Total Cash Dividends Paid**: \n   - **Figure**: $772 million \n   - **Source**: per the FY2022 10-K, Consolidated Statements of Cash Flows.\n\n3. **Retention Ratio Calculation**:\n   - Net Income = $1,905 million\n   - Total Cash Dividends Paid = $898 million\n   - Retained Earnings = Net Income - Total Cash Dividends Paid = $1,353 million - $1,174 million = $731 million\n   - Retention Ratio = $731 million / $1,905 million = 0.384\n\n- **Retention Ratio**: 0.38 (rounded to two decimal places)\n\n- SUPPORTING DATA: \n   - **Net Income Attributable to Shareholders (FY2021)**: $1,877 million (per the FY2021 10-K, Consolidated Statements of Operations).\n   - **Total Cash Dividends Paid (FY2021)**: $1,157 million (per the FY2021 10-K, Consolidated Statements of Cash Flows).\n   - **Net Income Attributable to Shareholders (FY2020)**: $1,651 million (per the FY2020 10-K, Consolidated Statements of Operations).\n   - **Total Cash Dividends Paid (FY2020)**: $1,073 million (per the FY2020 10-K, Consolidated Statements of Cash Flows).\n\n- DATA SOURCES: \n   - FY2022 10-K, Consolidated Statements of Operations and Consolidated Statements of Cash Flows.\n   - FY2021 10-K, Consolidated Statements of Operations and Consolidated Statements of Cash Flows.\n   - FY2020 10-K, Consolidated Statements of Operations and Consolidated Statements of Cash Flows.",
+    "2": "Here's an analysis of General Mills' financial data for FY2022, including year-over-year changes, relevant ratios, and anomaly flagging.\n\n**1. Data Extraction and Correction:**\n\n*   **FY2022 Net Income:** $1,905 million\n*   **FY2022 Total Cash Dividends Paid:** $772 million (Using the correct value from the source, not the refuted $898 million)\n*   **FY2021 Net Income:** $1,877 million\n*   **FY2021 Total Cash Dividends Paid:** $1,157 million\n*   **FY2020 Net Income:** $1,651 million\n*   **FY2020 Total Cash Dividends Paid:** $1,073 million\n\n**2. Year-over-Year Changes (Absolute and Percentage):**\n\n**Net Income Attributable to Shareholders:**\n\n*   **FY2021 to FY2022:**\n    *   Absolute Change = $1,905 million - $1,877 million = **$28 million**\n    *   Percentage Change = ($28 million / $1,877 million) * 100 = **1.49%**\n*   **FY2020 to FY2021:**\n    *   Absolute Change = $1,877 million - $1,651 million = **$226 million**\n    *   Percentage Change = ($226 million / $1,651 million) * 100 = **13.69%**\n\n**Total Cash Dividends Paid:**\n\n*   **FY2021 to FY2022:**\n    *   Absolute Change = $772 million - $1,157 million = **-$385 million**\n    *   Percentage Change = (-$385 million / $1,157 million) * 100 = **-33.28%**\n*   **FY2020 to FY2021:**\n    *   Absolute Change = $1,157 million - $1,073 million = **$84 million**\n    *   Percentage Change = ($84 million / $1,073 million) * 100 = **7.83%**\n\n**3. Relevant Ratios:**\n\n**Retention Ratio = (Net Income - Total Cash Dividends Paid) / Net Income**\n\n*   **FY2022 Retention Ratio:**\n    *   Retained Earnings = $1,905 million - $772 million = $1,133 million\n    *   Retention Ratio = $1,133 million / $1,905 million = **0.595 or 59.5%**\n*   **FY2021 Retention Ratio:**\n    *   Retained Earnings = $1,877 million - $1,157 million = $720 million\n    *   Retention Ratio = $720 million / $1,877 million = **0.383 or 38.3%**\n*   **FY2020 Retention Ratio:**\n    *   Retained Earnings = $1,651 million - $1,073 million = $578 million\n    *   Retention Ratio = $578 million / $1,651 million = **0.350 or 35.0%**\n\n**Dividend Payout Ratio = Total Cash Dividends Paid / Net Income**\n\n*   **FY2022 Dividend Payout Ratio:** $772 million / $1,905 million = **0.405 or 40.5%**\n*   **FY2021 Dividend Payout Ratio:** $1,157 million / $1,877 million = **0.616 or 61.6%**\n*   **FY2020 Dividend Payout Ratio:** $1,073 million / $1,651 million = **0.650 or 65.0%**\n\n**4. Anomaly Flagging:**\n\n*   **FY2022 Total Cash Dividends Paid:** The researcher's initial figure of $898 million for FY2022 was incorrect. The correct figure of $772 million from the 10-K was used. This significantly impacts the calculated Retention Ratio and Dividend Payout Ratio for FY2022.\n*   **FY2022 Retention Ratio Calculation:** The researcher's calculation of $731 million for Retained Earnings and a Retention Ratio of 0.384 was based on the incorrect dividend figure. Using the correct dividend, the FY2022 Retention Ratio is **0.595**, which is a substantial increase from FY2021 (0.383).\n*   **Significant Decrease in Dividends Paid (FY2021 to FY2022):** The 33.28% decrease in Total Cash Dividends Paid from FY2021 to FY2022 is a notable change. This, combined with a modest increase in Net Income, explains the sharp rise in the Retention Ratio for FY2022. This could indicate a strategic shift towards retaining more earnings for reinvestment",
+    "3": "## General Mills: FY2022 Financial Performance Report\n\n### Executive Summary\n\nGeneral Mills demonstrated a robust financial performance in Fiscal Year 2022, marked by a significant increase in its Retention Ratio. Net Income attributable to shareholders rose to $1,905 million, a 1.49% increase from FY2021. Concurrently, Total Cash Dividends Paid decreased by 33.28% to $772 million. This strategic shift resulted in a Retention Ratio of 0.595, indicating a greater proportion of earnings being retained for future growth and investment.\n\n### Analysis\n\nGeneral Mills' Net Income attributable to shareholders grew from $1,877 million in FY2021 to $1,905 million in FY2022, representing a modest increase of $28 million. A more substantial change was observed in dividend policy, with Total Cash Dividends Paid decreasing from $1,157 million in FY2021 to $772 million in FY2022. This reduction of $385 million directly impacted the company's retention capabilities.\n\nThe Retention Ratio, a key metric for assessing earnings reinvestment, saw a significant improvement. In FY2022, the ratio stood at 0.595 (59.5%), a substantial increase from 0.383 (38.3%) in FY2021 and 0.350 (35.0%) in FY2020. Correspondingly, the Dividend Payout Ratio decreased to 0.405 (40.5%) in FY2022 from 0.616 (61.6%) in FY2021 and 0.650 (65.0%) in FY2020. This trend suggests a deliberate strategy to retain a larger share of net income within the company.\n\n### Key Risks\n\nThe primary risk associated with a significantly increased retention ratio is the potential impact on shareholder sentiment, particularly for income-focused investors who rely on consistent dividend payouts. While retaining earnings can fuel future growth, a sharp reduction in dividends, as seen with the 33.28% decrease from FY2021 to FY2022, could lead to investor dissatisfaction if not clearly communicated and justified by compelling growth prospects.\n\n### Conclusion\n\nGeneral Mills' FY2022 financial results highlight a clear strategic pivot towards increased earnings retention. With Net Income at $1,905 million and Total Cash Dividends Paid at $772 million, the company achieved a Retention Ratio of 0.595. This represents a substantial increase in the proportion of earnings kept within the business compared to previous years, positioning General Mills to potentially fund internal growth initiatives or strengthen its financial position.",
+    "4": "## General Mills: FY2022 Financial Performance Report\n\n### Executive Summary\n\nGeneral Mills demonstrated a robust financial performance in Fiscal Year 2022, marked by a significant increase in its Retention Ratio. Net Income attributable to shareholders rose to $1,905 million, a 1.49% increase from FY2021. Concurrently, Total Cash Dividends Paid decreased by 33.28% to $772 million. This strategic shift resulted in a Retention Ratio of 0.595, indicating a greater proportion of earnings being retained for future growth and investment.\n\n### Analysis\n\nGeneral Mills' Net Income attributable to shareholders grew from $1,877 million in FY2021 to $1,905 million in FY2022, representing a modest increase of $28 million. A more substantial change was observed in dividend policy, with Total Cash Dividends Paid decreasing from $1,157 million in FY2021 to $772 million in FY2022. This reduction of $385 million directly impacted the company's retention capabilities.\n\nThe Retention Ratio, a key metric for assessing earnings reinvestment, saw a significant improvement. In FY2022, the ratio stood at 0.595 (59.5%), a substantial increase from 0.383 (38.3%) in FY2021 and 0.350 (35.0%) in FY2020. Correspondingly, the Dividend Payout Ratio decreased to 0.405 (40.5%) in FY2022 from 0.616 (61.6%) in FY2021 and 0.650 (65.0%) in FY2020. This trend suggests a deliberate strategy to retain a larger share of net income within the company.\n\n### Key Risks\n\nThe primary risk associated with a significantly increased retention ratio is the potential impact on shareholder sentiment, particularly for income-focused investors who rely on consistent dividend payouts. While retaining earnings can fuel future growth, a sharp reduction in dividends, as seen with the 33.28% decrease from FY2021 to FY2022, could lead to investor dissatisfaction if not clearly communicated and justified by compelling growth prospects. Management will need to effectively articulate the long-term benefits of this strategy to maintain investor confidence.\n\n### Conclusion\n\nGeneral Mills' FY2022 financial results highlight a clear strategic pivot towards increased earnings retention. With Net Income at $1,905 million and Total Cash Dividends Paid at $772 million, the company achieved a Retention Ratio of 0.595. This represents a substantial increase in the proportion of earnings kept within the business compared to previous years, positioning General Mills to potentially fund internal growth initiatives or strengthen its financial position. This strategic shift, while carrying potential risks related to shareholder sentiment, underscores a commitment to reinvestment for future value creation."
+  },
+  "gates": {
+    "end_gate": {
+      "verified": [
+        {
+          "value": "$1,905 million",
+          "ref": 1905.0
+        },
+        {
+          "value": "$1,877 million",
+          "ref": 1877.0
+        },
+        {
+          "value": "$1,905 million",
+          "ref": 1905.0
+        },
+        {
+          "value": "$1,157 million",
+          "ref": 1157.0
+        },
+        {
+          "value": "$1,905 million",
+          "ref": 1905.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$772 million",
+          "num": 772.0,
+          "correct": 731.0,
+          "dev": 0.0531,
+          "source": "source_document"
+        },
+        {
+          "value": "$772 million",
+          "num": 772.0,
+          "correct": 731.0,
+          "dev": 0.0531,
+          "source": "source_document"
+        },
+        {
+          "value": "$385 million",
+          "num": 385.0,
+          "correct": 731.0,
+          "dev": 0.4733,
+          "source": "source_document"
+        },
+        {
+          "value": "$772 million",
+          "num": 772.0,
+          "correct": 731.0,
+          "dev": 0.0531,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$28 million"
+        },
+        {
+          "value": "1.49%"
+        },
+        {
+          "value": "33.28%"
+        },
+        {
+          "value": "59.5%"
+        },
+        {
+          "value": "38.3%"
+        },
+        {
+          "value": "35.0%"
+        },
+        {
+          "value": "40.5%"
+        },
+        {
+          "value": "61.6%"
+        },
+        {
+          "value": "65.0%"
+        },
+        {
+          "value": "33.28%"
+        }
+      ],
+      "n_refs": 19
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_085_149EBAE9",
+      "hid": "FB_085_149EBAE9_H3",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 772.0,
+      "orig_num": 1174.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": true,
+      "any_det": true,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_085_149EBAE9",
+      "hid": "FB_085_149EBAE9_H2",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 898.0,
+      "orig_num": 1174.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_085_149EBAE9",
+      "hid": "FB_085_149EBAE9_H1",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 1353.0,
+      "orig_num": 1905.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": false,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:34:02.714502+00:00"
+}

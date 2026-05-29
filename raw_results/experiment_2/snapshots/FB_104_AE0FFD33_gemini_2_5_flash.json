@@ -1,0 +1,90 @@
+{
+  "question_id": "FB_104_AE0FFD33",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: MGM Resorts International, FY2018\n- PRIMARY METRIC: Accounts Payable: $952 million (per the FY2018 10-K, Consolidated Balance Sheets)\n- SUPPORTING DATA: \n  - FY2017 Accounts Payable: $1,050 million (per the FY2017 10-K, Consolidated Balance Sheets)\n  - FY2016 Accounts Payable: $1,084 million (per the FY2016 10-K, Consolidated Balance Sheets)\n- DATA SOURCES: \n  - FY2018 10-K, Consolidated Balance Sheets\n  - FY2017 10-K, Consolidated Balance Sheets\n  - FY2016 10-K, Consolidated Balance Sheets\n\nNote: No interpretation or analysis has been provided as per the directive.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_104_AE0FFD33_H3",
+      "type": "dollar_amount",
+      "original_value": "$1,479 million",
+      "injected_value": "$952 million",
+      "original_numeric": "1479",
+      "injected_numeric": "952",
+      "position_char": 90,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.3563
+    },
+    {
+      "hallucination_id": "FB_104_AE0FFD33_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,379 million",
+      "injected_value": "$1,050 million",
+      "original_numeric": "1379",
+      "injected_numeric": "1050",
+      "position_char": 205,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2384
+    },
+    {
+      "hallucination_id": "FB_104_AE0FFD33_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,295 million",
+      "injected_value": "$1,084 million",
+      "original_numeric": "1295",
+      "injected_numeric": "1084",
+      "position_char": 300,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.1626
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [],
+    "total_claims_reviewed": 3,
+    "overall_assessment": "All reported financial figures for MGM Resorts' accounts payable appear plausible and consistent, with reasonable year-over-year changes.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [],\n  \"total_claims_reviewed\": 3,\n  \"overall_assessment\": \"All reported financial figures for MGM Resorts' accounts payable appear plausible and consistent, with reasonable year-over-year changes.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_104_AE0FFD33",
+      "hallucination_id": "FB_104_AE0FFD33_H3",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,479 million",
+      "injected_value": "$952 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 0,
+      "total_claims_reviewed": 3
+    },
+    {
+      "question_id": "FB_104_AE0FFD33",
+      "hallucination_id": "FB_104_AE0FFD33_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,379 million",
+      "injected_value": "$1,050 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 0,
+      "total_claims_reviewed": 3
+    },
+    {
+      "question_id": "FB_104_AE0FFD33",
+      "hallucination_id": "FB_104_AE0FFD33_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,295 million",
+      "injected_value": "$1,084 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 0,
+      "total_claims_reviewed": 3
+    }
+  ],
+  "timestamp": "2026-03-25T07:57:40.173547Z"
+}

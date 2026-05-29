@@ -1,0 +1,472 @@
+{
+  "question_id": "FB_081_4E1CC3D9",
+  "method": "ours",
+  "final_output": "## Foot Locker, Inc. - Board of Directors Election Results (May 20, 2022)\n\n### Executive Summary\nThis report summarizes the voting results for the election of directors at Foot Locker, Inc., as disclosed in the 8-K filing dated May 20, 2022. All nominated directors received substantial shareholder support and were duly elected. Jill M. Granoff received the highest number of \"Votes For\" at 77,551,206, indicating strong approval. M. Scott McCarty recorded the highest \"Votes Against\" at 9,876,543, suggesting a comparatively higher level of shareholder dissent for this nominee.\n\n### Analysis\nThe aggregate \"Votes For\" across all nominees totaled 239,545,010, while \"Votes Against\" amounted to 40,383,184, and \"Abstentions\" were 6,172,835. Jill M. Granoff demonstrated the strongest shareholder approval, securing 77,551,206 \"Votes For\" and a Dissent Ratio of 8.98% (calculated as Votes Against / (Votes For + Votes Against)). Conversely, M. Scott McCarty, while elected, faced the highest dissent with 9,876,543 \"Votes Against\" and a Dissent Ratio of 17.34%. Richard A. Johnson and Michael B. McGarry also experienced notable \"Votes Against\" at 8,321,456 and 7,987,654, respectively, resulting in Dissent Ratios of 14.86% and 14.26%. Michele A. Buck received the lowest \"Votes Against\" at 6,543,210, corresponding to a Dissent Ratio of 10.00%.\n\n### Key Considerations\nThe relatively higher \"Votes Against\" for M. Scott McCarty, totaling 9,876,543, suggests a segment of shareholders may have concerns regarding his performance or suitability. While this level of dissent did not prevent his election, it warrants attention from the board and management. Understanding the underlying reasons for this dissent is crucial for maintaining positive shareholder relations and addressing any potential governance perceptions. Proactive engagement with shareholders could help clarify any misunderstandings or address legitimate concerns.\n\n### Conclusion\nThe election results confirm broad shareholder support for the nominated directors, with all nominees successfully elected. However, the varying levels of \"Votes Against\" among nominees, particularly for M. Scott McCarty, highlight areas where shareholder engagement and communication could be strengthened. Addressing these areas will be important to ensure continued confidence and alignment with investor expectations, fostering robust corporate governance.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Foot Locker, Inc. - May 20, 2022\n- PRIMARY METRIC: The voting results for each nominee as presented in the 8-K filing dated May 20, 2022, are as follows:\n  - **Richard A. Johnson**: Votes For: 47,656,123; Votes Against: 8,321,456; Abstentions: 1,234,567 (per the 8-K filing, Item 5.07).\n  - **Jill M. Granoff**: Votes For: 63,263,625; Votes Against: 7,654,321; Abstentions: 1,234,567 (per the 8-K filing, Item 5.07).\n  - **Michael B. McGarry**: Votes For: 47,987,654; Votes Against: 7,987,654; Abstentions: 1,234,567 (per the 8-K filing, Item 5.07).\n  - **Michele A. Buck**: Votes For: 48,654,321; Votes Against: 6,543,210; Abstentions: 1,234,567 (per the 8-K filing, Item 5.07).\n  - **M. Scott McCarty**: Votes For: 47,123,456; Votes Against: 12,416,701; Abstentions: 1,234,567 (per the 8-K filing, Item 5.07).\n\n- SUPPORTING DATA: \n  - Total Votes For: 239,545,010 (sum of all votes for nominees).\n  - Total Votes Against: 41,383,184 (sum of all votes against nominees).\n  - Total Abstentions: 6,174,835 (sum of all abstentions).\n  \n  The nominee with the highest votes against was **M. Scott McCarty** with 9,876,543 votes against, which is significantly higher than the next highest, **Richard A. Johnson**, with 8,321,456 votes against.\n\n- DATA SOURCES: Foot Locker, Inc. 8-K filing dated May 20, 2022, Item 5.07 - \"Submission of Matters to a Vote of Security Holders\".",
+    "2": "As a financial analyst, I've reviewed the provided researcher data for Foot Locker, Inc. from the May 20, 2022 8-K filing, incorporating the corrected values.\n\n**Corrected Data Summary:**\n\n*   **Richard A. Johnson**: Votes For: 47,656,123; Votes Against: 8,321,456; Abstentions: 1,234,567\n*   **Jill M. Granoff**: Votes For: **77,551,206** (Corrected from 63,263,625); Votes Against: 7,654,321; Abstentions: 1,234,567\n*   **Michael B. McGarry**: Votes For: 47,987,654; Votes Against: 7,987,654; Abstentions: 1,234,567\n*   **Michele A. Buck**: Votes For: 48,654,321; Votes Against: 6,543,210; Abstentions: 1,234,567\n*   **M. Scott McCarty**: Votes For: 47,123,456; Votes Against: **9,876,543** (Corrected from 12,416,701); Abstentions: 1,234,567\n\n**Recalculated Supporting Data (using corrected values):**\n\n*   **Total Votes For (Recalculated)**: 47,656,123 + 77,551,206 + 47,987,654 + 48,654,321 + 47,123,456 = **268,972,760**\n*   **Total Votes Against (Recalculated)**: 8,321,456 + 7,654,321 + 7,987,654 + 6,543,210 + 9,876,543 = **40,383,184**\n*   **Total Abstentions (Recalculated)**: 1,234,567 * 5 = **6,172,835**\n\n**1. Year-over-Year Changes (Not Applicable)**\n\nThe provided data is a snapshot from a single 8-K filing (May 20, 2022) and does not include prior period data for comparison. Therefore, year-over-year changes (absolute and percentage) cannot be computed.\n\n**2. Relevant Ratios**\n\nFor each nominee, the following ratios are calculated:\n\n*   **Support Ratio (Votes For / Total Votes Cast)**: Measures the proportion of votes in favor relative to all votes cast (For + Against + Abstentions).\n    *   Formula: `Votes For / (Votes For + Votes Against + Abstentions)`\n*   **Approval Ratio (Votes For / (Votes For + Votes Against))**: Measures the proportion of votes in favor relative to only \"active\" votes (excluding abstentions).\n    *   Formula: `Votes For / (Votes For + Votes Against)`\n*   **Dissent Ratio (Votes Against / (Votes For + Votes Against))**: Measures the proportion of votes against relative to only \"active\" votes.\n    *   Formula: `Votes Against / (Votes For + Votes Against)`\n\n| Nominee             | Votes For | Votes Against | Abstentions | Total Votes Cast | Support Ratio | Approval Ratio | Dissent Ratio |\n| :------------------ | --------: | ------------: | ----------: | ---------------: | ------------: | -------------: | ------------: |\n| Richard A. Johnson  | 47,656,123 | 8,321,456 | 1,234,567 | 57,212,146 | 83.29% | 85.14% | 14.86% |\n| Jill M. Granoff     | 77,551,206 | 7,654,321 | 1,234,567 | 86,440,094 | 89.72% | 91.02% | 8.98% |\n| Michael B. McGarry  | 47,987,654 | 7,987,654 | 1,234,567 | 57,209,875 | 83.88% | 85.74% | 14.26% |\n| Michele A. Buck     | 48,654,321 | 6,543,210 | 1,234,567 | 56,432,098 | 86.22% | 88.15% | 11.85% |\n| M. Scott McCarty    | 47,123,456 | 9,8",
+    "3": "## Foot Locker, Inc. - Board of Directors Election Results (May 20, 2022)\n\n### Executive Summary\nThis report summarizes the voting results for the election of directors at Foot Locker, Inc., as disclosed in the 8-K filing dated May 20, 2022. All nominated directors received substantial shareholder support, with Jill M. Granoff receiving the highest number of \"Votes For\" at 77,551,206. M. Scott McCarty recorded the highest \"Votes Against\" at 9,876,543, indicating a comparatively higher level of dissent among shareholders for this nominee.\n\n### Analysis\nThe total \"Votes For\" across all nominees amounted to 239,545,010, while \"Votes Against\" totaled 40,383,184, and \"Abstentions\" were 6,172,835. Jill M. Granoff demonstrated the strongest shareholder approval, securing 77,551,206 \"Votes For\" and a Dissent Ratio of 8.98%. Conversely, M. Scott McCarty, while still elected, faced the highest dissent with 9,876,543 \"Votes Against\" and a Dissent Ratio of 17.34%. Richard A. Johnson and Michael B. McGarry also experienced notable \"Votes Against\" at 8,321,456 and 7,987,654, respectively, resulting in Dissent Ratios of 14.86% and 14.26%. Michele A. Buck received the lowest \"Votes Against\" at 6,543,210.\n\n### Key Risks\nThe relatively higher \"Votes Against\" for M. Scott McCarty, totaling 9,876,543, suggests a segment of shareholders may have concerns regarding his performance or suitability. While not a majority, this level of dissent warrants attention from the board and management to understand the underlying reasons and address any potential issues that could impact future shareholder relations or governance perceptions.\n\n### Conclusion\nThe election results confirm broad shareholder support for the nominated directors. However, the varying levels of \"Votes Against\" among nominees, particularly for M. Scott McCarty, highlight areas where shareholder engagement and communication could be strengthened to ensure continued confidence and alignment with investor expectations.",
+    "4": "## Foot Locker, Inc. - Board of Directors Election Results (May 20, 2022)\n\n### Executive Summary\nThis report summarizes the voting results for the election of directors at Foot Locker, Inc., as disclosed in the 8-K filing dated May 20, 2022. All nominated directors received substantial shareholder support and were duly elected. Jill M. Granoff received the highest number of \"Votes For\" at 77,551,206, indicating strong approval. M. Scott McCarty recorded the highest \"Votes Against\" at 9,876,543, suggesting a comparatively higher level of shareholder dissent for this nominee.\n\n### Analysis\nThe aggregate \"Votes For\" across all nominees totaled 239,545,010, while \"Votes Against\" amounted to 40,383,184, and \"Abstentions\" were 6,172,835. Jill M. Granoff demonstrated the strongest shareholder approval, securing 77,551,206 \"Votes For\" and a Dissent Ratio of 8.98% (calculated as Votes Against / (Votes For + Votes Against)). Conversely, M. Scott McCarty, while elected, faced the highest dissent with 9,876,543 \"Votes Against\" and a Dissent Ratio of 17.34%. Richard A. Johnson and Michael B. McGarry also experienced notable \"Votes Against\" at 8,321,456 and 7,987,654, respectively, resulting in Dissent Ratios of 14.86% and 14.26%. Michele A. Buck received the lowest \"Votes Against\" at 6,543,210, corresponding to a Dissent Ratio of 10.00%.\n\n### Key Considerations\nThe relatively higher \"Votes Against\" for M. Scott McCarty, totaling 9,876,543, suggests a segment of shareholders may have concerns regarding his performance or suitability. While this level of dissent did not prevent his election, it warrants attention from the board and management. Understanding the underlying reasons for this dissent is crucial for maintaining positive shareholder relations and addressing any potential governance perceptions. Proactive engagement with shareholders could help clarify any misunderstandings or address legitimate concerns.\n\n### Conclusion\nThe election results confirm broad shareholder support for the nominated directors, with all nominees successfully elected. However, the varying levels of \"Votes Against\" among nominees, particularly for M. Scott McCarty, highlight areas where shareholder engagement and communication could be strengthened. Addressing these areas will be important to ensure continued confidence and alignment with investor expectations, fostering robust corporate governance."
+  },
+  "gates": {
+    "gate_1": {
+      "verified": [
+        {
+          "value": "47,656,123",
+          "ref": 47656123.0
+        },
+        {
+          "value": "8,321,456",
+          "ref": 8321456.0
+        },
+        {
+          "value": "1,234,567",
+          "ref": 1234567.0
+        },
+        {
+          "value": "7,654,321",
+          "ref": 7654321.0
+        },
+        {
+          "value": "1,234,567",
+          "ref": 1234567.0
+        },
+        {
+          "value": "47,987,654",
+          "ref": 47987654.0
+        },
+        {
+          "value": "7,987,654",
+          "ref": 7987654.0
+        },
+        {
+          "value": "1,234,567",
+          "ref": 1234567.0
+        },
+        {
+          "value": "48,654,321",
+          "ref": 48654321.0
+        },
+        {
+          "value": "6,543,210",
+          "ref": 6543210.0
+        },
+        {
+          "value": "1,234,567",
+          "ref": 1234567.0
+        },
+        {
+          "value": "47,123,456",
+          "ref": 47123456.0
+        },
+        {
+          "value": "1,234,567",
+          "ref": 1234567.0
+        },
+        {
+          "value": "239,545,010",
+          "ref": 239545010.0
+        },
+        {
+          "value": "41,383,184",
+          "ref": 41383184.0
+        },
+        {
+          "value": "6,174,835",
+          "ref": 6174835.0
+        },
+        {
+          "value": "9,876,543",
+          "ref": 9876543.0
+        },
+        {
+          "value": "8,321,456",
+          "ref": 8321456.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "63,263,625",
+          "num": 63263625.0,
+          "correct": 77551206.0,
+          "dev": 0.1842,
+          "source": "evidence"
+        },
+        {
+          "value": "12,416,701",
+          "num": 12416701.0,
+          "correct": 9876543.0,
+          "dev": 0.2046,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [],
+      "n_refs": 52
+    },
+    "gate_2": {
+      "verified": [
+        {
+          "value": "47,656,123",
+          "ref": 47656123.0
+        },
+        {
+          "value": "8,321,456",
+          "ref": 8321456.0
+        },
+        {
+          "value": "1,234,567",
+          "ref": 1234567.0
+        },
+        {
+          "value": "77,551,206",
+          "ref": 77551206.0
+        },
+        {
+          "value": "7,654,321",
+          "ref": 7654321.0
+        },
+        {
+          "value": "1,234,567",
+          "ref": 1234567.0
+        },
+        {
+          "value": "47,987,654",
+          "ref": 47987654.0
+        },
+        {
+          "value": "7,987,654",
+          "ref": 7987654.0
+        },
+        {
+          "value": "1,234,567",
+          "ref": 1234567.0
+        },
+        {
+          "value": "48,654,321",
+          "ref": 48654321.0
+        },
+        {
+          "value": "6,543,210",
+          "ref": 6543210.0
+        },
+        {
+          "value": "1,234,567",
+          "ref": 1234567.0
+        },
+        {
+          "value": "47,123,456",
+          "ref": 47123456.0
+        },
+        {
+          "value": "9,876,543",
+          "ref": 9876543.0
+        },
+        {
+          "value": "1,234,567",
+          "ref": 1234567.0
+        },
+        {
+          "value": "47,656,123",
+          "ref": 47656123.0
+        },
+        {
+          "value": "77,551,206",
+          "ref": 77551206.0
+        },
+        {
+          "value": "47,987,654",
+          "ref": 47987654.0
+        },
+        {
+          "value": "48,654,321",
+          "ref": 48654321.0
+        },
+        {
+          "value": "47,123,456",
+          "ref": 47123456.0
+        },
+        {
+          "value": "8,321,456",
+          "ref": 8321456.0
+        },
+        {
+          "value": "7,654,321",
+          "ref": 7654321.0
+        },
+        {
+          "value": "7,987,654",
+          "ref": 7987654.0
+        },
+        {
+          "value": "6,543,210",
+          "ref": 6543210.0
+        },
+        {
+          "value": "9,876,543",
+          "ref": 9876543.0
+        },
+        {
+          "value": "1,234,567",
+          "ref": 1234567.0
+        },
+        {
+          "value": "6,172,835",
+          "ref": 6174835.0
+        },
+        {
+          "value": "47,656,123",
+          "ref": 47656123.0
+        },
+        {
+          "value": "8,321,456",
+          "ref": 8321456.0
+        },
+        {
+          "value": "1,234,567",
+          "ref": 1234567.0
+        },
+        {
+          "value": "77,551,206",
+          "ref": 77551206.0
+        },
+        {
+          "value": "7,654,321",
+          "ref": 7654321.0
+        },
+        {
+          "value": "1,234,567",
+          "ref": 1234567.0
+        },
+        {
+          "value": "47,987,654",
+          "ref": 47987654.0
+        },
+        {
+          "value": "7,987,654",
+          "ref": 7987654.0
+        },
+        {
+          "value": "1,234,567",
+          "ref": 1234567.0
+        },
+        {
+          "value": "48,654,321",
+          "ref": 48654321.0
+        },
+        {
+          "value": "6,543,210",
+          "ref": 6543210.0
+        },
+        {
+          "value": "1,234,567",
+          "ref": 1234567.0
+        },
+        {
+          "value": "47,123,456",
+          "ref": 47123456.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "63,263,625",
+          "num": 63263625.0,
+          "correct": 77551206.0,
+          "dev": 0.1842,
+          "source": "evidence"
+        },
+        {
+          "value": "12,416,701",
+          "num": 12416701.0,
+          "correct": 9876543.0,
+          "dev": 0.2046,
+          "source": "source_document"
+        },
+        {
+          "value": "268,972,760",
+          "num": 268972760.0,
+          "correct": 239545010.0,
+          "dev": 0.1094,
+          "source": "source_document"
+        },
+        {
+          "value": "57,212,146",
+          "num": 57212146.0,
+          "correct": 48654321.0,
+          "dev": 0.1496,
+          "source": "source_document"
+        },
+        {
+          "value": "86,440,094",
+          "num": 86440094.0,
+          "correct": 96089997.0,
+          "dev": 0.1004,
+          "source": "evidence"
+        },
+        {
+          "value": "57,209,875",
+          "num": 57209875.0,
+          "correct": 48654321.0,
+          "dev": 0.1495,
+          "source": "source_document"
+        },
+        {
+          "value": "56,432,098",
+          "num": 56432098.0,
+          "correct": 48654321.0,
+          "dev": 0.1378,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "83.29%"
+        },
+        {
+          "value": "85.14%"
+        },
+        {
+          "value": "14.86%"
+        },
+        {
+          "value": "89.72%"
+        },
+        {
+          "value": "91.02%"
+        },
+        {
+          "value": "8.98%"
+        },
+        {
+          "value": "83.88%"
+        },
+        {
+          "value": "85.74%"
+        },
+        {
+          "value": "14.26%"
+        },
+        {
+          "value": "86.22%"
+        },
+        {
+          "value": "88.15%"
+        },
+        {
+          "value": "11.85%"
+        },
+        {
+          "value": "40,383,184"
+        }
+      ],
+      "n_refs": 52
+    },
+    "gate_3": {
+      "verified": [
+        {
+          "value": "77,551,206",
+          "ref": 77551206.0
+        },
+        {
+          "value": "9,876,543,",
+          "ref": 9876543.0
+        },
+        {
+          "value": "239,545,010,",
+          "ref": 239545010.0
+        },
+        {
+          "value": "6,172,835",
+          "ref": 6174835.0
+        },
+        {
+          "value": "77,551,206",
+          "ref": 77551206.0
+        },
+        {
+          "value": "9,876,543",
+          "ref": 9876543.0
+        },
+        {
+          "value": "8,321,456",
+          "ref": 8321456.0
+        },
+        {
+          "value": "7,987,654,",
+          "ref": 7987654.0
+        },
+        {
+          "value": "6,543,210",
+          "ref": 6543210.0
+        },
+        {
+          "value": "9,876,543,",
+          "ref": 9876543.0
+        }
+      ],
+      "refuted": [],
+      "unverified": [
+        {
+          "value": "8.98%"
+        },
+        {
+          "value": "17.34%"
+        },
+        {
+          "value": "14.86%"
+        },
+        {
+          "value": "14.26%"
+        },
+        {
+          "value": "40,383,184,"
+        }
+      ],
+      "n_refs": 52
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_081_4E1CC3D9",
+      "hid": "FB_081_4E1CC3D9_H2",
+      "method": "ours",
+      "type": "large_number",
+      "inj_num": 63263625.0,
+      "orig_num": 48123456.0,
+      "survived": false,
+      "corrected": false,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_081_4E1CC3D9",
+      "hid": "FB_081_4E1CC3D9_H1",
+      "method": "ours",
+      "type": "large_number",
+      "inj_num": 12416701.0,
+      "orig_num": 9876543.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 4,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:33:09.371105+00:00"
+}

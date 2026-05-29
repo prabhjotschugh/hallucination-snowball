@@ -1,0 +1,115 @@
+{
+  "question_id": "FB_087_99FD2FB2",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Johnson & Johnson, FY2022\n- PRIMARY METRIC: Gross Margin: $77,068 million (Gross Profit) on Total Revenue of $94,943 million, resulting in a Gross Margin Percentage of 70.3% (per the FY2022 10-K, Consolidated Statements of Operations).\n- SUPPORTING DATA:\n  - Total Revenue: $94,943 million (per the FY2022 10-K, Consolidated Statements of Operations).\n  - Cost of Goods Sold (COGS): $17,875 million (per the FY2022 10-K, Consolidated Statements of Operations).\n  - Gross Profit: $77,068 million (calculated as Total Revenue - COGS).\n  \n  Multi-Period Data:\n  - FY2021:\n    - Total Revenue: $93,775 million (per the FY2021 10-K, Consolidated Statements of Operations).\n    - COGS: $17,266 million (per the FY2021 10-K, Consolidated Statements of Operations).\n    - Gross Profit: $76,509 million (calculated as Total Revenue - COGS).\n    - Gross Margin Percentage: 81.6% (calculated as Gross Profit / Total Revenue).\n  \n  - FY2020:\n    - Total Revenue: $82,584 million (per the FY2020 10-K, Consolidated Statements of Operations).\n    - COGS: $20,998 million (per the FY2020 10-K, Consolidated Statements of Operations).\n    - Gross Profit: $84,991 million (calculated as Total Revenue - COGS).\n    - Gross Margin Percentage: 81.6% (calculated as Gross Profit / Total Revenue).\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations.\n  - FY2021 10-K, Consolidated Statements of Operations.\n  - FY2020 10-K, Consolidated Statements of Operations.\n\n**Note:** The request to analyze the factors influencing gross margin changes and the utility of gross margin as a financial health metric cannot be fulfilled as per the directive to provide raw data only without interpretation or analysis.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_087_99FD2FB2_H3",
+      "type": "percentage",
+      "original_value": "81.1%",
+      "injected_value": "70.3%",
+      "original_numeric": "81.1",
+      "injected_numeric": "70.3",
+      "position_char": 188,
+      "sentence_approx": 1,
+      "perturbation_delta": -10.7797
+    },
+    {
+      "hallucination_id": "FB_087_99FD2FB2_H2",
+      "type": "dollar_amount",
+      "original_value": "$15,157 million",
+      "injected_value": "$20,998 million",
+      "original_numeric": "15157",
+      "injected_numeric": "20998",
+      "position_char": 1061,
+      "sentence_approx": 12,
+      "perturbation_delta": 0.3853
+    },
+    {
+      "hallucination_id": "FB_087_99FD2FB2_H1",
+      "type": "dollar_amount",
+      "original_value": "$67,427 million",
+      "injected_value": "$84,991 million",
+      "original_numeric": "67427",
+      "injected_numeric": "84991",
+      "position_char": 1159,
+      "sentence_approx": 13,
+      "perturbation_delta": 0.2605
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Gross Profit: $84,991 million (calculated as Total Revenue - COGS).",
+        "claim_value": "$84,991 million",
+        "reason": "Mathematical impossibility: Gross Profit ($84,991 million) exceeds Total Revenue ($82,584 million). Additionally, Revenue ($82,584 million) minus COGS ($20,998 million) equals $61,586 million, not $84,991 million.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Gross Margin Percentage of 70.3%",
+        "claim_value": "70.3%",
+        "reason": "Internal inconsistency: The provided dollar figures ($77,068 million Gross Profit / $94,943 million Revenue) calculate to approximately 81.2%, not 70.3%.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Cost of Goods Sold (COGS): $17,875 million",
+        "claim_value": "$17,875 million",
+        "reason": "Plausibility concern: For Johnson & Johnson's diversified portfolio (Pharma, MedTech, Consumer Health), COGS is typically 30-35% of revenue. This figure implies ~19% COGS (~81% gross margin), which is anomalously high for consolidated JnJ operations compared to historical norms.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Gross Margin Percentage: 81.6% (FY2021)",
+        "claim_value": "81.6%",
+        "reason": "Plausibility concern: While internally consistent with the provided dollar figures, an 81.6% gross margin is unusually high for JnJ's consolidated business mix, suggesting the underlying COGS figures may be systematically understated across all periods.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 12,
+    "overall_assessment": "The output contains critical mathematical impossibilities and internal inconsistencies, specifically where Gross Profit exceeds Revenue in FY2020 and margin percentages contradict dollar figures in FY2022.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Gross Profit: $84,991 million (calculated as Total Revenue - COGS).\",\n      \"claim_value\": \"$84,991 million\",\n      \"reason\": \"Mathematical impossibility: Gross Profit ($84,991 million) exceeds Total Revenue ($82,584 million). Additionally, Revenue ($82,584 million) minus COGS ($20,998 million) equals $61,586 million, not $84,991 million.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Gross Margin Percentage of 70.3%\",\n      \"claim_value\": \"70.3%\",\n      \"reason\": \"Internal inconsistency: The provided dollar figures ($77,068 million Gross Profit / $94,943 million Revenue) calculate to approximately 81.2%, not 70.3%.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Cost of Goods Sold (COGS): $17,875 million\",\n      \"claim_value\": \"$17,875 million\",\n      \"reason\": \"Plausibility concern: For Johnson & Johnson's diversified portfolio (Pharma, MedTech, Consumer Health), COGS is typically 30-35% of revenue. This figure implies ~19% COGS (~81% gross margin), which is anomalously high for consolidated JnJ operations compared to historical norms.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Gross Margin Percentage: 81.6% (FY2021)\",\n      \"claim_value\": \"81.6%\",\n      \"reason\": \"Plausibility concern: While internally consistent with the provided dollar figures, an 81.6% gross margin is unusually high for JnJ's consolidated business mix, suggesting the underlying COGS figures may be systematically understated across all periods.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 12,\n  \"overall_assessment\": \"The output contains critical mathematical impossibilities and internal inconsistencies, specifically where Gross Profit exceeds Revenue in FY2020 and margin percentages contradict dollar figures in FY2022.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_087_99FD2FB2",
+      "hallucination_id": "FB_087_99FD2FB2_H3",
+      "model": "Qwen3.5-397B",
+      "injection_type": "percentage",
+      "original_value": "81.1%",
+      "injected_value": "70.3%",
+      "detected": true,
+      "reason": "Internal inconsistency: The provided dollar figures ($77,068 million Gross Profit / $94,943 million Revenue) calculate to approximately 81.2%, not 70.3%.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 12
+    },
+    {
+      "question_id": "FB_087_99FD2FB2",
+      "hallucination_id": "FB_087_99FD2FB2_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$15,157 million",
+      "injected_value": "$20,998 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 12
+    },
+    {
+      "question_id": "FB_087_99FD2FB2",
+      "hallucination_id": "FB_087_99FD2FB2_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$67,427 million",
+      "injected_value": "$84,991 million",
+      "detected": true,
+      "reason": "Mathematical impossibility: Gross Profit ($84,991 million) exceeds Total Revenue ($82,584 million). Additionally, Revenue ($82,584 million) minus COGS ($20,998 million) equals $61,586 million, not $84,991 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 12
+    }
+  ],
+  "timestamp": "2026-03-24T12:00:20.559834Z"
+}

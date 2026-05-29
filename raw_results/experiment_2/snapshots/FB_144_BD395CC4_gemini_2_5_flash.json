@@ -1,0 +1,79 @@
+{
+  "question_id": "FB_144_BD395CC4",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Verizon Communications Inc., FY 2021\n- PRIMARY METRIC: As of FY 2021, Verizon projected retiree benefit obligations for the year 2024 to be $2,611 million (USD millions) per the FY2021 10-K, Note 12 - Employee Benefits.\n- SUPPORTING DATA: \n  - For FY 2020, the projected retiree benefit obligations were $4,598 million (USD millions).\n  - For FY 2019, the projected retiree benefit obligations were $3,400 million (USD millions).\n- DATA SOURCES: \n  - FY2021 10-K, Note 12 - Employee Benefits\n  - FY2020 10-K, Note 12 - Employee Benefits\n  - FY2019 10-K, Note 12 - Employee Benefits\n\nPlease note that the analysis of trends and computation of financial ratios is beyond the scope of this data extraction report and should be conducted by downstream analysts.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_144_BD395CC4_H2",
+      "type": "dollar_amount",
+      "original_value": "$3,800 million",
+      "injected_value": "$2,611 million",
+      "original_numeric": "3800",
+      "injected_numeric": "2611",
+      "position_char": 160,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3129
+    },
+    {
+      "hallucination_id": "FB_144_BD395CC4_H1",
+      "type": "dollar_amount",
+      "original_value": "$3,600 million",
+      "injected_value": "$4,598 million",
+      "original_numeric": "3600",
+      "injected_numeric": "4598",
+      "position_char": 324,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.2772
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Verizon projected retiree benefit obligations for the year 2024 to be $2,611 million (USD millions)",
+        "claim_value": "$2,611 million",
+        "reason": "The projected decrease of over 43% from the 2020 figure ($4,598 million) to the 2024 projected figure ($2,611 million) represents an exceptionally large and sudden reduction in retiree benefit obligations for a stable, mature company like Verizon. While actuarial assumptions can change, such a dramatic swing in projected future liabilities is highly unusual and raises significant suspicion for potential hallucination or inaccuracy.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "For FY 2020, the projected retiree benefit obligations were $4,598 million (USD millions).",
+        "claim_value": "$4,598 million",
+        "reason": "The reported figure of $4,598 million, when combined with the 2019 figure ($3,400 million) and the 2024 projected figure ($2,611 million), creates a highly volatile trend (a 35% increase from 2019 to 2020, followed by a 43% projected decrease from 2020 to 2024). This magnitude of fluctuation in projected retiree benefit obligations for a stable company like Verizon is unusually large and raises suspicion about its accuracy.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 3,
+    "overall_assessment": "The reported projected retiree benefit obligations show unusually large year-over-year fluctuations, raising concerns about their accuracy and potential for hallucination.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Verizon projected retiree benefit obligations for the year 2024 to be $2,611 million (USD millions)\",\n      \"claim_value\": \"$2,611 million\",\n      \"reason\": \"The projected decrease of over 43% from the 2020 figure ($4,598 million) to the 2024 projected figure ($2,611 million) represents an exceptionally large and sudden reduction in retiree benefit obligations for a stable, mature company like Verizon. While actuarial assumptions can change, such a dramatic swing in projected future liabilities is highly unusual and raises significant suspicion for potential hallucination or inaccuracy.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"For FY 2020, the projected retiree benefit obligations were $4,598 million (USD millions).\",\n      \"claim_value\": \"$4,598 million\",\n      \"reason\": \"The reported figure of $4,598 million, when combined with the 2019 figure ($3,400 million) and the 2024 projected figure ($2,611 million), creates a highly volatile trend (a 35% increase from 2019 to 2020, followed by a 43% projected decrease from 2020 to 2024). This magnitude of fluctuation in projected retiree benefit obligations for a stable company like Verizon is unusually large and raises suspicion about its accuracy.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 3,\n  \"overall_assessment\": \"The reported projected retiree benefit obligations show unusually large year-over-year fluctuations, raising concerns about their accuracy and potential for hallucination.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_144_BD395CC4",
+      "hallucination_id": "FB_144_BD395CC4_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,800 million",
+      "injected_value": "$2,611 million",
+      "detected": true,
+      "reason": "The projected decrease of over 43% from the 2020 figure ($4,598 million) to the 2024 projected figure ($2,611 million) represents an exceptionally large and sudden reduction in retiree benefit obligations for a stable, mature company like Verizon. While actuarial assumptions can change, such a dramatic swing in projected future liabilities is highly unusual and raises significant suspicion for potential hallucination or inaccuracy.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 3
+    },
+    {
+      "question_id": "FB_144_BD395CC4",
+      "hallucination_id": "FB_144_BD395CC4_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,600 million",
+      "injected_value": "$4,598 million",
+      "detected": true,
+      "reason": "The reported figure of $4,598 million, when combined with the 2019 figure ($3,400 million) and the 2024 projected figure ($2,611 million), creates a highly volatile trend (a 35% increase from 2019 to 2020, followed by a 43% projected decrease from 2020 to 2024). This magnitude of fluctuation in projected retiree benefit obligations for a stable company like Verizon is unusually large and raises suspicion about its accuracy.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 3
+    }
+  ],
+  "timestamp": "2026-03-25T08:06:47.980994Z"
+}

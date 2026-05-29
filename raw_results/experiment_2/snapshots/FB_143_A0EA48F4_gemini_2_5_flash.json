@@ -1,0 +1,103 @@
+{
+  "question_id": "FB_143_A0EA48F4",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Verizon Communications Inc., FY 2021\n- PRIMARY METRIC: The derivative instrument with the highest notional value for managing exposure to fluctuations in foreign currency exchange rates or interest rates was the interest rate swaps, with a notional value of $15,974 million as reported in the FY 2021 10-K, Note 10: Derivative Instruments and Hedging Activities.\n- SUPPORTING DATA: \n  - As of December 31, 2021, Verizon had total notional values for derivatives as follows:\n    - Interest Rate Swaps: $12,000 million\n    - Foreign Currency Forward Contracts: $1,034 million\n  - For FY 2020, the notional value of interest rate swaps was $12,000 million, and for foreign currency forward contracts, it was $1,500 million.\n  - For FY 2019, the notional value of interest rate swaps was $8,922 million, and for foreign currency forward contracts, it was $1,200 million.\n- DATA SOURCES: \n  - Verizon FY 2021 10-K, Note 10: Derivative Instruments and Hedging Activities\n  - Verizon FY 2020 10-K, Note 10: Derivative Instruments and Hedging Activities\n  - Verizon FY 2019 10-K, Note 10: Derivative Instruments and Hedging Activities\n\nPlease note that the figures provided are exact as reported in the respective filings.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_143_A0EA48F4_H3",
+      "type": "dollar_amount",
+      "original_value": "$12,000 million",
+      "injected_value": "$15,974 million",
+      "original_numeric": "12000",
+      "injected_numeric": "15974",
+      "position_char": 278,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.3312
+    },
+    {
+      "hallucination_id": "FB_143_A0EA48F4_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,500 million",
+      "injected_value": "$1,034 million",
+      "original_numeric": "1500",
+      "injected_numeric": "1034",
+      "position_char": 579,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.3109
+    },
+    {
+      "hallucination_id": "FB_143_A0EA48F4_H1",
+      "type": "dollar_amount",
+      "original_value": "$11,000 million",
+      "injected_value": "$8,922 million",
+      "original_numeric": "11000",
+      "injected_numeric": "8922",
+      "position_char": 804,
+      "sentence_approx": 4,
+      "perturbation_delta": -0.1889
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "The derivative instrument with the highest notional value for managing exposure to fluctuations in foreign currency exchange rates or interest rates was the interest rate swaps, with a notional value of $15,974 million as reported in the FY 2021 10-K, Note 10: Derivative Instruments and Hedging Activities.",
+        "claim_value": "$15,974 million",
+        "reason": "This figure for interest rate swaps in FY 2021 directly contradicts another figure provided in the 'SUPPORTING DATA' section, which states the notional value for interest rate swaps in FY 2021 was $12,000 million. Both cannot be correct for the same instrument and period.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "As of December 31, 2021, Verizon had total notional values for derivatives as follows: - Interest Rate Swaps: $12,000 million",
+        "claim_value": "$12,000 million",
+        "reason": "This figure for interest rate swaps in FY 2021 directly contradicts the 'PRIMARY METRIC' figure provided, which states the notional value for interest rate swaps in FY 2021 was $15,974 million. Both cannot be correct for the same instrument and period.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 7,
+    "overall_assessment": "The report contains a direct internal inconsistency regarding the notional value of interest rate swaps for FY 2021, with two different figures provided for the same instrument and period.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"The derivative instrument with the highest notional value for managing exposure to fluctuations in foreign currency exchange rates or interest rates was the interest rate swaps, with a notional value of $15,974 million as reported in the FY 2021 10-K, Note 10: Derivative Instruments and Hedging Activities.\",\n      \"claim_value\": \"$15,974 million\",\n      \"reason\": \"This figure for interest rate swaps in FY 2021 directly contradicts another figure provided in the 'SUPPORTING DATA' section, which states the notional value for interest rate swaps in FY 2021 was $12,000 million. Both cannot be correct for the same instrument and period.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"As of December 31, 2021, Verizon had total notional values for derivatives as follows: - Interest Rate Swaps: $12,000 million\",\n      \"claim_value\": \"$12,000 million\",\n      \"reason\": \"This figure for interest rate swaps in FY 2021 directly contradicts the 'PRIMARY METRIC' figure provided, which states the notional value for interest rate swaps in FY 2021 was $15,974 million. Both cannot be correct for the same instrument and period.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 7,\n  \"overall_assessment\": \"The report contains a direct internal inconsistency regarding the notional value of interest rate swaps for FY 2021, with two different figures provided for the same instrument and period.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_143_A0EA48F4",
+      "hallucination_id": "FB_143_A0EA48F4_H3",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$12,000 million",
+      "injected_value": "$15,974 million",
+      "detected": true,
+      "reason": "This figure for interest rate swaps in FY 2021 directly contradicts another figure provided in the 'SUPPORTING DATA' section, which states the notional value for interest rate swaps in FY 2021 was $12,000 million. Both cannot be correct for the same instrument and period.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_143_A0EA48F4",
+      "hallucination_id": "FB_143_A0EA48F4_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,500 million",
+      "injected_value": "$1,034 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_143_A0EA48F4",
+      "hallucination_id": "FB_143_A0EA48F4_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$11,000 million",
+      "injected_value": "$8,922 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 7
+    }
+  ],
+  "timestamp": "2026-03-25T08:06:31.684128Z"
+}

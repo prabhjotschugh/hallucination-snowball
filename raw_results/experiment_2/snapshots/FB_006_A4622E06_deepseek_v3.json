@@ -1,0 +1,85 @@
+{
+  "question_id": "FB_006_A4622E06",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: 3M Company, Q2 FY2023\n- PRIMARY METRIC: Quick Ratio: 0.92 (per the Q2 FY2023 10-Q, Consolidated Balance Sheets)\n- SUPPORTING DATA: \n  - Current Assets: $5,902 million (per the Q2 FY2023 10-Q, Consolidated Balance Sheets)\n  - Current Liabilities: $9,227 million (per the Q2 FY2023 10-Q, Consolidated Balance Sheets)\n  - Cash and Cash Equivalents: $1,032 million (per the Q2 FY2023 10-Q, Consolidated Balance Sheets)\n  - Accounts Receivable: $5,576 million (per the Q2 FY2023 10-Q, Consolidated Balance Sheets)\n  - Inventories: $3,147 million (per the Q2 FY2023 10-Q, Consolidated Balance Sheets)\n\n- DATA SOURCES: \n  - 3M Company Q2 FY2023 10-Q, Consolidated Balance Sheets\n\n**Note:** The quick ratio is calculated as (Current Assets - Inventories) / Current Liabilities. In this case, the quick ratio of 0.92 indicates that 3M has $0.92 in liquid assets for every $1.00 of current liabilities. \n\n**Limitations of the Quick Ratio:** \nWhile the quick ratio provides insight into a company's ability to meet short-term obligations without relying on inventory sales, it may not fully capture the liquidity position. For instance, it does not consider the timing of cash flows or the company's ability to generate cash from operations. Additionally, it may not reflect the company's overall financial health if other liabilities or long-term obligations are significant.\n\n**Alternative Metrics:** \n- Current Ratio: This metric includes all current assets and provides a broader view of liquidity.\n- Cash Ratio: This focuses solely on cash and cash equivalents relative to current liabilities, offering a more conservative measure of liquidity.\n\nThis report presents the requested data accurately and without interpretation, as per the guidelines.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_006_A4622E06_H2",
+      "type": "dollar_amount",
+      "original_value": "$8,492 million",
+      "injected_value": "$5,902 million",
+      "original_numeric": "8492",
+      "injected_numeric": "5902",
+      "position_char": 172,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.305
+    },
+    {
+      "hallucination_id": "FB_006_A4622E06_H1",
+      "type": "dollar_amount",
+      "original_value": "$4,313 million",
+      "injected_value": "$5,576 million",
+      "original_numeric": "4313",
+      "injected_numeric": "5576",
+      "position_char": 460,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.2929
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Current Assets: $5,902 million",
+        "claim_value": "$5,902 million",
+        "reason": "Current assets appear significantly lower than accounts receivable alone ($5,576 million), which is implausible since accounts receivable is a subset of current assets.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Accounts Receivable: $5,576 million",
+        "claim_value": "$5,576 million",
+        "reason": "Accounts receivable being almost equal to total current assets ($5,902 million) is highly unusual, as it would leave almost no room for other current asset categories like cash, short-term investments, or prepaid expenses.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Current Liabilities: $9,227 million",
+        "claim_value": "$9,227 million",
+        "reason": "The quick ratio calculation would imply (5,902 - 3,147) / 9,227 = 0.30, not the reported 0.92. This indicates either the reported quick ratio or the component figures are incorrect.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "Multiple inconsistencies found in current assets, accounts receivable, and current liabilities figures that make the quick ratio calculation mathematically impossible.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Current Assets: $5,902 million\",\n      \"claim_value\": \"$5,902 million\",\n      \"reason\": \"Current assets appear significantly lower than accounts receivable alone ($5,576 million), which is implausible since accounts receivable is a subset of current assets.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Accounts Receivable: $5,576 million\",\n      \"claim_value\": \"$5,576 million\",\n      \"reason\": \"Accounts receivable being almost equal to total current assets ($5,902 million) is highly unusual, as it would leave almost no room for other current asset categories like cash, short-term investments, or prepaid expenses.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Current Liabilities: $9,227 million\",\n      \"claim_value\": \"$9,227 million\",\n      \"reason\": \"The quick ratio calculation would imply (5,902 - 3,147) / 9,227 = 0.30, not the reported 0.92. This indicates either the reported quick ratio or the component figures are incorrect.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\": \"Multiple inconsistencies found in current assets, accounts receivable, and current liabilities figures that make the quick ratio calculation mathematically impossible.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_006_A4622E06",
+      "hallucination_id": "FB_006_A4622E06_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$8,492 million",
+      "injected_value": "$5,902 million",
+      "detected": true,
+      "reason": "Current assets appear significantly lower than accounts receivable alone ($5,576 million), which is implausible since accounts receivable is a subset of current assets.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_006_A4622E06",
+      "hallucination_id": "FB_006_A4622E06_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$4,313 million",
+      "injected_value": "$5,576 million",
+      "detected": true,
+      "reason": "Accounts receivable being almost equal to total current assets ($5,902 million) is highly unusual, as it would leave almost no room for other current asset categories like cash, short-term investments, or prepaid expenses.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-24T09:39:55.831854Z"
+}

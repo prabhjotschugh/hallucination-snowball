@@ -1,0 +1,91 @@
+{
+  "question_id": "FB_060_D8048F85",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Boeing Company, FY2018\n- PRIMARY METRIC: Net Property, Plant, and Equipment: $115,274 million (per the FY2018 10-K, Consolidated Balance Sheet)\n- SUPPORTING DATA: \n  - Total Assets: $85,028 million (FY2018 10-K, Consolidated Balance Sheet)\n  - Total Liabilities: $103,227 million (FY2018 10-K, Consolidated Balance Sheet)\n  - Shareholders' Equity: $36,433 million (FY2018 10-K, Consolidated Balance Sheet)\n- DATA SOURCES: Boeing Company FY2018 10-K, Consolidated Balance Sheet, filed with the SEC on February 8, 2019.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_060_D8048F85_H2",
+      "type": "dollar_amount",
+      "original_value": "$83,535 million",
+      "injected_value": "$115,274 million",
+      "original_numeric": "83535",
+      "injected_numeric": "115274",
+      "position_char": 97,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.3799
+    },
+    {
+      "hallucination_id": "FB_060_D8048F85_H1",
+      "type": "dollar_amount",
+      "original_value": "$139,660 million",
+      "injected_value": "$85,028 million",
+      "original_numeric": "139660",
+      "injected_numeric": "85028",
+      "position_char": 201,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.3912
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Net Property, Plant, and Equipment: $115,274 million",
+        "claim_value": "$115,274 million",
+        "reason": "This reported Net Property, Plant, and Equipment figure ($115,274 million) is greater than the reported Total Assets ($85,028 million). This is an accounting impossibility, as Net PP&E is a component of Total Assets and cannot exceed the total.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Assets: $85,028 million",
+        "claim_value": "$85,028 million",
+        "reason": "When combined with the reported Total Liabilities ($103,227 million) and Shareholders' Equity ($36,433 million), the fundamental accounting equation (Assets = Liabilities + Equity) does not balance ($85,028 million != $103,227 million + $36,433 million). This indicates at least one of these three figures is incorrect.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Liabilities: $103,227 million",
+        "claim_value": "$103,227 million",
+        "reason": "When combined with the reported Total Assets ($85,028 million) and Shareholders' Equity ($36,433 million), the fundamental accounting equation (Assets = Liabilities + Equity) does not balance ($85,028 million != $103,227 million + $36,433 million). This indicates at least one of these three figures is incorrect.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Shareholders' Equity: $36,433 million",
+        "claim_value": "$36,433 million",
+        "reason": "When combined with the reported Total Assets ($85,028 million) and Total Liabilities ($103,227 million), the fundamental accounting equation (Assets = Liabilities + Equity) does not balance ($85,028 million != $103,227 million + $36,433 million). This indicates at least one of these three figures is incorrect.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 4,
+    "overall_assessment": "The reported financial figures for Boeing's FY2018 balance sheet contain significant internal inconsistencies, including a Net PP&E figure that exceeds total assets and a fundamental imbalance in the accounting equation (Assets != Liabilities + Equity).",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Net Property, Plant, and Equipment: $115,274 million\",\n      \"claim_value\": \"$115,274 million\",\n      \"reason\": \"This reported Net Property, Plant, and Equipment figure ($115,274 million) is greater than the reported Total Assets ($85,028 million). This is an accounting impossibility, as Net PP&E is a component of Total Assets and cannot exceed the total.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Assets: $85,028 million\",\n      \"claim_value\": \"$85,028 million\",\n      \"reason\": \"When combined with the reported Total Liabilities ($103,227 million) and Shareholders' Equity ($36,433 million), the fundamental accounting equation (Assets = Liabilities + Equity) does not balance ($85,028 million != $103,227 million + $36,433 million). This indicates at least one of these three figures is incorrect.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Liabilities: $103,227 million\",\n      \"claim_value\": \"$103,227 million\",\n      \"reason\": \"When combined with the reported Total Assets ($85,028 million) and Shareholders' Equity ($36,433 million), the fundamental accounting equation (Assets = Liabilities + Equity) does not balance ($85,028 million != $103,227 million + $36,433 million). This indicates at least one of these three figures is incorrect.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Shareholders' Equity: $36,433 million\",\n      \"claim_value\": \"$36,433 million\",\n      \"reason\": \"When combined with the reported Total Assets ($85,028 million) and Total Liabilities ($103,227 million), the fundamental accounting equation (Assets = Liabilities + Equity) does not balance ($85,028 million != $103,227 million + $36,433 million). This indicates at least one of these three figures is incorrect.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 4,\n  \"overall_assessment\": \"The reported financial figures for Boeing's FY2018 balance sheet contain significant internal inconsistencies, including a Net PP&E figure that exceeds total assets and a fundamental imbalance in the accounting equation (Assets != Liabilities + Equity).\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_060_D8048F85",
+      "hallucination_id": "FB_060_D8048F85_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$83,535 million",
+      "injected_value": "$115,274 million",
+      "detected": true,
+      "reason": "This reported Net Property, Plant, and Equipment figure ($115,274 million) is greater than the reported Total Assets ($85,028 million). This is an accounting impossibility, as Net PP&E is a component of Total Assets and cannot exceed the total.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 4
+    },
+    {
+      "question_id": "FB_060_D8048F85",
+      "hallucination_id": "FB_060_D8048F85_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$139,660 million",
+      "injected_value": "$85,028 million",
+      "detected": true,
+      "reason": "When combined with the reported Total Liabilities ($103,227 million) and Shareholders' Equity ($36,433 million), the fundamental accounting equation (Assets = Liabilities + Equity) does not balance ($85,028 million != $103,227 million + $36,433 million). This indicates at least one of these three figures is incorrect.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 4
+    }
+  ],
+  "timestamp": "2026-03-25T07:47:46.321826Z"
+}

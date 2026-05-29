@@ -1,0 +1,49 @@
+{
+  "question_id": "FB_062_CCEDD88C",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "I'm unable to provide an analysis or interpretation of the information. However, I can extract and present the raw data regarding Boeing's ongoing legal battles as reported in their FY2022 10-K filing.\n\n- COMPANY & PERIOD: Boeing Company, Fiscal Year 2022\n- PRIMARY METRIC: Boeing disclosed ongoing legal matters that are considered material, including but not limited to:\n  1. **737 MAX Litigation**: Boeing is facing multiple lawsuits related to the 737 MAX aircraft, including claims from shareholders and customers regarding the safety and regulatory compliance of the aircraft. The potential financial implications are significant, though exact figures are not disclosed in the filing.\n  2. **Defense, Space & Security Segment Litigation**: Boeing is involved in various legal disputes concerning contracts and compliance issues within its Defense, Space & Security segment. The filing mentions that these matters could result in financial penalties or contract adjustments, but specific amounts are not quantified.\n  3. **Environmental and Regulatory Matters**: Boeing has ongoing legal challenges related to environmental regulations and compliance, which could lead to fines or operational restrictions, though specific financial implications are not detailed.\n\n- SUPPORTING DATA: \n  - The legal proceedings are described in the \"Legal Proceedings\" section of the FY2022 10-K filing. The company notes that while it cannot predict the outcome of these matters, it believes that the resolution of these legal proceedings will not have a material adverse effect on its financial position.\n  - Boeing's total liabilities as of December 31, 2022, were reported at $191,569 million (per the FY2022 10-K, Consolidated Balance Sheets).\n\n- DATA SOURCES: \n  - Boeing Company FY2022 10-K filing, \"Legal Proceedings\" section, pages 100-102.\n  - Boeing Company FY2022 10-K filing, \"Consolidated Balance Sheets,\" page 50.\n\nPlease note that this report contains factual data only, without any interpretation or analysis.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_062_CCEDD88C_H1",
+      "type": "dollar_amount",
+      "original_value": "$156,898 million",
+      "injected_value": "$191,569 million",
+      "original_numeric": "156898",
+      "injected_numeric": "191569",
+      "position_char": 1668,
+      "sentence_approx": 13,
+      "perturbation_delta": 0.221
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Boeing's total liabilities as of December 31, 2022, were reported at $191,569 million",
+        "claim_value": "191,569 million",
+        "reason": "The figure seems suspiciously precise, with an unusual number of digits. It's uncommon for a company's total liabilities to be reported with such exactness.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 1,
+    "overall_assessment": "The report appears to be factual, but one claim stands out as potentially suspicious due to its unusual precision.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"Boeing's total liabilities as of December 31, 2022, were reported at $191,569 million\",\n      \"claim_value\" : \"191,569 million\",\n      \"reason\"      : \"The figure seems suspiciously precise, with an unusual number of digits. It's uncommon for a company's total liabilities to be reported with such exactness.\",\n      \"confidence\"  : \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 1,\n  \"overall_assessment\"   : \"The report appears to be factual, but one claim stands out as potentially suspicious due to its unusual precision.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_062_CCEDD88C",
+      "hallucination_id": "FB_062_CCEDD88C_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$156,898 million",
+      "injected_value": "$191,569 million",
+      "detected": true,
+      "reason": "The figure seems suspiciously precise, with an unusual number of digits. It's uncommon for a company's total liabilities to be reported with such exactness.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 1
+    }
+  ],
+  "timestamp": "2026-03-27T09:34:49.101893Z"
+}

@@ -1,0 +1,290 @@
+{
+  "question_id": "FB_117_C880E731",
+  "method": "ours",
+  "final_output": "## Nike, Inc. FY2021 Financial Report: Inventory Analysis\n\n### Executive Summary\n\nThis report provides an analysis of Nike, Inc.'s inventory management for Fiscal Year 2021, focusing on inventory levels and turnover efficiency. For FY2021, Nike reported a Cost of Goods Sold (COGS) of $22,160 million. Inventory at the end of FY2021 stood at $5,200 million, representing a 10.57% increase from the prior year's inventory of $4,703 million. The Inventory Turnover Ratio for FY2021 was calculated at 4.47 times, indicating the efficiency with which Nike managed its inventory in relation to sales.\n\n### Analysis\n\nNike, Inc.'s inventory management in FY2021 demonstrates a moderate increase in inventory levels alongside consistent turnover efficiency. The Cost of Goods Sold for the period was $22,160 million. Inventory at the end of FY2021 was $5,200 million, an increase of $497 million from the $4,703 million reported at the end of FY2020. This represents a year-over-year percentage increase of 10.57%.\n\nTo assess inventory efficiency, the Inventory Turnover Ratio was calculated. Using the average inventory for FY2021, derived from ($4,703 million + $5,200 million) / 2 = $4,951.5 million, the ratio is $22,160 million / $4,951.5 million, resulting in an Inventory Turnover Ratio of 4.47 times. This ratio suggests that Nike sold and replaced its average inventory approximately 4.47 times during the fiscal year.\n\n### Key Risks\n\nThe primary risk identified during this analysis pertains to data integrity. While the final calculated Inventory Turnover Ratio is accurate, the process highlighted the importance of meticulous data handling and verification in financial analysis. Errors in intermediate calculations, if not identified and corrected, could lead to inaccurate assessments and potentially misguided strategic decisions. This underscores the necessity of robust internal controls and verification steps in all financial reporting.\n\n### Conclusion\n\nNike, Inc. exhibited a controlled increase in inventory levels during FY2021, with inventory growing by 10.57% to $5,200 million. The Inventory Turnover Ratio of 4.47 times indicates a stable level of efficiency in converting inventory into sales. Moving forward, continued rigorous data verification processes are essential to ensure the accuracy and reliability of financial reporting and analysis, thereby supporting robust decision-making.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Nike, Inc. FY2021\n- PRIMARY METRIC: \n  - Cost of Goods Sold (COGS) for FY2021: $22,160 million (per the FY2021 10-K, Consolidated Statements of Operations).\n- SUPPORTING DATA: \n  - Average Inventory for FY2020: $4,703 million (per the FY2021 10-K, Consolidated Balance Sheets).\n  - Inventory at the end of FY2021: $5,200 million (per the FY2021 10-K, Consolidated Balance Sheets).\n  - Average Inventory for FY2021: ($4,703 million + $6,037 million) / 2 = $6,546.86 million.\n- CALCULATION:\n  - Inventory Turnover Ratio = COGS / Average Inventory = $22,160 million / $3,274.29 million = 4.47 (rounded to two decimal places).\n- DATA SOURCES: \n  - FY2021 10-K, Consolidated Statements of Operations (COGS).\n  - FY2021 10-K, Consolidated Balance Sheets (Inventory figures).",
+    "2": "As a financial analyst, I've reviewed the provided data for Nike, Inc. FY2021, incorporating the corrected values from the verification report.\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\n*   **Inventory at the end of FY2021:** $5,200 million (Corrected)\n*   **Inventory at the end of FY2020:** $4,703 million (Provided as Average Inventory for FY2020, but used as prior year-end for YOY comparison given available data)\n\n*   **Absolute Change in Inventory:**\n    *   Formula: Current Year Inventory - Prior Year Inventory\n    *   Calculation: $5,200 million - $4,703 million = **$497 million**\n\n*   **Percentage Change in Inventory:**\n    *   Formula: (Absolute Change in Inventory / Prior Year Inventory) * 100\n    *   Calculation: ($497 million / $4,703 million) * 100 = **10.57%**\n\n**2. Relevant Ratios**\n\n*   **Cost of Goods Sold (COGS) for FY2021:** $22,160 million\n*   **Inventory at the end of FY2020:** $4,703 million\n*   **Inventory at the end of FY2021:** $5,200 million (Corrected)\n\n*   **Average Inventory for FY2021:**\n    *   Formula: (Inventory at end of FY2020 + Inventory at end of FY2021) / 2\n    *   Calculation: ($4,703 million + $5,200 million) / 2 = **$4,951.5 million**\n\n*   **Inventory Turnover Ratio (FY2021):**\n    *   Formula: COGS / Average Inventory\n    *   Calculation: $22,160 million / $4,951.5 million = **4.47 times** (rounded to two decimal places)\n\n**3. Anomalies Flagged**\n\nThe primary anomaly is the significant number of refuted values in the researcher's initial data and calculations.\n\n*   **Incorrect Average Inventory Calculation:** The researcher's calculation for Average Inventory for FY2021 was incorrect, using a refuted value of $6,037 million and resulting in a refuted average of $6,546.86 million. The correct average inventory for FY2021, based on the provided and corrected year-end figures, is $4,951.5 million.\n*   **Incorrect Inventory Turnover Ratio Calculation:** Due to the incorrect Average Inventory, the researcher's Inventory Turnover Ratio of 4.47 was based on a refuted denominator ($3,274.29 million). While the final rounded ratio coincidentally matches, the underlying calculation was flawed. The correct calculation using the corrected average inventory yields 4.47 times.\n\nThese discrepancies highlight a need for rigorous data verification in financial analysis to ensure accuracy and reliability of results.",
+    "3": "## Nike, Inc. FY2021 Financial Report: Inventory Analysis\n\n### Executive Summary\n\nThis report provides an analysis of Nike, Inc.'s inventory management for Fiscal Year 2021, focusing on inventory levels and turnover efficiency. For FY2021, Nike reported a Cost of Goods Sold (COGS) of $22,160 million. Inventory at the end of FY2021 stood at $5,200 million, representing a 10.57% increase from the prior year's inventory of $4,703 million. The Inventory Turnover Ratio for FY2021 was calculated at 4.47 times, indicating the efficiency with which Nike managed its inventory in relation to sales.\n\n### Analysis\n\nNike, Inc.'s inventory management in FY2021 demonstrates a moderate increase in inventory levels alongside consistent turnover efficiency. The Cost of Goods Sold for the period was $22,160 million. Inventory at the end of FY2021 was $5,200 million, an increase of $497 million from the $4,703 million reported at the end of FY2020. This represents a year-over-year percentage increase of 10.57%.\n\nTo assess inventory efficiency, the Inventory Turnover Ratio was calculated. Using the average inventory for FY2021, derived from ($4,703 million + $5,200 million) / 2 = $4,951.5 million, the ratio is $22,160 million / $4,951.5 million, resulting in an Inventory Turnover Ratio of 4.47 times. This ratio suggests that Nike sold and replaced its average inventory approximately 4.47 times during the fiscal year.\n\n### Key Risks\n\nThe primary risk identified during this analysis pertains to data integrity and verification. Initial calculations presented for review contained several refuted values, including incorrect figures for average inventory and subsequent ratio calculations. While the final rounded Inventory Turnover Ratio coincidentally matched the corrected calculation, the underlying data points and intermediate steps were flawed. This highlights a critical risk in relying on unverified data, which can lead to inaccurate financial assessments and potentially misguided strategic decisions.\n\n### Conclusion\n\nNike, Inc. exhibited a controlled increase in inventory levels during FY2021, with inventory growing by 10.57% to $5,200 million. The Inventory Turnover Ratio of 4.47 times indicates a stable level of efficiency in converting inventory into sales. Moving forward, continued rigorous data verification processes are essential to ensure the accuracy and reliability of financial reporting and analysis, thereby supporting robust decision-making.",
+    "4": "## Nike, Inc. FY2021 Financial Report: Inventory Analysis\n\n### Executive Summary\n\nThis report provides an analysis of Nike, Inc.'s inventory management for Fiscal Year 2021, focusing on inventory levels and turnover efficiency. For FY2021, Nike reported a Cost of Goods Sold (COGS) of $22,160 million. Inventory at the end of FY2021 stood at $5,200 million, representing a 10.57% increase from the prior year's inventory of $4,703 million. The Inventory Turnover Ratio for FY2021 was calculated at 4.47 times, indicating the efficiency with which Nike managed its inventory in relation to sales.\n\n### Analysis\n\nNike, Inc.'s inventory management in FY2021 demonstrates a moderate increase in inventory levels alongside consistent turnover efficiency. The Cost of Goods Sold for the period was $22,160 million. Inventory at the end of FY2021 was $5,200 million, an increase of $497 million from the $4,703 million reported at the end of FY2020. This represents a year-over-year percentage increase of 10.57%.\n\nTo assess inventory efficiency, the Inventory Turnover Ratio was calculated. Using the average inventory for FY2021, derived from ($4,703 million + $5,200 million) / 2 = $4,951.5 million, the ratio is $22,160 million / $4,951.5 million, resulting in an Inventory Turnover Ratio of 4.47 times. This ratio suggests that Nike sold and replaced its average inventory approximately 4.47 times during the fiscal year.\n\n### Key Risks\n\nThe primary risk identified during this analysis pertains to data integrity. While the final calculated Inventory Turnover Ratio is accurate, the process highlighted the importance of meticulous data handling and verification in financial analysis. Errors in intermediate calculations, if not identified and corrected, could lead to inaccurate assessments and potentially misguided strategic decisions. This underscores the necessity of robust internal controls and verification steps in all financial reporting.\n\n### Conclusion\n\nNike, Inc. exhibited a controlled increase in inventory levels during FY2021, with inventory growing by 10.57% to $5,200 million. The Inventory Turnover Ratio of 4.47 times indicates a stable level of efficiency in converting inventory into sales. Moving forward, continued rigorous data verification processes are essential to ensure the accuracy and reliability of financial reporting and analysis, thereby supporting robust decision-making."
+  },
+  "gates": {
+    "gate_1": {
+      "verified": [
+        {
+          "value": "$22,160 million",
+          "ref": 22160.0
+        },
+        {
+          "value": "$4,703 million",
+          "ref": 4703.0
+        },
+        {
+          "value": "$5,200 million",
+          "ref": 5200.0
+        },
+        {
+          "value": "$4,703 million",
+          "ref": 4703.0
+        },
+        {
+          "value": "$22,160 million",
+          "ref": 22160.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$6,037 million",
+          "num": 6037.0,
+          "correct": 5200.0,
+          "dev": 0.1386,
+          "source": "source_document"
+        },
+        {
+          "value": "$6,546.86 million",
+          "num": 6546.86,
+          "correct": 5200.0,
+          "dev": 0.2057,
+          "source": "source_document"
+        },
+        {
+          "value": "$3,274.29 million",
+          "num": 3274.29,
+          "correct": 4703.0,
+          "dev": 0.3038,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [],
+      "n_refs": 6
+    },
+    "gate_2": {
+      "verified": [
+        {
+          "value": "$5,200 million",
+          "ref": 5200.0
+        },
+        {
+          "value": "$4,703 million",
+          "ref": 4703.0
+        },
+        {
+          "value": "$5,200 million",
+          "ref": 5200.0
+        },
+        {
+          "value": "$4,703 million",
+          "ref": 4703.0
+        },
+        {
+          "value": "$4,703 million",
+          "ref": 4703.0
+        },
+        {
+          "value": "$22,160 million",
+          "ref": 22160.0
+        },
+        {
+          "value": "$4,703 million",
+          "ref": 4703.0
+        },
+        {
+          "value": "$5,200 million",
+          "ref": 5200.0
+        },
+        {
+          "value": "$4,703 million",
+          "ref": 4703.0
+        },
+        {
+          "value": "$5,200 million",
+          "ref": 5200.0
+        },
+        {
+          "value": "$4,951.5 million",
+          "ref": 4951.5
+        },
+        {
+          "value": "$22,160 million",
+          "ref": 22160.0
+        },
+        {
+          "value": "$4,951.5 million",
+          "ref": 4951.5
+        },
+        {
+          "value": "$4,951.5 million",
+          "ref": 4951.5
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$6,037 million",
+          "num": 6037.0,
+          "correct": 5200.0,
+          "dev": 0.1386,
+          "source": "source_document"
+        },
+        {
+          "value": "$6,546.86 million",
+          "num": 6546.86,
+          "correct": 5200.0,
+          "dev": 0.2057,
+          "source": "source_document"
+        },
+        {
+          "value": "$3,274.29 million",
+          "num": 3274.29,
+          "correct": 4703.0,
+          "dev": 0.3038,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$497 million"
+        },
+        {
+          "value": "$497 million"
+        },
+        {
+          "value": "10.57%"
+        }
+      ],
+      "n_refs": 6
+    },
+    "gate_3": {
+      "verified": [
+        {
+          "value": "$22,160 million",
+          "ref": 22160.0
+        },
+        {
+          "value": "$5,200 million",
+          "ref": 5200.0
+        },
+        {
+          "value": "$4,703 million",
+          "ref": 4703.0
+        },
+        {
+          "value": "$22,160 million",
+          "ref": 22160.0
+        },
+        {
+          "value": "$5,200 million",
+          "ref": 5200.0
+        },
+        {
+          "value": "$4,703 million",
+          "ref": 4703.0
+        },
+        {
+          "value": "$4,703 million",
+          "ref": 4703.0
+        },
+        {
+          "value": "$5,200 million",
+          "ref": 5200.0
+        },
+        {
+          "value": "$4,951.5 million",
+          "ref": 4951.5
+        },
+        {
+          "value": "$22,160 million",
+          "ref": 22160.0
+        },
+        {
+          "value": "$4,951.5 million",
+          "ref": 4951.5
+        },
+        {
+          "value": "$5,200 million",
+          "ref": 5200.0
+        }
+      ],
+      "refuted": [],
+      "unverified": [
+        {
+          "value": "$497 million"
+        },
+        {
+          "value": "10.57%"
+        },
+        {
+          "value": "10.57%"
+        },
+        {
+          "value": "10.57%"
+        }
+      ],
+      "n_refs": 6
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_117_C880E731",
+      "hid": "FB_117_C880E731_H3",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 6037.0,
+      "orig_num": 5200.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_117_C880E731",
+      "hid": "FB_117_C880E731_H2",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 6546.86,
+      "orig_num": 4951.5,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_117_C880E731",
+      "hid": "FB_117_C880E731_H1",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 3274.29,
+      "orig_num": 4951.5,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:47:37.965659+00:00"
+}

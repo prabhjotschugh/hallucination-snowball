@@ -1,0 +1,342 @@
+{
+  "question_id": "FB_133_F4882588",
+  "method": "ours",
+  "final_output": "## Pfizer Inc. - Fiscal Year 2021 Financial Report: Acquisition Activity\n\n**Executive Summary**\n\nPfizer Inc. demonstrated significant strategic investment in Fiscal Year 2021, reporting total acquisition-related expenses of $14,400 million. These investments contributed to a robust total revenue of $81,288 million for the period, with a notable impact on the oncology segment. Key acquisitions included Array BioPharma Inc. for $11,400 million, Trillium Therapeutics Inc. for $2,000 million, and an additional stake in BioNTech SE for $1,000 million. The substantial acquisition activity underscores Pfizer's commitment to expanding its portfolio and market presence.\n\n**Analysis**\n\nDuring FY2021, Pfizer executed several strategic acquisitions. The largest transaction was the acquisition of Array BioPharma Inc. for approximately $11,400 million, as reported in the FY2021 10-K, Note 3. Further strengthening its pipeline, Pfizer acquired Trillium Therapeutics Inc. for approximately $2,000 million and an additional stake in BioNTech SE for approximately $1,000 million. These acquisitions collectively represent a significant capital deployment, with total acquisition-related expenses reaching $14,400 million for the fiscal year. This level of investment represents 17.71% of Pfizer's total revenue of $81,288 million in FY2021, indicating a strong focus on inorganic growth. The reported impact of these acquisitions specifically contributed to an increase in the oncology segment.\n\n**Key Risks**\n\nThe sum of individually detailed acquisitions aligns with the reported total acquisition-related expenses. The sum of Array BioPharma ($11,400 million), Trillium Therapeutics ($2,000 million), and the BioNTech stake ($1,000 million) totals $14,400 million. This matches Pfizer's reported total acquisition-related expenses of $14,400 million for FY2021. This consistency in reporting indicates clear accounting treatment and classification of these expenditures, providing a transparent financial assessment.\n\n**Conclusion**\n\nPfizer Inc.'s FY2021 was marked by substantial strategic acquisitions totaling $14,400 million, contributing to a strong revenue performance of $81,288 million and specifically bolstering the oncology segment. The company's aggressive M&A strategy appears to be driving growth, and the consistency between the sum of specific acquisitions and the reported total acquisition expenses ensures full transparency and accuracy in financial reporting.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Pfizer Inc. - Fiscal Year 2021\n- PRIMARY METRIC: \n  1. **Array BioPharma Inc.** - Acquired for approximately **$14,483 million** (USD) on July 1, 2020, as reported in the FY2021 10-K, Note 3: Acquisitions.\n  2. **Trillium Therapeutics Inc.** - Acquired for approximately **$2,747 million** (USD) on April 30, 2021, as reported in the FY2021 10-K, Note 3: Acquisitions.\n  3. **Biontech SE (additional stake)** - Pfizer acquired an additional stake in BioNTech, with total investment amounting to approximately **$1,317 million** (USD) during 2021, as reported in the FY2021 10-K, Note 3: Acquisitions.\n\n- SUPPORTING DATA: \n  - **Total Acquisitions in FY2021**: Pfizer reported total acquisition-related expenses of **$14,400 million** (USD) in FY2021.\n  - **Revenue Impact**: Total revenue for Pfizer in FY2021 was **$81,288 million** (USD), with the impact of these acquisitions contributing to an increase in the oncology segment.\n\n- DATA SOURCES: \n  - Pfizer Inc. FY2021 10-K, Note 3: Acquisitions, pages 110-115.\n  - Pfizer Inc. FY2021 10-K, Consolidated Statements of Operations, page 66.\n\nPlease note that the analysis of strategic implications, financial ratios, and narrative report are outside the scope of the data extraction task and will need to be conducted by downstream analysts.",
+    "2": "Here's the financial analysis based on the provided data, incorporating the corrected values:\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\nTo calculate year-over-year changes, we need a prior year's total acquisition figure. The data only provides specific acquisition values and a total for FY2021. The Array BioPharma acquisition occurred on July 1, 2020, which falls within Pfizer's FY2021 (which typically ends in December). Therefore, we will consider Array BioPharma as part of the FY2021 acquisition activity for this analysis, as it's reported in the FY2021 10-K.\n\n*   **Corrected Acquisition Values:**\n    *   Array BioPharma Inc.: $14,483 million\n    *   Trillium Therapeutics Inc.: $2,000 million (Corrected from $2,747 million)\n    *   BioNTech SE (additional stake): $1,000 million (Corrected from $1,317 million)\n\n*   **Calculated Total Specific Acquisitions (FY2021):**\n    *   Formula: Array BioPharma + Trillium Therapeutics + BioNTech Stake\n    *   $14,483 million + $2,000 million + $1,000 million = **$17,483 million**\n\n*   **Reported Total Acquisitions (FY2021):** $14,400 million\n\nSince we only have FY2021 data, year-over-year changes for acquisitions cannot be computed without prior year acquisition data.\n\n**2. Relevant Ratios**\n\n*   **Acquisition-to-Revenue Ratio (FY2021):** This ratio indicates the proportion of total acquisitions relative to total revenue.\n    *   Formula: Total Reported Acquisitions / Total Revenue\n    *   $14,400 million / $81,288 million = **0.1771 or 17.71%**\n\n**3. Flag Any Anomalies**\n\n*   **Anomaly 1: Discrepancy in Total Acquisitions**\n    *   **Calculated Total Specific Acquisitions:** $17,483 million\n    *   **Reported Total Acquisitions in FY2021:** $14,400 million\n    *   **Absolute Difference:** $17,483 million - $14,400 million = **$3,083 million**\n    *   **Percentage Difference:** ($3,083 million / $14,400 million) * 100 = **21.41%**\n\n    **Flag:** There is a significant anomaly. The sum of the individually detailed acquisitions ($17,483 million) is substantially higher than the total acquisition-related expenses reported by Pfizer for FY2021 ($14,400 million). This discrepancy of $3,083 million (21.41%) requires further investigation. Possible reasons could include:\n    *   The reported \"total acquisition-related expenses\" might exclude certain components of the acquisition value (e.g., contingent consideration, earn-outs, or specific accounting treatments for goodwill).\n    *   The individual acquisition values might include items not categorized under \"acquisition-related expenses\" in the total.\n    *   Timing differences in reporting or recognition.",
+    "3": "## Pfizer Inc. - Fiscal Year 2021 Financial Report: Acquisition Activity\n\n**Executive Summary**\n\nPfizer Inc. demonstrated significant strategic investment in Fiscal Year 2021, reporting total acquisition-related expenses of $14,400 million. These investments contributed to a robust total revenue of $81,288 million for the period, with a notable impact on the oncology segment. Key acquisitions included Array BioPharma Inc. for $14,483 million, Trillium Therapeutics Inc. for $2,000 million, and an additional stake in BioNTech SE for $1,000 million. The substantial acquisition activity underscores Pfizer's commitment to expanding its portfolio and market presence.\n\n**Analysis**\n\nDuring FY2021, Pfizer executed several strategic acquisitions. The largest transaction was the acquisition of Array BioPharma Inc. for approximately $14,483 million, as reported in the FY2021 10-K, Note 3. Further strengthening its pipeline, Pfizer acquired Trillium Therapeutics Inc. for approximately $2,000 million and an additional stake in BioNTech SE for approximately $1,000 million. These acquisitions collectively represent a significant capital deployment, with total acquisition-related expenses reaching $14,400 million for the fiscal year. This level of investment represents 17.71% of Pfizer's total revenue of $81,288 million in FY2021, indicating a strong focus on inorganic growth. The reported impact of these acquisitions specifically contributed to an increase in the oncology segment.\n\n**Key Risks**\n\nA notable anomaly exists between the sum of individually detailed acquisitions and the reported total acquisition-related expenses. The sum of Array BioPharma, Trillium Therapeutics, and the BioNTech stake totals $17,483 million. However, Pfizer reported total acquisition-related expenses of $14,400 million for FY2021. This discrepancy of $3,083 million, representing an 18.50% difference, warrants further investigation to understand the accounting treatment and classification of these expenditures. Unexplained variances in reported totals could indicate potential misstatements or differing reporting methodologies that require clarification for accurate financial assessment.\n\n**Conclusion**\n\nPfizer Inc.'s FY2021 was marked by substantial strategic acquisitions totaling $14,400 million, contributing to a strong revenue performance of $81,288 million and specifically bolstering the oncology segment. While the company's aggressive M&A strategy appears to be driving growth, the observed $3,083 million variance between the sum of specific acquisitions and the reported total acquisition expenses necessitates further scrutiny to ensure full transparency and accuracy in financial reporting.",
+    "4": "## Pfizer Inc. - Fiscal Year 2021 Financial Report: Acquisition Activity\n\n**Executive Summary**\n\nPfizer Inc. demonstrated significant strategic investment in Fiscal Year 2021, reporting total acquisition-related expenses of $14,400 million. These investments contributed to a robust total revenue of $81,288 million for the period, with a notable impact on the oncology segment. Key acquisitions included Array BioPharma Inc. for $11,400 million, Trillium Therapeutics Inc. for $2,000 million, and an additional stake in BioNTech SE for $1,000 million. The substantial acquisition activity underscores Pfizer's commitment to expanding its portfolio and market presence.\n\n**Analysis**\n\nDuring FY2021, Pfizer executed several strategic acquisitions. The largest transaction was the acquisition of Array BioPharma Inc. for approximately $11,400 million, as reported in the FY2021 10-K, Note 3. Further strengthening its pipeline, Pfizer acquired Trillium Therapeutics Inc. for approximately $2,000 million and an additional stake in BioNTech SE for approximately $1,000 million. These acquisitions collectively represent a significant capital deployment, with total acquisition-related expenses reaching $14,400 million for the fiscal year. This level of investment represents 17.71% of Pfizer's total revenue of $81,288 million in FY2021, indicating a strong focus on inorganic growth. The reported impact of these acquisitions specifically contributed to an increase in the oncology segment.\n\n**Key Risks**\n\nThe sum of individually detailed acquisitions aligns with the reported total acquisition-related expenses. The sum of Array BioPharma ($11,400 million), Trillium Therapeutics ($2,000 million), and the BioNTech stake ($1,000 million) totals $14,400 million. This matches Pfizer's reported total acquisition-related expenses of $14,400 million for FY2021. This consistency in reporting indicates clear accounting treatment and classification of these expenditures, providing a transparent financial assessment.\n\n**Conclusion**\n\nPfizer Inc.'s FY2021 was marked by substantial strategic acquisitions totaling $14,400 million, contributing to a strong revenue performance of $81,288 million and specifically bolstering the oncology segment. The company's aggressive M&A strategy appears to be driving growth, and the consistency between the sum of specific acquisitions and the reported total acquisition expenses ensures full transparency and accuracy in financial reporting."
+  },
+  "gates": {
+    "gate_1": {
+      "verified": [
+        {
+          "value": "$14,483 million",
+          "ref": 14400.0
+        },
+        {
+          "value": "$14,400 million",
+          "ref": 14400.0
+        },
+        {
+          "value": "$81,288 million",
+          "ref": 81288.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$2,747 million",
+          "num": 2747.0,
+          "correct": 2000.0,
+          "dev": 0.2719,
+          "source": "source_document"
+        },
+        {
+          "value": "$1,317 million",
+          "num": 1317.0,
+          "correct": 1000.0,
+          "dev": 0.2407,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [],
+      "n_refs": 50
+    },
+    "gate_2": {
+      "verified": [
+        {
+          "value": "$14,483 million",
+          "ref": 14400.0
+        },
+        {
+          "value": "$2,000 million",
+          "ref": 2000.0
+        },
+        {
+          "value": "$1,000 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$14,483 million",
+          "ref": 14400.0
+        },
+        {
+          "value": "$2,000 million",
+          "ref": 2000.0
+        },
+        {
+          "value": "$1,000 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$14,400 million",
+          "ref": 14400.0
+        },
+        {
+          "value": "$14,400 million",
+          "ref": 14400.0
+        },
+        {
+          "value": "$81,288 million",
+          "ref": 81288.0
+        },
+        {
+          "value": "$14,400 million",
+          "ref": 14400.0
+        },
+        {
+          "value": "$14,400 million",
+          "ref": 14400.0
+        },
+        {
+          "value": "$14,400 million",
+          "ref": 14400.0
+        },
+        {
+          "value": "$14,400 million",
+          "ref": 14400.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$2,747 million",
+          "num": 2747.0,
+          "correct": 2000.0,
+          "dev": 0.2719,
+          "source": "source_document"
+        },
+        {
+          "value": "$1,317 million",
+          "num": 1317.0,
+          "correct": 1000.0,
+          "dev": 0.2407,
+          "source": "source_document"
+        },
+        {
+          "value": "$17,483 million",
+          "num": 17483.0,
+          "correct": 14400.0,
+          "dev": 0.1763,
+          "source": "source_document"
+        },
+        {
+          "value": "$17,483 million",
+          "num": 17483.0,
+          "correct": 14400.0,
+          "dev": 0.1763,
+          "source": "source_document"
+        },
+        {
+          "value": "$17,483 million",
+          "num": 17483.0,
+          "correct": 14400.0,
+          "dev": 0.1763,
+          "source": "source_document"
+        },
+        {
+          "value": "$3,083 million",
+          "num": 3083.0,
+          "correct": 2000.0,
+          "dev": 0.3513,
+          "source": "source_document"
+        },
+        {
+          "value": "$3,083 million",
+          "num": 3083.0,
+          "correct": 2000.0,
+          "dev": 0.3513,
+          "source": "source_document"
+        },
+        {
+          "value": "$17,483 million",
+          "num": 17483.0,
+          "correct": 14400.0,
+          "dev": 0.1763,
+          "source": "source_document"
+        },
+        {
+          "value": "$3,083 million",
+          "num": 3083.0,
+          "correct": 2000.0,
+          "dev": 0.3513,
+          "source": "source_document"
+        },
+        {
+          "value": "21.41%",
+          "num": 21.41,
+          "correct": 18.5,
+          "dev": 0.1359,
+          "source": "evidence"
+        },
+        {
+          "value": "21.41%",
+          "num": 21.41,
+          "correct": 18.5,
+          "dev": 0.1359,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "17.71%"
+        }
+      ],
+      "n_refs": 50
+    },
+    "gate_3": {
+      "verified": [
+        {
+          "value": "$14,400 million",
+          "ref": 14400.0
+        },
+        {
+          "value": "$81,288 million",
+          "ref": 81288.0
+        },
+        {
+          "value": "$14,483 million",
+          "ref": 14400.0
+        },
+        {
+          "value": "$2,000 million",
+          "ref": 2000.0
+        },
+        {
+          "value": "$1,000 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$14,483 million",
+          "ref": 14400.0
+        },
+        {
+          "value": "$2,000 million",
+          "ref": 2000.0
+        },
+        {
+          "value": "$1,000 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$14,400 million",
+          "ref": 14400.0
+        },
+        {
+          "value": "$81,288 million",
+          "ref": 81288.0
+        },
+        {
+          "value": "$14,400 million",
+          "ref": 14400.0
+        },
+        {
+          "value": "$14,400 million",
+          "ref": 14400.0
+        },
+        {
+          "value": "$81,288 million",
+          "ref": 81288.0
+        },
+        {
+          "value": "18.50%",
+          "ref": 18.5
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$17,483 million",
+          "num": 17483.0,
+          "correct": 14400.0,
+          "dev": 0.1763,
+          "source": "source_document"
+        },
+        {
+          "value": "$3,083 million",
+          "num": 3083.0,
+          "correct": 2000.0,
+          "dev": 0.3513,
+          "source": "source_document"
+        },
+        {
+          "value": "$3,083 million",
+          "num": 3083.0,
+          "correct": 2000.0,
+          "dev": 0.3513,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "17.71%"
+        }
+      ],
+      "n_refs": 50
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_133_F4882588",
+      "hid": "FB_133_F4882588_H3",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 14483.0,
+      "orig_num": 11400.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_133_F4882588",
+      "hid": "FB_133_F4882588_H2",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 2747.0,
+      "orig_num": 2000.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_133_F4882588",
+      "hid": "FB_133_F4882588_H1",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 1317.0,
+      "orig_num": 1000.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:52:37.784187+00:00"
+}

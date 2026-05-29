@@ -1,0 +1,195 @@
+{
+  "question_id": "FB_067_92C7D508",
+  "method": "end_check",
+  "final_output": "## Boeing Company: FY2022 and FY2021 Effective Tax Rate Analysis\n\n**Executive Summary**\n\nThis report analyzes The Boeing Company's effective tax rates for Fiscal Years 2022 and 2021, based on data from their respective 10-K filings. The analysis reveals a significant increase in both income tax expense and the calculated effective tax rate year-over-year. For FY2022, the calculated effective tax rate was 25.22%, a substantial rise from FY2021's 7.37%. This change is driven by a 421.72% increase in Income Tax Expense, alongside a 52.44% increase in Pre-tax Income.\n\n**Analysis**\n\nBoeing Company's financial performance in terms of tax burden shows a notable shift from FY2021 to FY2022. Income Tax Expense surged from $290 million in FY2021 to $1,513 million in FY2022, representing an absolute increase of $1,223 million. Concurrently, Pre-tax Income also grew from $3,936 million in FY2021 to $6,000 million in FY2022, an increase of $2,064 million.\n\nThe calculated effective tax rate, derived from the ratio of Income Tax Expense to Pre-tax Income, demonstrates a significant upward trend. In FY2021, the effective tax rate was 7.37% ($290 million / $3,936 million). This rate increased to 25.22% in FY2022 ($1,513 million / $6,000 million). This represents an absolute increase of 17.85 percentage points in the effective tax rate year-over-year.\n\n**Key Considerations**\n\nThe substantial increase in Boeing's effective tax rate from 7.37% to 25.22% could indicate several potential factors. These include changes in tax legislation, a shift in the geographical mix of earnings to higher-tax jurisdictions, or the expiration of favorable tax incentives. A higher tax burden directly impacts net income and cash flow, potentially affecting profitability and reinvestment capabilities. Further investigation into the specific drivers of this increase would provide a more comprehensive understanding of its implications.\n\n**Conclusion**\n\nThe Boeing Company experienced a significant increase in its effective tax rate from 7.37% in FY2021 to 25.22% in FY2022. This change is primarily attributable to a substantial rise in Income Tax Expense, which outpaced the growth in Pre-tax Income. This upward trend in the effective tax rate warrants close monitoring as it directly influences Boeing's financial performance and overall profitability. Understanding the underlying causes of this shift is crucial for assessing future financial outlooks and strategic tax planning.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Boeing Company, FY2022 and FY2021\n- PRIMARY METRIC: Effective Tax Rate for FY2022: 9.5% (per the FY2022 10-K, Note 9 - Income Taxes). Effective Tax Rate for FY2021: 5.3% (per the FY2021 10-K, Note 9 - Income Taxes).\n- SUPPORTING DATA: \n  - FY2022 Income Tax Expense: $1,513 million (per the FY2022 10-K, Consolidated Statements of Operations).\n  - FY2021 Income Tax Expense: $290 million (per the FY2021 10-K, Consolidated Statements of Operations).\n  - FY2022 Pre-tax Income: $6,000 million (per the FY2022 10-K, Consolidated Statements of Operations).\n  - FY2021 Pre-tax Income: $3,936 million (per the FY2021 10-K, Consolidated Statements of Operations).\n- DATA SOURCES: \n  - FY2022 10-K, Note 9 - Income Taxes\n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Note 9 - Income Taxes\n  - FY2021 10-K, Consolidated Statements of Operations\n\nPlease note that the effective tax rate is calculated as the income tax expense divided by pre-tax income. The figures provided are sourced directly from Boeing's official SEC filings for the respective fiscal years.",
+    "2": "As a financial analyst, I've reviewed the provided data for Boeing Company for FY2022 and FY2021.\n\n**1. Year-over-Year Changes**\n\n| Metric                  | FY2022        | FY2021        | Absolute Change (FY22 - FY21) | Percentage Change ((FY22 - FY21) / FY21) |\n| :---------------------- | :------------ | :------------ | :---------------------------- | :--------------------------------------- |\n| Income Tax Expense      | $1,513 million | $290 million  | $1,223 million                | 421.72%                                  |\n| Pre-tax Income          | $6,000 million | $3,936 million | $2,064 million                | 52.44%                                   |\n| Effective Tax Rate (Stated) | 9.5%          | 5.3%          | 4.2%                          | 79.25%                                   |\n\n*   **Formulas:**\n    *   Absolute Change = FY2022 Value - FY2021 Value\n    *   Percentage Change = (Absolute Change / FY2021 Value) * 100\n\n**2. Relevant Ratios (Effective Tax Rate)**\n\nThe effective tax rate is calculated as:\n*   **Formula:** Effective Tax Rate = (Income Tax Expense / Pre-tax Income) * 100\n\n*   **FY2022 Calculated Effective Tax Rate:**\n    *   ($1,513 million / $6,000 million) * 100 = **25.22%**\n\n*   **FY2021 Calculated Effective Tax Rate:**\n    *   ($290 million / $3,936 million) * 100 = **7.37%**\n\n**3. Anomalies Flagged**\n\nThere is a significant anomaly in the stated effective tax rates provided by the researcher compared to the rates calculated using the supporting data.\n\n*   **FY2022 Anomaly:**\n    *   Stated Effective Tax Rate: 9.5%\n    *   Calculated Effective Tax Rate: 25.22%\n    *   **Discrepancy:** The stated rate is significantly lower than the calculated rate.\n\n*   **FY2021 Anomaly:**\n    *   Stated Effective Tax Rate: 5.3%\n    *   Calculated Effective Tax Rate: 7.37%\n    *   **Discrepancy:** The stated rate is lower than the calculated rate.\n\n**Conclusion:**\n\nThe stated effective tax rates for both FY2022 (9.5%) and FY2021 (5.3%) are inconsistent with the rates derived from the provided Income Tax Expense and Pre-tax Income figures. The calculated effective tax rates are 25.22% for FY2022 and 7.37% for FY2021. This discrepancy requires further investigation, as the effective tax rate is a crucial indicator of a company's tax burden. The significant year-over-year increase in both Income Tax Expense (421.72%) and the calculated Effective Tax Rate (from 7.37% to 25.22%) suggests a substantial change in Boeing's tax situation or underlying profitability.",
+    "3": "## Boeing Company: FY2022 and FY2021 Effective Tax Rate Analysis\n\n**Executive Summary**\n\nThis report analyzes The Boeing Company's effective tax rates for Fiscal Years 2022 and 2021, based on data from their respective 10-K filings. The analysis reveals a significant increase in both income tax expense and the calculated effective tax rate year-over-year. For FY2022, the calculated effective tax rate was 25.22%, a substantial rise from FY2021's 7.37%. This change is driven by a 421.72% increase in Income Tax Expense, alongside a 52.44% increase in Pre-tax Income.\n\n**Analysis**\n\nBoeing Company's financial performance in terms of tax burden shows a notable shift from FY2021 to FY2022. Income Tax Expense surged from $290 million in FY2021 to $1,513 million in FY2022, representing an absolute increase of $1,223 million. Concurrently, Pre-tax Income also grew from $3,936 million in FY2021 to $6,000 million in FY2022, an increase of $2,064 million.\n\nThe calculated effective tax rate, derived from the ratio of Income Tax Expense to Pre-tax Income, demonstrates a significant upward trend. In FY2021, the effective tax rate was 7.37% ($290 million / $3,936 million). This rate increased to 25.22% in FY2022 ($1,513 million / $6,000 million). This represents an absolute increase of 17.85 percentage points in the effective tax rate year-over-year.\n\n**Key Risks**\n\nThe substantial increase in Boeing's effective tax rate from 7.37% to 25.22% could indicate several potential risks. These include changes in tax legislation, a shift in the geographical mix of earnings to higher-tax jurisdictions, or the expiration of favorable tax incentives. A higher tax burden directly impacts net income and cash flow, potentially affecting profitability and reinvestment capabilities.\n\n**Conclusion**\n\nThe Boeing Company experienced a significant increase in its effective tax rate from 7.37% in FY2021 to 25.22% in FY2022. This change is primarily attributable to a substantial rise in Income Tax Expense, which outpaced the growth in Pre-tax Income. This upward trend in the effective tax rate warrants close monitoring as it directly influences Boeing's financial performance and overall profitability.",
+    "4": "## Boeing Company: FY2022 and FY2021 Effective Tax Rate Analysis\n\n**Executive Summary**\n\nThis report analyzes The Boeing Company's effective tax rates for Fiscal Years 2022 and 2021, based on data from their respective 10-K filings. The analysis reveals a significant increase in both income tax expense and the calculated effective tax rate year-over-year. For FY2022, the calculated effective tax rate was 25.22%, a substantial rise from FY2021's 7.37%. This change is driven by a 421.72% increase in Income Tax Expense, alongside a 52.44% increase in Pre-tax Income.\n\n**Analysis**\n\nBoeing Company's financial performance in terms of tax burden shows a notable shift from FY2021 to FY2022. Income Tax Expense surged from $290 million in FY2021 to $1,513 million in FY2022, representing an absolute increase of $1,223 million. Concurrently, Pre-tax Income also grew from $3,936 million in FY2021 to $6,000 million in FY2022, an increase of $2,064 million.\n\nThe calculated effective tax rate, derived from the ratio of Income Tax Expense to Pre-tax Income, demonstrates a significant upward trend. In FY2021, the effective tax rate was 7.37% ($290 million / $3,936 million). This rate increased to 25.22% in FY2022 ($1,513 million / $6,000 million). This represents an absolute increase of 17.85 percentage points in the effective tax rate year-over-year.\n\n**Key Considerations**\n\nThe substantial increase in Boeing's effective tax rate from 7.37% to 25.22% could indicate several potential factors. These include changes in tax legislation, a shift in the geographical mix of earnings to higher-tax jurisdictions, or the expiration of favorable tax incentives. A higher tax burden directly impacts net income and cash flow, potentially affecting profitability and reinvestment capabilities. Further investigation into the specific drivers of this increase would provide a more comprehensive understanding of its implications.\n\n**Conclusion**\n\nThe Boeing Company experienced a significant increase in its effective tax rate from 7.37% in FY2021 to 25.22% in FY2022. This change is primarily attributable to a substantial rise in Income Tax Expense, which outpaced the growth in Pre-tax Income. This upward trend in the effective tax rate warrants close monitoring as it directly influences Boeing's financial performance and overall profitability. Understanding the underlying causes of this shift is crucial for assessing future financial outlooks and strategic tax planning."
+  },
+  "gates": {
+    "end_gate": {
+      "verified": [
+        {
+          "value": "$290 million",
+          "ref": 290.0
+        },
+        {
+          "value": "$1,223 million",
+          "ref": 1200.0
+        },
+        {
+          "value": "$6,000 million",
+          "ref": 6000.0
+        },
+        {
+          "value": "$290 million",
+          "ref": 290.0
+        },
+        {
+          "value": "$6,000 million",
+          "ref": 6000.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$1,513 million",
+          "num": 1513.0,
+          "correct": 1200.0,
+          "dev": 0.2069,
+          "source": "source_document"
+        },
+        {
+          "value": "$3,936 million",
+          "num": 3936.0,
+          "correct": 4157.0,
+          "dev": 0.0532,
+          "source": "evidence"
+        },
+        {
+          "value": "$3,936 million",
+          "num": 3936.0,
+          "correct": 4157.0,
+          "dev": 0.0532,
+          "source": "evidence"
+        },
+        {
+          "value": "$1,513 million",
+          "num": 1513.0,
+          "correct": 1200.0,
+          "dev": 0.2069,
+          "source": "source_document"
+        },
+        {
+          "value": "25.22%",
+          "num": 25.22,
+          "correct": 20.88,
+          "dev": 0.1721,
+          "source": "evidence"
+        },
+        {
+          "value": "421.72%",
+          "num": 421.72,
+          "correct": 290.0,
+          "dev": 0.3123,
+          "source": "source_document"
+        },
+        {
+          "value": "25.22%",
+          "num": 25.22,
+          "correct": 20.88,
+          "dev": 0.1721,
+          "source": "evidence"
+        },
+        {
+          "value": "17.85 percent",
+          "num": 17.85,
+          "correct": 20.0,
+          "dev": 0.1075,
+          "source": "source_document"
+        },
+        {
+          "value": "25.22%",
+          "num": 25.22,
+          "correct": 20.88,
+          "dev": 0.1721,
+          "source": "evidence"
+        },
+        {
+          "value": "25.22%",
+          "num": 25.22,
+          "correct": 20.88,
+          "dev": 0.1721,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$2,064 million"
+        },
+        {
+          "value": "7.37%"
+        },
+        {
+          "value": "52.44%"
+        },
+        {
+          "value": "7.37%"
+        },
+        {
+          "value": "7.37%"
+        },
+        {
+          "value": "7.37%"
+        }
+      ],
+      "n_refs": 45
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_067_92C7D508",
+      "hid": "FB_067_92C7D508_H3",
+      "method": "end_check",
+      "type": "percentage",
+      "inj_num": 9.5,
+      "orig_num": 20.0,
+      "survived": false,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_067_92C7D508",
+      "hid": "FB_067_92C7D508_H2",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 1513.0,
+      "orig_num": 1200.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": true,
+      "any_det": true,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_067_92C7D508",
+      "hid": "FB_067_92C7D508_H1",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 3936.0,
+      "orig_num": 5500.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": true,
+      "any_det": true,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:27:10.707662+00:00"
+}

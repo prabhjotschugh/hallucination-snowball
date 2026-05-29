@@ -1,0 +1,91 @@
+{
+  "question_id": "FB_103_98E6E9E2",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: Lockheed Martin Corporation, FY2020 to FY2022\n- PRIMARY METRIC: Total Revenue for FY2020: $90,117 million (per the FY2022 10-K, Consolidated Statements of Operations); Total Revenue for FY2022: $87,879 million (per the FY2022 10-K, Consolidated Statements of Operations).\n- SUPPORTING DATA: \n  - FY2020 Total Revenue: $65,398 million\n  - FY2021 Total Revenue: $67,046 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - FY2022 Total Revenue: $67,045 million\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations\n\n**CAGR Calculation:**\nUsing the formula for CAGR: \n\\[ CAGR = \\left( \\frac{Ending\\ Value}{Beginning\\ Value} \\right)^{\\frac{1}{n}} - 1 \\]\nWhere:\n- Ending Value = Total Revenue FY2022 = $67,045 million\n- Beginning Value = Total Revenue FY2020 = $65,398 million\n- n = number of years = 2\n\nCalculating:\n\\[ CAGR = \\left( \\frac{67,045}{65,398} \\right)^{\\frac{1}{2}} - 1 \\]\n\\[ CAGR = (1.0252)^{0.5} - 1 \\]\n\\[ CAGR \\approx 0.0126 \\text{ or } 1.3\\% \\]\n\nThus, Lockheed Martin's two-year total revenue CAGR from FY2020 to FY2022 is approximately **1.3%**.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_103_98E6E9E2_H2",
+      "type": "dollar_amount",
+      "original_value": "$65,398 million",
+      "injected_value": "$90,117 million",
+      "original_numeric": "65398",
+      "injected_numeric": "90117",
+      "position_char": 110,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.378
+    },
+    {
+      "hallucination_id": "FB_103_98E6E9E2_H1",
+      "type": "dollar_amount",
+      "original_value": "$67,045 million",
+      "injected_value": "$87,879 million",
+      "original_numeric": "67045",
+      "injected_numeric": "87879",
+      "position_char": 214,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.3107
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Total Revenue for FY2020: $90,117 million (per the FY2022 10-K, Consolidated Statements of Operations)",
+        "claim_value": "$90,117 million",
+        "reason": "Contradicts subsequent FY2020 revenue figure of $65,398 million in the same output, indicating potential data inconsistency or error.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Revenue for FY2022: $87,879 million (per the FY2022 10-K, Consolidated Statements of Operations)",
+        "claim_value": "$87,879 million",
+        "reason": "Contradicts subsequent FY2022 revenue figure of $67,045 million in the same output, indicating potential data inconsistency or error.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2021 Total Revenue: $67,046 million (per the FY2022 10-K, Consolidated Statements of Operations)",
+        "claim_value": "$67,046 million",
+        "reason": "FY2022 revenue is reported as $67,045 million, which is almost identical to FY2021 revenue, raising questions about data accuracy or copying error.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "FY2022 Total Revenue: $67,045 million",
+        "claim_value": "$67,045 million",
+        "reason": "Almost identical to FY2021 revenue ($67,046 million), which is unusual for a defense contractor like Lockheed Martin where revenues typically show more variability.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "Multiple inconsistencies found in reported revenue figures, including contradictory values and implausibly stable revenues across years.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Total Revenue for FY2020: $90,117 million (per the FY2022 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$90,117 million\",\n      \"reason\": \"Contradicts subsequent FY2020 revenue figure of $65,398 million in the same output, indicating potential data inconsistency or error.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Revenue for FY2022: $87,879 million (per the FY2022 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$87,879 million\",\n      \"reason\": \"Contradicts subsequent FY2022 revenue figure of $67,045 million in the same output, indicating potential data inconsistency or error.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2021 Total Revenue: $67,046 million (per the FY2022 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$67,046 million\",\n      \"reason\": \"FY2022 revenue is reported as $67,045 million, which is almost identical to FY2021 revenue, raising questions about data accuracy or copying error.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"FY2022 Total Revenue: $67,045 million\",\n      \"claim_value\": \"$67,045 million\",\n      \"reason\": \"Almost identical to FY2021 revenue ($67,046 million), which is unusual for a defense contractor like Lockheed Martin where revenues typically show more variability.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\": \"Multiple inconsistencies found in reported revenue figures, including contradictory values and implausibly stable revenues across years.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_103_98E6E9E2",
+      "hallucination_id": "FB_103_98E6E9E2_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$65,398 million",
+      "injected_value": "$90,117 million",
+      "detected": true,
+      "reason": "Contradicts subsequent FY2020 revenue figure of $65,398 million in the same output, indicating potential data inconsistency or error.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_103_98E6E9E2",
+      "hallucination_id": "FB_103_98E6E9E2_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$67,045 million",
+      "injected_value": "$87,879 million",
+      "detected": true,
+      "reason": "Contradicts subsequent FY2020 revenue figure of $65,398 million in the same output, indicating potential data inconsistency or error.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-24T09:56:03.986799Z"
+}

@@ -1,0 +1,109 @@
+{
+  "question_id": "FB_064_7576A9AF",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: The Boeing Company, FY2022\n- PRIMARY METRIC: Boeing's primary customer segments as of FY2022 include Commercial Airplanes, Defense, Space & Security, and Global Services. The revenue contributions from these segments are as follows:\n  - Commercial Airplanes: $27,100 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - Defense, Space & Security: $26,300 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - Global Services: $16,300 million (per the FY2022 10-K, Consolidated Statements of Operations)\n\n- SUPPORTING DATA:\n  - FY2021 Revenue Contributions:\n    - Commercial Airplanes: $12,426 million (per the FY2021 10-K, Consolidated Statements of Operations)\n    - Defense, Space & Security: $22,100 million (per the FY2021 10-K, Consolidated Statements of Operations)\n    - Global Services: $18,525 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2020 Revenue Contributions:\n    - Commercial Airplanes: $39,000 million (per the FY2020 10-K, Consolidated Statements of Operations)\n    - Defense, Space & Security: $26,400 million (per the FY2020 10-K, Consolidated Statements of Operations)\n    - Global Services: $19,162 million (per the FY2020 10-K, Consolidated Statements of Operations)\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Statements of Operations\n  - FY2020 10-K, Consolidated Statements of Operations\n\nNote: This report strictly contains factual data as requested. Further analysis or interpretation is not included.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_064_7576A9AF_H3",
+      "type": "dollar_amount",
+      "original_value": "$14,800 million",
+      "injected_value": "$12,426 million",
+      "original_numeric": "14800",
+      "injected_numeric": "12426",
+      "position_char": 644,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.1604
+    },
+    {
+      "hallucination_id": "FB_064_7576A9AF_H2",
+      "type": "dollar_amount",
+      "original_value": "$15,300 million",
+      "injected_value": "$18,525 million",
+      "original_numeric": "15300",
+      "injected_numeric": "18525",
+      "position_char": 854,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.2108
+    },
+    {
+      "hallucination_id": "FB_064_7576A9AF_H1",
+      "type": "dollar_amount",
+      "original_value": "$15,100 million",
+      "injected_value": "$19,162 million",
+      "original_numeric": "15100",
+      "injected_numeric": "19162",
+      "position_char": 1203,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.269
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Commercial Airplanes: $27,100 million (per the FY2022 10-K, Consolidated Statements of Operations)",
+        "claim_value": "$27,100 million",
+        "reason": "Suspect because Boeing Commercial Airplanes segment revenue in FY2021 was $12,426 million. A 118% YoY increase post-pandemic seems unusually high, especially given ongoing global supply chain disruptions.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Commercial Airplanes: $12,426 million (per the FY2021 10-K, Consolidated Statements of Operations)",
+        "claim_value": "$12,426 million",
+        "reason": "Compared to $39,000 million in FY2020 during peak pandemic, a 68% decline seems excessively steep even accounting for COVID-19 impacts.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Global Services: $16,300 million (per the FY2022 10-K, Consolidated Statements of Operations)",
+        "claim_value": "$16,300 million",
+        "reason": "Improbable consistency with FY2021 ($18,525 million) and FY2020 ($19,162 million) given Boeing's restructuring efforts. Would expect more volatility in services revenue.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 9,
+    "overall_assessment": "Multiple revenue figures show questionable year-over-year volatility inconsistent with known industry conditions.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Commercial Airplanes: $27,100 million (per the FY2022 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$27,100 million\",\n      \"reason\": \"Suspect because Boeing Commercial Airplanes segment revenue in FY2021 was $12,426 million. A 118% YoY increase post-pandemic seems unusually high, especially given ongoing global supply chain disruptions.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Commercial Airplanes: $12,426 million (per the FY2021 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$12,426 million\",\n      \"reason\": \"Compared to $39,000 million in FY2020 during peak pandemic, a 68% decline seems excessively steep even accounting for COVID-19 impacts.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Global Services: $16,300 million (per the FY2022 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$16,300 million\",\n      \"reason\": \"Improbable consistency with FY2021 ($18,525 million) and FY2020 ($19,162 million) given Boeing's restructuring efforts. Would expect more volatility in services revenue.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 9,\n  \"overall_assessment\": \"Multiple revenue figures show questionable year-over-year volatility inconsistent with known industry conditions.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_064_7576A9AF",
+      "hallucination_id": "FB_064_7576A9AF_H3",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$14,800 million",
+      "injected_value": "$12,426 million",
+      "detected": true,
+      "reason": "Compared to $39,000 million in FY2020 during peak pandemic, a 68% decline seems excessively steep even accounting for COVID-19 impacts.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_064_7576A9AF",
+      "hallucination_id": "FB_064_7576A9AF_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$15,300 million",
+      "injected_value": "$18,525 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_064_7576A9AF",
+      "hallucination_id": "FB_064_7576A9AF_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$15,100 million",
+      "injected_value": "$19,162 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 9
+    }
+  ],
+  "timestamp": "2026-03-24T09:49:26.702740Z"
+}

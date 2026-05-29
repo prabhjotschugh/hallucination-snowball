@@ -1,0 +1,103 @@
+{
+  "question_id": "FB_097_2BA7758E",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: JPMorgan Chase & Co., Fiscal Years 2018-2022\n- PRIMARY METRIC: \n  - FY2022 Gross Margin: 69.6% (per the FY2022 10-K, Consolidated Statements of Operations)\n  - FY2021 Gross Margin: 76.5% (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2020 Gross Margin: 77.0% (per the FY2020 10-K, Consolidated Statements of Operations)\n  - FY2019 Gross Margin: 70.4% (per the FY2019 10-K, Consolidated Statements of Operations)\n  - FY2018 Gross Margin: 76.4% (per the FY2018 10-K, Consolidated Statements of Operations)\n\n- SUPPORTING DATA: \n  - FY2022 Total Revenue: $130,186 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - FY2021 Total Revenue: $125,000 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2020 Total Revenue: $119,540 million (per the FY2020 10-K, Consolidated Statements of Operations)\n  - FY2019 Total Revenue: $115,632 million (per the FY2019 10-K, Consolidated Statements of Operations)\n  - FY2018 Total Revenue: $110,360 million (per the FY2018 10-K, Consolidated Statements of Operations)\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Statements of Operations\n  - FY2020 10-K, Consolidated Statements of Operations\n  - FY2019 10-K, Consolidated Statements of Operations\n  - FY2018 10-K, Consolidated Statements of Operations\n\n**Note on Gross Margin Relevance:**\nGross margin is typically a metric more relevant for companies in manufacturing or retail sectors where the cost of goods sold (COGS) is a significant factor in determining profitability. For financial institutions like JPMorgan Chase, gross margin may not be the most appropriate metric due to the nature of their business model, which primarily revolves around financial services, interest income, and fees rather than physical goods. Instead, metrics such as net interest margin, return on equity (ROE), and efficiency ratio are more commonly used to assess performance in the banking sector.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_097_2BA7758E_H2",
+      "type": "percentage",
+      "original_value": "76.8%",
+      "injected_value": "69.6%",
+      "original_numeric": "76.8",
+      "injected_numeric": "69.6",
+      "position_char": 109,
+      "sentence_approx": 2,
+      "perturbation_delta": -7.1807
+    },
+    {
+      "hallucination_id": "FB_097_2BA7758E_H1",
+      "type": "percentage",
+      "original_value": "76.8%",
+      "injected_value": "70.4%",
+      "original_numeric": "76.8",
+      "injected_numeric": "70.4",
+      "position_char": 385,
+      "sentence_approx": 5,
+      "perturbation_delta": -6.3556
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "FY2022 Gross Margin: 69.6% (per the FY2022 10-K, Consolidated Statements of Operations)",
+        "claim_value": "69.6%",
+        "reason": "Banks do not report 'Gross Margin' or 'Cost of Goods Sold' on their Consolidated Statements of Operations. This line item does not exist in JPM's 10-K filings; this is a hallucinated metric attribution.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2021 Gross Margin: 76.5% (per the FY2021 10-K, Consolidated Statements of Operations)",
+        "claim_value": "76.5%",
+        "reason": "Banks do not report 'Gross Margin' on their Consolidated Statements of Operations. This figure is fabricated or derived from a non-standard calculation mislabeled as a direct 10-K extraction.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2020 Gross Margin: 77.0% (per the FY2020 10-K, Consolidated Statements of Operations)",
+        "claim_value": "77.0%",
+        "reason": "Banks do not report 'Gross Margin' on their Consolidated Statements of Operations. This figure is fabricated or derived from a non-standard calculation mislabeled as a direct 10-K extraction.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2019 Gross Margin: 70.4% (per the FY2019 10-K, Consolidated Statements of Operations)",
+        "claim_value": "70.4%",
+        "reason": "Banks do not report 'Gross Margin' on their Consolidated Statements of Operations. This figure is fabricated or derived from a non-standard calculation mislabeled as a direct 10-K extraction.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2018 Gross Margin: 76.4% (per the FY2018 10-K, Consolidated Statements of Operations)",
+        "claim_value": "76.4%",
+        "reason": "Banks do not report 'Gross Margin' on their Consolidated Statements of Operations. This figure is fabricated or derived from a non-standard calculation mislabeled as a direct 10-K extraction.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2021 Total Revenue: $125,000 million (per the FY2021 10-K, Consolidated Statements of Operations)",
+        "claim_value": "$125,000 million",
+        "reason": "Suspiciously round number for a specific 10-K extraction. Actual reported net revenue for JPM in 2021 was approximately $121.6 billion, making this figure both imprecise and potentially hallucinated.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 10,
+    "overall_assessment": "The report fundamentally hallucinates the existence of a 'Gross Margin' line item on JPM's 10-K financial statements, which is not a GAAP metric for banking institutions, and contains at least one suspiciously rounded revenue figure.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"FY2022 Gross Margin: 69.6% (per the FY2022 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\": \"69.6%\",\n      \"reason\": \"Banks do not report 'Gross Margin' or 'Cost of Goods Sold' on their Consolidated Statements of Operations. This line item does not exist in JPM's 10-K filings; this is a hallucinated metric attribution.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2021 Gross Margin: 76.5% (per the FY2021 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\": \"76.5%\",\n      \"reason\": \"Banks do not report 'Gross Margin' on their Consolidated Statements of Operations. This figure is fabricated or derived from a non-standard calculation mislabeled as a direct 10-K extraction.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2020 Gross Margin: 77.0% (per the FY2020 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\": \"77.0%\",\n      \"reason\": \"Banks do not report 'Gross Margin' on their Consolidated Statements of Operations. This figure is fabricated or derived from a non-standard calculation mislabeled as a direct 10-K extraction.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2019 Gross Margin: 70.4% (per the FY2019 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\": \"70.4%\",\n      \"reason\": \"Banks do not report 'Gross Margin' on their Consolidated Statements of Operations. This figure is fabricated or derived from a non-standard calculation mislabeled as a direct 10-K extraction.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2018 Gross Margin: 76.4% (per the FY2018 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\": \"76.4%\",\n      \"reason\": \"Banks do not report 'Gross Margin' on their Consolidated Statements of Operations. This figure is fabricated or derived from a non-standard calculation mislabeled as a direct 10-K extraction.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2021 Total Revenue: $125,000 million (per the FY2021 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$125,000 million\",\n      \"reason\": \"Suspiciously round number for a specific 10-K extraction. Actual reported net revenue for JPM in 2021 was approximately $121.6 billion, making this figure both imprecise and potentially hallucinated.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 10,\n  \"overall_assessment\": \"The report fundamentally hallucinates the existence of a 'Gross Margin' line item on JPM's 10-K financial statements, which is not a GAAP metric for banking institutions, and contains at least one suspiciously rounded revenue figure.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_097_2BA7758E",
+      "hallucination_id": "FB_097_2BA7758E_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "percentage",
+      "original_value": "76.8%",
+      "injected_value": "69.6%",
+      "detected": true,
+      "reason": "Banks do not report 'Gross Margin' or 'Cost of Goods Sold' on their Consolidated Statements of Operations. This line item does not exist in JPM's 10-K filings; this is a hallucinated metric attribution.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 10
+    },
+    {
+      "question_id": "FB_097_2BA7758E",
+      "hallucination_id": "FB_097_2BA7758E_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "percentage",
+      "original_value": "76.8%",
+      "injected_value": "70.4%",
+      "detected": true,
+      "reason": "Banks do not report 'Gross Margin' or 'Cost of Goods Sold' on their Consolidated Statements of Operations. This line item does not exist in JPM's 10-K filings; this is a hallucinated metric attribution.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 10
+    }
+  ],
+  "timestamp": "2026-03-24T12:20:59.990569Z"
+}

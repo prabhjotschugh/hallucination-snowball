@@ -1,0 +1,292 @@
+{
+  "question_id": "FB_132_9F7A4F77",
+  "method": "ours",
+  "final_output": "## Pfizer Inc. - Fiscal Year 2019 Financial Report\n\n### Executive Summary\nPfizer Inc. reported a Net Income of $16,305 million for Fiscal Year 2019, an increase of 28.68% from the previous year's $12,671 million. Total Revenue for FY2019 was $51,750 million, resulting in a Gross Profit of $31,722 million and a Gross Profit Margin of 61.30%. The Net Profit Margin for FY2019 stood at 31.51%. A significant extraordinary tax benefit of $2,200 million related to the Tax Cuts and Jobs Act notably impacted the FY2019 net income.\n\n### Analysis\nPfizer's Net Income for FY2019 was $16,305 million, a substantial increase from $12,671 million in FY2018. This represents an absolute year-over-year change of $3,634 million, or a 28.68% growth. The company's Total Revenue for FY2019 was $51,750 million. With a Gross Profit of $31,722 million, Pfizer achieved a Gross Profit Margin of 61.30%. The Net Profit Margin for FY2019 was 31.51%. Looking at prior periods, Net Income decreased by $9,329 million from FY2017 ($22,000 million) to FY2018 ($12,671 million), representing a -42.40% decline.\n\n### Key Risks\nThe reported Net Income for FY2019 includes an extraordinary tax benefit of $2,200 million. This non-recurring item significantly inflates the reported net income and, consequently, the net profit margin and the year-over-year growth from FY2018 to FY2019. Future comparisons should consider this one-time impact. The substantial -42.40% decline in Net Income from FY2017 to FY2018 also warrants further investigation into the underlying operational or strategic factors during that period.\n\n### Conclusion\nPfizer Inc. demonstrated strong Net Income growth in FY2019, reaching $16,305 million. While the extraordinary tax benefit of $2,200 million contributed to this performance, the company maintained robust revenue and gross profit margins. The significant decline in net income between FY2017 and FY2018 highlights a period of challenge that was subsequently overcome in FY2019.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Pfizer Inc., Fiscal Year 2019\n- PRIMARY METRIC: Net Income for FY 2019 was $16,305 million (USD), as reported in the FY2019 10-K, Consolidated Statements of Operations.\n- SUPPORTING DATA: \n  - Total Revenue for FY 2019: $51,750 million (USD) (per the FY2019 10-K, Consolidated Statements of Operations).\n  - Cost of Goods Sold (COGS) for FY 2019: $26,881 million (USD) (per the FY2019 10-K, Consolidated Statements of Operations).\n  - Gross Profit for FY 2019: $31,722 million (USD) (calculated as Total Revenue - COGS).\n  - Net Income for FY 2018: $12,671 million (USD) (per the FY2019 10-K, Consolidated Statements of Operations).\n  - Net Income for FY 2017: $22,000 million (USD) (per the FY2019 10-K, Consolidated Statements of Operations).\n\n- EXTRAORDINARY EVENTS: According to the FY2019 10-K, Pfizer recognized a tax benefit of $1,431 million (USD) related to the revaluation of deferred tax assets and liabilities due to the Tax Cuts and Jobs Act, which significantly impacted net income. This event is categorized as extraordinary as it is not part of standard business operations.\n\n- DATA SOURCES: \n  - Pfizer Inc. FY2019 10-K, filed with the SEC on February 6, 2020, Consolidated Statements of Operations.\n  - Pfizer Inc. FY2019 10-K, filed with the SEC on February 6, 2020, Management's Discussion and Analysis of Financial Condition and Results of Operations.\n\nPlease note that I have not included any analysis or implications as per your directive, focusing solely on the extraction of factual data.",
+    "2": "As a financial analyst, I have computed the year-over-year changes and relevant ratios for Pfizer Inc. based on the provided data, incorporating the corrected values.\n\n**1. Year-over-Year Changes (Net Income)**\n\n*   **FY2018 to FY2019:**\n    *   **Absolute Change:**\n        *   Formula: Net Income (Current Year) - Net Income (Previous Year)\n        *   Calculation: $16,305 million - $12,671 million = **$3,634 million**\n    *   **Percentage Change:**\n        *   Formula: (Absolute Change / Net Income (Previous Year)) * 100\n        *   Calculation: ($3,634 million / $12,671 million) * 100 = **28.68%**\n\n*   **FY2017 to FY2018:**\n    *   **Absolute Change:**\n        *   Formula: Net Income (Current Year) - Net Income (Previous Year)\n        *   Calculation: $12,671 million - $22,000 million = **-$9,329 million**\n    *   **Percentage Change:**\n        *   Formula: (Absolute Change / Net Income (Previous Year)) * 100\n        *   Calculation: (-$9,329 million / $22,000 million) * 100 = **-42.40%**\n\n**2. Relevant Ratios (FY2019)**\n\n*   **Gross Profit Margin:**\n    *   Formula: (Gross Profit / Total Revenue) * 100\n    *   Calculation: ($31,722 million / $51,750 million) * 100 = **61.30%**\n\n*   **Net Profit Margin:**\n    *   Formula: (Net Income / Total Revenue) * 100\n    *   Calculation: ($16,305 million / $51,750 million) * 100 = **31.51%**\n\n**3. Anomalies Flagged**\n\n*   **FY2017 to FY2018 Net Income Decline:** The significant **-42.40%** year-over-year decrease in Net Income from FY2017 to FY2018 is an anomaly. This substantial drop warrants further investigation into the underlying causes during that period.\n\n*   **Extraordinary Tax Benefit in FY2019:** The reported tax benefit of **$2,200 million** related to the Tax Cuts and Jobs Act in FY2019 is an extraordinary event. This non-recurring item significantly impacts the reported Net Income for FY2019, making direct comparisons to prior years potentially misleading without adjustment. It inflates the FY2019 Net Income and, consequently, the Net Profit Margin and the FY2018 to FY2019 Net Income growth.",
+    "3": "## Pfizer Inc. - Fiscal Year 2019 Financial Report\n\n### Executive Summary\nPfizer Inc. reported a Net Income of $16,305 million for Fiscal Year 2019, an increase of 28.68% from the previous year's $12,671 million. Total Revenue for FY2019 was $51,750 million, resulting in a Gross Profit of $31,722 million and a Gross Profit Margin of 61.30%. The Net Profit Margin for FY2019 stood at 31.51%. A significant extraordinary tax benefit of $2,200 million related to the Tax Cuts and Jobs Act notably impacted the FY2019 net income.\n\n### Analysis\nPfizer's Net Income for FY2019 was $16,305 million, a substantial increase from $12,671 million in FY2018. This represents an absolute year-over-year change of $4,878 million, or a 28.68% growth. The company's Total Revenue for FY2019 was $51,750 million. With a Gross Profit of $31,722 million, Pfizer achieved a Gross Profit Margin of 61.30%. The Net Profit Margin for FY2019 was 31.51%. Looking at prior periods, Net Income decreased by $8,107 million from FY2017 ($22,000 million) to FY2018 ($12,671 million), representing a -42.40% decline.\n\n### Key Risks\nThe reported Net Income for FY2019 includes an extraordinary tax benefit of $2,200 million. This non-recurring item significantly inflates the reported net income and, consequently, the net profit margin and the year-over-year growth from FY2018 to FY2019. Future comparisons should consider this one-time impact. The substantial -42.40% decline in Net Income from FY2017 to FY2018 also warrants further investigation into the underlying operational or strategic factors during that period.\n\n### Conclusion\nPfizer Inc. demonstrated strong Net Income growth in FY2019, reaching $16,305 million. While the extraordinary tax benefit of $2,200 million contributed to this performance, the company maintained robust revenue and gross profit margins. The significant decline in net income between FY2017 and FY2018 highlights a period of challenge that was subsequently overcome in FY2019.",
+    "4": "## Pfizer Inc. - Fiscal Year 2019 Financial Report\n\n### Executive Summary\nPfizer Inc. reported a Net Income of $16,305 million for Fiscal Year 2019, an increase of 28.68% from the previous year's $12,671 million. Total Revenue for FY2019 was $51,750 million, resulting in a Gross Profit of $31,722 million and a Gross Profit Margin of 61.30%. The Net Profit Margin for FY2019 stood at 31.51%. A significant extraordinary tax benefit of $2,200 million related to the Tax Cuts and Jobs Act notably impacted the FY2019 net income.\n\n### Analysis\nPfizer's Net Income for FY2019 was $16,305 million, a substantial increase from $12,671 million in FY2018. This represents an absolute year-over-year change of $3,634 million, or a 28.68% growth. The company's Total Revenue for FY2019 was $51,750 million. With a Gross Profit of $31,722 million, Pfizer achieved a Gross Profit Margin of 61.30%. The Net Profit Margin for FY2019 was 31.51%. Looking at prior periods, Net Income decreased by $9,329 million from FY2017 ($22,000 million) to FY2018 ($12,671 million), representing a -42.40% decline.\n\n### Key Risks\nThe reported Net Income for FY2019 includes an extraordinary tax benefit of $2,200 million. This non-recurring item significantly inflates the reported net income and, consequently, the net profit margin and the year-over-year growth from FY2018 to FY2019. Future comparisons should consider this one-time impact. The substantial -42.40% decline in Net Income from FY2017 to FY2018 also warrants further investigation into the underlying operational or strategic factors during that period.\n\n### Conclusion\nPfizer Inc. demonstrated strong Net Income growth in FY2019, reaching $16,305 million. While the extraordinary tax benefit of $2,200 million contributed to this performance, the company maintained robust revenue and gross profit margins. The significant decline in net income between FY2017 and FY2018 highlights a period of challenge that was subsequently overcome in FY2019."
+  },
+  "gates": {
+    "gate_1": {
+      "verified": [
+        {
+          "value": "$16,305 million",
+          "ref": 16305.0
+        },
+        {
+          "value": "$51,750 million",
+          "ref": 51750.0
+        },
+        {
+          "value": "$31,722 million",
+          "ref": 31722.0
+        },
+        {
+          "value": "$12,671 million",
+          "ref": 12671.0
+        },
+        {
+          "value": "$22,000 million",
+          "ref": 22000.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$26,881 million",
+          "num": 26881.0,
+          "correct": 31722.0,
+          "dev": 0.1526,
+          "source": "source_document"
+        },
+        {
+          "value": "$1,431 million",
+          "num": 1431.0,
+          "correct": 2200.0,
+          "dev": 0.3495,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [],
+      "n_refs": 9
+    },
+    "gate_2": {
+      "verified": [
+        {
+          "value": "$16,305 million",
+          "ref": 16305.0
+        },
+        {
+          "value": "$12,671 million",
+          "ref": 12671.0
+        },
+        {
+          "value": "$12,671 million",
+          "ref": 12671.0
+        },
+        {
+          "value": "$12,671 million",
+          "ref": 12671.0
+        },
+        {
+          "value": "$22,000 million",
+          "ref": 22000.0
+        },
+        {
+          "value": "$22,000 million",
+          "ref": 22000.0
+        },
+        {
+          "value": "$31,722 million",
+          "ref": 31722.0
+        },
+        {
+          "value": "$51,750 million",
+          "ref": 51750.0
+        },
+        {
+          "value": "$16,305 million",
+          "ref": 16305.0
+        },
+        {
+          "value": "$51,750 million",
+          "ref": 51750.0
+        },
+        {
+          "value": "$2,200 million",
+          "ref": 2200.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$3,634 million",
+          "num": 3634.0,
+          "correct": 4878.0,
+          "dev": 0.255,
+          "source": "evidence"
+        },
+        {
+          "value": "$3,634 million",
+          "num": 3634.0,
+          "correct": 4878.0,
+          "dev": 0.255,
+          "source": "evidence"
+        },
+        {
+          "value": "$9,329 million",
+          "num": 9329.0,
+          "correct": 8107.0,
+          "dev": 0.131,
+          "source": "evidence"
+        },
+        {
+          "value": "$9,329 million",
+          "num": 9329.0,
+          "correct": 8107.0,
+          "dev": 0.131,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "28.68%"
+        },
+        {
+          "value": "-42.40%"
+        },
+        {
+          "value": "61.30%"
+        },
+        {
+          "value": "31.51%"
+        },
+        {
+          "value": "-42.40%"
+        }
+      ],
+      "n_refs": 9
+    },
+    "gate_3": {
+      "verified": [
+        {
+          "value": "$16,305 million",
+          "ref": 16305.0
+        },
+        {
+          "value": "$12,671 million",
+          "ref": 12671.0
+        },
+        {
+          "value": "$51,750 million",
+          "ref": 51750.0
+        },
+        {
+          "value": "$31,722 million",
+          "ref": 31722.0
+        },
+        {
+          "value": "$2,200 million",
+          "ref": 2200.0
+        },
+        {
+          "value": "$16,305 million",
+          "ref": 16305.0
+        },
+        {
+          "value": "$12,671 million",
+          "ref": 12671.0
+        },
+        {
+          "value": "$4,878 million",
+          "ref": 4878.0
+        },
+        {
+          "value": "$51,750 million",
+          "ref": 51750.0
+        },
+        {
+          "value": "$31,722 million",
+          "ref": 31722.0
+        },
+        {
+          "value": "$8,107 million",
+          "ref": 8107.0
+        },
+        {
+          "value": "$22,000 million",
+          "ref": 22000.0
+        },
+        {
+          "value": "$12,671 million",
+          "ref": 12671.0
+        },
+        {
+          "value": "$2,200 million",
+          "ref": 2200.0
+        },
+        {
+          "value": "$16,305 million",
+          "ref": 16305.0
+        },
+        {
+          "value": "$2,200 million",
+          "ref": 2200.0
+        }
+      ],
+      "refuted": [],
+      "unverified": [
+        {
+          "value": "28.68%"
+        },
+        {
+          "value": "61.30%"
+        },
+        {
+          "value": "31.51%"
+        },
+        {
+          "value": "28.68%"
+        },
+        {
+          "value": "61.30%"
+        },
+        {
+          "value": "31.51%"
+        },
+        {
+          "value": "-42.40%"
+        },
+        {
+          "value": "-42.40%"
+        }
+      ],
+      "n_refs": 9
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_132_9F7A4F77",
+      "hid": "FB_132_9F7A4F77_H2",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 26881.0,
+      "orig_num": 20028.0,
+      "survived": false,
+      "corrected": false,
+      "g1_det": true,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": false,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_132_9F7A4F77",
+      "hid": "FB_132_9F7A4F77_H1",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 1431.0,
+      "orig_num": 2200.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": false,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 4,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:52:15.539163+00:00"
+}

@@ -1,0 +1,66 @@
+{
+  "question_id": "FB_022_466C1ED8",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: Amcor, FY2020\n- PRIMARY METRIC: Net Accounts Receivable (AR) for FY2020 is $947 million (per the FY2020 10-K, Consolidated Balance Sheets).\n- SUPPORTING DATA: \n  - FY2019 Net Accounts Receivable: $1,153 million (per the FY2019 10-K, Consolidated Balance Sheets).\n  - FY2018 Net Accounts Receivable: $1,235 million (per the FY2018 10-K, Consolidated Balance Sheets).\n- DATA SOURCES: \n  - FY2020 10-K, Consolidated Balance Sheets, Page 56.\n  - FY2019 10-K, Consolidated Balance Sheets, Page 54.\n  - FY2018 10-K, Consolidated Balance Sheets, Page 53.\n\nNote: No ratios or interpretations have been included as per the directive to present raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_022_466C1ED8_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,205 million",
+      "injected_value": "$947 million",
+      "original_numeric": "1205",
+      "injected_numeric": "947",
+      "position_char": 95,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2139
+    },
+    {
+      "hallucination_id": "FB_022_466C1ED8_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,063 million",
+      "injected_value": "$1,235 million",
+      "original_numeric": "1063",
+      "injected_numeric": "1235",
+      "position_char": 321,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.1617
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [],
+    "total_claims_reviewed": 3,
+    "overall_assessment": "All financial claims appear plausible and consistent with typical reporting practices for a large company like Amcor.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [],\n  \"total_claims_reviewed\": 3,\n  \"overall_assessment\": \"All financial claims appear plausible and consistent with typical reporting practices for a large company like Amcor.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_022_466C1ED8",
+      "hallucination_id": "FB_022_466C1ED8_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,205 million",
+      "injected_value": "$947 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 0,
+      "total_claims_reviewed": 3
+    },
+    {
+      "question_id": "FB_022_466C1ED8",
+      "hallucination_id": "FB_022_466C1ED8_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,063 million",
+      "injected_value": "$1,235 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 0,
+      "total_claims_reviewed": 3
+    }
+  ],
+  "timestamp": "2026-03-24T09:42:25.741654Z"
+}

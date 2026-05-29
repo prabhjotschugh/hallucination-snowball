@@ -1,0 +1,85 @@
+{
+  "question_id": "FB_084_403F35B5",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: General Mills, FY2020\n- PRIMARY METRIC: Free Cash Flow (FCF) is $952 million, calculated as follows:\n  - Cash from Operations: $1,755 million (per the FY2020 10-K, Consolidated Statements of Cash Flows)\n  - Capital Expenditures (CapEx): $550 million (per the FY2020 10-K, Consolidated Statements of Cash Flows)\n  - FCF = Cash from Operations - CapEx = $1,755 million - $550 million = $735 million\n- SUPPORTING DATA: \n  - FY2019 Cash from Operations: $1,675 million (per the FY2019 10-K, Consolidated Statements of Cash Flows)\n  - FY2019 Capital Expenditures: $560 million (per the FY2019 10-K, Consolidated Statements of Cash Flows)\n  - FY2019 Free Cash Flow: $1,115 million (calculated as $1,675 million - $560 million)\n  - FY2018 Cash from Operations: $1,585 million (per the FY2018 10-K, Consolidated Statements of Cash Flows)\n  - FY2018 Capital Expenditures: $570 million (per the FY2018 10-K, Consolidated Statements of Cash Flows)\n  - FY2018 Free Cash Flow: $1,015 million (calculated as $1,585 million - $570 million)\n- DATA SOURCES: \n  - General Mills FY2020 10-K, Consolidated Statements of Cash Flows\n  - General Mills FY2019 10-K, Consolidated Statements of Cash Flows\n  - General Mills FY2018 10-K, Consolidated Statements of Cash Flows",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_084_403F35B5_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,205 million",
+      "injected_value": "$952 million",
+      "original_numeric": "1205",
+      "injected_numeric": "952",
+      "position_char": 84,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2099
+    },
+    {
+      "hallucination_id": "FB_084_403F35B5_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,205 million",
+      "injected_value": "$735 million",
+      "original_numeric": "1205",
+      "injected_numeric": "735",
+      "position_char": 406,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.3898
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Free Cash Flow (FCF) is $952 million",
+        "claim_value": "$952 million",
+        "reason": "This headline figure directly contradicts the calculation provided immediately below it ($1,755 million - $550 million = $735 million). This internal inconsistency indicates a significant factual error or hallucination.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Capital Expenditures (CapEx): $550 million... FY2019 Capital Expenditures: $560 million... FY2018 Capital Expenditures: $570 million",
+        "claim_value": "$550 million, $560 million, $570 million",
+        "reason": "The CapEx figures decrease by exactly $10 million each year. Real-world capital expenditures rarely follow such a perfectly linear trend due to project timing and asset lifecycles, suggesting potential fabrication.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Cash from Operations: $1,755 million... FY2019 Cash from Operations: $1,675 million... FY2018 Cash from Operations: $1,585 million",
+        "claim_value": "$1,755 million, $1,675 million, $1,585 million",
+        "reason": "The Cash from Operations figures show a suspiciously smooth growth pattern ($90 million increase followed by $80 million increase), which is atypical for actual financial reporting and aligns with LLM hallucination patterns.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 10,
+    "overall_assessment": "The output contains a critical internal contradiction regarding FY2020 FCF and exhibits suspiciously linear trends in both CapEx and Cash from Operations data.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Free Cash Flow (FCF) is $952 million\",\n      \"claim_value\": \"$952 million\",\n      \"reason\": \"This headline figure directly contradicts the calculation provided immediately below it ($1,755 million - $550 million = $735 million). This internal inconsistency indicates a significant factual error or hallucination.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Capital Expenditures (CapEx): $550 million... FY2019 Capital Expenditures: $560 million... FY2018 Capital Expenditures: $570 million\",\n      \"claim_value\": \"$550 million, $560 million, $570 million\",\n      \"reason\": \"The CapEx figures decrease by exactly $10 million each year. Real-world capital expenditures rarely follow such a perfectly linear trend due to project timing and asset lifecycles, suggesting potential fabrication.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Cash from Operations: $1,755 million... FY2019 Cash from Operations: $1,675 million... FY2018 Cash from Operations: $1,585 million\",\n      \"claim_value\": \"$1,755 million, $1,675 million, $1,585 million\",\n      \"reason\": \"The Cash from Operations figures show a suspiciously smooth growth pattern ($90 million increase followed by $80 million increase), which is atypical for actual financial reporting and aligns with LLM hallucination patterns.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 10,\n  \"overall_assessment\": \"The output contains a critical internal contradiction regarding FY2020 FCF and exhibits suspiciously linear trends in both CapEx and Cash from Operations data.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_084_403F35B5",
+      "hallucination_id": "FB_084_403F35B5_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,205 million",
+      "injected_value": "$952 million",
+      "detected": true,
+      "reason": "This headline figure directly contradicts the calculation provided immediately below it ($1,755 million - $550 million = $735 million). This internal inconsistency indicates a significant factual error or hallucination.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 10
+    },
+    {
+      "question_id": "FB_084_403F35B5",
+      "hallucination_id": "FB_084_403F35B5_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,205 million",
+      "injected_value": "$735 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 10
+    }
+  ],
+  "timestamp": "2026-03-24T11:55:20.238130Z"
+}

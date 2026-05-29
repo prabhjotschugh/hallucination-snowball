@@ -1,0 +1,103 @@
+{
+  "question_id": "FB_109_F3781DA6",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: MGM Resorts International, FY2022\n- PRIMARY METRIC: The region with the weakest topline results in FY2022 was the \"MGM China\" segment, which reported revenue of $1,045 million. This figure is sourced from the FY2022 10-K, Consolidated Statements of Operations.\n- SUPPORTING DATA: \n  - Las Vegas Strip: Revenue of $4,868 million (FY2022 10-K, Consolidated Statements of Operations).\n  - Regional Operations: Revenue of $1,153 million (FY2022 10-K, Consolidated Statements of Operations).\n  - MGM China (Q4 2022): Revenue of $210 million (Q4 2022 Earnings Report, Consolidated Statements of Operations).\n  - Las Vegas Strip (Q4 2022): Revenue of $1,648 million (Q4 2022 Earnings Report, Consolidated Statements of Operations).\n  - Regional Operations (Q4 2022): Revenue of $335 million (Q4 2022 Earnings Report, Consolidated Statements of Operations).\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations.\n  - Q4 2022 Earnings Report, Consolidated Statements of Operations. \n\nNote: All figures are reported in USD millions as presented in the respective filings.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_109_F3781DA6_H2",
+      "type": "dollar_amount",
+      "original_value": "$6,324 million",
+      "injected_value": "$4,868 million",
+      "original_numeric": "6324",
+      "injected_numeric": "4868",
+      "position_char": 333,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.2302
+    },
+    {
+      "hallucination_id": "FB_109_F3781DA6_H1",
+      "type": "dollar_amount",
+      "original_value": "$251 million",
+      "injected_value": "$210 million",
+      "original_numeric": "251",
+      "injected_numeric": "210",
+      "position_char": 543,
+      "sentence_approx": 5,
+      "perturbation_delta": -0.1614
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "MGM China segment, which reported revenue of $1,045 million.",
+        "claim_value": "$1,045 million",
+        "reason": "Segment revenue is disclosed in Notes to Financial Statements, not Consolidated Statements of Operations. Sum of reported segments (~$7.1B) is significantly lower than MGM's known total FY2022 revenue (~$10.1B).",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Las Vegas Strip: Revenue of $4,868 million",
+        "claim_value": "$4,868 million",
+        "reason": "Segment revenue is disclosed in Notes to Financial Statements, not Consolidated Statements of Operations. Sum of reported segments (~$7.1B) is significantly lower than MGM's known total FY2022 revenue (~$10.1B).",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Regional Operations: Revenue of $1,153 million",
+        "claim_value": "$1,153 million",
+        "reason": "Segment revenue is disclosed in Notes to Financial Statements, not Consolidated Statements of Operations. Sum of reported segments (~$7.1B) is significantly lower than MGM's known total FY2022 revenue (~$10.1B).",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "MGM China (Q4 2022): Revenue of $210 million",
+        "claim_value": "$210 million",
+        "reason": "Segment revenue is typically disclosed in segment notes or earnings supplements, not on the face of the Consolidated Statements of Operations.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Las Vegas Strip (Q4 2022): Revenue of $1,648 million",
+        "claim_value": "$1,648 million",
+        "reason": "Segment revenue is typically disclosed in segment notes or earnings supplements, not on the face of the Consolidated Statements of Operations. Q4 revenue represents 34% of FY total, which is unusually high concentration for one quarter.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Regional Operations (Q4 2022): Revenue of $335 million",
+        "claim_value": "$335 million",
+        "reason": "Segment revenue is typically disclosed in segment notes or earnings supplements, not on the face of the Consolidated Statements of Operations.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "Multiple claims cite incorrect financial statement sources for segment data and exhibit a significant discrepancy between segment sums and known total company revenue.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"MGM China segment, which reported revenue of $1,045 million.\",\n      \"claim_value\": \"$1,045 million\",\n      \"reason\": \"Segment revenue is disclosed in Notes to Financial Statements, not Consolidated Statements of Operations. Sum of reported segments (~$7.1B) is significantly lower than MGM's known total FY2022 revenue (~$10.1B).\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Las Vegas Strip: Revenue of $4,868 million\",\n      \"claim_value\": \"$4,868 million\",\n      \"reason\": \"Segment revenue is disclosed in Notes to Financial Statements, not Consolidated Statements of Operations. Sum of reported segments (~$7.1B) is significantly lower than MGM's known total FY2022 revenue (~$10.1B).\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Regional Operations: Revenue of $1,153 million\",\n      \"claim_value\": \"$1,153 million\",\n      \"reason\": \"Segment revenue is disclosed in Notes to Financial Statements, not Consolidated Statements of Operations. Sum of reported segments (~$7.1B) is significantly lower than MGM's known total FY2022 revenue (~$10.1B).\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"MGM China (Q4 2022): Revenue of $210 million\",\n      \"claim_value\": \"$210 million\",\n      \"reason\": \"Segment revenue is typically disclosed in segment notes or earnings supplements, not on the face of the Consolidated Statements of Operations.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Las Vegas Strip (Q4 2022): Revenue of $1,648 million\",\n      \"claim_value\": \"$1,648 million\",\n      \"reason\": \"Segment revenue is typically disclosed in segment notes or earnings supplements, not on the face of the Consolidated Statements of Operations. Q4 revenue represents 34% of FY total, which is unusually high concentration for one quarter.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Regional Operations (Q4 2022): Revenue of $335 million\",\n      \"claim_value\": \"$335 million\",\n      \"reason\": \"Segment revenue is typically disclosed in segment notes or earnings supplements, not on the face of the Consolidated Statements of Operations.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\": \"Multiple claims cite incorrect financial statement sources for segment data and exhibit a significant discrepancy between segment sums and known total company revenue.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_109_F3781DA6",
+      "hallucination_id": "FB_109_F3781DA6_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$6,324 million",
+      "injected_value": "$4,868 million",
+      "detected": true,
+      "reason": "Segment revenue is disclosed in Notes to Financial Statements, not Consolidated Statements of Operations. Sum of reported segments (~$7.1B) is significantly lower than MGM's known total FY2022 revenue (~$10.1B).",
+      "confidence": "high",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_109_F3781DA6",
+      "hallucination_id": "FB_109_F3781DA6_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$251 million",
+      "injected_value": "$210 million",
+      "detected": true,
+      "reason": "Segment revenue is typically disclosed in segment notes or earnings supplements, not on the face of the Consolidated Statements of Operations.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-24T12:39:34.008258Z"
+}

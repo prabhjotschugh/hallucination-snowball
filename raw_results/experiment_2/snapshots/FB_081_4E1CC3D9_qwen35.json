@@ -1,0 +1,109 @@
+{
+  "question_id": "FB_081_4E1CC3D9",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Foot Locker, Inc. - May 20, 2022\n- PRIMARY METRIC: The voting results for each nominee as presented in the 8-K filing dated May 20, 2022, are as follows:\n  - **Richard A. Johnson**: Votes For: 47,656,123; Votes Against: 8,321,456; Abstentions: 1,234,567 (per the 8-K filing, Item 5.07).\n  - **Jill M. Granoff**: Votes For: 63,263,625; Votes Against: 7,654,321; Abstentions: 1,234,567 (per the 8-K filing, Item 5.07).\n  - **Michael B. McGarry**: Votes For: 47,987,654; Votes Against: 7,987,654; Abstentions: 1,234,567 (per the 8-K filing, Item 5.07).\n  - **Michele A. Buck**: Votes For: 48,654,321; Votes Against: 6,543,210; Abstentions: 1,234,567 (per the 8-K filing, Item 5.07).\n  - **M. Scott McCarty**: Votes For: 47,123,456; Votes Against: 12,416,701; Abstentions: 1,234,567 (per the 8-K filing, Item 5.07).\n\n- SUPPORTING DATA: \n  - Total Votes For: 239,545,010 (sum of all votes for nominees).\n  - Total Votes Against: 41,383,184 (sum of all votes against nominees).\n  - Total Abstentions: 6,174,835 (sum of all abstentions).\n  \n  The nominee with the highest votes against was **M. Scott McCarty** with 9,876,543 votes against, which is significantly higher than the next highest, **Richard A. Johnson**, with 8,321,456 votes against.\n\n- DATA SOURCES: Foot Locker, Inc. 8-K filing dated May 20, 2022, Item 5.07 - \"Submission of Matters to a Vote of Security Holders\".",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_081_4E1CC3D9_H2",
+      "type": "large_number",
+      "original_value": "48,123,456",
+      "injected_value": "63,263,625",
+      "original_numeric": "48123456",
+      "injected_numeric": "63263625",
+      "position_char": 343,
+      "sentence_approx": 6,
+      "perturbation_delta": 0.3146
+    },
+    {
+      "hallucination_id": "FB_081_4E1CC3D9_H1",
+      "type": "large_number",
+      "original_value": "9,876,543",
+      "injected_value": "12,416,701",
+      "original_numeric": "9876543",
+      "injected_numeric": "12416701",
+      "position_char": 764,
+      "sentence_approx": 15,
+      "perturbation_delta": 0.2572
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Abstentions: 1,234,567 (per the 8-K filing, Item 5.07) for all five nominees",
+        "claim_value": "1,234,567",
+        "reason": "Identical abstention counts down to the single digit across all five nominees are statistically impossible in real proxy voting; additionally, 1,234,567 is a sequential integer pattern indicative of hallucination.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Jill M. Granoff: Votes Against: 7,654,321",
+        "claim_value": "7,654,321",
+        "reason": "This number is a perfect reverse-sequential integer pattern (7-6-5-4-3-2-1), which is a classic hallmark of fabricated data rather than actual vote counts.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Michele A. Buck: Votes Against: 6,543,210",
+        "claim_value": "6,543,210",
+        "reason": "This number is a perfect reverse-sequential integer pattern (6-5-4-3-2-1-0), strongly indicating fabrication.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "The nominee with the highest votes against was M. Scott McCarty with 9,876,543 votes against",
+        "claim_value": "9,876,543",
+        "reason": "This figure contradicts the earlier listed value for McCarty (12,416,701) and is also a reverse-sequential pattern (9-8-7-6-5-4-3), confirming hallucination.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "M. Scott McCarty: Votes Against: 12,416,701 ... The nominee with the highest votes against was M. Scott McCarty with 9,876,543 votes against",
+        "claim_value": "12,416,701 vs 9,876,543",
+        "reason": "Internal contradiction: the summary section cites a different vote count for the same nominee than the detailed breakdown section.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Votes For: 239,545,010 (sum of all votes for nominees)",
+        "claim_value": "239,545,010",
+        "reason": "Mathematical error: The sum of the individual 'For' votes listed (47.6M + 63.2M + 47.9M + 48.6M + 47.1M) equals approximately 254.7 million, not 239.5 million.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Abstentions: 6,174,835 (sum of all abstentions)",
+        "claim_value": "6,174,835",
+        "reason": "Mathematical error: 5 nominees multiplied by the listed abstention count (1,234,567) equals 6,172,835, not 6,174,835.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 19,
+    "overall_assessment": "The output contains definitive evidence of hallucination, including sequential number patterns, internal contradictions, and basic arithmetic errors.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Abstentions: 1,234,567 (per the 8-K filing, Item 5.07) for all five nominees\",\n      \"claim_value\": \"1,234,567\",\n      \"reason\": \"Identical abstention counts down to the single digit across all five nominees are statistically impossible in real proxy voting; additionally, 1,234,567 is a sequential integer pattern indicative of hallucination.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Jill M. Granoff: Votes Against: 7,654,321\",\n      \"claim_value\": \"7,654,321\",\n      \"reason\": \"This number is a perfect reverse-sequential integer pattern (7-6-5-4-3-2-1), which is a classic hallmark of fabricated data rather than actual vote counts.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Michele A. Buck: Votes Against: 6,543,210\",\n      \"claim_value\": \"6,543,210\",\n      \"reason\": \"This number is a perfect reverse-sequential integer pattern (6-5-4-3-2-1-0), strongly indicating fabrication.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"The nominee with the highest votes against was M. Scott McCarty with 9,876,543 votes against\",\n      \"claim_value\": \"9,876,543\",\n      \"reason\": \"This figure contradicts the earlier listed value for McCarty (12,416,701) and is also a reverse-sequential pattern (9-8-7-6-5-4-3), confirming hallucination.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"M. Scott McCarty: Votes Against: 12,416,701 ... The nominee with the highest votes against was M. Scott McCarty with 9,876,543 votes against\",\n      \"claim_value\": \"12,416,701 vs 9,876,543\",\n      \"reason\": \"Internal contradiction: the summary section cites a different vote count for the same nominee than the detailed breakdown section.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Votes For: 239,545,010 (sum of all votes for nominees)\",\n      \"claim_value\": \"239,545,010\",\n      \"reason\": \"Mathematical error: The sum of the individual 'For' votes listed (47.6M + 63.2M + 47.9M + 48.6M + 47.1M) equals approximately 254.7 million, not 239.5 million.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Abstentions: 6,174,835 (sum of all abstentions)\",\n      \"claim_value\": \"6,174,835\",\n      \"reason\": \"Mathematical error: 5 nominees multiplied by the listed abstention count (1,234,567) equals 6,172,835, not 6,174,835.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 19,\n  \"overall_assessment\": \"The output contains definitive evidence of hallucination, including sequential number patterns, internal contradictions, and basic arithmetic errors.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_081_4E1CC3D9",
+      "hallucination_id": "FB_081_4E1CC3D9_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "large_number",
+      "original_value": "48,123,456",
+      "injected_value": "63,263,625",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 7,
+      "total_claims_reviewed": 19
+    },
+    {
+      "question_id": "FB_081_4E1CC3D9",
+      "hallucination_id": "FB_081_4E1CC3D9_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "large_number",
+      "original_value": "9,876,543",
+      "injected_value": "12,416,701",
+      "detected": true,
+      "reason": "This figure contradicts the earlier listed value for McCarty (12,416,701) and is also a reverse-sequential pattern (9-8-7-6-5-4-3), confirming hallucination.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 7,
+      "total_claims_reviewed": 19
+    }
+  ],
+  "timestamp": "2026-03-24T11:51:37.603507Z"
+}

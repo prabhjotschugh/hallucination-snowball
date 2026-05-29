@@ -1,0 +1,49 @@
+{
+  "question_id": "FB_134_8EAD738D",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: Pfizer Inc., Q2 2023\n- PRIMARY METRIC: Pfizer expects to incur approximately $1,654 million in costs related to the spin-off of Upjohn, as detailed in the Q2 2023 10-Q, Note 12: Commitments and Contingencies.\n- SUPPORTING DATA: No additional multi-period data on spin-off costs was provided in the Q2 2023 10-Q. Historical trends in spin-off costs within the pharmaceutical sector were not extracted as per the directive.\n- DATA SOURCES: Pfizer Q2 2023 10-Q, Note 12: Commitments and Contingencies.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_134_8EAD738D_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,200 million",
+      "injected_value": "$1,654 million",
+      "original_numeric": "1200",
+      "injected_numeric": "1654",
+      "position_char": 97,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.3784
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Pfizer expects to incur approximately $1,654 million in costs related to the spin-off of Upjohn",
+        "claim_value": "$1,654 million",
+        "reason": "The figure is suspiciously precise for an estimated future cost, lacking round numbers typically seen in forward-looking statements.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 1,
+    "overall_assessment": "The single financial claim appears plausible but warrants verification due to its unusual precision.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Pfizer expects to incur approximately $1,654 million in costs related to the spin-off of Upjohn\",\n      \"claim_value\": \"$1,654 million\",\n      \"reason\": \"The figure is suspiciously precise for an estimated future cost, lacking round numbers typically seen in forward-looking statements.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 1,\n  \"overall_assessment\": \"The single financial claim appears plausible but warrants verification due to its unusual precision.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_134_8EAD738D",
+      "hallucination_id": "FB_134_8EAD738D_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,200 million",
+      "injected_value": "$1,654 million",
+      "detected": true,
+      "reason": "The figure is suspiciously precise for an estimated future cost, lacking round numbers typically seen in forward-looking statements.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 1
+    }
+  ],
+  "timestamp": "2026-03-24T10:01:02.855547Z"
+}

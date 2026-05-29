@@ -1,0 +1,109 @@
+{
+  "question_id": "FB_065_8F3B2425",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: The Boeing Company, Fiscal Year 2022\n- PRIMARY METRIC: Total Revenue for FY2022 was $66,610 million, per the FY2022 10-K, Consolidated Statements of Operations.\n- SUPPORTING DATA:\n  - FY2021 Total Revenue: $62,286 million, per the FY2021 10-K, Consolidated Statements of Operations.\n  - FY2020 Total Revenue: $41,886 million, per the FY2020 10-K, Consolidated Statements of Operations.\n  - FY2022 Commercial Airplanes Revenue: $43,028 million, per the FY2022 10-K, Segment Information.\n  - FY2021 Commercial Airplanes Revenue: $27,100 million, per the FY2021 10-K, Segment Information.\n  - FY2020 Commercial Airplanes Revenue: $28,658 million, per the FY2020 10-K, Segment Information.\n  - FY2022 Defense, Space & Security Revenue: $18,532 million, per the FY2022 10-K, Segment Information.\n  - FY2021 Defense, Space & Security Revenue: $26,720 million, per the FY2021 10-K, Segment Information.\n  - FY2020 Defense, Space & Security Revenue: $26,130 million, per the FY2020 10-K, Segment Information.\n  - Backlog as of December 31, 2022: $469 billion, per the FY2022 10-K, Management's Discussion and Analysis.\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations.\n  - FY2021 10-K, Consolidated Statements of Operations.\n  - FY2020 10-K, Consolidated Statements of Operations.\n  - FY2022 10-K, Segment Information.\n  - FY2021 10-K, Segment Information.\n  - FY2020 10-K, Segment Information.\n  - FY2022 10-K, Management's Discussion and Analysis. \n\nNote: The analysis of cyclicality, including patterns and key ratios, is not included as per the directive to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_065_8F3B2425_H3",
+      "type": "dollar_amount",
+      "original_value": "$58,658 million",
+      "injected_value": "$41,886 million",
+      "original_numeric": "58658",
+      "injected_numeric": "41886",
+      "position_char": 329,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.2859
+    },
+    {
+      "hallucination_id": "FB_065_8F3B2425_H2",
+      "type": "dollar_amount",
+      "original_value": "$26,210 million",
+      "injected_value": "$18,532 million",
+      "original_numeric": "26210",
+      "injected_numeric": "18532",
+      "position_char": 752,
+      "sentence_approx": 7,
+      "perturbation_delta": -0.2929
+    },
+    {
+      "hallucination_id": "FB_065_8F3B2425_H1",
+      "type": "dollar_amount",
+      "original_value": "$382 billion",
+      "injected_value": "$469 billion",
+      "original_numeric": "382",
+      "injected_numeric": "469",
+      "position_char": 1058,
+      "sentence_approx": 10,
+      "perturbation_delta": 0.2272
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Backlog as of December 31, 2022: $469 billion",
+        "claim_value": "$469 billion",
+        "reason": "The backlog figure is extraordinarily high and seems implausible for Boeing, as it would represent several years' worth of revenue. This could be a misplaced decimal or misinterpretation of the actual backlog.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2021 Commercial Airplanes Revenue: $27,100 million",
+        "claim_value": "$27,100 million",
+        "reason": "The figure is suspiciously round compared to other reported revenues (e.g., $28,658 million, $43,028 million) and lacks the typical precision seen in financial reporting.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "FY2021 Defense, Space & Security Revenue: $26,720 million",
+        "claim_value": "$26,720 million",
+        "reason": "This figure is suspiciously precise compared to the round figure for Commercial Airplanes Revenue in the same year, raising questions about consistency in reporting.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 8,
+    "overall_assessment": "Several figures appear suspicious, including an implausibly high backlog and inconsistent precision in revenue reporting.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Backlog as of December 31, 2022: $469 billion\",\n      \"claim_value\": \"$469 billion\",\n      \"reason\": \"The backlog figure is extraordinarily high and seems implausible for Boeing, as it would represent several years' worth of revenue. This could be a misplaced decimal or misinterpretation of the actual backlog.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2021 Commercial Airplanes Revenue: $27,100 million\",\n      \"claim_value\": \"$27,100 million\",\n      \"reason\": \"The figure is suspiciously round compared to other reported revenues (e.g., $28,658 million, $43,028 million) and lacks the typical precision seen in financial reporting.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"FY2021 Defense, Space & Security Revenue: $26,720 million\",\n      \"claim_value\": \"$26,720 million\",\n      \"reason\": \"This figure is suspiciously precise compared to the round figure for Commercial Airplanes Revenue in the same year, raising questions about consistency in reporting.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 8,\n  \"overall_assessment\": \"Several figures appear suspicious, including an implausibly high backlog and inconsistent precision in revenue reporting.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_065_8F3B2425",
+      "hallucination_id": "FB_065_8F3B2425_H3",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$58,658 million",
+      "injected_value": "$41,886 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 8
+    },
+    {
+      "question_id": "FB_065_8F3B2425",
+      "hallucination_id": "FB_065_8F3B2425_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$26,210 million",
+      "injected_value": "$18,532 million",
+      "detected": true,
+      "reason": "The figure is suspiciously round compared to other reported revenues (e.g., $28,658 million, $43,028 million) and lacks the typical precision seen in financial reporting.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 8
+    },
+    {
+      "question_id": "FB_065_8F3B2425",
+      "hallucination_id": "FB_065_8F3B2425_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$382 billion",
+      "injected_value": "$469 billion",
+      "detected": true,
+      "reason": "The backlog figure is extraordinarily high and seems implausible for Boeing, as it would represent several years' worth of revenue. This could be a misplaced decimal or misinterpretation of the actual backlog.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 8
+    }
+  ],
+  "timestamp": "2026-03-24T09:49:36.429628Z"
+}

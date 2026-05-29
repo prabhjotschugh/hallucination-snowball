@@ -1,0 +1,128 @@
+{
+  "question_id": "FB_081_4E1CC3D9",
+  "method": "end_check",
+  "final_output": "## Foot Locker, Inc. - Nominee Voting Results (May 20, 2022)\n\n### Executive Summary\n\nThis report synthesizes the voting results for Foot Locker, Inc.'s director nominees as presented in the 8-K filing dated May 20, 2022. All five nominees received majority support, with Jill M. Granoff demonstrating the highest approval rate at 89.20%. Conversely, M. Scott McCarty faced the most significant opposition, with 12,416,701 votes against, resulting in an approval rate of 79.14%. The aggregate data indicates strong overall shareholder support for the proposed slate of directors.\n\n### Analysis\n\nA total of 239,545,010 \"Votes For\" were cast across all nominees, alongside 42,923,342 \"Votes Against\" and 6,174,835 \"Abstentions.\" Jill M. Granoff garnered the highest number of \"Votes For\" at 63,263,625, reflecting strong shareholder confidence. M. Scott McCarty recorded the highest \"Votes Against\" at 12,416,701, significantly exceeding other nominees. Richard A. Johnson received 8,321,456 votes against, Michael B. McGarry 7,987,654, and Michele A. Buck 6,543,210. The consistent number of abstentions at 1,234,567 for each nominee suggests a uniform approach to non-voting preferences.\n\n### Key Observations\n\nThe relatively higher \"Votes Against\" for M. Scott McCarty (12,416,701) compared to other nominees could indicate a segment of shareholders expressing discontent or concerns regarding his specific role or performance. While still achieving a majority approval, this level of opposition warrants monitoring for any potential underlying issues that could escalate in future proxy seasons. This observation is not necessarily a \"risk\" but rather a point of interest for future shareholder engagement.\n\n### Conclusion\n\nThe voting results for Foot Locker, Inc.'s director nominees on May 20, 2022, demonstrate a clear mandate from shareholders, with all nominees successfully elected. The strong overall support, particularly for Jill M. Granoff, underscores general shareholder satisfaction. However, the notable opposition directed at M. Scott McCarty highlights an area for potential future engagement to understand and address shareholder concerns. The company should consider proactive communication with shareholders to ascertain the reasons behind this heightened opposition and, if necessary, implement strategies to mitigate similar sentiment in future elections. This approach will help maintain strong shareholder relations and ensure continued confidence in the board's composition.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Foot Locker, Inc. - May 20, 2022\n- PRIMARY METRIC: The voting results for each nominee as presented in the 8-K filing dated May 20, 2022, are as follows:\n  - **Richard A. Johnson**: Votes For: 47,656,123; Votes Against: 8,321,456; Abstentions: 1,234,567 (per the 8-K filing, Item 5.07).\n  - **Jill M. Granoff**: Votes For: 63,263,625; Votes Against: 7,654,321; Abstentions: 1,234,567 (per the 8-K filing, Item 5.07).\n  - **Michael B. McGarry**: Votes For: 47,987,654; Votes Against: 7,987,654; Abstentions: 1,234,567 (per the 8-K filing, Item 5.07).\n  - **Michele A. Buck**: Votes For: 48,654,321; Votes Against: 6,543,210; Abstentions: 1,234,567 (per the 8-K filing, Item 5.07).\n  - **M. Scott McCarty**: Votes For: 47,123,456; Votes Against: 12,416,701; Abstentions: 1,234,567 (per the 8-K filing, Item 5.07).\n\n- SUPPORTING DATA: \n  - Total Votes For: 239,545,010 (sum of all votes for nominees).\n  - Total Votes Against: 41,383,184 (sum of all votes against nominees).\n  - Total Abstentions: 6,174,835 (sum of all abstentions).\n  \n  The nominee with the highest votes against was **M. Scott McCarty** with 9,876,543 votes against, which is significantly higher than the next highest, **Richard A. Johnson**, with 8,321,456 votes against.\n\n- DATA SOURCES: Foot Locker, Inc. 8-K filing dated May 20, 2022, Item 5.07 - \"Submission of Matters to a Vote of Security Holders\".",
+    "2": "As a financial analyst, I've reviewed the provided researcher data for Foot Locker, Inc.'s May 20, 2022, 8-K filing regarding nominee voting results.\n\n**Anomaly Flagging:**\n\nThe researcher data states: \"The nominee with the highest votes against was M. Scott McCarty with 9,876,543 votes against, which is significantly higher than the next highest, Richard A. Johnson, with 8,321,456 votes against.\"\n\nHowever, the detailed nominee data for M. Scott McCarty shows \"Votes Against: 12,416,701\". This contradicts the supporting data's claim of 9,876,543 votes against for M. Scott McCarty.\n\n**Anomaly Flagged:** The \"highest votes against\" figure for M. Scott McCarty in the supporting data (9,876,543) is **INCORRECT**. The correct value from the detailed nominee data is **12,416,701**. I will use the correct value of 12,416,701 for M. Scott McCarty's votes against in all calculations.\n\n**Revised Total Votes Against Calculation:**\nThe supporting data's \"Total Votes Against: 41,383,184\" is also incorrect due to the error in M. Scott McCarty's votes against.\n\nRevised Total Votes Against = Sum of individual \"Votes Against\" for all nominees\nRevised Total Votes Against = 8,321,456 (Johnson) + 7,654,321 (Granoff) + 7,987,654 (McGarry) + 6,543,210 (Buck) + 12,416,701 (McCarty)\nRevised Total Votes Against = **42,923,342**\n\n**Year-over-Year Changes (Absolute and Percentage):**\n\nThe provided data is a snapshot of a single event (May 20, 2022, voting results). There is **no prior year or comparative data** provided in the researcher's information. Therefore, **year-over-year changes cannot be computed.**\n\n**Relevant Ratios:**\n\nFor each nominee, and in aggregate, we can calculate the following ratios:\n\n**1. Support Ratio (Votes For / Total Votes Cast):**\n   *Formula: Votes For / (Votes For + Votes Against + Abstentions)*\n\n**2. Opposition Ratio (Votes Against / Total Votes Cast):**\n   *Formula: Votes Against / (Votes For + Votes Against + Abstentions)*\n\n**3. Abstention Ratio (Abstentions / Total Votes Cast):**\n   *Formula: Abstentions / (Votes For + Votes Against + Abstentions)*\n\n**4. Approval Rate (Votes For / (Votes For + Votes Against)):**\n   *Formula: Votes For / (Votes For + Votes Against)*\n\n**Calculations:**\n\n**Individual Nominee Ratios:**\n\n| Nominee             | Votes For   | Votes Against | Abstentions | Total Votes Cast | Support Ratio | Opposition Ratio | Abstention Ratio | Approval Rate |\n|---------------------|-------------|---------------|-------------|------------------|---------------|------------------|------------------|---------------|\n| Richard A. Johnson  | 47,656,123  | 8,321,456     | 1,234,567   | 57,212,146       | 83.29%        | 14.54%           | 2.16%            | 85.13%        |\n| Jill M. Granoff     | 63,263,625  | 7,654,321     | 1,234,567   | 72,152,513       | 87.68%        | 10.61%           | 1.71%            | 89.20%        |\n| Michael B. McGarry  | 47,987,654  | 7,987,654     | 1,234,567   | 57,209,875       | 83.88%        | 13.96%           | 2.16%            | 85.75%        |\n| Michele A. Buck     | 48,654,321  | 6,543,210     | 1,234,567   | 56,432,098       | 86.22%        | 11.60%           | 2.19%            | 88.16%        |\n| M. Scott McCarty    | 47,123,456  | 12,416,701    | 1,234,567   | 60,774,724       | 77.54%        | 20.43%           | 2.03%            | 79.14%        |\n\n**Aggregate Ratios (using corrected totals):**",
+    "3": "## Foot Locker, Inc. - Nominee Voting Results (May 20, 2022)\n\n### Executive Summary\n\nThis report synthesizes the voting results for Foot Locker, Inc.'s director nominees as presented in the 8-K filing dated May 20, 2022. All five nominees received majority support, with Jill M. Granoff demonstrating the highest approval rate at 89.20%. Conversely, M. Scott McCarty faced the most significant opposition, with 12,416,701 votes against, resulting in an approval rate of 79.14%. The aggregate data indicates strong overall shareholder support for the proposed slate of directors.\n\n### Analysis\n\nA total of 239,545,010 \"Votes For\" were cast across all nominees, alongside 42,923,342 \"Votes Against\" and 6,174,835 \"Abstentions.\" Jill M. Granoff garnered the highest number of \"Votes For\" at 63,263,625, reflecting strong shareholder confidence. M. Scott McCarty recorded the highest \"Votes Against\" at 12,416,701, significantly exceeding other nominees. Richard A. Johnson received 8,321,456 votes against, Michael B. McGarry 7,987,654, and Michele A. Buck 6,543,210. The consistent number of abstentions at 1,234,567 for each nominee suggests a uniform approach to non-voting preferences.\n\n### Key Risks\n\nThe relatively higher \"Votes Against\" for M. Scott McCarty (12,416,701) compared to other nominees could indicate a segment of shareholders expressing discontent or concerns regarding his specific role or performance. While still achieving a majority approval, this level of opposition warrants monitoring for any potential underlying issues that could escalate in future proxy seasons.\n\n### Conclusion\n\nThe voting results for Foot Locker, Inc.'s director nominees on May 20, 2022, demonstrate a clear mandate from shareholders, with all nominees successfully elected. The strong overall support, particularly for Jill M. Granoff, underscores general shareholder satisfaction. However, the notable opposition directed at M. Scott McCarty highlights an area for potential future engagement to understand and address shareholder concerns.",
+    "4": "## Foot Locker, Inc. - Nominee Voting Results (May 20, 2022)\n\n### Executive Summary\n\nThis report synthesizes the voting results for Foot Locker, Inc.'s director nominees as presented in the 8-K filing dated May 20, 2022. All five nominees received majority support, with Jill M. Granoff demonstrating the highest approval rate at 89.20%. Conversely, M. Scott McCarty faced the most significant opposition, with 12,416,701 votes against, resulting in an approval rate of 79.14%. The aggregate data indicates strong overall shareholder support for the proposed slate of directors.\n\n### Analysis\n\nA total of 239,545,010 \"Votes For\" were cast across all nominees, alongside 42,923,342 \"Votes Against\" and 6,174,835 \"Abstentions.\" Jill M. Granoff garnered the highest number of \"Votes For\" at 63,263,625, reflecting strong shareholder confidence. M. Scott McCarty recorded the highest \"Votes Against\" at 12,416,701, significantly exceeding other nominees. Richard A. Johnson received 8,321,456 votes against, Michael B. McGarry 7,987,654, and Michele A. Buck 6,543,210. The consistent number of abstentions at 1,234,567 for each nominee suggests a uniform approach to non-voting preferences.\n\n### Key Observations\n\nThe relatively higher \"Votes Against\" for M. Scott McCarty (12,416,701) compared to other nominees could indicate a segment of shareholders expressing discontent or concerns regarding his specific role or performance. While still achieving a majority approval, this level of opposition warrants monitoring for any potential underlying issues that could escalate in future proxy seasons. This observation is not necessarily a \"risk\" but rather a point of interest for future shareholder engagement.\n\n### Conclusion\n\nThe voting results for Foot Locker, Inc.'s director nominees on May 20, 2022, demonstrate a clear mandate from shareholders, with all nominees successfully elected. The strong overall support, particularly for Jill M. Granoff, underscores general shareholder satisfaction. However, the notable opposition directed at M. Scott McCarty highlights an area for potential future engagement to understand and address shareholder concerns. The company should consider proactive communication with shareholders to ascertain the reasons behind this heightened opposition and, if necessary, implement strategies to mitigate similar sentiment in future elections. This approach will help maintain strong shareholder relations and ensure continued confidence in the board's composition."
+  },
+  "gates": {
+    "end_gate": {
+      "verified": [
+        {
+          "value": "239,545,010",
+          "ref": 239545010.0
+        },
+        {
+          "value": "6,174,835",
+          "ref": 6174835.0
+        },
+        {
+          "value": "8,321,456",
+          "ref": 8321456.0
+        },
+        {
+          "value": "7,987,654,",
+          "ref": 7987654.0
+        },
+        {
+          "value": "6,543,210",
+          "ref": 6543210.0
+        },
+        {
+          "value": "1,234,567",
+          "ref": 1234567.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "12,416,701",
+          "num": 12416701.0,
+          "correct": 9876543.0,
+          "dev": 0.2046,
+          "source": "source_document"
+        },
+        {
+          "value": "63,263,625,",
+          "num": 63263625.0,
+          "correct": 77551206.0,
+          "dev": 0.1842,
+          "source": "evidence"
+        },
+        {
+          "value": "12,416,701,",
+          "num": 12416701.0,
+          "correct": 9876543.0,
+          "dev": 0.2046,
+          "source": "source_document"
+        },
+        {
+          "value": "12,416,701",
+          "num": 12416701.0,
+          "correct": 9876543.0,
+          "dev": 0.2046,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "89.20%"
+        },
+        {
+          "value": "79.14%"
+        },
+        {
+          "value": "42,923,342"
+        }
+      ],
+      "n_refs": 52
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_081_4E1CC3D9",
+      "hid": "FB_081_4E1CC3D9_H2",
+      "method": "end_check",
+      "type": "large_number",
+      "inj_num": 63263625.0,
+      "orig_num": 48123456.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": true,
+      "any_det": true,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_081_4E1CC3D9",
+      "hid": "FB_081_4E1CC3D9_H1",
+      "method": "end_check",
+      "type": "large_number",
+      "inj_num": 12416701.0,
+      "orig_num": 9876543.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": true,
+      "any_det": true,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    }
+  ],
+  "quality_score": 4,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:32:25.724815+00:00"
+}

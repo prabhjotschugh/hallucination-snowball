@@ -1,0 +1,4098 @@
+{
+  "FB_001_F18BFC11": [
+    {
+      "hallucination_id": "FB_001_F18BFC11_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,449 million",
+      "injected_value": "$1,677 million",
+      "original_numeric": "1449",
+      "injected_numeric": "1677",
+      "position_char": 306,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.1573
+    },
+    {
+      "hallucination_id": "FB_001_F18BFC11_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,487 million",
+      "injected_value": "$1,967 million",
+      "original_numeric": "1487",
+      "injected_numeric": "1967",
+      "position_char": 394,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.3226
+    }
+  ],
+  "FB_002_42BE1D74": [
+    {
+      "hallucination_id": "FB_002_42BE1D74_H2",
+      "type": "dollar_amount",
+      "original_value": "$18.2 billion",
+      "injected_value": "$14.3 billion",
+      "original_numeric": "18.2",
+      "injected_numeric": "14.3",
+      "position_char": 124,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2138
+    },
+    {
+      "hallucination_id": "FB_002_42BE1D74_H1",
+      "type": "dollar_amount",
+      "original_value": "$17.8 billion",
+      "injected_value": "$10.9 billion",
+      "original_numeric": "17.8",
+      "injected_numeric": "10.9",
+      "position_char": 313,
+      "sentence_approx": 4,
+      "perturbation_delta": -0.3885
+    }
+  ],
+  "FB_003_959AE4F2": [
+    {
+      "hallucination_id": "FB_003_959AE4F2_H3",
+      "type": "dollar_amount",
+      "original_value": "$45,517 million",
+      "injected_value": "$59,768 million",
+      "original_numeric": "45517",
+      "injected_numeric": "59768",
+      "position_char": 178,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.3131
+    },
+    {
+      "hallucination_id": "FB_003_959AE4F2_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,451 million",
+      "injected_value": "$1,858 million",
+      "original_numeric": "1451",
+      "injected_numeric": "1858",
+      "position_char": 303,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.2805
+    },
+    {
+      "hallucination_id": "FB_003_959AE4F2_H1",
+      "type": "dollar_amount",
+      "original_value": "$35,436 million",
+      "injected_value": "$29,761 million",
+      "original_numeric": "35436",
+      "injected_numeric": "29761",
+      "position_char": 821,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.1602
+    }
+  ],
+  "FB_004_FF1B8BC2": [
+    {
+      "hallucination_id": "FB_004_FF1B8BC2_H3",
+      "type": "dollar_amount",
+      "original_value": "$6,081 million",
+      "injected_value": "$7,927 million",
+      "original_numeric": "6081",
+      "injected_numeric": "7927",
+      "position_char": 116,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.3035
+    },
+    {
+      "hallucination_id": "FB_004_FF1B8BC2_H2",
+      "type": "dollar_amount",
+      "original_value": "$36,693 million",
+      "injected_value": "$46,995 million",
+      "original_numeric": "36693",
+      "injected_numeric": "46995",
+      "position_char": 275,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.2808
+    },
+    {
+      "hallucination_id": "FB_004_FF1B8BC2_H1",
+      "type": "dollar_amount",
+      "original_value": "$36,086 million",
+      "injected_value": "$44,964 million",
+      "original_numeric": "36086",
+      "injected_numeric": "44964",
+      "position_char": 581,
+      "sentence_approx": 6,
+      "perturbation_delta": 0.246
+    }
+  ],
+  "FB_005_FE85BE68": [
+    {
+      "hallucination_id": "FB_005_FE85BE68_H2",
+      "type": "dollar_amount",
+      "original_value": "$12,421 million",
+      "injected_value": "$8,236 million",
+      "original_numeric": "12421",
+      "injected_numeric": "8236",
+      "position_char": 242,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3369
+    },
+    {
+      "hallucination_id": "FB_005_FE85BE68_H1",
+      "type": "dollar_amount",
+      "original_value": "$8,052 million",
+      "injected_value": "$6,023 million",
+      "original_numeric": "8052",
+      "injected_numeric": "6023",
+      "position_char": 412,
+      "sentence_approx": 6,
+      "perturbation_delta": -0.2519
+    }
+  ],
+  "FB_006_A4622E06": [
+    {
+      "hallucination_id": "FB_006_A4622E06_H2",
+      "type": "dollar_amount",
+      "original_value": "$8,492 million",
+      "injected_value": "$5,902 million",
+      "original_numeric": "8492",
+      "injected_numeric": "5902",
+      "position_char": 172,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.305
+    },
+    {
+      "hallucination_id": "FB_006_A4622E06_H1",
+      "type": "dollar_amount",
+      "original_value": "$4,313 million",
+      "injected_value": "$5,576 million",
+      "original_numeric": "4313",
+      "injected_numeric": "5576",
+      "position_char": 460,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.2929
+    }
+  ],
+  "FB_007_31B558AC": [
+    {
+      "hallucination_id": "FB_007_31B558AC_H3",
+      "type": "dollar_amount",
+      "original_value": "$750 million",
+      "injected_value": "$1009 million",
+      "original_numeric": "750",
+      "injected_numeric": "1009",
+      "position_char": 321,
+      "sentence_approx": 6,
+      "perturbation_delta": 0.3454
+    },
+    {
+      "hallucination_id": "FB_007_31B558AC_H2",
+      "type": "percentage",
+      "original_value": "3.750%",
+      "injected_value": "0.010%",
+      "original_numeric": "3.750",
+      "injected_numeric": "0.010",
+      "position_char": 587,
+      "sentence_approx": 14,
+      "perturbation_delta": -8.0129
+    },
+    {
+      "hallucination_id": "FB_007_31B558AC_H1",
+      "type": "percentage",
+      "original_value": "4.250%",
+      "injected_value": "8.500%",
+      "original_numeric": "4.250",
+      "injected_numeric": "8.500",
+      "position_char": 783,
+      "sentence_approx": 20,
+      "perturbation_delta": 4.2512
+    }
+  ],
+  "FB_008_77FDE37A": [
+    {
+      "hallucination_id": "FB_008_77FDE37A_H3",
+      "type": "dollar_amount",
+      "original_value": "$1.49 ",
+      "injected_value": "$1.08 ",
+      "original_numeric": "1.49",
+      "injected_numeric": "1.08",
+      "position_char": 83,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2747
+    },
+    {
+      "hallucination_id": "FB_008_77FDE37A_H2",
+      "type": "dollar_amount",
+      "original_value": "$1.49 ",
+      "injected_value": "$1.90 ",
+      "original_numeric": "1.49",
+      "injected_numeric": "1.90",
+      "position_char": 225,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.2777
+    },
+    {
+      "hallucination_id": "FB_008_77FDE37A_H1",
+      "type": "dollar_amount",
+      "original_value": "$5.76 ",
+      "injected_value": "$7.92 ",
+      "original_numeric": "5.76",
+      "injected_numeric": "7.92",
+      "position_char": 605,
+      "sentence_approx": 11,
+      "perturbation_delta": 0.3747
+    }
+  ],
+  "FB_009_ABDB2F6B": [
+    {
+      "hallucination_id": "FB_009_ABDB2F6B_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,025 million",
+      "injected_value": "$1,274 million",
+      "original_numeric": "1025",
+      "injected_numeric": "1274",
+      "position_char": 527,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.2429
+    },
+    {
+      "hallucination_id": "FB_009_ABDB2F6B_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,037 million",
+      "injected_value": "$1,435 million",
+      "original_numeric": "1037",
+      "injected_numeric": "1435",
+      "position_char": 630,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.3838
+    }
+  ],
+  "FB_010_CBE1B721": [
+    {
+      "hallucination_id": "FB_010_CBE1B721_H2",
+      "type": "percentage",
+      "original_value": "3.3%",
+      "injected_value": "14.3%",
+      "original_numeric": "3.3",
+      "injected_numeric": "14.3",
+      "position_char": 858,
+      "sentence_approx": 2,
+      "perturbation_delta": 10.9622
+    },
+    {
+      "hallucination_id": "FB_010_CBE1B721_H1",
+      "type": "percentage",
+      "original_value": "5.1%",
+      "injected_value": "16.3%",
+      "original_numeric": "5.1",
+      "injected_numeric": "16.3",
+      "position_char": 994,
+      "sentence_approx": 6,
+      "perturbation_delta": 11.2167
+    }
+  ],
+  "FB_011_F50BA584": [
+    {
+      "hallucination_id": "FB_011_F50BA584_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,626 million",
+      "injected_value": "$1,051 million",
+      "original_numeric": "1626",
+      "injected_numeric": "1051",
+      "position_char": 84,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3534
+    },
+    {
+      "hallucination_id": "FB_011_F50BA584_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,660 million",
+      "injected_value": "$1,034 million",
+      "original_numeric": "1660",
+      "injected_numeric": "1034",
+      "position_char": 191,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3773
+    }
+  ],
+  "FB_012_41487F3A": [
+    {
+      "hallucination_id": "FB_012_41487F3A_H2",
+      "type": "dollar_amount",
+      "original_value": "$2,825 million",
+      "injected_value": "$2,035 million",
+      "original_numeric": "2825",
+      "injected_numeric": "2035",
+      "position_char": 86,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.2796
+    },
+    {
+      "hallucination_id": "FB_012_41487F3A_H1",
+      "type": "percentage",
+      "original_value": "21.3%",
+      "injected_value": "32.8%",
+      "original_numeric": "21.3",
+      "injected_numeric": "32.8",
+      "position_char": 419,
+      "sentence_approx": 2,
+      "perturbation_delta": 11.4575
+    }
+  ],
+  "FB_013_E5C83D85": [
+    {
+      "hallucination_id": "FB_013_E5C83D85_H2",
+      "type": "dollar_amount",
+      "original_value": "$2,927 million",
+      "injected_value": "$2,397 million",
+      "original_numeric": "2927",
+      "injected_numeric": "2397",
+      "position_char": 493,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.181
+    },
+    {
+      "hallucination_id": "FB_013_E5C83D85_H1",
+      "type": "dollar_amount",
+      "original_value": "$2,628 million",
+      "injected_value": "$3,504 million",
+      "original_numeric": "2628",
+      "injected_numeric": "3504",
+      "position_char": 714,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.3335
+    }
+  ],
+  "FB_014_3C2ED91D": [
+    {
+      "hallucination_id": "FB_014_3C2ED91D_H2",
+      "type": "percentage",
+      "original_value": "32.9%",
+      "injected_value": "38.5%",
+      "original_numeric": "32.9",
+      "injected_numeric": "38.5",
+      "position_char": 75,
+      "sentence_approx": 2,
+      "perturbation_delta": 5.6521
+    },
+    {
+      "hallucination_id": "FB_014_3C2ED91D_H1",
+      "type": "dollar_amount",
+      "original_value": "$5,786 million",
+      "injected_value": "$4,381 million",
+      "original_numeric": "5786",
+      "injected_numeric": "4381",
+      "position_char": 294,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.2428
+    }
+  ],
+  "FB_015_5E139DB3": [
+    {
+      "hallucination_id": "FB_015_5E139DB3_H2",
+      "type": "dollar_amount",
+      "original_value": "$4,895 million",
+      "injected_value": "$3,695 million",
+      "original_numeric": "4895",
+      "injected_numeric": "3695",
+      "position_char": 252,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.2452
+    },
+    {
+      "hallucination_id": "FB_015_5E139DB3_H1",
+      "type": "dollar_amount",
+      "original_value": "$3,396 million",
+      "injected_value": "$4,076 million",
+      "original_numeric": "3396",
+      "injected_numeric": "4076",
+      "position_char": 432,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.2002
+    }
+  ],
+  "FB_016_8BC6AC34": [],
+  "FB_017_4ABE7642": [
+    {
+      "hallucination_id": "FB_017_4ABE7642_H3",
+      "type": "dollar_amount",
+      "original_value": "$8,814 million",
+      "injected_value": "$11,608 million",
+      "original_numeric": "8814",
+      "injected_numeric": "11608",
+      "position_char": 94,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.317
+    },
+    {
+      "hallucination_id": "FB_017_4ABE7642_H2",
+      "type": "dollar_amount",
+      "original_value": "$8,187 million",
+      "injected_value": "$5,621 million",
+      "original_numeric": "8187",
+      "injected_numeric": "5621",
+      "position_char": 303,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.3135
+    },
+    {
+      "hallucination_id": "FB_017_4ABE7642_H1",
+      "type": "dollar_amount",
+      "original_value": "$8,814 million",
+      "injected_value": "$11,413 million",
+      "original_numeric": "8814",
+      "injected_numeric": "11413",
+      "position_char": 880,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.2949
+    }
+  ],
+  "FB_018_6E9F56BB": [
+    {
+      "hallucination_id": "FB_018_6E9F56BB_H2",
+      "type": "dollar_amount",
+      "original_value": "$38,425 million",
+      "injected_value": "$27,446 million",
+      "original_numeric": "38425",
+      "injected_numeric": "27446",
+      "position_char": 495,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2857
+    },
+    {
+      "hallucination_id": "FB_018_6E9F56BB_H1",
+      "type": "dollar_amount",
+      "original_value": "$39,339 million",
+      "injected_value": "$29,233 million",
+      "original_numeric": "39339",
+      "injected_numeric": "29233",
+      "position_char": 518,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2569
+    }
+  ],
+  "FB_019_A187C1CC": [
+    {
+      "hallucination_id": "FB_019_A187C1CC_H2",
+      "type": "dollar_amount",
+      "original_value": "$17,202 million",
+      "injected_value": "$14,425 million",
+      "original_numeric": "17202",
+      "injected_numeric": "14425",
+      "position_char": 828,
+      "sentence_approx": 8,
+      "perturbation_delta": -0.1615
+    },
+    {
+      "hallucination_id": "FB_019_A187C1CC_H1",
+      "type": "dollar_amount",
+      "original_value": "$16,632 million",
+      "injected_value": "$10,104 million",
+      "original_numeric": "16632",
+      "injected_numeric": "10104",
+      "position_char": 1610,
+      "sentence_approx": 8,
+      "perturbation_delta": -0.3925
+    }
+  ],
+  "FB_020_C68C8862": [
+    {
+      "hallucination_id": "FB_020_C68C8862_H2",
+      "type": "dollar_amount",
+      "original_value": "$136,004 million",
+      "injected_value": "$179,626 million",
+      "original_numeric": "136004",
+      "injected_numeric": "179626",
+      "position_char": 102,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.3207
+    },
+    {
+      "hallucination_id": "FB_020_C68C8862_H1",
+      "type": "percentage",
+      "original_value": "30.8%",
+      "injected_value": "26.6%",
+      "original_numeric": "30.8",
+      "injected_numeric": "26.6",
+      "position_char": 320,
+      "sentence_approx": 3,
+      "perturbation_delta": -4.1481
+    }
+  ],
+  "FB_021_8ECDBFF6": [
+    {
+      "hallucination_id": "FB_021_8ECDBFF6_H2",
+      "type": "dollar_amount",
+      "original_value": "$11,588 million",
+      "injected_value": "$14,743 million",
+      "original_numeric": "11588",
+      "injected_numeric": "14743",
+      "position_char": 103,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.2722
+    },
+    {
+      "hallucination_id": "FB_021_8ECDBFF6_H1",
+      "type": "dollar_amount",
+      "original_value": "$3,033 million",
+      "injected_value": "$2,112 million",
+      "original_numeric": "3033",
+      "injected_numeric": "2112",
+      "position_char": 383,
+      "sentence_approx": 5,
+      "perturbation_delta": -0.3036
+    }
+  ],
+  "FB_022_466C1ED8": [
+    {
+      "hallucination_id": "FB_022_466C1ED8_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,205 million",
+      "injected_value": "$947 million",
+      "original_numeric": "1205",
+      "injected_numeric": "947",
+      "position_char": 95,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2139
+    },
+    {
+      "hallucination_id": "FB_022_466C1ED8_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,063 million",
+      "injected_value": "$1,235 million",
+      "original_numeric": "1063",
+      "injected_numeric": "1235",
+      "position_char": 321,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.1617
+    }
+  ],
+  "FB_023_27D8C490": [],
+  "FB_024_214CEB4C": [
+    {
+      "hallucination_id": "FB_024_214CEB4C_H3",
+      "type": "dollar_amount",
+      "original_value": "$2,843 million",
+      "injected_value": "$2,085 million",
+      "original_numeric": "2843",
+      "injected_numeric": "2085",
+      "position_char": 549,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.2667
+    },
+    {
+      "hallucination_id": "FB_024_214CEB4C_H2",
+      "type": "dollar_amount",
+      "original_value": "$4,196 million",
+      "injected_value": "$2,926 million",
+      "original_numeric": "4196",
+      "injected_numeric": "2926",
+      "position_char": 834,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.3028
+    },
+    {
+      "hallucination_id": "FB_024_214CEB4C_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,058 million",
+      "injected_value": "$891 million",
+      "original_numeric": "1058",
+      "injected_numeric": "891",
+      "position_char": 1062,
+      "sentence_approx": 4,
+      "perturbation_delta": -0.1583
+    }
+  ],
+  "FB_025_E70F40EB": [
+    {
+      "hallucination_id": "FB_025_E70F40EB_H3",
+      "type": "large_number",
+      "original_value": "1,200",
+      "injected_value": "1,669",
+      "original_numeric": "1200",
+      "injected_numeric": "1669",
+      "position_char": 1149,
+      "sentence_approx": 8,
+      "perturbation_delta": 0.3907
+    },
+    {
+      "hallucination_id": "FB_025_E70F40EB_H2",
+      "type": "large_number",
+      "original_value": "13,500",
+      "injected_value": "17,880",
+      "original_numeric": "13500",
+      "injected_numeric": "17880",
+      "position_char": 1342,
+      "sentence_approx": 10,
+      "perturbation_delta": 0.3244
+    },
+    {
+      "hallucination_id": "FB_025_E70F40EB_H1",
+      "type": "large_number",
+      "original_value": "1,100",
+      "injected_value": "897",
+      "original_numeric": "1100",
+      "injected_numeric": "897",
+      "position_char": 1385,
+      "sentence_approx": 10,
+      "perturbation_delta": -0.1847
+    }
+  ],
+  "FB_026_7B64CF5E": [],
+  "FB_027_9BE33B25": [
+    {
+      "hallucination_id": "FB_027_9BE33B25_H3",
+      "type": "percentage",
+      "original_value": "20.5%",
+      "injected_value": "12.6%",
+      "original_numeric": "20.5",
+      "injected_numeric": "12.6",
+      "position_char": 70,
+      "sentence_approx": 1,
+      "perturbation_delta": -7.9429
+    },
+    {
+      "hallucination_id": "FB_027_9BE33B25_H2",
+      "type": "dollar_amount",
+      "original_value": "$10,000 million",
+      "injected_value": "$8,437 million",
+      "original_numeric": "10000",
+      "injected_numeric": "8437",
+      "position_char": 697,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.1563
+    },
+    {
+      "hallucination_id": "FB_027_9BE33B25_H1",
+      "type": "percentage",
+      "original_value": "20.5%",
+      "injected_value": "9.4%",
+      "original_numeric": "20.5",
+      "injected_numeric": "9.4",
+      "position_char": 1000,
+      "sentence_approx": 2,
+      "perturbation_delta": -11.1156
+    }
+  ],
+  "FB_028_C84B8000": [
+    {
+      "hallucination_id": "FB_028_C84B8000_H2",
+      "type": "dollar_amount",
+      "original_value": "$45 million",
+      "injected_value": "$38 million",
+      "original_numeric": "45",
+      "injected_numeric": "38",
+      "position_char": 120,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.1603
+    },
+    {
+      "hallucination_id": "FB_028_C84B8000_H1",
+      "type": "dollar_amount",
+      "original_value": "$50 million",
+      "injected_value": "$38 million",
+      "original_numeric": "50",
+      "injected_numeric": "38",
+      "position_char": 271,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.2427
+    }
+  ],
+  "FB_029_CA5B2B49": [
+    {
+      "hallucination_id": "FB_029_CA5B2B49_H2",
+      "type": "dollar_amount",
+      "original_value": "$2,200 million",
+      "injected_value": "$2,622 million",
+      "original_numeric": "2200",
+      "injected_numeric": "2622",
+      "position_char": 106,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.1917
+    },
+    {
+      "hallucination_id": "FB_029_CA5B2B49_H1",
+      "type": "dollar_amount",
+      "original_value": "$2,000 million",
+      "injected_value": "$1,517 million",
+      "original_numeric": "2000",
+      "injected_numeric": "1517",
+      "position_char": 321,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.2417
+    }
+  ],
+  "FB_030_DF79B84F": [
+    {
+      "hallucination_id": "FB_030_DF79B84F_H2",
+      "type": "dollar_amount",
+      "original_value": "$14,000 million",
+      "injected_value": "$16,612 million",
+      "original_numeric": "14000",
+      "injected_numeric": "16612",
+      "position_char": 348,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.1866
+    },
+    {
+      "hallucination_id": "FB_030_DF79B84F_H1",
+      "type": "dollar_amount",
+      "original_value": "$13,500 million",
+      "injected_value": "$8,955 million",
+      "original_numeric": "13500",
+      "injected_numeric": "8955",
+      "position_char": 460,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3367
+    }
+  ],
+  "FB_031_E5667B37": [
+    {
+      "hallucination_id": "FB_031_E5667B37_H3",
+      "type": "dollar_amount",
+      "original_value": "$1,165 million",
+      "injected_value": "$762 million",
+      "original_numeric": "1165",
+      "injected_numeric": "762",
+      "position_char": 516,
+      "sentence_approx": 6,
+      "perturbation_delta": -0.3457
+    },
+    {
+      "hallucination_id": "FB_031_E5667B37_H2",
+      "type": "dollar_amount",
+      "original_value": "$5,506 million",
+      "injected_value": "$7,678 million",
+      "original_numeric": "5506",
+      "injected_numeric": "7678",
+      "position_char": 554,
+      "sentence_approx": 6,
+      "perturbation_delta": 0.3944
+    },
+    {
+      "hallucination_id": "FB_031_E5667B37_H1",
+      "type": "percentage",
+      "original_value": "21.2%",
+      "injected_value": "29.4%",
+      "original_numeric": "21.2",
+      "injected_numeric": "29.4",
+      "position_char": 599,
+      "sentence_approx": 6,
+      "perturbation_delta": 8.1789
+    }
+  ],
+  "FB_032_D18D6021": [
+    {
+      "hallucination_id": "FB_032_D18D6021_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,202 million",
+      "injected_value": "$1,474 million",
+      "original_numeric": "1202",
+      "injected_numeric": "1474",
+      "position_char": 606,
+      "sentence_approx": 4,
+      "perturbation_delta": 0.2266
+    },
+    {
+      "hallucination_id": "FB_032_D18D6021_H1",
+      "type": "dollar_amount",
+      "original_value": "$4,973 million",
+      "injected_value": "$6,844 million",
+      "original_numeric": "4973",
+      "injected_numeric": "6844",
+      "position_char": 624,
+      "sentence_approx": 4,
+      "perturbation_delta": 0.3762
+    }
+  ],
+  "FB_033_EE9D3CFB": [
+    {
+      "hallucination_id": "FB_033_EE9D3CFB_H3",
+      "type": "dollar_amount",
+      "original_value": "$10,800 million",
+      "injected_value": "$8,249 million",
+      "original_numeric": "10800",
+      "injected_numeric": "8249",
+      "position_char": 1204,
+      "sentence_approx": 8,
+      "perturbation_delta": -0.2362
+    },
+    {
+      "hallucination_id": "FB_033_EE9D3CFB_H2",
+      "type": "dollar_amount",
+      "original_value": "$9,763 million",
+      "injected_value": "$6,395 million",
+      "original_numeric": "9763",
+      "injected_numeric": "6395",
+      "position_char": 1367,
+      "sentence_approx": 9,
+      "perturbation_delta": -0.345
+    },
+    {
+      "hallucination_id": "FB_033_EE9D3CFB_H1",
+      "type": "dollar_amount",
+      "original_value": "$3,763 million",
+      "injected_value": "$4,399 million",
+      "original_numeric": "3763",
+      "injected_numeric": "4399",
+      "position_char": 1502,
+      "sentence_approx": 9,
+      "perturbation_delta": 0.1691
+    }
+  ],
+  "FB_034_BDBAA961": [
+    {
+      "hallucination_id": "FB_034_BDBAA961_H3",
+      "type": "dollar_amount",
+      "original_value": "$16,420 million",
+      "injected_value": "$22,281 million",
+      "original_numeric": "16420",
+      "injected_numeric": "22281",
+      "position_char": 268,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.3569
+    },
+    {
+      "hallucination_id": "FB_034_BDBAA961_H2",
+      "type": "percentage",
+      "original_value": "43.8%",
+      "injected_value": "33.9%",
+      "original_numeric": "43.8",
+      "injected_numeric": "33.9",
+      "position_char": 557,
+      "sentence_approx": 5,
+      "perturbation_delta": -9.9152
+    },
+    {
+      "hallucination_id": "FB_034_BDBAA961_H1",
+      "type": "dollar_amount",
+      "original_value": "$16,420 million",
+      "injected_value": "$10,590 million",
+      "original_numeric": "16420",
+      "injected_numeric": "10590",
+      "position_char": 616,
+      "sentence_approx": 7,
+      "perturbation_delta": -0.3551
+    }
+  ],
+  "FB_035_15E1E864": [
+    {
+      "hallucination_id": "FB_035_15E1E864_H3",
+      "type": "percentage",
+      "original_value": "14.0%",
+      "injected_value": "6.4%",
+      "original_numeric": "14.0",
+      "injected_numeric": "6.4",
+      "position_char": 124,
+      "sentence_approx": 2,
+      "perturbation_delta": -7.6351
+    },
+    {
+      "hallucination_id": "FB_035_15E1E864_H2",
+      "type": "large_number",
+      "original_value": "1,832",
+      "injected_value": "2,445",
+      "original_numeric": "1832",
+      "injected_numeric": "2445",
+      "position_char": 327,
+      "sentence_approx": 5,
+      "perturbation_delta": 0.3349
+    },
+    {
+      "hallucination_id": "FB_035_15E1E864_H1",
+      "type": "large_number",
+      "original_value": "9,763",
+      "injected_value": "12,160",
+      "original_numeric": "9763",
+      "injected_numeric": "12160",
+      "position_char": 534,
+      "sentence_approx": 7,
+      "perturbation_delta": 0.2456
+    }
+  ],
+  "FB_036_47FD0B96": [
+    {
+      "hallucination_id": "FB_036_47FD0B96_H2",
+      "type": "large_number",
+      "original_value": "1,028",
+      "injected_value": "802",
+      "original_numeric": "1028",
+      "injected_numeric": "802",
+      "position_char": 378,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2195
+    },
+    {
+      "hallucination_id": "FB_036_47FD0B96_H1",
+      "type": "large_number",
+      "original_value": "1,525",
+      "injected_value": "1,829",
+      "original_numeric": "1525",
+      "injected_numeric": "1829",
+      "position_char": 666,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.1995
+    }
+  ],
+  "FB_037_CB0A4D6D": [
+    {
+      "hallucination_id": "FB_037_CB0A4D6D_H3",
+      "type": "dollar_amount",
+      "original_value": "$3,800 million",
+      "injected_value": "$3,135 million",
+      "original_numeric": "3800",
+      "injected_numeric": "3135",
+      "position_char": 852,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.175
+    },
+    {
+      "hallucination_id": "FB_037_CB0A4D6D_H2",
+      "type": "dollar_amount",
+      "original_value": "$3,100 million",
+      "injected_value": "$2,208 million",
+      "original_numeric": "3100",
+      "injected_numeric": "2208",
+      "position_char": 1004,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.2879
+    },
+    {
+      "hallucination_id": "FB_037_CB0A4D6D_H1",
+      "type": "dollar_amount",
+      "original_value": "$3,100 million",
+      "injected_value": "$2,500 million",
+      "original_numeric": "3100",
+      "injected_numeric": "2500",
+      "position_char": 1085,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.1935
+    }
+  ],
+  "FB_038_9BAA83E2": [
+    {
+      "hallucination_id": "FB_038_9BAA83E2_H2",
+      "type": "dollar_amount",
+      "original_value": "$23,600 million",
+      "injected_value": "$19,432 million",
+      "original_numeric": "23600",
+      "injected_numeric": "19432",
+      "position_char": 373,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.1766
+    },
+    {
+      "hallucination_id": "FB_038_9BAA83E2_H1",
+      "type": "percentage",
+      "original_value": "55%",
+      "injected_value": "51.7%",
+      "original_numeric": "55",
+      "injected_numeric": "51.7",
+      "position_char": 533,
+      "sentence_approx": 4,
+      "perturbation_delta": -3.2875
+    }
+  ],
+  "FB_039_FDBB6DC2": [
+    {
+      "hallucination_id": "FB_039_FDBB6DC2_H3",
+      "type": "dollar_amount",
+      "original_value": "$1,000 million",
+      "injected_value": "$1,372 million",
+      "original_numeric": "1000",
+      "injected_numeric": "1372",
+      "position_char": 383,
+      "sentence_approx": 4,
+      "perturbation_delta": 0.372
+    },
+    {
+      "hallucination_id": "FB_039_FDBB6DC2_H2",
+      "type": "percentage",
+      "original_value": "4.000%",
+      "injected_value": "0.010%",
+      "original_numeric": "4.000",
+      "injected_numeric": "0.010",
+      "position_char": 448,
+      "sentence_approx": 5,
+      "perturbation_delta": -4.2167
+    },
+    {
+      "hallucination_id": "FB_039_FDBB6DC2_H1",
+      "type": "dollar_amount",
+      "original_value": "$39,000 million",
+      "injected_value": "$46,807 million",
+      "original_numeric": "39000",
+      "injected_numeric": "46807",
+      "position_char": 682,
+      "sentence_approx": 9,
+      "perturbation_delta": 0.2002
+    }
+  ],
+  "FB_040_DBF8FC6A": [
+    {
+      "hallucination_id": "FB_040_DBF8FC6A_H2",
+      "type": "dollar_amount",
+      "original_value": "$51,000 million",
+      "injected_value": "$62,827 million",
+      "original_numeric": "51000",
+      "injected_numeric": "62827",
+      "position_char": 534,
+      "sentence_approx": 4,
+      "perturbation_delta": 0.2319
+    },
+    {
+      "hallucination_id": "FB_040_DBF8FC6A_H1",
+      "type": "percentage",
+      "original_value": "21.6%",
+      "injected_value": "29.6%",
+      "original_numeric": "21.6",
+      "injected_numeric": "29.6",
+      "position_char": 765,
+      "sentence_approx": 7,
+      "perturbation_delta": 8.0344
+    }
+  ],
+  "FB_041_EB5B1B78": [
+    {
+      "hallucination_id": "FB_041_EB5B1B78_H3",
+      "type": "dollar_amount",
+      "original_value": "$36,090 million",
+      "injected_value": "$48,564 million",
+      "original_numeric": "36090",
+      "injected_numeric": "48564",
+      "position_char": 610,
+      "sentence_approx": 5,
+      "perturbation_delta": 0.3456
+    },
+    {
+      "hallucination_id": "FB_041_EB5B1B78_H2",
+      "type": "dollar_amount",
+      "original_value": "$4,825 million",
+      "injected_value": "$5,847 million",
+      "original_numeric": "4825",
+      "injected_numeric": "5847",
+      "position_char": 732,
+      "sentence_approx": 6,
+      "perturbation_delta": 0.2118
+    },
+    {
+      "hallucination_id": "FB_041_EB5B1B78_H1",
+      "type": "dollar_amount",
+      "original_value": "$36,090 million",
+      "injected_value": "$49,343 million",
+      "original_numeric": "36090",
+      "injected_numeric": "49343",
+      "position_char": 775,
+      "sentence_approx": 6,
+      "perturbation_delta": 0.3672
+    }
+  ],
+  "FB_042_1741E456": [
+    {
+      "hallucination_id": "FB_042_1741E456_H2",
+      "type": "dollar_amount",
+      "original_value": "$18,816 million",
+      "injected_value": "$23,630 million",
+      "original_numeric": "18816",
+      "injected_numeric": "23630",
+      "position_char": 589,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.2558
+    },
+    {
+      "hallucination_id": "FB_042_1741E456_H1",
+      "type": "dollar_amount",
+      "original_value": "$28,842 million",
+      "injected_value": "$17,915 million",
+      "original_numeric": "28842",
+      "injected_numeric": "17915",
+      "position_char": 686,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3789
+    }
+  ],
+  "FB_043_1BA81F6A": [
+    {
+      "hallucination_id": "FB_043_1BA81F6A_H3",
+      "type": "percentage",
+      "original_value": "20.1%",
+      "injected_value": "24.1%",
+      "original_numeric": "20.1",
+      "injected_numeric": "24.1",
+      "position_char": 110,
+      "sentence_approx": 1,
+      "perturbation_delta": 4.0405
+    },
+    {
+      "hallucination_id": "FB_043_1BA81F6A_H2",
+      "type": "dollar_amount",
+      "original_value": "$7,667 million",
+      "injected_value": "$5,968 million",
+      "original_numeric": "7667",
+      "injected_numeric": "5968",
+      "position_char": 672,
+      "sentence_approx": 5,
+      "perturbation_delta": -0.2216
+    },
+    {
+      "hallucination_id": "FB_043_1BA81F6A_H1",
+      "type": "percentage",
+      "original_value": "20.1%",
+      "injected_value": "31.3%",
+      "original_numeric": "20.1",
+      "injected_numeric": "31.3",
+      "position_char": 894,
+      "sentence_approx": 5,
+      "perturbation_delta": 11.2441
+    }
+  ],
+  "FB_044_899DEDA7": [
+    {
+      "hallucination_id": "FB_044_899DEDA7_H3",
+      "type": "dollar_amount",
+      "original_value": "$106,196 million",
+      "injected_value": "$87,723 million",
+      "original_numeric": "106196",
+      "injected_numeric": "87723",
+      "position_char": 259,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.174
+    },
+    {
+      "hallucination_id": "FB_044_899DEDA7_H2",
+      "type": "dollar_amount",
+      "original_value": "$58,160 million",
+      "injected_value": "$75,098 million",
+      "original_numeric": "58160",
+      "injected_numeric": "75098",
+      "position_char": 359,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.2912
+    },
+    {
+      "hallucination_id": "FB_044_899DEDA7_H1",
+      "type": "dollar_amount",
+      "original_value": "$50,000 million",
+      "injected_value": "$35,269 million",
+      "original_numeric": "50000",
+      "injected_numeric": "35269",
+      "position_char": 458,
+      "sentence_approx": 4,
+      "perturbation_delta": -0.2946
+    }
+  ],
+  "FB_045_3960FE69": [
+    {
+      "hallucination_id": "FB_045_3960FE69_H2",
+      "type": "percentage",
+      "original_value": "5.1%",
+      "injected_value": "0.0%",
+      "original_numeric": "5.1",
+      "injected_numeric": "0.0",
+      "position_char": 569,
+      "sentence_approx": 8,
+      "perturbation_delta": -10.4222
+    },
+    {
+      "hallucination_id": "FB_045_3960FE69_H1",
+      "type": "percentage",
+      "original_value": "6.3%",
+      "injected_value": "0.1%",
+      "original_numeric": "6.3",
+      "injected_numeric": "0.1",
+      "position_char": 659,
+      "sentence_approx": 11,
+      "perturbation_delta": -6.1559
+    }
+  ],
+  "FB_046_E323A993": [
+    {
+      "hallucination_id": "FB_046_E323A993_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,034 million",
+      "injected_value": "$1,420 million",
+      "original_numeric": "1034",
+      "injected_numeric": "1420",
+      "position_char": 275,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.3732
+    },
+    {
+      "hallucination_id": "FB_046_E323A993_H1",
+      "type": "dollar_amount",
+      "original_value": "$977 million",
+      "injected_value": "$650 million",
+      "original_numeric": "977",
+      "injected_numeric": "650",
+      "position_char": 401,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.3343
+    }
+  ],
+  "FB_047_A9C061FE": [
+    {
+      "hallucination_id": "FB_047_A9C061FE_H3",
+      "type": "dollar_amount",
+      "original_value": "$1,426 million",
+      "injected_value": "$966 million",
+      "original_numeric": "1426",
+      "injected_numeric": "966",
+      "position_char": 150,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.3228
+    },
+    {
+      "hallucination_id": "FB_047_A9C061FE_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,019 million",
+      "injected_value": "$832 million",
+      "original_numeric": "1019",
+      "injected_numeric": "832",
+      "position_char": 603,
+      "sentence_approx": 4,
+      "perturbation_delta": -0.1839
+    },
+    {
+      "hallucination_id": "FB_047_A9C061FE_H1",
+      "type": "dollar_amount",
+      "original_value": "$263 million",
+      "injected_value": "$208 million",
+      "original_numeric": "263",
+      "injected_numeric": "208",
+      "position_char": 668,
+      "sentence_approx": 5,
+      "perturbation_delta": -0.211
+    }
+  ],
+  "FB_048_79F71CE3": [
+    {
+      "hallucination_id": "FB_048_79F71CE3_H3",
+      "type": "dollar_amount",
+      "original_value": "$1,519 million",
+      "injected_value": "$1,823 million",
+      "original_numeric": "1519",
+      "injected_numeric": "1823",
+      "position_char": 194,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.2
+    },
+    {
+      "hallucination_id": "FB_048_79F71CE3_H2",
+      "type": "dollar_amount",
+      "original_value": "$684 million",
+      "injected_value": "$522 million",
+      "original_numeric": "684",
+      "injected_numeric": "522",
+      "position_char": 281,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.2365
+    },
+    {
+      "hallucination_id": "FB_048_79F71CE3_H1",
+      "type": "dollar_amount",
+      "original_value": "$606 million",
+      "injected_value": "$721 million",
+      "original_numeric": "606",
+      "injected_numeric": "721",
+      "position_char": 875,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.1904
+    }
+  ],
+  "FB_049_4416C718": [
+    {
+      "hallucination_id": "FB_049_4416C718_H3",
+      "type": "dollar_amount",
+      "original_value": "$1,173 million",
+      "injected_value": "$924 million",
+      "original_numeric": "1173",
+      "injected_numeric": "924",
+      "position_char": 211,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.2126
+    },
+    {
+      "hallucination_id": "FB_049_4416C718_H2",
+      "type": "percentage",
+      "original_value": "2.9%",
+      "injected_value": "0.0%",
+      "original_numeric": "2.9",
+      "injected_numeric": "0.0",
+      "position_char": 823,
+      "sentence_approx": 3,
+      "perturbation_delta": -10.786
+    },
+    {
+      "hallucination_id": "FB_049_4416C718_H1",
+      "type": "percentage",
+      "original_value": "2.9%",
+      "injected_value": "0.0%",
+      "original_numeric": "2.9",
+      "injected_numeric": "0.0",
+      "position_char": 1043,
+      "sentence_approx": 6,
+      "perturbation_delta": -10.4915
+    }
+  ],
+  "FB_050_A0B82AEA": [
+    {
+      "hallucination_id": "FB_050_A0B82AEA_H2",
+      "type": "dollar_amount",
+      "original_value": "$3,719 million",
+      "injected_value": "$2,780 million",
+      "original_numeric": "3719",
+      "injected_numeric": "2780",
+      "position_char": 214,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.2524
+    },
+    {
+      "hallucination_id": "FB_050_A0B82AEA_H1",
+      "type": "dollar_amount",
+      "original_value": "$3,579 million",
+      "injected_value": "$4,922 million",
+      "original_numeric": "3579",
+      "injected_numeric": "4922",
+      "position_char": 310,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.3751
+    }
+  ],
+  "FB_051_091D46D5": [
+    {
+      "hallucination_id": "FB_051_091D46D5_H3",
+      "type": "dollar_amount",
+      "original_value": "$46,294 million",
+      "injected_value": "$29,580 million",
+      "original_numeric": "46294",
+      "injected_numeric": "29580",
+      "position_char": 696,
+      "sentence_approx": 8,
+      "perturbation_delta": -0.361
+    },
+    {
+      "hallucination_id": "FB_051_091D46D5_H2",
+      "type": "dollar_amount",
+      "original_value": "$47,262 million",
+      "injected_value": "$55,020 million",
+      "original_numeric": "47262",
+      "injected_numeric": "55020",
+      "position_char": 799,
+      "sentence_approx": 8,
+      "perturbation_delta": 0.1642
+    },
+    {
+      "hallucination_id": "FB_051_091D46D5_H1",
+      "type": "percentage",
+      "original_value": "2%",
+      "injected_value": "10.3%",
+      "original_numeric": "2",
+      "injected_numeric": "10.3",
+      "position_char": 2044,
+      "sentence_approx": 18,
+      "perturbation_delta": 8.334
+    }
+  ],
+  "FB_052_FC76DF78": [
+    {
+      "hallucination_id": "FB_052_FC76DF78_H3",
+      "type": "large_number",
+      "original_value": "1,846",
+      "injected_value": "1,157",
+      "original_numeric": "1846",
+      "injected_numeric": "1157",
+      "position_char": 698,
+      "sentence_approx": 8,
+      "perturbation_delta": -0.373
+    },
+    {
+      "hallucination_id": "FB_052_FC76DF78_H2",
+      "type": "large_number",
+      "original_value": "47,262",
+      "injected_value": "32,254",
+      "original_numeric": "47262",
+      "injected_numeric": "32254",
+      "position_char": 808,
+      "sentence_approx": 9,
+      "perturbation_delta": -0.3175
+    },
+    {
+      "hallucination_id": "FB_052_FC76DF78_H1",
+      "type": "large_number",
+      "original_value": "1,570",
+      "injected_value": "1,229",
+      "original_numeric": "1570",
+      "injected_numeric": "1229",
+      "position_char": 847,
+      "sentence_approx": 9,
+      "perturbation_delta": -0.2174
+    }
+  ],
+  "FB_053_05E755A5": [
+    {
+      "hallucination_id": "FB_053_05E755A5_H3",
+      "type": "dollar_amount",
+      "original_value": "$1,518 million",
+      "injected_value": "$1,210 million",
+      "original_numeric": "1518",
+      "injected_numeric": "1210",
+      "position_char": 133,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.203
+    },
+    {
+      "hallucination_id": "FB_053_05E755A5_H2",
+      "type": "large_number",
+      "original_value": "1,188",
+      "injected_value": "1,421",
+      "original_numeric": "1188",
+      "injected_numeric": "1421",
+      "position_char": 253,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.1963
+    },
+    {
+      "hallucination_id": "FB_053_05E755A5_H1",
+      "type": "large_number",
+      "original_value": "1,045",
+      "injected_value": "852",
+      "original_numeric": "1045",
+      "injected_numeric": "852",
+      "position_char": 646,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.1844
+    }
+  ],
+  "FB_054_F1BBC565": [
+    {
+      "hallucination_id": "FB_054_F1BBC565_H3",
+      "type": "dollar_amount",
+      "original_value": "$1,200 million",
+      "injected_value": "$911 million",
+      "original_numeric": "1200",
+      "injected_numeric": "911",
+      "position_char": 138,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.2412
+    },
+    {
+      "hallucination_id": "FB_054_F1BBC565_H2",
+      "type": "dollar_amount",
+      "original_value": "$3,200 million",
+      "injected_value": "$2,191 million",
+      "original_numeric": "3200",
+      "injected_numeric": "2191",
+      "position_char": 441,
+      "sentence_approx": 5,
+      "perturbation_delta": -0.3154
+    },
+    {
+      "hallucination_id": "FB_054_F1BBC565_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,200 million",
+      "injected_value": "$789 million",
+      "original_numeric": "1200",
+      "injected_numeric": "789",
+      "position_char": 879,
+      "sentence_approx": 9,
+      "perturbation_delta": -0.3427
+    }
+  ],
+  "FB_055_B75D0172": [
+    {
+      "hallucination_id": "FB_055_B75D0172_H3",
+      "type": "large_number",
+      "original_value": "1,024",
+      "injected_value": "822",
+      "original_numeric": "1024",
+      "injected_numeric": "822",
+      "position_char": 123,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.1968
+    },
+    {
+      "hallucination_id": "FB_055_B75D0172_H2",
+      "type": "large_number",
+      "original_value": "1,040",
+      "injected_value": "698",
+      "original_numeric": "1040",
+      "injected_numeric": "698",
+      "position_char": 178,
+      "sentence_approx": 4,
+      "perturbation_delta": -0.3289
+    },
+    {
+      "hallucination_id": "FB_055_B75D0172_H1",
+      "type": "large_number",
+      "original_value": "1,024",
+      "injected_value": "1,272",
+      "original_numeric": "1024",
+      "injected_numeric": "1272",
+      "position_char": 365,
+      "sentence_approx": 6,
+      "perturbation_delta": 0.2418
+    }
+  ],
+  "FB_056_E46FAB20": [
+    {
+      "hallucination_id": "FB_056_E46FAB20_H3",
+      "type": "dollar_amount",
+      "original_value": "$1,800 million",
+      "injected_value": "$1,519 million",
+      "original_numeric": "1800",
+      "injected_numeric": "1519",
+      "position_char": 381,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.1561
+    },
+    {
+      "hallucination_id": "FB_056_E46FAB20_H2",
+      "type": "dollar_amount",
+      "original_value": "$600 million",
+      "injected_value": "$738 million",
+      "original_numeric": "600",
+      "injected_numeric": "738",
+      "position_char": 479,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.2308
+    },
+    {
+      "hallucination_id": "FB_056_E46FAB20_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,900 million",
+      "injected_value": "$1,307 million",
+      "original_numeric": "1900",
+      "injected_numeric": "1307",
+      "position_char": 1024,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.3119
+    }
+  ],
+  "FB_057_2D006C3F": [
+    {
+      "hallucination_id": "FB_057_2D006C3F_H3",
+      "type": "dollar_amount",
+      "original_value": "$467.5 million",
+      "injected_value": "$606.8 million",
+      "original_numeric": "467.5",
+      "injected_numeric": "606.8",
+      "position_char": 412,
+      "sentence_approx": 7,
+      "perturbation_delta": 0.2979
+    },
+    {
+      "hallucination_id": "FB_057_2D006C3F_H2",
+      "type": "dollar_amount",
+      "original_value": "$360.6 million",
+      "injected_value": "$259.8 million",
+      "original_numeric": "360.6",
+      "injected_numeric": "259.8",
+      "position_char": 481,
+      "sentence_approx": 8,
+      "perturbation_delta": -0.2795
+    },
+    {
+      "hallucination_id": "FB_057_2D006C3F_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,197.5 million",
+      "injected_value": "$788.1 million",
+      "original_numeric": "1197.5",
+      "injected_numeric": "788.1",
+      "position_char": 774,
+      "sentence_approx": 13,
+      "perturbation_delta": -0.3419
+    }
+  ],
+  "FB_058_4FC4F0E9": [
+    {
+      "hallucination_id": "FB_058_4FC4F0E9_H3",
+      "type": "dollar_amount",
+      "original_value": "$4,711 million",
+      "injected_value": "$5,585 million",
+      "original_numeric": "4711",
+      "injected_numeric": "5585",
+      "position_char": 120,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.1856
+    },
+    {
+      "hallucination_id": "FB_058_4FC4F0E9_H2",
+      "type": "percentage",
+      "original_value": "101.6%",
+      "injected_value": "91.9%",
+      "original_numeric": "101.6",
+      "injected_numeric": "91.9",
+      "position_char": 315,
+      "sentence_approx": 3,
+      "perturbation_delta": -9.6753
+    },
+    {
+      "hallucination_id": "FB_058_4FC4F0E9_H1",
+      "type": "dollar_amount",
+      "original_value": "$9,493 million",
+      "injected_value": "$12,544 million",
+      "original_numeric": "9493",
+      "injected_numeric": "12544",
+      "position_char": 457,
+      "sentence_approx": 4,
+      "perturbation_delta": 0.3214
+    }
+  ],
+  "FB_059_EA35DCB3": [],
+  "FB_060_D8048F85": [
+    {
+      "hallucination_id": "FB_060_D8048F85_H2",
+      "type": "dollar_amount",
+      "original_value": "$83,535 million",
+      "injected_value": "$115,274 million",
+      "original_numeric": "83535",
+      "injected_numeric": "115274",
+      "position_char": 97,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.3799
+    },
+    {
+      "hallucination_id": "FB_060_D8048F85_H1",
+      "type": "dollar_amount",
+      "original_value": "$139,660 million",
+      "injected_value": "$85,028 million",
+      "original_numeric": "139660",
+      "injected_numeric": "85028",
+      "position_char": 201,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.3912
+    }
+  ],
+  "FB_061_B30537F0": [
+    {
+      "hallucination_id": "FB_061_B30537F0_H3",
+      "type": "dollar_amount",
+      "original_value": "$62,283 million",
+      "injected_value": "$52,278 million",
+      "original_numeric": "62283",
+      "injected_numeric": "52278",
+      "position_char": 800,
+      "sentence_approx": 6,
+      "perturbation_delta": -0.1606
+    },
+    {
+      "hallucination_id": "FB_061_B30537F0_H2",
+      "type": "dollar_amount",
+      "original_value": "$21,319 million",
+      "injected_value": "$13,434 million",
+      "original_numeric": "21319",
+      "injected_numeric": "13434",
+      "position_char": 987,
+      "sentence_approx": 6,
+      "perturbation_delta": -0.3699
+    },
+    {
+      "hallucination_id": "FB_061_B30537F0_H1",
+      "type": "percentage",
+      "original_value": "23.0%",
+      "injected_value": "14.4%",
+      "original_numeric": "23.0",
+      "injected_numeric": "14.4",
+      "position_char": 1587,
+      "sentence_approx": 12,
+      "perturbation_delta": -8.5814
+    }
+  ],
+  "FB_062_CCEDD88C": [
+    {
+      "hallucination_id": "FB_062_CCEDD88C_H1",
+      "type": "dollar_amount",
+      "original_value": "$156,898 million",
+      "injected_value": "$191,569 million",
+      "original_numeric": "156898",
+      "injected_numeric": "191569",
+      "position_char": 1668,
+      "sentence_approx": 13,
+      "perturbation_delta": 0.221
+    }
+  ],
+  "FB_063_38B981AD": [
+    {
+      "hallucination_id": "FB_063_38B981AD_H2",
+      "type": "percentage",
+      "original_value": "7.1%",
+      "injected_value": "0.9%",
+      "original_numeric": "7.1",
+      "injected_numeric": "0.9",
+      "position_char": 1024,
+      "sentence_approx": 4,
+      "perturbation_delta": -6.2272
+    },
+    {
+      "hallucination_id": "FB_063_38B981AD_H1",
+      "type": "dollar_amount",
+      "original_value": "$58,658 million",
+      "injected_value": "$71,042 million",
+      "original_numeric": "58658",
+      "injected_numeric": "71042",
+      "position_char": 1103,
+      "sentence_approx": 5,
+      "perturbation_delta": 0.2111
+    }
+  ],
+  "FB_064_7576A9AF": [
+    {
+      "hallucination_id": "FB_064_7576A9AF_H3",
+      "type": "dollar_amount",
+      "original_value": "$14,800 million",
+      "injected_value": "$12,426 million",
+      "original_numeric": "14800",
+      "injected_numeric": "12426",
+      "position_char": 644,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.1604
+    },
+    {
+      "hallucination_id": "FB_064_7576A9AF_H2",
+      "type": "dollar_amount",
+      "original_value": "$15,300 million",
+      "injected_value": "$18,525 million",
+      "original_numeric": "15300",
+      "injected_numeric": "18525",
+      "position_char": 854,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.2108
+    },
+    {
+      "hallucination_id": "FB_064_7576A9AF_H1",
+      "type": "dollar_amount",
+      "original_value": "$15,100 million",
+      "injected_value": "$19,162 million",
+      "original_numeric": "15100",
+      "injected_numeric": "19162",
+      "position_char": 1203,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.269
+    }
+  ],
+  "FB_065_8F3B2425": [
+    {
+      "hallucination_id": "FB_065_8F3B2425_H3",
+      "type": "dollar_amount",
+      "original_value": "$58,658 million",
+      "injected_value": "$41,886 million",
+      "original_numeric": "58658",
+      "injected_numeric": "41886",
+      "position_char": 329,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.2859
+    },
+    {
+      "hallucination_id": "FB_065_8F3B2425_H2",
+      "type": "dollar_amount",
+      "original_value": "$26,210 million",
+      "injected_value": "$18,532 million",
+      "original_numeric": "26210",
+      "injected_numeric": "18532",
+      "position_char": 752,
+      "sentence_approx": 7,
+      "perturbation_delta": -0.2929
+    },
+    {
+      "hallucination_id": "FB_065_8F3B2425_H1",
+      "type": "dollar_amount",
+      "original_value": "$382 billion",
+      "injected_value": "$469 billion",
+      "original_numeric": "382",
+      "injected_numeric": "469",
+      "position_char": 1058,
+      "sentence_approx": 10,
+      "perturbation_delta": 0.2272
+    }
+  ],
+  "FB_066_4C000BFE": [],
+  "FB_067_92C7D508": [
+    {
+      "hallucination_id": "FB_067_92C7D508_H3",
+      "type": "percentage",
+      "original_value": "20.0%",
+      "injected_value": "9.5%",
+      "original_numeric": "20.0",
+      "injected_numeric": "9.5",
+      "position_char": 103,
+      "sentence_approx": 1,
+      "perturbation_delta": -10.5072
+    },
+    {
+      "hallucination_id": "FB_067_92C7D508_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,200 million",
+      "injected_value": "$1,513 million",
+      "original_numeric": "1200",
+      "injected_numeric": "1513",
+      "position_char": 288,
+      "sentence_approx": 5,
+      "perturbation_delta": 0.261
+    },
+    {
+      "hallucination_id": "FB_067_92C7D508_H1",
+      "type": "dollar_amount",
+      "original_value": "$5,500 million",
+      "injected_value": "$3,936 million",
+      "original_numeric": "5500",
+      "injected_numeric": "3936",
+      "position_char": 602,
+      "sentence_approx": 8,
+      "perturbation_delta": -0.2844
+    }
+  ],
+  "FB_068_46FFC913": [
+    {
+      "hallucination_id": "FB_068_46FFC913_H2",
+      "type": "dollar_amount",
+      "original_value": "$86,180.5 million",
+      "injected_value": "$58,656.0 million",
+      "original_numeric": "86180.5",
+      "injected_numeric": "58656.0",
+      "position_char": 417,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.3194
+    },
+    {
+      "hallucination_id": "FB_068_46FFC913_H1",
+      "type": "percentage",
+      "original_value": "1.45%",
+      "injected_value": "0.01%",
+      "original_numeric": "1.45",
+      "injected_numeric": "0.01",
+      "position_char": 550,
+      "sentence_approx": 4,
+      "perturbation_delta": -11.0708
+    }
+  ],
+  "FB_069_15B93D82": [
+    {
+      "hallucination_id": "FB_069_15B93D82_H2",
+      "type": "percentage",
+      "original_value": "44.2%",
+      "injected_value": "51.5%",
+      "original_numeric": "44.2",
+      "injected_numeric": "51.5",
+      "position_char": 126,
+      "sentence_approx": 1,
+      "perturbation_delta": 7.2957
+    },
+    {
+      "hallucination_id": "FB_069_15B93D82_H1",
+      "type": "dollar_amount",
+      "original_value": "$33,014 million",
+      "injected_value": "$25,413 million",
+      "original_numeric": "33014",
+      "injected_numeric": "25413",
+      "position_char": 648,
+      "sentence_approx": 4,
+      "perturbation_delta": -0.2302
+    }
+  ],
+  "FB_070_4418F850": [
+    {
+      "hallucination_id": "FB_070_4418F850_H3",
+      "type": "dollar_amount",
+      "original_value": "$7,964 million",
+      "injected_value": "$5,694 million",
+      "original_numeric": "7964",
+      "injected_numeric": "5694",
+      "position_char": 142,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.285
+    },
+    {
+      "hallucination_id": "FB_070_4418F850_H2",
+      "type": "dollar_amount",
+      "original_value": "$11,952 million",
+      "injected_value": "$14,585 million",
+      "original_numeric": "11952",
+      "injected_numeric": "14585",
+      "position_char": 211,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.2203
+    },
+    {
+      "hallucination_id": "FB_070_4418F850_H1",
+      "type": "dollar_amount",
+      "original_value": "$11,952 million",
+      "injected_value": "$14,512 million",
+      "original_numeric": "11952",
+      "injected_numeric": "14512",
+      "position_char": 504,
+      "sentence_approx": 4,
+      "perturbation_delta": 0.2142
+    }
+  ],
+  "FB_071_0CB99E74": [
+    {
+      "hallucination_id": "FB_071_0CB99E74_H3",
+      "type": "dollar_amount",
+      "original_value": "$3,167 million",
+      "injected_value": "$4,292 million",
+      "original_numeric": "3167",
+      "injected_numeric": "4292",
+      "position_char": 879,
+      "sentence_approx": 6,
+      "perturbation_delta": 0.3552
+    },
+    {
+      "hallucination_id": "FB_071_0CB99E74_H2",
+      "type": "dollar_amount",
+      "original_value": "$111 million",
+      "injected_value": "$73 million",
+      "original_numeric": "111",
+      "injected_numeric": "73",
+      "position_char": 1411,
+      "sentence_approx": 8,
+      "perturbation_delta": -0.3454
+    },
+    {
+      "hallucination_id": "FB_071_0CB99E74_H1",
+      "type": "dollar_amount",
+      "original_value": "$10,248 million",
+      "injected_value": "$7,381 million",
+      "original_numeric": "10248",
+      "injected_numeric": "7381",
+      "position_char": 1459,
+      "sentence_approx": 9,
+      "perturbation_delta": -0.2797
+    }
+  ],
+  "FB_072_05A484DC": [
+    {
+      "hallucination_id": "FB_072_05A484DC_H2",
+      "type": "dollar_amount",
+      "original_value": "$11,500 million",
+      "injected_value": "$8,255 million",
+      "original_numeric": "11500",
+      "injected_numeric": "8255",
+      "position_char": 200,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.2822
+    },
+    {
+      "hallucination_id": "FB_072_05A484DC_H1",
+      "type": "large_number",
+      "original_value": "3,206",
+      "injected_value": "2,118",
+      "original_numeric": "3206",
+      "injected_numeric": "2118",
+      "position_char": 357,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3393
+    }
+  ],
+  "FB_073_5495DBB9": [
+    {
+      "hallucination_id": "FB_073_5495DBB9_H3",
+      "type": "percentage",
+      "original_value": "13.9%",
+      "injected_value": "9.9%",
+      "original_numeric": "13.9",
+      "injected_numeric": "9.9",
+      "position_char": 201,
+      "sentence_approx": 2,
+      "perturbation_delta": -4.0411
+    },
+    {
+      "hallucination_id": "FB_073_5495DBB9_H2",
+      "type": "dollar_amount",
+      "original_value": "$264 million",
+      "injected_value": "$221 million",
+      "original_numeric": "264",
+      "injected_numeric": "221",
+      "position_char": 397,
+      "sentence_approx": 5,
+      "perturbation_delta": -0.1646
+    },
+    {
+      "hallucination_id": "FB_073_5495DBB9_H1",
+      "type": "dollar_amount",
+      "original_value": "$292 million",
+      "injected_value": "$207 million",
+      "original_numeric": "292",
+      "injected_numeric": "207",
+      "position_char": 506,
+      "sentence_approx": 5,
+      "perturbation_delta": -0.2914
+    }
+  ],
+  "FB_074_499976A7": [
+    {
+      "hallucination_id": "FB_074_499976A7_H2",
+      "type": "dollar_amount",
+      "original_value": "$8,108 million",
+      "injected_value": "$6,078 million",
+      "original_numeric": "8108",
+      "injected_numeric": "6078",
+      "position_char": 482,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2503
+    },
+    {
+      "hallucination_id": "FB_074_499976A7_H1",
+      "type": "dollar_amount",
+      "original_value": "$7,400 million",
+      "injected_value": "$9,948 million",
+      "original_numeric": "7400",
+      "injected_numeric": "9948",
+      "position_char": 770,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.3444
+    }
+  ],
+  "FB_075_D5F39BB5": [
+    {
+      "hallucination_id": "FB_075_D5F39BB5_H2",
+      "type": "dollar_amount",
+      "original_value": "$59,431 million",
+      "injected_value": "$38,256 million",
+      "original_numeric": "59431",
+      "injected_numeric": "38256",
+      "position_char": 99,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.3563
+    },
+    {
+      "hallucination_id": "FB_075_D5F39BB5_H1",
+      "type": "dollar_amount",
+      "original_value": "$53,189 million",
+      "injected_value": "$41,694 million",
+      "original_numeric": "53189",
+      "injected_numeric": "41694",
+      "position_char": 211,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2161
+    }
+  ],
+  "FB_076_1BF5949C": [
+    {
+      "hallucination_id": "FB_076_1BF5949C_H3",
+      "type": "dollar_amount",
+      "original_value": "$194,579 million",
+      "injected_value": "$124,200 million",
+      "original_numeric": "194579",
+      "injected_numeric": "124200",
+      "position_char": 71,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.3617
+    },
+    {
+      "hallucination_id": "FB_076_1BF5949C_H2",
+      "type": "dollar_amount",
+      "original_value": "$21,643 million",
+      "injected_value": "$27,991 million",
+      "original_numeric": "21643",
+      "injected_numeric": "27991",
+      "position_char": 225,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.2933
+    },
+    {
+      "hallucination_id": "FB_076_1BF5949C_H1",
+      "type": "dollar_amount",
+      "original_value": "$22,389 million",
+      "injected_value": "$29,388 million",
+      "original_numeric": "22389",
+      "injected_numeric": "29388",
+      "position_char": 604,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.3126
+    }
+  ],
+  "FB_077_6547C156": [
+    {
+      "hallucination_id": "FB_077_6547C156_H3",
+      "type": "dollar_amount",
+      "original_value": "$3,100 million",
+      "injected_value": "$2,148 million",
+      "original_numeric": "3100",
+      "injected_numeric": "2148",
+      "position_char": 84,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.3072
+    },
+    {
+      "hallucination_id": "FB_077_6547C156_H2",
+      "type": "dollar_amount",
+      "original_value": "$2,500 million",
+      "injected_value": "$3,128 million",
+      "original_numeric": "2500",
+      "injected_numeric": "3128",
+      "position_char": 502,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.2512
+    },
+    {
+      "hallucination_id": "FB_077_6547C156_H1",
+      "type": "dollar_amount",
+      "original_value": "$128,000 million",
+      "injected_value": "$78,204 million",
+      "original_numeric": "128000",
+      "injected_numeric": "78204",
+      "position_char": 603,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.389
+    }
+  ],
+  "FB_078_F8A3C776": [
+    {
+      "hallucination_id": "FB_078_F8A3C776_H2",
+      "type": "dollar_amount",
+      "original_value": "$3.0 billion",
+      "injected_value": "$2.0 billion",
+      "original_numeric": "3.0",
+      "injected_numeric": "2.0",
+      "position_char": 741,
+      "sentence_approx": 6,
+      "perturbation_delta": -0.3456
+    },
+    {
+      "hallucination_id": "FB_078_F8A3C776_H1",
+      "type": "dollar_amount",
+      "original_value": "$2.0 billion",
+      "injected_value": "$1.4 billion",
+      "original_numeric": "2.0",
+      "injected_numeric": "1.4",
+      "position_char": 1044,
+      "sentence_approx": 8,
+      "perturbation_delta": -0.3041
+    }
+  ],
+  "FB_079_C8770283": [
+    {
+      "hallucination_id": "FB_079_C8770283_H3",
+      "type": "dollar_amount",
+      "original_value": "$0.50 ",
+      "injected_value": "$0.68 ",
+      "original_numeric": "0.50",
+      "injected_numeric": "0.68",
+      "position_char": 131,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.3553
+    },
+    {
+      "hallucination_id": "FB_079_C8770283_H2",
+      "type": "dollar_amount",
+      "original_value": "$0.50 ",
+      "injected_value": "$0.69 ",
+      "original_numeric": "0.50",
+      "injected_numeric": "0.69",
+      "position_char": 397,
+      "sentence_approx": 5,
+      "perturbation_delta": 0.3708
+    },
+    {
+      "hallucination_id": "FB_079_C8770283_H1",
+      "type": "dollar_amount",
+      "original_value": "$1.98 ",
+      "injected_value": "$1.25 ",
+      "original_numeric": "1.98",
+      "injected_numeric": "1.25",
+      "position_char": 450,
+      "sentence_approx": 7,
+      "perturbation_delta": -0.3703
+    }
+  ],
+  "FB_080_C1FBD6FC": [],
+  "FB_081_4E1CC3D9": [
+    {
+      "hallucination_id": "FB_081_4E1CC3D9_H2",
+      "type": "large_number",
+      "original_value": "48,123,456",
+      "injected_value": "63,263,625",
+      "original_numeric": "48123456",
+      "injected_numeric": "63263625",
+      "position_char": 343,
+      "sentence_approx": 6,
+      "perturbation_delta": 0.3146
+    },
+    {
+      "hallucination_id": "FB_081_4E1CC3D9_H1",
+      "type": "large_number",
+      "original_value": "9,876,543",
+      "injected_value": "12,416,701",
+      "original_numeric": "9876543",
+      "injected_numeric": "12416701",
+      "position_char": 764,
+      "sentence_approx": 15,
+      "perturbation_delta": 0.2572
+    }
+  ],
+  "FB_082_4FFC55E4": [
+    {
+      "hallucination_id": "FB_082_4FFC55E4_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,059 million",
+      "injected_value": "$1,334 million",
+      "original_numeric": "1059",
+      "injected_numeric": "1334",
+      "position_char": 174,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.2594
+    },
+    {
+      "hallucination_id": "FB_082_4FFC55E4_H1",
+      "type": "dollar_amount",
+      "original_value": "$30 million",
+      "injected_value": "$37 million",
+      "original_numeric": "30",
+      "injected_numeric": "37",
+      "position_char": 1880,
+      "sentence_approx": 11,
+      "perturbation_delta": 0.2245
+    }
+  ],
+  "FB_083_62A760DF": [
+    {
+      "hallucination_id": "FB_083_62A760DF_H3",
+      "type": "dollar_amount",
+      "original_value": "$2,972 million",
+      "injected_value": "$3,586 million",
+      "original_numeric": "2972",
+      "injected_numeric": "3586",
+      "position_char": 430,
+      "sentence_approx": 4,
+      "perturbation_delta": 0.2066
+    },
+    {
+      "hallucination_id": "FB_083_62A760DF_H2",
+      "type": "dollar_amount",
+      "original_value": "$2,731 million",
+      "injected_value": "$3,712 million",
+      "original_numeric": "2731",
+      "injected_numeric": "3712",
+      "position_char": 671,
+      "sentence_approx": 6,
+      "perturbation_delta": 0.3593
+    },
+    {
+      "hallucination_id": "FB_083_62A760DF_H1",
+      "type": "dollar_amount",
+      "original_value": "$3,556 million",
+      "injected_value": "$2,326 million",
+      "original_numeric": "3556",
+      "injected_numeric": "2326",
+      "position_char": 789,
+      "sentence_approx": 7,
+      "perturbation_delta": -0.3459
+    }
+  ],
+  "FB_084_403F35B5": [
+    {
+      "hallucination_id": "FB_084_403F35B5_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,205 million",
+      "injected_value": "$952 million",
+      "original_numeric": "1205",
+      "injected_numeric": "952",
+      "position_char": 84,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2099
+    },
+    {
+      "hallucination_id": "FB_084_403F35B5_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,205 million",
+      "injected_value": "$735 million",
+      "original_numeric": "1205",
+      "injected_numeric": "735",
+      "position_char": 406,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.3898
+    }
+  ],
+  "FB_085_149EBAE9": [
+    {
+      "hallucination_id": "FB_085_149EBAE9_H3",
+      "type": "dollar_amount",
+      "original_value": "$1,174 million",
+      "injected_value": "$772 million",
+      "original_numeric": "1174",
+      "injected_numeric": "772",
+      "position_char": 345,
+      "sentence_approx": 4,
+      "perturbation_delta": -0.3422
+    },
+    {
+      "hallucination_id": "FB_085_149EBAE9_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,174 million",
+      "injected_value": "$898 million",
+      "original_numeric": "1174",
+      "injected_numeric": "898",
+      "position_char": 541,
+      "sentence_approx": 6,
+      "perturbation_delta": -0.2354
+    },
+    {
+      "hallucination_id": "FB_085_149EBAE9_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,905 million",
+      "injected_value": "$1,353 million",
+      "original_numeric": "1905",
+      "injected_numeric": "1353",
+      "position_char": 622,
+      "sentence_approx": 6,
+      "perturbation_delta": -0.2898
+    }
+  ],
+  "FB_086_889F46BB": [
+    {
+      "hallucination_id": "FB_086_889F46BB_H3",
+      "type": "dollar_amount",
+      "original_value": "$93,775 million",
+      "injected_value": "$70,366 million",
+      "original_numeric": "93775",
+      "injected_numeric": "70366",
+      "position_char": 202,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2496
+    },
+    {
+      "hallucination_id": "FB_086_889F46BB_H2",
+      "type": "dollar_amount",
+      "original_value": "$16,676 million",
+      "injected_value": "$22,612 million",
+      "original_numeric": "16676",
+      "injected_numeric": "22612",
+      "position_char": 405,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.356
+    },
+    {
+      "hallucination_id": "FB_086_889F46BB_H1",
+      "type": "dollar_amount",
+      "original_value": "$14,714 million",
+      "injected_value": "$8,873 million",
+      "original_numeric": "14714",
+      "injected_numeric": "8873",
+      "position_char": 605,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.397
+    }
+  ],
+  "FB_087_99FD2FB2": [
+    {
+      "hallucination_id": "FB_087_99FD2FB2_H3",
+      "type": "percentage",
+      "original_value": "81.1%",
+      "injected_value": "70.3%",
+      "original_numeric": "81.1",
+      "injected_numeric": "70.3",
+      "position_char": 188,
+      "sentence_approx": 1,
+      "perturbation_delta": -10.7797
+    },
+    {
+      "hallucination_id": "FB_087_99FD2FB2_H2",
+      "type": "dollar_amount",
+      "original_value": "$15,157 million",
+      "injected_value": "$20,998 million",
+      "original_numeric": "15157",
+      "injected_numeric": "20998",
+      "position_char": 1061,
+      "sentence_approx": 12,
+      "perturbation_delta": 0.3853
+    },
+    {
+      "hallucination_id": "FB_087_99FD2FB2_H1",
+      "type": "dollar_amount",
+      "original_value": "$67,427 million",
+      "injected_value": "$84,991 million",
+      "original_numeric": "67427",
+      "injected_numeric": "84991",
+      "position_char": 1159,
+      "sentence_approx": 13,
+      "perturbation_delta": 0.2605
+    }
+  ],
+  "FB_088_DD231ABD": [
+    {
+      "hallucination_id": "FB_088_DD231ABD_H3",
+      "type": "dollar_amount",
+      "original_value": "$94,943 million",
+      "injected_value": "$130,473 million",
+      "original_numeric": "94943",
+      "injected_numeric": "130473",
+      "position_char": 84,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.3742
+    },
+    {
+      "hallucination_id": "FB_088_DD231ABD_H2",
+      "type": "dollar_amount",
+      "original_value": "$15,120 million",
+      "injected_value": "$19,470 million",
+      "original_numeric": "15120",
+      "injected_numeric": "19470",
+      "position_char": 701,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.2877
+    },
+    {
+      "hallucination_id": "FB_088_DD231ABD_H1",
+      "type": "dollar_amount",
+      "original_value": "$14,230 million",
+      "injected_value": "$18,618 million",
+      "original_numeric": "14230",
+      "injected_numeric": "18618",
+      "position_char": 908,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.3084
+    }
+  ],
+  "FB_089_CF6163C6": [
+    {
+      "hallucination_id": "FB_089_CF6163C6_H2",
+      "type": "dollar_amount",
+      "original_value": "$2.35 ",
+      "injected_value": "$3.05 ",
+      "original_numeric": "2.35",
+      "injected_numeric": "3.05",
+      "position_char": 117,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.2996
+    },
+    {
+      "hallucination_id": "FB_089_CF6163C6_H1",
+      "type": "percentage",
+      "original_value": "22.8%",
+      "injected_value": "31.6%",
+      "original_numeric": "22.8",
+      "injected_numeric": "31.6",
+      "position_char": 476,
+      "sentence_approx": 10,
+      "perturbation_delta": 8.8459
+    }
+  ],
+  "FB_090_72CFB567": [
+    {
+      "hallucination_id": "FB_090_72CFB567_H3",
+      "type": "dollar_amount",
+      "original_value": "$46,211 million",
+      "injected_value": "$62,980 million",
+      "original_numeric": "46211",
+      "injected_numeric": "62980",
+      "position_char": 570,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.3629
+    },
+    {
+      "hallucination_id": "FB_090_72CFB567_H2",
+      "type": "dollar_amount",
+      "original_value": "$34,678 million",
+      "injected_value": "$48,060 million",
+      "original_numeric": "34678",
+      "injected_numeric": "48060",
+      "position_char": 690,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.3859
+    },
+    {
+      "hallucination_id": "FB_090_72CFB567_H1",
+      "type": "dollar_amount",
+      "original_value": "$34,678 million",
+      "injected_value": "$40,543 million",
+      "original_numeric": "34678",
+      "injected_numeric": "40543",
+      "position_char": 709,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.1691
+    }
+  ],
+  "FB_091_82F6C167": [
+    {
+      "hallucination_id": "FB_091_82F6C167_H3",
+      "type": "dollar_amount",
+      "original_value": "$3,694 million",
+      "injected_value": "$4,690 million",
+      "original_numeric": "3694",
+      "injected_numeric": "4690",
+      "position_char": 323,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.2697
+    },
+    {
+      "hallucination_id": "FB_091_82F6C167_H2",
+      "type": "dollar_amount",
+      "original_value": "$3,650 million",
+      "injected_value": "$2,388 million",
+      "original_numeric": "3650",
+      "injected_numeric": "2388",
+      "position_char": 418,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3457
+    },
+    {
+      "hallucination_id": "FB_091_82F6C167_H1",
+      "type": "dollar_amount",
+      "original_value": "$3,580 million",
+      "injected_value": "$2,481 million",
+      "original_numeric": "3580",
+      "injected_numeric": "2481",
+      "position_char": 513,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3069
+    }
+  ],
+  "FB_092_1FF70EDD": [
+    {
+      "hallucination_id": "FB_092_1FF70EDD_H1",
+      "type": "dollar_amount",
+      "original_value": "$13.0 billion",
+      "injected_value": "$16.9 billion",
+      "original_numeric": "13.0",
+      "injected_numeric": "16.9",
+      "position_char": 166,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.3024
+    }
+  ],
+  "FB_093_3013F02B": [
+    {
+      "hallucination_id": "FB_093_3013F02B_H1",
+      "type": "dollar_amount",
+      "original_value": "$3,500 million",
+      "injected_value": "$4,412 million",
+      "original_numeric": "3500",
+      "injected_numeric": "4412",
+      "position_char": 129,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.2607
+    }
+  ],
+  "FB_094_62DF77C2": [
+    {
+      "hallucination_id": "FB_094_62DF77C2_H3",
+      "type": "dollar_amount",
+      "original_value": "$24,000 million",
+      "injected_value": "$32,304 million",
+      "original_numeric": "24000",
+      "injected_numeric": "32304",
+      "position_char": 227,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.346
+    },
+    {
+      "hallucination_id": "FB_094_62DF77C2_H2",
+      "type": "percentage",
+      "original_value": "19.87%",
+      "injected_value": "26.36%",
+      "original_numeric": "19.87",
+      "injected_numeric": "26.36",
+      "position_char": 743,
+      "sentence_approx": 2,
+      "perturbation_delta": 6.4922
+    },
+    {
+      "hallucination_id": "FB_094_62DF77C2_H1",
+      "type": "percentage",
+      "original_value": "19.87%",
+      "injected_value": "25.10%",
+      "original_numeric": "19.87",
+      "injected_numeric": "25.10",
+      "position_char": 1518,
+      "sentence_approx": 7,
+      "perturbation_delta": 5.2279
+    }
+  ],
+  "FB_095_25B2B23C": [
+    {
+      "hallucination_id": "FB_095_25B2B23C_H2",
+      "type": "dollar_amount",
+      "original_value": "$14,170 million",
+      "injected_value": "$9,112 million",
+      "original_numeric": "14170",
+      "injected_numeric": "9112",
+      "position_char": 328,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.357
+    },
+    {
+      "hallucination_id": "FB_095_25B2B23C_H1",
+      "type": "dollar_amount",
+      "original_value": "$4,020 million",
+      "injected_value": "$5,399 million",
+      "original_numeric": "4020",
+      "injected_numeric": "5399",
+      "position_char": 462,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.3429
+    }
+  ],
+  "FB_096_3F49DA9A": [
+    {
+      "hallucination_id": "FB_096_3F49DA9A_H3",
+      "type": "dollar_amount",
+      "original_value": "$3,478,000 million",
+      "injected_value": "$2,632,855 million",
+      "original_numeric": "3478000",
+      "injected_numeric": "2632855",
+      "position_char": 181,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.243
+    },
+    {
+      "hallucination_id": "FB_096_3F49DA9A_H2",
+      "type": "dollar_amount",
+      "original_value": "$208,000 million",
+      "injected_value": "$126,259 million",
+      "original_numeric": "208000",
+      "injected_numeric": "126259",
+      "position_char": 299,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.393
+    },
+    {
+      "hallucination_id": "FB_096_3F49DA9A_H1",
+      "type": "large_number",
+      "original_value": "3,000",
+      "injected_value": "1,899",
+      "original_numeric": "3000",
+      "injected_numeric": "1899",
+      "position_char": 440,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3669
+    }
+  ],
+  "FB_097_2BA7758E": [
+    {
+      "hallucination_id": "FB_097_2BA7758E_H2",
+      "type": "percentage",
+      "original_value": "76.8%",
+      "injected_value": "69.6%",
+      "original_numeric": "76.8",
+      "injected_numeric": "69.6",
+      "position_char": 109,
+      "sentence_approx": 2,
+      "perturbation_delta": -7.1807
+    },
+    {
+      "hallucination_id": "FB_097_2BA7758E_H1",
+      "type": "percentage",
+      "original_value": "76.8%",
+      "injected_value": "70.4%",
+      "original_numeric": "76.8",
+      "injected_numeric": "70.4",
+      "position_char": 385,
+      "sentence_approx": 5,
+      "perturbation_delta": -6.3556
+    }
+  ],
+  "FB_098_7154A728": [
+    {
+      "hallucination_id": "FB_098_7154A728_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,000 million",
+      "injected_value": "$801 million",
+      "original_numeric": "1000",
+      "injected_numeric": "801",
+      "position_char": 431,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.1993
+    },
+    {
+      "hallucination_id": "FB_098_7154A728_H1",
+      "type": "dollar_amount",
+      "original_value": "$8,640 million",
+      "injected_value": "$12,001 million",
+      "original_numeric": "8640",
+      "injected_numeric": "12001",
+      "position_char": 597,
+      "sentence_approx": 4,
+      "perturbation_delta": 0.389
+    }
+  ],
+  "FB_099_6BE111D5": [
+    {
+      "hallucination_id": "FB_099_6BE111D5_H3",
+      "type": "dollar_amount",
+      "original_value": "$23 million",
+      "injected_value": "$18 million",
+      "original_numeric": "23",
+      "injected_numeric": "18",
+      "position_char": 142,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.2112
+    },
+    {
+      "hallucination_id": "FB_099_6BE111D5_H2",
+      "type": "dollar_amount",
+      "original_value": "$7,500 million",
+      "injected_value": "$6,231 million",
+      "original_numeric": "7500",
+      "injected_numeric": "6231",
+      "position_char": 425,
+      "sentence_approx": 4,
+      "perturbation_delta": -0.1693
+    },
+    {
+      "hallucination_id": "FB_099_6BE111D5_H1",
+      "type": "dollar_amount",
+      "original_value": "$7,200 million",
+      "injected_value": "$9,150 million",
+      "original_numeric": "7200",
+      "injected_numeric": "9150",
+      "position_char": 543,
+      "sentence_approx": 5,
+      "perturbation_delta": 0.2708
+    }
+  ],
+  "FB_100_6814F36E": [
+    {
+      "hallucination_id": "FB_100_6814F36E_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,748 million",
+      "injected_value": "$1,172 million",
+      "original_numeric": "1748",
+      "injected_numeric": "1172",
+      "position_char": 305,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.3294
+    },
+    {
+      "hallucination_id": "FB_100_6814F36E_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,698 million",
+      "injected_value": "$2,011 million",
+      "original_numeric": "1698",
+      "injected_numeric": "2011",
+      "position_char": 521,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.1844
+    }
+  ],
+  "FB_101_79109208": [
+    {
+      "hallucination_id": "FB_101_79109208_H2",
+      "type": "dollar_amount",
+      "original_value": "$45,200 million",
+      "injected_value": "$37,987 million",
+      "original_numeric": "45200",
+      "injected_numeric": "37987",
+      "position_char": 483,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.1596
+    },
+    {
+      "hallucination_id": "FB_101_79109208_H1",
+      "type": "dollar_amount",
+      "original_value": "$46,800 million",
+      "injected_value": "$64,022 million",
+      "original_numeric": "46800",
+      "injected_numeric": "64022",
+      "position_char": 524,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.368
+    }
+  ],
+  "FB_102_F5764A3D": [
+    {
+      "hallucination_id": "FB_102_F5764A3D_H2",
+      "type": "dollar_amount",
+      "original_value": "$22,189 million",
+      "injected_value": "$16,467 million",
+      "original_numeric": "22189",
+      "injected_numeric": "16467",
+      "position_char": 147,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2579
+    },
+    {
+      "hallucination_id": "FB_102_F5764A3D_H1",
+      "type": "dollar_amount",
+      "original_value": "$12,242 million",
+      "injected_value": "$14,968 million",
+      "original_numeric": "12242",
+      "injected_numeric": "14968",
+      "position_char": 726,
+      "sentence_approx": 5,
+      "perturbation_delta": 0.2227
+    }
+  ],
+  "FB_103_98E6E9E2": [
+    {
+      "hallucination_id": "FB_103_98E6E9E2_H2",
+      "type": "dollar_amount",
+      "original_value": "$65,398 million",
+      "injected_value": "$90,117 million",
+      "original_numeric": "65398",
+      "injected_numeric": "90117",
+      "position_char": 110,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.378
+    },
+    {
+      "hallucination_id": "FB_103_98E6E9E2_H1",
+      "type": "dollar_amount",
+      "original_value": "$67,045 million",
+      "injected_value": "$87,879 million",
+      "original_numeric": "67045",
+      "injected_numeric": "87879",
+      "position_char": 214,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.3107
+    }
+  ],
+  "FB_104_AE0FFD33": [
+    {
+      "hallucination_id": "FB_104_AE0FFD33_H3",
+      "type": "dollar_amount",
+      "original_value": "$1,479 million",
+      "injected_value": "$952 million",
+      "original_numeric": "1479",
+      "injected_numeric": "952",
+      "position_char": 90,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.3563
+    },
+    {
+      "hallucination_id": "FB_104_AE0FFD33_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,379 million",
+      "injected_value": "$1,050 million",
+      "original_numeric": "1379",
+      "injected_numeric": "1050",
+      "position_char": 205,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2384
+    },
+    {
+      "hallucination_id": "FB_104_AE0FFD33_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,295 million",
+      "injected_value": "$1,084 million",
+      "original_numeric": "1295",
+      "injected_numeric": "1084",
+      "position_char": 300,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.1626
+    }
+  ],
+  "FB_105_61DCE693": [
+    {
+      "hallucination_id": "FB_105_61DCE693_H3",
+      "type": "dollar_amount",
+      "original_value": "$12,865 million",
+      "injected_value": "$8,743 million",
+      "original_numeric": "12865",
+      "injected_numeric": "8743",
+      "position_char": 448,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.3204
+    },
+    {
+      "hallucination_id": "FB_105_61DCE693_H2",
+      "type": "dollar_amount",
+      "original_value": "$13,165 million",
+      "injected_value": "$17,790 million",
+      "original_numeric": "13165",
+      "injected_numeric": "17790",
+      "position_char": 551,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.3513
+    },
+    {
+      "hallucination_id": "FB_105_61DCE693_H1",
+      "type": "percentage",
+      "original_value": "19.74%",
+      "injected_value": "12.12%",
+      "original_numeric": "19.74",
+      "injected_numeric": "12.12",
+      "position_char": 944,
+      "sentence_approx": 3,
+      "perturbation_delta": -7.6235
+    }
+  ],
+  "FB_106_EB0A9203": [
+    {
+      "hallucination_id": "FB_106_EB0A9203_H2",
+      "type": "dollar_amount",
+      "original_value": "$2 million",
+      "injected_value": "$1 million",
+      "original_numeric": "2",
+      "injected_numeric": "1",
+      "position_char": 213,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.254
+    }
+  ],
+  "FB_107_B17259C6": [
+    {
+      "hallucination_id": "FB_107_B17259C6_H2",
+      "type": "dollar_amount",
+      "original_value": "$394 million",
+      "injected_value": "$532 million",
+      "original_numeric": "394",
+      "injected_numeric": "532",
+      "position_char": 307,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.3492
+    },
+    {
+      "hallucination_id": "FB_107_B17259C6_H1",
+      "type": "dollar_amount",
+      "original_value": "$96 million",
+      "injected_value": "$59 million",
+      "original_numeric": "96",
+      "injected_numeric": "59",
+      "position_char": 700,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.3881
+    }
+  ],
+  "FB_108_8E72B311": [
+    {
+      "hallucination_id": "FB_108_8E72B311_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,158 million",
+      "injected_value": "$793 million",
+      "original_numeric": "1158",
+      "injected_numeric": "793",
+      "position_char": 386,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.3155
+    },
+    {
+      "hallucination_id": "FB_108_8E72B311_H1",
+      "type": "dollar_amount",
+      "original_value": "$410 million",
+      "injected_value": "$301 million",
+      "original_numeric": "410",
+      "injected_numeric": "301",
+      "position_char": 583,
+      "sentence_approx": 6,
+      "perturbation_delta": -0.267
+    }
+  ],
+  "FB_109_F3781DA6": [
+    {
+      "hallucination_id": "FB_109_F3781DA6_H2",
+      "type": "dollar_amount",
+      "original_value": "$6,324 million",
+      "injected_value": "$4,868 million",
+      "original_numeric": "6324",
+      "injected_numeric": "4868",
+      "position_char": 333,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.2302
+    },
+    {
+      "hallucination_id": "FB_109_F3781DA6_H1",
+      "type": "dollar_amount",
+      "original_value": "$251 million",
+      "injected_value": "$210 million",
+      "original_numeric": "251",
+      "injected_numeric": "210",
+      "position_char": 543,
+      "sentence_approx": 5,
+      "perturbation_delta": -0.1614
+    }
+  ],
+  "FB_110_74F7847F": [
+    {
+      "hallucination_id": "FB_110_74F7847F_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,500 million",
+      "injected_value": "$1,210 million",
+      "original_numeric": "1500",
+      "injected_numeric": "1210",
+      "position_char": 160,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.1933
+    },
+    {
+      "hallucination_id": "FB_110_74F7847F_H1",
+      "type": "dollar_amount",
+      "original_value": "$900 million",
+      "injected_value": "$730 million",
+      "original_numeric": "900",
+      "injected_numeric": "730",
+      "position_char": 247,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.1893
+    }
+  ],
+  "FB_111_A4B199F5": [
+    {
+      "hallucination_id": "FB_111_A4B199F5_H3",
+      "type": "dollar_amount",
+      "original_value": "$24,060 million",
+      "injected_value": "$15,037 million",
+      "original_numeric": "24060",
+      "injected_numeric": "15037",
+      "position_char": 118,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.375
+    },
+    {
+      "hallucination_id": "FB_111_A4B199F5_H2",
+      "type": "dollar_amount",
+      "original_value": "$23,198 million",
+      "injected_value": "$19,557 million",
+      "original_numeric": "23198",
+      "injected_numeric": "19557",
+      "position_char": 233,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.1569
+    },
+    {
+      "hallucination_id": "FB_111_A4B199F5_H1",
+      "type": "dollar_amount",
+      "original_value": "$23,674 million",
+      "injected_value": "$28,477 million",
+      "original_numeric": "23674",
+      "injected_numeric": "28477",
+      "position_char": 328,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.2029
+    }
+  ],
+  "FB_112_2DC55A31": [
+    {
+      "hallucination_id": "FB_112_2DC55A31_H2",
+      "type": "dollar_amount",
+      "original_value": "$51,000 million",
+      "injected_value": "$41,918 million",
+      "original_numeric": "51000",
+      "injected_numeric": "41918",
+      "position_char": 116,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.1781
+    },
+    {
+      "hallucination_id": "FB_112_2DC55A31_H1",
+      "type": "dollar_amount",
+      "original_value": "$48,000 million",
+      "injected_value": "$28,845 million",
+      "original_numeric": "48000",
+      "injected_numeric": "28845",
+      "position_char": 219,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.3991
+    }
+  ],
+  "FB_113_30E7F266": [
+    {
+      "hallucination_id": "FB_113_30E7F266_H2",
+      "type": "large_number",
+      "original_value": "13,500",
+      "injected_value": "17,859",
+      "original_numeric": "13500",
+      "injected_numeric": "17859",
+      "position_char": 182,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.3229
+    },
+    {
+      "hallucination_id": "FB_113_30E7F266_H1",
+      "type": "large_number",
+      "original_value": "1,200",
+      "injected_value": "906",
+      "original_numeric": "1200",
+      "injected_numeric": "906",
+      "position_char": 255,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.2447
+    }
+  ],
+  "FB_114_ACC06CE8": [
+    {
+      "hallucination_id": "FB_114_ACC06CE8_H2",
+      "type": "dollar_amount",
+      "original_value": "$4,052 million",
+      "injected_value": "$2,742 million",
+      "original_numeric": "4052",
+      "injected_numeric": "2742",
+      "position_char": 102,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3233
+    },
+    {
+      "hallucination_id": "FB_114_ACC06CE8_H1",
+      "type": "dollar_amount",
+      "original_value": "$2,474 million",
+      "injected_value": "$3,253 million",
+      "original_numeric": "2474",
+      "injected_numeric": "3253",
+      "position_char": 330,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.3149
+    }
+  ],
+  "FB_115_AE55E4C4": [
+    {
+      "hallucination_id": "FB_115_AE55E4C4_H3",
+      "type": "dollar_amount",
+      "original_value": "$12,199 million",
+      "injected_value": "$9,070 million",
+      "original_numeric": "12199",
+      "injected_numeric": "9070",
+      "position_char": 105,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.2565
+    },
+    {
+      "hallucination_id": "FB_115_AE55E4C4_H2",
+      "type": "large_number",
+      "original_value": "32,376",
+      "injected_value": "21,769",
+      "original_numeric": "32376",
+      "injected_numeric": "21769",
+      "position_char": 328,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3276
+    },
+    {
+      "hallucination_id": "FB_115_AE55E4C4_H1",
+      "type": "percentage",
+      "original_value": "37.7%",
+      "injected_value": "47.3%",
+      "original_numeric": "37.7",
+      "injected_numeric": "47.3",
+      "position_char": 1068,
+      "sentence_approx": 8,
+      "perturbation_delta": 9.6416
+    }
+  ],
+  "FB_116_1C09CCA7": [
+    {
+      "hallucination_id": "FB_116_1C09CCA7_H3",
+      "type": "dollar_amount",
+      "original_value": "$7,883 million",
+      "injected_value": "$5,544 million",
+      "original_numeric": "7883",
+      "injected_numeric": "5544",
+      "position_char": 99,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.2968
+    },
+    {
+      "hallucination_id": "FB_116_1C09CCA7_H2",
+      "type": "dollar_amount",
+      "original_value": "$7,477 million",
+      "injected_value": "$9,099 million",
+      "original_numeric": "7477",
+      "injected_numeric": "9099",
+      "position_char": 218,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.2169
+    },
+    {
+      "hallucination_id": "FB_116_1C09CCA7_H1",
+      "type": "dollar_amount",
+      "original_value": "$6,704 million",
+      "injected_value": "$4,680 million",
+      "original_numeric": "6704",
+      "injected_numeric": "4680",
+      "position_char": 317,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3019
+    }
+  ],
+  "FB_117_C880E731": [
+    {
+      "hallucination_id": "FB_117_C880E731_H3",
+      "type": "dollar_amount",
+      "original_value": "$5,200 million",
+      "injected_value": "$6,037 million",
+      "original_numeric": "5200",
+      "injected_numeric": "6037",
+      "position_char": 453,
+      "sentence_approx": 5,
+      "perturbation_delta": 0.161
+    },
+    {
+      "hallucination_id": "FB_117_C880E731_H2",
+      "type": "dollar_amount",
+      "original_value": "$4,951.50 million",
+      "injected_value": "$6,546.86 million",
+      "original_numeric": "4951.50",
+      "injected_numeric": "6546.86",
+      "position_char": 475,
+      "sentence_approx": 5,
+      "perturbation_delta": 0.3222
+    },
+    {
+      "hallucination_id": "FB_117_C880E731_H1",
+      "type": "dollar_amount",
+      "original_value": "$4,951.50 million",
+      "injected_value": "$3,274.29 million",
+      "original_numeric": "4951.50",
+      "injected_numeric": "3274.29",
+      "position_char": 585,
+      "sentence_approx": 7,
+      "perturbation_delta": -0.3387
+    }
+  ],
+  "FB_118_8B6021A4": [
+    {
+      "hallucination_id": "FB_118_8B6021A4_H3",
+      "type": "large_number",
+      "original_value": "1,112",
+      "injected_value": "739",
+      "original_numeric": "1112",
+      "injected_numeric": "739",
+      "position_char": 635,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3357
+    },
+    {
+      "hallucination_id": "FB_118_8B6021A4_H2",
+      "type": "dollar_amount",
+      "original_value": "$5,752 million",
+      "injected_value": "$7,663 million",
+      "original_numeric": "5752",
+      "injected_numeric": "7663",
+      "position_char": 902,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.3322
+    },
+    {
+      "hallucination_id": "FB_118_8B6021A4_H1",
+      "type": "dollar_amount",
+      "original_value": "$5,066 million",
+      "injected_value": "$4,216 million",
+      "original_numeric": "5066",
+      "injected_numeric": "4216",
+      "position_char": 1491,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.1678
+    }
+  ],
+  "FB_119_3CD84B18": [
+    {
+      "hallucination_id": "FB_119_3CD84B18_H3",
+      "type": "dollar_amount",
+      "original_value": "$18,407 million",
+      "injected_value": "$23,876 million",
+      "original_numeric": "18407",
+      "injected_numeric": "23876",
+      "position_char": 101,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.2971
+    },
+    {
+      "hallucination_id": "FB_119_3CD84B18_H2",
+      "type": "dollar_amount",
+      "original_value": "$10,498 million",
+      "injected_value": "$12,740 million",
+      "original_numeric": "10498",
+      "injected_numeric": "12740",
+      "position_char": 398,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.2135
+    },
+    {
+      "hallucination_id": "FB_119_3CD84B18_H1",
+      "type": "dollar_amount",
+      "original_value": "$10,226 million",
+      "injected_value": "$8,689 million",
+      "original_numeric": "10226",
+      "injected_numeric": "8689",
+      "position_char": 779,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.1503
+    }
+  ],
+  "FB_120_223C47BE": [
+    {
+      "hallucination_id": "FB_120_223C47BE_H2",
+      "type": "dollar_amount",
+      "original_value": "$4.2 billion",
+      "injected_value": "$3.2 billion",
+      "original_numeric": "4.2",
+      "injected_numeric": "3.2",
+      "position_char": 223,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.2296
+    },
+    {
+      "hallucination_id": "FB_120_223C47BE_H1",
+      "type": "dollar_amount",
+      "original_value": "$3.4 billion",
+      "injected_value": "$2.5 billion",
+      "original_numeric": "3.4",
+      "injected_numeric": "2.5",
+      "position_char": 330,
+      "sentence_approx": 5,
+      "perturbation_delta": -0.2681
+    }
+  ],
+  "FB_121_C40C01F8": [],
+  "FB_122_04C4BD0A": [],
+  "FB_123_60BE7690": [],
+  "FB_124_C0D9EB5C": [
+    {
+      "hallucination_id": "FB_124_C0D9EB5C_H3",
+      "type": "dollar_amount",
+      "original_value": "$8,613 million",
+      "injected_value": "$6,616 million",
+      "original_numeric": "8613",
+      "injected_numeric": "6616",
+      "position_char": 178,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2319
+    },
+    {
+      "hallucination_id": "FB_124_C0D9EB5C_H2",
+      "type": "dollar_amount",
+      "original_value": "$11,813 million",
+      "injected_value": "$15,021 million",
+      "original_numeric": "11813",
+      "injected_numeric": "15021",
+      "position_char": 249,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.2715
+    },
+    {
+      "hallucination_id": "FB_124_C0D9EB5C_H1",
+      "type": "dollar_amount",
+      "original_value": "$10,200 million",
+      "injected_value": "$6,610 million",
+      "original_numeric": "10200",
+      "injected_numeric": "6610",
+      "position_char": 1149,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.3519
+    }
+  ],
+  "FB_125_E7A2D24B": [
+    {
+      "hallucination_id": "FB_125_E7A2D24B_H3",
+      "type": "percentage",
+      "original_value": "23.9%",
+      "injected_value": "18.6%",
+      "original_numeric": "23.9",
+      "injected_numeric": "18.6",
+      "position_char": 104,
+      "sentence_approx": 1,
+      "perturbation_delta": -5.2866
+    },
+    {
+      "hallucination_id": "FB_125_E7A2D24B_H2",
+      "type": "dollar_amount",
+      "original_value": "$13,209 million",
+      "injected_value": "$17,408 million",
+      "original_numeric": "13209",
+      "injected_numeric": "17408",
+      "position_char": 166,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.3179
+    },
+    {
+      "hallucination_id": "FB_125_E7A2D24B_H1",
+      "type": "dollar_amount",
+      "original_value": "$17,188 million",
+      "injected_value": "$22,497 million",
+      "original_numeric": "17188",
+      "injected_numeric": "22497",
+      "position_char": 791,
+      "sentence_approx": 8,
+      "perturbation_delta": 0.3089
+    }
+  ],
+  "FB_126_3313FCA9": [
+    {
+      "hallucination_id": "FB_126_3313FCA9_H3",
+      "type": "percentage",
+      "original_value": "35.5%",
+      "injected_value": "27.2%",
+      "original_numeric": "35.5",
+      "injected_numeric": "27.2",
+      "position_char": 188,
+      "sentence_approx": 2,
+      "perturbation_delta": -8.3173
+    },
+    {
+      "hallucination_id": "FB_126_3313FCA9_H2",
+      "type": "large_number",
+      "original_value": "355,000,000",
+      "injected_value": "475,408,619",
+      "original_numeric": "355000000",
+      "injected_numeric": "475408619",
+      "position_char": 372,
+      "sentence_approx": 4,
+      "perturbation_delta": 0.3392
+    },
+    {
+      "hallucination_id": "FB_126_3313FCA9_H1",
+      "type": "large_number",
+      "original_value": "645,000,000",
+      "injected_value": "748,272,843",
+      "original_numeric": "645000000",
+      "injected_numeric": "748272843",
+      "position_char": 403,
+      "sentence_approx": 4,
+      "perturbation_delta": 0.1601
+    }
+  ],
+  "FB_127_E1B380E5": [
+    {
+      "hallucination_id": "FB_127_E1B380E5_H2",
+      "type": "dollar_amount",
+      "original_value": "$1.5 billion",
+      "injected_value": "$1.0 billion",
+      "original_numeric": "1.5",
+      "injected_numeric": "1.0",
+      "position_char": 135,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3125
+    },
+    {
+      "hallucination_id": "FB_127_E1B380E5_H1",
+      "type": "dollar_amount",
+      "original_value": "$5.5 billion",
+      "injected_value": "$4.6 billion",
+      "original_numeric": "5.5",
+      "injected_numeric": "4.6",
+      "position_char": 181,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.1561
+    }
+  ],
+  "FB_128_F410AC0E": [
+    {
+      "hallucination_id": "FB_128_F410AC0E_H3",
+      "type": "dollar_amount",
+      "original_value": "$3,000 million",
+      "injected_value": "$4,150 million",
+      "original_numeric": "3000",
+      "injected_numeric": "4150",
+      "position_char": 152,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.3832
+    },
+    {
+      "hallucination_id": "FB_128_F410AC0E_H2",
+      "type": "dollar_amount",
+      "original_value": "$41,173 million",
+      "injected_value": "$27,616 million",
+      "original_numeric": "41173",
+      "injected_numeric": "27616",
+      "position_char": 331,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.3293
+    },
+    {
+      "hallucination_id": "FB_128_F410AC0E_H1",
+      "type": "dollar_amount",
+      "original_value": "$92,575 million",
+      "injected_value": "$107,506 million",
+      "original_numeric": "92575",
+      "injected_numeric": "107506",
+      "position_char": 475,
+      "sentence_approx": 5,
+      "perturbation_delta": 0.1613
+    }
+  ],
+  "FB_129_1F62F697": [
+    {
+      "hallucination_id": "FB_129_1F62F697_H3",
+      "type": "percentage",
+      "original_value": "10%",
+      "injected_value": "14.2%",
+      "original_numeric": "10",
+      "injected_numeric": "14.2",
+      "position_char": 313,
+      "sentence_approx": 2,
+      "perturbation_delta": 4.2192
+    },
+    {
+      "hallucination_id": "FB_129_1F62F697_H2",
+      "type": "percentage",
+      "original_value": "10.3%",
+      "injected_value": "16.9%",
+      "original_numeric": "10.3",
+      "injected_numeric": "16.9",
+      "position_char": 755,
+      "sentence_approx": 5,
+      "perturbation_delta": 6.5824
+    },
+    {
+      "hallucination_id": "FB_129_1F62F697_H1",
+      "type": "dollar_amount",
+      "original_value": "$1.29 ",
+      "injected_value": "$1.00 ",
+      "original_numeric": "1.29",
+      "injected_numeric": "1.00",
+      "position_char": 1084,
+      "sentence_approx": 10,
+      "perturbation_delta": -0.2223
+    }
+  ],
+  "FB_130_B646D047": [
+    {
+      "hallucination_id": "FB_130_B646D047_H3",
+      "type": "percentage",
+      "original_value": "10%",
+      "injected_value": "17.6%",
+      "original_numeric": "10",
+      "injected_numeric": "17.6",
+      "position_char": 136,
+      "sentence_approx": 1,
+      "perturbation_delta": 7.601
+    },
+    {
+      "hallucination_id": "FB_130_B646D047_H2",
+      "type": "percentage",
+      "original_value": "8%",
+      "injected_value": "2.6%",
+      "original_numeric": "8",
+      "injected_numeric": "2.6",
+      "position_char": 168,
+      "sentence_approx": 1,
+      "perturbation_delta": -5.3668
+    },
+    {
+      "hallucination_id": "FB_130_B646D047_H1",
+      "type": "percentage",
+      "original_value": "8%",
+      "injected_value": "17.0%",
+      "original_numeric": "8",
+      "injected_numeric": "17.0",
+      "position_char": 366,
+      "sentence_approx": 3,
+      "perturbation_delta": 9.0396
+    }
+  ],
+  "FB_131_3A78CB5F": [
+    {
+      "hallucination_id": "FB_131_3A78CB5F_H2",
+      "type": "dollar_amount",
+      "original_value": "$12,171 million",
+      "injected_value": "$8,948 million",
+      "original_numeric": "12171",
+      "injected_numeric": "8948",
+      "position_char": 140,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.2648
+    },
+    {
+      "hallucination_id": "FB_131_3A78CB5F_H1",
+      "type": "large_number",
+      "original_value": "11,396",
+      "injected_value": "7,869",
+      "original_numeric": "11396",
+      "injected_numeric": "7869",
+      "position_char": 521,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3095
+    }
+  ],
+  "FB_132_9F7A4F77": [
+    {
+      "hallucination_id": "FB_132_9F7A4F77_H2",
+      "type": "dollar_amount",
+      "original_value": "$20,028 million",
+      "injected_value": "$26,881 million",
+      "original_numeric": "20028",
+      "injected_numeric": "26881",
+      "position_char": 367,
+      "sentence_approx": 4,
+      "perturbation_delta": 0.3422
+    },
+    {
+      "hallucination_id": "FB_132_9F7A4F77_H1",
+      "type": "dollar_amount",
+      "original_value": "$2,200 million",
+      "injected_value": "$1,431 million",
+      "original_numeric": "2200",
+      "injected_numeric": "1431",
+      "position_char": 855,
+      "sentence_approx": 8,
+      "perturbation_delta": -0.3494
+    }
+  ],
+  "FB_133_F4882588": [
+    {
+      "hallucination_id": "FB_133_F4882588_H3",
+      "type": "dollar_amount",
+      "original_value": "$11,400 million",
+      "injected_value": "$14,483 million",
+      "original_numeric": "11400",
+      "injected_numeric": "14483",
+      "position_char": 131,
+      "sentence_approx": 4,
+      "perturbation_delta": 0.2705
+    },
+    {
+      "hallucination_id": "FB_133_F4882588_H2",
+      "type": "dollar_amount",
+      "original_value": "$2,000 million",
+      "injected_value": "$2,747 million",
+      "original_numeric": "2000",
+      "injected_numeric": "2747",
+      "position_char": 293,
+      "sentence_approx": 7,
+      "perturbation_delta": 0.3737
+    },
+    {
+      "hallucination_id": "FB_133_F4882588_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,000 million",
+      "injected_value": "$1,317 million",
+      "original_numeric": "1000",
+      "injected_numeric": "1317",
+      "position_char": 531,
+      "sentence_approx": 9,
+      "perturbation_delta": 0.3168
+    }
+  ],
+  "FB_134_8EAD738D": [
+    {
+      "hallucination_id": "FB_134_8EAD738D_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,200 million",
+      "injected_value": "$1,654 million",
+      "original_numeric": "1200",
+      "injected_numeric": "1654",
+      "position_char": 97,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.3784
+    }
+  ],
+  "FB_135_DFC4B0A4": [
+    {
+      "hallucination_id": "FB_135_DFC4B0A4_H3",
+      "type": "dollar_amount",
+      "original_value": "$3,174 million",
+      "injected_value": "$2,548 million",
+      "original_numeric": "3174",
+      "injected_numeric": "2548",
+      "position_char": 211,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.1972
+    },
+    {
+      "hallucination_id": "FB_135_DFC4B0A4_H2",
+      "type": "dollar_amount",
+      "original_value": "$12,427 million",
+      "injected_value": "$16,404 million",
+      "original_numeric": "12427",
+      "injected_numeric": "16404",
+      "position_char": 423,
+      "sentence_approx": 7,
+      "perturbation_delta": 0.3201
+    },
+    {
+      "hallucination_id": "FB_135_DFC4B0A4_H1",
+      "type": "percentage",
+      "original_value": "4.0%",
+      "injected_value": "0.0%",
+      "original_numeric": "4.0",
+      "injected_numeric": "0.0",
+      "position_char": 504,
+      "sentence_approx": 7,
+      "perturbation_delta": -6.8871
+    }
+  ],
+  "FB_136_5B3046AE": [],
+  "FB_137_A71B03EF": [
+    {
+      "hallucination_id": "FB_137_A71B03EF_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,000 million",
+      "injected_value": "$751 million",
+      "original_numeric": "1000",
+      "injected_numeric": "751",
+      "position_char": 191,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.2493
+    },
+    {
+      "hallucination_id": "FB_137_A71B03EF_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,500 million",
+      "injected_value": "$931 million",
+      "original_numeric": "1500",
+      "injected_numeric": "931",
+      "position_char": 529,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.3791
+    }
+  ],
+  "FB_138_1767BBA1": [
+    {
+      "hallucination_id": "FB_138_1767BBA1_H3",
+      "type": "dollar_amount",
+      "original_value": "$3,900.5 million",
+      "injected_value": "$5,245.6 million",
+      "original_numeric": "3900.5",
+      "injected_numeric": "5245.6",
+      "position_char": 361,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.3449
+    },
+    {
+      "hallucination_id": "FB_138_1767BBA1_H2",
+      "type": "dollar_amount",
+      "original_value": "$3,200.2 million",
+      "injected_value": "$2,212.1 million",
+      "original_numeric": "3200.2",
+      "injected_numeric": "2212.1",
+      "position_char": 561,
+      "sentence_approx": 5,
+      "perturbation_delta": -0.3088
+    },
+    {
+      "hallucination_id": "FB_138_1767BBA1_H1",
+      "type": "dollar_amount",
+      "original_value": "$3,500.0 million",
+      "injected_value": "$2,497.7 million",
+      "original_numeric": "3500.0",
+      "injected_numeric": "2497.7",
+      "position_char": 873,
+      "sentence_approx": 8,
+      "perturbation_delta": -0.2864
+    }
+  ],
+  "FB_139_4FC46F83": [
+    {
+      "hallucination_id": "FB_139_4FC46F83_H3",
+      "type": "dollar_amount",
+      "original_value": "$2,800.0 million",
+      "injected_value": "$1,698.3 million",
+      "original_numeric": "2800.0",
+      "injected_numeric": "1698.3",
+      "position_char": 448,
+      "sentence_approx": 9,
+      "perturbation_delta": -0.3935
+    },
+    {
+      "hallucination_id": "FB_139_4FC46F83_H2",
+      "type": "percentage",
+      "original_value": "42.4%",
+      "injected_value": "31.4%",
+      "original_numeric": "42.4",
+      "injected_numeric": "31.4",
+      "position_char": 562,
+      "sentence_approx": 11,
+      "perturbation_delta": -11.0346
+    },
+    {
+      "hallucination_id": "FB_139_4FC46F83_H1",
+      "type": "percentage",
+      "original_value": "50.1%",
+      "injected_value": "43.9%",
+      "original_numeric": "50.1",
+      "injected_numeric": "43.9",
+      "position_char": 799,
+      "sentence_approx": 17,
+      "perturbation_delta": -6.1781
+    }
+  ],
+  "FB_140_E38BA3D2": [
+    {
+      "hallucination_id": "FB_140_E38BA3D2_H3",
+      "type": "dollar_amount",
+      "original_value": "$1,211.8 million",
+      "injected_value": "$952.0 million",
+      "original_numeric": "1211.8",
+      "injected_numeric": "952.0",
+      "position_char": 115,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2144
+    },
+    {
+      "hallucination_id": "FB_140_E38BA3D2_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,050.5 million",
+      "injected_value": "$1,266.6 million",
+      "original_numeric": "1050.5",
+      "injected_numeric": "1266.6",
+      "position_char": 343,
+      "sentence_approx": 5,
+      "perturbation_delta": 0.2057
+    },
+    {
+      "hallucination_id": "FB_140_E38BA3D2_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,646.5 million",
+      "injected_value": "$1,112.3 million",
+      "original_numeric": "1646.5",
+      "injected_numeric": "1112.3",
+      "position_char": 560,
+      "sentence_approx": 12,
+      "perturbation_delta": -0.3245
+    }
+  ],
+  "FB_141_339C8E4B": [
+    {
+      "hallucination_id": "FB_141_339C8E4B_H3",
+      "type": "dollar_amount",
+      "original_value": "$250 million",
+      "injected_value": "$298 million",
+      "original_numeric": "250",
+      "injected_numeric": "298",
+      "position_char": 235,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.1926
+    },
+    {
+      "hallucination_id": "FB_141_339C8E4B_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,500 million",
+      "injected_value": "$1,001 million",
+      "original_numeric": "1500",
+      "injected_numeric": "1001",
+      "position_char": 655,
+      "sentence_approx": 5,
+      "perturbation_delta": -0.3324
+    },
+    {
+      "hallucination_id": "FB_141_339C8E4B_H1",
+      "type": "percentage",
+      "original_value": "25%",
+      "injected_value": "18.1%",
+      "original_numeric": "25",
+      "injected_numeric": "18.1",
+      "position_char": 1404,
+      "sentence_approx": 11,
+      "perturbation_delta": -6.9065
+    }
+  ],
+  "FB_142_54C31BE1": [
+    {
+      "hallucination_id": "FB_142_54C31BE1_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,083.5 million",
+      "injected_value": "$830.6 million",
+      "original_numeric": "1083.5",
+      "injected_numeric": "830.6",
+      "position_char": 73,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2334
+    },
+    {
+      "hallucination_id": "FB_142_54C31BE1_H1",
+      "type": "dollar_amount",
+      "original_value": "$3,829.0 million",
+      "injected_value": "$4,411.0 million",
+      "original_numeric": "3829.0",
+      "injected_numeric": "4411.0",
+      "position_char": 366,
+      "sentence_approx": 5,
+      "perturbation_delta": 0.152
+    }
+  ],
+  "FB_143_A0EA48F4": [
+    {
+      "hallucination_id": "FB_143_A0EA48F4_H3",
+      "type": "dollar_amount",
+      "original_value": "$12,000 million",
+      "injected_value": "$15,974 million",
+      "original_numeric": "12000",
+      "injected_numeric": "15974",
+      "position_char": 278,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.3312
+    },
+    {
+      "hallucination_id": "FB_143_A0EA48F4_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,500 million",
+      "injected_value": "$1,034 million",
+      "original_numeric": "1500",
+      "injected_numeric": "1034",
+      "position_char": 579,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.3109
+    },
+    {
+      "hallucination_id": "FB_143_A0EA48F4_H1",
+      "type": "dollar_amount",
+      "original_value": "$11,000 million",
+      "injected_value": "$8,922 million",
+      "original_numeric": "11000",
+      "injected_numeric": "8922",
+      "position_char": 804,
+      "sentence_approx": 4,
+      "perturbation_delta": -0.1889
+    }
+  ],
+  "FB_144_BD395CC4": [
+    {
+      "hallucination_id": "FB_144_BD395CC4_H2",
+      "type": "dollar_amount",
+      "original_value": "$3,800 million",
+      "injected_value": "$2,611 million",
+      "original_numeric": "3800",
+      "injected_numeric": "2611",
+      "position_char": 160,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3129
+    },
+    {
+      "hallucination_id": "FB_144_BD395CC4_H1",
+      "type": "dollar_amount",
+      "original_value": "$3,600 million",
+      "injected_value": "$4,598 million",
+      "original_numeric": "3600",
+      "injected_numeric": "4598",
+      "position_char": 324,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.2772
+    }
+  ],
+  "FB_145_F02E8ED1": [
+    {
+      "hallucination_id": "FB_145_F02E8ED1_H2",
+      "type": "dollar_amount",
+      "original_value": "$27,241 million",
+      "injected_value": "$37,936 million",
+      "original_numeric": "27241",
+      "injected_numeric": "37936",
+      "position_char": 185,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.3926
+    },
+    {
+      "hallucination_id": "FB_145_F02E8ED1_H1",
+      "type": "dollar_amount",
+      "original_value": "$12,066 million",
+      "injected_value": "$7,911 million",
+      "original_numeric": "12066",
+      "injected_numeric": "7911",
+      "position_char": 493,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.3443
+    }
+  ],
+  "FB_146_6EE83766": [
+    {
+      "hallucination_id": "FB_146_6EE83766_H3",
+      "type": "dollar_amount",
+      "original_value": "$202,000 million",
+      "injected_value": "$127,741 million",
+      "original_numeric": "202000",
+      "injected_numeric": "127741",
+      "position_char": 212,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3676
+    },
+    {
+      "hallucination_id": "FB_146_6EE83766_H2",
+      "type": "dollar_amount",
+      "original_value": "$19,000 million",
+      "injected_value": "$15,877 million",
+      "original_numeric": "19000",
+      "injected_numeric": "15877",
+      "position_char": 318,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.1643
+    },
+    {
+      "hallucination_id": "FB_146_6EE83766_H1",
+      "type": "dollar_amount",
+      "original_value": "$18,000 million",
+      "injected_value": "$12,860 million",
+      "original_numeric": "18000",
+      "injected_numeric": "12860",
+      "position_char": 433,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.2856
+    }
+  ],
+  "FB_147_D81E1F94": [
+    {
+      "hallucination_id": "FB_147_D81E1F94_H3",
+      "type": "dollar_amount",
+      "original_value": "$164,000 million",
+      "injected_value": "$214,715 million",
+      "original_numeric": "164000",
+      "injected_numeric": "214715",
+      "position_char": 135,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.3092
+    },
+    {
+      "hallucination_id": "FB_147_D81E1F94_H2",
+      "type": "dollar_amount",
+      "original_value": "$159,000 million",
+      "injected_value": "$212,971 million",
+      "original_numeric": "159000",
+      "injected_numeric": "212971",
+      "position_char": 244,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.3394
+    },
+    {
+      "hallucination_id": "FB_147_D81E1F94_H1",
+      "type": "dollar_amount",
+      "original_value": "$75,000 million",
+      "injected_value": "$50,809 million",
+      "original_numeric": "75000",
+      "injected_numeric": "50809",
+      "position_char": 707,
+      "sentence_approx": 7,
+      "perturbation_delta": -0.3225
+    }
+  ],
+  "FB_148_2F878B14": [
+    {
+      "hallucination_id": "FB_148_2F878B14_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,402 million",
+      "injected_value": "$883 million",
+      "original_numeric": "1402",
+      "injected_numeric": "883",
+      "position_char": 1118,
+      "sentence_approx": 5,
+      "perturbation_delta": -0.3704
+    },
+    {
+      "hallucination_id": "FB_148_2F878B14_H1",
+      "type": "large_number",
+      "original_value": "049308",
+      "injected_value": "32542",
+      "original_numeric": "049308",
+      "injected_numeric": "32542",
+      "position_char": 1322,
+      "sentence_approx": 6,
+      "perturbation_delta": -0.34
+    }
+  ],
+  "FB_149_247B6607": [
+    {
+      "hallucination_id": "FB_149_247B6607_H2",
+      "type": "dollar_amount",
+      "original_value": "$24,202 million",
+      "injected_value": "$30,045 million",
+      "original_numeric": "24202",
+      "injected_numeric": "30045",
+      "position_char": 214,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.2414
+    },
+    {
+      "hallucination_id": "FB_149_247B6607_H1",
+      "type": "percentage",
+      "original_value": "4.7%",
+      "injected_value": "16.1%",
+      "original_numeric": "4.7",
+      "injected_numeric": "16.1",
+      "position_char": 787,
+      "sentence_approx": 3,
+      "perturbation_delta": 11.4464
+    }
+  ],
+  "FB_150_3E3CE551": [
+    {
+      "hallucination_id": "FB_150_3E3CE551_H2",
+      "type": "dollar_amount",
+      "original_value": "$22,165 million",
+      "injected_value": "$14,431 million",
+      "original_numeric": "22165",
+      "injected_numeric": "14431",
+      "position_char": 1181,
+      "sentence_approx": 8,
+      "perturbation_delta": -0.3489
+    },
+    {
+      "hallucination_id": "FB_150_3E3CE551_H1",
+      "type": "dollar_amount",
+      "original_value": "$514,405 million",
+      "injected_value": "$347,115 million",
+      "original_numeric": "514405",
+      "injected_numeric": "347115",
+      "position_char": 1307,
+      "sentence_approx": 9,
+      "perturbation_delta": -0.3252
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "question_id": "FB_006_A4622E06",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: 3M Company, Q2 FY2023\n- PRIMARY METRIC: Quick Ratio: 0.92 (per the Q2 FY2023 10-Q, Consolidated Balance Sheets)\n- SUPPORTING DATA: \n  - Current Assets: $5,902 million (per the Q2 FY2023 10-Q, Consolidated Balance Sheets)\n  - Current Liabilities: $9,227 million (per the Q2 FY2023 10-Q, Consolidated Balance Sheets)\n  - Cash and Cash Equivalents: $1,032 million (per the Q2 FY2023 10-Q, Consolidated Balance Sheets)\n  - Accounts Receivable: $5,576 million (per the Q2 FY2023 10-Q, Consolidated Balance Sheets)\n  - Inventories: $3,147 million (per the Q2 FY2023 10-Q, Consolidated Balance Sheets)\n\n- DATA SOURCES: \n  - 3M Company Q2 FY2023 10-Q, Consolidated Balance Sheets\n\n**Note:** The quick ratio is calculated as (Current Assets - Inventories) / Current Liabilities. In this case, the quick ratio of 0.92 indicates that 3M has $0.92 in liquid assets for every $1.00 of current liabilities. \n\n**Limitations of the Quick Ratio:** \nWhile the quick ratio provides insight into a company's ability to meet short-term obligations without relying on inventory sales, it may not fully capture the liquidity position. For instance, it does not consider the timing of cash flows or the company's ability to generate cash from operations. Additionally, it may not reflect the company's overall financial health if other liabilities or long-term obligations are significant.\n\n**Alternative Metrics:** \n- Current Ratio: This metric includes all current assets and provides a broader view of liquidity.\n- Cash Ratio: This focuses solely on cash and cash equivalents relative to current liabilities, offering a more conservative measure of liquidity.\n\nThis report presents the requested data accurately and without interpretation, as per the guidelines.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_006_A4622E06_H2",
+      "type": "dollar_amount",
+      "original_value": "$8,492 million",
+      "injected_value": "$5,902 million",
+      "original_numeric": "8492",
+      "injected_numeric": "5902",
+      "position_char": 172,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.305
+    },
+    {
+      "hallucination_id": "FB_006_A4622E06_H1",
+      "type": "dollar_amount",
+      "original_value": "$4,313 million",
+      "injected_value": "$5,576 million",
+      "original_numeric": "4313",
+      "injected_numeric": "5576",
+      "position_char": 460,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.2929
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Quick Ratio: 0.92",
+        "claim_value": "0.92",
+        "reason": "The reported Quick Ratio of 0.92 is mathematically inconsistent with the provided supporting data. Using the formula (Current Assets - Inventories) / Current Liabilities, the calculation is ($5,902 million - $3,147 million) / $9,227 million = $2,755 million / $9,227 million = approximately 0.2986. This value (0.30 when rounded) is significantly different from the stated 0.92.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "the quick ratio of 0.92 indicates that 3M has $0.92 in liquid assets for every $1.00 of current liabilities.",
+        "claim_value": "0.92",
+        "reason": "This statement's interpretation is based on the quick ratio being 0.92. Since the calculated quick ratio from the provided components is approximately 0.30, the premise of this interpretation is flawed due to the incorrect ratio value.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 7,
+    "overall_assessment": "The primary financial metric (Quick Ratio) is inconsistent with the supporting data provided, indicating a potential hallucination or calculation error.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Quick Ratio: 0.92\",\n      \"claim_value\": \"0.92\",\n      \"reason\": \"The reported Quick Ratio of 0.92 is mathematically inconsistent with the provided supporting data. Using the formula (Current Assets - Inventories) / Current Liabilities, the calculation is ($5,902 million - $3,147 million) / $9,227 million = $2,755 million / $9,227 million = approximately 0.2986. This value (0.30 when rounded) is significantly different from the stated 0.92.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"the quick ratio of 0.92 indicates that 3M has $0.92 in liquid assets for every $1.00 of current liabilities.\",\n      \"claim_value\": \"0.92\",\n      \"reason\": \"This statement's interpretation is based on the quick ratio being 0.92. Since the calculated quick ratio from the provided components is approximately 0.30, the premise of this interpretation is flawed due to the incorrect ratio value.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 7,\n  \"overall_assessment\": \"The primary financial metric (Quick Ratio) is inconsistent with the supporting data provided, indicating a potential hallucination or calculation error.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_006_A4622E06",
+      "hallucination_id": "FB_006_A4622E06_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$8,492 million",
+      "injected_value": "$5,902 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_006_A4622E06",
+      "hallucination_id": "FB_006_A4622E06_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$4,313 million",
+      "injected_value": "$5,576 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 7
+    }
+  ],
+  "timestamp": "2026-03-25T07:35:17.392443Z"
+}

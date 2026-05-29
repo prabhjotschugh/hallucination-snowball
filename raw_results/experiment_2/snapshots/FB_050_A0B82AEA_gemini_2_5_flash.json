@@ -1,0 +1,79 @@
+{
+  "question_id": "FB_050_A0B82AEA",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Best Buy Co., Inc., Fiscal Year End 2019\n- PRIMARY METRIC: Total Inventories: $4,203 million (per the FY2019 10-K, Consolidated Balance Sheets)\n- SUPPORTING DATA: \n  - FY2018 Total Inventories: $2,780 million (per the FY2018 10-K, Consolidated Balance Sheets)\n  - FY2017 Total Inventories: $4,922 million (per the FY2017 10-K, Consolidated Balance Sheets)\n- DATA SOURCES: \n  - Best Buy FY2019 10-K, Consolidated Balance Sheets\n  - Best Buy FY2018 10-K, Consolidated Balance Sheets\n  - Best Buy FY2017 10-K, Consolidated Balance Sheets\n\nNote: No analysis or interpretation of trends or ratios has been provided as per your instructions.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_050_A0B82AEA_H2",
+      "type": "dollar_amount",
+      "original_value": "$3,719 million",
+      "injected_value": "$2,780 million",
+      "original_numeric": "3719",
+      "injected_numeric": "2780",
+      "position_char": 214,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.2524
+    },
+    {
+      "hallucination_id": "FB_050_A0B82AEA_H1",
+      "type": "dollar_amount",
+      "original_value": "$3,579 million",
+      "injected_value": "$4,922 million",
+      "original_numeric": "3579",
+      "injected_numeric": "4922",
+      "position_char": 310,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.3751
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "FY2018 Total Inventories: $2,780 million",
+        "claim_value": "$2,780 million",
+        "reason": "This figure implies a ~43.5% decrease in inventories from FY2017 ($4,922 million) and a subsequent ~51.2% increase to FY2019 ($4,203 million). Such large year-over-year swings (over 40-50%) in total inventories are highly unusual for a mature, stable retailer like Best Buy without significant, explained operational shifts or external events.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "FY2017 Total Inventories: $4,922 million",
+        "claim_value": "$4,922 million",
+        "reason": "This figure, when compared to FY2018 ($2,780 million), implies a ~43.5% decrease in inventories. Such a large year-over-year swing (over 40-50%) in total inventories is highly unusual for a mature, stable retailer like Best Buy without significant, explained operational shifts or external events. The subsequent ~51.2% increase from FY2018 to FY2019 further highlights an unusually volatile inventory trend.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 3,
+    "overall_assessment": "The reported inventory figures show unusually high year-over-year volatility, which is suspicious for a mature retailer.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"FY2018 Total Inventories: $2,780 million\",\n      \"claim_value\": \"$2,780 million\",\n      \"reason\": \"This figure implies a ~43.5% decrease in inventories from FY2017 ($4,922 million) and a subsequent ~51.2% increase to FY2019 ($4,203 million). Such large year-over-year swings (over 40-50%) in total inventories are highly unusual for a mature, stable retailer like Best Buy without significant, explained operational shifts or external events.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"FY2017 Total Inventories: $4,922 million\",\n      \"claim_value\": \"$4,922 million\",\n      \"reason\": \"This figure, when compared to FY2018 ($2,780 million), implies a ~43.5% decrease in inventories. Such a large year-over-year swing (over 40-50%) in total inventories is highly unusual for a mature, stable retailer like Best Buy without significant, explained operational shifts or external events. The subsequent ~51.2% increase from FY2018 to FY2019 further highlights an unusually volatile inventory trend.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 3,\n  \"overall_assessment\": \"The reported inventory figures show unusually high year-over-year volatility, which is suspicious for a mature retailer.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_050_A0B82AEA",
+      "hallucination_id": "FB_050_A0B82AEA_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,719 million",
+      "injected_value": "$2,780 million",
+      "detected": true,
+      "reason": "This figure implies a ~43.5% decrease in inventories from FY2017 ($4,922 million) and a subsequent ~51.2% increase to FY2019 ($4,203 million). Such large year-over-year swings (over 40-50%) in total inventories are highly unusual for a mature, stable retailer like Best Buy without significant, explained operational shifts or external events.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 3
+    },
+    {
+      "question_id": "FB_050_A0B82AEA",
+      "hallucination_id": "FB_050_A0B82AEA_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,579 million",
+      "injected_value": "$4,922 million",
+      "detected": true,
+      "reason": "This figure, when compared to FY2018 ($2,780 million), implies a ~43.5% decrease in inventories. Such a large year-over-year swing (over 40-50%) in total inventories is highly unusual for a mature, stable retailer like Best Buy without significant, explained operational shifts or external events. The subsequent ~51.2% increase from FY2018 to FY2019 further highlights an unusually volatile inventory trend.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 3
+    }
+  ],
+  "timestamp": "2026-03-25T07:45:42.570891Z"
+}

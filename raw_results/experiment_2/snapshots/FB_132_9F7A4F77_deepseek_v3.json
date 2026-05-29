@@ -1,0 +1,79 @@
+{
+  "question_id": "FB_132_9F7A4F77",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: Pfizer Inc., Fiscal Year 2019\n- PRIMARY METRIC: Net Income for FY 2019 was $16,305 million (USD), as reported in the FY2019 10-K, Consolidated Statements of Operations.\n- SUPPORTING DATA: \n  - Total Revenue for FY 2019: $51,750 million (USD) (per the FY2019 10-K, Consolidated Statements of Operations).\n  - Cost of Goods Sold (COGS) for FY 2019: $26,881 million (USD) (per the FY2019 10-K, Consolidated Statements of Operations).\n  - Gross Profit for FY 2019: $31,722 million (USD) (calculated as Total Revenue - COGS).\n  - Net Income for FY 2018: $12,671 million (USD) (per the FY2019 10-K, Consolidated Statements of Operations).\n  - Net Income for FY 2017: $22,000 million (USD) (per the FY2019 10-K, Consolidated Statements of Operations).\n\n- EXTRAORDINARY EVENTS: According to the FY2019 10-K, Pfizer recognized a tax benefit of $1,431 million (USD) related to the revaluation of deferred tax assets and liabilities due to the Tax Cuts and Jobs Act, which significantly impacted net income. This event is categorized as extraordinary as it is not part of standard business operations.\n\n- DATA SOURCES: \n  - Pfizer Inc. FY2019 10-K, filed with the SEC on February 6, 2020, Consolidated Statements of Operations.\n  - Pfizer Inc. FY2019 10-K, filed with the SEC on February 6, 2020, Management's Discussion and Analysis of Financial Condition and Results of Operations.\n\nPlease note that I have not included any analysis or implications as per your directive, focusing solely on the extraction of factual data.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_132_9F7A4F77_H2",
+      "type": "dollar_amount",
+      "original_value": "$20,028 million",
+      "injected_value": "$26,881 million",
+      "original_numeric": "20028",
+      "injected_numeric": "26881",
+      "position_char": 367,
+      "sentence_approx": 4,
+      "perturbation_delta": 0.3422
+    },
+    {
+      "hallucination_id": "FB_132_9F7A4F77_H1",
+      "type": "dollar_amount",
+      "original_value": "$2,200 million",
+      "injected_value": "$1,431 million",
+      "original_numeric": "2200",
+      "injected_numeric": "1431",
+      "position_char": 855,
+      "sentence_approx": 8,
+      "perturbation_delta": -0.3494
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Net Income for FY 2017: $22,000 million (USD)",
+        "claim_value": "$22,000 million",
+        "reason": "Pfizer's net income rarely exceeds $20 billion in a single year. This figure seems unusually high compared to the $12.7B and $16.3B figures for 2018-2019, and the round number raises suspicion.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Gross Profit for FY 2019: $31,722 million (USD) (calculated as Total Revenue - COGS)",
+        "claim_value": "$31,722 million",
+        "reason": "Gross profit calculation correctly uses $51,750M revenue - $26,881M COGS, but the exact resulting figure should be $24,869M (subtraction mismatch).",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "Two significant anomalies found - an implausibly high 2017 net income figure and an incorrect gross profit calculation.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Net Income for FY 2017: $22,000 million (USD)\",\n      \"claim_value\": \"$22,000 million\",\n      \"reason\": \"Pfizer's net income rarely exceeds $20 billion in a single year. This figure seems unusually high compared to the $12.7B and $16.3B figures for 2018-2019, and the round number raises suspicion.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Gross Profit for FY 2019: $31,722 million (USD) (calculated as Total Revenue - COGS)\",\n      \"claim_value\": \"$31,722 million\",\n      \"reason\": \"Gross profit calculation correctly uses $51,750M revenue - $26,881M COGS, but the exact resulting figure should be $24,869M (subtraction mismatch).\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\": \"Two significant anomalies found - an implausibly high 2017 net income figure and an incorrect gross profit calculation.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_132_9F7A4F77",
+      "hallucination_id": "FB_132_9F7A4F77_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$20,028 million",
+      "injected_value": "$26,881 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_132_9F7A4F77",
+      "hallucination_id": "FB_132_9F7A4F77_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$2,200 million",
+      "injected_value": "$1,431 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-24T10:00:48.574875Z"
+}

@@ -1,0 +1,85 @@
+{
+  "question_id": "FB_137_A71B03EF",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Ulta Beauty, FY2023\n- PRIMARY METRIC: As of February 4, 2023, Ulta Beauty, Inc. had $1,200 million in aggregate principal amount of senior unsecured notes due in 2025 and $751 million in aggregate principal amount of senior unsecured notes due in 2031. (per the FY2023 10-K, Note 7 - Debt)\n- SUPPORTING DATA: \n  - Senior Unsecured Notes:\n    - $1,200 million due in 2025\n    - $1,000 million due in 2031\n  - Total debt as of February 4, 2023: $2,200 million\n  - Shareholders' equity as of February 4, 2023: $931 million (per the FY2023 10-K, Consolidated Balance Sheets)\n  - Debt-to-Equity Ratio: 1.47 (calculated as Total Debt / Shareholders' Equity)\n- DATA SOURCES: \n  - Ulta Beauty FY2023 10-K, Note 7 - Debt\n  - Ulta Beauty FY2023 10-K, Consolidated Balance Sheets\n\nPlease note that I have not included trend analysis or comparisons to industry standards as per your directive to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_137_A71B03EF_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,000 million",
+      "injected_value": "$751 million",
+      "original_numeric": "1000",
+      "injected_numeric": "751",
+      "position_char": 191,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.2493
+    },
+    {
+      "hallucination_id": "FB_137_A71B03EF_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,500 million",
+      "injected_value": "$931 million",
+      "original_numeric": "1500",
+      "injected_numeric": "931",
+      "position_char": 529,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.3791
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "$751 million in aggregate principal amount of senior unsecured notes due in 2031",
+        "claim_value": "$751 million",
+        "reason": "Internal contradiction: The Supporting Data section within the same report lists '$1,000 million due in 2031'. Additionally, bond principal amounts are typically round figures (e.g., $1,000 million), while $751 million resembles a carrying value net of amortization, making the label 'principal amount' suspicious.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Debt-to-Equity Ratio: 1.47 (calculated as Total Debt / Shareholders' Equity)",
+        "claim_value": "1.47",
+        "reason": "Mathematical error: Based on the provided figures ($2,200 million Total Debt / $931 million Shareholders' Equity), the ratio should be approximately 2.36. The claimed 1.47 does not match the inputs provided in the same report.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total debt as of February 4, 2023: $2,200 million",
+        "claim_value": "$2,200 million",
+        "reason": "Internal inconsistency: This total matches the Supporting Data ($1,200m + $1,000m) but contradicts the Primary Metric section ($1,200m + $751m = $1,951m). The report provides two different sets of numbers that do not reconcile.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 7,
+    "overall_assessment": "The report contains critical internal contradictions regarding debt figures and a fundamental mathematical error in the ratio calculation, rendering the data unreliable.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"$751 million in aggregate principal amount of senior unsecured notes due in 2031\",\n      \"claim_value\": \"$751 million\",\n      \"reason\": \"Internal contradiction: The Supporting Data section within the same report lists '$1,000 million due in 2031'. Additionally, bond principal amounts are typically round figures (e.g., $1,000 million), while $751 million resembles a carrying value net of amortization, making the label 'principal amount' suspicious.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Debt-to-Equity Ratio: 1.47 (calculated as Total Debt / Shareholders' Equity)\",\n      \"claim_value\": \"1.47\",\n      \"reason\": \"Mathematical error: Based on the provided figures ($2,200 million Total Debt / $931 million Shareholders' Equity), the ratio should be approximately 2.36. The claimed 1.47 does not match the inputs provided in the same report.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total debt as of February 4, 2023: $2,200 million\",\n      \"claim_value\": \"$2,200 million\",\n      \"reason\": \"Internal inconsistency: This total matches the Supporting Data ($1,200m + $1,000m) but contradicts the Primary Metric section ($1,200m + $751m = $1,951m). The report provides two different sets of numbers that do not reconcile.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 7,\n  \"overall_assessment\": \"The report contains critical internal contradictions regarding debt figures and a fundamental mathematical error in the ratio calculation, rendering the data unreliable.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_137_A71B03EF",
+      "hallucination_id": "FB_137_A71B03EF_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,000 million",
+      "injected_value": "$751 million",
+      "detected": true,
+      "reason": "Internal contradiction: The Supporting Data section within the same report lists '$1,000 million due in 2031'. Additionally, bond principal amounts are typically round figures (e.g., $1,000 million), while $751 million resembles a carrying value net of amortization, making the label 'principal amount' suspicious.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_137_A71B03EF",
+      "hallucination_id": "FB_137_A71B03EF_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,500 million",
+      "injected_value": "$931 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 7
+    }
+  ],
+  "timestamp": "2026-03-24T13:12:01.754571Z"
+}

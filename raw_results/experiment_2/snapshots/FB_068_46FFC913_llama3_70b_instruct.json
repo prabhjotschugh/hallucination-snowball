@@ -1,0 +1,73 @@
+{
+  "question_id": "FB_068_46FFC913",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: The Coca-Cola Company, FY2017\n- PRIMARY METRIC: \n  - Net Income: $1,247 million (per the FY2017 10-K, Consolidated Statements of Operations)\n  - Total Assets (FY2016): $86,185 million (per the FY2017 10-K, Consolidated Balance Sheets)\n  - Total Assets (FY2017): $86,176 million (per the FY2017 10-K, Consolidated Balance Sheets)\n  - Average Total Assets: ($86,185 million + $86,176 million) / 2 = $58,656.0 million\n\nROA Calculation:\n- ROA = Net Income / Average Total Assets\n- ROA = $1,247 million / $86,180.5 million = 0.0145 or 0.01%\n\n- SUPPORTING DATA: \n  - FY2016 Net Income: $1,249 million (per the FY2017 10-K, Consolidated Statements of Operations)\n  - FY2016 Total Assets: $86,185 million (as stated above)\n  - FY2017 Total Revenue: $35,410 million (per the FY2017 10-K, Consolidated Statements of Operations)\n  - FY2016 Total Revenue: $35,119 million (per the FY2017 10-K, Consolidated Statements of Operations)\n\n- DATA SOURCES: \n  - The Coca-Cola Company FY2017 10-K, Consolidated Statements of Operations\n  - The Coca-Cola Company FY2017 10-K, Consolidated Balance Sheets\n\nNote: The ROA for FY2017 is 1.45% when rounded to two decimal places.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_068_46FFC913_H2",
+      "type": "dollar_amount",
+      "original_value": "$86,180.5 million",
+      "injected_value": "$58,656.0 million",
+      "original_numeric": "86180.5",
+      "injected_numeric": "58656.0",
+      "position_char": 417,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.3194
+    },
+    {
+      "hallucination_id": "FB_068_46FFC913_H1",
+      "type": "percentage",
+      "original_value": "1.45%",
+      "injected_value": "0.01%",
+      "original_numeric": "1.45",
+      "injected_numeric": "0.01",
+      "position_char": 550,
+      "sentence_approx": 4,
+      "perturbation_delta": -11.0708
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Average Total Assets: ($86,185 million + $86,176 million) / 2 = $58,656.0 million",
+        "claim_value": "$58,656.0 million",
+        "reason": "Calculation error: the correct average total assets should be ($86,185 million + $86,176 million) / 2 = $86,180.5 million, not $58,656.0 million",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 7,
+    "overall_assessment": "The researcher's output contains a calculation error in the average total assets, but the other claims appear plausible.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"Average Total Assets: ($86,185 million + $86,176 million) / 2 = $58,656.0 million\",\n      \"claim_value\" : \"$58,656.0 million\",\n      \"reason\"      : \"Calculation error: the correct average total assets should be ($86,185 million + $86,176 million) / 2 = $86,180.5 million, not $58,656.0 million\",\n      \"confidence\"  : \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 7,\n  \"overall_assessment\"   : \"The researcher's output contains a calculation error in the average total assets, but the other claims appear plausible.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_068_46FFC913",
+      "hallucination_id": "FB_068_46FFC913_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$86,180.5 million",
+      "injected_value": "$58,656.0 million",
+      "detected": true,
+      "reason": "Calculation error: the correct average total assets should be ($86,185 million + $86,176 million) / 2 = $86,180.5 million, not $58,656.0 million",
+      "confidence": "high",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_068_46FFC913",
+      "hallucination_id": "FB_068_46FFC913_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "percentage",
+      "original_value": "1.45%",
+      "injected_value": "0.01%",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 7
+    }
+  ],
+  "timestamp": "2026-03-27T09:35:34.235898Z"
+}

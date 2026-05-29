@@ -1,0 +1,109 @@
+{
+  "question_id": "FB_037_CB0A4D6D",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Advanced Micro Devices, Inc. (AMD) - FY2021 and FY2022\n- PRIMARY METRIC: \n  - FY2022 Sales Figures (excluding Embedded):\n    - Computing and Graphics: $6,600 million (per the FY2022 10-K, Consolidated Statements of Operations)\n    - Data Center: $6,000 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  \n  - FY2021 Sales Figures (excluding Embedded):\n    - Computing and Graphics: $3,800 million (per the FY2021 10-K, Consolidated Statements of Operations)\n    - Data Center: $3,100 million (per the FY2021 10-K, Consolidated Statements of Operations)\n\n- SUPPORTING DATA: \n  - Sales Growth Calculation:\n    - Computing and Graphics:\n      - FY2022: $6,600 million\n      - FY2021: $3,800 million\n      - Increase: $6,600 million - $3,800 million = $2,800 million\n      - Proportional Increase: ($2,800 million / $3,135 million) * 100 = 73.68%\n    \n    - Data Center:\n      - FY2022: $6,000 million\n      - FY2021: $3,100 million\n      - Increase: $6,000 million - $2,208 million = $2,900 million\n      - Proportional Increase: ($2,900 million / $2,500 million) * 100 = 93.55%\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Statements of Operations\n\nBased on the data extracted, the Data Center segment experienced the highest proportional increase in sales from FY2021 to FY2022, with a growth rate of 93.55%, compared to the Computing and Graphics segment's growth rate of 73.68%.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_037_CB0A4D6D_H3",
+      "type": "dollar_amount",
+      "original_value": "$3,800 million",
+      "injected_value": "$3,135 million",
+      "original_numeric": "3800",
+      "injected_numeric": "3135",
+      "position_char": 852,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.175
+    },
+    {
+      "hallucination_id": "FB_037_CB0A4D6D_H2",
+      "type": "dollar_amount",
+      "original_value": "$3,100 million",
+      "injected_value": "$2,208 million",
+      "original_numeric": "3100",
+      "injected_numeric": "2208",
+      "position_char": 1004,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.2879
+    },
+    {
+      "hallucination_id": "FB_037_CB0A4D6D_H1",
+      "type": "dollar_amount",
+      "original_value": "$3,100 million",
+      "injected_value": "$2,500 million",
+      "original_numeric": "3100",
+      "injected_numeric": "2500",
+      "position_char": 1085,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.1935
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Proportional Increase: ($2,800 million / $3,135 million) * 100 = 73.68%",
+        "claim_value": "$3,135 million",
+        "reason": "The denominator for the proportional increase calculation ($3,135 million) for Computing and Graphics does not match the previously stated FY2021 sales figure for that segment ($3,800 million). While the final percentage (73.68%) is correct if the correct base ($3,800 million) was used, the intermediate number provided is inconsistent.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Increase: $6,000 million - $2,208 million = $2,900 million",
+        "claim_value": "$2,208 million",
+        "reason": "The subtrahend used in the Data Center sales increase calculation ($2,208 million) does not match the previously stated FY2021 sales figure for that segment ($3,100 million). While the resulting increase ($2,900 million) is correct if the correct base ($3,100 million) was used, the intermediate number provided is inconsistent.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Proportional Increase: ($2,900 million / $2,500 million) * 100 = 93.55%",
+        "claim_value": "$2,500 million",
+        "reason": "The denominator for the proportional increase calculation ($2,500 million) for Data Center does not match the previously stated FY2021 sales figure for that segment ($3,100 million). While the final percentage (93.55%) is correct if the correct base ($3,100 million) was used, the intermediate number provided is inconsistent.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 13,
+    "overall_assessment": "The initial sales figures and final growth percentages appear plausible, but the intermediate calculation steps contain significant internal inconsistencies where the numbers used in the denominators and subtrahends do not match the previously stated base figures.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Proportional Increase: ($2,800 million / $3,135 million) * 100 = 73.68%\",\n      \"claim_value\": \"$3,135 million\",\n      \"reason\": \"The denominator for the proportional increase calculation ($3,135 million) for Computing and Graphics does not match the previously stated FY2021 sales figure for that segment ($3,800 million). While the final percentage (73.68%) is correct if the correct base ($3,800 million) was used, the intermediate number provided is inconsistent.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Increase: $6,000 million - $2,208 million = $2,900 million\",\n      \"claim_value\": \"$2,208 million\",\n      \"reason\": \"The subtrahend used in the Data Center sales increase calculation ($2,208 million) does not match the previously stated FY2021 sales figure for that segment ($3,100 million). While the resulting increase ($2,900 million) is correct if the correct base ($3,100 million) was used, the intermediate number provided is inconsistent.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Proportional Increase: ($2,900 million / $2,500 million) * 100 = 93.55%\",\n      \"claim_value\": \"$2,500 million\",\n      \"reason\": \"The denominator for the proportional increase calculation ($2,500 million) for Data Center does not match the previously stated FY2021 sales figure for that segment ($3,100 million). While the final percentage (93.55%) is correct if the correct base ($3,100 million) was used, the intermediate number provided is inconsistent.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 13,\n  \"overall_assessment\": \"The initial sales figures and final growth percentages appear plausible, but the intermediate calculation steps contain significant internal inconsistencies where the numbers used in the denominators and subtrahends do not match the previously stated base figures.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_037_CB0A4D6D",
+      "hallucination_id": "FB_037_CB0A4D6D_H3",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,800 million",
+      "injected_value": "$3,135 million",
+      "detected": true,
+      "reason": "The denominator for the proportional increase calculation ($3,135 million) for Computing and Graphics does not match the previously stated FY2021 sales figure for that segment ($3,800 million). While the final percentage (73.68%) is correct if the correct base ($3,800 million) was used, the intermediate number provided is inconsistent.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 13
+    },
+    {
+      "question_id": "FB_037_CB0A4D6D",
+      "hallucination_id": "FB_037_CB0A4D6D_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,100 million",
+      "injected_value": "$2,208 million",
+      "detected": true,
+      "reason": "The denominator for the proportional increase calculation ($3,135 million) for Computing and Graphics does not match the previously stated FY2021 sales figure for that segment ($3,800 million). While the final percentage (73.68%) is correct if the correct base ($3,800 million) was used, the intermediate number provided is inconsistent.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 13
+    },
+    {
+      "question_id": "FB_037_CB0A4D6D",
+      "hallucination_id": "FB_037_CB0A4D6D_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,100 million",
+      "injected_value": "$2,500 million",
+      "detected": true,
+      "reason": "The denominator for the proportional increase calculation ($3,135 million) for Computing and Graphics does not match the previously stated FY2021 sales figure for that segment ($3,800 million). While the final percentage (73.68%) is correct if the correct base ($3,800 million) was used, the intermediate number provided is inconsistent.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 13
+    }
+  ],
+  "timestamp": "2026-03-25T07:42:29.977780Z"
+}

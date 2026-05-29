@@ -1,0 +1,97 @@
+{
+  "question_id": "FB_003_959AE4F2",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: 3M Company, FY2022\n- PRIMARY METRIC: \n  - Capital Expenditures: $1,633 million (per the FY2022 10-K, Consolidated Statements of Cash Flows)\n  - Total Assets: $59,768 million (per the FY2022 10-K, Consolidated Balance Sheets)\n\n- SUPPORTING DATA: \n  - Capital Expenditures for FY2021: $1,858 million (per the FY2021 10-K, Consolidated Statements of Cash Flows)\n  - Total Assets for FY2021: $46,255 million (per the FY2021 10-K, Consolidated Balance Sheets)\n  - Capital Expenditures for FY2020: $1,451 million (per the FY2020 10-K, Consolidated Statements of Cash Flows)\n  - Total Assets for FY2020: $44,407 million (per the FY2020 10-K, Consolidated Balance Sheets)\n  - Total Revenue for FY2022: $19,188 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - Total Revenue for FY2021: $29,761 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - Total Revenue for FY2020: $32,182 million (per the FY2020 10-K, Consolidated Statements of Operations)\n\n- DATA SOURCES: \n  - 3M Company FY2022 10-K filing, Consolidated Statements of Cash Flows, Consolidated Balance Sheets, and Consolidated Statements of Operations.\n  - 3M Company FY2021 10-K filing, Consolidated Statements of Cash Flows, Consolidated Balance Sheets, and Consolidated Statements of Operations.\n  - 3M Company FY2020 10-K filing, Consolidated Statements of Cash Flows, Consolidated Balance Sheets, and Consolidated Statements of Operations. \n\nNote: The analysis of capital intensity, including the computation of financial ratios such as the capital expenditure to sales ratio, is not included as per the directive to present raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_003_959AE4F2_H3",
+      "type": "dollar_amount",
+      "original_value": "$45,517 million",
+      "injected_value": "$59,768 million",
+      "original_numeric": "45517",
+      "injected_numeric": "59768",
+      "position_char": 178,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.3131
+    },
+    {
+      "hallucination_id": "FB_003_959AE4F2_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,451 million",
+      "injected_value": "$1,858 million",
+      "original_numeric": "1451",
+      "injected_numeric": "1858",
+      "position_char": 303,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.2805
+    },
+    {
+      "hallucination_id": "FB_003_959AE4F2_H1",
+      "type": "dollar_amount",
+      "original_value": "$35,436 million",
+      "injected_value": "$29,761 million",
+      "original_numeric": "35436",
+      "injected_numeric": "29761",
+      "position_char": 821,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.1602
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Total Revenue for FY2022: $19,188 million",
+        "claim_value": "$19,188 million",
+        "reason": "A year-over-year revenue decline of approximately 35.5% from FY2021 ($29,761 million) to FY2022 ($19,188 million) is highly unusual and implausible for a stable, diversified industrial conglomerate like 3M. Such a drastic drop would typically indicate a major, unprecedented event or a significant divestiture of a large portion of the business, which is not consistent with 3M's overall performance or known events in FY2022. 3M's revenue typically fluctuates within a more moderate range, generally in the high $20s to low $30s billion.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 9,
+    "overall_assessment": "One significant revenue figure for FY2022 appears highly suspicious due to an implausibly large year-over-year decline, while other figures seem plausible.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Total Revenue for FY2022: $19,188 million\",\n      \"claim_value\": \"$19,188 million\",\n      \"reason\": \"A year-over-year revenue decline of approximately 35.5% from FY2021 ($29,761 million) to FY2022 ($19,188 million) is highly unusual and implausible for a stable, diversified industrial conglomerate like 3M. Such a drastic drop would typically indicate a major, unprecedented event or a significant divestiture of a large portion of the business, which is not consistent with 3M's overall performance or known events in FY2022. 3M's revenue typically fluctuates within a more moderate range, generally in the high $20s to low $30s billion.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 9,\n  \"overall_assessment\": \"One significant revenue figure for FY2022 appears highly suspicious due to an implausibly large year-over-year decline, while other figures seem plausible.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_003_959AE4F2",
+      "hallucination_id": "FB_003_959AE4F2_H3",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$45,517 million",
+      "injected_value": "$59,768 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_003_959AE4F2",
+      "hallucination_id": "FB_003_959AE4F2_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,451 million",
+      "injected_value": "$1,858 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_003_959AE4F2",
+      "hallucination_id": "FB_003_959AE4F2_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$35,436 million",
+      "injected_value": "$29,761 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 9
+    }
+  ],
+  "timestamp": "2026-03-25T07:34:38.432989Z"
+}

@@ -1,0 +1,91 @@
+{
+  "question_id": "FB_100_6814F36E",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Kraft Heinz Company, FY2019\n- PRIMARY METRIC: \n  - Cost of Goods Sold (COGS): $22,188 million (per the FY2019 10-K, Consolidated Statements of Operations)\n  - Inventory at end of FY2018: $1,648 million (per the FY2019 10-K, Consolidated Balance Sheets)\n  - Inventory at end of FY2019: $1,172 million (per the FY2019 10-K, Consolidated Balance Sheets)\n\n- SUPPORTING DATA:\n  - Average Inventory = (Inventory FY2018 + Inventory FY2019) / 2\n  - Average Inventory = ($1,648 million + $1,748 million) / 2 = $2,011 million\n  - Inventory Turnover Ratio = COGS / Average Inventory = $22,188 million / $1,698 million = 13.06 (rounded to two decimal places)\n\n- DATA SOURCES: \n  - FY2019 10-K, Consolidated Statements of Operations for COGS\n  - FY2019 10-K, Consolidated Balance Sheets for Inventory figures",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_100_6814F36E_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,748 million",
+      "injected_value": "$1,172 million",
+      "original_numeric": "1748",
+      "injected_numeric": "1172",
+      "position_char": 305,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.3294
+    },
+    {
+      "hallucination_id": "FB_100_6814F36E_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,698 million",
+      "injected_value": "$2,011 million",
+      "original_numeric": "1698",
+      "injected_numeric": "2011",
+      "position_char": 521,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.1844
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Inventory at end of FY2019: $1,172 million",
+        "claim_value": "$1,172 million",
+        "reason": "Internal inconsistency: The subsequent average inventory calculation uses $1,748 million for FY2019 inventory instead of the stated $1,172 million.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Average Inventory = ($1,648 million + $1,748 million) / 2 = $2,011 million",
+        "claim_value": "$2,011 million",
+        "reason": "Mathematical error: The average of $1,648 million and $1,748 million is $1,698 million, not $2,011 million.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Inventory Turnover Ratio = COGS / Average Inventory = $22,188 million / $1,698 million = 13.06",
+        "claim_value": "$1,698 million",
+        "reason": "Internal inconsistency: The denominator ($1,698 million) contradicts the previously calculated Average Inventory result ($2,011 million) stated in the same section.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Cost of Goods Sold (COGS): $22,188 million",
+        "claim_value": "$22,188 million",
+        "reason": "Plausibility concern: For a major packaged food company like Kraft Heinz, this COGS implies a gross margin of approximately 12% (assuming ~$25B revenue), which is significantly lower than the industry standard of 30-40%.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "The output contains critical internal mathematical contradictions and inconsistent data usage, rendering the final ratio calculation unreliable.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Inventory at end of FY2019: $1,172 million\",\n      \"claim_value\": \"$1,172 million\",\n      \"reason\": \"Internal inconsistency: The subsequent average inventory calculation uses $1,748 million for FY2019 inventory instead of the stated $1,172 million.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Average Inventory = ($1,648 million + $1,748 million) / 2 = $2,011 million\",\n      \"claim_value\": \"$2,011 million\",\n      \"reason\": \"Mathematical error: The average of $1,648 million and $1,748 million is $1,698 million, not $2,011 million.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Inventory Turnover Ratio = COGS / Average Inventory = $22,188 million / $1,698 million = 13.06\",\n      \"claim_value\": \"$1,698 million\",\n      \"reason\": \"Internal inconsistency: The denominator ($1,698 million) contradicts the previously calculated Average Inventory result ($2,011 million) stated in the same section.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Cost of Goods Sold (COGS): $22,188 million\",\n      \"claim_value\": \"$22,188 million\",\n      \"reason\": \"Plausibility concern: For a major packaged food company like Kraft Heinz, this COGS implies a gross margin of approximately 12% (assuming ~$25B revenue), which is significantly lower than the industry standard of 30-40%.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\": \"The output contains critical internal mathematical contradictions and inconsistent data usage, rendering the final ratio calculation unreliable.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_100_6814F36E",
+      "hallucination_id": "FB_100_6814F36E_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,748 million",
+      "injected_value": "$1,172 million",
+      "detected": true,
+      "reason": "Internal inconsistency: The subsequent average inventory calculation uses $1,748 million for FY2019 inventory instead of the stated $1,172 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_100_6814F36E",
+      "hallucination_id": "FB_100_6814F36E_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,698 million",
+      "injected_value": "$2,011 million",
+      "detected": true,
+      "reason": "Mathematical error: The average of $1,648 million and $1,748 million is $1,698 million, not $2,011 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-24T12:24:52.602406Z"
+}

@@ -1,0 +1,97 @@
+{
+  "question_id": "FB_100_6814F36E",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Kraft Heinz Company, FY2019\n- PRIMARY METRIC: \n  - Cost of Goods Sold (COGS): $22,188 million (per the FY2019 10-K, Consolidated Statements of Operations)\n  - Inventory at end of FY2018: $1,648 million (per the FY2019 10-K, Consolidated Balance Sheets)\n  - Inventory at end of FY2019: $1,172 million (per the FY2019 10-K, Consolidated Balance Sheets)\n\n- SUPPORTING DATA:\n  - Average Inventory = (Inventory FY2018 + Inventory FY2019) / 2\n  - Average Inventory = ($1,648 million + $1,748 million) / 2 = $2,011 million\n  - Inventory Turnover Ratio = COGS / Average Inventory = $22,188 million / $1,698 million = 13.06 (rounded to two decimal places)\n\n- DATA SOURCES: \n  - FY2019 10-K, Consolidated Statements of Operations for COGS\n  - FY2019 10-K, Consolidated Balance Sheets for Inventory figures",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_100_6814F36E_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,748 million",
+      "injected_value": "$1,172 million",
+      "original_numeric": "1748",
+      "injected_numeric": "1172",
+      "position_char": 305,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.3294
+    },
+    {
+      "hallucination_id": "FB_100_6814F36E_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,698 million",
+      "injected_value": "$2,011 million",
+      "original_numeric": "1698",
+      "injected_numeric": "2011",
+      "position_char": 521,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.1844
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Inventory at end of FY2019: $1,172 million",
+        "claim_value": "$1,172 million",
+        "reason": "This stated FY2019 inventory figure ($1,172 million) contradicts the figure ($1,748 million) subsequently used in the average inventory calculation.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Average Inventory = ($1,648 million + $1,748 million) / 2",
+        "claim_value": "$1,748 million",
+        "reason": "The FY2019 inventory figure used in this calculation ($1,748 million) contradicts the previously stated FY2019 inventory of $1,172 million.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Average Inventory = ($1,648 million + $1,748 million) / 2 = $2,011 million",
+        "claim_value": "$2,011 million",
+        "reason": "The calculation ($1,648 million + $1,748 million) / 2 equals $1,698 million, not $2,011 million. This is a mathematical error.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Inventory Turnover Ratio = COGS / Average Inventory = $22,188 million / $1,698 million",
+        "claim_value": "$1,698 million",
+        "reason": "The average inventory figure used in the turnover ratio calculation ($1,698 million) contradicts the average inventory figure ($2,011 million) explicitly calculated in the preceding step.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Inventory Turnover Ratio = ... = 13.06 (rounded to two decimal places)",
+        "claim_value": "13.06",
+        "reason": "The division of $22,188 million by $1,698 million results in approximately 13.067, which, when rounded to two decimal places, should be 13.07, not 13.06.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 7,
+    "overall_assessment": "The researcher's output contains multiple internal inconsistencies and mathematical errors in its calculations, leading to an incorrect final inventory turnover ratio.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Inventory at end of FY2019: $1,172 million\",\n      \"claim_value\": \"$1,172 million\",\n      \"reason\": \"This stated FY2019 inventory figure ($1,172 million) contradicts the figure ($1,748 million) subsequently used in the average inventory calculation.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Average Inventory = ($1,648 million + $1,748 million) / 2\",\n      \"claim_value\": \"$1,748 million\",\n      \"reason\": \"The FY2019 inventory figure used in this calculation ($1,748 million) contradicts the previously stated FY2019 inventory of $1,172 million.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Average Inventory = ($1,648 million + $1,748 million) / 2 = $2,011 million\",\n      \"claim_value\": \"$2,011 million\",\n      \"reason\": \"The calculation ($1,648 million + $1,748 million) / 2 equals $1,698 million, not $2,011 million. This is a mathematical error.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Inventory Turnover Ratio = COGS / Average Inventory = $22,188 million / $1,698 million\",\n      \"claim_value\": \"$1,698 million\",\n      \"reason\": \"The average inventory figure used in the turnover ratio calculation ($1,698 million) contradicts the average inventory figure ($2,011 million) explicitly calculated in the preceding step.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Inventory Turnover Ratio = ... = 13.06 (rounded to two decimal places)\",\n      \"claim_value\": \"13.06\",\n      \"reason\": \"The division of $22,188 million by $1,698 million results in approximately 13.067, which, when rounded to two decimal places, should be 13.07, not 13.06.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 7,\n  \"overall_assessment\": \"The researcher's output contains multiple internal inconsistencies and mathematical errors in its calculations, leading to an incorrect final inventory turnover ratio.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_100_6814F36E",
+      "hallucination_id": "FB_100_6814F36E_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,748 million",
+      "injected_value": "$1,172 million",
+      "detected": true,
+      "reason": "This stated FY2019 inventory figure ($1,172 million) contradicts the figure ($1,748 million) subsequently used in the average inventory calculation.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_100_6814F36E",
+      "hallucination_id": "FB_100_6814F36E_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,698 million",
+      "injected_value": "$2,011 million",
+      "detected": true,
+      "reason": "The FY2019 inventory figure used in this calculation ($1,748 million) contradicts the previously stated FY2019 inventory of $1,172 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 7
+    }
+  ],
+  "timestamp": "2026-03-25T07:56:46.706970Z"
+}

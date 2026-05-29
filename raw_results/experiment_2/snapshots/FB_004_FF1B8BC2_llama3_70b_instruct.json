@@ -1,0 +1,103 @@
+{
+  "question_id": "FB_004_FF1B8BC2",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: 3M Company, FY2022\n- PRIMARY METRIC: Operating Margin: 16.5% (calculated as Operating Income of $7,927 million divided by Total Revenue of $36,693 million) per the FY2022 10-K, Consolidated Statements of Operations.\n- SUPPORTING DATA: \n  - Total Revenue: $46,995 million (FY2022) per the FY2022 10-K, Consolidated Statements of Operations.\n  - Operating Income: $6,081 million (FY2022) per the FY2022 10-K, Consolidated Statements of Operations.\n  - Operating Margin (FY2021): 18.2% (calculated as Operating Income of $6,574 million divided by Total Revenue of $44,964 million) per the FY2021 10-K, Consolidated Statements of Operations.\n  - Operating Margin (FY2020): 20.5% (calculated as Operating Income of $6,646 million divided by Total Revenue of $32,180 million) per the FY2020 10-K, Consolidated Statements of Operations.\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations.\n  - FY2021 10-K, Consolidated Statements of Operations.\n  - FY2020 10-K, Consolidated Statements of Operations.\n\n**Note**: The request for an analysis of the factors influencing changes in operating margin and the usefulness of operating margin as a metric cannot be fulfilled as per the directive to provide raw data only. Please consult downstream analysts for further interpretation and analysis.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_004_FF1B8BC2_H3",
+      "type": "dollar_amount",
+      "original_value": "$6,081 million",
+      "injected_value": "$7,927 million",
+      "original_numeric": "6081",
+      "injected_numeric": "7927",
+      "position_char": 116,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.3035
+    },
+    {
+      "hallucination_id": "FB_004_FF1B8BC2_H2",
+      "type": "dollar_amount",
+      "original_value": "$36,693 million",
+      "injected_value": "$46,995 million",
+      "original_numeric": "36693",
+      "injected_numeric": "46995",
+      "position_char": 275,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.2808
+    },
+    {
+      "hallucination_id": "FB_004_FF1B8BC2_H1",
+      "type": "dollar_amount",
+      "original_value": "$36,086 million",
+      "injected_value": "$44,964 million",
+      "original_numeric": "36086",
+      "injected_numeric": "44964",
+      "position_char": 581,
+      "sentence_approx": 6,
+      "perturbation_delta": 0.246
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Operating Margin: 16.5% (calculated as Operating Income of $7,927 million divided by Total Revenue of $36,693 million)",
+        "claim_value": "16.5%",
+        "reason": "The calculation provided does not match the claimed operating margin. $7,927 million divided by $36,693 million is approximately 21.6%, not 16.5%.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Revenue: $46,995 million (FY2022) per the FY2022 10-K, Consolidated Statements of Operations.",
+        "claim_value": "$46,995 million",
+        "reason": "The total revenue figure provided earlier in the output is $36,693 million, which contradicts this claim.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 7,
+    "overall_assessment": "The output contains calculation errors and internal inconsistencies, which undermine the credibility of the provided financial data.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"Operating Margin: 16.5% (calculated as Operating Income of $7,927 million divided by Total Revenue of $36,693 million)\",\n      \"claim_value\" : \"16.5%\",\n      \"reason\"      : \"The calculation provided does not match the claimed operating margin. $7,927 million divided by $36,693 million is approximately 21.6%, not 16.5%.\",\n      \"confidence\"  : \"high\"\n    },\n    {\n      \"claim_text\"  : \"Total Revenue: $46,995 million (FY2022) per the FY2022 10-K, Consolidated Statements of Operations.\",\n      \"claim_value\" : \"$46,995 million\",\n      \"reason\"      : \"The total revenue figure provided earlier in the output is $36,693 million, which contradicts this claim.\",\n      \"confidence\"  : \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 7,\n  \"overall_assessment\"   : \"The output contains calculation errors and internal inconsistencies, which undermine the credibility of the provided financial data.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_004_FF1B8BC2",
+      "hallucination_id": "FB_004_FF1B8BC2_H3",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$6,081 million",
+      "injected_value": "$7,927 million",
+      "detected": true,
+      "reason": "The calculation provided does not match the claimed operating margin. $7,927 million divided by $36,693 million is approximately 21.6%, not 16.5%.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_004_FF1B8BC2",
+      "hallucination_id": "FB_004_FF1B8BC2_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$36,693 million",
+      "injected_value": "$46,995 million",
+      "detected": true,
+      "reason": "The total revenue figure provided earlier in the output is $36,693 million, which contradicts this claim.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_004_FF1B8BC2",
+      "hallucination_id": "FB_004_FF1B8BC2_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$36,086 million",
+      "injected_value": "$44,964 million",
+      "detected": true,
+      "reason": "The total revenue figure provided earlier in the output is $36,693 million, which contradicts this claim.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 7
+    }
+  ],
+  "timestamp": "2026-03-27T09:26:25.109694Z"
+}

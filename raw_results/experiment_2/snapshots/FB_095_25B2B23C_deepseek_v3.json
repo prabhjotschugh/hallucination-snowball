@@ -1,0 +1,79 @@
+{
+  "question_id": "FB_095_25B2B23C",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: JPMorgan Chase & Co., Q1 2021\n- PRIMARY METRIC: The segment with the lowest net revenue in Q1 2021 was the \"Corporate & Investment Bank\" segment, which reported net revenue of $8,739 million. (per the Q1 2021 10-Q, Consolidated Statements of Operations)\n- SUPPORTING DATA: \n  - Consumer & Community Banking: $9,112 million\n  - Corporate & Investment Bank: $8,739 million\n  - Commercial Banking: $1,154 million\n  - Asset & Wealth Management: $5,399 million\n  - Total Net Revenue: $28,083 million\n- DATA SOURCES: \n  - JPMorgan Chase & Co. Q1 2021 10-Q, Consolidated Statements of Operations\n\nNote: No analysis or interpretation has been provided as per the directive.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_095_25B2B23C_H2",
+      "type": "dollar_amount",
+      "original_value": "$14,170 million",
+      "injected_value": "$9,112 million",
+      "original_numeric": "14170",
+      "injected_numeric": "9112",
+      "position_char": 328,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.357
+    },
+    {
+      "hallucination_id": "FB_095_25B2B23C_H1",
+      "type": "dollar_amount",
+      "original_value": "$4,020 million",
+      "injected_value": "$5,399 million",
+      "original_numeric": "4020",
+      "injected_numeric": "5399",
+      "position_char": 462,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.3429
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "The segment with the lowest net revenue in Q1 2021 was the 'Corporate & Investment Bank' segment, which reported net revenue of $8,739 million.",
+        "claim_value": "$8,739 million",
+        "reason": "This directly contradicts the reported Commercial Banking segment revenue of $1,154 million, which is significantly lower. There appears to be either incorrect labeling ('lowest' applied to wrong segment) or inaccurate figures.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Consumer & Community Banking: $9,112 million\nCorporate & Investment Bank: $8,739 million\nCommercial Banking: $1,154 million\nAsset & Wealth Management: $5,399 million\nTotal Net Revenue: $28,083 million",
+        "claim_value": "$28,083 million",
+        "reason": "The sum of the reported segment revenues ($9,112 + $8,739 + $1,154 + $5,399 = $24,404 million) does not match the claimed total net revenue ($28,083 million). There could be unlisted segments, but the discrepancy is significant.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "The output contains clear numerical inconsistencies in both segment reporting and total revenue calculations.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"The segment with the lowest net revenue in Q1 2021 was the 'Corporate & Investment Bank' segment, which reported net revenue of $8,739 million.\",\n      \"claim_value\": \"$8,739 million\",\n      \"reason\": \"This directly contradicts the reported Commercial Banking segment revenue of $1,154 million, which is significantly lower. There appears to be either incorrect labeling ('lowest' applied to wrong segment) or inaccurate figures.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Consumer & Community Banking: $9,112 million\\nCorporate & Investment Bank: $8,739 million\\nCommercial Banking: $1,154 million\\nAsset & Wealth Management: $5,399 million\\nTotal Net Revenue: $28,083 million\",\n      \"claim_value\": \"$28,083 million\",\n      \"reason\": \"The sum of the reported segment revenues ($9,112 + $8,739 + $1,154 + $5,399 = $24,404 million) does not match the claimed total net revenue ($28,083 million). There could be unlisted segments, but the discrepancy is significant.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\": \"The output contains clear numerical inconsistencies in both segment reporting and total revenue calculations.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_095_25B2B23C",
+      "hallucination_id": "FB_095_25B2B23C_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$14,170 million",
+      "injected_value": "$9,112 million",
+      "detected": true,
+      "reason": "This directly contradicts the reported Commercial Banking segment revenue of $1,154 million, which is significantly lower. There appears to be either incorrect labeling ('lowest' applied to wrong segment) or inaccurate figures.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_095_25B2B23C",
+      "hallucination_id": "FB_095_25B2B23C_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$4,020 million",
+      "injected_value": "$5,399 million",
+      "detected": true,
+      "reason": "The sum of the reported segment revenues ($9,112 + $8,739 + $1,154 + $5,399 = $24,404 million) does not match the claimed total net revenue ($28,083 million). There could be unlisted segments, but the discrepancy is significant.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-24T09:54:28.473878Z"
+}

@@ -1,0 +1,79 @@
+{
+  "question_id": "FB_029_CA5B2B49",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Amcor, FY 2023\n- PRIMARY METRIC: Adjusted Non-GAAP EBITDA for FY 2023 was reported as $2,622 million per the Q4 FY2023 earnings report, Consolidated Statements of Operations.\n- SUPPORTING DATA: \n  - Adjusted Non-GAAP EBITDA for FY 2022 was $2,100 million.\n  - Adjusted Non-GAAP EBITDA for FY 2021 was $1,517 million.\n- DATA SOURCES: \n  - Q4 FY2023 Earnings Report, Consolidated Statements of Operations.\n  - Q4 FY2022 Earnings Report, Consolidated Statements of Operations.\n  - Q4 FY2021 Earnings Report, Consolidated Statements of Operations.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_029_CA5B2B49_H2",
+      "type": "dollar_amount",
+      "original_value": "$2,200 million",
+      "injected_value": "$2,622 million",
+      "original_numeric": "2200",
+      "injected_numeric": "2622",
+      "position_char": 106,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.1917
+    },
+    {
+      "hallucination_id": "FB_029_CA5B2B49_H1",
+      "type": "dollar_amount",
+      "original_value": "$2,000 million",
+      "injected_value": "$1,517 million",
+      "original_numeric": "2000",
+      "injected_numeric": "1517",
+      "position_char": 321,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.2417
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Adjusted Non-GAAP EBITDA for FY 2022 was $2,100 million.",
+        "claim_value": "$2,100 million",
+        "reason": "The figure is a perfectly round number ($2,100 million), which is highly unusual for a reported financial metric in official company filings. Additionally, it implies a very high year-over-year growth rate of 38.4% from FY2021 ($1,517 million), which is atypical for a large, mature industrial company like Amcor without specific context of significant M&A activity.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Adjusted Non-GAAP EBITDA for FY 2023 was reported as $2,622 million",
+        "claim_value": "$2,622 million",
+        "reason": "While the figure itself is not suspiciously round, it implies a high year-over-year growth rate of 24.8% from the potentially hallucinated FY2022 figure. Two consecutive years of such high EBITDA growth (38.4% then 24.8%) for a stable industrial company like Amcor are highly unusual and warrant further verification.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 3,
+    "overall_assessment": "The FY2022 EBITDA figure is highly suspicious due to its roundness and the implied high growth, which casts doubt on the plausibility of the subsequent FY2023 growth rate.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Adjusted Non-GAAP EBITDA for FY 2022 was $2,100 million.\",\n      \"claim_value\": \"$2,100 million\",\n      \"reason\": \"The figure is a perfectly round number ($2,100 million), which is highly unusual for a reported financial metric in official company filings. Additionally, it implies a very high year-over-year growth rate of 38.4% from FY2021 ($1,517 million), which is atypical for a large, mature industrial company like Amcor without specific context of significant M&A activity.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Adjusted Non-GAAP EBITDA for FY 2023 was reported as $2,622 million\",\n      \"claim_value\": \"$2,622 million\",\n      \"reason\": \"While the figure itself is not suspiciously round, it implies a high year-over-year growth rate of 24.8% from the potentially hallucinated FY2022 figure. Two consecutive years of such high EBITDA growth (38.4% then 24.8%) for a stable industrial company like Amcor are highly unusual and warrant further verification.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 3,\n  \"overall_assessment\": \"The FY2022 EBITDA figure is highly suspicious due to its roundness and the implied high growth, which casts doubt on the plausibility of the subsequent FY2023 growth rate.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_029_CA5B2B49",
+      "hallucination_id": "FB_029_CA5B2B49_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$2,200 million",
+      "injected_value": "$2,622 million",
+      "detected": true,
+      "reason": "The figure is a perfectly round number ($2,100 million), which is highly unusual for a reported financial metric in official company filings. Additionally, it implies a very high year-over-year growth rate of 38.4% from FY2021 ($1,517 million), which is atypical for a large, mature industrial company like Amcor without specific context of significant M&A activity.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 3
+    },
+    {
+      "question_id": "FB_029_CA5B2B49",
+      "hallucination_id": "FB_029_CA5B2B49_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$2,000 million",
+      "injected_value": "$1,517 million",
+      "detected": true,
+      "reason": "The figure is a perfectly round number ($2,100 million), which is highly unusual for a reported financial metric in official company filings. Additionally, it implies a very high year-over-year growth rate of 38.4% from FY2021 ($1,517 million), which is atypical for a large, mature industrial company like Amcor without specific context of significant M&A activity.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 3
+    }
+  ],
+  "timestamp": "2026-03-25T07:40:31.487176Z"
+}

@@ -1,0 +1,91 @@
+{
+  "question_id": "FB_074_499976A7",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Corning Incorporated, FY2022\n- PRIMARY METRIC: \n  - Current Assets: $12,988 million (per the FY2022 10-K, Consolidated Balance Sheets)\n  - Current Liabilities: $9,166 million (per the FY2022 10-K, Consolidated Balance Sheets)\n  - Working Capital: $3,822 million (calculated as Current Assets - Current Liabilities)\n\n- SUPPORTING DATA: \n  - FY2021 Current Assets: $12,078 million (per the FY2021 10-K, Consolidated Balance Sheets)\n  - FY2021 Current Liabilities: $6,078 million (per the FY2021 10-K, Consolidated Balance Sheets)\n  - FY2021 Working Capital: $3,970 million (calculated as Current Assets - Current Liabilities)\n  - FY2020 Current Assets: $11,000 million (per the FY2020 10-K, Consolidated Balance Sheets)\n  - FY2020 Current Liabilities: $9,948 million (per the FY2020 10-K, Consolidated Balance Sheets)\n  - FY2020 Working Capital: $3,600 million (calculated as Current Assets - Current Liabilities)\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Balance Sheets\n  - FY2021 10-K, Consolidated Balance Sheets\n  - FY2020 10-K, Consolidated Balance Sheets\n\n**Note:** The request to assess the relevance of working capital as a metric for Corning and to provide a rationale has not been fulfilled as per the instructions to present raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_074_499976A7_H2",
+      "type": "dollar_amount",
+      "original_value": "$8,108 million",
+      "injected_value": "$6,078 million",
+      "original_numeric": "8108",
+      "injected_numeric": "6078",
+      "position_char": 482,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2503
+    },
+    {
+      "hallucination_id": "FB_074_499976A7_H1",
+      "type": "dollar_amount",
+      "original_value": "$7,400 million",
+      "injected_value": "$9,948 million",
+      "original_numeric": "7400",
+      "injected_numeric": "9948",
+      "position_char": 770,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.3444
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "FY2021 Working Capital: $3,970 million (calculated as Current Assets - Current Liabilities)",
+        "claim_value": "$3,970 million",
+        "reason": "Internal arithmetic inconsistency. The provided Current Assets ($12,078 million) minus Current Liabilities ($6,078 million) equals $6,000 million, not $3,970 million.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2020 Working Capital: $3,600 million (calculated as Current Assets - Current Liabilities)",
+        "claim_value": "$3,600 million",
+        "reason": "Internal arithmetic inconsistency. The provided Current Assets ($11,000 million) minus Current Liabilities ($9,948 million) equals $1,052 million, not $3,600 million.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2020 Current Assets: $11,000 million (per the FY2020 10-K, Consolidated Balance Sheets)",
+        "claim_value": "$11,000 million",
+        "reason": "Suspiciously round number for a specific 10-K balance sheet line item. Actual financial filings typically report precise figures rather than exact thousands.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2021 Current Liabilities: $6,078 million",
+        "claim_value": "$6,078 million",
+        "reason": "Implies a 39% decrease from FY2020 ($9,948 million) followed by a 51% increase in FY2022 ($9,166 million). Such extreme volatility in current liabilities is unusual for a stable industrial company like Corning without major restructuring events.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 9,
+    "overall_assessment": "The output contains critical internal arithmetic errors and suspiciously round figures, strongly indicating data hallucination or fabrication.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"FY2021 Working Capital: $3,970 million (calculated as Current Assets - Current Liabilities)\",\n      \"claim_value\": \"$3,970 million\",\n      \"reason\": \"Internal arithmetic inconsistency. The provided Current Assets ($12,078 million) minus Current Liabilities ($6,078 million) equals $6,000 million, not $3,970 million.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2020 Working Capital: $3,600 million (calculated as Current Assets - Current Liabilities)\",\n      \"claim_value\": \"$3,600 million\",\n      \"reason\": \"Internal arithmetic inconsistency. The provided Current Assets ($11,000 million) minus Current Liabilities ($9,948 million) equals $1,052 million, not $3,600 million.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2020 Current Assets: $11,000 million (per the FY2020 10-K, Consolidated Balance Sheets)\",\n      \"claim_value\": \"$11,000 million\",\n      \"reason\": \"Suspiciously round number for a specific 10-K balance sheet line item. Actual financial filings typically report precise figures rather than exact thousands.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2021 Current Liabilities: $6,078 million\",\n      \"claim_value\": \"$6,078 million\",\n      \"reason\": \"Implies a 39% decrease from FY2020 ($9,948 million) followed by a 51% increase in FY2022 ($9,166 million). Such extreme volatility in current liabilities is unusual for a stable industrial company like Corning without major restructuring events.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 9,\n  \"overall_assessment\": \"The output contains critical internal arithmetic errors and suspiciously round figures, strongly indicating data hallucination or fabrication.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_074_499976A7",
+      "hallucination_id": "FB_074_499976A7_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$8,108 million",
+      "injected_value": "$6,078 million",
+      "detected": true,
+      "reason": "Implies a 39% decrease from FY2020 ($9,948 million) followed by a 51% increase in FY2022 ($9,166 million). Such extreme volatility in current liabilities is unusual for a stable industrial company like Corning without major restructuring events.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_074_499976A7",
+      "hallucination_id": "FB_074_499976A7_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$7,400 million",
+      "injected_value": "$9,948 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 9
+    }
+  ],
+  "timestamp": "2026-03-24T11:43:47.007636Z"
+}

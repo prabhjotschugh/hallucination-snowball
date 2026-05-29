@@ -1,0 +1,352 @@
+{
+  "question_id": "FB_053_05E755A5",
+  "method": "ours",
+  "final_output": "## Best Buy Co., Inc. - Fiscal Year 2023 Cash Flow Report\n\n### Executive Summary\n\nBest Buy Co., Inc. experienced a significant deterioration in its cash flow performance during Fiscal Year 2023. Cash Flows from Operating Activities declined substantially, while Cash Flows from Investing Activities saw a considerable increase in outflow. This combination resulted in a negative net change in cash of $(1,188) million for FY2023, a stark contrast to the positive cash generation in prior years. This trend highlights potential challenges in core operational profitability and capital allocation strategies.\n\n### Analysis\n\nFor FY2023, Best Buy reported Cash Flows from Operating Activities of $1,210 million, a decrease from $1,637 million in FY2022 and $2,174 million in FY2021. This represents a consistent decline in the company's ability to generate cash from its primary operations.\n\nCash Flows from Investing Activities showed a significant outflow of $(1,421) million in FY2023, an increase from $(852) million in FY22 and $(1,071) million in FY2021. This substantial increase in investing outflows, alongside declining operating cash, is a notable development.\n\nCash Flows from Financing Activities remained relatively stable, with an outflow of $(1,042) million in FY2023, compared to $(1,069) million in FY2022 and $(1,052) million in FY2021.\n\nThe net change in cash for FY2023 was a negative $(1,188) million. This compares unfavorably to a negative $(284) million in FY2022 and a positive $46 million in FY2021, indicating an accelerating cash burn rate.\n\n### Key Risks\n\nThe primary risk identified is the sustained and significant decline in Cash Flows from Operating Activities, which suggests potential pressures on profitability and operational efficiency. The substantial increase in Cash Flows from Investing Activities outflow, while operating cash generation is weakening, poses a liquidity risk. The overall negative net change in cash for FY2023, at $(1,188) million, indicates that Best Buy is consuming cash at an unsustainable rate if current trends persist.\n\n### Conclusion\n\nBest Buy's cash flow statement for FY2023 reveals a concerning financial trajectory. The company's core operations are generating less cash, while capital deployment through investing activities has significantly increased outflows. This combination has led to a substantial negative net change in cash, signaling potential challenges in maintaining liquidity and funding future growth without external financing or a reversal of current trends.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Best Buy Co., Inc. for Fiscal Year 2023 (FY2023)\n  \n- PRIMARY METRIC: \n  - Cash Flows from Operating Activities: $1,210 million (per the FY2023 10-K, Consolidated Statements of Cash Flows)\n  - Cash Flows from Investing Activities: $(1,421) million (per the FY2023 10-K, Consolidated Statements of Cash Flows)\n  - Cash Flows from Financing Activities: $(1,042) million (per the FY2023 10-K, Consolidated Statements of Cash Flows)\n\n- SUPPORTING DATA: \n  - FY2022 Cash Flows from Operating Activities: $1,637 million (per the FY2022 10-K, Consolidated Statements of Cash Flows)\n  - FY2022 Cash Flows from Investing Activities: $(852) million (per the FY2022 10-K, Consolidated Statements of Cash Flows)\n  - FY2022 Cash Flows from Financing Activities: $(1,069) million (per the FY2022 10-K, Consolidated Statements of Cash Flows)\n  \n  - FY2021 Cash Flows from Operating Activities: $2,174 million (per the FY2021 10-K, Consolidated Statements of Cash Flows)\n  - FY2021 Cash Flows from Investing Activities: $(1,071) million (per the FY2021 10-K, Consolidated Statements of Cash Flows)\n  - FY2021 Cash Flows from Financing Activities: $(1,052) million (per the FY2021 10-K, Consolidated Statements of Cash Flows)\n\n- DATA SOURCES: \n  - FY2023 10-K, Consolidated Statements of Cash Flows\n  - FY2022 10-K, Consolidated Statements of Cash Flows\n  - FY2021 10-K, Consolidated Statements of Cash Flows\n\nIn summary, Best Buy's cash flow from operating activities in FY2023 was the highest among the three segments, totaling $1,518 million.",
+    "2": "As a financial analyst, I've reviewed Best Buy Co., Inc.'s cash flow data for FY2023, FY2022, and FY2021.\n\n**Correction:** The researcher's summary states FY2023 Cash Flows from Operating Activities was $1,518 million. However, the detailed data provided for FY2023 explicitly states it as **$1,210 million**. I will use the detailed data value of $1,210 million for my calculations, as it is directly sourced from the 10-K.\n\n---\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\n*   **Formula for Absolute Change:** Current Year Value - Prior Year Value\n*   **Formula for Percentage Change:** (Absolute Change / Prior Year Value) * 100\n\n| Metric                               | FY2023 Value ($M) | FY2022 Value ($M) | FY2021 Value ($M) | FY23 vs FY22 Absolute Change ($M) | FY23 vs FY22 % Change | FY22 vs FY21 Absolute Change ($M) | FY22 vs FY21 % Change |\n| :----------------------------------- | :---------------- | :---------------- | :---------------- | :-------------------------------- | :-------------------- | :-------------------------------- | :-------------------- |\n| Cash Flows from Operating Activities | 1,210             | 1,637             | 2,174             | -427                              | -26.08%               | -537                              | -24.69%               |\n| Cash Flows from Investing Activities | (1,421)           | (852)             | (1,071)           | -569                              | 66.78%                | 219                               | -20.45%               |\n| Cash Flows from Financing Activities | (1,042)           | (1,069)           | (1,052)           | 27                                | -2.53%                | -17                               | 1.62%                 |\n\n---\n\n**2. Relevant Ratios**\n\n*   **Net Change in Cash (Total Cash Flow):** Sum of Operating, Investing, and Financing Cash Flows\n    *   **Formula:** CFO + CFI + CFF\n\n| Year  | CFO ($M) | CFI ($M) | CFF ($M) | Net Change in Cash ($M) |\n| :---- | :------- | :------- | :------- | :---------------------- |\n| FY2023 | 1,210    | (1,421)  | (1,042)  | (1,253)                 |\n| FY2022 | 1,637    | (852)    | (1,069)  | (284)                   |\n| FY2021 | 2,174    | (1,071)  | (1,052)  | 51                      |\n\n---\n\n**3. Anomalies Flagged**\n\n*   **FY2023 Cash Flows from Operating Activities (CFO):** A significant **-26.08% decrease** from FY2022, following a **-24.69% decrease** from FY2021. This consistent and substantial decline in core operating cash generation is a **major anomaly** and warrants further investigation into profitability, working capital management, and revenue trends.\n*   **FY2023 Cash Flows from Investing Activities (CFI):** A substantial **66.78% increase in cash outflow** (from $(852)M to $(1,421)M) from FY2022. This indicates a significant increase in investments (e.g., capital expenditures, acquisitions) or a decrease in asset sales. Given the decline in operating cash flow, this increased investment outflow is a **notable anomaly** that could strain liquidity.\n*   **FY2023 Net Change in Cash:** The total cash flow for FY2023 is a significant **negative $(1,253) million**, a substantial deterioration from FY2022's negative $(284) million and FY2021's positive $51 million. This indicates that Best Buy is burning cash at an accelerating rate, which is a **critical anomaly** for financial health.\n\n**Summary of Anomalies:** Best Buy's cash flow profile shows a concerning trend of declining operating cash generation coupled with significantly increased investing outflows, leading to a substantial negative net change in cash for FY2023. This suggests potential challenges in profitability, capital allocation, and overall liquidity.",
+    "3": "## Best Buy Co., Inc. - Fiscal Year 2023 Cash Flow Report\n\n### Executive Summary\n\nBest Buy Co., Inc. experienced a significant deterioration in its cash flow performance during Fiscal Year 2023. Cash Flows from Operating Activities declined substantially, while Cash Flows from Investing Activities saw a considerable increase in outflow. This combination resulted in a negative net change in cash of $(1,188) million for FY2023, a stark contrast to the positive cash generation in prior years. This trend highlights potential challenges in core operational profitability and capital allocation strategies.\n\n### Analysis\n\nFor FY2023, Best Buy reported Cash Flows from Operating Activities of $1,210 million, a decrease from $1,637 million in FY2022 and $2,174 million in FY2021. This represents a consistent decline in the company's ability to generate cash from its primary operations.\n\nCash Flows from Investing Activities showed a significant outflow of $(1,421) million in FY2023, an increase from $(852) million in FY2022 and $(1,071) million in FY2021. This substantial increase in investing outflows, alongside declining operating cash, is a notable development.\n\nCash Flows from Financing Activities remained relatively stable, with an outflow of $(1,042) million in FY2023, compared to $(1,069) million in FY2022 and $(1,052) million in FY2021.\n\nThe net change in cash for FY2023 was a negative $(1,188) million. This compares unfavorably to a negative $(284) million in FY2022 and a positive $51 million in FY2021, indicating an accelerating cash burn rate.\n\n### Key Risks\n\nThe primary risk identified is the sustained and significant decline in Cash Flows from Operating Activities, which suggests potential pressures on profitability and operational efficiency. The substantial increase in Cash Flows from Investing Activities outflow, while operating cash generation is weakening, poses a liquidity risk. The overall negative net change in cash for FY2023, at $(1,188) million, indicates that Best Buy is consuming cash at an unsustainable rate if current trends persist.\n\n### Conclusion\n\nBest Buy's cash flow statement for FY2023 reveals a concerning financial trajectory. The company's core operations are generating less cash, while capital deployment through investing activities has significantly increased outflows. This combination has led to a substantial negative net change in cash, signaling potential challenges in maintaining liquidity and funding future growth without external financing or a reversal of current trends.",
+    "4": "## Best Buy Co., Inc. - Fiscal Year 2023 Cash Flow Report\n\n### Executive Summary\n\nBest Buy Co., Inc. experienced a significant deterioration in its cash flow performance during Fiscal Year 2023. Cash Flows from Operating Activities declined substantially, while Cash Flows from Investing Activities saw a considerable increase in outflow. This combination resulted in a negative net change in cash of $(1,188) million for FY2023, a stark contrast to the positive cash generation in prior years. This trend highlights potential challenges in core operational profitability and capital allocation strategies.\n\n### Analysis\n\nFor FY2023, Best Buy reported Cash Flows from Operating Activities of $1,210 million, a decrease from $1,637 million in FY2022 and $2,174 million in FY2021. This represents a consistent decline in the company's ability to generate cash from its primary operations.\n\nCash Flows from Investing Activities showed a significant outflow of $(1,421) million in FY2023, an increase from $(852) million in FY22 and $(1,071) million in FY2021. This substantial increase in investing outflows, alongside declining operating cash, is a notable development.\n\nCash Flows from Financing Activities remained relatively stable, with an outflow of $(1,042) million in FY2023, compared to $(1,069) million in FY2022 and $(1,052) million in FY2021.\n\nThe net change in cash for FY2023 was a negative $(1,188) million. This compares unfavorably to a negative $(284) million in FY2022 and a positive $46 million in FY2021, indicating an accelerating cash burn rate.\n\n### Key Risks\n\nThe primary risk identified is the sustained and significant decline in Cash Flows from Operating Activities, which suggests potential pressures on profitability and operational efficiency. The substantial increase in Cash Flows from Investing Activities outflow, while operating cash generation is weakening, poses a liquidity risk. The overall negative net change in cash for FY2023, at $(1,188) million, indicates that Best Buy is consuming cash at an unsustainable rate if current trends persist.\n\n### Conclusion\n\nBest Buy's cash flow statement for FY2023 reveals a concerning financial trajectory. The company's core operations are generating less cash, while capital deployment through investing activities has significantly increased outflows. This combination has led to a substantial negative net change in cash, signaling potential challenges in maintaining liquidity and funding future growth without external financing or a reversal of current trends."
+  },
+  "gates": {
+    "gate_1": {
+      "verified": [
+        {
+          "value": "$1,210 million",
+          "ref": 1188.0
+        },
+        {
+          "value": "$1,637 million",
+          "ref": 1637.0
+        },
+        {
+          "value": "$2,174 million",
+          "ref": 2174.0
+        },
+        {
+          "value": "$1,518 million",
+          "ref": 1518.0
+        },
+        {
+          "value": "1,421",
+          "ref": 1419.0
+        },
+        {
+          "value": "1,042",
+          "ref": 1042.0
+        },
+        {
+          "value": "1,069",
+          "ref": 1069.0
+        },
+        {
+          "value": "1,071",
+          "ref": 1071.0
+        },
+        {
+          "value": "1,052",
+          "ref": 1052.0
+        }
+      ],
+      "refuted": [],
+      "unverified": [],
+      "n_refs": 34
+    },
+    "gate_2": {
+      "verified": [
+        {
+          "value": "$1,518 million",
+          "ref": 1518.0
+        },
+        {
+          "value": "$1,210 million",
+          "ref": 1188.0
+        },
+        {
+          "value": "$1,210 million",
+          "ref": 1188.0
+        },
+        {
+          "value": "1,210",
+          "ref": 1188.0
+        },
+        {
+          "value": "1,637",
+          "ref": 1637.0
+        },
+        {
+          "value": "2,174",
+          "ref": 2174.0
+        },
+        {
+          "value": "1,421",
+          "ref": 1419.0
+        },
+        {
+          "value": "1,071",
+          "ref": 1071.0
+        },
+        {
+          "value": "1,042",
+          "ref": 1042.0
+        },
+        {
+          "value": "1,069",
+          "ref": 1069.0
+        },
+        {
+          "value": "1,052",
+          "ref": 1052.0
+        },
+        {
+          "value": "1,210",
+          "ref": 1188.0
+        },
+        {
+          "value": "1,421",
+          "ref": 1419.0
+        },
+        {
+          "value": "1,042",
+          "ref": 1042.0
+        },
+        {
+          "value": "1,637",
+          "ref": 1637.0
+        },
+        {
+          "value": "1,069",
+          "ref": 1069.0
+        },
+        {
+          "value": "2,174",
+          "ref": 2174.0
+        },
+        {
+          "value": "1,071",
+          "ref": 1071.0
+        },
+        {
+          "value": "1,052",
+          "ref": 1052.0
+        },
+        {
+          "value": "1,421",
+          "ref": 1419.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$51 million",
+          "num": 51.0,
+          "correct": 46.0,
+          "dev": 0.098,
+          "source": "evidence"
+        },
+        {
+          "value": "-26.08%",
+          "num": 26.08,
+          "correct": 32.0,
+          "dev": 0.185,
+          "source": "evidence"
+        },
+        {
+          "value": "-24.69%",
+          "num": 24.69,
+          "correct": 32.0,
+          "dev": 0.2284,
+          "source": "evidence"
+        },
+        {
+          "value": "66.78%",
+          "num": 66.78,
+          "correct": 46.0,
+          "dev": 0.3112,
+          "source": "evidence"
+        },
+        {
+          "value": "-20.45%",
+          "num": 20.45,
+          "correct": 32.0,
+          "dev": 0.3609,
+          "source": "evidence"
+        },
+        {
+          "value": "-2.53%",
+          "num": 2.53,
+          "correct": 1.8,
+          "dev": 0.2885,
+          "source": "ground_truth"
+        },
+        {
+          "value": "1.62%",
+          "num": 1.62,
+          "correct": 1.8,
+          "dev": 0.1,
+          "source": "ground_truth"
+        },
+        {
+          "value": "-26.08%",
+          "num": 26.08,
+          "correct": 32.0,
+          "dev": 0.185,
+          "source": "evidence"
+        },
+        {
+          "value": "-24.69%",
+          "num": 24.69,
+          "correct": 32.0,
+          "dev": 0.2284,
+          "source": "evidence"
+        },
+        {
+          "value": "66.78%",
+          "num": 66.78,
+          "correct": 46.0,
+          "dev": 0.3112,
+          "source": "evidence"
+        },
+        {
+          "value": "1,253",
+          "num": 1253.0,
+          "correct": 1188.0,
+          "dev": 0.0519,
+          "source": "source_document"
+        },
+        {
+          "value": "1,253",
+          "num": 1253.0,
+          "correct": 1188.0,
+          "dev": 0.0519,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [],
+      "n_refs": 34
+    },
+    "gate_3": {
+      "verified": [
+        {
+          "value": "$1,210 million",
+          "ref": 1188.0
+        },
+        {
+          "value": "$1,637 million",
+          "ref": 1637.0
+        },
+        {
+          "value": "$2,174 million",
+          "ref": 2174.0
+        },
+        {
+          "value": "1,188",
+          "ref": 1188.0
+        },
+        {
+          "value": "1,421",
+          "ref": 1419.0
+        },
+        {
+          "value": "1,071",
+          "ref": 1071.0
+        },
+        {
+          "value": "1,042",
+          "ref": 1042.0
+        },
+        {
+          "value": "1,069",
+          "ref": 1069.0
+        },
+        {
+          "value": "1,052",
+          "ref": 1052.0
+        },
+        {
+          "value": "1,188",
+          "ref": 1188.0
+        },
+        {
+          "value": "1,188",
+          "ref": 1188.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$51 million",
+          "num": 51.0,
+          "correct": 46.0,
+          "dev": 0.098,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [],
+      "n_refs": 34
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_053_05E755A5",
+      "hid": "FB_053_05E755A5_H3",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 1210.0,
+      "orig_num": 1518.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_053_05E755A5",
+      "hid": "FB_053_05E755A5_H2",
+      "method": "ours",
+      "type": "large_number",
+      "inj_num": 1421.0,
+      "orig_num": 1188.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_053_05E755A5",
+      "hid": "FB_053_05E755A5_H1",
+      "method": "ours",
+      "type": "large_number",
+      "inj_num": 852.0,
+      "orig_num": 1045.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": false,
+      "present_s2": false,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 3,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:23:06.880255+00:00"
+}

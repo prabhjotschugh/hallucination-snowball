@@ -1,0 +1,121 @@
+{
+  "question_id": "FB_090_72CFB567",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Johnson & Johnson, FY2022\n- PRIMARY METRIC: \n  - Domestic Sales: $49,097 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - International Sales: $36,544 million (per the FY2022 10-K, Consolidated Statements of Operations)\n\n- SUPPORTING DATA: \n  - FY2021 Domestic Sales: $46,211 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2021 International Sales: $34,678 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  \n  - Domestic Sales Growth FY2022: \n    - Growth = ($49,097 million - $62,980 million) / $46,211 million = 4.06%\n  \n  - International Sales Growth FY2022: \n    - Growth = ($36,544 million - $48,060 million) / $40,543 million = 5.38%\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Statements of Operations\n\nNote: The growth rates are computed based on the figures provided and are presented without interpretation or analysis.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_090_72CFB567_H3",
+      "type": "dollar_amount",
+      "original_value": "$46,211 million",
+      "injected_value": "$62,980 million",
+      "original_numeric": "46211",
+      "injected_numeric": "62980",
+      "position_char": 570,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.3629
+    },
+    {
+      "hallucination_id": "FB_090_72CFB567_H2",
+      "type": "dollar_amount",
+      "original_value": "$34,678 million",
+      "injected_value": "$48,060 million",
+      "original_numeric": "34678",
+      "injected_numeric": "48060",
+      "position_char": 690,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.3859
+    },
+    {
+      "hallucination_id": "FB_090_72CFB567_H1",
+      "type": "dollar_amount",
+      "original_value": "$34,678 million",
+      "injected_value": "$40,543 million",
+      "original_numeric": "34678",
+      "injected_numeric": "40543",
+      "position_char": 709,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.1691
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Growth = ($49,097 million - $62,980 million) / $46,211 million = 4.06%",
+        "claim_value": "$62,980 million",
+        "reason": "This figure is used in the domestic sales growth calculation but is not provided elsewhere as a relevant sales figure (e.g., prior year sales) for J&J in FY2021 or FY2022. It appears to be a hallucinated number.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Domestic Sales Growth FY2022: Growth = ($49,097 million - $62,980 million) / $46,211 million = 4.06%",
+        "claim_value": "4.06%",
+        "reason": "The calculated growth rate of 4.06% does not result from the provided formula ($49,097 million - $62,980 million) / $46,211 million, which yields approximately -30.04%. This indicates an internal calculation error or hallucination of the final percentage.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Growth = ($36,544 million - $48,060 million) / $40,543 million = 5.38%",
+        "claim_value": "$48,060 million",
+        "reason": "This figure is used in the international sales growth calculation but is not provided elsewhere as a relevant sales figure (e.g., prior year sales) for J&J in FY2021 or FY2022. It appears to be a hallucinated number.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Growth = ($36,544 million - $48,060 million) / $40,543 million = 5.38%",
+        "claim_value": "$40,543 million",
+        "reason": "This figure is used as the denominator in the international sales growth calculation but is not provided elsewhere as the prior year's international sales. The correct prior year international sales ($34,678 million) is provided earlier in the output. It appears to be a hallucinated number.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "International Sales Growth FY2022: Growth = ($36,544 million - $48,060 million) / $40,543 million = 5.38%",
+        "claim_value": "5.38%",
+        "reason": "While 5.38% is the correct growth rate when calculated using the *correct* FY2022 and FY2021 international sales figures provided earlier ($36,544 million and $34,678 million), the *formula presented* contains hallucinated numbers ($48,060 million and $40,543 million) and does not yield 5.38%. This indicates an internal inconsistency and potential hallucination in the presented calculation steps.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 12,
+    "overall_assessment": "The researcher's output contains significant internal inconsistencies and hallucinated figures within the growth rate calculations, despite providing plausible base sales figures.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Growth = ($49,097 million - $62,980 million) / $46,211 million = 4.06%\",\n      \"claim_value\": \"$62,980 million\",\n      \"reason\": \"This figure is used in the domestic sales growth calculation but is not provided elsewhere as a relevant sales figure (e.g., prior year sales) for J&J in FY2021 or FY2022. It appears to be a hallucinated number.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Domestic Sales Growth FY2022: Growth = ($49,097 million - $62,980 million) / $46,211 million = 4.06%\",\n      \"claim_value\": \"4.06%\",\n      \"reason\": \"The calculated growth rate of 4.06% does not result from the provided formula ($49,097 million - $62,980 million) / $46,211 million, which yields approximately -30.04%. This indicates an internal calculation error or hallucination of the final percentage.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Growth = ($36,544 million - $48,060 million) / $40,543 million = 5.38%\",\n      \"claim_value\": \"$48,060 million\",\n      \"reason\": \"This figure is used in the international sales growth calculation but is not provided elsewhere as a relevant sales figure (e.g., prior year sales) for J&J in FY2021 or FY2022. It appears to be a hallucinated number.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Growth = ($36,544 million - $48,060 million) / $40,543 million = 5.38%\",\n      \"claim_value\": \"$40,543 million\",\n      \"reason\": \"This figure is used as the denominator in the international sales growth calculation but is not provided elsewhere as the prior year's international sales. The correct prior year international sales ($34,678 million) is provided earlier in the output. It appears to be a hallucinated number.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"International Sales Growth FY2022: Growth = ($36,544 million - $48,060 million) / $40,543 million = 5.38%\",\n      \"claim_value\": \"5.38%\",\n      \"reason\": \"While 5.38% is the correct growth rate when calculated using the *correct* FY2022 and FY2021 international sales figures provided earlier ($36,544 million and $34,678 million), the *formula presented* contains hallucinated numbers ($48,060 million and $40,543 million) and does not yield 5.38%. This indicates an internal inconsistency and potential hallucination in the presented calculation steps.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 12,\n  \"overall_assessment\": \"The researcher's output contains significant internal inconsistencies and hallucinated figures within the growth rate calculations, despite providing plausible base sales figures.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_090_72CFB567",
+      "hallucination_id": "FB_090_72CFB567_H3",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$46,211 million",
+      "injected_value": "$62,980 million",
+      "detected": true,
+      "reason": "This figure is used in the domestic sales growth calculation but is not provided elsewhere as a relevant sales figure (e.g., prior year sales) for J&J in FY2021 or FY2022. It appears to be a hallucinated number.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 12
+    },
+    {
+      "question_id": "FB_090_72CFB567",
+      "hallucination_id": "FB_090_72CFB567_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$34,678 million",
+      "injected_value": "$48,060 million",
+      "detected": true,
+      "reason": "This figure is used in the international sales growth calculation but is not provided elsewhere as a relevant sales figure (e.g., prior year sales) for J&J in FY2021 or FY2022. It appears to be a hallucinated number.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 12
+    },
+    {
+      "question_id": "FB_090_72CFB567",
+      "hallucination_id": "FB_090_72CFB567_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$34,678 million",
+      "injected_value": "$40,543 million",
+      "detected": true,
+      "reason": "This figure is used in the international sales growth calculation but is not provided elsewhere as a relevant sales figure (e.g., prior year sales) for J&J in FY2021 or FY2022. It appears to be a hallucinated number.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 12
+    }
+  ],
+  "timestamp": "2026-03-25T07:54:47.362570Z"
+}

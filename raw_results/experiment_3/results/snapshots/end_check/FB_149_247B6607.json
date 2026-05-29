@@ -1,0 +1,154 @@
+{
+  "question_id": "FB_149_247B6607",
+  "method": "end_check",
+  "final_output": "## Walmart Inc. Financial Performance Report (FY2018-FY2019)\n\n**Executive Summary**\n\nWalmart Inc. demonstrated robust financial performance from Fiscal Year 2018 to Fiscal Year 2019. Total revenue increased by 2.81%, rising to $514,405 million in FY2019 from $500,343 million in FY2018. More significantly, operating income surged by 31.26%, reaching $30,045 million in FY2019 from $22,889 million in FY2018. This strong growth in operating income outpaced revenue growth, leading to a notable improvement in the operating income percentage margin, which expanded from 4.57% in FY2018 to 5.84% in FY2019.\n\n**Analysis**\n\nWalmart Inc. achieved substantial growth in its operating profitability during the period under review. The absolute increase in operating income was $7,156 million, representing a significant 31.26% year-over-year increase. This indicates effective cost management, enhanced operational efficiency, or a favorable shift in sales mix relative to overall revenue. Total revenue increased by $14,062 million, a 2.81% rise, reflecting continued market presence and consistent sales generation. The operating income percentage margin improved by 1.27 percentage points, from 4.57% in FY2018 to 5.84% in FY2019. This expansion in margin suggests that the company's core operations became more profitable per dollar of revenue, indicating a strong underlying operational performance.\n\n**Key Risks**\n\nWhile the substantial increase in operating income and margin is a positive indicator, sustained growth in the operating income percentage margin will depend on continued operational efficiencies and the ability to manage costs effectively. Potential future challenges include inflationary pressures, increased competition, and shifts in consumer spending habits. The relatively modest revenue growth of 2.81% compared to the significant operating income growth suggests that future operating income expansion may become more challenging if revenue growth does not accelerate or if the current rate of margin improvement is not sustainable.\n\n**Conclusion**\n\nWalmart Inc. exhibited strong operational performance between FY2018 and FY2019, with a substantial 31.26% increase in operating income and a 1.27 percentage point improvement in its operating income margin. This indicates a healthy and improving profitability profile, demonstrating the company's ability to enhance efficiency and manage its cost structure effectively. The company's success in translating revenue growth into significantly higher operating income underscores effective management and strategic execution during this period.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Walmart Inc. for Fiscal Years 2018 and 2019\n- PRIMARY METRIC: \n  - FY2018 Operating Income: $22,889 million (per the FY2019 10-K, Consolidated Statements of Income)\n  - FY2019 Operating Income: $30,045 million (per the FY2019 10-K, Consolidated Statements of Income)\n  \n- SUPPORTING DATA:\n  - FY2018 Total Revenue: $500,343 million (per the FY2019 10-K, Consolidated Statements of Income)\n  - FY2019 Total Revenue: $514,405 million (per the FY2019 10-K, Consolidated Statements of Income)\n  \n  - FY2018 Operating Income Percentage Margin: (Operating Income / Total Revenue) * 100 = ($22,889 million / $500,343 million) * 100 = 4.6%\n  - FY2019 Operating Income Percentage Margin: (Operating Income / Total Revenue) * 100 = ($24,202 million / $514,405 million) * 100 = 16.1%\n  \n  - Change in Operating Income Percentage Margin: 4.7% - 4.6% = 0.1%\n\n- DATA SOURCES: \n  - Walmart Inc. FY2019 10-K, Consolidated Statements of Income, filed with the SEC on March 28, 2019.",
+    "2": "As a financial analyst, I've reviewed the provided data for Walmart Inc. for Fiscal Years 2018 and 2019.\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\n*   **Operating Income:**\n    *   FY2018 Operating Income: $22,889 million\n    *   FY2019 Operating Income: $30,045 million\n    *   Absolute Change = FY2019 Operating Income - FY2018 Operating Income\n        *   Absolute Change = $30,045 million - $22,889 million = **$7,156 million**\n    *   Percentage Change = (Absolute Change / FY2018 Operating Income) * 100\n        *   Percentage Change = ($7,156 million / $22,889 million) * 100 = **31.26%**\n\n*   **Total Revenue:**\n    *   FY2018 Total Revenue: $500,343 million\n    *   FY2019 Total Revenue: $514,405 million\n    *   Absolute Change = FY2019 Total Revenue - FY2018 Total Revenue\n        *   Absolute Change = $514,405 million - $500,343 million = **$14,062 million**\n    *   Percentage Change = (Absolute Change / FY2018 Total Revenue) * 100\n        *   Percentage Change = ($14,062 million / $500,343 million) * 100 = **2.81%**\n\n**2. Relevant Ratios**\n\n*   **Operating Income Percentage Margin:**\n    *   FY2018 Operating Income Percentage Margin = (FY2018 Operating Income / FY2018 Total Revenue) * 100\n        *   FY2018 Operating Income Percentage Margin = ($22,889 million / $500,343 million) * 100 = **4.57%** (Rounded to 4.6% as per researcher data)\n    *   FY2019 Operating Income Percentage Margin = (FY2019 Operating Income / FY2019 Total Revenue) * 100\n        *   FY2019 Operating Income Percentage Margin = ($30,045 million / $514,405 million) * 100 = **5.84%**\n\n**3. Anomalies Flagged**\n\n*   **FY2019 Operating Income Percentage Margin Calculation:** The researcher data states FY2019 Operating Income Percentage Margin as 16.1% using an Operating Income of $24,202 million. However, the primary metric for FY2019 Operating Income is $30,045 million.\n    *   Using the primary metric: ($30,045 million / $514,405 million) * 100 = **5.84%**.\n    *   The researcher's stated 16.1% is **INCORRECT** based on the provided primary operating income data. The researcher's intermediate operating income value of $24,202 million is also inconsistent with the primary metric.\n\n*   **Change in Operating Income Percentage Margin:** The researcher data states \"Change in Operating Income Percentage Margin: 4.7% - 4.6% = 0.1%\". This calculation is based on the incorrect FY2019 margin (4.7% is not derived from the primary data) and the rounded FY2018 margin.\n    *   Using our calculated margins: 5.84% - 4.57% = **1.27%**.\n    *   The researcher's stated change of 0.1% is **INCORRECT**.\n\n**Summary of Corrected Ratios:**\n\n*   FY2018 Operating Income Percentage Margin: 4.57%\n*   FY2019 Operating Income Percentage Margin: 5.84%\n*   Change in Operating Income Percentage Margin: +1.27 percentage points",
+    "3": "## Walmart Inc. Financial Performance Report (FY2018-FY2019)\n\n**Executive Summary**\n\nWalmart Inc. demonstrated robust financial performance from Fiscal Year 2018 to Fiscal Year 2019, primarily driven by a significant increase in operating income. Operating income surged by 31.26% to $30,045 million in FY2019 from $22,889 million in FY2018. Total revenue also experienced growth, rising by 2.81% to $514,405 million in FY2019 from $500,343 million in FY2018. This strong operating income growth outpaced revenue growth, leading to a notable improvement in the operating income percentage margin from 4.57% in FY2018 to 5.84% in FY2019.\n\n**Analysis**\n\nWalmart Inc. achieved substantial growth in its operating profitability during the period. The absolute increase in operating income was $7,156 million, representing a 31.26% year-over-year increase. This indicates effective cost management or enhanced operational efficiency relative to sales. Total revenue increased by $14,062 million, a 2.81% rise, reflecting continued market presence and sales generation. The operating income percentage margin improved by 1.27 percentage points, from 4.57% in FY2018 to 5.84% in FY2019. This expansion in margin suggests that the company's core operations became more profitable per dollar of revenue.\n\n**Key Risks**\n\nWhile the increase in operating income and margin is positive, sustained growth in operating income percentage margin will depend on continued operational efficiencies and the ability to manage costs effectively amidst potential inflationary pressures or increased competition. The relatively modest revenue growth of 2.81% compared to the significant operating income growth suggests that future operating income expansion may become more challenging if revenue growth does not accelerate.\n\n**Conclusion**\n\nWalmart Inc. exhibited strong operational performance between FY2018 and FY2019, with a substantial 31.26% increase in operating income and a 1.27 percentage point improvement in its operating income margin. This indicates a healthy and improving profitability profile. The company's ability to translate revenue growth into significantly higher operating income underscores effective management and strategic execution during this period.",
+    "4": "## Walmart Inc. Financial Performance Report (FY2018-FY2019)\n\n**Executive Summary**\n\nWalmart Inc. demonstrated robust financial performance from Fiscal Year 2018 to Fiscal Year 2019. Total revenue increased by 2.81%, rising to $514,405 million in FY2019 from $500,343 million in FY2018. More significantly, operating income surged by 31.26%, reaching $30,045 million in FY2019 from $22,889 million in FY2018. This strong growth in operating income outpaced revenue growth, leading to a notable improvement in the operating income percentage margin, which expanded from 4.57% in FY2018 to 5.84% in FY2019.\n\n**Analysis**\n\nWalmart Inc. achieved substantial growth in its operating profitability during the period under review. The absolute increase in operating income was $7,156 million, representing a significant 31.26% year-over-year increase. This indicates effective cost management, enhanced operational efficiency, or a favorable shift in sales mix relative to overall revenue. Total revenue increased by $14,062 million, a 2.81% rise, reflecting continued market presence and consistent sales generation. The operating income percentage margin improved by 1.27 percentage points, from 4.57% in FY2018 to 5.84% in FY2019. This expansion in margin suggests that the company's core operations became more profitable per dollar of revenue, indicating a strong underlying operational performance.\n\n**Key Risks**\n\nWhile the substantial increase in operating income and margin is a positive indicator, sustained growth in the operating income percentage margin will depend on continued operational efficiencies and the ability to manage costs effectively. Potential future challenges include inflationary pressures, increased competition, and shifts in consumer spending habits. The relatively modest revenue growth of 2.81% compared to the significant operating income growth suggests that future operating income expansion may become more challenging if revenue growth does not accelerate or if the current rate of margin improvement is not sustainable.\n\n**Conclusion**\n\nWalmart Inc. exhibited strong operational performance between FY2018 and FY2019, with a substantial 31.26% increase in operating income and a 1.27 percentage point improvement in its operating income margin. This indicates a healthy and improving profitability profile, demonstrating the company's ability to enhance efficiency and manage its cost structure effectively. The company's success in translating revenue growth into significantly higher operating income underscores effective management and strategic execution during this period."
+  },
+  "gates": {
+    "end_gate": {
+      "verified": [
+        {
+          "value": "$514,405 million",
+          "ref": 514405.0
+        },
+        {
+          "value": "$500,343 million",
+          "ref": 500343.0
+        },
+        {
+          "value": "$22,889 million",
+          "ref": 22889.0
+        },
+        {
+          "value": "4.57%",
+          "ref": 4.6
+        },
+        {
+          "value": "4.57%",
+          "ref": 4.6
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$30,045 million",
+          "num": 30045.0,
+          "correct": 24202.0,
+          "dev": 0.1945,
+          "source": "source_document"
+        },
+        {
+          "value": "$14,062 million",
+          "num": 14062.0,
+          "correct": 22889.0,
+          "dev": 0.3856,
+          "source": "source_document"
+        },
+        {
+          "value": "2.81%",
+          "num": 2.81,
+          "correct": 4.6,
+          "dev": 0.3891,
+          "source": "source_document"
+        },
+        {
+          "value": "5.84%",
+          "num": 5.84,
+          "correct": 4.7,
+          "dev": 0.1952,
+          "source": "source_document"
+        },
+        {
+          "value": "2.81%",
+          "num": 2.81,
+          "correct": 4.6,
+          "dev": 0.3891,
+          "source": "source_document"
+        },
+        {
+          "value": "5.84%",
+          "num": 5.84,
+          "correct": 4.7,
+          "dev": 0.1952,
+          "source": "source_document"
+        },
+        {
+          "value": "2.81%",
+          "num": 2.81,
+          "correct": 4.6,
+          "dev": 0.3891,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$7,156 million"
+        },
+        {
+          "value": "31.26%"
+        },
+        {
+          "value": "31.26%"
+        },
+        {
+          "value": "1.27 percent"
+        },
+        {
+          "value": "31.26%"
+        },
+        {
+          "value": "1.27 percent"
+        }
+      ],
+      "n_refs": 8
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_149_247B6607",
+      "hid": "FB_149_247B6607_H2",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 30045.0,
+      "orig_num": 24202.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": true,
+      "any_det": true,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_149_247B6607",
+      "hid": "FB_149_247B6607_H1",
+      "method": "end_check",
+      "type": "percentage",
+      "inj_num": 16.1,
+      "orig_num": 4.7,
+      "survived": false,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:57:51.169912+00:00"
+}

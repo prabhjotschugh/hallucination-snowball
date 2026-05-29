@@ -1,0 +1,85 @@
+{
+  "question_id": "FB_075_D5F39BB5",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Costco Wholesale Corporation, Fiscal Year 2021\n- PRIMARY METRIC: Total Assets: $38,256 million (per the FY2021 10-K, Consolidated Balance Sheets)\n- SUPPORTING DATA: \n  - Total Assets FY2020: $41,694 million (per the FY2020 10-K, Consolidated Balance Sheets)\n  - Total Assets FY2019: $47,192 million (per the FY2019 10-K, Consolidated Balance Sheets)\n- DATA SOURCES: \n  - FY2021 10-K, Consolidated Balance Sheets\n  - FY2020 10-K, Consolidated Balance Sheets\n  - FY2019 10-K, Consolidated Balance Sheets\n\nNote: No financial ratios or analysis have been computed as per the directive to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_075_D5F39BB5_H2",
+      "type": "dollar_amount",
+      "original_value": "$59,431 million",
+      "injected_value": "$38,256 million",
+      "original_numeric": "59431",
+      "injected_numeric": "38256",
+      "position_char": 99,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.3563
+    },
+    {
+      "hallucination_id": "FB_075_D5F39BB5_H1",
+      "type": "dollar_amount",
+      "original_value": "$53,189 million",
+      "injected_value": "$41,694 million",
+      "original_numeric": "53189",
+      "injected_numeric": "41694",
+      "position_char": 211,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2161
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Total Assets: $38,256 million",
+        "claim_value": "$38,256 million",
+        "reason": "This figure, when considered with the FY2020 and FY2019 total asset figures provided, forms a consistent multi-year decline in total assets for Costco. A sustained decrease in total assets from $47.19 billion in FY2019 to $38.26 billion in FY2021 is highly counter-intuitive and implausible for a large, growing retailer like Costco, especially during a period (2019-2021) that generally saw strong performance in the retail sector. This trend strongly suggests hallucination.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Assets FY2020: $41,694 million",
+        "claim_value": "$41,694 million",
+        "reason": "This figure contributes to a suspicious multi-year declining trend in total assets for Costco (from $47.19 billion in FY2019 to $38.26 billion in FY2021). Such a consistent and significant decline is inconsistent with the expected growth trajectory and financial performance of a major retailer like Costco during this specific period.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Assets FY2019: $47,192 million",
+        "claim_value": "$47,192 million",
+        "reason": "This figure initiates a suspicious multi-year declining trend in total assets for Costco (from $47.19 billion in FY2019 to $38.26 billion in FY2021). A consistent decrease in total assets over three years is highly unusual for a company of Costco's size and market position, particularly given the general economic conditions and retail performance during this timeframe, making it highly suspicious.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 3,
+    "overall_assessment": "The reported total asset figures for Costco across FY2019-FY2021 show a consistent and implausible multi-year decline, which is highly suspicious for a company of Costco's nature and performance during that period.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Total Assets: $38,256 million\",\n      \"claim_value\": \"$38,256 million\",\n      \"reason\": \"This figure, when considered with the FY2020 and FY2019 total asset figures provided, forms a consistent multi-year decline in total assets for Costco. A sustained decrease in total assets from $47.19 billion in FY2019 to $38.26 billion in FY2021 is highly counter-intuitive and implausible for a large, growing retailer like Costco, especially during a period (2019-2021) that generally saw strong performance in the retail sector. This trend strongly suggests hallucination.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Assets FY2020: $41,694 million\",\n      \"claim_value\": \"$41,694 million\",\n      \"reason\": \"This figure contributes to a suspicious multi-year declining trend in total assets for Costco (from $47.19 billion in FY2019 to $38.26 billion in FY2021). Such a consistent and significant decline is inconsistent with the expected growth trajectory and financial performance of a major retailer like Costco during this specific period.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Assets FY2019: $47,192 million\",\n      \"claim_value\": \"$47,192 million\",\n      \"reason\": \"This figure initiates a suspicious multi-year declining trend in total assets for Costco (from $47.19 billion in FY2019 to $38.26 billion in FY2021). A consistent decrease in total assets over three years is highly unusual for a company of Costco's size and market position, particularly given the general economic conditions and retail performance during this timeframe, making it highly suspicious.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 3,\n  \"overall_assessment\": \"The reported total asset figures for Costco across FY2019-FY2021 show a consistent and implausible multi-year decline, which is highly suspicious for a company of Costco's nature and performance during that period.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_075_D5F39BB5",
+      "hallucination_id": "FB_075_D5F39BB5_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$59,431 million",
+      "injected_value": "$38,256 million",
+      "detected": true,
+      "reason": "This figure, when considered with the FY2020 and FY2019 total asset figures provided, forms a consistent multi-year decline in total assets for Costco. A sustained decrease in total assets from $47.19 billion in FY2019 to $38.26 billion in FY2021 is highly counter-intuitive and implausible for a large, growing retailer like Costco, especially during a period (2019-2021) that generally saw strong performance in the retail sector. This trend strongly suggests hallucination.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 3
+    },
+    {
+      "question_id": "FB_075_D5F39BB5",
+      "hallucination_id": "FB_075_D5F39BB5_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$53,189 million",
+      "injected_value": "$41,694 million",
+      "detected": true,
+      "reason": "This figure contributes to a suspicious multi-year declining trend in total assets for Costco (from $47.19 billion in FY2019 to $38.26 billion in FY2021). Such a consistent and significant decline is inconsistent with the expected growth trajectory and financial performance of a major retailer like Costco during this specific period.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 3
+    }
+  ],
+  "timestamp": "2026-03-25T07:51:20.563276Z"
+}

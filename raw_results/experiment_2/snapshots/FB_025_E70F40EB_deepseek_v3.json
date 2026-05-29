@@ -1,0 +1,127 @@
+{
+  "question_id": "FB_025_E70F40EB",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: Amcor plc, FY2023, FY2022, FY2021\n- PRIMARY METRIC: \n  - **FY2023 Acquisitions**: Amcor completed the acquisition of **Nampak Flexible**, a leading flexible packaging company in Africa, for **USD 300 million**. This acquisition was aimed at expanding Amcor's footprint in the African market and enhancing its product offerings in flexible packaging. (Source: per the FY2023 10-K, Note 3 - Acquisitions)\n  \n  - **FY2022 Acquisitions**: Amcor acquired **Bemis Company, Inc.** for **USD 6.8 billion** in a strategic move to create a global leader in packaging. This acquisition was finalized in June 2019 but continued to impact financial performance through FY2022. (Source: per the FY2022 10-K, Note 3 - Acquisitions)\n\n  - **FY2021 Acquisitions**: In FY2021, Amcor acquired **the assets of the flexible packaging business of the company** for **USD 450 million**, which was intended to strengthen its position in the North American market. (Source: per the FY2021 10-K, Note 3 - Acquisitions)\n\n- SUPPORTING DATA: \n  - **FY2023 Financial Performance**: Total revenue for FY2023 was **USD 14,000 million**, with net income of **USD 1,669 million**. The acquisition of Nampak Flexible is expected to contribute to revenue growth in the coming years.\n  \n  - **FY2022 Financial Performance**: Total revenue for FY2022 was **USD 17,880 million**, with net income of **USD 897 million**. The Bemis acquisition contributed to revenue growth and cost synergies, enhancing overall profitability.\n  \n  - **FY2021 Financial Performance**: Total revenue for FY2021 was **USD 12,800 million**, with net income of **USD 1,000 million**. The flexible packaging assets acquisition helped to diversify product offerings and expand market reach.\n\n- DATA SOURCES: \n  - FY2023 10-K, Note 3 - Acquisitions\n  - FY2022 10-K, Note 3 - Acquisitions\n  - FY2021 10-K, Note 3 - Acquisitions\n\nPlease note that while the strategic rationale behind these acquisitions is mentioned, further analysis of their impact on financial performance is not included as per the directive to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_025_E70F40EB_H3",
+      "type": "large_number",
+      "original_value": "1,200",
+      "injected_value": "1,669",
+      "original_numeric": "1200",
+      "injected_numeric": "1669",
+      "position_char": 1149,
+      "sentence_approx": 8,
+      "perturbation_delta": 0.3907
+    },
+    {
+      "hallucination_id": "FB_025_E70F40EB_H2",
+      "type": "large_number",
+      "original_value": "13,500",
+      "injected_value": "17,880",
+      "original_numeric": "13500",
+      "injected_numeric": "17880",
+      "position_char": 1342,
+      "sentence_approx": 10,
+      "perturbation_delta": 0.3244
+    },
+    {
+      "hallucination_id": "FB_025_E70F40EB_H1",
+      "type": "large_number",
+      "original_value": "1,100",
+      "injected_value": "897",
+      "original_numeric": "1100",
+      "injected_numeric": "897",
+      "position_char": 1385,
+      "sentence_approx": 10,
+      "perturbation_delta": -0.1847
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Amcor completed the acquisition of Nampak Flexible, a leading flexible packaging company in Africa, for USD 300 million.",
+        "claim_value": "USD 300 million",
+        "reason": "The acquisition amount seems unusually low for a leading company in Africa, especially compared to other acquisitions like Bemis for USD 6.8 billion.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Amcor acquired Bemis Company, Inc. for USD 6.8 billion in a strategic move to create a global leader in packaging. This acquisition was finalized in June 2019 but continued to impact financial performance through FY2022.",
+        "claim_value": "USD 6.8 billion",
+        "reason": "The acquisition year is listed as 2019, but the impact is claimed for FY2022, which is three years later. This seems inconsistent unless there were long-term integration effects.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "In FY2021, Amcor acquired the assets of the flexible packaging business of the company for USD 450 million.",
+        "claim_value": "USD 450 million",
+        "reason": "The description of the acquisition target is vague ('the company'), which raises questions about the accuracy of this claim.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total revenue for FY2023 was USD 14,000 million, with net income of USD 1,669 million.",
+        "claim_value": "USD 1,669 million net income",
+        "reason": "The net income seems disproportionately high relative to the revenue for FY2023 (approx. 12% margin), which is unusual for a packaging company.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total revenue for FY2022 was USD 17,880 million, with net income of USD 897 million.",
+        "claim_value": "USD 897 million net income",
+        "reason": "The net income is disproportionately low (approx. 5% margin) compared to the previous and following years, which suggests inconsistency.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Total revenue for FY2021 was USD 12,800 million, with net income of USD 1,000 million.",
+        "claim_value": "USD 1,000 million net income",
+        "reason": "The net income is suspiciously round (USD 1,000 million) and seems inconsistent with the revenue trend.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 10,
+    "overall_assessment": "Multiple financial figures appear inconsistent, including acquisition amounts, net income margins, and round numbers, raising concerns about potential fabrication or inaccuracy.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Amcor completed the acquisition of Nampak Flexible, a leading flexible packaging company in Africa, for USD 300 million.\",\n      \"claim_value\": \"USD 300 million\",\n      \"reason\": \"The acquisition amount seems unusually low for a leading company in Africa, especially compared to other acquisitions like Bemis for USD 6.8 billion.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Amcor acquired Bemis Company, Inc. for USD 6.8 billion in a strategic move to create a global leader in packaging. This acquisition was finalized in June 2019 but continued to impact financial performance through FY2022.\",\n      \"claim_value\": \"USD 6.8 billion\",\n      \"reason\": \"The acquisition year is listed as 2019, but the impact is claimed for FY2022, which is three years later. This seems inconsistent unless there were long-term integration effects.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"In FY2021, Amcor acquired the assets of the flexible packaging business of the company for USD 450 million.\",\n      \"claim_value\": \"USD 450 million\",\n      \"reason\": \"The description of the acquisition target is vague ('the company'), which raises questions about the accuracy of this claim.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total revenue for FY2023 was USD 14,000 million, with net income of USD 1,669 million.\",\n      \"claim_value\": \"USD 1,669 million net income\",\n      \"reason\": \"The net income seems disproportionately high relative to the revenue for FY2023 (approx. 12% margin), which is unusual for a packaging company.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total revenue for FY2022 was USD 17,880 million, with net income of USD 897 million.\",\n      \"claim_value\": \"USD 897 million net income\",\n      \"reason\": \"The net income is disproportionately low (approx. 5% margin) compared to the previous and following years, which suggests inconsistency.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Total revenue for FY2021 was USD 12,800 million, with net income of USD 1,000 million.\",\n      \"claim_value\": \"USD 1,000 million net income\",\n      \"reason\": \"The net income is suspiciously round (USD 1,000 million) and seems inconsistent with the revenue trend.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 10,\n  \"overall_assessment\": \"Multiple financial figures appear inconsistent, including acquisition amounts, net income margins, and round numbers, raising concerns about potential fabrication or inaccuracy.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_025_E70F40EB",
+      "hallucination_id": "FB_025_E70F40EB_H3",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "large_number",
+      "original_value": "1,200",
+      "injected_value": "1,669",
+      "detected": true,
+      "reason": "The net income seems disproportionately high relative to the revenue for FY2023 (approx. 12% margin), which is unusual for a packaging company.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 10
+    },
+    {
+      "question_id": "FB_025_E70F40EB",
+      "hallucination_id": "FB_025_E70F40EB_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "large_number",
+      "original_value": "13,500",
+      "injected_value": "17,880",
+      "detected": true,
+      "reason": "The net income is disproportionately low (approx. 5% margin) compared to the previous and following years, which suggests inconsistency.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 10
+    },
+    {
+      "question_id": "FB_025_E70F40EB",
+      "hallucination_id": "FB_025_E70F40EB_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "large_number",
+      "original_value": "1,100",
+      "injected_value": "897",
+      "detected": true,
+      "reason": "The net income is disproportionately low (approx. 5% margin) compared to the previous and following years, which suggests inconsistency.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 10
+    }
+  ],
+  "timestamp": "2026-03-24T09:42:55.441216Z"
+}

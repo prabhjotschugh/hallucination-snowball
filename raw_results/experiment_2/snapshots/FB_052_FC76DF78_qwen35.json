@@ -1,0 +1,121 @@
+{
+  "question_id": "FB_052_FC76DF78",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Best Buy Co., Inc. - Fiscal Years 2023, 2022, and 2021\n- PRIMARY METRIC: \n  - FY2023: Best Buy did not report any major acquisitions in the FY2023 10-K, as per the Consolidated Financial Statements and Notes.\n  - FY2022: Best Buy acquired the home technology services company, \"Geek Squad,\" for USD 3.0 billion, as noted in the FY2022 10-K, under the section \"Business Acquisitions.\"\n  - FY2021: Best Buy acquired the health technology company, \"GreatCall,\" for USD 800 million, as per the FY2021 10-K, under the section \"Business Acquisitions.\"\n\n- SUPPORTING DATA: \n  - FY2023: No acquisitions reported.\n  - FY2022: Total revenue was USD 51,764 million, and net income was USD 1,157 million (per the FY2022 10-K, Consolidated Statements of Operations).\n  - FY2021: Total revenue was USD 32,254 million, and net income was USD 1,229 million (per the FY2021 10-K, Consolidated Statements of Operations).\n\n- DATA SOURCES: \n  - FY2023 10-K, Consolidated Financial Statements and Notes.\n  - FY2022 10-K, Consolidated Financial Statements and Notes.\n  - FY2021 10-K, Consolidated Financial Statements and Notes. \n\nNote: The analysis of strategic implications and trends in acquisition size, sector focus, and their impact on Best Buy's financial performance is not included as per the directive to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_052_FC76DF78_H3",
+      "type": "large_number",
+      "original_value": "1,846",
+      "injected_value": "1,157",
+      "original_numeric": "1846",
+      "injected_numeric": "1157",
+      "position_char": 698,
+      "sentence_approx": 8,
+      "perturbation_delta": -0.373
+    },
+    {
+      "hallucination_id": "FB_052_FC76DF78_H2",
+      "type": "large_number",
+      "original_value": "47,262",
+      "injected_value": "32,254",
+      "original_numeric": "47262",
+      "injected_numeric": "32254",
+      "position_char": 808,
+      "sentence_approx": 9,
+      "perturbation_delta": -0.3175
+    },
+    {
+      "hallucination_id": "FB_052_FC76DF78_H1",
+      "type": "large_number",
+      "original_value": "1,570",
+      "injected_value": "1,229",
+      "original_numeric": "1570",
+      "injected_numeric": "1229",
+      "position_char": 847,
+      "sentence_approx": 9,
+      "perturbation_delta": -0.2174
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "FY2022: Best Buy acquired the home technology services company, \"Geek Squad,\" for USD 3.0 billion",
+        "claim_value": "USD 3.0 billion",
+        "reason": "Geek Squad was acquired by Best Buy in 2002, not FY2022. The acquisition price was approximately $135 million, not $3.0 billion. This is a significant historical hallucination.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2021: Best Buy acquired the health technology company, \"GreatCall,\" for USD 800 million",
+        "claim_value": "FY2021",
+        "reason": "Best Buy acquired GreatCall in 2018, not FY2021. While the $800 million price tag is roughly accurate for the actual deal, the fiscal year reported is incorrect.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2022: Total revenue was USD 51,764 million, and net income was USD 1,157 million",
+        "claim_value": "USD 1,157 million",
+        "reason": "While the revenue figure is accurate for FY2022, the net income is suspiciously low. Best Buy's FY2022 net income was approximately $2.45 billion. The $1.157 billion figure aligns more closely with FY2023 results, suggesting a data mix-up.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2021: Total revenue was USD 32,254 million, and net income was USD 1,229 million",
+        "claim_value": "USD 32,254 million",
+        "reason": "Best Buy's FY2021 revenue was approximately $47.3 billion. A figure of $32.2 billion is drastically understated and resembles revenue from much earlier fiscal years (circa 2015-2016).",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2021: Total revenue was USD 32,254 million, and net income was USD 1,229 million",
+        "claim_value": "USD 1,229 million",
+        "reason": "Given the revenue discrepancy, the net income is also likely incorrect. Best Buy's FY2021 net income was approximately $2.25 billion, not $1.229 billion.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 7,
+    "overall_assessment": "The output contains multiple critical hallucinations regarding acquisition timelines and financial magnitudes, specifically misdating major acquisitions by several years and significantly understating FY2021 revenue and net income figures.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"FY2022: Best Buy acquired the home technology services company, \\\"Geek Squad,\\\" for USD 3.0 billion\",\n      \"claim_value\": \"USD 3.0 billion\",\n      \"reason\": \"Geek Squad was acquired by Best Buy in 2002, not FY2022. The acquisition price was approximately $135 million, not $3.0 billion. This is a significant historical hallucination.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2021: Best Buy acquired the health technology company, \\\"GreatCall,\\\" for USD 800 million\",\n      \"claim_value\": \"FY2021\",\n      \"reason\": \"Best Buy acquired GreatCall in 2018, not FY2021. While the $800 million price tag is roughly accurate for the actual deal, the fiscal year reported is incorrect.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2022: Total revenue was USD 51,764 million, and net income was USD 1,157 million\",\n      \"claim_value\": \"USD 1,157 million\",\n      \"reason\": \"While the revenue figure is accurate for FY2022, the net income is suspiciously low. Best Buy's FY2022 net income was approximately $2.45 billion. The $1.157 billion figure aligns more closely with FY2023 results, suggesting a data mix-up.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2021: Total revenue was USD 32,254 million, and net income was USD 1,229 million\",\n      \"claim_value\": \"USD 32,254 million\",\n      \"reason\": \"Best Buy's FY2021 revenue was approximately $47.3 billion. A figure of $32.2 billion is drastically understated and resembles revenue from much earlier fiscal years (circa 2015-2016).\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2021: Total revenue was USD 32,254 million, and net income was USD 1,229 million\",\n      \"claim_value\": \"USD 1,229 million\",\n      \"reason\": \"Given the revenue discrepancy, the net income is also likely incorrect. Best Buy's FY2021 net income was approximately $2.25 billion, not $1.229 billion.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 7,\n  \"overall_assessment\": \"The output contains multiple critical hallucinations regarding acquisition timelines and financial magnitudes, specifically misdating major acquisitions by several years and significantly understating FY2021 revenue and net income figures.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_052_FC76DF78",
+      "hallucination_id": "FB_052_FC76DF78_H3",
+      "model": "Qwen3.5-397B",
+      "injection_type": "large_number",
+      "original_value": "1,846",
+      "injected_value": "1,157",
+      "detected": true,
+      "reason": "While the revenue figure is accurate for FY2022, the net income is suspiciously low. Best Buy's FY2022 net income was approximately $2.45 billion. The $1.157 billion figure aligns more closely with FY2023 results, suggesting a data mix-up.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_052_FC76DF78",
+      "hallucination_id": "FB_052_FC76DF78_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "large_number",
+      "original_value": "47,262",
+      "injected_value": "32,254",
+      "detected": true,
+      "reason": "Best Buy's FY2021 revenue was approximately $47.3 billion. A figure of $32.2 billion is drastically understated and resembles revenue from much earlier fiscal years (circa 2015-2016).",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_052_FC76DF78",
+      "hallucination_id": "FB_052_FC76DF78_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "large_number",
+      "original_value": "1,570",
+      "injected_value": "1,229",
+      "detected": true,
+      "reason": "Best Buy's FY2021 revenue was approximately $47.3 billion. A figure of $32.2 billion is drastically understated and resembles revenue from much earlier fiscal years (circa 2015-2016).",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 7
+    }
+  ],
+  "timestamp": "2026-03-24T11:16:29.444794Z"
+}

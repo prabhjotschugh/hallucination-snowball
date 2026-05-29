@@ -1,0 +1,248 @@
+{
+  "question_id": "FB_031_E5667B37",
+  "method": "end_check",
+  "final_output": "## Financial Report: Advanced Micro Devices, Inc. (AMD) - Fiscal Year 2015\n\n**Executive Summary**\n\nAdvanced Micro Devices, Inc. (AMD) reported Depreciation and Amortization (D&A) of $1,184 million for Fiscal Year 2015. This represents a significant increase from FY2014's D&A of $762 million. Concurrently, Total Revenue for FY2015 declined to $4,045 million from $7,678 million in FY2014. This divergence resulted in a D&A Margin of 29.27% for FY2015, a substantial increase from 9.92% in FY2014. The elevated D&A relative to declining revenue signals increased capital intensity or asset write-downs during a period of revenue contraction.\n\n**Analysis**\n\nAMD's D&A for FY2015 stood at $1,184 million, as reported in the FY2015 10-K. This represents a $422 million absolute increase from the $762 million recorded in FY2014. Over the same period, Total Revenue experienced a considerable downturn, falling by $3,633 million from $7,678 million in FY2014 to $4,045 million in FY2015. This constitutes a 47.32% decline in revenue year-over-year.\n\nThe D&A Margin, calculated as D&A divided by Total Revenue, provides insight into capital intensity. For FY2015, the D&A Margin was 29.27% ($1,184 million / $4,045 million). This contrasts sharply with the D&A Margin of 9.92% for FY2014 ($762 million / $7,678 million). Looking further back, FY2013 saw D&A of $1,206 million on Total Revenue of $5,329 million, yielding a D&A Margin of 22.63%. The substantial increase in the D&A Margin from 9.92% in FY2014 to 29.27% in FY2015 is a critical observation, indicating that D&A grew significantly while revenue contracted.\n\n**Key Risks**\n\nThe primary risk highlighted by this analysis is the dramatic increase in the D&A Margin to 29.27% in FY2015. This suggests that a larger proportion of AMD's revenue is being consumed by non-cash depreciation and amortization expenses. This could be indicative of significant asset impairments, accelerated depreciation schedules, or a substantial increase in capital expenditures that are not translating into proportional revenue growth. Such a trend, especially when coupled with a 47.32% decline in Total Revenue, raises concerns about the company's operational efficiency, asset utilization, and future profitability.\n\n**Conclusion**\n\nAMD's financial performance in FY2015 was characterized by a notable increase in Depreciation and Amortization to $1,184 million and a substantial decline in Total Revenue to $4,045 million. The resulting D&A Margin of 29.27% for FY2015, a significant jump from the 9.92% in FY2014, signals a period of heightened capital intensity or asset revaluation amidst revenue contraction. Further investigation into the drivers of this increased D&A relative to revenue is recommended to fully understand its implications for AMD's financial health and strategic direction.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Advanced Micro Devices, Inc. (AMD) - Fiscal Year 2015\n- PRIMARY METRIC: Depreciation and Amortization (D&A) for FY2015 was $1,184 million, as reported in the FY2015 10-K, Consolidated Statements of Cash Flows.\n- SUPPORTING DATA: \n  - Total Revenue for FY2015 was $4,045 million (per the FY2015 10-K, Consolidated Statements of Operations).\n  - D&A Margin Calculation: D&A Margin = (D&A / Total Revenue) * 100 = ($1,184 million / $4,045 million) * 100 = 29.3%.\n  - For context, D&A for FY2014 was $762 million, and Total Revenue was $7,678 million, resulting in a D&A Margin of 29.4%.\n  - D&A for FY2013 was $1,206 million, and Total Revenue was $5,329 million, resulting in a D&A Margin of 22.6%.\n- DATA SOURCES: \n  - FY2015 10-K, Consolidated Statements of Cash Flows (D&A figure).\n  - FY2015 10-K, Consolidated Statements of Operations (Total Revenue figure).\n  - FY2014 10-K, Consolidated Statements of Cash Flows and Consolidated Statements of Operations (for prior-year figures).\n  - FY2013 10-K, Consolidated Statements of Cash Flows and Consolidated Statements of Operations (for prior-year figures).",
+    "2": "As a financial analyst, I've reviewed the provided data for Advanced Micro Devices, Inc. (AMD).\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\n**Depreciation and Amortization (D&A)**\n\n*   **FY2015 vs. FY2014:**\n    *   Absolute Change = D&A (FY2015) - D&A (FY2014)\n    *   Absolute Change = $1,184 million - $762 million = **$422 million**\n    *   Percentage Change = (Absolute Change / D&A (FY2014)) * 100\n    *   Percentage Change = ($422 million / $762 million) * 100 = **55.38%**\n\n*   **FY2014 vs. FY2013:**\n    *   Absolute Change = D&A (FY2014) - D&A (FY2013)\n    *   Absolute Change = $762 million - $1,206 million = **-$444 million**\n    *   Percentage Change = (Absolute Change / D&A (FY2013)) * 100\n    *   Percentage Change = (-$444 million / $1,206 million) * 100 = **-36.82%**\n\n**Total Revenue**\n\n*   **FY2015 vs. FY2014:**\n    *   Absolute Change = Revenue (FY2015) - Revenue (FY2014)\n    *   Absolute Change = $4,045 million - $7,678 million = **-$3,633 million**\n    *   Percentage Change = (Absolute Change / Revenue (FY2014)) * 100\n    *   Percentage Change = (-$3,633 million / $7,678 million) * 100 = **-47.32%**\n\n*   **FY2014 vs. FY2013:**\n    *   Absolute Change = Revenue (FY2014) - Revenue (FY2013)\n    *   Absolute Change = $7,678 million - $5,329 million = **$2,349 million**\n    *   Percentage Change = (Absolute Change / Revenue (FY2013)) * 100\n    *   Percentage Change = ($2,349 million / $5,329 million) * 100 = **44.08%**\n\n**2. Relevant Ratios**\n\n**D&A Margin**\n\n*   **FY2015:**\n    *   D&A Margin = (D&A / Total Revenue) * 100\n    *   D&A Margin = ($1,184 million / $4,045 million) * 100 = **29.27%** (Researcher stated 29.3%)\n\n*   **FY2014:**\n    *   D&A Margin = (D&A / Total Revenue) * 100\n    *   D&A Margin = ($762 million / $7,678 million) * 100 = **9.92%** (Researcher stated 29.4%)\n\n*   **FY2013:**\n    *   D&A Margin = (D&A / Total Revenue) * 100\n    *   D&A Margin = ($1,206 million / $5,329 million) * 100 = **22.63%** (Researcher stated 22.6%)\n\n**3. Flag Any Anomalies**\n\nThe most significant anomaly is the **D&A Margin for FY2014**.\n\n*   **Researcher's stated D&A Margin for FY2014 is 29.4%.**\n*   **My calculation for FY2014 D&A Margin is 9.92%.**\n\nThis is a substantial discrepancy. The researcher's calculation of 29.4% for FY2014 is incorrect based on the provided D&A of $762 million and Total Revenue of $7,678 million. The correct D&A Margin for FY2014 should be 9.92%.\n\nThis anomaly suggests a potential data entry error or miscalculation in the researcher's report for FY2014 D&A Margin, which could lead to misinterpretations of AMD's operational efficiency and capital intensity trends. The D&A Margin of 29.27% for FY2015 is notably high compared to the corrected FY2014 figure, indicating a significant increase in D&A relative to revenue.",
+    "3": "## Financial Report: Advanced Micro Devices, Inc. (AMD) - Fiscal Year 2015\n\n**Executive Summary**\n\nAdvanced Micro Devices, Inc. (AMD) reported Depreciation and Amortization (D&A) of $1,184 million for Fiscal Year 2015, a significant increase of 55.38% from FY2014's $762 million. Concurrently, Total Revenue for FY2015 declined by 47.32% to $4,045 million from $7,678 million in FY2014. This divergence resulted in a D&A Margin of 29.27% for FY2015, a substantial increase from the corrected 9.92% in FY2014. The elevated D&A relative to declining revenue signals increased capital intensity or asset write-downs during a period of revenue contraction.\n\n**Analysis**\n\nAMD's D&A for FY2015 stood at $1,184 million, as reported in the FY2015 10-K. This represents a $422 million absolute increase from the $762 million recorded in FY2014. Over the same period, Total Revenue experienced a considerable downturn, falling by $3,633 million from $7,678 million in FY2014 to $4,045 million in FY2015.\n\nThe D&A Margin, calculated as D&A divided by Total Revenue, provides insight into capital intensity. For FY2015, the D&A Margin was 29.27% ($1,184 million / $4,045 million). This contrasts sharply with the corrected D&A Margin of 9.92% for FY2014 ($762 million / $7,678 million). Looking further back, FY2013 saw D&A of $1,206 million on Total Revenue of $5,329 million, yielding a D&A Margin of 22.63%. The substantial increase in the D&A Margin from 9.92% in FY2014 to 29.27% in FY2015 is a critical observation, indicating that D&A grew significantly while revenue contracted.\n\n**Key Risks**\n\nThe primary risk highlighted by this analysis is the dramatic increase in the D&A Margin to 29.27% in FY2015. This suggests that a larger proportion of AMD's revenue is being consumed by non-cash depreciation and amortization expenses. This could be indicative of significant asset impairments, accelerated depreciation schedules, or a substantial increase in capital expenditures that are not translating into proportional revenue growth. Such a trend, especially when coupled with a 47.32% decline in Total Revenue, raises concerns about the company's operational efficiency, asset utilization, and future profitability.\n\n**Conclusion**\n\nAMD's financial performance in FY2015 was characterized by a notable increase in Depreciation and Amortization to $1,184 million and a substantial decline in Total Revenue to $4,045 million. The resulting D&A Margin of 29.27% for FY2015, a significant jump from the 9.92% in FY2014, signals a period of heightened capital intensity or asset revaluation amidst revenue contraction. Further investigation into the drivers of this increased D&A relative to revenue is recommended to fully understand its implications for AMD's financial health and strategic direction.",
+    "4": "## Financial Report: Advanced Micro Devices, Inc. (AMD) - Fiscal Year 2015\n\n**Executive Summary**\n\nAdvanced Micro Devices, Inc. (AMD) reported Depreciation and Amortization (D&A) of $1,184 million for Fiscal Year 2015. This represents a significant increase from FY2014's D&A of $762 million. Concurrently, Total Revenue for FY2015 declined to $4,045 million from $7,678 million in FY2014. This divergence resulted in a D&A Margin of 29.27% for FY2015, a substantial increase from 9.92% in FY2014. The elevated D&A relative to declining revenue signals increased capital intensity or asset write-downs during a period of revenue contraction.\n\n**Analysis**\n\nAMD's D&A for FY2015 stood at $1,184 million, as reported in the FY2015 10-K. This represents a $422 million absolute increase from the $762 million recorded in FY2014. Over the same period, Total Revenue experienced a considerable downturn, falling by $3,633 million from $7,678 million in FY2014 to $4,045 million in FY2015. This constitutes a 47.32% decline in revenue year-over-year.\n\nThe D&A Margin, calculated as D&A divided by Total Revenue, provides insight into capital intensity. For FY2015, the D&A Margin was 29.27% ($1,184 million / $4,045 million). This contrasts sharply with the D&A Margin of 9.92% for FY2014 ($762 million / $7,678 million). Looking further back, FY2013 saw D&A of $1,206 million on Total Revenue of $5,329 million, yielding a D&A Margin of 22.63%. The substantial increase in the D&A Margin from 9.92% in FY2014 to 29.27% in FY2015 is a critical observation, indicating that D&A grew significantly while revenue contracted.\n\n**Key Risks**\n\nThe primary risk highlighted by this analysis is the dramatic increase in the D&A Margin to 29.27% in FY2015. This suggests that a larger proportion of AMD's revenue is being consumed by non-cash depreciation and amortization expenses. This could be indicative of significant asset impairments, accelerated depreciation schedules, or a substantial increase in capital expenditures that are not translating into proportional revenue growth. Such a trend, especially when coupled with a 47.32% decline in Total Revenue, raises concerns about the company's operational efficiency, asset utilization, and future profitability.\n\n**Conclusion**\n\nAMD's financial performance in FY2015 was characterized by a notable increase in Depreciation and Amortization to $1,184 million and a substantial decline in Total Revenue to $4,045 million. The resulting D&A Margin of 29.27% for FY2015, a significant jump from the 9.92% in FY2014, signals a period of heightened capital intensity or asset revaluation amidst revenue contraction. Further investigation into the drivers of this increased D&A relative to revenue is recommended to fully understand its implications for AMD's financial health and strategic direction."
+  },
+  "gates": {
+    "end_gate": {
+      "verified": [
+        {
+          "value": "$1,184 million",
+          "ref": 1184.0
+        },
+        {
+          "value": "$4,045 million",
+          "ref": 4045.0
+        },
+        {
+          "value": "$1,184 million",
+          "ref": 1184.0
+        },
+        {
+          "value": "$4,045 million",
+          "ref": 4045.0
+        },
+        {
+          "value": "$1,184 million",
+          "ref": 1184.0
+        },
+        {
+          "value": "$4,045 million",
+          "ref": 4045.0
+        },
+        {
+          "value": "$1,206 million",
+          "ref": 1206.0
+        },
+        {
+          "value": "$5,329 million",
+          "ref": 5329.0
+        },
+        {
+          "value": "$1,184 million",
+          "ref": 1184.0
+        },
+        {
+          "value": "$4,045 million",
+          "ref": 4045.0
+        },
+        {
+          "value": "29.27%",
+          "ref": 29.3
+        },
+        {
+          "value": "29.27%",
+          "ref": 29.3
+        },
+        {
+          "value": "22.63%",
+          "ref": 22.6
+        },
+        {
+          "value": "29.27%",
+          "ref": 29.3
+        },
+        {
+          "value": "29.27%",
+          "ref": 29.3
+        },
+        {
+          "value": "29.27%",
+          "ref": 29.3
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$762 million",
+          "num": 762.0,
+          "correct": 1043.0,
+          "dev": 0.2694,
+          "source": "evidence"
+        },
+        {
+          "value": "$7,678 million",
+          "num": 7678.0,
+          "correct": 5506.0,
+          "dev": 0.2829,
+          "source": "source_document"
+        },
+        {
+          "value": "$422 million",
+          "num": 422.0,
+          "correct": 1043.0,
+          "dev": 0.5954,
+          "source": "evidence"
+        },
+        {
+          "value": "$762 million",
+          "num": 762.0,
+          "correct": 1043.0,
+          "dev": 0.2694,
+          "source": "evidence"
+        },
+        {
+          "value": "$3,633 million",
+          "num": 3633.0,
+          "correct": 4045.0,
+          "dev": 0.1019,
+          "source": "source_document"
+        },
+        {
+          "value": "$7,678 million",
+          "num": 7678.0,
+          "correct": 5506.0,
+          "dev": 0.2829,
+          "source": "source_document"
+        },
+        {
+          "value": "$762 million",
+          "num": 762.0,
+          "correct": 1043.0,
+          "dev": 0.2694,
+          "source": "evidence"
+        },
+        {
+          "value": "$7,678 million",
+          "num": 7678.0,
+          "correct": 5506.0,
+          "dev": 0.2829,
+          "source": "source_document"
+        },
+        {
+          "value": "9.92%",
+          "num": 9.92,
+          "correct": 21.2,
+          "dev": 0.5321,
+          "source": "source_document"
+        },
+        {
+          "value": "47.32%",
+          "num": 47.32,
+          "correct": 29.3,
+          "dev": 0.3808,
+          "source": "source_document"
+        },
+        {
+          "value": "9.92%",
+          "num": 9.92,
+          "correct": 21.2,
+          "dev": 0.5321,
+          "source": "source_document"
+        },
+        {
+          "value": "9.92%",
+          "num": 9.92,
+          "correct": 21.2,
+          "dev": 0.5321,
+          "source": "source_document"
+        },
+        {
+          "value": "47.32%",
+          "num": 47.32,
+          "correct": 29.3,
+          "dev": 0.3808,
+          "source": "source_document"
+        },
+        {
+          "value": "9.92%",
+          "num": 9.92,
+          "correct": 21.2,
+          "dev": 0.5321,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [],
+      "n_refs": 12
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_031_E5667B37",
+      "hid": "FB_031_E5667B37_H3",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 762.0,
+      "orig_num": 1165.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": true,
+      "any_det": true,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_031_E5667B37",
+      "hid": "FB_031_E5667B37_H2",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 7678.0,
+      "orig_num": 5506.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": true,
+      "any_det": true,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_031_E5667B37",
+      "hid": "FB_031_E5667B37_H1",
+      "method": "end_check",
+      "type": "percentage",
+      "inj_num": 29.4,
+      "orig_num": 21.2,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:13:43.184051+00:00"
+}

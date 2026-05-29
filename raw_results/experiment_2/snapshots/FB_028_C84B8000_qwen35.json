@@ -1,0 +1,91 @@
+{
+  "question_id": "FB_028_C84B8000",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Amcor, Q2 FY2023\n- PRIMARY METRIC: As of June 30, 2023, Amcor reported a restructuring liability of $38 million, as detailed in the FY2023 Q2 10-Q, Note 12: Restructuring Charges.\n- SUPPORTING DATA: \n  - For Q2 FY2022, the restructuring liability was $38 million.\n  - For Q1 FY2023, the restructuring liability was $48 million.\n- DATA SOURCES: \n  - Amcor FY2023 Q2 10-Q, Consolidated Balance Sheets, Note 12: Restructuring Charges.\n\n**Note:** The nature and purpose of the restructuring liability, including any trends or implications for the company's financial health, are not included as per the directive to present raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_028_C84B8000_H2",
+      "type": "dollar_amount",
+      "original_value": "$45 million",
+      "injected_value": "$38 million",
+      "original_numeric": "45",
+      "injected_numeric": "38",
+      "position_char": 120,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.1603
+    },
+    {
+      "hallucination_id": "FB_028_C84B8000_H1",
+      "type": "dollar_amount",
+      "original_value": "$50 million",
+      "injected_value": "$38 million",
+      "original_numeric": "50",
+      "injected_numeric": "38",
+      "position_char": 271,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.2427
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "As of June 30, 2023, Amcor reported a restructuring liability of $38 million, as detailed in the FY2023 Q2 10-Q, Note 12: Restructuring Charges.",
+        "claim_value": "June 30, 2023 / $38 million / 10-Q",
+        "reason": "Three critical errors: 1) Amcor is a Foreign Private Issuer (FPI) and files Form 6-K, not Form 10-Q. 2) Amcor's fiscal year ends June 30, meaning June 30, 2023 is the FY End, not Q2 (which ends ~Dec 31). 3) Given the filing and period errors, the $38 million figure is likely hallucinated.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "For Q2 FY2022, the restructuring liability was $38 million.",
+        "claim_value": "$38 million",
+        "reason": "This figure is derived from the same erroneous reporting framework (10-Q) identified above. Additionally, an exact year-over-year match ($38m to $38m) is statistically unusual without specific context, raising suspicion of fabrication.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "For Q1 FY2023, the restructuring liability was $48 million.",
+        "claim_value": "$48 million",
+        "reason": "This figure relies on the incorrect filing type (10-Q) and fiscal period definitions. Without access to the correct Form 6-K, this number cannot be verified and is likely hallucinated.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Data Sources: Amcor FY2023 Q2 10-Q, Consolidated Balance Sheets, Note 12: Restructuring Charges.",
+        "claim_value": "10-Q",
+        "reason": "Amcor plc (AMCR) does not file Form 10-Q. As an Australian-headquartered company listed on the NYSE, it files Form 6-K for interim financial reports. This source document does not exist.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 4,
+    "overall_assessment": "The output contains critical hallucinations regarding regulatory filing types (10-Q vs 6-K) and the company's fiscal calendar (June 30 is FY End, not Q2), rendering all associated financial figures highly unreliable.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"As of June 30, 2023, Amcor reported a restructuring liability of $38 million, as detailed in the FY2023 Q2 10-Q, Note 12: Restructuring Charges.\",\n      \"claim_value\": \"June 30, 2023 / $38 million / 10-Q\",\n      \"reason\": \"Three critical errors: 1) Amcor is a Foreign Private Issuer (FPI) and files Form 6-K, not Form 10-Q. 2) Amcor's fiscal year ends June 30, meaning June 30, 2023 is the FY End, not Q2 (which ends ~Dec 31). 3) Given the filing and period errors, the $38 million figure is likely hallucinated.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"For Q2 FY2022, the restructuring liability was $38 million.\",\n      \"claim_value\": \"$38 million\",\n      \"reason\": \"This figure is derived from the same erroneous reporting framework (10-Q) identified above. Additionally, an exact year-over-year match ($38m to $38m) is statistically unusual without specific context, raising suspicion of fabrication.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"For Q1 FY2023, the restructuring liability was $48 million.\",\n      \"claim_value\": \"$48 million\",\n      \"reason\": \"This figure relies on the incorrect filing type (10-Q) and fiscal period definitions. Without access to the correct Form 6-K, this number cannot be verified and is likely hallucinated.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Data Sources: Amcor FY2023 Q2 10-Q, Consolidated Balance Sheets, Note 12: Restructuring Charges.\",\n      \"claim_value\": \"10-Q\",\n      \"reason\": \"Amcor plc (AMCR) does not file Form 10-Q. As an Australian-headquartered company listed on the NYSE, it files Form 6-K for interim financial reports. This source document does not exist.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 4,\n  \"overall_assessment\": \"The output contains critical hallucinations regarding regulatory filing types (10-Q vs 6-K) and the company's fiscal calendar (June 30 is FY End, not Q2), rendering all associated financial figures highly unreliable.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_028_C84B8000",
+      "hallucination_id": "FB_028_C84B8000_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$45 million",
+      "injected_value": "$38 million",
+      "detected": true,
+      "reason": "This figure is derived from the same erroneous reporting framework (10-Q) identified above. Additionally, an exact year-over-year match ($38m to $38m) is statistically unusual without specific context, raising suspicion of fabrication.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 4
+    },
+    {
+      "question_id": "FB_028_C84B8000",
+      "hallucination_id": "FB_028_C84B8000_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$50 million",
+      "injected_value": "$38 million",
+      "detected": true,
+      "reason": "This figure is derived from the same erroneous reporting framework (10-Q) identified above. Additionally, an exact year-over-year match ($38m to $38m) is statistically unusual without specific context, raising suspicion of fabrication.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 4
+    }
+  ],
+  "timestamp": "2026-03-24T10:38:50.643021Z"
+}

@@ -1,0 +1,73 @@
+{
+  "question_id": "FB_005_FE85BE68",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: 3M Company, Fiscal Year 2022\n- PRIMARY METRIC: Total Revenue: $35,434 million (per the FY2022 10-K, Consolidated Statements of Operations).\n- SUPPORTING DATA:\n  - Segment Performance:\n    - Safety & Industrial: Revenue of $8,236 million, a decrease of 2.1% from 2021.\n    - Transportation & Electronics: Revenue of $8,303 million, a decrease of 2.4% from 2021.\n    - Health Care: Revenue of $6,023 million, a decrease of 2.6% from 2021.\n    - Consumer: Revenue of $6,658 million, a decrease of 6.0% from 2021.\n  - Total Revenue Growth Rate: -0.6% compared to FY2021.\n  - Excluding M&A: The Consumer segment had the most significant negative impact on overall growth, with a revenue decline of 6.0% (per the FY2022 10-K, Segment Information).\n- DATA SOURCES: \n  - 3M Company FY2022 10-K, Consolidated Statements of Operations.\n  - 3M Company FY2022 10-K, Segment Information.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_005_FE85BE68_H2",
+      "type": "dollar_amount",
+      "original_value": "$12,421 million",
+      "injected_value": "$8,236 million",
+      "original_numeric": "12421",
+      "injected_numeric": "8236",
+      "position_char": 242,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3369
+    },
+    {
+      "hallucination_id": "FB_005_FE85BE68_H1",
+      "type": "dollar_amount",
+      "original_value": "$8,052 million",
+      "injected_value": "$6,023 million",
+      "original_numeric": "8052",
+      "injected_numeric": "6023",
+      "position_char": 412,
+      "sentence_approx": 6,
+      "perturbation_delta": -0.2519
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Total Revenue: $35,434 million",
+        "claim_value": "$35,434 million",
+        "reason": "This reported total revenue figure is inconsistent with the sum of the provided segment revenues. The sum of Safety & Industrial ($8,236 million), Transportation & Electronics ($8,303 million), Health Care ($6,023 million), and Consumer ($6,658 million) totals $29,220 million. This is $6,214 million less than the stated total revenue of $35,434 million, indicating a significant internal inconsistency in the reported revenue figures.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 10,
+    "overall_assessment": "The primary financial figures exhibit a significant internal inconsistency between the reported total revenue and the sum of its segment revenues.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Total Revenue: $35,434 million\",\n      \"claim_value\": \"$35,434 million\",\n      \"reason\": \"This reported total revenue figure is inconsistent with the sum of the provided segment revenues. The sum of Safety & Industrial ($8,236 million), Transportation & Electronics ($8,303 million), Health Care ($6,023 million), and Consumer ($6,658 million) totals $29,220 million. This is $6,214 million less than the stated total revenue of $35,434 million, indicating a significant internal inconsistency in the reported revenue figures.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 10,\n  \"overall_assessment\": \"The primary financial figures exhibit a significant internal inconsistency between the reported total revenue and the sum of its segment revenues.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_005_FE85BE68",
+      "hallucination_id": "FB_005_FE85BE68_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$12,421 million",
+      "injected_value": "$8,236 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 10
+    },
+    {
+      "question_id": "FB_005_FE85BE68",
+      "hallucination_id": "FB_005_FE85BE68_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$8,052 million",
+      "injected_value": "$6,023 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 10
+    }
+  ],
+  "timestamp": "2026-03-25T07:35:10.985697Z"
+}

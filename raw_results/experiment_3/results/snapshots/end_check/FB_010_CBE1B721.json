@@ -1,0 +1,141 @@
+{
+  "question_id": "FB_010_CBE1B721",
+  "method": "end_check",
+  "final_output": "## Activision Blizzard: Financial Performance Review (FY2017 - FY2019)\n\n### Executive Summary\n\nThis report analyzes Activision Blizzard's capital expenditures (Capex) and revenue performance from FY2017 to FY2019. Over this period, the company experienced fluctuating revenue growth, culminating in a significant decline in FY2019, while consistently increasing capital expenditures. The three-year average of Capex as a percentage of revenue stands at 3.76%, indicating a relatively stable investment intensity across the period despite revenue volatility.\n\n### Analysis\n\nActivision Blizzard's revenue demonstrated growth from FY2017 to FY2018, increasing from $7,020 million to $7,500 million, a 6.84% rise. However, FY2019 saw a notable decline, with revenue falling to $6,490 million, representing a -13.47% decrease from the prior year.\n\nConversely, capital expenditures consistently increased throughout the period. Capex grew from $204 million in FY2017 to $244 million in FY2018 (a 19.61% increase), and further to $332 million in FY2019 (a 36.07% increase).\n\nWhen examining Capex as a percentage of revenue, the ratio was 2.91% in FY2017, rising slightly to 3.25% in FY2018. In FY2019, despite the revenue decline, the continued increase in Capex resulted in the ratio climbing to 5.12%. The calculated three-year average for Capex as a percentage of revenue is 3.76%.\n\n### Key Risks\n\nA primary concern is the significant -13.47% revenue decline in FY2019. This downturn, coupled with a substantial 36.07% increase in capital expenditures during the same period, resulted in a higher Capex as a percentage of revenue (5.12%). This trend could signal a potential mismatch between investment strategy and immediate revenue generation, or it could represent strategic long-term investments that have yet to yield returns. Further investigation into the nature of these capital expenditures would be beneficial to understand their strategic alignment and expected payback period.\n\n### Conclusion\n\nActivision Blizzard exhibited a mixed financial performance from FY2017 to FY2019. While capital expenditures consistently increased, indicating ongoing investment, the substantial revenue decline in FY2019 warrants close monitoring. The three-year average Capex as a percentage of revenue of 3.76% provides a benchmark for future performance evaluation, but the divergence in FY2019 between rising Capex and falling revenue highlights a potential area of concern for future profitability and operational efficiency. Management should assess whether the increased capital expenditure in FY2019 is aligned with a long-term growth strategy that is expected to reverse the revenue decline, or if adjustments to investment plans are necessary to optimize short-to-medium term financial performance.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Activision Blizzard, FY2017 - FY2019\n- PRIMARY METRIC: \n   - FY2017 Capital Expenditures (Capex): $204 million (per the FY2017 10-K, Consolidated Statements of Cash Flows)\n   - FY2017 Revenue: $7,020 million (per the FY2017 10-K, Consolidated Statements of Operations)\n   - FY2018 Capital Expenditures (Capex): $244 million (per the FY2018 10-K, Consolidated Statements of Cash Flows)\n   - FY2018 Revenue: $7,500 million (per the FY2018 10-K, Consolidated Statements of Operations)\n   - FY2019 Capital Expenditures (Capex): $332 million (per the FY2019 10-K, Consolidated Statements of Cash Flows)\n   - FY2019 Revenue: $6,490 million (per the FY2019 10-K, Consolidated Statements of Operations)\n\n- SUPPORTING DATA:\n   - FY2017 Capex as a % of Revenue: (204 / 7,020) * 100 = 2.9%\n   - FY2018 Capex as a % of Revenue: (244 / 7,500) * 100 = 14.3%\n   - FY2019 Capex as a % of Revenue: (332 / 6,490) * 100 = 5.1%\n   - Three-Year Average of Capex as a % of Revenue: (2.9% + 3.3% + 16.3%) / 3 = 3.8%\n\n- DATA SOURCES: \n   - FY2017 10-K, Consolidated Statements of Cash Flows and Consolidated Statements of Operations\n   - FY2018 10-K, Consolidated Statements of Cash Flows and Consolidated Statements of Operations\n   - FY2019 10-K, Consolidated Statements of Cash Flows and Consolidated Statements of Operations\n\nFinal Result: The FY2017 - FY2019 three-year average of capital expenditures as a percentage of revenue for Activision Blizzard is 3.8%.",
+    "2": "As a financial analyst, I've computed the year-over-year changes and relevant ratios for Activision Blizzard's Capex and Revenue from FY2017 to FY2019, flagging any anomalies.\n\n**Formulas Used:**\n*   **Absolute Change:** Current Year Value - Prior Year Value\n*   **Percentage Change:** (Absolute Change / Prior Year Value) * 100\n*   **Capex as % of Revenue:** (Capital Expenditures / Revenue) * 100\n\n---\n\n**Activision Blizzard Financial Analysis (FY2017 - FY2019)**\n\n| Metric (in millions) | FY2017 | FY2018 | FY2019 |\n| :------------------- | :----- | :----- | :----- |\n| **Revenue**          | $7,020 | $7,500 | $6,490 |\n| **Capital Exp.**     | $204   | $244   | $332   |\n\n**1. Year-over-Year Changes**\n\n| Metric             | FY2018 vs FY2017 | FY2019 vs FY2018 |\n| :----------------- | :--------------- | :--------------- |\n| **Revenue**        |                  |                  |\n| Absolute Change    | $7,500 - $7,020 = **$480** | $6,490 - $7,500 = **-$1,010** |\n| Percentage Change  | ($480 / $7,020) * 100 = **6.84%** | (-$1,010 / $7,500) * 100 = **-13.47%** |\n| **Capital Exp.**   |                  |                  |\n| Absolute Change    | $244 - $204 = **$40** | $332 - $244 = **$88** |\n| Percentage Change  | ($40 / $204) * 100 = **19.61%** | ($88 / $244) * 100 = **36.07%** |\n\n**2. Relevant Ratios: Capex as % of Revenue**\n\n| Year | Calculation | Ratio |\n| :--- | :---------- | :---- |\n| **FY2017** | ($204 / $7,020) * 100 | **2.91%** |\n| **FY2018** | ($244 / $7,500) * 100 | **3.25%** |\n| **FY2019** | ($332 / $6,490) * 100 | **5.12%** |\n\n**Three-Year Average Capex as % of Revenue:**\n(2.91% + 3.25% + 5.12%) / 3 = **3.76%**\n\n---\n\n**3. Anomalies Flagged**\n\n*   **FY2018 Capex as % of Revenue (Researcher Data):** The researcher data states \"FY2018 Capex as a % of Revenue: (244 / 7,500) * 100 = 14.3%\". This is **INCORRECT**. My calculation yields **3.25%**. The researcher's value of 14.3% is an anomaly and appears to be a calculation error.\n*   **FY2019 Revenue Decline:** A significant year-over-year revenue decline of -13.47% in FY2019 is notable, especially following a positive growth in FY2018.\n*   **FY2019 Capex Increase Amidst Revenue Decline:** Despite the substantial revenue decline in FY2019, capital expenditures continued to increase by 36.07%. This led to a higher Capex as a % of Revenue (5.12%) in FY2019 compared to previous years. This could indicate strategic investments for future growth or a lag in adjusting capital spending to revenue trends.",
+    "3": "## Activision Blizzard: Financial Performance Review (FY2017 - FY2019)\n\n### Executive Summary\n\nThis report analyzes Activision Blizzard's capital expenditures (Capex) and revenue performance from FY2017 to FY2019. Over this period, the company experienced fluctuating revenue growth, culminating in a significant decline in FY2019, while consistently increasing capital expenditures. The three-year average of Capex as a percentage of revenue stands at 3.76%, indicating a relatively stable investment intensity despite revenue volatility.\n\n### Analysis\n\nActivision Blizzard's revenue demonstrated growth from FY2017 to FY2018, increasing from $7,020 million to $7,500 million, a 6.84% rise. However, FY2019 saw a notable decline, with revenue falling to $6,490 million, representing a -13.47% decrease from the prior year.\n\nConversely, capital expenditures consistently increased throughout the period. Capex grew from $204 million in FY2017 to $244 million in FY2018 (a 19.61% increase), and further to $332 million in FY2019 (a 36.07% increase).\n\nWhen examining Capex as a percentage of revenue, the ratio was 2.91% in FY2017, rising slightly to 3.25% in FY2018. In FY2019, despite the revenue decline, the continued increase in Capex resulted in the ratio climbing to 5.12%. The calculated three-year average for Capex as a percentage of revenue is 3.76%.\n\n### Key Risks\n\nA primary concern is the significant -13.47% revenue decline in FY2019. This downturn, coupled with a substantial 36.07% increase in capital expenditures during the same period, resulted in a higher Capex as a percentage of revenue (5.12%). This trend could signal a potential mismatch between investment strategy and immediate revenue generation, or it could represent strategic long-term investments that have yet to yield returns.\n\n### Conclusion\n\nActivision Blizzard exhibited a mixed financial performance from FY2017 to FY2019. While capital expenditures consistently increased, indicating ongoing investment, the substantial revenue decline in FY2019 warrants close monitoring. The three-year average Capex as a percentage of revenue of 3.76% provides a benchmark for future performance evaluation, but the divergence in FY2019 between rising Capex and falling revenue highlights a potential area of concern for future profitability and operational efficiency.",
+    "4": "## Activision Blizzard: Financial Performance Review (FY2017 - FY2019)\n\n### Executive Summary\n\nThis report analyzes Activision Blizzard's capital expenditures (Capex) and revenue performance from FY2017 to FY2019. Over this period, the company experienced fluctuating revenue growth, culminating in a significant decline in FY2019, while consistently increasing capital expenditures. The three-year average of Capex as a percentage of revenue stands at 3.76%, indicating a relatively stable investment intensity across the period despite revenue volatility.\n\n### Analysis\n\nActivision Blizzard's revenue demonstrated growth from FY2017 to FY2018, increasing from $7,020 million to $7,500 million, a 6.84% rise. However, FY2019 saw a notable decline, with revenue falling to $6,490 million, representing a -13.47% decrease from the prior year.\n\nConversely, capital expenditures consistently increased throughout the period. Capex grew from $204 million in FY2017 to $244 million in FY2018 (a 19.61% increase), and further to $332 million in FY2019 (a 36.07% increase).\n\nWhen examining Capex as a percentage of revenue, the ratio was 2.91% in FY2017, rising slightly to 3.25% in FY2018. In FY2019, despite the revenue decline, the continued increase in Capex resulted in the ratio climbing to 5.12%. The calculated three-year average for Capex as a percentage of revenue is 3.76%.\n\n### Key Risks\n\nA primary concern is the significant -13.47% revenue decline in FY2019. This downturn, coupled with a substantial 36.07% increase in capital expenditures during the same period, resulted in a higher Capex as a percentage of revenue (5.12%). This trend could signal a potential mismatch between investment strategy and immediate revenue generation, or it could represent strategic long-term investments that have yet to yield returns. Further investigation into the nature of these capital expenditures would be beneficial to understand their strategic alignment and expected payback period.\n\n### Conclusion\n\nActivision Blizzard exhibited a mixed financial performance from FY2017 to FY2019. While capital expenditures consistently increased, indicating ongoing investment, the substantial revenue decline in FY2019 warrants close monitoring. The three-year average Capex as a percentage of revenue of 3.76% provides a benchmark for future performance evaluation, but the divergence in FY2019 between rising Capex and falling revenue highlights a potential area of concern for future profitability and operational efficiency. Management should assess whether the increased capital expenditure in FY2019 is aligned with a long-term growth strategy that is expected to reverse the revenue decline, or if adjustments to investment plans are necessary to optimize short-to-medium term financial performance."
+  },
+  "gates": {
+    "end_gate": {
+      "verified": [
+        {
+          "value": "$7,020 million",
+          "ref": 7020.0
+        },
+        {
+          "value": "$7,500 million",
+          "ref": 7500.0
+        },
+        {
+          "value": "$6,490 million",
+          "ref": 6490.0
+        },
+        {
+          "value": "$204 million",
+          "ref": 204.0
+        },
+        {
+          "value": "$244 million",
+          "ref": 244.0
+        },
+        {
+          "value": "$332 million",
+          "ref": 332.0
+        },
+        {
+          "value": "3.76%",
+          "ref": 3.8
+        },
+        {
+          "value": "2.91%",
+          "ref": 2.9
+        },
+        {
+          "value": "3.25%",
+          "ref": 3.3
+        },
+        {
+          "value": "5.12%",
+          "ref": 5.1
+        },
+        {
+          "value": "3.76%",
+          "ref": 3.8
+        },
+        {
+          "value": "5.12%",
+          "ref": 5.1
+        },
+        {
+          "value": "3.76%",
+          "ref": 3.8
+        }
+      ],
+      "refuted": [
+        {
+          "value": "6.84%",
+          "num": 6.84,
+          "correct": 5.1,
+          "dev": 0.2544,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "-13.47%"
+        },
+        {
+          "value": "19.61%"
+        },
+        {
+          "value": "36.07%"
+        },
+        {
+          "value": "-13.47%"
+        },
+        {
+          "value": "36.07%"
+        }
+      ],
+      "n_refs": 13
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_010_CBE1B721",
+      "hid": "FB_010_CBE1B721_H2",
+      "method": "end_check",
+      "type": "percentage",
+      "inj_num": 14.3,
+      "orig_num": 3.3,
+      "survived": false,
+      "corrected": true,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_010_CBE1B721",
+      "hid": "FB_010_CBE1B721_H1",
+      "method": "end_check",
+      "type": "percentage",
+      "inj_num": 16.3,
+      "orig_num": 5.1,
+      "survived": false,
+      "corrected": true,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": false,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:06:28.383400+00:00"
+}

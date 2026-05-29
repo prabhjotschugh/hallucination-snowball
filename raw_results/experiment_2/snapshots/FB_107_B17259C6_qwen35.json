@@ -1,0 +1,91 @@
+{
+  "question_id": "FB_107_B17259C6",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: MGM Resorts International, FY2022\n- PRIMARY METRIC: The EBITDAR figures for each region as reported in the MGM Resorts International Q4 2022 Earnings Call are as follows:\n  - Las Vegas Strip: $1,799 million (per the FY2022 Q4 Earnings Report, EBITDAR by Region)\n  - Regional Operations: $532 million (per the FY2022 Q4 Earnings Report, EBITDAR by Region)\n  - MGM China: $140 million (per the FY2022 Q4 Earnings Report, EBITDAR by Region)\n\n- SUPPORTING DATA: \n  - For FY2021:\n    - Las Vegas Strip: $1,482 million (per the FY2021 Q4 Earnings Report, EBITDAR by Region)\n    - Regional Operations: $289 million (per the FY2021 Q4 Earnings Report, EBITDAR by Region)\n    - MGM China: $59 million (per the FY2021 Q4 Earnings Report, EBITDAR by Region)\n\n- DATA SOURCES: \n  - MGM Resorts International, Q4 2022 Earnings Report, EBITDAR by Region\n  - MGM Resorts International, Q4 2021 Earnings Report, EBITDAR by Region\n\nNote: The highest EBITDAR contribution for FY2022 was from the Las Vegas Strip at $1,799 million.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_107_B17259C6_H2",
+      "type": "dollar_amount",
+      "original_value": "$394 million",
+      "injected_value": "$532 million",
+      "original_numeric": "394",
+      "injected_numeric": "532",
+      "position_char": 307,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.3492
+    },
+    {
+      "hallucination_id": "FB_107_B17259C6_H1",
+      "type": "dollar_amount",
+      "original_value": "$96 million",
+      "injected_value": "$59 million",
+      "original_numeric": "96",
+      "injected_numeric": "59",
+      "position_char": 700,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.3881
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "The EBITDAR figures for each region as reported in the MGM Resorts International Q4 2022 Earnings Call",
+        "claim_value": "EBITDAR",
+        "reason": "MGM Resorts International typically reports 'Adjusted EBITDA' in segment disclosures, not 'EBITDAR'. This terminology discrepancy suggests a hallucination of the financial metric used in public filings.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "DATA SOURCES: MGM Resorts International, Q4 2022 Earnings Report, EBITDAR by Region",
+        "claim_value": "EBITDAR by Region",
+        "reason": "No standard table titled 'EBITDAR by Region' exists in MGM earnings releases; segment information is reported under 'Adjusted EBITDA'. This specific source citation is likely fabricated.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "MGM China: $140 million (per the FY2022 Q4 Earnings Report, EBITDAR by Region)",
+        "claim_value": "$140 million",
+        "reason": "Macau operations faced severe COVID-related restrictions throughout most of 2022. While recovery began, a specific positive EBITDA figure of this magnitude is highly susceptible to hallucination given the volatility and closures during that period.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Las Vegas Strip: $1,799 million (per the FY2022 Q4 Earnings Report, EBITDAR by Region)",
+        "claim_value": "$1,799 million",
+        "reason": "Given the incorrect metric terminology (EBITDAR vs. Adjusted EBITDA), the specific precision of this figure is suspect. LLMs frequently generate plausible-looking but inaccurate financial figures when unable to access source documents.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 8,
+    "overall_assessment": "The output contains critical terminology errors regarding MGM's standard reporting metrics (Adjusted EBITDA vs. EBITDAR) and cites non-existent source tables, casting high suspicion on all associated financial figures.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"The EBITDAR figures for each region as reported in the MGM Resorts International Q4 2022 Earnings Call\",\n      \"claim_value\": \"EBITDAR\",\n      \"reason\": \"MGM Resorts International typically reports 'Adjusted EBITDA' in segment disclosures, not 'EBITDAR'. This terminology discrepancy suggests a hallucination of the financial metric used in public filings.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"DATA SOURCES: MGM Resorts International, Q4 2022 Earnings Report, EBITDAR by Region\",\n      \"claim_value\": \"EBITDAR by Region\",\n      \"reason\": \"No standard table titled 'EBITDAR by Region' exists in MGM earnings releases; segment information is reported under 'Adjusted EBITDA'. This specific source citation is likely fabricated.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"MGM China: $140 million (per the FY2022 Q4 Earnings Report, EBITDAR by Region)\",\n      \"claim_value\": \"$140 million\",\n      \"reason\": \"Macau operations faced severe COVID-related restrictions throughout most of 2022. While recovery began, a specific positive EBITDA figure of this magnitude is highly susceptible to hallucination given the volatility and closures during that period.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Las Vegas Strip: $1,799 million (per the FY2022 Q4 Earnings Report, EBITDAR by Region)\",\n      \"claim_value\": \"$1,799 million\",\n      \"reason\": \"Given the incorrect metric terminology (EBITDAR vs. Adjusted EBITDA), the specific precision of this figure is suspect. LLMs frequently generate plausible-looking but inaccurate financial figures when unable to access source documents.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 8,\n  \"overall_assessment\": \"The output contains critical terminology errors regarding MGM's standard reporting metrics (Adjusted EBITDA vs. EBITDAR) and cites non-existent source tables, casting high suspicion on all associated financial figures.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_107_B17259C6",
+      "hallucination_id": "FB_107_B17259C6_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$394 million",
+      "injected_value": "$532 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 8
+    },
+    {
+      "question_id": "FB_107_B17259C6",
+      "hallucination_id": "FB_107_B17259C6_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$96 million",
+      "injected_value": "$59 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 8
+    }
+  ],
+  "timestamp": "2026-03-24T12:35:33.464452Z"
+}

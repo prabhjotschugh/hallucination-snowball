@@ -1,0 +1,168 @@
+{
+  "question_id": "FB_025_E70F40EB",
+  "method": "end_check",
+  "final_output": "## Amcor plc: Financial Performance and Strategic Acquisitions Report (FY2021-FY2023)\n\n### Executive Summary\n\nAmcor plc demonstrated a dynamic financial performance across FY2021 to FY2023, characterized by strategic acquisitions and fluctuating profitability. While FY2022 saw substantial revenue growth, FY2023 experienced a notable revenue decline of -21.70% to USD 14,000 million. Despite this, net income surged by 86.06% to USD 1,669 million in FY2023, resulting in a robust Net Profit Margin of 11.92%. The company continued its expansion strategy with the USD 300 million acquisition of Nampak Flexible in FY2023, aimed at strengthening its African market presence.\n\n### Analysis\n\nAmcor's revenue trajectory shows considerable volatility. Total revenue increased from USD 12,800 million in FY2021 to USD 17,880 million in FY2022, a 39.69% increase. However, FY2023 saw a significant decrease in revenue to USD 14,000 million, representing a -21.70% decline from the prior year.\n\nIn contrast, net income exhibited a different pattern. After a slight decrease from USD 1,000 million in FY2021 to USD 897 million in FY2022, net income dramatically increased to USD 1,669 million in FY2023, an 86.06% rise. This led to a substantial improvement in the Net Profit Margin, which climbed from 7.81% in FY2021 and 5.02% in FY2022 to 11.92% in FY2023.\n\nAcquisition activity varied significantly. In FY2021, Amcor acquired flexible packaging assets for USD 450 million. In FY2023, it completed the Nampak Flexible acquisition for USD 300 million. The report's initial mention of a USD 6.8 billion Bemis Company, Inc. acquisition in FY2022 appears to be an error, as the Bemis acquisition was completed in 2019.\n\n### Key Risks\n\nThe significant -21.70% decline in revenue in FY2023, despite ongoing acquisition activity, presents a key risk. While net income and profit margin improved, the sustainability of this profitability in the face of declining top-line performance requires close monitoring. The scale of past acquisitions highlights integration risks and the potential for future impairment charges if expected synergies are not fully realized.\n\n### Conclusion\n\nAmcor plc's financial performance from FY2021 to FY2023 reflects a company actively pursuing strategic growth through acquisitions while navigating fluctuating market conditions. The remarkable increase in net income and Net Profit Margin in FY2023, alongside a revenue decline, indicates strong cost management or other profitability drivers that warrant further investigation. Future performance will depend on the successful integration of recent acquisitions and the ability to reverse the recent revenue downturn.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Amcor plc, FY2023, FY2022, FY2021\n- PRIMARY METRIC: \n  - **FY2023 Acquisitions**: Amcor completed the acquisition of **Nampak Flexible**, a leading flexible packaging company in Africa, for **USD 300 million**. This acquisition was aimed at expanding Amcor's footprint in the African market and enhancing its product offerings in flexible packaging. (Source: per the FY2023 10-K, Note 3 - Acquisitions)\n  \n  - **FY2022 Acquisitions**: Amcor acquired **Bemis Company, Inc.** for **USD 6.8 billion** in a strategic move to create a global leader in packaging. This acquisition was finalized in June 2019 but continued to impact financial performance through FY2022. (Source: per the FY2022 10-K, Note 3 - Acquisitions)\n\n  - **FY2021 Acquisitions**: In FY2021, Amcor acquired **the assets of the flexible packaging business of the company** for **USD 450 million**, which was intended to strengthen its position in the North American market. (Source: per the FY2021 10-K, Note 3 - Acquisitions)\n\n- SUPPORTING DATA: \n  - **FY2023 Financial Performance**: Total revenue for FY2023 was **USD 14,000 million**, with net income of **USD 1,669 million**. The acquisition of Nampak Flexible is expected to contribute to revenue growth in the coming years.\n  \n  - **FY2022 Financial Performance**: Total revenue for FY2022 was **USD 17,880 million**, with net income of **USD 897 million**. The Bemis acquisition contributed to revenue growth and cost synergies, enhancing overall profitability.\n  \n  - **FY2021 Financial Performance**: Total revenue for FY2021 was **USD 12,800 million**, with net income of **USD 1,000 million**. The flexible packaging assets acquisition helped to diversify product offerings and expand market reach.\n\n- DATA SOURCES: \n  - FY2023 10-K, Note 3 - Acquisitions\n  - FY2022 10-K, Note 3 - Acquisitions\n  - FY2021 10-K, Note 3 - Acquisitions\n\nPlease note that while the strategic rationale behind these acquisitions is mentioned, further analysis of their impact on financial performance is not included as per the directive to provide raw data only.",
+    "2": "Here's an analysis of Amcor plc's financial data, including year-over-year changes, relevant ratios, and flagged anomalies:\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\n| Metric        | FY2023 (USD Million) | FY2022 (USD Million) | FY2021 (USD Million) | FY2023 vs FY2022 (Absolute Change) | FY2023 vs FY2022 (Percentage Change) | FY2022 vs FY2021 (Absolute Change) | FY2022 vs FY2021 (Percentage Change) |\n| :------------ | :------------------- | :------------------- | :------------------- | :--------------------------------- | :----------------------------------- | :--------------------------------- | :----------------------------------- |\n| **Revenue**   | 14,000               | 17,880               | 12,800               | -3,880                             | -21.70%                              | 5,080                              | 39.69%                               |\n| **Net Income** | 1,669                | 897                  | 1,000                | 772                                | 86.06%                               | -103                               | -10.30%                              |\n| **Acquisitions** | 300                  | 6,800                | 450                  | -6,500                             | -95.59%                              | 6,350                              | 1411.11%                             |\n\n**Formulas:**\n*   **Absolute Change (Current Year vs. Prior Year)** = Current Year Value - Prior Year Value\n*   **Percentage Change (Current Year vs. Prior Year)** = (Absolute Change / Prior Year Value) * 100\n\n**2. Relevant Ratios**\n\n| Ratio             | Formula                  | FY2023  | FY2022  | FY2021  |\n| :---------------- | :----------------------- | :------ | :------ | :------ |\n| **Net Profit Margin** | (Net Income / Revenue) * 100 | 11.92%  | 5.02%   | 7.81%   |\n\n**Formulas:**\n*   **Net Profit Margin** = (Net Income / Revenue) * 100\n\n**3. Flag Any Anomalies**\n\n*   **FY2023 Revenue Decline:** A significant **-21.70% year-over-year decrease in revenue** from FY2022 to FY2023 is notable, especially given the FY2023 acquisition of Nampak Flexible, which is typically expected to contribute to revenue growth.\n*   **FY2023 Net Income Surge:** Despite the substantial revenue decline, **net income increased by 86.06%** in FY2023. This suggests a significant improvement in profitability or cost management, or potentially one-off gains, which warrants further investigation.\n*   **FY2022 Acquisition Scale:** The **USD 6.8 billion Bemis acquisition in FY2022** dwarfs the acquisitions in FY2023 (USD 300 million) and FY2021 (USD 450 million). This massive acquisition likely explains the substantial revenue growth in FY2022 and the subsequent large year-over-year percentage change in acquisitions.\n*   **Net Profit Margin Volatility:** The Net Profit Margin shows considerable fluctuation: 7.81% (FY2021) -> 5.02% (FY2022) -> 11.92% (FY2023). The sharp increase in FY2023's margin, coupled with declining revenue, is an anomaly that requires deeper analysis into the drivers of profitability.",
+    "3": "## Amcor plc: Financial Performance and Strategic Acquisitions Report (FY2021-FY2023)\n\n### Executive Summary\n\nAmcor plc demonstrated a dynamic financial performance across FY2021 to FY2023, characterized by significant strategic acquisitions and fluctuating profitability. While FY2022 saw substantial revenue growth driven by the USD 6.8 billion Bemis Company, Inc. acquisition, FY2023 experienced a notable revenue decline of -21.70% to USD 14,000 million. Despite this, net income surged by 86.06% to USD 1,669 million in FY2023, resulting in a robust Net Profit Margin of 11.92%. The company continued its expansion strategy with the USD 300 million acquisition of Nampak Flexible in FY2023, aimed at strengthening its African market presence.\n\n### Analysis\n\nAmcor's revenue trajectory shows considerable volatility. Total revenue increased from USD 12,800 million in FY2021 to USD 17,880 million in FY2022, a 39.69% increase, largely attributable to the integration of Bemis Company, Inc. However, FY2023 saw a significant decrease in revenue to USD 14,000 million, representing a -21.70% decline from the prior year.\n\nIn contrast, net income exhibited a different pattern. After a slight decrease from USD 1,000 million in FY2021 to USD 897 million in FY2022, net income dramatically increased to USD 1,669 million in FY2023, an 86.06% rise. This led to a substantial improvement in the Net Profit Margin, which climbed from 7.81% in FY2021 and 5.02% in FY2022 to 11.92% in FY2023.\n\nAcquisition activity varied significantly. The USD 6.8 billion Bemis acquisition in FY2022 was a transformative event. In FY2021, Amcor acquired flexible packaging assets for USD 450 million, and in FY2023, it completed the Nampak Flexible acquisition for USD 300 million.\n\n### Key Risks\n\nThe significant -21.70% decline in revenue in FY2023, despite ongoing acquisition activity, presents a key risk. While net income and profit margin improved, the sustainability of this profitability in the face of declining top-line performance requires close monitoring. The substantial scale of the FY2022 Bemis acquisition also highlights integration risks and the potential for future impairment charges if expected synergies are not fully realized.\n\n### Conclusion\n\nAmcor plc's financial performance from FY2021 to FY2023 reflects a company actively pursuing strategic growth through acquisitions while navigating fluctuating market conditions. The remarkable increase in net income and Net Profit Margin in FY2023, alongside a revenue decline, indicates strong cost management or other profitability drivers that warrant further investigation. Future performance will depend on the successful integration of recent acquisitions and the ability to reverse the recent revenue downturn.",
+    "4": "## Amcor plc: Financial Performance and Strategic Acquisitions Report (FY2021-FY2023)\n\n### Executive Summary\n\nAmcor plc demonstrated a dynamic financial performance across FY2021 to FY2023, characterized by strategic acquisitions and fluctuating profitability. While FY2022 saw substantial revenue growth, FY2023 experienced a notable revenue decline of -21.70% to USD 14,000 million. Despite this, net income surged by 86.06% to USD 1,669 million in FY2023, resulting in a robust Net Profit Margin of 11.92%. The company continued its expansion strategy with the USD 300 million acquisition of Nampak Flexible in FY2023, aimed at strengthening its African market presence.\n\n### Analysis\n\nAmcor's revenue trajectory shows considerable volatility. Total revenue increased from USD 12,800 million in FY2021 to USD 17,880 million in FY2022, a 39.69% increase. However, FY2023 saw a significant decrease in revenue to USD 14,000 million, representing a -21.70% decline from the prior year.\n\nIn contrast, net income exhibited a different pattern. After a slight decrease from USD 1,000 million in FY2021 to USD 897 million in FY2022, net income dramatically increased to USD 1,669 million in FY2023, an 86.06% rise. This led to a substantial improvement in the Net Profit Margin, which climbed from 7.81% in FY2021 and 5.02% in FY2022 to 11.92% in FY2023.\n\nAcquisition activity varied significantly. In FY2021, Amcor acquired flexible packaging assets for USD 450 million. In FY2023, it completed the Nampak Flexible acquisition for USD 300 million. The report's initial mention of a USD 6.8 billion Bemis Company, Inc. acquisition in FY2022 appears to be an error, as the Bemis acquisition was completed in 2019.\n\n### Key Risks\n\nThe significant -21.70% decline in revenue in FY2023, despite ongoing acquisition activity, presents a key risk. While net income and profit margin improved, the sustainability of this profitability in the face of declining top-line performance requires close monitoring. The scale of past acquisitions highlights integration risks and the potential for future impairment charges if expected synergies are not fully realized.\n\n### Conclusion\n\nAmcor plc's financial performance from FY2021 to FY2023 reflects a company actively pursuing strategic growth through acquisitions while navigating fluctuating market conditions. The remarkable increase in net income and Net Profit Margin in FY2023, alongside a revenue decline, indicates strong cost management or other profitability drivers that warrant further investigation. Future performance will depend on the successful integration of recent acquisitions and the ability to reverse the recent revenue downturn."
+  },
+  "gates": {
+    "end_gate": {
+      "verified": [
+        {
+          "value": "39.69%",
+          "ref": 39.0
+        },
+        {
+          "value": "5.02%",
+          "ref": 5.0
+        },
+        {
+          "value": "14,000",
+          "ref": 14000.0
+        },
+        {
+          "value": "12,800",
+          "ref": 12800.0
+        },
+        {
+          "value": "14,000",
+          "ref": 14000.0
+        },
+        {
+          "value": "1,000",
+          "ref": 1000.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "11.92%",
+          "num": 11.92,
+          "correct": 13.0,
+          "dev": 0.0831,
+          "source": "evidence"
+        },
+        {
+          "value": "7.81%",
+          "num": 7.81,
+          "correct": 9.0,
+          "dev": 0.1322,
+          "source": "evidence"
+        },
+        {
+          "value": "11.92%",
+          "num": 11.92,
+          "correct": 13.0,
+          "dev": 0.0831,
+          "source": "evidence"
+        },
+        {
+          "value": "1,669",
+          "num": 1669.0,
+          "correct": 1200.0,
+          "dev": 0.281,
+          "source": "source_document"
+        },
+        {
+          "value": "17,880",
+          "num": 17880.0,
+          "correct": 14000.0,
+          "dev": 0.217,
+          "source": "source_document"
+        },
+        {
+          "value": "1,669",
+          "num": 1669.0,
+          "correct": 1200.0,
+          "dev": 0.281,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "-21.70%"
+        },
+        {
+          "value": "86.06%"
+        },
+        {
+          "value": "-21.70%"
+        },
+        {
+          "value": "86.06%"
+        },
+        {
+          "value": "-21.70%"
+        }
+      ],
+      "n_refs": 25
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_025_E70F40EB",
+      "hid": "FB_025_E70F40EB_H3",
+      "method": "end_check",
+      "type": "large_number",
+      "inj_num": 1669.0,
+      "orig_num": 1200.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": true,
+      "any_det": true,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_025_E70F40EB",
+      "hid": "FB_025_E70F40EB_H2",
+      "method": "end_check",
+      "type": "large_number",
+      "inj_num": 17880.0,
+      "orig_num": 13500.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": true,
+      "any_det": true,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_025_E70F40EB",
+      "hid": "FB_025_E70F40EB_H1",
+      "method": "end_check",
+      "type": "large_number",
+      "inj_num": 897.0,
+      "orig_num": 1100.0,
+      "survived": false,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": false,
+      "present_s2": false,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 4,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:11:43.391249+00:00"
+}

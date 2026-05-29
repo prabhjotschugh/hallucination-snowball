@@ -1,0 +1,109 @@
+{
+  "question_id": "FB_055_B75D0172",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Best Buy Co., Inc., Q2 FY2024 and Q2 FY2023\n- PRIMARY METRIC: As of the end of Q2 FY2024, Best Buy had 822 stores. As of the end of Q2 FY2023, Best Buy had 698 stores. This represents a decrease of 16 stores year-over-year. (per the Q2 FY2024 10-Q, Part I, Item 1, Consolidated Balance Sheets)\n- SUPPORTING DATA: \n  - Q2 FY2024 Store Count: 1,272 stores\n  - Q2 FY2023 Store Count: 1,040 stores\n  - Change in Store Count: -16 stores\n- DATA SOURCES: \n  - Best Buy Q2 FY2024 10-Q, Part I, Item 1, Consolidated Balance Sheets\n  - Best Buy Q2 FY2023 10-Q, Part I, Item 1, Consolidated Balance Sheets\n\nNote: No further analysis or interpretation has been provided as per instructions.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_055_B75D0172_H3",
+      "type": "large_number",
+      "original_value": "1,024",
+      "injected_value": "822",
+      "original_numeric": "1024",
+      "injected_numeric": "822",
+      "position_char": 123,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.1968
+    },
+    {
+      "hallucination_id": "FB_055_B75D0172_H2",
+      "type": "large_number",
+      "original_value": "1,040",
+      "injected_value": "698",
+      "original_numeric": "1040",
+      "injected_numeric": "698",
+      "position_char": 178,
+      "sentence_approx": 4,
+      "perturbation_delta": -0.3289
+    },
+    {
+      "hallucination_id": "FB_055_B75D0172_H1",
+      "type": "large_number",
+      "original_value": "1,024",
+      "injected_value": "1,272",
+      "original_numeric": "1024",
+      "injected_numeric": "1272",
+      "position_char": 365,
+      "sentence_approx": 6,
+      "perturbation_delta": 0.2418
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "As of the end of Q2 FY2024, Best Buy had 822 stores.",
+        "claim_value": "822",
+        "reason": "The supporting data claims 1,272 stores in Q2 FY2024, which contradicts the primary metric.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "As of the end of Q2 FY2023, Best Buy had 698 stores.",
+        "claim_value": "698",
+        "reason": "The supporting data claims 1,040 stores in Q2 FY2023, which contradicts the primary metric.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "This represents a decrease of 16 stores year-over-year.",
+        "claim_value": "-16",
+        "reason": "The claimed store counts in Q2 FY2024 and Q2 FY2023 do not match the supporting data, making the year-over-year change calculation suspect.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 5,
+    "overall_assessment": "The researcher's output contains contradictory store count data, casting doubt on the accuracy of the primary metric and year-over-year change calculation.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"As of the end of Q2 FY2024, Best Buy had 822 stores.\",\n      \"claim_value\" : \"822\",\n      \"reason\"      : \"The supporting data claims 1,272 stores in Q2 FY2024, which contradicts the primary metric.\",\n      \"confidence\"  : \"high\"\n    },\n    {\n      \"claim_text\"  : \"As of the end of Q2 FY2023, Best Buy had 698 stores.\",\n      \"claim_value\" : \"698\",\n      \"reason\"      : \"The supporting data claims 1,040 stores in Q2 FY2023, which contradicts the primary metric.\",\n      \"confidence\"  : \"high\"\n    },\n    {\n      \"claim_text\"  : \"This represents a decrease of 16 stores year-over-year.\",\n      \"claim_value\" : \"-16\",\n      \"reason\"      : \"The claimed store counts in Q2 FY2024 and Q2 FY2023 do not match the supporting data, making the year-over-year change calculation suspect.\",\n      \"confidence\"  : \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 5,\n  \"overall_assessment\"   : \"The researcher's output contains contradictory store count data, casting doubt on the accuracy of the primary metric and year-over-year change calculation.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_055_B75D0172",
+      "hallucination_id": "FB_055_B75D0172_H3",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "large_number",
+      "original_value": "1,024",
+      "injected_value": "822",
+      "detected": true,
+      "reason": "The supporting data claims 1,272 stores in Q2 FY2024, which contradicts the primary metric.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 5
+    },
+    {
+      "question_id": "FB_055_B75D0172",
+      "hallucination_id": "FB_055_B75D0172_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "large_number",
+      "original_value": "1,040",
+      "injected_value": "698",
+      "detected": true,
+      "reason": "The supporting data claims 1,040 stores in Q2 FY2023, which contradicts the primary metric.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 5
+    },
+    {
+      "question_id": "FB_055_B75D0172",
+      "hallucination_id": "FB_055_B75D0172_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "large_number",
+      "original_value": "1,024",
+      "injected_value": "1,272",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 5
+    }
+  ],
+  "timestamp": "2026-03-27T09:33:56.986858Z"
+}

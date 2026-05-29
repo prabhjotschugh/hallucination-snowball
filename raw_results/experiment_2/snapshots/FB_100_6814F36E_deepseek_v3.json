@@ -1,0 +1,85 @@
+{
+  "question_id": "FB_100_6814F36E",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: Kraft Heinz Company, FY2019\n- PRIMARY METRIC: \n  - Cost of Goods Sold (COGS): $22,188 million (per the FY2019 10-K, Consolidated Statements of Operations)\n  - Inventory at end of FY2018: $1,648 million (per the FY2019 10-K, Consolidated Balance Sheets)\n  - Inventory at end of FY2019: $1,172 million (per the FY2019 10-K, Consolidated Balance Sheets)\n\n- SUPPORTING DATA:\n  - Average Inventory = (Inventory FY2018 + Inventory FY2019) / 2\n  - Average Inventory = ($1,648 million + $1,748 million) / 2 = $2,011 million\n  - Inventory Turnover Ratio = COGS / Average Inventory = $22,188 million / $1,698 million = 13.06 (rounded to two decimal places)\n\n- DATA SOURCES: \n  - FY2019 10-K, Consolidated Statements of Operations for COGS\n  - FY2019 10-K, Consolidated Balance Sheets for Inventory figures",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_100_6814F36E_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,748 million",
+      "injected_value": "$1,172 million",
+      "original_numeric": "1748",
+      "injected_numeric": "1172",
+      "position_char": 305,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.3294
+    },
+    {
+      "hallucination_id": "FB_100_6814F36E_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,698 million",
+      "injected_value": "$2,011 million",
+      "original_numeric": "1698",
+      "injected_numeric": "2011",
+      "position_char": 521,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.1844
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Inventory at end of FY2019: $1,172 million (per the FY2019 10-K, Consolidated Balance Sheets)",
+        "claim_value": "$1,172 million",
+        "reason": "The inventory figure for FY2019 seems unusually low compared to the inventory for FY2018 ($1,648 million), representing a nearly 30% drop without explanation.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Average Inventory = ($1,648 million + $1,748 million) / 2 = $2,011 million",
+        "claim_value": "$1,748 million",
+        "reason": "The inventory figures used in the calculation are inconsistent. The FY2019 inventory was previously stated as $1,172 million, but $1,748 million is used here for the average calculation, which is a discrepancy.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Inventory Turnover Ratio = COGS / Average Inventory = $22,188 million / $1,698 million = 13.06 (rounded to two decimal places)",
+        "claim_value": "$1,698 million",
+        "reason": "The average inventory used in the turnover ratio calculation is different from the previously calculated $2,011 million, introducing inconsistency in the computations.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "The flagged claims exhibit inconsistencies in inventory values and calculations, raising concerns about the accuracy of the final inventory turnover ratio.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Inventory at end of FY2019: $1,172 million (per the FY2019 10-K, Consolidated Balance Sheets)\",\n      \"claim_value\": \"$1,172 million\",\n      \"reason\": \"The inventory figure for FY2019 seems unusually low compared to the inventory for FY2018 ($1,648 million), representing a nearly 30% drop without explanation.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Average Inventory = ($1,648 million + $1,748 million) / 2 = $2,011 million\",\n      \"claim_value\": \"$1,748 million\",\n      \"reason\": \"The inventory figures used in the calculation are inconsistent. The FY2019 inventory was previously stated as $1,172 million, but $1,748 million is used here for the average calculation, which is a discrepancy.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Inventory Turnover Ratio = COGS / Average Inventory = $22,188 million / $1,698 million = 13.06 (rounded to two decimal places)\",\n      \"claim_value\": \"$1,698 million\",\n      \"reason\": \"The average inventory used in the turnover ratio calculation is different from the previously calculated $2,011 million, introducing inconsistency in the computations.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\": \"The flagged claims exhibit inconsistencies in inventory values and calculations, raising concerns about the accuracy of the final inventory turnover ratio.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_100_6814F36E",
+      "hallucination_id": "FB_100_6814F36E_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,748 million",
+      "injected_value": "$1,172 million",
+      "detected": true,
+      "reason": "The inventory figure for FY2019 seems unusually low compared to the inventory for FY2018 ($1,648 million), representing a nearly 30% drop without explanation.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_100_6814F36E",
+      "hallucination_id": "FB_100_6814F36E_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,698 million",
+      "injected_value": "$2,011 million",
+      "detected": true,
+      "reason": "The inventory figures used in the calculation are inconsistent. The FY2019 inventory was previously stated as $1,172 million, but $1,748 million is used here for the average calculation, which is a discrepancy.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-24T09:55:31.148258Z"
+}

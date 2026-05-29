@@ -1,0 +1,109 @@
+{
+  "question_id": "FB_044_899DEDA7",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: American Express Company, FY2022\n- PRIMARY METRIC: The largest liability reported was $64,563 million, categorized as \"Long-term debt\" per the FY2022 10-K, Consolidated Balance Sheets.\n- SUPPORTING DATA: \n  - Total liabilities for FY2022: $87,723 million (per the FY2022 10-K, Consolidated Balance Sheets).\n  - Long-term debt for FY2021: $75,098 million (per the FY2021 10-K, Consolidated Balance Sheets).\n  - Long-term debt for FY2020: $35,269 million (per the FY2020 10-K, Consolidated Balance Sheets).\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Balance Sheets, page 63.\n  - FY2021 10-K, Consolidated Balance Sheets, page 62.\n  - FY2020 10-K, Consolidated Balance Sheets, page 61.\n\nNote: No analysis or interpretation of the data is provided as per the requirements.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_044_899DEDA7_H3",
+      "type": "dollar_amount",
+      "original_value": "$106,196 million",
+      "injected_value": "$87,723 million",
+      "original_numeric": "106196",
+      "injected_numeric": "87723",
+      "position_char": 259,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.174
+    },
+    {
+      "hallucination_id": "FB_044_899DEDA7_H2",
+      "type": "dollar_amount",
+      "original_value": "$58,160 million",
+      "injected_value": "$75,098 million",
+      "original_numeric": "58160",
+      "injected_numeric": "75098",
+      "position_char": 359,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.2912
+    },
+    {
+      "hallucination_id": "FB_044_899DEDA7_H1",
+      "type": "dollar_amount",
+      "original_value": "$50,000 million",
+      "injected_value": "$35,269 million",
+      "original_numeric": "50000",
+      "injected_numeric": "35269",
+      "position_char": 458,
+      "sentence_approx": 4,
+      "perturbation_delta": -0.2946
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Total liabilities for FY2022: $87,723 million",
+        "claim_value": "$87,723 million",
+        "reason": "American Express is a bank holding company with total assets typically exceeding $240 billion in 2022. Total liabilities should be commensurate (approximately $210 billion+), making $87 billion implausibly low (less than half of expected scale).",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "The largest liability reported was $64,563 million, categorized as 'Long-term debt'",
+        "claim_value": "$64,563 million",
+        "reason": "For American Express, 'Customer Deposits' are historically the largest liability category (often exceeding $100 billion in 2022), typically surpassing long-term debt. Identifying debt as the largest liability contradicts the company's deposit-funded business model.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Long-term debt for FY2021: $75,098 million... Long-term debt for FY2020: $35,269 million",
+        "claim_value": "$75,098 million (2021) vs $35,269 million (2020)",
+        "reason": "A 114% year-over-year increase in long-term debt for a mature financial institution like Amex is highly anomalous without a major acquisition or crisis event, neither of which occurred in 2021. This volatility suggests data fabrication.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 4,
+    "overall_assessment": "The reported figures significantly underestimate the company's balance sheet scale and misidentify the primary liability structure, while showing anomalous volatility in debt levels.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Total liabilities for FY2022: $87,723 million\",\n      \"claim_value\": \"$87,723 million\",\n      \"reason\": \"American Express is a bank holding company with total assets typically exceeding $240 billion in 2022. Total liabilities should be commensurate (approximately $210 billion+), making $87 billion implausibly low (less than half of expected scale).\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"The largest liability reported was $64,563 million, categorized as 'Long-term debt'\",\n      \"claim_value\": \"$64,563 million\",\n      \"reason\": \"For American Express, 'Customer Deposits' are historically the largest liability category (often exceeding $100 billion in 2022), typically surpassing long-term debt. Identifying debt as the largest liability contradicts the company's deposit-funded business model.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Long-term debt for FY2021: $75,098 million... Long-term debt for FY2020: $35,269 million\",\n      \"claim_value\": \"$75,098 million (2021) vs $35,269 million (2020)\",\n      \"reason\": \"A 114% year-over-year increase in long-term debt for a mature financial institution like Amex is highly anomalous without a major acquisition or crisis event, neither of which occurred in 2021. This volatility suggests data fabrication.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 4,\n  \"overall_assessment\": \"The reported figures significantly underestimate the company's balance sheet scale and misidentify the primary liability structure, while showing anomalous volatility in debt levels.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_044_899DEDA7",
+      "hallucination_id": "FB_044_899DEDA7_H3",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$106,196 million",
+      "injected_value": "$87,723 million",
+      "detected": true,
+      "reason": "American Express is a bank holding company with total assets typically exceeding $240 billion in 2022. Total liabilities should be commensurate (approximately $210 billion+), making $87 billion implausibly low (less than half of expected scale).",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 4
+    },
+    {
+      "question_id": "FB_044_899DEDA7",
+      "hallucination_id": "FB_044_899DEDA7_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$58,160 million",
+      "injected_value": "$75,098 million",
+      "detected": true,
+      "reason": "A 114% year-over-year increase in long-term debt for a mature financial institution like Amex is highly anomalous without a major acquisition or crisis event, neither of which occurred in 2021. This volatility suggests data fabrication.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 4
+    },
+    {
+      "question_id": "FB_044_899DEDA7",
+      "hallucination_id": "FB_044_899DEDA7_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$50,000 million",
+      "injected_value": "$35,269 million",
+      "detected": true,
+      "reason": "A 114% year-over-year increase in long-term debt for a mature financial institution like Amex is highly anomalous without a major acquisition or crisis event, neither of which occurred in 2021. This volatility suggests data fabrication.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 4
+    }
+  ],
+  "timestamp": "2026-03-24T11:02:32.288220Z"
+}

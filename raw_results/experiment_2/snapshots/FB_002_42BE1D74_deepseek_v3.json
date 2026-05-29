@@ -1,0 +1,85 @@
+{
+  "question_id": "FB_002_42BE1D74",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: 3M Company, Fiscal Year 2018\n- PRIMARY METRIC: Net Property, Plant, and Equipment (PPNE) is reported as $14.3 billion per the FY2018 10-K, Consolidated Balance Sheet.\n- SUPPORTING DATA: \n  - FY2017 Net PPNE: $18.0 billion (per the FY2017 10-K, Consolidated Balance Sheet)\n  - FY2016 Net PPNE: $10.9 billion (per the FY2016 10-K, Consolidated Balance Sheet)\n- DATA SOURCES: \n  - FY2018 10-K, Consolidated Balance Sheet, Page 54\n  - FY2017 10-K, Consolidated Balance Sheet, Page 54\n  - FY2016 10-K, Consolidated Balance Sheet, Page 54\n\nNote: No interpretation or analysis has been provided as per the requirements.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_002_42BE1D74_H2",
+      "type": "dollar_amount",
+      "original_value": "$18.2 billion",
+      "injected_value": "$14.3 billion",
+      "original_numeric": "18.2",
+      "injected_numeric": "14.3",
+      "position_char": 124,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2138
+    },
+    {
+      "hallucination_id": "FB_002_42BE1D74_H1",
+      "type": "dollar_amount",
+      "original_value": "$17.8 billion",
+      "injected_value": "$10.9 billion",
+      "original_numeric": "17.8",
+      "injected_numeric": "10.9",
+      "position_char": 313,
+      "sentence_approx": 4,
+      "perturbation_delta": -0.3885
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "FY2017 Net PPNE: $18.0 billion (per the FY2017 10-K, Consolidated Balance Sheet)",
+        "claim_value": "$18.0 billion",
+        "reason": "This represents a 65% increase from FY2016 to FY2017 ($10.9B to $18.0B), which is unusually large for an established industrial company like 3M without a major acquisition or restructuring.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2016 Net PPNE: $10.9 billion (per the FY2016 10-K, Consolidated Balance Sheet)",
+        "claim_value": "$10.9 billion",
+        "reason": "This seems abnormally low compared to the subsequent year's reported $18.0B, suggesting possible inconsistency in reporting methodology or a data entry error.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Net Property, Plant, and Equipment (PPNE) is reported as $14.3 billion per the FY2018 10-K, Consolidated Balance Sheet",
+        "claim_value": "$14.3 billion",
+        "reason": "This represents a -20.6% decrease from the prior year's $18.0B, which seems extreme for PPNE (a relatively stable balance sheet item) unless accompanied by massive asset sales.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 3,
+    "overall_assessment": "Multiple inconsistencies in reported PPNE values with implausible year-to-year fluctuations suggest possible fabrication or serious misinterpretation.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"FY2017 Net PPNE: $18.0 billion (per the FY2017 10-K, Consolidated Balance Sheet)\",\n      \"claim_value\": \"$18.0 billion\",\n      \"reason\": \"This represents a 65% increase from FY2016 to FY2017 ($10.9B to $18.0B), which is unusually large for an established industrial company like 3M without a major acquisition or restructuring.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2016 Net PPNE: $10.9 billion (per the FY2016 10-K, Consolidated Balance Sheet)\",\n      \"claim_value\": \"$10.9 billion\",\n      \"reason\": \"This seems abnormally low compared to the subsequent year's reported $18.0B, suggesting possible inconsistency in reporting methodology or a data entry error.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Net Property, Plant, and Equipment (PPNE) is reported as $14.3 billion per the FY2018 10-K, Consolidated Balance Sheet\",\n      \"claim_value\": \"$14.3 billion\",\n      \"reason\": \"This represents a -20.6% decrease from the prior year's $18.0B, which seems extreme for PPNE (a relatively stable balance sheet item) unless accompanied by massive asset sales.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 3,\n  \"overall_assessment\": \"Multiple inconsistencies in reported PPNE values with implausible year-to-year fluctuations suggest possible fabrication or serious misinterpretation.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_002_42BE1D74",
+      "hallucination_id": "FB_002_42BE1D74_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$18.2 billion",
+      "injected_value": "$14.3 billion",
+      "detected": true,
+      "reason": "This represents a 65% increase from FY2016 to FY2017 ($10.9B to $18.0B), which is unusually large for an established industrial company like 3M without a major acquisition or restructuring.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 3
+    },
+    {
+      "question_id": "FB_002_42BE1D74",
+      "hallucination_id": "FB_002_42BE1D74_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$17.8 billion",
+      "injected_value": "$10.9 billion",
+      "detected": true,
+      "reason": "This represents a 65% increase from FY2016 to FY2017 ($10.9B to $18.0B), which is unusually large for an established industrial company like 3M without a major acquisition or restructuring.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 3
+    }
+  ],
+  "timestamp": "2026-03-24T09:39:18.953154Z"
+}

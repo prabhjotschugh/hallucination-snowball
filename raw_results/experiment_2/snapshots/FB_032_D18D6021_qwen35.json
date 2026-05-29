@@ -1,0 +1,103 @@
+{
+  "question_id": "FB_032_D18D6021",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Advanced Micro Devices, Inc. (AMD) for the fiscal year 2022 (FY2022)\n- PRIMARY METRIC: The quick ratio for AMD in FY2022 is 1.32, as reported in the FY2022 10-K, Consolidated Balance Sheets.\n- SUPPORTING DATA: \n  - Current Assets: $6,570 million (per the FY2022 10-K, Consolidated Balance Sheets)\n  - Current Liabilities: $4,973 million (per the FY2022 10-K, Consolidated Balance Sheets)\n  - Inventory: $1,202 million (per the FY2022 10-K, Consolidated Balance Sheets)\n  - Calculation of Quick Ratio: Quick Ratio = (Current Assets - Inventory) / Current Liabilities = ($6,570 million - $1,474 million) / $6,844 million = 1.32\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Balance Sheets\n  - FY2022 10-K, Management's Discussion and Analysis\n\n**Note:** The analysis of liquidity health based on the quick ratio is not included as per the directive for raw data only. Please refer to the downstream analysis for interpretation and implications.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_032_D18D6021_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,202 million",
+      "injected_value": "$1,474 million",
+      "original_numeric": "1202",
+      "injected_numeric": "1474",
+      "position_char": 606,
+      "sentence_approx": 4,
+      "perturbation_delta": 0.2266
+    },
+    {
+      "hallucination_id": "FB_032_D18D6021_H1",
+      "type": "dollar_amount",
+      "original_value": "$4,973 million",
+      "injected_value": "$6,844 million",
+      "original_numeric": "4973",
+      "injected_numeric": "6844",
+      "position_char": 624,
+      "sentence_approx": 4,
+      "perturbation_delta": 0.3762
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Inventory: $1,202 million (per the FY2022 10-K, Consolidated Balance Sheets)",
+        "claim_value": "$1,202 million",
+        "reason": "Directly contradicted by the calculation line later in the text which uses $1,474 million for inventory.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Calculation of Quick Ratio: ... ($6,570 million - $1,474 million)",
+        "claim_value": "$1,474 million",
+        "reason": "Inconsistent with the supporting data section which explicitly lists Inventory as $1,202 million.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Current Liabilities: $4,973 million (per the FY2022 10-K, Consolidated Balance Sheets)",
+        "claim_value": "$4,973 million",
+        "reason": "Directly contradicted by the calculation line later in the text which uses $6,844 million for current liabilities.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Calculation of Quick Ratio: ... / $6,844 million = 1.32",
+        "claim_value": "$6,844 million",
+        "reason": "Inconsistent with the supporting data section which explicitly lists Current Liabilities as $4,973 million.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Calculation of Quick Ratio: ... = 1.32",
+        "claim_value": "1.32",
+        "reason": "Arithmetic error: The provided calculation inputs ($6,570 - $1,474) / $6,844 equal approximately 0.74, not 1.32.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Current Assets: $6,570 million (per the FY2022 10-K, Consolidated Balance Sheets)",
+        "claim_value": "$6,570 million",
+        "reason": "Suspiciously low for FY2022 following the Xilinx acquisition (closed Feb 2022); FY2021 current assets were already higher (~$7.4 billion), making a decrease implausible post-merger.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 7,
+    "overall_assessment": "The output contains critical internal inconsistencies between stated data and calculation inputs, along with fundamental arithmetic errors, indicating severe hallucination.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Inventory: $1,202 million (per the FY2022 10-K, Consolidated Balance Sheets)\",\n      \"claim_value\": \"$1,202 million\",\n      \"reason\": \"Directly contradicted by the calculation line later in the text which uses $1,474 million for inventory.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Calculation of Quick Ratio: ... ($6,570 million - $1,474 million)\",\n      \"claim_value\": \"$1,474 million\",\n      \"reason\": \"Inconsistent with the supporting data section which explicitly lists Inventory as $1,202 million.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Current Liabilities: $4,973 million (per the FY2022 10-K, Consolidated Balance Sheets)\",\n      \"claim_value\": \"$4,973 million\",\n      \"reason\": \"Directly contradicted by the calculation line later in the text which uses $6,844 million for current liabilities.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Calculation of Quick Ratio: ... / $6,844 million = 1.32\",\n      \"claim_value\": \"$6,844 million\",\n      \"reason\": \"Inconsistent with the supporting data section which explicitly lists Current Liabilities as $4,973 million.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Calculation of Quick Ratio: ... = 1.32\",\n      \"claim_value\": \"1.32\",\n      \"reason\": \"Arithmetic error: The provided calculation inputs ($6,570 - $1,474) / $6,844 equal approximately 0.74, not 1.32.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Current Assets: $6,570 million (per the FY2022 10-K, Consolidated Balance Sheets)\",\n      \"claim_value\": \"$6,570 million\",\n      \"reason\": \"Suspiciously low for FY2022 following the Xilinx acquisition (closed Feb 2022); FY2021 current assets were already higher (~$7.4 billion), making a decrease implausible post-merger.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 7,\n  \"overall_assessment\": \"The output contains critical internal inconsistencies between stated data and calculation inputs, along with fundamental arithmetic errors, indicating severe hallucination.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_032_D18D6021",
+      "hallucination_id": "FB_032_D18D6021_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,202 million",
+      "injected_value": "$1,474 million",
+      "detected": true,
+      "reason": "Directly contradicted by the calculation line later in the text which uses $1,474 million for inventory.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_032_D18D6021",
+      "hallucination_id": "FB_032_D18D6021_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$4,973 million",
+      "injected_value": "$6,844 million",
+      "detected": true,
+      "reason": "Directly contradicted by the calculation line later in the text which uses $6,844 million for current liabilities.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 7
+    }
+  ],
+  "timestamp": "2026-03-24T10:44:25.522580Z"
+}

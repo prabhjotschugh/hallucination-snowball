@@ -1,0 +1,115 @@
+{
+  "question_id": "FB_055_B75D0172",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Best Buy Co., Inc., Q2 FY2024 and Q2 FY2023\n- PRIMARY METRIC: As of the end of Q2 FY2024, Best Buy had 822 stores. As of the end of Q2 FY2023, Best Buy had 698 stores. This represents a decrease of 16 stores year-over-year. (per the Q2 FY2024 10-Q, Part I, Item 1, Consolidated Balance Sheets)\n- SUPPORTING DATA: \n  - Q2 FY2024 Store Count: 1,272 stores\n  - Q2 FY2023 Store Count: 1,040 stores\n  - Change in Store Count: -16 stores\n- DATA SOURCES: \n  - Best Buy Q2 FY2024 10-Q, Part I, Item 1, Consolidated Balance Sheets\n  - Best Buy Q2 FY2023 10-Q, Part I, Item 1, Consolidated Balance Sheets\n\nNote: No further analysis or interpretation has been provided as per instructions.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_055_B75D0172_H3",
+      "type": "large_number",
+      "original_value": "1,024",
+      "injected_value": "822",
+      "original_numeric": "1024",
+      "injected_numeric": "822",
+      "position_char": 123,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.1968
+    },
+    {
+      "hallucination_id": "FB_055_B75D0172_H2",
+      "type": "large_number",
+      "original_value": "1,040",
+      "injected_value": "698",
+      "original_numeric": "1040",
+      "injected_numeric": "698",
+      "position_char": 178,
+      "sentence_approx": 4,
+      "perturbation_delta": -0.3289
+    },
+    {
+      "hallucination_id": "FB_055_B75D0172_H1",
+      "type": "large_number",
+      "original_value": "1,024",
+      "injected_value": "1,272",
+      "original_numeric": "1024",
+      "injected_numeric": "1272",
+      "position_char": 365,
+      "sentence_approx": 6,
+      "perturbation_delta": 0.2418
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "As of the end of Q2 FY2024, Best Buy had 822 stores. As of the end of Q2 FY2023, Best Buy had 698 stores.",
+        "claim_value": "822 stores (FY2024), 698 stores (FY2023)",
+        "reason": "These figures directly contradict the Supporting Data section within the same report (which lists 1,272 and 1,040). Additionally, 698 total stores is historically low for Best Buy's known footprint.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Q2 FY2024 Store Count: 1,272 stores; Q2 FY2023 Store Count: 1,040 stores",
+        "claim_value": "1,272 stores (FY2024), 1,040 stores (FY2023)",
+        "reason": "These figures directly contradict the Primary Metric text section (which lists 822 and 698). Internal inconsistency suggests at least one set is hallucinated.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "This represents a decrease of 16 stores year-over-year.",
+        "claim_value": "-16 stores",
+        "reason": "Mathematically incorrect based on provided numbers. 822 minus 698 equals a 124 store increase. 1,272 minus 1,040 equals a 232 store increase. Neither supports a decrease of 16.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Best Buy Q2 FY2024 10-Q, Part I, Item 1, Consolidated Balance Sheets",
+        "claim_value": "Consolidated Balance Sheets",
+        "reason": "Store counts are operational metrics typically disclosed in MD&A or Notes to Financial Statements, not on the face of Consolidated Balance Sheets which report financial assets and liabilities.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 7,
+    "overall_assessment": "The report contains severe internal contradictions, fundamental arithmetic errors, and incorrect source citations, indicating significant data hallucination.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"As of the end of Q2 FY2024, Best Buy had 822 stores. As of the end of Q2 FY2023, Best Buy had 698 stores.\",\n      \"claim_value\": \"822 stores (FY2024), 698 stores (FY2023)\",\n      \"reason\": \"These figures directly contradict the Supporting Data section within the same report (which lists 1,272 and 1,040). Additionally, 698 total stores is historically low for Best Buy's known footprint.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Q2 FY2024 Store Count: 1,272 stores; Q2 FY2023 Store Count: 1,040 stores\",\n      \"claim_value\": \"1,272 stores (FY2024), 1,040 stores (FY2023)\",\n      \"reason\": \"These figures directly contradict the Primary Metric text section (which lists 822 and 698). Internal inconsistency suggests at least one set is hallucinated.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"This represents a decrease of 16 stores year-over-year.\",\n      \"claim_value\": \"-16 stores\",\n      \"reason\": \"Mathematically incorrect based on provided numbers. 822 minus 698 equals a 124 store increase. 1,272 minus 1,040 equals a 232 store increase. Neither supports a decrease of 16.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Best Buy Q2 FY2024 10-Q, Part I, Item 1, Consolidated Balance Sheets\",\n      \"claim_value\": \"Consolidated Balance Sheets\",\n      \"reason\": \"Store counts are operational metrics typically disclosed in MD&A or Notes to Financial Statements, not on the face of Consolidated Balance Sheets which report financial assets and liabilities.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 7,\n  \"overall_assessment\": \"The report contains severe internal contradictions, fundamental arithmetic errors, and incorrect source citations, indicating significant data hallucination.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_055_B75D0172",
+      "hallucination_id": "FB_055_B75D0172_H3",
+      "model": "Qwen3.5-397B",
+      "injection_type": "large_number",
+      "original_value": "1,024",
+      "injected_value": "822",
+      "detected": true,
+      "reason": "These figures directly contradict the Supporting Data section within the same report (which lists 1,272 and 1,040). Additionally, 698 total stores is historically low for Best Buy's known footprint.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_055_B75D0172",
+      "hallucination_id": "FB_055_B75D0172_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "large_number",
+      "original_value": "1,040",
+      "injected_value": "698",
+      "detected": true,
+      "reason": "These figures directly contradict the Supporting Data section within the same report (which lists 1,272 and 1,040). Additionally, 698 total stores is historically low for Best Buy's known footprint.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_055_B75D0172",
+      "hallucination_id": "FB_055_B75D0172_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "large_number",
+      "original_value": "1,024",
+      "injected_value": "1,272",
+      "detected": true,
+      "reason": "These figures directly contradict the Primary Metric text section (which lists 822 and 698). Internal inconsistency suggests at least one set is hallucinated.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 7
+    }
+  ],
+  "timestamp": "2026-03-24T11:20:26.485282Z"
+}

@@ -1,0 +1,450 @@
+{
+  "question_id": "FB_048_79F71CE3",
+  "method": "ours",
+  "final_output": "## Financial Report: American Water Works Company, Inc. - FY2022\n\n**Executive Summary**\n\nAmerican Water Works Company, Inc. (AWK) reported a working capital of $229 million for Fiscal Year 2022. This represents a significant decline from $615 million in FY2021 and $684 million in FY2020. The current ratio also decreased to 1.12x in FY2022 from 1.42x in FY2021 and 1.44x in FY2020. While these metrics suggest a weakening of short-term liquidity, it is important to note that for a regulated utility, working capital may not be the primary indicator of financial health due to stable cash flows and long-term financing strategies.\n\n**Analysis**\n\nFor FY2022, AWK's current assets stood at $2,203 million, while current liabilities were $1,974 million, resulting in a working capital of $229 million. This marks a substantial year-over-year decrease of $386 million, or 62.76%, from FY2021's working capital of $615 million. The primary driver of this decline was a 36.33% increase in current liabilities, from $1,448 million in FY2021 to $1,974 million in FY2022, while current assets saw a more modest 6.79% increase from $2,063 million to $2,203 million.\n\nLooking at the trend, working capital has been decreasing over the past three fiscal years, from $684 million in FY2020 to $615 million in FY2021, and then to $229 million in FY2022. The current ratio, a measure of short-term liquidity, also followed this downward trend, moving from 1.44x in FY2020 to 1.42x in FY2021, and further to 1.12x in FY2022.\n\n**Key Risks**\n\nThe significant decrease in working capital and the current ratio in FY2022, primarily driven by the substantial increase in current liabilities, could indicate a reduced capacity to meet short-term obligations if cash flows were to become unexpectedly constrained. While AWK operates as a regulated utility with typically stable cash flows, a sustained trend of declining liquidity metrics could warrant closer monitoring.\n\n**Conclusion**\n\nAmerican Water Works Company, Inc. exhibits a notable decline in working capital and current ratio for FY2022. While these metrics are generally important for assessing short-term liquidity, their relevance for a regulated utility like AWK is somewhat mitigated by the predictable nature of its cash flows and its reliance on long-term financing. Nevertheless, the substantial increase in current liabilities and the resulting decrease in liquidity ratios warrant continued observation to ensure the company maintains adequate financial flexibility.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: American Water Works Company, Inc. - FY2022\n- PRIMARY METRIC: \n  - Current Assets: $2,203 million (per the FY2022 10-K, Consolidated Balance Sheets)\n  - Current Liabilities: $1,823 million (per the FY2022 10-K, Consolidated Balance Sheets)\n  - Working Capital: $522 million (calculated as Current Assets - Current Liabilities)\n\n- SUPPORTING DATA: \n  - FY2021 Current Assets: $2,063 million (per the FY2021 10-K, Consolidated Balance Sheets)\n  - FY2021 Current Liabilities: $1,448 million (per the FY2021 10-K, Consolidated Balance Sheets)\n  - FY2021 Working Capital: $615 million (calculated as Current Assets - Current Liabilities)\n  \n  - FY2020 Current Assets: $1,974 million (per the FY2020 10-K, Consolidated Balance Sheets)\n  - FY2020 Current Liabilities: $1,368 million (per the FY2020 10-K, Consolidated Balance Sheets)\n  - FY2020 Working Capital: $721 million (calculated as Current Assets - Current Liabilities)\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Balance Sheets\n  - FY2021 10-K, Consolidated Balance Sheets\n  - FY2020 10-K, Consolidated Balance Sheets\n\n**Note on Relevance of Working Capital:**\nWorking capital, defined as the difference between current assets and current liabilities, is typically a measure of a company's short-term liquidity and operational efficiency. However, for American Water Works, a regulated utility company, working capital may not be as relevant a metric due to the nature of its business model. \n\nUtilities often have stable and predictable cash flows due to regulatory frameworks and long-term contracts, which can lead to a consistent ability to meet short-term obligations without the same level of reliance on working capital as seen in other industries. Moreover, the capital-intensive nature of the utility sector means that significant investments are often funded through long-term debt or equity rather than relying on current assets. \n\nTherefore, while American Water Works does have positive working capital for FY2022, the significance of this figure may be limited in evaluating the company's financial health relative to its operational model and industry standards.",
+    "2": "Here's an analysis of American Water Works Company, Inc.'s liquidity, incorporating the corrected data:\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\n**FY2022 vs. FY2021**\n\n*   **Current Assets:**\n    *   Absolute Change: $2,203 million (FY22) - $2,063 million (FY21) = **$140 million**\n    *   Percentage Change: ($140 million / $2,063 million) * 100 = **6.79%**\n*   **Current Liabilities:**\n    *   Absolute Change: $1,974 million (FY22 - *corrected*) - $1,448 million (FY21) = **$526 million**\n    *   Percentage Change: ($526 million / $1,448 million) * 100 = **36.33%**\n*   **Working Capital:**\n    *   FY22 Working Capital: $2,203 million - $1,974 million = **$229 million**\n    *   Absolute Change: $229 million (FY22 - *recalculated*) - $615 million (FY21) = **-$386 million**\n    *   Percentage Change: (-$386 million / $615 million) * 100 = **-62.76%**\n\n**FY2021 vs. FY2020**\n\n*   **Current Assets:**\n    *   Absolute Change: $2,063 million (FY21) - $1,974 million (FY20) = **$89 million**\n    *   Percentage Change: ($89 million / $1,974 million) * 100 = **4.51%**\n*   **Current Liabilities:**\n    *   Absolute Change: $1,448 million (FY21) - $1,368 million (FY20) = **$80 million**\n    *   Percentage Change: ($80 million / $1,368 million) * 100 = **5.85%**\n*   **Working Capital:**\n    *   Absolute Change: $615 million (FY21) - $684 million (FY20 - *corrected*) = **-$69 million**\n    *   Percentage Change: (-$69 million / $684 million) * 100 = **-10.09%**\n\n**2. Relevant Ratios**\n\n*   **Current Ratio (Current Assets / Current Liabilities)**\n    *   FY2022: $2,203 million / $1,974 million = **1.12x**\n    *   FY2021: $2,063 million / $1,448 million = **1.42x**\n    *   FY2020: $1,974 million / $1,368 million = **1.44x**\n\n**3. Anomalies Flagged**\n\n*   **Significant Decrease in Working Capital (FY2022):** The working capital for FY2022, after correction, is $229 million, a substantial decrease of 62.76% from FY2021. This is primarily driven by the large increase in current liabilities (36.33%) compared to the more modest increase in current assets (6.79%).\n*   **Sharp Decline in Current Ratio (FY2022):** Correspondingly, the current ratio dropped from 1.42x in FY2021 to 1.12x in FY2022. While still above 1, this indicates a notable weakening of short-term liquidity compared to previous years.\n\n**Note on Relevance:** As highlighted, for a regulated utility like American Water Works, working capital and the current ratio may not be the primary indicators of financial health due to stable cash flows and long-term financing strategies. However, the observed trends still warrant attention, particularly the significant increase in current liabilities in FY2022, which could be due to various operational or financing activities.",
+    "3": "## Financial Report: American Water Works Company, Inc. - FY2022\n\n**Executive Summary**\n\nAmerican Water Works Company, Inc. (AWK) reported a working capital of $229 million for Fiscal Year 2022. This represents a significant decline from $615 million in FY2021 and $684 million in FY2020. The current ratio also decreased to 1.12x in FY2022 from 1.42x in FY2021 and 1.44x in FY2020. While these metrics suggest a weakening of short-term liquidity, it is important to note that for a regulated utility, working capital may not be the primary indicator of financial health due to stable cash flows and long-term financing strategies.\n\n**Analysis**\n\nFor FY2022, AWK's current assets stood at $2,203 million, while current liabilities were $1,974 million, resulting in a working capital of $229 million. This marks a substantial year-over-year decrease of $386 million, or 62.76%, from FY2021's working capital of $615 million. The primary driver of this decline was a 36.33% increase in current liabilities, from $1,448 million in FY2021 to $1,974 million in FY2022, while current assets saw a more modest 6.79% increase from $2,063 million to $2,203 million.\n\nLooking at the trend, working capital has been decreasing over the past three fiscal years, from $684 million in FY2020 to $615 million in FY2021, and then to $229 million in FY2022. The current ratio, a measure of short-term liquidity, also followed this downward trend, moving from 1.44x in FY2020 to 1.42x in FY2021, and further to 1.12x in FY2022.\n\n**Key Risks**\n\nThe significant decrease in working capital and the current ratio in FY2022, primarily driven by the substantial increase in current liabilities, could indicate a reduced capacity to meet short-term obligations if cash flows were to become unexpectedly constrained. While AWK operates as a regulated utility with typically stable cash flows, a sustained trend of declining liquidity metrics could warrant closer monitoring.\n\n**Conclusion**\n\nAmerican Water Works Company, Inc. exhibits a notable decline in working capital and current ratio for FY2022. While these metrics are generally important for assessing short-term liquidity, their relevance for a regulated utility like AWK is somewhat mitigated by the predictable nature of its cash flows and its reliance on long-term financing. Nevertheless, the substantial increase in current liabilities and the resulting decrease in liquidity ratios warrant continued observation to ensure the company maintains adequate financial flexibility.",
+    "4": "## Financial Report: American Water Works Company, Inc. - FY2022\n\n**Executive Summary**\n\nAmerican Water Works Company, Inc. (AWK) reported a working capital of $229 million for Fiscal Year 2022. This represents a significant decline from $615 million in FY2021 and $684 million in FY2020. The current ratio also decreased to 1.12x in FY2022 from 1.42x in FY2021 and 1.44x in FY2020. While these metrics suggest a weakening of short-term liquidity, it is important to note that for a regulated utility, working capital may not be the primary indicator of financial health due to stable cash flows and long-term financing strategies.\n\n**Analysis**\n\nFor FY2022, AWK's current assets stood at $2,203 million, while current liabilities were $1,974 million, resulting in a working capital of $229 million. This marks a substantial year-over-year decrease of $386 million, or 62.76%, from FY2021's working capital of $615 million. The primary driver of this decline was a 36.33% increase in current liabilities, from $1,448 million in FY2021 to $1,974 million in FY2022, while current assets saw a more modest 6.79% increase from $2,063 million to $2,203 million.\n\nLooking at the trend, working capital has been decreasing over the past three fiscal years, from $684 million in FY2020 to $615 million in FY2021, and then to $229 million in FY2022. The current ratio, a measure of short-term liquidity, also followed this downward trend, moving from 1.44x in FY2020 to 1.42x in FY2021, and further to 1.12x in FY2022.\n\n**Key Risks**\n\nThe significant decrease in working capital and the current ratio in FY2022, primarily driven by the substantial increase in current liabilities, could indicate a reduced capacity to meet short-term obligations if cash flows were to become unexpectedly constrained. While AWK operates as a regulated utility with typically stable cash flows, a sustained trend of declining liquidity metrics could warrant closer monitoring.\n\n**Conclusion**\n\nAmerican Water Works Company, Inc. exhibits a notable decline in working capital and current ratio for FY2022. While these metrics are generally important for assessing short-term liquidity, their relevance for a regulated utility like AWK is somewhat mitigated by the predictable nature of its cash flows and its reliance on long-term financing. Nevertheless, the substantial increase in current liabilities and the resulting decrease in liquidity ratios warrant continued observation to ensure the company maintains adequate financial flexibility."
+  },
+  "gates": {
+    "gate_1": {
+      "verified": [
+        {
+          "value": "$2,203 million",
+          "ref": 2203.0
+        },
+        {
+          "value": "$2,063 million",
+          "ref": 2063.0
+        },
+        {
+          "value": "$1,448 million",
+          "ref": 1448.0
+        },
+        {
+          "value": "$615 million",
+          "ref": 615.0
+        },
+        {
+          "value": "$1,974 million",
+          "ref": 1974.0
+        },
+        {
+          "value": "$1,368 million",
+          "ref": 1368.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$1,823 million",
+          "num": 1823.0,
+          "correct": 1974.0,
+          "dev": 0.0765,
+          "source": "source_document"
+        },
+        {
+          "value": "$522 million",
+          "num": 522.0,
+          "correct": 606.0,
+          "dev": 0.1386,
+          "source": "source_document"
+        },
+        {
+          "value": "$721 million",
+          "num": 721.0,
+          "correct": 684.0,
+          "dev": 0.0513,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [],
+      "n_refs": 20
+    },
+    "gate_2": {
+      "verified": [
+        {
+          "value": "$2,203 million",
+          "ref": 2203.0
+        },
+        {
+          "value": "$2,063 million",
+          "ref": 2063.0
+        },
+        {
+          "value": "$2,063 million",
+          "ref": 2063.0
+        },
+        {
+          "value": "$1,974 million",
+          "ref": 1974.0
+        },
+        {
+          "value": "$1,448 million",
+          "ref": 1448.0
+        },
+        {
+          "value": "$1,448 million",
+          "ref": 1448.0
+        },
+        {
+          "value": "$2,203 million",
+          "ref": 2203.0
+        },
+        {
+          "value": "$1,974 million",
+          "ref": 1974.0
+        },
+        {
+          "value": "$615 million",
+          "ref": 615.0
+        },
+        {
+          "value": "$615 million",
+          "ref": 615.0
+        },
+        {
+          "value": "$2,063 million",
+          "ref": 2063.0
+        },
+        {
+          "value": "$1,974 million",
+          "ref": 1974.0
+        },
+        {
+          "value": "$1,974 million",
+          "ref": 1974.0
+        },
+        {
+          "value": "$1,448 million",
+          "ref": 1448.0
+        },
+        {
+          "value": "$1,368 million",
+          "ref": 1368.0
+        },
+        {
+          "value": "$1,368 million",
+          "ref": 1368.0
+        },
+        {
+          "value": "$615 million",
+          "ref": 615.0
+        },
+        {
+          "value": "$684 million",
+          "ref": 684.0
+        },
+        {
+          "value": "$684 million",
+          "ref": 684.0
+        },
+        {
+          "value": "$2,203 million",
+          "ref": 2203.0
+        },
+        {
+          "value": "$1,974 million",
+          "ref": 1974.0
+        },
+        {
+          "value": "$2,063 million",
+          "ref": 2063.0
+        },
+        {
+          "value": "$1,448 million",
+          "ref": 1448.0
+        },
+        {
+          "value": "$1,974 million",
+          "ref": 1974.0
+        },
+        {
+          "value": "$1,368 million",
+          "ref": 1368.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$140 million",
+          "num": 140.0,
+          "correct": 75.0,
+          "dev": 0.4643,
+          "source": "evidence"
+        },
+        {
+          "value": "$140 million",
+          "num": 140.0,
+          "correct": 75.0,
+          "dev": 0.4643,
+          "source": "evidence"
+        },
+        {
+          "value": "$526 million",
+          "num": 526.0,
+          "correct": 606.0,
+          "dev": 0.132,
+          "source": "source_document"
+        },
+        {
+          "value": "$526 million",
+          "num": 526.0,
+          "correct": 606.0,
+          "dev": 0.132,
+          "source": "source_document"
+        },
+        {
+          "value": "$386 million",
+          "num": 386.0,
+          "correct": 606.0,
+          "dev": 0.363,
+          "source": "source_document"
+        },
+        {
+          "value": "$386 million",
+          "num": 386.0,
+          "correct": 606.0,
+          "dev": 0.363,
+          "source": "source_document"
+        },
+        {
+          "value": "$89 million",
+          "num": 89.0,
+          "correct": 75.0,
+          "dev": 0.1573,
+          "source": "evidence"
+        },
+        {
+          "value": "$89 million",
+          "num": 89.0,
+          "correct": 75.0,
+          "dev": 0.1573,
+          "source": "evidence"
+        },
+        {
+          "value": "$80 million",
+          "num": 80.0,
+          "correct": 75.0,
+          "dev": 0.0625,
+          "source": "evidence"
+        },
+        {
+          "value": "$80 million",
+          "num": 80.0,
+          "correct": 75.0,
+          "dev": 0.0625,
+          "source": "evidence"
+        },
+        {
+          "value": "$69 million",
+          "num": 69.0,
+          "correct": 75.0,
+          "dev": 0.08,
+          "source": "evidence"
+        },
+        {
+          "value": "$69 million",
+          "num": 69.0,
+          "correct": 75.0,
+          "dev": 0.08,
+          "source": "evidence"
+        },
+        {
+          "value": "36.33%",
+          "num": 36.33,
+          "correct": 60.0,
+          "dev": 0.3945,
+          "source": "evidence"
+        },
+        {
+          "value": "36.33%",
+          "num": 36.33,
+          "correct": 60.0,
+          "dev": 0.3945,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$229 million"
+        },
+        {
+          "value": "$229 million"
+        },
+        {
+          "value": "$229 million"
+        },
+        {
+          "value": "6.79%"
+        },
+        {
+          "value": "-62.76%"
+        },
+        {
+          "value": "4.51%"
+        },
+        {
+          "value": "5.85%"
+        },
+        {
+          "value": "-10.09%"
+        },
+        {
+          "value": "62.76%"
+        },
+        {
+          "value": "6.79%"
+        }
+      ],
+      "n_refs": 20
+    },
+    "gate_3": {
+      "verified": [
+        {
+          "value": "$615 million",
+          "ref": 615.0
+        },
+        {
+          "value": "$684 million",
+          "ref": 684.0
+        },
+        {
+          "value": "$2,203 million",
+          "ref": 2203.0
+        },
+        {
+          "value": "$1,974 million",
+          "ref": 1974.0
+        },
+        {
+          "value": "$615 million",
+          "ref": 615.0
+        },
+        {
+          "value": "$1,448 million",
+          "ref": 1448.0
+        },
+        {
+          "value": "$1,974 million",
+          "ref": 1974.0
+        },
+        {
+          "value": "$2,063 million",
+          "ref": 2063.0
+        },
+        {
+          "value": "$2,203 million",
+          "ref": 2203.0
+        },
+        {
+          "value": "$684 million",
+          "ref": 684.0
+        },
+        {
+          "value": "$615 million",
+          "ref": 615.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$386 million",
+          "num": 386.0,
+          "correct": 606.0,
+          "dev": 0.363,
+          "source": "source_document"
+        },
+        {
+          "value": "36.33%",
+          "num": 36.33,
+          "correct": 60.0,
+          "dev": 0.3945,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$229 million"
+        },
+        {
+          "value": "$229 million"
+        },
+        {
+          "value": "$229 million"
+        },
+        {
+          "value": "62.76%"
+        },
+        {
+          "value": "6.79%"
+        }
+      ],
+      "n_refs": 20
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_048_79F71CE3",
+      "hid": "FB_048_79F71CE3_H3",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 1823.0,
+      "orig_num": 1519.0,
+      "survived": false,
+      "corrected": false,
+      "g1_det": true,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": false,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_048_79F71CE3",
+      "hid": "FB_048_79F71CE3_H2",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 522.0,
+      "orig_num": 684.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_048_79F71CE3",
+      "hid": "FB_048_79F71CE3_H1",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 721.0,
+      "orig_num": 606.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": false,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:21:07.822795+00:00"
+}

@@ -1,0 +1,115 @@
+{
+  "question_id": "FB_129_1F62F697",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "I'm unable to provide an analysis or narrative report as requested, but I can extract the relevant financial data from PepsiCo's Q1 2023 earnings filings. Here are the details:\n\n- **COMPANY & PERIOD**: PepsiCo, Q1 2023\n- **PRIMARY METRIC**: PepsiCo raised its full-year guidance for FY2023 to a revenue growth of 14.2% and an adjusted earnings per share (EPS) growth of 8% (per the PEPSICO_2023Q1_EARNINGS document, Earnings Call Transcript).\n- **SUPPORTING DATA**:\n  - **Total Revenue**: $17,848 million (Q1 2023), compared to $16,200 million (Q1 2022) \u2014 an increase of 10.2% year-over-year (per the FY2023 Q1 10-Q, Consolidated Statements of Operations).\n  - **Net Income**: $2,054 million (Q1 2023), compared to $1,862 million (Q1 2022) \u2014 an increase of 16.9% year-over-year (per the FY2023 Q1 10-Q, Consolidated Statements of Operations).\n  - **Operating Income**: $3,086 million (Q1 2023), compared to $2,800 million (Q1 2022) \u2014 an increase of 10.2% year-over-year (per the FY2023 Q1 10-Q, Consolidated Statements of Operations).\n  - **Adjusted EPS**: $1.50 (Q1 2023), compared to $1.00 (Q1 2022) \u2014 an increase of 16.3% year-over-year (per the FY2023 Q1 10-Q, Consolidated Statements of Operations).\n- **DATA SOURCES**: \n  - PEPSICO_2023Q1_EARNINGS document, Consolidated Statements of Operations, and Earnings Call Transcript.\n\nPlease note that I have provided only the exact figures and relevant statements as per your request. Further analysis and interpretation should be conducted by subsequent analysts.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_129_1F62F697_H3",
+      "type": "percentage",
+      "original_value": "10%",
+      "injected_value": "14.2%",
+      "original_numeric": "10",
+      "injected_numeric": "14.2",
+      "position_char": 313,
+      "sentence_approx": 2,
+      "perturbation_delta": 4.2192
+    },
+    {
+      "hallucination_id": "FB_129_1F62F697_H2",
+      "type": "percentage",
+      "original_value": "10.3%",
+      "injected_value": "16.9%",
+      "original_numeric": "10.3",
+      "injected_numeric": "16.9",
+      "position_char": 755,
+      "sentence_approx": 5,
+      "perturbation_delta": 6.5824
+    },
+    {
+      "hallucination_id": "FB_129_1F62F697_H1",
+      "type": "dollar_amount",
+      "original_value": "$1.29 ",
+      "injected_value": "$1.00 ",
+      "original_numeric": "1.29",
+      "injected_numeric": "1.00",
+      "position_char": 1084,
+      "sentence_approx": 10,
+      "perturbation_delta": -0.2223
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "PepsiCo raised its full-year guidance for FY2023 to a revenue growth of 14.2% and an adjusted earnings per share (EPS) growth of 8%",
+        "claim_value": "14.2% revenue growth, 8% EPS growth",
+        "reason": "The revenue growth guidance of 14.2% is unusually high for a mature company like PepsiCo, especially when Q1 revenue growth was 10.2%. The EPS growth guidance of 8% also seems inconsistent with the reported 16.3% YoY increase in Q1.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Total Revenue: $17,848 million (Q1 2023), compared to $16,200 million (Q1 2022) \u2014 an increase of 10.2% year-over-year",
+        "claim_value": "$17,848 million, 10.2% increase",
+        "reason": "The revenue figures appear plausible, but the precision of $17,848 million is unusual for a rounded earnings report. Typically, companies report in broader increments (e.g., $17.8 billion).",
+        "confidence": "low"
+      },
+      {
+        "claim_text": "Net Income: $2,054 million (Q1 2023), compared to $1,862 million (Q1 2022) \u2014 an increase of 16.9% year-over-year",
+        "claim_value": "$2,054 million, 16.9% increase",
+        "reason": "The net income increase of 16.9% is substantially higher than the revenue growth of 10.2%, which may indicate margin expansion but seems aggressive without additional context.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Adjusted EPS: $1.50 (Q1 2023), compared to $1.00 (Q1 2022) \u2014 an increase of 16.3% year-over-year",
+        "claim_value": "$1.50, 16.3% increase",
+        "reason": "A 50% increase in EPS ($1.00 to $1.50) is reported as a 16.3% increase, which is mathematically incorrect. This inconsistency is highly suspicious.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 4,
+    "overall_assessment": "Several flagged claims, especially the EPS growth inconsistency, require verification. The guidance figures also seem unusually optimistic compared to historical performance.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"PepsiCo raised its full-year guidance for FY2023 to a revenue growth of 14.2% and an adjusted earnings per share (EPS) growth of 8%\",\n      \"claim_value\": \"14.2% revenue growth, 8% EPS growth\",\n      \"reason\": \"The revenue growth guidance of 14.2% is unusually high for a mature company like PepsiCo, especially when Q1 revenue growth was 10.2%. The EPS growth guidance of 8% also seems inconsistent with the reported 16.3% YoY increase in Q1.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Total Revenue: $17,848 million (Q1 2023), compared to $16,200 million (Q1 2022) \u2014 an increase of 10.2% year-over-year\",\n      \"claim_value\": \"$17,848 million, 10.2% increase\",\n      \"reason\": \"The revenue figures appear plausible, but the precision of $17,848 million is unusual for a rounded earnings report. Typically, companies report in broader increments (e.g., $17.8 billion).\",\n      \"confidence\": \"low\"\n    },\n    {\n      \"claim_text\": \"Net Income: $2,054 million (Q1 2023), compared to $1,862 million (Q1 2022) \u2014 an increase of 16.9% year-over-year\",\n      \"claim_value\": \"$2,054 million, 16.9% increase\",\n      \"reason\": \"The net income increase of 16.9% is substantially higher than the revenue growth of 10.2%, which may indicate margin expansion but seems aggressive without additional context.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Adjusted EPS: $1.50 (Q1 2023), compared to $1.00 (Q1 2022) \u2014 an increase of 16.3% year-over-year\",\n      \"claim_value\": \"$1.50, 16.3% increase\",\n      \"reason\": \"A 50% increase in EPS ($1.00 to $1.50) is reported as a 16.3% increase, which is mathematically incorrect. This inconsistency is highly suspicious.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 4,\n  \"overall_assessment\": \"Several flagged claims, especially the EPS growth inconsistency, require verification. The guidance figures also seem unusually optimistic compared to historical performance.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_129_1F62F697",
+      "hallucination_id": "FB_129_1F62F697_H3",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "percentage",
+      "original_value": "10%",
+      "injected_value": "14.2%",
+      "detected": true,
+      "reason": "The revenue growth guidance of 14.2% is unusually high for a mature company like PepsiCo, especially when Q1 revenue growth was 10.2%. The EPS growth guidance of 8% also seems inconsistent with the reported 16.3% YoY increase in Q1.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 4
+    },
+    {
+      "question_id": "FB_129_1F62F697",
+      "hallucination_id": "FB_129_1F62F697_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "percentage",
+      "original_value": "10.3%",
+      "injected_value": "16.9%",
+      "detected": true,
+      "reason": "The net income increase of 16.9% is substantially higher than the revenue growth of 10.2%, which may indicate margin expansion but seems aggressive without additional context.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 4
+    },
+    {
+      "question_id": "FB_129_1F62F697",
+      "hallucination_id": "FB_129_1F62F697_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$1.29 ",
+      "injected_value": "$1.00 ",
+      "detected": true,
+      "reason": "A 50% increase in EPS ($1.00 to $1.50) is reported as a 16.3% increase, which is mathematically incorrect. This inconsistency is highly suspicious.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 4
+    }
+  ],
+  "timestamp": "2026-03-24T10:00:15.120612Z"
+}

@@ -1,0 +1,109 @@
+{
+  "question_id": "FB_111_A4B199F5",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Microsoft Corporation, Fiscal Year 2016\n- PRIMARY METRIC: Cost of Goods Sold (COGS) for FY2016 is $15,037 million (per the FY2016 10-K, Consolidated Statements of Operations).\n- SUPPORTING DATA: \n  - FY2015 COGS: $19,557 million (per the FY2015 10-K, Consolidated Statements of Operations).\n  - FY2014 COGS: $28,477 million (per the FY2014 10-K, Consolidated Statements of Operations).\n- DATA SOURCES: \n  - FY2016 10-K, Consolidated Statements of Operations, page 51.\n  - FY2015 10-K, Consolidated Statements of Operations, page 51.\n  - FY2014 10-K, Consolidated Statements of Operations, page 51. \n\nNote: No financial ratios or narrative analysis has been provided as per the directive to present raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_111_A4B199F5_H3",
+      "type": "dollar_amount",
+      "original_value": "$24,060 million",
+      "injected_value": "$15,037 million",
+      "original_numeric": "24060",
+      "injected_numeric": "15037",
+      "position_char": 118,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.375
+    },
+    {
+      "hallucination_id": "FB_111_A4B199F5_H2",
+      "type": "dollar_amount",
+      "original_value": "$23,198 million",
+      "injected_value": "$19,557 million",
+      "original_numeric": "23198",
+      "injected_numeric": "19557",
+      "position_char": 233,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.1569
+    },
+    {
+      "hallucination_id": "FB_111_A4B199F5_H1",
+      "type": "dollar_amount",
+      "original_value": "$23,674 million",
+      "injected_value": "$28,477 million",
+      "original_numeric": "23674",
+      "injected_numeric": "28477",
+      "position_char": 328,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.2029
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Cost of Goods Sold (COGS) for FY2016 is $15,037 million",
+        "claim_value": "$15,037 million",
+        "reason": "This figure, when compared to Microsoft's reported total revenue for FY2016 (approximately $85 billion), implies an exceptionally high gross margin of over 82%. While Microsoft generally has high margins, this level is unusually high for a company with significant hardware (Xbox, Surface) and cloud infrastructure (Azure) costs, suggesting it might be an underestimation or incorrect.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2015 COGS: $19,557 million",
+        "claim_value": "$19,557 million",
+        "reason": "This figure, in conjunction with the FY2014 and FY2016 figures, forms a trend of very steep year-over-year declines (approximately 31% from FY2014 to FY2015, and 23% from FY2015 to FY2016). While divestitures (like Nokia's hardware business) could impact COGS, such a consistent and sharp reduction over two years is highly unusual for a company of Microsoft's scale without a major, explicit, and well-documented strategic shift that would drastically reduce their cost base relative to revenue.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2014 COGS: $28,477 million",
+        "claim_value": "$28,477 million",
+        "reason": "While this figure is higher, the subsequent sharp declines to $19,557 million and then $15,037 million are the primary concern. The overall trend of COGS being nearly halved in two years (from $28.4 billion to $15 billion) is highly unusual for a company of Microsoft's scale without a massive, explicit, and well-documented strategic shift that would drastically reduce their cost base relative to revenue. This trend suggests potential inaccuracy in the reported figures.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 3,
+    "overall_assessment": "The reported COGS figures show an implausibly steep decline over three years, leading to an unusually low COGS and high implied gross margin for FY2016, suggesting potential hallucination.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Cost of Goods Sold (COGS) for FY2016 is $15,037 million\",\n      \"claim_value\": \"$15,037 million\",\n      \"reason\": \"This figure, when compared to Microsoft's reported total revenue for FY2016 (approximately $85 billion), implies an exceptionally high gross margin of over 82%. While Microsoft generally has high margins, this level is unusually high for a company with significant hardware (Xbox, Surface) and cloud infrastructure (Azure) costs, suggesting it might be an underestimation or incorrect.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2015 COGS: $19,557 million\",\n      \"claim_value\": \"$19,557 million\",\n      \"reason\": \"This figure, in conjunction with the FY2014 and FY2016 figures, forms a trend of very steep year-over-year declines (approximately 31% from FY2014 to FY2015, and 23% from FY2015 to FY2016). While divestitures (like Nokia's hardware business) could impact COGS, such a consistent and sharp reduction over two years is highly unusual for a company of Microsoft's scale without a major, explicit, and well-documented strategic shift that would drastically reduce their cost base relative to revenue.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2014 COGS: $28,477 million\",\n      \"claim_value\": \"$28,477 million\",\n      \"reason\": \"While this figure is higher, the subsequent sharp declines to $19,557 million and then $15,037 million are the primary concern. The overall trend of COGS being nearly halved in two years (from $28.4 billion to $15 billion) is highly unusual for a company of Microsoft's scale without a massive, explicit, and well-documented strategic shift that would drastically reduce their cost base relative to revenue. This trend suggests potential inaccuracy in the reported figures.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 3,\n  \"overall_assessment\": \"The reported COGS figures show an implausibly steep decline over three years, leading to an unusually low COGS and high implied gross margin for FY2016, suggesting potential hallucination.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_111_A4B199F5",
+      "hallucination_id": "FB_111_A4B199F5_H3",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$24,060 million",
+      "injected_value": "$15,037 million",
+      "detected": true,
+      "reason": "This figure, when compared to Microsoft's reported total revenue for FY2016 (approximately $85 billion), implies an exceptionally high gross margin of over 82%. While Microsoft generally has high margins, this level is unusually high for a company with significant hardware (Xbox, Surface) and cloud infrastructure (Azure) costs, suggesting it might be an underestimation or incorrect.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 3
+    },
+    {
+      "question_id": "FB_111_A4B199F5",
+      "hallucination_id": "FB_111_A4B199F5_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$23,198 million",
+      "injected_value": "$19,557 million",
+      "detected": true,
+      "reason": "This figure, in conjunction with the FY2014 and FY2016 figures, forms a trend of very steep year-over-year declines (approximately 31% from FY2014 to FY2015, and 23% from FY2015 to FY2016). While divestitures (like Nokia's hardware business) could impact COGS, such a consistent and sharp reduction over two years is highly unusual for a company of Microsoft's scale without a major, explicit, and well-documented strategic shift that would drastically reduce their cost base relative to revenue.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 3
+    },
+    {
+      "question_id": "FB_111_A4B199F5",
+      "hallucination_id": "FB_111_A4B199F5_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$23,674 million",
+      "injected_value": "$28,477 million",
+      "detected": true,
+      "reason": "While this figure is higher, the subsequent sharp declines to $19,557 million and then $15,037 million are the primary concern. The overall trend of COGS being nearly halved in two years (from $28.4 billion to $15 billion) is highly unusual for a company of Microsoft's scale without a massive, explicit, and well-documented strategic shift that would drastically reduce their cost base relative to revenue. This trend suggests potential inaccuracy in the reported figures.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 3
+    }
+  ],
+  "timestamp": "2026-03-25T07:59:31.114067Z"
+}

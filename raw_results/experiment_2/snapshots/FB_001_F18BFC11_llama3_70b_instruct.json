@@ -1,0 +1,73 @@
+{
+  "question_id": "FB_001_F18BFC11",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: 3M Company, Fiscal Year 2018\n- PRIMARY METRIC: Capital Expenditures amounted to $1,430 million (USD millions) per the FY2018 10-K, Consolidated Statements of Cash Flows.\n- SUPPORTING DATA: For context, the capital expenditures for the previous fiscal years were as follows:\n  - FY2017: $1,677 million (per the FY2017 10-K, Consolidated Statements of Cash Flows)\n  - FY2016: $1,967 million (per the FY2016 10-K, Consolidated Statements of Cash Flows)\n- DATA SOURCES: \n  - 3M Company FY2018 10-K, Consolidated Statements of Cash Flows\n  - 3M Company FY2017 10-K, Consolidated Statements of Cash Flows\n  - 3M Company FY2016 10-K, Consolidated Statements of Cash Flows\n\nNote: No analysis or interpretation has been provided, as per the requirements.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_001_F18BFC11_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,449 million",
+      "injected_value": "$1,677 million",
+      "original_numeric": "1449",
+      "injected_numeric": "1677",
+      "position_char": 306,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.1573
+    },
+    {
+      "hallucination_id": "FB_001_F18BFC11_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,487 million",
+      "injected_value": "$1,967 million",
+      "original_numeric": "1487",
+      "injected_numeric": "1967",
+      "position_char": 394,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.3226
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Capital Expenditures amounted to $1,430 million",
+        "claim_value": "1430",
+        "reason": "The reported capital expenditure amount seems suspiciously low compared to the previous years' figures, which are significantly higher.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 3,
+    "overall_assessment": "The reported capital expenditure amount for FY2018 appears inconsistent with the trend shown in previous years.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"Capital Expenditures amounted to $1,430 million\",\n      \"claim_value\" : \"1430\",\n      \"reason\"      : \"The reported capital expenditure amount seems suspiciously low compared to the previous years' figures, which are significantly higher.\",\n      \"confidence\"  : \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 3,\n  \"overall_assessment\"   : \"The reported capital expenditure amount for FY2018 appears inconsistent with the trend shown in previous years.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_001_F18BFC11",
+      "hallucination_id": "FB_001_F18BFC11_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,449 million",
+      "injected_value": "$1,677 million",
+      "detected": true,
+      "reason": "The reported capital expenditure amount seems suspiciously low compared to the previous years' figures, which are significantly higher.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 3
+    },
+    {
+      "question_id": "FB_001_F18BFC11",
+      "hallucination_id": "FB_001_F18BFC11_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,487 million",
+      "injected_value": "$1,967 million",
+      "detected": true,
+      "reason": "The reported capital expenditure amount seems suspiciously low compared to the previous years' figures, which are significantly higher.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 3
+    }
+  ],
+  "timestamp": "2026-03-27T09:26:00.374150Z"
+}

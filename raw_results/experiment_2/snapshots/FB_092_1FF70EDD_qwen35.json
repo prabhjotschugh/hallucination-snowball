@@ -1,0 +1,55 @@
+{
+  "question_id": "FB_092_1FF70EDD",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Johnson & Johnson, August 30, 2023\n- PRIMARY METRIC: The gain realized from the separation of the Consumer Health business segment is reported as $16.9 billion, per the 8-K filing dated August 30, 2023.\n- SUPPORTING DATA: There are no additional financial metrics related to this specific gain provided in the 8-K filing. The focus is solely on the gain from the separation.\n- DATA SOURCES: Johnson & Johnson 8-K filing dated August 30, 2023.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_092_1FF70EDD_H1",
+      "type": "dollar_amount",
+      "original_value": "$13.0 billion",
+      "injected_value": "$16.9 billion",
+      "original_numeric": "13.0",
+      "injected_numeric": "16.9",
+      "position_char": 166,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.3024
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "The gain realized from the separation of the Consumer Health business segment is reported as $16.9 billion, per the 8-K filing dated August 30, 2023.",
+        "claim_value": "$16.9 billion",
+        "reason": "Accounting gains on major divestitures are typically recognized and detailed in Quarterly Reports (10-Q) rather than Current Reports (8-K), which focus on transaction mechanics. Additionally, JnJ's earnings releases typically occur in July and October, making an August 30 filing for a specific accounting gain structurally unusual. This specific figure may conflate transaction valuation, proceeds, or pre-tax gain with the final accounting gain.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "There are no additional financial metrics related to this specific gain provided in the 8-K filing. The focus is solely on the gain from the separation.",
+        "claim_value": "N/A",
+        "reason": "8-K filings regarding corporate separations typically include exchange ratios, tax opinions, distribution mechanics, and ownership percentages. Describing the filing as focusing 'solely on the gain' contradicts standard SEC filing structures for material corporate transactions and suggests a hallucinated summary of the document's content.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 3,
+    "overall_assessment": "The attribution of a specific accounting gain to an 8-K filing rather than a periodic report, along with the description of the filing's content, exhibits strong hallmarks of financial hallucination.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"The gain realized from the separation of the Consumer Health business segment is reported as $16.9 billion, per the 8-K filing dated August 30, 2023.\",\n      \"claim_value\": \"$16.9 billion\",\n      \"reason\": \"Accounting gains on major divestitures are typically recognized and detailed in Quarterly Reports (10-Q) rather than Current Reports (8-K), which focus on transaction mechanics. Additionally, JnJ's earnings releases typically occur in July and October, making an August 30 filing for a specific accounting gain structurally unusual. This specific figure may conflate transaction valuation, proceeds, or pre-tax gain with the final accounting gain.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"There are no additional financial metrics related to this specific gain provided in the 8-K filing. The focus is solely on the gain from the separation.\",\n      \"claim_value\": \"N/A\",\n      \"reason\": \"8-K filings regarding corporate separations typically include exchange ratios, tax opinions, distribution mechanics, and ownership percentages. Describing the filing as focusing 'solely on the gain' contradicts standard SEC filing structures for material corporate transactions and suggests a hallucinated summary of the document's content.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 3,\n  \"overall_assessment\": \"The attribution of a specific accounting gain to an 8-K filing rather than a periodic report, along with the description of the filing's content, exhibits strong hallmarks of financial hallucination.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_092_1FF70EDD",
+      "hallucination_id": "FB_092_1FF70EDD_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$13.0 billion",
+      "injected_value": "$16.9 billion",
+      "detected": true,
+      "reason": "Accounting gains on major divestitures are typically recognized and detailed in Quarterly Reports (10-Q) rather than Current Reports (8-K), which focus on transaction mechanics. Additionally, JnJ's earnings releases typically occur in July and October, making an August 30 filing for a specific accounting gain structurally unusual. This specific figure may conflate transaction valuation, proceeds, or pre-tax gain with the final accounting gain.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 3
+    }
+  ],
+  "timestamp": "2026-03-24T12:12:10.426478Z"
+}

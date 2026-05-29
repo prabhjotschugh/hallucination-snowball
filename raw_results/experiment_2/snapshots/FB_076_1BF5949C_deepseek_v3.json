@@ -1,0 +1,115 @@
+{
+  "question_id": "FB_076_1BF5949C",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: CVS Health, FY2018\n- PRIMARY METRIC: \n  - Revenue: $124,200 million (per the FY2018 10-K, Consolidated Statements of Operations)\n- SUPPORTING DATA: \n  - Property, Plant, and Equipment (PP&E) as of FY2017: $27,991 million (per the FY2018 10-K, Consolidated Balance Sheets)\n  - Property, Plant, and Equipment (PP&E) as of FY2018: $23,135 million (per the FY2018 10-K, Consolidated Balance Sheets)\n  - Average PP&E between FY2017 and FY2018: \n    - Calculation: ($21,643 million + $23,135 million) / 2 = $22,389 million\n- FIXED ASSET TURNOVER RATIO: \n  - Calculation: $194,579 million / $29,388 million = 8.69 (rounded to two decimal places: 8.69)\n- DATA SOURCES: \n  - FY2018 10-K, Consolidated Statements of Operations\n  - FY2018 10-K, Consolidated Balance Sheets\n\nNote: The request for analysis and benchmarking against industry peers has not been fulfilled as per the directive to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_076_1BF5949C_H3",
+      "type": "dollar_amount",
+      "original_value": "$194,579 million",
+      "injected_value": "$124,200 million",
+      "original_numeric": "194579",
+      "injected_numeric": "124200",
+      "position_char": 71,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.3617
+    },
+    {
+      "hallucination_id": "FB_076_1BF5949C_H2",
+      "type": "dollar_amount",
+      "original_value": "$21,643 million",
+      "injected_value": "$27,991 million",
+      "original_numeric": "21643",
+      "injected_numeric": "27991",
+      "position_char": 225,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.2933
+    },
+    {
+      "hallucination_id": "FB_076_1BF5949C_H1",
+      "type": "dollar_amount",
+      "original_value": "$22,389 million",
+      "injected_value": "$29,388 million",
+      "original_numeric": "22389",
+      "injected_numeric": "29388",
+      "position_char": 604,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.3126
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Revenue: $124,200 million (per the FY2018 10-K, Consolidated Statements of Operations)",
+        "claim_value": "$124,200 million",
+        "reason": "Revenue figure seems low for CVS Health in FY2018, given it's a major healthcare company. CVS typically reports revenues in the hundreds of billions.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Property, Plant, and Equipment (PP&E) as of FY2017: $27,991 million",
+        "claim_value": "$27,991 million",
+        "reason": "PP&E figure for FY2017 seems inconsistent with the subsequent calculation where it's listed as $21,643 million.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Average PP&E between FY2017 and FY2018: Calculation: ($21,643 million + $23,135 million) / 2 = $22,389 million",
+        "claim_value": "$22,389 million",
+        "reason": "Inconsistent PP&E figures used in calculation compared to previously stated values.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FIXED ASSET TURNOVER RATIO: Calculation: $194,579 million / $29,388 million = 8.69",
+        "claim_value": "8.69",
+        "reason": "Numerator ($194,579 million) doesn't match previously stated revenue ($124,200 million), and denominator ($29,388 million) doesn't match calculated average PP&E ($22,389 million).",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "Multiple inconsistencies in revenue and PP&E figures, and mismatched calculations for the fixed asset turnover ratio.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Revenue: $124,200 million (per the FY2018 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$124,200 million\",\n      \"reason\": \"Revenue figure seems low for CVS Health in FY2018, given it's a major healthcare company. CVS typically reports revenues in the hundreds of billions.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Property, Plant, and Equipment (PP&E) as of FY2017: $27,991 million\",\n      \"claim_value\": \"$27,991 million\",\n      \"reason\": \"PP&E figure for FY2017 seems inconsistent with the subsequent calculation where it's listed as $21,643 million.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Average PP&E between FY2017 and FY2018: Calculation: ($21,643 million + $23,135 million) / 2 = $22,389 million\",\n      \"claim_value\": \"$22,389 million\",\n      \"reason\": \"Inconsistent PP&E figures used in calculation compared to previously stated values.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FIXED ASSET TURNOVER RATIO: Calculation: $194,579 million / $29,388 million = 8.69\",\n      \"claim_value\": \"8.69\",\n      \"reason\": \"Numerator ($194,579 million) doesn't match previously stated revenue ($124,200 million), and denominator ($29,388 million) doesn't match calculated average PP&E ($22,389 million).\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\": \"Multiple inconsistencies in revenue and PP&E figures, and mismatched calculations for the fixed asset turnover ratio.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_076_1BF5949C",
+      "hallucination_id": "FB_076_1BF5949C_H3",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$194,579 million",
+      "injected_value": "$124,200 million",
+      "detected": true,
+      "reason": "Revenue figure seems low for CVS Health in FY2018, given it's a major healthcare company. CVS typically reports revenues in the hundreds of billions.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_076_1BF5949C",
+      "hallucination_id": "FB_076_1BF5949C_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$21,643 million",
+      "injected_value": "$27,991 million",
+      "detected": true,
+      "reason": "PP&E figure for FY2017 seems inconsistent with the subsequent calculation where it's listed as $21,643 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_076_1BF5949C",
+      "hallucination_id": "FB_076_1BF5949C_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$22,389 million",
+      "injected_value": "$29,388 million",
+      "detected": true,
+      "reason": "PP&E figure for FY2017 seems inconsistent with the subsequent calculation where it's listed as $21,643 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-24T09:51:19.253303Z"
+}

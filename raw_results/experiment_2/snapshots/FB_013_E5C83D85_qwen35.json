@@ -1,0 +1,97 @@
+{
+  "question_id": "FB_013_E5C83D85",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Adobe Inc., FY2017\n- PRIMARY METRIC: Operating Cash Flow Ratio = Cash from Operations / Total Current Liabilities\n  - Cash from Operations: $3,257 million (per the FY2017 10-K, Consolidated Statements of Cash Flows)\n  - Total Current Liabilities: $2,737 million (per the FY2017 10-K, Consolidated Balance Sheets)\n  - Operating Cash Flow Ratio = $3,257 million / $2,737 million = 1.19 (rounded to two decimal places)\n\n- SUPPORTING DATA:\n  - Cash from Operations for FY2016: $2,397 million (per the FY2016 10-K, Consolidated Statements of Cash Flows)\n  - Total Current Liabilities for FY2016: $2,470 million (per the FY2016 10-K, Consolidated Balance Sheets)\n  - Cash from Operations for FY2015: $3,504 million (per the FY2015 10-K, Consolidated Statements of Cash Flows)\n  - Total Current Liabilities for FY2015: $2,197 million (per the FY2015 10-K, Consolidated Balance Sheets)\n\n- DATA SOURCES:\n  - FY2017 10-K: Consolidated Statements of Cash Flows and Consolidated Balance Sheets\n  - FY2016 10-K: Consolidated Statements of Cash Flows and Consolidated Balance Sheets\n  - FY2015 10-K: Consolidated Statements of Cash Flows and Consolidated Balance Sheets",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_013_E5C83D85_H2",
+      "type": "dollar_amount",
+      "original_value": "$2,927 million",
+      "injected_value": "$2,397 million",
+      "original_numeric": "2927",
+      "injected_numeric": "2397",
+      "position_char": 493,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.181
+    },
+    {
+      "hallucination_id": "FB_013_E5C83D85_H1",
+      "type": "dollar_amount",
+      "original_value": "$2,628 million",
+      "injected_value": "$3,504 million",
+      "original_numeric": "2628",
+      "injected_numeric": "3504",
+      "position_char": 714,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.3335
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Cash from Operations: $3,257 million (per the FY2017 10-K, Consolidated Statements of Cash Flows)",
+        "claim_value": "$3,257 million",
+        "reason": "Suspiciously low magnitude for Adobe's scale in FY2017; general financial knowledge indicates operating cash flow was significantly higher during this period of strong subscription revenue growth.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Cash from Operations for FY2016: $2,397 million (per the FY2016 10-K, Consolidated Statements of Cash Flows)",
+        "claim_value": "$2,397 million",
+        "reason": "Inconsistent with growth trajectory; implies a significant drop from FY2015 followed by only partial recovery in FY2017, contradicting Adobe's consistent performance growth during this period.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Cash from Operations for FY2015: $3,504 million (per the FY2015 10-K, Consolidated Statements of Cash Flows)",
+        "claim_value": "$3,504 million",
+        "reason": "Claiming FY2015 operating cash flow was higher than FY2017 is highly suspicious for a company in a high-growth phase; suggests hallucinated historical data points.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Current Liabilities: $2,737 million (per the FY2017 10-K, Consolidated Balance Sheets)",
+        "claim_value": "$2,737 million",
+        "reason": "Seems low relative to the company's revenue scale and typical deferred revenue liabilities for a SaaS company of this size in 2017.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Operating Cash Flow Ratio = $3,257 million / $2,737 million = 1.19 (rounded to two decimal places)",
+        "claim_value": "1.19",
+        "reason": "While mathematically correct based on provided inputs, the ratio is unreliable because the underlying cash flow and liability figures are suspected to be inaccurate.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 8,
+    "overall_assessment": "Multiple operating cash flow figures exhibit trend inconsistencies and magnitude issues that contradict Adobe's known financial growth trajectory during the FY2015-FY2017 period.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Cash from Operations: $3,257 million (per the FY2017 10-K, Consolidated Statements of Cash Flows)\",\n      \"claim_value\": \"$3,257 million\",\n      \"reason\": \"Suspiciously low magnitude for Adobe's scale in FY2017; general financial knowledge indicates operating cash flow was significantly higher during this period of strong subscription revenue growth.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Cash from Operations for FY2016: $2,397 million (per the FY2016 10-K, Consolidated Statements of Cash Flows)\",\n      \"claim_value\": \"$2,397 million\",\n      \"reason\": \"Inconsistent with growth trajectory; implies a significant drop from FY2015 followed by only partial recovery in FY2017, contradicting Adobe's consistent performance growth during this period.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Cash from Operations for FY2015: $3,504 million (per the FY2015 10-K, Consolidated Statements of Cash Flows)\",\n      \"claim_value\": \"$3,504 million\",\n      \"reason\": \"Claiming FY2015 operating cash flow was higher than FY2017 is highly suspicious for a company in a high-growth phase; suggests hallucinated historical data points.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Current Liabilities: $2,737 million (per the FY2017 10-K, Consolidated Balance Sheets)\",\n      \"claim_value\": \"$2,737 million\",\n      \"reason\": \"Seems low relative to the company's revenue scale and typical deferred revenue liabilities for a SaaS company of this size in 2017.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Operating Cash Flow Ratio = $3,257 million / $2,737 million = 1.19 (rounded to two decimal places)\",\n      \"claim_value\": \"1.19\",\n      \"reason\": \"While mathematically correct based on provided inputs, the ratio is unreliable because the underlying cash flow and liability figures are suspected to be inaccurate.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 8,\n  \"overall_assessment\": \"Multiple operating cash flow figures exhibit trend inconsistencies and magnitude issues that contradict Adobe's known financial growth trajectory during the FY2015-FY2017 period.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_013_E5C83D85",
+      "hallucination_id": "FB_013_E5C83D85_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$2,927 million",
+      "injected_value": "$2,397 million",
+      "detected": true,
+      "reason": "Inconsistent with growth trajectory; implies a significant drop from FY2015 followed by only partial recovery in FY2017, contradicting Adobe's consistent performance growth during this period.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 8
+    },
+    {
+      "question_id": "FB_013_E5C83D85",
+      "hallucination_id": "FB_013_E5C83D85_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$2,628 million",
+      "injected_value": "$3,504 million",
+      "detected": true,
+      "reason": "Claiming FY2015 operating cash flow was higher than FY2017 is highly suspicious for a company in a high-growth phase; suggests hallucinated historical data points.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 8
+    }
+  ],
+  "timestamp": "2026-03-24T10:20:52.420572Z"
+}

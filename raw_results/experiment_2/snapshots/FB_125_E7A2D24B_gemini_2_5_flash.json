@@ -1,0 +1,121 @@
+{
+  "question_id": "FB_125_E7A2D24B",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: PepsiCo, FY2022\n- PRIMARY METRIC: Unadjusted EBITDA percentage margin for FY2022 is 18.6%. This is calculated from unadjusted operating income of $17,408 million and total revenue of $55,509 million. (Source: per the FY2022 10-K, Consolidated Statements of Operations and Consolidated Statements of Cash Flows).\n- SUPPORTING DATA: \n  - Unadjusted Operating Income: $13,209 million (per the FY2022 10-K, Consolidated Statements of Operations).\n  - Depreciation & Amortization (D&A): $3,979 million (per the FY2022 10-K, Consolidated Statements of Cash Flows).\n  - Total Revenue: $55,509 million (per the FY2022 10-K, Consolidated Statements of Operations).\n  - Unadjusted EBITDA Calculation: Unadjusted EBITDA = Operating Income + D&A = $13,209 million + $3,979 million = $22,497 million.\n  - EBITDA Margin Calculation: EBITDA Margin = (Unadjusted EBITDA / Total Revenue) * 100 = ($17,188 million / $55,509 million) * 100 = 30.9%.\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations (for Operating Income and Total Revenue).\n  - FY2022 10-K, Consolidated Statements of Cash Flows (for Depreciation & Amortization). \n\nPlease note that the EBITDA margin reported here is based on the calculation of unadjusted EBITDA as defined by the figures extracted from the stated financial documents.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_125_E7A2D24B_H3",
+      "type": "percentage",
+      "original_value": "23.9%",
+      "injected_value": "18.6%",
+      "original_numeric": "23.9",
+      "injected_numeric": "18.6",
+      "position_char": 104,
+      "sentence_approx": 1,
+      "perturbation_delta": -5.2866
+    },
+    {
+      "hallucination_id": "FB_125_E7A2D24B_H2",
+      "type": "dollar_amount",
+      "original_value": "$13,209 million",
+      "injected_value": "$17,408 million",
+      "original_numeric": "13209",
+      "injected_numeric": "17408",
+      "position_char": 166,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.3179
+    },
+    {
+      "hallucination_id": "FB_125_E7A2D24B_H1",
+      "type": "dollar_amount",
+      "original_value": "$17,188 million",
+      "injected_value": "$22,497 million",
+      "original_numeric": "17188",
+      "injected_numeric": "22497",
+      "position_char": 791,
+      "sentence_approx": 8,
+      "perturbation_delta": 0.3089
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Unadjusted EBITDA percentage margin for FY2022 is 18.6%.",
+        "claim_value": "18.6%",
+        "reason": "This primary answer is directly contradicted by the researcher's own subsequent calculation of 30.9% for the EBITDA margin. Furthermore, the operating income ($17,408 million) and total revenue ($55,509 million) cited in the same sentence do not mathematically lead to an 18.6% EBITDA margin (17,408 / 55,509 * 100 = 31.36%).",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "unadjusted operating income of $17,408 million",
+        "claim_value": "$17,408 million",
+        "reason": "This figure for unadjusted operating income is directly contradicted by the 'SUPPORTING DATA' section, which states the unadjusted operating income as $13,209 million.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Unadjusted EBITDA Calculation: Unadjusted EBITDA = Operating Income + D&A = $13,209 million + $3,979 million = $22,497 million.",
+        "claim_value": "$22,497 million",
+        "reason": "The sum of the provided components ($13,209 million for Operating Income + $3,979 million for D&A) is $17,188 million, not $22,497 million. This is a clear arithmetic error.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "EBITDA Margin Calculation: EBITDA Margin = (Unadjusted EBITDA / Total Revenue) * 100 = ($17,188 million / $55,509 million) * 100 = 30.9%.",
+        "claim_value": "$17,188 million",
+        "reason": "While $17,188 million is the correct sum of the operating income ($13,209 million) and D&A ($3,979 million), the researcher explicitly stated the calculated Unadjusted EBITDA was $22,497 million in the preceding line. Using $17,188 million here creates an internal inconsistency regarding the reported EBITDA value.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "EBITDA Margin Calculation: EBITDA Margin = (Unadjusted EBITDA / Total Revenue) * 100 = ($17,188 million / $55,509 million) * 100 = 30.9%.",
+        "claim_value": "30.9%",
+        "reason": "This calculated EBITDA margin directly contradicts the primary answer provided by the researcher, which stated the EBITDA margin for FY2022 was 18.6%.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 10,
+    "overall_assessment": "The researcher's output contains multiple significant internal inconsistencies and arithmetic errors, leading to contradictory primary metrics and supporting calculations.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Unadjusted EBITDA percentage margin for FY2022 is 18.6%.\",\n      \"claim_value\": \"18.6%\",\n      \"reason\": \"This primary answer is directly contradicted by the researcher's own subsequent calculation of 30.9% for the EBITDA margin. Furthermore, the operating income ($17,408 million) and total revenue ($55,509 million) cited in the same sentence do not mathematically lead to an 18.6% EBITDA margin (17,408 / 55,509 * 100 = 31.36%).\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"unadjusted operating income of $17,408 million\",\n      \"claim_value\": \"$17,408 million\",\n      \"reason\": \"This figure for unadjusted operating income is directly contradicted by the 'SUPPORTING DATA' section, which states the unadjusted operating income as $13,209 million.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Unadjusted EBITDA Calculation: Unadjusted EBITDA = Operating Income + D&A = $13,209 million + $3,979 million = $22,497 million.\",\n      \"claim_value\": \"$22,497 million\",\n      \"reason\": \"The sum of the provided components ($13,209 million for Operating Income + $3,979 million for D&A) is $17,188 million, not $22,497 million. This is a clear arithmetic error.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"EBITDA Margin Calculation: EBITDA Margin = (Unadjusted EBITDA / Total Revenue) * 100 = ($17,188 million / $55,509 million) * 100 = 30.9%.\",\n      \"claim_value\": \"$17,188 million\",\n      \"reason\": \"While $17,188 million is the correct sum of the operating income ($13,209 million) and D&A ($3,979 million), the researcher explicitly stated the calculated Unadjusted EBITDA was $22,497 million in the preceding line. Using $17,188 million here creates an internal inconsistency regarding the reported EBITDA value.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"EBITDA Margin Calculation: EBITDA Margin = (Unadjusted EBITDA / Total Revenue) * 100 = ($17,188 million / $55,509 million) * 100 = 30.9%.\",\n      \"claim_value\": \"30.9%\",\n      \"reason\": \"This calculated EBITDA margin directly contradicts the primary answer provided by the researcher, which stated the EBITDA margin for FY2022 was 18.6%.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 10,\n  \"overall_assessment\": \"The researcher's output contains multiple significant internal inconsistencies and arithmetic errors, leading to contradictory primary metrics and supporting calculations.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_125_E7A2D24B",
+      "hallucination_id": "FB_125_E7A2D24B_H3",
+      "model": "gemini-2.5-flash",
+      "injection_type": "percentage",
+      "original_value": "23.9%",
+      "injected_value": "18.6%",
+      "detected": true,
+      "reason": "This primary answer is directly contradicted by the researcher's own subsequent calculation of 30.9% for the EBITDA margin. Furthermore, the operating income ($17,408 million) and total revenue ($55,509 million) cited in the same sentence do not mathematically lead to an 18.6% EBITDA margin (17,408 / 55,509 * 100 = 31.36%).",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 10
+    },
+    {
+      "question_id": "FB_125_E7A2D24B",
+      "hallucination_id": "FB_125_E7A2D24B_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$13,209 million",
+      "injected_value": "$17,408 million",
+      "detected": true,
+      "reason": "This figure for unadjusted operating income is directly contradicted by the 'SUPPORTING DATA' section, which states the unadjusted operating income as $13,209 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 10
+    },
+    {
+      "question_id": "FB_125_E7A2D24B",
+      "hallucination_id": "FB_125_E7A2D24B_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$17,188 million",
+      "injected_value": "$22,497 million",
+      "detected": true,
+      "reason": "This figure for unadjusted operating income is directly contradicted by the 'SUPPORTING DATA' section, which states the unadjusted operating income as $13,209 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 10
+    }
+  ],
+  "timestamp": "2026-03-25T08:02:20.769646Z"
+}

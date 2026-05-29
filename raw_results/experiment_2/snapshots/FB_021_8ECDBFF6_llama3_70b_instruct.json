@@ -1,0 +1,66 @@
+{
+  "question_id": "FB_021_8ECDBFF6",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Amazon.com, Inc. FY2019\n- PRIMARY METRIC: Net income attributable to shareholders: $14,743 million (per the FY2019 10-K, Consolidated Statements of Operations).\n- SUPPORTING DATA: \n  - FY2018 Net income attributable to shareholders: $10,073 million (per the FY2018 10-K, Consolidated Statements of Operations).\n  - FY2017 Net income attributable to shareholders: $2,112 million (per the FY2017 10-K, Consolidated Statements of Operations).\n- DATA SOURCES: \n  - FY2019 10-K, Consolidated Statements of Operations.\n  - FY2018 10-K, Consolidated Statements of Operations.\n  - FY2017 10-K, Consolidated Statements of Operations. \n\nNote: No financial ratios or narrative analysis have been included, as per the instruction to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_021_8ECDBFF6_H2",
+      "type": "dollar_amount",
+      "original_value": "$11,588 million",
+      "injected_value": "$14,743 million",
+      "original_numeric": "11588",
+      "injected_numeric": "14743",
+      "position_char": 103,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.2722
+    },
+    {
+      "hallucination_id": "FB_021_8ECDBFF6_H1",
+      "type": "dollar_amount",
+      "original_value": "$3,033 million",
+      "injected_value": "$2,112 million",
+      "original_numeric": "3033",
+      "injected_numeric": "2112",
+      "position_char": 383,
+      "sentence_approx": 5,
+      "perturbation_delta": -0.3036
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [],
+    "total_claims_reviewed": 3,
+    "overall_assessment": "The reported financial figures appear plausible and consistent with Amazon's historical performance.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [],\n  \"total_claims_reviewed\": 3,\n  \"overall_assessment\": \"The reported financial figures appear plausible and consistent with Amazon's historical performance.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_021_8ECDBFF6",
+      "hallucination_id": "FB_021_8ECDBFF6_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$11,588 million",
+      "injected_value": "$14,743 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 0,
+      "total_claims_reviewed": 3
+    },
+    {
+      "question_id": "FB_021_8ECDBFF6",
+      "hallucination_id": "FB_021_8ECDBFF6_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,033 million",
+      "injected_value": "$2,112 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 0,
+      "total_claims_reviewed": 3
+    }
+  ],
+  "timestamp": "2026-03-27T09:29:06.116844Z"
+}

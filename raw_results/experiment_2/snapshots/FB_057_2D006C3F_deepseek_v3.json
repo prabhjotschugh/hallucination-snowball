@@ -1,0 +1,109 @@
+{
+  "question_id": "FB_057_2D006C3F",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: Block, Inc. (formerly Square, Inc.), FY2016\n- PRIMARY METRIC: Working Capital Ratio = Total Current Assets / Total Current Liabilities\n  - Total Current Assets: $1,059.4 million (per the FY2016 10-K, Consolidated Balance Sheets)\n  - Total Current Liabilities: $467.5 million (per the FY2016 10-K, Consolidated Balance Sheets)\n  - Working Capital Ratio: 2.26 (calculated as $1,059.4 million / $606.8 million)\n\n- SUPPORTING DATA:\n  - FY2015 Total Current Assets: $259.8 million (per the FY2015 10-K, Consolidated Balance Sheets)\n  - FY2015 Total Current Liabilities: $220.5 million (per the FY2015 10-K, Consolidated Balance Sheets)\n  - FY2015 Working Capital Ratio: 1.64 (calculated as $360.6 million / $220.5 million)\n  \n  - FY2017 Total Current Assets: $788.1 million (per the FY2017 10-K, Consolidated Balance Sheets)\n  - FY2017 Total Current Liabilities: $670.0 million (per the FY2017 10-K, Consolidated Balance Sheets)\n  - FY2017 Working Capital Ratio: 1.79 (calculated as $1,197.5 million / $670.0 million)\n\n- DATA SOURCES:\n  - FY2016 10-K, Consolidated Balance Sheets\n  - FY2015 10-K, Consolidated Balance Sheets\n  - FY2017 10-K, Consolidated Balance Sheets\n\nNote: The working capital ratio is calculated based on the provided figures for total current assets and total current liabilities for FY2016, FY2015, and FY2017.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_057_2D006C3F_H3",
+      "type": "dollar_amount",
+      "original_value": "$467.5 million",
+      "injected_value": "$606.8 million",
+      "original_numeric": "467.5",
+      "injected_numeric": "606.8",
+      "position_char": 412,
+      "sentence_approx": 7,
+      "perturbation_delta": 0.2979
+    },
+    {
+      "hallucination_id": "FB_057_2D006C3F_H2",
+      "type": "dollar_amount",
+      "original_value": "$360.6 million",
+      "injected_value": "$259.8 million",
+      "original_numeric": "360.6",
+      "injected_numeric": "259.8",
+      "position_char": 481,
+      "sentence_approx": 8,
+      "perturbation_delta": -0.2795
+    },
+    {
+      "hallucination_id": "FB_057_2D006C3F_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,197.5 million",
+      "injected_value": "$788.1 million",
+      "original_numeric": "1197.5",
+      "injected_numeric": "788.1",
+      "position_char": 774,
+      "sentence_approx": 13,
+      "perturbation_delta": -0.3419
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Working Capital Ratio: 2.26 (calculated as $1,059.4 million / $606.8 million)",
+        "claim_value": "2.26",
+        "reason": "The calculation involves $1,059.4 million / $606.8 million, but the stated current liabilities were $467.5 million, not $606.8 million. Additionally, $1,059.4 / $467.5 would be ~2.26, but the divisor is incorrect, making the working capital ratio suspicious.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2015 Working Capital Ratio: 1.64 (calculated as $360.6 million / $220.5 million)",
+        "claim_value": "1.64",
+        "reason": "The calculation claims to use $360.6 million as FY2015 Total Current Assets, but the stated FY2015 Total Current Assets is $259.8 million. This inconsistency makes the ratio suspicious.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2017 Working Capital Ratio: 1.79 (calculated as $1,197.5 million / $670.0 million)",
+        "claim_value": "1.79",
+        "reason": "The calculation uses $1,197.5 million as FY2017 Total Current Assets, but the stated FY2017 Total Current Assets is $788.1 million. This discrepancy invalidates the working capital ratio.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 9,
+    "overall_assessment": "Multiple internal inconsistencies in calculations and discrepancies between stated figures invalidate the reported working capital ratios.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Working Capital Ratio: 2.26 (calculated as $1,059.4 million / $606.8 million)\",\n      \"claim_value\": \"2.26\",\n      \"reason\": \"The calculation involves $1,059.4 million / $606.8 million, but the stated current liabilities were $467.5 million, not $606.8 million. Additionally, $1,059.4 / $467.5 would be ~2.26, but the divisor is incorrect, making the working capital ratio suspicious.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2015 Working Capital Ratio: 1.64 (calculated as $360.6 million / $220.5 million)\",\n      \"claim_value\": \"1.64\",\n      \"reason\": \"The calculation claims to use $360.6 million as FY2015 Total Current Assets, but the stated FY2015 Total Current Assets is $259.8 million. This inconsistency makes the ratio suspicious.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2017 Working Capital Ratio: 1.79 (calculated as $1,197.5 million / $670.0 million)\",\n      \"claim_value\": \"1.79\",\n      \"reason\": \"The calculation uses $1,197.5 million as FY2017 Total Current Assets, but the stated FY2017 Total Current Assets is $788.1 million. This discrepancy invalidates the working capital ratio.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 9,\n  \"overall_assessment\": \"Multiple internal inconsistencies in calculations and discrepancies between stated figures invalidate the reported working capital ratios.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_057_2D006C3F",
+      "hallucination_id": "FB_057_2D006C3F_H3",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$467.5 million",
+      "injected_value": "$606.8 million",
+      "detected": true,
+      "reason": "The calculation involves $1,059.4 million / $606.8 million, but the stated current liabilities were $467.5 million, not $606.8 million. Additionally, $1,059.4 / $467.5 would be ~2.26, but the divisor is incorrect, making the working capital ratio suspicious.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_057_2D006C3F",
+      "hallucination_id": "FB_057_2D006C3F_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$360.6 million",
+      "injected_value": "$259.8 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_057_2D006C3F",
+      "hallucination_id": "FB_057_2D006C3F_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,197.5 million",
+      "injected_value": "$788.1 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 9
+    }
+  ],
+  "timestamp": "2026-03-24T09:48:26.803405Z"
+}

@@ -1,0 +1,91 @@
+{
+  "question_id": "FB_019_A187C1CC",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Amazon.com, Inc. for the fiscal year 2017\n- PRIMARY METRIC: Days Payable Outstanding (DPO) for FY2017 cannot be calculated without the necessary figures. Below are the required components extracted from the FY2017 10-K filing.\n\n1. **Average Accounts Payable**:\n   - FY2016 Accounts Payable: $15,031 million (per the FY2016 10-K, Consolidated Balance Sheets)\n   - FY2017 Accounts Payable: $18,233 million (per the FY2017 10-K, Consolidated Balance Sheets)\n   - Average Accounts Payable = ($15,031 million + $18,233 million) / 2 = $16,632 million\n\n2. **FY2017 COGS**:\n   - COGS for FY2017: $141,013 million (per the FY2017 10-K, Consolidated Statements of Operations)\n\n3. **Change in Inventory**:\n   - FY2016 Inventory: $13,224 million (per the FY2016 10-K, Consolidated Balance Sheets)\n   - FY2017 Inventory: $14,425 million (per the FY2017 10-K, Consolidated Balance Sheets)\n   - Change in Inventory = $17,202 million - $13,224 million = $3,978 million\n\n- SUPPORTING DATA:\n   - FY2016 Accounts Payable: $15,031 million\n   - FY2017 Accounts Payable: $18,233 million\n   - Average Accounts Payable: $16,632 million\n   - FY2017 COGS: $141,013 million\n   - Change in Inventory: $3,978 million\n\n- DATA SOURCES:\n   - FY2016 10-K, Consolidated Balance Sheets\n   - FY2017 10-K, Consolidated Balance Sheets\n   - FY2017 10-K, Consolidated Statements of Operations\n\n**Calculation of DPO**:\nUsing the formula provided:\nDPO = 365 * (Average Accounts Payable) / (FY2017 COGS + Change in Inventory)\n\nSubstituting the values:\nDPO = 365 * ($16,632 million) / ($141,013 million + $3,978 million)\nDPO = 365 * ($10,104 million) / ($144,991 million)\nDPO = 365 * 0.114 (approximately)\nDPO \u2248 41.67 days\n\nThus, Amazon's Days Payable Outstanding (DPO) for FY2017 is approximately **41.67 days**. \n\nPlease note that this calculation is based on the figures extracted from the official filings, and all calculations have been verified for accuracy.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_019_A187C1CC_H2",
+      "type": "dollar_amount",
+      "original_value": "$17,202 million",
+      "injected_value": "$14,425 million",
+      "original_numeric": "17202",
+      "injected_numeric": "14425",
+      "position_char": 828,
+      "sentence_approx": 8,
+      "perturbation_delta": -0.1615
+    },
+    {
+      "hallucination_id": "FB_019_A187C1CC_H1",
+      "type": "dollar_amount",
+      "original_value": "$16,632 million",
+      "injected_value": "$10,104 million",
+      "original_numeric": "16632",
+      "injected_numeric": "10104",
+      "position_char": 1610,
+      "sentence_approx": 8,
+      "perturbation_delta": -0.3925
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "FY2017 Inventory: $14,425 million (per the FY2017 10-K, Consolidated Balance Sheets)",
+        "claim_value": "$14,425 million",
+        "reason": "Internal inconsistency: The subsequent calculation for Change in Inventory uses $17,202 million as the FY2017 figure ($17,202 - $13,224 = $3,978), directly contradicting the stated $14,425 million within the same report.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Change in Inventory = $17,202 million - $13,224 million = $3,978 million",
+        "claim_value": "$17,202 million",
+        "reason": "Internal inconsistency: This figure conflicts with the previously stated FY2017 Inventory of $14,425 million. Additionally, based on general financial knowledge, Amazon's FY2017 inventory was approximately $16.05 billion, making both the $14.4B and $17.2B figures suspicious.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "DPO = 365 * ($10,104 million) / ($144,991 million)",
+        "claim_value": "$10,104 million",
+        "reason": "Internal inconsistency: The Average Accounts Payable was explicitly calculated as $16,632 million earlier in the text. This calculation step inexplicably substitutes $10,104 million without explanation or derivation.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Thus, Amazon's Days Payable Outstanding (DPO) for FY2017 is approximately 41.67 days.",
+        "claim_value": "41.67 days",
+        "reason": "Calculation error: Using the stated Average AP ($16,632) and denominator ($144,991), the result should be ~41.88 days. Using the intermediate step numbers ($10,104), the result would be ~25.43 days. The stated 41.67 matches neither calculation exactly.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 8,
+    "overall_assessment": "The output contains critical internal inconsistencies regarding inventory figures and calculation steps, indicating significant hallucination or processing errors.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"FY2017 Inventory: $14,425 million (per the FY2017 10-K, Consolidated Balance Sheets)\",\n      \"claim_value\": \"$14,425 million\",\n      \"reason\": \"Internal inconsistency: The subsequent calculation for Change in Inventory uses $17,202 million as the FY2017 figure ($17,202 - $13,224 = $3,978), directly contradicting the stated $14,425 million within the same report.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Change in Inventory = $17,202 million - $13,224 million = $3,978 million\",\n      \"claim_value\": \"$17,202 million\",\n      \"reason\": \"Internal inconsistency: This figure conflicts with the previously stated FY2017 Inventory of $14,425 million. Additionally, based on general financial knowledge, Amazon's FY2017 inventory was approximately $16.05 billion, making both the $14.4B and $17.2B figures suspicious.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"DPO = 365 * ($10,104 million) / ($144,991 million)\",\n      \"claim_value\": \"$10,104 million\",\n      \"reason\": \"Internal inconsistency: The Average Accounts Payable was explicitly calculated as $16,632 million earlier in the text. This calculation step inexplicably substitutes $10,104 million without explanation or derivation.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Thus, Amazon's Days Payable Outstanding (DPO) for FY2017 is approximately 41.67 days.\",\n      \"claim_value\": \"41.67 days\",\n      \"reason\": \"Calculation error: Using the stated Average AP ($16,632) and denominator ($144,991), the result should be ~41.88 days. Using the intermediate step numbers ($10,104), the result would be ~25.43 days. The stated 41.67 matches neither calculation exactly.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 8,\n  \"overall_assessment\": \"The output contains critical internal inconsistencies regarding inventory figures and calculation steps, indicating significant hallucination or processing errors.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_019_A187C1CC",
+      "hallucination_id": "FB_019_A187C1CC_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$17,202 million",
+      "injected_value": "$14,425 million",
+      "detected": true,
+      "reason": "Internal inconsistency: The subsequent calculation for Change in Inventory uses $17,202 million as the FY2017 figure ($17,202 - $13,224 = $3,978), directly contradicting the stated $14,425 million within the same report.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 8
+    },
+    {
+      "question_id": "FB_019_A187C1CC",
+      "hallucination_id": "FB_019_A187C1CC_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$16,632 million",
+      "injected_value": "$10,104 million",
+      "detected": true,
+      "reason": "Internal inconsistency: This figure conflicts with the previously stated FY2017 Inventory of $14,425 million. Additionally, based on general financial knowledge, Amazon's FY2017 inventory was approximately $16.05 billion, making both the $14.4B and $17.2B figures suspicious.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 8
+    }
+  ],
+  "timestamp": "2026-03-24T10:29:29.310975Z"
+}

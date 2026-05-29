@@ -1,0 +1,91 @@
+{
+  "question_id": "FB_089_CF6163C6",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Johnson & Johnson, FY2022 Q4\n- PRIMARY METRIC: Adjusted Earnings Per Share (EPS) for Q4 2022 was $3.05 per share, as reported in the Q4 2022 earnings release.\n- SUPPORTING DATA: \n  - Adjusted EPS for FY2021 was $9.77 per share (per the FY2021 10-K, Consolidated Statements of Operations).\n  - Adjusted EPS for FY2020 was $7.95 per share (per the FY2020 10-K, Consolidated Statements of Operations).\n  - Growth from FY2020 to FY2021: (9.77 - 7.95) / 7.95 = 31.6%\n  - Growth from FY2021 to FY2022: (9.77 - 9.77) / 9.77 = 0%\n- DATA SOURCES: \n  - Q4 2022 earnings report, \"Johnson & Johnson Q4 2022 Earnings Release.\"\n  - FY2021 10-K, \"Consolidated Statements of Operations.\"\n  - FY2020 10-K, \"Consolidated Statements of Operations.\"\n\nNote: As of the latest available data, I cannot provide projections or expectations for FY2023 adjusted EPS growth, as that information is not included in the Q4 2022 earnings report or SEC filings.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_089_CF6163C6_H2",
+      "type": "dollar_amount",
+      "original_value": "$2.35 ",
+      "injected_value": "$3.05 ",
+      "original_numeric": "2.35",
+      "injected_numeric": "3.05",
+      "position_char": 117,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.2996
+    },
+    {
+      "hallucination_id": "FB_089_CF6163C6_H1",
+      "type": "percentage",
+      "original_value": "22.8%",
+      "injected_value": "31.6%",
+      "original_numeric": "22.8",
+      "injected_numeric": "31.6",
+      "position_char": 476,
+      "sentence_approx": 10,
+      "perturbation_delta": 8.8459
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Adjusted Earnings Per Share (EPS) for Q4 2022 was $3.05 per share",
+        "claim_value": "$3.05",
+        "reason": "This figure deviates significantly from commonly reported Adjusted EPS for JnJ in Q4 2022 (typically cited around $2.35), suggesting potential hallucination or confusion with another metric.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Growth from FY2020 to FY2021: (9.77 - 7.95) / 7.95 = 31.6%",
+        "claim_value": "31.6%",
+        "reason": "The arithmetic provided is incorrect. (9.77 - 7.95) / 7.95 equals approximately 22.9%, not 31.6%. This indicates a hallucinated calculation result.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Growth from FY2021 to FY2022: (9.77 - 9.77) / 9.77 = 0%",
+        "claim_value": "0%",
+        "reason": "The calculation uses the FY2021 value ($9.77) for FY2022, implying identical earnings to the penny. This is statistically improbable for a large-cap company and indicates data copying or hallucination of the FY2022 figure.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "I cannot provide projections or expectations for FY2023 adjusted EPS growth, as that information is not included in the Q4 2022 earnings report",
+        "claim_value": "not included",
+        "reason": "Contradicts standard corporate practice where large-caps like JnJ provide full-year guidance in Q4 releases; JnJ typically issued FY2023 outlook in its January 2023 earnings release.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "The output contains multiple critical errors including incorrect arithmetic, statistically improbable identical year-over-year figures, and likely hallucinated EPS values.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Adjusted Earnings Per Share (EPS) for Q4 2022 was $3.05 per share\",\n      \"claim_value\": \"$3.05\",\n      \"reason\": \"This figure deviates significantly from commonly reported Adjusted EPS for JnJ in Q4 2022 (typically cited around $2.35), suggesting potential hallucination or confusion with another metric.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Growth from FY2020 to FY2021: (9.77 - 7.95) / 7.95 = 31.6%\",\n      \"claim_value\": \"31.6%\",\n      \"reason\": \"The arithmetic provided is incorrect. (9.77 - 7.95) / 7.95 equals approximately 22.9%, not 31.6%. This indicates a hallucinated calculation result.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Growth from FY2021 to FY2022: (9.77 - 9.77) / 9.77 = 0%\",\n      \"claim_value\": \"0%\",\n      \"reason\": \"The calculation uses the FY2021 value ($9.77) for FY2022, implying identical earnings to the penny. This is statistically improbable for a large-cap company and indicates data copying or hallucination of the FY2022 figure.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"I cannot provide projections or expectations for FY2023 adjusted EPS growth, as that information is not included in the Q4 2022 earnings report\",\n      \"claim_value\": \"not included\",\n      \"reason\": \"Contradicts standard corporate practice where large-caps like JnJ provide full-year guidance in Q4 releases; JnJ typically issued FY2023 outlook in its January 2023 earnings release.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\": \"The output contains multiple critical errors including incorrect arithmetic, statistically improbable identical year-over-year figures, and likely hallucinated EPS values.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_089_CF6163C6",
+      "hallucination_id": "FB_089_CF6163C6_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$2.35 ",
+      "injected_value": "$3.05 ",
+      "detected": true,
+      "reason": "This figure deviates significantly from commonly reported Adjusted EPS for JnJ in Q4 2022 (typically cited around $2.35), suggesting potential hallucination or confusion with another metric.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_089_CF6163C6",
+      "hallucination_id": "FB_089_CF6163C6_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "percentage",
+      "original_value": "22.8%",
+      "injected_value": "31.6%",
+      "detected": true,
+      "reason": "The arithmetic provided is incorrect. (9.77 - 7.95) / 7.95 equals approximately 22.9%, not 31.6%. This indicates a hallucinated calculation result.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-24T12:03:47.950783Z"
+}

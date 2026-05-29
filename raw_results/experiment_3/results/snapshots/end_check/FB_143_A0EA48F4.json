@@ -1,0 +1,201 @@
+{
+  "question_id": "FB_143_A0EA48F4",
+  "method": "end_check",
+  "final_output": "## Verizon Communications Inc. - FY 2021 Derivative Instruments Report\n\n**Executive Summary**\n\nFor Fiscal Year 2021, Verizon Communications Inc. primarily utilized derivative instruments to manage interest rate and foreign currency exchange rate exposures. Interest rate swaps represented the dominant hedging instrument, accounting for 92.06% of the total derivative notional value. While the notional value of interest rate swaps remained stable at $12,000 million from FY 2020 to FY 2021, foreign currency forward contracts experienced a significant reduction of 31.07% to $1,034 million. This indicates a consistent focus on interest rate risk management and a decreased emphasis on foreign currency hedging in the most recent fiscal year.\n\n**Analysis**\n\nVerizon's derivative portfolio in FY 2021, as reported in Note 10 of the 10-K, totaled $13,034 million in notional value. Interest rate swaps maintained a notional value of $12,000 million, showing no change from FY 2020. This stability follows a substantial 34.50% increase in interest rate swap notional value from $8,922 million in FY 2019 to $12,000 million in FY 2020.\n\nConversely, foreign currency forward contracts saw a notable decline. Their notional value decreased by $466 million, or 31.07%, from $1,500 million in FY 2020 to $1,034 million in FY 2021. This reduction contrasts with the 25.00% increase observed between FY 2019 ($1,200 million) and FY 2020. In FY 2021, interest rate swaps constituted 92.06% of the total derivative notional value, with foreign currency forward contracts making up the remaining 7.94%.\n\n**Key Risks**\n\nThe predominant reliance on interest rate swaps (92.06% of total notional value) means Verizon's hedging effectiveness is highly sensitive to fluctuations in interest rates. While this strategy appears stable, any unforeseen shifts in interest rate environments could impact the effectiveness of these hedges. The significant reduction in foreign currency forward contracts suggests a potentially lower level of hedging against foreign exchange rate volatility, which could expose the company to increased currency risk if global currency markets become more volatile.\n\n**Conclusion**\n\nVerizon Communications Inc. maintained a consistent and substantial interest rate hedging strategy in FY 2021, with interest rate swaps holding a notional value of $12,000 million. The reduction in foreign currency forward contracts to $1,034 million indicates a strategic shift towards less foreign currency exposure management. The company's derivative activities are overwhelmingly concentrated on mitigating interest rate risk, reflecting a clear priority in its financial risk management framework. This report highlights Verizon's focused approach to managing its financial exposures, with a strong emphasis on interest rate stability.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Verizon Communications Inc., FY 2021\n- PRIMARY METRIC: The derivative instrument with the highest notional value for managing exposure to fluctuations in foreign currency exchange rates or interest rates was the interest rate swaps, with a notional value of $15,974 million as reported in the FY 2021 10-K, Note 10: Derivative Instruments and Hedging Activities.\n- SUPPORTING DATA: \n  - As of December 31, 2021, Verizon had total notional values for derivatives as follows:\n    - Interest Rate Swaps: $12,000 million\n    - Foreign Currency Forward Contracts: $1,034 million\n  - For FY 2020, the notional value of interest rate swaps was $12,000 million, and for foreign currency forward contracts, it was $1,500 million.\n  - For FY 2019, the notional value of interest rate swaps was $8,922 million, and for foreign currency forward contracts, it was $1,200 million.\n- DATA SOURCES: \n  - Verizon FY 2021 10-K, Note 10: Derivative Instruments and Hedging Activities\n  - Verizon FY 2020 10-K, Note 10: Derivative Instruments and Hedging Activities\n  - Verizon FY 2019 10-K, Note 10: Derivative Instruments and Hedging Activities\n\nPlease note that the figures provided are exact as reported in the respective filings.",
+    "2": "As a financial analyst, I've reviewed the provided data for Verizon Communications Inc. regarding derivative instruments.\n\n**1. Year-over-Year Changes**\n\n| Metric (Notional Value in $ millions) | FY 2021 | FY 2020 | FY 2019 | YoY Change (2021 vs 2020) | % Change (2021 vs 2020) | YoY Change (2020 vs 2019) | % Change (2020 vs 2019) |\n|---|---|---|---|---|---|---|---|\n| **Interest Rate Swaps** | 12,000 | 12,000 | 8,922 | 0 | 0.00% | 3,078 | 34.50% |\n| **Foreign Currency Forward Contracts** | 1,034 | 1,500 | 1,200 | -466 | -31.07% | 300 | 25.00% |\n\n**Formulas:**\n*   **Absolute Change (Current Year vs. Prior Year):** Current Year Value - Prior Year Value\n*   **Percentage Change (Current Year vs. Prior Year):** (Absolute Change / Prior Year Value) * 100\n\n**2. Relevant Ratios**\n\n**Derivative Mix (FY 2021)**\n\n| Metric | Notional Value ($ millions) | Proportion of Total Derivatives |\n|---|---|---|\n| Interest Rate Swaps | 12,000 | 92.06% |\n| Foreign Currency Forward Contracts | 1,034 | 7.94% |\n| **Total Derivatives** | **13,034** | **100.00%** |\n\n**Formulas:**\n*   **Total Derivatives (FY 2021):** Interest Rate Swaps (FY 2021) + Foreign Currency Forward Contracts (FY 2021)\n*   **Proportion of Total Derivatives:** (Specific Derivative Notional Value / Total Derivatives Notional Value) * 100\n\n**3. Anomalies Flagged**\n\n*   **Discrepancy in Interest Rate Swaps (FY 2021):** The primary metric states \"interest rate swaps, with a notional value of $15,974 million as reported in the FY 2021 10-K, Note 10.\" However, the supporting data for FY 2021 explicitly states \"Interest Rate Swaps: $12,000 million.\"\n    *   **Action:** As per instructions, I have used the **CORRECT value of $12,000 million** for FY 2021 Interest Rate Swaps in all calculations, as the $15,974 million figure appears to be a misstatement within the primary metric description itself, contradicted by the specific breakdown provided for the same period.\n\n**Analysis:**\n\n*   Verizon's interest rate swap notional value remained flat from FY 2020 to FY 2021, after a significant 34.50% increase from FY 2019 to FY 2020. This suggests a stable interest rate hedging strategy in the most recent year.\n*   Foreign currency forward contracts saw a notable decrease of 31.07% from FY 2020 to FY 2021, indicating a reduction in hedging activity related to foreign exchange rate fluctuations. This follows an increase in the prior period.\n*   Interest rate swaps constitute the vast majority (92.06%) of Verizon's reported derivative notional value in FY 2021, highlighting their primary focus on managing interest rate risk over foreign currency risk.",
+    "3": "## Verizon Communications Inc. - FY 2021 Derivative Instruments Report\n\n**Executive Summary**\n\nFor Fiscal Year 2021, Verizon Communications Inc. primarily utilized derivative instruments to manage interest rate and foreign currency exchange rate exposures. Interest rate swaps represented the dominant hedging instrument, accounting for 92.06% of the total derivative notional value. While the notional value of interest rate swaps remained stable at $12,000 million from FY 2020 to FY 2021, foreign currency forward contracts experienced a significant reduction of 31.07% to $1,034 million. This indicates a consistent focus on interest rate risk management and a decreased emphasis on foreign currency hedging in the most recent fiscal year.\n\n**Analysis**\n\nVerizon's derivative portfolio in FY 2021, as reported in Note 10 of the 10-K, totaled $13,034 million in notional value. Interest rate swaps maintained a notional value of $12,000 million, showing no change from FY 2020. This stability follows a substantial 34.50% increase in interest rate swap notional value from $8,922 million in FY 2019 to $12,000 million in FY 2020.\n\nConversely, foreign currency forward contracts saw a notable decline. Their notional value decreased by $466 million, or 31.07%, from $1,500 million in FY 2020 to $1,034 million in FY 2021. This reduction contrasts with the 25.00% increase observed between FY 2019 ($1,200 million) and FY 2020. In FY 2021, interest rate swaps constituted 92.06% of the total derivative notional value, with foreign currency forward contracts making up the remaining 7.94%.\n\n**Key Risks**\n\nThe predominant reliance on interest rate swaps (92.06% of total notional value) means Verizon's hedging effectiveness is highly sensitive to fluctuations in interest rates. While this strategy appears stable, any unforeseen shifts in interest rate environments could impact the effectiveness of these hedges. The significant reduction in foreign currency forward contracts suggests a potentially lower level of hedging against foreign exchange rate volatility, which could expose the company to increased currency risk if global currency markets become more volatile.\n\n**Conclusion**\n\nVerizon Communications Inc. maintained a consistent and substantial interest rate hedging strategy in FY 2021, with interest rate swaps holding a notional value of $12,000 million. The reduction in foreign currency forward contracts to $1,034 million indicates a strategic shift towards less foreign currency exposure management. The company's derivative activities are overwhelmingly concentrated on mitigating interest rate risk, reflecting a clear priority in its financial risk management framework.",
+    "4": "## Verizon Communications Inc. - FY 2021 Derivative Instruments Report\n\n**Executive Summary**\n\nFor Fiscal Year 2021, Verizon Communications Inc. primarily utilized derivative instruments to manage interest rate and foreign currency exchange rate exposures. Interest rate swaps represented the dominant hedging instrument, accounting for 92.06% of the total derivative notional value. While the notional value of interest rate swaps remained stable at $12,000 million from FY 2020 to FY 2021, foreign currency forward contracts experienced a significant reduction of 31.07% to $1,034 million. This indicates a consistent focus on interest rate risk management and a decreased emphasis on foreign currency hedging in the most recent fiscal year.\n\n**Analysis**\n\nVerizon's derivative portfolio in FY 2021, as reported in Note 10 of the 10-K, totaled $13,034 million in notional value. Interest rate swaps maintained a notional value of $12,000 million, showing no change from FY 2020. This stability follows a substantial 34.50% increase in interest rate swap notional value from $8,922 million in FY 2019 to $12,000 million in FY 2020.\n\nConversely, foreign currency forward contracts saw a notable decline. Their notional value decreased by $466 million, or 31.07%, from $1,500 million in FY 2020 to $1,034 million in FY 2021. This reduction contrasts with the 25.00% increase observed between FY 2019 ($1,200 million) and FY 2020. In FY 2021, interest rate swaps constituted 92.06% of the total derivative notional value, with foreign currency forward contracts making up the remaining 7.94%.\n\n**Key Risks**\n\nThe predominant reliance on interest rate swaps (92.06% of total notional value) means Verizon's hedging effectiveness is highly sensitive to fluctuations in interest rates. While this strategy appears stable, any unforeseen shifts in interest rate environments could impact the effectiveness of these hedges. The significant reduction in foreign currency forward contracts suggests a potentially lower level of hedging against foreign exchange rate volatility, which could expose the company to increased currency risk if global currency markets become more volatile.\n\n**Conclusion**\n\nVerizon Communications Inc. maintained a consistent and substantial interest rate hedging strategy in FY 2021, with interest rate swaps holding a notional value of $12,000 million. The reduction in foreign currency forward contracts to $1,034 million indicates a strategic shift towards less foreign currency exposure management. The company's derivative activities are overwhelmingly concentrated on mitigating interest rate risk, reflecting a clear priority in its financial risk management framework. This report highlights Verizon's focused approach to managing its financial exposures, with a strong emphasis on interest rate stability."
+  },
+  "gates": {
+    "end_gate": {
+      "verified": [
+        {
+          "value": "$12,000 million",
+          "ref": 12000.0
+        },
+        {
+          "value": "$12,000 million",
+          "ref": 12000.0
+        },
+        {
+          "value": "$12,000 million",
+          "ref": 12000.0
+        },
+        {
+          "value": "$1,500 million",
+          "ref": 1500.0
+        },
+        {
+          "value": "$1,200 million",
+          "ref": 1200.0
+        },
+        {
+          "value": "$12,000 million",
+          "ref": 12000.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$1,034 million",
+          "num": 1034.0,
+          "correct": 1200.0,
+          "dev": 0.1383,
+          "source": "source_document"
+        },
+        {
+          "value": "$13,034 million",
+          "num": 13034.0,
+          "correct": 12000.0,
+          "dev": 0.0793,
+          "source": "source_document"
+        },
+        {
+          "value": "$8,922 million",
+          "num": 8922.0,
+          "correct": 11000.0,
+          "dev": 0.1889,
+          "source": "source_document"
+        },
+        {
+          "value": "$466 million",
+          "num": 466.0,
+          "correct": 402.0,
+          "dev": 0.1373,
+          "source": "evidence"
+        },
+        {
+          "value": "$1,034 million",
+          "num": 1034.0,
+          "correct": 1200.0,
+          "dev": 0.1383,
+          "source": "source_document"
+        },
+        {
+          "value": "$1,034 million",
+          "num": 1034.0,
+          "correct": 1200.0,
+          "dev": 0.1383,
+          "source": "source_document"
+        },
+        {
+          "value": "92.06%",
+          "num": 92.06,
+          "correct": 66.0,
+          "dev": 0.2831,
+          "source": "evidence"
+        },
+        {
+          "value": "31.07%",
+          "num": 31.07,
+          "correct": 63.0,
+          "dev": 0.5068,
+          "source": "evidence"
+        },
+        {
+          "value": "34.50%",
+          "num": 34.5,
+          "correct": 63.0,
+          "dev": 0.4524,
+          "source": "evidence"
+        },
+        {
+          "value": "31.07%",
+          "num": 31.07,
+          "correct": 63.0,
+          "dev": 0.5068,
+          "source": "evidence"
+        },
+        {
+          "value": "92.06%",
+          "num": 92.06,
+          "correct": 66.0,
+          "dev": 0.2831,
+          "source": "evidence"
+        },
+        {
+          "value": "92.06%",
+          "num": 92.06,
+          "correct": 66.0,
+          "dev": 0.2831,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "25.00%"
+        },
+        {
+          "value": "7.94%"
+        }
+      ],
+      "n_refs": 10
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_143_A0EA48F4",
+      "hid": "FB_143_A0EA48F4_H3",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 15974.0,
+      "orig_num": 12000.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_143_A0EA48F4",
+      "hid": "FB_143_A0EA48F4_H2",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 1034.0,
+      "orig_num": 1500.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": true,
+      "any_det": true,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_143_A0EA48F4",
+      "hid": "FB_143_A0EA48F4_H1",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 8922.0,
+      "orig_num": 11000.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": true,
+      "any_det": true,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:55:34.918454+00:00"
+}

@@ -1,0 +1,127 @@
+{
+  "question_id": "FB_024_214CEB4C",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Amcor plc, FY2023 and FY2022\n- PRIMARY METRIC: \n  - FY2023 Current Assets: $4,196 million (per the FY2023 10-K, Consolidated Balance Sheets)\n  - FY2023 Current Liabilities: $3,090 million (per the FY2023 10-K, Consolidated Balance Sheets)\n  - Quick Ratio FY2023: 1.36 (calculated as Current Assets of $4,196 million minus Inventories of $1,080 million, divided by Current Liabilities of $3,090 million)\n\n  - FY2022 Current Assets: $4,068 million (per the FY2022 10-K, Consolidated Balance Sheets)\n  - FY2022 Current Liabilities: $2,085 million (per the FY2022 10-K, Consolidated Balance Sheets)\n  - Quick Ratio FY2022: 1.30 (calculated as Current Assets of $4,068 million minus Inventories of $1,058 million, divided by Current Liabilities of $2,843 million)\n\n- SUPPORTING DATA: \n  - FY2023:\n    - Current Assets: $2,926 million\n    - Current Liabilities: $3,090 million\n    - Inventories: $1,080 million\n    - Quick Ratio: 1.36\n  \n  - FY2022:\n    - Current Assets: $4,068 million\n    - Current Liabilities: $2,843 million\n    - Inventories: $891 million\n    - Quick Ratio: 1.30\n\n- DATA SOURCES: \n  - FY2023 10-K, Consolidated Balance Sheets\n  - FY2022 10-K, Consolidated Balance Sheets\n\n**Note:** The quick ratio has improved from 1.30 in FY2022 to 1.36 in FY2023, indicating a slight increase in liquidity position. However, it is important to consider that the quick ratio may not be the most relevant metric for Amcor, as the company operates in the packaging industry where inventory levels can be significant and may not reflect immediate liquidity needs. Analysts often consider other liquidity metrics, such as the current ratio or cash ratio, depending on the context of the industry and the specific financial structure of the company.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_024_214CEB4C_H3",
+      "type": "dollar_amount",
+      "original_value": "$2,843 million",
+      "injected_value": "$2,085 million",
+      "original_numeric": "2843",
+      "injected_numeric": "2085",
+      "position_char": 549,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.2667
+    },
+    {
+      "hallucination_id": "FB_024_214CEB4C_H2",
+      "type": "dollar_amount",
+      "original_value": "$4,196 million",
+      "injected_value": "$2,926 million",
+      "original_numeric": "4196",
+      "injected_numeric": "2926",
+      "position_char": 834,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.3028
+    },
+    {
+      "hallucination_id": "FB_024_214CEB4C_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,058 million",
+      "injected_value": "$891 million",
+      "original_numeric": "1058",
+      "injected_numeric": "891",
+      "position_char": 1062,
+      "sentence_approx": 4,
+      "perturbation_delta": -0.1583
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "FY2023 Current Assets: $4,196 million (per the FY2023 10-K, Consolidated Balance Sheets)",
+        "claim_value": "$4,196 million",
+        "reason": "Internal inconsistency: The Supporting Data section lists FY2023 Current Assets as $2,926 million, a significant discrepancy within the same report.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2022 Current Liabilities: $2,085 million (per the FY2022 10-K, Consolidated Balance Sheets)",
+        "claim_value": "$2,085 million",
+        "reason": "Internal inconsistency: The calculation description and Supporting Data section list FY2022 Current Liabilities as $2,843 million.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Quick Ratio FY2023: 1.36 (calculated as Current Assets of $4,196 million minus Inventories of $1,080 million, divided by Current Liabilities of $3,090 million)",
+        "claim_value": "1.36",
+        "reason": "Mathematical error: (4,196 - 1,080) / 3,090 equals approximately 1.01, not 1.36. The calculation provided does not support the result.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Quick Ratio FY2022: 1.30 (calculated as Current Assets of $4,068 million minus Inventories of $1,058 million, divided by Current Liabilities of $2,843 million)",
+        "claim_value": "1.30",
+        "reason": "Mathematical error: (4,068 - 1,058) / 2,843 equals approximately 1.06, not 1.30. The calculation provided does not support the result.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2022 Inventories: $1,058 million",
+        "claim_value": "$1,058 million",
+        "reason": "Internal inconsistency: The Supporting Data section lists FY2022 Inventories as $891 million.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2023 10-K, Consolidated Balance Sheets",
+        "claim_value": "10-K",
+        "reason": "Filing type error: Amcor plc is a Foreign Private Issuer listed on the NYSE and typically files Form 20-F with the SEC, not Form 10-K.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 18,
+    "overall_assessment": "The output contains critical internal contradictions, mathematical failures, and incorrect filing type classifications, rendering the financial analysis unreliable.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"FY2023 Current Assets: $4,196 million (per the FY2023 10-K, Consolidated Balance Sheets)\",\n      \"claim_value\": \"$4,196 million\",\n      \"reason\": \"Internal inconsistency: The Supporting Data section lists FY2023 Current Assets as $2,926 million, a significant discrepancy within the same report.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2022 Current Liabilities: $2,085 million (per the FY2022 10-K, Consolidated Balance Sheets)\",\n      \"claim_value\": \"$2,085 million\",\n      \"reason\": \"Internal inconsistency: The calculation description and Supporting Data section list FY2022 Current Liabilities as $2,843 million.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Quick Ratio FY2023: 1.36 (calculated as Current Assets of $4,196 million minus Inventories of $1,080 million, divided by Current Liabilities of $3,090 million)\",\n      \"claim_value\": \"1.36\",\n      \"reason\": \"Mathematical error: (4,196 - 1,080) / 3,090 equals approximately 1.01, not 1.36. The calculation provided does not support the result.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Quick Ratio FY2022: 1.30 (calculated as Current Assets of $4,068 million minus Inventories of $1,058 million, divided by Current Liabilities of $2,843 million)\",\n      \"claim_value\": \"1.30\",\n      \"reason\": \"Mathematical error: (4,068 - 1,058) / 2,843 equals approximately 1.06, not 1.30. The calculation provided does not support the result.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2022 Inventories: $1,058 million\",\n      \"claim_value\": \"$1,058 million\",\n      \"reason\": \"Internal inconsistency: The Supporting Data section lists FY2022 Inventories as $891 million.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2023 10-K, Consolidated Balance Sheets\",\n      \"claim_value\": \"10-K\",\n      \"reason\": \"Filing type error: Amcor plc is a Foreign Private Issuer listed on the NYSE and typically files Form 20-F with the SEC, not Form 10-K.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 18,\n  \"overall_assessment\": \"The output contains critical internal contradictions, mathematical failures, and incorrect filing type classifications, rendering the financial analysis unreliable.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_024_214CEB4C",
+      "hallucination_id": "FB_024_214CEB4C_H3",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$2,843 million",
+      "injected_value": "$2,085 million",
+      "detected": true,
+      "reason": "Internal inconsistency: The calculation description and Supporting Data section list FY2022 Current Liabilities as $2,843 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 18
+    },
+    {
+      "question_id": "FB_024_214CEB4C",
+      "hallucination_id": "FB_024_214CEB4C_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$4,196 million",
+      "injected_value": "$2,926 million",
+      "detected": true,
+      "reason": "Internal inconsistency: The Supporting Data section lists FY2023 Current Assets as $2,926 million, a significant discrepancy within the same report.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 18
+    },
+    {
+      "question_id": "FB_024_214CEB4C",
+      "hallucination_id": "FB_024_214CEB4C_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,058 million",
+      "injected_value": "$891 million",
+      "detected": true,
+      "reason": "Internal inconsistency: The Supporting Data section lists FY2022 Inventories as $891 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 18
+    }
+  ],
+  "timestamp": "2026-03-24T10:34:38.051162Z"
+}

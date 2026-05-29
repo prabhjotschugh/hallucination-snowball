@@ -1,0 +1,103 @@
+{
+  "question_id": "FB_112_2DC55A31",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Microsoft Corporation, FY2022 and FY2023\n- PRIMARY METRIC: \n  - Total Debt as of June 30, 2023: $41,918 million (per the FY2023 10-K, Consolidated Balance Sheets)\n  - Total Debt as of June 30, 2022: $28,845 million (per the FY2022 10-K, Consolidated Balance Sheets)\n- SUPPORTING DATA: \n  - Total Assets as of June 30, 2023: $335,000 million (per the FY2023 10-K, Consolidated Balance Sheets)\n  - Total Assets as of June 30, 2022: $302,000 million (per the FY2022 10-K, Consolidated Balance Sheets)\n  - Total Equity as of June 30, 2023: $139,000 million (per the FY2023 10-K, Consolidated Balance Sheets)\n  - Total Equity as of June 30, 2022: $124,000 million (per the FY2022 10-K, Consolidated Balance Sheets)\n- DATA SOURCES: \n  - FY2023 10-K, Consolidated Balance Sheets, filed on July 27, 2023\n  - FY2022 10-K, Consolidated Balance Sheets, filed on July 27, 2022\n\nNote: The figures reported are exact as per the respective SEC filings. Further analysis or interpretation of trends and ratios is not included as per the directive.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_112_2DC55A31_H2",
+      "type": "dollar_amount",
+      "original_value": "$51,000 million",
+      "injected_value": "$41,918 million",
+      "original_numeric": "51000",
+      "injected_numeric": "41918",
+      "position_char": 116,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.1781
+    },
+    {
+      "hallucination_id": "FB_112_2DC55A31_H1",
+      "type": "dollar_amount",
+      "original_value": "$48,000 million",
+      "injected_value": "$28,845 million",
+      "original_numeric": "48000",
+      "injected_numeric": "28845",
+      "position_char": 219,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.3991
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Total Assets as of June 30, 2023: $335,000 million",
+        "claim_value": "$335,000 million",
+        "reason": "The figure is suspiciously round for a balance sheet total for a large public company, which typically includes more precise values (e.g., down to the dollar or thousands, not just rounded to the nearest billion).",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Assets as of June 30, 2022: $302,000 million",
+        "claim_value": "$302,000 million",
+        "reason": "The figure is suspiciously round for a balance sheet total for a large public company, which typically includes more precise values (e.g., down to the dollar or thousands, not just rounded to the nearest billion).",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Equity as of June 30, 2023: $139,000 million",
+        "claim_value": "$139,000 million",
+        "reason": "The figure is suspiciously round for a balance sheet total for a large public company, which typically includes more precise values (e.g., down to the dollar or thousands, not just rounded to the nearest billion).",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Equity as of June 30, 2022: $124,000 million",
+        "claim_value": "$124,000 million",
+        "reason": "The figure is suspiciously round for a balance sheet total for a large public company, which typically includes more precise values (e.g., down to the dollar or thousands, not just rounded to the nearest billion).",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2023 10-K, Consolidated Balance Sheets, filed on July 27, 2023",
+        "claim_value": "July 27, 2023",
+        "reason": "A 10-K filing date of July 27 for a fiscal year ending June 30 is unusually early (27 days) for a large accelerated filer like Microsoft. Such filings typically take longer (often 30-60 days).",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2022 10-K, Consolidated Balance Sheets, filed on July 27, 2022",
+        "claim_value": "July 27, 2022",
+        "reason": "A 10-K filing date of July 27 for a fiscal year ending June 30 is unusually early (27 days) for a large accelerated filer like Microsoft. Such filings typically take longer (often 30-60 days).",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 8,
+    "overall_assessment": "The reported debt figures are plausible, but the asset and equity figures are suspiciously round, and the claimed 10-K filing dates are unusually early for a company of Microsoft's size, suggesting potential hallucination.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Total Assets as of June 30, 2023: $335,000 million\",\n      \"claim_value\": \"$335,000 million\",\n      \"reason\": \"The figure is suspiciously round for a balance sheet total for a large public company, which typically includes more precise values (e.g., down to the dollar or thousands, not just rounded to the nearest billion).\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Assets as of June 30, 2022: $302,000 million\",\n      \"claim_value\": \"$302,000 million\",\n      \"reason\": \"The figure is suspiciously round for a balance sheet total for a large public company, which typically includes more precise values (e.g., down to the dollar or thousands, not just rounded to the nearest billion).\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Equity as of June 30, 2023: $139,000 million\",\n      \"claim_value\": \"$139,000 million\",\n      \"reason\": \"The figure is suspiciously round for a balance sheet total for a large public company, which typically includes more precise values (e.g., down to the dollar or thousands, not just rounded to the nearest billion).\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Equity as of June 30, 2022: $124,000 million\",\n      \"claim_value\": \"$124,000 million\",\n      \"reason\": \"The figure is suspiciously round for a balance sheet total for a large public company, which typically includes more precise values (e.g., down to the dollar or thousands, not just rounded to the nearest billion).\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2023 10-K, Consolidated Balance Sheets, filed on July 27, 2023\",\n      \"claim_value\": \"July 27, 2023\",\n      \"reason\": \"A 10-K filing date of July 27 for a fiscal year ending June 30 is unusually early (27 days) for a large accelerated filer like Microsoft. Such filings typically take longer (often 30-60 days).\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2022 10-K, Consolidated Balance Sheets, filed on July 27, 2022\",\n      \"claim_value\": \"July 27, 2022\",\n      \"reason\": \"A 10-K filing date of July 27 for a fiscal year ending June 30 is unusually early (27 days) for a large accelerated filer like Microsoft. Such filings typically take longer (often 30-60 days).\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 8,\n  \"overall_assessment\": \"The reported debt figures are plausible, but the asset and equity figures are suspiciously round, and the claimed 10-K filing dates are unusually early for a company of Microsoft's size, suggesting potential hallucination.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_112_2DC55A31",
+      "hallucination_id": "FB_112_2DC55A31_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$51,000 million",
+      "injected_value": "$41,918 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 8
+    },
+    {
+      "question_id": "FB_112_2DC55A31",
+      "hallucination_id": "FB_112_2DC55A31_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$48,000 million",
+      "injected_value": "$28,845 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 8
+    }
+  ],
+  "timestamp": "2026-03-25T07:59:44.202362Z"
+}

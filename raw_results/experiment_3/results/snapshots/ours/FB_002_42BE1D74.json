@@ -1,0 +1,276 @@
+{
+  "question_id": "FB_002_42BE1D74",
+  "method": "ours",
+  "final_output": "## 3M Company: Analysis of Net Property, Plant, and Equipment (FY2018)\n\n### Executive Summary\n\n3M Company's Net Property, Plant, and Equipment (PPNE) experienced notable changes during the fiscal years 2016-2018. A substantial increase of 106.90% was observed from FY2016 to FY2017, rising from $8.70 billion to $18.00 billion. This was followed by a slight decrease of -1.11% in FY2018, with Net PPNE settling at $17.80 billion. The dramatic growth in FY2017 warrants further investigation to understand its underlying drivers.\n\n### Analysis\n\nNet PPNE for 3M Company showed a remarkable increase of $9.30 billion, or 106.90%, from $8.70 billion in FY2016 to $18.00 billion in FY2017. This represents a significant expansion of the company's asset base. Subsequently, in FY2018, Net PPNE decreased by $0.20 billion, or -1.11%, from $18.00 billion to $17.80 billion. The growth rate for FY2017 was 106.90%, while for FY2018 it was -1.11%. These figures are derived from the FY2018, FY2017, and FY2016 10-K filings, Consolidated Balance Sheets.\n\n### Key Risks\n\nThe primary risk identified is the anomalous 106.90% year-over-year increase in Net PPNE from FY2016 to FY2017. Such a substantial surge in a single year for a company of 3M's maturity could indicate significant capital expenditures, major acquisitions, or a material change in accounting policies related to depreciation. Without further detail, the sustainability or strategic rationale behind such a rapid expansion is unclear. The subsequent minor decline in FY2018, while not extreme, suggests a potential stabilization or a period of higher depreciation relative to new investments, following the prior year's aggressive growth.\n\n### Conclusion\n\n3M Company's Net PPNE demonstrated a highly dynamic trend between FY2016 and FY2018. The extraordinary growth in FY2017, with a 106.90% increase to $18.00 billion, is a critical point for further inquiry. The subsequent modest decline to $17.80 billion in FY2018 suggests a shift in capital allocation or asset management strategies. A deeper dive into the specific drivers of the FY2017 expansion is essential for a comprehensive understanding of the company's long-term asset management and investment strategy.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: 3M Company, Fiscal Year 2018\n- PRIMARY METRIC: Net Property, Plant, and Equipment (PPNE) is reported as $14.3 billion per the FY2018 10-K, Consolidated Balance Sheet.\n- SUPPORTING DATA: \n  - FY2017 Net PPNE: $18.0 billion (per the FY2017 10-K, Consolidated Balance Sheet)\n  - FY2016 Net PPNE: $10.9 billion (per the FY2016 10-K, Consolidated Balance Sheet)\n- DATA SOURCES: \n  - FY2018 10-K, Consolidated Balance Sheet, Page 54\n  - FY2017 10-K, Consolidated Balance Sheet, Page 54\n  - FY2016 10-K, Consolidated Balance Sheet, Page 54\n\nNote: No interpretation or analysis has been provided as per the requirements.",
+    "2": "As a financial analyst, I have computed the year-over-year changes and relevant ratios for 3M Company's Net Property, Plant, and Equipment (PPNE), using the corrected data.\n\n**Corrected Data:**\n*   FY2018 Net PPNE: $17.80 billion (Corrected from $14.3 billion)\n*   FY2017 Net PPNE: $18.00 billion (Verified correct)\n*   FY2016 Net PPNE: $8.70 billion (Corrected from $10.9 billion)\n\n---\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\n*   **FY2017 vs. FY2016:**\n    *   **Absolute Change:**\n        *   Formula: FY2017 Net PPNE - FY2016 Net PPNE\n        *   Calculation: $18.00 billion - $8.70 billion = **$9.30 billion**\n    *   **Percentage Change:**\n        *   Formula: (Absolute Change / FY2016 Net PPNE) * 100\n        *   Calculation: ($9.30 billion / $8.70 billion) * 100 = **106.90%**\n\n*   **FY2018 vs. FY2017:**\n    *   **Absolute Change:**\n        *   Formula: FY2018 Net PPNE - FY2017 Net PPNE\n        *   Calculation: $17.80 billion - $18.00 billion = **-$0.20 billion**\n    *   **Percentage Change:**\n        *   Formula: (Absolute Change / FY2017 Net PPNE) * 100\n        *   Calculation: (-$0.20 billion / $18.00 billion) * 100 = **-1.11%**\n\n---\n\n**2. Relevant Ratios**\n\n*   **Growth Rate (FY2017):**\n    *   Formula: (FY2017 Net PPNE / FY2016 Net PPNE) - 1\n    *   Calculation: ($18.00 billion / $8.70 billion) - 1 = **1.0690 or 106.90%**\n\n*   **Growth Rate (FY2018):**\n    *   Formula: (FY2018 Net PPNE / FY2017 Net PPNE) - 1\n    *   Calculation: ($17.80 billion / $18.00 billion) - 1 = **-0.0111 or -1.11%**\n\n---\n\n**3. Anomalies Flagged**\n\n*   **FY2017 Net PPNE Growth:** The 106.90% year-over-year increase in Net PPNE from FY2016 to FY2017 is a significant anomaly. Such a substantial increase in a single year for a mature company like 3M warrants further investigation into capital expenditures, acquisitions, or changes in depreciation policies.\n\n*   **FY2018 Net PPNE Change:** The slight decrease of -1.11% from FY2017 to FY2018, following the massive increase in the prior year, could indicate a stabilization or a slight divestiture/higher depreciation relative to new capital expenditures. This change, while not as extreme as the prior year's growth, is notable in the context of the preceding period.",
+    "3": "## 3M Company: Analysis of Net Property, Plant, and Equipment (FY2018)\n\n### Executive Summary\n\n3M Company's Net Property, Plant, and Equipment (PPNE) experienced significant fluctuations during the fiscal years 2016-2018. A substantial increase of 106.90% was observed from FY2016 to FY2017, rising from $8.70 billion to $18.00 billion. This was followed by a slight decrease of -1.11% in FY2018, with Net PPNE settling at $17.80 billion. The dramatic growth in FY2017 warrants further investigation to understand its underlying drivers.\n\n### Analysis\n\nNet PPNE for 3M Company showed a remarkable increase of $9.30 billion, or 106.90%, from $8.70 billion in FY2016 to $18.00 billion in FY2017. This represents a significant expansion of the company's asset base. Subsequently, in FY2018, Net PPNE decreased by $0.20 billion, or -1.11%, from $18.00 billion to $17.80 billion. The growth rate for FY2017 was 106.90%, while for FY2018 it was -1.11%. These figures are derived from the FY2018, FY2017, and FY2016 10-K filings, Consolidated Balance Sheets.\n\n### Key Risks\n\nThe primary risk identified is the anomalous 106.90% year-over-year increase in Net PPNE from FY2016 to FY2017. Such a substantial surge in a single year for a company of 3M's maturity could indicate significant capital expenditures, major acquisitions, or a material change in accounting policies related to depreciation. Without further detail, the sustainability or strategic rationale behind such a rapid expansion is unclear. The subsequent minor decline in FY2018, while not extreme, suggests a potential stabilization or a period of higher depreciation relative to new investments, following the prior year's aggressive growth.\n\n### Conclusion\n\n3M Company's Net PPNE demonstrated a highly dynamic trend between FY2016 and FY2018. The extraordinary growth in FY2017, with a 106.90% increase to $18.00 billion, is a critical point for further inquiry. The subsequent modest decline to $17.80 billion in FY2018 suggests a shift in capital allocation or asset management strategies. A deeper dive into the specific drivers of the FY2017 expansion is essential for a comprehensive understanding of the company's long-term asset management and investment strategy.",
+    "4": "## 3M Company: Analysis of Net Property, Plant, and Equipment (FY2018)\n\n### Executive Summary\n\n3M Company's Net Property, Plant, and Equipment (PPNE) experienced notable changes during the fiscal years 2016-2018. A substantial increase of 106.90% was observed from FY2016 to FY2017, rising from $8.70 billion to $18.00 billion. This was followed by a slight decrease of -1.11% in FY2018, with Net PPNE settling at $17.80 billion. The dramatic growth in FY2017 warrants further investigation to understand its underlying drivers.\n\n### Analysis\n\nNet PPNE for 3M Company showed a remarkable increase of $9.30 billion, or 106.90%, from $8.70 billion in FY2016 to $18.00 billion in FY2017. This represents a significant expansion of the company's asset base. Subsequently, in FY2018, Net PPNE decreased by $0.20 billion, or -1.11%, from $18.00 billion to $17.80 billion. The growth rate for FY2017 was 106.90%, while for FY2018 it was -1.11%. These figures are derived from the FY2018, FY2017, and FY2016 10-K filings, Consolidated Balance Sheets.\n\n### Key Risks\n\nThe primary risk identified is the anomalous 106.90% year-over-year increase in Net PPNE from FY2016 to FY2017. Such a substantial surge in a single year for a company of 3M's maturity could indicate significant capital expenditures, major acquisitions, or a material change in accounting policies related to depreciation. Without further detail, the sustainability or strategic rationale behind such a rapid expansion is unclear. The subsequent minor decline in FY2018, while not extreme, suggests a potential stabilization or a period of higher depreciation relative to new investments, following the prior year's aggressive growth.\n\n### Conclusion\n\n3M Company's Net PPNE demonstrated a highly dynamic trend between FY2016 and FY2018. The extraordinary growth in FY2017, with a 106.90% increase to $18.00 billion, is a critical point for further inquiry. The subsequent modest decline to $17.80 billion in FY2018 suggests a shift in capital allocation or asset management strategies. A deeper dive into the specific drivers of the FY2017 expansion is essential for a comprehensive understanding of the company's long-term asset management and investment strategy."
+  },
+  "gates": {
+    "gate_1": {
+      "verified": [
+        {
+          "value": "$18.0 billion",
+          "ref": 18.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$14.3 billion",
+          "num": 14.3,
+          "correct": 17.8,
+          "dev": 0.1966,
+          "source": "source_document"
+        },
+        {
+          "value": "$10.9 billion",
+          "num": 10.9,
+          "correct": 8.7,
+          "dev": 0.2018,
+          "source": "ground_truth"
+        }
+      ],
+      "unverified": [],
+      "n_refs": 14
+    },
+    "gate_2": {
+      "verified": [
+        {
+          "value": "$17.80 billion",
+          "ref": 17.8
+        },
+        {
+          "value": "$18.00 billion",
+          "ref": 18.0
+        },
+        {
+          "value": "$8.70 billion",
+          "ref": 8.7
+        },
+        {
+          "value": "$18.00 billion",
+          "ref": 18.0
+        },
+        {
+          "value": "$8.70 billion",
+          "ref": 8.7
+        },
+        {
+          "value": "$8.70 billion",
+          "ref": 8.7
+        },
+        {
+          "value": "$17.80 billion",
+          "ref": 17.8
+        },
+        {
+          "value": "$18.00 billion",
+          "ref": 18.0
+        },
+        {
+          "value": "$18.00 billion",
+          "ref": 18.0
+        },
+        {
+          "value": "$18.00 billion",
+          "ref": 18.0
+        },
+        {
+          "value": "$8.70 billion",
+          "ref": 8.7
+        },
+        {
+          "value": "$17.80 billion",
+          "ref": 17.8
+        },
+        {
+          "value": "$18.00 billion",
+          "ref": 18.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$14.3 billion",
+          "num": 14.3,
+          "correct": 17.8,
+          "dev": 0.1966,
+          "source": "source_document"
+        },
+        {
+          "value": "$10.9 billion",
+          "num": 10.9,
+          "correct": 8.7,
+          "dev": 0.2018,
+          "source": "ground_truth"
+        },
+        {
+          "value": "$9.30 billion",
+          "num": 9.3,
+          "correct": 8.7,
+          "dev": 0.0645,
+          "source": "ground_truth"
+        },
+        {
+          "value": "$9.30 billion",
+          "num": 9.3,
+          "correct": 8.7,
+          "dev": 0.0645,
+          "source": "ground_truth"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$0.20 billion"
+        },
+        {
+          "value": "$0.20 billion"
+        },
+        {
+          "value": "106.90%"
+        },
+        {
+          "value": "-1.11%"
+        },
+        {
+          "value": "106.90%"
+        },
+        {
+          "value": "-1.11%"
+        },
+        {
+          "value": "106.90%"
+        },
+        {
+          "value": "-1.11%"
+        }
+      ],
+      "n_refs": 14
+    },
+    "gate_3": {
+      "verified": [
+        {
+          "value": "$8.70 billion",
+          "ref": 8.7
+        },
+        {
+          "value": "$18.00 billion",
+          "ref": 18.0
+        },
+        {
+          "value": "$17.80 billion",
+          "ref": 17.8
+        },
+        {
+          "value": "$8.70 billion",
+          "ref": 8.7
+        },
+        {
+          "value": "$18.00 billion",
+          "ref": 18.0
+        },
+        {
+          "value": "$18.00 billion",
+          "ref": 18.0
+        },
+        {
+          "value": "$17.80 billion",
+          "ref": 17.8
+        },
+        {
+          "value": "$18.00 billion",
+          "ref": 18.0
+        },
+        {
+          "value": "$17.80 billion",
+          "ref": 17.8
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$9.30 billion",
+          "num": 9.3,
+          "correct": 8.7,
+          "dev": 0.0645,
+          "source": "ground_truth"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$0.20 billion"
+        },
+        {
+          "value": "106.90%"
+        },
+        {
+          "value": "-1.11%"
+        },
+        {
+          "value": "106.90%"
+        },
+        {
+          "value": "-1.11%"
+        },
+        {
+          "value": "106.90%"
+        },
+        {
+          "value": "-1.11%"
+        },
+        {
+          "value": "106.90%"
+        },
+        {
+          "value": "106.90%"
+        }
+      ],
+      "n_refs": 14
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_002_42BE1D74",
+      "hid": "FB_002_42BE1D74_H2",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 14.3,
+      "orig_num": 18.2,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_002_42BE1D74",
+      "hid": "FB_002_42BE1D74_H1",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 10.9,
+      "orig_num": 17.8,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 4,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:03:13.298219+00:00"
+}

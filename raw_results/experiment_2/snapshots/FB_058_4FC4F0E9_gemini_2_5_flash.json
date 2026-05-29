@@ -1,0 +1,121 @@
+{
+  "question_id": "FB_058_4FC4F0E9",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Block, Inc. (formerly Square, Inc.), FY2019 and FY2020\n- PRIMARY METRIC: \n  - Total Revenue FY2019: $5,585 million (per the FY2020 10-K, Consolidated Statements of Operations)\n  - Total Revenue FY2020: $9,493 million (per the FY2020 10-K, Consolidated Statements of Operations)\n  - Growth Rate: 91.9% (calculated as [(9,493 - 4,711) / 4,711] * 100)\n- SUPPORTING DATA: \n  - FY2019 Total Revenue: $4,711 million\n  - FY2020 Total Revenue: $12,544 million\n- DATA SOURCES: \n  - FY2020 10-K, Consolidated Statements of Operations\n\nNote: The growth rate has been calculated based on the exact figures from the SEC filing without interpretation or analysis.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_058_4FC4F0E9_H3",
+      "type": "dollar_amount",
+      "original_value": "$4,711 million",
+      "injected_value": "$5,585 million",
+      "original_numeric": "4711",
+      "injected_numeric": "5585",
+      "position_char": 120,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.1856
+    },
+    {
+      "hallucination_id": "FB_058_4FC4F0E9_H2",
+      "type": "percentage",
+      "original_value": "101.6%",
+      "injected_value": "91.9%",
+      "original_numeric": "101.6",
+      "injected_numeric": "91.9",
+      "position_char": 315,
+      "sentence_approx": 3,
+      "perturbation_delta": -9.6753
+    },
+    {
+      "hallucination_id": "FB_058_4FC4F0E9_H1",
+      "type": "dollar_amount",
+      "original_value": "$9,493 million",
+      "injected_value": "$12,544 million",
+      "original_numeric": "9493",
+      "injected_numeric": "12544",
+      "position_char": 457,
+      "sentence_approx": 4,
+      "perturbation_delta": 0.3214
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Total Revenue FY2019: $5,585 million",
+        "claim_value": "$5,585 million",
+        "reason": "This figure for FY2019 Total Revenue directly contradicts the 'SUPPORTING DATA' section which states FY2019 Total Revenue as $4,711 million. This is a clear internal inconsistency.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Revenue FY2020: $9,493 million",
+        "claim_value": "$9,493 million",
+        "reason": "This figure for FY2020 Total Revenue directly contradicts the 'SUPPORTING DATA' section which states FY2020 Total Revenue as $12,544 million. This is a clear internal inconsistency.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Growth Rate: 91.9% (calculated as [(9,493 - 4,711) / 4,711] * 100)",
+        "claim_value": "91.9%",
+        "reason": "The stated growth rate of 91.9% does not match the calculation provided. Using the numbers in the calculation: [(9,493 - 4,711) / 4,711] * 100 = (4,782 / 4,711) * 100 = 101.5%. Furthermore, the FY2019 revenue figure ($4,711 million) used in the calculation contradicts the FY2019 revenue stated in the 'PRIMARY METRIC' section ($5,585 million). This indicates multiple calculation errors and internal inconsistencies.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2019 Total Revenue: $4,711 million",
+        "claim_value": "$4,711 million",
+        "reason": "This figure for FY2019 Total Revenue directly contradicts the 'PRIMARY METRIC' section which states FY2019 Total Revenue as $5,585 million. This is a clear internal inconsistency.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2020 Total Revenue: $12,544 million",
+        "claim_value": "$12,544 million",
+        "reason": "This figure for FY2020 Total Revenue directly contradicts the 'PRIMARY METRIC' section which states FY2020 Total Revenue as $9,493 million. This is a clear internal inconsistency.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 7,
+    "overall_assessment": "The researcher's output contains severe internal inconsistencies regarding reported revenue figures for both FY2019 and FY2020, and the calculated growth rate is mathematically incorrect based on the provided formula and figures.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Total Revenue FY2019: $5,585 million\",\n      \"claim_value\": \"$5,585 million\",\n      \"reason\": \"This figure for FY2019 Total Revenue directly contradicts the 'SUPPORTING DATA' section which states FY2019 Total Revenue as $4,711 million. This is a clear internal inconsistency.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Revenue FY2020: $9,493 million\",\n      \"claim_value\": \"$9,493 million\",\n      \"reason\": \"This figure for FY2020 Total Revenue directly contradicts the 'SUPPORTING DATA' section which states FY2020 Total Revenue as $12,544 million. This is a clear internal inconsistency.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Growth Rate: 91.9% (calculated as [(9,493 - 4,711) / 4,711] * 100)\",\n      \"claim_value\": \"91.9%\",\n      \"reason\": \"The stated growth rate of 91.9% does not match the calculation provided. Using the numbers in the calculation: [(9,493 - 4,711) / 4,711] * 100 = (4,782 / 4,711) * 100 = 101.5%. Furthermore, the FY2019 revenue figure ($4,711 million) used in the calculation contradicts the FY2019 revenue stated in the 'PRIMARY METRIC' section ($5,585 million). This indicates multiple calculation errors and internal inconsistencies.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2019 Total Revenue: $4,711 million\",\n      \"claim_value\": \"$4,711 million\",\n      \"reason\": \"This figure for FY2019 Total Revenue directly contradicts the 'PRIMARY METRIC' section which states FY2019 Total Revenue as $5,585 million. This is a clear internal inconsistency.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2020 Total Revenue: $12,544 million\",\n      \"claim_value\": \"$12,544 million\",\n      \"reason\": \"This figure for FY2020 Total Revenue directly contradicts the 'PRIMARY METRIC' section which states FY2020 Total Revenue as $9,493 million. This is a clear internal inconsistency.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 7,\n  \"overall_assessment\": \"The researcher's output contains severe internal inconsistencies regarding reported revenue figures for both FY2019 and FY2020, and the calculated growth rate is mathematically incorrect based on the provided formula and figures.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_058_4FC4F0E9",
+      "hallucination_id": "FB_058_4FC4F0E9_H3",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$4,711 million",
+      "injected_value": "$5,585 million",
+      "detected": true,
+      "reason": "This figure for FY2019 Total Revenue directly contradicts the 'SUPPORTING DATA' section which states FY2019 Total Revenue as $4,711 million. This is a clear internal inconsistency.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_058_4FC4F0E9",
+      "hallucination_id": "FB_058_4FC4F0E9_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "percentage",
+      "original_value": "101.6%",
+      "injected_value": "91.9%",
+      "detected": true,
+      "reason": "The stated growth rate of 91.9% does not match the calculation provided. Using the numbers in the calculation: [(9,493 - 4,711) / 4,711] * 100 = (4,782 / 4,711) * 100 = 101.5%. Furthermore, the FY2019 revenue figure ($4,711 million) used in the calculation contradicts the FY2019 revenue stated in the 'PRIMARY METRIC' section ($5,585 million). This indicates multiple calculation errors and internal inconsistencies.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_058_4FC4F0E9",
+      "hallucination_id": "FB_058_4FC4F0E9_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$9,493 million",
+      "injected_value": "$12,544 million",
+      "detected": true,
+      "reason": "This figure for FY2020 Total Revenue directly contradicts the 'SUPPORTING DATA' section which states FY2020 Total Revenue as $12,544 million. This is a clear internal inconsistency.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 7
+    }
+  ],
+  "timestamp": "2026-03-25T07:47:36.547812Z"
+}

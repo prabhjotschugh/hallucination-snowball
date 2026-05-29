@@ -1,0 +1,109 @@
+{
+  "question_id": "FB_087_99FD2FB2",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Johnson & Johnson, FY2022\n- PRIMARY METRIC: Gross Margin: $77,068 million (Gross Profit) on Total Revenue of $94,943 million, resulting in a Gross Margin Percentage of 70.3% (per the FY2022 10-K, Consolidated Statements of Operations).\n- SUPPORTING DATA:\n  - Total Revenue: $94,943 million (per the FY2022 10-K, Consolidated Statements of Operations).\n  - Cost of Goods Sold (COGS): $17,875 million (per the FY2022 10-K, Consolidated Statements of Operations).\n  - Gross Profit: $77,068 million (calculated as Total Revenue - COGS).\n  \n  Multi-Period Data:\n  - FY2021:\n    - Total Revenue: $93,775 million (per the FY2021 10-K, Consolidated Statements of Operations).\n    - COGS: $17,266 million (per the FY2021 10-K, Consolidated Statements of Operations).\n    - Gross Profit: $76,509 million (calculated as Total Revenue - COGS).\n    - Gross Margin Percentage: 81.6% (calculated as Gross Profit / Total Revenue).\n  \n  - FY2020:\n    - Total Revenue: $82,584 million (per the FY2020 10-K, Consolidated Statements of Operations).\n    - COGS: $20,998 million (per the FY2020 10-K, Consolidated Statements of Operations).\n    - Gross Profit: $84,991 million (calculated as Total Revenue - COGS).\n    - Gross Margin Percentage: 81.6% (calculated as Gross Profit / Total Revenue).\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations.\n  - FY2021 10-K, Consolidated Statements of Operations.\n  - FY2020 10-K, Consolidated Statements of Operations.\n\n**Note:** The request to analyze the factors influencing gross margin changes and the utility of gross margin as a financial health metric cannot be fulfilled as per the directive to provide raw data only without interpretation or analysis.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_087_99FD2FB2_H3",
+      "type": "percentage",
+      "original_value": "81.1%",
+      "injected_value": "70.3%",
+      "original_numeric": "81.1",
+      "injected_numeric": "70.3",
+      "position_char": 188,
+      "sentence_approx": 1,
+      "perturbation_delta": -10.7797
+    },
+    {
+      "hallucination_id": "FB_087_99FD2FB2_H2",
+      "type": "dollar_amount",
+      "original_value": "$15,157 million",
+      "injected_value": "$20,998 million",
+      "original_numeric": "15157",
+      "injected_numeric": "20998",
+      "position_char": 1061,
+      "sentence_approx": 12,
+      "perturbation_delta": 0.3853
+    },
+    {
+      "hallucination_id": "FB_087_99FD2FB2_H1",
+      "type": "dollar_amount",
+      "original_value": "$67,427 million",
+      "injected_value": "$84,991 million",
+      "original_numeric": "67427",
+      "injected_numeric": "84991",
+      "position_char": 1159,
+      "sentence_approx": 13,
+      "perturbation_delta": 0.2605
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "resulting in a Gross Margin Percentage of 70.3%",
+        "claim_value": "70.3%",
+        "reason": "Based on the provided Gross Profit ($77,068 million) and Total Revenue ($94,943 million) for FY2022, the calculated Gross Margin Percentage should be $77,068 / $94,943 = 0.8117 or 81.17%, not 70.3%. This is a calculation error.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Gross Profit: $84,991 million (calculated as Total Revenue - COGS).",
+        "claim_value": "$84,991 million",
+        "reason": "For FY2020, the provided Total Revenue is $82,584 million and COGS is $20,998 million. The calculated Gross Profit should be $82,584 - $20,998 = $61,586 million, not $84,991 million. This is a significant calculation error.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Gross Margin Percentage: 81.6% (calculated as Gross Profit / Total Revenue).",
+        "claim_value": "81.6%",
+        "reason": "For FY2020, if we use the provided (but incorrect) Gross Profit of $84,991 million and Total Revenue of $82,584 million, the Gross Margin Percentage would be $84,991 / $82,584 = 102.9%, which is impossible. If we use the correctly calculated Gross Profit of $61,586 million (from Revenue - COGS) and Total Revenue of $82,584 million, the Gross Margin Percentage would be $61,586 / $82,584 = 74.58%. In either case, 81.6% is incorrect and inconsistent.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 14,
+    "overall_assessment": "Several significant calculation errors were identified in the reported gross profit and gross margin percentages for FY2022 and FY2020, indicating a need for careful re-verification of all derived figures.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"resulting in a Gross Margin Percentage of 70.3%\",\n      \"claim_value\": \"70.3%\",\n      \"reason\": \"Based on the provided Gross Profit ($77,068 million) and Total Revenue ($94,943 million) for FY2022, the calculated Gross Margin Percentage should be $77,068 / $94,943 = 0.8117 or 81.17%, not 70.3%. This is a calculation error.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Gross Profit: $84,991 million (calculated as Total Revenue - COGS).\",\n      \"claim_value\": \"$84,991 million\",\n      \"reason\": \"For FY2020, the provided Total Revenue is $82,584 million and COGS is $20,998 million. The calculated Gross Profit should be $82,584 - $20,998 = $61,586 million, not $84,991 million. This is a significant calculation error.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Gross Margin Percentage: 81.6% (calculated as Gross Profit / Total Revenue).\",\n      \"claim_value\": \"81.6%\",\n      \"reason\": \"For FY2020, if we use the provided (but incorrect) Gross Profit of $84,991 million and Total Revenue of $82,584 million, the Gross Margin Percentage would be $84,991 / $82,584 = 102.9%, which is impossible. If we use the correctly calculated Gross Profit of $61,586 million (from Revenue - COGS) and Total Revenue of $82,584 million, the Gross Margin Percentage would be $61,586 / $82,584 = 74.58%. In either case, 81.6% is incorrect and inconsistent.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 14,\n  \"overall_assessment\": \"Several significant calculation errors were identified in the reported gross profit and gross margin percentages for FY2022 and FY2020, indicating a need for careful re-verification of all derived figures.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_087_99FD2FB2",
+      "hallucination_id": "FB_087_99FD2FB2_H3",
+      "model": "gemini-2.5-flash",
+      "injection_type": "percentage",
+      "original_value": "81.1%",
+      "injected_value": "70.3%",
+      "detected": true,
+      "reason": "Based on the provided Gross Profit ($77,068 million) and Total Revenue ($94,943 million) for FY2022, the calculated Gross Margin Percentage should be $77,068 / $94,943 = 0.8117 or 81.17%, not 70.3%. This is a calculation error.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 14
+    },
+    {
+      "question_id": "FB_087_99FD2FB2",
+      "hallucination_id": "FB_087_99FD2FB2_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$15,157 million",
+      "injected_value": "$20,998 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 14
+    },
+    {
+      "question_id": "FB_087_99FD2FB2",
+      "hallucination_id": "FB_087_99FD2FB2_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$67,427 million",
+      "injected_value": "$84,991 million",
+      "detected": true,
+      "reason": "For FY2020, the provided Total Revenue is $82,584 million and COGS is $20,998 million. The calculated Gross Profit should be $82,584 - $20,998 = $61,586 million, not $84,991 million. This is a significant calculation error.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 14
+    }
+  ],
+  "timestamp": "2026-03-25T07:53:56.012716Z"
+}

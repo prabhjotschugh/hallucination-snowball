@@ -1,0 +1,73 @@
+{
+  "question_id": "FB_013_E5C83D85",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Adobe Inc., FY2017\n- PRIMARY METRIC: Operating Cash Flow Ratio = Cash from Operations / Total Current Liabilities\n  - Cash from Operations: $3,257 million (per the FY2017 10-K, Consolidated Statements of Cash Flows)\n  - Total Current Liabilities: $2,737 million (per the FY2017 10-K, Consolidated Balance Sheets)\n  - Operating Cash Flow Ratio = $3,257 million / $2,737 million = 1.19 (rounded to two decimal places)\n\n- SUPPORTING DATA:\n  - Cash from Operations for FY2016: $2,397 million (per the FY2016 10-K, Consolidated Statements of Cash Flows)\n  - Total Current Liabilities for FY2016: $2,470 million (per the FY2016 10-K, Consolidated Balance Sheets)\n  - Cash from Operations for FY2015: $3,504 million (per the FY2015 10-K, Consolidated Statements of Cash Flows)\n  - Total Current Liabilities for FY2015: $2,197 million (per the FY2015 10-K, Consolidated Balance Sheets)\n\n- DATA SOURCES:\n  - FY2017 10-K: Consolidated Statements of Cash Flows and Consolidated Balance Sheets\n  - FY2016 10-K: Consolidated Statements of Cash Flows and Consolidated Balance Sheets\n  - FY2015 10-K: Consolidated Statements of Cash Flows and Consolidated Balance Sheets",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_013_E5C83D85_H2",
+      "type": "dollar_amount",
+      "original_value": "$2,927 million",
+      "injected_value": "$2,397 million",
+      "original_numeric": "2927",
+      "injected_numeric": "2397",
+      "position_char": 493,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.181
+    },
+    {
+      "hallucination_id": "FB_013_E5C83D85_H1",
+      "type": "dollar_amount",
+      "original_value": "$2,628 million",
+      "injected_value": "$3,504 million",
+      "original_numeric": "2628",
+      "injected_numeric": "3504",
+      "position_char": 714,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.3335
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Cash from Operations for FY2015: $3,504 million (per the FY2015 10-K, Consolidated Statements of Cash Flows)",
+        "claim_value": "$3,504 million",
+        "reason": "The reported Cash from Operations for FY2015 ($3,504 million) implies a significant year-over-year decrease of approximately 31.6% to FY2016 ($2,397 million), followed by a sharp increase of approximately 35.9% to FY2017 ($3,257 million). Such a volatile swing (sharp drop then sharp recovery) in operating cash flow is unusual for a large, established, and generally growing company like Adobe without a major, clearly explained business event, suggesting potential inaccuracy or hallucination.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 7,
+    "overall_assessment": "One claim regarding FY2015 operating cash flow is flagged due to an unusually volatile year-over-year trend when compared to subsequent years, warranting further verification.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Cash from Operations for FY2015: $3,504 million (per the FY2015 10-K, Consolidated Statements of Cash Flows)\",\n      \"claim_value\": \"$3,504 million\",\n      \"reason\": \"The reported Cash from Operations for FY2015 ($3,504 million) implies a significant year-over-year decrease of approximately 31.6% to FY2016 ($2,397 million), followed by a sharp increase of approximately 35.9% to FY2017 ($3,257 million). Such a volatile swing (sharp drop then sharp recovery) in operating cash flow is unusual for a large, established, and generally growing company like Adobe without a major, clearly explained business event, suggesting potential inaccuracy or hallucination.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 7,\n  \"overall_assessment\": \"One claim regarding FY2015 operating cash flow is flagged due to an unusually volatile year-over-year trend when compared to subsequent years, warranting further verification.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_013_E5C83D85",
+      "hallucination_id": "FB_013_E5C83D85_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$2,927 million",
+      "injected_value": "$2,397 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_013_E5C83D85",
+      "hallucination_id": "FB_013_E5C83D85_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$2,628 million",
+      "injected_value": "$3,504 million",
+      "detected": true,
+      "reason": "The reported Cash from Operations for FY2015 ($3,504 million) implies a significant year-over-year decrease of approximately 31.6% to FY2016 ($2,397 million), followed by a sharp increase of approximately 35.9% to FY2017 ($3,257 million). Such a volatile swing (sharp drop then sharp recovery) in operating cash flow is unusual for a large, established, and generally growing company like Adobe without a major, clearly explained business event, suggesting potential inaccuracy or hallucination.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 7
+    }
+  ],
+  "timestamp": "2026-03-25T07:37:06.531901Z"
+}

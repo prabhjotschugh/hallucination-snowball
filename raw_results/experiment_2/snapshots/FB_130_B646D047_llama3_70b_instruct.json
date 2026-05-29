@@ -1,0 +1,103 @@
+{
+  "question_id": "FB_130_B646D047",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: PepsiCo, FY2023 Q1\n- PRIMARY METRIC: PepsiCo raised its full-year guidance for core constant currency EPS growth to 17.6% from a previous estimate of 2.6%. This represents an increase of 2 percentage points. (per the FY2023 Q1 10-Q, Management's Discussion and Analysis)\n- SUPPORTING DATA: Previous guidance for core constant currency EPS growth was 17.0%. The new guidance is 10%. \n- DATA SOURCES: Specific filings referenced include the FY2023 Q1 10-Q, Management's Discussion and Analysis section. \n\nNote: No further analysis or implications are provided as per the directive.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_130_B646D047_H3",
+      "type": "percentage",
+      "original_value": "10%",
+      "injected_value": "17.6%",
+      "original_numeric": "10",
+      "injected_numeric": "17.6",
+      "position_char": 136,
+      "sentence_approx": 1,
+      "perturbation_delta": 7.601
+    },
+    {
+      "hallucination_id": "FB_130_B646D047_H2",
+      "type": "percentage",
+      "original_value": "8%",
+      "injected_value": "2.6%",
+      "original_numeric": "8",
+      "injected_numeric": "2.6",
+      "position_char": 168,
+      "sentence_approx": 1,
+      "perturbation_delta": -5.3668
+    },
+    {
+      "hallucination_id": "FB_130_B646D047_H1",
+      "type": "percentage",
+      "original_value": "8%",
+      "injected_value": "17.0%",
+      "original_numeric": "8",
+      "injected_numeric": "17.0",
+      "position_char": 366,
+      "sentence_approx": 3,
+      "perturbation_delta": 9.0396
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "PepsiCo raised its full-year guidance for core constant currency EPS growth to 17.6% from a previous estimate of 2.6%. This represents an increase of 2 percentage points.",
+        "claim_value": "2 percentage points",
+        "reason": "The math does not add up. If the previous estimate was 2.6% and the new guidance is 17.6%, the increase would be 15 percentage points, not 2.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Previous guidance for core constant currency EPS growth was 17.0%. The new guidance is 10%.",
+        "claim_value": "10%",
+        "reason": "This claim is inconsistent with the previous claim, which stated the new guidance is 17.6%. The new guidance cannot be both 17.6% and 10%.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 3,
+    "overall_assessment": "The researcher's output contains mathematical inconsistencies and contradictory claims, raising concerns about the accuracy of the reported financial figures.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"PepsiCo raised its full-year guidance for core constant currency EPS growth to 17.6% from a previous estimate of 2.6%. This represents an increase of 2 percentage points.\",\n      \"claim_value\" : \"2 percentage points\",\n      \"reason\"      : \"The math does not add up. If the previous estimate was 2.6% and the new guidance is 17.6%, the increase would be 15 percentage points, not 2.\",\n      \"confidence\"  : \"high\"\n    },\n    {\n      \"claim_text\"  : \"Previous guidance for core constant currency EPS growth was 17.0%. The new guidance is 10%.\",\n      \"claim_value\" : \"10%\",\n      \"reason\"      : \"This claim is inconsistent with the previous claim, which stated the new guidance is 17.6%. The new guidance cannot be both 17.6% and 10%.\",\n      \"confidence\"  : \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 3,\n  \"overall_assessment\"   : \"The researcher's output contains mathematical inconsistencies and contradictory claims, raising concerns about the accuracy of the reported financial figures.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_130_B646D047",
+      "hallucination_id": "FB_130_B646D047_H3",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "percentage",
+      "original_value": "10%",
+      "injected_value": "17.6%",
+      "detected": true,
+      "reason": "The math does not add up. If the previous estimate was 2.6% and the new guidance is 17.6%, the increase would be 15 percentage points, not 2.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 3
+    },
+    {
+      "question_id": "FB_130_B646D047",
+      "hallucination_id": "FB_130_B646D047_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "percentage",
+      "original_value": "8%",
+      "injected_value": "2.6%",
+      "detected": true,
+      "reason": "The math does not add up. If the previous estimate was 2.6% and the new guidance is 17.6%, the increase would be 15 percentage points, not 2.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 3
+    },
+    {
+      "question_id": "FB_130_B646D047",
+      "hallucination_id": "FB_130_B646D047_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "percentage",
+      "original_value": "8%",
+      "injected_value": "17.0%",
+      "detected": true,
+      "reason": "This claim is inconsistent with the previous claim, which stated the new guidance is 17.6%. The new guidance cannot be both 17.6% and 10%.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 3
+    }
+  ],
+  "timestamp": "2026-03-27T09:44:19.659853Z"
+}

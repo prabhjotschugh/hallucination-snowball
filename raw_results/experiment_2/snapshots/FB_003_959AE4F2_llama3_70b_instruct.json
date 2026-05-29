@@ -1,0 +1,97 @@
+{
+  "question_id": "FB_003_959AE4F2",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: 3M Company, FY2022\n- PRIMARY METRIC: \n  - Capital Expenditures: $1,633 million (per the FY2022 10-K, Consolidated Statements of Cash Flows)\n  - Total Assets: $59,768 million (per the FY2022 10-K, Consolidated Balance Sheets)\n\n- SUPPORTING DATA: \n  - Capital Expenditures for FY2021: $1,858 million (per the FY2021 10-K, Consolidated Statements of Cash Flows)\n  - Total Assets for FY2021: $46,255 million (per the FY2021 10-K, Consolidated Balance Sheets)\n  - Capital Expenditures for FY2020: $1,451 million (per the FY2020 10-K, Consolidated Statements of Cash Flows)\n  - Total Assets for FY2020: $44,407 million (per the FY2020 10-K, Consolidated Balance Sheets)\n  - Total Revenue for FY2022: $19,188 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - Total Revenue for FY2021: $29,761 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - Total Revenue for FY2020: $32,182 million (per the FY2020 10-K, Consolidated Statements of Operations)\n\n- DATA SOURCES: \n  - 3M Company FY2022 10-K filing, Consolidated Statements of Cash Flows, Consolidated Balance Sheets, and Consolidated Statements of Operations.\n  - 3M Company FY2021 10-K filing, Consolidated Statements of Cash Flows, Consolidated Balance Sheets, and Consolidated Statements of Operations.\n  - 3M Company FY2020 10-K filing, Consolidated Statements of Cash Flows, Consolidated Balance Sheets, and Consolidated Statements of Operations. \n\nNote: The analysis of capital intensity, including the computation of financial ratios such as the capital expenditure to sales ratio, is not included as per the directive to present raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_003_959AE4F2_H3",
+      "type": "dollar_amount",
+      "original_value": "$45,517 million",
+      "injected_value": "$59,768 million",
+      "original_numeric": "45517",
+      "injected_numeric": "59768",
+      "position_char": 178,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.3131
+    },
+    {
+      "hallucination_id": "FB_003_959AE4F2_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,451 million",
+      "injected_value": "$1,858 million",
+      "original_numeric": "1451",
+      "injected_numeric": "1858",
+      "position_char": 303,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.2805
+    },
+    {
+      "hallucination_id": "FB_003_959AE4F2_H1",
+      "type": "dollar_amount",
+      "original_value": "$35,436 million",
+      "injected_value": "$29,761 million",
+      "original_numeric": "35436",
+      "injected_numeric": "29761",
+      "position_char": 821,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.1602
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Total Revenue for FY2021: $29,761 million",
+        "claim_value": "$29,761 million",
+        "reason": "The reported revenue for FY2021 seems suspiciously high compared to FY2022 and FY2020, which are relatively close in value. A 55% increase in revenue from FY2020 to FY2021 is unusual for a stable industrial company like 3M.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 8,
+    "overall_assessment": "Most claims appear plausible, but the reported revenue for FY2021 raises some concerns.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"Total Revenue for FY2021: $29,761 million\",\n      \"claim_value\" : \"$29,761 million\",\n      \"reason\"      : \"The reported revenue for FY2021 seems suspiciously high compared to FY2022 and FY2020, which are relatively close in value. A 55% increase in revenue from FY2020 to FY2021 is unusual for a stable industrial company like 3M.\",\n      \"confidence\"  : \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 8,\n  \"overall_assessment\"   : \"Most claims appear plausible, but the reported revenue for FY2021 raises some concerns.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_003_959AE4F2",
+      "hallucination_id": "FB_003_959AE4F2_H3",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$45,517 million",
+      "injected_value": "$59,768 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 8
+    },
+    {
+      "question_id": "FB_003_959AE4F2",
+      "hallucination_id": "FB_003_959AE4F2_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,451 million",
+      "injected_value": "$1,858 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 8
+    },
+    {
+      "question_id": "FB_003_959AE4F2",
+      "hallucination_id": "FB_003_959AE4F2_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$35,436 million",
+      "injected_value": "$29,761 million",
+      "detected": true,
+      "reason": "The reported revenue for FY2021 seems suspiciously high compared to FY2022 and FY2020, which are relatively close in value. A 55% increase in revenue from FY2020 to FY2021 is unusual for a stable industrial company like 3M.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 8
+    }
+  ],
+  "timestamp": "2026-03-27T09:26:13.064185Z"
+}

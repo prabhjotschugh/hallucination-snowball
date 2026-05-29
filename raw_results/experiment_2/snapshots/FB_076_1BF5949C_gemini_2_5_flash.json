@@ -1,0 +1,133 @@
+{
+  "question_id": "FB_076_1BF5949C",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: CVS Health, FY2018\n- PRIMARY METRIC: \n  - Revenue: $124,200 million (per the FY2018 10-K, Consolidated Statements of Operations)\n- SUPPORTING DATA: \n  - Property, Plant, and Equipment (PP&E) as of FY2017: $27,991 million (per the FY2018 10-K, Consolidated Balance Sheets)\n  - Property, Plant, and Equipment (PP&E) as of FY2018: $23,135 million (per the FY2018 10-K, Consolidated Balance Sheets)\n  - Average PP&E between FY2017 and FY2018: \n    - Calculation: ($21,643 million + $23,135 million) / 2 = $22,389 million\n- FIXED ASSET TURNOVER RATIO: \n  - Calculation: $194,579 million / $29,388 million = 8.69 (rounded to two decimal places: 8.69)\n- DATA SOURCES: \n  - FY2018 10-K, Consolidated Statements of Operations\n  - FY2018 10-K, Consolidated Balance Sheets\n\nNote: The request for analysis and benchmarking against industry peers has not been fulfilled as per the directive to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_076_1BF5949C_H3",
+      "type": "dollar_amount",
+      "original_value": "$194,579 million",
+      "injected_value": "$124,200 million",
+      "original_numeric": "194579",
+      "injected_numeric": "124200",
+      "position_char": 71,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.3617
+    },
+    {
+      "hallucination_id": "FB_076_1BF5949C_H2",
+      "type": "dollar_amount",
+      "original_value": "$21,643 million",
+      "injected_value": "$27,991 million",
+      "original_numeric": "21643",
+      "injected_numeric": "27991",
+      "position_char": 225,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.2933
+    },
+    {
+      "hallucination_id": "FB_076_1BF5949C_H1",
+      "type": "dollar_amount",
+      "original_value": "$22,389 million",
+      "injected_value": "$29,388 million",
+      "original_numeric": "22389",
+      "injected_numeric": "29388",
+      "position_char": 604,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.3126
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Revenue: $124,200 million",
+        "claim_value": "$124,200 million",
+        "reason": "This revenue figure is significantly lower than CVS Health's actual reported revenue for FY2018 (which was closer to $194 billion after the Aetna acquisition). It also directly contradicts the revenue figure ($194,579 million) used in the final fixed asset turnover ratio calculation within the same output.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Property, Plant, and Equipment (PP&E) as of FY2017: $27,991 million",
+        "claim_value": "$27,991 million",
+        "reason": "This stated FY2017 PP&E figure is contradicted by the number ($21,643 million) subsequently used for FY2017 PP&E in the average PP&E calculation.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Calculation: ($21,643 million + $23,135 million) / 2 = $22,389 million",
+        "claim_value": "$21,643 million",
+        "reason": "This figure is used as the FY2017 PP&E in the average calculation but was never introduced or justified, and it directly contradicts the explicitly stated FY2017 PP&E of $27,991 million earlier in the output.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Average PP&E between FY2017 and FY2018: Calculation: ($21,643 million + $23,135 million) / 2 = $22,389 million",
+        "claim_value": "$22,389 million",
+        "reason": "This calculated average is incorrect because it uses an unstated and contradictory FY2017 PP&E value ($21,643 million) instead of the previously stated $27,991 million.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Calculation: $194,579 million / $29,388 million = 8.69",
+        "claim_value": "$194,579 million",
+        "reason": "This revenue figure used as the numerator in the final ratio calculation directly contradicts the 'PRIMARY METRIC' revenue of $124,200 million stated earlier in the output.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Calculation: $194,579 million / $29,388 million = 8.69",
+        "claim_value": "$29,388 million",
+        "reason": "This PP&E figure used as the denominator in the final ratio calculation directly contradicts the 'Average PP&E' calculated earlier as $22,389 million.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Calculation: $194,579 million / $29,388 million = 8.69 (rounded to two decimal places: 8.69)",
+        "claim_value": "8.69",
+        "reason": "The calculation $194,579 million / $29,388 million does not equal 8.69; it equals approximately 6.62. This is a mathematical error. Furthermore, a fixed asset turnover ratio of 8.69 seems implausibly high for a large retail and healthcare company like CVS Health, which typically has significant physical assets.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 8,
+    "overall_assessment": "The researcher's output contains multiple internal inconsistencies, mathematical errors, and potentially inaccurate financial figures, rendering the final calculated ratio unreliable.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Revenue: $124,200 million\",\n      \"claim_value\": \"$124,200 million\",\n      \"reason\": \"This revenue figure is significantly lower than CVS Health's actual reported revenue for FY2018 (which was closer to $194 billion after the Aetna acquisition). It also directly contradicts the revenue figure ($194,579 million) used in the final fixed asset turnover ratio calculation within the same output.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Property, Plant, and Equipment (PP&E) as of FY2017: $27,991 million\",\n      \"claim_value\": \"$27,991 million\",\n      \"reason\": \"This stated FY2017 PP&E figure is contradicted by the number ($21,643 million) subsequently used for FY2017 PP&E in the average PP&E calculation.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Calculation: ($21,643 million + $23,135 million) / 2 = $22,389 million\",\n      \"claim_value\": \"$21,643 million\",\n      \"reason\": \"This figure is used as the FY2017 PP&E in the average calculation but was never introduced or justified, and it directly contradicts the explicitly stated FY2017 PP&E of $27,991 million earlier in the output.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Average PP&E between FY2017 and FY2018: Calculation: ($21,643 million + $23,135 million) / 2 = $22,389 million\",\n      \"claim_value\": \"$22,389 million\",\n      \"reason\": \"This calculated average is incorrect because it uses an unstated and contradictory FY2017 PP&E value ($21,643 million) instead of the previously stated $27,991 million.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Calculation: $194,579 million / $29,388 million = 8.69\",\n      \"claim_value\": \"$194,579 million\",\n      \"reason\": \"This revenue figure used as the numerator in the final ratio calculation directly contradicts the 'PRIMARY METRIC' revenue of $124,200 million stated earlier in the output.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Calculation: $194,579 million / $29,388 million = 8.69\",\n      \"claim_value\": \"$29,388 million\",\n      \"reason\": \"This PP&E figure used as the denominator in the final ratio calculation directly contradicts the 'Average PP&E' calculated earlier as $22,389 million.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Calculation: $194,579 million / $29,388 million = 8.69 (rounded to two decimal places: 8.69)\",\n      \"claim_value\": \"8.69\",\n      \"reason\": \"The calculation $194,579 million / $29,388 million does not equal 8.69; it equals approximately 6.62. This is a mathematical error. Furthermore, a fixed asset turnover ratio of 8.69 seems implausibly high for a large retail and healthcare company like CVS Health, which typically has significant physical assets.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 8,\n  \"overall_assessment\": \"The researcher's output contains multiple internal inconsistencies, mathematical errors, and potentially inaccurate financial figures, rendering the final calculated ratio unreliable.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_076_1BF5949C",
+      "hallucination_id": "FB_076_1BF5949C_H3",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$194,579 million",
+      "injected_value": "$124,200 million",
+      "detected": true,
+      "reason": "This revenue figure is significantly lower than CVS Health's actual reported revenue for FY2018 (which was closer to $194 billion after the Aetna acquisition). It also directly contradicts the revenue figure ($194,579 million) used in the final fixed asset turnover ratio calculation within the same output.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 7,
+      "total_claims_reviewed": 8
+    },
+    {
+      "question_id": "FB_076_1BF5949C",
+      "hallucination_id": "FB_076_1BF5949C_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$21,643 million",
+      "injected_value": "$27,991 million",
+      "detected": true,
+      "reason": "This stated FY2017 PP&E figure is contradicted by the number ($21,643 million) subsequently used for FY2017 PP&E in the average PP&E calculation.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 7,
+      "total_claims_reviewed": 8
+    },
+    {
+      "question_id": "FB_076_1BF5949C",
+      "hallucination_id": "FB_076_1BF5949C_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$22,389 million",
+      "injected_value": "$29,388 million",
+      "detected": true,
+      "reason": "This stated FY2017 PP&E figure is contradicted by the number ($21,643 million) subsequently used for FY2017 PP&E in the average PP&E calculation.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 7,
+      "total_claims_reviewed": 8
+    }
+  ],
+  "timestamp": "2026-03-25T07:51:41.799750Z"
+}

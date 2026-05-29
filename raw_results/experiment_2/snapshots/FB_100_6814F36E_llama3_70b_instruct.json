@@ -1,0 +1,85 @@
+{
+  "question_id": "FB_100_6814F36E",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Kraft Heinz Company, FY2019\n- PRIMARY METRIC: \n  - Cost of Goods Sold (COGS): $22,188 million (per the FY2019 10-K, Consolidated Statements of Operations)\n  - Inventory at end of FY2018: $1,648 million (per the FY2019 10-K, Consolidated Balance Sheets)\n  - Inventory at end of FY2019: $1,172 million (per the FY2019 10-K, Consolidated Balance Sheets)\n\n- SUPPORTING DATA:\n  - Average Inventory = (Inventory FY2018 + Inventory FY2019) / 2\n  - Average Inventory = ($1,648 million + $1,748 million) / 2 = $2,011 million\n  - Inventory Turnover Ratio = COGS / Average Inventory = $22,188 million / $1,698 million = 13.06 (rounded to two decimal places)\n\n- DATA SOURCES: \n  - FY2019 10-K, Consolidated Statements of Operations for COGS\n  - FY2019 10-K, Consolidated Balance Sheets for Inventory figures",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_100_6814F36E_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,748 million",
+      "injected_value": "$1,172 million",
+      "original_numeric": "1748",
+      "injected_numeric": "1172",
+      "position_char": 305,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.3294
+    },
+    {
+      "hallucination_id": "FB_100_6814F36E_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,698 million",
+      "injected_value": "$2,011 million",
+      "original_numeric": "1698",
+      "injected_numeric": "2011",
+      "position_char": 521,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.1844
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Inventory at end of FY2019: $1,172 million",
+        "claim_value": "$1,172 million",
+        "reason": "The calculation for average inventory uses $1,748 million as the inventory at end of FY2019, but the initial statement claims it to be $1,172 million, which is inconsistent.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Average Inventory = ($1,648 million + $1,748 million) / 2 = $2,011 million",
+        "claim_value": "$2,011 million",
+        "reason": "The average inventory calculation is incorrect, as it uses the inconsistent inventory figure of $1,748 million.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Inventory Turnover Ratio = COGS / Average Inventory = $22,188 million / $1,698 million = 13.06",
+        "claim_value": "$1,698 million",
+        "reason": "The average inventory figure used in the inventory turnover ratio calculation is incorrect, it should be the correct average of the inventory figures, not $1,698 million.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "The output contains internal inconsistencies and incorrect calculations, which lead to an unreliable inventory turnover ratio.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"Inventory at end of FY2019: $1,172 million\",\n      \"claim_value\" : \"$1,172 million\",\n      \"reason\"      : \"The calculation for average inventory uses $1,748 million as the inventory at end of FY2019, but the initial statement claims it to be $1,172 million, which is inconsistent.\",\n      \"confidence\"  : \"high\"\n    },\n    {\n      \"claim_text\"  : \"Average Inventory = ($1,648 million + $1,748 million) / 2 = $2,011 million\",\n      \"claim_value\" : \"$2,011 million\",\n      \"reason\"      : \"The average inventory calculation is incorrect, as it uses the inconsistent inventory figure of $1,748 million.\",\n      \"confidence\"  : \"high\"\n    },\n    {\n      \"claim_text\"  : \"Inventory Turnover Ratio = COGS / Average Inventory = $22,188 million / $1,698 million = 13.06\",\n      \"claim_value\" : \"$1,698 million\",\n      \"reason\"      : \"The average inventory figure used in the inventory turnover ratio calculation is incorrect, it should be the correct average of the inventory figures, not $1,698 million.\",\n      \"confidence\"  : \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\"   : \"The output contains internal inconsistencies and incorrect calculations, which lead to an unreliable inventory turnover ratio.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_100_6814F36E",
+      "hallucination_id": "FB_100_6814F36E_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,748 million",
+      "injected_value": "$1,172 million",
+      "detected": true,
+      "reason": "The calculation for average inventory uses $1,748 million as the inventory at end of FY2019, but the initial statement claims it to be $1,172 million, which is inconsistent.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_100_6814F36E",
+      "hallucination_id": "FB_100_6814F36E_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,698 million",
+      "injected_value": "$2,011 million",
+      "detected": true,
+      "reason": "The average inventory calculation is incorrect, as it uses the inconsistent inventory figure of $1,748 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-27T09:40:15.309467Z"
+}

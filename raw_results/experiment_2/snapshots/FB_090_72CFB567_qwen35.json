@@ -1,0 +1,115 @@
+{
+  "question_id": "FB_090_72CFB567",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Johnson & Johnson, FY2022\n- PRIMARY METRIC: \n  - Domestic Sales: $49,097 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - International Sales: $36,544 million (per the FY2022 10-K, Consolidated Statements of Operations)\n\n- SUPPORTING DATA: \n  - FY2021 Domestic Sales: $46,211 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2021 International Sales: $34,678 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  \n  - Domestic Sales Growth FY2022: \n    - Growth = ($49,097 million - $62,980 million) / $46,211 million = 4.06%\n  \n  - International Sales Growth FY2022: \n    - Growth = ($36,544 million - $48,060 million) / $40,543 million = 5.38%\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Statements of Operations\n\nNote: The growth rates are computed based on the figures provided and are presented without interpretation or analysis.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_090_72CFB567_H3",
+      "type": "dollar_amount",
+      "original_value": "$46,211 million",
+      "injected_value": "$62,980 million",
+      "original_numeric": "46211",
+      "injected_numeric": "62980",
+      "position_char": 570,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.3629
+    },
+    {
+      "hallucination_id": "FB_090_72CFB567_H2",
+      "type": "dollar_amount",
+      "original_value": "$34,678 million",
+      "injected_value": "$48,060 million",
+      "original_numeric": "34678",
+      "injected_numeric": "48060",
+      "position_char": 690,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.3859
+    },
+    {
+      "hallucination_id": "FB_090_72CFB567_H1",
+      "type": "dollar_amount",
+      "original_value": "$34,678 million",
+      "injected_value": "$40,543 million",
+      "original_numeric": "34678",
+      "injected_numeric": "40543",
+      "position_char": 709,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.1691
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Growth = ($49,097 million - $62,980 million) / $46,211 million = 4.06%",
+        "claim_value": "4.06%",
+        "reason": "The formula uses an undefined value ($62,980 million) instead of the stated FY2022 Domestic Sales ($49,097 million). Additionally, the arithmetic provided does not equal 4.06% (actual calculation yields approx -30%).",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Domestic Sales Growth FY2022: ... 4.06%",
+        "claim_value": "4.06%",
+        "reason": "Based on the stated sales figures ($49,097 million FY2022 vs $46,211 million FY2021), the actual growth rate is approximately 6.25%, not 4.06%. The reported growth rate is inconsistent with the provided sales data.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Growth = ($36,544 million - $48,060 million) / $40,543 million = 5.38%",
+        "claim_value": "5.38%",
+        "reason": "The formula uses undefined values ($48,060 million and $40,543 million) that contradict the stated International Sales figures ($36,544 million FY2022 and $34,678 million FY2021). While the percentage matches the stated sales, the formula text is hallucinated.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Domestic Sales: $49,097 million ... International Sales: $36,544 million",
+        "claim_value": "$85,641 million total",
+        "reason": "The sum of Domestic and International sales ($85.6 billion) is significantly lower than Johnson & Johnson's widely reported total revenue for FY2022 (approximately $94.9 billion), suggesting missing segments or inaccurate split data.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 8,
+    "overall_assessment": "The output contains critical internal inconsistencies in calculation formulas and growth rates that contradict the provided sales figures, alongside potential hallucinations in specific numeric values.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Growth = ($49,097 million - $62,980 million) / $46,211 million = 4.06%\",\n      \"claim_value\": \"4.06%\",\n      \"reason\": \"The formula uses an undefined value ($62,980 million) instead of the stated FY2022 Domestic Sales ($49,097 million). Additionally, the arithmetic provided does not equal 4.06% (actual calculation yields approx -30%).\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Domestic Sales Growth FY2022: ... 4.06%\",\n      \"claim_value\": \"4.06%\",\n      \"reason\": \"Based on the stated sales figures ($49,097 million FY2022 vs $46,211 million FY2021), the actual growth rate is approximately 6.25%, not 4.06%. The reported growth rate is inconsistent with the provided sales data.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Growth = ($36,544 million - $48,060 million) / $40,543 million = 5.38%\",\n      \"claim_value\": \"5.38%\",\n      \"reason\": \"The formula uses undefined values ($48,060 million and $40,543 million) that contradict the stated International Sales figures ($36,544 million FY2022 and $34,678 million FY2021). While the percentage matches the stated sales, the formula text is hallucinated.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Domestic Sales: $49,097 million ... International Sales: $36,544 million\",\n      \"claim_value\": \"$85,641 million total\",\n      \"reason\": \"The sum of Domestic and International sales ($85.6 billion) is significantly lower than Johnson & Johnson's widely reported total revenue for FY2022 (approximately $94.9 billion), suggesting missing segments or inaccurate split data.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 8,\n  \"overall_assessment\": \"The output contains critical internal inconsistencies in calculation formulas and growth rates that contradict the provided sales figures, alongside potential hallucinations in specific numeric values.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_090_72CFB567",
+      "hallucination_id": "FB_090_72CFB567_H3",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$46,211 million",
+      "injected_value": "$62,980 million",
+      "detected": true,
+      "reason": "The formula uses an undefined value ($62,980 million) instead of the stated FY2022 Domestic Sales ($49,097 million). Additionally, the arithmetic provided does not equal 4.06% (actual calculation yields approx -30%).",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 8
+    },
+    {
+      "question_id": "FB_090_72CFB567",
+      "hallucination_id": "FB_090_72CFB567_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$34,678 million",
+      "injected_value": "$48,060 million",
+      "detected": true,
+      "reason": "The formula uses undefined values ($48,060 million and $40,543 million) that contradict the stated International Sales figures ($36,544 million FY2022 and $34,678 million FY2021). While the percentage matches the stated sales, the formula text is hallucinated.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 8
+    },
+    {
+      "question_id": "FB_090_72CFB567",
+      "hallucination_id": "FB_090_72CFB567_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$34,678 million",
+      "injected_value": "$40,543 million",
+      "detected": true,
+      "reason": "The formula uses undefined values ($48,060 million and $40,543 million) that contradict the stated International Sales figures ($36,544 million FY2022 and $34,678 million FY2021). While the percentage matches the stated sales, the formula text is hallucinated.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 8
+    }
+  ],
+  "timestamp": "2026-03-24T12:09:09.337908Z"
+}

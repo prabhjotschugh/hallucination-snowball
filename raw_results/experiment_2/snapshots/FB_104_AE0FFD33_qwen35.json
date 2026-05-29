@@ -1,0 +1,109 @@
+{
+  "question_id": "FB_104_AE0FFD33",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: MGM Resorts International, FY2018\n- PRIMARY METRIC: Accounts Payable: $952 million (per the FY2018 10-K, Consolidated Balance Sheets)\n- SUPPORTING DATA: \n  - FY2017 Accounts Payable: $1,050 million (per the FY2017 10-K, Consolidated Balance Sheets)\n  - FY2016 Accounts Payable: $1,084 million (per the FY2016 10-K, Consolidated Balance Sheets)\n- DATA SOURCES: \n  - FY2018 10-K, Consolidated Balance Sheets\n  - FY2017 10-K, Consolidated Balance Sheets\n  - FY2016 10-K, Consolidated Balance Sheets\n\nNote: No interpretation or analysis has been provided as per the directive.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_104_AE0FFD33_H3",
+      "type": "dollar_amount",
+      "original_value": "$1,479 million",
+      "injected_value": "$952 million",
+      "original_numeric": "1479",
+      "injected_numeric": "952",
+      "position_char": 90,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.3563
+    },
+    {
+      "hallucination_id": "FB_104_AE0FFD33_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,379 million",
+      "injected_value": "$1,050 million",
+      "original_numeric": "1379",
+      "injected_numeric": "1050",
+      "position_char": 205,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2384
+    },
+    {
+      "hallucination_id": "FB_104_AE0FFD33_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,295 million",
+      "injected_value": "$1,084 million",
+      "original_numeric": "1295",
+      "injected_numeric": "1084",
+      "position_char": 300,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.1626
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "FY2018 Accounts Payable: $952 million (per the FY2018 10-K, Consolidated Balance Sheets)",
+        "claim_value": "$952 million",
+        "reason": "Magnitude appears inconsistent with typical historical reporting for MGM Resorts, where Accounts Payable is usually reported significantly lower (often in the $300-$400 million range), suggesting potential conflation with Accrued Liabilities or hallucination.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2017 Accounts Payable: $1,050 million (per the FY2017 10-K, Consolidated Balance Sheets)",
+        "claim_value": "$1,050 million",
+        "reason": "Follows the same suspicious pattern as FY2018; figures are consistently higher than typical Accounts Payable line items for this company, indicating a systematic error in line-item selection or data fabrication.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2016 Accounts Payable: $1,084 million (per the FY2016 10-K, Consolidated Balance Sheets)",
+        "claim_value": "$1,084 million",
+        "reason": "Consistent with the potentially erroneous trend; general financial knowledge suggests MGM's standalone Accounts Payable was lower during this period, raising suspicion of conflation with other current liabilities.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 3,
+    "overall_assessment": "All reported Accounts Payable figures appear significantly inflated compared to standard historical data for MGM Resorts, suggesting a likely hallucination or misclassification of balance sheet line items.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"FY2018 Accounts Payable: $952 million (per the FY2018 10-K, Consolidated Balance Sheets)\",\n      \"claim_value\": \"$952 million\",\n      \"reason\": \"Magnitude appears inconsistent with typical historical reporting for MGM Resorts, where Accounts Payable is usually reported significantly lower (often in the $300-$400 million range), suggesting potential conflation with Accrued Liabilities or hallucination.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2017 Accounts Payable: $1,050 million (per the FY2017 10-K, Consolidated Balance Sheets)\",\n      \"claim_value\": \"$1,050 million\",\n      \"reason\": \"Follows the same suspicious pattern as FY2018; figures are consistently higher than typical Accounts Payable line items for this company, indicating a systematic error in line-item selection or data fabrication.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2016 Accounts Payable: $1,084 million (per the FY2016 10-K, Consolidated Balance Sheets)\",\n      \"claim_value\": \"$1,084 million\",\n      \"reason\": \"Consistent with the potentially erroneous trend; general financial knowledge suggests MGM's standalone Accounts Payable was lower during this period, raising suspicion of conflation with other current liabilities.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 3,\n  \"overall_assessment\": \"All reported Accounts Payable figures appear significantly inflated compared to standard historical data for MGM Resorts, suggesting a likely hallucination or misclassification of balance sheet line items.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_104_AE0FFD33",
+      "hallucination_id": "FB_104_AE0FFD33_H3",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,479 million",
+      "injected_value": "$952 million",
+      "detected": true,
+      "reason": "Magnitude appears inconsistent with typical historical reporting for MGM Resorts, where Accounts Payable is usually reported significantly lower (often in the $300-$400 million range), suggesting potential conflation with Accrued Liabilities or hallucination.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 3
+    },
+    {
+      "question_id": "FB_104_AE0FFD33",
+      "hallucination_id": "FB_104_AE0FFD33_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,379 million",
+      "injected_value": "$1,050 million",
+      "detected": true,
+      "reason": "Follows the same suspicious pattern as FY2018; figures are consistently higher than typical Accounts Payable line items for this company, indicating a systematic error in line-item selection or data fabrication.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 3
+    },
+    {
+      "question_id": "FB_104_AE0FFD33",
+      "hallucination_id": "FB_104_AE0FFD33_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,295 million",
+      "injected_value": "$1,084 million",
+      "detected": true,
+      "reason": "Follows the same suspicious pattern as FY2018; figures are consistently higher than typical Accounts Payable line items for this company, indicating a systematic error in line-item selection or data fabrication.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 3
+    }
+  ],
+  "timestamp": "2026-03-24T12:29:12.560197Z"
+}

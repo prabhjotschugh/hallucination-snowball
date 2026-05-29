@@ -1,0 +1,442 @@
+{
+  "question_id": "FB_057_2D006C3F",
+  "method": "ours",
+  "final_output": "## Block, Inc. (formerly Square, Inc.) - FY2016 Financial Report\n\n### Executive Summary\n\nBlock, Inc. demonstrated a significant improvement in its liquidity position during FY2016, with the Working Capital Ratio increasing to 2.27 from 1.00 in FY2015. This substantial growth was primarily driven by a robust increase in Total Current Assets. However, the subsequent decline in the ratio to 1.00 in FY2017 suggests a return to prior liquidity levels, warranting closer examination of the underlying asset and liability movements.\n\n### Analysis\n\nFor FY2016, Block, Inc. reported Total Current Assets of $1,059.4 million and Total Current Liabilities of $467.5 million, resulting in a Working Capital Ratio of 2.27. This represents a 127.00% increase from FY2015, where the ratio stood at 1.00 (calculated from Total Current Assets of $220.5 million and Total Current Liabilities of $220.5 million).\n\nThe year-over-year change in Total Current Assets from FY2015 to FY2016 was an increase of $838.9 million, representing a 380.45% growth. Concurrently, Total Current Liabilities increased by $247.0 million, or 112.02%, over the same period. The disproportionate growth in current assets relative to current liabilities significantly bolstered the company's short-term liquidity.\n\nLooking ahead to FY2017, the Working Capital Ratio decreased to 1.00, with Total Current Assets at $670.0 million and Total Current Liabilities at $670.0 million. This decline was due to a $389.4 million decrease in Total Current Assets from FY2016, alongside a $202.5 million increase in Total Current Liabilities.\n\n### Key Risks\n\nThe sharp fluctuation in the Working Capital Ratio, particularly the significant increase in FY2016 followed by a return to prior levels in FY2017, indicates potential volatility in Block, Inc.'s short-term financial management. A rapid decline in the ratio, as seen from 2.27 in FY2016 to 1.00 in FY2017, could signal challenges in managing current assets or an increased reliance on short-term financing.\n\n### Conclusion\n\nBlock, Inc.'s FY2016 performance showcased a strong improvement in its working capital position, indicating enhanced short-term solvency. However, the subsequent normalization of the Working Capital Ratio in FY2017 suggests that the exceptional liquidity of FY2016 was not sustained. Future analysis should focus on the drivers behind these fluctuations to assess the long-term stability of the company's liquidity.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Block, Inc. (formerly Square, Inc.), FY2016\n- PRIMARY METRIC: Working Capital Ratio = Total Current Assets / Total Current Liabilities\n  - Total Current Assets: $1,059.4 million (per the FY2016 10-K, Consolidated Balance Sheets)\n  - Total Current Liabilities: $467.5 million (per the FY2016 10-K, Consolidated Balance Sheets)\n  - Working Capital Ratio: 2.26 (calculated as $1,059.4 million / $606.8 million)\n\n- SUPPORTING DATA:\n  - FY2015 Total Current Assets: $259.8 million (per the FY2015 10-K, Consolidated Balance Sheets)\n  - FY2015 Total Current Liabilities: $220.5 million (per the FY2015 10-K, Consolidated Balance Sheets)\n  - FY2015 Working Capital Ratio: 1.64 (calculated as $360.6 million / $220.5 million)\n  \n  - FY2017 Total Current Assets: $788.1 million (per the FY2017 10-K, Consolidated Balance Sheets)\n  - FY2017 Total Current Liabilities: $670.0 million (per the FY2017 10-K, Consolidated Balance Sheets)\n  - FY2017 Working Capital Ratio: 1.79 (calculated as $1,197.5 million / $670.0 million)\n\n- DATA SOURCES:\n  - FY2016 10-K, Consolidated Balance Sheets\n  - FY2015 10-K, Consolidated Balance Sheets\n  - FY2017 10-K, Consolidated Balance Sheets\n\nNote: The working capital ratio is calculated based on the provided figures for total current assets and total current liabilities for FY2016, FY2015, and FY2017.",
+    "2": "As a financial analyst, I have reviewed the provided data for Block, Inc. (formerly Square, Inc.) and computed the requested metrics, flagging any anomalies.\n\n**Corrected Data Summary (using VERIFIED and CORRECTED values):**\n\n| Metric                     | FY2015 (Corrected) | FY2016 (Corrected) | FY2017 (Corrected) |\n| :------------------------- | :----------------- | :----------------- | :----------------- |\n| Total Current Assets       | $220.5 million     | $1,059.4 million   | $670.0 million     |\n| Total Current Liabilities  | $220.5 million     | $467.5 million     | $670.0 million     |\n\n**1. Year-over-Year Changes:**\n\n**Total Current Assets:**\n\n*   **FY2016 vs. FY2015:**\n    *   Absolute Change = FY2016 TCA - FY2015 TCA = $1,059.4M - $220.5M = **$838.9 million**\n    *   Percentage Change = (Absolute Change / FY2015 TCA) * 100 = ($838.9M / $220.5M) * 100 = **380.45%**\n\n*   **FY2017 vs. FY2016:**\n    *   Absolute Change = FY2017 TCA - FY2016 TCA = $670.0M - $1,059.4M = **-$389.4 million**\n    *   Percentage Change = (Absolute Change / FY2016 TCA) * 100 = (-$389.4M / $1,059.4M) * 100 = **-36.76%**\n\n**Total Current Liabilities:**\n\n*   **FY2016 vs. FY2015:**\n    *   Absolute Change = FY2016 TCL - FY2015 TCL = $467.5M - $220.5M = **$247.0 million**\n    *   Percentage Change = (Absolute Change / FY2015 TCL) * 100 = ($247.0M / $220.5M) * 100 = **112.02%**\n\n*   **FY2017 vs. FY2016:**\n    *   Absolute Change = FY2017 TCL - FY2016 TCL = $670.0M - $467.5M = **$202.5 million**\n    *   Percentage Change = (Absolute Change / FY2016 TCL) * 100 = ($202.5M / $467.5M) * 100 = **43.32%**\n\n**2. Relevant Ratios (Working Capital Ratio):**\n\nFormula: Working Capital Ratio = Total Current Assets / Total Current Liabilities\n\n*   **FY2015:** $220.5M / $220.5M = **1.00**\n*   **FY2016:** $1,059.4M / $467.5M = **2.27**\n*   **FY2017:** $670.0M / $670.0M = **1.00**\n\n**Year-over-Year Changes in Working Capital Ratio:**\n\n*   **FY2016 vs. FY2015:**\n    *   Absolute Change = 2.27 - 1.00 = **1.27**\n    *   Percentage Change = (1.27 / 1.00) * 100 = **127.00%**\n\n*   **FY2017 vs. FY2016:**\n    *   Absolute Change = 1.00 - 2.27 = **-1.27**\n    *   Percentage Change = (-1.27 / 2.27) * 100 = **-55.95%**\n\n**3. Anomalies Flagged:**\n\n*   **FY2016 Working Capital Ratio Calculation:** The researcher's provided calculation for FY2016 (2.26) used an incorrect denominator ($606.8 million). Using the corrected Total Current Liabilities of $467.5 million, the ratio is **2.27**. This is a minor deviation but highlights the importance of using accurate inputs.\n*   **FY2015 Working Capital Ratio Calculation:** The researcher's provided calculation for FY2015 (1.64) used incorrect Total Current Assets ($360.6 million). Using the corrected Total Current Assets of $220.5 million, the ratio is **1.00**. This is a significant deviation.\n*   **FY2017 Working Capital Ratio Calculation:** The researcher's provided calculation for FY2017 (1.79) used incorrect Total Current Assets ($1,197.5 million). Using the corrected Total Current Assets of $670.0 million, the ratio is **1.00**.",
+    "3": "## Block, Inc. (formerly Square, Inc.) - FY2016 Financial Report\n\n### Executive Summary\n\nBlock, Inc. demonstrated a significant improvement in its liquidity position during FY2016, with the Working Capital Ratio increasing to 2.27 from 1.00 in FY2015. This substantial growth was primarily driven by a robust increase in Total Current Assets. However, the subsequent decline in the ratio to 1.00 in FY2017 suggests a return to prior liquidity levels, warranting closer examination of the underlying asset and liability movements.\n\n### Analysis\n\nFor FY2016, Block, Inc. reported Total Current Assets of $1,059.4 million and Total Current Liabilities of $467.5 million, resulting in a Working Capital Ratio of 2.27. This represents a 127.00% increase from FY2015, where the ratio stood at 1.00 (calculated from Total Current Assets of $220.5 million and Total Current Liabilities of $220.5 million).\n\nThe year-over-year change in Total Current Assets from FY2015 to FY2016 was an increase of $838.9 million, representing a 380.45% growth. Concurrently, Total Current Liabilities increased by $247.0 million, or 112.02%, over the same period. The disproportionate growth in current assets relative to current liabilities significantly bolstered the company's short-term liquidity.\n\nLooking ahead to FY2017, the Working Capital Ratio decreased to 1.00, with Total Current Assets at $670.0 million and Total Current Liabilities at $670.0 million. This decline was due to a $389.4 million decrease in Total Current Assets from FY2016, alongside a $202.5 million increase in Total Current Liabilities.\n\n### Key Risks\n\nThe sharp fluctuation in the Working Capital Ratio, particularly the significant increase in FY2016 followed by a return to prior levels in FY2017, indicates potential volatility in Block, Inc.'s short-term financial management. A rapid decline in the ratio, as seen from 2.27 in FY2016 to 1.00 in FY2017, could signal challenges in managing current assets or an increased reliance on short-term financing.\n\n### Conclusion\n\nBlock, Inc.'s FY2016 performance showcased a strong improvement in its working capital position, indicating enhanced short-term solvency. However, the subsequent normalization of the Working Capital Ratio in FY2017 suggests that the exceptional liquidity of FY2016 was not sustained. Future analysis should focus on the drivers behind these fluctuations to assess the long-term stability of the company's liquidity.",
+    "4": "## Block, Inc. (formerly Square, Inc.) - FY2016 Financial Report\n\n### Executive Summary\n\nBlock, Inc. demonstrated a significant improvement in its liquidity position during FY2016, with the Working Capital Ratio increasing to 2.27 from 1.00 in FY2015. This substantial growth was primarily driven by a robust increase in Total Current Assets. However, the subsequent decline in the ratio to 1.00 in FY2017 suggests a return to prior liquidity levels, warranting closer examination of the underlying asset and liability movements.\n\n### Analysis\n\nFor FY2016, Block, Inc. reported Total Current Assets of $1,059.4 million and Total Current Liabilities of $467.5 million, resulting in a Working Capital Ratio of 2.27. This represents a 127.00% increase from FY2015, where the ratio stood at 1.00 (calculated from Total Current Assets of $220.5 million and Total Current Liabilities of $220.5 million).\n\nThe year-over-year change in Total Current Assets from FY2015 to FY2016 was an increase of $838.9 million, representing a 380.45% growth. Concurrently, Total Current Liabilities increased by $247.0 million, or 112.02%, over the same period. The disproportionate growth in current assets relative to current liabilities significantly bolstered the company's short-term liquidity.\n\nLooking ahead to FY2017, the Working Capital Ratio decreased to 1.00, with Total Current Assets at $670.0 million and Total Current Liabilities at $670.0 million. This decline was due to a $389.4 million decrease in Total Current Assets from FY2016, alongside a $202.5 million increase in Total Current Liabilities.\n\n### Key Risks\n\nThe sharp fluctuation in the Working Capital Ratio, particularly the significant increase in FY2016 followed by a return to prior levels in FY2017, indicates potential volatility in Block, Inc.'s short-term financial management. A rapid decline in the ratio, as seen from 2.27 in FY2016 to 1.00 in FY2017, could signal challenges in managing current assets or an increased reliance on short-term financing.\n\n### Conclusion\n\nBlock, Inc.'s FY2016 performance showcased a strong improvement in its working capital position, indicating enhanced short-term solvency. However, the subsequent normalization of the Working Capital Ratio in FY2017 suggests that the exceptional liquidity of FY2016 was not sustained. Future analysis should focus on the drivers behind these fluctuations to assess the long-term stability of the company's liquidity."
+  },
+  "gates": {
+    "gate_1": {
+      "verified": [
+        {
+          "value": "$1,059.4 million",
+          "ref": 1059.4
+        },
+        {
+          "value": "$467.5 million",
+          "ref": 467.5
+        },
+        {
+          "value": "$1,059.4 million",
+          "ref": 1059.4
+        },
+        {
+          "value": "$220.5 million",
+          "ref": 220.5
+        },
+        {
+          "value": "$360.6 million",
+          "ref": 360.6
+        },
+        {
+          "value": "$220.5 million",
+          "ref": 220.5
+        },
+        {
+          "value": "$670.0 million",
+          "ref": 670.0
+        },
+        {
+          "value": "$1,197.5 million",
+          "ref": 1197.5
+        },
+        {
+          "value": "$670.0 million",
+          "ref": 670.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$606.8 million",
+          "num": 606.8,
+          "correct": 670.0,
+          "dev": 0.0943,
+          "source": "source_document"
+        },
+        {
+          "value": "$259.8 million",
+          "num": 259.8,
+          "correct": 220.5,
+          "dev": 0.1513,
+          "source": "source_document"
+        },
+        {
+          "value": "$788.1 million",
+          "num": 788.1,
+          "correct": 670.0,
+          "dev": 0.1499,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [],
+      "n_refs": 21
+    },
+    "gate_2": {
+      "verified": [
+        {
+          "value": "$220.5 million",
+          "ref": 220.5
+        },
+        {
+          "value": "$1,059.4 million",
+          "ref": 1059.4
+        },
+        {
+          "value": "$670.0 million",
+          "ref": 670.0
+        },
+        {
+          "value": "$220.5 million",
+          "ref": 220.5
+        },
+        {
+          "value": "$467.5 million",
+          "ref": 467.5
+        },
+        {
+          "value": "$670.0 million",
+          "ref": 670.0
+        },
+        {
+          "value": "$1,059.4M",
+          "ref": 1059.4
+        },
+        {
+          "value": "$220.5M",
+          "ref": 220.5
+        },
+        {
+          "value": "$220.5M",
+          "ref": 220.5
+        },
+        {
+          "value": "$670.0M",
+          "ref": 670.0
+        },
+        {
+          "value": "$1,059.4M",
+          "ref": 1059.4
+        },
+        {
+          "value": "$1,059.4M",
+          "ref": 1059.4
+        },
+        {
+          "value": "$467.5M",
+          "ref": 467.5
+        },
+        {
+          "value": "$220.5M",
+          "ref": 220.5
+        },
+        {
+          "value": "$220.5M",
+          "ref": 220.5
+        },
+        {
+          "value": "$670.0M",
+          "ref": 670.0
+        },
+        {
+          "value": "$467.5M",
+          "ref": 467.5
+        },
+        {
+          "value": "$467.5M",
+          "ref": 467.5
+        },
+        {
+          "value": "$220.5M",
+          "ref": 220.5
+        },
+        {
+          "value": "$220.5M",
+          "ref": 220.5
+        },
+        {
+          "value": "$1,059.4M",
+          "ref": 1059.4
+        },
+        {
+          "value": "$467.5M",
+          "ref": 467.5
+        },
+        {
+          "value": "$670.0M",
+          "ref": 670.0
+        },
+        {
+          "value": "$670.0M",
+          "ref": 670.0
+        },
+        {
+          "value": "$467.5 million",
+          "ref": 467.5
+        },
+        {
+          "value": "$360.6 million",
+          "ref": 360.6
+        },
+        {
+          "value": "$220.5 million",
+          "ref": 220.5
+        },
+        {
+          "value": "$1,197.5 million",
+          "ref": 1197.5
+        },
+        {
+          "value": "$670.0 million",
+          "ref": 670.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$838.9 million",
+          "num": 838.9,
+          "correct": 670.0,
+          "dev": 0.2013,
+          "source": "source_document"
+        },
+        {
+          "value": "$838.9M",
+          "num": 838.9,
+          "correct": 670.0,
+          "dev": 0.2013,
+          "source": "source_document"
+        },
+        {
+          "value": "$389.4 million",
+          "num": 389.4,
+          "correct": 360.6,
+          "dev": 0.074,
+          "source": "source_document"
+        },
+        {
+          "value": "$389.4M",
+          "num": 389.4,
+          "correct": 360.6,
+          "dev": 0.074,
+          "source": "source_document"
+        },
+        {
+          "value": "$247.0 million",
+          "num": 247.0,
+          "correct": 220.5,
+          "dev": 0.1073,
+          "source": "source_document"
+        },
+        {
+          "value": "$247.0M",
+          "num": 247.0,
+          "correct": 220.5,
+          "dev": 0.1073,
+          "source": "source_document"
+        },
+        {
+          "value": "$202.5 million",
+          "num": 202.5,
+          "correct": 220.5,
+          "dev": 0.0816,
+          "source": "source_document"
+        },
+        {
+          "value": "$202.5M",
+          "num": 202.5,
+          "correct": 220.5,
+          "dev": 0.0816,
+          "source": "source_document"
+        },
+        {
+          "value": "$606.8 million",
+          "num": 606.8,
+          "correct": 670.0,
+          "dev": 0.0943,
+          "source": "source_document"
+        },
+        {
+          "value": "380.45%",
+          "num": 380.45,
+          "correct": 360.6,
+          "dev": 0.0522,
+          "source": "source_document"
+        },
+        {
+          "value": "112.02%",
+          "num": 112.02,
+          "correct": 220.5,
+          "dev": 0.492,
+          "source": "source_document"
+        },
+        {
+          "value": "127.00%",
+          "num": 127.0,
+          "correct": 220.5,
+          "dev": 0.424,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "-36.76%"
+        },
+        {
+          "value": "43.32%"
+        },
+        {
+          "value": "-55.95%"
+        }
+      ],
+      "n_refs": 21
+    },
+    "gate_3": {
+      "verified": [
+        {
+          "value": "$1,059.4 million",
+          "ref": 1059.4
+        },
+        {
+          "value": "$467.5 million",
+          "ref": 467.5
+        },
+        {
+          "value": "$220.5 million",
+          "ref": 220.5
+        },
+        {
+          "value": "$220.5 million",
+          "ref": 220.5
+        },
+        {
+          "value": "$670.0 million",
+          "ref": 670.0
+        },
+        {
+          "value": "$670.0 million",
+          "ref": 670.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$838.9 million",
+          "num": 838.9,
+          "correct": 670.0,
+          "dev": 0.2013,
+          "source": "source_document"
+        },
+        {
+          "value": "$247.0 million",
+          "num": 247.0,
+          "correct": 220.5,
+          "dev": 0.1073,
+          "source": "source_document"
+        },
+        {
+          "value": "$389.4 million",
+          "num": 389.4,
+          "correct": 360.6,
+          "dev": 0.074,
+          "source": "source_document"
+        },
+        {
+          "value": "$202.5 million",
+          "num": 202.5,
+          "correct": 220.5,
+          "dev": 0.0816,
+          "source": "source_document"
+        },
+        {
+          "value": "127.00%",
+          "num": 127.0,
+          "correct": 220.5,
+          "dev": 0.424,
+          "source": "source_document"
+        },
+        {
+          "value": "380.45%",
+          "num": 380.45,
+          "correct": 360.6,
+          "dev": 0.0522,
+          "source": "source_document"
+        },
+        {
+          "value": "112.02%",
+          "num": 112.02,
+          "correct": 220.5,
+          "dev": 0.492,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [],
+      "n_refs": 21
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_057_2D006C3F",
+      "hid": "FB_057_2D006C3F_H3",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 606.8,
+      "orig_num": 467.5,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_057_2D006C3F",
+      "hid": "FB_057_2D006C3F_H2",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 259.8,
+      "orig_num": 360.6,
+      "survived": false,
+      "corrected": false,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": true,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": false,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_057_2D006C3F",
+      "hid": "FB_057_2D006C3F_H1",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 788.1,
+      "orig_num": 1197.5,
+      "survived": false,
+      "corrected": false,
+      "g1_det": true,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": false,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:24:43.974510+00:00"
+}

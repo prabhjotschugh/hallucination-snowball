@@ -1,0 +1,97 @@
+{
+  "question_id": "FB_116_1C09CCA7",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Nike, Inc. - Fiscal Year 2019 (FY2019)\n- PRIMARY METRIC: Total Current Assets: $5,544 million (per the FY2019 10-K, Consolidated Balance Sheets)\n- SUPPORTING DATA: \n  - FY2018 Total Current Assets: $9,099 million (per the FY2018 10-K, Consolidated Balance Sheets)\n  - FY2017 Total Current Assets: $4,680 million (per the FY2017 10-K, Consolidated Balance Sheets)\n- DATA SOURCES: \n  - FY2019 10-K, Consolidated Balance Sheets, Page 42\n  - FY2018 10-K, Consolidated Balance Sheets, Page 40\n  - FY2017 10-K, Consolidated Balance Sheets, Page 39\n\nNote: No analysis or interpretation of trends or ratios has been provided as per the directive.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_116_1C09CCA7_H3",
+      "type": "dollar_amount",
+      "original_value": "$7,883 million",
+      "injected_value": "$5,544 million",
+      "original_numeric": "7883",
+      "injected_numeric": "5544",
+      "position_char": 99,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.2968
+    },
+    {
+      "hallucination_id": "FB_116_1C09CCA7_H2",
+      "type": "dollar_amount",
+      "original_value": "$7,477 million",
+      "injected_value": "$9,099 million",
+      "original_numeric": "7477",
+      "injected_numeric": "9099",
+      "position_char": 218,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.2169
+    },
+    {
+      "hallucination_id": "FB_116_1C09CCA7_H1",
+      "type": "dollar_amount",
+      "original_value": "$6,704 million",
+      "injected_value": "$4,680 million",
+      "original_numeric": "6704",
+      "injected_numeric": "4680",
+      "position_char": 317,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3019
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "FY2018 Total Current Assets: $9,099 million",
+        "claim_value": "$9,099 million",
+        "reason": "The reported FY2018 Total Current Assets is suspiciously high compared to FY2017 and FY2019 values, suggesting an unusual spike.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 3,
+    "overall_assessment": "The researcher's output appears mostly plausible, but one claim stands out as potentially inaccurate due to an unusual year-over-year change.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"FY2018 Total Current Assets: $9,099 million\",\n      \"claim_value\" : \"$9,099 million\",\n      \"reason\"      : \"The reported FY2018 Total Current Assets is suspiciously high compared to FY2017 and FY2019 values, suggesting an unusual spike.\",\n      \"confidence\"  : \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 3,\n  \"overall_assessment\"   : \"The researcher's output appears mostly plausible, but one claim stands out as potentially inaccurate due to an unusual year-over-year change.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_116_1C09CCA7",
+      "hallucination_id": "FB_116_1C09CCA7_H3",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$7,883 million",
+      "injected_value": "$5,544 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 3
+    },
+    {
+      "question_id": "FB_116_1C09CCA7",
+      "hallucination_id": "FB_116_1C09CCA7_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$7,477 million",
+      "injected_value": "$9,099 million",
+      "detected": true,
+      "reason": "The reported FY2018 Total Current Assets is suspiciously high compared to FY2017 and FY2019 values, suggesting an unusual spike.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 3
+    },
+    {
+      "question_id": "FB_116_1C09CCA7",
+      "hallucination_id": "FB_116_1C09CCA7_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$6,704 million",
+      "injected_value": "$4,680 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 3
+    }
+  ],
+  "timestamp": "2026-03-27T09:42:28.985977Z"
+}

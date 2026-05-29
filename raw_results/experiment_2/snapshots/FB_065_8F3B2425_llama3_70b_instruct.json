@@ -1,0 +1,103 @@
+{
+  "question_id": "FB_065_8F3B2425",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: The Boeing Company, Fiscal Year 2022\n- PRIMARY METRIC: Total Revenue for FY2022 was $66,610 million, per the FY2022 10-K, Consolidated Statements of Operations.\n- SUPPORTING DATA:\n  - FY2021 Total Revenue: $62,286 million, per the FY2021 10-K, Consolidated Statements of Operations.\n  - FY2020 Total Revenue: $41,886 million, per the FY2020 10-K, Consolidated Statements of Operations.\n  - FY2022 Commercial Airplanes Revenue: $43,028 million, per the FY2022 10-K, Segment Information.\n  - FY2021 Commercial Airplanes Revenue: $27,100 million, per the FY2021 10-K, Segment Information.\n  - FY2020 Commercial Airplanes Revenue: $28,658 million, per the FY2020 10-K, Segment Information.\n  - FY2022 Defense, Space & Security Revenue: $18,532 million, per the FY2022 10-K, Segment Information.\n  - FY2021 Defense, Space & Security Revenue: $26,720 million, per the FY2021 10-K, Segment Information.\n  - FY2020 Defense, Space & Security Revenue: $26,130 million, per the FY2020 10-K, Segment Information.\n  - Backlog as of December 31, 2022: $469 billion, per the FY2022 10-K, Management's Discussion and Analysis.\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations.\n  - FY2021 10-K, Consolidated Statements of Operations.\n  - FY2020 10-K, Consolidated Statements of Operations.\n  - FY2022 10-K, Segment Information.\n  - FY2021 10-K, Segment Information.\n  - FY2020 10-K, Segment Information.\n  - FY2022 10-K, Management's Discussion and Analysis. \n\nNote: The analysis of cyclicality, including patterns and key ratios, is not included as per the directive to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_065_8F3B2425_H3",
+      "type": "dollar_amount",
+      "original_value": "$58,658 million",
+      "injected_value": "$41,886 million",
+      "original_numeric": "58658",
+      "injected_numeric": "41886",
+      "position_char": 329,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.2859
+    },
+    {
+      "hallucination_id": "FB_065_8F3B2425_H2",
+      "type": "dollar_amount",
+      "original_value": "$26,210 million",
+      "injected_value": "$18,532 million",
+      "original_numeric": "26210",
+      "injected_numeric": "18532",
+      "position_char": 752,
+      "sentence_approx": 7,
+      "perturbation_delta": -0.2929
+    },
+    {
+      "hallucination_id": "FB_065_8F3B2425_H1",
+      "type": "dollar_amount",
+      "original_value": "$382 billion",
+      "injected_value": "$469 billion",
+      "original_numeric": "382",
+      "injected_numeric": "469",
+      "position_char": 1058,
+      "sentence_approx": 10,
+      "perturbation_delta": 0.2272
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "FY2022 Total Revenue: $66,610 million",
+        "claim_value": "$66,610 million",
+        "reason": "The reported revenue figure seems suspiciously precise, with an unusual number of digits. Typically, revenue figures are reported in millions or billions, with fewer digits.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Backlog as of December 31, 2022: $469 billion",
+        "claim_value": "$469 billion",
+        "reason": "The reported backlog figure seems unusually round, with a suspiciously clean billion-dollar amount. This could be a fabricated or inaccurate figure.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 8,
+    "overall_assessment": "While most claims appear plausible, a few figures seem suspiciously precise or round, warranting further verification.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"FY2022 Total Revenue: $66,610 million\",\n      \"claim_value\" : \"$66,610 million\",\n      \"reason\"      : \"The reported revenue figure seems suspiciously precise, with an unusual number of digits. Typically, revenue figures are reported in millions or billions, with fewer digits.\",\n      \"confidence\"  : \"medium\"\n    },\n    {\n      \"claim_text\"  : \"Backlog as of December 31, 2022: $469 billion\",\n      \"claim_value\" : \"$469 billion\",\n      \"reason\"      : \"The reported backlog figure seems unusually round, with a suspiciously clean billion-dollar amount. This could be a fabricated or inaccurate figure.\",\n      \"confidence\"  : \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 8,\n  \"overall_assessment\"   : \"While most claims appear plausible, a few figures seem suspiciously precise or round, warranting further verification.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_065_8F3B2425",
+      "hallucination_id": "FB_065_8F3B2425_H3",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$58,658 million",
+      "injected_value": "$41,886 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 8
+    },
+    {
+      "question_id": "FB_065_8F3B2425",
+      "hallucination_id": "FB_065_8F3B2425_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$26,210 million",
+      "injected_value": "$18,532 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 8
+    },
+    {
+      "question_id": "FB_065_8F3B2425",
+      "hallucination_id": "FB_065_8F3B2425_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$382 billion",
+      "injected_value": "$469 billion",
+      "detected": true,
+      "reason": "The reported backlog figure seems unusually round, with a suspiciously clean billion-dollar amount. This could be a fabricated or inaccurate figure.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 8
+    }
+  ],
+  "timestamp": "2026-03-27T09:35:19.195653Z"
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "FB_092_1FF70EDD",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: Johnson & Johnson, August 30, 2023\n- PRIMARY METRIC: The gain realized from the separation of the Consumer Health business segment is reported as $16.9 billion, per the 8-K filing dated August 30, 2023.\n- SUPPORTING DATA: There are no additional financial metrics related to this specific gain provided in the 8-K filing. The focus is solely on the gain from the separation.\n- DATA SOURCES: Johnson & Johnson 8-K filing dated August 30, 2023.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_092_1FF70EDD_H1",
+      "type": "dollar_amount",
+      "original_value": "$13.0 billion",
+      "injected_value": "$16.9 billion",
+      "original_numeric": "13.0",
+      "injected_numeric": "16.9",
+      "position_char": 166,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.3024
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "The gain realized from the separation of the Consumer Health business segment is reported as $16.9 billion",
+        "claim_value": "$16.9 billion",
+        "reason": "The figure is unusually high for a segment separation, especially for a Consumer Health division, which typically doesn't command such valuations. This amount is suspiciously precise and large without additional context or breakdown.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 1,
+    "overall_assessment": "The reported gain of $16.9 billion from the separation of JnJ's Consumer Health segment appears anomalously high and lacks supporting details, warranting suspicion.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"The gain realized from the separation of the Consumer Health business segment is reported as $16.9 billion\",\n      \"claim_value\": \"$16.9 billion\",\n      \"reason\": \"The figure is unusually high for a segment separation, especially for a Consumer Health division, which typically doesn't command such valuations. This amount is suspiciously precise and large without additional context or breakdown.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 1,\n  \"overall_assessment\": \"The reported gain of $16.9 billion from the separation of JnJ's Consumer Health segment appears anomalously high and lacks supporting details, warranting suspicion.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_092_1FF70EDD",
+      "hallucination_id": "FB_092_1FF70EDD_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$13.0 billion",
+      "injected_value": "$16.9 billion",
+      "detected": true,
+      "reason": "The figure is unusually high for a segment separation, especially for a Consumer Health division, which typically doesn't command such valuations. This amount is suspiciously precise and large without additional context or breakdown.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 1
+    }
+  ],
+  "timestamp": "2026-03-24T09:54:00.351462Z"
+}

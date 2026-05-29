@@ -1,0 +1,109 @@
+{
+  "question_id": "FB_135_DFC4B0A4",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: Pfizer Inc., Q2 2023\n- PRIMARY METRIC: The geographic region that experienced the most significant year-over-year decline in revenues was the International region, which reported revenues of $2,548 million for Q2 2023, down from $4,213 million in Q2 2022, representing a decline of 24.7%. (per the Q2 2023 10-Q, Consolidated Statements of Operations).\n- SUPPORTING DATA: \n  - U.S. Revenues for Q2 2023: $16,404 million, compared to $12,948 million in Q2 2022, reflecting a decline of 0.0%.\n  - International Revenues for Q2 2022: $4,213 million.\n  - U.S. Revenues for Q2 2022: $12,948 million.\n- DATA SOURCES: Pfizer Inc. Q2 2023 10-Q, Consolidated Statements of Operations.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_135_DFC4B0A4_H3",
+      "type": "dollar_amount",
+      "original_value": "$3,174 million",
+      "injected_value": "$2,548 million",
+      "original_numeric": "3174",
+      "injected_numeric": "2548",
+      "position_char": 211,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.1972
+    },
+    {
+      "hallucination_id": "FB_135_DFC4B0A4_H2",
+      "type": "dollar_amount",
+      "original_value": "$12,427 million",
+      "injected_value": "$16,404 million",
+      "original_numeric": "12427",
+      "injected_numeric": "16404",
+      "position_char": 423,
+      "sentence_approx": 7,
+      "perturbation_delta": 0.3201
+    },
+    {
+      "hallucination_id": "FB_135_DFC4B0A4_H1",
+      "type": "percentage",
+      "original_value": "4.0%",
+      "injected_value": "0.0%",
+      "original_numeric": "4.0",
+      "injected_numeric": "0.0",
+      "position_char": 504,
+      "sentence_approx": 7,
+      "perturbation_delta": -6.8871
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "International region, which reported revenues of $2,548 million for Q2 2023, down from $4,213 million in Q2 2022, representing a decline of 24.7%",
+        "claim_value": "24.7% decline",
+        "reason": "Calculation discrepancy - $2,548M vs $4,213M is a 39.5% decline, not 24.7%",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "U.S. Revenues for Q2 2023: $16,404 million, compared to $12,948 million in Q2 2022, reflecting a decline of 0.0%",
+        "claim_value": "0.0% decline",
+        "reason": "Mathematical impossibility - $16,404M represents 26.7% growth over $12,948M, not 0% decline",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "SUPPORTING DATA: U.S. Revenues for Q2 2022: $12,948 million",
+        "claim_value": "$12,948 million",
+        "reason": "Inconsistent usage - appears as both growth baseline (Q2 2022) and comparison point (Q2 2023) in contradictory contexts",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 5,
+    "overall_assessment": "Multiple serious calculation errors and internal inconsistencies found in percentage changes and baseline comparisons",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"International region, which reported revenues of $2,548 million for Q2 2023, down from $4,213 million in Q2 2022, representing a decline of 24.7%\",\n      \"claim_value\": \"24.7% decline\",\n      \"reason\": \"Calculation discrepancy - $2,548M vs $4,213M is a 39.5% decline, not 24.7%\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"U.S. Revenues for Q2 2023: $16,404 million, compared to $12,948 million in Q2 2022, reflecting a decline of 0.0%\",\n      \"claim_value\": \"0.0% decline\",\n      \"reason\": \"Mathematical impossibility - $16,404M represents 26.7% growth over $12,948M, not 0% decline\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"SUPPORTING DATA: U.S. Revenues for Q2 2022: $12,948 million\",\n      \"claim_value\": \"$12,948 million\",\n      \"reason\": \"Inconsistent usage - appears as both growth baseline (Q2 2022) and comparison point (Q2 2023) in contradictory contexts\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 5,\n  \"overall_assessment\": \"Multiple serious calculation errors and internal inconsistencies found in percentage changes and baseline comparisons\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_135_DFC4B0A4",
+      "hallucination_id": "FB_135_DFC4B0A4_H3",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,174 million",
+      "injected_value": "$2,548 million",
+      "detected": true,
+      "reason": "Calculation discrepancy - $2,548M vs $4,213M is a 39.5% decline, not 24.7%",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 5
+    },
+    {
+      "question_id": "FB_135_DFC4B0A4",
+      "hallucination_id": "FB_135_DFC4B0A4_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$12,427 million",
+      "injected_value": "$16,404 million",
+      "detected": true,
+      "reason": "Mathematical impossibility - $16,404M represents 26.7% growth over $12,948M, not 0% decline",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 5
+    },
+    {
+      "question_id": "FB_135_DFC4B0A4",
+      "hallucination_id": "FB_135_DFC4B0A4_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "percentage",
+      "original_value": "4.0%",
+      "injected_value": "0.0%",
+      "detected": true,
+      "reason": "Mathematical impossibility - $16,404M represents 26.7% growth over $12,948M, not 0% decline",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 5
+    }
+  ],
+  "timestamp": "2026-03-24T10:01:13.941793Z"
+}

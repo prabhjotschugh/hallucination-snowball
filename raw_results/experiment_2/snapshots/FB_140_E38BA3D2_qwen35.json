@@ -1,0 +1,115 @@
+{
+  "question_id": "FB_140_E38BA3D2",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Ulta Beauty, FY2023\n- PRIMARY METRIC: Merchandise Inventories balance at the end of FY2023 was $952.0 million, per the FY2023 10-K, Consolidated Balance Sheets.\n- SUPPORTING DATA: \n  - Merchandise Inventories balance at the end of FY2022 was $1,066.3 million.\n  - Merchandise Inventories balance at the end of FY2021 was $1,266.6 million.\n  - Total Revenue for FY2023 was $3,355.0 million, compared to $2,908.4 million for FY2022 and $2,100.0 million for FY2021.\n  - Cost of Goods Sold (COGS) for FY2023 was $1,919.5 million, compared to $1,112.3 million for FY2022 and $1,186.0 million for FY2021.\n- DATA SOURCES: \n  - FY2023 10-K, Consolidated Balance Sheets\n  - FY2023 10-K, Consolidated Statements of Operations\n\nNote: The request for analysis of the factors contributing to the increase in merchandise inventories balance, including sales growth, supply chain considerations, and seasonal fluctuations, cannot be fulfilled as it requires interpretation and analysis beyond the raw data extraction.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_140_E38BA3D2_H3",
+      "type": "dollar_amount",
+      "original_value": "$1,211.8 million",
+      "injected_value": "$952.0 million",
+      "original_numeric": "1211.8",
+      "injected_numeric": "952.0",
+      "position_char": 115,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2144
+    },
+    {
+      "hallucination_id": "FB_140_E38BA3D2_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,050.5 million",
+      "injected_value": "$1,266.6 million",
+      "original_numeric": "1050.5",
+      "injected_numeric": "1266.6",
+      "position_char": 343,
+      "sentence_approx": 5,
+      "perturbation_delta": 0.2057
+    },
+    {
+      "hallucination_id": "FB_140_E38BA3D2_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,646.5 million",
+      "injected_value": "$1,112.3 million",
+      "original_numeric": "1646.5",
+      "injected_numeric": "1112.3",
+      "position_char": 560,
+      "sentence_approx": 12,
+      "perturbation_delta": -0.3245
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Total Revenue for FY2023 was $3,355.0 million",
+        "claim_value": "$3,355.0 million",
+        "reason": "Ulta Beauty is a large-cap S&P 500 retailer with annual revenue historically exceeding $10 billion; a figure of $3.3 billion is drastically understated by a factor of approximately 3x.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Cost of Goods Sold (COGS) for FY2023 was $1,919.5 million, compared to $1,112.3 million for FY2022",
+        "claim_value": "$1,112.3 million for FY2022",
+        "reason": "COGS decreasing year-over-year while Revenue increased ~38% (from $2,100m to $2,908m) is logically inconsistent for a retail model; additionally, this implies a gross margin of ~62% in 2022, whereas Ulta typically reports gross margins around 30-35%.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Merchandise Inventories balance at the end of FY2023 was $952.0 million",
+        "claim_value": "$952.0 million",
+        "reason": "Inventory declining consistently over three years (2021-2023) while Revenue grows ~60% suggests an impossible improvement in inventory turnover; the absolute scale is also low relative to the company's actual size and store count.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Revenue... $2,100.0 million for FY2021",
+        "claim_value": "$2,100.0 million",
+        "reason": "Suspiciously round number compared to other figures (e.g., $2,908.4 million), often indicating estimation or hallucination rather than precise filing data.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 9,
+    "overall_assessment": "Multiple critical financial figures appear hallucinated, showing impossible margin structures, inconsistent trends between revenue and COGS/inventory, and a total revenue scale that contradicts the known size of the company.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Total Revenue for FY2023 was $3,355.0 million\",\n      \"claim_value\": \"$3,355.0 million\",\n      \"reason\": \"Ulta Beauty is a large-cap S&P 500 retailer with annual revenue historically exceeding $10 billion; a figure of $3.3 billion is drastically understated by a factor of approximately 3x.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Cost of Goods Sold (COGS) for FY2023 was $1,919.5 million, compared to $1,112.3 million for FY2022\",\n      \"claim_value\": \"$1,112.3 million for FY2022\",\n      \"reason\": \"COGS decreasing year-over-year while Revenue increased ~38% (from $2,100m to $2,908m) is logically inconsistent for a retail model; additionally, this implies a gross margin of ~62% in 2022, whereas Ulta typically reports gross margins around 30-35%.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Merchandise Inventories balance at the end of FY2023 was $952.0 million\",\n      \"claim_value\": \"$952.0 million\",\n      \"reason\": \"Inventory declining consistently over three years (2021-2023) while Revenue grows ~60% suggests an impossible improvement in inventory turnover; the absolute scale is also low relative to the company's actual size and store count.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Revenue... $2,100.0 million for FY2021\",\n      \"claim_value\": \"$2,100.0 million\",\n      \"reason\": \"Suspiciously round number compared to other figures (e.g., $2,908.4 million), often indicating estimation or hallucination rather than precise filing data.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 9,\n  \"overall_assessment\": \"Multiple critical financial figures appear hallucinated, showing impossible margin structures, inconsistent trends between revenue and COGS/inventory, and a total revenue scale that contradicts the known size of the company.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_140_E38BA3D2",
+      "hallucination_id": "FB_140_E38BA3D2_H3",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,211.8 million",
+      "injected_value": "$952.0 million",
+      "detected": true,
+      "reason": "Inventory declining consistently over three years (2021-2023) while Revenue grows ~60% suggests an impossible improvement in inventory turnover; the absolute scale is also low relative to the company's actual size and store count.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_140_E38BA3D2",
+      "hallucination_id": "FB_140_E38BA3D2_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,050.5 million",
+      "injected_value": "$1,266.6 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_140_E38BA3D2",
+      "hallucination_id": "FB_140_E38BA3D2_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,646.5 million",
+      "injected_value": "$1,112.3 million",
+      "detected": true,
+      "reason": "COGS decreasing year-over-year while Revenue increased ~38% (from $2,100m to $2,908m) is logically inconsistent for a retail model; additionally, this implies a gross margin of ~62% in 2022, whereas Ulta typically reports gross margins around 30-35%.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 9
+    }
+  ],
+  "timestamp": "2026-03-24T13:16:06.740867Z"
+}

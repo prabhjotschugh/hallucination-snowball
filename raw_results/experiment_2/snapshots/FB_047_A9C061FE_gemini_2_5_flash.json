@@ -1,0 +1,97 @@
+{
+  "question_id": "FB_047_A9C061FE",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: American Water Works, FY2021\n- PRIMARY METRIC: Unadjusted Operating Income + Depreciation and Amortization (unadjusted EBITDA) is $966 million (per the FY2021 10-K, Consolidated Statements of Operations and Consolidated Statements of Cash Flows).\n- SUPPORTING DATA: \n  - Operating Income for FY2021: $1,149 million (per the FY2021 10-K, Consolidated Statements of Operations).\n  - Depreciation and Amortization for FY2021: $277 million (per the FY2021 10-K, Consolidated Statements of Cash Flows).\n  - For context, Operating Income for FY2020 was $1,063 million and for FY2019 was $832 million.\n  - Depreciation and Amortization for FY2020 was $208 million and for FY2019 was $244 million.\n- DATA SOURCES: \n  - FY2021 10-K, Consolidated Statements of Operations (Operating Income).\n  - FY2021 10-K, Consolidated Statements of Cash Flows (Depreciation and Amortization).",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_047_A9C061FE_H3",
+      "type": "dollar_amount",
+      "original_value": "$1,426 million",
+      "injected_value": "$966 million",
+      "original_numeric": "1426",
+      "injected_numeric": "966",
+      "position_char": 150,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.3228
+    },
+    {
+      "hallucination_id": "FB_047_A9C061FE_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,019 million",
+      "injected_value": "$832 million",
+      "original_numeric": "1019",
+      "injected_numeric": "832",
+      "position_char": 603,
+      "sentence_approx": 4,
+      "perturbation_delta": -0.1839
+    },
+    {
+      "hallucination_id": "FB_047_A9C061FE_H1",
+      "type": "dollar_amount",
+      "original_value": "$263 million",
+      "injected_value": "$208 million",
+      "original_numeric": "263",
+      "injected_numeric": "208",
+      "position_char": 668,
+      "sentence_approx": 5,
+      "perturbation_delta": -0.211
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Unadjusted Operating Income + Depreciation and Amortization (unadjusted EBITDA) is $966 million",
+        "claim_value": "$966 million",
+        "reason": "The stated unadjusted EBITDA ($966 million) is arithmetically inconsistent with the provided components for FY2021. Operating Income ($1,149 million) + Depreciation and Amortization ($277 million) equals $1,426 million, not $966 million. This represents a significant calculation error or a hallucinated final figure.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 7,
+    "overall_assessment": "The primary calculated metric is arithmetically inconsistent with its stated components, indicating a high likelihood of error or hallucination in the final sum.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"Unadjusted Operating Income + Depreciation and Amortization (unadjusted EBITDA) is $966 million\",\n      \"claim_value\" : \"$966 million\",\n      \"reason\"      : \"The stated unadjusted EBITDA ($966 million) is arithmetically inconsistent with the provided components for FY2021. Operating Income ($1,149 million) + Depreciation and Amortization ($277 million) equals $1,426 million, not $966 million. This represents a significant calculation error or a hallucinated final figure.\",\n      \"confidence\"  : \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 7,\n  \"overall_assessment\"   : \"The primary calculated metric is arithmetically inconsistent with its stated components, indicating a high likelihood of error or hallucination in the final sum.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_047_A9C061FE",
+      "hallucination_id": "FB_047_A9C061FE_H3",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,426 million",
+      "injected_value": "$966 million",
+      "detected": true,
+      "reason": "The stated unadjusted EBITDA ($966 million) is arithmetically inconsistent with the provided components for FY2021. Operating Income ($1,149 million) + Depreciation and Amortization ($277 million) equals $1,426 million, not $966 million. This represents a significant calculation error or a hallucinated final figure.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_047_A9C061FE",
+      "hallucination_id": "FB_047_A9C061FE_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,019 million",
+      "injected_value": "$832 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_047_A9C061FE",
+      "hallucination_id": "FB_047_A9C061FE_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$263 million",
+      "injected_value": "$208 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 7
+    }
+  ],
+  "timestamp": "2026-03-25T07:45:04.103471Z"
+}

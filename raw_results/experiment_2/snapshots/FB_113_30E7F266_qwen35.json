@@ -1,0 +1,91 @@
+{
+  "question_id": "FB_113_30E7F266",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Netflix, FY2015\n- PRIMARY METRIC: Unadjusted EBITDA percentage margin: 9.7% (calculated as unadjusted EBITDA of USD 1,265 million divided by total revenue of USD 17,859 million).\n- SUPPORTING DATA:\n  - Unadjusted Operating Income: USD 906 million (per the FY2015 10-K, Consolidated Statements of Operations).\n  - Depreciation & Amortization (D&A): USD 65 million (per the FY2015 10-K, Consolidated Statements of Cash Flows).\n  - Total Revenue: USD 13,500 million (per the FY2015 10-K, Consolidated Statements of Operations).\n  - Unadjusted EBITDA: USD 1,265 million (calculated as USD 1,200 million operating income + USD 65 million D&A).\n- DATA SOURCES: \n  - FY2015 10-K, Consolidated Statements of Operations (for Total Revenue and Operating Income).\n  - FY2015 10-K, Consolidated Statements of Cash Flows (for Depreciation & Amortization).",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_113_30E7F266_H2",
+      "type": "large_number",
+      "original_value": "13,500",
+      "injected_value": "17,859",
+      "original_numeric": "13500",
+      "injected_numeric": "17859",
+      "position_char": 182,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.3229
+    },
+    {
+      "hallucination_id": "FB_113_30E7F266_H1",
+      "type": "large_number",
+      "original_value": "1,200",
+      "injected_value": "906",
+      "original_numeric": "1200",
+      "injected_numeric": "906",
+      "position_char": 255,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.2447
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Total Revenue: USD 13,500 million (per the FY2015 10-K, Consolidated Statements of Operations).",
+        "claim_value": "USD 13,500 million",
+        "reason": "Contradicts the revenue figure of USD 17,859 million used in the primary metric calculation within the same report. Additionally, this figure is historically implausible for Netflix in FY2015, as actual revenue was approximately USD 6.7 billion.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Unadjusted Operating Income: USD 906 million (per the FY2015 10-K, Consolidated Statements of Operations).",
+        "claim_value": "USD 906 million",
+        "reason": "Contradicts the operating income figure of USD 1,200 million used in the Unadjusted EBITDA calculation later in the same report.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Unadjusted EBITDA percentage margin: 9.7% (calculated as unadjusted EBITDA of USD 1,265 million divided by total revenue of USD 17,859 million).",
+        "claim_value": "9.7%",
+        "reason": "Mathematical error: USD 1,265 million divided by USD 17,859 million equals approximately 7.1%, not 9.7%. The revenue denominator also contradicts the USD 13,500 million stated elsewhere.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Unadjusted EBITDA: USD 1,265 million (calculated as USD 1,200 million operating income + USD 65 million D&A).",
+        "claim_value": "USD 1,200 million operating income",
+        "reason": "Uses an operating income figure of USD 1,200 million which directly contradicts the previously stated Unadjusted Operating Income of USD 906 million.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 7,
+    "overall_assessment": "The output contains critical internal inconsistencies regarding revenue and operating income figures, fundamental mathematical errors in margin calculation, and historically implausible revenue magnitudes for Netflix in FY2015.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Total Revenue: USD 13,500 million (per the FY2015 10-K, Consolidated Statements of Operations).\",\n      \"claim_value\": \"USD 13,500 million\",\n      \"reason\": \"Contradicts the revenue figure of USD 17,859 million used in the primary metric calculation within the same report. Additionally, this figure is historically implausible for Netflix in FY2015, as actual revenue was approximately USD 6.7 billion.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Unadjusted Operating Income: USD 906 million (per the FY2015 10-K, Consolidated Statements of Operations).\",\n      \"claim_value\": \"USD 906 million\",\n      \"reason\": \"Contradicts the operating income figure of USD 1,200 million used in the Unadjusted EBITDA calculation later in the same report.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Unadjusted EBITDA percentage margin: 9.7% (calculated as unadjusted EBITDA of USD 1,265 million divided by total revenue of USD 17,859 million).\",\n      \"claim_value\": \"9.7%\",\n      \"reason\": \"Mathematical error: USD 1,265 million divided by USD 17,859 million equals approximately 7.1%, not 9.7%. The revenue denominator also contradicts the USD 13,500 million stated elsewhere.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Unadjusted EBITDA: USD 1,265 million (calculated as USD 1,200 million operating income + USD 65 million D&A).\",\n      \"claim_value\": \"USD 1,200 million operating income\",\n      \"reason\": \"Uses an operating income figure of USD 1,200 million which directly contradicts the previously stated Unadjusted Operating Income of USD 906 million.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 7,\n  \"overall_assessment\": \"The output contains critical internal inconsistencies regarding revenue and operating income figures, fundamental mathematical errors in margin calculation, and historically implausible revenue magnitudes for Netflix in FY2015.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_113_30E7F266",
+      "hallucination_id": "FB_113_30E7F266_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "large_number",
+      "original_value": "13,500",
+      "injected_value": "17,859",
+      "detected": true,
+      "reason": "Contradicts the revenue figure of USD 17,859 million used in the primary metric calculation within the same report. Additionally, this figure is historically implausible for Netflix in FY2015, as actual revenue was approximately USD 6.7 billion.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_113_30E7F266",
+      "hallucination_id": "FB_113_30E7F266_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "large_number",
+      "original_value": "1,200",
+      "injected_value": "906",
+      "detected": true,
+      "reason": "Contradicts the operating income figure of USD 1,200 million used in the Unadjusted EBITDA calculation later in the same report.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 7
+    }
+  ],
+  "timestamp": "2026-03-24T12:44:51.303502Z"
+}

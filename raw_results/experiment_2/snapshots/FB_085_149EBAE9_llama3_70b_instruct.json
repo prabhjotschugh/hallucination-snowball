@@ -1,0 +1,103 @@
+{
+  "question_id": "FB_085_149EBAE9",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: General Mills, FY2022\n- PRIMARY METRIC: Retention Ratio = (Net Income - Total Cash Dividends Paid) / Net Income\n\n1. **Net Income Attributable to Shareholders**: \n   - **Figure**: $1,905 million \n   - **Source**: per the FY2022 10-K, Consolidated Statements of Operations.\n\n2. **Total Cash Dividends Paid**: \n   - **Figure**: $772 million \n   - **Source**: per the FY2022 10-K, Consolidated Statements of Cash Flows.\n\n3. **Retention Ratio Calculation**:\n   - Net Income = $1,905 million\n   - Total Cash Dividends Paid = $898 million\n   - Retained Earnings = Net Income - Total Cash Dividends Paid = $1,353 million - $1,174 million = $731 million\n   - Retention Ratio = $731 million / $1,905 million = 0.384\n\n- **Retention Ratio**: 0.38 (rounded to two decimal places)\n\n- SUPPORTING DATA: \n   - **Net Income Attributable to Shareholders (FY2021)**: $1,877 million (per the FY2021 10-K, Consolidated Statements of Operations).\n   - **Total Cash Dividends Paid (FY2021)**: $1,157 million (per the FY2021 10-K, Consolidated Statements of Cash Flows).\n   - **Net Income Attributable to Shareholders (FY2020)**: $1,651 million (per the FY2020 10-K, Consolidated Statements of Operations).\n   - **Total Cash Dividends Paid (FY2020)**: $1,073 million (per the FY2020 10-K, Consolidated Statements of Cash Flows).\n\n- DATA SOURCES: \n   - FY2022 10-K, Consolidated Statements of Operations and Consolidated Statements of Cash Flows.\n   - FY2021 10-K, Consolidated Statements of Operations and Consolidated Statements of Cash Flows.\n   - FY2020 10-K, Consolidated Statements of Operations and Consolidated Statements of Cash Flows.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_085_149EBAE9_H3",
+      "type": "dollar_amount",
+      "original_value": "$1,174 million",
+      "injected_value": "$772 million",
+      "original_numeric": "1174",
+      "injected_numeric": "772",
+      "position_char": 345,
+      "sentence_approx": 4,
+      "perturbation_delta": -0.3422
+    },
+    {
+      "hallucination_id": "FB_085_149EBAE9_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,174 million",
+      "injected_value": "$898 million",
+      "original_numeric": "1174",
+      "injected_numeric": "898",
+      "position_char": 541,
+      "sentence_approx": 6,
+      "perturbation_delta": -0.2354
+    },
+    {
+      "hallucination_id": "FB_085_149EBAE9_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,905 million",
+      "injected_value": "$1,353 million",
+      "original_numeric": "1905",
+      "injected_numeric": "1353",
+      "position_char": 622,
+      "sentence_approx": 6,
+      "perturbation_delta": -0.2898
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Total Cash Dividends Paid: $772 million",
+        "claim_value": "$772 million",
+        "reason": "Inconsistent figure. The calculation for Retention Ratio uses $898 million as Total Cash Dividends Paid, but the initial figure provided is $772 million.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Retained Earnings = $1,353 million - $1,174 million = $731 million",
+        "claim_value": "$1,353 million, $1,174 million, $731 million",
+        "reason": "Internal inconsistency. The calculation is incorrect, and the figures do not add up.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 7,
+    "overall_assessment": "The output contains internal inconsistencies and incorrect calculations, which raises concerns about the accuracy of the provided figures.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"Total Cash Dividends Paid: $772 million\",\n      \"claim_value\" : \"$772 million\",\n      \"reason\"      : \"Inconsistent figure. The calculation for Retention Ratio uses $898 million as Total Cash Dividends Paid, but the initial figure provided is $772 million.\",\n      \"confidence\"  : \"high\"\n    },\n    {\n      \"claim_text\"  : \"Retained Earnings = $1,353 million - $1,174 million = $731 million\",\n      \"claim_value\" : \"$1,353 million, $1,174 million, $731 million\",\n      \"reason\"      : \"Internal inconsistency. The calculation is incorrect, and the figures do not add up.\",\n      \"confidence\"  : \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 7,\n  \"overall_assessment\"   : \"The output contains internal inconsistencies and incorrect calculations, which raises concerns about the accuracy of the provided figures.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_085_149EBAE9",
+      "hallucination_id": "FB_085_149EBAE9_H3",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,174 million",
+      "injected_value": "$772 million",
+      "detected": true,
+      "reason": "Inconsistent figure. The calculation for Retention Ratio uses $898 million as Total Cash Dividends Paid, but the initial figure provided is $772 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_085_149EBAE9",
+      "hallucination_id": "FB_085_149EBAE9_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,174 million",
+      "injected_value": "$898 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_085_149EBAE9",
+      "hallucination_id": "FB_085_149EBAE9_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,905 million",
+      "injected_value": "$1,353 million",
+      "detected": true,
+      "reason": "Internal inconsistency. The calculation is incorrect, and the figures do not add up.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 7
+    }
+  ],
+  "timestamp": "2026-03-27T09:37:56.429936Z"
+}

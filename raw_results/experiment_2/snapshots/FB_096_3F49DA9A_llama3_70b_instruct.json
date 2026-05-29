@@ -1,0 +1,97 @@
+{
+  "question_id": "FB_096_3F49DA9A",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: JPMorgan Chase & Co., Q1 2021\n- PRIMARY METRIC: \n  - Total Assets: $3,686,000 million (per the Q1 2021 10-Q, Consolidated Balance Sheets)\n  - Total Liabilities: $2,632,855 million (per the Q1 2021 10-Q, Consolidated Balance Sheets)\n\n- SUPPORTING DATA: \n  - Shareholders' Equity: $126,259 million (calculated as Total Assets - Total Liabilities, per the Q1 2021 10-Q, Consolidated Balance Sheets)\n  - Outstanding Shares: 1,899 million (approximate figure based on historical data; please verify against the latest filings for precision)\n\n- DATA SOURCES: \n  - JPMorgan Chase & Co. Q1 2021 10-Q, Consolidated Balance Sheets\n\n**Note:** The analysis of potential liquidation value and per-share distribution to shareholders requires additional assumptions regarding the realizable value of assets and the treatment of outstanding debts and obligations, which are not provided in this data extraction report. Please consult further financial analysis for detailed calculations and assumptions.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_096_3F49DA9A_H3",
+      "type": "dollar_amount",
+      "original_value": "$3,478,000 million",
+      "injected_value": "$2,632,855 million",
+      "original_numeric": "3478000",
+      "injected_numeric": "2632855",
+      "position_char": 181,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.243
+    },
+    {
+      "hallucination_id": "FB_096_3F49DA9A_H2",
+      "type": "dollar_amount",
+      "original_value": "$208,000 million",
+      "injected_value": "$126,259 million",
+      "original_numeric": "208000",
+      "injected_numeric": "126259",
+      "position_char": 299,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.393
+    },
+    {
+      "hallucination_id": "FB_096_3F49DA9A_H1",
+      "type": "large_number",
+      "original_value": "3,000",
+      "injected_value": "1,899",
+      "original_numeric": "3000",
+      "injected_numeric": "1899",
+      "position_char": 440,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3669
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Outstanding Shares: 1,899 million",
+        "claim_value": "1,899 million",
+        "reason": "The figure seems suspiciously round and lacks precision, especially considering the importance of accurate share count in financial calculations.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 5,
+    "overall_assessment": "The researcher's output appears generally plausible, but the outstanding shares figure raises some concerns due to its roundness and lack of precision.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"Outstanding Shares: 1,899 million\",\n      \"claim_value\" : \"1,899 million\",\n      \"reason\"      : \"The figure seems suspiciously round and lacks precision, especially considering the importance of accurate share count in financial calculations.\",\n      \"confidence\"  : \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 5,\n  \"overall_assessment\"   : \"The researcher's output appears generally plausible, but the outstanding shares figure raises some concerns due to its roundness and lack of precision.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_096_3F49DA9A",
+      "hallucination_id": "FB_096_3F49DA9A_H3",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,478,000 million",
+      "injected_value": "$2,632,855 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 5
+    },
+    {
+      "question_id": "FB_096_3F49DA9A",
+      "hallucination_id": "FB_096_3F49DA9A_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$208,000 million",
+      "injected_value": "$126,259 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 5
+    },
+    {
+      "question_id": "FB_096_3F49DA9A",
+      "hallucination_id": "FB_096_3F49DA9A_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "large_number",
+      "original_value": "3,000",
+      "injected_value": "1,899",
+      "detected": true,
+      "reason": "The figure seems suspiciously round and lacks precision, especially considering the importance of accurate share count in financial calculations.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 5
+    }
+  ],
+  "timestamp": "2026-03-27T09:39:33.322253Z"
+}

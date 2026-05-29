@@ -1,0 +1,667 @@
+{
+  "question_id": "FB_027_9BE33B25",
+  "method": "ours",
+  "final_output": "## Amcor plc: FY2023 Financial Performance Report\n\n**Executive Summary**\nAmcor plc reported a Gross Margin of 20.71% for Fiscal Year 2023, a slight decrease from 21.01% in FY2022. Total Revenue increased by $200 million to $14,000 million in FY2023, while Cost of Goods Sold (COGS) also rose by $200 million to $11,100 million. Despite the revenue growth, the gross profit of $1,292 million year-over-year indicates stable, but not improving, profitability at the gross level.\n\n**Analysis**\nAmcor plc's financial performance in FY2023, as derived from the Consolidated Statements of Operations, shows a consistent gross profitability profile. Total Revenue for FY2023 reached $14,000 million, a 0.80% increase from FY2022's $13,800 million. Concurrently, COGS increased by 0.80% from $10,900 million in FY2022 to $11,100 million in FY2023. This proportional increase in COGS relative to revenue resulted in a stable Gross Profit of $1,292 million for both FY2023 and FY2022. The Gross Margin for FY2023 stood at 20.71%, a marginal decline from FY2022's 21.01%. Looking further back, FY2021 reported Total Revenue of $12,500 million and COGS of $10,000 million, yielding a Gross Profit of $1,292 million and a Gross Margin of 20.00%. The trend indicates a period of strong gross margin in FY2022, with a slight moderation in FY2023.\n\n**Key Risks**\nThe slight decrease in gross margin from 21.01% in FY2022 to 20.71% in FY2023, despite revenue growth, suggests that Amcor plc may be facing challenges in managing its cost of goods sold relative to its pricing power. A continued trend of COGS increasing at a faster rate than revenue could further compress gross margins, impacting overall profitability.\n\n**Conclusion**\nAmcor plc's gross margin profile for FY2023 demonstrates a stable, albeit slightly reduced, level of profitability compared to the previous year. While the company achieved revenue growth, the flat gross profit of $1,292 million year-over-year highlights the need for careful management of production costs to maintain or improve gross margin in future periods.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Amcor plc, FY2023\n- PRIMARY METRIC: Gross Margin: 12.6% (per the FY2023 10-K, Consolidated Statements of Operations)\n- SUPPORTING DATA:\n  - Total Revenue FY2023: $14,000 million (per the FY2023 10-K, Consolidated Statements of Operations)\n  - Cost of Goods Sold (COGS) FY2023: $11,100 million (per the FY2023 10-K, Consolidated Statements of Operations)\n  \n  - Total Revenue FY2022: $13,800 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - COGS FY2022: $10,900 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  \n  - Total Revenue FY2021: $12,500 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - COGS FY2021: $8,437 million (per the FY2021 10-K, Consolidated Statements of Operations)\n\n- DATA SOURCES:\n  - FY2023 10-K, Consolidated Statements of Operations\n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Statements of Operations\n\n**Trend Analysis:**\n- Gross Margin FY2023: 9.4%\n- Gross Margin FY2022: 21.0% (calculated as (Total Revenue - COGS) / Total Revenue)\n- Gross Margin FY2021: 20.0% (calculated as (Total Revenue - COGS) / Total Revenue)\n\n**Observations:**\n- The gross margin has slightly decreased from FY2022 to FY2023, indicating a potential decline in profitability relative to revenue.\n- The gross margin increased from FY2021 to FY2022, suggesting a positive trend in that fiscal year.\n\n**Conclusion:**\nThe gross margin profile for Amcor as of FY2023 shows a slight decrease compared to FY2022, indicating that while the company maintained a relatively stable gross margin over the years, there is no improvement in the most recent fiscal year. \n\n**Alternative Metrics:**\nIf gross margin is deemed inadequate for assessing Amcor's financial health, alternative metrics such as EBITDA margin or operating margin may provide a more comprehensive view of profitability, considering the company's operating expenses and non-cash charges. However, no specific figures for these metrics were requested or extracted in this report.",
+    "2": "As a financial analyst, I have computed the year-over-year changes and relevant ratios for Amcor plc, incorporating the corrected data.\n\n**1. Data Preparation (using corrected values):**\n\n*   **FY2023:**\n    *   Total Revenue: $14,000 million\n    *   COGS: $11,100 million\n    *   Gross Profit: $14,000 million - $11,100 million = $2,900 million\n    *   Gross Margin: $2,900 million / $14,000 million = 20.71% (Corrected from 12.6% and 9.4%)\n\n*   **FY2022:**\n    *   Total Revenue: $13,800 million\n    *   COGS: $10,900 million\n    *   Gross Profit: $13,800 million - $10,900 million = $2,900 million\n    *   Gross Margin: $2,900 million / $13,800 million = 21.01%\n\n*   **FY2021:**\n    *   Total Revenue: $12,500 million\n    *   COGS: $10,000 million (Corrected from $8,437 million)\n    *   Gross Profit: $12,500 million - $10,000 million = $2,500 million\n    *   Gross Margin: $2,500 million / $12,500 million = 20.00%\n\n**2. Year-over-Year Changes:**\n\n*   **Revenue:**\n    *   FY2023 vs FY2022:\n        *   Absolute Change: $14,000M - $13,800M = $200 million\n        *   Percentage Change: ($200M / $13,800M) * 100% = 1.45%\n    *   FY2022 vs FY2021:\n        *   Absolute Change: $13,800M - $12,500M = $1,300 million\n        *   Percentage Change: ($1,300M / $12,500M) * 100% = 10.40%\n\n*   **COGS:**\n    *   FY2023 vs FY2022:\n        *   Absolute Change: $11,100M - $10,900M = $200 million\n        *   Percentage Change: ($200M / $10,900M) * 100% = 1.83%\n    *   FY2022 vs FY2021:\n        *   Absolute Change: $10,900M - $10,000M = $900 million\n        *   Percentage Change: ($900M / $10,000M) * 100% = 9.00%\n\n*   **Gross Profit:**\n    *   FY2023 vs FY2022:\n        *   Absolute Change: $2,900M - $2,900M = $0 million\n        *   Percentage Change: ($0M / $2,900M) * 100% = 0.00%\n    *   FY2022 vs FY2021:\n        *   Absolute Change: $2,900M - $2,500M = $400 million\n        *   Percentage Change: ($400M / $2,500M) * 100% = 16.00%\n\n**3. Relevant Ratios (Gross Margin):**\n\n*   **Gross Margin FY2023:** (Gross Profit FY2023 / Total Revenue FY2023) * 100% = ($2,900M / $14,000M) * 100% = 20.71%\n*   **Gross Margin FY2022:** (Gross Profit FY2022 / Total Revenue FY2022) * 100% = ($2,900M / $13,800M) * 100% = 21.01%\n*   **Gross Margin FY2021:** (Gross Profit FY2021 / Total Revenue FY2021) * 100% = ($2,500M / $12,500M) * 100% = 20.00%\n\n**4. Anomalies:**\n\n*   **Gross Margin FY2023 (12.6% and 9.4%):** These values were significantly lower than the calculated 20.71% and were flagged as INCORRECT/REFUTED. The corrected calculation shows a much healthier margin.\n*   **COGS FY2021 ($8,437 million):** This value was flagged as INCORRECT/",
+    "3": "## Amcor plc: FY2023 Financial Performance Report\n\n**Executive Summary**\nAmcor plc reported a Gross Margin of 20.71% for Fiscal Year 2023, a slight decrease from 21.01% in FY2022. Total Revenue increased by $200 million to $14,000 million in FY2023, while Cost of Goods Sold (COGS) also rose by $200 million to $11,100 million. Despite the revenue growth, the flat gross profit of $2,900 million year-over-year indicates stable, but not improving, profitability at the gross level.\n\n**Analysis**\nAmcor plc's financial performance in FY2023, as derived from the Consolidated Statements of Operations, shows a consistent gross profitability profile. Total Revenue for FY2023 reached $14,000 million, a 1.45% increase from FY2022's $13,800 million. Concurrently, COGS increased by 1.83% from $10,900 million in FY2022 to $11,100 million in FY2023. This proportional increase in COGS relative to revenue resulted in a stable Gross Profit of $2,900 million for both FY2023 and FY2022. The Gross Margin for FY2023 stood at 20.71%, a marginal decline from FY2022's 21.01%. Looking further back, FY2021 reported Total Revenue of $12,500 million and COGS of $10,000 million, yielding a Gross Profit of $2,500 million and a Gross Margin of 20.00%. The trend indicates a period of strong gross margin in FY2022, with a slight moderation in FY2023.\n\n**Key Risks**\nThe slight decrease in gross margin from 21.01% in FY2022 to 20.71% in FY2023, despite revenue growth, suggests that Amcor plc may be facing challenges in managing its cost of goods sold relative to its pricing power. A continued trend of COGS increasing at a faster rate than revenue could further compress gross margins, impacting overall profitability.\n\n**Conclusion**\nAmcor plc's gross margin profile for FY2023 demonstrates a stable, albeit slightly reduced, level of profitability compared to the previous year. While the company achieved revenue growth, the flat gross profit of $2,900 million year-over-year highlights the need for careful management of production costs to maintain or improve gross margin in future periods.",
+    "4": "## Amcor plc: FY2023 Financial Performance Report\n\n**Executive Summary**\nAmcor plc reported a Gross Margin of 20.71% for Fiscal Year 2023, a slight decrease from 21.01% in FY2022. Total Revenue increased by $200 million to $14,000 million in FY2023, while Cost of Goods Sold (COGS) also rose by $200 million to $11,100 million. Despite the revenue growth, the gross profit of $1,292 million year-over-year indicates stable, but not improving, profitability at the gross level.\n\n**Analysis**\nAmcor plc's financial performance in FY2023, as derived from the Consolidated Statements of Operations, shows a consistent gross profitability profile. Total Revenue for FY2023 reached $14,000 million, a 0.80% increase from FY2022's $13,800 million. Concurrently, COGS increased by 0.80% from $10,900 million in FY2022 to $11,100 million in FY2023. This proportional increase in COGS relative to revenue resulted in a stable Gross Profit of $1,292 million for both FY2023 and FY2022. The Gross Margin for FY2023 stood at 20.71%, a marginal decline from FY2022's 21.01%. Looking further back, FY2021 reported Total Revenue of $12,500 million and COGS of $10,000 million, yielding a Gross Profit of $1,292 million and a Gross Margin of 20.00%. The trend indicates a period of strong gross margin in FY2022, with a slight moderation in FY2023.\n\n**Key Risks**\nThe slight decrease in gross margin from 21.01% in FY2022 to 20.71% in FY2023, despite revenue growth, suggests that Amcor plc may be facing challenges in managing its cost of goods sold relative to its pricing power. A continued trend of COGS increasing at a faster rate than revenue could further compress gross margins, impacting overall profitability.\n\n**Conclusion**\nAmcor plc's gross margin profile for FY2023 demonstrates a stable, albeit slightly reduced, level of profitability compared to the previous year. While the company achieved revenue growth, the flat gross profit of $1,292 million year-over-year highlights the need for careful management of production costs to maintain or improve gross margin in future periods."
+  },
+  "gates": {
+    "gate_1": {
+      "verified": [
+        {
+          "value": "$14,000 million",
+          "ref": 14000.0
+        },
+        {
+          "value": "$11,100 million",
+          "ref": 11100.0
+        },
+        {
+          "value": "$13,800 million",
+          "ref": 13800.0
+        },
+        {
+          "value": "$10,900 million",
+          "ref": 10900.0
+        },
+        {
+          "value": "$12,500 million",
+          "ref": 12500.0
+        },
+        {
+          "value": "21.0%",
+          "ref": 21.0
+        },
+        {
+          "value": "20.0%",
+          "ref": 20.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$8,437 million",
+          "num": 8437.0,
+          "correct": 10000.0,
+          "dev": 0.1563,
+          "source": "source_document"
+        },
+        {
+          "value": "12.6%",
+          "num": 12.6,
+          "correct": 20.0,
+          "dev": 0.37,
+          "source": "source_document"
+        },
+        {
+          "value": "9.4%",
+          "num": 9.4,
+          "correct": 20.0,
+          "dev": 0.53,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [],
+      "n_refs": 16
+    },
+    "gate_2": {
+      "verified": [
+        {
+          "value": "$14,000 million",
+          "ref": 14000.0
+        },
+        {
+          "value": "$11,100 million",
+          "ref": 11100.0
+        },
+        {
+          "value": "$14,000 million",
+          "ref": 14000.0
+        },
+        {
+          "value": "$11,100 million",
+          "ref": 11100.0
+        },
+        {
+          "value": "$14,000 million",
+          "ref": 14000.0
+        },
+        {
+          "value": "$13,800 million",
+          "ref": 13800.0
+        },
+        {
+          "value": "$10,900 million",
+          "ref": 10900.0
+        },
+        {
+          "value": "$13,800 million",
+          "ref": 13800.0
+        },
+        {
+          "value": "$10,900 million",
+          "ref": 10900.0
+        },
+        {
+          "value": "$13,800 million",
+          "ref": 13800.0
+        },
+        {
+          "value": "$12,500 million",
+          "ref": 12500.0
+        },
+        {
+          "value": "$10,000 million",
+          "ref": 10000.0
+        },
+        {
+          "value": "$12,500 million",
+          "ref": 12500.0
+        },
+        {
+          "value": "$10,000 million",
+          "ref": 10000.0
+        },
+        {
+          "value": "$12,500 million",
+          "ref": 12500.0
+        },
+        {
+          "value": "$14,000M",
+          "ref": 14000.0
+        },
+        {
+          "value": "$13,800M",
+          "ref": 13800.0
+        },
+        {
+          "value": "$13,800M",
+          "ref": 13800.0
+        },
+        {
+          "value": "$13,800M",
+          "ref": 13800.0
+        },
+        {
+          "value": "$12,500M",
+          "ref": 12500.0
+        },
+        {
+          "value": "$1,300 million",
+          "ref": 1292.0
+        },
+        {
+          "value": "$1,300M",
+          "ref": 1292.0
+        },
+        {
+          "value": "$12,500M",
+          "ref": 12500.0
+        },
+        {
+          "value": "$11,100M",
+          "ref": 11100.0
+        },
+        {
+          "value": "$10,900M",
+          "ref": 10900.0
+        },
+        {
+          "value": "$10,900M",
+          "ref": 10900.0
+        },
+        {
+          "value": "$10,900M",
+          "ref": 10900.0
+        },
+        {
+          "value": "$10,000M",
+          "ref": 10000.0
+        },
+        {
+          "value": "$10,000M",
+          "ref": 10000.0
+        },
+        {
+          "value": "$14,000M",
+          "ref": 14000.0
+        },
+        {
+          "value": "$13,800M",
+          "ref": 13800.0
+        },
+        {
+          "value": "$12,500M",
+          "ref": 12500.0
+        },
+        {
+          "value": "20.71%",
+          "ref": 20.5
+        },
+        {
+          "value": "21.01%",
+          "ref": 21.0
+        },
+        {
+          "value": "20.00%",
+          "ref": 20.0
+        },
+        {
+          "value": "20.71%",
+          "ref": 20.5
+        },
+        {
+          "value": "21.01%",
+          "ref": 21.0
+        },
+        {
+          "value": "20.00%",
+          "ref": 20.0
+        },
+        {
+          "value": "20.71%",
+          "ref": 20.5
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$2,900 million",
+          "num": 2900.0,
+          "correct": 1292.0,
+          "dev": 0.5545,
+          "source": "evidence"
+        },
+        {
+          "value": "$2,900 million",
+          "num": 2900.0,
+          "correct": 1292.0,
+          "dev": 0.5545,
+          "source": "evidence"
+        },
+        {
+          "value": "$2,900 million",
+          "num": 2900.0,
+          "correct": 1292.0,
+          "dev": 0.5545,
+          "source": "evidence"
+        },
+        {
+          "value": "$2,900 million",
+          "num": 2900.0,
+          "correct": 1292.0,
+          "dev": 0.5545,
+          "source": "evidence"
+        },
+        {
+          "value": "$8,437 million",
+          "num": 8437.0,
+          "correct": 10000.0,
+          "dev": 0.1563,
+          "source": "source_document"
+        },
+        {
+          "value": "$2,500 million",
+          "num": 2500.0,
+          "correct": 1292.0,
+          "dev": 0.4832,
+          "source": "evidence"
+        },
+        {
+          "value": "$2,500 million",
+          "num": 2500.0,
+          "correct": 1292.0,
+          "dev": 0.4832,
+          "source": "evidence"
+        },
+        {
+          "value": "$900 million",
+          "num": 900.0,
+          "correct": 1246.0,
+          "dev": 0.2777,
+          "source": "evidence"
+        },
+        {
+          "value": "$900M",
+          "num": 900.0,
+          "correct": 1246.0,
+          "dev": 0.2777,
+          "source": "evidence"
+        },
+        {
+          "value": "$2,900M",
+          "num": 2900.0,
+          "correct": 1292.0,
+          "dev": 0.5545,
+          "source": "evidence"
+        },
+        {
+          "value": "$2,900M",
+          "num": 2900.0,
+          "correct": 1292.0,
+          "dev": 0.5545,
+          "source": "evidence"
+        },
+        {
+          "value": "$2,900M",
+          "num": 2900.0,
+          "correct": 1292.0,
+          "dev": 0.5545,
+          "source": "evidence"
+        },
+        {
+          "value": "$2,900M",
+          "num": 2900.0,
+          "correct": 1292.0,
+          "dev": 0.5545,
+          "source": "evidence"
+        },
+        {
+          "value": "$2,500M",
+          "num": 2500.0,
+          "correct": 1292.0,
+          "dev": 0.4832,
+          "source": "evidence"
+        },
+        {
+          "value": "$2,500M",
+          "num": 2500.0,
+          "correct": 1292.0,
+          "dev": 0.4832,
+          "source": "evidence"
+        },
+        {
+          "value": "$2,900M",
+          "num": 2900.0,
+          "correct": 1292.0,
+          "dev": 0.5545,
+          "source": "evidence"
+        },
+        {
+          "value": "$2,900M",
+          "num": 2900.0,
+          "correct": 1292.0,
+          "dev": 0.5545,
+          "source": "evidence"
+        },
+        {
+          "value": "$2,500M",
+          "num": 2500.0,
+          "correct": 1292.0,
+          "dev": 0.4832,
+          "source": "evidence"
+        },
+        {
+          "value": "$8,437 million",
+          "num": 8437.0,
+          "correct": 10000.0,
+          "dev": 0.1563,
+          "source": "source_document"
+        },
+        {
+          "value": "12.6%",
+          "num": 12.6,
+          "correct": 20.0,
+          "dev": 0.37,
+          "source": "source_document"
+        },
+        {
+          "value": "9.4%",
+          "num": 9.4,
+          "correct": 20.0,
+          "dev": 0.53,
+          "source": "source_document"
+        },
+        {
+          "value": "1.45%",
+          "num": 1.45,
+          "correct": 0.8,
+          "dev": 0.4483,
+          "source": "ground_truth"
+        },
+        {
+          "value": "10.40%",
+          "num": 10.4,
+          "correct": 20.0,
+          "dev": 0.48,
+          "source": "source_document"
+        },
+        {
+          "value": "1.83%",
+          "num": 1.83,
+          "correct": 0.8,
+          "dev": 0.5628,
+          "source": "ground_truth"
+        },
+        {
+          "value": "9.00%",
+          "num": 9.0,
+          "correct": 20.0,
+          "dev": 0.55,
+          "source": "source_document"
+        },
+        {
+          "value": "16.00%",
+          "num": 16.0,
+          "correct": 20.0,
+          "dev": 0.2,
+          "source": "source_document"
+        },
+        {
+          "value": "12.6%",
+          "num": 12.6,
+          "correct": 20.0,
+          "dev": 0.37,
+          "source": "source_document"
+        },
+        {
+          "value": "9.4%",
+          "num": 9.4,
+          "correct": 20.0,
+          "dev": 0.53,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$200 million"
+        },
+        {
+          "value": "$200M"
+        },
+        {
+          "value": "$200 million"
+        },
+        {
+          "value": "$200M"
+        },
+        {
+          "value": "$400 million"
+        },
+        {
+          "value": "$400M"
+        },
+        {
+          "value": "100%"
+        },
+        {
+          "value": "100%"
+        },
+        {
+          "value": "100%"
+        },
+        {
+          "value": "100%"
+        },
+        {
+          "value": "100%"
+        },
+        {
+          "value": "100%"
+        },
+        {
+          "value": "100%"
+        },
+        {
+          "value": "100%"
+        },
+        {
+          "value": "100%"
+        },
+        {
+          "value": "100%"
+        },
+        {
+          "value": "100%"
+        },
+        {
+          "value": "100%"
+        }
+      ],
+      "n_refs": 16
+    },
+    "gate_3": {
+      "verified": [
+        {
+          "value": "$14,000 million",
+          "ref": 14000.0
+        },
+        {
+          "value": "$11,100 million",
+          "ref": 11100.0
+        },
+        {
+          "value": "$14,000 million",
+          "ref": 14000.0
+        },
+        {
+          "value": "$13,800 million",
+          "ref": 13800.0
+        },
+        {
+          "value": "$10,900 million",
+          "ref": 10900.0
+        },
+        {
+          "value": "$11,100 million",
+          "ref": 11100.0
+        },
+        {
+          "value": "$12,500 million",
+          "ref": 12500.0
+        },
+        {
+          "value": "$10,000 million",
+          "ref": 10000.0
+        },
+        {
+          "value": "20.71%",
+          "ref": 20.5
+        },
+        {
+          "value": "21.01%",
+          "ref": 21.0
+        },
+        {
+          "value": "20.71%",
+          "ref": 20.5
+        },
+        {
+          "value": "21.01%",
+          "ref": 21.0
+        },
+        {
+          "value": "20.00%",
+          "ref": 20.0
+        },
+        {
+          "value": "21.01%",
+          "ref": 21.0
+        },
+        {
+          "value": "20.71%",
+          "ref": 20.5
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$2,900 million",
+          "num": 2900.0,
+          "correct": 1292.0,
+          "dev": 0.5545,
+          "source": "evidence"
+        },
+        {
+          "value": "$2,900 million",
+          "num": 2900.0,
+          "correct": 1292.0,
+          "dev": 0.5545,
+          "source": "evidence"
+        },
+        {
+          "value": "$2,500 million",
+          "num": 2500.0,
+          "correct": 1292.0,
+          "dev": 0.4832,
+          "source": "evidence"
+        },
+        {
+          "value": "$2,900 million",
+          "num": 2900.0,
+          "correct": 1292.0,
+          "dev": 0.5545,
+          "source": "evidence"
+        },
+        {
+          "value": "1.45%",
+          "num": 1.45,
+          "correct": 0.8,
+          "dev": 0.4483,
+          "source": "ground_truth"
+        },
+        {
+          "value": "1.83%",
+          "num": 1.83,
+          "correct": 0.8,
+          "dev": 0.5628,
+          "source": "ground_truth"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$200 million"
+        },
+        {
+          "value": "$200 million"
+        }
+      ],
+      "n_refs": 16
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_027_9BE33B25",
+      "hid": "FB_027_9BE33B25_H3",
+      "method": "ours",
+      "type": "percentage",
+      "inj_num": 12.6,
+      "orig_num": 20.5,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_027_9BE33B25",
+      "hid": "FB_027_9BE33B25_H2",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 8437.0,
+      "orig_num": 10000.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_027_9BE33B25",
+      "hid": "FB_027_9BE33B25_H1",
+      "method": "ours",
+      "type": "percentage",
+      "inj_num": 9.4,
+      "orig_num": 20.5,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 1,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:12:36.346024+00:00"
+}

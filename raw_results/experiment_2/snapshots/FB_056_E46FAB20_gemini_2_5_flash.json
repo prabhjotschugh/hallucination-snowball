@@ -1,0 +1,103 @@
+{
+  "question_id": "FB_056_E46FAB20",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Best Buy Co., Inc. for Q2 of FY2024\n- PRIMARY METRIC: Domestic revenue by product category as reported in the 10-Q filing:\n  - Consumer Electronics: $2,500 million (per the Q2 FY2024 10-Q, Consolidated Statements of Operations)\n  - Home Appliances: $1,200 million (per the Q2 FY2024 10-Q, Consolidated Statements of Operations)\n  - Computing and Mobile Phones: $1,519 million (per the Q2 FY2024 10-Q, Consolidated Statements of Operations)\n  - Entertainment: $738 million (per the Q2 FY2024 10-Q, Consolidated Statements of Operations)\n  - Services: $400 million (per the Q2 FY2024 10-Q, Consolidated Statements of Operations)\n\n- SUPPORTING DATA: \n  - Q2 FY2023 Revenue:\n    - Consumer Electronics: $2,300 million\n    - Home Appliances: $1,100 million\n    - Computing and Mobile Phones: $1,700 million\n    - Entertainment: $500 million\n    - Services: $350 million\n  - Q1 FY2024 Revenue:\n    - Consumer Electronics: $2,600 million\n    - Home Appliances: $1,300 million\n    - Computing and Mobile Phones: $1,307 million\n    - Entertainment: $700 million\n    - Services: $450 million\n\n- DATA SOURCES: Best Buy Co., Inc. Q2 FY2024 10-Q, Consolidated Statements of Operations. \n\n**Note:** The Consumer Electronics category exhibited the highest top-line performance in Q2 of FY2024 with revenue of $2,500 million.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_056_E46FAB20_H3",
+      "type": "dollar_amount",
+      "original_value": "$1,800 million",
+      "injected_value": "$1,519 million",
+      "original_numeric": "1800",
+      "injected_numeric": "1519",
+      "position_char": 381,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.1561
+    },
+    {
+      "hallucination_id": "FB_056_E46FAB20_H2",
+      "type": "dollar_amount",
+      "original_value": "$600 million",
+      "injected_value": "$738 million",
+      "original_numeric": "600",
+      "injected_numeric": "738",
+      "position_char": 479,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.2308
+    },
+    {
+      "hallucination_id": "FB_056_E46FAB20_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,900 million",
+      "injected_value": "$1,307 million",
+      "original_numeric": "1900",
+      "injected_numeric": "1307",
+      "position_char": 1024,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.3119
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Computing and Mobile Phones: $1,519 million (per the Q2 FY2024 10-Q, Consolidated Statements of Operations)",
+        "claim_value": "$1,519 million",
+        "reason": "Based on general financial knowledge of Best Buy's business model and typical revenue distribution, the 'Computing and Mobile Phones' category is usually one of its largest, often comparable to or exceeding 'Consumer Electronics'. A figure of $1.519 billion for a quarter seems unusually low for this core category, especially when 'Consumer Electronics' is reported at $2.5 billion, suggesting a potential underestimation or hallucination of its relative magnitude.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Entertainment: $738 million (per the Q2 FY2024 10-Q, Consolidated Statements of Operations)",
+        "claim_value": "$738 million",
+        "reason": "This figure, when compared to the reported Q2 FY2023 Entertainment revenue of $500 million, implies a year-over-year growth rate of approximately 47.6%. Such a high percentage increase in a single product category for a large, mature retailer like Best Buy is highly unusual and raises suspicion of hallucination.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 15,
+    "overall_assessment": "Several reported category revenue figures for Best Buy's Q2 FY2024 appear suspicious due to implausible relative magnitudes and an unusually high year-over-year growth rate in one category, suggesting potential hallucination.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Computing and Mobile Phones: $1,519 million (per the Q2 FY2024 10-Q, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$1,519 million\",\n      \"reason\": \"Based on general financial knowledge of Best Buy's business model and typical revenue distribution, the 'Computing and Mobile Phones' category is usually one of its largest, often comparable to or exceeding 'Consumer Electronics'. A figure of $1.519 billion for a quarter seems unusually low for this core category, especially when 'Consumer Electronics' is reported at $2.5 billion, suggesting a potential underestimation or hallucination of its relative magnitude.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Entertainment: $738 million (per the Q2 FY2024 10-Q, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$738 million\",\n      \"reason\": \"This figure, when compared to the reported Q2 FY2023 Entertainment revenue of $500 million, implies a year-over-year growth rate of approximately 47.6%. Such a high percentage increase in a single product category for a large, mature retailer like Best Buy is highly unusual and raises suspicion of hallucination.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 15,\n  \"overall_assessment\": \"Several reported category revenue figures for Best Buy's Q2 FY2024 appear suspicious due to implausible relative magnitudes and an unusually high year-over-year growth rate in one category, suggesting potential hallucination.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_056_E46FAB20",
+      "hallucination_id": "FB_056_E46FAB20_H3",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,800 million",
+      "injected_value": "$1,519 million",
+      "detected": true,
+      "reason": "Based on general financial knowledge of Best Buy's business model and typical revenue distribution, the 'Computing and Mobile Phones' category is usually one of its largest, often comparable to or exceeding 'Consumer Electronics'. A figure of $1.519 billion for a quarter seems unusually low for this core category, especially when 'Consumer Electronics' is reported at $2.5 billion, suggesting a potential underestimation or hallucination of its relative magnitude.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 15
+    },
+    {
+      "question_id": "FB_056_E46FAB20",
+      "hallucination_id": "FB_056_E46FAB20_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$600 million",
+      "injected_value": "$738 million",
+      "detected": true,
+      "reason": "This figure, when compared to the reported Q2 FY2023 Entertainment revenue of $500 million, implies a year-over-year growth rate of approximately 47.6%. Such a high percentage increase in a single product category for a large, mature retailer like Best Buy is highly unusual and raises suspicion of hallucination.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 15
+    },
+    {
+      "question_id": "FB_056_E46FAB20",
+      "hallucination_id": "FB_056_E46FAB20_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,900 million",
+      "injected_value": "$1,307 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 15
+    }
+  ],
+  "timestamp": "2026-03-25T07:47:04.696388Z"
+}

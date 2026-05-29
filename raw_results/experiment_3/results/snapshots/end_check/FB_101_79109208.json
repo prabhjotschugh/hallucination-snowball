@@ -1,0 +1,144 @@
+{
+  "question_id": "FB_101_79109208",
+  "method": "end_check",
+  "final_output": "## Lockheed Martin: FY2020 Financial Performance Report\n\n### Executive Summary\n\nLockheed Martin demonstrated solid financial performance in Fiscal Year 2020, achieving total revenue of $65,398 million. The company experienced a notable increase in total assets, growing from $45,200 million at the end of FY2019 to $48,400 million by the end of FY2020. This represents an absolute increase of $3,200 million, or a 7.08% year-over-year growth. The calculated Asset Turnover Ratio for FY2020 stands at 1.40, indicating efficient utilization of assets to generate revenue.\n\n### Analysis\n\nLockheed Martin's revenue for FY2020 was $65,398 million, as reported in the FY2020 10-K Consolidated Statements of Operations. Total assets saw a healthy expansion, increasing by $3,200 million from $45,200 million in FY2019 to $48,400 million in FY2020, a percentage increase of 7.08%. To assess asset utilization, the average total assets were calculated as ($45,200 million + $48,400 million) / 2, resulting in $46,800 million. Consequently, the Asset Turnover Ratio for FY2020 is $65,398 million / $46,800 million, yielding a ratio of 1.40. This ratio suggests that for every dollar of assets, Lockheed Martin generated $1.40 in revenue during FY2020.\n\n### Key Risks\n\nWhile the financial performance indicates growth, potential risks include the capital intensity associated with a 7.08% increase in total assets. Future revenue growth must continue to outpace or maintain pace with asset expansion to sustain or improve the asset turnover ratio. Furthermore, the defense industry is subject to government spending fluctuations and geopolitical factors, which could impact future revenue streams and asset utilization. Supply chain disruptions and the competitive landscape within the aerospace and defense sector also present ongoing challenges that could affect operational efficiency and profitability.\n\n### Conclusion\n\nLockheed Martin's FY2020 financial results reflect a robust year with significant revenue generation and strategic asset growth. The 7.08% increase in total assets and an Asset Turnover Ratio of 1.40 highlight effective management and operational efficiency. Continued monitoring of asset utilization and external market dynamics, including government spending and geopolitical developments, will be crucial for sustaining this positive trajectory. The company's ability to manage its capital-intensive operations while navigating industry-specific risks will be key to its continued financial success.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Lockheed Martin, FY2020\n- PRIMARY METRIC: \n  - FY2020 Revenue: $65,398 million (per the FY2020 10-K, Consolidated Statements of Operations)\n  - Total Assets at FY2019 End: $45,200 million (per the FY2020 10-K, Consolidated Balance Sheets)\n  - Total Assets at FY2020 End: $48,400 million (per the FY2020 10-K, Consolidated Balance Sheets)\n  \n- SUPPORTING DATA:\n  - Average Total Assets = (Total Assets FY2019 + Total Assets FY2020) / 2\n  - Average Total Assets = ($37,987 million + $48,400 million) / 2 = $64,022 million\n  - Asset Turnover Ratio = FY2020 Revenue / Average Total Assets\n  - Asset Turnover Ratio = $65,398 million / $46,800 million = 1.39\n\n- DATA SOURCES: \n  - FY2020 10-K, Consolidated Statements of Operations for revenue\n  - FY2020 10-K, Consolidated Balance Sheets for total assets at FY2019 and FY2020 end\n\n**Note:** The asset turnover ratio calculated is 1.39, rounded to two decimal places as requested.",
+    "2": "As a financial analyst, I've reviewed the provided data for Lockheed Martin (FY2020) to compute year-over-year changes and relevant ratios, flagging any anomalies.\n\n**1. Year-over-Year Changes (Total Assets)**\n\n*   **FY2019 Total Assets:** $45,200 million\n*   **FY2020 Total Assets:** $48,400 million\n\n*   **Absolute Change:**\n    *   Formula: FY2020 Total Assets - FY2019 Total Assets\n    *   Calculation: $48,400 million - $45,200 million = **$3,200 million**\n\n*   **Percentage Change:**\n    *   Formula: (Absolute Change / FY2019 Total Assets) * 100\n    *   Calculation: ($3,200 million / $45,200 million) * 100 = **7.08%**\n\n**2. Relevant Ratios**\n\n*   **FY2020 Revenue:** $65,398 million\n\n*   **Average Total Assets (Corrected Calculation):**\n    *   Formula: (Total Assets FY2019 + Total Assets FY2020) / 2\n    *   Calculation: ($45,200 million + $48,400 million) / 2 = **$46,800 million**\n\n*   **Asset Turnover Ratio (Corrected Calculation):**\n    *   Formula: FY2020 Revenue / Average Total Assets\n    *   Calculation: $65,398 million / $46,800 million = **1.40** (rounded to two decimal places)\n\n**3. Anomalies Flagged**\n\n*   **Anomaly 1: Average Total Assets Calculation in Supporting Data**\n    *   The researcher's supporting data states: \"Average Total Assets = ($37,987 million + $48,400 million) / 2 = $64,022 million\".\n    *   **Issue:** The FY2019 Total Assets value used in this calculation ($37,987 million) contradicts the primary metric provided for FY2019 Total Assets ($45,200 million). Additionally, the resulting average ($64,022 million) is mathematically incorrect for the given inputs.\n    *   **Correction Applied:** I used the primary metric for FY2019 Total Assets ($45,200 million) and correctly calculated the average as $46,800 million.\n\n*   **Anomaly 2: Asset Turnover Ratio Calculation in Supporting Data**\n    *   The researcher's supporting data states: \"Asset Turnover Ratio = $65,398 million / $46,800 million = 1.39\".\n    *   **Issue:** While the numerator ($65,398 million) and denominator ($46,800 million) are consistent with the correct values (after correcting the average total assets), the resulting ratio of 1.39 is slightly off.\n    *   **Correction Applied:** Using the correct inputs, $65,398 million / $46,800 million = 1.39739..., which rounds to **1.40**.\n\nIn summary, the year-over-year increase in total assets for Lockheed Martin from FY2019 to FY2020 was $3,200 million, representing a 7.08% growth. The corrected Asset Turnover Ratio for FY2020 is 1.40. The primary anomalies were inconsistencies and mathematical errors in the researcher's supporting calculations for average total assets and the final asset turnover ratio.",
+    "3": "## Lockheed Martin: FY2020 Financial Performance Report\n\n### Executive Summary\n\nLockheed Martin demonstrated solid financial performance in Fiscal Year 2020, achieving total revenue of $65,398 million. The company experienced a notable increase in total assets, growing from $45,200 million at the end of FY2019 to $48,400 million by the end of FY2020. This represents an absolute increase of $3,200 million, or a 7.08% year-over-year growth. The calculated Asset Turnover Ratio for FY2020 stands at 1.40, indicating efficient utilization of assets to generate revenue.\n\n### Analysis\n\nLockheed Martin's revenue for FY2020 was $65,398 million, as reported in the FY2020 10-K Consolidated Statements of Operations. Total assets saw a healthy expansion, increasing by $3,200 million from $45,200 million in FY2019 to $48,400 million in FY2020, a percentage increase of 7.08%. To assess asset utilization, the average total assets were calculated as ($45,200 million + $48,400 million) / 2, resulting in $46,800 million. Consequently, the Asset Turnover Ratio for FY2020 is $65,398 million / $46,800 million, yielding a ratio of 1.40. This ratio suggests that for every dollar of assets, Lockheed Martin generated $1.40 in revenue during FY2020.\n\n### Key Risks\n\nWhile the financial performance indicates growth, potential risks include the capital intensity associated with a 7.08% increase in total assets. Future revenue growth must continue to outpace or maintain pace with asset expansion to sustain or improve the asset turnover ratio. Furthermore, the defense industry is subject to government spending fluctuations and geopolitical factors, which could impact future revenue streams and asset utilization.\n\n### Conclusion\n\nLockheed Martin's FY2020 financial results reflect a robust year with significant revenue generation and strategic asset growth. The 7.08% increase in total assets and an Asset Turnover Ratio of 1.40 highlight effective management and operational efficiency. Continued monitoring of asset utilization and external market dynamics will be crucial for sustaining this positive trajectory.",
+    "4": "## Lockheed Martin: FY2020 Financial Performance Report\n\n### Executive Summary\n\nLockheed Martin demonstrated solid financial performance in Fiscal Year 2020, achieving total revenue of $65,398 million. The company experienced a notable increase in total assets, growing from $45,200 million at the end of FY2019 to $48,400 million by the end of FY2020. This represents an absolute increase of $3,200 million, or a 7.08% year-over-year growth. The calculated Asset Turnover Ratio for FY2020 stands at 1.40, indicating efficient utilization of assets to generate revenue.\n\n### Analysis\n\nLockheed Martin's revenue for FY2020 was $65,398 million, as reported in the FY2020 10-K Consolidated Statements of Operations. Total assets saw a healthy expansion, increasing by $3,200 million from $45,200 million in FY2019 to $48,400 million in FY2020, a percentage increase of 7.08%. To assess asset utilization, the average total assets were calculated as ($45,200 million + $48,400 million) / 2, resulting in $46,800 million. Consequently, the Asset Turnover Ratio for FY2020 is $65,398 million / $46,800 million, yielding a ratio of 1.40. This ratio suggests that for every dollar of assets, Lockheed Martin generated $1.40 in revenue during FY2020.\n\n### Key Risks\n\nWhile the financial performance indicates growth, potential risks include the capital intensity associated with a 7.08% increase in total assets. Future revenue growth must continue to outpace or maintain pace with asset expansion to sustain or improve the asset turnover ratio. Furthermore, the defense industry is subject to government spending fluctuations and geopolitical factors, which could impact future revenue streams and asset utilization. Supply chain disruptions and the competitive landscape within the aerospace and defense sector also present ongoing challenges that could affect operational efficiency and profitability.\n\n### Conclusion\n\nLockheed Martin's FY2020 financial results reflect a robust year with significant revenue generation and strategic asset growth. The 7.08% increase in total assets and an Asset Turnover Ratio of 1.40 highlight effective management and operational efficiency. Continued monitoring of asset utilization and external market dynamics, including government spending and geopolitical developments, will be crucial for sustaining this positive trajectory. The company's ability to manage its capital-intensive operations while navigating industry-specific risks will be key to its continued financial success."
+  },
+  "gates": {
+    "end_gate": {
+      "verified": [
+        {
+          "value": "$65,398 million",
+          "ref": 65398.0
+        },
+        {
+          "value": "$45,200 million",
+          "ref": 45200.0
+        },
+        {
+          "value": "$48,400 million",
+          "ref": 48400.0
+        },
+        {
+          "value": "$65,398 million",
+          "ref": 65398.0
+        },
+        {
+          "value": "$45,200 million",
+          "ref": 45200.0
+        },
+        {
+          "value": "$48,400 million",
+          "ref": 48400.0
+        },
+        {
+          "value": "$45,200 million",
+          "ref": 45200.0
+        },
+        {
+          "value": "$48,400 million",
+          "ref": 48400.0
+        },
+        {
+          "value": "$46,800 million",
+          "ref": 46800.0
+        },
+        {
+          "value": "$65,398 million",
+          "ref": 65398.0
+        },
+        {
+          "value": "$46,800 million",
+          "ref": 46800.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$3,200 million",
+          "num": 3200.0,
+          "correct": 1347.0,
+          "dev": 0.5791,
+          "source": "evidence"
+        },
+        {
+          "value": "$3,200 million",
+          "num": 3200.0,
+          "correct": 1347.0,
+          "dev": 0.5791,
+          "source": "evidence"
+        },
+        {
+          "value": "$1.40",
+          "num": 1.4,
+          "correct": 1.0,
+          "dev": 0.2857,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "7.08%"
+        },
+        {
+          "value": "7.08%"
+        },
+        {
+          "value": "7.08%"
+        },
+        {
+          "value": "7.08%"
+        }
+      ],
+      "n_refs": 18
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_101_79109208",
+      "hid": "FB_101_79109208_H2",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 37987.0,
+      "orig_num": 45200.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_101_79109208",
+      "hid": "FB_101_79109208_H1",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 64022.0,
+      "orig_num": 46800.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:40:36.633196+00:00"
+}

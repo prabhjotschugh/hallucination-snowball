@@ -1,0 +1,97 @@
+{
+  "question_id": "FB_143_A0EA48F4",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Verizon Communications Inc., FY 2021\n- PRIMARY METRIC: The derivative instrument with the highest notional value for managing exposure to fluctuations in foreign currency exchange rates or interest rates was the interest rate swaps, with a notional value of $15,974 million as reported in the FY 2021 10-K, Note 10: Derivative Instruments and Hedging Activities.\n- SUPPORTING DATA: \n  - As of December 31, 2021, Verizon had total notional values for derivatives as follows:\n    - Interest Rate Swaps: $12,000 million\n    - Foreign Currency Forward Contracts: $1,034 million\n  - For FY 2020, the notional value of interest rate swaps was $12,000 million, and for foreign currency forward contracts, it was $1,500 million.\n  - For FY 2019, the notional value of interest rate swaps was $8,922 million, and for foreign currency forward contracts, it was $1,200 million.\n- DATA SOURCES: \n  - Verizon FY 2021 10-K, Note 10: Derivative Instruments and Hedging Activities\n  - Verizon FY 2020 10-K, Note 10: Derivative Instruments and Hedging Activities\n  - Verizon FY 2019 10-K, Note 10: Derivative Instruments and Hedging Activities\n\nPlease note that the figures provided are exact as reported in the respective filings.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_143_A0EA48F4_H3",
+      "type": "dollar_amount",
+      "original_value": "$12,000 million",
+      "injected_value": "$15,974 million",
+      "original_numeric": "12000",
+      "injected_numeric": "15974",
+      "position_char": 278,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.3312
+    },
+    {
+      "hallucination_id": "FB_143_A0EA48F4_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,500 million",
+      "injected_value": "$1,034 million",
+      "original_numeric": "1500",
+      "injected_numeric": "1034",
+      "position_char": 579,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.3109
+    },
+    {
+      "hallucination_id": "FB_143_A0EA48F4_H1",
+      "type": "dollar_amount",
+      "original_value": "$11,000 million",
+      "injected_value": "$8,922 million",
+      "original_numeric": "11000",
+      "injected_numeric": "8922",
+      "position_char": 804,
+      "sentence_approx": 4,
+      "perturbation_delta": -0.1889
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "The derivative instrument with the highest notional value for managing exposure to fluctuations in foreign currency exchange rates or interest rates was the interest rate swaps, with a notional value of $15,974 million",
+        "claim_value": "$15,974 million",
+        "reason": "The reported notional value of interest rate swaps ($15,974 million) does not match the supporting data provided, which lists the notional value as $12,000 million.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 5,
+    "overall_assessment": "The output contains an internal inconsistency in the reported notional value of interest rate swaps.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"The derivative instrument with the highest notional value for managing exposure to fluctuations in foreign currency exchange rates or interest rates was the interest rate swaps, with a notional value of $15,974 million\",\n      \"claim_value\" : \"$15,974 million\",\n      \"reason\"      : \"The reported notional value of interest rate swaps ($15,974 million) does not match the supporting data provided, which lists the notional value as $12,000 million.\",\n      \"confidence\"  : \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 5,\n  \"overall_assessment\"   : \"The output contains an internal inconsistency in the reported notional value of interest rate swaps.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_143_A0EA48F4",
+      "hallucination_id": "FB_143_A0EA48F4_H3",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$12,000 million",
+      "injected_value": "$15,974 million",
+      "detected": true,
+      "reason": "The reported notional value of interest rate swaps ($15,974 million) does not match the supporting data provided, which lists the notional value as $12,000 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 5
+    },
+    {
+      "question_id": "FB_143_A0EA48F4",
+      "hallucination_id": "FB_143_A0EA48F4_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,500 million",
+      "injected_value": "$1,034 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 5
+    },
+    {
+      "question_id": "FB_143_A0EA48F4",
+      "hallucination_id": "FB_143_A0EA48F4_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$11,000 million",
+      "injected_value": "$8,922 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 5
+    }
+  ],
+  "timestamp": "2026-03-27T09:46:15.943791Z"
+}

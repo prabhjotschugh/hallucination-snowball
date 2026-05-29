@@ -1,0 +1,85 @@
+{
+  "question_id": "FB_014_3C2ED91D",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Adobe Inc., FY2022\n- PRIMARY METRIC: Operating Margin: 38.5% (per the FY2022 10-K, Consolidated Statements of Operations)\n- SUPPORTING DATA: \n  - FY2022 Total Revenue: $17,610 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - FY2022 Operating Income: $4,381 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  \n  - FY2021 Total Revenue: $15,785 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2021 Operating Income: $4,883 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2020 Total Revenue: $12,873 million (per the FY2020 10-K, Consolidated Statements of Operations)\n  - FY2020 Operating Income: $3,679 million (per the FY2020 10-K, Consolidated Statements of Operations)\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Statements of Operations\n  - FY2020 10-K, Consolidated Statements of Operations\n\nNote: The operating margin has improved from 30.9% in FY2021 to 32.9% in FY2022, indicating a positive trend in operating margin over the recent fiscal years.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_014_3C2ED91D_H2",
+      "type": "percentage",
+      "original_value": "32.9%",
+      "injected_value": "38.5%",
+      "original_numeric": "32.9",
+      "injected_numeric": "38.5",
+      "position_char": 75,
+      "sentence_approx": 2,
+      "perturbation_delta": 5.6521
+    },
+    {
+      "hallucination_id": "FB_014_3C2ED91D_H1",
+      "type": "dollar_amount",
+      "original_value": "$5,786 million",
+      "injected_value": "$4,381 million",
+      "original_numeric": "5786",
+      "injected_numeric": "4381",
+      "position_char": 294,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.2428
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Operating Margin: 38.5%",
+        "claim_value": "38.5%",
+        "reason": "Based on the provided FY2022 Total Revenue ($17,610 million) and FY2022 Operating Income ($4,381 million), the calculated operating margin is approximately 24.9% ($4,381 / $17,610 * 100), which is significantly different from the claimed 38.5%.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "to 32.9% in FY2022",
+        "claim_value": "32.9%",
+        "reason": "The calculated operating margin for FY2022, using the provided FY2022 Operating Income ($4,381 million) and FY2022 Total Revenue ($17,610 million), is approximately 24.9%. The stated 32.9% is inconsistent with the supporting data.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "indicating a positive trend in operating margin over the recent fiscal years.",
+        "claim_value": "positive trend",
+        "reason": "While the FY2021 operating margin of 30.9% is correctly calculated from the supporting data, the FY2022 operating margin is incorrectly stated as 32.9%. The actual calculated FY2022 margin is 24.9%. Therefore, the trend is a decline from 30.9% to 24.9%, not a positive improvement.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 10,
+    "overall_assessment": "The researcher's output contains significant internal inconsistencies regarding Adobe's FY2022 operating margin and the resulting trend analysis, despite accurate supporting revenue and operating income figures.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Operating Margin: 38.5%\",\n      \"claim_value\": \"38.5%\",\n      \"reason\": \"Based on the provided FY2022 Total Revenue ($17,610 million) and FY2022 Operating Income ($4,381 million), the calculated operating margin is approximately 24.9% ($4,381 / $17,610 * 100), which is significantly different from the claimed 38.5%.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"to 32.9% in FY2022\",\n      \"claim_value\": \"32.9%\",\n      \"reason\": \"The calculated operating margin for FY2022, using the provided FY2022 Operating Income ($4,381 million) and FY2022 Total Revenue ($17,610 million), is approximately 24.9%. The stated 32.9% is inconsistent with the supporting data.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"indicating a positive trend in operating margin over the recent fiscal years.\",\n      \"claim_value\": \"positive trend\",\n      \"reason\": \"While the FY2021 operating margin of 30.9% is correctly calculated from the supporting data, the FY2022 operating margin is incorrectly stated as 32.9%. The actual calculated FY2022 margin is 24.9%. Therefore, the trend is a decline from 30.9% to 24.9%, not a positive improvement.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 10,\n  \"overall_assessment\": \"The researcher's output contains significant internal inconsistencies regarding Adobe's FY2022 operating margin and the resulting trend analysis, despite accurate supporting revenue and operating income figures.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_014_3C2ED91D",
+      "hallucination_id": "FB_014_3C2ED91D_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "percentage",
+      "original_value": "32.9%",
+      "injected_value": "38.5%",
+      "detected": true,
+      "reason": "Based on the provided FY2022 Total Revenue ($17,610 million) and FY2022 Operating Income ($4,381 million), the calculated operating margin is approximately 24.9% ($4,381 / $17,610 * 100), which is significantly different from the claimed 38.5%.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 10
+    },
+    {
+      "question_id": "FB_014_3C2ED91D",
+      "hallucination_id": "FB_014_3C2ED91D_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$5,786 million",
+      "injected_value": "$4,381 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 10
+    }
+  ],
+  "timestamp": "2026-03-25T07:37:15.997756Z"
+}

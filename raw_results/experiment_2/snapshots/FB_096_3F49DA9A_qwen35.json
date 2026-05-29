@@ -1,0 +1,109 @@
+{
+  "question_id": "FB_096_3F49DA9A",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: JPMorgan Chase & Co., Q1 2021\n- PRIMARY METRIC: \n  - Total Assets: $3,686,000 million (per the Q1 2021 10-Q, Consolidated Balance Sheets)\n  - Total Liabilities: $2,632,855 million (per the Q1 2021 10-Q, Consolidated Balance Sheets)\n\n- SUPPORTING DATA: \n  - Shareholders' Equity: $126,259 million (calculated as Total Assets - Total Liabilities, per the Q1 2021 10-Q, Consolidated Balance Sheets)\n  - Outstanding Shares: 1,899 million (approximate figure based on historical data; please verify against the latest filings for precision)\n\n- DATA SOURCES: \n  - JPMorgan Chase & Co. Q1 2021 10-Q, Consolidated Balance Sheets\n\n**Note:** The analysis of potential liquidation value and per-share distribution to shareholders requires additional assumptions regarding the realizable value of assets and the treatment of outstanding debts and obligations, which are not provided in this data extraction report. Please consult further financial analysis for detailed calculations and assumptions.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_096_3F49DA9A_H3",
+      "type": "dollar_amount",
+      "original_value": "$3,478,000 million",
+      "injected_value": "$2,632,855 million",
+      "original_numeric": "3478000",
+      "injected_numeric": "2632855",
+      "position_char": 181,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.243
+    },
+    {
+      "hallucination_id": "FB_096_3F49DA9A_H2",
+      "type": "dollar_amount",
+      "original_value": "$208,000 million",
+      "injected_value": "$126,259 million",
+      "original_numeric": "208000",
+      "injected_numeric": "126259",
+      "position_char": 299,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.393
+    },
+    {
+      "hallucination_id": "FB_096_3F49DA9A_H1",
+      "type": "large_number",
+      "original_value": "3,000",
+      "injected_value": "1,899",
+      "original_numeric": "3000",
+      "injected_numeric": "1899",
+      "position_char": 440,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3669
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Total Liabilities: $2,632,855 million (per the Q1 2021 10-Q, Consolidated Balance Sheets)",
+        "claim_value": "$2,632,855 million",
+        "reason": "Internal inconsistency: Subtracting this liability figure from the reported Total Assets ($3,686,000 million) yields approximately $1,053,145 million in equity, not the $126,259 million reported. Additionally, for a bank with $3.7T in assets, total liabilities are typically closer to $3.4T (assuming ~10% equity ratio); this figure resembles total deposits rather than total liabilities.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Shareholders' Equity: $126,259 million (calculated as Total Assets - Total Liabilities, per the Q1 2021 10-Q, Consolidated Balance Sheets)",
+        "claim_value": "$126,259 million",
+        "reason": "Mathematical impossibility: The text claims this is calculated as Assets minus Liabilities, but $3,686,000m - $2,632,855m does not equal $126,259m. Furthermore, JPM's actual total stockholders' equity in Q1 2021 was approximately $270-$290 billion, making this figure roughly 50% of the expected value.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Outstanding Shares: 1,899 million (approximate figure based on historical data; please verify against the latest filings for precision)",
+        "claim_value": "1,899 million",
+        "reason": "Plausibility concern: JPMorgan Chase typically had approximately 2.9 to 3.0 billion shares outstanding during the 2020-2021 period. A figure of 1.899 billion represents a ~35% deviation from historical norms, suggesting a potential hallucination or confusion with another metric.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 4,
+    "overall_assessment": "The output contains critical internal accounting inconsistencies and likely hallucinated figures for equity, liabilities, and share count that deviate significantly from known historical data for JPMorgan Chase.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Total Liabilities: $2,632,855 million (per the Q1 2021 10-Q, Consolidated Balance Sheets)\",\n      \"claim_value\": \"$2,632,855 million\",\n      \"reason\": \"Internal inconsistency: Subtracting this liability figure from the reported Total Assets ($3,686,000 million) yields approximately $1,053,145 million in equity, not the $126,259 million reported. Additionally, for a bank with $3.7T in assets, total liabilities are typically closer to $3.4T (assuming ~10% equity ratio); this figure resembles total deposits rather than total liabilities.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Shareholders' Equity: $126,259 million (calculated as Total Assets - Total Liabilities, per the Q1 2021 10-Q, Consolidated Balance Sheets)\",\n      \"claim_value\": \"$126,259 million\",\n      \"reason\": \"Mathematical impossibility: The text claims this is calculated as Assets minus Liabilities, but $3,686,000m - $2,632,855m does not equal $126,259m. Furthermore, JPM's actual total stockholders' equity in Q1 2021 was approximately $270-$290 billion, making this figure roughly 50% of the expected value.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Outstanding Shares: 1,899 million (approximate figure based on historical data; please verify against the latest filings for precision)\",\n      \"claim_value\": \"1,899 million\",\n      \"reason\": \"Plausibility concern: JPMorgan Chase typically had approximately 2.9 to 3.0 billion shares outstanding during the 2020-2021 period. A figure of 1.899 billion represents a ~35% deviation from historical norms, suggesting a potential hallucination or confusion with another metric.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 4,\n  \"overall_assessment\": \"The output contains critical internal accounting inconsistencies and likely hallucinated figures for equity, liabilities, and share count that deviate significantly from known historical data for JPMorgan Chase.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_096_3F49DA9A",
+      "hallucination_id": "FB_096_3F49DA9A_H3",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,478,000 million",
+      "injected_value": "$2,632,855 million",
+      "detected": true,
+      "reason": "Internal inconsistency: Subtracting this liability figure from the reported Total Assets ($3,686,000 million) yields approximately $1,053,145 million in equity, not the $126,259 million reported. Additionally, for a bank with $3.7T in assets, total liabilities are typically closer to $3.4T (assuming ~10% equity ratio); this figure resembles total deposits rather than total liabilities.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 4
+    },
+    {
+      "question_id": "FB_096_3F49DA9A",
+      "hallucination_id": "FB_096_3F49DA9A_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$208,000 million",
+      "injected_value": "$126,259 million",
+      "detected": true,
+      "reason": "Mathematical impossibility: The text claims this is calculated as Assets minus Liabilities, but $3,686,000m - $2,632,855m does not equal $126,259m. Furthermore, JPM's actual total stockholders' equity in Q1 2021 was approximately $270-$290 billion, making this figure roughly 50% of the expected value.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 4
+    },
+    {
+      "question_id": "FB_096_3F49DA9A",
+      "hallucination_id": "FB_096_3F49DA9A_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "large_number",
+      "original_value": "3,000",
+      "injected_value": "1,899",
+      "detected": true,
+      "reason": "Plausibility concern: JPMorgan Chase typically had approximately 2.9 to 3.0 billion shares outstanding during the 2020-2021 period. A figure of 1.899 billion represents a ~35% deviation from historical norms, suggesting a potential hallucination or confusion with another metric.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 4
+    }
+  ],
+  "timestamp": "2026-03-24T12:17:24.091327Z"
+}

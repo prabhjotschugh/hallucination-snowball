@@ -1,0 +1,115 @@
+{
+  "question_id": "FB_124_C0D9EB5C",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: PepsiCo, FY2022\n- PRIMARY METRIC: Unadjusted EBITDA less Capital Expenditures = $12,813 million (Unadjusted EBITDA) - $4,200 million (Capital Expenditures) = $6,616 million. \n  - Unadjusted EBITDA is defined as Operating Income ($15,021 million per the FY2022 10-K, Consolidated Statements of Operations) + Depreciation and Amortization ($1,000 million per the FY2022 10-K, Consolidated Statements of Cash Flows).\n- SUPPORTING DATA: \n  - FY2022 Operating Income: $11,813 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - FY2022 Depreciation and Amortization: $1,000 million (per the FY2022 10-K, Consolidated Statements of Cash Flows)\n  - FY2022 Capital Expenditures: $4,200 million (per the FY2022 10-K, Consolidated Statements of Cash Flows)\n  - FY2021 Operating Income: $10,930 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2021 Depreciation and Amortization: $1,000 million (per the FY2021 10-K, Consolidated Statements of Cash Flows)\n  - FY2021 Capital Expenditures: $4,200 million (per the FY2021 10-K, Consolidated Statements of Cash Flows)\n  - FY2020 Operating Income: $6,610 million (per the FY2020 10-K, Consolidated Statements of Operations)\n  - FY2020 Depreciation and Amortization: $1,000 million (per the FY2020 10-K, Consolidated Statements of Cash Flows)\n  - FY2020 Capital Expenditures: $3,700 million (per the FY2020 10-K, Consolidated Statements of Cash Flows)\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2022 10-K, Consolidated Statements of Cash Flows\n  - FY2021 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Statements of Cash Flows\n  - FY2020 10-K, Consolidated Statements of Operations\n  - FY2020 10-K, Consolidated Statements of Cash Flows",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_124_C0D9EB5C_H3",
+      "type": "dollar_amount",
+      "original_value": "$8,613 million",
+      "injected_value": "$6,616 million",
+      "original_numeric": "8613",
+      "injected_numeric": "6616",
+      "position_char": 178,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2319
+    },
+    {
+      "hallucination_id": "FB_124_C0D9EB5C_H2",
+      "type": "dollar_amount",
+      "original_value": "$11,813 million",
+      "injected_value": "$15,021 million",
+      "original_numeric": "11813",
+      "injected_numeric": "15021",
+      "position_char": 249,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.2715
+    },
+    {
+      "hallucination_id": "FB_124_C0D9EB5C_H1",
+      "type": "dollar_amount",
+      "original_value": "$10,200 million",
+      "injected_value": "$6,610 million",
+      "original_numeric": "10200",
+      "injected_numeric": "6610",
+      "position_char": 1149,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.3519
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Unadjusted EBITDA is defined as Operating Income ($15,021 million per the FY2022 10-K, Consolidated Statements of Operations) + Depreciation and Amortization ($1,000 million per the FY2022 10-K, Consolidated Statements of Cash Flows).",
+        "claim_value": "$15,021 million (Operating Income)",
+        "reason": "This figure contradicts the supporting data provided below ($11,813 million for FY2022 Operating Income), which is a clear inconsistency.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Unadjusted EBITDA less Capital Expenditures = $12,813 million (Unadjusted EBITDA) - $4,200 million (Capital Expenditures) = $6,616 million.",
+        "claim_value": "$12,813 million (Unadjusted EBITDA)",
+        "reason": "This calculation appears incorrect based on other supporting data. If Operating Income were $11,813 million + $1,000 million Depreciation and Amortization, EBITDA should be $12,813 million, but the Operating Income figure seems contradictory.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "FY2022 Depreciation and Amortization: $1,000 million (per the FY2022 10-K, Consolidated Statements of Cash Flows)",
+        "claim_value": "$1,000 million",
+        "reason": "The figure seems suspiciously round and unchanged from FY2021 and FY2020, which is atypical for a company like PepsiCo. Depreciation and Amortization usually shows some variation year-over-year.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "FY2021 Capital Expenditures: $4,200 million (per the FY2021 10-K, Consolidated Statements of Cash Flows)",
+        "claim_value": "$4,200 million",
+        "reason": "Identical to FY2022 Capex, which is unusual unless the company maintains perfectly consistent capital expenditures, which is rare.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 9,
+    "overall_assessment": "Several inconsistencies and suspiciously round figures suggest potential inaccuracies or fabrications in the provided financial data.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Unadjusted EBITDA is defined as Operating Income ($15,021 million per the FY2022 10-K, Consolidated Statements of Operations) + Depreciation and Amortization ($1,000 million per the FY2022 10-K, Consolidated Statements of Cash Flows).\",\n      \"claim_value\": \"$15,021 million (Operating Income)\",\n      \"reason\": \"This figure contradicts the supporting data provided below ($11,813 million for FY2022 Operating Income), which is a clear inconsistency.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Unadjusted EBITDA less Capital Expenditures = $12,813 million (Unadjusted EBITDA) - $4,200 million (Capital Expenditures) = $6,616 million.\",\n      \"claim_value\": \"$12,813 million (Unadjusted EBITDA)\",\n      \"reason\": \"This calculation appears incorrect based on other supporting data. If Operating Income were $11,813 million + $1,000 million Depreciation and Amortization, EBITDA should be $12,813 million, but the Operating Income figure seems contradictory.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"FY2022 Depreciation and Amortization: $1,000 million (per the FY2022 10-K, Consolidated Statements of Cash Flows)\",\n      \"claim_value\": \"$1,000 million\",\n      \"reason\": \"The figure seems suspiciously round and unchanged from FY2021 and FY2020, which is atypical for a company like PepsiCo. Depreciation and Amortization usually shows some variation year-over-year.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"FY2021 Capital Expenditures: $4,200 million (per the FY2021 10-K, Consolidated Statements of Cash Flows)\",\n      \"claim_value\": \"$4,200 million\",\n      \"reason\": \"Identical to FY2022 Capex, which is unusual unless the company maintains perfectly consistent capital expenditures, which is rare.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 9,\n  \"overall_assessment\": \"Several inconsistencies and suspiciously round figures suggest potential inaccuracies or fabrications in the provided financial data.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_124_C0D9EB5C",
+      "hallucination_id": "FB_124_C0D9EB5C_H3",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$8,613 million",
+      "injected_value": "$6,616 million",
+      "detected": true,
+      "reason": "This calculation appears incorrect based on other supporting data. If Operating Income were $11,813 million + $1,000 million Depreciation and Amortization, EBITDA should be $12,813 million, but the Operating Income figure seems contradictory.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_124_C0D9EB5C",
+      "hallucination_id": "FB_124_C0D9EB5C_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$11,813 million",
+      "injected_value": "$15,021 million",
+      "detected": true,
+      "reason": "This figure contradicts the supporting data provided below ($11,813 million for FY2022 Operating Income), which is a clear inconsistency.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_124_C0D9EB5C",
+      "hallucination_id": "FB_124_C0D9EB5C_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$10,200 million",
+      "injected_value": "$6,610 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 9
+    }
+  ],
+  "timestamp": "2026-03-24T09:59:16.228776Z"
+}

@@ -1,0 +1,85 @@
+{
+  "question_id": "FB_009_ABDB2F6B",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Activision Blizzard, FY2019\n- PRIMARY METRIC: \n  - Revenue: $6,489 million (per the FY2019 10-K, Consolidated Statements of Operations)\n  \n- SUPPORTING DATA: \n  - Property, Plant, and Equipment (PP&E) as of December 31, 2019: $1,049 million (per the FY2019 10-K, Consolidated Balance Sheets)\n  - Property, Plant, and Equipment (PP&E) as of December 31, 2018: $1,025 million (per the FY2019 10-K, Consolidated Balance Sheets)\n  - Average PP&E between FY2018 and FY2019: \n    - Calculation: ($1,049 million + $1,274 million) / 2 = $1,037 million\n\n- FIXED ASSET TURNOVER RATIO: \n  - Calculation: $6,489 million / $1,435 million = 6.26 (rounded to two decimal places: 6.26)\n\n- DATA SOURCES: \n  - FY2019 10-K, Consolidated Statements of Operations\n  - FY2019 10-K, Consolidated Balance Sheets",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_009_ABDB2F6B_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,025 million",
+      "injected_value": "$1,274 million",
+      "original_numeric": "1025",
+      "injected_numeric": "1274",
+      "position_char": 527,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.2429
+    },
+    {
+      "hallucination_id": "FB_009_ABDB2F6B_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,037 million",
+      "injected_value": "$1,435 million",
+      "original_numeric": "1037",
+      "injected_numeric": "1435",
+      "position_char": 630,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.3838
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Calculation: ($1,049 million + $1,274 million) / 2 = $1,037 million",
+        "claim_value": "$1,274 million and $1,037 million",
+        "reason": "Internal inconsistency and arithmetic error. The supporting data previously stated 2018 PP&E was $1,025 million, but this calculation uses $1,274 million. Furthermore, the arithmetic is incorrect: ($1,049 + $1,274) / 2 equals $1,161.5 million, not $1,037 million.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Calculation: $6,489 million / $1,435 million = 6.26",
+        "claim_value": "$1,435 million and 6.26",
+        "reason": "Internal inconsistency and arithmetic error. The denominator ($1,435 million) differs from the previously calculated Average PP&E ($1,037 million) without explanation. Additionally, the math is wrong: $6,489 / $1,435 equals approximately 4.52, not 6.26. The result 6.26 only matches if dividing by $1,037 million.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Property, Plant, and Equipment (PP&E) as of December 31, 2018: $1,025 million",
+        "claim_value": "$1,025 million",
+        "reason": "Contradicted by subsequent calculation step which uses $1,274 million for the 2018 PP&E figure. This suggests hallucination of data points within the same response.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 5,
+    "overall_assessment": "The output contains critical internal contradictions and arithmetic failures that invalidate the calculation trail, indicating severe hallucination of intermediate figures.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Calculation: ($1,049 million + $1,274 million) / 2 = $1,037 million\",\n      \"claim_value\": \"$1,274 million and $1,037 million\",\n      \"reason\": \"Internal inconsistency and arithmetic error. The supporting data previously stated 2018 PP&E was $1,025 million, but this calculation uses $1,274 million. Furthermore, the arithmetic is incorrect: ($1,049 + $1,274) / 2 equals $1,161.5 million, not $1,037 million.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Calculation: $6,489 million / $1,435 million = 6.26\",\n      \"claim_value\": \"$1,435 million and 6.26\",\n      \"reason\": \"Internal inconsistency and arithmetic error. The denominator ($1,435 million) differs from the previously calculated Average PP&E ($1,037 million) without explanation. Additionally, the math is wrong: $6,489 / $1,435 equals approximately 4.52, not 6.26. The result 6.26 only matches if dividing by $1,037 million.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Property, Plant, and Equipment (PP&E) as of December 31, 2018: $1,025 million\",\n      \"claim_value\": \"$1,025 million\",\n      \"reason\": \"Contradicted by subsequent calculation step which uses $1,274 million for the 2018 PP&E figure. This suggests hallucination of data points within the same response.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 5,\n  \"overall_assessment\": \"The output contains critical internal contradictions and arithmetic failures that invalidate the calculation trail, indicating severe hallucination of intermediate figures.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_009_ABDB2F6B",
+      "hallucination_id": "FB_009_ABDB2F6B_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,025 million",
+      "injected_value": "$1,274 million",
+      "detected": true,
+      "reason": "Internal inconsistency and arithmetic error. The supporting data previously stated 2018 PP&E was $1,025 million, but this calculation uses $1,274 million. Furthermore, the arithmetic is incorrect: ($1,049 + $1,274) / 2 equals $1,161.5 million, not $1,037 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 5
+    },
+    {
+      "question_id": "FB_009_ABDB2F6B",
+      "hallucination_id": "FB_009_ABDB2F6B_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,037 million",
+      "injected_value": "$1,435 million",
+      "detected": true,
+      "reason": "Internal inconsistency and arithmetic error. The denominator ($1,435 million) differs from the previously calculated Average PP&E ($1,037 million) without explanation. Additionally, the math is wrong: $6,489 / $1,435 equals approximately 4.52, not 6.26. The result 6.26 only matches if dividing by $1,037 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 5
+    }
+  ],
+  "timestamp": "2026-03-24T10:15:56.153033Z"
+}

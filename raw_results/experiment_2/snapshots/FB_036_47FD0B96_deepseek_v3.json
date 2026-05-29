@@ -1,0 +1,85 @@
+{
+  "question_id": "FB_036_47FD0B96",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: Advanced Micro Devices (AMD), Fiscal Year 2022\n- PRIMARY METRIC: \n  - Cash flows from operating activities: **$1,851 million** (per the FY2022 10-K, Consolidated Statements of Cash Flows)\n  - Cash flows from investing activities: **$(1,823) million** (per the FY2022 10-K, Consolidated Statements of Cash Flows)\n  - Cash flows from financing activities: **$(802) million** (per the FY2022 10-K, Consolidated Statements of Cash Flows)\n\n- SUPPORTING DATA:\n  - Cash flows from operating activities for FY2021: **$1,891 million** (per the FY2021 10-K, Consolidated Statements of Cash Flows)\n  - Cash flows from investing activities for FY2021: **$(1,829) million** (per the FY2021 10-K, Consolidated Statements of Cash Flows)\n  - Cash flows from financing activities for FY2021: **$(1,031) million** (per the FY2021 10-K, Consolidated Statements of Cash Flows)\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Cash Flows\n  - FY2021 10-K, Consolidated Statements of Cash Flows\n\nIn summary, for fiscal year 2022, Advanced Micro Devices generated the most cash flow from operating activities, totaling $1,851 million.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_036_47FD0B96_H2",
+      "type": "large_number",
+      "original_value": "1,028",
+      "injected_value": "802",
+      "original_numeric": "1028",
+      "injected_numeric": "802",
+      "position_char": 378,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2195
+    },
+    {
+      "hallucination_id": "FB_036_47FD0B96_H1",
+      "type": "large_number",
+      "original_value": "1,525",
+      "injected_value": "1,829",
+      "original_numeric": "1525",
+      "injected_numeric": "1829",
+      "position_char": 666,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.1995
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Cash flows from operating activities: $1,851 million (per the FY2022 10-K, Consolidated Statements of Cash Flows)",
+        "claim_value": "$1,851 million",
+        "reason": "The figure is suspiciously close to the reported investing outflow of $1,823 million, suggesting possible copy-paste error or rounding anomaly",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Cash flows from investing activities: $(1,823) million (per the FY2022 10-K, Consolidated Statements of Cash Flows)",
+        "claim_value": "$(1,823) million",
+        "reason": "Nearly identical absolute value to operating cash flow ($1,851M), which is highly improbable for a semiconductor company's investing activities",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Cash flows from operating activities for FY2021: $1,891 million (per the FY2021 10-K, Consolidated Statements of Cash Flows)",
+        "claim_value": "$1,891 million",
+        "reason": "Implies only 2% YoY decline despite semiconductor industry headwinds in 2022 (supply chain issues, inventory corrections), lacks corroborating context",
+        "confidence": "low"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "Multiple figures show suspect mirroring patterns and lack expected variance between cash flow categories, warranting source verification",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Cash flows from operating activities: $1,851 million (per the FY2022 10-K, Consolidated Statements of Cash Flows)\",\n      \"claim_value\": \"$1,851 million\",\n      \"reason\": \"The figure is suspiciously close to the reported investing outflow of $1,823 million, suggesting possible copy-paste error or rounding anomaly\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Cash flows from investing activities: $(1,823) million (per the FY2022 10-K, Consolidated Statements of Cash Flows)\",\n      \"claim_value\": \"$(1,823) million\",\n      \"reason\": \"Nearly identical absolute value to operating cash flow ($1,851M), which is highly improbable for a semiconductor company's investing activities\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Cash flows from operating activities for FY2021: $1,891 million (per the FY2021 10-K, Consolidated Statements of Cash Flows)\",\n      \"claim_value\": \"$1,891 million\",\n      \"reason\": \"Implies only 2% YoY decline despite semiconductor industry headwinds in 2022 (supply chain issues, inventory corrections), lacks corroborating context\",\n      \"confidence\": \"low\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\": \"Multiple figures show suspect mirroring patterns and lack expected variance between cash flow categories, warranting source verification\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_036_47FD0B96",
+      "hallucination_id": "FB_036_47FD0B96_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "large_number",
+      "original_value": "1,028",
+      "injected_value": "802",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_036_47FD0B96",
+      "hallucination_id": "FB_036_47FD0B96_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "large_number",
+      "original_value": "1,525",
+      "injected_value": "1,829",
+      "detected": true,
+      "reason": "The figure is suspiciously close to the reported investing outflow of $1,823 million, suggesting possible copy-paste error or rounding anomaly",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-24T09:44:49.673161Z"
+}

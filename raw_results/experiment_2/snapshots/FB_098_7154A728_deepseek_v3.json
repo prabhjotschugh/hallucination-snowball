@@ -1,0 +1,85 @@
+{
+  "question_id": "FB_098_7154A728",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: JPMorgan Chase & Co., Q2 2022\n- PRIMARY METRIC: The business segment with the highest net income in Q2 2022 was the Consumer & Community Banking segment, which reported a net income of $3,440 million (USD millions) per the Q2 2022 10-Q, Consolidated Statements of Operations.\n- SUPPORTING DATA: \n  - Corporate & Investment Bank: Net income of $3,200 million (USD millions)\n  - Commercial Banking: Net income of $801 million (USD millions)\n  - Asset & Wealth Management: Net income of $1,000 million (USD millions)\n  - Total net income for JPMorgan Chase & Co. in Q2 2022 was $12,001 million (USD millions).\n- DATA SOURCES: \n  - Q2 2022 10-Q, Consolidated Statements of Operations, page 3. \n\nNote: No trend analysis or performance comparisons to previous quarters or industry benchmarks are included, as per the directive to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_098_7154A728_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,000 million",
+      "injected_value": "$801 million",
+      "original_numeric": "1000",
+      "injected_numeric": "801",
+      "position_char": 431,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.1993
+    },
+    {
+      "hallucination_id": "FB_098_7154A728_H1",
+      "type": "dollar_amount",
+      "original_value": "$8,640 million",
+      "injected_value": "$12,001 million",
+      "original_numeric": "8640",
+      "injected_numeric": "12001",
+      "position_char": 597,
+      "sentence_approx": 4,
+      "perturbation_delta": 0.389
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Consumer & Community Banking segment, which reported a net income of $3,440 million (USD millions)",
+        "claim_value": "$3,440 million",
+        "reason": "The figure is suspiciously round compared to other segment incomes, which are less round (e.g., $801 million, $1,000 million). This precision discrepancy raises concerns.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Total net income for JPMorgan Chase & Co. in Q2 2022 was $12,001 million (USD millions)",
+        "claim_value": "$12,001 million",
+        "reason": "The total net income figure is suspiciously precise (ending in 001) compared to the rounded segment figures, suggesting potential fabrication.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Asset & Wealth Management: Net income of $1,000 million (USD millions)",
+        "claim_value": "$1,000 million",
+        "reason": "The figure is exactly $1,000 million, which is unusually round and lacks typical financial reporting precision seen in other segments (e.g., $801 million).",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 4,
+    "overall_assessment": "Several figures appear suspicious due to unusual rounding or precision discrepancies when compared across segments.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Consumer & Community Banking segment, which reported a net income of $3,440 million (USD millions)\",\n      \"claim_value\": \"$3,440 million\",\n      \"reason\": \"The figure is suspiciously round compared to other segment incomes, which are less round (e.g., $801 million, $1,000 million). This precision discrepancy raises concerns.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Total net income for JPMorgan Chase & Co. in Q2 2022 was $12,001 million (USD millions)\",\n      \"claim_value\": \"$12,001 million\",\n      \"reason\": \"The total net income figure is suspiciously precise (ending in 001) compared to the rounded segment figures, suggesting potential fabrication.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Asset & Wealth Management: Net income of $1,000 million (USD millions)\",\n      \"claim_value\": \"$1,000 million\",\n      \"reason\": \"The figure is exactly $1,000 million, which is unusually round and lacks typical financial reporting precision seen in other segments (e.g., $801 million).\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 4,\n  \"overall_assessment\": \"Several figures appear suspicious due to unusual rounding or precision discrepancies when compared across segments.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_098_7154A728",
+      "hallucination_id": "FB_098_7154A728_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,000 million",
+      "injected_value": "$801 million",
+      "detected": true,
+      "reason": "The figure is exactly $1,000 million, which is unusually round and lacks typical financial reporting precision seen in other segments (e.g., $801 million).",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 4
+    },
+    {
+      "question_id": "FB_098_7154A728",
+      "hallucination_id": "FB_098_7154A728_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$8,640 million",
+      "injected_value": "$12,001 million",
+      "detected": true,
+      "reason": "The total net income figure is suspiciously precise (ending in 001) compared to the rounded segment figures, suggesting potential fabrication.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 4
+    }
+  ],
+  "timestamp": "2026-03-24T09:55:08.667860Z"
+}

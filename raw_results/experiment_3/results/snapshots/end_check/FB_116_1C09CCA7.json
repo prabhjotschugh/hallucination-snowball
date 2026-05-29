@@ -1,0 +1,194 @@
+{
+  "question_id": "FB_116_1C09CCA7",
+  "method": "end_check",
+  "final_output": "## Nike, Inc. - Fiscal Year 2019 Financial Report\n\n**Executive Summary**\n\nThis report provides an analysis of Nike, Inc.'s Total Current Assets for Fiscal Year 2019 (FY2019), with comparative data from FY2018 and FY2017. Total Current Assets for FY2019 stood at $5,544 million. This represents a significant decrease of $3,555 million, or -39.07%, from the FY2018 figure of $9,099 million. This decline follows a substantial increase of $4,419 million, or 94.42%, from FY2017 to FY2018. The notable fluctuations in Total Current Assets warrant further investigation into the underlying drivers, as they suggest potential shifts in the company's short-term financial position.\n\n**Analysis**\n\nNike, Inc.'s Total Current Assets have experienced considerable volatility over the past three fiscal years. In FY2017, Total Current Assets were reported at $4,680 million. This figure surged to $9,099 million in FY2018, marking an absolute increase of $4,419 million and a percentage growth of 94.42%. This substantial growth could be attributed to various factors, including increased cash holdings, higher inventory levels, or improved accounts receivable.\n\nHowever, this positive trend reversed sharply in FY2019, with Total Current Assets decreasing to $5,544 million. This represents an absolute decline of $3,555 million from FY2018, equating to a -39.07% reduction. The growth rate from FY2018 to FY2019 was -39.07%, a stark contrast to the 94.42% growth rate observed from FY2017 to FY2018. This significant contraction in current assets could indicate a reduction in cash and cash equivalents, a decrease in inventory, or a more efficient collection of accounts receivable, among other possibilities.\n\n**Key Considerations**\n\nThe primary consideration identified is the significant fluctuation in Total Current Assets. The 94.42% increase from FY2017 to FY2018, followed by a -39.07% decrease from FY2018 to FY2019, indicates potential instability in the company's short-term liquidity or operational asset management. Such large year-over-year changes, particularly the substantial decline in FY2019, could signal shifts in cash management strategies, inventory optimization efforts, or changes in accounts receivable collection efficiency. A detailed breakdown of the components of current assets would be necessary to fully understand the drivers behind these movements.\n\n**Conclusion**\n\nNike, Inc.'s Total Current Assets demonstrated significant changes across the analyzed periods. While FY2018 saw a substantial increase to $9,099 million from $4,680 million in FY2017, FY2019 concluded with Total Current Assets at $5,544 million, representing a notable contraction. The pronounced year-over-year movements in Total Current Assets highlight the need for a deeper examination of the specific components contributing to these changes to understand their implications for Nike, Inc.'s financial health and operational strategy. Further analysis into the breakdown of current assets, including cash, inventory, and accounts receivable, is recommended to provide a comprehensive understanding of these fluctuations.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Nike, Inc. - Fiscal Year 2019 (FY2019)\n- PRIMARY METRIC: Total Current Assets: $5,544 million (per the FY2019 10-K, Consolidated Balance Sheets)\n- SUPPORTING DATA: \n  - FY2018 Total Current Assets: $9,099 million (per the FY2018 10-K, Consolidated Balance Sheets)\n  - FY2017 Total Current Assets: $4,680 million (per the FY2017 10-K, Consolidated Balance Sheets)\n- DATA SOURCES: \n  - FY2019 10-K, Consolidated Balance Sheets, Page 42\n  - FY2018 10-K, Consolidated Balance Sheets, Page 40\n  - FY2017 10-K, Consolidated Balance Sheets, Page 39\n\nNote: No analysis or interpretation of trends or ratios has been provided as per the directive.",
+    "2": "As a financial analyst, I have computed the year-over-year changes and relevant ratios for Nike, Inc.'s Total Current Assets based on the provided researcher data.\n\n**Nike, Inc. - Total Current Assets Analysis**\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\n*   **FY2019 vs. FY2018:**\n    *   Absolute Change = FY2019 Total Current Assets - FY2018 Total Current Assets\n        *   Absolute Change = $5,544 million - $9,099 million = **-$3,555 million**\n    *   Percentage Change = (Absolute Change / FY2018 Total Current Assets) * 100\n        *   Percentage Change = (-$3,555 million / $9,099 million) * 100 = **-39.07%**\n\n*   **FY2018 vs. FY2017:**\n    *   Absolute Change = FY2018 Total Current Assets - FY2017 Total Current Assets\n        *   Absolute Change = $9,099 million - $4,680 million = **$4,419 million**\n    *   Percentage Change = (Absolute Change / FY2017 Total Current Assets) * 100\n        *   Percentage Change = ($4,419 million / $4,680 million) * 100 = **94.42%**\n\n**Summary Table:**\n\n| Period        | Total Current Assets ($ millions) | Absolute Change ($ millions) | Percentage Change (%) |\n| :------------ | :-------------------------------- | :--------------------------- | :-------------------- |\n| FY2017        | $4,680                            | N/A                          | N/A                   |\n| FY2018        | $9,099                            | $4,419                       | 94.42%                |\n| FY2019        | $5,544                            | -$3,555                      | -39.07%               |\n\n**2. Relevant Ratios**\n\nGiven only Total Current Assets, the most relevant \"ratio\" to compute for comparative purposes across periods is the **Growth Rate**.\n\n*   **FY2019 Growth Rate (vs. FY2018):**\n    *   Formula: (FY2019 Total Current Assets / FY2018 Total Current Assets) - 1\n    *   Calculation: ($5,544 million / $9,099 million) - 1 = 0.6092 - 1 = **-0.3908 or -39.08%**\n\n*   **FY2018 Growth Rate (vs. FY2017):**\n    *   Formula: (FY2018 Total Current Assets / FY2017 Total Current Assets) - 1\n    *   Calculation: ($9,099 million / $4,680 million) - 1 = 1.9442 - 1 = **0.9442 or 94.42%**\n\n**3. Anomalies Flagged**\n\n*   **Significant Fluctuation in Total Current Assets:**\n    *   The **94.42% increase** in Total Current Assets from FY2017 to FY2018 is a substantial jump.\n    *   The subsequent **-39.07% decrease** from FY2018 to FY2019 is also a significant decline.\n    *   These large year-over-year percentage changes in both directions (a near doubling followed by a substantial reduction) are **flagged as anomalies** due to their magnitude, warranting further investigation into the underlying components of current assets (e.g., cash, inventory, accounts receivable) and business operations.",
+    "3": "## Nike, Inc. - Fiscal Year 2019 Financial Report\n\n**Executive Summary**\n\nThis report provides an analysis of Nike, Inc.'s Total Current Assets for Fiscal Year 2019 (FY2019), with comparative data from FY2018 and FY2017. Total Current Assets for FY2019 stood at $5,544 million. This represents a significant decrease of $3,555 million, or -39.07%, from the FY2018 figure of $9,099 million. This decline follows a substantial increase of $4,419 million, or 94.42%, from FY2017 to FY2018. The notable fluctuations in Total Current Assets warrant further investigation into the underlying drivers.\n\n**Analysis**\n\nNike, Inc.'s Total Current Assets have experienced considerable volatility over the past three fiscal years. In FY2017, Total Current Assets were reported at $4,680 million. This figure surged to $9,099 million in FY2018, marking an absolute increase of $4,419 million and a percentage growth of 94.42%. However, this trend reversed sharply in FY2019, with Total Current Assets decreasing to $5,544 million. This represents an absolute decline of $3,555 million from FY2018, equating to a -39.07% reduction. The growth rate from FY2018 to FY2019 was -39.08%, a stark contrast to the 94.42% growth rate observed from FY2017 to FY2018.\n\n**Key Risks**\n\nThe primary risk identified is the significant fluctuation in Total Current Assets. The 94.42% increase from FY2017 to FY2018, followed by a -39.07% decrease from FY2018 to FY2019, indicates potential instability in the company's short-term liquidity or operational asset management. Such large year-over-year changes, particularly the substantial decline in FY2019, could signal shifts in cash management, inventory levels, or accounts receivable collection efficiency.\n\n**Conclusion**\n\nNike, Inc.'s Total Current Assets demonstrated significant changes across the analyzed periods. While FY2018 saw a substantial increase to $9,099 million from $4,680 million in FY2017, FY2019 concluded with Total Current Assets at $5,544 million, representing a notable contraction. The pronounced year-over-year movements in Total Current Assets highlight the need for a deeper examination of the specific components contributing to these changes to understand their implications for Nike, Inc.'s financial health and operational strategy.",
+    "4": "## Nike, Inc. - Fiscal Year 2019 Financial Report\n\n**Executive Summary**\n\nThis report provides an analysis of Nike, Inc.'s Total Current Assets for Fiscal Year 2019 (FY2019), with comparative data from FY2018 and FY2017. Total Current Assets for FY2019 stood at $5,544 million. This represents a significant decrease of $3,555 million, or -39.07%, from the FY2018 figure of $9,099 million. This decline follows a substantial increase of $4,419 million, or 94.42%, from FY2017 to FY2018. The notable fluctuations in Total Current Assets warrant further investigation into the underlying drivers, as they suggest potential shifts in the company's short-term financial position.\n\n**Analysis**\n\nNike, Inc.'s Total Current Assets have experienced considerable volatility over the past three fiscal years. In FY2017, Total Current Assets were reported at $4,680 million. This figure surged to $9,099 million in FY2018, marking an absolute increase of $4,419 million and a percentage growth of 94.42%. This substantial growth could be attributed to various factors, including increased cash holdings, higher inventory levels, or improved accounts receivable.\n\nHowever, this positive trend reversed sharply in FY2019, with Total Current Assets decreasing to $5,544 million. This represents an absolute decline of $3,555 million from FY2018, equating to a -39.07% reduction. The growth rate from FY2018 to FY2019 was -39.07%, a stark contrast to the 94.42% growth rate observed from FY2017 to FY2018. This significant contraction in current assets could indicate a reduction in cash and cash equivalents, a decrease in inventory, or a more efficient collection of accounts receivable, among other possibilities.\n\n**Key Considerations**\n\nThe primary consideration identified is the significant fluctuation in Total Current Assets. The 94.42% increase from FY2017 to FY2018, followed by a -39.07% decrease from FY2018 to FY2019, indicates potential instability in the company's short-term liquidity or operational asset management. Such large year-over-year changes, particularly the substantial decline in FY2019, could signal shifts in cash management strategies, inventory optimization efforts, or changes in accounts receivable collection efficiency. A detailed breakdown of the components of current assets would be necessary to fully understand the drivers behind these movements.\n\n**Conclusion**\n\nNike, Inc.'s Total Current Assets demonstrated significant changes across the analyzed periods. While FY2018 saw a substantial increase to $9,099 million from $4,680 million in FY2017, FY2019 concluded with Total Current Assets at $5,544 million, representing a notable contraction. The pronounced year-over-year movements in Total Current Assets highlight the need for a deeper examination of the specific components contributing to these changes to understand their implications for Nike, Inc.'s financial health and operational strategy. Further analysis into the breakdown of current assets, including cash, inventory, and accounts receivable, is recommended to provide a comprehensive understanding of these fluctuations."
+  },
+  "gates": {
+    "end_gate": {
+      "verified": [],
+      "refuted": [
+        {
+          "value": "$5,544 million",
+          "num": 5544.0,
+          "correct": 6704.0,
+          "dev": 0.173,
+          "source": "source_document"
+        },
+        {
+          "value": "$3,555 million",
+          "num": 3555.0,
+          "correct": 6704.0,
+          "dev": 0.4697,
+          "source": "source_document"
+        },
+        {
+          "value": "$9,099 million",
+          "num": 9099.0,
+          "correct": 7883.0,
+          "dev": 0.1336,
+          "source": "source_document"
+        },
+        {
+          "value": "$4,419 million",
+          "num": 4419.0,
+          "correct": 6704.0,
+          "dev": 0.3408,
+          "source": "source_document"
+        },
+        {
+          "value": "$4,680 million",
+          "num": 4680.0,
+          "correct": 6704.0,
+          "dev": 0.3019,
+          "source": "source_document"
+        },
+        {
+          "value": "$9,099 million",
+          "num": 9099.0,
+          "correct": 7883.0,
+          "dev": 0.1336,
+          "source": "source_document"
+        },
+        {
+          "value": "$4,419 million",
+          "num": 4419.0,
+          "correct": 6704.0,
+          "dev": 0.3408,
+          "source": "source_document"
+        },
+        {
+          "value": "$5,544 million",
+          "num": 5544.0,
+          "correct": 6704.0,
+          "dev": 0.173,
+          "source": "source_document"
+        },
+        {
+          "value": "$3,555 million",
+          "num": 3555.0,
+          "correct": 6704.0,
+          "dev": 0.4697,
+          "source": "source_document"
+        },
+        {
+          "value": "$9,099 million",
+          "num": 9099.0,
+          "correct": 7883.0,
+          "dev": 0.1336,
+          "source": "source_document"
+        },
+        {
+          "value": "$4,680 million",
+          "num": 4680.0,
+          "correct": 6704.0,
+          "dev": 0.3019,
+          "source": "source_document"
+        },
+        {
+          "value": "$5,544 million",
+          "num": 5544.0,
+          "correct": 6704.0,
+          "dev": 0.173,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "-39.07%"
+        },
+        {
+          "value": "94.42%"
+        },
+        {
+          "value": "94.42%"
+        },
+        {
+          "value": "-39.07%"
+        },
+        {
+          "value": "-39.07%"
+        },
+        {
+          "value": "94.42%"
+        },
+        {
+          "value": "94.42%"
+        },
+        {
+          "value": "-39.07%"
+        }
+      ],
+      "n_refs": 6
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_116_1C09CCA7",
+      "hid": "FB_116_1C09CCA7_H3",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 5544.0,
+      "orig_num": 7883.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": true,
+      "any_det": true,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_116_1C09CCA7",
+      "hid": "FB_116_1C09CCA7_H2",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 9099.0,
+      "orig_num": 7477.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": true,
+      "any_det": true,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_116_1C09CCA7",
+      "hid": "FB_116_1C09CCA7_H1",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 4680.0,
+      "orig_num": 6704.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": true,
+      "any_det": true,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    }
+  ],
+  "quality_score": 4,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:46:32.224877+00:00"
+}

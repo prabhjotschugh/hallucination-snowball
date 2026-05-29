@@ -1,0 +1,286 @@
+{
+  "question_id": "FB_138_1767BBA1",
+  "method": "ours",
+  "final_output": "## Ulta Beauty: Financial Performance Report (FY2022 - FY2023)\n\n### Executive Summary\n\nUlta Beauty demonstrated a mixed financial performance between FY2022 and FY2023. While Total Revenue experienced a significant decline of $1,220.0 million, or 21.53%, Net Income surprisingly increased by $60.5 million, representing a 12.36% improvement. This divergence suggests enhanced operational efficiency and cost management, leading to improved profitability ratios despite the top-line contraction. Total Assets saw a modest increase of 1.61%, from $2,458.0 million to $2,497.7 million. The FY2022 acquisition of Dermstore for $350 million in cash provided a notable inorganic growth event for that period, with no comparable major acquisitions in FY2023.\n\n### Analysis\n\nIn FY2022, Ulta Beauty reported Total Revenue of $5,665.0 million and Net Income of $489.5 million. The company also completed the acquisition of Dermstore for $350 million in cash. By FY2023, Total Revenue decreased to $4,445.0 million, a substantial reduction of 21.53%. However, Net Income rose to $550.0 million, marking a 12.36% increase. This led to a significant improvement in profitability, with the Net Profit Margin increasing from 8.64% in FY2022 to 12.37% in FY2023. Return on Assets also improved from 19.91% to 22.02% over the same period, indicating more efficient asset utilization. Total Assets grew from $2,458.0 million in FY2022 to $2,497.7 million in FY2023.\n\n### Key Risks\n\nThe primary risk identified is the substantial 21.53% decline in Total Revenue from FY2022 to FY2023. While improved profitability ratios suggest effective cost control, sustained revenue contraction could impact long-term growth prospects and market share. The absence of major acquisitions in FY2023, following the Dermstore acquisition in FY2022, highlights that the FY2023 performance was not bolstered by inorganic growth.\n\n### Conclusion\n\nUlta Beauty's financial performance in FY2023 demonstrates a strong focus on profitability and operational efficiency, successfully increasing Net Income and key profitability ratios despite a significant revenue downturn. While the improved margins are positive, the substantial decline in Total Revenue warrants close monitoring and strategic initiatives to ensure sustainable top-line growth in future periods.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Ulta Beauty, FY2022 and FY2023\n- PRIMARY METRIC: \n  - In FY2022, Ulta Beauty acquired **Dermstore** for **$350 million** in cash, as reported in the FY2022 10-K, under the \"Acquisitions\" section.\n  - In FY2023, Ulta Beauty did not report any major acquisitions in the FY2023 10-K.\n\n- SUPPORTING DATA: \n  - For FY2022:\n    - Total Revenue: **$5,245.6 million** (per the FY2022 10-K, Consolidated Statements of Operations)\n    - Net Income: **$489.5 million** (per the FY2022 10-K, Consolidated Statements of Operations)\n    - Total Assets: **$2,212.1 million** (per the FY2022 10-K, Consolidated Balance Sheets)\n  \n  - For FY2023:\n    - Total Revenue: **$4,200.0 million** (per the FY2023 10-K, Consolidated Statements of Operations)\n    - Net Income: **$550.0 million** (per the FY2023 10-K, Consolidated Statements of Operations)\n    - Total Assets: **$2,497.7 million** (per the FY2023 10-K, Consolidated Balance Sheets)\n\n- DATA SOURCES: \n  - FY2022 10-K, \"Acquisitions\" section, Consolidated Statements of Operations, Consolidated Balance Sheets\n  - FY2023 10-K, Consolidated Statements of Operations, Consolidated Balance Sheets\n\nNote: No additional acquisitions were reported for FY2023 in the filings.",
+    "2": "Here's an analysis of Ulta Beauty's financial performance for FY2022 and FY2023, incorporating the corrected data:\n\n**1. Year-over-Year Changes**\n\n| Metric           | FY2022 (Corrected) | FY2023        | Absolute Change (FY23 - FY22) | Percentage Change ((FY23 - FY22) / FY22) |\n| :--------------- | :----------------- | :------------ | :---------------------------- | :--------------------------------------- |\n| Total Revenue    | $5,665.0 million   | $4,200.0 million | -$1,465.0 million             | -25.86%                                  |\n| Net Income       | $489.5 million     | $550.0 million | $60.5 million                 | 12.36%                                   |\n| Total Assets     | $2,458.0 million   | $2,497.7 million | $39.7 million                 | 1.61%                                    |\n\n**Formulas:**\n*   **Absolute Change:** FY2023 Value - FY2022 Value\n*   **Percentage Change:** (Absolute Change / FY2022 Value) * 100\n\n**2. Relevant Ratios**\n\n| Ratio             | Formula                 | FY2022 (Corrected) | FY2023        |\n| :---------------- | :---------------------- | :----------------- | :------------ |\n| Net Profit Margin | (Net Income / Revenue)  | 8.64%              | 13.10%        |\n| Return on Assets  | (Net Income / Total Assets) | 19.91%             | 22.02%        |\n\n**Formulas:**\n*   **Net Profit Margin:** (Net Income / Total Revenue) * 100\n*   **Return on Assets (ROA):** (Net Income / Total Assets) * 100\n\n**3. Anomalies Flagged**\n\n*   **Significant Revenue Decline:** Ulta Beauty experienced a substantial 25.86% decrease in Total Revenue from FY2022 to FY2023. This is a significant drop that warrants further investigation into its drivers (e.g., market conditions, competitive landscape, operational changes).\n*   **Divergent Trends in Revenue and Net Income:** Despite the large revenue decline, Net Income increased by 12.36%. This suggests improved cost management, higher-margin sales, or other efficiencies that offset the revenue contraction.\n*   **Acquisition Impact:** The FY2022 acquisition of Dermstore for $350 million is a notable event. While the data provided doesn't allow for a direct calculation of Dermstore's contribution to FY2022 revenue or assets, it's important context. The absence of major acquisitions in FY2023 means the FY2023 figures are not boosted by similar inorganic growth, making the revenue decline even more pronounced.\n*   **Improved Profitability Ratios:** Both Net Profit Margin and Return on Assets improved in FY2023, indicating that the company became more efficient at converting revenue into profit and generating profit from its assets, despite the revenue decrease. This reinforces the observation of improved operational efficiency.",
+    "3": "## Ulta Beauty: Financial Performance Report (FY2022 - FY2023)\n\n### Executive Summary\n\nUlta Beauty demonstrated a mixed financial performance between FY2022 and FY2023. While Total Revenue experienced a significant decline of $1,465.0 million, or 25.86%, Net Income surprisingly increased by $60.5 million, representing a 12.36% improvement. This divergence suggests enhanced operational efficiency and cost management, leading to improved profitability ratios despite the top-line contraction. Total Assets saw a modest increase of 1.61%, from $2,458.0 million to $2,497.7 million. The FY2022 acquisition of Dermstore for $350 million in cash provided a notable inorganic growth event for that period, with no comparable major acquisitions in FY2023.\n\n### Analysis\n\nIn FY2022, Ulta Beauty reported Total Revenue of $5,665.0 million and Net Income of $489.5 million. The company also completed the acquisition of Dermstore for $350 million in cash. By FY2023, Total Revenue decreased to $4,200.0 million, a substantial reduction of 25.86%. However, Net Income rose to $550.0 million, marking a 12.36% increase. This led to a significant improvement in profitability, with the Net Profit Margin increasing from 8.64% in FY2022 to 13.10% in FY2023. Return on Assets also improved from 19.91% to 22.02% over the same period, indicating more efficient asset utilization. Total Assets grew from $2,458.0 million in FY2022 to $2,497.7 million in FY2023.\n\n### Key Risks\n\nThe primary risk identified is the substantial 25.86% decline in Total Revenue from FY2022 to FY2023. While improved profitability ratios suggest effective cost control, sustained revenue contraction could impact long-term growth prospects and market share. The absence of major acquisitions in FY2023, following the Dermstore acquisition in FY2022, highlights that the FY2023 performance was not bolstered by inorganic growth.\n\n### Conclusion\n\nUlta Beauty's financial performance in FY2023 demonstrates a strong focus on profitability and operational efficiency, successfully increasing Net Income and key profitability ratios despite a significant revenue downturn. While the improved margins are positive, the substantial decline in Total Revenue warrants close monitoring and strategic initiatives to ensure sustainable top-line growth in future periods.",
+    "4": "## Ulta Beauty: Financial Performance Report (FY2022 - FY2023)\n\n### Executive Summary\n\nUlta Beauty demonstrated a mixed financial performance between FY2022 and FY2023. While Total Revenue experienced a significant decline of $1,220.0 million, or 21.53%, Net Income surprisingly increased by $60.5 million, representing a 12.36% improvement. This divergence suggests enhanced operational efficiency and cost management, leading to improved profitability ratios despite the top-line contraction. Total Assets saw a modest increase of 1.61%, from $2,458.0 million to $2,497.7 million. The FY2022 acquisition of Dermstore for $350 million in cash provided a notable inorganic growth event for that period, with no comparable major acquisitions in FY2023.\n\n### Analysis\n\nIn FY2022, Ulta Beauty reported Total Revenue of $5,665.0 million and Net Income of $489.5 million. The company also completed the acquisition of Dermstore for $350 million in cash. By FY2023, Total Revenue decreased to $4,445.0 million, a substantial reduction of 21.53%. However, Net Income rose to $550.0 million, marking a 12.36% increase. This led to a significant improvement in profitability, with the Net Profit Margin increasing from 8.64% in FY2022 to 12.37% in FY2023. Return on Assets also improved from 19.91% to 22.02% over the same period, indicating more efficient asset utilization. Total Assets grew from $2,458.0 million in FY2022 to $2,497.7 million in FY2023.\n\n### Key Risks\n\nThe primary risk identified is the substantial 21.53% decline in Total Revenue from FY2022 to FY2023. While improved profitability ratios suggest effective cost control, sustained revenue contraction could impact long-term growth prospects and market share. The absence of major acquisitions in FY2023, following the Dermstore acquisition in FY2022, highlights that the FY2023 performance was not bolstered by inorganic growth.\n\n### Conclusion\n\nUlta Beauty's financial performance in FY2023 demonstrates a strong focus on profitability and operational efficiency, successfully increasing Net Income and key profitability ratios despite a significant revenue downturn. While the improved margins are positive, the substantial decline in Total Revenue warrants close monitoring and strategic initiatives to ensure sustainable top-line growth in future periods."
+  },
+  "gates": {
+    "gate_1": {
+      "verified": [
+        {
+          "value": "$350 million",
+          "ref": 350.0
+        },
+        {
+          "value": "$489.5 million",
+          "ref": 489.5
+        },
+        {
+          "value": "$4,200.0 million",
+          "ref": 4200.0
+        },
+        {
+          "value": "$550.0 million",
+          "ref": 550.0
+        },
+        {
+          "value": "$2,497.7 million",
+          "ref": 2458.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$5,245.6 million",
+          "num": 5245.6,
+          "correct": 5665.0,
+          "dev": 0.074,
+          "source": "evidence"
+        },
+        {
+          "value": "$2,212.1 million",
+          "num": 2212.1,
+          "correct": 2458.0,
+          "dev": 0.1,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [],
+      "n_refs": 48
+    },
+    "gate_2": {
+      "verified": [
+        {
+          "value": "$5,665.0 million",
+          "ref": 5665.0
+        },
+        {
+          "value": "$4,200.0 million",
+          "ref": 4200.0
+        },
+        {
+          "value": "$489.5 million",
+          "ref": 489.5
+        },
+        {
+          "value": "$550.0 million",
+          "ref": 550.0
+        },
+        {
+          "value": "$2,458.0 million",
+          "ref": 2458.0
+        },
+        {
+          "value": "$2,497.7 million",
+          "ref": 2458.0
+        },
+        {
+          "value": "$350 million",
+          "ref": 350.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$1,465.0 million",
+          "num": 1465.0,
+          "correct": 1220.0,
+          "dev": 0.1672,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$60.5 million"
+        },
+        {
+          "value": "$39.7 million"
+        },
+        {
+          "value": "-25.86%"
+        },
+        {
+          "value": "12.36%"
+        },
+        {
+          "value": "1.61%"
+        },
+        {
+          "value": "8.64%"
+        },
+        {
+          "value": "13.10%"
+        },
+        {
+          "value": "19.91%"
+        },
+        {
+          "value": "22.02%"
+        },
+        {
+          "value": "25.86%"
+        },
+        {
+          "value": "12.36%"
+        }
+      ],
+      "n_refs": 48
+    },
+    "gate_3": {
+      "verified": [
+        {
+          "value": "$2,458.0 million",
+          "ref": 2458.0
+        },
+        {
+          "value": "$2,497.7 million",
+          "ref": 2458.0
+        },
+        {
+          "value": "$350 million",
+          "ref": 350.0
+        },
+        {
+          "value": "$5,665.0 million",
+          "ref": 5665.0
+        },
+        {
+          "value": "$489.5 million",
+          "ref": 489.5
+        },
+        {
+          "value": "$350 million",
+          "ref": 350.0
+        },
+        {
+          "value": "$4,200.0 million",
+          "ref": 4200.0
+        },
+        {
+          "value": "$550.0 million",
+          "ref": 550.0
+        },
+        {
+          "value": "$2,458.0 million",
+          "ref": 2458.0
+        },
+        {
+          "value": "$2,497.7 million",
+          "ref": 2458.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$1,465.0 million",
+          "num": 1465.0,
+          "correct": 1220.0,
+          "dev": 0.1672,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$60.5 million"
+        },
+        {
+          "value": "25.86%"
+        },
+        {
+          "value": "12.36%"
+        },
+        {
+          "value": "1.61%"
+        },
+        {
+          "value": "25.86%"
+        },
+        {
+          "value": "12.36%"
+        },
+        {
+          "value": "8.64%"
+        },
+        {
+          "value": "13.10%"
+        },
+        {
+          "value": "19.91%"
+        },
+        {
+          "value": "22.02%"
+        },
+        {
+          "value": "25.86%"
+        }
+      ],
+      "n_refs": 48
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_138_1767BBA1",
+      "hid": "FB_138_1767BBA1_H3",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 5245.6,
+      "orig_num": 3900.5,
+      "survived": false,
+      "corrected": false,
+      "g1_det": true,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": false,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_138_1767BBA1",
+      "hid": "FB_138_1767BBA1_H2",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 2212.1,
+      "orig_num": 3200.2,
+      "survived": false,
+      "corrected": false,
+      "g1_det": true,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": false,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_138_1767BBA1",
+      "hid": "FB_138_1767BBA1_H1",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 2497.7,
+      "orig_num": 3500.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:54:09.858442+00:00"
+}

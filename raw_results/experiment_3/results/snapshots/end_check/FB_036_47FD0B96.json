@@ -1,0 +1,134 @@
+{
+  "question_id": "FB_036_47FD0B96",
+  "method": "end_check",
+  "final_output": "## Advanced Micro Devices (AMD) - Fiscal Year 2022 Cash Flow Report\n\n### Executive Summary\n\nFor Fiscal Year 2022, Advanced Micro Devices (AMD) generated $1,851 million in cash flows from operating activities. However, significant investing activities of $(1,823) million and financing outflows of $(802) million resulted in a net decrease in cash of $(774) million for the period. Free Cash Flow (FCF) stood at a modest $28 million, indicating that most operating cash was reinvested.\n\n### Analysis\n\nAMD's cash flow performance in FY2022 showed a slight decline in operating cash flow compared to the prior year. Cash flows from operating activities decreased by $(40) million, or -2.12%, from $1,891 million in FY2021 to $1,851 million in FY2022. Cash flows from investing activities remained substantial, with a minor absolute change of $6 million, moving from $(1,829) million in FY2021 to $(1,823) million in FY2022, representing a 0.33% change.\n\nA notable shift occurred in cash flows from financing activities, which saw a decrease in outflow by $229 million, from $(1,031) million in FY2021 to $(802) million in FY2022, a 22.21% reduction in outflow. This reduced outflow from financing activities partially offset the other cash flow movements. The company's Free Cash Flow (FCF) for FY2022 was $28 million, calculated as the sum of operating and investing cash flows ($1,851 million + $(1,823) million).\n\n### Key Risks\n\nTwo primary areas warrant attention. First, the significant decrease in the negative cash flows from financing activities, while reducing the overall cash outflow, requires further investigation to understand the underlying drivers (e.g., changes in debt management, share repurchases, or equity issuance). Second, the low Free Cash Flow of $28 million, especially relative to the $1,851 million in operating cash flow, suggests that a substantial portion of internally generated cash is being consumed by investing activities. While this could be strategic for growth, it raises questions about the efficiency of capital deployment and potential impacts on liquidity if these investments do not yield expected returns.\n\n### Conclusion\n\nAMD's FY2022 cash flow statement reflects a company heavily reinvesting in its operations, as evidenced by the substantial investing outflows and the resulting low Free Cash Flow. While operating cash flow remains positive at $1,851 million, the net decrease in cash of $(774) million highlights the capital-intensive nature of its business. Monitoring the effectiveness of these investments and the composition of financing activities will be crucial for assessing AMD's financial health and future growth prospects.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Advanced Micro Devices (AMD), Fiscal Year 2022\n- PRIMARY METRIC: \n  - Cash flows from operating activities: **$1,851 million** (per the FY2022 10-K, Consolidated Statements of Cash Flows)\n  - Cash flows from investing activities: **$(1,823) million** (per the FY2022 10-K, Consolidated Statements of Cash Flows)\n  - Cash flows from financing activities: **$(802) million** (per the FY2022 10-K, Consolidated Statements of Cash Flows)\n\n- SUPPORTING DATA:\n  - Cash flows from operating activities for FY2021: **$1,891 million** (per the FY2021 10-K, Consolidated Statements of Cash Flows)\n  - Cash flows from investing activities for FY2021: **$(1,829) million** (per the FY2021 10-K, Consolidated Statements of Cash Flows)\n  - Cash flows from financing activities for FY2021: **$(1,031) million** (per the FY2021 10-K, Consolidated Statements of Cash Flows)\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Cash Flows\n  - FY2021 10-K, Consolidated Statements of Cash Flows\n\nIn summary, for fiscal year 2022, Advanced Micro Devices generated the most cash flow from operating activities, totaling $1,851 million.",
+    "2": "As a financial analyst, I've computed the year-over-year changes and relevant ratios for AMD's cash flow activities, flagging any anomalies.\n\n**1. Year-over-Year Changes (FY2022 vs. FY2021)**\n\n*   **Cash Flows from Operating Activities (CFOA)**\n    *   FY2022: \\$1,851 million\n    *   FY2021: \\$1,891 million\n    *   Absolute Change: `FY2022 CFOA - FY2021 CFOA` = \\$1,851 - \\$1,891 = **\\$(40) million**\n    *   Percentage Change: `(Absolute Change / FY2021 CFOA) * 100` = (\\$(40) / \\$1,891) * 100 = **-2.12%**\n\n*   **Cash Flows from Investing Activities (CFIA)**\n    *   FY2022: \\$(1,823) million\n    *   FY2021: \\$(1,829) million\n    *   Absolute Change: `FY2022 CFIA - FY2021 CFIA` = \\$(1,823) - \\$(1,829) = **\\$6 million**\n    *   Percentage Change: `(Absolute Change / FY2021 CFIA) * 100` = (\\$6 / \\$(1,829)) * 100 = **-0.33%**\n\n*   **Cash Flows from Financing Activities (CFFA)**\n    *   FY2022: \\$(802) million\n    *   FY2021: \\$(1,031) million\n    *   Absolute Change: `FY2022 CFFA - FY2021 CFFA` = \\$(802) - \\$(1,031) = **\\$229 million**\n    *   Percentage Change: `(Absolute Change / FY2021 CFFA) * 100` = (\\$229 / \\$(1,031)) * 100 = **-22.21%**\n\n**2. Relevant Ratios (FY2022)**\n\n*   **Free Cash Flow (FCF)**\n    *   Formula: `CFOA + CFIA` (assuming investing activities primarily represent capital expenditures and acquisitions necessary for operations)\n    *   Calculation: \\$1,851 million + \\$(1,823) million = **\\$28 million**\n\n*   **Net Change in Cash**\n    *   Formula: `CFOA + CFIA + CFFA`\n    *   Calculation: \\$1,851 million + \\$(1,823) million + \\$(802) million = **\\$(774) million**\n\n**3. Anomalies Flagged**\n\n*   **Significant Decrease in Cash Flows from Financing Activities (CFFA) Outflow:** While still an outflow, the 22.21% decrease in the negative CFFA (from -\\$1,031M to -\\$802M) indicates a reduced net cash outflow from financing activities. This could be due to lower debt repayments, reduced share repurchases, or increased debt issuance/equity contributions compared to the prior year. Without further detail on the components of CFFA, it's an area for further investigation.\n\n*   **Low Free Cash Flow (FCF):** AMD's FCF of \\$28 million in FY2022 is very low, especially compared to its operating cash flow of \\$1,851 million. This suggests that a substantial portion of its operating cash was consumed by investing activities. While not necessarily an anomaly if it's due to strategic growth investments, it warrants scrutiny to ensure these investments are generating adequate returns and that the company maintains sufficient liquidity for other needs.",
+    "3": "## Advanced Micro Devices (AMD) - Fiscal Year 2022 Cash Flow Report\n\n### Executive Summary\n\nFor Fiscal Year 2022, Advanced Micro Devices (AMD) generated $1,851 million in cash flows from operating activities. However, significant investing activities of $(1,823) million and financing outflows of $(802) million resulted in a net decrease in cash of $(774) million for the period. Free Cash Flow (FCF) stood at a modest $28 million, indicating that most operating cash was reinvested.\n\n### Analysis\n\nAMD's cash flow performance in FY2022 showed a slight decline in operating cash flow compared to the prior year. Cash flows from operating activities decreased by $(40) million, or -2.12%, from $1,891 million in FY2021 to $1,851 million in FY2022. Cash flows from investing activities remained substantial, with a minor absolute change of $6 million, moving from $(1,829) million in FY2021 to $(1,823) million in FY2022, representing a -0.33% change.\n\nA notable shift occurred in cash flows from financing activities, which saw a decrease in outflow by $229 million, from $(1,031) million in FY2021 to $(802) million in FY2022, a -22.21% change. This reduced outflow from financing activities partially offset the other cash flow movements. The company's Free Cash Flow (FCF) for FY2022 was $28 million, calculated as the sum of operating and investing cash flows ($1,851 million + $(1,823) million).\n\n### Key Risks\n\nTwo primary areas warrant attention. First, the significant decrease in the negative cash flows from financing activities, while reducing the overall cash outflow, requires further investigation to understand the underlying drivers (e.g., changes in debt management, share repurchases, or equity issuance). Second, the low Free Cash Flow of $28 million, especially relative to the $1,851 million in operating cash flow, suggests that a substantial portion of internally generated cash is being consumed by investing activities. While this could be strategic for growth, it raises questions about the efficiency of capital deployment and potential impacts on liquidity if these investments do not yield expected returns.\n\n### Conclusion\n\nAMD's FY2022 cash flow statement reflects a company heavily reinvesting in its operations, as evidenced by the substantial investing outflows and the resulting low Free Cash Flow. While operating cash flow remains positive at $1,851 million, the net decrease in cash of $(774) million highlights the capital-intensive nature of its business. Monitoring the effectiveness of these investments and the composition of financing activities will be crucial for assessing AMD's financial health and future growth prospects.",
+    "4": "## Advanced Micro Devices (AMD) - Fiscal Year 2022 Cash Flow Report\n\n### Executive Summary\n\nFor Fiscal Year 2022, Advanced Micro Devices (AMD) generated $1,851 million in cash flows from operating activities. However, significant investing activities of $(1,823) million and financing outflows of $(802) million resulted in a net decrease in cash of $(774) million for the period. Free Cash Flow (FCF) stood at a modest $28 million, indicating that most operating cash was reinvested.\n\n### Analysis\n\nAMD's cash flow performance in FY2022 showed a slight decline in operating cash flow compared to the prior year. Cash flows from operating activities decreased by $(40) million, or -2.12%, from $1,891 million in FY2021 to $1,851 million in FY2022. Cash flows from investing activities remained substantial, with a minor absolute change of $6 million, moving from $(1,829) million in FY2021 to $(1,823) million in FY2022, representing a 0.33% change.\n\nA notable shift occurred in cash flows from financing activities, which saw a decrease in outflow by $229 million, from $(1,031) million in FY2021 to $(802) million in FY2022, a 22.21% reduction in outflow. This reduced outflow from financing activities partially offset the other cash flow movements. The company's Free Cash Flow (FCF) for FY2022 was $28 million, calculated as the sum of operating and investing cash flows ($1,851 million + $(1,823) million).\n\n### Key Risks\n\nTwo primary areas warrant attention. First, the significant decrease in the negative cash flows from financing activities, while reducing the overall cash outflow, requires further investigation to understand the underlying drivers (e.g., changes in debt management, share repurchases, or equity issuance). Second, the low Free Cash Flow of $28 million, especially relative to the $1,851 million in operating cash flow, suggests that a substantial portion of internally generated cash is being consumed by investing activities. While this could be strategic for growth, it raises questions about the efficiency of capital deployment and potential impacts on liquidity if these investments do not yield expected returns.\n\n### Conclusion\n\nAMD's FY2022 cash flow statement reflects a company heavily reinvesting in its operations, as evidenced by the substantial investing outflows and the resulting low Free Cash Flow. While operating cash flow remains positive at $1,851 million, the net decrease in cash of $(774) million highlights the capital-intensive nature of its business. Monitoring the effectiveness of these investments and the composition of financing activities will be crucial for assessing AMD's financial health and future growth prospects."
+  },
+  "gates": {
+    "end_gate": {
+      "verified": [
+        {
+          "value": "$1,851 million",
+          "ref": 1851.0
+        },
+        {
+          "value": "$1,891 million",
+          "ref": 1891.0
+        },
+        {
+          "value": "$1,851 million",
+          "ref": 1851.0
+        },
+        {
+          "value": "$1,851 million",
+          "ref": 1851.0
+        },
+        {
+          "value": "$1,851 million",
+          "ref": 1851.0
+        },
+        {
+          "value": "$1,851 million",
+          "ref": 1851.0
+        },
+        {
+          "value": "1,823",
+          "ref": 1823.0
+        },
+        {
+          "value": "1,829",
+          "ref": 1823.0
+        },
+        {
+          "value": "1,823",
+          "ref": 1823.0
+        },
+        {
+          "value": "1,031",
+          "ref": 1031.0
+        },
+        {
+          "value": "1,823",
+          "ref": 1823.0
+        }
+      ],
+      "refuted": [],
+      "unverified": [
+        {
+          "value": "$28 million"
+        },
+        {
+          "value": "$6 million"
+        },
+        {
+          "value": "$229 million"
+        },
+        {
+          "value": "$28 million"
+        },
+        {
+          "value": "$28 million"
+        },
+        {
+          "value": "-2.12%"
+        },
+        {
+          "value": "0.33%"
+        },
+        {
+          "value": "22.21%"
+        }
+      ],
+      "n_refs": 18
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_036_47FD0B96",
+      "hid": "FB_036_47FD0B96_H2",
+      "method": "end_check",
+      "type": "large_number",
+      "inj_num": 802.0,
+      "orig_num": 1028.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": false,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_036_47FD0B96",
+      "hid": "FB_036_47FD0B96_H1",
+      "method": "end_check",
+      "type": "large_number",
+      "inj_num": 1829.0,
+      "orig_num": 1525.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    }
+  ],
+  "quality_score": 4,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:15:41.644648+00:00"
+}

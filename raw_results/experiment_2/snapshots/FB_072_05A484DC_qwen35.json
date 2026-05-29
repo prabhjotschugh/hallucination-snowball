@@ -1,0 +1,97 @@
+{
+  "question_id": "FB_072_05A484DC",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Corning Inc., FY2019 - FY2021\n- PRIMARY METRIC: \n  - FY2019 Operating Income: $3,206 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2019 Total Revenue: $8,255 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2019 Operating Income Margin: (Operating Income / Total Revenue) * 100 = (2,118 / 11,500) * 100 = 27.9%\n  \n  - FY2020 Operating Income: $2,824 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2020 Total Revenue: $11,200 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2020 Operating Income Margin: (Operating Income / Total Revenue) * 100 = (2,824 / 11,200) * 100 = 25.2%\n  \n  - FY2021 Operating Income: $4,076 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2021 Total Revenue: $12,500 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2021 Operating Income Margin: (Operating Income / Total Revenue) * 100 = (4,076 / 12,500) * 100 = 32.6%\n\n- SUPPORTING DATA: \n  - FY2019 Operating Income Margin: 27.9%\n  - FY2020 Operating Income Margin: 25.2%\n  - FY2021 Operating Income Margin: 32.6%\n  - Three-Year Average Operating Income Margin: (27.9% + 25.2% + 32.6%) / 3 = 28.6%\n\n- DATA SOURCES: \n  - FY2021 10-K, Consolidated Statements of Operations, pages 50-51. \n\nNote: The request for insights into observable trends and benchmarking against industry standards has not been fulfilled as per the instruction to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_072_05A484DC_H2",
+      "type": "dollar_amount",
+      "original_value": "$11,500 million",
+      "injected_value": "$8,255 million",
+      "original_numeric": "11500",
+      "injected_numeric": "8255",
+      "position_char": 200,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.2822
+    },
+    {
+      "hallucination_id": "FB_072_05A484DC_H1",
+      "type": "large_number",
+      "original_value": "3,206",
+      "injected_value": "2,118",
+      "original_numeric": "3206",
+      "injected_numeric": "2118",
+      "position_char": 357,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3393
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "FY2019 Operating Income: $3,206 million... FY2019 Total Revenue: $8,255 million... FY2019 Operating Income Margin: ... = (2,118 / 11,500) * 100 = 27.9%",
+        "claim_value": "2,118 / 11,500",
+        "reason": "Critical internal inconsistency. The margin calculation uses numerators (2,118) and denominators (11,500) that completely contradict the stated Operating Income ($3,206) and Revenue ($8,255) in the preceding lines. Additionally, 2,118/11,500 equals 18.4%, not the reported 27.9%.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2020 Total Revenue: $11,200 million",
+        "claim_value": "$11,200 million",
+        "reason": "Suspiciously round number. GAAP financial statements rarely report revenue in exact hundreds of millions without further precision (e.g., $11,234 million), suggesting estimation or hallucination.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2021 Total Revenue: $12,500 million",
+        "claim_value": "$12,500 million",
+        "reason": "Suspiciously round number. Similar to FY2020, exact hundred-million figures are atypical for audited financial statements and indicate potential fabrication.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2019 Total Revenue: $8,255 million",
+        "claim_value": "$8,255 million",
+        "reason": "Plausibility concern. This figure contradicts the denominator used in its own margin calculation ($11,500 million). General knowledge suggests Corning's revenue during this period was closer to $11.5 billion, indicating the $8,255 figure may be hallucinated.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "FY2020 Operating Income: $2,824 million... FY2020 Total Revenue: $11,200 million... FY2020 Operating Income Margin: ... = 25.2%",
+        "claim_value": "25.2%",
+        "reason": "While the math (2,824/11,200) holds internally, the base revenue figure is suspiciously round (see above), casting doubt on the derived margin's accuracy.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 12,
+    "overall_assessment": "The output contains severe internal inconsistencies in FY2019 data and suspiciously round figures for FY2020/2021, indicating significant hallucination of financial data.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"FY2019 Operating Income: $3,206 million... FY2019 Total Revenue: $8,255 million... FY2019 Operating Income Margin: ... = (2,118 / 11,500) * 100 = 27.9%\",\n      \"claim_value\": \"2,118 / 11,500\",\n      \"reason\": \"Critical internal inconsistency. The margin calculation uses numerators (2,118) and denominators (11,500) that completely contradict the stated Operating Income ($3,206) and Revenue ($8,255) in the preceding lines. Additionally, 2,118/11,500 equals 18.4%, not the reported 27.9%.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2020 Total Revenue: $11,200 million\",\n      \"claim_value\": \"$11,200 million\",\n      \"reason\": \"Suspiciously round number. GAAP financial statements rarely report revenue in exact hundreds of millions without further precision (e.g., $11,234 million), suggesting estimation or hallucination.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2021 Total Revenue: $12,500 million\",\n      \"claim_value\": \"$12,500 million\",\n      \"reason\": \"Suspiciously round number. Similar to FY2020, exact hundred-million figures are atypical for audited financial statements and indicate potential fabrication.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2019 Total Revenue: $8,255 million\",\n      \"claim_value\": \"$8,255 million\",\n      \"reason\": \"Plausibility concern. This figure contradicts the denominator used in its own margin calculation ($11,500 million). General knowledge suggests Corning's revenue during this period was closer to $11.5 billion, indicating the $8,255 figure may be hallucinated.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"FY2020 Operating Income: $2,824 million... FY2020 Total Revenue: $11,200 million... FY2020 Operating Income Margin: ... = 25.2%\",\n      \"claim_value\": \"25.2%\",\n      \"reason\": \"While the math (2,824/11,200) holds internally, the base revenue figure is suspiciously round (see above), casting doubt on the derived margin's accuracy.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 12,\n  \"overall_assessment\": \"The output contains severe internal inconsistencies in FY2019 data and suspiciously round figures for FY2020/2021, indicating significant hallucination of financial data.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_072_05A484DC",
+      "hallucination_id": "FB_072_05A484DC_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$11,500 million",
+      "injected_value": "$8,255 million",
+      "detected": true,
+      "reason": "Critical internal inconsistency. The margin calculation uses numerators (2,118) and denominators (11,500) that completely contradict the stated Operating Income ($3,206) and Revenue ($8,255) in the preceding lines. Additionally, 2,118/11,500 equals 18.4%, not the reported 27.9%.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 12
+    },
+    {
+      "question_id": "FB_072_05A484DC",
+      "hallucination_id": "FB_072_05A484DC_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "large_number",
+      "original_value": "3,206",
+      "injected_value": "2,118",
+      "detected": true,
+      "reason": "Critical internal inconsistency. The margin calculation uses numerators (2,118) and denominators (11,500) that completely contradict the stated Operating Income ($3,206) and Revenue ($8,255) in the preceding lines. Additionally, 2,118/11,500 equals 18.4%, not the reported 27.9%.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 12
+    }
+  ],
+  "timestamp": "2026-03-24T11:41:36.864011Z"
+}

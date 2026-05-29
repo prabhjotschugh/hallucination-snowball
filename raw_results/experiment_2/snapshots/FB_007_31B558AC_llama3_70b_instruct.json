@@ -1,0 +1,103 @@
+{
+  "question_id": "FB_007_31B558AC",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: 3M Company, Q2 2023\n- PRIMARY METRIC: As of June 30, 2023, 3M Company had the following debt securities registered to trade on a national securities exchange:\n  1. **3M Company 2.250% Notes due 2024** - $1,000 million (per the Q2 2023 10-Q, Note 7 - Debt).\n  2. **3M Company 2.750% Notes due 2025** - $1009 million (per the Q2 2023 10-Q, Note 7 - Debt).\n  3. **3M Company 3.000% Notes due 2026** - $1,000 million (per the Q2 2023 10-Q, Note 7 - Debt).\n  4. **3M Company 3.500% Notes due 2027** - $1,000 million (per the Q2 2023 10-Q, Note 7 - Debt).\n  5. **3M Company 0.010% Notes due 2028** - $1,000 million (per the Q2 2023 10-Q, Note 7 - Debt).\n  6. **3M Company 4.000% Notes due 2030** - $1,000 million (per the Q2 2023 10-Q, Note 7 - Debt).\n  7. **3M Company 8.500% Notes due 2032** - $1,000 million (per the Q2 2023 10-Q, Note 7 - Debt).\n\n- SUPPORTING DATA: \n  - Total Debt Outstanding: $8,000 million as of June 30, 2023 (per the Q2 2023 10-Q, Consolidated Balance Sheets).\n  - Interest Expense for Q2 2023: $100 million (per the Q2 2023 10-Q, Consolidated Statements of Operations).\n  - Maturity Schedule:\n    - 2024: $1,000 million\n    - 2025: $750 million\n    - 2026: $1,000 million\n    - 2027: $1,000 million\n    - 2028: $1,000 million\n    - 2030: $1,000 million\n    - 2032: $1,000 million\n\n- DATA SOURCES: \n  - 3M Company Q2 2023 10-Q, Note 7 - Debt\n  - 3M Company Q2 2023 10-Q, Consolidated Balance Sheets\n  - 3M Company Q2 2023 10-Q, Consolidated Statements of Operations\n\nAll figures are reported as they appear in the official SEC filing, ensuring factual precision.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_007_31B558AC_H3",
+      "type": "dollar_amount",
+      "original_value": "$750 million",
+      "injected_value": "$1009 million",
+      "original_numeric": "750",
+      "injected_numeric": "1009",
+      "position_char": 321,
+      "sentence_approx": 6,
+      "perturbation_delta": 0.3454
+    },
+    {
+      "hallucination_id": "FB_007_31B558AC_H2",
+      "type": "percentage",
+      "original_value": "3.750%",
+      "injected_value": "0.010%",
+      "original_numeric": "3.750",
+      "injected_numeric": "0.010",
+      "position_char": 587,
+      "sentence_approx": 14,
+      "perturbation_delta": -8.0129
+    },
+    {
+      "hallucination_id": "FB_007_31B558AC_H1",
+      "type": "percentage",
+      "original_value": "4.250%",
+      "injected_value": "8.500%",
+      "original_numeric": "4.250",
+      "injected_numeric": "8.500",
+      "position_char": 783,
+      "sentence_approx": 20,
+      "perturbation_delta": 4.2512
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "3M Company 0.010% Notes due 2028 - $1,000 million",
+        "claim_value": "0.010%",
+        "reason": "Interest rate of 0.010% seems suspiciously low for a debt security, especially compared to the other rates listed.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Interest Expense for Q2 2023: $100 million",
+        "claim_value": "$100 million",
+        "reason": "Interest expense seems low compared to the total debt outstanding of $8,000 million.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 9,
+    "overall_assessment": "Some claims seem suspicious, but most appear plausible.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"3M Company 0.010% Notes due 2028 - $1,000 million\",\n      \"claim_value\" : \"0.010%\",\n      \"reason\"      : \"Interest rate of 0.010% seems suspiciously low for a debt security, especially compared to the other rates listed.\",\n      \"confidence\"  : \"high\"\n    },\n    {\n      \"claim_text\"  : \"Interest Expense for Q2 2023: $100 million\",\n      \"claim_value\" : \"$100 million\",\n      \"reason\"      : \"Interest expense seems low compared to the total debt outstanding of $8,000 million.\",\n      \"confidence\"  : \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 9,\n  \"overall_assessment\"   : \"Some claims seem suspicious, but most appear plausible.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_007_31B558AC",
+      "hallucination_id": "FB_007_31B558AC_H3",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$750 million",
+      "injected_value": "$1009 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_007_31B558AC",
+      "hallucination_id": "FB_007_31B558AC_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "percentage",
+      "original_value": "3.750%",
+      "injected_value": "0.010%",
+      "detected": true,
+      "reason": "Interest rate of 0.010% seems suspiciously low for a debt security, especially compared to the other rates listed.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_007_31B558AC",
+      "hallucination_id": "FB_007_31B558AC_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "percentage",
+      "original_value": "4.250%",
+      "injected_value": "8.500%",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 9
+    }
+  ],
+  "timestamp": "2026-03-27T09:26:47.569308Z"
+}

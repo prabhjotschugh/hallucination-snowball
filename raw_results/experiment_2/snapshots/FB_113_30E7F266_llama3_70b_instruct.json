@@ -1,0 +1,79 @@
+{
+  "question_id": "FB_113_30E7F266",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Netflix, FY2015\n- PRIMARY METRIC: Unadjusted EBITDA percentage margin: 9.7% (calculated as unadjusted EBITDA of USD 1,265 million divided by total revenue of USD 17,859 million).\n- SUPPORTING DATA:\n  - Unadjusted Operating Income: USD 906 million (per the FY2015 10-K, Consolidated Statements of Operations).\n  - Depreciation & Amortization (D&A): USD 65 million (per the FY2015 10-K, Consolidated Statements of Cash Flows).\n  - Total Revenue: USD 13,500 million (per the FY2015 10-K, Consolidated Statements of Operations).\n  - Unadjusted EBITDA: USD 1,265 million (calculated as USD 1,200 million operating income + USD 65 million D&A).\n- DATA SOURCES: \n  - FY2015 10-K, Consolidated Statements of Operations (for Total Revenue and Operating Income).\n  - FY2015 10-K, Consolidated Statements of Cash Flows (for Depreciation & Amortization).",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_113_30E7F266_H2",
+      "type": "large_number",
+      "original_value": "13,500",
+      "injected_value": "17,859",
+      "original_numeric": "13500",
+      "injected_numeric": "17859",
+      "position_char": 182,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.3229
+    },
+    {
+      "hallucination_id": "FB_113_30E7F266_H1",
+      "type": "large_number",
+      "original_value": "1,200",
+      "injected_value": "906",
+      "original_numeric": "1200",
+      "injected_numeric": "906",
+      "position_char": 255,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.2447
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Total Revenue: USD 13,500 million",
+        "claim_value": "USD 13,500 million",
+        "reason": "Total Revenue is reported as USD 17,859 million when calculating the unadjusted EBITDA percentage margin, but USD 13,500 million is used as the total revenue in the supporting data. This inconsistency raises concerns.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Unadjusted Operating Income: USD 906 million",
+        "claim_value": "USD 906 million",
+        "reason": "The calculation for unadjusted EBITDA uses USD 1,200 million as the operating income, which is inconsistent with the reported unadjusted operating income of USD 906 million.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 5,
+    "overall_assessment": "The output contains internal inconsistencies in total revenue and operating income, which raises concerns about the accuracy of the calculated unadjusted EBITDA percentage margin.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"Total Revenue: USD 13,500 million\",\n      \"claim_value\" : \"USD 13,500 million\",\n      \"reason\"      : \"Total Revenue is reported as USD 17,859 million when calculating the unadjusted EBITDA percentage margin, but USD 13,500 million is used as the total revenue in the supporting data. This inconsistency raises concerns.\",\n      \"confidence\"  : \"high\"\n    },\n    {\n      \"claim_text\"  : \"Unadjusted Operating Income: USD 906 million\",\n      \"claim_value\" : \"USD 906 million\",\n      \"reason\"      : \"The calculation for unadjusted EBITDA uses USD 1,200 million as the operating income, which is inconsistent with the reported unadjusted operating income of USD 906 million.\",\n      \"confidence\"  : \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 5,\n  \"overall_assessment\"   : \"The output contains internal inconsistencies in total revenue and operating income, which raises concerns about the accuracy of the calculated unadjusted EBITDA percentage margin.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_113_30E7F266",
+      "hallucination_id": "FB_113_30E7F266_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "large_number",
+      "original_value": "13,500",
+      "injected_value": "17,859",
+      "detected": true,
+      "reason": "Total Revenue is reported as USD 17,859 million when calculating the unadjusted EBITDA percentage margin, but USD 13,500 million is used as the total revenue in the supporting data. This inconsistency raises concerns.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 5
+    },
+    {
+      "question_id": "FB_113_30E7F266",
+      "hallucination_id": "FB_113_30E7F266_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "large_number",
+      "original_value": "1,200",
+      "injected_value": "906",
+      "detected": true,
+      "reason": "The calculation for unadjusted EBITDA uses USD 1,200 million as the operating income, which is inconsistent with the reported unadjusted operating income of USD 906 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 5
+    }
+  ],
+  "timestamp": "2026-03-27T09:42:02.249505Z"
+}

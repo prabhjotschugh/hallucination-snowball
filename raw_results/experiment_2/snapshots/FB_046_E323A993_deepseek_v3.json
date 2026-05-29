@@ -1,0 +1,85 @@
+{
+  "question_id": "FB_046_E323A993",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: American Water Works, FY2020\n- PRIMARY METRIC: Cash dividends paid for FY2020 amounted to $1,074 million (USD), as reported in the Consolidated Statements of Cash Flows, per the FY2020 10-K.\n- SUPPORTING DATA: \n  - FY2019: Cash dividends paid amounted to $1,420 million (USD), per the FY2019 10-K, Consolidated Statements of Cash Flows.\n  - FY2018: Cash dividends paid amounted to $650 million (USD), per the FY2018 10-K, Consolidated Statements of Cash Flows.\n- DATA SOURCES: \n  - FY2020 10-K, Consolidated Statements of Cash Flows, page 52.\n  - FY2019 10-K, Consolidated Statements of Cash Flows, page 50.\n  - FY2018 10-K, Consolidated Statements of Cash Flows, page 48.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_046_E323A993_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,034 million",
+      "injected_value": "$1,420 million",
+      "original_numeric": "1034",
+      "injected_numeric": "1420",
+      "position_char": 275,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.3732
+    },
+    {
+      "hallucination_id": "FB_046_E323A993_H1",
+      "type": "dollar_amount",
+      "original_value": "$977 million",
+      "injected_value": "$650 million",
+      "original_numeric": "977",
+      "injected_numeric": "650",
+      "position_char": 401,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.3343
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Cash dividends paid for FY2020 amounted to $1,074 million (USD), as reported in the Consolidated Statements of Cash Flows, per the FY2020 10-K.",
+        "claim_value": "$1,074 million",
+        "reason": "Dividends for a utility company like American Water Works are typically stable or slightly increasing year-over-year. The reported 24.4% decrease from FY2019 to FY2020 is unusual for a regulated utility.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "FY2019: Cash dividends paid amounted to $1,420 million (USD), per the FY2019 10-K, Consolidated Statements of Cash Flows.",
+        "claim_value": "$1,420 million",
+        "reason": "The 118.5% increase from FY2018 to FY2019 is extremely unusual for dividend payouts in the utility sector, which typically grow at low single-digit rates.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2018: Cash dividends paid amounted to $650 million (USD), per the FY2018 10-K, Consolidated Statements of Cash Flows.",
+        "claim_value": "$650 million",
+        "reason": "All three dividend figures show extreme volatility (650 \u2192 1420 \u2192 1074 million), which is highly atypical for water utilities that pride themselves on dividend consistency.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 3,
+    "overall_assessment": "All dividend figures show implausible volatility for a regulated water utility, suggesting potential fabrication.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Cash dividends paid for FY2020 amounted to $1,074 million (USD), as reported in the Consolidated Statements of Cash Flows, per the FY2020 10-K.\",\n      \"claim_value\": \"$1,074 million\",\n      \"reason\": \"Dividends for a utility company like American Water Works are typically stable or slightly increasing year-over-year. The reported 24.4% decrease from FY2019 to FY2020 is unusual for a regulated utility.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"FY2019: Cash dividends paid amounted to $1,420 million (USD), per the FY2019 10-K, Consolidated Statements of Cash Flows.\",\n      \"claim_value\": \"$1,420 million\",\n      \"reason\": \"The 118.5% increase from FY2018 to FY2019 is extremely unusual for dividend payouts in the utility sector, which typically grow at low single-digit rates.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2018: Cash dividends paid amounted to $650 million (USD), per the FY2018 10-K, Consolidated Statements of Cash Flows.\",\n      \"claim_value\": \"$650 million\",\n      \"reason\": \"All three dividend figures show extreme volatility (650 \u2192 1420 \u2192 1074 million), which is highly atypical for water utilities that pride themselves on dividend consistency.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 3,\n  \"overall_assessment\": \"All dividend figures show implausible volatility for a regulated water utility, suggesting potential fabrication.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_046_E323A993",
+      "hallucination_id": "FB_046_E323A993_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,034 million",
+      "injected_value": "$1,420 million",
+      "detected": true,
+      "reason": "Dividends for a utility company like American Water Works are typically stable or slightly increasing year-over-year. The reported 24.4% decrease from FY2019 to FY2020 is unusual for a regulated utility.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 3
+    },
+    {
+      "question_id": "FB_046_E323A993",
+      "hallucination_id": "FB_046_E323A993_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$977 million",
+      "injected_value": "$650 million",
+      "detected": true,
+      "reason": "All three dividend figures show extreme volatility (650 \u2192 1420 \u2192 1074 million), which is highly atypical for water utilities that pride themselves on dividend consistency.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 3
+    }
+  ],
+  "timestamp": "2026-03-24T09:46:28.048340Z"
+}

@@ -1,0 +1,85 @@
+{
+  "question_id": "FB_150_3E3CE551",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: Walmart Inc., FY2018 to FY2020\n\n- PRIMARY METRIC: \n  - FY2018 Unadjusted EBITDA: $22,165 million (Operating Income: $20,370 million + Depreciation and Amortization: $1,795 million) per the FY2018 10-K, Consolidated Statements of Operations and Consolidated Statements of Cash Flows.\n  - FY2019 Unadjusted EBITDA: $23,174 million (Operating Income: $21,000 million + Depreciation and Amortization: $2,174 million) per the FY2019 10-K, Consolidated Statements of Operations and Consolidated Statements of Cash Flows.\n  - FY2020 Unadjusted EBITDA: $24,035 million (Operating Income: $22,000 million + Depreciation and Amortization: $2,035 million) per the FY2020 10-K, Consolidated Statements of Operations and Consolidated Statements of Cash Flows.\n\n- SUPPORTING DATA: \n  - Total Revenue:\n    - FY2018: $500,343 million per the FY2018 10-K, Consolidated Statements of Operations.\n    - FY2019: $514,405 million per the FY2019 10-K, Consolidated Statements of Operations.\n    - FY2020: $523,964 million per the FY2020 10-K, Consolidated Statements of Operations.\n  - Unadjusted EBITDA Margin Calculation:\n    - FY2018: (Unadjusted EBITDA / Total Revenue) * 100 = ($14,431 million / $500,343 million) * 100 = 4.4%\n    - FY2019: (Unadjusted EBITDA / Total Revenue) * 100 = ($23,174 million / $347,115 million) * 100 = 4.5%\n    - FY2020: (Unadjusted EBITDA / Total Revenue) * 100 = ($24,035 million / $523,964 million) * 100 = 4.6%\n  \n- AVERAGE EBITDA MARGIN: \n  - (4.4% + 4.5% + 4.6%) / 3 = 4.5% (rounded to one decimal place).\n\n- DATA SOURCES: \n  - Walmart FY2018 10-K, Consolidated Statements of Operations and Consolidated Statements of Cash Flows.\n  - Walmart FY2019 10-K, Consolidated Statements of Operations and Consolidated Statements of Cash Flows.\n  - Walmart FY2020 10-K, Consolidated Statements of Operations and Consolidated Statements of Cash Flows.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_150_3E3CE551_H2",
+      "type": "dollar_amount",
+      "original_value": "$22,165 million",
+      "injected_value": "$14,431 million",
+      "original_numeric": "22165",
+      "injected_numeric": "14431",
+      "position_char": 1181,
+      "sentence_approx": 8,
+      "perturbation_delta": -0.3489
+    },
+    {
+      "hallucination_id": "FB_150_3E3CE551_H1",
+      "type": "dollar_amount",
+      "original_value": "$514,405 million",
+      "injected_value": "$347,115 million",
+      "original_numeric": "514405",
+      "injected_numeric": "347115",
+      "position_char": 1307,
+      "sentence_approx": 9,
+      "perturbation_delta": -0.3252
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "FY2018 Unadjusted EBITDA: $22,165 million (Operating Income: $20,370 million + Depreciation and Amortization: $1,795 million)",
+        "claim_value": "$22,165 million",
+        "reason": "The FY2018 EBITDA calculation is inconsistent with the EBITDA margin calculation provided later, which uses $14,431 million instead of $22,165 million. This is internally inconsistent.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2019: (Unadjusted EBITDA / Total Revenue) * 100 = ($23,174 million / $347,115 million) * 100 = 4.5%",
+        "claim_value": "$347,115 million",
+        "reason": "The total revenue for FY2019 is inconsistent with the FY2019 revenue claimed earlier ($514,405 million vs. $347,115 million). This is likely a typo or error.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2018: (Unadjusted EBITDA / Total Revenue) * 100 = ($14,431 million / $500,343 million) * 100 = 4.4%",
+        "claim_value": "$14,431 million",
+        "reason": "The EBITDA value used here ($14,431 million) contradicts the earlier EBITDA calculation ($22,165 million for FY2018). This is a significant inconsistency.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 12,
+    "overall_assessment": "The output contains multiple inconsistencies in EBITDA calculations and revenue figures, suggesting potential errors or fabrication.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"FY2018 Unadjusted EBITDA: $22,165 million (Operating Income: $20,370 million + Depreciation and Amortization: $1,795 million)\",\n      \"claim_value\": \"$22,165 million\",\n      \"reason\": \"The FY2018 EBITDA calculation is inconsistent with the EBITDA margin calculation provided later, which uses $14,431 million instead of $22,165 million. This is internally inconsistent.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2019: (Unadjusted EBITDA / Total Revenue) * 100 = ($23,174 million / $347,115 million) * 100 = 4.5%\",\n      \"claim_value\": \"$347,115 million\",\n      \"reason\": \"The total revenue for FY2019 is inconsistent with the FY2019 revenue claimed earlier ($514,405 million vs. $347,115 million). This is likely a typo or error.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2018: (Unadjusted EBITDA / Total Revenue) * 100 = ($14,431 million / $500,343 million) * 100 = 4.4%\",\n      \"claim_value\": \"$14,431 million\",\n      \"reason\": \"The EBITDA value used here ($14,431 million) contradicts the earlier EBITDA calculation ($22,165 million for FY2018). This is a significant inconsistency.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 12,\n  \"overall_assessment\": \"The output contains multiple inconsistencies in EBITDA calculations and revenue figures, suggesting potential errors or fabrication.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_150_3E3CE551",
+      "hallucination_id": "FB_150_3E3CE551_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$22,165 million",
+      "injected_value": "$14,431 million",
+      "detected": true,
+      "reason": "The FY2018 EBITDA calculation is inconsistent with the EBITDA margin calculation provided later, which uses $14,431 million instead of $22,165 million. This is internally inconsistent.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 12
+    },
+    {
+      "question_id": "FB_150_3E3CE551",
+      "hallucination_id": "FB_150_3E3CE551_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$514,405 million",
+      "injected_value": "$347,115 million",
+      "detected": true,
+      "reason": "The total revenue for FY2019 is inconsistent with the FY2019 revenue claimed earlier ($514,405 million vs. $347,115 million). This is likely a typo or error.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 12
+    }
+  ],
+  "timestamp": "2026-03-24T10:03:34.744180Z"
+}

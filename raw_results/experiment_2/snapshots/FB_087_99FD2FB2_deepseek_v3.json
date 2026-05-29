@@ -1,0 +1,115 @@
+{
+  "question_id": "FB_087_99FD2FB2",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: Johnson & Johnson, FY2022\n- PRIMARY METRIC: Gross Margin: $77,068 million (Gross Profit) on Total Revenue of $94,943 million, resulting in a Gross Margin Percentage of 70.3% (per the FY2022 10-K, Consolidated Statements of Operations).\n- SUPPORTING DATA:\n  - Total Revenue: $94,943 million (per the FY2022 10-K, Consolidated Statements of Operations).\n  - Cost of Goods Sold (COGS): $17,875 million (per the FY2022 10-K, Consolidated Statements of Operations).\n  - Gross Profit: $77,068 million (calculated as Total Revenue - COGS).\n  \n  Multi-Period Data:\n  - FY2021:\n    - Total Revenue: $93,775 million (per the FY2021 10-K, Consolidated Statements of Operations).\n    - COGS: $17,266 million (per the FY2021 10-K, Consolidated Statements of Operations).\n    - Gross Profit: $76,509 million (calculated as Total Revenue - COGS).\n    - Gross Margin Percentage: 81.6% (calculated as Gross Profit / Total Revenue).\n  \n  - FY2020:\n    - Total Revenue: $82,584 million (per the FY2020 10-K, Consolidated Statements of Operations).\n    - COGS: $20,998 million (per the FY2020 10-K, Consolidated Statements of Operations).\n    - Gross Profit: $84,991 million (calculated as Total Revenue - COGS).\n    - Gross Margin Percentage: 81.6% (calculated as Gross Profit / Total Revenue).\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations.\n  - FY2021 10-K, Consolidated Statements of Operations.\n  - FY2020 10-K, Consolidated Statements of Operations.\n\n**Note:** The request to analyze the factors influencing gross margin changes and the utility of gross margin as a financial health metric cannot be fulfilled as per the directive to provide raw data only without interpretation or analysis.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_087_99FD2FB2_H3",
+      "type": "percentage",
+      "original_value": "81.1%",
+      "injected_value": "70.3%",
+      "original_numeric": "81.1",
+      "injected_numeric": "70.3",
+      "position_char": 188,
+      "sentence_approx": 1,
+      "perturbation_delta": -10.7797
+    },
+    {
+      "hallucination_id": "FB_087_99FD2FB2_H2",
+      "type": "dollar_amount",
+      "original_value": "$15,157 million",
+      "injected_value": "$20,998 million",
+      "original_numeric": "15157",
+      "injected_numeric": "20998",
+      "position_char": 1061,
+      "sentence_approx": 12,
+      "perturbation_delta": 0.3853
+    },
+    {
+      "hallucination_id": "FB_087_99FD2FB2_H1",
+      "type": "dollar_amount",
+      "original_value": "$67,427 million",
+      "injected_value": "$84,991 million",
+      "original_numeric": "67427",
+      "injected_numeric": "84991",
+      "position_char": 1159,
+      "sentence_approx": 13,
+      "perturbation_delta": 0.2605
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Gross Profit: $77,068 million (calculated as Total Revenue - COGS).",
+        "claim_value": "$77,068 million",
+        "reason": "The Gross Profit figure does not reconcile with the provided Total Revenue ($94,943 million) and COGS ($17,875 million). Correct calculation should be $94,943 million - $17,875 million = $77,068 million, which matches. No discrepancy found, but flagged for verification due to initial suspicion.",
+        "confidence": "low"
+      },
+      {
+        "claim_text": "Gross Margin Percentage: 70.3% (per the FY2022 10-K, Consolidated Statements of Operations).",
+        "claim_value": "70.3%",
+        "reason": "The Gross Margin Percentage is calculated as Gross Profit / Total Revenue, which should be $77,068 million / $94,943 million \u2248 81.2%, not 70.3%. This discrepancy suggests a potential error in the reported percentage.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Gross Profit: $84,991 million (calculated as Total Revenue - COGS).",
+        "claim_value": "$84,991 million",
+        "reason": "For FY2020, the Gross Profit calculation is incorrect. Total Revenue ($82,584 million) minus COGS ($20,998 million) should be $61,586 million, not $84,991 million. This is a significant discrepancy.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Gross Margin Percentage: 81.6% (calculated as Gross Profit / Total Revenue).",
+        "claim_value": "81.6%",
+        "reason": "For FY2020, the Gross Margin Percentage is incorrectly reported. Using the correct Gross Profit ($61,586 million) and Total Revenue ($82,584 million), the Gross Margin Percentage should be \u224874.6%, not 81.6%.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 8,
+    "overall_assessment": "Several significant discrepancies found in Gross Profit and Gross Margin Percentage calculations across multiple years.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Gross Profit: $77,068 million (calculated as Total Revenue - COGS).\",\n      \"claim_value\": \"$77,068 million\",\n      \"reason\": \"The Gross Profit figure does not reconcile with the provided Total Revenue ($94,943 million) and COGS ($17,875 million). Correct calculation should be $94,943 million - $17,875 million = $77,068 million, which matches. No discrepancy found, but flagged for verification due to initial suspicion.\",\n      \"confidence\": \"low\"\n    },\n    {\n      \"claim_text\": \"Gross Margin Percentage: 70.3% (per the FY2022 10-K, Consolidated Statements of Operations).\",\n      \"claim_value\": \"70.3%\",\n      \"reason\": \"The Gross Margin Percentage is calculated as Gross Profit / Total Revenue, which should be $77,068 million / $94,943 million \u2248 81.2%, not 70.3%. This discrepancy suggests a potential error in the reported percentage.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Gross Profit: $84,991 million (calculated as Total Revenue - COGS).\",\n      \"claim_value\": \"$84,991 million\",\n      \"reason\": \"For FY2020, the Gross Profit calculation is incorrect. Total Revenue ($82,584 million) minus COGS ($20,998 million) should be $61,586 million, not $84,991 million. This is a significant discrepancy.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Gross Margin Percentage: 81.6% (calculated as Gross Profit / Total Revenue).\",\n      \"claim_value\": \"81.6%\",\n      \"reason\": \"For FY2020, the Gross Margin Percentage is incorrectly reported. Using the correct Gross Profit ($61,586 million) and Total Revenue ($82,584 million), the Gross Margin Percentage should be \u224874.6%, not 81.6%.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 8,\n  \"overall_assessment\": \"Several significant discrepancies found in Gross Profit and Gross Margin Percentage calculations across multiple years.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_087_99FD2FB2",
+      "hallucination_id": "FB_087_99FD2FB2_H3",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "percentage",
+      "original_value": "81.1%",
+      "injected_value": "70.3%",
+      "detected": true,
+      "reason": "The Gross Margin Percentage is calculated as Gross Profit / Total Revenue, which should be $77,068 million / $94,943 million \u2248 81.2%, not 70.3%. This discrepancy suggests a potential error in the reported percentage.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 8
+    },
+    {
+      "question_id": "FB_087_99FD2FB2",
+      "hallucination_id": "FB_087_99FD2FB2_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$15,157 million",
+      "injected_value": "$20,998 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 8
+    },
+    {
+      "question_id": "FB_087_99FD2FB2",
+      "hallucination_id": "FB_087_99FD2FB2_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$67,427 million",
+      "injected_value": "$84,991 million",
+      "detected": true,
+      "reason": "For FY2020, the Gross Profit calculation is incorrect. Total Revenue ($82,584 million) minus COGS ($20,998 million) should be $61,586 million, not $84,991 million. This is a significant discrepancy.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 8
+    }
+  ],
+  "timestamp": "2026-03-24T09:53:16.775031Z"
+}

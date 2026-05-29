@@ -1,0 +1,103 @@
+{
+  "question_id": "FB_079_C8770283",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: CVS Health, Q2 FY2022\n- PRIMARY METRIC: CVS Health declared and paid dividends to common shareholders totaling $0.68 per share during Q2 FY2022, as reported in the FY2022 10-K, Consolidated Statements of Shareholders' Equity.\n- SUPPORTING DATA: \n  - Q2 FY2021: CVS Health declared and paid dividends of $0.50 per share.\n  - Q1 FY2022: CVS Health declared and paid dividends of $0.69 per share.\n  - Total dividends paid in FY2021: $1.25 per share.\n- DATA SOURCES: \n  - CVS Health FY2022 10-K, Consolidated Statements of Shareholders' Equity.\n  - CVS Health FY2021 10-K, Consolidated Statements of Shareholders' Equity. \n\nNote: No trend analysis or calculations of ratios have been included, as per the directive to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_079_C8770283_H3",
+      "type": "dollar_amount",
+      "original_value": "$0.50 ",
+      "injected_value": "$0.68 ",
+      "original_numeric": "0.50",
+      "injected_numeric": "0.68",
+      "position_char": 131,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.3553
+    },
+    {
+      "hallucination_id": "FB_079_C8770283_H2",
+      "type": "dollar_amount",
+      "original_value": "$0.50 ",
+      "injected_value": "$0.69 ",
+      "original_numeric": "0.50",
+      "injected_numeric": "0.69",
+      "position_char": 397,
+      "sentence_approx": 5,
+      "perturbation_delta": 0.3708
+    },
+    {
+      "hallucination_id": "FB_079_C8770283_H1",
+      "type": "dollar_amount",
+      "original_value": "$1.98 ",
+      "injected_value": "$1.25 ",
+      "original_numeric": "1.98",
+      "injected_numeric": "1.25",
+      "position_char": 450,
+      "sentence_approx": 7,
+      "perturbation_delta": -0.3703
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "CVS Health declared and paid dividends to common shareholders totaling $0.68 per share during Q2 FY2022",
+        "claim_value": "$0.68 per share",
+        "reason": "The dividend amount is unusually precise (to the cent) and doesn't follow a clear progression from previous quarters. Q1 FY2022 was $0.69 and Q2 FY2021 was $0.50, making the $0.68 figure seem arbitrary without consistent growth patterns.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Total dividends paid in FY2021: $1.25 per share",
+        "claim_value": "$1.25 per share",
+        "reason": "Given that Q2 FY2021 was $0.50 per share, and assuming quarterly dividends were consistent, annualizing this would suggest ~$2.00 per share for FY2021 (4 quarters). $1.25 seems too low unless dividends were only paid for part of the year.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 4,
+    "overall_assessment": "The dividend figures contain inconsistencies in progression and annual totals that warrant verification against primary sources.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"CVS Health declared and paid dividends to common shareholders totaling $0.68 per share during Q2 FY2022\",\n      \"claim_value\": \"$0.68 per share\",\n      \"reason\": \"The dividend amount is unusually precise (to the cent) and doesn't follow a clear progression from previous quarters. Q1 FY2022 was $0.69 and Q2 FY2021 was $0.50, making the $0.68 figure seem arbitrary without consistent growth patterns.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Total dividends paid in FY2021: $1.25 per share\",\n      \"claim_value\": \"$1.25 per share\",\n      \"reason\": \"Given that Q2 FY2021 was $0.50 per share, and assuming quarterly dividends were consistent, annualizing this would suggest ~$2.00 per share for FY2021 (4 quarters). $1.25 seems too low unless dividends were only paid for part of the year.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 4,\n  \"overall_assessment\": \"The dividend figures contain inconsistencies in progression and annual totals that warrant verification against primary sources.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_079_C8770283",
+      "hallucination_id": "FB_079_C8770283_H3",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$0.50 ",
+      "injected_value": "$0.68 ",
+      "detected": true,
+      "reason": "The dividend amount is unusually precise (to the cent) and doesn't follow a clear progression from previous quarters. Q1 FY2022 was $0.69 and Q2 FY2021 was $0.50, making the $0.68 figure seem arbitrary without consistent growth patterns.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 4
+    },
+    {
+      "question_id": "FB_079_C8770283",
+      "hallucination_id": "FB_079_C8770283_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$0.50 ",
+      "injected_value": "$0.69 ",
+      "detected": true,
+      "reason": "The dividend amount is unusually precise (to the cent) and doesn't follow a clear progression from previous quarters. Q1 FY2022 was $0.69 and Q2 FY2021 was $0.50, making the $0.68 figure seem arbitrary without consistent growth patterns.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 4
+    },
+    {
+      "question_id": "FB_079_C8770283",
+      "hallucination_id": "FB_079_C8770283_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$1.98 ",
+      "injected_value": "$1.25 ",
+      "detected": true,
+      "reason": "Given that Q2 FY2021 was $0.50 per share, and assuming quarterly dividends were consistent, annualizing this would suggest ~$2.00 per share for FY2021 (4 quarters). $1.25 seems too low unless dividends were only paid for part of the year.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 4
+    }
+  ],
+  "timestamp": "2026-03-24T09:51:51.525991Z"
+}

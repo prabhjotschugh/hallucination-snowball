@@ -1,0 +1,103 @@
+{
+  "question_id": "FB_088_DD231ABD",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Johnson & Johnson, FY2022\n- PRIMARY METRIC: \n  - Total Revenue: $130,473 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - Ending Inventory: $16,790 million (per the FY2022 10-K, Consolidated Balance Sheets)\n  \n  **Inventory Turnover Ratio Calculation:**\n  - Inventory Turnover Ratio = Total Revenue / Average Inventory\n  - Average Inventory (assuming ending inventory is representative for simplicity) = $16,790 million\n  - Inventory Turnover Ratio = $94,943 million / $16,790 million = 5.65 times\n\n- SUPPORTING DATA:\n  - Total Revenue for FY2021: $93,775 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - Ending Inventory for FY2021: $19,470 million (per the FY2021 10-K, Consolidated Balance Sheets)\n  - Total Revenue for FY2020: $82,584 million (per the FY2020 10-K, Consolidated Statements of Operations)\n  - Ending Inventory for FY2020: $18,618 million (per the FY2020 10-K, Consolidated Balance Sheets)\n\n- DATA SOURCES:\n  - FY2022 10-K, Consolidated Statements of Operations and Consolidated Balance Sheets\n  - FY2021 10-K, Consolidated Statements of Operations and Consolidated Balance Sheets\n  - FY2020 10-K, Consolidated Statements of Operations and Consolidated Balance Sheets\n\n**Note:** The inventory turnover ratio calculated here is based on the assumption that the ending inventory is representative of average inventory for the year. Johnson & Johnson operates in a diverse healthcare sector, which may lead to variations in inventory management practices compared to traditional retail or manufacturing companies. The company\u2019s inventory may include products with varying shelf lives and demand cycles, which can affect turnover metrics. Therefore, while the calculated ratio is 5.65 times, it may not fully reflect operational efficiency in the same way it would for companies with more consistent inventory turnover.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_088_DD231ABD_H3",
+      "type": "dollar_amount",
+      "original_value": "$94,943 million",
+      "injected_value": "$130,473 million",
+      "original_numeric": "94943",
+      "injected_numeric": "130473",
+      "position_char": 84,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.3742
+    },
+    {
+      "hallucination_id": "FB_088_DD231ABD_H2",
+      "type": "dollar_amount",
+      "original_value": "$15,120 million",
+      "injected_value": "$19,470 million",
+      "original_numeric": "15120",
+      "injected_numeric": "19470",
+      "position_char": 701,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.2877
+    },
+    {
+      "hallucination_id": "FB_088_DD231ABD_H1",
+      "type": "dollar_amount",
+      "original_value": "$14,230 million",
+      "injected_value": "$18,618 million",
+      "original_numeric": "14230",
+      "injected_numeric": "18618",
+      "position_char": 908,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.3084
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Total Revenue: $130,473 million",
+        "claim_value": "$130,473 million",
+        "reason": "The reported total revenue seems suspiciously precise compared to other figures, which are rounded to the nearest million.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Inventory Turnover Ratio = $94,943 million / $16,790 million = 5.65 times",
+        "claim_value": "$94,943 million",
+        "reason": "The numerator in the inventory turnover ratio calculation is not the total revenue reported earlier ($130,473 million). This inconsistency raises concerns about the accuracy of the calculation.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 7,
+    "overall_assessment": "While the researcher provides detailed calculations and supporting data, some claims appear suspicious due to inconsistencies and unusual precision.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Total Revenue: $130,473 million\",\n      \"claim_value\": \"$130,473 million\",\n      \"reason\": \"The reported total revenue seems suspiciously precise compared to other figures, which are rounded to the nearest million.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Inventory Turnover Ratio = $94,943 million / $16,790 million = 5.65 times\",\n      \"claim_value\": \"$94,943 million\",\n      \"reason\": \"The numerator in the inventory turnover ratio calculation is not the total revenue reported earlier ($130,473 million). This inconsistency raises concerns about the accuracy of the calculation.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 7,\n  \"overall_assessment\": \"While the researcher provides detailed calculations and supporting data, some claims appear suspicious due to inconsistencies and unusual precision.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_088_DD231ABD",
+      "hallucination_id": "FB_088_DD231ABD_H3",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$94,943 million",
+      "injected_value": "$130,473 million",
+      "detected": true,
+      "reason": "The reported total revenue seems suspiciously precise compared to other figures, which are rounded to the nearest million.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_088_DD231ABD",
+      "hallucination_id": "FB_088_DD231ABD_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$15,120 million",
+      "injected_value": "$19,470 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_088_DD231ABD",
+      "hallucination_id": "FB_088_DD231ABD_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$14,230 million",
+      "injected_value": "$18,618 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 7
+    }
+  ],
+  "timestamp": "2026-03-27T09:38:22.422986Z"
+}

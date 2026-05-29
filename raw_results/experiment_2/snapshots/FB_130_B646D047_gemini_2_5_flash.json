@@ -1,0 +1,121 @@
+{
+  "question_id": "FB_130_B646D047",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: PepsiCo, FY2023 Q1\n- PRIMARY METRIC: PepsiCo raised its full-year guidance for core constant currency EPS growth to 17.6% from a previous estimate of 2.6%. This represents an increase of 2 percentage points. (per the FY2023 Q1 10-Q, Management's Discussion and Analysis)\n- SUPPORTING DATA: Previous guidance for core constant currency EPS growth was 17.0%. The new guidance is 10%. \n- DATA SOURCES: Specific filings referenced include the FY2023 Q1 10-Q, Management's Discussion and Analysis section. \n\nNote: No further analysis or implications are provided as per the directive.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_130_B646D047_H3",
+      "type": "percentage",
+      "original_value": "10%",
+      "injected_value": "17.6%",
+      "original_numeric": "10",
+      "injected_numeric": "17.6",
+      "position_char": 136,
+      "sentence_approx": 1,
+      "perturbation_delta": 7.601
+    },
+    {
+      "hallucination_id": "FB_130_B646D047_H2",
+      "type": "percentage",
+      "original_value": "8%",
+      "injected_value": "2.6%",
+      "original_numeric": "8",
+      "injected_numeric": "2.6",
+      "position_char": 168,
+      "sentence_approx": 1,
+      "perturbation_delta": -5.3668
+    },
+    {
+      "hallucination_id": "FB_130_B646D047_H1",
+      "type": "percentage",
+      "original_value": "8%",
+      "injected_value": "17.0%",
+      "original_numeric": "8",
+      "injected_numeric": "17.0",
+      "position_char": 366,
+      "sentence_approx": 3,
+      "perturbation_delta": 9.0396
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "PepsiCo raised its full-year guidance for core constant currency EPS growth to 17.6%",
+        "claim_value": "17.6%",
+        "reason": "This figure for new guidance is directly contradicted by a later claim in the 'SUPPORTING DATA' section stating 'The new guidance is 10%.' This is a clear internal inconsistency.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "from a previous estimate of 2.6%.",
+        "claim_value": "2.6%",
+        "reason": "This figure for previous guidance is directly contradicted by a later claim in the 'SUPPORTING DATA' section stating 'Previous guidance for core constant currency EPS growth was 17.0%.' This is a clear internal inconsistency.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "This represents an increase of 2 percentage points.",
+        "claim_value": "2 percentage points",
+        "reason": "This calculated increase (2 percentage points) is mathematically inconsistent with the preceding figures (17.6% - 2.6% = 15 percentage points, not 2 percentage points).",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Previous guidance for core constant currency EPS growth was 17.0%.",
+        "claim_value": "17.0%",
+        "reason": "This figure for previous guidance directly contradicts the earlier claim of 'from a previous estimate of 2.6%.' This is a clear internal inconsistency.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "The new guidance is 10%.",
+        "claim_value": "10%",
+        "reason": "This figure for new guidance directly contradicts the earlier claim of 'raised its full-year guidance for core constant currency EPS growth to 17.6%.' This is a clear internal inconsistency.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 7,
+    "overall_assessment": "The researcher's output contains multiple severe internal inconsistencies regarding PepsiCo's EPS guidance figures and their calculated change, strongly indicating fabrication or hallucination of financial data.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"PepsiCo raised its full-year guidance for core constant currency EPS growth to 17.6%\",\n      \"claim_value\": \"17.6%\",\n      \"reason\": \"This figure for new guidance is directly contradicted by a later claim in the 'SUPPORTING DATA' section stating 'The new guidance is 10%.' This is a clear internal inconsistency.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"from a previous estimate of 2.6%.\",\n      \"claim_value\": \"2.6%\",\n      \"reason\": \"This figure for previous guidance is directly contradicted by a later claim in the 'SUPPORTING DATA' section stating 'Previous guidance for core constant currency EPS growth was 17.0%.' This is a clear internal inconsistency.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"This represents an increase of 2 percentage points.\",\n      \"claim_value\": \"2 percentage points\",\n      \"reason\": \"This calculated increase (2 percentage points) is mathematically inconsistent with the preceding figures (17.6% - 2.6% = 15 percentage points, not 2 percentage points).\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Previous guidance for core constant currency EPS growth was 17.0%.\",\n      \"claim_value\": \"17.0%\",\n      \"reason\": \"This figure for previous guidance directly contradicts the earlier claim of 'from a previous estimate of 2.6%.' This is a clear internal inconsistency.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"The new guidance is 10%.\",\n      \"claim_value\": \"10%\",\n      \"reason\": \"This figure for new guidance directly contradicts the earlier claim of 'raised its full-year guidance for core constant currency EPS growth to 17.6%.' This is a clear internal inconsistency.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 7,\n  \"overall_assessment\": \"The researcher's output contains multiple severe internal inconsistencies regarding PepsiCo's EPS guidance figures and their calculated change, strongly indicating fabrication or hallucination of financial data.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_130_B646D047",
+      "hallucination_id": "FB_130_B646D047_H3",
+      "model": "gemini-2.5-flash",
+      "injection_type": "percentage",
+      "original_value": "10%",
+      "injected_value": "17.6%",
+      "detected": true,
+      "reason": "This figure for new guidance is directly contradicted by a later claim in the 'SUPPORTING DATA' section stating 'The new guidance is 10%.' This is a clear internal inconsistency.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_130_B646D047",
+      "hallucination_id": "FB_130_B646D047_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "percentage",
+      "original_value": "8%",
+      "injected_value": "2.6%",
+      "detected": true,
+      "reason": "This figure for previous guidance is directly contradicted by a later claim in the 'SUPPORTING DATA' section stating 'Previous guidance for core constant currency EPS growth was 17.0%.' This is a clear internal inconsistency.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_130_B646D047",
+      "hallucination_id": "FB_130_B646D047_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "percentage",
+      "original_value": "8%",
+      "injected_value": "17.0%",
+      "detected": true,
+      "reason": "This figure for new guidance is directly contradicted by a later claim in the 'SUPPORTING DATA' section stating 'The new guidance is 10%.' This is a clear internal inconsistency.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 7
+    }
+  ],
+  "timestamp": "2026-03-25T08:03:12.966897Z"
+}

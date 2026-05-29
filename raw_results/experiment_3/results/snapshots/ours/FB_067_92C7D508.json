@@ -1,0 +1,452 @@
+{
+  "question_id": "FB_067_92C7D508",
+  "method": "ours",
+  "final_output": "## Boeing Company: FY2022 and FY2021 Tax Performance Report\n\n### Executive Summary\nThe Boeing Company experienced a significant increase in its effective tax rate and tax expense from FY2021 to FY2022. The effective tax rate rose from 5.3% in FY2021 to 20.0% in FY2022, representing a substantial increase. This was accompanied by a significant rise in income tax expense from $290 million to $1,200 million, while pre-tax income also increased from $4,157 million to $6,313 million.\n\n### Analysis\nBoeing's financial performance in terms of taxation shows a notable shift between the fiscal years. In FY2022, the company reported an income tax expense of $1,200 million on a pre-tax income of $6,313 million, resulting in a calculated effective tax rate of 19.0%. This compares to FY2021, where income tax expense was $290 million on a pre-tax income of $4,157 million, yielding a calculated effective tax rate of 7.0%. The absolute increase in income tax expense was $910 million, a 313.79% increase year-over-year. Pre-tax income also grew by $2,156 million, or 51.87%. The calculated effective tax rate saw an absolute increase of 12.0 percentage points.\n\n### Key Risks\nA significant anomaly exists in the reported effective tax rates when compared to the calculated rates from the provided income tax expense and pre-tax income figures. For FY2022, the reported effective tax rate is 8.3%, while the calculated rate is 19.0% ($1,200 million / $6,313 million). This 10.7 percentage point discrepancy warrants further investigation as it could indicate complex tax adjustments not immediately apparent from the primary figures or potential reporting inconsistencies. A similar, though smaller, discrepancy is observed in FY2021, where the reported rate of 5.3% differs from the calculated rate of 7.0% ($290 million / $4,157 million).\n\n### Conclusion\nWhile Boeing's pre-tax income and income tax expense both increased substantially from FY2021 to FY2022, the calculated effective tax rate also rose significantly. The observed discrepancies between reported and calculated effective tax rates highlight a need for deeper analysis into the specific components of Boeing's tax provisions, as detailed in the 10-K filings, to fully understand the drivers behind these figures and ensure complete transparency.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Boeing Company, FY2022 and FY2021\n- PRIMARY METRIC: Effective Tax Rate for FY2022: 9.5% (per the FY2022 10-K, Note 9 - Income Taxes). Effective Tax Rate for FY2021: 5.3% (per the FY2021 10-K, Note 9 - Income Taxes).\n- SUPPORTING DATA: \n  - FY2022 Income Tax Expense: $1,513 million (per the FY2022 10-K, Consolidated Statements of Operations).\n  - FY2021 Income Tax Expense: $290 million (per the FY2021 10-K, Consolidated Statements of Operations).\n  - FY2022 Pre-tax Income: $6,000 million (per the FY2022 10-K, Consolidated Statements of Operations).\n  - FY2021 Pre-tax Income: $3,936 million (per the FY2021 10-K, Consolidated Statements of Operations).\n- DATA SOURCES: \n  - FY2022 10-K, Note 9 - Income Taxes\n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Note 9 - Income Taxes\n  - FY2021 10-K, Consolidated Statements of Operations\n\nPlease note that the effective tax rate is calculated as the income tax expense divided by pre-tax income. The figures provided are sourced directly from Boeing's official SEC filings for the respective fiscal years.",
+    "2": "Here's an analysis of Boeing's tax data for FY2021 and FY2022, incorporating the corrected values:\n\n**Corrected Data Summary:**\n\n| Metric                  | FY2022 (Corrected) | FY2021 (Corrected) |\n| :---------------------- | :----------------- | :----------------- |\n| Income Tax Expense      | $1,200 million     | $290 million       |\n| Pre-tax Income          | $6,000 million     | $4,157 million     |\n| Effective Tax Rate      | 8.3%               | 5.3%               |\n\n---\n\n**1. Year-over-Year Changes:**\n\n*   **Income Tax Expense:**\n    *   Absolute Change: FY2022 - FY2021 = $1,200 million - $290 million = **$910 million increase**\n    *   Percentage Change: (Absolute Change / FY2021) * 100 = ($910 million / $290 million) * 100 = **313.79% increase**\n\n*   **Pre-tax Income:**\n    *   Absolute Change: FY2022 - FY2021 = $6,000 million - $4,157 million = **$1,843 million increase**\n    *   Percentage Change: (Absolute Change / FY2021) * 100 = ($1,843 million / $4,157 million) * 100 = **44.34% increase**\n\n*   **Effective Tax Rate:**\n    *   Absolute Change: FY2022 - FY2021 = 8.3% - 5.3% = **3.0 percentage point increase**\n    *   Percentage Change: (Absolute Change / FY2021) * 100 = (3.0 / 5.3) * 100 = **56.60% increase**\n\n---\n\n**2. Relevant Ratios:**\n\n*   **Effective Tax Rate (as provided and verified):**\n    *   FY2022: **8.3%**\n    *   FY2021: **5.3%**\n\n*   **Calculated Effective Tax Rate (for verification):**\n    *   Formula: Income Tax Expense / Pre-tax Income\n    *   FY2022: $1,200 million / $6,000 million = 0.20 or **20.0%**\n    *   FY2021: $290 million / $4,157 million = 0.06976 or **7.0%**\n\n---\n\n**3. Anomalies:**\n\n*   **Discrepancy in FY2022 Effective Tax Rate:**\n    *   The provided and verified Effective Tax Rate for FY2022 is 8.3%.\n    *   However, when calculated using the provided (and corrected) Income Tax Expense ($1,200 million) and Pre-tax Income ($6,000 million) for FY2022, the Effective Tax Rate is 20.0%.\n    *   This is a significant anomaly (a difference of 11.7 percentage points). It suggests that either the provided \"Effective Tax Rate\" (8.3%) or the \"Income Tax Expense\" and \"Pre-tax Income\" figures for FY2022, despite being corrected, may still contain an inconsistency when used together to derive the rate. Further investigation into the 10-K notes would be required to reconcile this.\n\n*   **Discrepancy in FY2021 Effective Tax Rate:**\n    *   The provided and verified Effective Tax Rate for FY2021 is 5.3%.\n    *   When calculated using the provided Income Tax Expense ($290 million) and Pre-tax Income ($4,157 million) for FY2021, the Effective Tax Rate is 7.0%.\n    *   This is also an anomaly (a difference of 1.7 percentage points), though less severe than FY2022. This could be due to rounding differences in the reported rate or specific tax adjustments not fully captured by the simple expense/income ratio.",
+    "3": "## Boeing Company: FY2022 and FY2021 Tax Performance Report\n\n### Executive Summary\nThe Boeing Company experienced a significant increase in its effective tax rate and tax expense from FY2021 to FY2022. The effective tax rate rose from 5.3% in FY2021 to 8.3% in FY2022, representing a 56.60% increase. This was accompanied by a substantial rise in income tax expense from $290 million to $1,200 million, while pre-tax income also increased from $4,157 million to $6,000 million.\n\n### Analysis\nBoeing's financial performance in terms of taxation shows a notable shift between the fiscal years. In FY2022, the company reported an income tax expense of $1,200 million on a pre-tax income of $6,000 million, resulting in an effective tax rate of 8.3%. This compares to FY2021, where income tax expense was $290 million on a pre-tax income of $4,157 million, yielding an effective tax rate of 5.3%. The absolute increase in income tax expense was $910 million, a 313.79% increase year-over-year. Pre-tax income also grew by $1,843 million, or 44.34%. The effective tax rate saw an absolute increase of 3.0 percentage points.\n\n### Key Risks\nA significant anomaly exists in the reported effective tax rates when compared to the calculated rates from the provided income tax expense and pre-tax income figures. For FY2022, the reported effective tax rate is 8.3%, while the calculated rate is 20.0% ($1,200 million / $6,000 million). This 11.7 percentage point discrepancy warrants further investigation as it could indicate complex tax adjustments not immediately apparent from the primary figures or potential reporting inconsistencies. A similar, though smaller, discrepancy is observed in FY2021, where the reported rate of 5.3% differs from the calculated rate of 7.0% ($290 million / $4,157 million).\n\n### Conclusion\nWhile Boeing's pre-tax income and income tax expense both increased substantially from FY2021 to FY2022, the reported effective tax rate also rose significantly. The observed discrepancies between reported and calculated effective tax rates highlight a need for deeper analysis into the specific components of Boeing's tax provisions, as detailed in the 10-K filings, to fully understand the drivers behind these figures and ensure complete transparency.",
+    "4": "## Boeing Company: FY2022 and FY2021 Tax Performance Report\n\n### Executive Summary\nThe Boeing Company experienced a significant increase in its effective tax rate and tax expense from FY2021 to FY2022. The effective tax rate rose from 5.3% in FY2021 to 20.0% in FY2022, representing a substantial increase. This was accompanied by a significant rise in income tax expense from $290 million to $1,200 million, while pre-tax income also increased from $4,157 million to $6,313 million.\n\n### Analysis\nBoeing's financial performance in terms of taxation shows a notable shift between the fiscal years. In FY2022, the company reported an income tax expense of $1,200 million on a pre-tax income of $6,313 million, resulting in a calculated effective tax rate of 19.0%. This compares to FY2021, where income tax expense was $290 million on a pre-tax income of $4,157 million, yielding a calculated effective tax rate of 7.0%. The absolute increase in income tax expense was $910 million, a 313.79% increase year-over-year. Pre-tax income also grew by $2,156 million, or 51.87%. The calculated effective tax rate saw an absolute increase of 12.0 percentage points.\n\n### Key Risks\nA significant anomaly exists in the reported effective tax rates when compared to the calculated rates from the provided income tax expense and pre-tax income figures. For FY2022, the reported effective tax rate is 8.3%, while the calculated rate is 19.0% ($1,200 million / $6,313 million). This 10.7 percentage point discrepancy warrants further investigation as it could indicate complex tax adjustments not immediately apparent from the primary figures or potential reporting inconsistencies. A similar, though smaller, discrepancy is observed in FY2021, where the reported rate of 5.3% differs from the calculated rate of 7.0% ($290 million / $4,157 million).\n\n### Conclusion\nWhile Boeing's pre-tax income and income tax expense both increased substantially from FY2021 to FY2022, the calculated effective tax rate also rose significantly. The observed discrepancies between reported and calculated effective tax rates highlight a need for deeper analysis into the specific components of Boeing's tax provisions, as detailed in the 10-K filings, to fully understand the drivers behind these figures and ensure complete transparency."
+  },
+  "gates": {
+    "gate_1": {
+      "verified": [
+        {
+          "value": "$290 million",
+          "ref": 290.0
+        },
+        {
+          "value": "$6,000 million",
+          "ref": 6000.0
+        },
+        {
+          "value": "5.3%",
+          "ref": 5.3
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$1,513 million",
+          "num": 1513.0,
+          "correct": 1200.0,
+          "dev": 0.2069,
+          "source": "source_document"
+        },
+        {
+          "value": "$3,936 million",
+          "num": 3936.0,
+          "correct": 4157.0,
+          "dev": 0.0532,
+          "source": "evidence"
+        },
+        {
+          "value": "9.5%",
+          "num": 9.5,
+          "correct": 8.3,
+          "dev": 0.1263,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [],
+      "n_refs": 45
+    },
+    "gate_2": {
+      "verified": [
+        {
+          "value": "$1,200 million",
+          "ref": 1200.0
+        },
+        {
+          "value": "$290 million",
+          "ref": 290.0
+        },
+        {
+          "value": "$6,000 million",
+          "ref": 6000.0
+        },
+        {
+          "value": "$4,157 million",
+          "ref": 4157.0
+        },
+        {
+          "value": "$1,200 million",
+          "ref": 1200.0
+        },
+        {
+          "value": "$290 million",
+          "ref": 290.0
+        },
+        {
+          "value": "$290 million",
+          "ref": 290.0
+        },
+        {
+          "value": "$6,000 million",
+          "ref": 6000.0
+        },
+        {
+          "value": "$4,157 million",
+          "ref": 4157.0
+        },
+        {
+          "value": "$4,157 million",
+          "ref": 4157.0
+        },
+        {
+          "value": "$1,200 million",
+          "ref": 1200.0
+        },
+        {
+          "value": "$6,000 million",
+          "ref": 6000.0
+        },
+        {
+          "value": "$290 million",
+          "ref": 290.0
+        },
+        {
+          "value": "$4,157 million",
+          "ref": 4157.0
+        },
+        {
+          "value": "$1,200 million",
+          "ref": 1200.0
+        },
+        {
+          "value": "$6,000 million",
+          "ref": 6000.0
+        },
+        {
+          "value": "$290 million",
+          "ref": 290.0
+        },
+        {
+          "value": "$4,157 million",
+          "ref": 4157.0
+        },
+        {
+          "value": "8.3%",
+          "ref": 8.3
+        },
+        {
+          "value": "5.3%",
+          "ref": 5.3
+        },
+        {
+          "value": "8.3%",
+          "ref": 8.3
+        },
+        {
+          "value": "5.3%",
+          "ref": 5.3
+        },
+        {
+          "value": "8.3%",
+          "ref": 8.3
+        },
+        {
+          "value": "5.3%",
+          "ref": 5.3
+        },
+        {
+          "value": "20.0%",
+          "ref": 20.0
+        },
+        {
+          "value": "8.3%",
+          "ref": 8.3
+        },
+        {
+          "value": "20.0%",
+          "ref": 20.0
+        },
+        {
+          "value": "8.3%",
+          "ref": 8.3
+        },
+        {
+          "value": "5.3%",
+          "ref": 5.3
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$910 million",
+          "num": 910.0,
+          "correct": 1200.0,
+          "dev": 0.2417,
+          "source": "source_document"
+        },
+        {
+          "value": "$910 million",
+          "num": 910.0,
+          "correct": 1200.0,
+          "dev": 0.2417,
+          "source": "source_document"
+        },
+        {
+          "value": "$1,843 million",
+          "num": 1843.0,
+          "correct": 2156.0,
+          "dev": 0.1452,
+          "source": "evidence"
+        },
+        {
+          "value": "$1,843 million",
+          "num": 1843.0,
+          "correct": 2156.0,
+          "dev": 0.1452,
+          "source": "evidence"
+        },
+        {
+          "value": "313.79%",
+          "num": 313.79,
+          "correct": 290.0,
+          "dev": 0.0758,
+          "source": "source_document"
+        },
+        {
+          "value": "44.34%",
+          "num": 44.34,
+          "correct": 20.88,
+          "dev": 0.5291,
+          "source": "evidence"
+        },
+        {
+          "value": "3.0 percent",
+          "num": 3.0,
+          "correct": 5.3,
+          "dev": 0.434,
+          "source": "source_document"
+        },
+        {
+          "value": "11.7 percent",
+          "num": 11.7,
+          "correct": 14.76,
+          "dev": 0.2073,
+          "source": "ground_truth"
+        },
+        {
+          "value": "06976",
+          "num": 6976.0,
+          "correct": 6000.0,
+          "dev": 0.1399,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "56.60%"
+        },
+        {
+          "value": "7.0%"
+        },
+        {
+          "value": "7.0%"
+        },
+        {
+          "value": "1.7 percent"
+        }
+      ],
+      "n_refs": 45
+    },
+    "gate_3": {
+      "verified": [
+        {
+          "value": "$290 million",
+          "ref": 290.0
+        },
+        {
+          "value": "$1,200 million",
+          "ref": 1200.0
+        },
+        {
+          "value": "$4,157 million",
+          "ref": 4157.0
+        },
+        {
+          "value": "$6,000 million",
+          "ref": 6000.0
+        },
+        {
+          "value": "$1,200 million",
+          "ref": 1200.0
+        },
+        {
+          "value": "$6,000 million",
+          "ref": 6000.0
+        },
+        {
+          "value": "$290 million",
+          "ref": 290.0
+        },
+        {
+          "value": "$4,157 million",
+          "ref": 4157.0
+        },
+        {
+          "value": "$1,200 million",
+          "ref": 1200.0
+        },
+        {
+          "value": "$6,000 million",
+          "ref": 6000.0
+        },
+        {
+          "value": "$290 million",
+          "ref": 290.0
+        },
+        {
+          "value": "$4,157 million",
+          "ref": 4157.0
+        },
+        {
+          "value": "5.3%",
+          "ref": 5.3
+        },
+        {
+          "value": "8.3%",
+          "ref": 8.3
+        },
+        {
+          "value": "8.3%",
+          "ref": 8.3
+        },
+        {
+          "value": "5.3%",
+          "ref": 5.3
+        },
+        {
+          "value": "8.3%",
+          "ref": 8.3
+        },
+        {
+          "value": "20.0%",
+          "ref": 20.0
+        },
+        {
+          "value": "5.3%",
+          "ref": 5.3
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$910 million",
+          "num": 910.0,
+          "correct": 1200.0,
+          "dev": 0.2417,
+          "source": "source_document"
+        },
+        {
+          "value": "$1,843 million",
+          "num": 1843.0,
+          "correct": 2156.0,
+          "dev": 0.1452,
+          "source": "evidence"
+        },
+        {
+          "value": "313.79%",
+          "num": 313.79,
+          "correct": 290.0,
+          "dev": 0.0758,
+          "source": "source_document"
+        },
+        {
+          "value": "44.34%",
+          "num": 44.34,
+          "correct": 20.88,
+          "dev": 0.5291,
+          "source": "evidence"
+        },
+        {
+          "value": "3.0 percent",
+          "num": 3.0,
+          "correct": 5.3,
+          "dev": 0.434,
+          "source": "source_document"
+        },
+        {
+          "value": "11.7 percent",
+          "num": 11.7,
+          "correct": 14.76,
+          "dev": 0.2073,
+          "source": "ground_truth"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "56.60%"
+        },
+        {
+          "value": "7.0%"
+        }
+      ],
+      "n_refs": 45
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_067_92C7D508",
+      "hid": "FB_067_92C7D508_H3",
+      "method": "ours",
+      "type": "percentage",
+      "inj_num": 9.5,
+      "orig_num": 20.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": false,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_067_92C7D508",
+      "hid": "FB_067_92C7D508_H2",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 1513.0,
+      "orig_num": 1200.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": false,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_067_92C7D508",
+      "hid": "FB_067_92C7D508_H1",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 3936.0,
+      "orig_num": 5500.0,
+      "survived": false,
+      "corrected": false,
+      "g1_det": true,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": false,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 2,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:27:51.401026+00:00"
+}

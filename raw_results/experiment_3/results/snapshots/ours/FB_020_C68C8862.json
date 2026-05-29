@@ -1,0 +1,263 @@
+{
+  "question_id": "FB_020_C68C8862",
+  "method": "ours",
+  "final_output": "## Financial Report: Amazon.com, Inc. - Revenue Performance FY2016-FY2017\n\n**Executive Summary**\n\nAmazon.com, Inc. demonstrated robust revenue growth from Fiscal Year 2016 to Fiscal Year 2017. The company's revenue increased from $136,004 million in FY2016 to $177,866 million in FY2017, representing a significant year-over-year growth rate of 30.78%. This substantial increase of $41,862 million highlights Amazon's continued expansion and market penetration during this period, driven by its diverse business segments including e-commerce, cloud services, and digital advertising.\n\n**Analysis**\n\nAmazon.com, Inc. reported strong financial performance in terms of revenue for the fiscal years ending 2016 and 2017. As per the FY2017 10-K filing, Consolidated Statements of Operations, the company's revenue for FY2016 was $136,004 million. This figure rose considerably to $177,866 million in FY2017. The absolute change in revenue between these two periods was $41,862 million. This translates to a percentage year-over-year revenue growth rate of 30.78%, calculated as (($177,866 million - $136,004 million) / $136,004 million) * 100. This impressive growth rate underscores the company's ability to significantly expand its top-line performance, reflecting successful execution of its growth strategies and increasing demand across its various offerings.\n\n**Key Risks**\n\nWhile the revenue growth is strong, a key risk for Amazon.com, Inc. is its ability to sustain such high growth rates in an increasingly competitive global market. Future revenue growth could be impacted by factors such as increased regulatory scrutiny, evolving consumer preferences, and intensified competition from both established players and emerging businesses across its diverse segments, including e-commerce, cloud computing (Amazon Web Services), and digital advertising. Maintaining this momentum will require continuous innovation, strategic investments in infrastructure and technology, and effective management of operational costs. Furthermore, global economic conditions and supply chain disruptions could also pose challenges to future revenue expansion.\n\n**Conclusion**\n\nAmazon.com, Inc. exhibited exceptional revenue growth between FY2016 and FY2017, with a 30.78% increase, bringing total revenue to $177,866 million in FY2017. This performance reflects the company's strong market position and successful operational strategies during the period. Investors and stakeholders should monitor the company's ability to maintain this growth trajectory amidst evolving market dynamics, competitive pressures, and potential regulatory changes. Continued focus on innovation and strategic diversification will be crucial for Amazon to navigate future challenges and sustain its impressive growth.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Amazon.com, Inc. for FY2016 and FY2017\n- PRIMARY METRIC: \n  - Revenue for FY2016: $179,626 million (per the FY2017 10-K, Consolidated Statements of Operations)\n  - Revenue for FY2017: $177,866 million (per the FY2017 10-K, Consolidated Statements of Operations)\n  - Year-over-Year Change in Revenue: 26.6% [(177,866 - 136,004) / 136,004 * 100] rounded to one decimal place.\n  \n- SUPPORTING DATA: \n  - FY2016 Revenue: $136,004 million\n  - FY2017 Revenue: $177,866 million\n  - Year-over-Year Change: 30.8%\n\n- DATA SOURCES: \n  - FY2017 10-K, Consolidated Statements of Operations, Page 45 (Revenue figures for FY2016 and FY2017).",
+    "2": "As a financial analyst, I've reviewed the provided data for Amazon.com, Inc. for FY2016 and FY2017, incorporating the verified corrections.\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\n*   **FY2016 Revenue:** $136,004 million\n*   **FY2017 Revenue:** $177,866 million\n\n*   **Absolute Change in Revenue:**\n    *   Formula: FY2017 Revenue - FY2016 Revenue\n    *   Calculation: $177,866 million - $136,004 million = **$41,862 million**\n\n*   **Percentage Change in Revenue:**\n    *   Formula: (Absolute Change in Revenue / FY2016 Revenue) * 100\n    *   Calculation: ($41,862 million / $136,004 million) * 100 = **30.78%** (rounded to two decimal places)\n\n**2. Relevant Ratios**\n\nGiven only revenue data, the most relevant ratio is the **Revenue Growth Rate**.\n\n*   **Revenue Growth Rate:**\n    *   Formula: (FY2017 Revenue / FY2016 Revenue) - 1\n    *   Calculation: ($177,866 million / $136,004 million) - 1 = 1.3078 - 1 = **0.3078 or 30.78%**\n\n**3. Anomalies Flagged**\n\n*   **Primary Metric Discrepancy:** The initial \"PRIMARY METRIC\" section stated FY2016 Revenue as $179,626 million and FY2017 Revenue as $177,866 million, leading to a calculated year-over-year change of 26.6%. This was **flagged as an anomaly** and **refuted** by the verification report. The correct FY2016 Revenue is $136,004 million.\n\n*   **Incorrect Year-over-Year Change:** The initial \"PRIMARY METRIC\" also provided a Year-over-Year Change in Revenue of 26.6%. This was **flagged as an anomaly** and **refuted** by the verification report, which provided the correct value of 30.80%. My calculation using the correct underlying revenue figures confirms a growth rate of 30.78%, aligning with the corrected value.\n\n**Summary of Corrected Data and Calculations:**\n\n*   **FY2016 Revenue:** $136,004 million\n*   **FY2017 Revenue:** $177,866 million\n*   **Absolute Year-over-Year Revenue Change:** $41,862 million\n*   **Percentage Year-over-Year Revenue Change (Revenue Growth Rate):** 30.78%",
+    "3": "## Financial Report: Amazon.com, Inc. - Revenue Performance FY2016-FY2017\n\n**Executive Summary**\n\nAmazon.com, Inc. demonstrated robust revenue growth from Fiscal Year 2016 to Fiscal Year 2017. The company's revenue increased from $136,004 million in FY2016 to $177,866 million in FY2017, representing a significant year-over-year growth rate of 30.78%. This substantial increase of $41,862 million highlights Amazon's continued expansion and market penetration during this period.\n\n**Analysis**\n\nAmazon.com, Inc. reported strong financial performance in terms of revenue for the fiscal years ending 2016 and 2017. As per the FY2017 10-K, Consolidated Statements of Operations, the company's revenue for FY2016 was $136,004 million. This figure rose considerably to $177,866 million in FY2017. The absolute change in revenue between these two periods was $41,862 million. This translates to a percentage year-over-year revenue growth rate of 30.78%, calculated as (($177,866 million - $136,004 million) / $136,004 million) * 100. This impressive growth rate underscores the company's ability to significantly expand its top-line performance.\n\n**Key Risks**\n\nWhile the revenue growth is strong, a key risk for Amazon.com, Inc. is its ability to sustain such high growth rates in an increasingly competitive global market. Future revenue growth could be impacted by factors such as increased regulatory scrutiny, evolving consumer preferences, and intensified competition from both established players and emerging businesses across its diverse segments, including e-commerce, cloud computing, and digital advertising. Maintaining this momentum will require continuous innovation and strategic investments.\n\n**Conclusion**\n\nAmazon.com, Inc. exhibited exceptional revenue growth between FY2016 and FY2017, with a 30.78% increase, bringing total revenue to $177,866 million in FY2017. This performance reflects the company's strong market position and successful operational strategies during the period. Investors and stakeholders should monitor the company's ability to maintain this growth trajectory amidst evolving market dynamics and competitive pressures.",
+    "4": "## Financial Report: Amazon.com, Inc. - Revenue Performance FY2016-FY2017\n\n**Executive Summary**\n\nAmazon.com, Inc. demonstrated robust revenue growth from Fiscal Year 2016 to Fiscal Year 2017. The company's revenue increased from $136,004 million in FY2016 to $177,866 million in FY2017, representing a significant year-over-year growth rate of 30.78%. This substantial increase of $41,862 million highlights Amazon's continued expansion and market penetration during this period, driven by its diverse business segments including e-commerce, cloud services, and digital advertising.\n\n**Analysis**\n\nAmazon.com, Inc. reported strong financial performance in terms of revenue for the fiscal years ending 2016 and 2017. As per the FY2017 10-K filing, Consolidated Statements of Operations, the company's revenue for FY2016 was $136,004 million. This figure rose considerably to $177,866 million in FY2017. The absolute change in revenue between these two periods was $41,862 million. This translates to a percentage year-over-year revenue growth rate of 30.78%, calculated as (($177,866 million - $136,004 million) / $136,004 million) * 100. This impressive growth rate underscores the company's ability to significantly expand its top-line performance, reflecting successful execution of its growth strategies and increasing demand across its various offerings.\n\n**Key Risks**\n\nWhile the revenue growth is strong, a key risk for Amazon.com, Inc. is its ability to sustain such high growth rates in an increasingly competitive global market. Future revenue growth could be impacted by factors such as increased regulatory scrutiny, evolving consumer preferences, and intensified competition from both established players and emerging businesses across its diverse segments, including e-commerce, cloud computing (Amazon Web Services), and digital advertising. Maintaining this momentum will require continuous innovation, strategic investments in infrastructure and technology, and effective management of operational costs. Furthermore, global economic conditions and supply chain disruptions could also pose challenges to future revenue expansion.\n\n**Conclusion**\n\nAmazon.com, Inc. exhibited exceptional revenue growth between FY2016 and FY2017, with a 30.78% increase, bringing total revenue to $177,866 million in FY2017. This performance reflects the company's strong market position and successful operational strategies during the period. Investors and stakeholders should monitor the company's ability to maintain this growth trajectory amidst evolving market dynamics, competitive pressures, and potential regulatory changes. Continued focus on innovation and strategic diversification will be crucial for Amazon to navigate future challenges and sustain its impressive growth."
+  },
+  "gates": {
+    "gate_1": {
+      "verified": [
+        {
+          "value": "$179,626 million",
+          "ref": 177866.0
+        },
+        {
+          "value": "$177,866 million",
+          "ref": 177866.0
+        },
+        {
+          "value": "$136,004 million",
+          "ref": 136004.0
+        },
+        {
+          "value": "$177,866 million",
+          "ref": 177866.0
+        },
+        {
+          "value": "30.8%",
+          "ref": 30.8
+        },
+        {
+          "value": "177,866",
+          "ref": 177866.0
+        },
+        {
+          "value": "136,004",
+          "ref": 136004.0
+        },
+        {
+          "value": "136,004",
+          "ref": 136004.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "26.6%",
+          "num": 26.6,
+          "correct": 30.8,
+          "dev": 0.1364,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [],
+      "n_refs": 4
+    },
+    "gate_2": {
+      "verified": [
+        {
+          "value": "$136,004 million",
+          "ref": 136004.0
+        },
+        {
+          "value": "$177,866 million",
+          "ref": 177866.0
+        },
+        {
+          "value": "$177,866 million",
+          "ref": 177866.0
+        },
+        {
+          "value": "$136,004 million",
+          "ref": 136004.0
+        },
+        {
+          "value": "$136,004 million",
+          "ref": 136004.0
+        },
+        {
+          "value": "$177,866 million",
+          "ref": 177866.0
+        },
+        {
+          "value": "$136,004 million",
+          "ref": 136004.0
+        },
+        {
+          "value": "$179,626 million",
+          "ref": 177866.0
+        },
+        {
+          "value": "$177,866 million",
+          "ref": 177866.0
+        },
+        {
+          "value": "$136,004 million",
+          "ref": 136004.0
+        },
+        {
+          "value": "$136,004 million",
+          "ref": 136004.0
+        },
+        {
+          "value": "$177,866 million",
+          "ref": 177866.0
+        },
+        {
+          "value": "30.78%",
+          "ref": 30.8
+        },
+        {
+          "value": "30.78%",
+          "ref": 30.8
+        },
+        {
+          "value": "30.80%",
+          "ref": 30.8
+        },
+        {
+          "value": "30.78%",
+          "ref": 30.8
+        },
+        {
+          "value": "30.78%",
+          "ref": 30.8
+        }
+      ],
+      "refuted": [
+        {
+          "value": "26.6%",
+          "num": 26.6,
+          "correct": 30.8,
+          "dev": 0.1364,
+          "source": "source_document"
+        },
+        {
+          "value": "26.6%",
+          "num": 26.6,
+          "correct": 30.8,
+          "dev": 0.1364,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$41,862 million"
+        },
+        {
+          "value": "$41,862 million"
+        },
+        {
+          "value": "$41,862 million"
+        }
+      ],
+      "n_refs": 4
+    },
+    "gate_3": {
+      "verified": [
+        {
+          "value": "$136,004 million",
+          "ref": 136004.0
+        },
+        {
+          "value": "$177,866 million",
+          "ref": 177866.0
+        },
+        {
+          "value": "$136,004 million",
+          "ref": 136004.0
+        },
+        {
+          "value": "$177,866 million",
+          "ref": 177866.0
+        },
+        {
+          "value": "$177,866 million",
+          "ref": 177866.0
+        },
+        {
+          "value": "$136,004 million",
+          "ref": 136004.0
+        },
+        {
+          "value": "$136,004 million",
+          "ref": 136004.0
+        },
+        {
+          "value": "$177,866 million",
+          "ref": 177866.0
+        },
+        {
+          "value": "30.78%",
+          "ref": 30.8
+        },
+        {
+          "value": "30.78%",
+          "ref": 30.8
+        },
+        {
+          "value": "30.78%",
+          "ref": 30.8
+        }
+      ],
+      "refuted": [],
+      "unverified": [
+        {
+          "value": "$41,862 million"
+        },
+        {
+          "value": "$41,862 million"
+        }
+      ],
+      "n_refs": 4
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_020_C68C8862",
+      "hid": "FB_020_C68C8862_H2",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 179626.0,
+      "orig_num": 136004.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_020_C68C8862",
+      "hid": "FB_020_C68C8862_H1",
+      "method": "ours",
+      "type": "percentage",
+      "inj_num": 26.6,
+      "orig_num": 30.8,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:10:05.068567+00:00"
+}

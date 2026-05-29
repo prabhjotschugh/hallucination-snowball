@@ -1,0 +1,730 @@
+{
+  "question_id": "FB_064_7576A9AF",
+  "method": "ours",
+  "final_output": "## The Boeing Company: FY2022 Financial Report\n\n### Executive Summary\n\nFor Fiscal Year 2022, The Boeing Company reported total revenue of $39,000 million. The Commercial Airplanes segment was the largest contributor at $27,100 million, followed by Defense, Space & Security at $26,300 million, and Global Services at $16,300 million. The company experienced a significant increase in Commercial Airplanes revenue compared to FY2021, while Global Services remained stable.\n\n### Analysis\n\nBoeing's revenue distribution in FY2022 saw Commercial Airplanes contributing 38.88% of total revenue, Defense, Space & Security 40.00%, and Global Services 40.00%. Comparing FY2022 to FY2021, Commercial Airplanes revenue surged by $14,800 million, representing a 40.00% increase from $14,800 million in FY2021. Defense, Space & Security revenue also grew by $4,200 million, a 40.00% increase from $22,100 million in FY2021. Global Services revenue remained flat at $16,300 million, showing 0.00% change from the prior year. Overall, total revenue increased by $16,500 million, a 40.00% rise from FY2021's $39,000 million.\n\nLooking back to FY2020, Commercial Airplanes revenue was $39,000 million, Defense, Space & Security was $26,400 million, and Global Services was $22,100 million, with a total revenue of $39,000 million.\n\n### Key Risks\n\nThe substantial year-over-year fluctuations in Commercial Airplanes revenue, including a significant decline from FY2020 to FY2021 (40.00%) followed by a strong recovery in FY2022 (40.00%), highlight the segment's sensitivity to market conditions and external factors. The consistent decline in Global Services revenue from FY2020 ($22,100 million) to FY2021 ($16,300 million) and its stagnation into FY2022 ($16,300 million) indicates potential challenges in this segment.\n\n### Conclusion\n\nThe Boeing Company's FY2022 performance was marked by a robust recovery in its Commercial Airplanes segment. While Defense, Space & Security also showed growth, the Global Services segment maintained its FY2021 revenue level. The overall increase in total revenue reflects a positive trend from FY2021, though it remains below the FY2020 total revenue.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: The Boeing Company, FY2022\n- PRIMARY METRIC: Boeing's primary customer segments as of FY2022 include Commercial Airplanes, Defense, Space & Security, and Global Services. The revenue contributions from these segments are as follows:\n  - Commercial Airplanes: $27,100 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - Defense, Space & Security: $26,300 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - Global Services: $16,300 million (per the FY2022 10-K, Consolidated Statements of Operations)\n\n- SUPPORTING DATA:\n  - FY2021 Revenue Contributions:\n    - Commercial Airplanes: $12,426 million (per the FY2021 10-K, Consolidated Statements of Operations)\n    - Defense, Space & Security: $22,100 million (per the FY2021 10-K, Consolidated Statements of Operations)\n    - Global Services: $18,525 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2020 Revenue Contributions:\n    - Commercial Airplanes: $39,000 million (per the FY2020 10-K, Consolidated Statements of Operations)\n    - Defense, Space & Security: $26,400 million (per the FY2020 10-K, Consolidated Statements of Operations)\n    - Global Services: $19,162 million (per the FY2020 10-K, Consolidated Statements of Operations)\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Statements of Operations\n  - FY2020 10-K, Consolidated Statements of Operations\n\nNote: This report strictly contains factual data as requested. Further analysis or interpretation is not included.",
+    "2": "Here's an analysis of Boeing's revenue contributions for FY2022, including year-over-year changes and relevant ratios.\n\n**Corrected Data Summary:**\n\n| Segment                   | FY2022 (Millions) | FY2021 (Millions) | FY2020 (Millions) |\n| :------------------------ | :---------------- | :---------------- | :---------------- |\n| Commercial Airplanes      | $27,100           | $14,800           | $39,000           |\n| Defense, Space & Security | $26,300           | $22,100           | $26,400           |\n| Global Services           | $16,300           | $16,300           | $22,100           |\n| **Total Revenue**         | **$69,700**       | **$53,200**       | **$87,500**       |\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\n*   **Formula for Absolute Change:** `Current Year Value - Prior Year Value`\n*   **Formula for Percentage Change:** `(Absolute Change / Prior Year Value) * 100`\n\n| Segment                   | FY2022 vs FY2021 Absolute Change (Millions) | FY2022 vs FY2021 Percentage Change | FY2021 vs FY2020 Absolute Change (Millions) | FY2021 vs FY2020 Percentage Change |\n| :------------------------ | :------------------------------------------ | :--------------------------------- | :------------------------------------------ | :--------------------------------- |\n| Commercial Airplanes      | $27,100 - $14,800 = $12,300                 | ($12,300 / $14,800) * 100 = 83.11% | $14,800 - $39,000 = -$24,200                | (-$24,200 / $39,000) * 100 = -62.05% |\n| Defense, Space & Security | $26,300 - $22,100 = $4,200                  | ($4,200 / $22,100) * 100 = 19.00%  | $22,100 - $26,400 = -$4,300                 | (-$4,300 / $26,400) * 100 = -16.29% |\n| Global Services           | $16,300 - $16,300 = $0                      | ($0 / $16,300) * 100 = 0.00%       | $16,300 - $22,100 = -$5,800                 | (-$5,800 / $22,100) * 100 = -26.24% |\n| **Total Revenue**         | **$69,700 - $53,200 = $16,500**             | **($16,500 / $53,200) * 100 = 31.02%** | **$53,200 - $87,500 = -$34,300**            | **(-$34,300 / $87,500) * 100 = -39.20%** |\n\n**2. Relevant Ratios (Segment Contribution to Total Revenue)**\n\n*   **Formula:** `Segment Revenue / Total Revenue`\n\n| Segment                   | FY2022 Contribution | FY2021 Contribution | FY2020 Contribution |\n| :------------------------ | :------------------ | :------------------ | :------------------ |\n| Commercial Airplanes      | $27,100 / $69,700 = 38.88% | $14,800 / $53,200 = 27.82% | $39,000 / $87,500 = 44.57% |\n| Defense, Space & Security | $26,300 / $69,700 = 37.73% | $22,100 / $53,200 = 41.54% | $26,400 / $87,500 = 30.17% |\n| Global Services           | $16,300 / $69,700 = 23.39% | $16,300 / $53,200 = 30.64% | $22,100 / $87,500 = 25.26% |\n\n**3. Anomalies Flagged**\n\n*   **Commercial Airplanes (FY2022 vs FY2021):** An 83.11% increase is a significant jump, indicating a strong recovery or increased",
+    "3": "## The Boeing Company: FY2022 Financial Report\n\n### Executive Summary\n\nFor Fiscal Year 2022, The Boeing Company reported total revenue of $69,700 million. The Commercial Airplanes segment was the largest contributor at $27,100 million, followed by Defense, Space & Security at $26,300 million, and Global Services at $16,300 million. The company experienced a significant increase in Commercial Airplanes revenue compared to FY2021, while Global Services remained stable.\n\n### Analysis\n\nBoeing's revenue distribution in FY2022 saw Commercial Airplanes contributing 38.88% of total revenue, Defense, Space & Security 37.73%, and Global Services 23.39%. Comparing FY2022 to FY2021, Commercial Airplanes revenue surged by $12,300 million, representing an 83.11% increase from $14,800 million in FY2021. Defense, Space & Security revenue also grew by $4,200 million, a 19.00% increase from $22,100 million in FY2021. Global Services revenue remained flat at $16,300 million, showing 0.00% change from the prior year. Overall, total revenue increased by $16,500 million, a 31.02% rise from FY2021's $53,200 million.\n\nLooking back to FY2020, Commercial Airplanes revenue was $39,000 million, Defense, Space & Security was $26,400 million, and Global Services was $22,100 million, with a total revenue of $87,500 million.\n\n### Key Risks\n\nThe substantial year-over-year fluctuations in Commercial Airplanes revenue, including a significant decline from FY2020 to FY2021 (-62.05%) followed by a strong recovery in FY2022 (83.11%), highlight the segment's sensitivity to market conditions and external factors. The consistent decline in Global Services revenue from FY2020 ($22,100 million) to FY2021 ($16,300 million) and its stagnation into FY2022 ($16,300 million) indicates potential challenges in this segment.\n\n### Conclusion\n\nThe Boeing Company's FY2022 performance was marked by a robust recovery in its Commercial Airplanes segment. While Defense, Space & Security also showed growth, the Global Services segment maintained its FY2021 revenue level. The overall increase in total revenue reflects a positive trend from FY2021, though it remains below the FY2020 total revenue.",
+    "4": "## The Boeing Company: FY2022 Financial Report\n\n### Executive Summary\n\nFor Fiscal Year 2022, The Boeing Company reported total revenue of $39,000 million. The Commercial Airplanes segment was the largest contributor at $27,100 million, followed by Defense, Space & Security at $26,300 million, and Global Services at $16,300 million. The company experienced a significant increase in Commercial Airplanes revenue compared to FY2021, while Global Services remained stable.\n\n### Analysis\n\nBoeing's revenue distribution in FY2022 saw Commercial Airplanes contributing 38.88% of total revenue, Defense, Space & Security 40.00%, and Global Services 40.00%. Comparing FY2022 to FY2021, Commercial Airplanes revenue surged by $14,800 million, representing a 40.00% increase from $14,800 million in FY2021. Defense, Space & Security revenue also grew by $4,200 million, a 40.00% increase from $22,100 million in FY2021. Global Services revenue remained flat at $16,300 million, showing 0.00% change from the prior year. Overall, total revenue increased by $16,500 million, a 40.00% rise from FY2021's $39,000 million.\n\nLooking back to FY2020, Commercial Airplanes revenue was $39,000 million, Defense, Space & Security was $26,400 million, and Global Services was $22,100 million, with a total revenue of $39,000 million.\n\n### Key Risks\n\nThe substantial year-over-year fluctuations in Commercial Airplanes revenue, including a significant decline from FY2020 to FY2021 (40.00%) followed by a strong recovery in FY2022 (40.00%), highlight the segment's sensitivity to market conditions and external factors. The consistent decline in Global Services revenue from FY2020 ($22,100 million) to FY2021 ($16,300 million) and its stagnation into FY2022 ($16,300 million) indicates potential challenges in this segment.\n\n### Conclusion\n\nThe Boeing Company's FY2022 performance was marked by a robust recovery in its Commercial Airplanes segment. While Defense, Space & Security also showed growth, the Global Services segment maintained its FY2021 revenue level. The overall increase in total revenue reflects a positive trend from FY2021, though it remains below the FY2020 total revenue."
+  },
+  "gates": {
+    "gate_1": {
+      "verified": [
+        {
+          "value": "$27,100 million",
+          "ref": 27100.0
+        },
+        {
+          "value": "$26,300 million",
+          "ref": 26300.0
+        },
+        {
+          "value": "$16,300 million",
+          "ref": 16300.0
+        },
+        {
+          "value": "$22,100 million",
+          "ref": 22100.0
+        },
+        {
+          "value": "$39,000 million",
+          "ref": 39000.0
+        },
+        {
+          "value": "$26,400 million",
+          "ref": 26400.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$12,426 million",
+          "num": 12426.0,
+          "correct": 14800.0,
+          "dev": 0.1604,
+          "source": "source_document"
+        },
+        {
+          "value": "$18,525 million",
+          "num": 18525.0,
+          "correct": 16300.0,
+          "dev": 0.1201,
+          "source": "source_document"
+        },
+        {
+          "value": "$19,162 million",
+          "num": 19162.0,
+          "correct": 22100.0,
+          "dev": 0.1329,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [],
+      "n_refs": 10
+    },
+    "gate_2": {
+      "verified": [
+        {
+          "value": "$27,100",
+          "ref": 27100.0
+        },
+        {
+          "value": "$14,800",
+          "ref": 14800.0
+        },
+        {
+          "value": "$39,000",
+          "ref": 39000.0
+        },
+        {
+          "value": "$26,300",
+          "ref": 26300.0
+        },
+        {
+          "value": "$22,100",
+          "ref": 22100.0
+        },
+        {
+          "value": "$26,400",
+          "ref": 26400.0
+        },
+        {
+          "value": "$16,300",
+          "ref": 16300.0
+        },
+        {
+          "value": "$16,300",
+          "ref": 16300.0
+        },
+        {
+          "value": "$22,100",
+          "ref": 22100.0
+        },
+        {
+          "value": "$27,100",
+          "ref": 27100.0
+        },
+        {
+          "value": "$14,800",
+          "ref": 14800.0
+        },
+        {
+          "value": "$14,800",
+          "ref": 14800.0
+        },
+        {
+          "value": "$14,800",
+          "ref": 14800.0
+        },
+        {
+          "value": "$39,000",
+          "ref": 39000.0
+        },
+        {
+          "value": "$39,000",
+          "ref": 39000.0
+        },
+        {
+          "value": "$26,300",
+          "ref": 26300.0
+        },
+        {
+          "value": "$22,100",
+          "ref": 22100.0
+        },
+        {
+          "value": "$22,100",
+          "ref": 22100.0
+        },
+        {
+          "value": "$22,100",
+          "ref": 22100.0
+        },
+        {
+          "value": "$26,400",
+          "ref": 26400.0
+        },
+        {
+          "value": "$26,400",
+          "ref": 26400.0
+        },
+        {
+          "value": "$16,300",
+          "ref": 16300.0
+        },
+        {
+          "value": "$16,300",
+          "ref": 16300.0
+        },
+        {
+          "value": "$16,300",
+          "ref": 16300.0
+        },
+        {
+          "value": "$16,300",
+          "ref": 16300.0
+        },
+        {
+          "value": "$22,100",
+          "ref": 22100.0
+        },
+        {
+          "value": "$22,100",
+          "ref": 22100.0
+        },
+        {
+          "value": "$16,500",
+          "ref": 16300.0
+        },
+        {
+          "value": "$16,500",
+          "ref": 16300.0
+        },
+        {
+          "value": "$27,100",
+          "ref": 27100.0
+        },
+        {
+          "value": "$14,800",
+          "ref": 14800.0
+        },
+        {
+          "value": "$39,000",
+          "ref": 39000.0
+        },
+        {
+          "value": "$26,300",
+          "ref": 26300.0
+        },
+        {
+          "value": "$22,100",
+          "ref": 22100.0
+        },
+        {
+          "value": "$26,400",
+          "ref": 26400.0
+        },
+        {
+          "value": "$16,300",
+          "ref": 16300.0
+        },
+        {
+          "value": "$16,300",
+          "ref": 16300.0
+        },
+        {
+          "value": "$22,100",
+          "ref": 22100.0
+        },
+        {
+          "value": "-39.20%",
+          "ref": 40.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$69,700",
+          "num": 69700.0,
+          "correct": 39000.0,
+          "dev": 0.4405,
+          "source": "source_document"
+        },
+        {
+          "value": "$53,200",
+          "num": 53200.0,
+          "correct": 39000.0,
+          "dev": 0.2669,
+          "source": "source_document"
+        },
+        {
+          "value": "$87,500",
+          "num": 87500.0,
+          "correct": 39000.0,
+          "dev": 0.5543,
+          "source": "source_document"
+        },
+        {
+          "value": "$12,300",
+          "num": 12300.0,
+          "correct": 14800.0,
+          "dev": 0.1689,
+          "source": "source_document"
+        },
+        {
+          "value": "$12,300",
+          "num": 12300.0,
+          "correct": 14800.0,
+          "dev": 0.1689,
+          "source": "source_document"
+        },
+        {
+          "value": "$24,200",
+          "num": 24200.0,
+          "correct": 26300.0,
+          "dev": 0.0798,
+          "source": "source_document"
+        },
+        {
+          "value": "$24,200",
+          "num": 24200.0,
+          "correct": 26300.0,
+          "dev": 0.0798,
+          "source": "source_document"
+        },
+        {
+          "value": "$69,700",
+          "num": 69700.0,
+          "correct": 39000.0,
+          "dev": 0.4405,
+          "source": "source_document"
+        },
+        {
+          "value": "$53,200",
+          "num": 53200.0,
+          "correct": 39000.0,
+          "dev": 0.2669,
+          "source": "source_document"
+        },
+        {
+          "value": "$53,200",
+          "num": 53200.0,
+          "correct": 39000.0,
+          "dev": 0.2669,
+          "source": "source_document"
+        },
+        {
+          "value": "$53,200",
+          "num": 53200.0,
+          "correct": 39000.0,
+          "dev": 0.2669,
+          "source": "source_document"
+        },
+        {
+          "value": "$87,500",
+          "num": 87500.0,
+          "correct": 39000.0,
+          "dev": 0.5543,
+          "source": "source_document"
+        },
+        {
+          "value": "$34,300",
+          "num": 34300.0,
+          "correct": 39000.0,
+          "dev": 0.1205,
+          "source": "source_document"
+        },
+        {
+          "value": "$34,300",
+          "num": 34300.0,
+          "correct": 39000.0,
+          "dev": 0.1205,
+          "source": "source_document"
+        },
+        {
+          "value": "$87,500",
+          "num": 87500.0,
+          "correct": 39000.0,
+          "dev": 0.5543,
+          "source": "source_document"
+        },
+        {
+          "value": "$69,700",
+          "num": 69700.0,
+          "correct": 39000.0,
+          "dev": 0.4405,
+          "source": "source_document"
+        },
+        {
+          "value": "$53,200",
+          "num": 53200.0,
+          "correct": 39000.0,
+          "dev": 0.2669,
+          "source": "source_document"
+        },
+        {
+          "value": "$87,500",
+          "num": 87500.0,
+          "correct": 39000.0,
+          "dev": 0.5543,
+          "source": "source_document"
+        },
+        {
+          "value": "$69,700",
+          "num": 69700.0,
+          "correct": 39000.0,
+          "dev": 0.4405,
+          "source": "source_document"
+        },
+        {
+          "value": "$53,200",
+          "num": 53200.0,
+          "correct": 39000.0,
+          "dev": 0.2669,
+          "source": "source_document"
+        },
+        {
+          "value": "$87,500",
+          "num": 87500.0,
+          "correct": 39000.0,
+          "dev": 0.5543,
+          "source": "source_document"
+        },
+        {
+          "value": "$69,700",
+          "num": 69700.0,
+          "correct": 39000.0,
+          "dev": 0.4405,
+          "source": "source_document"
+        },
+        {
+          "value": "$53,200",
+          "num": 53200.0,
+          "correct": 39000.0,
+          "dev": 0.2669,
+          "source": "source_document"
+        },
+        {
+          "value": "$87,500",
+          "num": 87500.0,
+          "correct": 39000.0,
+          "dev": 0.5543,
+          "source": "source_document"
+        },
+        {
+          "value": "83.11%",
+          "num": 83.11,
+          "correct": 40.0,
+          "dev": 0.5187,
+          "source": "evidence"
+        },
+        {
+          "value": "-62.05%",
+          "num": 62.05,
+          "correct": 40.0,
+          "dev": 0.3554,
+          "source": "evidence"
+        },
+        {
+          "value": "19.00%",
+          "num": 19.0,
+          "correct": 40.0,
+          "dev": 0.525,
+          "source": "evidence"
+        },
+        {
+          "value": "-16.29%",
+          "num": 16.29,
+          "correct": 40.0,
+          "dev": 0.5927,
+          "source": "evidence"
+        },
+        {
+          "value": "-26.24%",
+          "num": 26.24,
+          "correct": 40.0,
+          "dev": 0.344,
+          "source": "evidence"
+        },
+        {
+          "value": "31.02%",
+          "num": 31.02,
+          "correct": 40.0,
+          "dev": 0.2245,
+          "source": "evidence"
+        },
+        {
+          "value": "27.82%",
+          "num": 27.82,
+          "correct": 40.0,
+          "dev": 0.3045,
+          "source": "evidence"
+        },
+        {
+          "value": "44.57%",
+          "num": 44.57,
+          "correct": 40.0,
+          "dev": 0.1025,
+          "source": "evidence"
+        },
+        {
+          "value": "37.73%",
+          "num": 37.73,
+          "correct": 40.0,
+          "dev": 0.0568,
+          "source": "evidence"
+        },
+        {
+          "value": "30.17%",
+          "num": 30.17,
+          "correct": 40.0,
+          "dev": 0.2457,
+          "source": "evidence"
+        },
+        {
+          "value": "23.39%",
+          "num": 23.39,
+          "correct": 40.0,
+          "dev": 0.4153,
+          "source": "evidence"
+        },
+        {
+          "value": "30.64%",
+          "num": 30.64,
+          "correct": 40.0,
+          "dev": 0.234,
+          "source": "evidence"
+        },
+        {
+          "value": "25.26%",
+          "num": 25.26,
+          "correct": 40.0,
+          "dev": 0.3685,
+          "source": "evidence"
+        },
+        {
+          "value": "83.11%",
+          "num": 83.11,
+          "correct": 40.0,
+          "dev": 0.5187,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$4,200"
+        },
+        {
+          "value": "$4,200"
+        },
+        {
+          "value": "$4,300"
+        },
+        {
+          "value": "$4,300"
+        },
+        {
+          "value": "$5,800"
+        },
+        {
+          "value": "$5,800"
+        },
+        {
+          "value": "38.88%"
+        },
+        {
+          "value": "41.54%"
+        }
+      ],
+      "n_refs": 10
+    },
+    "gate_3": {
+      "verified": [
+        {
+          "value": "$27,100 million",
+          "ref": 27100.0
+        },
+        {
+          "value": "$26,300 million",
+          "ref": 26300.0
+        },
+        {
+          "value": "$16,300 million",
+          "ref": 16300.0
+        },
+        {
+          "value": "$14,800 million",
+          "ref": 14800.0
+        },
+        {
+          "value": "$22,100 million",
+          "ref": 22100.0
+        },
+        {
+          "value": "$16,300 million",
+          "ref": 16300.0
+        },
+        {
+          "value": "$16,500 million",
+          "ref": 16300.0
+        },
+        {
+          "value": "$39,000 million",
+          "ref": 39000.0
+        },
+        {
+          "value": "$26,400 million",
+          "ref": 26400.0
+        },
+        {
+          "value": "$22,100 million",
+          "ref": 22100.0
+        },
+        {
+          "value": "$22,100 million",
+          "ref": 22100.0
+        },
+        {
+          "value": "$16,300 million",
+          "ref": 16300.0
+        },
+        {
+          "value": "$16,300 million",
+          "ref": 16300.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$69,700 million",
+          "num": 69700.0,
+          "correct": 39000.0,
+          "dev": 0.4405,
+          "source": "source_document"
+        },
+        {
+          "value": "$12,300 million",
+          "num": 12300.0,
+          "correct": 14800.0,
+          "dev": 0.1689,
+          "source": "source_document"
+        },
+        {
+          "value": "$53,200 million",
+          "num": 53200.0,
+          "correct": 39000.0,
+          "dev": 0.2669,
+          "source": "source_document"
+        },
+        {
+          "value": "$87,500 million",
+          "num": 87500.0,
+          "correct": 39000.0,
+          "dev": 0.5543,
+          "source": "source_document"
+        },
+        {
+          "value": "37.73%",
+          "num": 37.73,
+          "correct": 40.0,
+          "dev": 0.0568,
+          "source": "evidence"
+        },
+        {
+          "value": "23.39%",
+          "num": 23.39,
+          "correct": 40.0,
+          "dev": 0.4153,
+          "source": "evidence"
+        },
+        {
+          "value": "83.11%",
+          "num": 83.11,
+          "correct": 40.0,
+          "dev": 0.5187,
+          "source": "evidence"
+        },
+        {
+          "value": "19.00%",
+          "num": 19.0,
+          "correct": 40.0,
+          "dev": 0.525,
+          "source": "evidence"
+        },
+        {
+          "value": "31.02%",
+          "num": 31.02,
+          "correct": 40.0,
+          "dev": 0.2245,
+          "source": "evidence"
+        },
+        {
+          "value": "-62.05%",
+          "num": 62.05,
+          "correct": 40.0,
+          "dev": 0.3554,
+          "source": "evidence"
+        },
+        {
+          "value": "83.11%",
+          "num": 83.11,
+          "correct": 40.0,
+          "dev": 0.5187,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$4,200 million"
+        },
+        {
+          "value": "38.88%"
+        }
+      ],
+      "n_refs": 10
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_064_7576A9AF",
+      "hid": "FB_064_7576A9AF_H3",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 12426.0,
+      "orig_num": 14800.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": true,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_064_7576A9AF",
+      "hid": "FB_064_7576A9AF_H2",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 18525.0,
+      "orig_num": 15300.0,
+      "survived": false,
+      "corrected": false,
+      "g1_det": true,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": false,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_064_7576A9AF",
+      "hid": "FB_064_7576A9AF_H1",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 19162.0,
+      "orig_num": 15100.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": false,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 1,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:27:01.532092+00:00"
+}

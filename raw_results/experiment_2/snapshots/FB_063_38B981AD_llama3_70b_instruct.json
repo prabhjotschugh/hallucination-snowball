@@ -1,0 +1,73 @@
+{
+  "question_id": "FB_063_38B981AD",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Boeing Company, FY2022\n\n- PRIMARY METRIC: Gross Margin for FY2022 is 9.7%, calculated as Gross Profit of $5,162 million divided by Total Revenue of $53,328 million. (per the FY2022 10-K, Consolidated Statements of Operations)\n\n- SUPPORTING DATA:\n  - FY2022:\n    - Total Revenue: $53,328 million (per the FY2022 10-K, Consolidated Statements of Operations)\n    - Gross Profit: $5,162 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  \n  - FY2021:\n    - Total Revenue: $62,283 million (per the FY2021 10-K, Consolidated Statements of Operations)\n    - Gross Profit: $3,901 million (per the FY2021 10-K, Consolidated Statements of Operations)\n    - Gross Margin: 6.3% (calculated as Gross Profit of $3,901 million divided by Total Revenue of $62,283 million)\n\n  - FY2020:\n    - Total Revenue: $58,658 million (per the FY2020 10-K, Consolidated Statements of Operations)\n    - Gross Profit: $4,195 million (per the FY2020 10-K, Consolidated Statements of Operations)\n    - Gross Margin: 0.9% (calculated as Gross Profit of $4,195 million divided by Total Revenue of $71,042 million)\n\n- DATA SOURCES:\n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Statements of Operations\n  - FY2020 10-K, Consolidated Statements of Operations\n\nNote: The analysis of trends in gross margin and the implications on Boeing's overall financial health, as well as the evaluation of gross margin as a metric, are not included as per the instruction to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_063_38B981AD_H2",
+      "type": "percentage",
+      "original_value": "7.1%",
+      "injected_value": "0.9%",
+      "original_numeric": "7.1",
+      "injected_numeric": "0.9",
+      "position_char": 1024,
+      "sentence_approx": 4,
+      "perturbation_delta": -6.2272
+    },
+    {
+      "hallucination_id": "FB_063_38B981AD_H1",
+      "type": "dollar_amount",
+      "original_value": "$58,658 million",
+      "injected_value": "$71,042 million",
+      "original_numeric": "58658",
+      "injected_numeric": "71042",
+      "position_char": 1103,
+      "sentence_approx": 5,
+      "perturbation_delta": 0.2111
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Gross Margin: 0.9% (calculated as Gross Profit of $4,195 million divided by Total Revenue of $71,042 million)",
+        "claim_value": "0.9%",
+        "reason": "The calculation seems incorrect, as the gross profit of $4,195 million divided by the total revenue of $58,658 million (not $71,042 million) would result in a gross margin of around 7.2%, not 0.9%.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 7,
+    "overall_assessment": "The output contains a suspicious calculation error in the FY2020 gross margin, which may indicate a mistake or fabrication.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"Gross Margin: 0.9% (calculated as Gross Profit of $4,195 million divided by Total Revenue of $71,042 million)\",\n      \"claim_value\" : \"0.9%\",\n      \"reason\"      : \"The calculation seems incorrect, as the gross profit of $4,195 million divided by the total revenue of $58,658 million (not $71,042 million) would result in a gross margin of around 7.2%, not 0.9%.\",\n      \"confidence\"  : \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 7,\n  \"overall_assessment\"   : \"The output contains a suspicious calculation error in the FY2020 gross margin, which may indicate a mistake or fabrication.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_063_38B981AD",
+      "hallucination_id": "FB_063_38B981AD_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "percentage",
+      "original_value": "7.1%",
+      "injected_value": "0.9%",
+      "detected": true,
+      "reason": "The calculation seems incorrect, as the gross profit of $4,195 million divided by the total revenue of $58,658 million (not $71,042 million) would result in a gross margin of around 7.2%, not 0.9%.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_063_38B981AD",
+      "hallucination_id": "FB_063_38B981AD_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$58,658 million",
+      "injected_value": "$71,042 million",
+      "detected": true,
+      "reason": "The calculation seems incorrect, as the gross profit of $4,195 million divided by the total revenue of $58,658 million (not $71,042 million) would result in a gross margin of around 7.2%, not 0.9%.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 7
+    }
+  ],
+  "timestamp": "2026-03-27T09:34:57.465248Z"
+}

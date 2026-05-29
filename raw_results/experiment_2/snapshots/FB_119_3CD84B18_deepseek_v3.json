@@ -1,0 +1,97 @@
+{
+  "question_id": "FB_119_3CD84B18",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: PayPal Holdings, Inc. - Fiscal Year 2022\n\n- PRIMARY METRIC: \n  - Current Assets: $23,876 million (per the FY2022 10-K, Consolidated Balance Sheets)\n  - Current Liabilities: $10,498 million (per the FY2022 10-K, Consolidated Balance Sheets)\n  - Working Capital Calculation: \n    - Working Capital = Current Assets - Current Liabilities \n    - Working Capital = $18,407 million - $12,740 million = $7,909 million\n\n- SUPPORTING DATA: \n  - Current Assets (FY2021): $19,190 million (per the FY2021 10-K, Consolidated Balance Sheets)\n  - Current Liabilities (FY2021): $11,568 million (per the FY2021 10-K, Consolidated Balance Sheets)\n  - Current Assets (FY2020): $16,118 million (per the FY2020 10-K, Consolidated Balance Sheets)\n  - Current Liabilities (FY2020): $8,689 million (per the FY2020 10-K, Consolidated Balance Sheets)\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Balance Sheets\n  - FY2021 10-K, Consolidated Balance Sheets\n  - FY2020 10-K, Consolidated Balance Sheets\n\n**Note:** The calculated working capital for PayPal in FY2022 is $7,909 million, which is positive. \n\nRegarding the relevance of working capital for PayPal's operational model, I will refrain from providing an analysis or interpretation as per the instructions. Please consult downstream analysts for further insights on the implications of this working capital figure within the context of PayPal's business model and industry benchmarks.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_119_3CD84B18_H3",
+      "type": "dollar_amount",
+      "original_value": "$18,407 million",
+      "injected_value": "$23,876 million",
+      "original_numeric": "18407",
+      "injected_numeric": "23876",
+      "position_char": 101,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.2971
+    },
+    {
+      "hallucination_id": "FB_119_3CD84B18_H2",
+      "type": "dollar_amount",
+      "original_value": "$10,498 million",
+      "injected_value": "$12,740 million",
+      "original_numeric": "10498",
+      "injected_numeric": "12740",
+      "position_char": 398,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.2135
+    },
+    {
+      "hallucination_id": "FB_119_3CD84B18_H1",
+      "type": "dollar_amount",
+      "original_value": "$10,226 million",
+      "injected_value": "$8,689 million",
+      "original_numeric": "10226",
+      "injected_numeric": "8689",
+      "position_char": 779,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.1503
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Working Capital = $18,407 million - $12,740 million = $7,909 million",
+        "claim_value": "$7,909 million",
+        "reason": "The working capital calculation uses different numbers ($18,407M & $12,740M) than the previously stated current assets ($23,876M) and liabilities ($10,498M). There is an inconsistency in the values used for computation versus the stated values.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "The working capital calculation contains a significant inconsistency with the previously stated current asset and liability figures, making it highly suspicious.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Working Capital = $18,407 million - $12,740 million = $7,909 million\",\n      \"claim_value\": \"$7,909 million\",\n      \"reason\": \"The working capital calculation uses different numbers ($18,407M & $12,740M) than the previously stated current assets ($23,876M) and liabilities ($10,498M). There is an inconsistency in the values used for computation versus the stated values.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\": \"The working capital calculation contains a significant inconsistency with the previously stated current asset and liability figures, making it highly suspicious.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_119_3CD84B18",
+      "hallucination_id": "FB_119_3CD84B18_H3",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$18,407 million",
+      "injected_value": "$23,876 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_119_3CD84B18",
+      "hallucination_id": "FB_119_3CD84B18_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$10,498 million",
+      "injected_value": "$12,740 million",
+      "detected": true,
+      "reason": "The working capital calculation uses different numbers ($18,407M & $12,740M) than the previously stated current assets ($23,876M) and liabilities ($10,498M). There is an inconsistency in the values used for computation versus the stated values.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_119_3CD84B18",
+      "hallucination_id": "FB_119_3CD84B18_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$10,226 million",
+      "injected_value": "$8,689 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-24T09:58:58.872011Z"
+}

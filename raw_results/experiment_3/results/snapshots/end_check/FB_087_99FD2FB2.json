@@ -1,0 +1,159 @@
+{
+  "question_id": "FB_087_99FD2FB2",
+  "method": "end_check",
+  "final_output": "## Johnson & Johnson: FY2022 Financial Performance Report\n\n**Executive Summary**\n\nJohnson & Johnson reported a Gross Profit of $77,068 million on Total Revenue of $94,943 million for Fiscal Year 2022. This resulted in a Gross Margin Percentage of 81.17%. Compared to FY2021, Total Revenue increased by 1.25% to $94,943 million, while Gross Profit saw a modest increase of 0.73% to $77,068 million. The Gross Margin Percentage experienced a slight decline from 81.60% in FY2021 to 81.17% in FY2022.\n\n**Analysis**\n\nJohnson & Johnson's financial performance in FY2022 demonstrated continued revenue growth and strong gross profitability. Total Revenue grew from $93,775 million in FY2021 to $94,943 million in FY2022, an increase of $1,168 million. Concurrently, Cost of Goods Sold (COGS) rose by 3.53% from $17,266 million in FY2021 to $17,875 million in FY2022. This higher growth rate in COGS relative to revenue contributed to the slight decrease in Gross Margin Percentage. Despite this, the company maintained a robust gross margin, indicating effective cost management relative to its sales. The company's ability to generate significant gross profit from its sales underscores its operational efficiency and pricing power within its markets.\n\n**Key Risks**\n\nThe slight compression in the Gross Margin Percentage from 81.60% in FY2021 to 81.17% in FY2022, driven by COGS growing faster than Total Revenue, warrants monitoring. While the change is minor, sustained increases in COGS without commensurate revenue growth could impact overall profitability. Factors such as inflationary pressures on raw materials, supply chain disruptions, and increased manufacturing costs could further influence COGS in future periods. Management should continue to focus on cost optimization strategies and pricing adjustments to mitigate potential future margin erosion.\n\n**Conclusion**\n\nJohnson & Johnson concluded FY2022 with a solid financial standing, marked by revenue growth and strong gross profitability. The Gross Margin Percentage of 81.17% reflects efficient operations and the company's strong market position. While the slight decline in gross margin from the previous year is noted, the company's ability to generate substantial gross profit from its sales remains a key strength. The company's consistent revenue growth and robust gross profitability position it well for continued financial stability, provided that cost pressures are effectively managed in the coming fiscal years.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Johnson & Johnson, FY2022\n- PRIMARY METRIC: Gross Margin: $77,068 million (Gross Profit) on Total Revenue of $94,943 million, resulting in a Gross Margin Percentage of 70.3% (per the FY2022 10-K, Consolidated Statements of Operations).\n- SUPPORTING DATA:\n  - Total Revenue: $94,943 million (per the FY2022 10-K, Consolidated Statements of Operations).\n  - Cost of Goods Sold (COGS): $17,875 million (per the FY2022 10-K, Consolidated Statements of Operations).\n  - Gross Profit: $77,068 million (calculated as Total Revenue - COGS).\n  \n  Multi-Period Data:\n  - FY2021:\n    - Total Revenue: $93,775 million (per the FY2021 10-K, Consolidated Statements of Operations).\n    - COGS: $17,266 million (per the FY2021 10-K, Consolidated Statements of Operations).\n    - Gross Profit: $76,509 million (calculated as Total Revenue - COGS).\n    - Gross Margin Percentage: 81.6% (calculated as Gross Profit / Total Revenue).\n  \n  - FY2020:\n    - Total Revenue: $82,584 million (per the FY2020 10-K, Consolidated Statements of Operations).\n    - COGS: $20,998 million (per the FY2020 10-K, Consolidated Statements of Operations).\n    - Gross Profit: $84,991 million (calculated as Total Revenue - COGS).\n    - Gross Margin Percentage: 81.6% (calculated as Gross Profit / Total Revenue).\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations.\n  - FY2021 10-K, Consolidated Statements of Operations.\n  - FY2020 10-K, Consolidated Statements of Operations.\n\n**Note:** The request to analyze the factors influencing gross margin changes and the utility of gross margin as a financial health metric cannot be fulfilled as per the directive to provide raw data only without interpretation or analysis.",
+    "2": "As a financial analyst, I have computed the requested metrics for Johnson & Johnson based on the provided researcher data.\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\n| Metric             | FY2022 Value ($M) | FY2021 Value ($M) | FY2020 Value ($M) | FY22 vs FY21 Absolute Change ($M) | FY22 vs FY21 Percentage Change | FY21 vs FY20 Absolute Change ($M) | FY21 vs FY20 Percentage Change |\n| :----------------- | :---------------- | :---------------- | :---------------- | :-------------------------------- | :----------------------------- | :-------------------------------- | :----------------------------- |\n| Total Revenue      | 94,943            | 93,775            | 82,584            | 1,168                             | 1.25%                          | 11,191                            | 13.55%                         |\n| COGS               | 17,875            | 17,266            | 20,998            | 609                               | 3.53%                          | (3,732)                           | -17.77%                        |\n| Gross Profit       | 77,068            | 76,509            | 84,991            | 559                               | 0.73%                          | (8,482)                           | -9.98%                         |\n\n**Formulas:**\n*   **Absolute Change:** Current Year Value - Prior Year Value\n*   **Percentage Change:** (Absolute Change / Prior Year Value) * 100\n\n**2. Relevant Ratios**\n\n| Ratio                    | FY2022 Value | FY2021 Value | FY2020 Value |\n| :----------------------- | :----------- | :----------- | :----------- |\n| Gross Margin Percentage  | 81.17%       | 81.60%       | 81.60%       |\n\n**Formulas:**\n*   **Gross Margin Percentage (FY2022):** (Gross Profit / Total Revenue) = ($77,068 million / $94,943 million) = 81.17%\n*   **Gross Margin Percentage (FY2021):** (Gross Profit / Total Revenue) = ($76,509 million / $93,775 million) = 81.60%\n*   **Gross Margin Percentage (FY2020):** (Gross Profit / Total Revenue) = ($84,991 million / $82,584 million) = 102.91%\n\n**3. Anomalies Flagged**\n\n*   **FY2022 Gross Margin Percentage:** The researcher data states a Gross Margin Percentage of 70.3% for FY2022. However, based on the provided Gross Profit ($77,068 million) and Total Revenue ($94,943 million) for FY2022, the calculated Gross Margin Percentage is ($77,068 / $94,943) = **81.17%**. The researcher's stated 70.3% is incorrect.\n*   **FY2020 Gross Profit and Gross Margin Percentage:** The researcher data states a Gross Profit of $84,991 million for FY2020 and a Gross Margin Percentage of 81.6%.\n    *   Using the provided Total Revenue ($82,584 million) and COGS ($20,998 million) for FY2020, the calculated Gross Profit is (Total Revenue - COGS) = ($82,584 million - $20,998 million) = **$61,586 million**. The researcher's stated Gross Profit of $84,991 million is incorrect.\n    *   Consequently, using the corrected Gross Profit of $61,586 million and Total Revenue of $82,584 million, the calculated Gross Margin Percentage for FY2020 is ($61,586 million / $82,584 million) = **74.58%**. The researcher's stated 81.6% is incorrect.\n\n**Note on Anomalies:** For the calculations above, I have used the corrected values for Gross Profit and Gross Margin Percentage for FY2020 and FY2022 where the researcher's stated values were inconsistent with the underlying data provided.",
+    "3": "## Johnson & Johnson: FY2022 Financial Performance Report\n\n**Executive Summary**\n\nJohnson & Johnson reported a Gross Profit of $77,068 million on Total Revenue of $94,943 million for Fiscal Year 2022. This resulted in a Gross Margin Percentage of 81.17%. Compared to FY2021, Total Revenue increased by 1.25% to $94,943 million, while Gross Profit saw a modest increase of 0.73% to $77,068 million. The Gross Margin Percentage experienced a slight decline from 81.60% in FY2021 to 81.17% in FY2022.\n\n**Analysis**\n\nJohnson & Johnson's financial performance in FY2022 demonstrated continued revenue growth and strong gross profitability. Total Revenue grew from $93,775 million in FY2021 to $94,943 million in FY2022, an increase of $1,168 million. Concurrently, Cost of Goods Sold (COGS) rose by 3.53% from $17,266 million in FY2021 to $17,875 million in FY2022. This higher growth rate in COGS relative to revenue contributed to the slight decrease in Gross Margin Percentage. Despite this, the company maintained a robust gross margin, indicating effective cost management relative to its sales.\n\n**Key Risks**\n\nThe slight compression in the Gross Margin Percentage from 81.60% in FY2021 to 81.17% in FY2022, driven by COGS growing faster than Total Revenue, warrants monitoring. While the change is minor, sustained increases in COGS without commensurate revenue growth could impact overall profitability.\n\n**Conclusion**\n\nJohnson & Johnson concluded FY2022 with a solid financial standing, marked by revenue growth and strong gross profitability. The Gross Margin Percentage of 81.17% reflects efficient operations. While the slight decline in gross margin from the previous year is noted, the company's ability to generate substantial gross profit from its sales remains a key strength.",
+    "4": "## Johnson & Johnson: FY2022 Financial Performance Report\n\n**Executive Summary**\n\nJohnson & Johnson reported a Gross Profit of $77,068 million on Total Revenue of $94,943 million for Fiscal Year 2022. This resulted in a Gross Margin Percentage of 81.17%. Compared to FY2021, Total Revenue increased by 1.25% to $94,943 million, while Gross Profit saw a modest increase of 0.73% to $77,068 million. The Gross Margin Percentage experienced a slight decline from 81.60% in FY2021 to 81.17% in FY2022.\n\n**Analysis**\n\nJohnson & Johnson's financial performance in FY2022 demonstrated continued revenue growth and strong gross profitability. Total Revenue grew from $93,775 million in FY2021 to $94,943 million in FY2022, an increase of $1,168 million. Concurrently, Cost of Goods Sold (COGS) rose by 3.53% from $17,266 million in FY2021 to $17,875 million in FY2022. This higher growth rate in COGS relative to revenue contributed to the slight decrease in Gross Margin Percentage. Despite this, the company maintained a robust gross margin, indicating effective cost management relative to its sales. The company's ability to generate significant gross profit from its sales underscores its operational efficiency and pricing power within its markets.\n\n**Key Risks**\n\nThe slight compression in the Gross Margin Percentage from 81.60% in FY2021 to 81.17% in FY2022, driven by COGS growing faster than Total Revenue, warrants monitoring. While the change is minor, sustained increases in COGS without commensurate revenue growth could impact overall profitability. Factors such as inflationary pressures on raw materials, supply chain disruptions, and increased manufacturing costs could further influence COGS in future periods. Management should continue to focus on cost optimization strategies and pricing adjustments to mitigate potential future margin erosion.\n\n**Conclusion**\n\nJohnson & Johnson concluded FY2022 with a solid financial standing, marked by revenue growth and strong gross profitability. The Gross Margin Percentage of 81.17% reflects efficient operations and the company's strong market position. While the slight decline in gross margin from the previous year is noted, the company's ability to generate substantial gross profit from its sales remains a key strength. The company's consistent revenue growth and robust gross profitability position it well for continued financial stability, provided that cost pressures are effectively managed in the coming fiscal years."
+  },
+  "gates": {
+    "end_gate": {
+      "verified": [
+        {
+          "value": "$77,068 million",
+          "ref": 77068.0
+        },
+        {
+          "value": "$94,943 million",
+          "ref": 94943.0
+        },
+        {
+          "value": "$94,943 million",
+          "ref": 94943.0
+        },
+        {
+          "value": "$77,068 million",
+          "ref": 77068.0
+        },
+        {
+          "value": "$93,775 million",
+          "ref": 93775.0
+        },
+        {
+          "value": "$94,943 million",
+          "ref": 94943.0
+        },
+        {
+          "value": "$17,266 million",
+          "ref": 17266.0
+        },
+        {
+          "value": "$17,875 million",
+          "ref": 17875.0
+        },
+        {
+          "value": "81.17%",
+          "ref": 81.1
+        },
+        {
+          "value": "81.60%",
+          "ref": 81.6
+        },
+        {
+          "value": "81.17%",
+          "ref": 81.1
+        },
+        {
+          "value": "81.60%",
+          "ref": 81.6
+        },
+        {
+          "value": "81.17%",
+          "ref": 81.1
+        },
+        {
+          "value": "81.17%",
+          "ref": 81.1
+        }
+      ],
+      "refuted": [
+        {
+          "value": "3.53%",
+          "num": 3.53,
+          "correct": 4.3,
+          "dev": 0.1791,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$1,168 million"
+        },
+        {
+          "value": "1.25%"
+        },
+        {
+          "value": "0.73%"
+        }
+      ],
+      "n_refs": 17
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_087_99FD2FB2",
+      "hid": "FB_087_99FD2FB2_H3",
+      "method": "end_check",
+      "type": "percentage",
+      "inj_num": 70.3,
+      "orig_num": 81.1,
+      "survived": false,
+      "corrected": true,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_087_99FD2FB2",
+      "hid": "FB_087_99FD2FB2_H2",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 20998.0,
+      "orig_num": 15157.0,
+      "survived": false,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_087_99FD2FB2",
+      "hid": "FB_087_99FD2FB2_H1",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 84991.0,
+      "orig_num": 67427.0,
+      "survived": false,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:35:04.013729+00:00"
+}

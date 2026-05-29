@@ -1,0 +1,66 @@
+{
+  "question_id": "FB_112_2DC55A31",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Microsoft Corporation, FY2022 and FY2023\n- PRIMARY METRIC: \n  - Total Debt as of June 30, 2023: $41,918 million (per the FY2023 10-K, Consolidated Balance Sheets)\n  - Total Debt as of June 30, 2022: $28,845 million (per the FY2022 10-K, Consolidated Balance Sheets)\n- SUPPORTING DATA: \n  - Total Assets as of June 30, 2023: $335,000 million (per the FY2023 10-K, Consolidated Balance Sheets)\n  - Total Assets as of June 30, 2022: $302,000 million (per the FY2022 10-K, Consolidated Balance Sheets)\n  - Total Equity as of June 30, 2023: $139,000 million (per the FY2023 10-K, Consolidated Balance Sheets)\n  - Total Equity as of June 30, 2022: $124,000 million (per the FY2022 10-K, Consolidated Balance Sheets)\n- DATA SOURCES: \n  - FY2023 10-K, Consolidated Balance Sheets, filed on July 27, 2023\n  - FY2022 10-K, Consolidated Balance Sheets, filed on July 27, 2022\n\nNote: The figures reported are exact as per the respective SEC filings. Further analysis or interpretation of trends and ratios is not included as per the directive.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_112_2DC55A31_H2",
+      "type": "dollar_amount",
+      "original_value": "$51,000 million",
+      "injected_value": "$41,918 million",
+      "original_numeric": "51000",
+      "injected_numeric": "41918",
+      "position_char": 116,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.1781
+    },
+    {
+      "hallucination_id": "FB_112_2DC55A31_H1",
+      "type": "dollar_amount",
+      "original_value": "$48,000 million",
+      "injected_value": "$28,845 million",
+      "original_numeric": "48000",
+      "injected_numeric": "28845",
+      "position_char": 219,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.3991
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "The reported financial figures appear plausible and consistent with typical balance sheet data for a large corporation like Microsoft.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\": \"The reported financial figures appear plausible and consistent with typical balance sheet data for a large corporation like Microsoft.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_112_2DC55A31",
+      "hallucination_id": "FB_112_2DC55A31_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$51,000 million",
+      "injected_value": "$41,918 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 0,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_112_2DC55A31",
+      "hallucination_id": "FB_112_2DC55A31_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$48,000 million",
+      "injected_value": "$28,845 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 0,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-27T09:41:51.114479Z"
+}

@@ -1,0 +1,121 @@
+{
+  "question_id": "FB_065_8F3B2425",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: The Boeing Company, Fiscal Year 2022\n- PRIMARY METRIC: Total Revenue for FY2022 was $66,610 million, per the FY2022 10-K, Consolidated Statements of Operations.\n- SUPPORTING DATA:\n  - FY2021 Total Revenue: $62,286 million, per the FY2021 10-K, Consolidated Statements of Operations.\n  - FY2020 Total Revenue: $41,886 million, per the FY2020 10-K, Consolidated Statements of Operations.\n  - FY2022 Commercial Airplanes Revenue: $43,028 million, per the FY2022 10-K, Segment Information.\n  - FY2021 Commercial Airplanes Revenue: $27,100 million, per the FY2021 10-K, Segment Information.\n  - FY2020 Commercial Airplanes Revenue: $28,658 million, per the FY2020 10-K, Segment Information.\n  - FY2022 Defense, Space & Security Revenue: $18,532 million, per the FY2022 10-K, Segment Information.\n  - FY2021 Defense, Space & Security Revenue: $26,720 million, per the FY2021 10-K, Segment Information.\n  - FY2020 Defense, Space & Security Revenue: $26,130 million, per the FY2020 10-K, Segment Information.\n  - Backlog as of December 31, 2022: $469 billion, per the FY2022 10-K, Management's Discussion and Analysis.\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations.\n  - FY2021 10-K, Consolidated Statements of Operations.\n  - FY2020 10-K, Consolidated Statements of Operations.\n  - FY2022 10-K, Segment Information.\n  - FY2021 10-K, Segment Information.\n  - FY2020 10-K, Segment Information.\n  - FY2022 10-K, Management's Discussion and Analysis. \n\nNote: The analysis of cyclicality, including patterns and key ratios, is not included as per the directive to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_065_8F3B2425_H3",
+      "type": "dollar_amount",
+      "original_value": "$58,658 million",
+      "injected_value": "$41,886 million",
+      "original_numeric": "58658",
+      "injected_numeric": "41886",
+      "position_char": 329,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.2859
+    },
+    {
+      "hallucination_id": "FB_065_8F3B2425_H2",
+      "type": "dollar_amount",
+      "original_value": "$26,210 million",
+      "injected_value": "$18,532 million",
+      "original_numeric": "26210",
+      "injected_numeric": "18532",
+      "position_char": 752,
+      "sentence_approx": 7,
+      "perturbation_delta": -0.2929
+    },
+    {
+      "hallucination_id": "FB_065_8F3B2425_H1",
+      "type": "dollar_amount",
+      "original_value": "$382 billion",
+      "injected_value": "$469 billion",
+      "original_numeric": "382",
+      "injected_numeric": "469",
+      "position_char": 1058,
+      "sentence_approx": 10,
+      "perturbation_delta": 0.2272
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "FY2020 Total Revenue: $41,886 million",
+        "claim_value": "$41,886 million",
+        "reason": "The sum of the reported FY2020 Commercial Airplanes Revenue ($28,658 million) and FY2020 Defense, Space & Security Revenue ($26,130 million) is $54,788 million. This sum is significantly greater than the reported FY2020 Total Revenue of $41,886 million, indicating a fundamental internal inconsistency as total revenue cannot be less than the sum of its segments.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2020 Commercial Airplanes Revenue: $28,658 million",
+        "claim_value": "$28,658 million",
+        "reason": "This figure, when combined with FY2020 Defense, Space & Security Revenue ($26,130 million), results in a sum ($54,788 million) that exceeds the reported FY2020 Total Revenue ($41,886 million). This indicates an internal inconsistency within the FY2020 figures.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2020 Defense, Space & Security Revenue: $26,130 million",
+        "claim_value": "$26,130 million",
+        "reason": "This figure, when combined with FY2020 Commercial Airplanes Revenue ($28,658 million), results in a sum ($54,788 million) that exceeds the reported FY2020 Total Revenue ($41,886 million). This indicates an internal inconsistency within the FY2020 figures.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2022 Commercial Airplanes Revenue: $43,028 million",
+        "claim_value": "$43,028 million",
+        "reason": "The reported year-over-year increase from FY2021 Commercial Airplanes Revenue ($27,100 million) to FY2022 Commercial Airplanes Revenue ($43,028 million) is approximately 58.8%. While a strong recovery is plausible for Boeing's commercial segment, such a large percentage increase in a single year for a segment of this size is unusually high and warrants skepticism, especially in light of other inconsistencies found.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "FY2022 Defense, Space & Security Revenue: $18,532 million",
+        "claim_value": "$18,532 million",
+        "reason": "The reported year-over-year decrease from FY2021 Defense, Space & Security Revenue ($26,720 million) to FY2022 Defense, Space & Security Revenue ($18,532 million) is approximately 30.6%. A decline of this magnitude in a single year for Boeing's defense segment is highly unusual and suggests potential inaccuracy or hallucination.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 10,
+    "overall_assessment": "Multiple financial claims for Boeing, particularly for FY2020 and FY2022 segment revenues, exhibit significant internal inconsistencies and implausible year-over-year changes, strongly suggesting hallucination or inaccuracy.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"FY2020 Total Revenue: $41,886 million\",\n      \"claim_value\": \"$41,886 million\",\n      \"reason\": \"The sum of the reported FY2020 Commercial Airplanes Revenue ($28,658 million) and FY2020 Defense, Space & Security Revenue ($26,130 million) is $54,788 million. This sum is significantly greater than the reported FY2020 Total Revenue of $41,886 million, indicating a fundamental internal inconsistency as total revenue cannot be less than the sum of its segments.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2020 Commercial Airplanes Revenue: $28,658 million\",\n      \"claim_value\": \"$28,658 million\",\n      \"reason\": \"This figure, when combined with FY2020 Defense, Space & Security Revenue ($26,130 million), results in a sum ($54,788 million) that exceeds the reported FY2020 Total Revenue ($41,886 million). This indicates an internal inconsistency within the FY2020 figures.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2020 Defense, Space & Security Revenue: $26,130 million\",\n      \"claim_value\": \"$26,130 million\",\n      \"reason\": \"This figure, when combined with FY2020 Commercial Airplanes Revenue ($28,658 million), results in a sum ($54,788 million) that exceeds the reported FY2020 Total Revenue ($41,886 million). This indicates an internal inconsistency within the FY2020 figures.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2022 Commercial Airplanes Revenue: $43,028 million\",\n      \"claim_value\": \"$43,028 million\",\n      \"reason\": \"The reported year-over-year increase from FY2021 Commercial Airplanes Revenue ($27,100 million) to FY2022 Commercial Airplanes Revenue ($43,028 million) is approximately 58.8%. While a strong recovery is plausible for Boeing's commercial segment, such a large percentage increase in a single year for a segment of this size is unusually high and warrants skepticism, especially in light of other inconsistencies found.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"FY2022 Defense, Space & Security Revenue: $18,532 million\",\n      \"claim_value\": \"$18,532 million\",\n      \"reason\": \"The reported year-over-year decrease from FY2021 Defense, Space & Security Revenue ($26,720 million) to FY2022 Defense, Space & Security Revenue ($18,532 million) is approximately 30.6%. A decline of this magnitude in a single year for Boeing's defense segment is highly unusual and suggests potential inaccuracy or hallucination.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 10,\n  \"overall_assessment\": \"Multiple financial claims for Boeing, particularly for FY2020 and FY2022 segment revenues, exhibit significant internal inconsistencies and implausible year-over-year changes, strongly suggesting hallucination or inaccuracy.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_065_8F3B2425",
+      "hallucination_id": "FB_065_8F3B2425_H3",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$58,658 million",
+      "injected_value": "$41,886 million",
+      "detected": true,
+      "reason": "The sum of the reported FY2020 Commercial Airplanes Revenue ($28,658 million) and FY2020 Defense, Space & Security Revenue ($26,130 million) is $54,788 million. This sum is significantly greater than the reported FY2020 Total Revenue of $41,886 million, indicating a fundamental internal inconsistency as total revenue cannot be less than the sum of its segments.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 10
+    },
+    {
+      "question_id": "FB_065_8F3B2425",
+      "hallucination_id": "FB_065_8F3B2425_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$26,210 million",
+      "injected_value": "$18,532 million",
+      "detected": true,
+      "reason": "This figure, when combined with FY2020 Commercial Airplanes Revenue ($28,658 million), results in a sum ($54,788 million) that exceeds the reported FY2020 Total Revenue ($41,886 million). This indicates an internal inconsistency within the FY2020 figures.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 10
+    },
+    {
+      "question_id": "FB_065_8F3B2425",
+      "hallucination_id": "FB_065_8F3B2425_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$382 billion",
+      "injected_value": "$469 billion",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 10
+    }
+  ],
+  "timestamp": "2026-03-25T07:49:29.664842Z"
+}

@@ -1,0 +1,85 @@
+{
+  "question_id": "FB_148_2F878B14",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Walmart Inc., FY2018\n- PRIMARY METRIC: Days Payable Outstanding (DPO) calculation requires the following figures:\n\n1. **Average Accounts Payable**:\n   - Accounts Payable as of January 31, 2018: $20,156 million (per the FY2018 10-K, Consolidated Balance Sheets)\n   - Accounts Payable as of January 31, 2017: $19,066 million (per the FY2017 10-K, Consolidated Balance Sheets)\n   - Average Accounts Payable = ($20,156 million + $19,066 million) / 2 = $19,611 million\n\n2. **Cost of Goods Sold (COGS)**:\n   - COGS for FY2018: $396,313 million (per the FY2018 10-K, Consolidated Statements of Operations)\n\n3. **Change in Inventory**:\n   - Inventory as of January 31, 2018: $44,559 million (per the FY2018 10-K, Consolidated Balance Sheets)\n   - Inventory as of January 31, 2017: $43,157 million (per the FY2017 10-K, Consolidated Balance Sheets)\n   - Change in Inventory = $44,559 million - $43,157 million = $1,402 million\n\n- SUPPORTING DATA:\n   - COGS for FY2018: $396,313 million\n   - Change in Inventory: $1,402 million\n   - Total for DPO calculation: COGS + Change in Inventory = $396,313 million + $883 million = $397,715 million\n\n- DPO Calculation:\n   - DPO = 365 * (Average Accounts Payable) / (COGS + Change in Inventory)\n   - DPO = 365 * ($19,611 million) / ($397,715 million)\n   - DPO = 365 * 0.32542 = 18.00 days (rounded to two decimal places)\n\n- DATA SOURCES:\n   - FY2018 10-K, Consolidated Balance Sheets\n   - FY2018 10-K, Consolidated Statements of Operations\n   - FY2017 10-K, Consolidated Balance Sheets\n\n**Final DPO for Walmart in FY2018**: 18.00 days.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_148_2F878B14_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,402 million",
+      "injected_value": "$883 million",
+      "original_numeric": "1402",
+      "injected_numeric": "883",
+      "position_char": 1118,
+      "sentence_approx": 5,
+      "perturbation_delta": -0.3704
+    },
+    {
+      "hallucination_id": "FB_148_2F878B14_H1",
+      "type": "large_number",
+      "original_value": "049308",
+      "injected_value": "32542",
+      "original_numeric": "049308",
+      "injected_numeric": "32542",
+      "position_char": 1322,
+      "sentence_approx": 6,
+      "perturbation_delta": -0.34
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Total for DPO calculation: COGS + Change in Inventory = $396,313 million + $883 million = $397,715 million",
+        "claim_value": "$883 million",
+        "reason": "This value for 'Change in Inventory' ($883 million) contradicts the previously calculated and stated 'Change in Inventory' of $1,402 million. It appears to be a hallucinated figure introduced in this specific line.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total for DPO calculation: COGS + Change in Inventory = $396,313 million + $883 million = $397,715 million",
+        "claim_value": "$397,715 million",
+        "reason": "This sum ($397,715 million) is inconsistent with the two numbers explicitly presented in the calculation: $396,313 million + $883 million equals $397,196 million, not $397,715 million. While $397,715 million is consistent with the correct Change in Inventory ($1,402 million), the presented sum with the incorrect $883 million creates an internal inconsistency.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "DPO = 365 * 0.32542 = 18.00 days",
+        "claim_value": "0.32542",
+        "reason": "The intermediate calculation factor '0.32542' is incorrect. Based on the preceding line, the factor should be (Average Accounts Payable) / (COGS + Change in Inventory) = $19,611 million / $397,715 million, which calculates to approximately 0.049309. The stated value of 0.32542 is significantly different and appears to be a hallucinated intermediate step.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 15,
+    "overall_assessment": "The researcher's output contains multiple internal inconsistencies and a hallucinated intermediate calculation step, despite arriving at a numerically correct final DPO value.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Total for DPO calculation: COGS + Change in Inventory = $396,313 million + $883 million = $397,715 million\",\n      \"claim_value\": \"$883 million\",\n      \"reason\": \"This value for 'Change in Inventory' ($883 million) contradicts the previously calculated and stated 'Change in Inventory' of $1,402 million. It appears to be a hallucinated figure introduced in this specific line.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total for DPO calculation: COGS + Change in Inventory = $396,313 million + $883 million = $397,715 million\",\n      \"claim_value\": \"$397,715 million\",\n      \"reason\": \"This sum ($397,715 million) is inconsistent with the two numbers explicitly presented in the calculation: $396,313 million + $883 million equals $397,196 million, not $397,715 million. While $397,715 million is consistent with the correct Change in Inventory ($1,402 million), the presented sum with the incorrect $883 million creates an internal inconsistency.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"DPO = 365 * 0.32542 = 18.00 days\",\n      \"claim_value\": \"0.32542\",\n      \"reason\": \"The intermediate calculation factor '0.32542' is incorrect. Based on the preceding line, the factor should be (Average Accounts Payable) / (COGS + Change in Inventory) = $19,611 million / $397,715 million, which calculates to approximately 0.049309. The stated value of 0.32542 is significantly different and appears to be a hallucinated intermediate step.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 15,\n  \"overall_assessment\": \"The researcher's output contains multiple internal inconsistencies and a hallucinated intermediate calculation step, despite arriving at a numerically correct final DPO value.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_148_2F878B14",
+      "hallucination_id": "FB_148_2F878B14_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,402 million",
+      "injected_value": "$883 million",
+      "detected": true,
+      "reason": "This value for 'Change in Inventory' ($883 million) contradicts the previously calculated and stated 'Change in Inventory' of $1,402 million. It appears to be a hallucinated figure introduced in this specific line.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 15
+    },
+    {
+      "question_id": "FB_148_2F878B14",
+      "hallucination_id": "FB_148_2F878B14_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "large_number",
+      "original_value": "049308",
+      "injected_value": "32542",
+      "detected": true,
+      "reason": "The intermediate calculation factor '0.32542' is incorrect. Based on the preceding line, the factor should be (Average Accounts Payable) / (COGS + Change in Inventory) = $19,611 million / $397,715 million, which calculates to approximately 0.049309. The stated value of 0.32542 is significantly different and appears to be a hallucinated intermediate step.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 15
+    }
+  ],
+  "timestamp": "2026-03-25T08:07:49.739969Z"
+}

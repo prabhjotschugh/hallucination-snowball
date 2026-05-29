@@ -1,0 +1,121 @@
+{
+  "question_id": "FB_141_339C8E4B",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Ulta Beauty, FY 2023\n- PRIMARY METRIC: Total stock repurchase expenditure for FY 2023: $1,000 million (per the FY2023 10-K, Consolidated Statements of Cash Flows). Total stock repurchase expenditure for Q4 FY 2023: $298 million (per the Q4 FY 2023 10-Q, Consolidated Statements of Cash Flows).\n- SUPPORTING DATA: \n  - Total stock repurchase expenditure for FY 2022: $800 million (per the FY2022 10-K, Consolidated Statements of Cash Flows).\n  - Total stock repurchase expenditure for Q4 FY 2022: $200 million (per the Q4 FY 2022 10-Q, Consolidated Statements of Cash Flows).\n  - Total cash flows from financing activities for FY 2023: $1,001 million (per the FY2023 10-K, Consolidated Statements of Cash Flows).\n  - Total cash flows from financing activities for FY 2022: $1,200 million (per the FY2022 10-K, Consolidated Statements of Cash Flows).\n- DATA SOURCES: \n  - FY2023 10-K, Consolidated Statements of Cash Flows, page 45.\n  - Q4 FY 2023 10-Q, Consolidated Statements of Cash Flows, page 12.\n  - FY2022 10-K, Consolidated Statements of Cash Flows, page 44.\n  - Q4 FY 2022 10-Q, Consolidated Statements of Cash Flows, page 11.\n\nTo calculate the percentage of total stock repurchase expenditure allocated to Q4 FY 2023:\nPercentage = (Q4 FY 2023 Repurchase Expenditure / FY 2023 Total Repurchase Expenditure) * 100\nPercentage = ($250 million / $1,000 million) * 100 = 25%\n\nThus, 18.1% of Ulta Beauty's total spend on stock repurchases for FY 2023 occurred in Q4 of FY 2023.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_141_339C8E4B_H3",
+      "type": "dollar_amount",
+      "original_value": "$250 million",
+      "injected_value": "$298 million",
+      "original_numeric": "250",
+      "injected_numeric": "298",
+      "position_char": 235,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.1926
+    },
+    {
+      "hallucination_id": "FB_141_339C8E4B_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,500 million",
+      "injected_value": "$1,001 million",
+      "original_numeric": "1500",
+      "injected_numeric": "1001",
+      "position_char": 655,
+      "sentence_approx": 5,
+      "perturbation_delta": -0.3324
+    },
+    {
+      "hallucination_id": "FB_141_339C8E4B_H1",
+      "type": "percentage",
+      "original_value": "25%",
+      "injected_value": "18.1%",
+      "original_numeric": "25",
+      "injected_numeric": "18.1",
+      "position_char": 1404,
+      "sentence_approx": 11,
+      "perturbation_delta": -6.9065
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Total stock repurchase expenditure for Q4 FY 2023: $298 million ... Percentage = ($250 million / $1,000 million)",
+        "claim_value": "$298 million vs $250 million",
+        "reason": "Internal inconsistency: The data section explicitly states Q4 repurchases were $298 million, but the calculation section abruptly uses $250 million without explanation or correction.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Percentage = ($250 million / $1,000 million) * 100 = 25% ... Thus, 18.1% of Ulta Beauty's total spend...",
+        "claim_value": "25% vs 18.1%",
+        "reason": "Internal inconsistency: The shown calculation results in 25%, but the final conclusion states 18.1%, indicating the final figure is hallucinated or unrelated to the provided data.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total stock repurchase expenditure for FY 2023: $1,000 million",
+        "claim_value": "$1,000 million",
+        "reason": "Suspiciously round number: Actual SEC filing figures rarely align to exact round billions; this suggests an estimated or hallucinated figure rather than reported data.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Total cash flows from financing activities for FY 2023: $1,001 million",
+        "claim_value": "$1,001 million",
+        "reason": "Suspicious correlation and sign: A positive financing cash flow nearly identical to the buyback amount implies massive offsetting debt issuance not mentioned, which is atypical for Ulta's capital allocation profile.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Total stock repurchase expenditure for FY 2022: $800 million",
+        "claim_value": "$800 million",
+        "reason": "Suspiciously round number: Like the FY2023 figure, this exact round number is unlikely in actual financial statements and suggests fabrication.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 9,
+    "overall_assessment": "The output contains critical internal mathematical contradictions and suspiciously round figures indicative of significant data hallucination.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Total stock repurchase expenditure for Q4 FY 2023: $298 million ... Percentage = ($250 million / $1,000 million)\",\n      \"claim_value\": \"$298 million vs $250 million\",\n      \"reason\": \"Internal inconsistency: The data section explicitly states Q4 repurchases were $298 million, but the calculation section abruptly uses $250 million without explanation or correction.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Percentage = ($250 million / $1,000 million) * 100 = 25% ... Thus, 18.1% of Ulta Beauty's total spend...\",\n      \"claim_value\": \"25% vs 18.1%\",\n      \"reason\": \"Internal inconsistency: The shown calculation results in 25%, but the final conclusion states 18.1%, indicating the final figure is hallucinated or unrelated to the provided data.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total stock repurchase expenditure for FY 2023: $1,000 million\",\n      \"claim_value\": \"$1,000 million\",\n      \"reason\": \"Suspiciously round number: Actual SEC filing figures rarely align to exact round billions; this suggests an estimated or hallucinated figure rather than reported data.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Total cash flows from financing activities for FY 2023: $1,001 million\",\n      \"claim_value\": \"$1,001 million\",\n      \"reason\": \"Suspicious correlation and sign: A positive financing cash flow nearly identical to the buyback amount implies massive offsetting debt issuance not mentioned, which is atypical for Ulta's capital allocation profile.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Total stock repurchase expenditure for FY 2022: $800 million\",\n      \"claim_value\": \"$800 million\",\n      \"reason\": \"Suspiciously round number: Like the FY2023 figure, this exact round number is unlikely in actual financial statements and suggests fabrication.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 9,\n  \"overall_assessment\": \"The output contains critical internal mathematical contradictions and suspiciously round figures indicative of significant data hallucination.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_141_339C8E4B",
+      "hallucination_id": "FB_141_339C8E4B_H3",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$250 million",
+      "injected_value": "$298 million",
+      "detected": true,
+      "reason": "Internal inconsistency: The data section explicitly states Q4 repurchases were $298 million, but the calculation section abruptly uses $250 million without explanation or correction.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_141_339C8E4B",
+      "hallucination_id": "FB_141_339C8E4B_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,500 million",
+      "injected_value": "$1,001 million",
+      "detected": true,
+      "reason": "Suspiciously round number: Actual SEC filing figures rarely align to exact round billions; this suggests an estimated or hallucinated figure rather than reported data.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_141_339C8E4B",
+      "hallucination_id": "FB_141_339C8E4B_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "percentage",
+      "original_value": "25%",
+      "injected_value": "18.1%",
+      "detected": true,
+      "reason": "Internal inconsistency: The shown calculation results in 25%, but the final conclusion states 18.1%, indicating the final figure is hallucinated or unrelated to the provided data.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 9
+    }
+  ],
+  "timestamp": "2026-03-24T13:17:30.368870Z"
+}

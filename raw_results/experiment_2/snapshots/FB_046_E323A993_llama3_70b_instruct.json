@@ -1,0 +1,73 @@
+{
+  "question_id": "FB_046_E323A993",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: American Water Works, FY2020\n- PRIMARY METRIC: Cash dividends paid for FY2020 amounted to $1,074 million (USD), as reported in the Consolidated Statements of Cash Flows, per the FY2020 10-K.\n- SUPPORTING DATA: \n  - FY2019: Cash dividends paid amounted to $1,420 million (USD), per the FY2019 10-K, Consolidated Statements of Cash Flows.\n  - FY2018: Cash dividends paid amounted to $650 million (USD), per the FY2018 10-K, Consolidated Statements of Cash Flows.\n- DATA SOURCES: \n  - FY2020 10-K, Consolidated Statements of Cash Flows, page 52.\n  - FY2019 10-K, Consolidated Statements of Cash Flows, page 50.\n  - FY2018 10-K, Consolidated Statements of Cash Flows, page 48.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_046_E323A993_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,034 million",
+      "injected_value": "$1,420 million",
+      "original_numeric": "1034",
+      "injected_numeric": "1420",
+      "position_char": 275,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.3732
+    },
+    {
+      "hallucination_id": "FB_046_E323A993_H1",
+      "type": "dollar_amount",
+      "original_value": "$977 million",
+      "injected_value": "$650 million",
+      "original_numeric": "977",
+      "injected_numeric": "650",
+      "position_char": 401,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.3343
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Cash dividends paid for FY2020 amounted to $1,074 million (USD)",
+        "claim_value": "1,074 million",
+        "reason": "The reported cash dividend payout for FY2020 seems suspiciously low compared to FY2019, with a 24.5% decrease. This is unusual, as companies tend to maintain or increase their dividend payouts over time.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 3,
+    "overall_assessment": "The researcher's output raises some concerns about the reported cash dividend payout for FY2020, which appears unusually low compared to previous years.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"Cash dividends paid for FY2020 amounted to $1,074 million (USD)\",\n      \"claim_value\" : \"1,074 million\",\n      \"reason\"      : \"The reported cash dividend payout for FY2020 seems suspiciously low compared to FY2019, with a 24.5% decrease. This is unusual, as companies tend to maintain or increase their dividend payouts over time.\",\n      \"confidence\"  : \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 3,\n  \"overall_assessment\"   : \"The researcher's output raises some concerns about the reported cash dividend payout for FY2020, which appears unusually low compared to previous years.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_046_E323A993",
+      "hallucination_id": "FB_046_E323A993_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,034 million",
+      "injected_value": "$1,420 million",
+      "detected": true,
+      "reason": "The reported cash dividend payout for FY2020 seems suspiciously low compared to FY2019, with a 24.5% decrease. This is unusual, as companies tend to maintain or increase their dividend payouts over time.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 3
+    },
+    {
+      "question_id": "FB_046_E323A993",
+      "hallucination_id": "FB_046_E323A993_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$977 million",
+      "injected_value": "$650 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 3
+    }
+  ],
+  "timestamp": "2026-03-27T09:32:40.804468Z"
+}

@@ -1,0 +1,109 @@
+{
+  "question_id": "FB_071_0CB99E74",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: Corning Inc., FY2020\n- PRIMARY METRIC: Days Payable Outstanding (DPO) calculation requires specific figures which are as follows:\n\n1. **Average Accounts Payable (FY2019 and FY2020)**:\n   - FY2019 Accounts Payable: $1,469 million (per the FY2019 10-K, Consolidated Balance Sheets)\n   - FY2020 Accounts Payable: $1,654 million (per the FY2020 10-K, Consolidated Balance Sheets)\n   - Average Accounts Payable = ($1,469 million + $1,654 million) / 2 = $1,561.5 million\n\n2. **FY2020 Cost of Goods Sold (COGS)**:\n   - COGS for FY2020: $10,137 million (per the FY2020 10-K, Consolidated Statements of Operations)\n\n3. **Change in Inventory (FY2019 to FY2020)**:\n   - FY2019 Inventory: $3,056 million (per the FY2019 10-K, Consolidated Balance Sheets)\n   - FY2020 Inventory: $3,167 million (per the FY2020 10-K, Consolidated Balance Sheets)\n   - Change in Inventory = $4,292 million - $3,056 million = $111 million\n\n- SUPPORTING DATA:\n   - Average Accounts Payable: $1,561.5 million\n   - FY2020 COGS: $10,137 million\n   - Change in Inventory: $111 million\n\n- DATA SOURCES:\n   - FY2019 10-K, Consolidated Balance Sheets\n   - FY2020 10-K, Consolidated Balance Sheets\n   - FY2020 10-K, Consolidated Statements of Operations\n\n**DPO Calculation**:\nUsing the formula provided:\nDPO = 365 * (Average Accounts Payable) / (FY2020 COGS + Change in Inventory)\nDPO = 365 * ($1,561.5 million) / ($10,137 million + $73 million)\nDPO = 365 * ($1,561.5 million) / ($7,381 million)\nDPO = 365 * 0.152 = 55.58 days\n\n- FINAL DPO: 55.58 days (rounded to two decimal places)\n\nPlease note that the analysis and implications of this metric in the context of industry benchmarks and historical trends have not been included as per your directive for raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_071_0CB99E74_H3",
+      "type": "dollar_amount",
+      "original_value": "$3,167 million",
+      "injected_value": "$4,292 million",
+      "original_numeric": "3167",
+      "injected_numeric": "4292",
+      "position_char": 879,
+      "sentence_approx": 6,
+      "perturbation_delta": 0.3552
+    },
+    {
+      "hallucination_id": "FB_071_0CB99E74_H2",
+      "type": "dollar_amount",
+      "original_value": "$111 million",
+      "injected_value": "$73 million",
+      "original_numeric": "111",
+      "injected_numeric": "73",
+      "position_char": 1411,
+      "sentence_approx": 8,
+      "perturbation_delta": -0.3454
+    },
+    {
+      "hallucination_id": "FB_071_0CB99E74_H1",
+      "type": "dollar_amount",
+      "original_value": "$10,248 million",
+      "injected_value": "$7,381 million",
+      "original_numeric": "10248",
+      "injected_numeric": "7381",
+      "position_char": 1459,
+      "sentence_approx": 9,
+      "perturbation_delta": -0.2797
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Change in Inventory = $4,292 million - $3,056 million = $111 million",
+        "claim_value": "$111 million",
+        "reason": "The arithmetic is incorrect; $4,292 million - $3,056 million = $1,236 million, not $111 million. This discrepancy affects the DPO calculation.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "DPO = 365 * ($1,561.5 million) / ($10,137 million + $73 million)",
+        "claim_value": "$73 million",
+        "reason": "The denominator suddenly uses $73 million instead of the previously calculated $111 million (which itself was incorrect). This inconsistency suggests a calculation error or typo.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "DPO = 365 * ($1,561.5 million) / ($7,381 million)",
+        "claim_value": "$7,381 million",
+        "reason": "The denominator switches to $7,381 million without explanation, diverging from the earlier $10,137 million + $73 million. This inconsistency invalidates the DPO calculation.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "The DPO calculation contains multiple arithmetic errors and inconsistent values, rendering the final result unreliable.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Change in Inventory = $4,292 million - $3,056 million = $111 million\",\n      \"claim_value\": \"$111 million\",\n      \"reason\": \"The arithmetic is incorrect; $4,292 million - $3,056 million = $1,236 million, not $111 million. This discrepancy affects the DPO calculation.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"DPO = 365 * ($1,561.5 million) / ($10,137 million + $73 million)\",\n      \"claim_value\": \"$73 million\",\n      \"reason\": \"The denominator suddenly uses $73 million instead of the previously calculated $111 million (which itself was incorrect). This inconsistency suggests a calculation error or typo.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"DPO = 365 * ($1,561.5 million) / ($7,381 million)\",\n      \"claim_value\": \"$7,381 million\",\n      \"reason\": \"The denominator switches to $7,381 million without explanation, diverging from the earlier $10,137 million + $73 million. This inconsistency invalidates the DPO calculation.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\": \"The DPO calculation contains multiple arithmetic errors and inconsistent values, rendering the final result unreliable.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_071_0CB99E74",
+      "hallucination_id": "FB_071_0CB99E74_H3",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,167 million",
+      "injected_value": "$4,292 million",
+      "detected": true,
+      "reason": "The arithmetic is incorrect; $4,292 million - $3,056 million = $1,236 million, not $111 million. This discrepancy affects the DPO calculation.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_071_0CB99E74",
+      "hallucination_id": "FB_071_0CB99E74_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$111 million",
+      "injected_value": "$73 million",
+      "detected": true,
+      "reason": "The arithmetic is incorrect; $4,292 million - $3,056 million = $1,236 million, not $111 million. This discrepancy affects the DPO calculation.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_071_0CB99E74",
+      "hallucination_id": "FB_071_0CB99E74_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$10,248 million",
+      "injected_value": "$7,381 million",
+      "detected": true,
+      "reason": "The denominator switches to $7,381 million without explanation, diverging from the earlier $10,137 million + $73 million. This inconsistency invalidates the DPO calculation.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-24T09:50:24.944519Z"
+}

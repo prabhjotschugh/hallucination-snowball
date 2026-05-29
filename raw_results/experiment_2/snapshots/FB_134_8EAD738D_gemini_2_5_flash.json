@@ -1,0 +1,55 @@
+{
+  "question_id": "FB_134_8EAD738D",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Pfizer Inc., Q2 2023\n- PRIMARY METRIC: Pfizer expects to incur approximately $1,654 million in costs related to the spin-off of Upjohn, as detailed in the Q2 2023 10-Q, Note 12: Commitments and Contingencies.\n- SUPPORTING DATA: No additional multi-period data on spin-off costs was provided in the Q2 2023 10-Q. Historical trends in spin-off costs within the pharmaceutical sector were not extracted as per the directive.\n- DATA SOURCES: Pfizer Q2 2023 10-Q, Note 12: Commitments and Contingencies.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_134_8EAD738D_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,200 million",
+      "injected_value": "$1,654 million",
+      "original_numeric": "1200",
+      "injected_numeric": "1654",
+      "position_char": 97,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.3784
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Pfizer expects to incur approximately $1,654 million in costs related to the spin-off of Upjohn",
+        "claim_value": "$1,654 million",
+        "reason": "The Upjohn spin-off (which formed Viatris) was completed in 2020, not in Q2 2023. It is highly implausible that Pfizer would be 'expecting to incur' such a large amount of costs related to this specific, long-completed spin-off in Q2 2023. The costs would have been incurred and largely settled years prior. This suggests a hallucination of the event's timing or the associated costs.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "as detailed in the Q2 2023 10-Q, Note 12: Commitments and Contingencies.",
+        "claim_value": "Q2 2023 10-Q, Note 12: Commitments and Contingencies",
+        "reason": "Given that the Upjohn spin-off was completed in 2020, it is extremely unlikely that a Q2 2023 10-Q would contain details about *expected future* costs of this magnitude for that specific, long-past event. While a 10-Q is a legitimate document and Note 12 is a plausible section for commitments, the specific context (Upjohn spin-off in Q2 2023) makes the claimed source highly suspicious for this information.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 2,
+    "overall_assessment": "The primary financial claim and its stated source are highly suspicious due to a fundamental factual error regarding the timing of the Upjohn spin-off, which occurred in 2020, not in Q2 2023.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Pfizer expects to incur approximately $1,654 million in costs related to the spin-off of Upjohn\",\n      \"claim_value\": \"$1,654 million\",\n      \"reason\": \"The Upjohn spin-off (which formed Viatris) was completed in 2020, not in Q2 2023. It is highly implausible that Pfizer would be 'expecting to incur' such a large amount of costs related to this specific, long-completed spin-off in Q2 2023. The costs would have been incurred and largely settled years prior. This suggests a hallucination of the event's timing or the associated costs.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"as detailed in the Q2 2023 10-Q, Note 12: Commitments and Contingencies.\",\n      \"claim_value\": \"Q2 2023 10-Q, Note 12: Commitments and Contingencies\",\n      \"reason\": \"Given that the Upjohn spin-off was completed in 2020, it is extremely unlikely that a Q2 2023 10-Q would contain details about *expected future* costs of this magnitude for that specific, long-past event. While a 10-Q is a legitimate document and Note 12 is a plausible section for commitments, the specific context (Upjohn spin-off in Q2 2023) makes the claimed source highly suspicious for this information.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 2,\n  \"overall_assessment\": \"The primary financial claim and its stated source are highly suspicious due to a fundamental factual error regarding the timing of the Upjohn spin-off, which occurred in 2020, not in Q2 2023.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_134_8EAD738D",
+      "hallucination_id": "FB_134_8EAD738D_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,200 million",
+      "injected_value": "$1,654 million",
+      "detected": true,
+      "reason": "The Upjohn spin-off (which formed Viatris) was completed in 2020, not in Q2 2023. It is highly implausible that Pfizer would be 'expecting to incur' such a large amount of costs related to this specific, long-completed spin-off in Q2 2023. The costs would have been incurred and largely settled years prior. This suggests a hallucination of the event's timing or the associated costs.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 2
+    }
+  ],
+  "timestamp": "2026-03-25T08:04:10.399499Z"
+}

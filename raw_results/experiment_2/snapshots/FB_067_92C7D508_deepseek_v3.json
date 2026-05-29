@@ -1,0 +1,109 @@
+{
+  "question_id": "FB_067_92C7D508",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: Boeing Company, FY2022 and FY2021\n- PRIMARY METRIC: Effective Tax Rate for FY2022: 9.5% (per the FY2022 10-K, Note 9 - Income Taxes). Effective Tax Rate for FY2021: 5.3% (per the FY2021 10-K, Note 9 - Income Taxes).\n- SUPPORTING DATA: \n  - FY2022 Income Tax Expense: $1,513 million (per the FY2022 10-K, Consolidated Statements of Operations).\n  - FY2021 Income Tax Expense: $290 million (per the FY2021 10-K, Consolidated Statements of Operations).\n  - FY2022 Pre-tax Income: $6,000 million (per the FY2022 10-K, Consolidated Statements of Operations).\n  - FY2021 Pre-tax Income: $3,936 million (per the FY2021 10-K, Consolidated Statements of Operations).\n- DATA SOURCES: \n  - FY2022 10-K, Note 9 - Income Taxes\n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Note 9 - Income Taxes\n  - FY2021 10-K, Consolidated Statements of Operations\n\nPlease note that the effective tax rate is calculated as the income tax expense divided by pre-tax income. The figures provided are sourced directly from Boeing's official SEC filings for the respective fiscal years.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_067_92C7D508_H3",
+      "type": "percentage",
+      "original_value": "20.0%",
+      "injected_value": "9.5%",
+      "original_numeric": "20.0",
+      "injected_numeric": "9.5",
+      "position_char": 103,
+      "sentence_approx": 1,
+      "perturbation_delta": -10.5072
+    },
+    {
+      "hallucination_id": "FB_067_92C7D508_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,200 million",
+      "injected_value": "$1,513 million",
+      "original_numeric": "1200",
+      "injected_numeric": "1513",
+      "position_char": 288,
+      "sentence_approx": 5,
+      "perturbation_delta": 0.261
+    },
+    {
+      "hallucination_id": "FB_067_92C7D508_H1",
+      "type": "dollar_amount",
+      "original_value": "$5,500 million",
+      "injected_value": "$3,936 million",
+      "original_numeric": "5500",
+      "injected_numeric": "3936",
+      "position_char": 602,
+      "sentence_approx": 8,
+      "perturbation_delta": -0.2844
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "FY2022 Pre-tax Income: $6,000 million",
+        "claim_value": "$6,000 million",
+        "reason": "This figure is suspiciously round (exactly $6 billion) and does not match Boeing's known financial difficulties in 2022 which would likely result in lower or negative pre-tax income.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Effective Tax Rate for FY2022: 9.5%",
+        "claim_value": "9.5%",
+        "reason": "Given the suspiciously round pre-tax income figure, the calculated tax rate becomes unreliable. Large industrial companies typically have higher effective tax rates (closer to 20-30%).",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "FY2022 Income Tax Expense: $1,513 million",
+        "claim_value": "$1,513 million",
+        "reason": "This tax expense would imply substantial taxable income, which contradicts Boeing's well-publicized financial struggles in 2022 including continued 737 MAX issues and supply chain problems.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "Multiple concerning inconsistencies detected, particularly around the implausible FY2022 pre-tax income figure and resulting tax calculations.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"FY2022 Pre-tax Income: $6,000 million\",\n      \"claim_value\": \"$6,000 million\",\n      \"reason\": \"This figure is suspiciously round (exactly $6 billion) and does not match Boeing's known financial difficulties in 2022 which would likely result in lower or negative pre-tax income.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Effective Tax Rate for FY2022: 9.5%\",\n      \"claim_value\": \"9.5%\",\n      \"reason\": \"Given the suspiciously round pre-tax income figure, the calculated tax rate becomes unreliable. Large industrial companies typically have higher effective tax rates (closer to 20-30%).\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"FY2022 Income Tax Expense: $1,513 million\",\n      \"claim_value\": \"$1,513 million\",\n      \"reason\": \"This tax expense would imply substantial taxable income, which contradicts Boeing's well-publicized financial struggles in 2022 including continued 737 MAX issues and supply chain problems.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\": \"Multiple concerning inconsistencies detected, particularly around the implausible FY2022 pre-tax income figure and resulting tax calculations.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_067_92C7D508",
+      "hallucination_id": "FB_067_92C7D508_H3",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "percentage",
+      "original_value": "20.0%",
+      "injected_value": "9.5%",
+      "detected": true,
+      "reason": "Given the suspiciously round pre-tax income figure, the calculated tax rate becomes unreliable. Large industrial companies typically have higher effective tax rates (closer to 20-30%).",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_067_92C7D508",
+      "hallucination_id": "FB_067_92C7D508_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,200 million",
+      "injected_value": "$1,513 million",
+      "detected": true,
+      "reason": "This tax expense would imply substantial taxable income, which contradicts Boeing's well-publicized financial struggles in 2022 including continued 737 MAX issues and supply chain problems.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_067_92C7D508",
+      "hallucination_id": "FB_067_92C7D508_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$5,500 million",
+      "injected_value": "$3,936 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-24T09:49:46.285719Z"
+}

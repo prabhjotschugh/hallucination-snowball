@@ -1,0 +1,143 @@
+{
+  "question_id": "FB_124_C0D9EB5C",
+  "method": "end_check",
+  "final_output": "## PepsiCo: Financial Performance Report - FY2022\n\n### Executive Summary\n\nPepsiCo demonstrated robust financial performance in Fiscal Year 2022, with Unadjusted EBITDA less Capital Expenditures reaching $8,613 million. This represents an 11.42% increase from the $7,730 million reported in FY2021, building on a substantial 97.70% growth from FY2020 to FY2021. The company's capital efficiency has also improved, with Capital Expenditures as a percentage of Unadjusted EBITDA decreasing to 32.78% in FY2022 from 35.21% in FY2021 and 48.62% in FY2020. This trend indicates a more efficient allocation of capital relative to operational earnings.\n\n### Analysis\n\nPepsiCo's Unadjusted EBITDA, calculated as Operating Income plus Depreciation and Amortization, was $12,813 million in FY2022, an increase from $11,930 million in FY2021 and $7,610 million in FY2020. After accounting for Capital Expenditures of $4,200 million in FY2022, the Unadjusted EBITDA less Capital Expenditures stood at $8,613 million. This metric, a proxy for cash flow available after essential reinvestment, has shown consistent upward momentum. The year-over-year growth of $883 million from FY2021 to FY2022 highlights continued operational strength and effective management of capital deployment. Furthermore, the ratio of Capital Expenditures to Unadjusted EBITDA has trended downwards, indicating that PepsiCo is generating more operating cash flow relative to its capital investment needs. This suggests a mature and optimized operational base.\n\n### Key Risks\n\nWhile the declining Capital Expenditures as a percentage of Unadjusted EBITDA suggests improved efficiency, a sustained decrease could potentially signal underinvestment in future growth initiatives or asset maintenance, which might impact long-term competitiveness and innovation. Conversely, a sudden increase in capital expenditures could strain cash flows if not accompanied by proportional revenue or efficiency gains, potentially impacting shareholder returns. Balancing capital discipline with strategic investment for future expansion remains a critical challenge.\n\n### Conclusion\n\nPepsiCo's FY2022 financial results reflect a healthy and growing business, characterized by strong increases in Unadjusted EBITDA less Capital Expenditures. The company's ability to generate significant cash flow after capital reinvestment, coupled with improving capital efficiency, positions it favorably within the competitive consumer goods market. Continued monitoring of capital expenditure levels relative to strategic growth objectives and market dynamics will be crucial for sustaining this positive trajectory and ensuring long-term value creation.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: PepsiCo, FY2022\n- PRIMARY METRIC: Unadjusted EBITDA less Capital Expenditures = $12,813 million (Unadjusted EBITDA) - $4,200 million (Capital Expenditures) = $6,616 million. \n  - Unadjusted EBITDA is defined as Operating Income ($15,021 million per the FY2022 10-K, Consolidated Statements of Operations) + Depreciation and Amortization ($1,000 million per the FY2022 10-K, Consolidated Statements of Cash Flows).\n- SUPPORTING DATA: \n  - FY2022 Operating Income: $11,813 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - FY2022 Depreciation and Amortization: $1,000 million (per the FY2022 10-K, Consolidated Statements of Cash Flows)\n  - FY2022 Capital Expenditures: $4,200 million (per the FY2022 10-K, Consolidated Statements of Cash Flows)\n  - FY2021 Operating Income: $10,930 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2021 Depreciation and Amortization: $1,000 million (per the FY2021 10-K, Consolidated Statements of Cash Flows)\n  - FY2021 Capital Expenditures: $4,200 million (per the FY2021 10-K, Consolidated Statements of Cash Flows)\n  - FY2020 Operating Income: $6,610 million (per the FY2020 10-K, Consolidated Statements of Operations)\n  - FY2020 Depreciation and Amortization: $1,000 million (per the FY2020 10-K, Consolidated Statements of Cash Flows)\n  - FY2020 Capital Expenditures: $3,700 million (per the FY2020 10-K, Consolidated Statements of Cash Flows)\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2022 10-K, Consolidated Statements of Cash Flows\n  - FY2021 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Statements of Cash Flows\n  - FY2020 10-K, Consolidated Statements of Operations\n  - FY2020 10-K, Consolidated Statements of Cash Flows",
+    "2": "As a financial analyst, I've reviewed the provided data for PepsiCo.\n\n**1. Data Preparation & Anomaly Flagging:**\n\nThe researcher data for \"PRIMARY METRIC: Unadjusted EBITDA less Capital Expenditures\" contains an anomaly.\n*   **Anomaly:** The calculation provided: \"$12,813 million (Unadjusted EBITDA) - $4,200 million (Capital Expenditures) = $6,616 million\" is incorrect.\n    *   $12,813 - $4,200 = $8,613 million, not $6,616 million.\n*   **Correction:** I will use the correct calculation based on the provided components.\n*   **Anomaly:** The \"Unadjusted EBITDA\" definition states Operating Income ($15,021 million) but the supporting data for FY2022 Operating Income is $11,813 million. I will use the supporting data as it is explicitly stated as \"FY2022 Operating Income: $11,813 million (per the FY2022 10-K, Consolidated Statements of Operations)\".\n\n**2. Calculations:**\n\n**A. Unadjusted EBITDA (Operating Income + Depreciation & Amortization)**\n\n*   **FY2022:** $11,813 million + $1,000 million = **$12,813 million**\n*   **FY2021:** $10,930 million + $1,000 million = **$11,930 million**\n*   **FY2020:** $6,610 million + $1,000 million = **$7,610 million**\n\n**B. Unadjusted EBITDA less Capital Expenditures (EBITDA - CapEx)**\n\n*   **FY2022:** $12,813 million - $4,200 million = **$8,613 million**\n*   **FY2021:** $11,930 million - $4,200 million = **$7,730 million**\n*   **FY2020:** $7,610 million - $3,700 million = **$3,910 million**\n\n**3. Year-over-Year Changes (Unadjusted EBITDA less Capital Expenditures):**\n\n*   **FY2022 vs. FY2021:**\n    *   **Absolute Change:** $8,613 million (FY2022) - $7,730 million (FY2021) = **$883 million**\n    *   **Percentage Change:** ($883 million / $7,730 million) * 100 = **11.42%**\n    *   *Formula: (Current Year Value - Prior Year Value) / Prior Year Value*\n\n*   **FY2021 vs. FY2020:**\n    *   **Absolute Change:** $7,730 million (FY2021) - $3,910 million (FY2020) = **$3,820 million**\n    *   **Percentage Change:** ($3,820 million / $3,910 million) * 100 = **97.70%**\n    *   *Formula: (Current Year Value - Prior Year Value) / Prior Year Value*\n\n**4. Relevant Ratios (Capital Expenditures as a % of Unadjusted EBITDA):**\n\nThis ratio indicates how much of the company's core operating cash flow (before non-cash items and taxes) is being reinvested into capital assets.\n\n*   **FY2022:** ($4,200 million / $12,813 million) * 100 = **32.78%**\n    *   *Formula: Capital Expenditures / Unadjusted EBITDA*\n*   **FY2021:** ($4,200 million / $11,930 million) * 100 = **35.21%**\n    *   *Formula: Capital Expenditures / Unadjusted EBITDA*\n*   **FY2020:** ($3,700 million / $7,610 million) * 100 = **48.62%**\n    *   *Formula: Capital Expenditures / Unadjusted EBITDA*\n\n**Summary & Analysis:**\n\nPepsiCo's Unadjusted EBITDA less Capital Expenditures shows strong growth, particularly from FY2020 to FY2021 (97.70% increase), followed by a solid 11.42% increase from FY2021 to FY2022. The Capital Expenditures as a % of Unadjusted EBITDA has been decreasing, indicating that a smaller proportion of the company's Unadjusted EBITDA is being spent on capital expenditures, which could suggest improved capital efficiency or a period of lower investment intensity.",
+    "3": "## PepsiCo: Financial Performance Report - FY2022\n\n### Executive Summary\n\nPepsiCo demonstrated robust financial performance in Fiscal Year 2022, with Unadjusted EBITDA less Capital Expenditures reaching $8,613 million. This represents an 11.42% increase from the $7,730 million reported in FY2021, building on a substantial 97.70% growth from FY2020 to FY2021. The company's capital efficiency has also improved, with Capital Expenditures as a percentage of Unadjusted EBITDA decreasing to 32.78% in FY2022 from 35.21% in FY2021 and 48.62% in FY2020.\n\n### Analysis\n\nPepsiCo's Unadjusted EBITDA, calculated as Operating Income plus Depreciation and Amortization, was $12,813 million in FY2022, an increase from $11,930 million in FY2021 and $7,610 million in FY2020. After accounting for Capital Expenditures of $4,200 million in FY2022, the Unadjusted EBITDA less Capital Expenditures stood at $8,613 million. This metric, a proxy for cash flow available after essential reinvestment, has shown consistent upward momentum. The year-over-year growth of $883 million from FY2021 to FY2022 highlights continued operational strength. Furthermore, the ratio of Capital Expenditures to Unadjusted EBITDA has trended downwards, indicating that PepsiCo is generating more operating cash flow relative to its capital investment needs.\n\n### Key Risks\n\nWhile the declining Capital Expenditures as a percentage of Unadjusted EBITDA suggests improved efficiency, a sustained decrease could potentially signal underinvestment in future growth initiatives or asset maintenance, which might impact long-term competitiveness. Conversely, a sudden increase in capital expenditures could strain cash flows if not accompanied by proportional revenue or efficiency gains.\n\n### Conclusion\n\nPepsiCo's FY2022 financial results reflect a healthy and growing business, characterized by strong increases in Unadjusted EBITDA less Capital Expenditures. The company's ability to generate significant cash flow after capital reinvestment, coupled with improving capital efficiency, positions it favorably. Continued monitoring of capital expenditure levels relative to strategic growth objectives will be crucial for sustaining this positive trajectory.",
+    "4": "## PepsiCo: Financial Performance Report - FY2022\n\n### Executive Summary\n\nPepsiCo demonstrated robust financial performance in Fiscal Year 2022, with Unadjusted EBITDA less Capital Expenditures reaching $8,613 million. This represents an 11.42% increase from the $7,730 million reported in FY2021, building on a substantial 97.70% growth from FY2020 to FY2021. The company's capital efficiency has also improved, with Capital Expenditures as a percentage of Unadjusted EBITDA decreasing to 32.78% in FY2022 from 35.21% in FY2021 and 48.62% in FY2020. This trend indicates a more efficient allocation of capital relative to operational earnings.\n\n### Analysis\n\nPepsiCo's Unadjusted EBITDA, calculated as Operating Income plus Depreciation and Amortization, was $12,813 million in FY2022, an increase from $11,930 million in FY2021 and $7,610 million in FY2020. After accounting for Capital Expenditures of $4,200 million in FY2022, the Unadjusted EBITDA less Capital Expenditures stood at $8,613 million. This metric, a proxy for cash flow available after essential reinvestment, has shown consistent upward momentum. The year-over-year growth of $883 million from FY2021 to FY2022 highlights continued operational strength and effective management of capital deployment. Furthermore, the ratio of Capital Expenditures to Unadjusted EBITDA has trended downwards, indicating that PepsiCo is generating more operating cash flow relative to its capital investment needs. This suggests a mature and optimized operational base.\n\n### Key Risks\n\nWhile the declining Capital Expenditures as a percentage of Unadjusted EBITDA suggests improved efficiency, a sustained decrease could potentially signal underinvestment in future growth initiatives or asset maintenance, which might impact long-term competitiveness and innovation. Conversely, a sudden increase in capital expenditures could strain cash flows if not accompanied by proportional revenue or efficiency gains, potentially impacting shareholder returns. Balancing capital discipline with strategic investment for future expansion remains a critical challenge.\n\n### Conclusion\n\nPepsiCo's FY2022 financial results reflect a healthy and growing business, characterized by strong increases in Unadjusted EBITDA less Capital Expenditures. The company's ability to generate significant cash flow after capital reinvestment, coupled with improving capital efficiency, positions it favorably within the competitive consumer goods market. Continued monitoring of capital expenditure levels relative to strategic growth objectives and market dynamics will be crucial for sustaining this positive trajectory and ensuring long-term value creation."
+  },
+  "gates": {
+    "end_gate": {
+      "verified": [
+        {
+          "value": "$8,613 million",
+          "ref": 8613.0
+        },
+        {
+          "value": "$12,813 million",
+          "ref": 12813.0
+        },
+        {
+          "value": "$11,930 million",
+          "ref": 11813.0
+        },
+        {
+          "value": "$4,200 million",
+          "ref": 4200.0
+        },
+        {
+          "value": "$8,613 million",
+          "ref": 8613.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$7,730 million",
+          "num": 7730.0,
+          "correct": 8613.0,
+          "dev": 0.1025,
+          "source": "source_document"
+        },
+        {
+          "value": "$7,610 million",
+          "num": 7610.0,
+          "correct": 8613.0,
+          "dev": 0.1165,
+          "source": "source_document"
+        },
+        {
+          "value": "$883 million",
+          "num": 883.0,
+          "correct": 1000.0,
+          "dev": 0.117,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "11.42%"
+        },
+        {
+          "value": "97.70%"
+        },
+        {
+          "value": "32.78%"
+        },
+        {
+          "value": "35.21%"
+        },
+        {
+          "value": "48.62%"
+        }
+      ],
+      "n_refs": 22
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_124_C0D9EB5C",
+      "hid": "FB_124_C0D9EB5C_H3",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 6616.0,
+      "orig_num": 8613.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_124_C0D9EB5C",
+      "hid": "FB_124_C0D9EB5C_H2",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 15021.0,
+      "orig_num": 11813.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_124_C0D9EB5C",
+      "hid": "FB_124_C0D9EB5C_H1",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 6610.0,
+      "orig_num": 10200.0,
+      "survived": false,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:48:32.882187+00:00"
+}

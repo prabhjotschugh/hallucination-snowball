@@ -1,0 +1,221 @@
+{
+  "question_id": "FB_089_CF6163C6",
+  "method": "ours",
+  "final_output": "## Johnson & Johnson: FY2022 Q4 Financial Report\n\n### Executive Summary\n\nJohnson & Johnson reported Adjusted Earnings Per Share (EPS) of $3.05 for Q4 2022. This quarterly performance follows a period of strong growth in full-year Adjusted EPS, which increased from $7.95 in FY2020 to $9.77 in FY2021, representing a 22.89% year-over-year increase. Due to the limited availability of full fiscal year 2022 data, a direct year-over-year comparison for full-year Adjusted EPS growth from FY2021 to FY2022 cannot be accurately determined at this time.\n\n### Analysis\n\nJohnson & Johnson demonstrated robust growth in its full-year Adjusted EPS from FY2020 to FY2021. The Adjusted EPS rose from $7.95 in FY2020 to $9.77 in FY2021. This represents an absolute increase of $1.82 and a percentage growth of 22.89% over the period. For the most recent quarter, Q4 2022, the company reported an Adjusted EPS of $3.05. It is important to note that this Q4 figure is a quarterly metric and not directly comparable to the full-year Adjusted EPS figures for FY2020 and FY2021 without the complete FY2022 annual data. A comprehensive understanding of the company's annual performance trajectory requires the full fiscal year results.\n\n### Key Risks\n\nA primary risk in assessing Johnson & Johnson's recent financial performance is the incomplete data for FY2022. The absence of full fiscal year 2022 Adjusted EPS prevents a comprehensive year-over-year growth analysis from FY2021 to FY2022. This limitation restricts the ability to fully evaluate the company's annual financial trajectory and makes it challenging to identify trends or anomalies beyond the reported Q4 2022 performance. Without the full annual context, any conclusions drawn about the company's overall financial health for FY2022 would be premature.\n\n### Conclusion\n\nJohnson & Johnson delivered a Q4 2022 Adjusted EPS of $3.05. The company previously showed strong full-year Adjusted EPS growth of 22.89% from FY2020 ($7.95) to FY2021 ($9.77). A complete assessment of FY2022's full-year performance and its comparison to prior years is currently not possible with the provided data, which only includes the Q4 2022 Adjusted EPS. Further analysis will require the release of the full fiscal year 2022 financial statements to provide a holistic view of the company's annual financial performance and growth trends.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Johnson & Johnson, FY2022 Q4\n- PRIMARY METRIC: Adjusted Earnings Per Share (EPS) for Q4 2022 was $3.05 per share, as reported in the Q4 2022 earnings release.\n- SUPPORTING DATA: \n  - Adjusted EPS for FY2021 was $9.77 per share (per the FY2021 10-K, Consolidated Statements of Operations).\n  - Adjusted EPS for FY2020 was $7.95 per share (per the FY2020 10-K, Consolidated Statements of Operations).\n  - Growth from FY2020 to FY2021: (9.77 - 7.95) / 7.95 = 31.6%\n  - Growth from FY2021 to FY2022: (9.77 - 9.77) / 9.77 = 0%\n- DATA SOURCES: \n  - Q4 2022 earnings report, \"Johnson & Johnson Q4 2022 Earnings Release.\"\n  - FY2021 10-K, \"Consolidated Statements of Operations.\"\n  - FY2020 10-K, \"Consolidated Statements of Operations.\"\n\nNote: As of the latest available data, I cannot provide projections or expectations for FY2023 adjusted EPS growth, as that information is not included in the Q4 2022 earnings report or SEC filings.",
+    "2": "As a financial analyst, I've computed the following based on the provided data for Johnson & Johnson's Adjusted EPS:\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\n*   **FY2020 Adjusted EPS:** $7.95\n*   **FY2021 Adjusted EPS:** $9.77\n*   **FY2022 Q4 Adjusted EPS:** $3.05 (Note: This is a quarterly figure, not directly comparable to the annual figures for YOY growth without further context or full FY2022 data.)\n\n**FY2020 to FY2021:**\n*   **Absolute Change:**\n    *   Formula: $EPS_{FY2021} - EPS_{FY2020}$\n    *   Calculation: $9.77 - 7.95 = $1.82\n*   **Percentage Change:**\n    *   Formula: $(EPS_{FY2021} - EPS_{FY2020}) / EPS_{FY2020}$\n    *   Calculation: $(9.77 - 7.95) / 7.95 = 1.82 / 7.95 = 0.2289 = 22.89%\n    *   *Correction Note:* The researcher's 31.6% was incorrect. The correct value is 22.89%.\n\n**FY2021 to FY2022:**\n*   The provided data for FY2022 is only for Q4 ($3.05), not the full fiscal year. Therefore, a direct year-over-year comparison for full-year Adjusted EPS growth from FY2021 to FY2022 cannot be accurately computed with the given information. The researcher's calculation of 0% growth from FY2021 to FY2022 is based on an incorrect assumption that FY2022 full-year EPS is $9.77, which is not supported by the data.\n\n**2. Relevant Ratios**\n\nGiven the limited data (primarily EPS figures), the most relevant \"ratio\" we can compute is the growth rate itself. Other common financial ratios (e.g., P/E, Debt/Equity) require additional financial statement data not provided.\n\n**3. Anomalies Flagged**\n\n*   **Incorrect Growth Calculation (FY2020 to FY2021):** The researcher's stated growth of 31.6% was incorrect. The correct calculation yields 22.89%. This is a significant deviation (8.71 percentage points).\n*   **Incomplete FY2022 Data for YOY Comparison:** The researcher attempted to calculate \"Growth from FY2021 to FY2022\" using $9.77 for FY2022, which is the FY2021 EPS. This is an anomaly as it incorrectly assumes the FY2022 full-year EPS is the same as FY2021, leading to a misleading 0% growth. Only Q4 2022 EPS ($3.05) is provided for FY2022, preventing a proper full-year YOY comparison.",
+    "3": "## Johnson & Johnson: FY2022 Q4 Financial Report\n\n### Executive Summary\n\nJohnson & Johnson reported Adjusted Earnings Per Share (EPS) of $3.05 for Q4 2022. This quarterly performance follows a period of growth in full-year Adjusted EPS, which increased from $7.95 in FY2020 to $9.77 in FY2021, representing a 22.89% year-over-year increase. Due to the limited availability of full fiscal year 2022 data, a direct year-over-year comparison for full-year Adjusted EPS growth from FY2021 to FY2022 cannot be accurately determined at this time.\n\n### Analysis\n\nJohnson & Johnson demonstrated robust growth in its full-year Adjusted EPS from FY2020 to FY2021. The Adjusted EPS rose from $7.95 in FY2020 to $9.77 in FY2021. This represents an absolute increase of $1.82 and a percentage growth of 22.89% over the period. For the most recent quarter, Q4 2022, the company reported an Adjusted EPS of $3.05. It is important to note that this Q4 figure is a quarterly metric and not directly comparable to the full-year Adjusted EPS figures for FY2020 and FY2021 without the full FY2022 annual data.\n\n### Key Risks\n\nA primary risk in assessing Johnson & Johnson's recent financial performance is the incomplete data for FY2022. The absence of full fiscal year 2022 Adjusted EPS prevents a comprehensive year-over-year growth analysis from FY2021 to FY2022. This limitation restricts the ability to fully evaluate the company's annual financial trajectory and makes it challenging to identify trends or anomalies beyond the reported Q4 2022 performance.\n\n### Conclusion\n\nJohnson & Johnson delivered a Q4 2022 Adjusted EPS of $3.05. The company previously showed strong full-year Adjusted EPS growth of 22.89% from FY2020 ($7.95) to FY2021 ($9.77). A complete assessment of FY2022's full-year performance and its comparison to prior years is currently not possible with the provided data, which only includes the Q4 2022 Adjusted EPS. Further analysis will require the release of the full fiscal year 2022 financial statements.",
+    "4": "## Johnson & Johnson: FY2022 Q4 Financial Report\n\n### Executive Summary\n\nJohnson & Johnson reported Adjusted Earnings Per Share (EPS) of $3.05 for Q4 2022. This quarterly performance follows a period of strong growth in full-year Adjusted EPS, which increased from $7.95 in FY2020 to $9.77 in FY2021, representing a 22.89% year-over-year increase. Due to the limited availability of full fiscal year 2022 data, a direct year-over-year comparison for full-year Adjusted EPS growth from FY2021 to FY2022 cannot be accurately determined at this time.\n\n### Analysis\n\nJohnson & Johnson demonstrated robust growth in its full-year Adjusted EPS from FY2020 to FY2021. The Adjusted EPS rose from $7.95 in FY2020 to $9.77 in FY2021. This represents an absolute increase of $1.82 and a percentage growth of 22.89% over the period. For the most recent quarter, Q4 2022, the company reported an Adjusted EPS of $3.05. It is important to note that this Q4 figure is a quarterly metric and not directly comparable to the full-year Adjusted EPS figures for FY2020 and FY2021 without the complete FY2022 annual data. A comprehensive understanding of the company's annual performance trajectory requires the full fiscal year results.\n\n### Key Risks\n\nA primary risk in assessing Johnson & Johnson's recent financial performance is the incomplete data for FY2022. The absence of full fiscal year 2022 Adjusted EPS prevents a comprehensive year-over-year growth analysis from FY2021 to FY2022. This limitation restricts the ability to fully evaluate the company's annual financial trajectory and makes it challenging to identify trends or anomalies beyond the reported Q4 2022 performance. Without the full annual context, any conclusions drawn about the company's overall financial health for FY2022 would be premature.\n\n### Conclusion\n\nJohnson & Johnson delivered a Q4 2022 Adjusted EPS of $3.05. The company previously showed strong full-year Adjusted EPS growth of 22.89% from FY2020 ($7.95) to FY2021 ($9.77). A complete assessment of FY2022's full-year performance and its comparison to prior years is currently not possible with the provided data, which only includes the Q4 2022 Adjusted EPS. Further analysis will require the release of the full fiscal year 2022 financial statements to provide a holistic view of the company's annual financial performance and growth trends."
+  },
+  "gates": {
+    "gate_1": {
+      "verified": [
+        {
+          "value": "$3.05",
+          "ref": 3.0
+        },
+        {
+          "value": "$9.77",
+          "ref": 9.77
+        },
+        {
+          "value": "$7.95",
+          "ref": 7.95
+        }
+      ],
+      "refuted": [
+        {
+          "value": "31.6%",
+          "num": 31.6,
+          "correct": 24.9,
+          "dev": 0.212,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [],
+      "n_refs": 31
+    },
+    "gate_2": {
+      "verified": [
+        {
+          "value": "$7.95",
+          "ref": 7.95
+        },
+        {
+          "value": "$9.77",
+          "ref": 9.77
+        },
+        {
+          "value": "$3.05",
+          "ref": 3.0
+        },
+        {
+          "value": "$9.77",
+          "ref": 9.77
+        },
+        {
+          "value": "$3.05",
+          "ref": 3.0
+        },
+        {
+          "value": "$9.77",
+          "ref": 9.77
+        },
+        {
+          "value": "$9.77",
+          "ref": 9.77
+        },
+        {
+          "value": "$3.05",
+          "ref": 3.0
+        },
+        {
+          "value": "22.89%",
+          "ref": 22.8
+        },
+        {
+          "value": "22.89%",
+          "ref": 22.8
+        },
+        {
+          "value": "22.89%",
+          "ref": 22.8
+        }
+      ],
+      "refuted": [
+        {
+          "value": "31.6%",
+          "num": 31.6,
+          "correct": 24.9,
+          "dev": 0.212,
+          "source": "evidence"
+        },
+        {
+          "value": "31.6%",
+          "num": 31.6,
+          "correct": 24.9,
+          "dev": 0.212,
+          "source": "evidence"
+        },
+        {
+          "value": "8.71 percent",
+          "num": 8.71,
+          "correct": 7.95,
+          "dev": 0.0873,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$1.82"
+        }
+      ],
+      "n_refs": 31
+    },
+    "gate_3": {
+      "verified": [
+        {
+          "value": "$3.05",
+          "ref": 3.0
+        },
+        {
+          "value": "$7.95",
+          "ref": 7.95
+        },
+        {
+          "value": "$9.77",
+          "ref": 9.77
+        },
+        {
+          "value": "$7.95",
+          "ref": 7.95
+        },
+        {
+          "value": "$9.77",
+          "ref": 9.77
+        },
+        {
+          "value": "$3.05",
+          "ref": 3.0
+        },
+        {
+          "value": "$3.05",
+          "ref": 3.0
+        },
+        {
+          "value": "$7.95",
+          "ref": 7.95
+        },
+        {
+          "value": "$9.77",
+          "ref": 9.77
+        },
+        {
+          "value": "22.89%",
+          "ref": 22.8
+        },
+        {
+          "value": "22.89%",
+          "ref": 22.8
+        },
+        {
+          "value": "22.89%",
+          "ref": 22.8
+        }
+      ],
+      "refuted": [],
+      "unverified": [
+        {
+          "value": "$1.82"
+        }
+      ],
+      "n_refs": 31
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_089_CF6163C6",
+      "hid": "FB_089_CF6163C6_H2",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 3.05,
+      "orig_num": 2.35,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_089_CF6163C6",
+      "hid": "FB_089_CF6163C6_H1",
+      "method": "ours",
+      "type": "percentage",
+      "inj_num": 31.6,
+      "orig_num": 22.8,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:36:45.085009+00:00"
+}

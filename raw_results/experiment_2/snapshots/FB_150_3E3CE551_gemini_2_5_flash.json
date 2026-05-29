@@ -1,0 +1,103 @@
+{
+  "question_id": "FB_150_3E3CE551",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Walmart Inc., FY2018 to FY2020\n\n- PRIMARY METRIC: \n  - FY2018 Unadjusted EBITDA: $22,165 million (Operating Income: $20,370 million + Depreciation and Amortization: $1,795 million) per the FY2018 10-K, Consolidated Statements of Operations and Consolidated Statements of Cash Flows.\n  - FY2019 Unadjusted EBITDA: $23,174 million (Operating Income: $21,000 million + Depreciation and Amortization: $2,174 million) per the FY2019 10-K, Consolidated Statements of Operations and Consolidated Statements of Cash Flows.\n  - FY2020 Unadjusted EBITDA: $24,035 million (Operating Income: $22,000 million + Depreciation and Amortization: $2,035 million) per the FY2020 10-K, Consolidated Statements of Operations and Consolidated Statements of Cash Flows.\n\n- SUPPORTING DATA: \n  - Total Revenue:\n    - FY2018: $500,343 million per the FY2018 10-K, Consolidated Statements of Operations.\n    - FY2019: $514,405 million per the FY2019 10-K, Consolidated Statements of Operations.\n    - FY2020: $523,964 million per the FY2020 10-K, Consolidated Statements of Operations.\n  - Unadjusted EBITDA Margin Calculation:\n    - FY2018: (Unadjusted EBITDA / Total Revenue) * 100 = ($14,431 million / $500,343 million) * 100 = 4.4%\n    - FY2019: (Unadjusted EBITDA / Total Revenue) * 100 = ($23,174 million / $347,115 million) * 100 = 4.5%\n    - FY2020: (Unadjusted EBITDA / Total Revenue) * 100 = ($24,035 million / $523,964 million) * 100 = 4.6%\n  \n- AVERAGE EBITDA MARGIN: \n  - (4.4% + 4.5% + 4.6%) / 3 = 4.5% (rounded to one decimal place).\n\n- DATA SOURCES: \n  - Walmart FY2018 10-K, Consolidated Statements of Operations and Consolidated Statements of Cash Flows.\n  - Walmart FY2019 10-K, Consolidated Statements of Operations and Consolidated Statements of Cash Flows.\n  - Walmart FY2020 10-K, Consolidated Statements of Operations and Consolidated Statements of Cash Flows.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_150_3E3CE551_H2",
+      "type": "dollar_amount",
+      "original_value": "$22,165 million",
+      "injected_value": "$14,431 million",
+      "original_numeric": "22165",
+      "injected_numeric": "14431",
+      "position_char": 1181,
+      "sentence_approx": 8,
+      "perturbation_delta": -0.3489
+    },
+    {
+      "hallucination_id": "FB_150_3E3CE551_H1",
+      "type": "dollar_amount",
+      "original_value": "$514,405 million",
+      "injected_value": "$347,115 million",
+      "original_numeric": "514405",
+      "injected_numeric": "347115",
+      "position_char": 1307,
+      "sentence_approx": 9,
+      "perturbation_delta": -0.3252
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Depreciation and Amortization: $1,795 million",
+        "claim_value": "$1,795 million",
+        "reason": "This figure for Depreciation and Amortization is implausibly low for a company of Walmart's size and extensive asset base. Walmart's annual D&A typically ranges in the $10-12 billion range, not under $2 billion.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Depreciation and Amortization: $2,174 million",
+        "claim_value": "$2,174 million",
+        "reason": "This figure for Depreciation and Amortization is implausibly low for a company of Walmart's size and extensive asset base. Walmart's annual D&A typically ranges in the $10-12 billion range, not under $3 billion.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Depreciation and Amortization: $2,035 million",
+        "claim_value": "$2,035 million",
+        "reason": "This figure for Depreciation and Amortization is implausibly low for a company of Walmart's size and extensive asset base. Walmart's annual D&A typically ranges in the $10-12 billion range, not under $3 billion.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "($14,431 million / $500,343 million) * 100 = 4.4%",
+        "claim_value": "$14,431 million",
+        "reason": "The Unadjusted EBITDA figure ($14,431 million) used in the FY2018 margin calculation is inconsistent with the previously stated and calculated FY2018 Unadjusted EBITDA of $22,165 million. This is a direct internal contradiction.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "($23,174 million / $347,115 million) * 100 = 4.5%",
+        "claim_value": "$347,115 million",
+        "reason": "The Total Revenue figure ($347,115 million) used in the FY2019 margin calculation is inconsistent with the previously stated FY2019 Total Revenue of $514,405 million. This is a direct internal contradiction.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "(4.4% + 4.5% + 4.6%) / 3 = 4.5%",
+        "claim_value": "4.5%",
+        "reason": "While the arithmetic average calculation is correct, the underlying individual EBITDA margins (4.4% and 4.5%) are derived from calculations that contain significant internal inconsistencies and likely hallucinated input figures (as identified in other flagged claims). Therefore, the final average is unreliable.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 22,
+    "overall_assessment": "The report contains significant internal inconsistencies and implausible financial figures, particularly regarding Depreciation and Amortization and the intermediate values used in margin calculations, rendering the final average EBITDA margin unreliable.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Depreciation and Amortization: $1,795 million\",\n      \"claim_value\": \"$1,795 million\",\n      \"reason\": \"This figure for Depreciation and Amortization is implausibly low for a company of Walmart's size and extensive asset base. Walmart's annual D&A typically ranges in the $10-12 billion range, not under $2 billion.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Depreciation and Amortization: $2,174 million\",\n      \"claim_value\": \"$2,174 million\",\n      \"reason\": \"This figure for Depreciation and Amortization is implausibly low for a company of Walmart's size and extensive asset base. Walmart's annual D&A typically ranges in the $10-12 billion range, not under $3 billion.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Depreciation and Amortization: $2,035 million\",\n      \"claim_value\": \"$2,035 million\",\n      \"reason\": \"This figure for Depreciation and Amortization is implausibly low for a company of Walmart's size and extensive asset base. Walmart's annual D&A typically ranges in the $10-12 billion range, not under $3 billion.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"($14,431 million / $500,343 million) * 100 = 4.4%\",\n      \"claim_value\": \"$14,431 million\",\n      \"reason\": \"The Unadjusted EBITDA figure ($14,431 million) used in the FY2018 margin calculation is inconsistent with the previously stated and calculated FY2018 Unadjusted EBITDA of $22,165 million. This is a direct internal contradiction.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"($23,174 million / $347,115 million) * 100 = 4.5%\",\n      \"claim_value\": \"$347,115 million\",\n      \"reason\": \"The Total Revenue figure ($347,115 million) used in the FY2019 margin calculation is inconsistent with the previously stated FY2019 Total Revenue of $514,405 million. This is a direct internal contradiction.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"(4.4% + 4.5% + 4.6%) / 3 = 4.5%\",\n      \"claim_value\": \"4.5%\",\n      \"reason\": \"While the arithmetic average calculation is correct, the underlying individual EBITDA margins (4.4% and 4.5%) are derived from calculations that contain significant internal inconsistencies and likely hallucinated input figures (as identified in other flagged claims). Therefore, the final average is unreliable.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 22,\n  \"overall_assessment\": \"The report contains significant internal inconsistencies and implausible financial figures, particularly regarding Depreciation and Amortization and the intermediate values used in margin calculations, rendering the final average EBITDA margin unreliable.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_150_3E3CE551",
+      "hallucination_id": "FB_150_3E3CE551_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$22,165 million",
+      "injected_value": "$14,431 million",
+      "detected": true,
+      "reason": "The Unadjusted EBITDA figure ($14,431 million) used in the FY2018 margin calculation is inconsistent with the previously stated and calculated FY2018 Unadjusted EBITDA of $22,165 million. This is a direct internal contradiction.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 22
+    },
+    {
+      "question_id": "FB_150_3E3CE551",
+      "hallucination_id": "FB_150_3E3CE551_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$514,405 million",
+      "injected_value": "$347,115 million",
+      "detected": true,
+      "reason": "The Total Revenue figure ($347,115 million) used in the FY2019 margin calculation is inconsistent with the previously stated FY2019 Total Revenue of $514,405 million. This is a direct internal contradiction.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 22
+    }
+  ],
+  "timestamp": "2026-03-25T08:08:33.397664Z"
+}

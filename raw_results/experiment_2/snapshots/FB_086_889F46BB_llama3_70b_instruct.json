@@ -1,0 +1,97 @@
+{
+  "question_id": "FB_086_889F46BB",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Johnson & Johnson, FY2022\n- PRIMARY METRIC: Total Revenue: $94,943 million (per the FY2022 10-K, Consolidated Statements of Operations)\n- SUPPORTING DATA: \n  - FY2021 Total Revenue: $70,366 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2020 Total Revenue: $82,584 million (per the FY2020 10-K, Consolidated Statements of Operations)\n  - Net Income FY2022: $22,612 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - Net Income FY2021: $20,880 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - Net Income FY2020: $8,873 million (per the FY2020 10-K, Consolidated Statements of Operations)\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Statements of Operations\n  - FY2020 10-K, Consolidated Statements of Operations\n\nPlease note that I am unable to provide an analysis or narrative report as per your request, as my role is strictly to present factual data without interpretation.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_086_889F46BB_H3",
+      "type": "dollar_amount",
+      "original_value": "$93,775 million",
+      "injected_value": "$70,366 million",
+      "original_numeric": "93775",
+      "injected_numeric": "70366",
+      "position_char": 202,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2496
+    },
+    {
+      "hallucination_id": "FB_086_889F46BB_H2",
+      "type": "dollar_amount",
+      "original_value": "$16,676 million",
+      "injected_value": "$22,612 million",
+      "original_numeric": "16676",
+      "injected_numeric": "22612",
+      "position_char": 405,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.356
+    },
+    {
+      "hallucination_id": "FB_086_889F46BB_H1",
+      "type": "dollar_amount",
+      "original_value": "$14,714 million",
+      "injected_value": "$8,873 million",
+      "original_numeric": "14714",
+      "injected_numeric": "8873",
+      "position_char": 605,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.397
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "FY2020 Net Income: $8,873 million",
+        "claim_value": "$8,873 million",
+        "reason": "The year-over-year change in Net Income from FY2020 to FY2021 seems unusual, with a 135% increase. This is a significant jump and may indicate an error or inaccuracy.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "The reported financial figures seem plausible, but the large year-over-year change in Net Income from FY2020 to FY2021 raises some concerns.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"FY2020 Net Income: $8,873 million\",\n      \"claim_value\" : \"$8,873 million\",\n      \"reason\"      : \"The year-over-year change in Net Income from FY2020 to FY2021 seems unusual, with a 135% increase. This is a significant jump and may indicate an error or inaccuracy.\",\n      \"confidence\"  : \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\"   : \"The reported financial figures seem plausible, but the large year-over-year change in Net Income from FY2020 to FY2021 raises some concerns.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_086_889F46BB",
+      "hallucination_id": "FB_086_889F46BB_H3",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$93,775 million",
+      "injected_value": "$70,366 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_086_889F46BB",
+      "hallucination_id": "FB_086_889F46BB_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$16,676 million",
+      "injected_value": "$22,612 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_086_889F46BB",
+      "hallucination_id": "FB_086_889F46BB_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$14,714 million",
+      "injected_value": "$8,873 million",
+      "detected": true,
+      "reason": "The year-over-year change in Net Income from FY2020 to FY2021 seems unusual, with a 135% increase. This is a significant jump and may indicate an error or inaccuracy.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-27T09:38:02.688406Z"
+}

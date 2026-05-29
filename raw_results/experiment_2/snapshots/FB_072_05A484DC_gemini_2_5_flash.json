@@ -1,0 +1,109 @@
+{
+  "question_id": "FB_072_05A484DC",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Corning Inc., FY2019 - FY2021\n- PRIMARY METRIC: \n  - FY2019 Operating Income: $3,206 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2019 Total Revenue: $8,255 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2019 Operating Income Margin: (Operating Income / Total Revenue) * 100 = (2,118 / 11,500) * 100 = 27.9%\n  \n  - FY2020 Operating Income: $2,824 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2020 Total Revenue: $11,200 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2020 Operating Income Margin: (Operating Income / Total Revenue) * 100 = (2,824 / 11,200) * 100 = 25.2%\n  \n  - FY2021 Operating Income: $4,076 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2021 Total Revenue: $12,500 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2021 Operating Income Margin: (Operating Income / Total Revenue) * 100 = (4,076 / 12,500) * 100 = 32.6%\n\n- SUPPORTING DATA: \n  - FY2019 Operating Income Margin: 27.9%\n  - FY2020 Operating Income Margin: 25.2%\n  - FY2021 Operating Income Margin: 32.6%\n  - Three-Year Average Operating Income Margin: (27.9% + 25.2% + 32.6%) / 3 = 28.6%\n\n- DATA SOURCES: \n  - FY2021 10-K, Consolidated Statements of Operations, pages 50-51. \n\nNote: The request for insights into observable trends and benchmarking against industry standards has not been fulfilled as per the instruction to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_072_05A484DC_H2",
+      "type": "dollar_amount",
+      "original_value": "$11,500 million",
+      "injected_value": "$8,255 million",
+      "original_numeric": "11500",
+      "injected_numeric": "8255",
+      "position_char": 200,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.2822
+    },
+    {
+      "hallucination_id": "FB_072_05A484DC_H1",
+      "type": "large_number",
+      "original_value": "3,206",
+      "injected_value": "2,118",
+      "original_numeric": "3206",
+      "injected_numeric": "2118",
+      "position_char": 357,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3393
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "FY2019 Operating Income: $3,206 million",
+        "claim_value": "$3,206 million",
+        "reason": "This figure is stated as the FY2019 Operating Income, but a different value ($2,118 million) is used in the subsequent margin calculation for the same year, creating an internal inconsistency.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2019 Total Revenue: $8,255 million",
+        "claim_value": "$8,255 million",
+        "reason": "This figure is stated as the FY2019 Total Revenue, but a different value ($11,500 million) is used in the subsequent margin calculation for the same year, creating an internal inconsistency.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2019 Operating Income Margin: (Operating Income / Total Revenue) * 100 = (2,118 / 11,500) * 100 = 27.9%",
+        "claim_value": "2,118",
+        "reason": "The operating income value of $2,118 million used in this calculation contradicts the previously stated FY2019 Operating Income of $3,206 million.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2019 Operating Income Margin: (Operating Income / Total Revenue) * 100 = (2,118 / 11,500) * 100 = 27.9%",
+        "claim_value": "11,500",
+        "reason": "The total revenue value of $11,500 million used in this calculation contradicts the previously stated FY2019 Total Revenue of $8,255 million.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2019 Operating Income Margin: (Operating Income / Total Revenue) * 100 = (2,118 / 11,500) * 100 = 27.9%",
+        "claim_value": "27.9%",
+        "reason": "The calculated margin of 27.9% is mathematically incorrect based on the provided numbers (2,118 / 11,500 * 100 = 18.4%).",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2019 Operating Income Margin: 27.9%",
+        "claim_value": "27.9%",
+        "reason": "This margin is directly derived from the flawed calculation identified above, making it suspicious.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Three-Year Average Operating Income Margin: (27.9% + 25.2% + 32.6%) / 3 = 28.6%",
+        "claim_value": "28.6%",
+        "reason": "While the average calculation itself is correct based on the input margins, the FY2019 margin (27.9%) used in this average is suspicious due to prior calculation errors and inconsistencies, thus making the overall average unreliable.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 15,
+    "overall_assessment": "The FY2019 operating income margin calculation is riddled with internal inconsistencies and mathematical errors, which subsequently impacts the reliability of the three-year average margin.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"FY2019 Operating Income: $3,206 million\",\n      \"claim_value\": \"$3,206 million\",\n      \"reason\": \"This figure is stated as the FY2019 Operating Income, but a different value ($2,118 million) is used in the subsequent margin calculation for the same year, creating an internal inconsistency.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2019 Total Revenue: $8,255 million\",\n      \"claim_value\": \"$8,255 million\",\n      \"reason\": \"This figure is stated as the FY2019 Total Revenue, but a different value ($11,500 million) is used in the subsequent margin calculation for the same year, creating an internal inconsistency.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2019 Operating Income Margin: (Operating Income / Total Revenue) * 100 = (2,118 / 11,500) * 100 = 27.9%\",\n      \"claim_value\": \"2,118\",\n      \"reason\": \"The operating income value of $2,118 million used in this calculation contradicts the previously stated FY2019 Operating Income of $3,206 million.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2019 Operating Income Margin: (Operating Income / Total Revenue) * 100 = (2,118 / 11,500) * 100 = 27.9%\",\n      \"claim_value\": \"11,500\",\n      \"reason\": \"The total revenue value of $11,500 million used in this calculation contradicts the previously stated FY2019 Total Revenue of $8,255 million.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2019 Operating Income Margin: (Operating Income / Total Revenue) * 100 = (2,118 / 11,500) * 100 = 27.9%\",\n      \"claim_value\": \"27.9%\",\n      \"reason\": \"The calculated margin of 27.9% is mathematically incorrect based on the provided numbers (2,118 / 11,500 * 100 = 18.4%).\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2019 Operating Income Margin: 27.9%\",\n      \"claim_value\": \"27.9%\",\n      \"reason\": \"This margin is directly derived from the flawed calculation identified above, making it suspicious.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Three-Year Average Operating Income Margin: (27.9% + 25.2% + 32.6%) / 3 = 28.6%\",\n      \"claim_value\": \"28.6%\",\n      \"reason\": \"While the average calculation itself is correct based on the input margins, the FY2019 margin (27.9%) used in this average is suspicious due to prior calculation errors and inconsistencies, thus making the overall average unreliable.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 15,\n  \"overall_assessment\": \"The FY2019 operating income margin calculation is riddled with internal inconsistencies and mathematical errors, which subsequently impacts the reliability of the three-year average margin.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_072_05A484DC",
+      "hallucination_id": "FB_072_05A484DC_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$11,500 million",
+      "injected_value": "$8,255 million",
+      "detected": true,
+      "reason": "This figure is stated as the FY2019 Total Revenue, but a different value ($11,500 million) is used in the subsequent margin calculation for the same year, creating an internal inconsistency.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 7,
+      "total_claims_reviewed": 15
+    },
+    {
+      "question_id": "FB_072_05A484DC",
+      "hallucination_id": "FB_072_05A484DC_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "large_number",
+      "original_value": "3,206",
+      "injected_value": "2,118",
+      "detected": true,
+      "reason": "This figure is stated as the FY2019 Operating Income, but a different value ($2,118 million) is used in the subsequent margin calculation for the same year, creating an internal inconsistency.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 7,
+      "total_claims_reviewed": 15
+    }
+  ],
+  "timestamp": "2026-03-25T07:50:51.485266Z"
+}

@@ -1,0 +1,121 @@
+{
+  "question_id": "FB_104_AE0FFD33",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: MGM Resorts International, FY2018\n- PRIMARY METRIC: Accounts Payable: $952 million (per the FY2018 10-K, Consolidated Balance Sheets)\n- SUPPORTING DATA: \n  - FY2017 Accounts Payable: $1,050 million (per the FY2017 10-K, Consolidated Balance Sheets)\n  - FY2016 Accounts Payable: $1,084 million (per the FY2016 10-K, Consolidated Balance Sheets)\n- DATA SOURCES: \n  - FY2018 10-K, Consolidated Balance Sheets\n  - FY2017 10-K, Consolidated Balance Sheets\n  - FY2016 10-K, Consolidated Balance Sheets\n\nNote: No interpretation or analysis has been provided as per the directive.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_104_AE0FFD33_H3",
+      "type": "dollar_amount",
+      "original_value": "$1,479 million",
+      "injected_value": "$952 million",
+      "original_numeric": "1479",
+      "injected_numeric": "952",
+      "position_char": 90,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.3563
+    },
+    {
+      "hallucination_id": "FB_104_AE0FFD33_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,379 million",
+      "injected_value": "$1,050 million",
+      "original_numeric": "1379",
+      "injected_numeric": "1050",
+      "position_char": 205,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2384
+    },
+    {
+      "hallucination_id": "FB_104_AE0FFD33_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,295 million",
+      "injected_value": "$1,084 million",
+      "original_numeric": "1295",
+      "injected_numeric": "1084",
+      "position_char": 300,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.1626
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Accounts Payable: $952 million (per the FY2018 10-K, Consolidated Balance Sheets)",
+        "claim_value": "$952 million",
+        "reason": "The figure seems suspiciously round compared to typical financial reporting, which often includes more precise figures (e.g., $951.8 million).",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "FY2017 Accounts Payable: $1,050 million (per the FY2017 10-K, Consolidated Balance Sheets)",
+        "claim_value": "$1,050 million",
+        "reason": "The figure is unusually round and lacks decimal precision, which is uncommon in formal financial statements.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "FY2016 Accounts Payable: $1,084 million (per the FY2016 10-K, Consolidated Balance Sheets)",
+        "claim_value": "$1,084 million",
+        "reason": "The figure is again unusually round for a detailed financial statement, lacking typical decimal precision.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "FY2018 Accounts Payable decrease from FY2017",
+        "claim_value": "Decrease from $1,050 million to $952 million",
+        "reason": "A ~9.3% decrease in accounts payable year-over-year is unusual for a company like MGM Resorts unless there was a significant operational change, which is not mentioned.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2017 Accounts Payable decrease from FY2016",
+        "claim_value": "Decrease from $1,084 million to $1,050 million",
+        "reason": "A ~3.1% decrease is plausible but still notable without context; typically, accounts payable for large companies like MGM Resorts might fluctuate less or even increase slightly.",
+        "confidence": "low"
+      }
+    ],
+    "total_claims_reviewed": 5,
+    "overall_assessment": "Several figures appear suspiciously round and lack typical decimal precision, and the year-over-year decreases in accounts payable are unusual without further context.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Accounts Payable: $952 million (per the FY2018 10-K, Consolidated Balance Sheets)\",\n      \"claim_value\": \"$952 million\",\n      \"reason\": \"The figure seems suspiciously round compared to typical financial reporting, which often includes more precise figures (e.g., $951.8 million).\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"FY2017 Accounts Payable: $1,050 million (per the FY2017 10-K, Consolidated Balance Sheets)\",\n      \"claim_value\": \"$1,050 million\",\n      \"reason\": \"The figure is unusually round and lacks decimal precision, which is uncommon in formal financial statements.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"FY2016 Accounts Payable: $1,084 million (per the FY2016 10-K, Consolidated Balance Sheets)\",\n      \"claim_value\": \"$1,084 million\",\n      \"reason\": \"The figure is again unusually round for a detailed financial statement, lacking typical decimal precision.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"FY2018 Accounts Payable decrease from FY2017\",\n      \"claim_value\": \"Decrease from $1,050 million to $952 million\",\n      \"reason\": \"A ~9.3% decrease in accounts payable year-over-year is unusual for a company like MGM Resorts unless there was a significant operational change, which is not mentioned.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2017 Accounts Payable decrease from FY2016\",\n      \"claim_value\": \"Decrease from $1,084 million to $1,050 million\",\n      \"reason\": \"A ~3.1% decrease is plausible but still notable without context; typically, accounts payable for large companies like MGM Resorts might fluctuate less or even increase slightly.\",\n      \"confidence\": \"low\"\n    }\n  ],\n  \"total_claims_reviewed\": 5,\n  \"overall_assessment\": \"Several figures appear suspiciously round and lack typical decimal precision, and the year-over-year decreases in accounts payable are unusual without further context.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_104_AE0FFD33",
+      "hallucination_id": "FB_104_AE0FFD33_H3",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,479 million",
+      "injected_value": "$952 million",
+      "detected": true,
+      "reason": "The figure seems suspiciously round compared to typical financial reporting, which often includes more precise figures (e.g., $951.8 million).",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 5
+    },
+    {
+      "question_id": "FB_104_AE0FFD33",
+      "hallucination_id": "FB_104_AE0FFD33_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,379 million",
+      "injected_value": "$1,050 million",
+      "detected": true,
+      "reason": "The figure is unusually round and lacks decimal precision, which is uncommon in formal financial statements.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 5
+    },
+    {
+      "question_id": "FB_104_AE0FFD33",
+      "hallucination_id": "FB_104_AE0FFD33_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,295 million",
+      "injected_value": "$1,084 million",
+      "detected": true,
+      "reason": "The figure is unusually round and lacks decimal precision, which is uncommon in formal financial statements.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 5
+    }
+  ],
+  "timestamp": "2026-03-24T09:56:18.302873Z"
+}

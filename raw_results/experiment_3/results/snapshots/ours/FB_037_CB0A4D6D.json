@@ -1,0 +1,521 @@
+{
+  "question_id": "FB_037_CB0A4D6D",
+  "method": "ours",
+  "final_output": "## Advanced Micro Devices, Inc. (AMD) - FY2021 to FY2022 Sales Performance Report\n\n### Executive Summary\n\nAdvanced Micro Devices, Inc. (AMD) demonstrated robust sales growth from FY2021 to FY2022 across its core segments, excluding Embedded. The Data Center segment exhibited exceptional performance, achieving a 93.55% increase in sales, outpacing the Computing and Graphics segment's 73.68% growth. This highlights the increasing strategic importance and revenue contribution of AMD's Data Center offerings.\n\n### Analysis\n\nIn FY2022, AMD's Computing and Graphics segment generated $6,600 million in sales, a substantial increase from $3,800 million in FY2021. This represents an absolute increase of $2,800 million and a percentage growth of 73.68%. Concurrently, the Data Center segment recorded sales of $6,000 million in FY2022, up from $3,100 million in FY2021. This translates to an absolute increase of $2,900 million and an impressive 93.55% growth.\n\nThe Data Center segment's contribution to total sales (excluding Embedded) shifted from 64.00% in FY2021 to 64.00% in FY2022, indicating a consistent and significant prominence. Conversely, the Computing and Graphics segment's share remained at 64.00% in both FY2021 and FY2022, despite its strong absolute growth. This suggests a balanced growth across segments when considering their proportional contribution to the overall non-embedded sales.\n\n### Key Risks\n\nWhile both segments showed significant growth, the higher growth rate in Data Center sales suggests a potential increasing reliance on this segment for future revenue expansion. Any slowdown or increased competition within the data center market could disproportionately impact AMD's overall growth trajectory. Furthermore, while the Computing and Graphics segment maintained its proportional contribution, continued monitoring is warranted to ensure sustained market share and innovation in a competitive landscape.\n\n### Conclusion\n\nAMD's financial performance from FY2021 to FY2022, particularly in its Data Center segment, underscores its successful strategic positioning and product execution. The substantial growth in both Computing and Graphics and Data Center segments, with the latter showing a higher proportional increase in absolute terms, positions AMD favorably for continued expansion in high-demand markets. Careful management of segment contributions and market dynamics will be crucial for sustaining this positive momentum.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Advanced Micro Devices, Inc. (AMD) - FY2021 and FY2022\n- PRIMARY METRIC: \n  - FY2022 Sales Figures (excluding Embedded):\n    - Computing and Graphics: $6,600 million (per the FY2022 10-K, Consolidated Statements of Operations)\n    - Data Center: $6,000 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  \n  - FY2021 Sales Figures (excluding Embedded):\n    - Computing and Graphics: $3,800 million (per the FY2021 10-K, Consolidated Statements of Operations)\n    - Data Center: $3,100 million (per the FY2021 10-K, Consolidated Statements of Operations)\n\n- SUPPORTING DATA: \n  - Sales Growth Calculation:\n    - Computing and Graphics:\n      - FY2022: $6,600 million\n      - FY2021: $3,800 million\n      - Increase: $6,600 million - $3,800 million = $2,800 million\n      - Proportional Increase: ($2,800 million / $3,135 million) * 100 = 73.68%\n    \n    - Data Center:\n      - FY2022: $6,000 million\n      - FY2021: $3,100 million\n      - Increase: $6,000 million - $2,208 million = $2,900 million\n      - Proportional Increase: ($2,900 million / $2,500 million) * 100 = 93.55%\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Statements of Operations\n\nBased on the data extracted, the Data Center segment experienced the highest proportional increase in sales from FY2021 to FY2022, with a growth rate of 93.55%, compared to the Computing and Graphics segment's growth rate of 73.68%.",
+    "2": "As a financial analyst, I've computed the year-over-year changes and relevant ratios for AMD's sales (excluding Embedded) for FY2021 and FY2022, flagging anomalies where present.\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\n**Formulas:**\n*   Absolute Change = FY2022 Value - FY2021 Value\n*   Percentage Change = (Absolute Change / FY2021 Value) * 100\n\n**Computing and Graphics:**\n*   FY2022 Sales: $6,600 million\n*   FY2021 Sales: $3,800 million\n*   Absolute Change: $6,600 million - $3,800 million = **$2,800 million**\n*   Percentage Change: ($2,800 million / $3,800 million) * 100 = **73.68%**\n\n**Data Center:**\n*   FY2022 Sales: $6,000 million\n*   FY2021 Sales: $3,100 million\n*   Absolute Change: $6,000 million - $3,100 million = **$2,900 million**\n*   Percentage Change: ($2,900 million / $3,100 million) * 100 = **93.55%**\n\n**Total Sales (excluding Embedded):**\n*   FY2022 Total Sales: $6,600 million (C&G) + $6,000 million (DC) = $12,600 million\n*   FY2021 Total Sales: $3,800 million (C&G) + $3,100 million (DC) = $6,900 million\n*   Absolute Change: $12,600 million - $6,900 million = **$5,700 million**\n*   Percentage Change: ($5,700 million / $6,900 million) * 100 = **82.61%**\n\n**2. Relevant Ratios**\n\n**Segment Contribution to Total Sales (FY2022):**\n*   Formula: (Segment Sales / Total Sales) * 100\n*   Computing and Graphics: ($6,600 million / $12,600 million) * 100 = **52.38%**\n*   Data Center: ($6,000 million / $12,600 million) * 100 = **47.62%**\n\n**Segment Contribution to Total Sales (FY2021):**\n*   Computing and Graphics: ($3,800 million / $6,900 million) * 100 = **55.07%**\n*   Data Center: ($3,100 million / $6,900 million) * 100 = **44.93%**\n\n**3. Anomalies Flagged**\n\nThe researcher's \"SUPPORTING DATA\" section contains anomalies that were identified and corrected by the verification report.\n\n*   **Anomaly 1 (Computing and Graphics Proportional Increase Calculation):**\n    *   Researcher's denominator: $3,135 million.\n    *   Correct denominator (FY2021 Sales): $3,800 million.\n    *   The researcher's calculation for \"Proportional Increase\" for Computing and Graphics was based on an incorrect denominator ($3,135 million) which is not present in the provided FY2021 sales data for this segment. The correct calculation uses the FY2021 Computing and Graphics sales of $3,800 million.\n\n*   **Anomaly 2 (Data Center Increase Calculation):**\n    *   Researcher's FY2021 value used for subtraction: $2,208 million (REFUTED).\n    *   Correct FY2021 value: $3,100 million.\n    *   The researcher used an incorrect value ($2,208 million) for FY2021 Data Center sales in their \"Increase\" calculation. The correct value is $3,100 million.\n\n*   **Anomaly 3 (Data Center Proportional Increase Calculation):**\n    *   Researcher's denominator: $2,500 million (REFUTED).\n    *   Correct denominator (FY2021 Sales): $3,100 million.\n    *   The researcher used an incorrect denominator ($2,500 million) for the \"Proportional Increase\" calculation for Data Center. The correct calculation uses the FY2021 Data Center sales of $3,100 million.\n\nThe corrected calculations above reflect the accurate year-over-year changes based on the verified data. The Data Center segment indeed showed higher percentage growth (93.55%) than Computing and Graphics (73.68%) from FY2021 to FY2022.",
+    "3": "## Advanced Micro Devices, Inc. (AMD) - FY2021 to FY2022 Sales Performance Report\n\n### Executive Summary\n\nAdvanced Micro Devices, Inc. (AMD) demonstrated robust sales growth from FY2021 to FY2022 in its core segments, excluding Embedded. The Data Center segment exhibited exceptional performance, achieving a 93.55% increase in sales, outpacing the Computing and Graphics segment's 73.68% growth. This highlights the increasing strategic importance and revenue contribution of AMD's Data Center offerings.\n\n### Analysis\n\nIn FY2022, AMD's Computing and Graphics segment generated $6,600 million in sales, a substantial increase from $3,800 million in FY2021. This represents an absolute increase of $2,800 million and a percentage growth of 73.68%. Concurrently, the Data Center segment recorded sales of $6,000 million in FY2022, up from $3,100 million in FY2021. This translates to an absolute increase of $2,900 million and an impressive 93.55% growth.\n\nThe Data Center segment's contribution to total sales (excluding Embedded) shifted from 44.93% in FY2021 to 47.62% in FY2022, indicating its growing prominence. Conversely, the Computing and Graphics segment's share slightly decreased from 55.07% to 52.38% over the same period, despite its strong absolute growth.\n\n### Key Risks\n\nWhile both segments showed significant growth, the higher growth rate in Data Center sales suggests a potential increasing reliance on this segment for future revenue expansion. Any slowdown or increased competition within the data center market could disproportionately impact AMD's overall growth trajectory. Furthermore, the slight decrease in the Computing and Graphics segment's proportional contribution, while not alarming given its absolute growth, warrants continued monitoring to ensure sustained market share and innovation.\n\n### Conclusion\n\nAMD's financial performance from FY2021 to FY2022, particularly in its Data Center segment, underscores its successful strategic positioning and product execution. The substantial growth in both Computing and Graphics and Data Center segments, with the latter showing a higher proportional increase, positions AMD favorably for continued expansion in high-demand markets. Careful management of segment contributions and market dynamics will be crucial for sustaining this positive momentum.",
+    "4": "## Advanced Micro Devices, Inc. (AMD) - FY2021 to FY2022 Sales Performance Report\n\n### Executive Summary\n\nAdvanced Micro Devices, Inc. (AMD) demonstrated robust sales growth from FY2021 to FY2022 across its core segments, excluding Embedded. The Data Center segment exhibited exceptional performance, achieving a 93.55% increase in sales, outpacing the Computing and Graphics segment's 73.68% growth. This highlights the increasing strategic importance and revenue contribution of AMD's Data Center offerings.\n\n### Analysis\n\nIn FY2022, AMD's Computing and Graphics segment generated $6,600 million in sales, a substantial increase from $3,800 million in FY2021. This represents an absolute increase of $2,800 million and a percentage growth of 73.68%. Concurrently, the Data Center segment recorded sales of $6,000 million in FY2022, up from $3,100 million in FY2021. This translates to an absolute increase of $2,900 million and an impressive 93.55% growth.\n\nThe Data Center segment's contribution to total sales (excluding Embedded) shifted from 64.00% in FY2021 to 64.00% in FY2022, indicating a consistent and significant prominence. Conversely, the Computing and Graphics segment's share remained at 64.00% in both FY2021 and FY2022, despite its strong absolute growth. This suggests a balanced growth across segments when considering their proportional contribution to the overall non-embedded sales.\n\n### Key Risks\n\nWhile both segments showed significant growth, the higher growth rate in Data Center sales suggests a potential increasing reliance on this segment for future revenue expansion. Any slowdown or increased competition within the data center market could disproportionately impact AMD's overall growth trajectory. Furthermore, while the Computing and Graphics segment maintained its proportional contribution, continued monitoring is warranted to ensure sustained market share and innovation in a competitive landscape.\n\n### Conclusion\n\nAMD's financial performance from FY2021 to FY2022, particularly in its Data Center segment, underscores its successful strategic positioning and product execution. The substantial growth in both Computing and Graphics and Data Center segments, with the latter showing a higher proportional increase in absolute terms, positions AMD favorably for continued expansion in high-demand markets. Careful management of segment contributions and market dynamics will be crucial for sustaining this positive momentum."
+  },
+  "gates": {
+    "gate_1": {
+      "verified": [
+        {
+          "value": "$6,600 million",
+          "ref": 6600.0
+        },
+        {
+          "value": "$6,000 million",
+          "ref": 6000.0
+        },
+        {
+          "value": "$3,800 million",
+          "ref": 3800.0
+        },
+        {
+          "value": "$3,100 million",
+          "ref": 3100.0
+        },
+        {
+          "value": "$6,600 million",
+          "ref": 6600.0
+        },
+        {
+          "value": "$3,800 million",
+          "ref": 3800.0
+        },
+        {
+          "value": "$6,600 million",
+          "ref": 6600.0
+        },
+        {
+          "value": "$3,800 million",
+          "ref": 3800.0
+        },
+        {
+          "value": "$2,800 million",
+          "ref": 2800.0
+        },
+        {
+          "value": "$2,800 million",
+          "ref": 2800.0
+        },
+        {
+          "value": "$3,135 million",
+          "ref": 3100.0
+        },
+        {
+          "value": "$6,000 million",
+          "ref": 6000.0
+        },
+        {
+          "value": "$3,100 million",
+          "ref": 3100.0
+        },
+        {
+          "value": "$6,000 million",
+          "ref": 6000.0
+        },
+        {
+          "value": "$2,900 million",
+          "ref": 2900.0
+        },
+        {
+          "value": "$2,900 million",
+          "ref": 2900.0
+        },
+        {
+          "value": "73.68%",
+          "ref": 73.68
+        },
+        {
+          "value": "93.55%",
+          "ref": 93.55
+        },
+        {
+          "value": "93.55%",
+          "ref": 93.55
+        },
+        {
+          "value": "73.68%",
+          "ref": 73.68
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$2,208 million",
+          "num": 2208.0,
+          "correct": 2800.0,
+          "dev": 0.2114,
+          "source": "source_document"
+        },
+        {
+          "value": "$2,500 million",
+          "num": 2500.0,
+          "correct": 2800.0,
+          "dev": 0.1071,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [],
+      "n_refs": 21
+    },
+    "gate_2": {
+      "verified": [
+        {
+          "value": "$6,600 million",
+          "ref": 6600.0
+        },
+        {
+          "value": "$3,800 million",
+          "ref": 3800.0
+        },
+        {
+          "value": "$6,600 million",
+          "ref": 6600.0
+        },
+        {
+          "value": "$3,800 million",
+          "ref": 3800.0
+        },
+        {
+          "value": "$2,800 million",
+          "ref": 2800.0
+        },
+        {
+          "value": "$2,800 million",
+          "ref": 2800.0
+        },
+        {
+          "value": "$3,800 million",
+          "ref": 3800.0
+        },
+        {
+          "value": "$6,000 million",
+          "ref": 6000.0
+        },
+        {
+          "value": "$3,100 million",
+          "ref": 3100.0
+        },
+        {
+          "value": "$6,000 million",
+          "ref": 6000.0
+        },
+        {
+          "value": "$3,100 million",
+          "ref": 3100.0
+        },
+        {
+          "value": "$2,900 million",
+          "ref": 2900.0
+        },
+        {
+          "value": "$2,900 million",
+          "ref": 2900.0
+        },
+        {
+          "value": "$3,100 million",
+          "ref": 3100.0
+        },
+        {
+          "value": "$6,600 million",
+          "ref": 6600.0
+        },
+        {
+          "value": "$6,000 million",
+          "ref": 6000.0
+        },
+        {
+          "value": "$3,800 million",
+          "ref": 3800.0
+        },
+        {
+          "value": "$3,100 million",
+          "ref": 3100.0
+        },
+        {
+          "value": "$6,600 million",
+          "ref": 6600.0
+        },
+        {
+          "value": "$6,000 million",
+          "ref": 6000.0
+        },
+        {
+          "value": "$3,800 million",
+          "ref": 3800.0
+        },
+        {
+          "value": "$3,100 million",
+          "ref": 3100.0
+        },
+        {
+          "value": "$3,135 million",
+          "ref": 3100.0
+        },
+        {
+          "value": "$3,800 million",
+          "ref": 3800.0
+        },
+        {
+          "value": "$3,135 million",
+          "ref": 3100.0
+        },
+        {
+          "value": "$3,800 million",
+          "ref": 3800.0
+        },
+        {
+          "value": "$3,100 million",
+          "ref": 3100.0
+        },
+        {
+          "value": "$3,100 million",
+          "ref": 3100.0
+        },
+        {
+          "value": "$3,100 million",
+          "ref": 3100.0
+        },
+        {
+          "value": "$3,100 million",
+          "ref": 3100.0
+        },
+        {
+          "value": "73.68%",
+          "ref": 73.68
+        },
+        {
+          "value": "93.55%",
+          "ref": 93.55
+        },
+        {
+          "value": "93.55%",
+          "ref": 93.55
+        },
+        {
+          "value": "73.68%",
+          "ref": 73.68
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$12,600 million",
+          "num": 12600.0,
+          "correct": 6600.0,
+          "dev": 0.4762,
+          "source": "source_document"
+        },
+        {
+          "value": "$12,600 million",
+          "num": 12600.0,
+          "correct": 6600.0,
+          "dev": 0.4762,
+          "source": "source_document"
+        },
+        {
+          "value": "$5,700 million",
+          "num": 5700.0,
+          "correct": 6000.0,
+          "dev": 0.05,
+          "source": "source_document"
+        },
+        {
+          "value": "$5,700 million",
+          "num": 5700.0,
+          "correct": 6000.0,
+          "dev": 0.05,
+          "source": "source_document"
+        },
+        {
+          "value": "$12,600 million",
+          "num": 12600.0,
+          "correct": 6600.0,
+          "dev": 0.4762,
+          "source": "source_document"
+        },
+        {
+          "value": "$12,600 million",
+          "num": 12600.0,
+          "correct": 6600.0,
+          "dev": 0.4762,
+          "source": "source_document"
+        },
+        {
+          "value": "$2,208 million",
+          "num": 2208.0,
+          "correct": 2800.0,
+          "dev": 0.2114,
+          "source": "source_document"
+        },
+        {
+          "value": "$2,208 million",
+          "num": 2208.0,
+          "correct": 2800.0,
+          "dev": 0.2114,
+          "source": "source_document"
+        },
+        {
+          "value": "$2,500 million",
+          "num": 2500.0,
+          "correct": 2800.0,
+          "dev": 0.1071,
+          "source": "source_document"
+        },
+        {
+          "value": "$2,500 million",
+          "num": 2500.0,
+          "correct": 2800.0,
+          "dev": 0.1071,
+          "source": "source_document"
+        },
+        {
+          "value": "82.61%",
+          "num": 82.61,
+          "correct": 73.68,
+          "dev": 0.1081,
+          "source": "source_document"
+        },
+        {
+          "value": "52.38%",
+          "num": 52.38,
+          "correct": 64.0,
+          "dev": 0.1816,
+          "source": "evidence"
+        },
+        {
+          "value": "47.62%",
+          "num": 47.62,
+          "correct": 64.0,
+          "dev": 0.2559,
+          "source": "evidence"
+        },
+        {
+          "value": "55.07%",
+          "num": 55.07,
+          "correct": 64.0,
+          "dev": 0.1395,
+          "source": "evidence"
+        },
+        {
+          "value": "44.93%",
+          "num": 44.93,
+          "correct": 64.0,
+          "dev": 0.298,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$6,900 million"
+        },
+        {
+          "value": "$6,900 million"
+        },
+        {
+          "value": "$6,900 million"
+        },
+        {
+          "value": "$6,900 million"
+        },
+        {
+          "value": "$6,900 million"
+        }
+      ],
+      "n_refs": 21
+    },
+    "gate_3": {
+      "verified": [
+        {
+          "value": "$6,600 million",
+          "ref": 6600.0
+        },
+        {
+          "value": "$3,800 million",
+          "ref": 3800.0
+        },
+        {
+          "value": "$2,800 million",
+          "ref": 2800.0
+        },
+        {
+          "value": "$6,000 million",
+          "ref": 6000.0
+        },
+        {
+          "value": "$3,100 million",
+          "ref": 3100.0
+        },
+        {
+          "value": "$2,900 million",
+          "ref": 2900.0
+        },
+        {
+          "value": "93.55%",
+          "ref": 93.55
+        },
+        {
+          "value": "73.68%",
+          "ref": 73.68
+        },
+        {
+          "value": "73.68%",
+          "ref": 73.68
+        },
+        {
+          "value": "93.55%",
+          "ref": 93.55
+        }
+      ],
+      "refuted": [
+        {
+          "value": "44.93%",
+          "num": 44.93,
+          "correct": 64.0,
+          "dev": 0.298,
+          "source": "evidence"
+        },
+        {
+          "value": "47.62%",
+          "num": 47.62,
+          "correct": 64.0,
+          "dev": 0.2559,
+          "source": "evidence"
+        },
+        {
+          "value": "55.07%",
+          "num": 55.07,
+          "correct": 64.0,
+          "dev": 0.1395,
+          "source": "evidence"
+        },
+        {
+          "value": "52.38%",
+          "num": 52.38,
+          "correct": 64.0,
+          "dev": 0.1816,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [],
+      "n_refs": 21
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_037_CB0A4D6D",
+      "hid": "FB_037_CB0A4D6D_H3",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 3135.0,
+      "orig_num": 3800.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_037_CB0A4D6D",
+      "hid": "FB_037_CB0A4D6D_H2",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 2208.0,
+      "orig_num": 3100.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_037_CB0A4D6D",
+      "hid": "FB_037_CB0A4D6D_H1",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 2500.0,
+      "orig_num": 3100.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 2,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:16:43.511595+00:00"
+}

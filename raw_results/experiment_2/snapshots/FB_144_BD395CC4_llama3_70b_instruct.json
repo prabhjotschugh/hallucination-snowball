@@ -1,0 +1,73 @@
+{
+  "question_id": "FB_144_BD395CC4",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Verizon Communications Inc., FY 2021\n- PRIMARY METRIC: As of FY 2021, Verizon projected retiree benefit obligations for the year 2024 to be $2,611 million (USD millions) per the FY2021 10-K, Note 12 - Employee Benefits.\n- SUPPORTING DATA: \n  - For FY 2020, the projected retiree benefit obligations were $4,598 million (USD millions).\n  - For FY 2019, the projected retiree benefit obligations were $3,400 million (USD millions).\n- DATA SOURCES: \n  - FY2021 10-K, Note 12 - Employee Benefits\n  - FY2020 10-K, Note 12 - Employee Benefits\n  - FY2019 10-K, Note 12 - Employee Benefits\n\nPlease note that the analysis of trends and computation of financial ratios is beyond the scope of this data extraction report and should be conducted by downstream analysts.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_144_BD395CC4_H2",
+      "type": "dollar_amount",
+      "original_value": "$3,800 million",
+      "injected_value": "$2,611 million",
+      "original_numeric": "3800",
+      "injected_numeric": "2611",
+      "position_char": 160,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3129
+    },
+    {
+      "hallucination_id": "FB_144_BD395CC4_H1",
+      "type": "dollar_amount",
+      "original_value": "$3,600 million",
+      "injected_value": "$4,598 million",
+      "original_numeric": "3600",
+      "injected_numeric": "4598",
+      "position_char": 324,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.2772
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "As of FY 2021, Verizon projected retiree benefit obligations for the year 2024 to be $2,611 million",
+        "claim_value": "$2,611 million",
+        "reason": "The reported figure seems suspiciously precise compared to the surrounding data points, which are rounded to the nearest hundred million.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 3,
+    "overall_assessment": "The report appears to be generally plausible, but one figure stands out as potentially overly precise.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"As of FY 2021, Verizon projected retiree benefit obligations for the year 2024 to be $2,611 million\",\n      \"claim_value\" : \"$2,611 million\",\n      \"reason\"      : \"The reported figure seems suspiciously precise compared to the surrounding data points, which are rounded to the nearest hundred million.\",\n      \"confidence\"  : \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 3,\n  \"overall_assessment\"   : \"The report appears to be generally plausible, but one figure stands out as potentially overly precise.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_144_BD395CC4",
+      "hallucination_id": "FB_144_BD395CC4_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,800 million",
+      "injected_value": "$2,611 million",
+      "detected": true,
+      "reason": "The reported figure seems suspiciously precise compared to the surrounding data points, which are rounded to the nearest hundred million.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 3
+    },
+    {
+      "question_id": "FB_144_BD395CC4",
+      "hallucination_id": "FB_144_BD395CC4_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,600 million",
+      "injected_value": "$4,598 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 3
+    }
+  ],
+  "timestamp": "2026-03-27T09:46:23.468392Z"
+}

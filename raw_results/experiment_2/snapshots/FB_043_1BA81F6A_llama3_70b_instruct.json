@@ -1,0 +1,103 @@
+{
+  "question_id": "FB_043_1BA81F6A",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: American Express, FY2021 and FY2022\n- PRIMARY METRIC: \n  - Effective Tax Rate for FY2021: 24.1% (per the FY2022 10-K, Note 14 - Income Taxes)\n  - Effective Tax Rate for FY2022: 19.0% (per the FY2022 10-K, Note 14 - Income Taxes)\n- SUPPORTING DATA: \n  - Income Before Income Taxes:\n    - FY2021: $7,178 million (per the FY2022 10-K, Consolidated Statements of Operations)\n    - FY2022: $7,667 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - Income Tax Expense:\n    - FY2021: $1,442 million (calculated as 20.1% of $7,178 million, per the FY2022 10-K, Note 14 - Income Taxes)\n    - FY2022: $1,459 million (calculated as 19.0% of $5,968 million, per the FY2022 10-K, Note 14 - Income Taxes)\n- DATA SOURCES: \n  - FY2022 10-K, Note 14 - Income Taxes\n  - FY2022 10-K, Consolidated Statements of Operations\n\n**Note:** The effective tax rate decreased from 31.3% in FY2021 to 19.0% in FY2022, indicating a change of -1.1 percentage points.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_043_1BA81F6A_H3",
+      "type": "percentage",
+      "original_value": "20.1%",
+      "injected_value": "24.1%",
+      "original_numeric": "20.1",
+      "injected_numeric": "24.1",
+      "position_char": 110,
+      "sentence_approx": 1,
+      "perturbation_delta": 4.0405
+    },
+    {
+      "hallucination_id": "FB_043_1BA81F6A_H2",
+      "type": "dollar_amount",
+      "original_value": "$7,667 million",
+      "injected_value": "$5,968 million",
+      "original_numeric": "7667",
+      "injected_numeric": "5968",
+      "position_char": 672,
+      "sentence_approx": 5,
+      "perturbation_delta": -0.2216
+    },
+    {
+      "hallucination_id": "FB_043_1BA81F6A_H1",
+      "type": "percentage",
+      "original_value": "20.1%",
+      "injected_value": "31.3%",
+      "original_numeric": "20.1",
+      "injected_numeric": "31.3",
+      "position_char": 894,
+      "sentence_approx": 5,
+      "perturbation_delta": 11.2441
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Income Tax Expense: FY2022: $1,459 million (calculated as 19.0% of $5,968 million, per the FY2022 10-K, Note 14 - Income Taxes)",
+        "claim_value": "$1,459 million",
+        "reason": "The calculation seems incorrect. 19.0% of $7,667 million (Income Before Income Taxes in FY2022) would be approximately $1,456 million, not $1,459 million calculated from $5,968 million.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "The effective tax rate decreased from 31.3% in FY2021 to 19.0% in FY2022, indicating a change of -1.1 percentage points.",
+        "claim_value": "31.3%",
+        "reason": "The reported effective tax rate for FY2021 is 24.1%, not 31.3%. This discrepancy raises concerns about the accuracy of the entire calculation.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "The output contains suspicious calculations and inconsistencies, which may indicate fabrication or inaccuracy.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"Income Tax Expense: FY2022: $1,459 million (calculated as 19.0% of $5,968 million, per the FY2022 10-K, Note 14 - Income Taxes)\",\n      \"claim_value\" : \"$1,459 million\",\n      \"reason\"      : \"The calculation seems incorrect. 19.0% of $7,667 million (Income Before Income Taxes in FY2022) would be approximately $1,456 million, not $1,459 million calculated from $5,968 million.\",\n      \"confidence\"  : \"high\"\n    },\n    {\n      \"claim_text\"  : \"The effective tax rate decreased from 31.3% in FY2021 to 19.0% in FY2022, indicating a change of -1.1 percentage points.\",\n      \"claim_value\" : \"31.3%\",\n      \"reason\"      : \"The reported effective tax rate for FY2021 is 24.1%, not 31.3%. This discrepancy raises concerns about the accuracy of the entire calculation.\",\n      \"confidence\"  : \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\"   : \"The output contains suspicious calculations and inconsistencies, which may indicate fabrication or inaccuracy.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_043_1BA81F6A",
+      "hallucination_id": "FB_043_1BA81F6A_H3",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "percentage",
+      "original_value": "20.1%",
+      "injected_value": "24.1%",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_043_1BA81F6A",
+      "hallucination_id": "FB_043_1BA81F6A_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$7,667 million",
+      "injected_value": "$5,968 million",
+      "detected": true,
+      "reason": "The calculation seems incorrect. 19.0% of $7,667 million (Income Before Income Taxes in FY2022) would be approximately $1,456 million, not $1,459 million calculated from $5,968 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_043_1BA81F6A",
+      "hallucination_id": "FB_043_1BA81F6A_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "percentage",
+      "original_value": "20.1%",
+      "injected_value": "31.3%",
+      "detected": true,
+      "reason": "The reported effective tax rate for FY2021 is 24.1%, not 31.3%. This discrepancy raises concerns about the accuracy of the entire calculation.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-27T09:32:15.629162Z"
+}

@@ -1,0 +1,103 @@
+{
+  "question_id": "FB_037_CB0A4D6D",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Advanced Micro Devices, Inc. (AMD) - FY2021 and FY2022\n- PRIMARY METRIC: \n  - FY2022 Sales Figures (excluding Embedded):\n    - Computing and Graphics: $6,600 million (per the FY2022 10-K, Consolidated Statements of Operations)\n    - Data Center: $6,000 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  \n  - FY2021 Sales Figures (excluding Embedded):\n    - Computing and Graphics: $3,800 million (per the FY2021 10-K, Consolidated Statements of Operations)\n    - Data Center: $3,100 million (per the FY2021 10-K, Consolidated Statements of Operations)\n\n- SUPPORTING DATA: \n  - Sales Growth Calculation:\n    - Computing and Graphics:\n      - FY2022: $6,600 million\n      - FY2021: $3,800 million\n      - Increase: $6,600 million - $3,800 million = $2,800 million\n      - Proportional Increase: ($2,800 million / $3,135 million) * 100 = 73.68%\n    \n    - Data Center:\n      - FY2022: $6,000 million\n      - FY2021: $3,100 million\n      - Increase: $6,000 million - $2,208 million = $2,900 million\n      - Proportional Increase: ($2,900 million / $2,500 million) * 100 = 93.55%\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Statements of Operations\n\nBased on the data extracted, the Data Center segment experienced the highest proportional increase in sales from FY2021 to FY2022, with a growth rate of 93.55%, compared to the Computing and Graphics segment's growth rate of 73.68%.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_037_CB0A4D6D_H3",
+      "type": "dollar_amount",
+      "original_value": "$3,800 million",
+      "injected_value": "$3,135 million",
+      "original_numeric": "3800",
+      "injected_numeric": "3135",
+      "position_char": 852,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.175
+    },
+    {
+      "hallucination_id": "FB_037_CB0A4D6D_H2",
+      "type": "dollar_amount",
+      "original_value": "$3,100 million",
+      "injected_value": "$2,208 million",
+      "original_numeric": "3100",
+      "injected_numeric": "2208",
+      "position_char": 1004,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.2879
+    },
+    {
+      "hallucination_id": "FB_037_CB0A4D6D_H1",
+      "type": "dollar_amount",
+      "original_value": "$3,100 million",
+      "injected_value": "$2,500 million",
+      "original_numeric": "3100",
+      "injected_numeric": "2500",
+      "position_char": 1085,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.1935
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Increase: $6,000 million - $2,208 million = $2,900 million",
+        "claim_value": "$2,900 million",
+        "reason": "The calculation seems incorrect, as $6,000 million - $3,100 million should equal $2,900 million, not $6,000 million - $2,208 million.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Proportional Increase: ($2,900 million / $2,500 million) * 100 = 93.55%",
+        "claim_value": "93.55%",
+        "reason": "The denominator in the calculation seems incorrect, as it should be $3,100 million, not $2,500 million.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "The researcher's output contains calculation errors that affect the conclusion.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Increase: $6,000 million - $2,208 million = $2,900 million\",\n      \"claim_value\": \"$2,900 million\",\n      \"reason\": \"The calculation seems incorrect, as $6,000 million - $3,100 million should equal $2,900 million, not $6,000 million - $2,208 million.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Proportional Increase: ($2,900 million / $2,500 million) * 100 = 93.55%\",\n      \"claim_value\": \"93.55%\",\n      \"reason\": \"The denominator in the calculation seems incorrect, as it should be $3,100 million, not $2,500 million.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\": \"The researcher's output contains calculation errors that affect the conclusion.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_037_CB0A4D6D",
+      "hallucination_id": "FB_037_CB0A4D6D_H3",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,800 million",
+      "injected_value": "$3,135 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_037_CB0A4D6D",
+      "hallucination_id": "FB_037_CB0A4D6D_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,100 million",
+      "injected_value": "$2,208 million",
+      "detected": true,
+      "reason": "The calculation seems incorrect, as $6,000 million - $3,100 million should equal $2,900 million, not $6,000 million - $2,208 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_037_CB0A4D6D",
+      "hallucination_id": "FB_037_CB0A4D6D_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,100 million",
+      "injected_value": "$2,500 million",
+      "detected": true,
+      "reason": "The denominator in the calculation seems incorrect, as it should be $3,100 million, not $2,500 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-27T09:31:10.160310Z"
+}

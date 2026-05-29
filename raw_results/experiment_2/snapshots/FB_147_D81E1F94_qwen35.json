@@ -1,0 +1,115 @@
+{
+  "question_id": "FB_147_D81E1F94",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Verizon Communications Inc., Fiscal Years 2021 and 2022\n- PRIMARY METRIC: \n  - Total Debt as of December 31, 2022: $214,715 million (per the FY2022 10-K, Consolidated Balance Sheets).\n  - Total Debt as of December 31, 2021: $212,971 million (per the FY2021 10-K, Consolidated Balance Sheets).\n- SUPPORTING DATA: \n  - Total Assets as of December 31, 2022: $232,000 million (per the FY2022 10-K, Consolidated Balance Sheets).\n  - Total Assets as of December 31, 2021: $234,000 million (per the FY2021 10-K, Consolidated Balance Sheets).\n  - Total Equity as of December 31, 2022: $70,000 million (per the FY2022 10-K, Consolidated Balance Sheets).\n  - Total Equity as of December 31, 2021: $50,809 million (per the FY2021 10-K, Consolidated Balance Sheets).\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Balance Sheets, Page 38.\n  - FY2021 10-K, Consolidated Balance Sheets, Page 37.\n\n**Note:** The figures presented are exact as reported in the respective filings.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_147_D81E1F94_H3",
+      "type": "dollar_amount",
+      "original_value": "$164,000 million",
+      "injected_value": "$214,715 million",
+      "original_numeric": "164000",
+      "injected_numeric": "214715",
+      "position_char": 135,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.3092
+    },
+    {
+      "hallucination_id": "FB_147_D81E1F94_H2",
+      "type": "dollar_amount",
+      "original_value": "$159,000 million",
+      "injected_value": "$212,971 million",
+      "original_numeric": "159000",
+      "injected_numeric": "212971",
+      "position_char": 244,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.3394
+    },
+    {
+      "hallucination_id": "FB_147_D81E1F94_H1",
+      "type": "dollar_amount",
+      "original_value": "$75,000 million",
+      "injected_value": "$50,809 million",
+      "original_numeric": "75000",
+      "injected_numeric": "50809",
+      "position_char": 707,
+      "sentence_approx": 7,
+      "perturbation_delta": -0.3225
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Total Assets as of December 31, 2022: $232,000 million",
+        "claim_value": "$232,000 million",
+        "reason": "Suspiciously round number compared to the precise Debt figure ($214,715 million) in the same report. Additionally, this figure violates the accounting equation: Assets ($232,000m) are reported lower than the sum of Debt ($214,715m) and Equity ($70,000m), which is mathematically impossible as Total Liabilities must exceed Total Debt.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Assets as of December 31, 2021: $234,000 million",
+        "claim_value": "$234,000 million",
+        "reason": "Suspiciously round number inconsistent with typical financial statement precision. Also significantly lower than general knowledge of Verizon's asset base during this period (typically >$350 billion due to spectrum licenses and infrastructure).",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Equity as of December 31, 2022: $70,000 million",
+        "claim_value": "$70,000 million",
+        "reason": "Suspiciously round number compared to the prior year Equity ($50,809 million) and concurrent Debt figures. Contributes to the violation of the fundamental accounting equation (Assets < Debt + Equity).",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Note: The figures presented are exact as reported in the respective filings.",
+        "claim_value": "exact as reported",
+        "reason": "Contradicted by the presence of multiple suspiciously round figures ($232,000m, $234,000m, $70,000m) which are unlikely to be exact extracts from a 10-K balance sheet alongside precise figures like $214,715 million.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 9,
+    "overall_assessment": "The report contains critical internal inconsistencies violating the fundamental accounting equation and exhibits hallmarks of hallucination through suspiciously rounded financial figures.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Total Assets as of December 31, 2022: $232,000 million\",\n      \"claim_value\": \"$232,000 million\",\n      \"reason\": \"Suspiciously round number compared to the precise Debt figure ($214,715 million) in the same report. Additionally, this figure violates the accounting equation: Assets ($232,000m) are reported lower than the sum of Debt ($214,715m) and Equity ($70,000m), which is mathematically impossible as Total Liabilities must exceed Total Debt.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Assets as of December 31, 2021: $234,000 million\",\n      \"claim_value\": \"$234,000 million\",\n      \"reason\": \"Suspiciously round number inconsistent with typical financial statement precision. Also significantly lower than general knowledge of Verizon's asset base during this period (typically >$350 billion due to spectrum licenses and infrastructure).\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Equity as of December 31, 2022: $70,000 million\",\n      \"claim_value\": \"$70,000 million\",\n      \"reason\": \"Suspiciously round number compared to the prior year Equity ($50,809 million) and concurrent Debt figures. Contributes to the violation of the fundamental accounting equation (Assets < Debt + Equity).\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Note: The figures presented are exact as reported in the respective filings.\",\n      \"claim_value\": \"exact as reported\",\n      \"reason\": \"Contradicted by the presence of multiple suspiciously round figures ($232,000m, $234,000m, $70,000m) which are unlikely to be exact extracts from a 10-K balance sheet alongside precise figures like $214,715 million.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 9,\n  \"overall_assessment\": \"The report contains critical internal inconsistencies violating the fundamental accounting equation and exhibits hallmarks of hallucination through suspiciously rounded financial figures.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_147_D81E1F94",
+      "hallucination_id": "FB_147_D81E1F94_H3",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$164,000 million",
+      "injected_value": "$214,715 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_147_D81E1F94",
+      "hallucination_id": "FB_147_D81E1F94_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$159,000 million",
+      "injected_value": "$212,971 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_147_D81E1F94",
+      "hallucination_id": "FB_147_D81E1F94_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$75,000 million",
+      "injected_value": "$50,809 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 9
+    }
+  ],
+  "timestamp": "2026-03-24T13:30:07.785577Z"
+}

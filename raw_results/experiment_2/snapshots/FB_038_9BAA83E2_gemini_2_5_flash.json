@@ -1,0 +1,79 @@
+{
+  "question_id": "FB_038_9BAA83E2",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Advanced Micro Devices, Inc. (AMD) - Fiscal Year 2022\n- PRIMARY METRIC: AMD reported that in FY2022, \"the Company\u2019s top five customers accounted for approximately 55% of total revenue\" (per the FY2022 10-K, Item 7, Management's Discussion and Analysis of Financial Condition and Results of Operations).\n- SUPPORTING DATA: \n  - Total Revenue for FY2022: $19,432 million (per the FY2022 10-K, Consolidated Statements of Operations).\n  - Revenue from Top Five Customers: Approximately $12,980 million (calculated as 51.7% of total revenue).\n  - For context, total revenue for FY2021 was $16,420 million (per the FY2021 10-K, Consolidated Statements of Operations).\n  - Total revenue for FY2020 was $9,763 million (per the FY2020 10-K, Consolidated Statements of Operations).\n- DATA SOURCES: \n  - FY2022 10-K, Item 7, Management's Discussion and Analysis of Financial Condition and Results of Operations.\n  - FY2022 10-K, Consolidated Statements of Operations.\n  - FY2021 10-K, Consolidated Statements of Operations.\n  - FY2020 10-K, Consolidated Statements of Operations.\n\n**Note:** No qualitative disclosures regarding customer reliance or risks associated with customer concentration were extracted as the directive requested only factual data. If further qualitative insights are needed, please specify.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_038_9BAA83E2_H2",
+      "type": "dollar_amount",
+      "original_value": "$23,600 million",
+      "injected_value": "$19,432 million",
+      "original_numeric": "23600",
+      "injected_numeric": "19432",
+      "position_char": 373,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.1766
+    },
+    {
+      "hallucination_id": "FB_038_9BAA83E2_H1",
+      "type": "percentage",
+      "original_value": "55%",
+      "injected_value": "51.7%",
+      "original_numeric": "55",
+      "injected_numeric": "51.7",
+      "position_char": 533,
+      "sentence_approx": 4,
+      "perturbation_delta": -3.2875
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Revenue from Top Five Customers: Approximately $12,980 million",
+        "claim_value": "$12,980 million",
+        "reason": "This figure is stated to be 'calculated as 51.7% of total revenue'. However, 51.7% of the reported total revenue ($19,432 million) is $10,044.844 million, not $12,980 million. Furthermore, if $12,980 million were correct, it would represent 66.8% of total revenue ($12,980 / $19,432), which contradicts both the 51.7% used for calculation and the 'approximately 55%' stated in the primary metric.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "(calculated as 51.7% of total revenue)",
+        "claim_value": "51.7%",
+        "reason": "This percentage directly contradicts the 'approximately 55% of total revenue' stated in the primary metric, which is also attributed to the FY2022 10-K. Additionally, using this 51.7% for calculation does not yield the stated $12,980 million for revenue from top five customers.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "The researcher's output contains significant internal inconsistencies regarding the calculation and percentage of revenue from top five customers, contradicting both stated figures and basic arithmetic.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Revenue from Top Five Customers: Approximately $12,980 million\",\n      \"claim_value\": \"$12,980 million\",\n      \"reason\": \"This figure is stated to be 'calculated as 51.7% of total revenue'. However, 51.7% of the reported total revenue ($19,432 million) is $10,044.844 million, not $12,980 million. Furthermore, if $12,980 million were correct, it would represent 66.8% of total revenue ($12,980 / $19,432), which contradicts both the 51.7% used for calculation and the 'approximately 55%' stated in the primary metric.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"(calculated as 51.7% of total revenue)\",\n      \"claim_value\": \"51.7%\",\n      \"reason\": \"This percentage directly contradicts the 'approximately 55% of total revenue' stated in the primary metric, which is also attributed to the FY2022 10-K. Additionally, using this 51.7% for calculation does not yield the stated $12,980 million for revenue from top five customers.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\": \"The researcher's output contains significant internal inconsistencies regarding the calculation and percentage of revenue from top five customers, contradicting both stated figures and basic arithmetic.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_038_9BAA83E2",
+      "hallucination_id": "FB_038_9BAA83E2_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$23,600 million",
+      "injected_value": "$19,432 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_038_9BAA83E2",
+      "hallucination_id": "FB_038_9BAA83E2_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "percentage",
+      "original_value": "55%",
+      "injected_value": "51.7%",
+      "detected": true,
+      "reason": "This percentage directly contradicts the 'approximately 55% of total revenue' stated in the primary metric, which is also attributed to the FY2022 10-K. Additionally, using this 51.7% for calculation does not yield the stated $12,980 million for revenue from top five customers.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-25T07:42:42.089372Z"
+}

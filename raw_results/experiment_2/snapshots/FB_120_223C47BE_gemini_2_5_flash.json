@@ -1,0 +1,66 @@
+{
+  "question_id": "FB_120_223C47BE",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: PepsiCo, FY2021\n- PRIMARY METRIC: Capital Expenditures (CapEx) amounting to $4.2 billion, per the FY2021 10-K, Consolidated Statements of Cash Flows.\n- SUPPORTING DATA: \n  - FY2020 Capital Expenditures: $3.2 billion, per the FY2020 10-K, Consolidated Statements of Cash Flows.\n  - FY2019 Capital Expenditures: $2.5 billion, per the FY2019 10-K, Consolidated Statements of Cash Flows.\n- DATA SOURCES: \n  - PepsiCo FY2021 10-K, Consolidated Statements of Cash Flows, Page 60.\n  - PepsiCo FY2020 10-K, Consolidated Statements of Cash Flows, Page 60.\n  - PepsiCo FY2019 10-K, Consolidated Statements of Cash Flows, Page 60.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_120_223C47BE_H2",
+      "type": "dollar_amount",
+      "original_value": "$4.2 billion",
+      "injected_value": "$3.2 billion",
+      "original_numeric": "4.2",
+      "injected_numeric": "3.2",
+      "position_char": 223,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.2296
+    },
+    {
+      "hallucination_id": "FB_120_223C47BE_H1",
+      "type": "dollar_amount",
+      "original_value": "$3.4 billion",
+      "injected_value": "$2.5 billion",
+      "original_numeric": "3.4",
+      "injected_numeric": "2.5",
+      "position_char": 330,
+      "sentence_approx": 5,
+      "perturbation_delta": -0.2681
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "All reported financial figures and their year-over-year changes appear plausible for a company of PepsiCo's size and industry, and the claimed data sources and page numbers are legitimate.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\": \"All reported financial figures and their year-over-year changes appear plausible for a company of PepsiCo's size and industry, and the claimed data sources and page numbers are legitimate.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_120_223C47BE",
+      "hallucination_id": "FB_120_223C47BE_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$4.2 billion",
+      "injected_value": "$3.2 billion",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 0,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_120_223C47BE",
+      "hallucination_id": "FB_120_223C47BE_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$3.4 billion",
+      "injected_value": "$2.5 billion",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 0,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-25T08:01:24.883303Z"
+}

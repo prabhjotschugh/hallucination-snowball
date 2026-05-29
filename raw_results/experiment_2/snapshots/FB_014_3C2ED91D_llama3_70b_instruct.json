@@ -1,0 +1,79 @@
+{
+  "question_id": "FB_014_3C2ED91D",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Adobe Inc., FY2022\n- PRIMARY METRIC: Operating Margin: 38.5% (per the FY2022 10-K, Consolidated Statements of Operations)\n- SUPPORTING DATA: \n  - FY2022 Total Revenue: $17,610 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - FY2022 Operating Income: $4,381 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  \n  - FY2021 Total Revenue: $15,785 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2021 Operating Income: $4,883 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2020 Total Revenue: $12,873 million (per the FY2020 10-K, Consolidated Statements of Operations)\n  - FY2020 Operating Income: $3,679 million (per the FY2020 10-K, Consolidated Statements of Operations)\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Statements of Operations\n  - FY2020 10-K, Consolidated Statements of Operations\n\nNote: The operating margin has improved from 30.9% in FY2021 to 32.9% in FY2022, indicating a positive trend in operating margin over the recent fiscal years.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_014_3C2ED91D_H2",
+      "type": "percentage",
+      "original_value": "32.9%",
+      "injected_value": "38.5%",
+      "original_numeric": "32.9",
+      "injected_numeric": "38.5",
+      "position_char": 75,
+      "sentence_approx": 2,
+      "perturbation_delta": 5.6521
+    },
+    {
+      "hallucination_id": "FB_014_3C2ED91D_H1",
+      "type": "dollar_amount",
+      "original_value": "$5,786 million",
+      "injected_value": "$4,381 million",
+      "original_numeric": "5786",
+      "injected_numeric": "4381",
+      "position_char": 294,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.2428
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Operating Margin: 38.5% (per the FY2022 10-K, Consolidated Statements of Operations)",
+        "claim_value": "38.5%",
+        "reason": "The operating margin is suspiciously high compared to the calculated value from the provided revenue and operating income figures.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "The operating margin has improved from 30.9% in FY2021 to 32.9% in FY2022",
+        "claim_value": "30.9% and 32.9%",
+        "reason": "The calculated operating margin from the provided figures does not match the claimed values.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 7,
+    "overall_assessment": "The operating margin figures seem to be inconsistent with the provided revenue and operating income data.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"Operating Margin: 38.5% (per the FY2022 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\" : \"38.5%\",\n      \"reason\"      : \"The operating margin is suspiciously high compared to the calculated value from the provided revenue and operating income figures.\",\n      \"confidence\"  : \"high\"\n    },\n    {\n      \"claim_text\"  : \"The operating margin has improved from 30.9% in FY2021 to 32.9% in FY2022\",\n      \"claim_value\" : \"30.9% and 32.9%\",\n      \"reason\"      : \"The calculated operating margin from the provided figures does not match the claimed values.\",\n      \"confidence\"  : \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 7,\n  \"overall_assessment\"   : \"The operating margin figures seem to be inconsistent with the provided revenue and operating income data.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_014_3C2ED91D",
+      "hallucination_id": "FB_014_3C2ED91D_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "percentage",
+      "original_value": "32.9%",
+      "injected_value": "38.5%",
+      "detected": true,
+      "reason": "The operating margin is suspiciously high compared to the calculated value from the provided revenue and operating income figures.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_014_3C2ED91D",
+      "hallucination_id": "FB_014_3C2ED91D_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$5,786 million",
+      "injected_value": "$4,381 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 7
+    }
+  ],
+  "timestamp": "2026-03-27T09:28:08.075952Z"
+}

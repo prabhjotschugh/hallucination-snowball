@@ -1,0 +1,204 @@
+{
+  "question_id": "FB_112_2DC55A31",
+  "method": "end_check",
+  "final_output": "## Microsoft Corporation: Financial Report on Debt and Leverage (FY2022-FY2023)\n\n**Executive Summary**\n\nMicrosoft Corporation experienced a substantial increase in its total debt during Fiscal Year 2023, rising by $13,073 million, or 45.39%, to reach $41,918 million as of June 30, 2023. This growth significantly outpaced the increases in Total Assets (10.93%) and Total Equity (12.10%) over the same period. Consequently, both the Debt-to-Assets and Debt-to-Equity ratios have risen, indicating an increased reliance on debt financing.\n\n**Analysis**\n\nAs of June 30, 2023, Microsoft's Total Debt stood at $41,918 million, up from $28,845 million on June 30, 2022. This represents a year-over-year increase of $13,073 million, or 45.39%. Concurrently, Total Assets grew by $33,000 million (10.93%) from $302,000 million in FY2022 to $335,000 million in FY2023. Total Equity also increased by $15,000 million (12.10%) from $124,000 million to $139,000 million over the same period.\n\nThe Debt-to-Assets ratio increased from 0.096 in FY2022 ($28,845M / $302,000M) to 0.125 in FY2023 ($41,918M / $335,000M). Similarly, the Debt-to-Equity ratio rose from 0.233 in FY2022 ($28,845M / $124,000M) to 0.302 in FY2023 ($41,918M / $139,000M). These ratios consistently reflect the company's increased leverage.\n\n**Key Risks**\n\nThe primary risk identified is the significant increase in Total Debt, which grew at a rate disproportionately higher than the growth in Total Assets and Total Equity. This trend has led to rising leverage ratios, suggesting a greater reliance on borrowed capital. While not inherently negative, this shift warrants close monitoring to understand the drivers behind this increased debt and its implications for the company's financial flexibility and interest expense burden. Potential drivers for this increase could include strategic acquisitions, capital expenditures, or share repurchases.\n\n**Conclusion**\n\nMicrosoft Corporation's financial position for FY2023 shows a notable increase in total debt and leverage compared to FY2022. The 45.39% rise in Total Debt to $41,918 million, alongside the increase in Debt-to-Assets and Debt-to-Equity ratios, indicates a strategic shift towards higher debt utilization. This report highlights a significant change in Microsoft's capital structure. Further investigation into the specific uses of this increased debt is recommended to fully assess its impact on the company's long-term financial health, risk profile, and alignment with corporate strategy.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Microsoft Corporation, FY2022 and FY2023\n- PRIMARY METRIC: \n  - Total Debt as of June 30, 2023: $41,918 million (per the FY2023 10-K, Consolidated Balance Sheets)\n  - Total Debt as of June 30, 2022: $28,845 million (per the FY2022 10-K, Consolidated Balance Sheets)\n- SUPPORTING DATA: \n  - Total Assets as of June 30, 2023: $335,000 million (per the FY2023 10-K, Consolidated Balance Sheets)\n  - Total Assets as of June 30, 2022: $302,000 million (per the FY2022 10-K, Consolidated Balance Sheets)\n  - Total Equity as of June 30, 2023: $139,000 million (per the FY2023 10-K, Consolidated Balance Sheets)\n  - Total Equity as of June 30, 2022: $124,000 million (per the FY2022 10-K, Consolidated Balance Sheets)\n- DATA SOURCES: \n  - FY2023 10-K, Consolidated Balance Sheets, filed on July 27, 2023\n  - FY2022 10-K, Consolidated Balance Sheets, filed on July 27, 2022\n\nNote: The figures reported are exact as per the respective SEC filings. Further analysis or interpretation of trends and ratios is not included as per the directive.",
+    "2": "Here's an analysis of Microsoft Corporation's debt and related metrics for FY2022 and FY2023:\n\n**1. Year-over-Year Changes (FY2023 vs. FY2022)**\n\n*   **Total Debt:**\n    *   Absolute Change = Total Debt (FY2023) - Total Debt (FY2022)\n        *   $41,918 million - $28,845 million = **$13,073 million**\n    *   Percentage Change = (Absolute Change / Total Debt (FY2022)) * 100\n        *   ($13,073 million / $28,845 million) * 100 = **45.39%**\n\n*   **Total Assets:**\n    *   Absolute Change = Total Assets (FY2023) - Total Assets (FY2022)\n        *   $335,000 million - $302,000 million = **$33,000 million**\n    *   Percentage Change = (Absolute Change / Total Assets (FY2022)) * 100\n        *   ($33,000 million / $302,000 million) * 100 = **10.93%**\n\n*   **Total Equity:**\n    *   Absolute Change = Total Equity (FY2023) - Total Equity (FY2022)\n        *   $139,000 million - $124,000 million = **$15,000 million**\n    *   Percentage Change = (Absolute Change / Total Equity (FY2022)) * 100\n        *   ($15,000 million / $124,000 million) * 100 = **12.10%**\n\n**2. Relevant Ratios**\n\n*   **Debt-to-Assets Ratio:**\n    *   Formula = Total Debt / Total Assets\n    *   FY2023: $41,918 million / $335,000 million = **0.125**\n    *   FY2022: $28,845 million / $302,000 million = **0.096**\n\n*   **Debt-to-Equity Ratio:**\n    *   Formula = Total Debt / Total Equity\n    *   FY2023: $41,918 million / $139,000 million = **0.302**\n    *   FY2022: $28,845 million / $124,000 million = **0.233**\n\n**3. Anomalies**\n\n*   **Significant Increase in Total Debt:** The 45.39% year-over-year increase in Total Debt is notably higher than the growth in Total Assets (10.93%) and Total Equity (12.10%). This disproportionate increase in debt warrants further investigation into its drivers (e.g., financing acquisitions, capital expenditures, share repurchases).\n*   **Rising Leverage Ratios:** Both the Debt-to-Assets ratio and Debt-to-Equity ratio have increased from FY2022 to FY2023, indicating a higher reliance on debt financing relative to assets and equity. This aligns with the significant debt increase.",
+    "3": "## Microsoft Corporation: Financial Report on Debt and Leverage (FY2022-FY2023)\n\n**Executive Summary**\n\nMicrosoft Corporation experienced a substantial increase in its total debt during Fiscal Year 2023, rising by $13,073 million, or 45.39%, to reach $41,918 million as of June 30, 2023. This growth significantly outpaced the increases in Total Assets (10.93%) and Total Equity (12.10%) over the same period. Consequently, both the Debt-to-Assets and Debt-to-Equity ratios have risen, indicating an increased reliance on debt financing.\n\n**Analysis**\n\nAs of June 30, 2023, Microsoft's Total Debt stood at $41,918 million, up from $28,845 million on June 30, 2022. This represents a year-over-year increase of $13,073 million, or 45.39%. Concurrently, Total Assets grew by $33,000 million (10.93%) from $302,000 million in FY2022 to $335,000 million in FY2023. Total Equity also increased by $15,000 million (12.10%) from $124,000 million to $139,000 million over the same period.\n\nThe Debt-to-Assets ratio increased from 0.096 in FY2022 to 0.125 in FY2023. Similarly, the Debt-to-Equity ratio rose from 0.233 in FY2022 to 0.302 in FY2023. These ratios reflect the company's increased leverage.\n\n**Key Risks**\n\nThe primary risk identified is the significant increase in Total Debt, which grew at a rate disproportionately higher than the growth in Total Assets and Total Equity. This trend has led to rising leverage ratios, suggesting a greater reliance on borrowed capital. While not inherently negative, this shift warrants close monitoring to understand the drivers behind this increased debt and its implications for the company's financial flexibility and interest expense burden.\n\n**Conclusion**\n\nMicrosoft Corporation's financial position for FY2023 shows a notable increase in total debt and leverage compared to FY2022. The 45.39% rise in Total Debt to $41,918 million, alongside the increase in Debt-to-Assets and Debt-to-Equity ratios, indicates a strategic shift towards higher debt utilization. Further investigation into the specific uses of this increased debt is recommended to fully assess its impact on the company's long-term financial health and risk profile.",
+    "4": "## Microsoft Corporation: Financial Report on Debt and Leverage (FY2022-FY2023)\n\n**Executive Summary**\n\nMicrosoft Corporation experienced a substantial increase in its total debt during Fiscal Year 2023, rising by $13,073 million, or 45.39%, to reach $41,918 million as of June 30, 2023. This growth significantly outpaced the increases in Total Assets (10.93%) and Total Equity (12.10%) over the same period. Consequently, both the Debt-to-Assets and Debt-to-Equity ratios have risen, indicating an increased reliance on debt financing.\n\n**Analysis**\n\nAs of June 30, 2023, Microsoft's Total Debt stood at $41,918 million, up from $28,845 million on June 30, 2022. This represents a year-over-year increase of $13,073 million, or 45.39%. Concurrently, Total Assets grew by $33,000 million (10.93%) from $302,000 million in FY2022 to $335,000 million in FY2023. Total Equity also increased by $15,000 million (12.10%) from $124,000 million to $139,000 million over the same period.\n\nThe Debt-to-Assets ratio increased from 0.096 in FY2022 ($28,845M / $302,000M) to 0.125 in FY2023 ($41,918M / $335,000M). Similarly, the Debt-to-Equity ratio rose from 0.233 in FY2022 ($28,845M / $124,000M) to 0.302 in FY2023 ($41,918M / $139,000M). These ratios consistently reflect the company's increased leverage.\n\n**Key Risks**\n\nThe primary risk identified is the significant increase in Total Debt, which grew at a rate disproportionately higher than the growth in Total Assets and Total Equity. This trend has led to rising leverage ratios, suggesting a greater reliance on borrowed capital. While not inherently negative, this shift warrants close monitoring to understand the drivers behind this increased debt and its implications for the company's financial flexibility and interest expense burden. Potential drivers for this increase could include strategic acquisitions, capital expenditures, or share repurchases.\n\n**Conclusion**\n\nMicrosoft Corporation's financial position for FY2023 shows a notable increase in total debt and leverage compared to FY2022. The 45.39% rise in Total Debt to $41,918 million, alongside the increase in Debt-to-Assets and Debt-to-Equity ratios, indicates a strategic shift towards higher debt utilization. This report highlights a significant change in Microsoft's capital structure. Further investigation into the specific uses of this increased debt is recommended to fully assess its impact on the company's long-term financial health, risk profile, and alignment with corporate strategy."
+  },
+  "gates": {
+    "end_gate": {
+      "verified": [
+        {
+          "value": "$302,000 million",
+          "ref": 302000.0
+        },
+        {
+          "value": "$335,000 million",
+          "ref": 335000.0
+        },
+        {
+          "value": "$124,000 million",
+          "ref": 124000.0
+        },
+        {
+          "value": "$139,000 million",
+          "ref": 139000.0
+        },
+        {
+          "value": "$302,000M",
+          "ref": 302000.0
+        },
+        {
+          "value": "$335,000M",
+          "ref": 335000.0
+        },
+        {
+          "value": "$124,000M",
+          "ref": 124000.0
+        },
+        {
+          "value": "$139,000M",
+          "ref": 139000.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$13,073 million",
+          "num": 13073.0,
+          "correct": 7464.0,
+          "dev": 0.4291,
+          "source": "evidence"
+        },
+        {
+          "value": "$41,918 million",
+          "num": 41918.0,
+          "correct": 48000.0,
+          "dev": 0.1267,
+          "source": "source_document"
+        },
+        {
+          "value": "$41,918 million",
+          "num": 41918.0,
+          "correct": 48000.0,
+          "dev": 0.1267,
+          "source": "source_document"
+        },
+        {
+          "value": "$28,845 million",
+          "num": 28845.0,
+          "correct": 24000.0,
+          "dev": 0.168,
+          "source": "evidence"
+        },
+        {
+          "value": "$13,073 million",
+          "num": 13073.0,
+          "correct": 7464.0,
+          "dev": 0.4291,
+          "source": "evidence"
+        },
+        {
+          "value": "$33,000 million",
+          "num": 33000.0,
+          "correct": 24000.0,
+          "dev": 0.2727,
+          "source": "evidence"
+        },
+        {
+          "value": "$15,000 million",
+          "num": 15000.0,
+          "correct": 24000.0,
+          "dev": 0.375,
+          "source": "evidence"
+        },
+        {
+          "value": "$28,845M",
+          "num": 28845.0,
+          "correct": 24000.0,
+          "dev": 0.168,
+          "source": "evidence"
+        },
+        {
+          "value": "$41,918M",
+          "num": 41918.0,
+          "correct": 48000.0,
+          "dev": 0.1267,
+          "source": "source_document"
+        },
+        {
+          "value": "$28,845M",
+          "num": 28845.0,
+          "correct": 24000.0,
+          "dev": 0.168,
+          "source": "evidence"
+        },
+        {
+          "value": "$41,918M",
+          "num": 41918.0,
+          "correct": 48000.0,
+          "dev": 0.1267,
+          "source": "source_document"
+        },
+        {
+          "value": "$41,918 million",
+          "num": 41918.0,
+          "correct": 48000.0,
+          "dev": 0.1267,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "45.39%"
+        },
+        {
+          "value": "10.93%"
+        },
+        {
+          "value": "12.10%"
+        },
+        {
+          "value": "45.39%"
+        },
+        {
+          "value": "10.93%"
+        },
+        {
+          "value": "12.10%"
+        },
+        {
+          "value": "45.39%"
+        }
+      ],
+      "n_refs": 16
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_112_2DC55A31",
+      "hid": "FB_112_2DC55A31_H2",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 41918.0,
+      "orig_num": 51000.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": true,
+      "any_det": true,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_112_2DC55A31",
+      "hid": "FB_112_2DC55A31_H1",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 28845.0,
+      "orig_num": 48000.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": true,
+      "any_det": true,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:44:56.753359+00:00"
+}

@@ -1,0 +1,127 @@
+{
+  "question_id": "FB_105_61DCE693",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: MGM Resorts International, Fiscal Years 2018 to 2020\n- PRIMARY METRIC: \n  - FY2018 Capital Expenditures: $1,074 million (per the FY2020 10-K, Consolidated Statements of Cash Flows)\n  - FY2019 Capital Expenditures: $1,176 million (per the FY2020 10-K, Consolidated Statements of Cash Flows)\n  - FY2020 Capital Expenditures: $1,025 million (per the FY2020 10-K, Consolidated Statements of Cash Flows)\n  \n  - FY2018 Total Revenue: $8,743 million (per the FY2020 10-K, Consolidated Statements of Operations)\n  - FY2019 Total Revenue: $17,790 million (per the FY2020 10-K, Consolidated Statements of Operations)\n  - FY2020 Total Revenue: $5,184 million (per the FY2020 10-K, Consolidated Statements of Operations)\n\n- SUPPORTING DATA:\n  - FY2018 Capex as a % of Revenue: (1,074 / 12,865) * 100 = 8.34%\n  - FY2019 Capex as a % of Revenue: (1,176 / 13,165) * 100 = 8.93%\n  - FY2020 Capex as a % of Revenue: (1,025 / 5,184) * 100 = 12.12%\n\n  - Three-Year Average of Capex as a % of Revenue: \n    - (8.34% + 8.93% + 19.74%) / 3 = 12.34%\n    - Rounded to one decimal place: 12.3%\n\n- DATA SOURCES: \n  - FY2020 10-K, Consolidated Statements of Cash Flows\n  - FY2020 10-K, Consolidated Statements of Operations\n\nPlease note that the above figures are exact as reported in the specified filings, and the calculations for capex as a percentage of revenue have been performed based on these figures.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_105_61DCE693_H3",
+      "type": "dollar_amount",
+      "original_value": "$12,865 million",
+      "injected_value": "$8,743 million",
+      "original_numeric": "12865",
+      "injected_numeric": "8743",
+      "position_char": 448,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.3204
+    },
+    {
+      "hallucination_id": "FB_105_61DCE693_H2",
+      "type": "dollar_amount",
+      "original_value": "$13,165 million",
+      "injected_value": "$17,790 million",
+      "original_numeric": "13165",
+      "injected_numeric": "17790",
+      "position_char": 551,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.3513
+    },
+    {
+      "hallucination_id": "FB_105_61DCE693_H1",
+      "type": "percentage",
+      "original_value": "19.74%",
+      "injected_value": "12.12%",
+      "original_numeric": "19.74",
+      "injected_numeric": "12.12",
+      "position_char": 944,
+      "sentence_approx": 3,
+      "perturbation_delta": -7.6235
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "FY2018 Total Revenue: $8,743 million (per the FY2020 10-K, Consolidated Statements of Operations)",
+        "claim_value": "$8,743 million",
+        "reason": "The FY2018 revenue figure seems unusually low for MGM Resorts, which typically reports revenues in the billions. The sudden drop from FY2019 ($17,790 million) to FY2020 ($5,184 million) is also suspicious without context like the COVID-19 pandemic impact, which should be noted if relevant.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "FY2019 Total Revenue: $17,790 million (per the FY2020 10-K, Consolidated Statements of Operations)",
+        "claim_value": "$17,790 million",
+        "reason": "This figure is more than double the FY2018 revenue ($8,743 million), which is an unusually large year-over-year increase for a company like MGM Resorts without a major acquisition or expansion.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "FY2020 Total Revenue: $5,184 million (per the FY2020 10-K, Consolidated Statements of Operations)",
+        "claim_value": "$5,184 million",
+        "reason": "This revenue figure is less than a third of FY2019's revenue, which is an extreme drop. While 2020 was impacted by COVID-19, such a drastic decrease should be contextualized.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "FY2018 Capex as a % of Revenue: (1,074 / 12,865) * 100 = 8.34%",
+        "claim_value": "8.34%",
+        "reason": "The denominator used here ($12,865 million) does not match the previously stated FY2018 revenue ($8,743 million), indicating an inconsistency.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2019 Capex as a % of Revenue: (1,176 / 13,165) * 100 = 8.93%",
+        "claim_value": "8.93%",
+        "reason": "The denominator used here ($13,165 million) does not match the previously stated FY2019 revenue ($17,790 million), indicating an inconsistency.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Three-Year Average of Capex as a % of Revenue: (8.34% + 8.93% + 19.74%) / 3 = 12.34%",
+        "claim_value": "12.34%",
+        "reason": "The third term (19.74%) does not appear anywhere else in the output, suggesting a calculation error or fabrication.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 9,
+    "overall_assessment": "Multiple inconsistencies and suspicious figures were found, particularly in revenue data and capex percentage calculations.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"FY2018 Total Revenue: $8,743 million (per the FY2020 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$8,743 million\",\n      \"reason\": \"The FY2018 revenue figure seems unusually low for MGM Resorts, which typically reports revenues in the billions. The sudden drop from FY2019 ($17,790 million) to FY2020 ($5,184 million) is also suspicious without context like the COVID-19 pandemic impact, which should be noted if relevant.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"FY2019 Total Revenue: $17,790 million (per the FY2020 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$17,790 million\",\n      \"reason\": \"This figure is more than double the FY2018 revenue ($8,743 million), which is an unusually large year-over-year increase for a company like MGM Resorts without a major acquisition or expansion.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"FY2020 Total Revenue: $5,184 million (per the FY2020 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$5,184 million\",\n      \"reason\": \"This revenue figure is less than a third of FY2019's revenue, which is an extreme drop. While 2020 was impacted by COVID-19, such a drastic decrease should be contextualized.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"FY2018 Capex as a % of Revenue: (1,074 / 12,865) * 100 = 8.34%\",\n      \"claim_value\": \"8.34%\",\n      \"reason\": \"The denominator used here ($12,865 million) does not match the previously stated FY2018 revenue ($8,743 million), indicating an inconsistency.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2019 Capex as a % of Revenue: (1,176 / 13,165) * 100 = 8.93%\",\n      \"claim_value\": \"8.93%\",\n      \"reason\": \"The denominator used here ($13,165 million) does not match the previously stated FY2019 revenue ($17,790 million), indicating an inconsistency.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Three-Year Average of Capex as a % of Revenue: (8.34% + 8.93% + 19.74%) / 3 = 12.34%\",\n      \"claim_value\": \"12.34%\",\n      \"reason\": \"The third term (19.74%) does not appear anywhere else in the output, suggesting a calculation error or fabrication.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 9,\n  \"overall_assessment\": \"Multiple inconsistencies and suspicious figures were found, particularly in revenue data and capex percentage calculations.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_105_61DCE693",
+      "hallucination_id": "FB_105_61DCE693_H3",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$12,865 million",
+      "injected_value": "$8,743 million",
+      "detected": true,
+      "reason": "The FY2018 revenue figure seems unusually low for MGM Resorts, which typically reports revenues in the billions. The sudden drop from FY2019 ($17,790 million) to FY2020 ($5,184 million) is also suspicious without context like the COVID-19 pandemic impact, which should be noted if relevant.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_105_61DCE693",
+      "hallucination_id": "FB_105_61DCE693_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$13,165 million",
+      "injected_value": "$17,790 million",
+      "detected": true,
+      "reason": "This figure is more than double the FY2018 revenue ($8,743 million), which is an unusually large year-over-year increase for a company like MGM Resorts without a major acquisition or expansion.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_105_61DCE693",
+      "hallucination_id": "FB_105_61DCE693_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "percentage",
+      "original_value": "19.74%",
+      "injected_value": "12.12%",
+      "detected": true,
+      "reason": "The third term (19.74%) does not appear anywhere else in the output, suggesting a calculation error or fabrication.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 9
+    }
+  ],
+  "timestamp": "2026-03-24T09:56:38.844755Z"
+}

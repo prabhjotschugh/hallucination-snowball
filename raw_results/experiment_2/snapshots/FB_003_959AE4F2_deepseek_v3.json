@@ -1,0 +1,103 @@
+{
+  "question_id": "FB_003_959AE4F2",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: 3M Company, FY2022\n- PRIMARY METRIC: \n  - Capital Expenditures: $1,633 million (per the FY2022 10-K, Consolidated Statements of Cash Flows)\n  - Total Assets: $59,768 million (per the FY2022 10-K, Consolidated Balance Sheets)\n\n- SUPPORTING DATA: \n  - Capital Expenditures for FY2021: $1,858 million (per the FY2021 10-K, Consolidated Statements of Cash Flows)\n  - Total Assets for FY2021: $46,255 million (per the FY2021 10-K, Consolidated Balance Sheets)\n  - Capital Expenditures for FY2020: $1,451 million (per the FY2020 10-K, Consolidated Statements of Cash Flows)\n  - Total Assets for FY2020: $44,407 million (per the FY2020 10-K, Consolidated Balance Sheets)\n  - Total Revenue for FY2022: $19,188 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - Total Revenue for FY2021: $29,761 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - Total Revenue for FY2020: $32,182 million (per the FY2020 10-K, Consolidated Statements of Operations)\n\n- DATA SOURCES: \n  - 3M Company FY2022 10-K filing, Consolidated Statements of Cash Flows, Consolidated Balance Sheets, and Consolidated Statements of Operations.\n  - 3M Company FY2021 10-K filing, Consolidated Statements of Cash Flows, Consolidated Balance Sheets, and Consolidated Statements of Operations.\n  - 3M Company FY2020 10-K filing, Consolidated Statements of Cash Flows, Consolidated Balance Sheets, and Consolidated Statements of Operations. \n\nNote: The analysis of capital intensity, including the computation of financial ratios such as the capital expenditure to sales ratio, is not included as per the directive to present raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_003_959AE4F2_H3",
+      "type": "dollar_amount",
+      "original_value": "$45,517 million",
+      "injected_value": "$59,768 million",
+      "original_numeric": "45517",
+      "injected_numeric": "59768",
+      "position_char": 178,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.3131
+    },
+    {
+      "hallucination_id": "FB_003_959AE4F2_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,451 million",
+      "injected_value": "$1,858 million",
+      "original_numeric": "1451",
+      "injected_numeric": "1858",
+      "position_char": 303,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.2805
+    },
+    {
+      "hallucination_id": "FB_003_959AE4F2_H1",
+      "type": "dollar_amount",
+      "original_value": "$35,436 million",
+      "injected_value": "$29,761 million",
+      "original_numeric": "35436",
+      "injected_numeric": "29761",
+      "position_char": 821,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.1602
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Total Revenue for FY2021: $29,761 million (per the FY2021 10-K, Consolidated Statements of Operations)",
+        "claim_value": "$29,761 million",
+        "reason": "This figure is inconsistent with the Total Revenue for FY2022 ($19,188 million) and FY2020 ($32,182 million). A drop from $32,182 million to $29,761 million to $19,188 million over three years seems unusually steep for a company like 3M, which typically has stable revenues.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Revenue for FY2020: $32,182 million (per the FY2020 10-K, Consolidated Statements of Operations)",
+        "claim_value": "$32,182 million",
+        "reason": "This figure seems unusually high compared to the Total Revenue for FY2022 ($19,188 million). A decline from $32,182 million to $19,188 million over two years seems implausibly large for 3M, a stable industrial company.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 7,
+    "overall_assessment": "Several revenue figures appear suspicious due to implausibly large year-over-year changes, warranting verification against official filings.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Total Revenue for FY2021: $29,761 million (per the FY2021 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$29,761 million\",\n      \"reason\": \"This figure is inconsistent with the Total Revenue for FY2022 ($19,188 million) and FY2020 ($32,182 million). A drop from $32,182 million to $29,761 million to $19,188 million over three years seems unusually steep for a company like 3M, which typically has stable revenues.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Revenue for FY2020: $32,182 million (per the FY2020 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$32,182 million\",\n      \"reason\": \"This figure seems unusually high compared to the Total Revenue for FY2022 ($19,188 million). A decline from $32,182 million to $19,188 million over two years seems implausibly large for 3M, a stable industrial company.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 7,\n  \"overall_assessment\": \"Several revenue figures appear suspicious due to implausibly large year-over-year changes, warranting verification against official filings.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_003_959AE4F2",
+      "hallucination_id": "FB_003_959AE4F2_H3",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$45,517 million",
+      "injected_value": "$59,768 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_003_959AE4F2",
+      "hallucination_id": "FB_003_959AE4F2_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,451 million",
+      "injected_value": "$1,858 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_003_959AE4F2",
+      "hallucination_id": "FB_003_959AE4F2_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$35,436 million",
+      "injected_value": "$29,761 million",
+      "detected": true,
+      "reason": "This figure is inconsistent with the Total Revenue for FY2022 ($19,188 million) and FY2020 ($32,182 million). A drop from $32,182 million to $29,761 million to $19,188 million over three years seems unusually steep for a company like 3M, which typically has stable revenues.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 7
+    }
+  ],
+  "timestamp": "2026-03-24T09:39:28.649549Z"
+}

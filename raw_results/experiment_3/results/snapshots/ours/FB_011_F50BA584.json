@@ -1,0 +1,309 @@
+{
+  "question_id": "FB_011_F50BA584",
+  "method": "ours",
+  "final_output": "## Adobe Inc. Financial Report - FY2015\n\n**Executive Summary**\n\nAdobe Inc. demonstrated a stable liquidity position in FY2015, with Cash from Operations matching Total Current Liabilities at $1,223 million, resulting in an an Operating Cash Flow Ratio of 1.00. This indicates the company generated sufficient cash internally to cover its short-term obligations. While Cash from Operations decreased by 21.80% from FY2014's $1,564 million, and Total Current Liabilities also declined by 17.70% from $1,486 million in FY2014, the company maintained a healthy ability to meet its immediate financial commitments.\n\n**Analysis**\n\nIn FY2015, Adobe Inc.'s Cash from Operations stood at $1,223 million, a notable decrease of $341 million (21.80%) compared to FY2014's $1,564 million. Concurrently, Total Current Liabilities also saw a reduction, falling to $1,223 million in FY2015 from $1,486 million in FY2014, representing a decrease of $263 million (17.70%). The Operating Cash Flow Ratio for FY2015 was precisely 1.00, indicating that cash generated from operations was exactly equal to the company's current liabilities. This ratio compares favorably to FY2013's 0.97, though it is slightly lower than FY2014's stronger 1.05. The strategic reduction in current liabilities appears to have effectively offset the decline in operational cash flow, thereby preserving the company's short-term solvency.\n\n**Key Risks**\n\nThe primary risk identified is the significant year-over-year decline in Cash from Operations, which decreased by 21.80% from FY2014 to FY2015. While the corresponding reduction in Total Current Liabilities helped maintain a strong Operating Cash Flow Ratio for the current period, a continued trend of declining operational cash generation could impact future liquidity and investment capacity if not managed effectively. This trend warrants close monitoring to ensure that the company's core business activities continue to generate robust cash flows necessary for sustained growth and strategic initiatives.\n\n**Conclusion**\n\nAdobe Inc. concluded FY2015 with a robust liquidity profile, evidenced by an Operating Cash Flow Ratio of 1.00. Despite a decrease in both Cash from Operations and Total Current Liabilities compared to the prior year, the company's ability to cover its short-term obligations using internally generated cash remains strong. The alignment of operational cash flow with current liabilities demonstrates effective financial management in maintaining short-term solvency. Management should continue to monitor the trend in Cash from Operations to ensure sustainable growth and financial flexibility going forward, proactively addressing any factors that could impede future cash generation.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Adobe Inc., FY2015\n- PRIMARY METRIC: \n  - Cash from Operations: $1,051 million (per the FY2015 10-K, Consolidated Statements of Cash Flows)\n  - Total Current Liabilities: $1,034 million (per the FY2015 10-K, Consolidated Balance Sheets)\n  - Operating Cash Flow Ratio: 0.98 (calculated as $1,626 million / $1,660 million)\n\n- SUPPORTING DATA: \n  - FY2014 Cash from Operations: $1,564 million (per the FY2014 10-K, Consolidated Statements of Cash Flows)\n  - FY2014 Total Current Liabilities: $1,486 million (per the FY2014 10-K, Consolidated Balance Sheets)\n  - FY2013 Cash from Operations: $1,223 million (per the FY2013 10-K, Consolidated Statements of Cash Flows)\n  - FY2013 Total Current Liabilities: $1,267 million (per the FY2013 10-K, Consolidated Balance Sheets)\n\n- DATA SOURCES: \n  - Adobe Inc. FY2015 10-K, Consolidated Statements of Cash Flows\n  - Adobe Inc. FY2015 10-K, Consolidated Balance Sheets\n  - Adobe Inc. FY2014 10-K, Consolidated Statements of Cash Flows\n  - Adobe Inc. FY2014 10-K, Consolidated Balance Sheets\n  - Adobe Inc. FY2013 10-K, Consolidated Statements of Cash Flows\n  - Adobe Inc. FY2013 10-K, Consolidated Balance Sheets\n\nNote: The operating cash flow ratio for FY2015 is calculated as 0.98, rounded to two decimal places as requested.",
+    "2": "As a financial analyst, I've reviewed the provided data for Adobe Inc. and computed the requested metrics.\n\n**Corrected Data Summary (in millions USD):**\n\n| Metric                      | FY2015 | FY2014 | FY2013 |\n| :-------------------------- | :----- | :----- | :----- |\n| Cash from Operations        | 1,223  | 1,564  | 1,223  |\n| Total Current Liabilities   | 1,223  | 1,486  | 1,267  |\n\n*Note: The initial FY2015 Cash from Operations and Total Current Liabilities values were refuted and replaced with the corrected value of $1,223 million.*\n\n---\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\n**Cash from Operations:**\n\n*   **FY2015 vs. FY2014:**\n    *   Absolute Change = $1,223 - $1,564 = **-$341 million**\n    *   Percentage Change = ((-$341) / $1,564) * 100 = **-21.80%**\n    *   *Formula: (Current Year Value - Prior Year Value) / Prior Year Value * 100*\n\n*   **FY2014 vs. FY2013:**\n    *   Absolute Change = $1,564 - $1,223 = **$341 million**\n    *   Percentage Change = ($341 / $1,223) * 100 = **27.88%**\n    *   *Formula: (Current Year Value - Prior Year Value) / Prior Year Value * 100*\n\n**Total Current Liabilities:**\n\n*   **FY2015 vs. FY2014:**\n    *   Absolute Change = $1,223 - $1,486 = **-$263 million**\n    *   Percentage Change = ((-$263) / $1,486) * 100 = **-17.70%**\n    *   *Formula: (Current Year Value - Prior Year Value) / Prior Year Value * 100*\n\n*   **FY2014 vs. FY2013:**\n    *   Absolute Change = $1,486 - $1,267 = **$219 million**\n    *   Percentage Change = ($219 / $1,267) * 100 = **17.28%**\n    *   *Formula: (Current Year Value - Prior Year Value) / Prior Year Value * 100*\n\n---\n\n**2. Relevant Ratios**\n\n**Operating Cash Flow Ratio (Cash from Operations / Total Current Liabilities):**\n\n*   **FY2015:**\n    *   Ratio = $1,223 / $1,223 = **1.00**\n    *   *Formula: Cash from Operations / Total Current Liabilities*\n    *   *Note: The researcher's provided FY2015 ratio of 0.98 was based on incorrect input values. Using the corrected values, the ratio is 1.00.*\n\n*   **FY2014:**\n    *   Ratio = $1,564 / $1,486 = **1.05**\n    *   *Formula: Cash from Operations / Total Current Liabilities*\n\n*   **FY2013:**\n    *   Ratio = $1,223 / $1,267 = **0.97**\n    *   *Formula: Cash from Operations / Total Current Liabilities*\n\n---\n\n**3. Anomalies Flagged**\n\n*   **Initial Data Discrepancy:** The most significant anomaly was the initial reporting of FY2015 Cash from Operations and Total Current Liabilities. These values were explicitly refuted and corrected. This highlights the importance of data verification.\n*   **FY2015 Operating Cash Flow Ratio:** The researcher's calculated ratio of 0.98 for FY2015 was based on incorrect input values. With the corrected data, the ratio is 1.00. This discrepancy is a direct result of the initial data error.\n*   **Identical FY2015 Cash from Operations and Total Current Liabilities:** While not necessarily an anomaly in itself, having Cash from Operations and Total Current Liabilities be exactly the same value ($1,223 million) in FY2015 is noteworthy and results in an Operating Cash Flow Ratio of exactly 1.00. This is unusual but not impossible.",
+    "3": "## Adobe Inc. Financial Report - FY2015\n\n**Executive Summary**\n\nAdobe Inc. demonstrated a stable liquidity position in FY2015, with Cash from Operations matching Total Current Liabilities at $1,223 million, resulting in an Operating Cash Flow Ratio of 1.00. This indicates the company generated sufficient cash internally to cover its short-term obligations. While Cash from Operations decreased by 21.80% from FY2014's $1,564 million, and Total Current Liabilities also declined by 17.70% from $1,486 million in FY2014, the company maintained a healthy ability to meet its immediate financial commitments.\n\n**Analysis**\n\nIn FY2015, Adobe Inc.'s Cash from Operations stood at $1,223 million, a notable decrease of $341 million (21.80%) compared to FY2014's $1,564 million. Concurrently, Total Current Liabilities also saw a reduction, falling to $1,223 million in FY2015 from $1,486 million in FY2014, representing a decrease of $263 million (17.70%). The Operating Cash Flow Ratio for FY2015 was precisely 1.00, indicating that cash generated from operations was exactly equal to the company's current liabilities. This ratio compares favorably to FY2013's 0.97, though it is slightly lower than FY2014's stronger 1.05.\n\n**Key Risks**\n\nThe primary risk identified is the significant year-over-year decline in Cash from Operations, which decreased by 21.80% from FY2014 to FY2015. While the corresponding reduction in Total Current Liabilities helped maintain a strong Operating Cash Flow Ratio, a continued trend of declining operational cash generation could impact future liquidity and investment capacity if not managed effectively.\n\n**Conclusion**\n\nAdobe Inc. concluded FY2015 with a robust liquidity profile, evidenced by an Operating Cash Flow Ratio of 1.00. Despite a decrease in both Cash from Operations and Total Current Liabilities compared to the prior year, the company's ability to cover its short-term obligations using internally generated cash remains strong. Management should monitor the trend in Cash from Operations to ensure sustainable growth and financial flexibility going forward.",
+    "4": "## Adobe Inc. Financial Report - FY2015\n\n**Executive Summary**\n\nAdobe Inc. demonstrated a stable liquidity position in FY2015, with Cash from Operations matching Total Current Liabilities at $1,223 million, resulting in an an Operating Cash Flow Ratio of 1.00. This indicates the company generated sufficient cash internally to cover its short-term obligations. While Cash from Operations decreased by 21.80% from FY2014's $1,564 million, and Total Current Liabilities also declined by 17.70% from $1,486 million in FY2014, the company maintained a healthy ability to meet its immediate financial commitments.\n\n**Analysis**\n\nIn FY2015, Adobe Inc.'s Cash from Operations stood at $1,223 million, a notable decrease of $341 million (21.80%) compared to FY2014's $1,564 million. Concurrently, Total Current Liabilities also saw a reduction, falling to $1,223 million in FY2015 from $1,486 million in FY2014, representing a decrease of $263 million (17.70%). The Operating Cash Flow Ratio for FY2015 was precisely 1.00, indicating that cash generated from operations was exactly equal to the company's current liabilities. This ratio compares favorably to FY2013's 0.97, though it is slightly lower than FY2014's stronger 1.05. The strategic reduction in current liabilities appears to have effectively offset the decline in operational cash flow, thereby preserving the company's short-term solvency.\n\n**Key Risks**\n\nThe primary risk identified is the significant year-over-year decline in Cash from Operations, which decreased by 21.80% from FY2014 to FY2015. While the corresponding reduction in Total Current Liabilities helped maintain a strong Operating Cash Flow Ratio for the current period, a continued trend of declining operational cash generation could impact future liquidity and investment capacity if not managed effectively. This trend warrants close monitoring to ensure that the company's core business activities continue to generate robust cash flows necessary for sustained growth and strategic initiatives.\n\n**Conclusion**\n\nAdobe Inc. concluded FY2015 with a robust liquidity profile, evidenced by an Operating Cash Flow Ratio of 1.00. Despite a decrease in both Cash from Operations and Total Current Liabilities compared to the prior year, the company's ability to cover its short-term obligations using internally generated cash remains strong. The alignment of operational cash flow with current liabilities demonstrates effective financial management in maintaining short-term solvency. Management should continue to monitor the trend in Cash from Operations to ensure sustainable growth and financial flexibility going forward, proactively addressing any factors that could impede future cash generation."
+  },
+  "gates": {
+    "gate_1": {
+      "verified": [
+        {
+          "value": "$1,626 million",
+          "ref": 1626.0
+        },
+        {
+          "value": "$1,660 million",
+          "ref": 1660.0
+        },
+        {
+          "value": "$1,564 million",
+          "ref": 1564.0
+        },
+        {
+          "value": "$1,486 million",
+          "ref": 1486.0
+        },
+        {
+          "value": "$1,223 million",
+          "ref": 1223.0
+        },
+        {
+          "value": "$1,267 million",
+          "ref": 1267.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$1,051 million",
+          "num": 1051.0,
+          "correct": 1223.0,
+          "dev": 0.1406,
+          "source": "source_document"
+        },
+        {
+          "value": "$1,034 million",
+          "num": 1034.0,
+          "correct": 1223.0,
+          "dev": 0.1545,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [],
+      "n_refs": 96
+    },
+    "gate_2": {
+      "verified": [
+        {
+          "value": "$1,223 million",
+          "ref": 1223.0
+        },
+        {
+          "value": "$1,223",
+          "ref": 1223.0
+        },
+        {
+          "value": "$1,564",
+          "ref": 1564.0
+        },
+        {
+          "value": "$1,564",
+          "ref": 1564.0
+        },
+        {
+          "value": "$1,564",
+          "ref": 1564.0
+        },
+        {
+          "value": "$1,223",
+          "ref": 1223.0
+        },
+        {
+          "value": "$1,223",
+          "ref": 1223.0
+        },
+        {
+          "value": "$1,223",
+          "ref": 1223.0
+        },
+        {
+          "value": "$1,486",
+          "ref": 1486.0
+        },
+        {
+          "value": "$1,486",
+          "ref": 1486.0
+        },
+        {
+          "value": "$1,486",
+          "ref": 1486.0
+        },
+        {
+          "value": "$1,267",
+          "ref": 1267.0
+        },
+        {
+          "value": "$1,267",
+          "ref": 1267.0
+        },
+        {
+          "value": "$1,223",
+          "ref": 1223.0
+        },
+        {
+          "value": "$1,223",
+          "ref": 1223.0
+        },
+        {
+          "value": "$1,564",
+          "ref": 1564.0
+        },
+        {
+          "value": "$1,486",
+          "ref": 1486.0
+        },
+        {
+          "value": "$1,223",
+          "ref": 1223.0
+        },
+        {
+          "value": "$1,267",
+          "ref": 1267.0
+        },
+        {
+          "value": "$1,223 million",
+          "ref": 1223.0
+        },
+        {
+          "value": "1,223",
+          "ref": 1223.0
+        },
+        {
+          "value": "1,564",
+          "ref": 1564.0
+        },
+        {
+          "value": "1,223",
+          "ref": 1223.0
+        },
+        {
+          "value": "1,223",
+          "ref": 1223.0
+        },
+        {
+          "value": "1,486",
+          "ref": 1486.0
+        },
+        {
+          "value": "1,267",
+          "ref": 1267.0
+        }
+      ],
+      "refuted": [],
+      "unverified": [
+        {
+          "value": "$341 million"
+        },
+        {
+          "value": "$341"
+        },
+        {
+          "value": "$341 million"
+        },
+        {
+          "value": "$341"
+        },
+        {
+          "value": "$263 million"
+        },
+        {
+          "value": "$263"
+        },
+        {
+          "value": "$219 million"
+        },
+        {
+          "value": "$219"
+        },
+        {
+          "value": "-21.80%"
+        },
+        {
+          "value": "27.88%"
+        },
+        {
+          "value": "-17.70%"
+        },
+        {
+          "value": "17.28%"
+        }
+      ],
+      "n_refs": 96
+    },
+    "gate_3": {
+      "verified": [
+        {
+          "value": "$1,223 million",
+          "ref": 1223.0
+        },
+        {
+          "value": "$1,564 million",
+          "ref": 1564.0
+        },
+        {
+          "value": "$1,486 million",
+          "ref": 1486.0
+        },
+        {
+          "value": "$1,223 million",
+          "ref": 1223.0
+        },
+        {
+          "value": "$1,564 million",
+          "ref": 1564.0
+        },
+        {
+          "value": "$1,223 million",
+          "ref": 1223.0
+        },
+        {
+          "value": "$1,486 million",
+          "ref": 1486.0
+        }
+      ],
+      "refuted": [],
+      "unverified": [
+        {
+          "value": "$341 million"
+        },
+        {
+          "value": "$263 million"
+        },
+        {
+          "value": "21.80%"
+        },
+        {
+          "value": "17.70%"
+        },
+        {
+          "value": "21.80%"
+        },
+        {
+          "value": "17.70%"
+        },
+        {
+          "value": "21.80%"
+        }
+      ],
+      "n_refs": 96
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_011_F50BA584",
+      "hid": "FB_011_F50BA584_H2",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 1051.0,
+      "orig_num": 1626.0,
+      "survived": false,
+      "corrected": false,
+      "g1_det": true,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": false,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_011_F50BA584",
+      "hid": "FB_011_F50BA584_H1",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 1034.0,
+      "orig_num": 1660.0,
+      "survived": false,
+      "corrected": false,
+      "g1_det": true,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": false,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:06:54.817123+00:00"
+}

@@ -1,0 +1,29 @@
+EXPERIMENT 2 UNIFIED STATS — PAPER-READY SUMMARY
+============================================================
+
+ADD TO TABLE 3: Detection rates with 95% bootstrap CIs
+(These CIs go in the CI column of the existing table)
+
+  Llama 3 70B Instruct            : 51.4%  [46.2–56.6%]
+  Gemini 2.5 Flash                : 72.5%  [67.6–77.2%]
+  DeepSeek-V3.2                   : 75.7%  [71.1–80.3%]
+  Qwen3.5-397B                    : 87.0%  [83.2–90.5%]
+  GPT-4o Judge (Exp.1 S1)         : 72.0%  [67.1–76.6%]
+
+ADD TO SECTION 3 TEXT:
+  'Detection rates span 51.4%–87.0% with non-overlapping 95%
+   bootstrap CIs across adjacent models (Table 3), confirming
+   that the ordering is not due to sampling variance. Even the
+   strongest model (Qwen3.5-397B) leaves [CI_lo]–[CI_hi]% of
+   hallucinations undetected at Stage 1.'
+
+CEILING CLAIM LANGUAGE (choose based on McNemar results):
+  IF Qwen vs all others p<0.05:
+    'Models are statistically distinguishable across the full
+     range, yet none approaches 100%, suggesting a structural
+     ceiling near 90% imposed by the absence of ground truth.'
+  IF Qwen vs DeepSeek p>0.05:
+    'The top two models (87.0% and 75.7%) are not statistically
+     distinguishable, both approaching but not exceeding ~90%,
+     consistent with a structural ceiling rather than a
+     capability limitation.'

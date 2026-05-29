@@ -1,0 +1,115 @@
+{
+  "question_id": "FB_064_7576A9AF",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: The Boeing Company, FY2022\n- PRIMARY METRIC: Boeing's primary customer segments as of FY2022 include Commercial Airplanes, Defense, Space & Security, and Global Services. The revenue contributions from these segments are as follows:\n  - Commercial Airplanes: $27,100 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - Defense, Space & Security: $26,300 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - Global Services: $16,300 million (per the FY2022 10-K, Consolidated Statements of Operations)\n\n- SUPPORTING DATA:\n  - FY2021 Revenue Contributions:\n    - Commercial Airplanes: $12,426 million (per the FY2021 10-K, Consolidated Statements of Operations)\n    - Defense, Space & Security: $22,100 million (per the FY2021 10-K, Consolidated Statements of Operations)\n    - Global Services: $18,525 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2020 Revenue Contributions:\n    - Commercial Airplanes: $39,000 million (per the FY2020 10-K, Consolidated Statements of Operations)\n    - Defense, Space & Security: $26,400 million (per the FY2020 10-K, Consolidated Statements of Operations)\n    - Global Services: $19,162 million (per the FY2020 10-K, Consolidated Statements of Operations)\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Statements of Operations\n  - FY2020 10-K, Consolidated Statements of Operations\n\nNote: This report strictly contains factual data as requested. Further analysis or interpretation is not included.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_064_7576A9AF_H3",
+      "type": "dollar_amount",
+      "original_value": "$14,800 million",
+      "injected_value": "$12,426 million",
+      "original_numeric": "14800",
+      "injected_numeric": "12426",
+      "position_char": 644,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.1604
+    },
+    {
+      "hallucination_id": "FB_064_7576A9AF_H2",
+      "type": "dollar_amount",
+      "original_value": "$15,300 million",
+      "injected_value": "$18,525 million",
+      "original_numeric": "15300",
+      "injected_numeric": "18525",
+      "position_char": 854,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.2108
+    },
+    {
+      "hallucination_id": "FB_064_7576A9AF_H1",
+      "type": "dollar_amount",
+      "original_value": "$15,100 million",
+      "injected_value": "$19,162 million",
+      "original_numeric": "15100",
+      "injected_numeric": "19162",
+      "position_char": 1203,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.269
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Commercial Airplanes: $39,000 million (per the FY2020 10-K, Consolidated Statements of Operations)",
+        "claim_value": "$39,000 million",
+        "reason": "Highly implausible. FY2020 was the depth of the 737 MAX grounding and COVID-19 crisis; Commercial Airplanes revenue collapsed to historic lows (approx. $13-14 billion), not $39 billion. This figure resembles pre-crisis (2018) levels. Additionally, the sum of the claimed segment revenues for 2020 ($84.5 billion) vastly exceeds Boeing's known total revenue for that year (~$58 billion).",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Commercial Airplanes: $27,100 million (per the FY2022 10-K, Consolidated Statements of Operations)",
+        "claim_value": "$27,100 million",
+        "reason": "Suspiciously high relative to total company revenue. Boeing's total FY2022 revenue was approximately $66.6 billion. With Defense (~$26B) and Services (~$19B) claimed, Commercial Airplanes should be closer to $21-22 billion. $27.1 billion pushes the implied total revenue beyond reported figures.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "per the FY2022 10-K, Consolidated Statements of Operations",
+        "claim_value": "Consolidated Statements of Operations",
+        "reason": "Technically inaccurate citation. Segment revenue breakdowns are disclosed in the Notes to Financial Statements (typically 'Note 11 - Segment Information'), not on the face of the Consolidated Statements of Operations. This is a common hallucination pattern in financial reporting.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Global Services: $16,300 million (per the FY2022 10-K, Consolidated Statements of Operations)",
+        "claim_value": "$16,300 million",
+        "reason": "Trend inconsistency. Global Services revenue is typically stable or growing as the installed fleet increases. A decline from $18,525 million (2021) to $16,300 million (2022) during a broader company recovery period is counter-intuitive for this segment.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 9,
+    "overall_assessment": "The output contains significant hallucinations, particularly regarding FY2020 Commercial Airplanes revenue which contradicts known crisis-era financial performance, and cites incorrect financial statement locations for segment data.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Commercial Airplanes: $39,000 million (per the FY2020 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$39,000 million\",\n      \"reason\": \"Highly implausible. FY2020 was the depth of the 737 MAX grounding and COVID-19 crisis; Commercial Airplanes revenue collapsed to historic lows (approx. $13-14 billion), not $39 billion. This figure resembles pre-crisis (2018) levels. Additionally, the sum of the claimed segment revenues for 2020 ($84.5 billion) vastly exceeds Boeing's known total revenue for that year (~$58 billion).\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Commercial Airplanes: $27,100 million (per the FY2022 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$27,100 million\",\n      \"reason\": \"Suspiciously high relative to total company revenue. Boeing's total FY2022 revenue was approximately $66.6 billion. With Defense (~$26B) and Services (~$19B) claimed, Commercial Airplanes should be closer to $21-22 billion. $27.1 billion pushes the implied total revenue beyond reported figures.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"per the FY2022 10-K, Consolidated Statements of Operations\",\n      \"claim_value\": \"Consolidated Statements of Operations\",\n      \"reason\": \"Technically inaccurate citation. Segment revenue breakdowns are disclosed in the Notes to Financial Statements (typically 'Note 11 - Segment Information'), not on the face of the Consolidated Statements of Operations. This is a common hallucination pattern in financial reporting.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Global Services: $16,300 million (per the FY2022 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$16,300 million\",\n      \"reason\": \"Trend inconsistency. Global Services revenue is typically stable or growing as the installed fleet increases. A decline from $18,525 million (2021) to $16,300 million (2022) during a broader company recovery period is counter-intuitive for this segment.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 9,\n  \"overall_assessment\": \"The output contains significant hallucinations, particularly regarding FY2020 Commercial Airplanes revenue which contradicts known crisis-era financial performance, and cites incorrect financial statement locations for segment data.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_064_7576A9AF",
+      "hallucination_id": "FB_064_7576A9AF_H3",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$14,800 million",
+      "injected_value": "$12,426 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_064_7576A9AF",
+      "hallucination_id": "FB_064_7576A9AF_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$15,300 million",
+      "injected_value": "$18,525 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_064_7576A9AF",
+      "hallucination_id": "FB_064_7576A9AF_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$15,100 million",
+      "injected_value": "$19,162 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 9
+    }
+  ],
+  "timestamp": "2026-03-24T11:31:42.797686Z"
+}

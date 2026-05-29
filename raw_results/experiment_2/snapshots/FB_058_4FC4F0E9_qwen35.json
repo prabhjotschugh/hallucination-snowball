@@ -1,0 +1,121 @@
+{
+  "question_id": "FB_058_4FC4F0E9",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Block, Inc. (formerly Square, Inc.), FY2019 and FY2020\n- PRIMARY METRIC: \n  - Total Revenue FY2019: $5,585 million (per the FY2020 10-K, Consolidated Statements of Operations)\n  - Total Revenue FY2020: $9,493 million (per the FY2020 10-K, Consolidated Statements of Operations)\n  - Growth Rate: 91.9% (calculated as [(9,493 - 4,711) / 4,711] * 100)\n- SUPPORTING DATA: \n  - FY2019 Total Revenue: $4,711 million\n  - FY2020 Total Revenue: $12,544 million\n- DATA SOURCES: \n  - FY2020 10-K, Consolidated Statements of Operations\n\nNote: The growth rate has been calculated based on the exact figures from the SEC filing without interpretation or analysis.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_058_4FC4F0E9_H3",
+      "type": "dollar_amount",
+      "original_value": "$4,711 million",
+      "injected_value": "$5,585 million",
+      "original_numeric": "4711",
+      "injected_numeric": "5585",
+      "position_char": 120,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.1856
+    },
+    {
+      "hallucination_id": "FB_058_4FC4F0E9_H2",
+      "type": "percentage",
+      "original_value": "101.6%",
+      "injected_value": "91.9%",
+      "original_numeric": "101.6",
+      "injected_numeric": "91.9",
+      "position_char": 315,
+      "sentence_approx": 3,
+      "perturbation_delta": -9.6753
+    },
+    {
+      "hallucination_id": "FB_058_4FC4F0E9_H1",
+      "type": "dollar_amount",
+      "original_value": "$9,493 million",
+      "injected_value": "$12,544 million",
+      "original_numeric": "9493",
+      "injected_numeric": "12544",
+      "position_char": 457,
+      "sentence_approx": 4,
+      "perturbation_delta": 0.3214
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Total Revenue FY2019: $5,585 million (per the FY2020 10-K, Consolidated Statements of Operations)",
+        "claim_value": "$5,585 million",
+        "reason": "Internal inconsistency: The Supporting Data section lists FY2019 Total Revenue as $4,711 million. A single document cannot cite two different actuals for the same line item from the same source.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2019 Total Revenue: $4,711 million",
+        "claim_value": "$4,711 million",
+        "reason": "Internal inconsistency: Contradicts the Primary Metric section which lists FY2019 Total Revenue as $5,585 million. One of these figures must be hallucinated or erroneous.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Revenue FY2020: $9,493 million (per the FY2020 10-K, Consolidated Statements of Operations)",
+        "claim_value": "$9,493 million",
+        "reason": "Internal inconsistency: The Supporting Data section lists FY2020 Total Revenue as $12,544 million. These figures differ by over $3 billion within the same summary.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2020 Total Revenue: $12,544 million",
+        "claim_value": "$12,544 million",
+        "reason": "Internal inconsistency: Contradicts the Primary Metric section which lists FY2020 Total Revenue as $9,493 million. This suggests significant data hallucination or copy-paste errors.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Growth Rate: 91.9% (calculated as [(9,493 - 4,711) / 4,711] * 100)",
+        "claim_value": "91.9%",
+        "reason": "Mathematical error: The provided formula [(9,493 - 4,711) / 4,711] equals approximately 101.5%, not 91.9%. The stated percentage does not match the stated inputs.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 5,
+    "overall_assessment": "The output contains critical internal contradictions regarding revenue figures and a demonstrable mathematical error in the growth rate calculation, indicating severe data integrity issues.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Total Revenue FY2019: $5,585 million (per the FY2020 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$5,585 million\",\n      \"reason\": \"Internal inconsistency: The Supporting Data section lists FY2019 Total Revenue as $4,711 million. A single document cannot cite two different actuals for the same line item from the same source.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2019 Total Revenue: $4,711 million\",\n      \"claim_value\": \"$4,711 million\",\n      \"reason\": \"Internal inconsistency: Contradicts the Primary Metric section which lists FY2019 Total Revenue as $5,585 million. One of these figures must be hallucinated or erroneous.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Revenue FY2020: $9,493 million (per the FY2020 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$9,493 million\",\n      \"reason\": \"Internal inconsistency: The Supporting Data section lists FY2020 Total Revenue as $12,544 million. These figures differ by over $3 billion within the same summary.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2020 Total Revenue: $12,544 million\",\n      \"claim_value\": \"$12,544 million\",\n      \"reason\": \"Internal inconsistency: Contradicts the Primary Metric section which lists FY2020 Total Revenue as $9,493 million. This suggests significant data hallucination or copy-paste errors.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Growth Rate: 91.9% (calculated as [(9,493 - 4,711) / 4,711] * 100)\",\n      \"claim_value\": \"91.9%\",\n      \"reason\": \"Mathematical error: The provided formula [(9,493 - 4,711) / 4,711] equals approximately 101.5%, not 91.9%. The stated percentage does not match the stated inputs.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 5,\n  \"overall_assessment\": \"The output contains critical internal contradictions regarding revenue figures and a demonstrable mathematical error in the growth rate calculation, indicating severe data integrity issues.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_058_4FC4F0E9",
+      "hallucination_id": "FB_058_4FC4F0E9_H3",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$4,711 million",
+      "injected_value": "$5,585 million",
+      "detected": true,
+      "reason": "Internal inconsistency: The Supporting Data section lists FY2019 Total Revenue as $4,711 million. A single document cannot cite two different actuals for the same line item from the same source.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 5
+    },
+    {
+      "question_id": "FB_058_4FC4F0E9",
+      "hallucination_id": "FB_058_4FC4F0E9_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "percentage",
+      "original_value": "101.6%",
+      "injected_value": "91.9%",
+      "detected": true,
+      "reason": "Mathematical error: The provided formula [(9,493 - 4,711) / 4,711] equals approximately 101.5%, not 91.9%. The stated percentage does not match the stated inputs.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 5
+    },
+    {
+      "question_id": "FB_058_4FC4F0E9",
+      "hallucination_id": "FB_058_4FC4F0E9_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$9,493 million",
+      "injected_value": "$12,544 million",
+      "detected": true,
+      "reason": "Internal inconsistency: The Supporting Data section lists FY2020 Total Revenue as $12,544 million. These figures differ by over $3 billion within the same summary.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 5
+    }
+  ],
+  "timestamp": "2026-03-24T11:24:16.492870Z"
+}

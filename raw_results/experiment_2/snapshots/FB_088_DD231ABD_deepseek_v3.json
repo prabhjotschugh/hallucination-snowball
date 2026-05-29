@@ -1,0 +1,109 @@
+{
+  "question_id": "FB_088_DD231ABD",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: Johnson & Johnson, FY2022\n- PRIMARY METRIC: \n  - Total Revenue: $130,473 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - Ending Inventory: $16,790 million (per the FY2022 10-K, Consolidated Balance Sheets)\n  \n  **Inventory Turnover Ratio Calculation:**\n  - Inventory Turnover Ratio = Total Revenue / Average Inventory\n  - Average Inventory (assuming ending inventory is representative for simplicity) = $16,790 million\n  - Inventory Turnover Ratio = $94,943 million / $16,790 million = 5.65 times\n\n- SUPPORTING DATA:\n  - Total Revenue for FY2021: $93,775 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - Ending Inventory for FY2021: $19,470 million (per the FY2021 10-K, Consolidated Balance Sheets)\n  - Total Revenue for FY2020: $82,584 million (per the FY2020 10-K, Consolidated Statements of Operations)\n  - Ending Inventory for FY2020: $18,618 million (per the FY2020 10-K, Consolidated Balance Sheets)\n\n- DATA SOURCES:\n  - FY2022 10-K, Consolidated Statements of Operations and Consolidated Balance Sheets\n  - FY2021 10-K, Consolidated Statements of Operations and Consolidated Balance Sheets\n  - FY2020 10-K, Consolidated Statements of Operations and Consolidated Balance Sheets\n\n**Note:** The inventory turnover ratio calculated here is based on the assumption that the ending inventory is representative of average inventory for the year. Johnson & Johnson operates in a diverse healthcare sector, which may lead to variations in inventory management practices compared to traditional retail or manufacturing companies. The company\u2019s inventory may include products with varying shelf lives and demand cycles, which can affect turnover metrics. Therefore, while the calculated ratio is 5.65 times, it may not fully reflect operational efficiency in the same way it would for companies with more consistent inventory turnover.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_088_DD231ABD_H3",
+      "type": "dollar_amount",
+      "original_value": "$94,943 million",
+      "injected_value": "$130,473 million",
+      "original_numeric": "94943",
+      "injected_numeric": "130473",
+      "position_char": 84,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.3742
+    },
+    {
+      "hallucination_id": "FB_088_DD231ABD_H2",
+      "type": "dollar_amount",
+      "original_value": "$15,120 million",
+      "injected_value": "$19,470 million",
+      "original_numeric": "15120",
+      "injected_numeric": "19470",
+      "position_char": 701,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.2877
+    },
+    {
+      "hallucination_id": "FB_088_DD231ABD_H1",
+      "type": "dollar_amount",
+      "original_value": "$14,230 million",
+      "injected_value": "$18,618 million",
+      "original_numeric": "14230",
+      "injected_numeric": "18618",
+      "position_char": 908,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.3084
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Inventory Turnover Ratio = Total Revenue / Average Inventory\n  - Average Inventory (assuming ending inventory is representative for simplicity) = $16,790 million\n  - Inventory Turnover Ratio = $94,943 million / $16,790 million = 5.65 times",
+        "claim_value": "5.65 times",
+        "reason": "Revenue ($94,943 million) used in the calculation does not match the Total Revenue ($130,473 million) stated earlier for FY2022. This discrepancy suggests either a typo or incorrect calculation.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Revenue: $130,473 million (per the FY2022 10-K, Consolidated Statements of Operations)",
+        "claim_value": "$130,473 million",
+        "reason": "This figure seems plausible for J&J but stands in contrast to the $94,943 million used later in the calculation. If both are from the same source, there's an inconsistency that needs verification.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Ending Inventory: $16,790 million (per the FY2022 10-K, Consolidated Balance Sheets)",
+        "claim_value": "$16,790 million",
+        "reason": "While plausible, the sharp drop from $19,470 million in FY2021 to $16,790 million in FY2022 (~14% decrease) should be cross-checked for business context (e.g., divestitures, write-downs).",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "Several inconsistencies in revenue figures and inventory values require verification against source documents.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Inventory Turnover Ratio = Total Revenue / Average Inventory\\n  - Average Inventory (assuming ending inventory is representative for simplicity) = $16,790 million\\n  - Inventory Turnover Ratio = $94,943 million / $16,790 million = 5.65 times\",\n      \"claim_value\": \"5.65 times\",\n      \"reason\": \"Revenue ($94,943 million) used in the calculation does not match the Total Revenue ($130,473 million) stated earlier for FY2022. This discrepancy suggests either a typo or incorrect calculation.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Revenue: $130,473 million (per the FY2022 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$130,473 million\",\n      \"reason\": \"This figure seems plausible for J&J but stands in contrast to the $94,943 million used later in the calculation. If both are from the same source, there's an inconsistency that needs verification.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Ending Inventory: $16,790 million (per the FY2022 10-K, Consolidated Balance Sheets)\",\n      \"claim_value\": \"$16,790 million\",\n      \"reason\": \"While plausible, the sharp drop from $19,470 million in FY2021 to $16,790 million in FY2022 (~14% decrease) should be cross-checked for business context (e.g., divestitures, write-downs).\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\": \"Several inconsistencies in revenue figures and inventory values require verification against source documents.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_088_DD231ABD",
+      "hallucination_id": "FB_088_DD231ABD_H3",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$94,943 million",
+      "injected_value": "$130,473 million",
+      "detected": true,
+      "reason": "This figure seems plausible for J&J but stands in contrast to the $94,943 million used later in the calculation. If both are from the same source, there's an inconsistency that needs verification.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_088_DD231ABD",
+      "hallucination_id": "FB_088_DD231ABD_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$15,120 million",
+      "injected_value": "$19,470 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_088_DD231ABD",
+      "hallucination_id": "FB_088_DD231ABD_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$14,230 million",
+      "injected_value": "$18,618 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-24T09:53:28.997658Z"
+}

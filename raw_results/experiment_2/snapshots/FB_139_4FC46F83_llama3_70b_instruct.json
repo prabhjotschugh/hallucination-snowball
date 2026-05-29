@@ -1,0 +1,97 @@
+{
+  "question_id": "FB_139_4FC46F83",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Ulta Beauty, FY2023\n- PRIMARY METRIC: SG&A Expenses: $1,255.4 million (per the FY2023 Q4 Earnings Report, Consolidated Statements of Operations). Net Sales: $3,075.4 million (per the FY2023 Q4 Earnings Report, Consolidated Statements of Operations). SG&A as a percentage of Net Sales: 40.8%.\n- SUPPORTING DATA: \n  - FY2022 SG&A Expenses: $1,186.5 million (per the FY2022 10-K, Consolidated Statements of Operations). Net Sales: $1,698.3 million (per the FY2022 10-K, Consolidated Statements of Operations). SG&A as a percentage of Net Sales: 31.4%.\n  - FY2021 SG&A Expenses: $1,063.0 million (per the FY2021 10-K, Consolidated Statements of Operations). Net Sales: $2,120.0 million (per the FY2021 10-K, Consolidated Statements of Operations). SG&A as a percentage of Net Sales: 43.9%.\n- DATA SOURCES: \n  - FY2023 Q4 Earnings Report, Consolidated Statements of Operations.\n  - FY2022 10-K, Consolidated Statements of Operations.\n  - FY2021 10-K, Consolidated Statements of Operations.\n\nNote: The request for analysis of factors contributing to the reduction in SG&A expenses as a percentage of net sales, operational efficiencies, changes in marketing strategies, or shifts in sales volume, as well as broader industry context, requires interpretation and is outside the scope of raw data extraction. Please consult subsequent analysts for that analysis.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_139_4FC46F83_H3",
+      "type": "dollar_amount",
+      "original_value": "$2,800.0 million",
+      "injected_value": "$1,698.3 million",
+      "original_numeric": "2800.0",
+      "injected_numeric": "1698.3",
+      "position_char": 448,
+      "sentence_approx": 9,
+      "perturbation_delta": -0.3935
+    },
+    {
+      "hallucination_id": "FB_139_4FC46F83_H2",
+      "type": "percentage",
+      "original_value": "42.4%",
+      "injected_value": "31.4%",
+      "original_numeric": "42.4",
+      "injected_numeric": "31.4",
+      "position_char": 562,
+      "sentence_approx": 11,
+      "perturbation_delta": -11.0346
+    },
+    {
+      "hallucination_id": "FB_139_4FC46F83_H1",
+      "type": "percentage",
+      "original_value": "50.1%",
+      "injected_value": "43.9%",
+      "original_numeric": "50.1",
+      "injected_numeric": "43.9",
+      "position_char": 799,
+      "sentence_approx": 17,
+      "perturbation_delta": -6.1781
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "FY2022 Net Sales: $1,698.3 million",
+        "claim_value": "$1,698.3 million",
+        "reason": "Unusually low net sales figure for FY2022 compared to FY2021 and FY2023, suggesting potential error or inaccuracy.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "Most claims appear plausible, but one net sales figure seems suspiciously low and warrants further verification.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"FY2022 Net Sales: $1,698.3 million\",\n      \"claim_value\" : \"$1,698.3 million\",\n      \"reason\"      : \"Unusually low net sales figure for FY2022 compared to FY2021 and FY2023, suggesting potential error or inaccuracy.\",\n      \"confidence\"  : \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\"   : \"Most claims appear plausible, but one net sales figure seems suspiciously low and warrants further verification.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_139_4FC46F83",
+      "hallucination_id": "FB_139_4FC46F83_H3",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$2,800.0 million",
+      "injected_value": "$1,698.3 million",
+      "detected": true,
+      "reason": "Unusually low net sales figure for FY2022 compared to FY2021 and FY2023, suggesting potential error or inaccuracy.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_139_4FC46F83",
+      "hallucination_id": "FB_139_4FC46F83_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "percentage",
+      "original_value": "42.4%",
+      "injected_value": "31.4%",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_139_4FC46F83",
+      "hallucination_id": "FB_139_4FC46F83_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "percentage",
+      "original_value": "50.1%",
+      "injected_value": "43.9%",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-27T09:45:33.914555Z"
+}

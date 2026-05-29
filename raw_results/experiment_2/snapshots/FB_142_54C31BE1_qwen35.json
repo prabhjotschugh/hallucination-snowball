@@ -1,0 +1,91 @@
+{
+  "question_id": "FB_142_54C31BE1",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Ulta Beauty, FY2023\n- PRIMARY METRIC: Wages Expense: $830.6 million (per the FY2023 Q4 Earnings, Consolidated Statements of Operations)\n- SUPPORTING DATA: \n  - Net Sales: $3,829.0 million (per the FY2023 Q4 Earnings, Consolidated Statements of Operations)\n  - Wages Expense as a Percentage of Net Sales: 28.3% (calculated as $1,083.5 million / $4,411.0 million)\n- DATA SOURCES: \n  - Ulta Beauty FY2023 Q4 Earnings, Consolidated Statements of Operations\n\n**Note:** The analysis of trends over the fiscal year and the computation of changes in the ratio is not included as per the directive to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_142_54C31BE1_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,083.5 million",
+      "injected_value": "$830.6 million",
+      "original_numeric": "1083.5",
+      "injected_numeric": "830.6",
+      "position_char": 73,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2334
+    },
+    {
+      "hallucination_id": "FB_142_54C31BE1_H1",
+      "type": "dollar_amount",
+      "original_value": "$3,829.0 million",
+      "injected_value": "$4,411.0 million",
+      "original_numeric": "3829.0",
+      "injected_numeric": "4411.0",
+      "position_char": 366,
+      "sentence_approx": 5,
+      "perturbation_delta": 0.152
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Wages Expense: $830.6 million (per the FY2023 Q4 Earnings, Consolidated Statements of Operations)",
+        "claim_value": "$830.6 million",
+        "reason": "Internal inconsistency: Later in the report, the wages expense figure changes to $1,083.5 million for the percentage calculation. Additionally, 'Wages Expense' is not a standard standalone line item on the face of a GAAP Consolidated Statement of Operations for retailers; it is typically embedded within SG&A.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Net Sales: $3,829.0 million (per the FY2023 Q4 Earnings, Consolidated Statements of Operations)",
+        "claim_value": "$3,829.0 million",
+        "reason": "Internal inconsistency: The denominator used in the percentage calculation later in the text is $4,411.0 million, contradicting this figure. Furthermore, $3.8 billion aligns more closely with a single quarter's revenue than a full fiscal year context without explicit qualification.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Wages Expense as a Percentage of Net Sales: 28.3% (calculated as $1,083.5 million / $4,411.0 million)",
+        "claim_value": "28.3%",
+        "reason": "Mathematical error and hallucination: $1,083.5 million divided by $4,411.0 million equals approximately 24.6%, not 28.3%. The 28.3% figure actually results from dividing $1,083.5 million by the earlier stated sales figure of $3,829.0 million, indicating the denominator $4,411.0 million is likely fabricated.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Wages Expense... (per the FY2023 Q4 Earnings, Consolidated Statements of Operations)",
+        "claim_value": "Consolidated Statements of Operations",
+        "reason": "Plausibility issue: Public retailers like Ulta Beauty report 'Selling, General and Administrative Expenses' on the face of the Income Statement. Specific wage breakdowns are typically found in footnotes or supplemental data, not as a primary line item on the Consolidated Statements of Operations.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 4,
+    "overall_assessment": "The output contains critical internal inconsistencies regarding financial figures and demonstrates likely hallucination of line items and calculation components.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Wages Expense: $830.6 million (per the FY2023 Q4 Earnings, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$830.6 million\",\n      \"reason\": \"Internal inconsistency: Later in the report, the wages expense figure changes to $1,083.5 million for the percentage calculation. Additionally, 'Wages Expense' is not a standard standalone line item on the face of a GAAP Consolidated Statement of Operations for retailers; it is typically embedded within SG&A.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Net Sales: $3,829.0 million (per the FY2023 Q4 Earnings, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$3,829.0 million\",\n      \"reason\": \"Internal inconsistency: The denominator used in the percentage calculation later in the text is $4,411.0 million, contradicting this figure. Furthermore, $3.8 billion aligns more closely with a single quarter's revenue than a full fiscal year context without explicit qualification.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Wages Expense as a Percentage of Net Sales: 28.3% (calculated as $1,083.5 million / $4,411.0 million)\",\n      \"claim_value\": \"28.3%\",\n      \"reason\": \"Mathematical error and hallucination: $1,083.5 million divided by $4,411.0 million equals approximately 24.6%, not 28.3%. The 28.3% figure actually results from dividing $1,083.5 million by the earlier stated sales figure of $3,829.0 million, indicating the denominator $4,411.0 million is likely fabricated.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Wages Expense... (per the FY2023 Q4 Earnings, Consolidated Statements of Operations)\",\n      \"claim_value\": \"Consolidated Statements of Operations\",\n      \"reason\": \"Plausibility issue: Public retailers like Ulta Beauty report 'Selling, General and Administrative Expenses' on the face of the Income Statement. Specific wage breakdowns are typically found in footnotes or supplemental data, not as a primary line item on the Consolidated Statements of Operations.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 4,\n  \"overall_assessment\": \"The output contains critical internal inconsistencies regarding financial figures and demonstrates likely hallucination of line items and calculation components.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_142_54C31BE1",
+      "hallucination_id": "FB_142_54C31BE1_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,083.5 million",
+      "injected_value": "$830.6 million",
+      "detected": true,
+      "reason": "Internal inconsistency: Later in the report, the wages expense figure changes to $1,083.5 million for the percentage calculation. Additionally, 'Wages Expense' is not a standard standalone line item on the face of a GAAP Consolidated Statement of Operations for retailers; it is typically embedded within SG&A.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 4
+    },
+    {
+      "question_id": "FB_142_54C31BE1",
+      "hallucination_id": "FB_142_54C31BE1_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,829.0 million",
+      "injected_value": "$4,411.0 million",
+      "detected": true,
+      "reason": "Internal inconsistency: The denominator used in the percentage calculation later in the text is $4,411.0 million, contradicting this figure. Furthermore, $3.8 billion aligns more closely with a single quarter's revenue than a full fiscal year context without explicit qualification.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 4
+    }
+  ],
+  "timestamp": "2026-03-24T13:18:35.976745Z"
+}

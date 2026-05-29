@@ -1,0 +1,115 @@
+{
+  "question_id": "FB_133_F4882588",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Pfizer Inc. - Fiscal Year 2021\n- PRIMARY METRIC: \n  1. **Array BioPharma Inc.** - Acquired for approximately **$14,483 million** (USD) on July 1, 2020, as reported in the FY2021 10-K, Note 3: Acquisitions.\n  2. **Trillium Therapeutics Inc.** - Acquired for approximately **$2,747 million** (USD) on April 30, 2021, as reported in the FY2021 10-K, Note 3: Acquisitions.\n  3. **Biontech SE (additional stake)** - Pfizer acquired an additional stake in BioNTech, with total investment amounting to approximately **$1,317 million** (USD) during 2021, as reported in the FY2021 10-K, Note 3: Acquisitions.\n\n- SUPPORTING DATA: \n  - **Total Acquisitions in FY2021**: Pfizer reported total acquisition-related expenses of **$14,400 million** (USD) in FY2021.\n  - **Revenue Impact**: Total revenue for Pfizer in FY2021 was **$81,288 million** (USD), with the impact of these acquisitions contributing to an increase in the oncology segment.\n\n- DATA SOURCES: \n  - Pfizer Inc. FY2021 10-K, Note 3: Acquisitions, pages 110-115.\n  - Pfizer Inc. FY2021 10-K, Consolidated Statements of Operations, page 66.\n\nPlease note that the analysis of strategic implications, financial ratios, and narrative report are outside the scope of the data extraction task and will need to be conducted by downstream analysts.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_133_F4882588_H3",
+      "type": "dollar_amount",
+      "original_value": "$11,400 million",
+      "injected_value": "$14,483 million",
+      "original_numeric": "11400",
+      "injected_numeric": "14483",
+      "position_char": 131,
+      "sentence_approx": 4,
+      "perturbation_delta": 0.2705
+    },
+    {
+      "hallucination_id": "FB_133_F4882588_H2",
+      "type": "dollar_amount",
+      "original_value": "$2,000 million",
+      "injected_value": "$2,747 million",
+      "original_numeric": "2000",
+      "injected_numeric": "2747",
+      "position_char": 293,
+      "sentence_approx": 7,
+      "perturbation_delta": 0.3737
+    },
+    {
+      "hallucination_id": "FB_133_F4882588_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,000 million",
+      "injected_value": "$1,317 million",
+      "original_numeric": "1000",
+      "injected_numeric": "1317",
+      "position_char": 531,
+      "sentence_approx": 9,
+      "perturbation_delta": 0.3168
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Array BioPharma Inc. - Acquired for approximately $14,483 million (USD) on July 1, 2020",
+        "claim_value": "$14,483 million",
+        "reason": "My general financial knowledge indicates Array BioPharma was acquired by Pfizer in July 2019, not July 2020. The reported acquisition value of $14.483 billion is also different from the widely reported $11.4 billion. If acquired in 2019, it would not be listed as a primary acquisition in the FY2021 10-K's 'Note 3: Acquisitions' in this manner.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Trillium Therapeutics Inc. - Acquired for approximately $2,747 million (USD) on April 30, 2021",
+        "claim_value": "$2,747 million",
+        "reason": "My general financial knowledge indicates Pfizer announced the acquisition of Trillium in August 2021 and closed it in November 2021, not April 30, 2021. The reported acquisition value of $2.747 billion is also significantly higher than the widely reported $2.26 billion (net of cash).",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Biontech SE (additional stake) - Pfizer acquired an additional stake in BioNTech, with total investment amounting to approximately $1,317 million (USD) during 2021",
+        "claim_value": "$1,317 million",
+        "reason": "While Pfizer and BioNTech are partners, I am not aware of a significant additional equity stake acquisition by Pfizer in BioNTech for $1.317 billion in 2021. Pfizer's primary relationship with BioNTech is a collaboration, and any initial equity investment would have been much earlier. This specific transaction and value for 2021 seem fabricated.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Acquisitions in FY2021: Pfizer reported total acquisition-related expenses of $14,400 million (USD) in FY2021.",
+        "claim_value": "$14,400 million",
+        "reason": "This figure is suspiciously round ($14.4 billion) compared to the precise individual acquisition values provided elsewhere. More importantly, if the Array acquisition ($14.483 billion) was in 2020 (or 2019, as per my knowledge), it would not typically be counted as 'total acquisition-related expenses in FY2021.' The sum of the other two listed 2021 acquisitions ($2.747 billion + $1.317 billion = $4.064 billion) is far less than $14.4 billion, creating an internal inconsistency. This suggests the number is either fabricated or miscontextualized.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 5,
+    "overall_assessment": "Multiple acquisition details, including dates, values, and the existence of a significant BioNTech investment, appear to be inaccurate or fabricated, leading to internal inconsistencies in the reported total acquisition expenses.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Array BioPharma Inc. - Acquired for approximately $14,483 million (USD) on July 1, 2020\",\n      \"claim_value\": \"$14,483 million\",\n      \"reason\": \"My general financial knowledge indicates Array BioPharma was acquired by Pfizer in July 2019, not July 2020. The reported acquisition value of $14.483 billion is also different from the widely reported $11.4 billion. If acquired in 2019, it would not be listed as a primary acquisition in the FY2021 10-K's 'Note 3: Acquisitions' in this manner.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Trillium Therapeutics Inc. - Acquired for approximately $2,747 million (USD) on April 30, 2021\",\n      \"claim_value\": \"$2,747 million\",\n      \"reason\": \"My general financial knowledge indicates Pfizer announced the acquisition of Trillium in August 2021 and closed it in November 2021, not April 30, 2021. The reported acquisition value of $2.747 billion is also significantly higher than the widely reported $2.26 billion (net of cash).\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Biontech SE (additional stake) - Pfizer acquired an additional stake in BioNTech, with total investment amounting to approximately $1,317 million (USD) during 2021\",\n      \"claim_value\": \"$1,317 million\",\n      \"reason\": \"While Pfizer and BioNTech are partners, I am not aware of a significant additional equity stake acquisition by Pfizer in BioNTech for $1.317 billion in 2021. Pfizer's primary relationship with BioNTech is a collaboration, and any initial equity investment would have been much earlier. This specific transaction and value for 2021 seem fabricated.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Acquisitions in FY2021: Pfizer reported total acquisition-related expenses of $14,400 million (USD) in FY2021.\",\n      \"claim_value\": \"$14,400 million\",\n      \"reason\": \"This figure is suspiciously round ($14.4 billion) compared to the precise individual acquisition values provided elsewhere. More importantly, if the Array acquisition ($14.483 billion) was in 2020 (or 2019, as per my knowledge), it would not typically be counted as 'total acquisition-related expenses in FY2021.' The sum of the other two listed 2021 acquisitions ($2.747 billion + $1.317 billion = $4.064 billion) is far less than $14.4 billion, creating an internal inconsistency. This suggests the number is either fabricated or miscontextualized.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 5,\n  \"overall_assessment\": \"Multiple acquisition details, including dates, values, and the existence of a significant BioNTech investment, appear to be inaccurate or fabricated, leading to internal inconsistencies in the reported total acquisition expenses.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_133_F4882588",
+      "hallucination_id": "FB_133_F4882588_H3",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$11,400 million",
+      "injected_value": "$14,483 million",
+      "detected": true,
+      "reason": "My general financial knowledge indicates Array BioPharma was acquired by Pfizer in July 2019, not July 2020. The reported acquisition value of $14.483 billion is also different from the widely reported $11.4 billion. If acquired in 2019, it would not be listed as a primary acquisition in the FY2021 10-K's 'Note 3: Acquisitions' in this manner.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 5
+    },
+    {
+      "question_id": "FB_133_F4882588",
+      "hallucination_id": "FB_133_F4882588_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$2,000 million",
+      "injected_value": "$2,747 million",
+      "detected": true,
+      "reason": "My general financial knowledge indicates Pfizer announced the acquisition of Trillium in August 2021 and closed it in November 2021, not April 30, 2021. The reported acquisition value of $2.747 billion is also significantly higher than the widely reported $2.26 billion (net of cash).",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 5
+    },
+    {
+      "question_id": "FB_133_F4882588",
+      "hallucination_id": "FB_133_F4882588_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,000 million",
+      "injected_value": "$1,317 million",
+      "detected": true,
+      "reason": "While Pfizer and BioNTech are partners, I am not aware of a significant additional equity stake acquisition by Pfizer in BioNTech for $1.317 billion in 2021. Pfizer's primary relationship with BioNTech is a collaboration, and any initial equity investment would have been much earlier. This specific transaction and value for 2021 seem fabricated.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 5
+    }
+  ],
+  "timestamp": "2026-03-25T08:03:57.489540Z"
+}

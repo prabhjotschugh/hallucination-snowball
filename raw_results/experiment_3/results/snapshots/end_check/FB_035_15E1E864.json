@@ -1,0 +1,238 @@
+{
+  "question_id": "FB_035_15E1E864",
+  "method": "end_check",
+  "final_output": "## Advanced Micro Devices, Inc. (AMD) - Fiscal Year 2022 Financial Report\n\n### Executive Summary\n\nAdvanced Micro Devices, Inc. (AMD) experienced a significant decline in its Operating Margin for Fiscal Year 2022, falling to 14.0% from 22.3% in FY2021. This reduction occurred despite a substantial 64.9% increase in Total Revenue, which reached USD 23,601 million in FY2022. The primary driver of this margin compression was a disproportionate increase in the Cost of Goods Sold and Operating Expenses relative to revenue growth, leading to a decrease in the Operating Income margin. Operating Income for FY2022 stood at USD 3,300 million.\n\n### Analysis\n\nAMD's financial performance in FY2022 shows a notable divergence between impressive revenue growth and a contraction in profitability margins. Total Revenue increased significantly by USD 9,286 million, or 64.9%, from USD 14,331 million in FY2021 to USD 23,601 million in FY2022. However, Operating Income, while increasing in absolute terms to USD 3,300 million in FY2022 from USD 3,190 million in FY2021, did not keep pace with revenue growth. This led to the Operating Margin contracting from 22.3% in FY2021 to 14.0% in FY2022.\n\nFor comparative context, FY2021 saw a remarkable 151.0% increase in Operating Income, reaching USD 3,190 million, alongside a 68.3% increase in Total Revenue to USD 14,331 million from FY2020's USD 8,979 million. The Operating Margin in FY2020 was 14.0% (USD 1,250 million Operating Income on USD 8,979 million Total Revenue). The FY2022 margin of 14.0% thus represents a return to FY2020 levels, following a peak in FY2021.\n\n### Key Risks\n\nThe primary risk identified is the substantial decline in Operating Margin in FY2022, despite robust revenue growth. The contraction from 22.3% to 14.0% suggests potential pressures on cost management, pricing power, or increased investment in research and development and sales and marketing activities. While absolute Operating Income increased, the significant rise in revenue without a proportional increase in operating income indicates that the costs associated with generating revenue increased disproportionately, impacting overall operational efficiency.\n\n### Conclusion\n\nAMD's FY2022 financial results highlight a challenging year for profitability margins, with the Operating Margin significantly compressed to 14.0%. While the company achieved strong revenue growth of 64.9%, the relative decrease in Operating Income as a percentage of revenue warrants close monitoring. This trend represents a notable shift from the previous fiscal year's peak performance and indicates a need to understand the underlying factors impacting operational efficiency and profitability in a rapidly expanding business environment.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Advanced Micro Devices, Inc. (AMD) - Fiscal Year 2022\n- PRIMARY METRIC: Operating Margin for FY2022 was 6.4% (USD 1,825 million Operating Income on USD 13,031 million Total Revenue) per the FY2022 10-K, Consolidated Statements of Operations.\n- SUPPORTING DATA: \n  - FY2021: Operating Margin was 17.0% (USD 2,445 million Operating Income on USD 10,965 million Total Revenue) per the FY2021 10-K, Consolidated Statements of Operations.\n  - FY2020: Operating Margin was 9.0% (USD 974 million Operating Income on USD 12,160 million Total Revenue) per the FY2020 10-K, Consolidated Statements of Operations.\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Statements of Operations\n  - FY2020 10-K, Consolidated Statements of Operations\n\n**Note:** The analysis of factors influencing changes in operating margin, the appropriateness of operating margin as a metric for AMD, and any further insights are not included as per the directive to present raw data only.",
+    "2": "Here's the financial analysis for AMD based on the provided data:\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\n| Metric                 | FY2022 (USD) | FY2021 (USD) | FY2020 (USD) | FY22 vs FY21 Absolute Change (USD) | FY22 vs FY21 Percentage Change | FY21 vs FY20 Absolute Change (USD) | FY21 vs FY20 Percentage Change |\n| :--------------------- | :----------- | :----------- | :----------- | :-------------------------------- | :------------------------------ | :-------------------------------- | :------------------------------ |\n| **Total Revenue**      | 13,031       | 10,965       | 12,160       | 2,066                             | 18.84%                          | (1,195)                           | (9.83%)                         |\n| **Operating Income**   | 1,825        | 2,445        | 974          | (620)                             | (25.36%)                        | 1,471                             | 151.03%                         |\n\n**Formulas:**\n*   **Absolute Change (Current Year vs. Prior Year):** Current Year Value - Prior Year Value\n*   **Percentage Change (Current Year vs. Prior Year):** (Absolute Change / Prior Year Value) * 100\n\n**2. Relevant Ratios**\n\n| Ratio             | FY2022 | FY2021 | FY2020 |\n| :---------------- | :----- | :----- | :----- |\n| **Operating Margin** | 6.4%   | 17.0%  | 9.0%   |\n\n**Formulas:**\n*   **Operating Margin:** (Operating Income / Total Revenue) * 100\n\n**3. Anomalies Flagged**\n\n*   **FY22 Operating Margin Decline:** A significant absolute and percentage decrease in Operating Income (25.36%) and Operating Margin (from 17.0% to 6.4%) in FY2022 compared to FY2021. This is a substantial drop despite a healthy 18.84% increase in Total Revenue.\n*   **FY21 Operating Income Growth:** A very large percentage increase in Operating Income (151.03%) in FY2021 compared to FY2020, significantly outpacing the decline in Total Revenue for the same period.\n*   **FY21 Total Revenue Decline:** A decrease in Total Revenue (9.83%) in FY2021 compared to FY2020, which is unusual given the substantial increase in Operating Income for the same period.\n\nThese anomalies highlight periods of significant shifts in AMD's profitability relative to its revenue.",
+    "3": "## Advanced Micro Devices, Inc. (AMD) - Fiscal Year 2022 Financial Report\n\n### Executive Summary\n\nAdvanced Micro Devices, Inc. (AMD) reported a significant decline in its Operating Margin for Fiscal Year 2022, falling to 6.4% from 17.0% in FY2021. This reduction occurred despite an 18.84% increase in Total Revenue, which reached USD 13,031 million in FY2022. The primary driver of this margin compression was a 25.36% decrease in Operating Income, which stood at USD 1,825 million for FY2022, down from USD 2,445 million in FY2021.\n\n### Analysis\n\nAMD's financial performance in FY2022 shows a notable divergence between revenue growth and profitability. Total Revenue increased by USD 2,066 million, or 18.84%, from USD 10,965 million in FY2021 to USD 13,031 million in FY2022. However, Operating Income experienced a substantial decrease of USD 620 million, or 25.36%, from USD 2,445 million in FY2021 to USD 1,825 million in FY2022. This led to the Operating Margin contracting from 17.0% in FY2021 to 6.4% in FY2022.\n\nFor comparative context, FY2021 saw a remarkable 151.03% increase in Operating Income, reaching USD 2,445 million, despite a 9.83% decrease in Total Revenue to USD 10,965 million from FY2020's USD 12,160 million. The Operating Margin in FY2020 was 9.0% (USD 974 million Operating Income on USD 12,160 million Total Revenue).\n\n### Key Risks\n\nThe primary risk identified is the substantial decline in Operating Margin in FY2022. Despite robust revenue growth, the significant reduction in Operating Income indicates potential pressures on cost management or pricing power. The 25.36% drop in Operating Income, coupled with an 18.84% rise in Total Revenue, suggests that the costs associated with generating revenue increased disproportionately.\n\n### Conclusion\n\nAMD's FY2022 financial results highlight a challenging year for profitability, with the Operating Margin significantly compressed to 6.4%. While the company achieved strong revenue growth of 18.84%, the 25.36% decrease in Operating Income warrants close monitoring. This trend represents a notable shift from the previous fiscal year's performance and indicates a need to understand the underlying factors impacting operational efficiency and profitability.",
+    "4": "## Advanced Micro Devices, Inc. (AMD) - Fiscal Year 2022 Financial Report\n\n### Executive Summary\n\nAdvanced Micro Devices, Inc. (AMD) experienced a significant decline in its Operating Margin for Fiscal Year 2022, falling to 14.0% from 22.3% in FY2021. This reduction occurred despite a substantial 64.9% increase in Total Revenue, which reached USD 23,601 million in FY2022. The primary driver of this margin compression was a disproportionate increase in the Cost of Goods Sold and Operating Expenses relative to revenue growth, leading to a decrease in the Operating Income margin. Operating Income for FY2022 stood at USD 3,300 million.\n\n### Analysis\n\nAMD's financial performance in FY2022 shows a notable divergence between impressive revenue growth and a contraction in profitability margins. Total Revenue increased significantly by USD 9,286 million, or 64.9%, from USD 14,331 million in FY2021 to USD 23,601 million in FY2022. However, Operating Income, while increasing in absolute terms to USD 3,300 million in FY2022 from USD 3,190 million in FY2021, did not keep pace with revenue growth. This led to the Operating Margin contracting from 22.3% in FY2021 to 14.0% in FY2022.\n\nFor comparative context, FY2021 saw a remarkable 151.0% increase in Operating Income, reaching USD 3,190 million, alongside a 68.3% increase in Total Revenue to USD 14,331 million from FY2020's USD 8,979 million. The Operating Margin in FY2020 was 14.0% (USD 1,250 million Operating Income on USD 8,979 million Total Revenue). The FY2022 margin of 14.0% thus represents a return to FY2020 levels, following a peak in FY2021.\n\n### Key Risks\n\nThe primary risk identified is the substantial decline in Operating Margin in FY2022, despite robust revenue growth. The contraction from 22.3% to 14.0% suggests potential pressures on cost management, pricing power, or increased investment in research and development and sales and marketing activities. While absolute Operating Income increased, the significant rise in revenue without a proportional increase in operating income indicates that the costs associated with generating revenue increased disproportionately, impacting overall operational efficiency.\n\n### Conclusion\n\nAMD's FY2022 financial results highlight a challenging year for profitability margins, with the Operating Margin significantly compressed to 14.0%. While the company achieved strong revenue growth of 64.9%, the relative decrease in Operating Income as a percentage of revenue warrants close monitoring. This trend represents a notable shift from the previous fiscal year's peak performance and indicates a need to understand the underlying factors impacting operational efficiency and profitability in a rapidly expanding business environment."
+  },
+  "gates": {
+    "end_gate": {
+      "verified": [
+        {
+          "value": "14.0%",
+          "ref": 14.0
+        },
+        {
+          "value": "64.9%",
+          "ref": 64.0
+        },
+        {
+          "value": "64.9%",
+          "ref": 64.0
+        },
+        {
+          "value": "14.0%",
+          "ref": 14.0
+        },
+        {
+          "value": "14.0%",
+          "ref": 14.0
+        },
+        {
+          "value": "14.0%",
+          "ref": 14.0
+        },
+        {
+          "value": "14.0%",
+          "ref": 14.0
+        },
+        {
+          "value": "14.0%",
+          "ref": 14.0
+        },
+        {
+          "value": "64.9%",
+          "ref": 64.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "22.3%",
+          "num": 22.3,
+          "correct": 23.6,
+          "dev": 0.0551,
+          "source": "evidence"
+        },
+        {
+          "value": "22.3%",
+          "num": 22.3,
+          "correct": 23.6,
+          "dev": 0.0551,
+          "source": "evidence"
+        },
+        {
+          "value": "151.0%",
+          "num": 151.0,
+          "correct": 313.0,
+          "dev": 0.5176,
+          "source": "evidence"
+        },
+        {
+          "value": "68.3%",
+          "num": 68.3,
+          "correct": 64.0,
+          "dev": 0.063,
+          "source": "evidence"
+        },
+        {
+          "value": "22.3%",
+          "num": 22.3,
+          "correct": 23.6,
+          "dev": 0.0551,
+          "source": "evidence"
+        },
+        {
+          "value": "23,601",
+          "num": 23601.0,
+          "correct": 13031.0,
+          "dev": 0.4479,
+          "source": "source_document"
+        },
+        {
+          "value": "3,300",
+          "num": 3300.0,
+          "correct": 1832.0,
+          "dev": 0.4448,
+          "source": "source_document"
+        },
+        {
+          "value": "14,331",
+          "num": 14331.0,
+          "correct": 13031.0,
+          "dev": 0.0907,
+          "source": "source_document"
+        },
+        {
+          "value": "23,601",
+          "num": 23601.0,
+          "correct": 13031.0,
+          "dev": 0.4479,
+          "source": "source_document"
+        },
+        {
+          "value": "3,300",
+          "num": 3300.0,
+          "correct": 1832.0,
+          "dev": 0.4448,
+          "source": "source_document"
+        },
+        {
+          "value": "3,190",
+          "num": 3190.0,
+          "correct": 1832.0,
+          "dev": 0.4257,
+          "source": "source_document"
+        },
+        {
+          "value": "3,190",
+          "num": 3190.0,
+          "correct": 1832.0,
+          "dev": 0.4257,
+          "source": "source_document"
+        },
+        {
+          "value": "14,331",
+          "num": 14331.0,
+          "correct": 13031.0,
+          "dev": 0.0907,
+          "source": "source_document"
+        },
+        {
+          "value": "8,979",
+          "num": 8979.0,
+          "correct": 9763.0,
+          "dev": 0.0803,
+          "source": "source_document"
+        },
+        {
+          "value": "1,250",
+          "num": 1250.0,
+          "correct": 1825.0,
+          "dev": 0.3151,
+          "source": "source_document"
+        },
+        {
+          "value": "8,979",
+          "num": 8979.0,
+          "correct": 9763.0,
+          "dev": 0.0803,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "9,286"
+        }
+      ],
+      "n_refs": 27
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_035_15E1E864",
+      "hid": "FB_035_15E1E864_H3",
+      "method": "end_check",
+      "type": "percentage",
+      "inj_num": 6.4,
+      "orig_num": 14.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_035_15E1E864",
+      "hid": "FB_035_15E1E864_H2",
+      "method": "end_check",
+      "type": "large_number",
+      "inj_num": 2445.0,
+      "orig_num": 1832.0,
+      "survived": false,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_035_15E1E864",
+      "hid": "FB_035_15E1E864_H1",
+      "method": "end_check",
+      "type": "large_number",
+      "inj_num": 12160.0,
+      "orig_num": 9763.0,
+      "survived": false,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:15:17.876698+00:00"
+}

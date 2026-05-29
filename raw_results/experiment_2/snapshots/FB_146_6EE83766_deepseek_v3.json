@@ -1,0 +1,90 @@
+{
+  "question_id": "FB_146_6EE83766",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: Verizon Communications Inc., FY 2022\n- PRIMARY METRIC: Capital Expenditures: $20,000 million (per the FY2022 10-K, Consolidated Statements of Cash Flows)\n- SUPPORTING DATA: \n  - Total Assets: $127,741 million (per the FY2022 10-K, Consolidated Balance Sheets)\n  - Capital Expenditures for FY 2021: $15,877 million (per the FY2021 10-K, Consolidated Statements of Cash Flows)\n  - Capital Expenditures for FY 2020: $12,860 million (per the FY2020 10-K, Consolidated Statements of Cash Flows)\n- DATA SOURCES: \n  - Verizon FY2022 10-K, Consolidated Statements of Cash Flows\n  - Verizon FY2022 10-K, Consolidated Balance Sheets\n  - Verizon FY2021 10-K, Consolidated Statements of Cash Flows\n  - Verizon FY2020 10-K, Consolidated Statements of Cash Flows\n\n**Note:** The request for analysis and benchmarking against industry peers, as well as narrative reporting, is outside the scope of this data extraction task. The provided figures are strictly factual and sourced from the specified filings.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_146_6EE83766_H3",
+      "type": "dollar_amount",
+      "original_value": "$202,000 million",
+      "injected_value": "$127,741 million",
+      "original_numeric": "202000",
+      "injected_numeric": "127741",
+      "position_char": 212,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3676
+    },
+    {
+      "hallucination_id": "FB_146_6EE83766_H2",
+      "type": "dollar_amount",
+      "original_value": "$19,000 million",
+      "injected_value": "$15,877 million",
+      "original_numeric": "19000",
+      "injected_numeric": "15877",
+      "position_char": 318,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.1643
+    },
+    {
+      "hallucination_id": "FB_146_6EE83766_H1",
+      "type": "dollar_amount",
+      "original_value": "$18,000 million",
+      "injected_value": "$12,860 million",
+      "original_numeric": "18000",
+      "injected_numeric": "12860",
+      "position_char": 433,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.2856
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [],
+    "total_claims_reviewed": 4,
+    "overall_assessment": "All financial claims appear plausible and internally consistent, with specific sourcing from Verizon's official filings.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [],\n  \"total_claims_reviewed\": 4,\n  \"overall_assessment\": \"All financial claims appear plausible and internally consistent, with specific sourcing from Verizon's official filings.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_146_6EE83766",
+      "hallucination_id": "FB_146_6EE83766_H3",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$202,000 million",
+      "injected_value": "$127,741 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 0,
+      "total_claims_reviewed": 4
+    },
+    {
+      "question_id": "FB_146_6EE83766",
+      "hallucination_id": "FB_146_6EE83766_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$19,000 million",
+      "injected_value": "$15,877 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 0,
+      "total_claims_reviewed": 4
+    },
+    {
+      "question_id": "FB_146_6EE83766",
+      "hallucination_id": "FB_146_6EE83766_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$18,000 million",
+      "injected_value": "$12,860 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 0,
+      "total_claims_reviewed": 4
+    }
+  ],
+  "timestamp": "2026-03-24T10:02:51.785674Z"
+}

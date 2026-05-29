@@ -1,0 +1,73 @@
+{
+  "question_id": "FB_137_A71B03EF",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Ulta Beauty, FY2023\n- PRIMARY METRIC: As of February 4, 2023, Ulta Beauty, Inc. had $1,200 million in aggregate principal amount of senior unsecured notes due in 2025 and $751 million in aggregate principal amount of senior unsecured notes due in 2031. (per the FY2023 10-K, Note 7 - Debt)\n- SUPPORTING DATA: \n  - Senior Unsecured Notes:\n    - $1,200 million due in 2025\n    - $1,000 million due in 2031\n  - Total debt as of February 4, 2023: $2,200 million\n  - Shareholders' equity as of February 4, 2023: $931 million (per the FY2023 10-K, Consolidated Balance Sheets)\n  - Debt-to-Equity Ratio: 1.47 (calculated as Total Debt / Shareholders' Equity)\n- DATA SOURCES: \n  - Ulta Beauty FY2023 10-K, Note 7 - Debt\n  - Ulta Beauty FY2023 10-K, Consolidated Balance Sheets\n\nPlease note that I have not included trend analysis or comparisons to industry standards as per your directive to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_137_A71B03EF_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,000 million",
+      "injected_value": "$751 million",
+      "original_numeric": "1000",
+      "injected_numeric": "751",
+      "position_char": 191,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.2493
+    },
+    {
+      "hallucination_id": "FB_137_A71B03EF_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,500 million",
+      "injected_value": "$931 million",
+      "original_numeric": "1500",
+      "injected_numeric": "931",
+      "position_char": 529,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.3791
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Senior Unsecured Notes: $1,000 million due in 2031",
+        "claim_value": "$1,000 million",
+        "reason": "Inconsistent with the primary metric, which states $751 million in aggregate principal amount of senior unsecured notes due in 2031.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "The output appears to have an internal inconsistency in the reporting of senior unsecured notes due in 2031.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"Senior Unsecured Notes: $1,000 million due in 2031\",\n      \"claim_value\" : \"$1,000 million\",\n      \"reason\"      : \"Inconsistent with the primary metric, which states $751 million in aggregate principal amount of senior unsecured notes due in 2031.\",\n      \"confidence\"  : \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\"   : \"The output appears to have an internal inconsistency in the reporting of senior unsecured notes due in 2031.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_137_A71B03EF",
+      "hallucination_id": "FB_137_A71B03EF_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,000 million",
+      "injected_value": "$751 million",
+      "detected": true,
+      "reason": "Inconsistent with the primary metric, which states $751 million in aggregate principal amount of senior unsecured notes due in 2031.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_137_A71B03EF",
+      "hallucination_id": "FB_137_A71B03EF_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,500 million",
+      "injected_value": "$931 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-27T09:45:08.481945Z"
+}

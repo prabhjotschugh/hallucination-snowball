@@ -1,0 +1,85 @@
+{
+  "question_id": "FB_107_B17259C6",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: MGM Resorts International, FY2022\n- PRIMARY METRIC: The EBITDAR figures for each region as reported in the MGM Resorts International Q4 2022 Earnings Call are as follows:\n  - Las Vegas Strip: $1,799 million (per the FY2022 Q4 Earnings Report, EBITDAR by Region)\n  - Regional Operations: $532 million (per the FY2022 Q4 Earnings Report, EBITDAR by Region)\n  - MGM China: $140 million (per the FY2022 Q4 Earnings Report, EBITDAR by Region)\n\n- SUPPORTING DATA: \n  - For FY2021:\n    - Las Vegas Strip: $1,482 million (per the FY2021 Q4 Earnings Report, EBITDAR by Region)\n    - Regional Operations: $289 million (per the FY2021 Q4 Earnings Report, EBITDAR by Region)\n    - MGM China: $59 million (per the FY2021 Q4 Earnings Report, EBITDAR by Region)\n\n- DATA SOURCES: \n  - MGM Resorts International, Q4 2022 Earnings Report, EBITDAR by Region\n  - MGM Resorts International, Q4 2021 Earnings Report, EBITDAR by Region\n\nNote: The highest EBITDAR contribution for FY2022 was from the Las Vegas Strip at $1,799 million.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_107_B17259C6_H2",
+      "type": "dollar_amount",
+      "original_value": "$394 million",
+      "injected_value": "$532 million",
+      "original_numeric": "394",
+      "injected_numeric": "532",
+      "position_char": 307,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.3492
+    },
+    {
+      "hallucination_id": "FB_107_B17259C6_H1",
+      "type": "dollar_amount",
+      "original_value": "$96 million",
+      "injected_value": "$59 million",
+      "original_numeric": "96",
+      "injected_numeric": "59",
+      "position_char": 700,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.3881
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "MGM China: $140 million (per the FY2022 Q4 Earnings Report, EBITDAR by Region)",
+        "claim_value": "$140 million",
+        "reason": "An increase of 137% in EBITDAR for MGM China from FY2021 to FY2022 ($59M to $140M) is highly suspicious. FY2022 was a period of severe COVID-19 restrictions and lockdowns in Macau, making such significant year-over-year growth in profitability highly unlikely for a casino operator in that region.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "MGM China: $59 million (per the FY2021 Q4 Earnings Report, EBITDAR by Region)",
+        "claim_value": "$59 million",
+        "reason": "While potentially plausible in isolation, this figure contributes to an implausible 137% year-over-year growth in EBITDAR for MGM China when compared to the reported FY2022 figure of $140 million. Given the severe operational challenges in Macau during FY2022, this growth trend is highly questionable.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Regional Operations: $532 million (per the FY2022 Q4 Earnings Report, EBITDAR by Region)",
+        "claim_value": "$532 million",
+        "reason": "The reported year-over-year growth for Regional Operations from FY2021 ($289 million) to FY2022 ($532 million) is approximately 84%. While strong recovery is possible, an 84% increase in EBITDAR for a relatively stable segment like regional casinos is unusually high and warrants further verification, even in a post-pandemic recovery period.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "Several claims regarding MGM China's EBITDAR figures and their year-over-year growth appear highly suspicious given the known market conditions in Macau during FY2021-FY2022, and the growth for Regional Operations is unusually high.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"MGM China: $140 million (per the FY2022 Q4 Earnings Report, EBITDAR by Region)\",\n      \"claim_value\": \"$140 million\",\n      \"reason\": \"An increase of 137% in EBITDAR for MGM China from FY2021 to FY2022 ($59M to $140M) is highly suspicious. FY2022 was a period of severe COVID-19 restrictions and lockdowns in Macau, making such significant year-over-year growth in profitability highly unlikely for a casino operator in that region.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"MGM China: $59 million (per the FY2021 Q4 Earnings Report, EBITDAR by Region)\",\n      \"claim_value\": \"$59 million\",\n      \"reason\": \"While potentially plausible in isolation, this figure contributes to an implausible 137% year-over-year growth in EBITDAR for MGM China when compared to the reported FY2022 figure of $140 million. Given the severe operational challenges in Macau during FY2022, this growth trend is highly questionable.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Regional Operations: $532 million (per the FY2022 Q4 Earnings Report, EBITDAR by Region)\",\n      \"claim_value\": \"$532 million\",\n      \"reason\": \"The reported year-over-year growth for Regional Operations from FY2021 ($289 million) to FY2022 ($532 million) is approximately 84%. While strong recovery is possible, an 84% increase in EBITDAR for a relatively stable segment like regional casinos is unusually high and warrants further verification, even in a post-pandemic recovery period.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\": \"Several claims regarding MGM China's EBITDAR figures and their year-over-year growth appear highly suspicious given the known market conditions in Macau during FY2021-FY2022, and the growth for Regional Operations is unusually high.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_107_B17259C6",
+      "hallucination_id": "FB_107_B17259C6_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$394 million",
+      "injected_value": "$532 million",
+      "detected": true,
+      "reason": "The reported year-over-year growth for Regional Operations from FY2021 ($289 million) to FY2022 ($532 million) is approximately 84%. While strong recovery is possible, an 84% increase in EBITDAR for a relatively stable segment like regional casinos is unusually high and warrants further verification, even in a post-pandemic recovery period.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_107_B17259C6",
+      "hallucination_id": "FB_107_B17259C6_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$96 million",
+      "injected_value": "$59 million",
+      "detected": true,
+      "reason": "While potentially plausible in isolation, this figure contributes to an implausible 137% year-over-year growth in EBITDAR for MGM China when compared to the reported FY2022 figure of $140 million. Given the severe operational challenges in Macau during FY2022, this growth trend is highly questionable.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-25T07:58:35.029421Z"
+}

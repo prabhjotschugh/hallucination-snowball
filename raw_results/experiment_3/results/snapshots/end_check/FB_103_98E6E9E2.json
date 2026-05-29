@@ -1,0 +1,134 @@
+{
+  "question_id": "FB_103_98E6E9E2",
+  "method": "end_check",
+  "final_output": "## Lockheed Martin Corporation: FY2020-FY2022 Revenue Performance Report\n\n**Executive Summary**\n\nLockheed Martin Corporation experienced modest revenue growth between FY2020 and FY2022. Total Revenue increased from $65,398 million in FY2020 to $67,046 million in FY2021, representing a 2.52% increase. However, revenue remained largely flat in FY2022, decreasing slightly to $67,045 million, a change of -0.0015% from the prior year. The Compound Annual Growth Rate (CAGR) for Total Revenue over this two-year period was 1.24%.\n\n**Analysis**\n\nLockheed Martin's Total Revenue demonstrated a period of initial growth followed by stabilization. In FY2020, the company reported Total Revenue of $65,398 million. This figure rose to $67,046 million in FY2021, an absolute increase of $1,648 million. The subsequent year, FY2022, saw Total Revenue at $67,045 million, a marginal decrease of $1 million from FY2021. This indicates that while the company achieved growth in the first year of the period, revenue generation plateaued in the second year. The overall two-year CAGR of 1.24% reflects this subdued growth trajectory, indicating an average annual growth rate over the period.\n\n**Key Risks**\n\nThe near-stagnation of revenue between FY2021 and FY2022, evidenced by a -0.0015% change, suggests potential challenges in sustaining growth momentum. Factors such as evolving defense spending priorities, increased competition, or delays in major program deliveries could contribute to this flattening trend. A prolonged period of minimal revenue growth could impact profitability and shareholder value if not addressed through strategic initiatives or new contract acquisitions. Furthermore, reliance on a limited number of large government contracts exposes the company to budgetary shifts and political influences, which could further constrain future revenue expansion.\n\n**Conclusion**\n\nLockheed Martin Corporation's Total Revenue from FY2020 to FY2022 shows a pattern of initial modest growth followed by a plateau. While the company successfully increased revenue by 2.52% from FY2020 to FY2021, the subsequent year saw virtually no growth. The 1.24% CAGR over the two-year period highlights the need for continued focus on securing new contracts and optimizing operational efficiencies to drive more robust revenue expansion in future periods. Strategic investments in research and development, diversification of product offerings, and proactive engagement with evolving defense landscapes will be crucial for overcoming current growth challenges and ensuring sustained financial performance.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Lockheed Martin Corporation, FY2020 to FY2022\n- PRIMARY METRIC: Total Revenue for FY2020: $90,117 million (per the FY2022 10-K, Consolidated Statements of Operations); Total Revenue for FY2022: $87,879 million (per the FY2022 10-K, Consolidated Statements of Operations).\n- SUPPORTING DATA: \n  - FY2020 Total Revenue: $65,398 million\n  - FY2021 Total Revenue: $67,046 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - FY2022 Total Revenue: $67,045 million\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations\n\n**CAGR Calculation:**\nUsing the formula for CAGR: \n\\[ CAGR = \\left( \\frac{Ending\\ Value}{Beginning\\ Value} \\right)^{\\frac{1}{n}} - 1 \\]\nWhere:\n- Ending Value = Total Revenue FY2022 = $67,045 million\n- Beginning Value = Total Revenue FY2020 = $65,398 million\n- n = number of years = 2\n\nCalculating:\n\\[ CAGR = \\left( \\frac{67,045}{65,398} \\right)^{\\frac{1}{2}} - 1 \\]\n\\[ CAGR = (1.0252)^{0.5} - 1 \\]\n\\[ CAGR \\approx 0.0126 \\text{ or } 1.3\\% \\]\n\nThus, Lockheed Martin's two-year total revenue CAGR from FY2020 to FY2022 is approximately **1.3%**.",
+    "2": "As a financial analyst, I've reviewed the provided data for Lockheed Martin Corporation's Total Revenue from FY2020 to FY2022.\n\n**Data Reconciliation and Anomaly Flagging:**\n\nThe researcher data presents conflicting figures for FY2020 and FY2022 Total Revenue.\n\n*   **FY2020 Total Revenue:**\n    *   \"$90,117 million (per the FY2022 10-K, Consolidated Statements of Operations)\"\n    *   \"$65,398 million\" (Supporting Data)\n    *   **Anomaly:** The value $90,117 million is significantly different from $65,398 million. Based on typical 10-K reporting, the primary metric stated \"per the FY2022 10-K\" should be prioritized if it's a direct quote. However, the supporting data also provides a specific value for FY2020. For consistency with the FY2021 and FY2022 figures which appear to be from the same series (around $67 billion), I will use **$65,398 million** for FY2020 as it aligns better with the trend implied by the other supporting data points. The $90,117 million figure is flagged as a potential misinterpretation or error in the researcher's primary metric extraction.\n\n*   **FY2022 Total Revenue:**\n    *   \"$87,879 million (per the FY2022 10-K, Consolidated Statements of Operations)\"\n    *   \"$67,045 million\" (Supporting Data)\n    *   **Anomaly:** Similar to FY2020, there's a significant discrepancy. Given the FY2021 figure of $67,046 million, the $67,045 million for FY2022 is highly consistent. I will use **$67,045 million** for FY2022. The $87,879 million figure is flagged as a potential misinterpretation or error.\n\n**Revised Total Revenue Data:**\n\n*   **FY2020:** $65,398 million\n*   **FY2021:** $67,046 million\n*   **FY2022:** $67,045 million\n\n---\n\n**1. Year-over-Year Changes:**\n\n*   **FY2021 vs. FY2020:**\n    *   **Absolute Change:**\n        *   Formula: FY2021 Revenue - FY2020 Revenue\n        *   Calculation: $67,046 million - $65,398 million = **$1,648 million**\n    *   **Percentage Change:**\n        *   Formula: (Absolute Change / FY2020 Revenue) * 100\n        *   Calculation: ($1,648 million / $65,398 million) * 100 = **2.52%**\n\n*   **FY2022 vs. FY2021:**\n    *   **Absolute Change:**\n        *   Formula: FY2022 Revenue - FY2021 Revenue\n        *   Calculation: $67,045 million - $67,046 million = **-$1 million**\n    *   **Percentage Change:**\n        *   Formula: (Absolute Change / FY2021 Revenue) * 100\n        *   Calculation: (-$1 million / $67,046 million) * 100 = **-0.0015%** (approx. -0.00%)\n\n---\n\n**2. Relevant Ratios (Compound Annual Growth Rate - CAGR):**\n\nThe researcher provided a CAGR calculation, which is appropriate for analyzing multi-year growth.\n\n*   **CAGR Formula:**\n    \\[ CAGR = \\left( \\frac{Ending\\ Value}{Beginning\\ Value} \\right)^{\\frac{1}{n}} - 1 \\]\n    Where:\n    *   Ending Value = Total Revenue FY2022 = $67,045 million\n    *   Beginning Value = Total Revenue FY2020 = $65,398 million\n    *   n = number of years = 2\n\n*   **CAGR Calculation:**\n    \\[ CAGR = \\left( \\frac{67,045}{65,398} \\right)^{\\frac{1}{2}} - 1 \\]\n    \\[ CAGR = (1.02519) ^{0.5} - 1 \\]\n    \\[ CAGR = 1.01242 - 1 \\]\n    \\[ CAGR = 0.01242 \\text{ or } \\textbf{1.24%} \\]\n\n**Summary:**\n\nLockheed Martin's Total Revenue showed modest growth from FY2020 to FY2022. After an initial increase of 2.52% from FY2020 to FY2021, revenue remained essentially flat, with a slight decrease of 0.0015% from FY2021 to FY2022. The two-year CAGR for Total Revenue is 1.24%. The significant discrepancies in the initial \"Primary Metric\" data points for FY2020 and FY202",
+    "3": "## Lockheed Martin Corporation: FY2020-FY2022 Revenue Performance Report\n\n**Executive Summary**\n\nLockheed Martin Corporation experienced modest revenue growth between FY2020 and FY2022. Total Revenue increased from $65,398 million in FY2020 to $67,046 million in FY2021, representing a 2.52% increase. However, revenue remained largely flat in FY2022, decreasing slightly to $67,045 million, a change of -0.0015% from the prior year. The Compound Annual Growth Rate (CAGR) for Total Revenue over this two-year period was 1.24%.\n\n**Analysis**\n\nLockheed Martin's Total Revenue demonstrated a period of initial growth followed by stabilization. In FY2020, the company reported Total Revenue of $65,398 million. This figure rose to $67,046 million in FY2021, an absolute increase of $1,648 million. The subsequent year, FY2022, saw Total Revenue at $67,045 million, a marginal decrease of $1 million from FY2021. This indicates that while the company achieved growth in the first year of the period, revenue generation plateaued in the second year. The overall two-year CAGR of 1.24% reflects this subdued growth trajectory.\n\n**Key Risks**\n\nThe near-stagnation of revenue between FY2021 and FY2022, evidenced by a -0.0015% change, suggests potential challenges in sustaining growth momentum. Factors such as evolving defense spending priorities, increased competition, or delays in major program deliveries could contribute to this flattening trend. A prolonged period of minimal revenue growth could impact profitability and shareholder value if not addressed through strategic initiatives or new contract acquisitions.\n\n**Conclusion**\n\nLockheed Martin Corporation's Total Revenue from FY2020 to FY2022 shows a pattern of initial modest growth followed by a plateau. While the company successfully increased revenue by 2.52% from FY2020 to FY2021, the subsequent year saw virtually no growth. The 1.24% CAGR over the two-year period highlights the need for continued focus on securing new contracts and optimizing operational efficiencies to drive more robust revenue expansion in future periods.",
+    "4": "## Lockheed Martin Corporation: FY2020-FY2022 Revenue Performance Report\n\n**Executive Summary**\n\nLockheed Martin Corporation experienced modest revenue growth between FY2020 and FY2022. Total Revenue increased from $65,398 million in FY2020 to $67,046 million in FY2021, representing a 2.52% increase. However, revenue remained largely flat in FY2022, decreasing slightly to $67,045 million, a change of -0.0015% from the prior year. The Compound Annual Growth Rate (CAGR) for Total Revenue over this two-year period was 1.24%.\n\n**Analysis**\n\nLockheed Martin's Total Revenue demonstrated a period of initial growth followed by stabilization. In FY2020, the company reported Total Revenue of $65,398 million. This figure rose to $67,046 million in FY2021, an absolute increase of $1,648 million. The subsequent year, FY2022, saw Total Revenue at $67,045 million, a marginal decrease of $1 million from FY2021. This indicates that while the company achieved growth in the first year of the period, revenue generation plateaued in the second year. The overall two-year CAGR of 1.24% reflects this subdued growth trajectory, indicating an average annual growth rate over the period.\n\n**Key Risks**\n\nThe near-stagnation of revenue between FY2021 and FY2022, evidenced by a -0.0015% change, suggests potential challenges in sustaining growth momentum. Factors such as evolving defense spending priorities, increased competition, or delays in major program deliveries could contribute to this flattening trend. A prolonged period of minimal revenue growth could impact profitability and shareholder value if not addressed through strategic initiatives or new contract acquisitions. Furthermore, reliance on a limited number of large government contracts exposes the company to budgetary shifts and political influences, which could further constrain future revenue expansion.\n\n**Conclusion**\n\nLockheed Martin Corporation's Total Revenue from FY2020 to FY2022 shows a pattern of initial modest growth followed by a plateau. While the company successfully increased revenue by 2.52% from FY2020 to FY2021, the subsequent year saw virtually no growth. The 1.24% CAGR over the two-year period highlights the need for continued focus on securing new contracts and optimizing operational efficiencies to drive more robust revenue expansion in future periods. Strategic investments in research and development, diversification of product offerings, and proactive engagement with evolving defense landscapes will be crucial for overcoming current growth challenges and ensuring sustained financial performance."
+  },
+  "gates": {
+    "end_gate": {
+      "verified": [
+        {
+          "value": "$65,398 million",
+          "ref": 65398.0
+        },
+        {
+          "value": "$67,046 million",
+          "ref": 67046.0
+        },
+        {
+          "value": "$67,045 million",
+          "ref": 67045.0
+        },
+        {
+          "value": "$65,398 million",
+          "ref": 65398.0
+        },
+        {
+          "value": "$67,046 million",
+          "ref": 67046.0
+        },
+        {
+          "value": "$67,045 million",
+          "ref": 67045.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$1,648 million",
+          "num": 1648.0,
+          "correct": 1347.0,
+          "dev": 0.1826,
+          "source": "evidence"
+        },
+        {
+          "value": "$1 million",
+          "num": 1.0,
+          "correct": 1.3,
+          "dev": 0.2308,
+          "source": "source_document"
+        },
+        {
+          "value": "2.52%",
+          "num": 2.52,
+          "correct": 1.3,
+          "dev": 0.4841,
+          "source": "source_document"
+        },
+        {
+          "value": "2.52%",
+          "num": 2.52,
+          "correct": 1.3,
+          "dev": 0.4841,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "-0.0015%"
+        },
+        {
+          "value": "1.24%"
+        },
+        {
+          "value": "1.24%"
+        },
+        {
+          "value": "-0.0015%"
+        },
+        {
+          "value": "1.24%"
+        }
+      ],
+      "n_refs": 17
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_103_98E6E9E2",
+      "hid": "FB_103_98E6E9E2_H2",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 90117.0,
+      "orig_num": 65398.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_103_98E6E9E2",
+      "hid": "FB_103_98E6E9E2_H1",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 87879.0,
+      "orig_num": 67045.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:41:25.491582+00:00"
+}

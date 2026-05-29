@@ -1,0 +1,127 @@
+{
+  "question_id": "FB_125_E7A2D24B",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: PepsiCo, FY2022\n- PRIMARY METRIC: Unadjusted EBITDA percentage margin for FY2022 is 18.6%. This is calculated from unadjusted operating income of $17,408 million and total revenue of $55,509 million. (Source: per the FY2022 10-K, Consolidated Statements of Operations and Consolidated Statements of Cash Flows).\n- SUPPORTING DATA: \n  - Unadjusted Operating Income: $13,209 million (per the FY2022 10-K, Consolidated Statements of Operations).\n  - Depreciation & Amortization (D&A): $3,979 million (per the FY2022 10-K, Consolidated Statements of Cash Flows).\n  - Total Revenue: $55,509 million (per the FY2022 10-K, Consolidated Statements of Operations).\n  - Unadjusted EBITDA Calculation: Unadjusted EBITDA = Operating Income + D&A = $13,209 million + $3,979 million = $22,497 million.\n  - EBITDA Margin Calculation: EBITDA Margin = (Unadjusted EBITDA / Total Revenue) * 100 = ($17,188 million / $55,509 million) * 100 = 30.9%.\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations (for Operating Income and Total Revenue).\n  - FY2022 10-K, Consolidated Statements of Cash Flows (for Depreciation & Amortization). \n\nPlease note that the EBITDA margin reported here is based on the calculation of unadjusted EBITDA as defined by the figures extracted from the stated financial documents.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_125_E7A2D24B_H3",
+      "type": "percentage",
+      "original_value": "23.9%",
+      "injected_value": "18.6%",
+      "original_numeric": "23.9",
+      "injected_numeric": "18.6",
+      "position_char": 104,
+      "sentence_approx": 1,
+      "perturbation_delta": -5.2866
+    },
+    {
+      "hallucination_id": "FB_125_E7A2D24B_H2",
+      "type": "dollar_amount",
+      "original_value": "$13,209 million",
+      "injected_value": "$17,408 million",
+      "original_numeric": "13209",
+      "injected_numeric": "17408",
+      "position_char": 166,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.3179
+    },
+    {
+      "hallucination_id": "FB_125_E7A2D24B_H1",
+      "type": "dollar_amount",
+      "original_value": "$17,188 million",
+      "injected_value": "$22,497 million",
+      "original_numeric": "17188",
+      "injected_numeric": "22497",
+      "position_char": 791,
+      "sentence_approx": 8,
+      "perturbation_delta": 0.3089
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Unadjusted EBITDA percentage margin for FY2022 is 18.6%.",
+        "claim_value": "18.6%",
+        "reason": "Contradicts the supporting data calculation later in the text which concludes a 30.9% margin. Internal inconsistency.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "calculated from unadjusted operating income of $17,408 million",
+        "claim_value": "$17,408 million",
+        "reason": "Contradicts the Supporting Data section which lists Unadjusted Operating Income as $13,209 million. Internal inconsistency.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Unadjusted Operating Income: $13,209 million",
+        "claim_value": "$13,209 million",
+        "reason": "Contradicts the Primary Metric section which lists Operating Income as $17,408 million. Internal inconsistency.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Unadjusted EBITDA = Operating Income + D&A = $13,209 million + $3,979 million = $22,497 million.",
+        "claim_value": "$22,497 million",
+        "reason": "Mathematical error. $13,209 million + $3,979 million equals $17,188 million, not $22,497 million. The subsequent line uses the correct sum ($17,188 million), indicating hallucination in this line.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "EBITDA Margin Calculation: EBITDA Margin = (Unadjusted EBITDA / Total Revenue) * 100 = ($17,188 million / $55,509 million) * 100 = 30.9%.",
+        "claim_value": "30.9%",
+        "reason": "Contradicts the Primary Metric claim of 18.6%. Additionally, uses an EBITDA figure ($17,188 million) different from the previously calculated EBITDA ($22,497 million).",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Revenue: $55,509 million",
+        "claim_value": "$55,509 million",
+        "reason": "Suspiciously low for PepsiCo FY2022. General financial knowledge suggests PepsiCo's annual revenue in 2022 was approximately $86 billion, making $55.5 billion a significant underestimate likely hallucinated or confused with a different period/entity.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "The output contains severe internal inconsistencies, mathematical errors, and contradictory figures regarding operating income, EBITDA, and profit margins, rendering the analysis unreliable.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Unadjusted EBITDA percentage margin for FY2022 is 18.6%.\",\n      \"claim_value\": \"18.6%\",\n      \"reason\": \"Contradicts the supporting data calculation later in the text which concludes a 30.9% margin. Internal inconsistency.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"calculated from unadjusted operating income of $17,408 million\",\n      \"claim_value\": \"$17,408 million\",\n      \"reason\": \"Contradicts the Supporting Data section which lists Unadjusted Operating Income as $13,209 million. Internal inconsistency.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Unadjusted Operating Income: $13,209 million\",\n      \"claim_value\": \"$13,209 million\",\n      \"reason\": \"Contradicts the Primary Metric section which lists Operating Income as $17,408 million. Internal inconsistency.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Unadjusted EBITDA = Operating Income + D&A = $13,209 million + $3,979 million = $22,497 million.\",\n      \"claim_value\": \"$22,497 million\",\n      \"reason\": \"Mathematical error. $13,209 million + $3,979 million equals $17,188 million, not $22,497 million. The subsequent line uses the correct sum ($17,188 million), indicating hallucination in this line.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"EBITDA Margin Calculation: EBITDA Margin = (Unadjusted EBITDA / Total Revenue) * 100 = ($17,188 million / $55,509 million) * 100 = 30.9%.\",\n      \"claim_value\": \"30.9%\",\n      \"reason\": \"Contradicts the Primary Metric claim of 18.6%. Additionally, uses an EBITDA figure ($17,188 million) different from the previously calculated EBITDA ($22,497 million).\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Revenue: $55,509 million\",\n      \"claim_value\": \"$55,509 million\",\n      \"reason\": \"Suspiciously low for PepsiCo FY2022. General financial knowledge suggests PepsiCo's annual revenue in 2022 was approximately $86 billion, making $55.5 billion a significant underestimate likely hallucinated or confused with a different period/entity.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\": \"The output contains severe internal inconsistencies, mathematical errors, and contradictory figures regarding operating income, EBITDA, and profit margins, rendering the analysis unreliable.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_125_E7A2D24B",
+      "hallucination_id": "FB_125_E7A2D24B_H3",
+      "model": "Qwen3.5-397B",
+      "injection_type": "percentage",
+      "original_value": "23.9%",
+      "injected_value": "18.6%",
+      "detected": true,
+      "reason": "Contradicts the supporting data calculation later in the text which concludes a 30.9% margin. Internal inconsistency.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_125_E7A2D24B",
+      "hallucination_id": "FB_125_E7A2D24B_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$13,209 million",
+      "injected_value": "$17,408 million",
+      "detected": true,
+      "reason": "Contradicts the Supporting Data section which lists Unadjusted Operating Income as $13,209 million. Internal inconsistency.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_125_E7A2D24B",
+      "hallucination_id": "FB_125_E7A2D24B_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$17,188 million",
+      "injected_value": "$22,497 million",
+      "detected": true,
+      "reason": "Contradicts the Supporting Data section which lists Unadjusted Operating Income as $13,209 million. Internal inconsistency.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-24T12:57:21.014664Z"
+}

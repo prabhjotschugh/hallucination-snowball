@@ -1,0 +1,73 @@
+{
+  "question_id": "FB_109_F3781DA6",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: MGM Resorts International, FY2022\n- PRIMARY METRIC: The region with the weakest topline results in FY2022 was the \"MGM China\" segment, which reported revenue of $1,045 million. This figure is sourced from the FY2022 10-K, Consolidated Statements of Operations.\n- SUPPORTING DATA: \n  - Las Vegas Strip: Revenue of $4,868 million (FY2022 10-K, Consolidated Statements of Operations).\n  - Regional Operations: Revenue of $1,153 million (FY2022 10-K, Consolidated Statements of Operations).\n  - MGM China (Q4 2022): Revenue of $210 million (Q4 2022 Earnings Report, Consolidated Statements of Operations).\n  - Las Vegas Strip (Q4 2022): Revenue of $1,648 million (Q4 2022 Earnings Report, Consolidated Statements of Operations).\n  - Regional Operations (Q4 2022): Revenue of $335 million (Q4 2022 Earnings Report, Consolidated Statements of Operations).\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations.\n  - Q4 2022 Earnings Report, Consolidated Statements of Operations. \n\nNote: All figures are reported in USD millions as presented in the respective filings.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_109_F3781DA6_H2",
+      "type": "dollar_amount",
+      "original_value": "$6,324 million",
+      "injected_value": "$4,868 million",
+      "original_numeric": "6324",
+      "injected_numeric": "4868",
+      "position_char": 333,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.2302
+    },
+    {
+      "hallucination_id": "FB_109_F3781DA6_H1",
+      "type": "dollar_amount",
+      "original_value": "$251 million",
+      "injected_value": "$210 million",
+      "original_numeric": "251",
+      "injected_numeric": "210",
+      "position_char": 543,
+      "sentence_approx": 5,
+      "perturbation_delta": -0.1614
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Las Vegas Strip (Q4 2022): Revenue of $1,648 million",
+        "claim_value": "$1,648 million",
+        "reason": "The reported Q4 2022 revenue for the Las Vegas Strip ($1,648 million) appears disproportionately high when compared to the full FY2022 revenue for the same segment ($4,868 million). If Q4 revenue is $1,648 million, then the revenue for the first three quarters combined would be $3,220 million ($4,868M - $1,648M). This implies an average quarterly revenue of approximately $1,073 million for Q1-Q3. Q4 revenue being over 50% higher than the average of the preceding three quarters for a relatively stable segment like the Las Vegas Strip is an unusual distribution and raises suspicion of internal inconsistency or hallucination.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "Most financial figures appear plausible, but the Q4 2022 Las Vegas Strip revenue shows a significant internal inconsistency when compared to the full-year figure for the same segment.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Las Vegas Strip (Q4 2022): Revenue of $1,648 million\",\n      \"claim_value\": \"$1,648 million\",\n      \"reason\": \"The reported Q4 2022 revenue for the Las Vegas Strip ($1,648 million) appears disproportionately high when compared to the full FY2022 revenue for the same segment ($4,868 million). If Q4 revenue is $1,648 million, then the revenue for the first three quarters combined would be $3,220 million ($4,868M - $1,648M). This implies an average quarterly revenue of approximately $1,073 million for Q1-Q3. Q4 revenue being over 50% higher than the average of the preceding three quarters for a relatively stable segment like the Las Vegas Strip is an unusual distribution and raises suspicion of internal inconsistency or hallucination.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\": \"Most financial figures appear plausible, but the Q4 2022 Las Vegas Strip revenue shows a significant internal inconsistency when compared to the full-year figure for the same segment.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_109_F3781DA6",
+      "hallucination_id": "FB_109_F3781DA6_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$6,324 million",
+      "injected_value": "$4,868 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_109_F3781DA6",
+      "hallucination_id": "FB_109_F3781DA6_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$251 million",
+      "injected_value": "$210 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-25T07:59:02.237826Z"
+}

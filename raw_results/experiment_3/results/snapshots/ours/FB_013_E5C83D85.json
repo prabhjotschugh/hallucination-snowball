@@ -1,0 +1,277 @@
+{
+  "question_id": "FB_013_E5C83D85",
+  "method": "ours",
+  "final_output": "## Adobe Inc. - FY2017 Operating Cash Flow Analysis\n\n**Executive Summary:**\nAdobe Inc. demonstrated a robust recovery in its operating cash flow performance in FY2017. The Operating Cash Flow Ratio increased to 1.19 from 0.97 in FY2016, indicating a stronger ability to cover current liabilities with cash generated from operations. Cash from Operations rebounded significantly by 35.88% to $3,257 million, matching the FY22015 level, while Total Current Liabilities continued a steady upward trend.\n\n**Analysis:**\nFor FY2017, Adobe Inc. reported Cash from Operations of $3,257 million and Total Current Liabilities of $2,737 million. This resulted in an Operating Cash Flow Ratio of 1.19 ($3,257 million / $2,737 million). This represents a substantial improvement from FY2016, where the ratio stood at 0.97 ($2,397 million / $2,470 million). The FY2017 ratio also shows a recovery towards the FY2015 level of 1.48 ($3,257 million / $2,197 million).\n\nYear-over-year, Cash from Operations experienced significant volatility. After a -26.41% decrease from $3,257 million in FY2015 to $2,397 million in FY2016, it saw a strong 35.88% increase in FY2017, returning to $3,257 million. Concurrently, Total Current Liabilities have shown consistent growth, increasing by 12.43% from $2,197 million in FY2015 to $2,470 million in FY2016, and further by 10.81% to $2,737 million in FY2017.\n\n**Key Risks:**\nThe significant volatility in Cash from Operations, particularly the -26.41% drop from FY2015 to FY2016, highlights a potential risk in the consistency of cash generation. While the FY2017 recovery is positive, understanding the underlying drivers of such fluctuations is crucial for long-term financial stability. A sustained period where the Operating Cash Flow Ratio falls below 1.00, as seen in FY2016, could indicate short-term liquidity challenges if not addressed promptly.\n\n**Conclusion:**\nAdobe Inc.'s FY2017 financial performance, as measured by the Operating Cash Flow Ratio, demonstrates a healthy recovery in its ability to generate sufficient cash from operations to meet its short-term obligations. The rebound in Cash from Operations to $3,257 million is a positive indicator of operational efficiency. However, the historical volatility in this metric warrants ongoing monitoring to ensure consistent operational cash generation and maintain strong liquidity. Management should focus on identifying and mitigating factors contributing to cash flow fluctuations to ensure sustained financial health.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Adobe Inc., FY2017\n- PRIMARY METRIC: Operating Cash Flow Ratio = Cash from Operations / Total Current Liabilities\n  - Cash from Operations: $3,257 million (per the FY2017 10-K, Consolidated Statements of Cash Flows)\n  - Total Current Liabilities: $2,737 million (per the FY2017 10-K, Consolidated Balance Sheets)\n  - Operating Cash Flow Ratio = $3,257 million / $2,737 million = 1.19 (rounded to two decimal places)\n\n- SUPPORTING DATA:\n  - Cash from Operations for FY2016: $2,397 million (per the FY2016 10-K, Consolidated Statements of Cash Flows)\n  - Total Current Liabilities for FY2016: $2,470 million (per the FY2016 10-K, Consolidated Balance Sheets)\n  - Cash from Operations for FY2015: $3,504 million (per the FY2015 10-K, Consolidated Statements of Cash Flows)\n  - Total Current Liabilities for FY2015: $2,197 million (per the FY2015 10-K, Consolidated Balance Sheets)\n\n- DATA SOURCES:\n  - FY2017 10-K: Consolidated Statements of Cash Flows and Consolidated Balance Sheets\n  - FY2016 10-K: Consolidated Statements of Cash Flows and Consolidated Balance Sheets\n  - FY2015 10-K: Consolidated Statements of Cash Flows and Consolidated Balance Sheets",
+    "2": "Here's an analysis of Adobe Inc.'s operating cash flow, incorporating the corrected data:\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\n| Metric                 | FY2015 (Corrected) | FY2016       | FY2017       | Absolute Change (FY16-FY15) | Percentage Change (FY16-FY15) | Absolute Change (FY17-FY16) | Percentage Change (FY17-FY16) |\n| :--------------------- | :----------------- | :----------- | :----------- | :-------------------------- | :---------------------------- | :-------------------------- | :---------------------------- |\n| Cash from Operations   | $3,257 million     | $2,397 million | $3,257 million | -$860 million               | -26.41%                       | $860 million                | 35.88%                        |\n| Total Current Liabilities | $2,197 million     | $2,470 million | $2,737 million | $273 million                | 12.43%                        | $267 million                | 10.81%                        |\n\n**Formulas:**\n*   Absolute Change = Current Year Value - Prior Year Value\n*   Percentage Change = (Absolute Change / Prior Year Value) * 100\n\n**2. Relevant Ratios**\n\n**Operating Cash Flow Ratio = Cash from Operations / Total Current Liabilities**\n\n*   **FY2015 (Corrected):**\n    *   Formula: $3,257 million / $2,197 million\n    *   Ratio: **1.48**\n*   **FY2016:**\n    *   Formula: $2,397 million / $2,470 million\n    *   Ratio: **0.97**\n*   **FY2017:**\n    *   Formula: $3,257 million / $2,737 million\n    *   Ratio: **1.19**\n\n**3. Anomalies Flagged**\n\n*   **FY2015 Cash from Operations:** The initial researcher data for FY2015 Cash from Operations ($3,504 million) was **REFUTED** and corrected to $3,257 million. This correction significantly impacts the FY2015 ratio and the year-over-year changes from FY2015 to FY2016.\n*   **Significant Volatility in Cash from Operations:**\n    *   A substantial **-26.41% decrease** in Cash from Operations from FY2015 to FY2016.\n    *   Followed by a strong **+35.88% increase** from FY2016 to FY2017, bringing it back to the FY2015 level. This fluctuation warrants further investigation into the drivers of cash generation during these periods (e.g., changes in working capital, revenue recognition, or specific operational events).\n*   **Operating Cash Flow Ratio Dip in FY2016:** The ratio dropped from 1.48 in FY2015 to 0.97 in FY2016, indicating that cash from operations was less than current liabilities in FY2016. This is a notable dip in liquidity and operational efficiency compared to the surrounding years. The ratio recovered to 1.19 in FY2017.",
+    "3": "## Adobe Inc. - FY2017 Operating Cash Flow Analysis\n\n**Executive Summary:**\nAdobe Inc. demonstrated a robust recovery in its operating cash flow performance in FY2017, with its Operating Cash Flow Ratio increasing to 1.19 from 0.97 in FY2016. This improvement indicates a stronger ability to cover current liabilities with cash generated from operations. Cash from Operations rebounded significantly by 35.88% to $3,257 million, matching the FY2015 level, while Total Current Liabilities continued a steady upward trend.\n\n**Analysis:**\nFor FY2017, Adobe Inc. reported Cash from Operations of $3,257 million and Total Current Liabilities of $2,737 million. This resulted in an Operating Cash Flow Ratio of 1.19. This represents a substantial improvement from FY2016, where the ratio stood at 0.97 ($2,397 million / $2,470 million). The FY2017 ratio also shows a recovery towards the FY2015 level of 1.48 ($3,257 million / $2,197 million).\n\nYear-over-year, Cash from Operations experienced significant volatility. After a -26.41% decrease from $3,257 million in FY2015 to $2,397 million in FY2016, it saw a strong 35.88% increase in FY2017, returning to $3,257 million. Concurrently, Total Current Liabilities have shown consistent growth, increasing by 12.43% from $2,197 million in FY2015 to $2,470 million in FY2016, and further by 10.81% to $2,737 million in FY2017.\n\n**Key Risks:**\nThe significant volatility in Cash from Operations, particularly the -26.41% drop from FY2015 to FY2016, highlights a potential risk in the consistency of cash generation. While the FY2017 recovery is positive, understanding the underlying drivers of such fluctuations is crucial. A sustained period where the Operating Cash Flow Ratio falls below 1.00, as seen in FY2016, could indicate short-term liquidity challenges if not addressed.\n\n**Conclusion:**\nAdobe Inc.'s FY2017 financial performance, as measured by the Operating Cash Flow Ratio, demonstrates a healthy recovery in its ability to generate sufficient cash from operations to meet its short-term obligations. The rebound in Cash from Operations to $3,257 million is a positive indicator. However, the historical volatility in this metric warrants ongoing monitoring to ensure consistent operational cash generation and maintain strong liquidity.",
+    "4": "## Adobe Inc. - FY2017 Operating Cash Flow Analysis\n\n**Executive Summary:**\nAdobe Inc. demonstrated a robust recovery in its operating cash flow performance in FY2017. The Operating Cash Flow Ratio increased to 1.19 from 0.97 in FY2016, indicating a stronger ability to cover current liabilities with cash generated from operations. Cash from Operations rebounded significantly by 35.88% to $3,257 million, matching the FY22015 level, while Total Current Liabilities continued a steady upward trend.\n\n**Analysis:**\nFor FY2017, Adobe Inc. reported Cash from Operations of $3,257 million and Total Current Liabilities of $2,737 million. This resulted in an Operating Cash Flow Ratio of 1.19 ($3,257 million / $2,737 million). This represents a substantial improvement from FY2016, where the ratio stood at 0.97 ($2,397 million / $2,470 million). The FY2017 ratio also shows a recovery towards the FY2015 level of 1.48 ($3,257 million / $2,197 million).\n\nYear-over-year, Cash from Operations experienced significant volatility. After a -26.41% decrease from $3,257 million in FY2015 to $2,397 million in FY2016, it saw a strong 35.88% increase in FY2017, returning to $3,257 million. Concurrently, Total Current Liabilities have shown consistent growth, increasing by 12.43% from $2,197 million in FY2015 to $2,470 million in FY2016, and further by 10.81% to $2,737 million in FY2017.\n\n**Key Risks:**\nThe significant volatility in Cash from Operations, particularly the -26.41% drop from FY2015 to FY2016, highlights a potential risk in the consistency of cash generation. While the FY2017 recovery is positive, understanding the underlying drivers of such fluctuations is crucial for long-term financial stability. A sustained period where the Operating Cash Flow Ratio falls below 1.00, as seen in FY2016, could indicate short-term liquidity challenges if not addressed promptly.\n\n**Conclusion:**\nAdobe Inc.'s FY2017 financial performance, as measured by the Operating Cash Flow Ratio, demonstrates a healthy recovery in its ability to generate sufficient cash from operations to meet its short-term obligations. The rebound in Cash from Operations to $3,257 million is a positive indicator of operational efficiency. However, the historical volatility in this metric warrants ongoing monitoring to ensure consistent operational cash generation and maintain strong liquidity. Management should focus on identifying and mitigating factors contributing to cash flow fluctuations to ensure sustained financial health."
+  },
+  "gates": {
+    "gate_1": {
+      "verified": [
+        {
+          "value": "$3,257 million",
+          "ref": 3257.0
+        },
+        {
+          "value": "$2,737 million",
+          "ref": 2737.0
+        },
+        {
+          "value": "$3,257 million",
+          "ref": 3257.0
+        },
+        {
+          "value": "$2,737 million",
+          "ref": 2737.0
+        },
+        {
+          "value": "$2,470 million",
+          "ref": 2470.0
+        },
+        {
+          "value": "$2,197 million",
+          "ref": 2197.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$3,504 million",
+          "num": 3504.0,
+          "correct": 3257.0,
+          "dev": 0.0705,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$2,397 million"
+        }
+      ],
+      "n_refs": 97
+    },
+    "gate_2": {
+      "verified": [
+        {
+          "value": "$3,257 million",
+          "ref": 3257.0
+        },
+        {
+          "value": "$3,257 million",
+          "ref": 3257.0
+        },
+        {
+          "value": "$2,197 million",
+          "ref": 2197.0
+        },
+        {
+          "value": "$2,470 million",
+          "ref": 2470.0
+        },
+        {
+          "value": "$2,737 million",
+          "ref": 2737.0
+        },
+        {
+          "value": "$3,257 million",
+          "ref": 3257.0
+        },
+        {
+          "value": "$2,197 million",
+          "ref": 2197.0
+        },
+        {
+          "value": "$2,470 million",
+          "ref": 2470.0
+        },
+        {
+          "value": "$3,257 million",
+          "ref": 3257.0
+        },
+        {
+          "value": "$2,737 million",
+          "ref": 2737.0
+        },
+        {
+          "value": "$3,257 million",
+          "ref": 3257.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$3,504 million",
+          "num": 3504.0,
+          "correct": 3257.0,
+          "dev": 0.0705,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$2,397 million"
+        },
+        {
+          "value": "$860 million"
+        },
+        {
+          "value": "$860 million"
+        },
+        {
+          "value": "$273 million"
+        },
+        {
+          "value": "$267 million"
+        },
+        {
+          "value": "$2,397 million"
+        },
+        {
+          "value": "-26.41%"
+        },
+        {
+          "value": "35.88%"
+        },
+        {
+          "value": "12.43%"
+        },
+        {
+          "value": "10.81%"
+        },
+        {
+          "value": "-26.41%"
+        },
+        {
+          "value": "+35.88%"
+        }
+      ],
+      "n_refs": 97
+    },
+    "gate_3": {
+      "verified": [
+        {
+          "value": "$3,257 million",
+          "ref": 3257.0
+        },
+        {
+          "value": "$3,257 million",
+          "ref": 3257.0
+        },
+        {
+          "value": "$2,737 million",
+          "ref": 2737.0
+        },
+        {
+          "value": "$2,470 million",
+          "ref": 2470.0
+        },
+        {
+          "value": "$3,257 million",
+          "ref": 3257.0
+        },
+        {
+          "value": "$2,197 million",
+          "ref": 2197.0
+        },
+        {
+          "value": "$3,257 million",
+          "ref": 3257.0
+        },
+        {
+          "value": "$3,257 million",
+          "ref": 3257.0
+        },
+        {
+          "value": "$2,197 million",
+          "ref": 2197.0
+        },
+        {
+          "value": "$2,470 million",
+          "ref": 2470.0
+        },
+        {
+          "value": "$2,737 million",
+          "ref": 2737.0
+        },
+        {
+          "value": "$3,257 million",
+          "ref": 3257.0
+        }
+      ],
+      "refuted": [],
+      "unverified": [
+        {
+          "value": "$2,397 million"
+        },
+        {
+          "value": "$2,397 million"
+        },
+        {
+          "value": "35.88%"
+        },
+        {
+          "value": "-26.41%"
+        },
+        {
+          "value": "35.88%"
+        },
+        {
+          "value": "12.43%"
+        },
+        {
+          "value": "10.81%"
+        },
+        {
+          "value": "-26.41%"
+        }
+      ],
+      "n_refs": 97
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_013_E5C83D85",
+      "hid": "FB_013_E5C83D85_H2",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 2397.0,
+      "orig_num": 2927.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_013_E5C83D85",
+      "hid": "FB_013_E5C83D85_H1",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 3504.0,
+      "orig_num": 2628.0,
+      "survived": false,
+      "corrected": false,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:07:40.792069+00:00"
+}

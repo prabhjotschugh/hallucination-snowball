@@ -1,0 +1,115 @@
+{
+  "question_id": "FB_115_AE55E4C4",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Nike, Inc. for Fiscal Years 2016, 2017, and 2018\n- PRIMARY METRIC: \n  - FY2016 COGS: $9,070 million (per the FY2016 10-K, Consolidated Statements of Operations)\n  - FY2016 Revenue: $32,376 million (per the FY2016 10-K, Consolidated Statements of Operations)\n  - COGS as a % of Revenue for FY2016: (12,199 / 21,769) * 100 = 37.7%\n\n  - FY2017 COGS: $12,579 million (per the FY2017 10-K, Consolidated Statements of Operations)\n  - FY2017 Revenue: $34,350 million (per the FY2017 10-K, Consolidated Statements of Operations)\n  - COGS as a % of Revenue for FY2017: (12,579 / 34,350) * 100 = 36.6%\n\n  - FY2018 COGS: $13,202 million (per the FY2018 10-K, Consolidated Statements of Operations)\n  - FY2018 Revenue: $36,397 million (per the FY2018 10-K, Consolidated Statements of Operations)\n  - COGS as a % of Revenue for FY2018: (13,202 / 36,397) * 100 = 36.3%\n\n- SUPPORTING DATA: \n  - FY2016 COGS as a % of Revenue: 37.7%\n  - FY2017 COGS as a % of Revenue: 36.6%\n  - FY2018 COGS as a % of Revenue: 36.3%\n  - Three-Year Average COGS as a % of Revenue: (47.3% + 36.6% + 36.3%) / 3 = 36.8%\n\n- DATA SOURCES: \n  - FY2016 10-K, Consolidated Statements of Operations\n  - FY2017 10-K, Consolidated Statements of Operations\n  - FY2018 10-K, Consolidated Statements of Operations",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_115_AE55E4C4_H3",
+      "type": "dollar_amount",
+      "original_value": "$12,199 million",
+      "injected_value": "$9,070 million",
+      "original_numeric": "12199",
+      "injected_numeric": "9070",
+      "position_char": 105,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.2565
+    },
+    {
+      "hallucination_id": "FB_115_AE55E4C4_H2",
+      "type": "large_number",
+      "original_value": "32,376",
+      "injected_value": "21,769",
+      "original_numeric": "32376",
+      "injected_numeric": "21769",
+      "position_char": 328,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3276
+    },
+    {
+      "hallucination_id": "FB_115_AE55E4C4_H1",
+      "type": "percentage",
+      "original_value": "37.7%",
+      "injected_value": "47.3%",
+      "original_numeric": "37.7",
+      "injected_numeric": "47.3",
+      "position_char": 1068,
+      "sentence_approx": 8,
+      "perturbation_delta": 9.6416
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "FY2016 COGS as a % of Revenue for FY2016: (12,199 / 21,769) * 100 = 37.7%",
+        "claim_value": "37.7%",
+        "reason": "Internal inconsistency: The calculation inputs (12,199 and 21,769) do not match the stated FY2016 COGS ($9,070) and Revenue ($32,376) listed immediately above. Additionally, the math is incorrect; 12,199 divided by 21,769 equals approximately 56.0%, not 37.7%.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Three-Year Average COGS as a % of Revenue: (47.3% + 36.6% + 36.3%) / 3 = 36.8%",
+        "claim_value": "36.8%",
+        "reason": "Internal inconsistency: The input value for FY2016 (47.3%) contradicts the previously stated FY2016 percentage (37.7%). Furthermore, the arithmetic is incorrect; the average of 47.3, 36.6, and 36.3 is approximately 40.1%, not 36.8%.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "COGS as a % of Revenue for FY2017: (12,579 / 34,350) * 100 = 36.6%",
+        "claim_value": "36.6%",
+        "reason": "Plausibility concern: A COGS ratio of ~36% implies a gross margin of ~64%. For a footwear and apparel manufacturer like Nike, gross margins are typically in the 40-45% range (implying COGS of 55-60%). A 64% gross margin is highly unusual for this industry and period.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2016 COGS: $9,070 million",
+        "claim_value": "$9,070 million",
+        "reason": "Plausibility concern: Given the stated revenue of $32,376 million, this COGS figure implies an extremely low cost structure (~28% of revenue) inconsistent with Nike's historical manufacturing and sourcing costs, which typically exceed 50% of revenue.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 10,
+    "overall_assessment": "The output contains multiple critical internal inconsistencies, mathematical errors, and industry implausibilities regarding Nike's cost structure.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"FY2016 COGS as a % of Revenue for FY2016: (12,199 / 21,769) * 100 = 37.7%\",\n      \"claim_value\": \"37.7%\",\n      \"reason\": \"Internal inconsistency: The calculation inputs (12,199 and 21,769) do not match the stated FY2016 COGS ($9,070) and Revenue ($32,376) listed immediately above. Additionally, the math is incorrect; 12,199 divided by 21,769 equals approximately 56.0%, not 37.7%.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Three-Year Average COGS as a % of Revenue: (47.3% + 36.6% + 36.3%) / 3 = 36.8%\",\n      \"claim_value\": \"36.8%\",\n      \"reason\": \"Internal inconsistency: The input value for FY2016 (47.3%) contradicts the previously stated FY2016 percentage (37.7%). Furthermore, the arithmetic is incorrect; the average of 47.3, 36.6, and 36.3 is approximately 40.1%, not 36.8%.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"COGS as a % of Revenue for FY2017: (12,579 / 34,350) * 100 = 36.6%\",\n      \"claim_value\": \"36.6%\",\n      \"reason\": \"Plausibility concern: A COGS ratio of ~36% implies a gross margin of ~64%. For a footwear and apparel manufacturer like Nike, gross margins are typically in the 40-45% range (implying COGS of 55-60%). A 64% gross margin is highly unusual for this industry and period.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2016 COGS: $9,070 million\",\n      \"claim_value\": \"$9,070 million\",\n      \"reason\": \"Plausibility concern: Given the stated revenue of $32,376 million, this COGS figure implies an extremely low cost structure (~28% of revenue) inconsistent with Nike's historical manufacturing and sourcing costs, which typically exceed 50% of revenue.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 10,\n  \"overall_assessment\": \"The output contains multiple critical internal inconsistencies, mathematical errors, and industry implausibilities regarding Nike's cost structure.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_115_AE55E4C4",
+      "hallucination_id": "FB_115_AE55E4C4_H3",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$12,199 million",
+      "injected_value": "$9,070 million",
+      "detected": true,
+      "reason": "Plausibility concern: Given the stated revenue of $32,376 million, this COGS figure implies an extremely low cost structure (~28% of revenue) inconsistent with Nike's historical manufacturing and sourcing costs, which typically exceed 50% of revenue.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 10
+    },
+    {
+      "question_id": "FB_115_AE55E4C4",
+      "hallucination_id": "FB_115_AE55E4C4_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "large_number",
+      "original_value": "32,376",
+      "injected_value": "21,769",
+      "detected": true,
+      "reason": "Internal inconsistency: The calculation inputs (12,199 and 21,769) do not match the stated FY2016 COGS ($9,070) and Revenue ($32,376) listed immediately above. Additionally, the math is incorrect; 12,199 divided by 21,769 equals approximately 56.0%, not 37.7%.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 10
+    },
+    {
+      "question_id": "FB_115_AE55E4C4",
+      "hallucination_id": "FB_115_AE55E4C4_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "percentage",
+      "original_value": "37.7%",
+      "injected_value": "47.3%",
+      "detected": true,
+      "reason": "Internal inconsistency: The calculation inputs (12,199 and 21,769) do not match the stated FY2016 COGS ($9,070) and Revenue ($32,376) listed immediately above. Additionally, the math is incorrect; 12,199 divided by 21,769 equals approximately 56.0%, not 37.7%.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 10
+    }
+  ],
+  "timestamp": "2026-03-24T12:47:52.582815Z"
+}

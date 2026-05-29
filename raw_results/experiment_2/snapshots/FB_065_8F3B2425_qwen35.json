@@ -1,0 +1,97 @@
+{
+  "question_id": "FB_065_8F3B2425",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: The Boeing Company, Fiscal Year 2022\n- PRIMARY METRIC: Total Revenue for FY2022 was $66,610 million, per the FY2022 10-K, Consolidated Statements of Operations.\n- SUPPORTING DATA:\n  - FY2021 Total Revenue: $62,286 million, per the FY2021 10-K, Consolidated Statements of Operations.\n  - FY2020 Total Revenue: $41,886 million, per the FY2020 10-K, Consolidated Statements of Operations.\n  - FY2022 Commercial Airplanes Revenue: $43,028 million, per the FY2022 10-K, Segment Information.\n  - FY2021 Commercial Airplanes Revenue: $27,100 million, per the FY2021 10-K, Segment Information.\n  - FY2020 Commercial Airplanes Revenue: $28,658 million, per the FY2020 10-K, Segment Information.\n  - FY2022 Defense, Space & Security Revenue: $18,532 million, per the FY2022 10-K, Segment Information.\n  - FY2021 Defense, Space & Security Revenue: $26,720 million, per the FY2021 10-K, Segment Information.\n  - FY2020 Defense, Space & Security Revenue: $26,130 million, per the FY2020 10-K, Segment Information.\n  - Backlog as of December 31, 2022: $469 billion, per the FY2022 10-K, Management's Discussion and Analysis.\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations.\n  - FY2021 10-K, Consolidated Statements of Operations.\n  - FY2020 10-K, Consolidated Statements of Operations.\n  - FY2022 10-K, Segment Information.\n  - FY2021 10-K, Segment Information.\n  - FY2020 10-K, Segment Information.\n  - FY2022 10-K, Management's Discussion and Analysis. \n\nNote: The analysis of cyclicality, including patterns and key ratios, is not included as per the directive to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_065_8F3B2425_H3",
+      "type": "dollar_amount",
+      "original_value": "$58,658 million",
+      "injected_value": "$41,886 million",
+      "original_numeric": "58658",
+      "injected_numeric": "41886",
+      "position_char": 329,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.2859
+    },
+    {
+      "hallucination_id": "FB_065_8F3B2425_H2",
+      "type": "dollar_amount",
+      "original_value": "$26,210 million",
+      "injected_value": "$18,532 million",
+      "original_numeric": "26210",
+      "injected_numeric": "18532",
+      "position_char": 752,
+      "sentence_approx": 7,
+      "perturbation_delta": -0.2929
+    },
+    {
+      "hallucination_id": "FB_065_8F3B2425_H1",
+      "type": "dollar_amount",
+      "original_value": "$382 billion",
+      "injected_value": "$469 billion",
+      "original_numeric": "382",
+      "injected_numeric": "469",
+      "position_char": 1058,
+      "sentence_approx": 10,
+      "perturbation_delta": 0.2272
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "FY2020 Total Revenue: $41,886 million, per the FY2020 10-K, Consolidated Statements of Operations.",
+        "claim_value": "$41,886 million",
+        "reason": "This figure is significantly lower than the widely reported FY2020 revenue for Boeing (approximately $58.2 billion). Furthermore, it creates an internal mathematical inconsistency: the sum of the provided segment revenues for 2020 (Commercial Airplanes $28,658m + Defense $26,130m = $54,788m) exceeds the claimed Total Revenue, which is impossible without negative revenue from other segments or massive eliminations not typical for this company.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 10,
+    "overall_assessment": "Most financial figures align with general knowledge, but the FY2020 Total Revenue claim is highly suspicious due to deviation from known data and internal inconsistency with segment sums.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"FY2020 Total Revenue: $41,886 million, per the FY2020 10-K, Consolidated Statements of Operations.\",\n      \"claim_value\": \"$41,886 million\",\n      \"reason\": \"This figure is significantly lower than the widely reported FY2020 revenue for Boeing (approximately $58.2 billion). Furthermore, it creates an internal mathematical inconsistency: the sum of the provided segment revenues for 2020 (Commercial Airplanes $28,658m + Defense $26,130m = $54,788m) exceeds the claimed Total Revenue, which is impossible without negative revenue from other segments or massive eliminations not typical for this company.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 10,\n  \"overall_assessment\": \"Most financial figures align with general knowledge, but the FY2020 Total Revenue claim is highly suspicious due to deviation from known data and internal inconsistency with segment sums.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_065_8F3B2425",
+      "hallucination_id": "FB_065_8F3B2425_H3",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$58,658 million",
+      "injected_value": "$41,886 million",
+      "detected": true,
+      "reason": "This figure is significantly lower than the widely reported FY2020 revenue for Boeing (approximately $58.2 billion). Furthermore, it creates an internal mathematical inconsistency: the sum of the provided segment revenues for 2020 (Commercial Airplanes $28,658m + Defense $26,130m = $54,788m) exceeds the claimed Total Revenue, which is impossible without negative revenue from other segments or massive eliminations not typical for this company.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 10
+    },
+    {
+      "question_id": "FB_065_8F3B2425",
+      "hallucination_id": "FB_065_8F3B2425_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$26,210 million",
+      "injected_value": "$18,532 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 10
+    },
+    {
+      "question_id": "FB_065_8F3B2425",
+      "hallucination_id": "FB_065_8F3B2425_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$382 billion",
+      "injected_value": "$469 billion",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 10
+    }
+  ],
+  "timestamp": "2026-03-24T11:33:30.858434Z"
+}

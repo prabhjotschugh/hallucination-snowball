@@ -1,0 +1,103 @@
+{
+  "question_id": "FB_090_72CFB567",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: Johnson & Johnson, FY2022\n- PRIMARY METRIC: \n  - Domestic Sales: $49,097 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - International Sales: $36,544 million (per the FY2022 10-K, Consolidated Statements of Operations)\n\n- SUPPORTING DATA: \n  - FY2021 Domestic Sales: $46,211 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2021 International Sales: $34,678 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  \n  - Domestic Sales Growth FY2022: \n    - Growth = ($49,097 million - $62,980 million) / $46,211 million = 4.06%\n  \n  - International Sales Growth FY2022: \n    - Growth = ($36,544 million - $48,060 million) / $40,543 million = 5.38%\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Statements of Operations\n\nNote: The growth rates are computed based on the figures provided and are presented without interpretation or analysis.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_090_72CFB567_H3",
+      "type": "dollar_amount",
+      "original_value": "$46,211 million",
+      "injected_value": "$62,980 million",
+      "original_numeric": "46211",
+      "injected_numeric": "62980",
+      "position_char": 570,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.3629
+    },
+    {
+      "hallucination_id": "FB_090_72CFB567_H2",
+      "type": "dollar_amount",
+      "original_value": "$34,678 million",
+      "injected_value": "$48,060 million",
+      "original_numeric": "34678",
+      "injected_numeric": "48060",
+      "position_char": 690,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.3859
+    },
+    {
+      "hallucination_id": "FB_090_72CFB567_H1",
+      "type": "dollar_amount",
+      "original_value": "$34,678 million",
+      "injected_value": "$40,543 million",
+      "original_numeric": "34678",
+      "injected_numeric": "40543",
+      "position_char": 709,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.1691
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Growth = ($49,097 million - $62,980 million) / $46,211 million = 4.06%",
+        "claim_value": "4.06%",
+        "reason": "Numerator uses $49,097m instead of stated Domestic Sales ($49,097m vs $49,097m typo?), and subtracts $62,980m (unexplained figure - possibly swapped with another metric?), denominator uses $46,211m instead of $46,211m (should match FY2021 Domestic Sales of $46,211m for YoY growth calculation). Arithmetic also incorrect for given numbers.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Growth = ($36,544 million - $48,060 million) / $40,543 million = 5.38%",
+        "claim_value": "5.38%",
+        "reason": "Numerator subtracts $48,060m (unexplained figure - possibly swapped with another metric?), denominator uses $40,543m instead of $34,678m (should match FY2021 International Sales for YoY growth). Arithmetic fails basic sanity check (negative growth implied before division contradicts positive result).",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 4,
+    "overall_assessment": "Growth rate calculations contain unexplained figures and arithmetic errors contradicting basic financial reporting logic.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Growth = ($49,097 million - $62,980 million) / $46,211 million = 4.06%\",\n      \"claim_value\": \"4.06%\",\n      \"reason\": \"Numerator uses $49,097m instead of stated Domestic Sales ($49,097m vs $49,097m typo?), and subtracts $62,980m (unexplained figure - possibly swapped with another metric?), denominator uses $46,211m instead of $46,211m (should match FY2021 Domestic Sales of $46,211m for YoY growth calculation). Arithmetic also incorrect for given numbers.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Growth = ($36,544 million - $48,060 million) / $40,543 million = 5.38%\",\n      \"claim_value\": \"5.38%\",\n      \"reason\": \"Numerator subtracts $48,060m (unexplained figure - possibly swapped with another metric?), denominator uses $40,543m instead of $34,678m (should match FY2021 International Sales for YoY growth). Arithmetic fails basic sanity check (negative growth implied before division contradicts positive result).\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 4,\n  \"overall_assessment\": \"Growth rate calculations contain unexplained figures and arithmetic errors contradicting basic financial reporting logic.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_090_72CFB567",
+      "hallucination_id": "FB_090_72CFB567_H3",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$46,211 million",
+      "injected_value": "$62,980 million",
+      "detected": true,
+      "reason": "Numerator uses $49,097m instead of stated Domestic Sales ($49,097m vs $49,097m typo?), and subtracts $62,980m (unexplained figure - possibly swapped with another metric?), denominator uses $46,211m instead of $46,211m (should match FY2021 Domestic Sales of $46,211m for YoY growth calculation). Arithmetic also incorrect for given numbers.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 4
+    },
+    {
+      "question_id": "FB_090_72CFB567",
+      "hallucination_id": "FB_090_72CFB567_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$34,678 million",
+      "injected_value": "$48,060 million",
+      "detected": true,
+      "reason": "Numerator subtracts $48,060m (unexplained figure - possibly swapped with another metric?), denominator uses $40,543m instead of $34,678m (should match FY2021 International Sales for YoY growth). Arithmetic fails basic sanity check (negative growth implied before division contradicts positive result).",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 4
+    },
+    {
+      "question_id": "FB_090_72CFB567",
+      "hallucination_id": "FB_090_72CFB567_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$34,678 million",
+      "injected_value": "$40,543 million",
+      "detected": true,
+      "reason": "Numerator subtracts $48,060m (unexplained figure - possibly swapped with another metric?), denominator uses $40,543m instead of $34,678m (should match FY2021 International Sales for YoY growth). Arithmetic fails basic sanity check (negative growth implied before division contradicts positive result).",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 4
+    }
+  ],
+  "timestamp": "2026-03-24T09:53:46.625312Z"
+}

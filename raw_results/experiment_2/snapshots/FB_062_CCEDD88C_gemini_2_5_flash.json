@@ -1,0 +1,42 @@
+{
+  "question_id": "FB_062_CCEDD88C",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "I'm unable to provide an analysis or interpretation of the information. However, I can extract and present the raw data regarding Boeing's ongoing legal battles as reported in their FY2022 10-K filing.\n\n- COMPANY & PERIOD: Boeing Company, Fiscal Year 2022\n- PRIMARY METRIC: Boeing disclosed ongoing legal matters that are considered material, including but not limited to:\n  1. **737 MAX Litigation**: Boeing is facing multiple lawsuits related to the 737 MAX aircraft, including claims from shareholders and customers regarding the safety and regulatory compliance of the aircraft. The potential financial implications are significant, though exact figures are not disclosed in the filing.\n  2. **Defense, Space & Security Segment Litigation**: Boeing is involved in various legal disputes concerning contracts and compliance issues within its Defense, Space & Security segment. The filing mentions that these matters could result in financial penalties or contract adjustments, but specific amounts are not quantified.\n  3. **Environmental and Regulatory Matters**: Boeing has ongoing legal challenges related to environmental regulations and compliance, which could lead to fines or operational restrictions, though specific financial implications are not detailed.\n\n- SUPPORTING DATA: \n  - The legal proceedings are described in the \"Legal Proceedings\" section of the FY2022 10-K filing. The company notes that while it cannot predict the outcome of these matters, it believes that the resolution of these legal proceedings will not have a material adverse effect on its financial position.\n  - Boeing's total liabilities as of December 31, 2022, were reported at $191,569 million (per the FY2022 10-K, Consolidated Balance Sheets).\n\n- DATA SOURCES: \n  - Boeing Company FY2022 10-K filing, \"Legal Proceedings\" section, pages 100-102.\n  - Boeing Company FY2022 10-K filing, \"Consolidated Balance Sheets,\" page 50.\n\nPlease note that this report contains factual data only, without any interpretation or analysis.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_062_CCEDD88C_H1",
+      "type": "dollar_amount",
+      "original_value": "$156,898 million",
+      "injected_value": "$191,569 million",
+      "original_numeric": "156898",
+      "injected_numeric": "191569",
+      "position_char": 1668,
+      "sentence_approx": 13,
+      "perturbation_delta": 0.221
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [],
+    "total_claims_reviewed": 9,
+    "overall_assessment": "The researcher's output appears plausible and consistent with general financial knowledge about Boeing, with no immediately suspicious figures or inconsistencies.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [],\n  \"total_claims_reviewed\": 9,\n  \"overall_assessment\": \"The researcher's output appears plausible and consistent with general financial knowledge about Boeing, with no immediately suspicious figures or inconsistencies.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_062_CCEDD88C",
+      "hallucination_id": "FB_062_CCEDD88C_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$156,898 million",
+      "injected_value": "$191,569 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 0,
+      "total_claims_reviewed": 9
+    }
+  ],
+  "timestamp": "2026-03-25T07:48:24.764174Z"
+}

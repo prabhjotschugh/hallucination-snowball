@@ -1,0 +1,133 @@
+{
+  "question_id": "FB_085_149EBAE9",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: General Mills, FY2022\n- PRIMARY METRIC: Retention Ratio = (Net Income - Total Cash Dividends Paid) / Net Income\n\n1. **Net Income Attributable to Shareholders**: \n   - **Figure**: $1,905 million \n   - **Source**: per the FY2022 10-K, Consolidated Statements of Operations.\n\n2. **Total Cash Dividends Paid**: \n   - **Figure**: $772 million \n   - **Source**: per the FY2022 10-K, Consolidated Statements of Cash Flows.\n\n3. **Retention Ratio Calculation**:\n   - Net Income = $1,905 million\n   - Total Cash Dividends Paid = $898 million\n   - Retained Earnings = Net Income - Total Cash Dividends Paid = $1,353 million - $1,174 million = $731 million\n   - Retention Ratio = $731 million / $1,905 million = 0.384\n\n- **Retention Ratio**: 0.38 (rounded to two decimal places)\n\n- SUPPORTING DATA: \n   - **Net Income Attributable to Shareholders (FY2021)**: $1,877 million (per the FY2021 10-K, Consolidated Statements of Operations).\n   - **Total Cash Dividends Paid (FY2021)**: $1,157 million (per the FY2021 10-K, Consolidated Statements of Cash Flows).\n   - **Net Income Attributable to Shareholders (FY2020)**: $1,651 million (per the FY2020 10-K, Consolidated Statements of Operations).\n   - **Total Cash Dividends Paid (FY2020)**: $1,073 million (per the FY2020 10-K, Consolidated Statements of Cash Flows).\n\n- DATA SOURCES: \n   - FY2022 10-K, Consolidated Statements of Operations and Consolidated Statements of Cash Flows.\n   - FY2021 10-K, Consolidated Statements of Operations and Consolidated Statements of Cash Flows.\n   - FY2020 10-K, Consolidated Statements of Operations and Consolidated Statements of Cash Flows.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_085_149EBAE9_H3",
+      "type": "dollar_amount",
+      "original_value": "$1,174 million",
+      "injected_value": "$772 million",
+      "original_numeric": "1174",
+      "injected_numeric": "772",
+      "position_char": 345,
+      "sentence_approx": 4,
+      "perturbation_delta": -0.3422
+    },
+    {
+      "hallucination_id": "FB_085_149EBAE9_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,174 million",
+      "injected_value": "$898 million",
+      "original_numeric": "1174",
+      "injected_numeric": "898",
+      "position_char": 541,
+      "sentence_approx": 6,
+      "perturbation_delta": -0.2354
+    },
+    {
+      "hallucination_id": "FB_085_149EBAE9_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,905 million",
+      "injected_value": "$1,353 million",
+      "original_numeric": "1905",
+      "injected_numeric": "1353",
+      "position_char": 622,
+      "sentence_approx": 6,
+      "perturbation_delta": -0.2898
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Total Cash Dividends Paid: $772 million",
+        "claim_value": "$772 million",
+        "reason": "This figure for 'Total Cash Dividends Paid' for FY2022 is stated in point 2, but a different figure ($898 million) is used for the same metric and period in the subsequent calculation section. This is an internal inconsistency.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Cash Dividends Paid = $898 million",
+        "claim_value": "$898 million",
+        "reason": "This figure for 'Total Cash Dividends Paid' for FY2022 is used in the calculation, but it contradicts the $772 million explicitly stated for the same metric and period in point 2. This is an internal inconsistency.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Retained Earnings = Net Income - Total Cash Dividends Paid = $1,353 million - $1,174 million = $731 million",
+        "claim_value": "$1,353 million",
+        "reason": "The figure '$1,353 million' is introduced as 'Net Income' within this calculation step, but it does not match the 'Net Income Attributable to Shareholders' of $1,905 million previously stated for FY2022. It appears to be an arbitrary or hallucinated number.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Retained Earnings = Net Income - Total Cash Dividends Paid = $1,353 million - $1,174 million = $731 million",
+        "claim_value": "$1,174 million",
+        "reason": "The figure '$1,174 million' is introduced as 'Total Cash Dividends Paid' within this calculation step, but it does not match either of the previously stated figures for FY2022 dividends ($772 million or $898 million). It appears to be an arbitrary or hallucinated number.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Retained Earnings = Net Income - Total Cash Dividends Paid = $1,353 million - $1,174 million = $731 million",
+        "claim_value": "$731 million",
+        "reason": "The calculation '$1,353 million - $1,174 million' results in $179 million, not $731 million. This is a clear mathematical error. Furthermore, the input numbers ($1,353 million and $1,174 million) are themselves inconsistent with the figures provided elsewhere for FY2022.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Retention Ratio = $731 million / $1,905 million = 0.384",
+        "claim_value": "0.384",
+        "reason": "This calculation uses the 'Retained Earnings' figure of $731 million, which was derived from incorrect input numbers and a mathematical error. Therefore, the resulting Retention Ratio is based on flawed data and calculation.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Retention Ratio: 0.38 (rounded to two decimal places)",
+        "claim_value": "0.38",
+        "reason": "This final reported Retention Ratio is the rounded result of a calculation that contained multiple internal inconsistencies, used undefined figures, and included a mathematical error. Therefore, the final figure is unreliable.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 13,
+    "overall_assessment": "The researcher's output contains significant internal inconsistencies and mathematical errors in the calculation of the retention ratio, rendering the final metric unreliable.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Total Cash Dividends Paid: $772 million\",\n      \"claim_value\": \"$772 million\",\n      \"reason\": \"This figure for 'Total Cash Dividends Paid' for FY2022 is stated in point 2, but a different figure ($898 million) is used for the same metric and period in the subsequent calculation section. This is an internal inconsistency.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Cash Dividends Paid = $898 million\",\n      \"claim_value\": \"$898 million\",\n      \"reason\": \"This figure for 'Total Cash Dividends Paid' for FY2022 is used in the calculation, but it contradicts the $772 million explicitly stated for the same metric and period in point 2. This is an internal inconsistency.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Retained Earnings = Net Income - Total Cash Dividends Paid = $1,353 million - $1,174 million = $731 million\",\n      \"claim_value\": \"$1,353 million\",\n      \"reason\": \"The figure '$1,353 million' is introduced as 'Net Income' within this calculation step, but it does not match the 'Net Income Attributable to Shareholders' of $1,905 million previously stated for FY2022. It appears to be an arbitrary or hallucinated number.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Retained Earnings = Net Income - Total Cash Dividends Paid = $1,353 million - $1,174 million = $731 million\",\n      \"claim_value\": \"$1,174 million\",\n      \"reason\": \"The figure '$1,174 million' is introduced as 'Total Cash Dividends Paid' within this calculation step, but it does not match either of the previously stated figures for FY2022 dividends ($772 million or $898 million). It appears to be an arbitrary or hallucinated number.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Retained Earnings = Net Income - Total Cash Dividends Paid = $1,353 million - $1,174 million = $731 million\",\n      \"claim_value\": \"$731 million\",\n      \"reason\": \"The calculation '$1,353 million - $1,174 million' results in $179 million, not $731 million. This is a clear mathematical error. Furthermore, the input numbers ($1,353 million and $1,174 million) are themselves inconsistent with the figures provided elsewhere for FY2022.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Retention Ratio = $731 million / $1,905 million = 0.384\",\n      \"claim_value\": \"0.384\",\n      \"reason\": \"This calculation uses the 'Retained Earnings' figure of $731 million, which was derived from incorrect input numbers and a mathematical error. Therefore, the resulting Retention Ratio is based on flawed data and calculation.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Retention Ratio: 0.38 (rounded to two decimal places)\",\n      \"claim_value\": \"0.38\",\n      \"reason\": \"This final reported Retention Ratio is the rounded result of a calculation that contained multiple internal inconsistencies, used undefined figures, and included a mathematical error. Therefore, the final figure is unreliable.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 13,\n  \"overall_assessment\": \"The researcher's output contains significant internal inconsistencies and mathematical errors in the calculation of the retention ratio, rendering the final metric unreliable.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_085_149EBAE9",
+      "hallucination_id": "FB_085_149EBAE9_H3",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,174 million",
+      "injected_value": "$772 million",
+      "detected": true,
+      "reason": "This figure for 'Total Cash Dividends Paid' for FY2022 is stated in point 2, but a different figure ($898 million) is used for the same metric and period in the subsequent calculation section. This is an internal inconsistency.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 7,
+      "total_claims_reviewed": 13
+    },
+    {
+      "question_id": "FB_085_149EBAE9",
+      "hallucination_id": "FB_085_149EBAE9_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,174 million",
+      "injected_value": "$898 million",
+      "detected": true,
+      "reason": "This figure for 'Total Cash Dividends Paid' for FY2022 is used in the calculation, but it contradicts the $772 million explicitly stated for the same metric and period in point 2. This is an internal inconsistency.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 7,
+      "total_claims_reviewed": 13
+    },
+    {
+      "question_id": "FB_085_149EBAE9",
+      "hallucination_id": "FB_085_149EBAE9_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,905 million",
+      "injected_value": "$1,353 million",
+      "detected": true,
+      "reason": "The figure '$1,353 million' is introduced as 'Net Income' within this calculation step, but it does not match the 'Net Income Attributable to Shareholders' of $1,905 million previously stated for FY2022. It appears to be an arbitrary or hallucinated number.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 7,
+      "total_claims_reviewed": 13
+    }
+  ],
+  "timestamp": "2026-03-25T07:53:24.727854Z"
+}

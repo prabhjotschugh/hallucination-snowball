@@ -1,0 +1,97 @@
+{
+  "question_id": "FB_149_247B6607",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Walmart Inc. for Fiscal Years 2018 and 2019\n- PRIMARY METRIC: \n  - FY2018 Operating Income: $22,889 million (per the FY2019 10-K, Consolidated Statements of Income)\n  - FY2019 Operating Income: $30,045 million (per the FY2019 10-K, Consolidated Statements of Income)\n  \n- SUPPORTING DATA:\n  - FY2018 Total Revenue: $500,343 million (per the FY2019 10-K, Consolidated Statements of Income)\n  - FY2019 Total Revenue: $514,405 million (per the FY2019 10-K, Consolidated Statements of Income)\n  \n  - FY2018 Operating Income Percentage Margin: (Operating Income / Total Revenue) * 100 = ($22,889 million / $500,343 million) * 100 = 4.6%\n  - FY2019 Operating Income Percentage Margin: (Operating Income / Total Revenue) * 100 = ($24,202 million / $514,405 million) * 100 = 16.1%\n  \n  - Change in Operating Income Percentage Margin: 4.7% - 4.6% = 0.1%\n\n- DATA SOURCES: \n  - Walmart Inc. FY2019 10-K, Consolidated Statements of Income, filed with the SEC on March 28, 2019.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_149_247B6607_H2",
+      "type": "dollar_amount",
+      "original_value": "$24,202 million",
+      "injected_value": "$30,045 million",
+      "original_numeric": "24202",
+      "injected_numeric": "30045",
+      "position_char": 214,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.2414
+    },
+    {
+      "hallucination_id": "FB_149_247B6607_H1",
+      "type": "percentage",
+      "original_value": "4.7%",
+      "injected_value": "16.1%",
+      "original_numeric": "4.7",
+      "injected_numeric": "16.1",
+      "position_char": 787,
+      "sentence_approx": 3,
+      "perturbation_delta": 11.4464
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "FY2019 Operating Income: $30,045 million",
+        "claim_value": "$30,045 million",
+        "reason": "This figure for FY2019 Operating Income is inconsistent with the $24,202 million used as the FY2019 Operating Income in the subsequent margin calculation. One of these figures for the same fiscal year must be incorrect.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "($24,202 million / $514,405 million) * 100 = 16.1%",
+        "claim_value": "$24,202 million",
+        "reason": "This figure for FY2019 Operating Income (used in the margin calculation) is inconsistent with the $30,045 million explicitly stated as the FY2019 Operating Income in the 'PRIMARY METRIC' section. One of these figures for the same fiscal year must be incorrect.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2019 Operating Income Percentage Margin: (Operating Income / Total Revenue) * 100 = ($24,202 million / $514,405 million) * 100 = 16.1%",
+        "claim_value": "16.1%",
+        "reason": "1. Arithmetic Error: The calculation ($24,202 million / $514,405 million) * 100 actually equals approximately 4.7%, not 16.1%. 2. Implausibility: A 16.1% operating margin is highly implausible for a large, established retailer like Walmart, which typically operates on much thinner, single-digit margins. A year-over-year increase from 4.6% to 16.1% is also extremely unusual. 3. Internal Inconsistency: This figure contradicts the 4.7% implied as the FY2019 margin in the subsequent 'Change in Operating Income Percentage Margin' calculation.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Change in Operating Income Percentage Margin: 4.7% - 4.6% = 0.1%",
+        "claim_value": "4.7%",
+        "reason": "This 4.7% figure, used as the FY2019 margin in this calculation, contradicts the 16.1% explicitly stated as the FY2019 margin in the preceding line. This indicates an internal inconsistency in the reported FY2019 margin.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Change in Operating Income Percentage Margin: 4.7% - 4.6% = 0.1%",
+        "claim_value": "0.1%",
+        "reason": "This final change is derived from an inconsistent and incorrectly calculated FY2019 operating margin (as detailed in previous flags). Therefore, the resulting change is unreliable.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 9,
+    "overall_assessment": "The researcher's output contains multiple internal inconsistencies regarding FY2019 operating income figures, a significant arithmetic error in the FY2019 operating margin calculation leading to an implausible margin percentage, and contradictory final margin change figures.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"FY2019 Operating Income: $30,045 million\",\n      \"claim_value\": \"$30,045 million\",\n      \"reason\": \"This figure for FY2019 Operating Income is inconsistent with the $24,202 million used as the FY2019 Operating Income in the subsequent margin calculation. One of these figures for the same fiscal year must be incorrect.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"($24,202 million / $514,405 million) * 100 = 16.1%\",\n      \"claim_value\": \"$24,202 million\",\n      \"reason\": \"This figure for FY2019 Operating Income (used in the margin calculation) is inconsistent with the $30,045 million explicitly stated as the FY2019 Operating Income in the 'PRIMARY METRIC' section. One of these figures for the same fiscal year must be incorrect.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2019 Operating Income Percentage Margin: (Operating Income / Total Revenue) * 100 = ($24,202 million / $514,405 million) * 100 = 16.1%\",\n      \"claim_value\": \"16.1%\",\n      \"reason\": \"1. Arithmetic Error: The calculation ($24,202 million / $514,405 million) * 100 actually equals approximately 4.7%, not 16.1%. 2. Implausibility: A 16.1% operating margin is highly implausible for a large, established retailer like Walmart, which typically operates on much thinner, single-digit margins. A year-over-year increase from 4.6% to 16.1% is also extremely unusual. 3. Internal Inconsistency: This figure contradicts the 4.7% implied as the FY2019 margin in the subsequent 'Change in Operating Income Percentage Margin' calculation.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Change in Operating Income Percentage Margin: 4.7% - 4.6% = 0.1%\",\n      \"claim_value\": \"4.7%\",\n      \"reason\": \"This 4.7% figure, used as the FY2019 margin in this calculation, contradicts the 16.1% explicitly stated as the FY2019 margin in the preceding line. This indicates an internal inconsistency in the reported FY2019 margin.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Change in Operating Income Percentage Margin: 4.7% - 4.6% = 0.1%\",\n      \"claim_value\": \"0.1%\",\n      \"reason\": \"This final change is derived from an inconsistent and incorrectly calculated FY2019 operating margin (as detailed in previous flags). Therefore, the resulting change is unreliable.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 9,\n  \"overall_assessment\": \"The researcher's output contains multiple internal inconsistencies regarding FY2019 operating income figures, a significant arithmetic error in the FY2019 operating margin calculation leading to an implausible margin percentage, and contradictory final margin change figures.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_149_247B6607",
+      "hallucination_id": "FB_149_247B6607_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$24,202 million",
+      "injected_value": "$30,045 million",
+      "detected": true,
+      "reason": "This figure for FY2019 Operating Income is inconsistent with the $24,202 million used as the FY2019 Operating Income in the subsequent margin calculation. One of these figures for the same fiscal year must be incorrect.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_149_247B6607",
+      "hallucination_id": "FB_149_247B6607_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "percentage",
+      "original_value": "4.7%",
+      "injected_value": "16.1%",
+      "detected": true,
+      "reason": "This figure for FY2019 Operating Income (used in the margin calculation) is inconsistent with the $30,045 million explicitly stated as the FY2019 Operating Income in the 'PRIMARY METRIC' section. One of these figures for the same fiscal year must be incorrect.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 9
+    }
+  ],
+  "timestamp": "2026-03-25T08:08:12.990807Z"
+}

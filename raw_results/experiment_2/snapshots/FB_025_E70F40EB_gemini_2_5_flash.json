@@ -1,0 +1,109 @@
+{
+  "question_id": "FB_025_E70F40EB",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Amcor plc, FY2023, FY2022, FY2021\n- PRIMARY METRIC: \n  - **FY2023 Acquisitions**: Amcor completed the acquisition of **Nampak Flexible**, a leading flexible packaging company in Africa, for **USD 300 million**. This acquisition was aimed at expanding Amcor's footprint in the African market and enhancing its product offerings in flexible packaging. (Source: per the FY2023 10-K, Note 3 - Acquisitions)\n  \n  - **FY2022 Acquisitions**: Amcor acquired **Bemis Company, Inc.** for **USD 6.8 billion** in a strategic move to create a global leader in packaging. This acquisition was finalized in June 2019 but continued to impact financial performance through FY2022. (Source: per the FY2022 10-K, Note 3 - Acquisitions)\n\n  - **FY2021 Acquisitions**: In FY2021, Amcor acquired **the assets of the flexible packaging business of the company** for **USD 450 million**, which was intended to strengthen its position in the North American market. (Source: per the FY2021 10-K, Note 3 - Acquisitions)\n\n- SUPPORTING DATA: \n  - **FY2023 Financial Performance**: Total revenue for FY2023 was **USD 14,000 million**, with net income of **USD 1,669 million**. The acquisition of Nampak Flexible is expected to contribute to revenue growth in the coming years.\n  \n  - **FY2022 Financial Performance**: Total revenue for FY2022 was **USD 17,880 million**, with net income of **USD 897 million**. The Bemis acquisition contributed to revenue growth and cost synergies, enhancing overall profitability.\n  \n  - **FY2021 Financial Performance**: Total revenue for FY2021 was **USD 12,800 million**, with net income of **USD 1,000 million**. The flexible packaging assets acquisition helped to diversify product offerings and expand market reach.\n\n- DATA SOURCES: \n  - FY2023 10-K, Note 3 - Acquisitions\n  - FY2022 10-K, Note 3 - Acquisitions\n  - FY2021 10-K, Note 3 - Acquisitions\n\nPlease note that while the strategic rationale behind these acquisitions is mentioned, further analysis of their impact on financial performance is not included as per the directive to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_025_E70F40EB_H3",
+      "type": "large_number",
+      "original_value": "1,200",
+      "injected_value": "1,669",
+      "original_numeric": "1200",
+      "injected_numeric": "1669",
+      "position_char": 1149,
+      "sentence_approx": 8,
+      "perturbation_delta": 0.3907
+    },
+    {
+      "hallucination_id": "FB_025_E70F40EB_H2",
+      "type": "large_number",
+      "original_value": "13,500",
+      "injected_value": "17,880",
+      "original_numeric": "13500",
+      "injected_numeric": "17880",
+      "position_char": 1342,
+      "sentence_approx": 10,
+      "perturbation_delta": 0.3244
+    },
+    {
+      "hallucination_id": "FB_025_E70F40EB_H1",
+      "type": "large_number",
+      "original_value": "1,100",
+      "injected_value": "897",
+      "original_numeric": "1100",
+      "injected_numeric": "897",
+      "position_char": 1385,
+      "sentence_approx": 10,
+      "perturbation_delta": -0.1847
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Amcor acquired Bemis Company, Inc. for USD 6.8 billion in a strategic move to create a global leader in packaging. This acquisition was finalized in June 2019 but continued to impact financial performance through FY2022.",
+        "claim_value": "FY2022 Acquisitions (as a category for Bemis)",
+        "reason": "The acquisition of Bemis Company, Inc. was finalized in June 2019. Listing it under 'FY2022 Acquisitions' is factually incorrect, as acquisitions are reported in the fiscal year they are completed, not years where their financial impact continues.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "In FY2021, Amcor acquired the assets of the flexible packaging business of the company for USD 450 million, which was intended to strengthen its position in the North American market.",
+        "claim_value": "the assets of the flexible packaging business of the company",
+        "reason": "For a significant acquisition valued at USD 450 million, the target company or specific business unit is almost always named. The vague phrasing 'the assets of the flexible packaging business of the company' without specifying which company is highly unusual and suggests a potential hallucination of a generic acquisition.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Total revenue for FY2023 was USD 14,000 million, with net income of USD 1,669 million.",
+        "claim_value": "USD 1,669 million (net income for FY2023)",
+        "reason": "A net income of USD 1,669 million on USD 14,000 million revenue implies a net profit margin of approximately 11.9%. This is significantly higher than Amcor's typical net margins (which are generally in the 5-8% range for a packaging company) and also notably higher than the net margins reported for FY2022 (5.0%) and FY2021 (7.8%) in the same output. Such a sharp, unexplained increase in profitability is suspicious.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 18,
+    "overall_assessment": "The review identified several suspicious claims, including an incorrect acquisition year for Bemis, a vaguely described FY2021 acquisition, and an unusually high net income margin reported for FY2023 compared to historical trends and other years provided.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Amcor acquired Bemis Company, Inc. for USD 6.8 billion in a strategic move to create a global leader in packaging. This acquisition was finalized in June 2019 but continued to impact financial performance through FY2022.\",\n      \"claim_value\": \"FY2022 Acquisitions (as a category for Bemis)\",\n      \"reason\": \"The acquisition of Bemis Company, Inc. was finalized in June 2019. Listing it under 'FY2022 Acquisitions' is factually incorrect, as acquisitions are reported in the fiscal year they are completed, not years where their financial impact continues.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"In FY2021, Amcor acquired the assets of the flexible packaging business of the company for USD 450 million, which was intended to strengthen its position in the North American market.\",\n      \"claim_value\": \"the assets of the flexible packaging business of the company\",\n      \"reason\": \"For a significant acquisition valued at USD 450 million, the target company or specific business unit is almost always named. The vague phrasing 'the assets of the flexible packaging business of the company' without specifying which company is highly unusual and suggests a potential hallucination of a generic acquisition.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Total revenue for FY2023 was USD 14,000 million, with net income of USD 1,669 million.\",\n      \"claim_value\": \"USD 1,669 million (net income for FY2023)\",\n      \"reason\": \"A net income of USD 1,669 million on USD 14,000 million revenue implies a net profit margin of approximately 11.9%. This is significantly higher than Amcor's typical net margins (which are generally in the 5-8% range for a packaging company) and also notably higher than the net margins reported for FY2022 (5.0%) and FY2021 (7.8%) in the same output. Such a sharp, unexplained increase in profitability is suspicious.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 18,\n  \"overall_assessment\": \"The review identified several suspicious claims, including an incorrect acquisition year for Bemis, a vaguely described FY2021 acquisition, and an unusually high net income margin reported for FY2023 compared to historical trends and other years provided.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_025_E70F40EB",
+      "hallucination_id": "FB_025_E70F40EB_H3",
+      "model": "gemini-2.5-flash",
+      "injection_type": "large_number",
+      "original_value": "1,200",
+      "injected_value": "1,669",
+      "detected": true,
+      "reason": "A net income of USD 1,669 million on USD 14,000 million revenue implies a net profit margin of approximately 11.9%. This is significantly higher than Amcor's typical net margins (which are generally in the 5-8% range for a packaging company) and also notably higher than the net margins reported for FY2022 (5.0%) and FY2021 (7.8%) in the same output. Such a sharp, unexplained increase in profitability is suspicious.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 18
+    },
+    {
+      "question_id": "FB_025_E70F40EB",
+      "hallucination_id": "FB_025_E70F40EB_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "large_number",
+      "original_value": "13,500",
+      "injected_value": "17,880",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 18
+    },
+    {
+      "question_id": "FB_025_E70F40EB",
+      "hallucination_id": "FB_025_E70F40EB_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "large_number",
+      "original_value": "1,100",
+      "injected_value": "897",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 18
+    }
+  ],
+  "timestamp": "2026-03-25T07:39:44.823736Z"
+}

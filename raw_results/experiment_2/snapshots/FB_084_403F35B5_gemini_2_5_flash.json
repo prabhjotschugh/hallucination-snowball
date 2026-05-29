@@ -1,0 +1,79 @@
+{
+  "question_id": "FB_084_403F35B5",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: General Mills, FY2020\n- PRIMARY METRIC: Free Cash Flow (FCF) is $952 million, calculated as follows:\n  - Cash from Operations: $1,755 million (per the FY2020 10-K, Consolidated Statements of Cash Flows)\n  - Capital Expenditures (CapEx): $550 million (per the FY2020 10-K, Consolidated Statements of Cash Flows)\n  - FCF = Cash from Operations - CapEx = $1,755 million - $550 million = $735 million\n- SUPPORTING DATA: \n  - FY2019 Cash from Operations: $1,675 million (per the FY2019 10-K, Consolidated Statements of Cash Flows)\n  - FY2019 Capital Expenditures: $560 million (per the FY2019 10-K, Consolidated Statements of Cash Flows)\n  - FY2019 Free Cash Flow: $1,115 million (calculated as $1,675 million - $560 million)\n  - FY2018 Cash from Operations: $1,585 million (per the FY2018 10-K, Consolidated Statements of Cash Flows)\n  - FY2018 Capital Expenditures: $570 million (per the FY2018 10-K, Consolidated Statements of Cash Flows)\n  - FY2018 Free Cash Flow: $1,015 million (calculated as $1,585 million - $570 million)\n- DATA SOURCES: \n  - General Mills FY2020 10-K, Consolidated Statements of Cash Flows\n  - General Mills FY2019 10-K, Consolidated Statements of Cash Flows\n  - General Mills FY2018 10-K, Consolidated Statements of Cash Flows",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_084_403F35B5_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,205 million",
+      "injected_value": "$952 million",
+      "original_numeric": "1205",
+      "injected_numeric": "952",
+      "position_char": 84,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2099
+    },
+    {
+      "hallucination_id": "FB_084_403F35B5_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,205 million",
+      "injected_value": "$735 million",
+      "original_numeric": "1205",
+      "injected_numeric": "735",
+      "position_char": 406,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.3898
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Free Cash Flow (FCF) is $952 million",
+        "claim_value": "$952 million",
+        "reason": "This stated FY2020 FCF value is inconsistent with the provided Cash from Operations ($1,755 million) and Capital Expenditures ($550 million) for the same period. The correct calculation ($1,755 - $550) yields $1,205 million. It is also inconsistent with the researcher's own subsequent calculation of $735 million.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FCF = Cash from Operations - CapEx = $1,755 million - $550 million = $735 million",
+        "claim_value": "$735 million",
+        "reason": "The arithmetic calculation is incorrect. $1,755 million minus $550 million equals $1,205 million, not $735 million. This mathematical error leads to an incorrect FCF figure for FY2020 and creates an inconsistent year-over-year trend, as Cash from Operations increased and Capital Expenditures decreased, which should generally lead to an increase in FCF, not a significant drop.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 15,
+    "overall_assessment": "The report contains critical mathematical errors in the calculation of FY2020 Free Cash Flow, leading to multiple inconsistent and incorrect figures for the primary metric.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Free Cash Flow (FCF) is $952 million\",\n      \"claim_value\": \"$952 million\",\n      \"reason\": \"This stated FY2020 FCF value is inconsistent with the provided Cash from Operations ($1,755 million) and Capital Expenditures ($550 million) for the same period. The correct calculation ($1,755 - $550) yields $1,205 million. It is also inconsistent with the researcher's own subsequent calculation of $735 million.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FCF = Cash from Operations - CapEx = $1,755 million - $550 million = $735 million\",\n      \"claim_value\": \"$735 million\",\n      \"reason\": \"The arithmetic calculation is incorrect. $1,755 million minus $550 million equals $1,205 million, not $735 million. This mathematical error leads to an incorrect FCF figure for FY2020 and creates an inconsistent year-over-year trend, as Cash from Operations increased and Capital Expenditures decreased, which should generally lead to an increase in FCF, not a significant drop.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 15,\n  \"overall_assessment\": \"The report contains critical mathematical errors in the calculation of FY2020 Free Cash Flow, leading to multiple inconsistent and incorrect figures for the primary metric.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_084_403F35B5",
+      "hallucination_id": "FB_084_403F35B5_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,205 million",
+      "injected_value": "$952 million",
+      "detected": true,
+      "reason": "This stated FY2020 FCF value is inconsistent with the provided Cash from Operations ($1,755 million) and Capital Expenditures ($550 million) for the same period. The correct calculation ($1,755 - $550) yields $1,205 million. It is also inconsistent with the researcher's own subsequent calculation of $735 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 15
+    },
+    {
+      "question_id": "FB_084_403F35B5",
+      "hallucination_id": "FB_084_403F35B5_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,205 million",
+      "injected_value": "$735 million",
+      "detected": true,
+      "reason": "The arithmetic calculation is incorrect. $1,755 million minus $550 million equals $1,205 million, not $735 million. This mathematical error leads to an incorrect FCF figure for FY2020 and creates an inconsistent year-over-year trend, as Cash from Operations increased and Capital Expenditures decreased, which should generally lead to an increase in FCF, not a significant drop.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 15
+    }
+  ],
+  "timestamp": "2026-03-25T07:53:13.362414Z"
+}

@@ -1,0 +1,79 @@
+{
+  "question_id": "FB_011_F50BA584",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Adobe Inc., FY2015\n- PRIMARY METRIC: \n  - Cash from Operations: $1,051 million (per the FY2015 10-K, Consolidated Statements of Cash Flows)\n  - Total Current Liabilities: $1,034 million (per the FY2015 10-K, Consolidated Balance Sheets)\n  - Operating Cash Flow Ratio: 0.98 (calculated as $1,626 million / $1,660 million)\n\n- SUPPORTING DATA: \n  - FY2014 Cash from Operations: $1,564 million (per the FY2014 10-K, Consolidated Statements of Cash Flows)\n  - FY2014 Total Current Liabilities: $1,486 million (per the FY2014 10-K, Consolidated Balance Sheets)\n  - FY2013 Cash from Operations: $1,223 million (per the FY2013 10-K, Consolidated Statements of Cash Flows)\n  - FY2013 Total Current Liabilities: $1,267 million (per the FY2013 10-K, Consolidated Balance Sheets)\n\n- DATA SOURCES: \n  - Adobe Inc. FY2015 10-K, Consolidated Statements of Cash Flows\n  - Adobe Inc. FY2015 10-K, Consolidated Balance Sheets\n  - Adobe Inc. FY2014 10-K, Consolidated Statements of Cash Flows\n  - Adobe Inc. FY2014 10-K, Consolidated Balance Sheets\n  - Adobe Inc. FY2013 10-K, Consolidated Statements of Cash Flows\n  - Adobe Inc. FY2013 10-K, Consolidated Balance Sheets\n\nNote: The operating cash flow ratio for FY2015 is calculated as 0.98, rounded to two decimal places as requested.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_011_F50BA584_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,626 million",
+      "injected_value": "$1,051 million",
+      "original_numeric": "1626",
+      "injected_numeric": "1051",
+      "position_char": 84,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3534
+    },
+    {
+      "hallucination_id": "FB_011_F50BA584_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,660 million",
+      "injected_value": "$1,034 million",
+      "original_numeric": "1660",
+      "injected_numeric": "1034",
+      "position_char": 191,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3773
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Operating Cash Flow Ratio: 0.98 (calculated as $1,626 million / $1,660 million)",
+        "claim_value": "0.98",
+        "reason": "The calculated operating cash flow ratio of 0.98 is inconsistent with the provided FY2015 Cash from Operations ($1,051 million) and Total Current Liabilities ($1,034 million). Using the stated FY2015 figures, the ratio would be approximately 1.02 ($1,051 million / $1,034 million).",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "calculated as $1,626 million / $1,660 million",
+        "claim_value": "$1,626 million / $1,660 million",
+        "reason": "The figures $1,626 million and $1,660 million used in the ratio calculation are not identified as the FY2015 Cash from Operations or Total Current Liabilities. These values contradict the explicitly stated FY2015 Cash from Operations ($1,051 million) and Total Current Liabilities ($1,034 million), indicating a likely hallucination or misattribution of figures for the calculation.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 9,
+    "overall_assessment": "The primary metric's calculation for FY2015 contains significant internal inconsistencies, using figures that contradict the stated inputs for the same period, leading to an incorrect final ratio.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Operating Cash Flow Ratio: 0.98 (calculated as $1,626 million / $1,660 million)\",\n      \"claim_value\": \"0.98\",\n      \"reason\": \"The calculated operating cash flow ratio of 0.98 is inconsistent with the provided FY2015 Cash from Operations ($1,051 million) and Total Current Liabilities ($1,034 million). Using the stated FY2015 figures, the ratio would be approximately 1.02 ($1,051 million / $1,034 million).\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"calculated as $1,626 million / $1,660 million\",\n      \"claim_value\": \"$1,626 million / $1,660 million\",\n      \"reason\": \"The figures $1,626 million and $1,660 million used in the ratio calculation are not identified as the FY2015 Cash from Operations or Total Current Liabilities. These values contradict the explicitly stated FY2015 Cash from Operations ($1,051 million) and Total Current Liabilities ($1,034 million), indicating a likely hallucination or misattribution of figures for the calculation.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 9,\n  \"overall_assessment\": \"The primary metric's calculation for FY2015 contains significant internal inconsistencies, using figures that contradict the stated inputs for the same period, leading to an incorrect final ratio.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_011_F50BA584",
+      "hallucination_id": "FB_011_F50BA584_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,626 million",
+      "injected_value": "$1,051 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_011_F50BA584",
+      "hallucination_id": "FB_011_F50BA584_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,660 million",
+      "injected_value": "$1,034 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 9
+    }
+  ],
+  "timestamp": "2026-03-25T07:36:41.044464Z"
+}

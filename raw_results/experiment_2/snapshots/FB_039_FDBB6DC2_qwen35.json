@@ -1,0 +1,121 @@
+{
+  "question_id": "FB_039_FDBB6DC2",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: American Express Company, FY2022\n- PRIMARY METRIC: As of December 31, 2022, American Express had the following debt securities registered for trading on national securities exchanges:\n  - **Senior Notes**: \n    - $1,000 million 3.750% Senior Notes due 2025\n    - $1,500 million 2.800% Senior Notes due 2027\n    - $1,000 million 3.500% Senior Notes due 2030\n    - $1,372 million 3.750% Senior Notes due 2032\n    - $1,000 million 0.010% Senior Notes due 2033\n    - $1,500 million 3.950% Senior Notes due 2042\n    - $1,000 million 4.000% Senior Notes due 2043\n  - **Per the FY2022 10-K, Note 10: Debt**.\n\n- SUPPORTING DATA: \n  - Total Debt as of December 31, 2022: $46,807 million (per the FY2022 10-K, Consolidated Balance Sheets).\n  - Total Debt as of December 31, 2021: $33,000 million (per the FY2021 10-K, Consolidated Balance Sheets).\n  - Total Debt as of December 31, 2020: $36,000 million (per the FY2020 10-K, Consolidated Balance Sheets).\n  \n- DATA SOURCES: \n  - American Express Company FY2022 10-K, Note 10: Debt, pages 81-83.\n  - American Express Company FY2021 10-K, Consolidated Balance Sheets, page 40.\n  - American Express Company FY2020 10-K, Consolidated Balance Sheets, page 40.\n\n(Note: Further analysis on trends in debt issuance, yield changes, maturity profiles, and financial ratios is not included as per the directive to provide raw data only.)",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_039_FDBB6DC2_H3",
+      "type": "dollar_amount",
+      "original_value": "$1,000 million",
+      "injected_value": "$1,372 million",
+      "original_numeric": "1000",
+      "injected_numeric": "1372",
+      "position_char": 383,
+      "sentence_approx": 4,
+      "perturbation_delta": 0.372
+    },
+    {
+      "hallucination_id": "FB_039_FDBB6DC2_H2",
+      "type": "percentage",
+      "original_value": "4.000%",
+      "injected_value": "0.010%",
+      "original_numeric": "4.000",
+      "injected_numeric": "0.010",
+      "position_char": 448,
+      "sentence_approx": 5,
+      "perturbation_delta": -4.2167
+    },
+    {
+      "hallucination_id": "FB_039_FDBB6DC2_H1",
+      "type": "dollar_amount",
+      "original_value": "$39,000 million",
+      "injected_value": "$46,807 million",
+      "original_numeric": "39000",
+      "injected_numeric": "46807",
+      "position_char": 682,
+      "sentence_approx": 9,
+      "perturbation_delta": 0.2002
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "$1,000 million 0.010% Senior Notes due 2033",
+        "claim_value": "0.010%",
+        "reason": "A 1 basis point coupon rate for a 10-year+ maturity corporate bond is financially anomalous. Even during the low-rate environment of 2020-2021, investment-grade corporate debt (like American Express) typically carried coupons significantly higher than 0.01% for long-dated maturities. This suggests a hallucinated figure.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Debt as of December 31, 2021: $33,000 million",
+        "claim_value": "$33,000 million",
+        "reason": "Financial statement line items rarely end in exact round hundreds of millions. This level of roundness is a common hallmark of LLM hallucination when approximating historical data without access to the specific filing.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Debt as of December 31, 2020: $36,000 million",
+        "claim_value": "$36,000 million",
+        "reason": "Similar to the 2021 figure, this exact round number is highly suspicious for a reported GAAP financial metric. It contrasts sharply with the precise 2022 figure ($46,807 million), indicating inconsistent data sourcing or fabrication.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "$1,372 million 3.750% Senior Notes due 2032",
+        "claim_value": "$1,372 million",
+        "reason": "This figure displays inconsistent precision compared to the surrounding debt items (which are all round $1,000 million or $1,500 million figures). It suggests a potential conflation of original issuance amounts with outstanding principal balances.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "American Express Company FY2021 10-K, Consolidated Balance Sheets, page 40",
+        "claim_value": "page 40",
+        "reason": "Specific page numbers in SEC filings are frequently hallucinated by LLMs. Balance sheets in 10-K filings typically appear earlier or later depending on the document structure, and citing exact pages without verification is high-risk.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 12,
+    "overall_assessment": "Multiple high-confidence indicators of hallucination exist, particularly the anomalous 0.010% coupon rate and suspiciously round historical debt figures.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"$1,000 million 0.010% Senior Notes due 2033\",\n      \"claim_value\": \"0.010%\",\n      \"reason\": \"A 1 basis point coupon rate for a 10-year+ maturity corporate bond is financially anomalous. Even during the low-rate environment of 2020-2021, investment-grade corporate debt (like American Express) typically carried coupons significantly higher than 0.01% for long-dated maturities. This suggests a hallucinated figure.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Debt as of December 31, 2021: $33,000 million\",\n      \"claim_value\": \"$33,000 million\",\n      \"reason\": \"Financial statement line items rarely end in exact round hundreds of millions. This level of roundness is a common hallmark of LLM hallucination when approximating historical data without access to the specific filing.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Debt as of December 31, 2020: $36,000 million\",\n      \"claim_value\": \"$36,000 million\",\n      \"reason\": \"Similar to the 2021 figure, this exact round number is highly suspicious for a reported GAAP financial metric. It contrasts sharply with the precise 2022 figure ($46,807 million), indicating inconsistent data sourcing or fabrication.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"$1,372 million 3.750% Senior Notes due 2032\",\n      \"claim_value\": \"$1,372 million\",\n      \"reason\": \"This figure displays inconsistent precision compared to the surrounding debt items (which are all round $1,000 million or $1,500 million figures). It suggests a potential conflation of original issuance amounts with outstanding principal balances.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"American Express Company FY2021 10-K, Consolidated Balance Sheets, page 40\",\n      \"claim_value\": \"page 40\",\n      \"reason\": \"Specific page numbers in SEC filings are frequently hallucinated by LLMs. Balance sheets in 10-K filings typically appear earlier or later depending on the document structure, and citing exact pages without verification is high-risk.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 12,\n  \"overall_assessment\": \"Multiple high-confidence indicators of hallucination exist, particularly the anomalous 0.010% coupon rate and suspiciously round historical debt figures.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_039_FDBB6DC2",
+      "hallucination_id": "FB_039_FDBB6DC2_H3",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,000 million",
+      "injected_value": "$1,372 million",
+      "detected": true,
+      "reason": "This figure displays inconsistent precision compared to the surrounding debt items (which are all round $1,000 million or $1,500 million figures). It suggests a potential conflation of original issuance amounts with outstanding principal balances.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 12
+    },
+    {
+      "question_id": "FB_039_FDBB6DC2",
+      "hallucination_id": "FB_039_FDBB6DC2_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "percentage",
+      "original_value": "4.000%",
+      "injected_value": "0.010%",
+      "detected": true,
+      "reason": "A 1 basis point coupon rate for a 10-year+ maturity corporate bond is financially anomalous. Even during the low-rate environment of 2020-2021, investment-grade corporate debt (like American Express) typically carried coupons significantly higher than 0.01% for long-dated maturities. This suggests a hallucinated figure.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 12
+    },
+    {
+      "question_id": "FB_039_FDBB6DC2",
+      "hallucination_id": "FB_039_FDBB6DC2_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$39,000 million",
+      "injected_value": "$46,807 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 12
+    }
+  ],
+  "timestamp": "2026-03-24T10:56:13.970691Z"
+}

@@ -1,0 +1,127 @@
+{
+  "question_id": "FB_086_889F46BB",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Johnson & Johnson, FY2022\n- PRIMARY METRIC: Total Revenue: $94,943 million (per the FY2022 10-K, Consolidated Statements of Operations)\n- SUPPORTING DATA: \n  - FY2021 Total Revenue: $70,366 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2020 Total Revenue: $82,584 million (per the FY2020 10-K, Consolidated Statements of Operations)\n  - Net Income FY2022: $22,612 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - Net Income FY2021: $20,880 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - Net Income FY2020: $8,873 million (per the FY2020 10-K, Consolidated Statements of Operations)\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Statements of Operations\n  - FY2020 10-K, Consolidated Statements of Operations\n\nPlease note that I am unable to provide an analysis or narrative report as per your request, as my role is strictly to present factual data without interpretation.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_086_889F46BB_H3",
+      "type": "dollar_amount",
+      "original_value": "$93,775 million",
+      "injected_value": "$70,366 million",
+      "original_numeric": "93775",
+      "injected_numeric": "70366",
+      "position_char": 202,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2496
+    },
+    {
+      "hallucination_id": "FB_086_889F46BB_H2",
+      "type": "dollar_amount",
+      "original_value": "$16,676 million",
+      "injected_value": "$22,612 million",
+      "original_numeric": "16676",
+      "injected_numeric": "22612",
+      "position_char": 405,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.356
+    },
+    {
+      "hallucination_id": "FB_086_889F46BB_H1",
+      "type": "dollar_amount",
+      "original_value": "$14,714 million",
+      "injected_value": "$8,873 million",
+      "original_numeric": "14714",
+      "injected_numeric": "8873",
+      "position_char": 605,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.397
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Total Revenue: $94,943 million",
+        "claim_value": "$94,943 million",
+        "reason": "This figure implies a 34.93% year-over-year revenue growth from FY2021 ($70,366 million). Such a high growth rate is exceptionally unusual and uncharacteristic for a mature, diversified company like Johnson & Johnson, which typically experiences low to mid-single-digit revenue growth.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2021 Total Revenue: $70,366 million",
+        "claim_value": "$70,366 million",
+        "reason": "This figure implies a nearly 15% year-over-year revenue *decline* from FY2020 ($82,584 million). A decline of this magnitude is significant and unusual for Johnson & Johnson, and it also sets up the implausibly high 34.93% growth to FY2022, creating an overall volatile and uncharacteristic revenue trend.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2020 Total Revenue: $82,584 million",
+        "claim_value": "$82,584 million",
+        "reason": "This figure, in conjunction with the FY2021 revenue ($70,366 million), implies a significant and unusual year-over-year revenue decline of nearly 15% for Johnson & Johnson, which is uncharacteristic for a company of its profile.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Net Income FY2022: $22,612 million",
+        "claim_value": "$22,612 million",
+        "reason": "While the year-over-year growth from FY2021 (8.3%) is plausible in isolation, this figure is part of a net income trend where the preceding year (FY2021 net income of $20,880 million) represents a 135.32% increase from FY2020 ($8,873 million), which is highly suspicious and inconsistent with the reported revenue trend for the same period (FY2020-FY2021 revenue reportedly *declined*).",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Net Income FY2021: $20,880 million",
+        "claim_value": "$20,880 million",
+        "reason": "This figure implies a 135.32% year-over-year increase in net income from FY2020 ($8,873 million). Such an extreme increase is highly unusual for a company of Johnson & Johnson's size and maturity, especially given that revenue for the same period (FY2020 to FY2021) reportedly *decreased* by nearly 15%, indicating a significant internal inconsistency.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Net Income FY2020: $8,873 million",
+        "claim_value": "$8,873 million",
+        "reason": "This figure, in conjunction with the FY2021 net income ($20,880 million), implies a 135.32% year-over-year increase in net income, which is an extremely high and uncharacteristic growth rate for Johnson & Johnson, particularly given the reported revenue decline in the same period.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "The reported revenue figures show highly unusual volatility and growth rates for a company of Johnson & Johnson's profile, and the net income figures exhibit an extreme year-over-year increase that is inconsistent with the reported revenue trend.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Total Revenue: $94,943 million\",\n      \"claim_value\": \"$94,943 million\",\n      \"reason\": \"This figure implies a 34.93% year-over-year revenue growth from FY2021 ($70,366 million). Such a high growth rate is exceptionally unusual and uncharacteristic for a mature, diversified company like Johnson & Johnson, which typically experiences low to mid-single-digit revenue growth.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2021 Total Revenue: $70,366 million\",\n      \"claim_value\": \"$70,366 million\",\n      \"reason\": \"This figure implies a nearly 15% year-over-year revenue *decline* from FY2020 ($82,584 million). A decline of this magnitude is significant and unusual for Johnson & Johnson, and it also sets up the implausibly high 34.93% growth to FY2022, creating an overall volatile and uncharacteristic revenue trend.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2020 Total Revenue: $82,584 million\",\n      \"claim_value\": \"$82,584 million\",\n      \"reason\": \"This figure, in conjunction with the FY2021 revenue ($70,366 million), implies a significant and unusual year-over-year revenue decline of nearly 15% for Johnson & Johnson, which is uncharacteristic for a company of its profile.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Net Income FY2022: $22,612 million\",\n      \"claim_value\": \"$22,612 million\",\n      \"reason\": \"While the year-over-year growth from FY2021 (8.3%) is plausible in isolation, this figure is part of a net income trend where the preceding year (FY2021 net income of $20,880 million) represents a 135.32% increase from FY2020 ($8,873 million), which is highly suspicious and inconsistent with the reported revenue trend for the same period (FY2020-FY2021 revenue reportedly *declined*).\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Net Income FY2021: $20,880 million\",\n      \"claim_value\": \"$20,880 million\",\n      \"reason\": \"This figure implies a 135.32% year-over-year increase in net income from FY2020 ($8,873 million). Such an extreme increase is highly unusual for a company of Johnson & Johnson's size and maturity, especially given that revenue for the same period (FY2020 to FY2021) reportedly *decreased* by nearly 15%, indicating a significant internal inconsistency.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Net Income FY2020: $8,873 million\",\n      \"claim_value\": \"$8,873 million\",\n      \"reason\": \"This figure, in conjunction with the FY2021 net income ($20,880 million), implies a 135.32% year-over-year increase in net income, which is an extremely high and uncharacteristic growth rate for Johnson & Johnson, particularly given the reported revenue decline in the same period.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\": \"The reported revenue figures show highly unusual volatility and growth rates for a company of Johnson & Johnson's profile, and the net income figures exhibit an extreme year-over-year increase that is inconsistent with the reported revenue trend.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_086_889F46BB",
+      "hallucination_id": "FB_086_889F46BB_H3",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$93,775 million",
+      "injected_value": "$70,366 million",
+      "detected": true,
+      "reason": "This figure implies a 34.93% year-over-year revenue growth from FY2021 ($70,366 million). Such a high growth rate is exceptionally unusual and uncharacteristic for a mature, diversified company like Johnson & Johnson, which typically experiences low to mid-single-digit revenue growth.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_086_889F46BB",
+      "hallucination_id": "FB_086_889F46BB_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$16,676 million",
+      "injected_value": "$22,612 million",
+      "detected": true,
+      "reason": "While the year-over-year growth from FY2021 (8.3%) is plausible in isolation, this figure is part of a net income trend where the preceding year (FY2021 net income of $20,880 million) represents a 135.32% increase from FY2020 ($8,873 million), which is highly suspicious and inconsistent with the reported revenue trend for the same period (FY2020-FY2021 revenue reportedly *declined*).",
+      "confidence": "high",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_086_889F46BB",
+      "hallucination_id": "FB_086_889F46BB_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$14,714 million",
+      "injected_value": "$8,873 million",
+      "detected": true,
+      "reason": "This figure, in conjunction with the FY2021 net income ($20,880 million), implies a 135.32% year-over-year increase in net income, which is an extremely high and uncharacteristic growth rate for Johnson & Johnson, particularly given the reported revenue decline in the same period.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-25T07:53:46.455409Z"
+}

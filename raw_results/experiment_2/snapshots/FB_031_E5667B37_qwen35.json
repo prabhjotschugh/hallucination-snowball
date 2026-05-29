@@ -1,0 +1,115 @@
+{
+  "question_id": "FB_031_E5667B37",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Advanced Micro Devices, Inc. (AMD) - Fiscal Year 2015\n- PRIMARY METRIC: Depreciation and Amortization (D&A) for FY2015 was $1,184 million, as reported in the FY2015 10-K, Consolidated Statements of Cash Flows.\n- SUPPORTING DATA: \n  - Total Revenue for FY2015 was $4,045 million (per the FY2015 10-K, Consolidated Statements of Operations).\n  - D&A Margin Calculation: D&A Margin = (D&A / Total Revenue) * 100 = ($1,184 million / $4,045 million) * 100 = 29.3%.\n  - For context, D&A for FY2014 was $762 million, and Total Revenue was $7,678 million, resulting in a D&A Margin of 29.4%.\n  - D&A for FY2013 was $1,206 million, and Total Revenue was $5,329 million, resulting in a D&A Margin of 22.6%.\n- DATA SOURCES: \n  - FY2015 10-K, Consolidated Statements of Cash Flows (D&A figure).\n  - FY2015 10-K, Consolidated Statements of Operations (Total Revenue figure).\n  - FY2014 10-K, Consolidated Statements of Cash Flows and Consolidated Statements of Operations (for prior-year figures).\n  - FY2013 10-K, Consolidated Statements of Cash Flows and Consolidated Statements of Operations (for prior-year figures).",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_031_E5667B37_H3",
+      "type": "dollar_amount",
+      "original_value": "$1,165 million",
+      "injected_value": "$762 million",
+      "original_numeric": "1165",
+      "injected_numeric": "762",
+      "position_char": 516,
+      "sentence_approx": 6,
+      "perturbation_delta": -0.3457
+    },
+    {
+      "hallucination_id": "FB_031_E5667B37_H2",
+      "type": "dollar_amount",
+      "original_value": "$5,506 million",
+      "injected_value": "$7,678 million",
+      "original_numeric": "5506",
+      "injected_numeric": "7678",
+      "position_char": 554,
+      "sentence_approx": 6,
+      "perturbation_delta": 0.3944
+    },
+    {
+      "hallucination_id": "FB_031_E5667B37_H1",
+      "type": "percentage",
+      "original_value": "21.2%",
+      "injected_value": "29.4%",
+      "original_numeric": "21.2",
+      "injected_numeric": "29.4",
+      "position_char": 599,
+      "sentence_approx": 6,
+      "perturbation_delta": 8.1789
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "For context, D&A for FY2014 was $762 million, and Total Revenue was $7,678 million, resulting in a D&A Margin of 29.4%.",
+        "claim_value": "29.4%",
+        "reason": "Internal mathematical inconsistency. Dividing the provided D&A ($762 million) by the provided Revenue ($7,678 million) yields approximately 9.9%, not 29.4%. The margin figure appears hallucinated to match the FY2015 margin.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Depreciation and Amortization (D&A) for FY2015 was $1,184 million",
+        "claim_value": "$1,184 million",
+        "reason": "Implies a D&A margin of 29.3%, which is exceptionally high for a semiconductor company. Typical D&A margins in this sector are usually in the single digits to low teens, suggesting the absolute figure is likely inflated or fabricated.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Revenue for FY2014 was $7,678 million",
+        "claim_value": "$7,678 million",
+        "reason": "Claims a 44% revenue increase from 2013 followed by a 47% decrease in 2015. Such extreme volatility is highly unusual for a mature large-cap semiconductor company without significant M&A activity.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "D&A for FY2013 was $1,206 million, and Total Revenue was $5,329 million, resulting in a D&A Margin of 22.6%.",
+        "claim_value": "22.6%",
+        "reason": "While mathematically consistent, a D&A margin exceeding 20% is economically suspicious for this industry and period, reinforcing concerns about the D&A figures across all reported years.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 9,
+    "overall_assessment": "The output contains a definitive mathematical error in the FY2014 margin calculation and reports industry-atypical D&A margins that suggest significant hallucination of underlying financial figures.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"For context, D&A for FY2014 was $762 million, and Total Revenue was $7,678 million, resulting in a D&A Margin of 29.4%.\",\n      \"claim_value\": \"29.4%\",\n      \"reason\": \"Internal mathematical inconsistency. Dividing the provided D&A ($762 million) by the provided Revenue ($7,678 million) yields approximately 9.9%, not 29.4%. The margin figure appears hallucinated to match the FY2015 margin.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Depreciation and Amortization (D&A) for FY2015 was $1,184 million\",\n      \"claim_value\": \"$1,184 million\",\n      \"reason\": \"Implies a D&A margin of 29.3%, which is exceptionally high for a semiconductor company. Typical D&A margins in this sector are usually in the single digits to low teens, suggesting the absolute figure is likely inflated or fabricated.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Revenue for FY2014 was $7,678 million\",\n      \"claim_value\": \"$7,678 million\",\n      \"reason\": \"Claims a 44% revenue increase from 2013 followed by a 47% decrease in 2015. Such extreme volatility is highly unusual for a mature large-cap semiconductor company without significant M&A activity.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"D&A for FY2013 was $1,206 million, and Total Revenue was $5,329 million, resulting in a D&A Margin of 22.6%.\",\n      \"claim_value\": \"22.6%\",\n      \"reason\": \"While mathematically consistent, a D&A margin exceeding 20% is economically suspicious for this industry and period, reinforcing concerns about the D&A figures across all reported years.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 9,\n  \"overall_assessment\": \"The output contains a definitive mathematical error in the FY2014 margin calculation and reports industry-atypical D&A margins that suggest significant hallucination of underlying financial figures.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_031_E5667B37",
+      "hallucination_id": "FB_031_E5667B37_H3",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,165 million",
+      "injected_value": "$762 million",
+      "detected": true,
+      "reason": "Internal mathematical inconsistency. Dividing the provided D&A ($762 million) by the provided Revenue ($7,678 million) yields approximately 9.9%, not 29.4%. The margin figure appears hallucinated to match the FY2015 margin.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_031_E5667B37",
+      "hallucination_id": "FB_031_E5667B37_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$5,506 million",
+      "injected_value": "$7,678 million",
+      "detected": true,
+      "reason": "Internal mathematical inconsistency. Dividing the provided D&A ($762 million) by the provided Revenue ($7,678 million) yields approximately 9.9%, not 29.4%. The margin figure appears hallucinated to match the FY2015 margin.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_031_E5667B37",
+      "hallucination_id": "FB_031_E5667B37_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "percentage",
+      "original_value": "21.2%",
+      "injected_value": "29.4%",
+      "detected": true,
+      "reason": "Internal mathematical inconsistency. Dividing the provided D&A ($762 million) by the provided Revenue ($7,678 million) yields approximately 9.9%, not 29.4%. The margin figure appears hallucinated to match the FY2015 margin.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 9
+    }
+  ],
+  "timestamp": "2026-03-24T10:43:05.415267Z"
+}

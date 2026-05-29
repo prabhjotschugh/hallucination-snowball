@@ -1,0 +1,91 @@
+{
+  "question_id": "FB_020_C68C8862",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Amazon.com, Inc. for FY2016 and FY2017\n- PRIMARY METRIC: \n  - Revenue for FY2016: $179,626 million (per the FY2017 10-K, Consolidated Statements of Operations)\n  - Revenue for FY2017: $177,866 million (per the FY2017 10-K, Consolidated Statements of Operations)\n  - Year-over-Year Change in Revenue: 26.6% [(177,866 - 136,004) / 136,004 * 100] rounded to one decimal place.\n  \n- SUPPORTING DATA: \n  - FY2016 Revenue: $136,004 million\n  - FY2017 Revenue: $177,866 million\n  - Year-over-Year Change: 30.8%\n\n- DATA SOURCES: \n  - FY2017 10-K, Consolidated Statements of Operations, Page 45 (Revenue figures for FY2016 and FY2017).",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_020_C68C8862_H2",
+      "type": "dollar_amount",
+      "original_value": "$136,004 million",
+      "injected_value": "$179,626 million",
+      "original_numeric": "136004",
+      "injected_numeric": "179626",
+      "position_char": 102,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.3207
+    },
+    {
+      "hallucination_id": "FB_020_C68C8862_H1",
+      "type": "percentage",
+      "original_value": "30.8%",
+      "injected_value": "26.6%",
+      "original_numeric": "30.8",
+      "injected_numeric": "26.6",
+      "position_char": 320,
+      "sentence_approx": 3,
+      "perturbation_delta": -4.1481
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Revenue for FY2016: $179,626 million",
+        "claim_value": "$179,626 million",
+        "reason": "This FY2016 revenue figure directly contradicts the FY2016 revenue of $136,004 million provided in the 'SUPPORTING DATA' section. The report presents two different revenue figures for the same fiscal year, indicating an internal inconsistency.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Year-over-Year Change in Revenue: 26.6%",
+        "claim_value": "26.6%",
+        "reason": "This year-over-year change percentage is inconsistent with the calculation provided immediately after it, '[(177,866 - 136,004) / 136,004 * 100]', which correctly evaluates to 30.8%. It also contradicts the 'Year-over-Year Change: 30.8%' stated in the 'SUPPORTING DATA' section.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2016 Revenue: $136,004 million",
+        "claim_value": "$136,004 million",
+        "reason": "This FY2016 revenue figure directly contradicts the FY2016 revenue of $179,626 million provided in the 'PRIMARY METRIC' section. The report presents two different revenue figures for the same fiscal year, indicating an internal inconsistency.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Year-over-Year Change: 30.8%",
+        "claim_value": "30.8%",
+        "reason": "While this percentage is consistent with the provided calculation '[(177,866 - 136,004) / 136,004 * 100]', it directly contradicts the 'PRIMARY METRIC' Year-over-Year Change in Revenue of 26.6%. The report presents two different year-over-year growth rates for the same period.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 5,
+    "overall_assessment": "The researcher's output contains significant internal inconsistencies regarding the FY2016 revenue figures and the calculated year-over-year growth rates, suggesting potential data fabrication or errors.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Revenue for FY2016: $179,626 million\",\n      \"claim_value\": \"$179,626 million\",\n      \"reason\": \"This FY2016 revenue figure directly contradicts the FY2016 revenue of $136,004 million provided in the 'SUPPORTING DATA' section. The report presents two different revenue figures for the same fiscal year, indicating an internal inconsistency.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Year-over-Year Change in Revenue: 26.6%\",\n      \"claim_value\": \"26.6%\",\n      \"reason\": \"This year-over-year change percentage is inconsistent with the calculation provided immediately after it, '[(177,866 - 136,004) / 136,004 * 100]', which correctly evaluates to 30.8%. It also contradicts the 'Year-over-Year Change: 30.8%' stated in the 'SUPPORTING DATA' section.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2016 Revenue: $136,004 million\",\n      \"claim_value\": \"$136,004 million\",\n      \"reason\": \"This FY2016 revenue figure directly contradicts the FY2016 revenue of $179,626 million provided in the 'PRIMARY METRIC' section. The report presents two different revenue figures for the same fiscal year, indicating an internal inconsistency.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Year-over-Year Change: 30.8%\",\n      \"claim_value\": \"30.8%\",\n      \"reason\": \"While this percentage is consistent with the provided calculation '[(177,866 - 136,004) / 136,004 * 100]', it directly contradicts the 'PRIMARY METRIC' Year-over-Year Change in Revenue of 26.6%. The report presents two different year-over-year growth rates for the same period.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 5,\n  \"overall_assessment\": \"The researcher's output contains significant internal inconsistencies regarding the FY2016 revenue figures and the calculated year-over-year growth rates, suggesting potential data fabrication or errors.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_020_C68C8862",
+      "hallucination_id": "FB_020_C68C8862_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$136,004 million",
+      "injected_value": "$179,626 million",
+      "detected": true,
+      "reason": "This FY2016 revenue figure directly contradicts the FY2016 revenue of $136,004 million provided in the 'SUPPORTING DATA' section. The report presents two different revenue figures for the same fiscal year, indicating an internal inconsistency.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 5
+    },
+    {
+      "question_id": "FB_020_C68C8862",
+      "hallucination_id": "FB_020_C68C8862_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "percentage",
+      "original_value": "30.8%",
+      "injected_value": "26.6%",
+      "detected": true,
+      "reason": "This year-over-year change percentage is inconsistent with the calculation provided immediately after it, '[(177,866 - 136,004) / 136,004 * 100]', which correctly evaluates to 30.8%. It also contradicts the 'Year-over-Year Change: 30.8%' stated in the 'SUPPORTING DATA' section.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 5
+    }
+  ],
+  "timestamp": "2026-03-25T07:38:43.172988Z"
+}

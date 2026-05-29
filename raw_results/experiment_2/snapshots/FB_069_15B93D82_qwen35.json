@@ -1,0 +1,85 @@
+{
+  "question_id": "FB_069_15B93D82",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: The Coca-Cola Company, FY2021\n- PRIMARY METRIC: Cost of Goods Sold (COGS) percentage margin for FY2021 is 51.5%. This is calculated as COGS of $18,441 million divided by Total Revenue of $41,651 million, as reported in the FY2021 10-K, Consolidated Statements of Operations.\n- SUPPORTING DATA: \n  - COGS for FY2021: $18,441 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - Total Revenue for FY2021: $41,651 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - COGS for FY2020: $17,167 million (per the FY2020 10-K, Consolidated Statements of Operations)\n  - Total Revenue for FY2020: $25,413 million (per the FY2020 10-K, Consolidated Statements of Operations)\n  - COGS for FY2019: $17,086 million (per the FY2019 10-K, Consolidated Statements of Operations)\n  - Total Revenue for FY2019: $37,266 million (per the FY2019 10-K, Consolidated Statements of Operations)\n- DATA SOURCES: \n  - FY2021 10-K, Consolidated Statements of Operations\n  - FY2020 10-K, Consolidated Statements of Operations\n  - FY2019 10-K, Consolidated Statements of Operations\n\nNote: The COGS percentage margin is calculated as (COGS / Total Revenue) * 100. For FY2021, this results in (18,441 / 41,651) * 100 = 44.2%.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_069_15B93D82_H2",
+      "type": "percentage",
+      "original_value": "44.2%",
+      "injected_value": "51.5%",
+      "original_numeric": "44.2",
+      "injected_numeric": "51.5",
+      "position_char": 126,
+      "sentence_approx": 1,
+      "perturbation_delta": 7.2957
+    },
+    {
+      "hallucination_id": "FB_069_15B93D82_H1",
+      "type": "dollar_amount",
+      "original_value": "$33,014 million",
+      "injected_value": "$25,413 million",
+      "original_numeric": "33014",
+      "injected_numeric": "25413",
+      "position_char": 648,
+      "sentence_approx": 4,
+      "perturbation_delta": -0.2302
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Cost of Goods Sold (COGS) percentage margin for FY2021 is 51.5%.",
+        "claim_value": "51.5%",
+        "reason": "Internal inconsistency: This figure directly contradicts the researcher's own calculation in the note (44.2%) and the raw data provided (18,441 / 41,651 equals approx 44.3%, not 51.5%).",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Revenue for FY2020: $25,413 million",
+        "claim_value": "$25,413 million",
+        "reason": "Implausible volatility: A drop from $37.3B (2019) to $25.4B (2020) followed by a surge to $41.7B (2021) represents a 32% decline and 64% growth in consecutive years, which is highly atypical for a stable consumer staples company like Coca-Cola without major M&A explanation.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Note: ... (18,441 / 41,651) * 100 = 44.2%.",
+        "claim_value": "44.2%",
+        "reason": "While the arithmetic is correct based on the provided inputs, this result contradicts the primary metric claimed earlier (51.5%), indicating a hallucinated primary figure or copy-paste error in the report summary.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 8,
+    "overall_assessment": "The output contains critical internal contradictions regarding the primary margin metric and exhibits implausible revenue volatility for FY2020 inconsistent with the company's historical stability.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Cost of Goods Sold (COGS) percentage margin for FY2021 is 51.5%.\",\n      \"claim_value\": \"51.5%\",\n      \"reason\": \"Internal inconsistency: This figure directly contradicts the researcher's own calculation in the note (44.2%) and the raw data provided (18,441 / 41,651 equals approx 44.3%, not 51.5%).\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Revenue for FY2020: $25,413 million\",\n      \"claim_value\": \"$25,413 million\",\n      \"reason\": \"Implausible volatility: A drop from $37.3B (2019) to $25.4B (2020) followed by a surge to $41.7B (2021) represents a 32% decline and 64% growth in consecutive years, which is highly atypical for a stable consumer staples company like Coca-Cola without major M&A explanation.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Note: ... (18,441 / 41,651) * 100 = 44.2%.\",\n      \"claim_value\": \"44.2%\",\n      \"reason\": \"While the arithmetic is correct based on the provided inputs, this result contradicts the primary metric claimed earlier (51.5%), indicating a hallucinated primary figure or copy-paste error in the report summary.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 8,\n  \"overall_assessment\": \"The output contains critical internal contradictions regarding the primary margin metric and exhibits implausible revenue volatility for FY2020 inconsistent with the company's historical stability.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_069_15B93D82",
+      "hallucination_id": "FB_069_15B93D82_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "percentage",
+      "original_value": "44.2%",
+      "injected_value": "51.5%",
+      "detected": true,
+      "reason": "Internal inconsistency: This figure directly contradicts the researcher's own calculation in the note (44.2%) and the raw data provided (18,441 / 41,651 equals approx 44.3%, not 51.5%).",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 8
+    },
+    {
+      "question_id": "FB_069_15B93D82",
+      "hallucination_id": "FB_069_15B93D82_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$33,014 million",
+      "injected_value": "$25,413 million",
+      "detected": true,
+      "reason": "Implausible volatility: A drop from $37.3B (2019) to $25.4B (2020) followed by a surge to $41.7B (2021) represents a 32% decline and 64% growth in consecutive years, which is highly atypical for a stable consumer staples company like Coca-Cola without major M&A explanation.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 8
+    }
+  ],
+  "timestamp": "2026-03-24T11:37:53.375409Z"
+}

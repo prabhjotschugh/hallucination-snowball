@@ -1,0 +1,608 @@
+{
+  "question_id": "FB_047_A9C061FE",
+  "method": "ours",
+  "final_output": "## American Water Works - FY2021 Financial Report\n\n### Executive Summary\n\nAmerican Water Works demonstrated robust financial performance in FY2021, with significant growth in both Operating Income and Unadjusted EBITDA. Operating Income reached $1,149 million, an increase of $86 million (8.09%) from FY2020. Unadjusted EBITDA, calculated as Operating Income plus Depreciation and Amortization, rose to $1,426 million, reflecting a $119 million (9.11%) increase over the prior year. This positive trend indicates strong operational efficiency and effective management of capital expenditures.\n\n### Analysis\n\nThe company's Operating Income has shown consistent growth, increasing from $1,019 million in FY2019 to $1,063 million in FY2020 (a 4.32% increase), and further to $1,149 million in FY2021. Depreciation and Amortization also saw an increase, from $244 million in FY2020 to $277 million in FY2021, representing a 13.52% rise. This growth in D&A is consistent with ongoing capital investments. The Unadjusted EBITDA for FY2021 was $1,426 million, a substantial improvement from $1,307 million in FY2020 and $1,263 million in FY2019. The D&A as a percentage of Operating Income remained relatively stable, at 24.11% in FY2021, 22.95% in FY2020, and 23.94% in FY2019, indicating consistent asset utilization relative to operational earnings.\n\n### Key Risks\n\nA primary risk identified pertains to data integrity. Initial figures for Unadjusted EBITDA for FY2021, Operating Income for FY2019, and Depreciation and Amortization for FY2020 were found to contain discrepancies. Such errors, if not identified and corrected, could lead to misinformed financial analysis and strategic decisions. Continued vigilance in data verification is crucial to ensure accuracy in financial reporting.\n\n### Conclusion\n\nAmerican Water Works concluded FY2021 with strong financial results, marked by healthy growth in core profitability metrics. The calculated Unadjusted EBITDA of $1,426 million for FY2021 underscores the company's operational strength. While the overall financial trajectory is positive, the identified data anomalies highlight the critical importance of rigorous data validation processes to maintain the reliability and credibility of financial reports.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: American Water Works, FY2021\n- PRIMARY METRIC: Unadjusted Operating Income + Depreciation and Amortization (unadjusted EBITDA) is $966 million (per the FY2021 10-K, Consolidated Statements of Operations and Consolidated Statements of Cash Flows).\n- SUPPORTING DATA: \n  - Operating Income for FY2021: $1,149 million (per the FY2021 10-K, Consolidated Statements of Operations).\n  - Depreciation and Amortization for FY2021: $277 million (per the FY2021 10-K, Consolidated Statements of Cash Flows).\n  - For context, Operating Income for FY2020 was $1,063 million and for FY2019 was $832 million.\n  - Depreciation and Amortization for FY2020 was $208 million and for FY2019 was $244 million.\n- DATA SOURCES: \n  - FY2021 10-K, Consolidated Statements of Operations (Operating Income).\n  - FY2021 10-K, Consolidated Statements of Cash Flows (Depreciation and Amortization).",
+    "2": "As a financial analyst, I've reviewed the provided data for American Water Works. Below are the computations, ratios, and anomaly flags, using only the verified and corrected data.\n\n**Corrected Data Summary:**\n\n*   **FY2021:**\n    *   Operating Income: $1,149 million\n    *   Depreciation and Amortization: $277 million\n    *   Unadjusted EBITDA (Calculated): $1,149 million + $277 million = $1,426 million\n*   **FY2020:**\n    *   Operating Income: $1,063 million\n    *   Depreciation and Amortization: $244 million (Corrected from $208 million)\n    *   Unadjusted EBITDA (Calculated): $1,063 million + $244 million = $1,307 million\n*   **FY2019:**\n    *   Operating Income: $1,019 million (Corrected from $832 million)\n    *   Depreciation and Amortization: $244 million\n    *   Unadjusted EBITDA (Calculated): $1,019 million + $244 million = $1,263 million\n\n**1. Year-over-Year Changes:**\n\n*   **Operating Income:**\n    *   **FY2021 vs. FY2020:**\n        *   Absolute Change: $1,149 million - $1,063 million = **$86 million**\n        *   Percentage Change: ($86 million / $1,063 million) * 100 = **8.09%**\n    *   **FY2020 vs. FY2019:**\n        *   Absolute Change: $1,063 million - $1,019 million = **$44 million**\n        *   Percentage Change: ($44 million / $1,019 million) * 100 = **4.32%**\n\n*   **Depreciation and Amortization:**\n    *   **FY2021 vs. FY2020:**\n        *   Absolute Change: $277 million - $244 million = **$33 million**\n        *   Percentage Change: ($33 million / $244 million) * 100 = **13.52%**\n    *   **FY2020 vs. FY2019:**\n        *   Absolute Change: $244 million - $244 million = **$0 million**\n        *   Percentage Change: ($0 million / $244 million) * 100 = **0.00%**\n\n*   **Unadjusted EBITDA:**\n    *   **FY2021 vs. FY2020:**\n        *   Absolute Change: $1,426 million - $1,307 million = **$119 million**\n        *   Percentage Change: ($119 million / $1,307 million) * 100 = **9.10%**\n    *   **FY2020 vs. FY2019:**\n        *   Absolute Change: $1,307 million - $1,263 million = **$44 million**\n        *   Percentage Change: ($44 million / $1,263 million) * 100 = **3.48%**\n\n**2. Relevant Ratios:**\n\n*   **D&A as % of Operating Income:**\n    *   **FY2021:** ($277 million / $1,149 million) * 100 = **24.11%**\n    *   **FY2020:** ($244 million / $1,063 million) * 100 = **22.95%**\n    *   **FY2019:** ($244 million / $1,019 million) * 100 = **23.94%**\n\n*   **Operating Income Growth Rate (YoY):**\n    *   FY2021: 8.09%\n    *   FY2020: 4.32%\n\n*   **EBITDA Growth Rate (YoY):**\n    *   FY2021: 9.10%\n    *   FY2020: 3.48%\n\n**3. Anomalies:**\n\n*   **Initial Unadjusted EBITDA for FY2021 ($966 million):** This value was explicitly refuted and significantly lower than the calculated value of $1,426 million ($1,149M + $277M). This suggests a potential data entry error or miscalculation in the original research data.\n*   **Operating Income for FY2019 ($832 million):** This was also refuted and significantly understated the correct value of $1,019 million. This would have led to an artificially high growth rate for FY2020 if used.\n*   **Depreciation and Amortization for FY2020 ($208 million):** Refuted and understated the correct value of $244 million. This would have distorted D&A as % of Operating Income and EBITDA",
+    "3": "## American Water Works - FY2021 Financial Report\n\n### Executive Summary\n\nAmerican Water Works demonstrated robust financial performance in FY2021, with significant growth in both Operating Income and Unadjusted EBITDA. Operating Income reached $1,149 million, an increase of $86 million (6.00%) from FY2020. Unadjusted EBITDA, calculated as Operating Income plus Depreciation and Amortization, rose to $1,426 million, reflecting an $244 million (11.00%) increase over the prior year. This positive trend indicates strong operational efficiency and effective management of capital expenditures.\n\n### Analysis\n\nThe company's Operating Income has shown consistent growth, increasing from $1,019 million in FY2019 to $1,063 million in FY2020 (a 4.00% increase), and further to $1,149 million in FY2021. Depreciation and Amortization also saw an increase, from $244 million in FY2020 to $277 million in FY2021, representing an 11.00% rise. This growth in D&A is consistent with ongoing capital investments. The Unadjusted EBITDA for FY2021 was $1,426 million, a substantial improvement from $1,426 million in FY2020 and $1,149 million in FY2019. The D&A as a percentage of Operating Income remained relatively stable, at 24.11% in FY2021, 22.95% in FY2020, and 23.94% in FY2019, indicating consistent asset utilization relative to operational earnings.\n\n### Key Risks\n\nA primary risk identified pertains to data integrity. Initial figures for Unadjusted EBITDA for FY2021 ($966 million), Operating Income for FY2019 ($832 million), and Depreciation and Amortization for FY2020 ($208 million) were found to be incorrect. Such discrepancies, if not identified and corrected, could lead to misinformed financial analysis and strategic decisions. Continued vigilance in data verification is crucial to ensure accuracy in financial reporting.\n\n### Conclusion\n\nAmerican Water Works concluded FY2021 with strong financial results, marked by healthy growth in core profitability metrics. The calculated Unadjusted EBITDA of $1,426 million for FY2021 underscores the company's operational strength. While the overall financial trajectory is positive, the identified data anomalies highlight the critical importance of rigorous data validation processes to maintain the reliability and credibility of financial reports.",
+    "4": "## American Water Works - FY2021 Financial Report\n\n### Executive Summary\n\nAmerican Water Works demonstrated robust financial performance in FY2021, with significant growth in both Operating Income and Unadjusted EBITDA. Operating Income reached $1,149 million, an increase of $86 million (8.09%) from FY2020. Unadjusted EBITDA, calculated as Operating Income plus Depreciation and Amortization, rose to $1,426 million, reflecting a $119 million (9.11%) increase over the prior year. This positive trend indicates strong operational efficiency and effective management of capital expenditures.\n\n### Analysis\n\nThe company's Operating Income has shown consistent growth, increasing from $1,019 million in FY2019 to $1,063 million in FY2020 (a 4.32% increase), and further to $1,149 million in FY2021. Depreciation and Amortization also saw an increase, from $244 million in FY2020 to $277 million in FY2021, representing a 13.52% rise. This growth in D&A is consistent with ongoing capital investments. The Unadjusted EBITDA for FY2021 was $1,426 million, a substantial improvement from $1,307 million in FY2020 and $1,263 million in FY2019. The D&A as a percentage of Operating Income remained relatively stable, at 24.11% in FY2021, 22.95% in FY2020, and 23.94% in FY2019, indicating consistent asset utilization relative to operational earnings.\n\n### Key Risks\n\nA primary risk identified pertains to data integrity. Initial figures for Unadjusted EBITDA for FY2021, Operating Income for FY2019, and Depreciation and Amortization for FY2020 were found to contain discrepancies. Such errors, if not identified and corrected, could lead to misinformed financial analysis and strategic decisions. Continued vigilance in data verification is crucial to ensure accuracy in financial reporting.\n\n### Conclusion\n\nAmerican Water Works concluded FY2021 with strong financial results, marked by healthy growth in core profitability metrics. The calculated Unadjusted EBITDA of $1,426 million for FY2021 underscores the company's operational strength. While the overall financial trajectory is positive, the identified data anomalies highlight the critical importance of rigorous data validation processes to maintain the reliability and credibility of financial reports."
+  },
+  "gates": {
+    "gate_1": {
+      "verified": [
+        {
+          "value": "$1,149 million",
+          "ref": 1149.0
+        },
+        {
+          "value": "$277 million",
+          "ref": 277.0
+        },
+        {
+          "value": "$1,063 million",
+          "ref": 1063.0
+        },
+        {
+          "value": "$244 million",
+          "ref": 244.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$966 million",
+          "num": 966.0,
+          "correct": 1019.0,
+          "dev": 0.052,
+          "source": "source_document"
+        },
+        {
+          "value": "$832 million",
+          "num": 832.0,
+          "correct": 1019.0,
+          "dev": 0.1835,
+          "source": "source_document"
+        },
+        {
+          "value": "$208 million",
+          "num": 208.0,
+          "correct": 244.0,
+          "dev": 0.1475,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [],
+      "n_refs": 23
+    },
+    "gate_2": {
+      "verified": [
+        {
+          "value": "$1,149 million",
+          "ref": 1149.0
+        },
+        {
+          "value": "$277 million",
+          "ref": 277.0
+        },
+        {
+          "value": "$1,149 million",
+          "ref": 1149.0
+        },
+        {
+          "value": "$277 million",
+          "ref": 277.0
+        },
+        {
+          "value": "$1,426 million",
+          "ref": 1426.0
+        },
+        {
+          "value": "$1,063 million",
+          "ref": 1063.0
+        },
+        {
+          "value": "$244 million",
+          "ref": 244.0
+        },
+        {
+          "value": "$1,063 million",
+          "ref": 1063.0
+        },
+        {
+          "value": "$244 million",
+          "ref": 244.0
+        },
+        {
+          "value": "$1,019 million",
+          "ref": 1019.0
+        },
+        {
+          "value": "$244 million",
+          "ref": 244.0
+        },
+        {
+          "value": "$1,019 million",
+          "ref": 1019.0
+        },
+        {
+          "value": "$244 million",
+          "ref": 244.0
+        },
+        {
+          "value": "$1,149 million",
+          "ref": 1149.0
+        },
+        {
+          "value": "$1,063 million",
+          "ref": 1063.0
+        },
+        {
+          "value": "$1,063 million",
+          "ref": 1063.0
+        },
+        {
+          "value": "$1,063 million",
+          "ref": 1063.0
+        },
+        {
+          "value": "$1,019 million",
+          "ref": 1019.0
+        },
+        {
+          "value": "$1,019 million",
+          "ref": 1019.0
+        },
+        {
+          "value": "$277 million",
+          "ref": 277.0
+        },
+        {
+          "value": "$244 million",
+          "ref": 244.0
+        },
+        {
+          "value": "$244 million",
+          "ref": 244.0
+        },
+        {
+          "value": "$244 million",
+          "ref": 244.0
+        },
+        {
+          "value": "$244 million",
+          "ref": 244.0
+        },
+        {
+          "value": "$244 million",
+          "ref": 244.0
+        },
+        {
+          "value": "$1,426 million",
+          "ref": 1426.0
+        },
+        {
+          "value": "$277 million",
+          "ref": 277.0
+        },
+        {
+          "value": "$1,149 million",
+          "ref": 1149.0
+        },
+        {
+          "value": "$244 million",
+          "ref": 244.0
+        },
+        {
+          "value": "$1,063 million",
+          "ref": 1063.0
+        },
+        {
+          "value": "$244 million",
+          "ref": 244.0
+        },
+        {
+          "value": "$1,019 million",
+          "ref": 1019.0
+        },
+        {
+          "value": "$1,426 million",
+          "ref": 1426.0
+        },
+        {
+          "value": "$1,149M",
+          "ref": 1149.0
+        },
+        {
+          "value": "$277M",
+          "ref": 277.0
+        },
+        {
+          "value": "$1,019 million",
+          "ref": 1019.0
+        },
+        {
+          "value": "$244 million",
+          "ref": 244.0
+        },
+        {
+          "value": "24.11%",
+          "ref": 24.0
+        },
+        {
+          "value": "23.94%",
+          "ref": 24.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$208 million",
+          "num": 208.0,
+          "correct": 244.0,
+          "dev": 0.1475,
+          "source": "source_document"
+        },
+        {
+          "value": "$1,307 million",
+          "num": 1307.0,
+          "correct": 1426.0,
+          "dev": 0.0835,
+          "source": "source_document"
+        },
+        {
+          "value": "$832 million",
+          "num": 832.0,
+          "correct": 1019.0,
+          "dev": 0.1835,
+          "source": "source_document"
+        },
+        {
+          "value": "$1,263 million",
+          "num": 1263.0,
+          "correct": 1149.0,
+          "dev": 0.0903,
+          "source": "source_document"
+        },
+        {
+          "value": "$44 million",
+          "num": 44.0,
+          "correct": 30.0,
+          "dev": 0.3182,
+          "source": "evidence"
+        },
+        {
+          "value": "$44 million",
+          "num": 44.0,
+          "correct": 30.0,
+          "dev": 0.3182,
+          "source": "evidence"
+        },
+        {
+          "value": "$33 million",
+          "num": 33.0,
+          "correct": 30.0,
+          "dev": 0.0909,
+          "source": "evidence"
+        },
+        {
+          "value": "$33 million",
+          "num": 33.0,
+          "correct": 30.0,
+          "dev": 0.0909,
+          "source": "evidence"
+        },
+        {
+          "value": "$1,307 million",
+          "num": 1307.0,
+          "correct": 1426.0,
+          "dev": 0.0835,
+          "source": "source_document"
+        },
+        {
+          "value": "$119 million",
+          "num": 119.0,
+          "correct": 244.0,
+          "dev": 0.5123,
+          "source": "source_document"
+        },
+        {
+          "value": "$119 million",
+          "num": 119.0,
+          "correct": 244.0,
+          "dev": 0.5123,
+          "source": "source_document"
+        },
+        {
+          "value": "$1,307 million",
+          "num": 1307.0,
+          "correct": 1426.0,
+          "dev": 0.0835,
+          "source": "source_document"
+        },
+        {
+          "value": "$1,307 million",
+          "num": 1307.0,
+          "correct": 1426.0,
+          "dev": 0.0835,
+          "source": "source_document"
+        },
+        {
+          "value": "$1,263 million",
+          "num": 1263.0,
+          "correct": 1149.0,
+          "dev": 0.0903,
+          "source": "source_document"
+        },
+        {
+          "value": "$44 million",
+          "num": 44.0,
+          "correct": 30.0,
+          "dev": 0.3182,
+          "source": "evidence"
+        },
+        {
+          "value": "$44 million",
+          "num": 44.0,
+          "correct": 30.0,
+          "dev": 0.3182,
+          "source": "evidence"
+        },
+        {
+          "value": "$1,263 million",
+          "num": 1263.0,
+          "correct": 1149.0,
+          "dev": 0.0903,
+          "source": "source_document"
+        },
+        {
+          "value": "$966 million",
+          "num": 966.0,
+          "correct": 1019.0,
+          "dev": 0.052,
+          "source": "source_document"
+        },
+        {
+          "value": "$832 million",
+          "num": 832.0,
+          "correct": 1019.0,
+          "dev": 0.1835,
+          "source": "source_document"
+        },
+        {
+          "value": "$208 million",
+          "num": 208.0,
+          "correct": 244.0,
+          "dev": 0.1475,
+          "source": "source_document"
+        },
+        {
+          "value": "8.09%",
+          "num": 8.09,
+          "correct": 6.0,
+          "dev": 0.2583,
+          "source": "evidence"
+        },
+        {
+          "value": "4.32%",
+          "num": 4.32,
+          "correct": 4.0,
+          "dev": 0.0741,
+          "source": "evidence"
+        },
+        {
+          "value": "13.52%",
+          "num": 13.52,
+          "correct": 11.0,
+          "dev": 0.1864,
+          "source": "evidence"
+        },
+        {
+          "value": "9.10%",
+          "num": 9.1,
+          "correct": 11.0,
+          "dev": 0.1727,
+          "source": "evidence"
+        },
+        {
+          "value": "3.48%",
+          "num": 3.48,
+          "correct": 4.0,
+          "dev": 0.13,
+          "source": "evidence"
+        },
+        {
+          "value": "8.09%",
+          "num": 8.09,
+          "correct": 6.0,
+          "dev": 0.2583,
+          "source": "evidence"
+        },
+        {
+          "value": "4.32%",
+          "num": 4.32,
+          "correct": 4.0,
+          "dev": 0.0741,
+          "source": "evidence"
+        },
+        {
+          "value": "9.10%",
+          "num": 9.1,
+          "correct": 11.0,
+          "dev": 0.1727,
+          "source": "evidence"
+        },
+        {
+          "value": "3.48%",
+          "num": 3.48,
+          "correct": 4.0,
+          "dev": 0.13,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$86 million"
+        },
+        {
+          "value": "$86 million"
+        },
+        {
+          "value": "22.95%"
+        }
+      ],
+      "n_refs": 23
+    },
+    "gate_3": {
+      "verified": [
+        {
+          "value": "$1,149 million",
+          "ref": 1149.0
+        },
+        {
+          "value": "$1,426 million",
+          "ref": 1426.0
+        },
+        {
+          "value": "$244 million",
+          "ref": 244.0
+        },
+        {
+          "value": "$1,019 million",
+          "ref": 1019.0
+        },
+        {
+          "value": "$1,063 million",
+          "ref": 1063.0
+        },
+        {
+          "value": "$1,149 million",
+          "ref": 1149.0
+        },
+        {
+          "value": "$244 million",
+          "ref": 244.0
+        },
+        {
+          "value": "$277 million",
+          "ref": 277.0
+        },
+        {
+          "value": "$1,426 million",
+          "ref": 1426.0
+        },
+        {
+          "value": "$1,426 million",
+          "ref": 1426.0
+        },
+        {
+          "value": "$1,149 million",
+          "ref": 1149.0
+        },
+        {
+          "value": "$1,426 million",
+          "ref": 1426.0
+        },
+        {
+          "value": "6.00%",
+          "ref": 6.0
+        },
+        {
+          "value": "11.00%",
+          "ref": 11.0
+        },
+        {
+          "value": "4.00%",
+          "ref": 4.0
+        },
+        {
+          "value": "11.00%",
+          "ref": 11.0
+        },
+        {
+          "value": "24.11%",
+          "ref": 24.0
+        },
+        {
+          "value": "23.94%",
+          "ref": 24.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$966 million",
+          "num": 966.0,
+          "correct": 1019.0,
+          "dev": 0.052,
+          "source": "source_document"
+        },
+        {
+          "value": "$832 million",
+          "num": 832.0,
+          "correct": 1019.0,
+          "dev": 0.1835,
+          "source": "source_document"
+        },
+        {
+          "value": "$208 million",
+          "num": 208.0,
+          "correct": 244.0,
+          "dev": 0.1475,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$86 million"
+        },
+        {
+          "value": "22.95%"
+        }
+      ],
+      "n_refs": 23
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_047_A9C061FE",
+      "hid": "FB_047_A9C061FE_H3",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 966.0,
+      "orig_num": 1426.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": true,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_047_A9C061FE",
+      "hid": "FB_047_A9C061FE_H2",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 832.0,
+      "orig_num": 1019.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": true,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_047_A9C061FE",
+      "hid": "FB_047_A9C061FE_H1",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 208.0,
+      "orig_num": 263.0,
+      "survived": false,
+      "corrected": false,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": true,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 3,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:20:44.006548+00:00"
+}

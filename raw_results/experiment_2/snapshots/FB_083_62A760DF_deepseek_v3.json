@@ -1,0 +1,103 @@
+{
+  "question_id": "FB_083_62A760DF",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: General Mills, FY2020\n- PRIMARY METRIC: Working Capital Ratio = 1.26 (calculated as Total Current Assets of $3,747 million divided by Total Current Liabilities of $2,972 million, per the FY2020 10-K, Consolidated Statements of Financial Position).\n- SUPPORTING DATA: \n  - Total Current Assets: $3,747 million (per the FY2020 10-K, Consolidated Statements of Financial Position).\n  - Total Current Liabilities: $3,586 million (per the FY2020 10-K, Consolidated Statements of Financial Position).\n  - FY2019 Total Current Assets: $3,661 million (per the FY2019 10-K, Consolidated Statements of Financial Position).\n  - FY2019 Total Current Liabilities: $3,712 million (per the FY2019 10-K, Consolidated Statements of Financial Position).\n  - FY2018 Total Current Assets: $2,326 million (per the FY2018 10-K, Consolidated Statements of Financial Position).\n  - FY2018 Total Current Liabilities: $2,650 million (per the FY2018 10-K, Consolidated Statements of Financial Position).\n- DATA SOURCES: \n  - General Mills FY2020 10-K, Consolidated Statements of Financial Position.\n  - General Mills FY2019 10-K, Consolidated Statements of Financial Position.\n  - General Mills FY2018 10-K, Consolidated Statements of Financial Position. \n\nNote: The analysis of trends and benchmarking against industry peers is not included as per the directive to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_083_62A760DF_H3",
+      "type": "dollar_amount",
+      "original_value": "$2,972 million",
+      "injected_value": "$3,586 million",
+      "original_numeric": "2972",
+      "injected_numeric": "3586",
+      "position_char": 430,
+      "sentence_approx": 4,
+      "perturbation_delta": 0.2066
+    },
+    {
+      "hallucination_id": "FB_083_62A760DF_H2",
+      "type": "dollar_amount",
+      "original_value": "$2,731 million",
+      "injected_value": "$3,712 million",
+      "original_numeric": "2731",
+      "injected_numeric": "3712",
+      "position_char": 671,
+      "sentence_approx": 6,
+      "perturbation_delta": 0.3593
+    },
+    {
+      "hallucination_id": "FB_083_62A760DF_H1",
+      "type": "dollar_amount",
+      "original_value": "$3,556 million",
+      "injected_value": "$2,326 million",
+      "original_numeric": "3556",
+      "injected_numeric": "2326",
+      "position_char": 789,
+      "sentence_approx": 7,
+      "perturbation_delta": -0.3459
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Working Capital Ratio = 1.26 (calculated as Total Current Assets of $3,747 million divided by Total Current Liabilities of $2,972 million, per the FY2020 10-K, Consolidated Statements of Financial Position).",
+        "claim_value": "1.26",
+        "reason": "Internal inconsistency: Reported working capital ratio of 1.26 doesn't match the given current assets ($3,747 million) and liabilities ($2,972 million), which would actually yield a ratio of ~1.26. But further down, Total Current Liabilities are listed as $3,586 million, which would actually yield a ratio of ~1.05.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Current Liabilities: $2,972 million (per the FY2020 10-K, Consolidated Statements of Financial Position).",
+        "claim_value": "$2,972 million",
+        "reason": "Contradicts the later claim of $3,586 million for the same line item, making one of these clearly wrong.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 8,
+    "overall_assessment": "Critical inconsistency exists between working capital ratio calculation inputs - two different current liabilities figures are provided for the same period.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Working Capital Ratio = 1.26 (calculated as Total Current Assets of $3,747 million divided by Total Current Liabilities of $2,972 million, per the FY2020 10-K, Consolidated Statements of Financial Position).\",\n      \"claim_value\": \"1.26\",\n      \"reason\": \"Internal inconsistency: Reported working capital ratio of 1.26 doesn't match the given current assets ($3,747 million) and liabilities ($2,972 million), which would actually yield a ratio of ~1.26. But further down, Total Current Liabilities are listed as $3,586 million, which would actually yield a ratio of ~1.05.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Current Liabilities: $2,972 million (per the FY2020 10-K, Consolidated Statements of Financial Position).\",\n      \"claim_value\": \"$2,972 million\",\n      \"reason\": \"Contradicts the later claim of $3,586 million for the same line item, making one of these clearly wrong.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 8,\n  \"overall_assessment\": \"Critical inconsistency exists between working capital ratio calculation inputs - two different current liabilities figures are provided for the same period.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_083_62A760DF",
+      "hallucination_id": "FB_083_62A760DF_H3",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$2,972 million",
+      "injected_value": "$3,586 million",
+      "detected": true,
+      "reason": "Contradicts the later claim of $3,586 million for the same line item, making one of these clearly wrong.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 8
+    },
+    {
+      "question_id": "FB_083_62A760DF",
+      "hallucination_id": "FB_083_62A760DF_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$2,731 million",
+      "injected_value": "$3,712 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 8
+    },
+    {
+      "question_id": "FB_083_62A760DF",
+      "hallucination_id": "FB_083_62A760DF_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,556 million",
+      "injected_value": "$2,326 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 8
+    }
+  ],
+  "timestamp": "2026-03-24T09:52:32.816914Z"
+}

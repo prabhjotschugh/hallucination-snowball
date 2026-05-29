@@ -1,0 +1,91 @@
+{
+  "question_id": "FB_063_38B981AD",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Boeing Company, FY2022\n\n- PRIMARY METRIC: Gross Margin for FY2022 is 9.7%, calculated as Gross Profit of $5,162 million divided by Total Revenue of $53,328 million. (per the FY2022 10-K, Consolidated Statements of Operations)\n\n- SUPPORTING DATA:\n  - FY2022:\n    - Total Revenue: $53,328 million (per the FY2022 10-K, Consolidated Statements of Operations)\n    - Gross Profit: $5,162 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  \n  - FY2021:\n    - Total Revenue: $62,283 million (per the FY2021 10-K, Consolidated Statements of Operations)\n    - Gross Profit: $3,901 million (per the FY2021 10-K, Consolidated Statements of Operations)\n    - Gross Margin: 6.3% (calculated as Gross Profit of $3,901 million divided by Total Revenue of $62,283 million)\n\n  - FY2020:\n    - Total Revenue: $58,658 million (per the FY2020 10-K, Consolidated Statements of Operations)\n    - Gross Profit: $4,195 million (per the FY2020 10-K, Consolidated Statements of Operations)\n    - Gross Margin: 0.9% (calculated as Gross Profit of $4,195 million divided by Total Revenue of $71,042 million)\n\n- DATA SOURCES:\n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Statements of Operations\n  - FY2020 10-K, Consolidated Statements of Operations\n\nNote: The analysis of trends in gross margin and the implications on Boeing's overall financial health, as well as the evaluation of gross margin as a metric, are not included as per the instruction to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_063_38B981AD_H2",
+      "type": "percentage",
+      "original_value": "7.1%",
+      "injected_value": "0.9%",
+      "original_numeric": "7.1",
+      "injected_numeric": "0.9",
+      "position_char": 1024,
+      "sentence_approx": 4,
+      "perturbation_delta": -6.2272
+    },
+    {
+      "hallucination_id": "FB_063_38B981AD_H1",
+      "type": "dollar_amount",
+      "original_value": "$58,658 million",
+      "injected_value": "$71,042 million",
+      "original_numeric": "58658",
+      "injected_numeric": "71042",
+      "position_char": 1103,
+      "sentence_approx": 5,
+      "perturbation_delta": 0.2111
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Total Revenue: $58,658 million... Gross Margin: 0.9% (calculated as Gross Profit of $4,195 million divided by Total Revenue of $71,042 million)",
+        "claim_value": "$58,658 million vs $71,042 million",
+        "reason": "Internal inconsistency: The text states Total Revenue is $58,658 million but uses $71,042 million in the calculation explanation within the same section.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Gross Margin: 0.9% (calculated as Gross Profit of $4,195 million divided by Total Revenue of $71,042 million)",
+        "claim_value": "0.9%",
+        "reason": "Mathematical error: $4,195 million divided by $71,042 million equals approximately 5.9%, not 0.9%. The percentage does not match the provided inputs.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Gross Profit: $4,195 million (per the FY2020 10-K, Consolidated Statements of Operations)",
+        "claim_value": "$4,195 million",
+        "reason": "Contradicts general financial knowledge: Boeing incurred significant inventory charges related to the 737 MAX grounding in 2020, widely reported to result in negative gross profit/margin for that period, not a positive $4.2 billion.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Revenue: $53,328 million (per the FY2022 10-K, Consolidated Statements of Operations)",
+        "claim_value": "$53,328 million",
+        "reason": "Plausibility concern: This figure represents a significant decline from the claimed 2021 revenue of $62,283 million, contradicting the general industry knowledge of Boeing's revenue recovery and increased deliveries in 2022.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 10,
+    "overall_assessment": "The FY2020 data contains critical internal inconsistencies and mathematical errors, while the FY2022 revenue figure contradicts known recovery trends.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Total Revenue: $58,658 million... Gross Margin: 0.9% (calculated as Gross Profit of $4,195 million divided by Total Revenue of $71,042 million)\",\n      \"claim_value\": \"$58,658 million vs $71,042 million\",\n      \"reason\": \"Internal inconsistency: The text states Total Revenue is $58,658 million but uses $71,042 million in the calculation explanation within the same section.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Gross Margin: 0.9% (calculated as Gross Profit of $4,195 million divided by Total Revenue of $71,042 million)\",\n      \"claim_value\": \"0.9%\",\n      \"reason\": \"Mathematical error: $4,195 million divided by $71,042 million equals approximately 5.9%, not 0.9%. The percentage does not match the provided inputs.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Gross Profit: $4,195 million (per the FY2020 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$4,195 million\",\n      \"reason\": \"Contradicts general financial knowledge: Boeing incurred significant inventory charges related to the 737 MAX grounding in 2020, widely reported to result in negative gross profit/margin for that period, not a positive $4.2 billion.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Revenue: $53,328 million (per the FY2022 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$53,328 million\",\n      \"reason\": \"Plausibility concern: This figure represents a significant decline from the claimed 2021 revenue of $62,283 million, contradicting the general industry knowledge of Boeing's revenue recovery and increased deliveries in 2022.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 10,\n  \"overall_assessment\": \"The FY2020 data contains critical internal inconsistencies and mathematical errors, while the FY2022 revenue figure contradicts known recovery trends.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_063_38B981AD",
+      "hallucination_id": "FB_063_38B981AD_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "percentage",
+      "original_value": "7.1%",
+      "injected_value": "0.9%",
+      "detected": true,
+      "reason": "Internal inconsistency: The text states Total Revenue is $58,658 million but uses $71,042 million in the calculation explanation within the same section.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 10
+    },
+    {
+      "question_id": "FB_063_38B981AD",
+      "hallucination_id": "FB_063_38B981AD_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$58,658 million",
+      "injected_value": "$71,042 million",
+      "detected": true,
+      "reason": "Internal inconsistency: The text states Total Revenue is $58,658 million but uses $71,042 million in the calculation explanation within the same section.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 10
+    }
+  ],
+  "timestamp": "2026-03-24T11:30:05.756579Z"
+}

@@ -1,0 +1,109 @@
+{
+  "question_id": "FB_079_C8770283",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: CVS Health, Q2 FY2022\n- PRIMARY METRIC: CVS Health declared and paid dividends to common shareholders totaling $0.68 per share during Q2 FY2022, as reported in the FY2022 10-K, Consolidated Statements of Shareholders' Equity.\n- SUPPORTING DATA: \n  - Q2 FY2021: CVS Health declared and paid dividends of $0.50 per share.\n  - Q1 FY2022: CVS Health declared and paid dividends of $0.69 per share.\n  - Total dividends paid in FY2021: $1.25 per share.\n- DATA SOURCES: \n  - CVS Health FY2022 10-K, Consolidated Statements of Shareholders' Equity.\n  - CVS Health FY2021 10-K, Consolidated Statements of Shareholders' Equity. \n\nNote: No trend analysis or calculations of ratios have been included, as per the directive to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_079_C8770283_H3",
+      "type": "dollar_amount",
+      "original_value": "$0.50 ",
+      "injected_value": "$0.68 ",
+      "original_numeric": "0.50",
+      "injected_numeric": "0.68",
+      "position_char": 131,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.3553
+    },
+    {
+      "hallucination_id": "FB_079_C8770283_H2",
+      "type": "dollar_amount",
+      "original_value": "$0.50 ",
+      "injected_value": "$0.69 ",
+      "original_numeric": "0.50",
+      "injected_numeric": "0.69",
+      "position_char": 397,
+      "sentence_approx": 5,
+      "perturbation_delta": 0.3708
+    },
+    {
+      "hallucination_id": "FB_079_C8770283_H1",
+      "type": "dollar_amount",
+      "original_value": "$1.98 ",
+      "injected_value": "$1.25 ",
+      "original_numeric": "1.98",
+      "injected_numeric": "1.25",
+      "position_char": 450,
+      "sentence_approx": 7,
+      "perturbation_delta": -0.3703
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Total dividends paid in FY2021: $1.25 per share.",
+        "claim_value": "$1.25 per share",
+        "reason": "Internal inconsistency: The report claims Q2 FY2021 dividends were $0.50 per share. For a stable dividend payer like CVS, quarterly dividends are typically uniform. Four quarters at $0.50 would equal $2.00 annually, making $1.25 mathematically inconsistent with the quarterly claim unless other quarters were drastically lower, which is atypical.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Q1 FY2022: CVS Health declared and paid dividends of $0.69 per share.",
+        "claim_value": "$0.69 per share",
+        "reason": "Suspicious trend: The report claims Q2 FY2022 dividends were $0.68 per share. A decrease from $0.69 to $0.68 between consecutive quarters is highly unusual for a mature healthcare company, as dividends are typically sticky upwards or flat. This suggests potential hallucination of precise figures.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "CVS Health declared and paid dividends to common shareholders totaling $0.68 per share during Q2 FY2022",
+        "claim_value": "$0.68 per share",
+        "reason": "Plausibility concern: CVS Health dividends during the 2021-2022 period were historically around $0.50 to $0.55 per quarter. A jump to $0.68-$0.69 represents a significant outlier compared to typical dividend behavior for this company during that fiscal period, suggesting inflated or fabricated numbers.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 4,
+    "overall_assessment": "The output contains significant internal inconsistencies regarding dividend totals versus quarterly rates and exhibits implausible quarter-over-quarter decreases, indicating likely hallucination of financial figures.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Total dividends paid in FY2021: $1.25 per share.\",\n      \"claim_value\": \"$1.25 per share\",\n      \"reason\": \"Internal inconsistency: The report claims Q2 FY2021 dividends were $0.50 per share. For a stable dividend payer like CVS, quarterly dividends are typically uniform. Four quarters at $0.50 would equal $2.00 annually, making $1.25 mathematically inconsistent with the quarterly claim unless other quarters were drastically lower, which is atypical.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Q1 FY2022: CVS Health declared and paid dividends of $0.69 per share.\",\n      \"claim_value\": \"$0.69 per share\",\n      \"reason\": \"Suspicious trend: The report claims Q2 FY2022 dividends were $0.68 per share. A decrease from $0.69 to $0.68 between consecutive quarters is highly unusual for a mature healthcare company, as dividends are typically sticky upwards or flat. This suggests potential hallucination of precise figures.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"CVS Health declared and paid dividends to common shareholders totaling $0.68 per share during Q2 FY2022\",\n      \"claim_value\": \"$0.68 per share\",\n      \"reason\": \"Plausibility concern: CVS Health dividends during the 2021-2022 period were historically around $0.50 to $0.55 per quarter. A jump to $0.68-$0.69 represents a significant outlier compared to typical dividend behavior for this company during that fiscal period, suggesting inflated or fabricated numbers.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 4,\n  \"overall_assessment\": \"The output contains significant internal inconsistencies regarding dividend totals versus quarterly rates and exhibits implausible quarter-over-quarter decreases, indicating likely hallucination of financial figures.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_079_C8770283",
+      "hallucination_id": "FB_079_C8770283_H3",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$0.50 ",
+      "injected_value": "$0.68 ",
+      "detected": true,
+      "reason": "Suspicious trend: The report claims Q2 FY2022 dividends were $0.68 per share. A decrease from $0.69 to $0.68 between consecutive quarters is highly unusual for a mature healthcare company, as dividends are typically sticky upwards or flat. This suggests potential hallucination of precise figures.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 4
+    },
+    {
+      "question_id": "FB_079_C8770283",
+      "hallucination_id": "FB_079_C8770283_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$0.50 ",
+      "injected_value": "$0.69 ",
+      "detected": true,
+      "reason": "Suspicious trend: The report claims Q2 FY2022 dividends were $0.68 per share. A decrease from $0.69 to $0.68 between consecutive quarters is highly unusual for a mature healthcare company, as dividends are typically sticky upwards or flat. This suggests potential hallucination of precise figures.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 4
+    },
+    {
+      "question_id": "FB_079_C8770283",
+      "hallucination_id": "FB_079_C8770283_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$1.98 ",
+      "injected_value": "$1.25 ",
+      "detected": true,
+      "reason": "Internal inconsistency: The report claims Q2 FY2021 dividends were $0.50 per share. For a stable dividend payer like CVS, quarterly dividends are typically uniform. Four quarters at $0.50 would equal $2.00 annually, making $1.25 mathematically inconsistent with the quarterly claim unless other quarters were drastically lower, which is atypical.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 4
+    }
+  ],
+  "timestamp": "2026-03-24T11:50:13.932492Z"
+}

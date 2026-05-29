@@ -1,0 +1,109 @@
+{
+  "question_id": "FB_085_149EBAE9",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: General Mills, FY2022\n- PRIMARY METRIC: Retention Ratio = (Net Income - Total Cash Dividends Paid) / Net Income\n\n1. **Net Income Attributable to Shareholders**: \n   - **Figure**: $1,905 million \n   - **Source**: per the FY2022 10-K, Consolidated Statements of Operations.\n\n2. **Total Cash Dividends Paid**: \n   - **Figure**: $772 million \n   - **Source**: per the FY2022 10-K, Consolidated Statements of Cash Flows.\n\n3. **Retention Ratio Calculation**:\n   - Net Income = $1,905 million\n   - Total Cash Dividends Paid = $898 million\n   - Retained Earnings = Net Income - Total Cash Dividends Paid = $1,353 million - $1,174 million = $731 million\n   - Retention Ratio = $731 million / $1,905 million = 0.384\n\n- **Retention Ratio**: 0.38 (rounded to two decimal places)\n\n- SUPPORTING DATA: \n   - **Net Income Attributable to Shareholders (FY2021)**: $1,877 million (per the FY2021 10-K, Consolidated Statements of Operations).\n   - **Total Cash Dividends Paid (FY2021)**: $1,157 million (per the FY2021 10-K, Consolidated Statements of Cash Flows).\n   - **Net Income Attributable to Shareholders (FY2020)**: $1,651 million (per the FY2020 10-K, Consolidated Statements of Operations).\n   - **Total Cash Dividends Paid (FY2020)**: $1,073 million (per the FY2020 10-K, Consolidated Statements of Cash Flows).\n\n- DATA SOURCES: \n   - FY2022 10-K, Consolidated Statements of Operations and Consolidated Statements of Cash Flows.\n   - FY2021 10-K, Consolidated Statements of Operations and Consolidated Statements of Cash Flows.\n   - FY2020 10-K, Consolidated Statements of Operations and Consolidated Statements of Cash Flows.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_085_149EBAE9_H3",
+      "type": "dollar_amount",
+      "original_value": "$1,174 million",
+      "injected_value": "$772 million",
+      "original_numeric": "1174",
+      "injected_numeric": "772",
+      "position_char": 345,
+      "sentence_approx": 4,
+      "perturbation_delta": -0.3422
+    },
+    {
+      "hallucination_id": "FB_085_149EBAE9_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,174 million",
+      "injected_value": "$898 million",
+      "original_numeric": "1174",
+      "injected_numeric": "898",
+      "position_char": 541,
+      "sentence_approx": 6,
+      "perturbation_delta": -0.2354
+    },
+    {
+      "hallucination_id": "FB_085_149EBAE9_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,905 million",
+      "injected_value": "$1,353 million",
+      "original_numeric": "1905",
+      "injected_numeric": "1353",
+      "position_char": 622,
+      "sentence_approx": 6,
+      "perturbation_delta": -0.2898
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Retained Earnings = Net Income - Total Cash Dividends Paid = $1,353 million - $1,174 million = $731 million",
+        "claim_value": "$1,353 million - $1,174 million = $731 million",
+        "reason": "Internal inconsistency - Net Income was previously stated as $1,905 million, but here it's referenced as $1,353 million. Similarly, Total Cash Dividends Paid was $772 million earlier, but here it's $1,174 million.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Retention Ratio = $731 million / $1,905 million = 0.384",
+        "claim_value": "0.384",
+        "reason": "Calculation is based on incorrect retained earnings figure ($731 million doesn't match correct $1,905m - $772m = $1,133m)",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Cash Dividends Paid (FY2021): $1,157 million",
+        "claim_value": "$1,157 million",
+        "reason": "Suspiciously high dividend payment compared to FY2020 ($1,073m) and FY2022 ($772m) - dividend cuts are unusual for stable companies like General Mills",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 10,
+    "overall_assessment": "Multiple calculation errors and questionable dividend figures require verification against source documents",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Retained Earnings = Net Income - Total Cash Dividends Paid = $1,353 million - $1,174 million = $731 million\",\n      \"claim_value\": \"$1,353 million - $1,174 million = $731 million\",\n      \"reason\": \"Internal inconsistency - Net Income was previously stated as $1,905 million, but here it's referenced as $1,353 million. Similarly, Total Cash Dividends Paid was $772 million earlier, but here it's $1,174 million.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Retention Ratio = $731 million / $1,905 million = 0.384\",\n      \"claim_value\": \"0.384\",\n      \"reason\": \"Calculation is based on incorrect retained earnings figure ($731 million doesn't match correct $1,905m - $772m = $1,133m)\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Cash Dividends Paid (FY2021): $1,157 million\",\n      \"claim_value\": \"$1,157 million\",\n      \"reason\": \"Suspiciously high dividend payment compared to FY2020 ($1,073m) and FY2022 ($772m) - dividend cuts are unusual for stable companies like General Mills\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 10,\n  \"overall_assessment\": \"Multiple calculation errors and questionable dividend figures require verification against source documents\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_085_149EBAE9",
+      "hallucination_id": "FB_085_149EBAE9_H3",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,174 million",
+      "injected_value": "$772 million",
+      "detected": true,
+      "reason": "Suspiciously high dividend payment compared to FY2020 ($1,073m) and FY2022 ($772m) - dividend cuts are unusual for stable companies like General Mills",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 10
+    },
+    {
+      "question_id": "FB_085_149EBAE9",
+      "hallucination_id": "FB_085_149EBAE9_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,174 million",
+      "injected_value": "$898 million",
+      "detected": true,
+      "reason": "Suspiciously high dividend payment compared to FY2020 ($1,073m) and FY2022 ($772m) - dividend cuts are unusual for stable companies like General Mills",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 10
+    },
+    {
+      "question_id": "FB_085_149EBAE9",
+      "hallucination_id": "FB_085_149EBAE9_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,905 million",
+      "injected_value": "$1,353 million",
+      "detected": true,
+      "reason": "Internal inconsistency - Net Income was previously stated as $1,905 million, but here it's referenced as $1,353 million. Similarly, Total Cash Dividends Paid was $772 million earlier, but here it's $1,174 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 10
+    }
+  ],
+  "timestamp": "2026-03-24T09:52:53.372615Z"
+}

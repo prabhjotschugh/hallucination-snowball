@@ -1,0 +1,97 @@
+{
+  "question_id": "FB_044_899DEDA7",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: American Express Company, FY2022\n- PRIMARY METRIC: The largest liability reported was $64,563 million, categorized as \"Long-term debt\" per the FY2022 10-K, Consolidated Balance Sheets.\n- SUPPORTING DATA: \n  - Total liabilities for FY2022: $87,723 million (per the FY2022 10-K, Consolidated Balance Sheets).\n  - Long-term debt for FY2021: $75,098 million (per the FY2021 10-K, Consolidated Balance Sheets).\n  - Long-term debt for FY2020: $35,269 million (per the FY2020 10-K, Consolidated Balance Sheets).\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Balance Sheets, page 63.\n  - FY2021 10-K, Consolidated Balance Sheets, page 62.\n  - FY2020 10-K, Consolidated Balance Sheets, page 61.\n\nNote: No analysis or interpretation of the data is provided as per the requirements.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_044_899DEDA7_H3",
+      "type": "dollar_amount",
+      "original_value": "$106,196 million",
+      "injected_value": "$87,723 million",
+      "original_numeric": "106196",
+      "injected_numeric": "87723",
+      "position_char": 259,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.174
+    },
+    {
+      "hallucination_id": "FB_044_899DEDA7_H2",
+      "type": "dollar_amount",
+      "original_value": "$58,160 million",
+      "injected_value": "$75,098 million",
+      "original_numeric": "58160",
+      "injected_numeric": "75098",
+      "position_char": 359,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.2912
+    },
+    {
+      "hallucination_id": "FB_044_899DEDA7_H1",
+      "type": "dollar_amount",
+      "original_value": "$50,000 million",
+      "injected_value": "$35,269 million",
+      "original_numeric": "50000",
+      "injected_numeric": "35269",
+      "position_char": 458,
+      "sentence_approx": 4,
+      "perturbation_delta": -0.2946
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Long-term debt for FY2020: $35,269 million",
+        "claim_value": "$35,269 million",
+        "reason": "The reported long-term debt for FY2020 seems suspiciously low compared to FY2021 and FY2022, considering the company's size and industry.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 4,
+    "overall_assessment": "The researcher's output appears mostly plausible, but the reported long-term debt for FY2020 raises some concerns.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"Long-term debt for FY2020: $35,269 million\",\n      \"claim_value\" : \"$35,269 million\",\n      \"reason\"      : \"The reported long-term debt for FY2020 seems suspiciously low compared to FY2021 and FY2022, considering the company's size and industry.\",\n      \"confidence\"  : \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 4,\n  \"overall_assessment\"   : \"The researcher's output appears mostly plausible, but the reported long-term debt for FY2020 raises some concerns.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_044_899DEDA7",
+      "hallucination_id": "FB_044_899DEDA7_H3",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$106,196 million",
+      "injected_value": "$87,723 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 4
+    },
+    {
+      "question_id": "FB_044_899DEDA7",
+      "hallucination_id": "FB_044_899DEDA7_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$58,160 million",
+      "injected_value": "$75,098 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 4
+    },
+    {
+      "question_id": "FB_044_899DEDA7",
+      "hallucination_id": "FB_044_899DEDA7_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$50,000 million",
+      "injected_value": "$35,269 million",
+      "detected": true,
+      "reason": "The reported long-term debt for FY2020 seems suspiciously low compared to FY2021 and FY2022, considering the company's size and industry.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 4
+    }
+  ],
+  "timestamp": "2026-03-27T09:32:22.262005Z"
+}

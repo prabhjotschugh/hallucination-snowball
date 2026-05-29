@@ -1,0 +1,361 @@
+{
+  "question_id": "FB_129_1F62F697",
+  "method": "ours",
+  "final_output": "## PepsiCo Q1 2023 Financial Report\n\n**Executive Summary**\n\nPepsiCo delivered a strong performance in Q1 2023, exceeding prior year results across key financial metrics. Total Revenue increased by 10.2% to $17,848 million, while Operating Income also rose by 10.2% to $3,086 million. Net Income saw a significant increase of 10.3% to $2,054 million. Adjusted EPS grew by 16.3% to $1.50. Reflecting this robust start, PepsiCo raised its full-year FY2023 guidance for organic revenue growth to 8% and adjusted EPS growth to 9%.\n\n**Analysis**\n\nPepsiCo's Q1 2023 results demonstrate solid operational execution and demand for its products. Total Revenue of $17,848 million represents a substantial increase from $16,200 million in Q1 2022. This revenue growth translated effectively to the bottom line, with Net Income climbing from $1,862 million to $2,054 million. Operating Income also showed healthy growth, moving from $2,800 million to $3,086 million. The Adjusted EPS of $1.50 for Q1 2023, compared to $1.29 in Q1 2022, underscores the company's improved profitability on a per-share basis. The Net Profit Margin for Q1 2023 was 11.51% ($2,054 million / $17,848 million), and the Operating Profit Margin was 17.30% ($3,086 million / $17,848 million). The upward revision of full-year guidance for organic revenue growth to 8% and adjusted EPS growth to 9% signals management's confidence in continued strong performance throughout 2023.\n\n**Key Risks**\n\nWhile the Q1 results are positive, potential risks include ongoing inflationary pressures impacting input costs and consumer purchasing power. Global supply chain disruptions, though potentially easing, could still pose challenges. Competitive pressures within the beverage and snack industries remain a constant factor. Foreign currency fluctuations also present a potential headwind.\n\n**Conclusion**\n\nPepsiCo's Q1 2023 financial performance was strong, marked by double-digit growth in revenue, operating income, net income, and adjusted EPS. The increased full-year guidance for both organic revenue and adjusted EPS growth indicates a positive outlook for the remainder of FY2023. The company appears well-positioned to navigate the current economic environment, leveraging its strong brand portfolio and operational efficiency.",
+  "stage_outputs": {
+    "1": "I'm unable to provide an analysis or narrative report as requested, but I can extract the relevant financial data from PepsiCo's Q1 2023 earnings filings. Here are the details:\n\n- **COMPANY & PERIOD**: PepsiCo, Q1 2023\n- **PRIMARY METRIC**: PepsiCo raised its full-year guidance for FY2023 to a revenue growth of 14.2% and an adjusted earnings per share (EPS) growth of 8% (per the PEPSICO_2023Q1_EARNINGS document, Earnings Call Transcript).\n- **SUPPORTING DATA**:\n  - **Total Revenue**: $17,848 million (Q1 2023), compared to $16,200 million (Q1 2022) \u2014 an increase of 10.2% year-over-year (per the FY2023 Q1 10-Q, Consolidated Statements of Operations).\n  - **Net Income**: $2,054 million (Q1 2023), compared to $1,862 million (Q1 2022) \u2014 an increase of 16.9% year-over-year (per the FY2023 Q1 10-Q, Consolidated Statements of Operations).\n  - **Operating Income**: $3,086 million (Q1 2023), compared to $2,800 million (Q1 2022) \u2014 an increase of 10.2% year-over-year (per the FY2023 Q1 10-Q, Consolidated Statements of Operations).\n  - **Adjusted EPS**: $1.50 (Q1 2023), compared to $1.00 (Q1 2022) \u2014 an increase of 16.3% year-over-year (per the FY2023 Q1 10-Q, Consolidated Statements of Operations).\n- **DATA SOURCES**: \n  - PEPSICO_2023Q1_EARNINGS document, Consolidated Statements of Operations, and Earnings Call Transcript.\n\nPlease note that I have provided only the exact figures and relevant statements as per your request. Further analysis and interpretation should be conducted by subsequent analysts.",
+    "2": "Here's an analysis of PepsiCo's Q1 2023 performance based on the provided data and corrections:\n\n**1. Year-over-Year Changes (Q1 2023 vs. Q1 2022)**\n\n| Metric            | Q1 2023 (Million $) | Q1 2022 (Million $) | Absolute Change (Million $) | Percentage Change (%) |\n| :---------------- | :------------------ | :------------------ | :-------------------------- | :-------------------- |\n| Total Revenue     | 17,848              | 16,200              | 1,648                       | 10.17%                |\n| Net Income        | 2,054               | 1,862               | 192                         | 10.31%                |\n| Operating Income  | 3,086               | 2,800               | 286                         | 10.21%                |\n| Adjusted EPS      | 1.50                | 1.29                | 0.21                        | 16.28%                |\n\n**Formulas:**\n*   **Absolute Change** = Q1 2023 Value - Q1 2022 Value\n*   **Percentage Change** = (Absolute Change / Q1 2022 Value) * 100\n\n**2. Relevant Ratios (Q1 2023)**\n\n| Ratio                 | Q1 2023 Value | Formula                               |\n| :-------------------- | :------------ | :------------------------------------ |\n| Net Profit Margin     | 11.51%        | (Net Income / Total Revenue) * 100    |\n| Operating Profit Margin | 17.30%        | (Operating Income / Total Revenue) * 100 |\n\n**3. Anomalies Flagged**\n\n*   **Adjusted EPS Percentage Change:** The researcher data stated a 16.3% increase year-over-year for Adjusted EPS. However, using the corrected Q1 2022 Adjusted EPS of $1.29, the calculated percentage change is 16.28%. This is very close to the reported 16.3%, so the original reported percentage change was likely rounded.\n*   **Full-Year Revenue Growth Guidance:** The researcher data initially stated a full-year guidance for FY2023 revenue growth of 14.2%. This was marked as REFUTED, with the correct value being 16.30%. This significant correction (a 2.1 percentage point difference) indicates a higher projected growth than initially stated, which is a positive signal.\n\n**Summary of Corrections Applied:**\n*   Adjusted EPS Q1 2022: Used $1.29 (corrected) instead of $1.00.\n*   FY2023 Revenue Growth Guidance: Used 16.30% (corrected) instead of 14.2%.",
+    "3": "## PepsiCo Q1 2023 Financial Report\n\n**Executive Summary**\n\nPepsiCo delivered a strong performance in Q1 2023, exceeding prior year results across key financial metrics. Total Revenue increased by 10.2% to $17,848 million, while Operating Income also rose by 10.2% to $3,086 million. Net Income saw a significant increase of 16.9% to $2,054 million. Adjusted EPS grew by 16.3% to $1.50. Reflecting this robust start, PepsiCo raised its full-year FY2023 guidance for revenue growth to 16.30% and adjusted EPS growth to 8%.\n\n**Analysis**\n\nPepsiCo's Q1 2023 results demonstrate solid operational execution and demand for its products. Total Revenue of $17,848 million represents a substantial increase from $16,200 million in Q1 2022. This revenue growth translated effectively to the bottom line, with Net Income climbing from $1,862 million to $2,054 million. Operating Income also showed healthy growth, moving from $2,800 million to $3,086 million. The Adjusted EPS of $1.50 for Q1 2023, compared to $1.29 in Q1 2022, underscores the company's improved profitability on a per-share basis. The Net Profit Margin for Q1 2023 was 10.30%, and the Operating Profit Margin was 16.30%. The upward revision of full-year guidance for revenue growth to 16.30% signals management's confidence in continued strong performance throughout 2023.\n\n**Key Risks**\n\nWhile the Q1 results are positive, potential risks include ongoing inflationary pressures impacting input costs and consumer purchasing power. Global supply chain disruptions, though potentially easing, could still pose challenges. Competitive pressures within the beverage and snack industries remain a constant factor.\n\n**Conclusion**\n\nPepsiCo's Q1 2023 financial performance was strong, marked by double-digit growth in revenue, operating income, net income, and adjusted EPS. The increased full-year guidance for both revenue and adjusted EPS growth indicates a positive outlook for the remainder of FY2023. The company appears well-positioned to navigate the current economic environment.",
+    "4": "## PepsiCo Q1 2023 Financial Report\n\n**Executive Summary**\n\nPepsiCo delivered a strong performance in Q1 2023, exceeding prior year results across key financial metrics. Total Revenue increased by 10.2% to $17,848 million, while Operating Income also rose by 10.2% to $3,086 million. Net Income saw a significant increase of 10.3% to $2,054 million. Adjusted EPS grew by 16.3% to $1.50. Reflecting this robust start, PepsiCo raised its full-year FY2023 guidance for organic revenue growth to 8% and adjusted EPS growth to 9%.\n\n**Analysis**\n\nPepsiCo's Q1 2023 results demonstrate solid operational execution and demand for its products. Total Revenue of $17,848 million represents a substantial increase from $16,200 million in Q1 2022. This revenue growth translated effectively to the bottom line, with Net Income climbing from $1,862 million to $2,054 million. Operating Income also showed healthy growth, moving from $2,800 million to $3,086 million. The Adjusted EPS of $1.50 for Q1 2023, compared to $1.29 in Q1 2022, underscores the company's improved profitability on a per-share basis. The Net Profit Margin for Q1 2023 was 11.51% ($2,054 million / $17,848 million), and the Operating Profit Margin was 17.30% ($3,086 million / $17,848 million). The upward revision of full-year guidance for organic revenue growth to 8% and adjusted EPS growth to 9% signals management's confidence in continued strong performance throughout 2023.\n\n**Key Risks**\n\nWhile the Q1 results are positive, potential risks include ongoing inflationary pressures impacting input costs and consumer purchasing power. Global supply chain disruptions, though potentially easing, could still pose challenges. Competitive pressures within the beverage and snack industries remain a constant factor. Foreign currency fluctuations also present a potential headwind.\n\n**Conclusion**\n\nPepsiCo's Q1 2023 financial performance was strong, marked by double-digit growth in revenue, operating income, net income, and adjusted EPS. The increased full-year guidance for both organic revenue and adjusted EPS growth indicates a positive outlook for the remainder of FY2023. The company appears well-positioned to navigate the current economic environment, leveraging its strong brand portfolio and operational efficiency."
+  },
+  "gates": {
+    "gate_1": {
+      "verified": [
+        {
+          "value": "$17,848 million",
+          "ref": 17848.0
+        },
+        {
+          "value": "$16,200 million",
+          "ref": 16200.0
+        },
+        {
+          "value": "$2,054 million",
+          "ref": 2054.0
+        },
+        {
+          "value": "$1,862 million",
+          "ref": 1862.0
+        },
+        {
+          "value": "$3,086 million",
+          "ref": 3086.0
+        },
+        {
+          "value": "$2,800 million",
+          "ref": 2800.0
+        },
+        {
+          "value": "$1.50",
+          "ref": 1.5
+        },
+        {
+          "value": "8%",
+          "ref": 8.0
+        },
+        {
+          "value": "10.2%",
+          "ref": 10.2
+        },
+        {
+          "value": "10.2%",
+          "ref": 10.2
+        },
+        {
+          "value": "16.3%",
+          "ref": 16.3
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$1.00",
+          "num": 1.0,
+          "correct": 1.29,
+          "dev": 0.2248,
+          "source": "source_document"
+        },
+        {
+          "value": "14.2%",
+          "num": 14.2,
+          "correct": 16.3,
+          "dev": 0.1288,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "16.9%"
+        }
+      ],
+      "n_refs": 18
+    },
+    "gate_2": {
+      "verified": [
+        {
+          "value": "$1.29",
+          "ref": 1.29
+        },
+        {
+          "value": "$1.29",
+          "ref": 1.29
+        },
+        {
+          "value": "10.17%",
+          "ref": 10.2
+        },
+        {
+          "value": "10.31%",
+          "ref": 10.3
+        },
+        {
+          "value": "10.21%",
+          "ref": 10.2
+        },
+        {
+          "value": "16.28%",
+          "ref": 16.3
+        },
+        {
+          "value": "16.3%",
+          "ref": 16.3
+        },
+        {
+          "value": "16.28%",
+          "ref": 16.3
+        },
+        {
+          "value": "16.3%",
+          "ref": 16.3
+        },
+        {
+          "value": "16.30%",
+          "ref": 16.3
+        },
+        {
+          "value": "16.30%",
+          "ref": 16.3
+        },
+        {
+          "value": "17,848",
+          "ref": 17848.0
+        },
+        {
+          "value": "16,200",
+          "ref": 16200.0
+        },
+        {
+          "value": "2,054",
+          "ref": 2054.0
+        },
+        {
+          "value": "1,862",
+          "ref": 1862.0
+        },
+        {
+          "value": "3,086",
+          "ref": 3086.0
+        },
+        {
+          "value": "2,800",
+          "ref": 2800.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$1.00",
+          "num": 1.0,
+          "correct": 1.29,
+          "dev": 0.2248,
+          "source": "source_document"
+        },
+        {
+          "value": "11.51%",
+          "num": 11.51,
+          "correct": 10.3,
+          "dev": 0.1051,
+          "source": "source_document"
+        },
+        {
+          "value": "17.30%",
+          "num": 17.3,
+          "correct": 16.3,
+          "dev": 0.0578,
+          "source": "source_document"
+        },
+        {
+          "value": "14.2%",
+          "num": 14.2,
+          "correct": 16.3,
+          "dev": 0.1288,
+          "source": "source_document"
+        },
+        {
+          "value": "14.2%",
+          "num": 14.2,
+          "correct": 16.3,
+          "dev": 0.1288,
+          "source": "source_document"
+        },
+        {
+          "value": "1,648",
+          "num": 1648.0,
+          "correct": 1862.0,
+          "dev": 0.1149,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "2.1 percent"
+        }
+      ],
+      "n_refs": 18
+    },
+    "gate_3": {
+      "verified": [
+        {
+          "value": "$17,848 million",
+          "ref": 17848.0
+        },
+        {
+          "value": "$3,086 million",
+          "ref": 3086.0
+        },
+        {
+          "value": "$2,054 million",
+          "ref": 2054.0
+        },
+        {
+          "value": "$1.50",
+          "ref": 1.5
+        },
+        {
+          "value": "$17,848 million",
+          "ref": 17848.0
+        },
+        {
+          "value": "$16,200 million",
+          "ref": 16200.0
+        },
+        {
+          "value": "$1,862 million",
+          "ref": 1862.0
+        },
+        {
+          "value": "$2,054 million",
+          "ref": 2054.0
+        },
+        {
+          "value": "$2,800 million",
+          "ref": 2800.0
+        },
+        {
+          "value": "$3,086 million",
+          "ref": 3086.0
+        },
+        {
+          "value": "$1.50",
+          "ref": 1.5
+        },
+        {
+          "value": "$1.29",
+          "ref": 1.29
+        },
+        {
+          "value": "10.2%",
+          "ref": 10.2
+        },
+        {
+          "value": "10.2%",
+          "ref": 10.2
+        },
+        {
+          "value": "16.3%",
+          "ref": 16.3
+        },
+        {
+          "value": "16.30%",
+          "ref": 16.3
+        },
+        {
+          "value": "8%",
+          "ref": 8.0
+        },
+        {
+          "value": "10.30%",
+          "ref": 10.3
+        },
+        {
+          "value": "16.30%",
+          "ref": 16.3
+        },
+        {
+          "value": "16.30%",
+          "ref": 16.3
+        }
+      ],
+      "refuted": [],
+      "unverified": [
+        {
+          "value": "16.9%"
+        }
+      ],
+      "n_refs": 18
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_129_1F62F697",
+      "hid": "FB_129_1F62F697_H3",
+      "method": "ours",
+      "type": "percentage",
+      "inj_num": 14.2,
+      "orig_num": 10.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_129_1F62F697",
+      "hid": "FB_129_1F62F697_H2",
+      "method": "ours",
+      "type": "percentage",
+      "inj_num": 16.9,
+      "orig_num": 10.3,
+      "survived": false,
+      "corrected": true,
+      "g1_det": false,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": false,
+      "present_s3": true,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_129_1F62F697",
+      "hid": "FB_129_1F62F697_H1",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 1.0,
+      "orig_num": 1.29,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:51:10.873452+00:00"
+}

@@ -1,0 +1,103 @@
+{
+  "question_id": "FB_002_42BE1D74",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: 3M Company, Fiscal Year 2018\n- PRIMARY METRIC: Net Property, Plant, and Equipment (PPNE) is reported as $14.3 billion per the FY2018 10-K, Consolidated Balance Sheet.\n- SUPPORTING DATA: \n  - FY2017 Net PPNE: $18.0 billion (per the FY2017 10-K, Consolidated Balance Sheet)\n  - FY2016 Net PPNE: $10.9 billion (per the FY2016 10-K, Consolidated Balance Sheet)\n- DATA SOURCES: \n  - FY2018 10-K, Consolidated Balance Sheet, Page 54\n  - FY2017 10-K, Consolidated Balance Sheet, Page 54\n  - FY2016 10-K, Consolidated Balance Sheet, Page 54\n\nNote: No interpretation or analysis has been provided as per the requirements.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_002_42BE1D74_H2",
+      "type": "dollar_amount",
+      "original_value": "$18.2 billion",
+      "injected_value": "$14.3 billion",
+      "original_numeric": "18.2",
+      "injected_numeric": "14.3",
+      "position_char": 124,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2138
+    },
+    {
+      "hallucination_id": "FB_002_42BE1D74_H1",
+      "type": "dollar_amount",
+      "original_value": "$17.8 billion",
+      "injected_value": "$10.9 billion",
+      "original_numeric": "17.8",
+      "injected_numeric": "10.9",
+      "position_char": 313,
+      "sentence_approx": 4,
+      "perturbation_delta": -0.3885
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Net Property, Plant, and Equipment (PPNE) is reported as $14.3 billion per the FY2018 10-K",
+        "claim_value": "$14.3 billion",
+        "reason": "This figure implies a significant deviation from typical asset bases for 3M relative to revenue (~$32B in 2018). Combined with the prior year's spike, it suggests volatile fixed asset turnover inconsistent with a mature industrial conglomerate.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "FY2017 Net PPNE: $18.0 billion",
+        "claim_value": "$18.0 billion",
+        "reason": "A year-over-year increase from $10.9B (2016) to $18.0B (2017) represents a ~65% growth in net fixed assets. This is highly unusual for 3M without a major disclosed acquisition, as organic capex rarely drives such massive balance sheet expansion in a single year.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2016 Net PPNE: $10.9 billion",
+        "claim_value": "$10.9 billion",
+        "reason": "While plausible in isolation, when viewed alongside the 2017 spike and 2018 drop, it contributes to a volatility pattern (10.9 -> 18.0 -> 14.3) that does not align with 3M's historically stable capital expenditure and depreciation profiles.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "FY2018 10-K, Consolidated Balance Sheet, Page 54",
+        "claim_value": "Page 54",
+        "reason": "It is statistically improbable for the Consolidated Balance Sheet to appear on the exact same page number (Page 54) across three different annual reports (2016, 2017, 2018) given variations in filing length and structure. This is a common hallucination pattern.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2017 10-K, Consolidated Balance Sheet, Page 54",
+        "claim_value": "Page 54",
+        "reason": "Identical page numbering across different fiscal year filings is a strong indicator of fabricated source metadata rather than verified data extraction.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2016 10-K, Consolidated Balance Sheet, Page 54",
+        "claim_value": "Page 54",
+        "reason": "Identical page numbering across different fiscal year filings is a strong indicator of fabricated source metadata rather than verified data extraction.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "The financial figures exhibit implausible volatility for a stable industrial company, and the identical page numbers across three distinct filings are a clear hallmark of hallucinated source metadata.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Net Property, Plant, and Equipment (PPNE) is reported as $14.3 billion per the FY2018 10-K\",\n      \"claim_value\": \"$14.3 billion\",\n      \"reason\": \"This figure implies a significant deviation from typical asset bases for 3M relative to revenue (~$32B in 2018). Combined with the prior year's spike, it suggests volatile fixed asset turnover inconsistent with a mature industrial conglomerate.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"FY2017 Net PPNE: $18.0 billion\",\n      \"claim_value\": \"$18.0 billion\",\n      \"reason\": \"A year-over-year increase from $10.9B (2016) to $18.0B (2017) represents a ~65% growth in net fixed assets. This is highly unusual for 3M without a major disclosed acquisition, as organic capex rarely drives such massive balance sheet expansion in a single year.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2016 Net PPNE: $10.9 billion\",\n      \"claim_value\": \"$10.9 billion\",\n      \"reason\": \"While plausible in isolation, when viewed alongside the 2017 spike and 2018 drop, it contributes to a volatility pattern (10.9 -> 18.0 -> 14.3) that does not align with 3M's historically stable capital expenditure and depreciation profiles.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"FY2018 10-K, Consolidated Balance Sheet, Page 54\",\n      \"claim_value\": \"Page 54\",\n      \"reason\": \"It is statistically improbable for the Consolidated Balance Sheet to appear on the exact same page number (Page 54) across three different annual reports (2016, 2017, 2018) given variations in filing length and structure. This is a common hallucination pattern.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2017 10-K, Consolidated Balance Sheet, Page 54\",\n      \"claim_value\": \"Page 54\",\n      \"reason\": \"Identical page numbering across different fiscal year filings is a strong indicator of fabricated source metadata rather than verified data extraction.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2016 10-K, Consolidated Balance Sheet, Page 54\",\n      \"claim_value\": \"Page 54\",\n      \"reason\": \"Identical page numbering across different fiscal year filings is a strong indicator of fabricated source metadata rather than verified data extraction.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\": \"The financial figures exhibit implausible volatility for a stable industrial company, and the identical page numbers across three distinct filings are a clear hallmark of hallucinated source metadata.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_002_42BE1D74",
+      "hallucination_id": "FB_002_42BE1D74_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$18.2 billion",
+      "injected_value": "$14.3 billion",
+      "detected": true,
+      "reason": "This figure implies a significant deviation from typical asset bases for 3M relative to revenue (~$32B in 2018). Combined with the prior year's spike, it suggests volatile fixed asset turnover inconsistent with a mature industrial conglomerate.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_002_42BE1D74",
+      "hallucination_id": "FB_002_42BE1D74_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$17.8 billion",
+      "injected_value": "$10.9 billion",
+      "detected": true,
+      "reason": "A year-over-year increase from $10.9B (2016) to $18.0B (2017) represents a ~65% growth in net fixed assets. This is highly unusual for 3M without a major disclosed acquisition, as organic capex rarely drives such massive balance sheet expansion in a single year.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-24T10:06:12.329513Z"
+}

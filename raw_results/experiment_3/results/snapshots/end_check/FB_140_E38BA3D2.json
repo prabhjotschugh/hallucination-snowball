@@ -1,0 +1,158 @@
+{
+  "question_id": "FB_140_E38BA3D2",
+  "method": "end_check",
+  "final_output": "## Ulta Beauty: FY2023 Merchandise Inventories Report\n\n### Executive Summary\n\nUlta Beauty concluded FY2023 with Merchandise Inventories at $952.0 million, representing a notable decrease from $1,066.3 million in FY2022. This 10.72% year-over-year reduction in inventory reflects an improvement in inventory management efficiency, as evidenced by the increase in the Inventory Turnover Ratio to 1.90x in FY2023 from 1.04x in FY2022. Concurrently, Days Inventory Outstanding (DIO) significantly improved, decreasing from 351.44 days in FY2022 to 192.11 days in FY2023.\n\n### Analysis\n\nUlta Beauty's Merchandise Inventories have shown a consistent downward trend over the past three fiscal years. The balance decreased by $114.3 million (10.72%) from FY2022 to FY2023, following a $200.3 million (15.81%) decrease from FY2021 to FY2022. This reduction occurred alongside robust revenue growth, with Total Revenue reaching $3,355.0 million in FY2023, up from $2,908.4 million in FY2022.\n\nThe Inventory Turnover Ratio for FY2023 was 1.90x, a substantial improvement from 1.04x in FY2022. This indicates that the company is selling its inventory more rapidly. Correspondingly, the Days Inventory Outstanding (DIO) decreased significantly from 351.44 days in FY2022 to 192.11 days in FY2023, suggesting greater efficiency in converting inventory into sales. Cost of Goods Sold (COGS) for FY2023 was $1,919.5 million, an increase from $1,112.3 million in FY2022.\n\n### Key Observations\n\nA notable fluctuation is observed in the Cost of Goods Sold (COGS). The COGS for FY2022 was $1,112.3 million, which is significantly lower than both FY2021 ($1,186.0 million) and FY2023 ($1,919.5 million), despite consistent revenue growth. This sharp dip in FY2022 COGS, followed by a substantial increase in FY2023, warrants further investigation as it impacts profitability and the interpretation of inventory efficiency ratios. The magnitude of the improvement in Inventory Turnover and DIO, while positive, in conjunction with this COGS trend, suggests a need for deeper analysis into the underlying operational factors.\n\n### Conclusion\n\nUlta Beauty has demonstrated improved inventory management efficiency in FY2023, with a reduction in merchandise inventories and a significant acceleration in inventory turnover. The decrease in Merchandise Inventories to $952.0 million and the improved Inventory Turnover Ratio of 1.90x are positive indicators. However, the unusual fluctuation in COGS for FY2022 requires further scrutiny to fully understand the drivers behind these reported financial metrics and ensure the sustainability of these improvements.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Ulta Beauty, FY2023\n- PRIMARY METRIC: Merchandise Inventories balance at the end of FY2023 was $952.0 million, per the FY2023 10-K, Consolidated Balance Sheets.\n- SUPPORTING DATA: \n  - Merchandise Inventories balance at the end of FY2022 was $1,066.3 million.\n  - Merchandise Inventories balance at the end of FY2021 was $1,266.6 million.\n  - Total Revenue for FY2023 was $3,355.0 million, compared to $2,908.4 million for FY2022 and $2,100.0 million for FY2021.\n  - Cost of Goods Sold (COGS) for FY2023 was $1,919.5 million, compared to $1,112.3 million for FY2022 and $1,186.0 million for FY2021.\n- DATA SOURCES: \n  - FY2023 10-K, Consolidated Balance Sheets\n  - FY2023 10-K, Consolidated Statements of Operations\n\nNote: The request for analysis of the factors contributing to the increase in merchandise inventories balance, including sales growth, supply chain considerations, and seasonal fluctuations, cannot be fulfilled as it requires interpretation and analysis beyond the raw data extraction.",
+    "2": "As a financial analyst, I've computed the requested metrics for Ulta Beauty's Merchandise Inventories.\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\n*   **FY2023 vs. FY2022 Merchandise Inventories:**\n    *   Absolute Change = FY2023 Inventory - FY2022 Inventory\n        *   $952.0 million - $1,066.3 million = **-$114.3 million**\n    *   Percentage Change = (Absolute Change / FY2022 Inventory) * 100\n        *   (-$114.3 million / $1,066.3 million) * 100 = **-10.72%**\n\n*   **FY2022 vs. FY2021 Merchandise Inventories:**\n    *   Absolute Change = FY2022 Inventory - FY2021 Inventory\n        *   $1,066.3 million - $1,266.6 million = **-$200.3 million**\n    *   Percentage Change = (Absolute Change / FY2021 Inventory) * 100\n        *   (-$200.3 million / $1,266.6 million) * 100 = **-15.81%**\n\n**2. Relevant Ratios**\n\n*   **Inventory Turnover Ratio (COGS / Average Inventory)**\n    *   *Average Inventory FY2023:* ($952.0M + $1,066.3M) / 2 = $1,009.15M\n    *   *Inventory Turnover FY2023:* $1,919.5M / $1,009.15M = **1.90x**\n    *   *Average Inventory FY2022:* ($1,066.3M + $1,266.6M) / 2 = $1,166.45M\n    *   *Inventory Turnover FY2022:* $1,112.3M / $1,166.45M = **0.95x**\n\n*   **Days Inventory Outstanding (365 / Inventory Turnover Ratio)**\n    *   *DIO FY2023:* 365 / 1.90 = **192.11 days**\n    *   *DIO FY2022:* 365 / 0.95 = **384.21 days**\n\n**3. Anomalies Flagged**\n\n*   **COGS Fluctuation:** The Cost of Goods Sold (COGS) for FY2022 ($1,112.3 million) appears significantly lower than both FY2021 ($1,186.0 million) and FY2023 ($1,919.5 million), despite revenue increasing year-over-year. This sharp dip in COGS for FY2022, followed by a substantial increase in FY2023, warrants further investigation as it impacts profitability and inventory efficiency ratios.\n*   **Inventory Turnover Improvement:** The Inventory Turnover Ratio for FY2023 (1.90x) is significantly higher than FY2022 (0.95x), indicating a substantial improvement in inventory management and sales efficiency. This is also reflected in the decrease in Days Inventory Outstanding from 384.21 days in FY2022 to 192.11 days in FY2023. While an improvement, the magnitude of this change, especially in conjunction with the COGS anomaly, suggests a need for deeper analysis into the underlying operational factors.",
+    "3": "## Ulta Beauty: FY2023 Merchandise Inventories Report\n\n### Executive Summary\n\nUlta Beauty concluded FY2023 with Merchandise Inventories at $952.0 million, representing a notable decrease from $1,066.3 million in FY2022. This 10.72% year-over-year reduction in inventory reflects an improvement in inventory management efficiency, as evidenced by the increase in the Inventory Turnover Ratio to 1.90x in FY2023 from 0.95x in FY2022. Concurrently, Days Inventory Outstanding (DIO) significantly improved, decreasing from 384.21 days in FY2022 to 192.11 days in FY2023.\n\n### Analysis\n\nUlta Beauty's Merchandise Inventories have shown a consistent downward trend over the past three fiscal years. The balance decreased by $114.3 million (10.72%) from FY2022 to FY2023, following a $200.3 million (15.81%) decrease from FY2021 to FY2022. This reduction occurred alongside robust revenue growth, with Total Revenue reaching $3,355.0 million in FY2023, up from $2,908.4 million in FY2022.\n\nThe Inventory Turnover Ratio for FY2023 was 1.90x, a substantial improvement from 0.95x in FY2022. This indicates that the company is selling its inventory more rapidly. Correspondingly, the Days Inventory Outstanding (DIO) decreased significantly from 384.21 days in FY2022 to 192.11 days in FY2023, suggesting greater efficiency in converting inventory into sales. Cost of Goods Sold (COGS) for FY2023 was $1,919.5 million, an increase from $1,112.3 million in FY2022.\n\n### Key Risks\n\nA notable anomaly is the fluctuation in Cost of Goods Sold (COGS). The COGS for FY2022 was $1,112.3 million, which is significantly lower than both FY2021 ($1,186.0 million) and FY2023 ($1,919.5 million), despite consistent revenue growth. This sharp dip in FY2022 COGS, followed by a substantial increase in FY2023, warrants further investigation as it impacts profitability and the interpretation of inventory efficiency ratios. The magnitude of the improvement in Inventory Turnover and DIO, while positive, in conjunction with this COGS anomaly, suggests a need for deeper analysis into the underlying operational factors.\n\n### Conclusion\n\nUlta Beauty has demonstrated improved inventory management efficiency in FY2023, with a reduction in merchandise inventories and a significant acceleration in inventory turnover. The decrease in Merchandise Inventories to $952.0 million and the improved Inventory Turnover Ratio of 1.90x are positive indicators. However, the unusual fluctuation in COGS for FY2022 requires further scrutiny to fully understand the drivers behind these reported financial metrics and ensure the sustainability of these improvements.",
+    "4": "## Ulta Beauty: FY2023 Merchandise Inventories Report\n\n### Executive Summary\n\nUlta Beauty concluded FY2023 with Merchandise Inventories at $952.0 million, representing a notable decrease from $1,066.3 million in FY2022. This 10.72% year-over-year reduction in inventory reflects an improvement in inventory management efficiency, as evidenced by the increase in the Inventory Turnover Ratio to 1.90x in FY2023 from 1.04x in FY2022. Concurrently, Days Inventory Outstanding (DIO) significantly improved, decreasing from 351.44 days in FY2022 to 192.11 days in FY2023.\n\n### Analysis\n\nUlta Beauty's Merchandise Inventories have shown a consistent downward trend over the past three fiscal years. The balance decreased by $114.3 million (10.72%) from FY2022 to FY2023, following a $200.3 million (15.81%) decrease from FY2021 to FY2022. This reduction occurred alongside robust revenue growth, with Total Revenue reaching $3,355.0 million in FY2023, up from $2,908.4 million in FY2022.\n\nThe Inventory Turnover Ratio for FY2023 was 1.90x, a substantial improvement from 1.04x in FY2022. This indicates that the company is selling its inventory more rapidly. Correspondingly, the Days Inventory Outstanding (DIO) decreased significantly from 351.44 days in FY2022 to 192.11 days in FY2023, suggesting greater efficiency in converting inventory into sales. Cost of Goods Sold (COGS) for FY2023 was $1,919.5 million, an increase from $1,112.3 million in FY2022.\n\n### Key Observations\n\nA notable fluctuation is observed in the Cost of Goods Sold (COGS). The COGS for FY2022 was $1,112.3 million, which is significantly lower than both FY2021 ($1,186.0 million) and FY2023 ($1,919.5 million), despite consistent revenue growth. This sharp dip in FY2022 COGS, followed by a substantial increase in FY2023, warrants further investigation as it impacts profitability and the interpretation of inventory efficiency ratios. The magnitude of the improvement in Inventory Turnover and DIO, while positive, in conjunction with this COGS trend, suggests a need for deeper analysis into the underlying operational factors.\n\n### Conclusion\n\nUlta Beauty has demonstrated improved inventory management efficiency in FY2023, with a reduction in merchandise inventories and a significant acceleration in inventory turnover. The decrease in Merchandise Inventories to $952.0 million and the improved Inventory Turnover Ratio of 1.90x are positive indicators. However, the unusual fluctuation in COGS for FY2022 requires further scrutiny to fully understand the drivers behind these reported financial metrics and ensure the sustainability of these improvements."
+  },
+  "gates": {
+    "end_gate": {
+      "verified": [
+        {
+          "value": "$1,066.3 million",
+          "ref": 1066.3
+        },
+        {
+          "value": "$3,355.0 million",
+          "ref": 3355.0
+        },
+        {
+          "value": "$2,908.4 million",
+          "ref": 2908.4
+        },
+        {
+          "value": "$1,919.5 million",
+          "ref": 1919.5
+        },
+        {
+          "value": "$1,186.0 million",
+          "ref": 1186.0
+        },
+        {
+          "value": "$1,919.5 million",
+          "ref": 1919.5
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$952.0 million",
+          "num": 952.0,
+          "correct": 900.0,
+          "dev": 0.0546,
+          "source": "evidence"
+        },
+        {
+          "value": "$114.3 million",
+          "num": 114.3,
+          "correct": 104.2,
+          "dev": 0.0884,
+          "source": "evidence"
+        },
+        {
+          "value": "$200.3 million",
+          "num": 200.3,
+          "correct": 245.0,
+          "dev": 0.1824,
+          "source": "evidence"
+        },
+        {
+          "value": "$952.0 million",
+          "num": 952.0,
+          "correct": 900.0,
+          "dev": 0.0546,
+          "source": "evidence"
+        },
+        {
+          "value": "15.81%",
+          "num": 15.81,
+          "correct": 15.0,
+          "dev": 0.0512,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$1,112.3 million"
+        },
+        {
+          "value": "$1,112.3 million"
+        },
+        {
+          "value": "10.72%"
+        },
+        {
+          "value": "10.72%"
+        }
+      ],
+      "n_refs": 36
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_140_E38BA3D2",
+      "hid": "FB_140_E38BA3D2_H3",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 952.0,
+      "orig_num": 1211.8,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": true,
+      "any_det": true,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_140_E38BA3D2",
+      "hid": "FB_140_E38BA3D2_H2",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 1266.6,
+      "orig_num": 1050.5,
+      "survived": false,
+      "corrected": true,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_140_E38BA3D2",
+      "hid": "FB_140_E38BA3D2_H1",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 1112.3,
+      "orig_num": 1646.5,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    }
+  ],
+  "quality_score": 4,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:54:22.302136+00:00"
+}

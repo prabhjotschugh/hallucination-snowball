@@ -1,0 +1,115 @@
+{
+  "question_id": "FB_007_31B558AC",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: 3M Company, Q2 2023\n- PRIMARY METRIC: As of June 30, 2023, 3M Company had the following debt securities registered to trade on a national securities exchange:\n  1. **3M Company 2.250% Notes due 2024** - $1,000 million (per the Q2 2023 10-Q, Note 7 - Debt).\n  2. **3M Company 2.750% Notes due 2025** - $1009 million (per the Q2 2023 10-Q, Note 7 - Debt).\n  3. **3M Company 3.000% Notes due 2026** - $1,000 million (per the Q2 2023 10-Q, Note 7 - Debt).\n  4. **3M Company 3.500% Notes due 2027** - $1,000 million (per the Q2 2023 10-Q, Note 7 - Debt).\n  5. **3M Company 0.010% Notes due 2028** - $1,000 million (per the Q2 2023 10-Q, Note 7 - Debt).\n  6. **3M Company 4.000% Notes due 2030** - $1,000 million (per the Q2 2023 10-Q, Note 7 - Debt).\n  7. **3M Company 8.500% Notes due 2032** - $1,000 million (per the Q2 2023 10-Q, Note 7 - Debt).\n\n- SUPPORTING DATA: \n  - Total Debt Outstanding: $8,000 million as of June 30, 2023 (per the Q2 2023 10-Q, Consolidated Balance Sheets).\n  - Interest Expense for Q2 2023: $100 million (per the Q2 2023 10-Q, Consolidated Statements of Operations).\n  - Maturity Schedule:\n    - 2024: $1,000 million\n    - 2025: $750 million\n    - 2026: $1,000 million\n    - 2027: $1,000 million\n    - 2028: $1,000 million\n    - 2030: $1,000 million\n    - 2032: $1,000 million\n\n- DATA SOURCES: \n  - 3M Company Q2 2023 10-Q, Note 7 - Debt\n  - 3M Company Q2 2023 10-Q, Consolidated Balance Sheets\n  - 3M Company Q2 2023 10-Q, Consolidated Statements of Operations\n\nAll figures are reported as they appear in the official SEC filing, ensuring factual precision.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_007_31B558AC_H3",
+      "type": "dollar_amount",
+      "original_value": "$750 million",
+      "injected_value": "$1009 million",
+      "original_numeric": "750",
+      "injected_numeric": "1009",
+      "position_char": 321,
+      "sentence_approx": 6,
+      "perturbation_delta": 0.3454
+    },
+    {
+      "hallucination_id": "FB_007_31B558AC_H2",
+      "type": "percentage",
+      "original_value": "3.750%",
+      "injected_value": "0.010%",
+      "original_numeric": "3.750",
+      "injected_numeric": "0.010",
+      "position_char": 587,
+      "sentence_approx": 14,
+      "perturbation_delta": -8.0129
+    },
+    {
+      "hallucination_id": "FB_007_31B558AC_H1",
+      "type": "percentage",
+      "original_value": "4.250%",
+      "injected_value": "8.500%",
+      "original_numeric": "4.250",
+      "injected_numeric": "8.500",
+      "position_char": 783,
+      "sentence_approx": 20,
+      "perturbation_delta": 4.2512
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "3M Company 0.010% Notes due 2028 - $1,000 million",
+        "claim_value": "0.010%",
+        "reason": "A coupon rate of 1 basis point is highly anomalous for a major industrial issuer like 3M. While near-zero debt existed during the 2020 liquidity crunch, this specific figure is likely a hallucination confusing par value or a specific banking facility with a public bond note.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "3M Company 8.500% Notes due 2032 - $1,000 million",
+        "claim_value": "8.500%",
+        "reason": "3M is an investment-grade issuer with a much lower cost of debt. An 8.5% coupon for a 2032 maturity is inconsistent with the company's credit profile and recent issuance history, suggesting fabrication.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "3M Company 2.750% Notes due 2025 - $1009 million ... Maturity Schedule 2025: $750 million",
+        "claim_value": "$1009 million vs $750 million",
+        "reason": "Internal inconsistency: The specific security list claims $1,009 million for 2025 notes, while the maturity schedule section claims $750 million for the same year.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Five out of seven listed notes are exactly $1,000 million",
+        "claim_value": "$1,000 million",
+        "reason": "Suspiciously round numbers across a diverse legacy debt portfolio are statistically unlikely. Real debt schedules typically show varied amounts due to buybacks, partial repayments, and different issuance sizes.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 23,
+    "overall_assessment": "The output contains multiple high-confidence hallucinations regarding coupon rates and internal inconsistencies in maturity amounts, indicating significant data fabrication.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"3M Company 0.010% Notes due 2028 - $1,000 million\",\n      \"claim_value\": \"0.010%\",\n      \"reason\": \"A coupon rate of 1 basis point is highly anomalous for a major industrial issuer like 3M. While near-zero debt existed during the 2020 liquidity crunch, this specific figure is likely a hallucination confusing par value or a specific banking facility with a public bond note.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"3M Company 8.500% Notes due 2032 - $1,000 million\",\n      \"claim_value\": \"8.500%\",\n      \"reason\": \"3M is an investment-grade issuer with a much lower cost of debt. An 8.5% coupon for a 2032 maturity is inconsistent with the company's credit profile and recent issuance history, suggesting fabrication.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"3M Company 2.750% Notes due 2025 - $1009 million ... Maturity Schedule 2025: $750 million\",\n      \"claim_value\": \"$1009 million vs $750 million\",\n      \"reason\": \"Internal inconsistency: The specific security list claims $1,009 million for 2025 notes, while the maturity schedule section claims $750 million for the same year.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Five out of seven listed notes are exactly $1,000 million\",\n      \"claim_value\": \"$1,000 million\",\n      \"reason\": \"Suspiciously round numbers across a diverse legacy debt portfolio are statistically unlikely. Real debt schedules typically show varied amounts due to buybacks, partial repayments, and different issuance sizes.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 23,\n  \"overall_assessment\": \"The output contains multiple high-confidence hallucinations regarding coupon rates and internal inconsistencies in maturity amounts, indicating significant data fabrication.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_007_31B558AC",
+      "hallucination_id": "FB_007_31B558AC_H3",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$750 million",
+      "injected_value": "$1009 million",
+      "detected": true,
+      "reason": "Internal inconsistency: The specific security list claims $1,009 million for 2025 notes, while the maturity schedule section claims $750 million for the same year.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 23
+    },
+    {
+      "question_id": "FB_007_31B558AC",
+      "hallucination_id": "FB_007_31B558AC_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "percentage",
+      "original_value": "3.750%",
+      "injected_value": "0.010%",
+      "detected": true,
+      "reason": "A coupon rate of 1 basis point is highly anomalous for a major industrial issuer like 3M. While near-zero debt existed during the 2020 liquidity crunch, this specific figure is likely a hallucination confusing par value or a specific banking facility with a public bond note.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 23
+    },
+    {
+      "question_id": "FB_007_31B558AC",
+      "hallucination_id": "FB_007_31B558AC_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "percentage",
+      "original_value": "4.250%",
+      "injected_value": "8.500%",
+      "detected": true,
+      "reason": "3M is an investment-grade issuer with a much lower cost of debt. An 8.5% coupon for a 2032 maturity is inconsistent with the company's credit profile and recent issuance history, suggesting fabrication.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 23
+    }
+  ],
+  "timestamp": "2026-03-24T10:13:12.568389Z"
+}

@@ -1,0 +1,103 @@
+{
+  "question_id": "FB_017_4ABE7642",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: AES Corporation, FY2022\n- PRIMARY METRIC: \n  - Cost of Goods Sold (COGS): $11,608 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - Average Inventory: $1,176 million (per the FY2022 10-K, Consolidated Balance Sheets)\n  \n- SUPPORTING DATA: \n  - COGS for FY2021: $5,621 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - Average Inventory for FY2021: $1,162 million (per the FY2021 10-K, Consolidated Balance Sheets)\n  \n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2022 10-K, Consolidated Balance Sheets\n  - FY2021 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Balance Sheets\n\n**Note:** The calculation of the inventory turnover ratio is as follows:\n\nInventory Turnover Ratio = Cost of Goods Sold / Average Inventory\n\nFor FY2022:\nInventory Turnover Ratio = $11,413 million / $1,176 million = 7.49 times\n\n**Conventional Inventory Management Practices:**\nGiven that AES Corporation operates primarily in the energy sector, specifically in the generation and distribution of electricity, conventional inventory management practices may not apply in the same way they would for companies in retail or manufacturing. The nature of AES's business involves significant capital investment in infrastructure and long-term assets rather than traditional inventory. Therefore, while the inventory turnover ratio can be calculated, the relevance of this metric may be limited in assessing operational efficiency in the context of AES's business model.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_017_4ABE7642_H3",
+      "type": "dollar_amount",
+      "original_value": "$8,814 million",
+      "injected_value": "$11,608 million",
+      "original_numeric": "8814",
+      "injected_numeric": "11608",
+      "position_char": 94,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.317
+    },
+    {
+      "hallucination_id": "FB_017_4ABE7642_H2",
+      "type": "dollar_amount",
+      "original_value": "$8,187 million",
+      "injected_value": "$5,621 million",
+      "original_numeric": "8187",
+      "injected_numeric": "5621",
+      "position_char": 303,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.3135
+    },
+    {
+      "hallucination_id": "FB_017_4ABE7642_H1",
+      "type": "dollar_amount",
+      "original_value": "$8,814 million",
+      "injected_value": "$11,413 million",
+      "original_numeric": "8814",
+      "injected_numeric": "11413",
+      "position_char": 880,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.2949
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "COGS for FY2021: $5,621 million",
+        "claim_value": "$5,621 million",
+        "reason": "The COGS for FY2021 seems suspiciously low compared to the COGS for FY2022, which is $11,608 million. A 107% increase in COGS from FY2021 to FY2022 is unusual and warrants further investigation.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Inventory Turnover Ratio = $11,413 million / $1,176 million = 7.49 times",
+        "claim_value": "$11,413 million",
+        "reason": "The COGS value used in the inventory turnover ratio calculation ($11,413 million) does not match the reported COGS value for FY2022 ($11,608 million). This inconsistency raises concerns about the accuracy of the calculation.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 5,
+    "overall_assessment": "While the researcher provides a thorough explanation of the limitations of conventional inventory management practices for AES Corporation, some financial claims appear suspicious and warrant further investigation.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"COGS for FY2021: $5,621 million\",\n      \"claim_value\" : \"$5,621 million\",\n      \"reason\"      : \"The COGS for FY2021 seems suspiciously low compared to the COGS for FY2022, which is $11,608 million. A 107% increase in COGS from FY2021 to FY2022 is unusual and warrants further investigation.\",\n      \"confidence\"  : \"medium\"\n    },\n    {\n      \"claim_text\"  : \"Inventory Turnover Ratio = $11,413 million / $1,176 million = 7.49 times\",\n      \"claim_value\" : \"$11,413 million\",\n      \"reason\"      : \"The COGS value used in the inventory turnover ratio calculation ($11,413 million) does not match the reported COGS value for FY2022 ($11,608 million). This inconsistency raises concerns about the accuracy of the calculation.\",\n      \"confidence\"  : \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 5,\n  \"overall_assessment\"   : \"While the researcher provides a thorough explanation of the limitations of conventional inventory management practices for AES Corporation, some financial claims appear suspicious and warrant further investigation.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_017_4ABE7642",
+      "hallucination_id": "FB_017_4ABE7642_H3",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$8,814 million",
+      "injected_value": "$11,608 million",
+      "detected": true,
+      "reason": "The COGS value used in the inventory turnover ratio calculation ($11,413 million) does not match the reported COGS value for FY2022 ($11,608 million). This inconsistency raises concerns about the accuracy of the calculation.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 5
+    },
+    {
+      "question_id": "FB_017_4ABE7642",
+      "hallucination_id": "FB_017_4ABE7642_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$8,187 million",
+      "injected_value": "$5,621 million",
+      "detected": true,
+      "reason": "The COGS for FY2021 seems suspiciously low compared to the COGS for FY2022, which is $11,608 million. A 107% increase in COGS from FY2021 to FY2022 is unusual and warrants further investigation.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 5
+    },
+    {
+      "question_id": "FB_017_4ABE7642",
+      "hallucination_id": "FB_017_4ABE7642_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$8,814 million",
+      "injected_value": "$11,413 million",
+      "detected": true,
+      "reason": "The COGS value used in the inventory turnover ratio calculation ($11,413 million) does not match the reported COGS value for FY2022 ($11,608 million). This inconsistency raises concerns about the accuracy of the calculation.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 5
+    }
+  ],
+  "timestamp": "2026-03-27T09:28:31.945613Z"
+}

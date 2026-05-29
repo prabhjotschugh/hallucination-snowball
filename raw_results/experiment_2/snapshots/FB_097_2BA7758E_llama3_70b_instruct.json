@@ -1,0 +1,79 @@
+{
+  "question_id": "FB_097_2BA7758E",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: JPMorgan Chase & Co., Fiscal Years 2018-2022\n- PRIMARY METRIC: \n  - FY2022 Gross Margin: 69.6% (per the FY2022 10-K, Consolidated Statements of Operations)\n  - FY2021 Gross Margin: 76.5% (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2020 Gross Margin: 77.0% (per the FY2020 10-K, Consolidated Statements of Operations)\n  - FY2019 Gross Margin: 70.4% (per the FY2019 10-K, Consolidated Statements of Operations)\n  - FY2018 Gross Margin: 76.4% (per the FY2018 10-K, Consolidated Statements of Operations)\n\n- SUPPORTING DATA: \n  - FY2022 Total Revenue: $130,186 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - FY2021 Total Revenue: $125,000 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2020 Total Revenue: $119,540 million (per the FY2020 10-K, Consolidated Statements of Operations)\n  - FY2019 Total Revenue: $115,632 million (per the FY2019 10-K, Consolidated Statements of Operations)\n  - FY2018 Total Revenue: $110,360 million (per the FY2018 10-K, Consolidated Statements of Operations)\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Statements of Operations\n  - FY2020 10-K, Consolidated Statements of Operations\n  - FY2019 10-K, Consolidated Statements of Operations\n  - FY2018 10-K, Consolidated Statements of Operations\n\n**Note on Gross Margin Relevance:**\nGross margin is typically a metric more relevant for companies in manufacturing or retail sectors where the cost of goods sold (COGS) is a significant factor in determining profitability. For financial institutions like JPMorgan Chase, gross margin may not be the most appropriate metric due to the nature of their business model, which primarily revolves around financial services, interest income, and fees rather than physical goods. Instead, metrics such as net interest margin, return on equity (ROE), and efficiency ratio are more commonly used to assess performance in the banking sector.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_097_2BA7758E_H2",
+      "type": "percentage",
+      "original_value": "76.8%",
+      "injected_value": "69.6%",
+      "original_numeric": "76.8",
+      "injected_numeric": "69.6",
+      "position_char": 109,
+      "sentence_approx": 2,
+      "perturbation_delta": -7.1807
+    },
+    {
+      "hallucination_id": "FB_097_2BA7758E_H1",
+      "type": "percentage",
+      "original_value": "76.8%",
+      "injected_value": "70.4%",
+      "original_numeric": "76.8",
+      "injected_numeric": "70.4",
+      "position_char": 385,
+      "sentence_approx": 5,
+      "perturbation_delta": -6.3556
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "FY2021 Gross Margin: 76.5% (per the FY2021 10-K, Consolidated Statements of Operations)",
+        "claim_value": "76.5%",
+        "reason": "The reported gross margin for FY2021 is suspiciously close to the FY2020 gross margin (77.0%). It is unusual for a company's gross margin to remain almost unchanged from one year to the next, especially considering the potential impact of economic fluctuations and market changes.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "FY2021 Total Revenue: $125,000 million (per the FY2021 10-K, Consolidated Statements of Operations)",
+        "claim_value": "$125,000 million",
+        "reason": "The reported total revenue for FY2021 is a suspiciously round number, which may indicate fabrication or inaccuracy.",
+        "confidence": "low"
+      }
+    ],
+    "total_claims_reviewed": 10,
+    "overall_assessment": "While the researcher's output appears to be thorough, some claims raise suspicions due to unusual consistency and round numbers.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"FY2021 Gross Margin: 76.5% (per the FY2021 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\" : \"76.5%\",\n      \"reason\"      : \"The reported gross margin for FY2021 is suspiciously close to the FY2020 gross margin (77.0%). It is unusual for a company's gross margin to remain almost unchanged from one year to the next, especially considering the potential impact of economic fluctuations and market changes.\",\n      \"confidence\"  : \"medium\"\n    },\n    {\n      \"claim_text\"  : \"FY2021 Total Revenue: $125,000 million (per the FY2021 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\" : \"$125,000 million\",\n      \"reason\"      : \"The reported total revenue for FY2021 is a suspiciously round number, which may indicate fabrication or inaccuracy.\",\n      \"confidence\"  : \"low\"\n    }\n  ],\n  \"total_claims_reviewed\": 10,\n  \"overall_assessment\"   : \"While the researcher's output appears to be thorough, some claims raise suspicions due to unusual consistency and round numbers.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_097_2BA7758E",
+      "hallucination_id": "FB_097_2BA7758E_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "percentage",
+      "original_value": "76.8%",
+      "injected_value": "69.6%",
+      "detected": true,
+      "reason": "The reported gross margin for FY2021 is suspiciously close to the FY2020 gross margin (77.0%). It is unusual for a company's gross margin to remain almost unchanged from one year to the next, especially considering the potential impact of economic fluctuations and market changes.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 10
+    },
+    {
+      "question_id": "FB_097_2BA7758E",
+      "hallucination_id": "FB_097_2BA7758E_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "percentage",
+      "original_value": "76.8%",
+      "injected_value": "70.4%",
+      "detected": true,
+      "reason": "The reported gross margin for FY2021 is suspiciously close to the FY2020 gross margin (77.0%). It is unusual for a company's gross margin to remain almost unchanged from one year to the next, especially considering the potential impact of economic fluctuations and market changes.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 10
+    }
+  ],
+  "timestamp": "2026-03-27T09:39:45.347968Z"
+}

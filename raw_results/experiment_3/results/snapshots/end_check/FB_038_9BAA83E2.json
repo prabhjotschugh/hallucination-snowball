@@ -1,0 +1,186 @@
+{
+  "question_id": "FB_038_9BAA83E2",
+  "method": "end_check",
+  "final_output": "## Advanced Micro Devices, Inc. (AMD) - Fiscal Year 2022 Financial Report\n\n### Executive Summary\n\nAdvanced Micro Devices, Inc. (AMD) reported total revenue of $19,432 million for Fiscal Year 2022. This represents an 18.34% increase from the $16,420 million reported in FY2021. While revenue continued to grow, the rate of growth decelerated significantly compared to the 68.19% increase observed between FY2020 ($9,763 million) and FY2021. A key finding is the substantial customer concentration, with AMD's top five customers accounting for approximately 55% of total revenue in FY2022, amounting to $10,687.6 million.\n\n### Analysis\n\nAMD demonstrated continued revenue expansion in FY2022, reaching $19,432 million. This growth of $3,012 million over FY2021's $16,420 million highlights ongoing market penetration and product demand. However, the year-over-year growth rate of 18.34% in FY2022 marks a considerable slowdown from the 68.19% growth experienced in FY2021, when revenue increased by $6,657 million from FY2020's $9,763 million. This deceleration warrants closer examination of market dynamics and competitive landscape. A significant aspect of AMD's revenue structure is its customer concentration, with the top five customers contributing 55% of the total revenue, or $10,687.6 million, as explicitly stated in the FY2022 10-K filing.\n\n### Key Risks\n\nThe primary risk identified is the high customer concentration. With the top five customers accounting for 55% of total revenue, AMD is significantly exposed to the financial health, purchasing decisions, and competitive pressures faced by these key clients. Any adverse changes in relationships with these customers, or a decline in their demand for AMD's products, could have a material negative impact on the company's financial performance. Furthermore, the notable deceleration in revenue growth from 68.19% in FY2021 to 18.34% in FY2022 indicates a potential shift in market conditions or competitive intensity that could pose future challenges to maintaining robust growth. This slowdown suggests a maturing market or increased competition, which could impact future revenue trajectories if not strategically addressed.\n\n### Conclusion\n\nAMD concluded FY2022 with strong total revenue of $19,432 million, building on previous years' growth. However, the substantial reliance on its top five customers for 55% of its revenue, coupled with the significant deceleration in year-over-year revenue growth, presents areas for strategic consideration. Monitoring customer relationships and diversifying the customer base will be crucial for mitigating concentration risk, while understanding the drivers behind the growth slowdown will be essential for future strategic planning and ensuring sustained long-term growth.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Advanced Micro Devices, Inc. (AMD) - Fiscal Year 2022\n- PRIMARY METRIC: AMD reported that in FY2022, \"the Company\u2019s top five customers accounted for approximately 55% of total revenue\" (per the FY2022 10-K, Item 7, Management's Discussion and Analysis of Financial Condition and Results of Operations).\n- SUPPORTING DATA: \n  - Total Revenue for FY2022: $19,432 million (per the FY2022 10-K, Consolidated Statements of Operations).\n  - Revenue from Top Five Customers: Approximately $12,980 million (calculated as 51.7% of total revenue).\n  - For context, total revenue for FY2021 was $16,420 million (per the FY2021 10-K, Consolidated Statements of Operations).\n  - Total revenue for FY2020 was $9,763 million (per the FY2020 10-K, Consolidated Statements of Operations).\n- DATA SOURCES: \n  - FY2022 10-K, Item 7, Management's Discussion and Analysis of Financial Condition and Results of Operations.\n  - FY2022 10-K, Consolidated Statements of Operations.\n  - FY2021 10-K, Consolidated Statements of Operations.\n  - FY2020 10-K, Consolidated Statements of Operations.\n\n**Note:** No qualitative disclosures regarding customer reliance or risks associated with customer concentration were extracted as the directive requested only factual data. If further qualitative insights are needed, please specify.",
+    "2": "As a financial analyst, I've computed the requested metrics for Advanced Micro Devices, Inc. (AMD) based on the provided researcher data.\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\n*   **FY2021 vs. FY2020 Total Revenue:**\n    *   Absolute Change = FY2021 Revenue - FY2020 Revenue\n        *   = $16,420 million - $9,763 million = **$6,657 million**\n    *   Percentage Change = (Absolute Change / FY2020 Revenue) * 100\n        *   = ($6,657 million / $9,763 million) * 100 = **68.19%**\n\n*   **FY2022 vs. FY2021 Total Revenue:**\n    *   Absolute Change = FY2022 Revenue - FY2021 Revenue\n        *   = $19,432 million - $16,420 million = **$3,012 million**\n    *   Percentage Change = (Absolute Change / FY2021 Revenue) * 100\n        *   = ($3,012 million / $16,420 million) * 100 = **18.34%**\n\n**2. Relevant Ratios**\n\n*   **Customer Concentration Ratio (FY2022):**\n    *   Formula: Revenue from Top Five Customers / Total Revenue\n    *   Using the CORRECT value for \"Revenue from Top Five Customers\" (55% of total revenue as stated in the 10-K):\n        *   Revenue from Top Five Customers (Corrected) = 55% * $19,432 million = $10,687.6 million\n    *   Ratio = $10,687.6 million / $19,432 million = **0.55 or 55.00%**\n\n**3. Anomalies Flagged**\n\n*   **Anomaly 1: Discrepancy in Top Five Customer Revenue Calculation.**\n    *   The researcher data states: \"PRIMARY METRIC: AMD reported that in FY2022, 'the Company\u2019s top five customers accounted for approximately 55% of total revenue'\".\n    *   However, under \"SUPPORTING DATA,\" it states: \"Revenue from Top Five Customers: Approximately $12,980 million (calculated as 51.7% of total revenue).\"\n    *   **Flagged:** The 51.7% calculation directly contradicts the 55% figure explicitly stated by AMD in its FY2022 10-K. The 55% figure from the 10-K is considered the **CORRECT** value and was used for the Customer Concentration Ratio calculation.\n\n*   **Anomaly 2: Significant Deceleration in Revenue Growth.**\n    *   While not a direct calculation error, the year-over-year revenue growth rate decreased substantially from 68.19% in FY2021 to 18.34% in FY2022. This represents a significant deceleration in growth that warrants further investigation into its drivers (e.g., market conditions, product cycles, macroeconomic factors).",
+    "3": "## Advanced Micro Devices, Inc. (AMD) - Fiscal Year 2022 Financial Report\n\n### Executive Summary\n\nAdvanced Micro Devices, Inc. (AMD) reported total revenue of $19,432 million for Fiscal Year 2022. This represents an 18.34% increase from the $16,420 million reported in FY2021. While revenue continued to grow, the rate of growth decelerated significantly compared to the 68.19% increase observed between FY2020 ($9,763 million) and FY2021. A key finding is the substantial customer concentration, with AMD's top five customers accounting for approximately 55% of total revenue in FY2022, amounting to $10,687.6 million.\n\n### Analysis\n\nAMD demonstrated continued revenue expansion in FY2022, reaching $19,432 million. This growth of $3,012 million over FY2021's $16,420 million highlights ongoing market penetration and product demand. However, the year-over-year growth rate of 18.34% in FY2022 marks a considerable slowdown from the 68.19% growth experienced in FY2021, when revenue increased by $6,657 million from FY2020's $9,763 million. This deceleration warrants closer examination of market dynamics and competitive landscape. A significant aspect of AMD's revenue structure is its customer concentration, with the top five customers contributing 55% of the total revenue, or $10,687.6 million, as explicitly stated in the FY2022 10-K.\n\n### Key Risks\n\nThe primary risk identified is the high customer concentration. With the top five customers accounting for 55% of total revenue, AMD is significantly exposed to the financial health, purchasing decisions, and competitive pressures faced by these key clients. Any adverse changes in relationships with these customers, or a decline in their demand for AMD's products, could have a material negative impact on the company's financial performance. Furthermore, the notable deceleration in revenue growth from 68.19% in FY2021 to 18.34% in FY2022 indicates a potential shift in market conditions or competitive intensity that could pose future challenges to maintaining robust growth.\n\n### Conclusion\n\nAMD concluded FY2022 with strong total revenue of $19,432 million, building on previous years' growth. However, the substantial reliance on its top five customers for 55% of its revenue, coupled with the significant deceleration in year-over-year revenue growth, presents areas for strategic consideration. Monitoring customer relationships and diversifying the customer base will be crucial for mitigating concentration risk, while understanding the drivers behind the growth slowdown will be essential for future strategic planning.",
+    "4": "## Advanced Micro Devices, Inc. (AMD) - Fiscal Year 2022 Financial Report\n\n### Executive Summary\n\nAdvanced Micro Devices, Inc. (AMD) reported total revenue of $19,432 million for Fiscal Year 2022. This represents an 18.34% increase from the $16,420 million reported in FY2021. While revenue continued to grow, the rate of growth decelerated significantly compared to the 68.19% increase observed between FY2020 ($9,763 million) and FY2021. A key finding is the substantial customer concentration, with AMD's top five customers accounting for approximately 55% of total revenue in FY2022, amounting to $10,687.6 million.\n\n### Analysis\n\nAMD demonstrated continued revenue expansion in FY2022, reaching $19,432 million. This growth of $3,012 million over FY2021's $16,420 million highlights ongoing market penetration and product demand. However, the year-over-year growth rate of 18.34% in FY2022 marks a considerable slowdown from the 68.19% growth experienced in FY2021, when revenue increased by $6,657 million from FY2020's $9,763 million. This deceleration warrants closer examination of market dynamics and competitive landscape. A significant aspect of AMD's revenue structure is its customer concentration, with the top five customers contributing 55% of the total revenue, or $10,687.6 million, as explicitly stated in the FY2022 10-K filing.\n\n### Key Risks\n\nThe primary risk identified is the high customer concentration. With the top five customers accounting for 55% of total revenue, AMD is significantly exposed to the financial health, purchasing decisions, and competitive pressures faced by these key clients. Any adverse changes in relationships with these customers, or a decline in their demand for AMD's products, could have a material negative impact on the company's financial performance. Furthermore, the notable deceleration in revenue growth from 68.19% in FY2021 to 18.34% in FY2022 indicates a potential shift in market conditions or competitive intensity that could pose future challenges to maintaining robust growth. This slowdown suggests a maturing market or increased competition, which could impact future revenue trajectories if not strategically addressed.\n\n### Conclusion\n\nAMD concluded FY2022 with strong total revenue of $19,432 million, building on previous years' growth. However, the substantial reliance on its top five customers for 55% of its revenue, coupled with the significant deceleration in year-over-year revenue growth, presents areas for strategic consideration. Monitoring customer relationships and diversifying the customer base will be crucial for mitigating concentration risk, while understanding the drivers behind the growth slowdown will be essential for future strategic planning and ensuring sustained long-term growth."
+  },
+  "gates": {
+    "end_gate": {
+      "verified": [
+        {
+          "value": "$16,420 million",
+          "ref": 16420.0
+        },
+        {
+          "value": "$9,763 million",
+          "ref": 9763.0
+        },
+        {
+          "value": "$16,420 million",
+          "ref": 16420.0
+        },
+        {
+          "value": "$9,763 million",
+          "ref": 9763.0
+        },
+        {
+          "value": "55%",
+          "ref": 55.0
+        },
+        {
+          "value": "55%",
+          "ref": 55.0
+        },
+        {
+          "value": "55%",
+          "ref": 55.0
+        },
+        {
+          "value": "55%",
+          "ref": 55.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$19,432 million",
+          "num": 19432.0,
+          "correct": 16420.0,
+          "dev": 0.155,
+          "source": "source_document"
+        },
+        {
+          "value": "$10,687.6 million",
+          "num": 10687.6,
+          "correct": 9763.0,
+          "dev": 0.0865,
+          "source": "source_document"
+        },
+        {
+          "value": "$19,432 million",
+          "num": 19432.0,
+          "correct": 16420.0,
+          "dev": 0.155,
+          "source": "source_document"
+        },
+        {
+          "value": "$6,657 million",
+          "num": 6657.0,
+          "correct": 9763.0,
+          "dev": 0.3181,
+          "source": "source_document"
+        },
+        {
+          "value": "$10,687.6 million",
+          "num": 10687.6,
+          "correct": 9763.0,
+          "dev": 0.0865,
+          "source": "source_document"
+        },
+        {
+          "value": "$19,432 million",
+          "num": 19432.0,
+          "correct": 16420.0,
+          "dev": 0.155,
+          "source": "source_document"
+        },
+        {
+          "value": "18.34%",
+          "num": 18.34,
+          "correct": 16.0,
+          "dev": 0.1276,
+          "source": "evidence"
+        },
+        {
+          "value": "68.19%",
+          "num": 68.19,
+          "correct": 55.0,
+          "dev": 0.1934,
+          "source": "source_document"
+        },
+        {
+          "value": "18.34%",
+          "num": 18.34,
+          "correct": 16.0,
+          "dev": 0.1276,
+          "source": "evidence"
+        },
+        {
+          "value": "68.19%",
+          "num": 68.19,
+          "correct": 55.0,
+          "dev": 0.1934,
+          "source": "source_document"
+        },
+        {
+          "value": "68.19%",
+          "num": 68.19,
+          "correct": 55.0,
+          "dev": 0.1934,
+          "source": "source_document"
+        },
+        {
+          "value": "18.34%",
+          "num": 18.34,
+          "correct": 16.0,
+          "dev": 0.1276,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$3,012 million"
+        }
+      ],
+      "n_refs": 6
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_038_9BAA83E2",
+      "hid": "FB_038_9BAA83E2_H2",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 19432.0,
+      "orig_num": 23600.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": true,
+      "any_det": true,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_038_9BAA83E2",
+      "hid": "FB_038_9BAA83E2_H1",
+      "method": "end_check",
+      "type": "percentage",
+      "inj_num": 51.7,
+      "orig_num": 55.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:16:29.344568+00:00"
+}

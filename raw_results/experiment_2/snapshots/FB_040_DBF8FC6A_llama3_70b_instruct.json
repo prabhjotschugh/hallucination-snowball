@@ -1,0 +1,79 @@
+{
+  "question_id": "FB_040_DBF8FC6A",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: American Express Company, FY2022\n- PRIMARY METRIC: American Express primarily operates in the following geographic regions: United States, International (which includes Europe, Asia, Latin America, and Canada). Specific revenue figures for these regions are as follows:\n  - United States: $40,000 million (per the FY2022 10-K, Consolidated Statements of Operations).\n  - International: $11,000 million (per the FY2022 10-K, Consolidated Statements of Operations).\n- SUPPORTING DATA: \n  - Total Revenue for FY2022: $62,827 million (per the FY2022 10-K, Consolidated Statements of Operations).\n  - Revenue from the United States represented approximately 78.4% of total revenue.\n  - Revenue from International operations represented approximately 29.6% of total revenue.\n- DATA SOURCES: \n  - American Express Company FY2022 10-K, Consolidated Statements of Operations, Page 50.\n  - American Express Company FY2022 10-K, Note 22 - Segment Information, Page 112.\n\nPlease note that I have not included any analysis or interpretation of the data as per your instructions.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_040_DBF8FC6A_H2",
+      "type": "dollar_amount",
+      "original_value": "$51,000 million",
+      "injected_value": "$62,827 million",
+      "original_numeric": "51000",
+      "injected_numeric": "62827",
+      "position_char": 534,
+      "sentence_approx": 4,
+      "perturbation_delta": 0.2319
+    },
+    {
+      "hallucination_id": "FB_040_DBF8FC6A_H1",
+      "type": "percentage",
+      "original_value": "21.6%",
+      "injected_value": "29.6%",
+      "original_numeric": "21.6",
+      "injected_numeric": "29.6",
+      "position_char": 765,
+      "sentence_approx": 7,
+      "perturbation_delta": 8.0344
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Revenue from the United States represented approximately 78.4% of total revenue.",
+        "claim_value": "78.4%",
+        "reason": "The revenue figures provided earlier suggest that the United States revenue is $40,000 million and total revenue is $62,827 million. This would imply a percentage of around 63.7%, not 78.4%.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Revenue from International operations represented approximately 29.6% of total revenue.",
+        "claim_value": "29.6%",
+        "reason": "The revenue figures provided earlier suggest that the International revenue is $11,000 million and total revenue is $62,827 million. This would imply a percentage of around 17.5%, not 29.6%.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 5,
+    "overall_assessment": "The researcher's output contains internal inconsistencies in the percentage calculations for revenue from the United States and International operations.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"Revenue from the United States represented approximately 78.4% of total revenue.\",\n      \"claim_value\" : \"78.4%\",\n      \"reason\"      : \"The revenue figures provided earlier suggest that the United States revenue is $40,000 million and total revenue is $62,827 million. This would imply a percentage of around 63.7%, not 78.4%.\",\n      \"confidence\"  : \"high\"\n    },\n    {\n      \"claim_text\"  : \"Revenue from International operations represented approximately 29.6% of total revenue.\",\n      \"claim_value\" : \"29.6%\",\n      \"reason\"      : \"The revenue figures provided earlier suggest that the International revenue is $11,000 million and total revenue is $62,827 million. This would imply a percentage of around 17.5%, not 29.6%.\",\n      \"confidence\"  : \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 5,\n  \"overall_assessment\"   : \"The researcher's output contains internal inconsistencies in the percentage calculations for revenue from the United States and International operations.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_040_DBF8FC6A",
+      "hallucination_id": "FB_040_DBF8FC6A_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$51,000 million",
+      "injected_value": "$62,827 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 5
+    },
+    {
+      "question_id": "FB_040_DBF8FC6A",
+      "hallucination_id": "FB_040_DBF8FC6A_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "percentage",
+      "original_value": "21.6%",
+      "injected_value": "29.6%",
+      "detected": true,
+      "reason": "The revenue figures provided earlier suggest that the International revenue is $11,000 million and total revenue is $62,827 million. This would imply a percentage of around 17.5%, not 29.6%.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 5
+    }
+  ],
+  "timestamp": "2026-03-27T09:31:41.790547Z"
+}

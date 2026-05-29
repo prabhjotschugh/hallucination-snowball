@@ -1,0 +1,121 @@
+{
+  "question_id": "FB_054_F1BBC565",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Best Buy Co., Inc. - FY 2023 and Q2 FY2024\n- PRIMARY METRIC: \n  - Cash and Cash Equivalents as of the end of FY 2023: $911 million (per the FY2023 10-K, Consolidated Balance Sheets).\n  - Cash and Cash Equivalents as of the end of Q2 FY2024: $1,050 million (per the Q2 FY2024 10-Q, Consolidated Balance Sheets).\n- SUPPORTING DATA: \n  - FY 2023 Cash and Cash Equivalents: $1,200 million\n  - FY 2023 Total Current Assets: $2,191 million (per the FY2023 10-K, Consolidated Balance Sheets).\n  - Q2 FY2024 Total Current Assets: $3,000 million (per the Q2 FY2024 10-Q, Consolidated Balance Sheets).\n- DATA SOURCES: \n  - FY2023 10-K, Consolidated Balance Sheets, filed on March 30, 2023.\n  - Q2 FY2024 10-Q, Consolidated Balance Sheets, filed on September 1, 2023.\n\n**Note:** There was a drop in Cash and Cash Equivalents from FY 2023 to Q2 FY2024, decreasing from $789 million to $1,050 million.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_054_F1BBC565_H3",
+      "type": "dollar_amount",
+      "original_value": "$1,200 million",
+      "injected_value": "$911 million",
+      "original_numeric": "1200",
+      "injected_numeric": "911",
+      "position_char": 138,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.2412
+    },
+    {
+      "hallucination_id": "FB_054_F1BBC565_H2",
+      "type": "dollar_amount",
+      "original_value": "$3,200 million",
+      "injected_value": "$2,191 million",
+      "original_numeric": "3200",
+      "injected_numeric": "2191",
+      "position_char": 441,
+      "sentence_approx": 5,
+      "perturbation_delta": -0.3154
+    },
+    {
+      "hallucination_id": "FB_054_F1BBC565_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,200 million",
+      "injected_value": "$789 million",
+      "original_numeric": "1200",
+      "injected_numeric": "789",
+      "position_char": 879,
+      "sentence_approx": 9,
+      "perturbation_delta": -0.3427
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Cash and Cash Equivalents as of the end of FY 2023: $911 million (per the FY2023 10-K, Consolidated Balance Sheets).",
+        "claim_value": "$911 million",
+        "reason": "Internal inconsistency: The same report lists FY 2023 Cash as $1,200 million in Supporting Data and $789 million in the Note. Three different values for the same metric indicate hallucination.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY 2023 Cash and Cash Equivalents: $1,200 million",
+        "claim_value": "$1,200 million",
+        "reason": "Internal inconsistency: Contradicts the Primary Metric ($911 million) and the Note ($789 million) within the same output.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "There was a drop in Cash and Cash Equivalents from FY 2023 to Q2 FY2024, decreasing from $789 million to $1,050 million.",
+        "claim_value": "decreasing from $789 million to $1,050 million",
+        "reason": "Logical error: $789 million to $1,050 million is an increase, not a drop/decrease. Additionally, the $789 million figure contradicts the $911 million and $1,200 million figures cited elsewhere in the text.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY 2023 Total Current Assets: $2,191 million (per the FY2023 10-K, Consolidated Balance Sheets).",
+        "claim_value": "$2,191 million",
+        "reason": "Plausibility issue: Best Buy is a large-cap retailer with ~$47 billion annual revenue. Total Current Assets of only $2.2 billion is implausibly low (inventory alone typically exceeds this amount).",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Q2 FY2024 Total Current Assets: $3,000 million (per the Q2 FY2024 10-Q, Consolidated Balance Sheets).",
+        "claim_value": "$3,000 million",
+        "reason": "Plausibility issue: Consistent with the suspiciously low FY2023 Current Assets figure; likely hallucinated magnitude for a company of Best Buy's scale.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 8,
+    "overall_assessment": "The output contains critical internal inconsistencies with three different values reported for FY2023 Cash, a logical error describing an increase as a decrease, and implausibly low Current Assets figures for a retailer of this size.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Cash and Cash Equivalents as of the end of FY 2023: $911 million (per the FY2023 10-K, Consolidated Balance Sheets).\",\n      \"claim_value\": \"$911 million\",\n      \"reason\": \"Internal inconsistency: The same report lists FY 2023 Cash as $1,200 million in Supporting Data and $789 million in the Note. Three different values for the same metric indicate hallucination.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY 2023 Cash and Cash Equivalents: $1,200 million\",\n      \"claim_value\": \"$1,200 million\",\n      \"reason\": \"Internal inconsistency: Contradicts the Primary Metric ($911 million) and the Note ($789 million) within the same output.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"There was a drop in Cash and Cash Equivalents from FY 2023 to Q2 FY2024, decreasing from $789 million to $1,050 million.\",\n      \"claim_value\": \"decreasing from $789 million to $1,050 million\",\n      \"reason\": \"Logical error: $789 million to $1,050 million is an increase, not a drop/decrease. Additionally, the $789 million figure contradicts the $911 million and $1,200 million figures cited elsewhere in the text.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY 2023 Total Current Assets: $2,191 million (per the FY2023 10-K, Consolidated Balance Sheets).\",\n      \"claim_value\": \"$2,191 million\",\n      \"reason\": \"Plausibility issue: Best Buy is a large-cap retailer with ~$47 billion annual revenue. Total Current Assets of only $2.2 billion is implausibly low (inventory alone typically exceeds this amount).\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Q2 FY2024 Total Current Assets: $3,000 million (per the Q2 FY2024 10-Q, Consolidated Balance Sheets).\",\n      \"claim_value\": \"$3,000 million\",\n      \"reason\": \"Plausibility issue: Consistent with the suspiciously low FY2023 Current Assets figure; likely hallucinated magnitude for a company of Best Buy's scale.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 8,\n  \"overall_assessment\": \"The output contains critical internal inconsistencies with three different values reported for FY2023 Cash, a logical error describing an increase as a decrease, and implausibly low Current Assets figures for a retailer of this size.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_054_F1BBC565",
+      "hallucination_id": "FB_054_F1BBC565_H3",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,200 million",
+      "injected_value": "$911 million",
+      "detected": true,
+      "reason": "Internal inconsistency: The same report lists FY 2023 Cash as $1,200 million in Supporting Data and $789 million in the Note. Three different values for the same metric indicate hallucination.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 8
+    },
+    {
+      "question_id": "FB_054_F1BBC565",
+      "hallucination_id": "FB_054_F1BBC565_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,200 million",
+      "injected_value": "$2,191 million",
+      "detected": true,
+      "reason": "Plausibility issue: Best Buy is a large-cap retailer with ~$47 billion annual revenue. Total Current Assets of only $2.2 billion is implausibly low (inventory alone typically exceeds this amount).",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 8
+    },
+    {
+      "question_id": "FB_054_F1BBC565",
+      "hallucination_id": "FB_054_F1BBC565_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,200 million",
+      "injected_value": "$789 million",
+      "detected": true,
+      "reason": "Internal inconsistency: Contradicts the Primary Metric ($911 million) and the Note ($789 million) within the same output.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 8
+    }
+  ],
+  "timestamp": "2026-03-24T11:19:24.495779Z"
+}

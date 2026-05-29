@@ -1,0 +1,484 @@
+{
+  "question_id": "FB_005_FE85BE68",
+  "method": "ours",
+  "final_output": "## 3M Company: Fiscal Year 2022 Financial Report\n\n### Executive Summary\n\n3M Company reported total revenue of $35,434 million for Fiscal Year 2022, representing a slight decline of 0.6% compared to FY2021. All four operating segments experienced revenue decreases, with the Consumer segment showing the most significant contraction at 6.0%. This overall revenue decrease highlights challenges across the company's diverse portfolio and signals a need for strategic re-evaluation.\n\n### Analysis\n\nTotal revenue for 3M Company in FY2022 was $35,434 million. The Safety & Industrial segment generated $8,236 million, a decrease of 2.1%. Transportation & Electronics recorded $8,303 million, down 2.4%. Health Care revenue stood at $6,658 million, a 2.6% decrease. The Consumer segment reported $6,658 million, experiencing the largest decline of 6.0%.\n\nIn terms of contribution to total revenue, Transportation & Electronics was the largest segment at 23.43%, closely followed by Safety & Industrial at 23.24%. Health Care contributed 18.79% to the total revenue, while the Consumer segment contributed 9.00%. The negative growth rates across all segments, particularly the Consumer segment's 6.0% decline, were the primary drivers of the overall 0.6% revenue reduction. This widespread contraction suggests that 3M Company may be facing challenges such as decreased market demand, increased competition, or broader economic pressures affecting its diverse product lines.\n\n### Key Risks\n\nThe consistent revenue decline across all segments, particularly the significant 6.0% drop in the Consumer segment, indicates broad-based headwinds. This widespread contraction suggests that 3M Company may be facing challenges such as decreased market demand, increased competition, or broader economic pressures affecting its diverse product lines. The inability of any segment to achieve growth poses a significant risk to future revenue stability and profitability. Management will need to address these underlying issues to prevent further erosion of market share and financial performance.\n\n### Conclusion\n\n3M Company's Fiscal Year 2022 performance was characterized by a modest overall revenue decline of 0.6% to $35,434 million. The uniform decrease across all segments, with the Consumer segment leading the contraction at 6.0%, underscores the need for strategic initiatives to stimulate growth and address underlying market challenges. Proactive measures will be essential to navigate the current economic climate and restore positive momentum across its diversified business units.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: 3M Company, Fiscal Year 2022\n- PRIMARY METRIC: Total Revenue: $35,434 million (per the FY2022 10-K, Consolidated Statements of Operations).\n- SUPPORTING DATA:\n  - Segment Performance:\n    - Safety & Industrial: Revenue of $8,236 million, a decrease of 2.1% from 2021.\n    - Transportation & Electronics: Revenue of $8,303 million, a decrease of 2.4% from 2021.\n    - Health Care: Revenue of $6,023 million, a decrease of 2.6% from 2021.\n    - Consumer: Revenue of $6,658 million, a decrease of 6.0% from 2021.\n  - Total Revenue Growth Rate: -0.6% compared to FY2021.\n  - Excluding M&A: The Consumer segment had the most significant negative impact on overall growth, with a revenue decline of 6.0% (per the FY2022 10-K, Segment Information).\n- DATA SOURCES: \n  - 3M Company FY2022 10-K, Consolidated Statements of Operations.\n  - 3M Company FY2022 10-K, Segment Information.",
+    "2": "Here's an analysis of 3M Company's Fiscal Year 2022 performance based on the provided data:\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\nFirst, we need to calculate the 2021 revenue figures for each segment and total revenue.\n\n*   **Formulas:**\n    *   Prior Year Revenue = Current Year Revenue / (1 + Growth Rate)\n    *   Absolute Change = Current Year Revenue - Prior Year Revenue\n    *   Percentage Change = (Current Year Revenue / Prior Year Revenue) - 1\n\n*   **Calculations:**\n\n    *   **Total Revenue:**\n        *   FY2022 Total Revenue: $35,434 million\n        *   Total Revenue Growth Rate: -0.6%\n        *   FY2021 Total Revenue = $35,434 million / (1 - 0.006) = $35,647.79 million\n        *   Absolute Change (Total Revenue) = $35,434 million - $35,647.79 million = -$213.79 million\n\n    *   **Safety & Industrial:**\n        *   FY2022 Revenue: $8,236 million\n        *   Growth Rate: -2.1%\n        *   FY2021 Revenue = $8,236 million / (1 - 0.021) = $8,412.65 million\n        *   Absolute Change = $8,236 million - $8,412.65 million = -$176.65 million\n\n    *   **Transportation & Electronics:**\n        *   FY2022 Revenue: $8,303 million\n        *   Growth Rate: -2.4%\n        *   FY2021 Revenue = $8,303 million / (1 - 0.024) = $8,507.92 million\n        *   Absolute Change = $8,303 million - $8,507.92 million = -$204.92 million\n\n    *   **Health Care:**\n        *   FY2022 Revenue: $6,658 million (Using CORRECTED value)\n        *   Growth Rate: -2.6%\n        *   FY2021 Revenue = $6,658 million / (1 - 0.026) = $6,835.69 million\n        *   Absolute Change = $6,658 million - $6,835.69 million = -$177.69 million\n\n    *   **Consumer:**\n        *   FY2022 Revenue: $6,658 million\n        *   Growth Rate: -6.0%\n        *   FY2021 Revenue = $6,658 million / (1 - 0.060) = $7,082.98 million\n        *   Absolute Change = $6,658 million - $7,082.98 million = -$424.98 million\n\n**Summary of Year-over-Year Changes:**\n\n| Segment                       | FY2022 Revenue (MM) | FY2021 Revenue (MM) | Absolute Change (MM) | Percentage Change |\n| :---------------------------- | :------------------ | :------------------ | :------------------- | :---------------- |\n| Total Revenue                 | $35,434             | $35,647.79          | -$213.79             | -0.6%             |\n| Safety & Industrial           | $8,236              | $8,412.65           | -$176.65             | -2.1%             |\n| Transportation & Electronics  | $8,303              | $8,507.92           | -$204.92             | -2.4%             |\n| Health Care                   | $6,658              | $6,835.69           | -$177.69             | -2.6%             |\n| Consumer                      | $6,658              | $7,082.98           | -$424.98             | -6.0%             |\n\n**2. Relevant Ratios**\n\n*   **Formula:** Segment Revenue Contribution = Segment Revenue / Total Revenue\n\n*   **Calculations (FY2022):**\n    *   Safety & Industrial Contribution = $8,236 million / $35,434 million = 23.24%\n    *   Transportation & Electronics Contribution = $8,303 million / $35,434 million = 23.43%\n    *   Health Care Contribution = $6,658 million / $35,434 million = 18.79%\n    *   Consumer Contribution = $6,658 million / $35,434 million = 18.79%\n\n**Summary of Segment Revenue Contribution (FY2022):**\n\n| Segment                       | Revenue Contribution |\n| :---------------------------- | :------------------- |\n| Safety & Industrial           | 23.24%               |\n| Transportation",
+    "3": "## 3M Company: Fiscal Year 2022 Financial Report\n\n### Executive Summary\n\n3M Company reported total revenue of $35,434 million for Fiscal Year 2022, representing a slight decline of 0.6% compared to FY2021. All four operating segments experienced revenue decreases, with the Consumer segment showing the most significant contraction at 6.0%. This overall revenue decrease highlights challenges across the company's diverse portfolio.\n\n### Analysis\n\nTotal revenue for 3M Company in FY2022 was $35,434 million. The Safety & Industrial segment generated $8,236 million, a decrease of 2.1%. Transportation & Electronics recorded $8,303 million, down 2.4%. Health Care revenue stood at $6,658 million, a 2.6% decrease. The Consumer segment reported $6,658 million, experiencing the largest decline of 6.0%.\n\nIn terms of contribution to total revenue, Transportation & Electronics was the largest segment at 23.43%, closely followed by Safety & Industrial at 23.24%. Health Care and Consumer segments each contributed 18.79% to the total revenue. The negative growth rates across all segments, particularly the Consumer segment's 6.0% decline, were the primary drivers of the overall 0.6% revenue reduction.\n\n### Key Risks\n\nThe consistent revenue decline across all segments, particularly the significant 6.0% drop in the Consumer segment, indicates broad-based headwinds. This widespread contraction suggests that 3M Company may be facing challenges such as decreased market demand, increased competition, or broader economic pressures affecting its diverse product lines. The inability of any segment to achieve growth poses a risk to future revenue stability.\n\n### Conclusion\n\n3M Company's Fiscal Year 2022 performance was characterized by a modest overall revenue decline of 0.6% to $35,434 million. The uniform decrease across all segments, with the Consumer segment leading the contraction at 6.0%, underscores the need for strategic initiatives to stimulate growth and address underlying market challenges.",
+    "4": "## 3M Company: Fiscal Year 2022 Financial Report\n\n### Executive Summary\n\n3M Company reported total revenue of $35,434 million for Fiscal Year 2022, representing a slight decline of 0.6% compared to FY2021. All four operating segments experienced revenue decreases, with the Consumer segment showing the most significant contraction at 6.0%. This overall revenue decrease highlights challenges across the company's diverse portfolio and signals a need for strategic re-evaluation.\n\n### Analysis\n\nTotal revenue for 3M Company in FY2022 was $35,434 million. The Safety & Industrial segment generated $8,236 million, a decrease of 2.1%. Transportation & Electronics recorded $8,303 million, down 2.4%. Health Care revenue stood at $6,658 million, a 2.6% decrease. The Consumer segment reported $6,658 million, experiencing the largest decline of 6.0%.\n\nIn terms of contribution to total revenue, Transportation & Electronics was the largest segment at 23.43%, closely followed by Safety & Industrial at 23.24%. Health Care contributed 18.79% to the total revenue, while the Consumer segment contributed 9.00%. The negative growth rates across all segments, particularly the Consumer segment's 6.0% decline, were the primary drivers of the overall 0.6% revenue reduction. This widespread contraction suggests that 3M Company may be facing challenges such as decreased market demand, increased competition, or broader economic pressures affecting its diverse product lines.\n\n### Key Risks\n\nThe consistent revenue decline across all segments, particularly the significant 6.0% drop in the Consumer segment, indicates broad-based headwinds. This widespread contraction suggests that 3M Company may be facing challenges such as decreased market demand, increased competition, or broader economic pressures affecting its diverse product lines. The inability of any segment to achieve growth poses a significant risk to future revenue stability and profitability. Management will need to address these underlying issues to prevent further erosion of market share and financial performance.\n\n### Conclusion\n\n3M Company's Fiscal Year 2022 performance was characterized by a modest overall revenue decline of 0.6% to $35,434 million. The uniform decrease across all segments, with the Consumer segment leading the contraction at 6.0%, underscores the need for strategic initiatives to stimulate growth and address underlying market challenges. Proactive measures will be essential to navigate the current economic climate and restore positive momentum across its diversified business units."
+  },
+  "gates": {
+    "gate_1": {
+      "verified": [
+        {
+          "value": "$35,434 million",
+          "ref": 35434.0
+        },
+        {
+          "value": "$8,236 million",
+          "ref": 8303.0
+        },
+        {
+          "value": "$8,303 million",
+          "ref": 8303.0
+        },
+        {
+          "value": "$6,658 million",
+          "ref": 6658.0
+        },
+        {
+          "value": "2.1%",
+          "ref": 2.1
+        },
+        {
+          "value": "2.4%",
+          "ref": 2.4
+        },
+        {
+          "value": "2.6%",
+          "ref": 2.6
+        },
+        {
+          "value": "6.0%",
+          "ref": 6.0
+        },
+        {
+          "value": "-0.6%",
+          "ref": 0.6
+        },
+        {
+          "value": "6.0%",
+          "ref": 6.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$6,023 million",
+          "num": 6023.0,
+          "correct": 6658.0,
+          "dev": 0.0954,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [],
+      "n_refs": 17
+    },
+    "gate_2": {
+      "verified": [
+        {
+          "value": "$35,434 million",
+          "ref": 35434.0
+        },
+        {
+          "value": "$35,434 million",
+          "ref": 35434.0
+        },
+        {
+          "value": "$35,647.79 million",
+          "ref": 35434.0
+        },
+        {
+          "value": "$35,434 million",
+          "ref": 35434.0
+        },
+        {
+          "value": "$35,647.79 million",
+          "ref": 35434.0
+        },
+        {
+          "value": "$8,236 million",
+          "ref": 8303.0
+        },
+        {
+          "value": "$8,236 million",
+          "ref": 8303.0
+        },
+        {
+          "value": "$8,412.65 million",
+          "ref": 8303.0
+        },
+        {
+          "value": "$8,236 million",
+          "ref": 8303.0
+        },
+        {
+          "value": "$8,412.65 million",
+          "ref": 8303.0
+        },
+        {
+          "value": "$8,303 million",
+          "ref": 8303.0
+        },
+        {
+          "value": "$8,303 million",
+          "ref": 8303.0
+        },
+        {
+          "value": "$8,303 million",
+          "ref": 8303.0
+        },
+        {
+          "value": "$6,658 million",
+          "ref": 6658.0
+        },
+        {
+          "value": "$6,658 million",
+          "ref": 6658.0
+        },
+        {
+          "value": "$6,658 million",
+          "ref": 6658.0
+        },
+        {
+          "value": "$6,658 million",
+          "ref": 6658.0
+        },
+        {
+          "value": "$6,658 million",
+          "ref": 6658.0
+        },
+        {
+          "value": "$6,658 million",
+          "ref": 6658.0
+        },
+        {
+          "value": "$35,434",
+          "ref": 35434.0
+        },
+        {
+          "value": "$35,647.79",
+          "ref": 35434.0
+        },
+        {
+          "value": "$8,236",
+          "ref": 8303.0
+        },
+        {
+          "value": "$8,412.65",
+          "ref": 8303.0
+        },
+        {
+          "value": "$8,303",
+          "ref": 8303.0
+        },
+        {
+          "value": "$6,658",
+          "ref": 6658.0
+        },
+        {
+          "value": "$6,658",
+          "ref": 6658.0
+        },
+        {
+          "value": "$8,236 million",
+          "ref": 8303.0
+        },
+        {
+          "value": "$35,434 million",
+          "ref": 35434.0
+        },
+        {
+          "value": "$8,303 million",
+          "ref": 8303.0
+        },
+        {
+          "value": "$35,434 million",
+          "ref": 35434.0
+        },
+        {
+          "value": "$6,658 million",
+          "ref": 6658.0
+        },
+        {
+          "value": "$35,434 million",
+          "ref": 35434.0
+        },
+        {
+          "value": "$6,658 million",
+          "ref": 6658.0
+        },
+        {
+          "value": "$35,434 million",
+          "ref": 35434.0
+        },
+        {
+          "value": "-0.6%",
+          "ref": 0.6
+        },
+        {
+          "value": "-2.1%",
+          "ref": 2.1
+        },
+        {
+          "value": "-2.4%",
+          "ref": 2.4
+        },
+        {
+          "value": "-2.6%",
+          "ref": 2.6
+        },
+        {
+          "value": "-6.0%",
+          "ref": 6.0
+        },
+        {
+          "value": "-0.6%",
+          "ref": 0.6
+        },
+        {
+          "value": "-2.1%",
+          "ref": 2.1
+        },
+        {
+          "value": "-2.4%",
+          "ref": 2.4
+        },
+        {
+          "value": "-2.6%",
+          "ref": 2.6
+        },
+        {
+          "value": "-6.0%",
+          "ref": 6.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$7,082.98 million",
+          "num": 7082.98,
+          "correct": 6658.0,
+          "dev": 0.06,
+          "source": "source_document"
+        },
+        {
+          "value": "$7,082.98 million",
+          "num": 7082.98,
+          "correct": 6658.0,
+          "dev": 0.06,
+          "source": "source_document"
+        },
+        {
+          "value": "$7,082.98",
+          "num": 7082.98,
+          "correct": 6658.0,
+          "dev": 0.06,
+          "source": "source_document"
+        },
+        {
+          "value": "18.79%",
+          "num": 18.79,
+          "correct": 9.0,
+          "dev": 0.521,
+          "source": "evidence"
+        },
+        {
+          "value": "18.79%",
+          "num": 18.79,
+          "correct": 9.0,
+          "dev": 0.521,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$213.79 million"
+        },
+        {
+          "value": "$176.65 million"
+        },
+        {
+          "value": "$8,507.92 million"
+        },
+        {
+          "value": "$8,507.92 million"
+        },
+        {
+          "value": "$204.92 million"
+        },
+        {
+          "value": "$6,835.69 million"
+        },
+        {
+          "value": "$6,835.69 million"
+        },
+        {
+          "value": "$177.69 million"
+        },
+        {
+          "value": "$424.98 million"
+        },
+        {
+          "value": "$213.79"
+        },
+        {
+          "value": "$176.65"
+        },
+        {
+          "value": "$8,507.92"
+        },
+        {
+          "value": "$204.92"
+        },
+        {
+          "value": "$6,835.69"
+        },
+        {
+          "value": "$177.69"
+        },
+        {
+          "value": "$424.98"
+        },
+        {
+          "value": "23.24%"
+        },
+        {
+          "value": "23.43%"
+        },
+        {
+          "value": "23.24%"
+        }
+      ],
+      "n_refs": 17
+    },
+    "gate_3": {
+      "verified": [
+        {
+          "value": "$35,434 million",
+          "ref": 35434.0
+        },
+        {
+          "value": "$35,434 million",
+          "ref": 35434.0
+        },
+        {
+          "value": "$8,236 million",
+          "ref": 8303.0
+        },
+        {
+          "value": "$8,303 million",
+          "ref": 8303.0
+        },
+        {
+          "value": "$6,658 million",
+          "ref": 6658.0
+        },
+        {
+          "value": "$6,658 million",
+          "ref": 6658.0
+        },
+        {
+          "value": "$35,434 million",
+          "ref": 35434.0
+        },
+        {
+          "value": "0.6%",
+          "ref": 0.6
+        },
+        {
+          "value": "6.0%",
+          "ref": 6.0
+        },
+        {
+          "value": "2.1%",
+          "ref": 2.1
+        },
+        {
+          "value": "2.4%",
+          "ref": 2.4
+        },
+        {
+          "value": "2.6%",
+          "ref": 2.6
+        },
+        {
+          "value": "6.0%",
+          "ref": 6.0
+        },
+        {
+          "value": "6.0%",
+          "ref": 6.0
+        },
+        {
+          "value": "0.6%",
+          "ref": 0.6
+        },
+        {
+          "value": "6.0%",
+          "ref": 6.0
+        },
+        {
+          "value": "0.6%",
+          "ref": 0.6
+        },
+        {
+          "value": "6.0%",
+          "ref": 6.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "18.79%",
+          "num": 18.79,
+          "correct": 9.0,
+          "dev": 0.521,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "23.43%"
+        },
+        {
+          "value": "23.24%"
+        }
+      ],
+      "n_refs": 17
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_005_FE85BE68",
+      "hid": "FB_005_FE85BE68_H2",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 8236.0,
+      "orig_num": 12421.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_005_FE85BE68",
+      "hid": "FB_005_FE85BE68_H1",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 6023.0,
+      "orig_num": 8052.0,
+      "survived": false,
+      "corrected": false,
+      "g1_det": true,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": false,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 2,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:04:29.234930+00:00"
+}

@@ -1,0 +1,121 @@
+{
+  "question_id": "FB_071_0CB99E74",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Corning Inc., FY2020\n- PRIMARY METRIC: Days Payable Outstanding (DPO) calculation requires specific figures which are as follows:\n\n1. **Average Accounts Payable (FY2019 and FY2020)**:\n   - FY2019 Accounts Payable: $1,469 million (per the FY2019 10-K, Consolidated Balance Sheets)\n   - FY2020 Accounts Payable: $1,654 million (per the FY2020 10-K, Consolidated Balance Sheets)\n   - Average Accounts Payable = ($1,469 million + $1,654 million) / 2 = $1,561.5 million\n\n2. **FY2020 Cost of Goods Sold (COGS)**:\n   - COGS for FY2020: $10,137 million (per the FY2020 10-K, Consolidated Statements of Operations)\n\n3. **Change in Inventory (FY2019 to FY2020)**:\n   - FY2019 Inventory: $3,056 million (per the FY2019 10-K, Consolidated Balance Sheets)\n   - FY2020 Inventory: $3,167 million (per the FY2020 10-K, Consolidated Balance Sheets)\n   - Change in Inventory = $4,292 million - $3,056 million = $111 million\n\n- SUPPORTING DATA:\n   - Average Accounts Payable: $1,561.5 million\n   - FY2020 COGS: $10,137 million\n   - Change in Inventory: $111 million\n\n- DATA SOURCES:\n   - FY2019 10-K, Consolidated Balance Sheets\n   - FY2020 10-K, Consolidated Balance Sheets\n   - FY2020 10-K, Consolidated Statements of Operations\n\n**DPO Calculation**:\nUsing the formula provided:\nDPO = 365 * (Average Accounts Payable) / (FY2020 COGS + Change in Inventory)\nDPO = 365 * ($1,561.5 million) / ($10,137 million + $73 million)\nDPO = 365 * ($1,561.5 million) / ($7,381 million)\nDPO = 365 * 0.152 = 55.58 days\n\n- FINAL DPO: 55.58 days (rounded to two decimal places)\n\nPlease note that the analysis and implications of this metric in the context of industry benchmarks and historical trends have not been included as per your directive for raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_071_0CB99E74_H3",
+      "type": "dollar_amount",
+      "original_value": "$3,167 million",
+      "injected_value": "$4,292 million",
+      "original_numeric": "3167",
+      "injected_numeric": "4292",
+      "position_char": 879,
+      "sentence_approx": 6,
+      "perturbation_delta": 0.3552
+    },
+    {
+      "hallucination_id": "FB_071_0CB99E74_H2",
+      "type": "dollar_amount",
+      "original_value": "$111 million",
+      "injected_value": "$73 million",
+      "original_numeric": "111",
+      "injected_numeric": "73",
+      "position_char": 1411,
+      "sentence_approx": 8,
+      "perturbation_delta": -0.3454
+    },
+    {
+      "hallucination_id": "FB_071_0CB99E74_H1",
+      "type": "dollar_amount",
+      "original_value": "$10,248 million",
+      "injected_value": "$7,381 million",
+      "original_numeric": "10248",
+      "injected_numeric": "7381",
+      "position_char": 1459,
+      "sentence_approx": 9,
+      "perturbation_delta": -0.2797
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Change in Inventory = $4,292 million - $3,056 million = $111 million",
+        "claim_value": "$4,292 million",
+        "reason": "The researcher previously stated FY2020 Inventory as $3,167 million. The value $4,292 million used in the subtraction for change in inventory is inconsistent with the stated FY2020 Inventory. While the final difference ($111 million) is correct based on $3,167 million - $3,056 million, the intermediate figure is wrong.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "DPO = 365 * ($1,561.5 million) / ($10,137 million + $73 million)",
+        "claim_value": "$73 million",
+        "reason": "The 'Change in Inventory' was previously calculated and stated as $111 million. Using $73 million in the DPO formula is an internal inconsistency.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "DPO = 365 * ($1,561.5 million) / ($7,381 million)",
+        "claim_value": "$7,381 million",
+        "reason": "This value is presented as the sum of ($10,137 million + $73 million). However, $10,137 million + $73 million = $10,210 million, not $7,381 million. This is a clear calculation error.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "DPO = 365 * 0.152 = 55.58 days",
+        "claim_value": "0.152",
+        "reason": "This value is presented as the result of ($1,561.5 million) / ($7,381 million). However, $1,561.5 million / $7,381 million is approximately 0.21155, not 0.152. This is a clear calculation error.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "DPO = 365 * 0.152 = 55.58 days",
+        "claim_value": "55.58 days",
+        "reason": "Even if we accept the previous incorrect ratio of 0.152, 365 * 0.152 equals 55.48, not 55.58. This is a calculation error. Furthermore, the entire DPO calculation is built upon multiple preceding inconsistencies and errors, making the final result highly unreliable.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 16,
+    "overall_assessment": "The researcher's output contains multiple internal inconsistencies and calculation errors, particularly within the DPO calculation steps, rendering the final DPO figure unreliable.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Change in Inventory = $4,292 million - $3,056 million = $111 million\",\n      \"claim_value\": \"$4,292 million\",\n      \"reason\": \"The researcher previously stated FY2020 Inventory as $3,167 million. The value $4,292 million used in the subtraction for change in inventory is inconsistent with the stated FY2020 Inventory. While the final difference ($111 million) is correct based on $3,167 million - $3,056 million, the intermediate figure is wrong.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"DPO = 365 * ($1,561.5 million) / ($10,137 million + $73 million)\",\n      \"claim_value\": \"$73 million\",\n      \"reason\": \"The 'Change in Inventory' was previously calculated and stated as $111 million. Using $73 million in the DPO formula is an internal inconsistency.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"DPO = 365 * ($1,561.5 million) / ($7,381 million)\",\n      \"claim_value\": \"$7,381 million\",\n      \"reason\": \"This value is presented as the sum of ($10,137 million + $73 million). However, $10,137 million + $73 million = $10,210 million, not $7,381 million. This is a clear calculation error.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"DPO = 365 * 0.152 = 55.58 days\",\n      \"claim_value\": \"0.152\",\n      \"reason\": \"This value is presented as the result of ($1,561.5 million) / ($7,381 million). However, $1,561.5 million / $7,381 million is approximately 0.21155, not 0.152. This is a clear calculation error.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"DPO = 365 * 0.152 = 55.58 days\",\n      \"claim_value\": \"55.58 days\",\n      \"reason\": \"Even if we accept the previous incorrect ratio of 0.152, 365 * 0.152 equals 55.48, not 55.58. This is a calculation error. Furthermore, the entire DPO calculation is built upon multiple preceding inconsistencies and errors, making the final result highly unreliable.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 16,\n  \"overall_assessment\": \"The researcher's output contains multiple internal inconsistencies and calculation errors, particularly within the DPO calculation steps, rendering the final DPO figure unreliable.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_071_0CB99E74",
+      "hallucination_id": "FB_071_0CB99E74_H3",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,167 million",
+      "injected_value": "$4,292 million",
+      "detected": true,
+      "reason": "The researcher previously stated FY2020 Inventory as $3,167 million. The value $4,292 million used in the subtraction for change in inventory is inconsistent with the stated FY2020 Inventory. While the final difference ($111 million) is correct based on $3,167 million - $3,056 million, the intermediate figure is wrong.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 16
+    },
+    {
+      "question_id": "FB_071_0CB99E74",
+      "hallucination_id": "FB_071_0CB99E74_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$111 million",
+      "injected_value": "$73 million",
+      "detected": true,
+      "reason": "The 'Change in Inventory' was previously calculated and stated as $111 million. Using $73 million in the DPO formula is an internal inconsistency.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 16
+    },
+    {
+      "question_id": "FB_071_0CB99E74",
+      "hallucination_id": "FB_071_0CB99E74_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$10,248 million",
+      "injected_value": "$7,381 million",
+      "detected": true,
+      "reason": "This value is presented as the sum of ($10,137 million + $73 million). However, $10,137 million + $73 million = $10,210 million, not $7,381 million. This is a clear calculation error.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 16
+    }
+  ],
+  "timestamp": "2026-03-25T07:50:41.438247Z"
+}

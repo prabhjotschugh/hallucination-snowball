@@ -1,0 +1,115 @@
+{
+  "question_id": "FB_111_A4B199F5",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Microsoft Corporation, Fiscal Year 2016\n- PRIMARY METRIC: Cost of Goods Sold (COGS) for FY2016 is $15,037 million (per the FY2016 10-K, Consolidated Statements of Operations).\n- SUPPORTING DATA: \n  - FY2015 COGS: $19,557 million (per the FY2015 10-K, Consolidated Statements of Operations).\n  - FY2014 COGS: $28,477 million (per the FY2014 10-K, Consolidated Statements of Operations).\n- DATA SOURCES: \n  - FY2016 10-K, Consolidated Statements of Operations, page 51.\n  - FY2015 10-K, Consolidated Statements of Operations, page 51.\n  - FY2014 10-K, Consolidated Statements of Operations, page 51. \n\nNote: No financial ratios or narrative analysis has been provided as per the directive to present raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_111_A4B199F5_H3",
+      "type": "dollar_amount",
+      "original_value": "$24,060 million",
+      "injected_value": "$15,037 million",
+      "original_numeric": "24060",
+      "injected_numeric": "15037",
+      "position_char": 118,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.375
+    },
+    {
+      "hallucination_id": "FB_111_A4B199F5_H2",
+      "type": "dollar_amount",
+      "original_value": "$23,198 million",
+      "injected_value": "$19,557 million",
+      "original_numeric": "23198",
+      "injected_numeric": "19557",
+      "position_char": 233,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.1569
+    },
+    {
+      "hallucination_id": "FB_111_A4B199F5_H1",
+      "type": "dollar_amount",
+      "original_value": "$23,674 million",
+      "injected_value": "$28,477 million",
+      "original_numeric": "23674",
+      "injected_numeric": "28477",
+      "position_char": 328,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.2029
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Cost of Goods Sold (COGS) for FY2016 is $15,037 million",
+        "claim_value": "$15,037 million",
+        "reason": "Implausible gross margin. Microsoft FY2016 revenue was approximately $85 billion. A COGS of $15 billion implies a gross margin over 82%, whereas Microsoft's historical gross margin during this period was typically around 60-65%. The actual Cost of Revenue was approximately $32.8 billion.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2015 COGS: $19,557 million",
+        "claim_value": "$19,557 million",
+        "reason": "Inconsistent trend. The claimed drop from FY2014 ($28.5B) to FY2015 ($19.6B) contradicts Microsoft's financial history where Cost of Revenue remained stable or increased slightly due to cloud infrastructure investments, despite revenue growth.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2014 COGS: $28,477 million",
+        "claim_value": "$28,477 million",
+        "reason": "Part of an implausible downward trend. While closer to historical totals than FY2016 claim, the sequential decline across three years contradicts the company's scale and cost structure during this period.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Data Sources: ... page 51 ... for FY2016, FY2015, and FY2014 10-K",
+        "claim_value": "page 51",
+        "reason": "Statistical improbability. It is highly unlikely that the Consolidated Statements of Operations appear on the exact same page number (51) across three different annual 10-K filings, as filing lengths and formatting vary annually.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 4,
+    "overall_assessment": "The financial figures appear significantly hallucinated, implying unrealistic gross margins, and the source pagination is identically static across multiple years, indicating fabrication.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Cost of Goods Sold (COGS) for FY2016 is $15,037 million\",\n      \"claim_value\": \"$15,037 million\",\n      \"reason\": \"Implausible gross margin. Microsoft FY2016 revenue was approximately $85 billion. A COGS of $15 billion implies a gross margin over 82%, whereas Microsoft's historical gross margin during this period was typically around 60-65%. The actual Cost of Revenue was approximately $32.8 billion.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2015 COGS: $19,557 million\",\n      \"claim_value\": \"$19,557 million\",\n      \"reason\": \"Inconsistent trend. The claimed drop from FY2014 ($28.5B) to FY2015 ($19.6B) contradicts Microsoft's financial history where Cost of Revenue remained stable or increased slightly due to cloud infrastructure investments, despite revenue growth.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2014 COGS: $28,477 million\",\n      \"claim_value\": \"$28,477 million\",\n      \"reason\": \"Part of an implausible downward trend. While closer to historical totals than FY2016 claim, the sequential decline across three years contradicts the company's scale and cost structure during this period.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Data Sources: ... page 51 ... for FY2016, FY2015, and FY2014 10-K\",\n      \"claim_value\": \"page 51\",\n      \"reason\": \"Statistical improbability. It is highly unlikely that the Consolidated Statements of Operations appear on the exact same page number (51) across three different annual 10-K filings, as filing lengths and formatting vary annually.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 4,\n  \"overall_assessment\": \"The financial figures appear significantly hallucinated, implying unrealistic gross margins, and the source pagination is identically static across multiple years, indicating fabrication.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_111_A4B199F5",
+      "hallucination_id": "FB_111_A4B199F5_H3",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$24,060 million",
+      "injected_value": "$15,037 million",
+      "detected": true,
+      "reason": "Implausible gross margin. Microsoft FY2016 revenue was approximately $85 billion. A COGS of $15 billion implies a gross margin over 82%, whereas Microsoft's historical gross margin during this period was typically around 60-65%. The actual Cost of Revenue was approximately $32.8 billion.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 4
+    },
+    {
+      "question_id": "FB_111_A4B199F5",
+      "hallucination_id": "FB_111_A4B199F5_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$23,198 million",
+      "injected_value": "$19,557 million",
+      "detected": true,
+      "reason": "Inconsistent trend. The claimed drop from FY2014 ($28.5B) to FY2015 ($19.6B) contradicts Microsoft's financial history where Cost of Revenue remained stable or increased slightly due to cloud infrastructure investments, despite revenue growth.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 4
+    },
+    {
+      "question_id": "FB_111_A4B199F5",
+      "hallucination_id": "FB_111_A4B199F5_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$23,674 million",
+      "injected_value": "$28,477 million",
+      "detected": true,
+      "reason": "Part of an implausible downward trend. While closer to historical totals than FY2016 claim, the sequential decline across three years contradicts the company's scale and cost structure during this period.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 4
+    }
+  ],
+  "timestamp": "2026-03-24T12:42:06.513620Z"
+}

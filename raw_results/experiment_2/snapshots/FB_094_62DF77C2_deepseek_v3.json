@@ -1,0 +1,109 @@
+{
+  "question_id": "FB_094_62DF77C2",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: Johnson & Johnson, Q2 FY2023 and Q2 FY2022\n- PRIMARY METRIC: \n  - Q2 FY2023 Net Earnings: $5,068 million (per the JOHNSON_JOHNSON_2023Q2_EARNINGS, Consolidated Statements of Operations)\n  - Q2 FY2023 Sales: $32,304 million (per the JOHNSON_JOHNSON_2023Q2_EARNINGS, Consolidated Statements of Operations)\n  - Net Earnings as a Percentage of Sales for Q2 FY2023: 21.11% (calculated as $5,068 million / $24,000 million * 100)\n\n  - Q2 FY2022 Net Earnings: $4,691 million (per the JOHNSON_JOHNSON_2022Q2_EARNINGS, Consolidated Statements of Operations)\n  - Q2 FY2022 Sales: $23,600 million (per the JOHNSON_JOHNSON_2022Q2_EARNINGS, Consolidated Statements of Operations)\n  - Net Earnings as a Percentage of Sales for Q2 FY2022: 26.36% (calculated as $4,691 million / $23,600 million * 100)\n\n- SUPPORTING DATA:\n  - Q2 FY2023:\n    - Net Earnings: $5,068 million\n    - Sales: $24,000 million\n    - Net Earnings as a Percentage of Sales: 21.11%\n  \n  - Q2 FY2022:\n    - Net Earnings: $4,691 million\n    - Sales: $23,600 million\n    - Net Earnings as a Percentage of Sales: 19.87%\n\n  - Percentage Change in Net Earnings: \n    - ((5,068 - 4,691) / 4,691) * 100 = 8.04%\n  \n  - Percentage Change in Sales: \n    - ((24,000 - 23,600) / 23,600) * 100 = 1.69%\n\n- DATA SOURCES:\n  - JOHNSON_JOHNSON_2023Q2_EARNINGS, Consolidated Statements of Operations\n  - JOHNSON_JOHNSON_2022Q2_EARNINGS, Consolidated Statements of Operations\n\nIn conclusion, Johnson & Johnson's net earnings as a percentage of sales increased from 25.10% in Q2 FY2022 to 21.11% in Q2 FY2023.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_094_62DF77C2_H3",
+      "type": "dollar_amount",
+      "original_value": "$24,000 million",
+      "injected_value": "$32,304 million",
+      "original_numeric": "24000",
+      "injected_numeric": "32304",
+      "position_char": 227,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.346
+    },
+    {
+      "hallucination_id": "FB_094_62DF77C2_H2",
+      "type": "percentage",
+      "original_value": "19.87%",
+      "injected_value": "26.36%",
+      "original_numeric": "19.87",
+      "injected_numeric": "26.36",
+      "position_char": 743,
+      "sentence_approx": 2,
+      "perturbation_delta": 6.4922
+    },
+    {
+      "hallucination_id": "FB_094_62DF77C2_H1",
+      "type": "percentage",
+      "original_value": "19.87%",
+      "injected_value": "25.10%",
+      "original_numeric": "19.87",
+      "injected_numeric": "25.10",
+      "position_char": 1518,
+      "sentence_approx": 7,
+      "perturbation_delta": 5.2279
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Net Earnings as a Percentage of Sales for Q2 FY2023: 21.11% (calculated as $5,068 million / $24,000 million * 100)",
+        "claim_value": "21.11%",
+        "reason": "The calculation uses $24,000 million as sales, but earlier text states Q2 FY2023 Sales as $32,304 million. This inconsistency suggests either a typo or fabrication.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Net Earnings as a Percentage of Sales for Q2 FY2022: 26.36% (calculated as $4,691 million / $23,600 million * 100)",
+        "claim_value": "26.36%",
+        "reason": "The calculation contradicts the earlier statement that Q2 FY2022 Sales were $23,600 million, but the correct calculation should yield ~19.87% ($4,691 / $23,600 * 100), matching the later correct calculation.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "In conclusion, Johnson & Johnson's net earnings as a percentage of sales increased from 25.10% in Q2 FY2022 to 21.11% in Q2 FY2023.",
+        "claim_value": "25.10%",
+        "reason": "The conclusion cites 25.10% for Q2 FY2022, which doesn't match any prior calculation (earlier claims were 26.36% and 19.87%). This inconsistency suggests fabrication or error.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 8,
+    "overall_assessment": "Multiple inconsistencies in calculations and percentages suggest potential fabrication or serious errors in the financial claims.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Net Earnings as a Percentage of Sales for Q2 FY2023: 21.11% (calculated as $5,068 million / $24,000 million * 100)\",\n      \"claim_value\": \"21.11%\",\n      \"reason\": \"The calculation uses $24,000 million as sales, but earlier text states Q2 FY2023 Sales as $32,304 million. This inconsistency suggests either a typo or fabrication.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Net Earnings as a Percentage of Sales for Q2 FY2022: 26.36% (calculated as $4,691 million / $23,600 million * 100)\",\n      \"claim_value\": \"26.36%\",\n      \"reason\": \"The calculation contradicts the earlier statement that Q2 FY2022 Sales were $23,600 million, but the correct calculation should yield ~19.87% ($4,691 / $23,600 * 100), matching the later correct calculation.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"In conclusion, Johnson & Johnson's net earnings as a percentage of sales increased from 25.10% in Q2 FY2022 to 21.11% in Q2 FY2023.\",\n      \"claim_value\": \"25.10%\",\n      \"reason\": \"The conclusion cites 25.10% for Q2 FY2022, which doesn't match any prior calculation (earlier claims were 26.36% and 19.87%). This inconsistency suggests fabrication or error.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 8,\n  \"overall_assessment\": \"Multiple inconsistencies in calculations and percentages suggest potential fabrication or serious errors in the financial claims.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_094_62DF77C2",
+      "hallucination_id": "FB_094_62DF77C2_H3",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$24,000 million",
+      "injected_value": "$32,304 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 8
+    },
+    {
+      "question_id": "FB_094_62DF77C2",
+      "hallucination_id": "FB_094_62DF77C2_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "percentage",
+      "original_value": "19.87%",
+      "injected_value": "26.36%",
+      "detected": true,
+      "reason": "The calculation contradicts the earlier statement that Q2 FY2022 Sales were $23,600 million, but the correct calculation should yield ~19.87% ($4,691 / $23,600 * 100), matching the later correct calculation.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 8
+    },
+    {
+      "question_id": "FB_094_62DF77C2",
+      "hallucination_id": "FB_094_62DF77C2_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "percentage",
+      "original_value": "19.87%",
+      "injected_value": "25.10%",
+      "detected": true,
+      "reason": "The calculation contradicts the earlier statement that Q2 FY2022 Sales were $23,600 million, but the correct calculation should yield ~19.87% ($4,691 / $23,600 * 100), matching the later correct calculation.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 8
+    }
+  ],
+  "timestamp": "2026-03-24T09:54:19.001909Z"
+}

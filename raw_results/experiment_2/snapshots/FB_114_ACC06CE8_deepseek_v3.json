@@ -1,0 +1,85 @@
+{
+  "question_id": "FB_114_ACC06CE8",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: Netflix, Inc. - Fiscal Year End 2017\n- PRIMARY METRIC: Total Current Liabilities: $2,742 million (per the FY2017 10-K, Consolidated Balance Sheets)\n- SUPPORTING DATA: \n  - FY2016 Total Current Liabilities: $3,201 million (per the FY2016 10-K, Consolidated Balance Sheets)\n  - FY2015 Total Current Liabilities: $3,253 million (per the FY2015 10-K, Consolidated Balance Sheets)\n- DATA SOURCES: \n  - FY2017 10-K, Consolidated Balance Sheets\n  - FY2016 10-K, Consolidated Balance Sheets\n  - FY2015 10-K, Consolidated Balance Sheets\n\nNote: No financial ratios or interpretations are provided as per the directive.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_114_ACC06CE8_H2",
+      "type": "dollar_amount",
+      "original_value": "$4,052 million",
+      "injected_value": "$2,742 million",
+      "original_numeric": "4052",
+      "injected_numeric": "2742",
+      "position_char": 102,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3233
+    },
+    {
+      "hallucination_id": "FB_114_ACC06CE8_H1",
+      "type": "dollar_amount",
+      "original_value": "$2,474 million",
+      "injected_value": "$3,253 million",
+      "original_numeric": "2474",
+      "injected_numeric": "3253",
+      "position_char": 330,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.3149
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Total Current Liabilities: $2,742 million (per the FY2017 10-K, Consolidated Balance Sheets)",
+        "claim_value": "$2,742 million",
+        "reason": "The figure is suspiciously odd for Netflix's scale in 2017, given its content spending and subscription growth. The exact precision (no decimals) also raises questions.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "FY2016 Total Current Liabilities: $3,201 million (per the FY2016 10-K, Consolidated Balance Sheets)",
+        "claim_value": "$3,201 million",
+        "reason": "The round number (ending in exactly 00) is unusual for a financial disclosure, where precise figures are typically reported.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "FY2015 Total Current Liabilities: $3,253 million (per the FY2015 10-K, Consolidated Balance Sheets)",
+        "claim_value": "$3,253 million",
+        "reason": "Again, the exactness of the figure without decimals is atypical for financial statements, which usually include cents.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 3,
+    "overall_assessment": "Multiple current liabilities figures appear suspicious due to their roundness or overly precise nature without decimals.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Total Current Liabilities: $2,742 million (per the FY2017 10-K, Consolidated Balance Sheets)\",\n      \"claim_value\": \"$2,742 million\",\n      \"reason\": \"The figure is suspiciously odd for Netflix's scale in 2017, given its content spending and subscription growth. The exact precision (no decimals) also raises questions.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"FY2016 Total Current Liabilities: $3,201 million (per the FY2016 10-K, Consolidated Balance Sheets)\",\n      \"claim_value\": \"$3,201 million\",\n      \"reason\": \"The round number (ending in exactly 00) is unusual for a financial disclosure, where precise figures are typically reported.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"FY2015 Total Current Liabilities: $3,253 million (per the FY2015 10-K, Consolidated Balance Sheets)\",\n      \"claim_value\": \"$3,253 million\",\n      \"reason\": \"Again, the exactness of the figure without decimals is atypical for financial statements, which usually include cents.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 3,\n  \"overall_assessment\": \"Multiple current liabilities figures appear suspicious due to their roundness or overly precise nature without decimals.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_114_ACC06CE8",
+      "hallucination_id": "FB_114_ACC06CE8_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$4,052 million",
+      "injected_value": "$2,742 million",
+      "detected": true,
+      "reason": "The figure is suspiciously odd for Netflix's scale in 2017, given its content spending and subscription growth. The exact precision (no decimals) also raises questions.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 3
+    },
+    {
+      "question_id": "FB_114_ACC06CE8",
+      "hallucination_id": "FB_114_ACC06CE8_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$2,474 million",
+      "injected_value": "$3,253 million",
+      "detected": true,
+      "reason": "The round number (ending in exactly 00) is unusual for a financial disclosure, where precise figures are typically reported.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 3
+    }
+  ],
+  "timestamp": "2026-03-24T09:58:12.250810Z"
+}

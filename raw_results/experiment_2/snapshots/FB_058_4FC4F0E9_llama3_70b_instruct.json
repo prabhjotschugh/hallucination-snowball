@@ -1,0 +1,109 @@
+{
+  "question_id": "FB_058_4FC4F0E9",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Block, Inc. (formerly Square, Inc.), FY2019 and FY2020\n- PRIMARY METRIC: \n  - Total Revenue FY2019: $5,585 million (per the FY2020 10-K, Consolidated Statements of Operations)\n  - Total Revenue FY2020: $9,493 million (per the FY2020 10-K, Consolidated Statements of Operations)\n  - Growth Rate: 91.9% (calculated as [(9,493 - 4,711) / 4,711] * 100)\n- SUPPORTING DATA: \n  - FY2019 Total Revenue: $4,711 million\n  - FY2020 Total Revenue: $12,544 million\n- DATA SOURCES: \n  - FY2020 10-K, Consolidated Statements of Operations\n\nNote: The growth rate has been calculated based on the exact figures from the SEC filing without interpretation or analysis.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_058_4FC4F0E9_H3",
+      "type": "dollar_amount",
+      "original_value": "$4,711 million",
+      "injected_value": "$5,585 million",
+      "original_numeric": "4711",
+      "injected_numeric": "5585",
+      "position_char": 120,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.1856
+    },
+    {
+      "hallucination_id": "FB_058_4FC4F0E9_H2",
+      "type": "percentage",
+      "original_value": "101.6%",
+      "injected_value": "91.9%",
+      "original_numeric": "101.6",
+      "injected_numeric": "91.9",
+      "position_char": 315,
+      "sentence_approx": 3,
+      "perturbation_delta": -9.6753
+    },
+    {
+      "hallucination_id": "FB_058_4FC4F0E9_H1",
+      "type": "dollar_amount",
+      "original_value": "$9,493 million",
+      "injected_value": "$12,544 million",
+      "original_numeric": "9493",
+      "injected_numeric": "12544",
+      "position_char": 457,
+      "sentence_approx": 4,
+      "perturbation_delta": 0.3214
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Total Revenue FY2019: $5,585 million",
+        "claim_value": "$5,585 million",
+        "reason": "Inconsistent with supporting data, which reports FY2019 Total Revenue as $4,711 million",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Revenue FY2020: $9,493 million",
+        "claim_value": "$9,493 million",
+        "reason": "Inconsistent with supporting data, which reports FY2020 Total Revenue as $12,544 million",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Growth Rate: 91.9%",
+        "claim_value": "91.9%",
+        "reason": "Calculation is based on incorrect figures, leading to an inaccurate growth rate",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 5,
+    "overall_assessment": "The output contains inconsistent and inaccurate financial figures, which lead to a misleading growth rate calculation.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"Total Revenue FY2019: $5,585 million\",\n      \"claim_value\" : \"$5,585 million\",\n      \"reason\"      : \"Inconsistent with supporting data, which reports FY2019 Total Revenue as $4,711 million\",\n      \"confidence\"  : \"high\"\n    },\n    {\n      \"claim_text\"  : \"Total Revenue FY2020: $9,493 million\",\n      \"claim_value\" : \"$9,493 million\",\n      \"reason\"      : \"Inconsistent with supporting data, which reports FY2020 Total Revenue as $12,544 million\",\n      \"confidence\"  : \"high\"\n    },\n    {\n      \"claim_text\"  : \"Growth Rate: 91.9%\",\n      \"claim_value\" : \"91.9%\",\n      \"reason\"      : \"Calculation is based on incorrect figures, leading to an inaccurate growth rate\",\n      \"confidence\"  : \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 5,\n  \"overall_assessment\"   : \"The output contains inconsistent and inaccurate financial figures, which lead to a misleading growth rate calculation.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_058_4FC4F0E9",
+      "hallucination_id": "FB_058_4FC4F0E9_H3",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$4,711 million",
+      "injected_value": "$5,585 million",
+      "detected": true,
+      "reason": "Inconsistent with supporting data, which reports FY2019 Total Revenue as $4,711 million",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 5
+    },
+    {
+      "question_id": "FB_058_4FC4F0E9",
+      "hallucination_id": "FB_058_4FC4F0E9_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "percentage",
+      "original_value": "101.6%",
+      "injected_value": "91.9%",
+      "detected": true,
+      "reason": "Calculation is based on incorrect figures, leading to an inaccurate growth rate",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 5
+    },
+    {
+      "question_id": "FB_058_4FC4F0E9",
+      "hallucination_id": "FB_058_4FC4F0E9_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$9,493 million",
+      "injected_value": "$12,544 million",
+      "detected": true,
+      "reason": "Inconsistent with supporting data, which reports FY2020 Total Revenue as $12,544 million",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 5
+    }
+  ],
+  "timestamp": "2026-03-27T09:34:24.947265Z"
+}

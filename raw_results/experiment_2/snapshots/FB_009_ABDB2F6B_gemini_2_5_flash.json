@@ -1,0 +1,91 @@
+{
+  "question_id": "FB_009_ABDB2F6B",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Activision Blizzard, FY2019\n- PRIMARY METRIC: \n  - Revenue: $6,489 million (per the FY2019 10-K, Consolidated Statements of Operations)\n  \n- SUPPORTING DATA: \n  - Property, Plant, and Equipment (PP&E) as of December 31, 2019: $1,049 million (per the FY2019 10-K, Consolidated Balance Sheets)\n  - Property, Plant, and Equipment (PP&E) as of December 31, 2018: $1,025 million (per the FY2019 10-K, Consolidated Balance Sheets)\n  - Average PP&E between FY2018 and FY2019: \n    - Calculation: ($1,049 million + $1,274 million) / 2 = $1,037 million\n\n- FIXED ASSET TURNOVER RATIO: \n  - Calculation: $6,489 million / $1,435 million = 6.26 (rounded to two decimal places: 6.26)\n\n- DATA SOURCES: \n  - FY2019 10-K, Consolidated Statements of Operations\n  - FY2019 10-K, Consolidated Balance Sheets",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_009_ABDB2F6B_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,025 million",
+      "injected_value": "$1,274 million",
+      "original_numeric": "1025",
+      "injected_numeric": "1274",
+      "position_char": 527,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.2429
+    },
+    {
+      "hallucination_id": "FB_009_ABDB2F6B_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,037 million",
+      "injected_value": "$1,435 million",
+      "original_numeric": "1037",
+      "injected_numeric": "1435",
+      "position_char": 630,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.3838
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Calculation: ($1,049 million + $1,274 million) / 2 = $1,037 million",
+        "claim_value": "$1,274 million",
+        "reason": "This value for FY2018 Property, Plant, and Equipment (PP&E) contradicts the previously stated 'Property, Plant, and Equipment (PP&E) as of December 31, 2018: $1,025 million' in the supporting data section.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Calculation: ($1,049 million + $1,274 million) / 2 = $1,037 million",
+        "claim_value": "$1,037 million",
+        "reason": "The stated calculation ($1,049 million + $1,274 million) / 2 actually equals $1,161.5 million, not $1,037 million. The result is inconsistent with the provided inputs for the calculation.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Calculation: $6,489 million / $1,435 million = 6.26",
+        "claim_value": "$1,435 million",
+        "reason": "This value is introduced as the denominator for the ratio calculation but was not derived or mentioned anywhere in the preceding 'SUPPORTING DATA' section. The calculated average PP&E was $1,037 million, not $1,435 million.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Calculation: $6,489 million / $1,435 million = 6.26",
+        "claim_value": "6.26",
+        "reason": "The stated calculation $6,489 million / $1,435 million actually equals approximately 4.52, not 6.26. The result is inconsistent with the provided inputs for the calculation.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 7,
+    "overall_assessment": "Multiple internal inconsistencies and calculation errors were identified, indicating significant hallucination in the intermediate steps of the financial analysis, despite some final figures appearing plausible in isolation.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Calculation: ($1,049 million + $1,274 million) / 2 = $1,037 million\",\n      \"claim_value\": \"$1,274 million\",\n      \"reason\": \"This value for FY2018 Property, Plant, and Equipment (PP&E) contradicts the previously stated 'Property, Plant, and Equipment (PP&E) as of December 31, 2018: $1,025 million' in the supporting data section.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Calculation: ($1,049 million + $1,274 million) / 2 = $1,037 million\",\n      \"claim_value\": \"$1,037 million\",\n      \"reason\": \"The stated calculation ($1,049 million + $1,274 million) / 2 actually equals $1,161.5 million, not $1,037 million. The result is inconsistent with the provided inputs for the calculation.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Calculation: $6,489 million / $1,435 million = 6.26\",\n      \"claim_value\": \"$1,435 million\",\n      \"reason\": \"This value is introduced as the denominator for the ratio calculation but was not derived or mentioned anywhere in the preceding 'SUPPORTING DATA' section. The calculated average PP&E was $1,037 million, not $1,435 million.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Calculation: $6,489 million / $1,435 million = 6.26\",\n      \"claim_value\": \"6.26\",\n      \"reason\": \"The stated calculation $6,489 million / $1,435 million actually equals approximately 4.52, not 6.26. The result is inconsistent with the provided inputs for the calculation.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 7,\n  \"overall_assessment\": \"Multiple internal inconsistencies and calculation errors were identified, indicating significant hallucination in the intermediate steps of the financial analysis, despite some final figures appearing plausible in isolation.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_009_ABDB2F6B",
+      "hallucination_id": "FB_009_ABDB2F6B_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,025 million",
+      "injected_value": "$1,274 million",
+      "detected": true,
+      "reason": "This value for FY2018 Property, Plant, and Equipment (PP&E) contradicts the previously stated 'Property, Plant, and Equipment (PP&E) as of December 31, 2018: $1,025 million' in the supporting data section.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_009_ABDB2F6B",
+      "hallucination_id": "FB_009_ABDB2F6B_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,037 million",
+      "injected_value": "$1,435 million",
+      "detected": true,
+      "reason": "The stated calculation ($1,049 million + $1,274 million) / 2 actually equals $1,161.5 million, not $1,037 million. The result is inconsistent with the provided inputs for the calculation.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 7
+    }
+  ],
+  "timestamp": "2026-03-25T07:36:07.429927Z"
+}

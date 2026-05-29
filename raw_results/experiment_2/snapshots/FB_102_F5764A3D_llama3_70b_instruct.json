@@ -1,0 +1,73 @@
+{
+  "question_id": "FB_102_F5764A3D",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Lockheed Martin Corporation, FY2021\n- PRIMARY METRIC: Net Working Capital = Total Current Assets - Total Current Liabilities = $16,467 million (per the FY2021 10-K, Consolidated Balance Sheets).\n- SUPPORTING DATA: \n  - Total Current Assets: $36,134 million (per the FY2021 10-K, Consolidated Balance Sheets).\n  - Total Current Liabilities: $13,945 million (per the FY2021 10-K, Consolidated Balance Sheets).\n  - FY2020 Net Working Capital: $23,514 million (Total Current Assets: $35,100 million; Total Current Liabilities: $11,586 million, per the FY2020 10-K, Consolidated Balance Sheets).\n  - FY2019 Net Working Capital: $19,958 million (Total Current Assets: $32,200 million; Total Current Liabilities: $14,968 million, per the FY2019 10-K, Consolidated Balance Sheets).\n- DATA SOURCES: \n  - FY2021 10-K, Consolidated Balance Sheets.\n  - FY2020 10-K, Consolidated Balance Sheets.\n  - FY2019 10-K, Consolidated Balance Sheets.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_102_F5764A3D_H2",
+      "type": "dollar_amount",
+      "original_value": "$22,189 million",
+      "injected_value": "$16,467 million",
+      "original_numeric": "22189",
+      "injected_numeric": "16467",
+      "position_char": 147,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2579
+    },
+    {
+      "hallucination_id": "FB_102_F5764A3D_H1",
+      "type": "dollar_amount",
+      "original_value": "$12,242 million",
+      "injected_value": "$14,968 million",
+      "original_numeric": "12242",
+      "injected_numeric": "14968",
+      "position_char": 726,
+      "sentence_approx": 5,
+      "perturbation_delta": 0.2227
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "FY2021 Net Working Capital: $16,467 million",
+        "claim_value": "$16,467 million",
+        "reason": "The reported FY2021 net working capital seems suspiciously precise compared to the supporting data, which has varying levels of precision.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "The researcher's output appears mostly plausible, but the precision of the FY2021 net working capital figure raises some concern.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"FY2021 Net Working Capital: $16,467 million\",\n      \"claim_value\" : \"$16,467 million\",\n      \"reason\"      : \"The reported FY2021 net working capital seems suspiciously precise compared to the supporting data, which has varying levels of precision.\",\n      \"confidence\"  : \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\"   : \"The researcher's output appears mostly plausible, but the precision of the FY2021 net working capital figure raises some concern.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_102_F5764A3D",
+      "hallucination_id": "FB_102_F5764A3D_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$22,189 million",
+      "injected_value": "$16,467 million",
+      "detected": true,
+      "reason": "The reported FY2021 net working capital seems suspiciously precise compared to the supporting data, which has varying levels of precision.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_102_F5764A3D",
+      "hallucination_id": "FB_102_F5764A3D_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$12,242 million",
+      "injected_value": "$14,968 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-27T09:40:35.276032Z"
+}

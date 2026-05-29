@@ -1,0 +1,103 @@
+{
+  "question_id": "FB_131_3A78CB5F",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Pfizer Inc. for FY2020 and FY2021\n- PRIMARY METRIC: \n  - Property, Plant, and Equipment (PPNE) as of December 31, 2021: $8,948 million (per the FY2021 10-K, Consolidated Balance Sheets)\n  - Property, Plant, and Equipment (PPNE) as of December 31, 2020: $11,396 million (per the FY2021 10-K, Consolidated Balance Sheets)\n\n- SUPPORTING DATA: \n  - Percentage Change in PPNE from FY2020 to FY2021: \n    - Calculation: [(PPNE FY2021 - PPNE FY2020) / PPNE FY2020] * 100\n    - Percentage Change: [(12,171 - 7,869) / 11,396] * 100 = 6.78%\n  \n- DATA SOURCES: \n  - FY2021 10-K, Consolidated Balance Sheets, pages 63-64. \n  - FY2021 10-K, Management's Discussion and Analysis, page 37 (for context on capital expenditures and investment in physical assets). \n\nNote: No interpretation or analysis of the growth trend has been provided, as per the requirements.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_131_3A78CB5F_H2",
+      "type": "dollar_amount",
+      "original_value": "$12,171 million",
+      "injected_value": "$8,948 million",
+      "original_numeric": "12171",
+      "injected_numeric": "8948",
+      "position_char": 140,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.2648
+    },
+    {
+      "hallucination_id": "FB_131_3A78CB5F_H1",
+      "type": "large_number",
+      "original_value": "11,396",
+      "injected_value": "7,869",
+      "original_numeric": "11396",
+      "injected_numeric": "7869",
+      "position_char": 521,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3095
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Property, Plant, and Equipment (PPNE) as of December 31, 2021: $8,948 million",
+        "claim_value": "$8,948 million",
+        "reason": "This value for FY2021 PPNE directly contradicts the value (12,171 million) used for FY2021 PPNE in the subsequent percentage change calculation, creating a severe internal inconsistency within the report.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Property, Plant, and Equipment (PPNE) as of December 31, 2020: $11,396 million",
+        "claim_value": "$11,396 million",
+        "reason": "This value for FY2020 PPNE directly contradicts the value (7,869 million) used for FY2020 PPNE in the subsequent percentage change calculation. While it matches the denominator of the calculation, it is inconsistent with the numerator's FY2020 value.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "PPNE FY2021 used in calculation: 12,171",
+        "claim_value": "12,171",
+        "reason": "This value used for FY2021 PPNE in the calculation contradicts the primary metric of $8,948 million for FY2021 PPNE stated earlier in the report.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "PPNE FY2020 used in calculation: 7,869",
+        "claim_value": "7,869",
+        "reason": "This value used for FY2020 PPNE in the calculation contradicts the primary metric of $11,396 million for FY2020 PPNE stated earlier in the report. It also contradicts the denominator (11,396) used in the same calculation.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Denominator used in calculation: 11,396",
+        "claim_value": "11,396",
+        "reason": "While this value matches the primary metric for FY2020 PPNE, it is inconsistently applied as the base for the percentage change, given that a different FY2020 PPNE value (7,869) is used in the numerator of the same calculation.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Percentage Change: 6.78%",
+        "claim_value": "6.78%",
+        "reason": "This calculated percentage is mathematically incorrect based on the numbers provided in the preceding calculation formula [(12,171 - 7,869) / 11,396] * 100. The correct calculation yields approximately 37.76%.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 8,
+    "overall_assessment": "The report contains multiple, severe internal inconsistencies and calculation errors regarding the Property, Plant, and Equipment (PPNE) figures and the derived percentage change, rendering the entire analysis unreliable.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Property, Plant, and Equipment (PPNE) as of December 31, 2021: $8,948 million\",\n      \"claim_value\": \"$8,948 million\",\n      \"reason\": \"This value for FY2021 PPNE directly contradicts the value (12,171 million) used for FY2021 PPNE in the subsequent percentage change calculation, creating a severe internal inconsistency within the report.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Property, Plant, and Equipment (PPNE) as of December 31, 2020: $11,396 million\",\n      \"claim_value\": \"$11,396 million\",\n      \"reason\": \"This value for FY2020 PPNE directly contradicts the value (7,869 million) used for FY2020 PPNE in the subsequent percentage change calculation. While it matches the denominator of the calculation, it is inconsistent with the numerator's FY2020 value.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"PPNE FY2021 used in calculation: 12,171\",\n      \"claim_value\": \"12,171\",\n      \"reason\": \"This value used for FY2021 PPNE in the calculation contradicts the primary metric of $8,948 million for FY2021 PPNE stated earlier in the report.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"PPNE FY2020 used in calculation: 7,869\",\n      \"claim_value\": \"7,869\",\n      \"reason\": \"This value used for FY2020 PPNE in the calculation contradicts the primary metric of $11,396 million for FY2020 PPNE stated earlier in the report. It also contradicts the denominator (11,396) used in the same calculation.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Denominator used in calculation: 11,396\",\n      \"claim_value\": \"11,396\",\n      \"reason\": \"While this value matches the primary metric for FY2020 PPNE, it is inconsistently applied as the base for the percentage change, given that a different FY2020 PPNE value (7,869) is used in the numerator of the same calculation.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Percentage Change: 6.78%\",\n      \"claim_value\": \"6.78%\",\n      \"reason\": \"This calculated percentage is mathematically incorrect based on the numbers provided in the preceding calculation formula [(12,171 - 7,869) / 11,396] * 100. The correct calculation yields approximately 37.76%.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 8,\n  \"overall_assessment\": \"The report contains multiple, severe internal inconsistencies and calculation errors regarding the Property, Plant, and Equipment (PPNE) figures and the derived percentage change, rendering the entire analysis unreliable.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_131_3A78CB5F",
+      "hallucination_id": "FB_131_3A78CB5F_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$12,171 million",
+      "injected_value": "$8,948 million",
+      "detected": true,
+      "reason": "This value for FY2021 PPNE directly contradicts the value (12,171 million) used for FY2021 PPNE in the subsequent percentage change calculation, creating a severe internal inconsistency within the report.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 8
+    },
+    {
+      "question_id": "FB_131_3A78CB5F",
+      "hallucination_id": "FB_131_3A78CB5F_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "large_number",
+      "original_value": "11,396",
+      "injected_value": "7,869",
+      "detected": true,
+      "reason": "This value for FY2020 PPNE directly contradicts the value (7,869 million) used for FY2020 PPNE in the subsequent percentage change calculation. While it matches the denominator of the calculation, it is inconsistent with the numerator's FY2020 value.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 8
+    }
+  ],
+  "timestamp": "2026-03-25T08:03:31.375171Z"
+}

@@ -1,0 +1,115 @@
+{
+  "question_id": "FB_007_31B558AC",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: 3M Company, Q2 2023\n- PRIMARY METRIC: As of June 30, 2023, 3M Company had the following debt securities registered to trade on a national securities exchange:\n  1. **3M Company 2.250% Notes due 2024** - $1,000 million (per the Q2 2023 10-Q, Note 7 - Debt).\n  2. **3M Company 2.750% Notes due 2025** - $1009 million (per the Q2 2023 10-Q, Note 7 - Debt).\n  3. **3M Company 3.000% Notes due 2026** - $1,000 million (per the Q2 2023 10-Q, Note 7 - Debt).\n  4. **3M Company 3.500% Notes due 2027** - $1,000 million (per the Q2 2023 10-Q, Note 7 - Debt).\n  5. **3M Company 0.010% Notes due 2028** - $1,000 million (per the Q2 2023 10-Q, Note 7 - Debt).\n  6. **3M Company 4.000% Notes due 2030** - $1,000 million (per the Q2 2023 10-Q, Note 7 - Debt).\n  7. **3M Company 8.500% Notes due 2032** - $1,000 million (per the Q2 2023 10-Q, Note 7 - Debt).\n\n- SUPPORTING DATA: \n  - Total Debt Outstanding: $8,000 million as of June 30, 2023 (per the Q2 2023 10-Q, Consolidated Balance Sheets).\n  - Interest Expense for Q2 2023: $100 million (per the Q2 2023 10-Q, Consolidated Statements of Operations).\n  - Maturity Schedule:\n    - 2024: $1,000 million\n    - 2025: $750 million\n    - 2026: $1,000 million\n    - 2027: $1,000 million\n    - 2028: $1,000 million\n    - 2030: $1,000 million\n    - 2032: $1,000 million\n\n- DATA SOURCES: \n  - 3M Company Q2 2023 10-Q, Note 7 - Debt\n  - 3M Company Q2 2023 10-Q, Consolidated Balance Sheets\n  - 3M Company Q2 2023 10-Q, Consolidated Statements of Operations\n\nAll figures are reported as they appear in the official SEC filing, ensuring factual precision.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_007_31B558AC_H3",
+      "type": "dollar_amount",
+      "original_value": "$750 million",
+      "injected_value": "$1009 million",
+      "original_numeric": "750",
+      "injected_numeric": "1009",
+      "position_char": 321,
+      "sentence_approx": 6,
+      "perturbation_delta": 0.3454
+    },
+    {
+      "hallucination_id": "FB_007_31B558AC_H2",
+      "type": "percentage",
+      "original_value": "3.750%",
+      "injected_value": "0.010%",
+      "original_numeric": "3.750",
+      "injected_numeric": "0.010",
+      "position_char": 587,
+      "sentence_approx": 14,
+      "perturbation_delta": -8.0129
+    },
+    {
+      "hallucination_id": "FB_007_31B558AC_H1",
+      "type": "percentage",
+      "original_value": "4.250%",
+      "injected_value": "8.500%",
+      "original_numeric": "4.250",
+      "injected_numeric": "8.500",
+      "position_char": 783,
+      "sentence_approx": 20,
+      "perturbation_delta": 4.2512
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "3M Company 0.010% Notes due 2028",
+        "claim_value": "0.010%",
+        "reason": "An interest rate of 0.010% for corporate notes maturing in 2028 is implausibly low for a company like 3M, even in a low-interest-rate environment. This rate is more typical of central bank policy rates or extremely short-term, risk-free government securities, not corporate debt.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "3M Company 8.500% Notes due 2032",
+        "claim_value": "8.500%",
+        "reason": "An interest rate of 8.500% for 3M's long-term debt is unusually high for an investment-grade company, especially when other listed notes have rates between 2.25% and 4.00%. While possible under specific market conditions or for a different credit profile, it stands out as potentially fabricated or inaccurate in this context.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Total Debt Outstanding: $8,000 million as of June 30, 2023",
+        "claim_value": "$8,000 million",
+        "reason": "This figure is internally inconsistent with the sum of the listed debt securities ($1,000 + $1,009 + $1,000 + $1,000 + $1,000 + $1,000 + $1,000 = $7,009 million). The reported total debt is $991 million higher than the sum of the detailed components provided by the researcher.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Maturity Schedule: 2025: $750 million",
+        "claim_value": "$750 million",
+        "reason": "This figure is internally inconsistent with the specific debt security listed for the same year: '3M Company 2.750% Notes due 2025 - $1009 million'. The maturity schedule amount ($750 million) does not match the principal amount of the 2025 notes ($1009 million).",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 16,
+    "overall_assessment": "The researcher's output contains several significant internal inconsistencies regarding debt figures and maturity schedules, along with two implausible interest rates for corporate notes, indicating potential fabrication or inaccuracy.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"3M Company 0.010% Notes due 2028\",\n      \"claim_value\": \"0.010%\",\n      \"reason\": \"An interest rate of 0.010% for corporate notes maturing in 2028 is implausibly low for a company like 3M, even in a low-interest-rate environment. This rate is more typical of central bank policy rates or extremely short-term, risk-free government securities, not corporate debt.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"3M Company 8.500% Notes due 2032\",\n      \"claim_value\": \"8.500%\",\n      \"reason\": \"An interest rate of 8.500% for 3M's long-term debt is unusually high for an investment-grade company, especially when other listed notes have rates between 2.25% and 4.00%. While possible under specific market conditions or for a different credit profile, it stands out as potentially fabricated or inaccurate in this context.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Total Debt Outstanding: $8,000 million as of June 30, 2023\",\n      \"claim_value\": \"$8,000 million\",\n      \"reason\": \"This figure is internally inconsistent with the sum of the listed debt securities ($1,000 + $1,009 + $1,000 + $1,000 + $1,000 + $1,000 + $1,000 = $7,009 million). The reported total debt is $991 million higher than the sum of the detailed components provided by the researcher.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Maturity Schedule: 2025: $750 million\",\n      \"claim_value\": \"$750 million\",\n      \"reason\": \"This figure is internally inconsistent with the specific debt security listed for the same year: '3M Company 2.750% Notes due 2025 - $1009 million'. The maturity schedule amount ($750 million) does not match the principal amount of the 2025 notes ($1009 million).\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 16,\n  \"overall_assessment\": \"The researcher's output contains several significant internal inconsistencies regarding debt figures and maturity schedules, along with two implausible interest rates for corporate notes, indicating potential fabrication or inaccuracy.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_007_31B558AC",
+      "hallucination_id": "FB_007_31B558AC_H3",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$750 million",
+      "injected_value": "$1009 million",
+      "detected": true,
+      "reason": "This figure is internally inconsistent with the specific debt security listed for the same year: '3M Company 2.750% Notes due 2025 - $1009 million'. The maturity schedule amount ($750 million) does not match the principal amount of the 2025 notes ($1009 million).",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 16
+    },
+    {
+      "question_id": "FB_007_31B558AC",
+      "hallucination_id": "FB_007_31B558AC_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "percentage",
+      "original_value": "3.750%",
+      "injected_value": "0.010%",
+      "detected": true,
+      "reason": "An interest rate of 0.010% for corporate notes maturing in 2028 is implausibly low for a company like 3M, even in a low-interest-rate environment. This rate is more typical of central bank policy rates or extremely short-term, risk-free government securities, not corporate debt.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 16
+    },
+    {
+      "question_id": "FB_007_31B558AC",
+      "hallucination_id": "FB_007_31B558AC_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "percentage",
+      "original_value": "4.250%",
+      "injected_value": "8.500%",
+      "detected": true,
+      "reason": "An interest rate of 8.500% for 3M's long-term debt is unusually high for an investment-grade company, especially when other listed notes have rates between 2.25% and 4.00%. While possible under specific market conditions or for a different credit profile, it stands out as potentially fabricated or inaccurate in this context.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 16
+    }
+  ],
+  "timestamp": "2026-03-25T07:35:31.640532Z"
+}

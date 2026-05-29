@@ -1,0 +1,85 @@
+{
+  "question_id": "FB_046_E323A993",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: American Water Works, FY2020\n- PRIMARY METRIC: Cash dividends paid for FY2020 amounted to $1,074 million (USD), as reported in the Consolidated Statements of Cash Flows, per the FY2020 10-K.\n- SUPPORTING DATA: \n  - FY2019: Cash dividends paid amounted to $1,420 million (USD), per the FY2019 10-K, Consolidated Statements of Cash Flows.\n  - FY2018: Cash dividends paid amounted to $650 million (USD), per the FY2018 10-K, Consolidated Statements of Cash Flows.\n- DATA SOURCES: \n  - FY2020 10-K, Consolidated Statements of Cash Flows, page 52.\n  - FY2019 10-K, Consolidated Statements of Cash Flows, page 50.\n  - FY2018 10-K, Consolidated Statements of Cash Flows, page 48.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_046_E323A993_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,034 million",
+      "injected_value": "$1,420 million",
+      "original_numeric": "1034",
+      "injected_numeric": "1420",
+      "position_char": 275,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.3732
+    },
+    {
+      "hallucination_id": "FB_046_E323A993_H1",
+      "type": "dollar_amount",
+      "original_value": "$977 million",
+      "injected_value": "$650 million",
+      "original_numeric": "977",
+      "injected_numeric": "650",
+      "position_char": 401,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.3343
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Cash dividends paid for FY2020 amounted to $1,074 million (USD)",
+        "claim_value": "$1,074 million",
+        "reason": "A 24% decrease from the claimed 2019 figure is highly unusual for a stable regulated utility like American Water Works, which typically maintains or grows dividends annually. Additionally, this magnitude implies a dividend yield significantly higher than the company's historical average (approx. 1.5-2.5%).",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2019: Cash dividends paid amounted to $1,420 million (USD)",
+        "claim_value": "$1,420 million",
+        "reason": "This figure represents a 118% increase from the claimed 2018 amount. Regulated utilities do not double their cash dividend payouts in a single year without massive equity dilution or special dividends, neither of which occurred for AWK in 2019. The magnitude also implies an unrealistically high dividend yield (~7-8%) relative to market cap.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2018: Cash dividends paid amounted to $650 million (USD)",
+        "claim_value": "$650 million",
+        "reason": "While the absolute number is more plausible than 2019, the volatility between this figure and the 2019 claim (a doubling) indicates at least one of these figures is hallucinated. Given the stability of utility dividends, this baseline contributes to an inconsistent trend.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 3,
+    "overall_assessment": "The reported dividend trend exhibits extreme volatility (doubling then dropping) that contradicts the stable dividend growth profile typical of large-cap regulated utilities like American Water Works.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Cash dividends paid for FY2020 amounted to $1,074 million (USD)\",\n      \"claim_value\": \"$1,074 million\",\n      \"reason\": \"A 24% decrease from the claimed 2019 figure is highly unusual for a stable regulated utility like American Water Works, which typically maintains or grows dividends annually. Additionally, this magnitude implies a dividend yield significantly higher than the company's historical average (approx. 1.5-2.5%).\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2019: Cash dividends paid amounted to $1,420 million (USD)\",\n      \"claim_value\": \"$1,420 million\",\n      \"reason\": \"This figure represents a 118% increase from the claimed 2018 amount. Regulated utilities do not double their cash dividend payouts in a single year without massive equity dilution or special dividends, neither of which occurred for AWK in 2019. The magnitude also implies an unrealistically high dividend yield (~7-8%) relative to market cap.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2018: Cash dividends paid amounted to $650 million (USD)\",\n      \"claim_value\": \"$650 million\",\n      \"reason\": \"While the absolute number is more plausible than 2019, the volatility between this figure and the 2019 claim (a doubling) indicates at least one of these figures is hallucinated. Given the stability of utility dividends, this baseline contributes to an inconsistent trend.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 3,\n  \"overall_assessment\": \"The reported dividend trend exhibits extreme volatility (doubling then dropping) that contradicts the stable dividend growth profile typical of large-cap regulated utilities like American Water Works.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_046_E323A993",
+      "hallucination_id": "FB_046_E323A993_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,034 million",
+      "injected_value": "$1,420 million",
+      "detected": true,
+      "reason": "A 24% decrease from the claimed 2019 figure is highly unusual for a stable regulated utility like American Water Works, which typically maintains or grows dividends annually. Additionally, this magnitude implies a dividend yield significantly higher than the company's historical average (approx. 1.5-2.5%).",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 3
+    },
+    {
+      "question_id": "FB_046_E323A993",
+      "hallucination_id": "FB_046_E323A993_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$977 million",
+      "injected_value": "$650 million",
+      "detected": true,
+      "reason": "While the absolute number is more plausible than 2019, the volatility between this figure and the 2019 claim (a doubling) indicates at least one of these figures is hallucinated. Given the stability of utility dividends, this baseline contributes to an inconsistent trend.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 3
+    }
+  ],
+  "timestamp": "2026-03-24T11:08:37.503886Z"
+}

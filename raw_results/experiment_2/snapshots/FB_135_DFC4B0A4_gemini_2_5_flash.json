@@ -1,0 +1,103 @@
+{
+  "question_id": "FB_135_DFC4B0A4",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Pfizer Inc., Q2 2023\n- PRIMARY METRIC: The geographic region that experienced the most significant year-over-year decline in revenues was the International region, which reported revenues of $2,548 million for Q2 2023, down from $4,213 million in Q2 2022, representing a decline of 24.7%. (per the Q2 2023 10-Q, Consolidated Statements of Operations).\n- SUPPORTING DATA: \n  - U.S. Revenues for Q2 2023: $16,404 million, compared to $12,948 million in Q2 2022, reflecting a decline of 0.0%.\n  - International Revenues for Q2 2022: $4,213 million.\n  - U.S. Revenues for Q2 2022: $12,948 million.\n- DATA SOURCES: Pfizer Inc. Q2 2023 10-Q, Consolidated Statements of Operations.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_135_DFC4B0A4_H3",
+      "type": "dollar_amount",
+      "original_value": "$3,174 million",
+      "injected_value": "$2,548 million",
+      "original_numeric": "3174",
+      "injected_numeric": "2548",
+      "position_char": 211,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.1972
+    },
+    {
+      "hallucination_id": "FB_135_DFC4B0A4_H2",
+      "type": "dollar_amount",
+      "original_value": "$12,427 million",
+      "injected_value": "$16,404 million",
+      "original_numeric": "12427",
+      "injected_numeric": "16404",
+      "position_char": 423,
+      "sentence_approx": 7,
+      "perturbation_delta": 0.3201
+    },
+    {
+      "hallucination_id": "FB_135_DFC4B0A4_H1",
+      "type": "percentage",
+      "original_value": "4.0%",
+      "injected_value": "0.0%",
+      "original_numeric": "4.0",
+      "injected_numeric": "0.0",
+      "position_char": 504,
+      "sentence_approx": 7,
+      "perturbation_delta": -6.8871
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "representing a decline of 24.7%",
+        "claim_value": "24.7%",
+        "reason": "The reported decline of 24.7% for the International region is inconsistent with the provided revenue figures. Q2 2022 revenues were $4,213 million and Q2 2023 revenues were $2,548 million. The actual percentage decline is (($4,213 - $2,548) / $4,213) * 100% = 39.52%. The reported figure is significantly different.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "reflecting a decline of 0.0%",
+        "claim_value": "0.0%",
+        "reason": "The claim that U.S. revenues reflected a decline of 0.0% is incorrect and internally inconsistent. U.S. revenues for Q2 2023 were $16,404 million, compared to $12,948 million in Q2 2022. This represents an increase, not a decline. The actual percentage increase is (($16,404 - $12,948) / $12,948) * 100% = +26.7% (approximately).",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 8,
+    "overall_assessment": "The researcher's output contains significant internal inconsistencies regarding calculated percentage changes for both International and U.S. revenues, indicating potential hallucination or calculation errors.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"representing a decline of 24.7%\",\n      \"claim_value\": \"24.7%\",\n      \"reason\": \"The reported decline of 24.7% for the International region is inconsistent with the provided revenue figures. Q2 2022 revenues were $4,213 million and Q2 2023 revenues were $2,548 million. The actual percentage decline is (($4,213 - $2,548) / $4,213) * 100% = 39.52%. The reported figure is significantly different.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"reflecting a decline of 0.0%\",\n      \"claim_value\": \"0.0%\",\n      \"reason\": \"The claim that U.S. revenues reflected a decline of 0.0% is incorrect and internally inconsistent. U.S. revenues for Q2 2023 were $16,404 million, compared to $12,948 million in Q2 2022. This represents an increase, not a decline. The actual percentage increase is (($16,404 - $12,948) / $12,948) * 100% = +26.7% (approximately).\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 8,\n  \"overall_assessment\": \"The researcher's output contains significant internal inconsistencies regarding calculated percentage changes for both International and U.S. revenues, indicating potential hallucination or calculation errors.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_135_DFC4B0A4",
+      "hallucination_id": "FB_135_DFC4B0A4_H3",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,174 million",
+      "injected_value": "$2,548 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 8
+    },
+    {
+      "question_id": "FB_135_DFC4B0A4",
+      "hallucination_id": "FB_135_DFC4B0A4_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$12,427 million",
+      "injected_value": "$16,404 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 8
+    },
+    {
+      "question_id": "FB_135_DFC4B0A4",
+      "hallucination_id": "FB_135_DFC4B0A4_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "percentage",
+      "original_value": "4.0%",
+      "injected_value": "0.0%",
+      "detected": true,
+      "reason": "The claim that U.S. revenues reflected a decline of 0.0% is incorrect and internally inconsistent. U.S. revenues for Q2 2023 were $16,404 million, compared to $12,948 million in Q2 2022. This represents an increase, not a decline. The actual percentage increase is (($16,404 - $12,948) / $12,948) * 100% = +26.7% (approximately).",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 8
+    }
+  ],
+  "timestamp": "2026-03-25T08:04:21.007163Z"
+}

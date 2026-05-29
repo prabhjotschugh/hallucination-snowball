@@ -1,0 +1,109 @@
+{
+  "question_id": "FB_083_62A760DF",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: General Mills, FY2020\n- PRIMARY METRIC: Working Capital Ratio = 1.26 (calculated as Total Current Assets of $3,747 million divided by Total Current Liabilities of $2,972 million, per the FY2020 10-K, Consolidated Statements of Financial Position).\n- SUPPORTING DATA: \n  - Total Current Assets: $3,747 million (per the FY2020 10-K, Consolidated Statements of Financial Position).\n  - Total Current Liabilities: $3,586 million (per the FY2020 10-K, Consolidated Statements of Financial Position).\n  - FY2019 Total Current Assets: $3,661 million (per the FY2019 10-K, Consolidated Statements of Financial Position).\n  - FY2019 Total Current Liabilities: $3,712 million (per the FY2019 10-K, Consolidated Statements of Financial Position).\n  - FY2018 Total Current Assets: $2,326 million (per the FY2018 10-K, Consolidated Statements of Financial Position).\n  - FY2018 Total Current Liabilities: $2,650 million (per the FY2018 10-K, Consolidated Statements of Financial Position).\n- DATA SOURCES: \n  - General Mills FY2020 10-K, Consolidated Statements of Financial Position.\n  - General Mills FY2019 10-K, Consolidated Statements of Financial Position.\n  - General Mills FY2018 10-K, Consolidated Statements of Financial Position. \n\nNote: The analysis of trends and benchmarking against industry peers is not included as per the directive to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_083_62A760DF_H3",
+      "type": "dollar_amount",
+      "original_value": "$2,972 million",
+      "injected_value": "$3,586 million",
+      "original_numeric": "2972",
+      "injected_numeric": "3586",
+      "position_char": 430,
+      "sentence_approx": 4,
+      "perturbation_delta": 0.2066
+    },
+    {
+      "hallucination_id": "FB_083_62A760DF_H2",
+      "type": "dollar_amount",
+      "original_value": "$2,731 million",
+      "injected_value": "$3,712 million",
+      "original_numeric": "2731",
+      "injected_numeric": "3712",
+      "position_char": 671,
+      "sentence_approx": 6,
+      "perturbation_delta": 0.3593
+    },
+    {
+      "hallucination_id": "FB_083_62A760DF_H1",
+      "type": "dollar_amount",
+      "original_value": "$3,556 million",
+      "injected_value": "$2,326 million",
+      "original_numeric": "3556",
+      "injected_numeric": "2326",
+      "position_char": 789,
+      "sentence_approx": 7,
+      "perturbation_delta": -0.3459
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Total Current Liabilities of $2,972 million",
+        "claim_value": "$2,972 million",
+        "reason": "This figure for FY2020 Total Current Liabilities, used in the primary metric calculation, directly contradicts the figure of $3,586 million provided in the 'SUPPORTING DATA' section for the exact same period and source. One of these figures must be incorrect.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Current Liabilities: $3,586 million",
+        "claim_value": "$3,586 million",
+        "reason": "This figure for FY2020 Total Current Liabilities, listed in the 'SUPPORTING DATA', directly contradicts the figure of $2,972 million used in the 'PRIMARY METRIC' calculation for the exact same period and source. One of these figures must be incorrect.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Working Capital Ratio = 1.26",
+        "claim_value": "1.26",
+        "reason": "The calculated Working Capital Ratio is based on a Total Current Liabilities figure ($2,972 million) that is contradicted by another Total Current Liabilities figure ($3,586 million) provided for the same FY2020 period in the 'SUPPORTING DATA'. Due to this internal inconsistency in the underlying data, the ratio itself is suspicious.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 9,
+    "overall_assessment": "The report contains a significant internal inconsistency regarding General Mills' FY2020 Total Current Liabilities, leading to a suspicious Working Capital Ratio.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Total Current Liabilities of $2,972 million\",\n      \"claim_value\": \"$2,972 million\",\n      \"reason\": \"This figure for FY2020 Total Current Liabilities, used in the primary metric calculation, directly contradicts the figure of $3,586 million provided in the 'SUPPORTING DATA' section for the exact same period and source. One of these figures must be incorrect.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Current Liabilities: $3,586 million\",\n      \"claim_value\": \"$3,586 million\",\n      \"reason\": \"This figure for FY2020 Total Current Liabilities, listed in the 'SUPPORTING DATA', directly contradicts the figure of $2,972 million used in the 'PRIMARY METRIC' calculation for the exact same period and source. One of these figures must be incorrect.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Working Capital Ratio = 1.26\",\n      \"claim_value\": \"1.26\",\n      \"reason\": \"The calculated Working Capital Ratio is based on a Total Current Liabilities figure ($2,972 million) that is contradicted by another Total Current Liabilities figure ($3,586 million) provided for the same FY2020 period in the 'SUPPORTING DATA'. Due to this internal inconsistency in the underlying data, the ratio itself is suspicious.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 9,\n  \"overall_assessment\": \"The report contains a significant internal inconsistency regarding General Mills' FY2020 Total Current Liabilities, leading to a suspicious Working Capital Ratio.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_083_62A760DF",
+      "hallucination_id": "FB_083_62A760DF_H3",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$2,972 million",
+      "injected_value": "$3,586 million",
+      "detected": true,
+      "reason": "This figure for FY2020 Total Current Liabilities, used in the primary metric calculation, directly contradicts the figure of $3,586 million provided in the 'SUPPORTING DATA' section for the exact same period and source. One of these figures must be incorrect.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_083_62A760DF",
+      "hallucination_id": "FB_083_62A760DF_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$2,731 million",
+      "injected_value": "$3,712 million",
+      "detected": true,
+      "reason": "This figure for FY2020 Total Current Liabilities, listed in the 'SUPPORTING DATA', directly contradicts the figure of $2,972 million used in the 'PRIMARY METRIC' calculation for the exact same period and source. One of these figures must be incorrect.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_083_62A760DF",
+      "hallucination_id": "FB_083_62A760DF_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,556 million",
+      "injected_value": "$2,326 million",
+      "detected": true,
+      "reason": "This figure for FY2020 Total Current Liabilities, listed in the 'SUPPORTING DATA', directly contradicts the figure of $2,972 million used in the 'PRIMARY METRIC' calculation for the exact same period and source. One of these figures must be incorrect.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 9
+    }
+  ],
+  "timestamp": "2026-03-25T07:52:59.940319Z"
+}

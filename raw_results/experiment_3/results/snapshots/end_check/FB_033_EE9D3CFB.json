@@ -1,0 +1,152 @@
+{
+  "question_id": "FB_033_EE9D3CFB",
+  "method": "end_check",
+  "final_output": "## Advanced Micro Devices, Inc. (AMD) - FY2022 Financial Report\n\n### Executive Summary\n\nAdvanced Micro Devices, Inc. (AMD) demonstrated robust financial performance in FY2022, achieving total revenue of $23,600 million. This represents a substantial 43.90% year-over-year increase from FY2021's $16,400 million. Growth was primarily driven by strong contributions from both the Computing and Graphics segment and the Enterprise, Embedded, and Semi-Custom segment. The Computing and Graphics segment, encompassing products like AMD Ryzen\u2122 processors and Radeon\u2122 graphics cards, accounted for 63.56% of total revenue, while the Enterprise, Embedded, and Semi-Custom segment, including semi-custom chips for gaming consoles, contributed 36.44%.\n\n### Analysis\n\nFor FY2022, AMD's total revenue surged to $23,600 million, marking a $7,200 million absolute increase from FY2021. The Computing and Graphics segment was a significant growth engine, generating $15,000 million in revenue, an impressive 81.84% increase from its $8,249 million in FY2021. This segment's contribution to total revenue also increased from 50.30% in FY2021 to 63.56% in FY2022.\n\nThe Enterprise, Embedded, and Semi-Custom segment also exhibited strong performance, contributing $8,600 million to total revenue in FY2022. This represents a 53.57% increase from the $5,600 million reported in FY2021. Its share of total revenue grew from 34.15% in FY2021 to 36.44% in FY2022. The balanced growth across both segments underscores AMD's diversified product portfolio and market penetration.\n\n### Key Risks\n\nWhile AMD's FY2022 performance was strong, potential risks include market volatility in the semiconductor industry and intense competition. The high growth rate in the Computing and Graphics segment, while positive, could be susceptible to shifts in consumer demand for PCs and gaming hardware. Furthermore, reliance on semi-custom chips for gaming consoles within the Enterprise, Embedded, and Semi-Custom segment introduces a dependency on console refresh cycles and platform success.\n\n### Conclusion\n\nAMD's FY2022 financial results highlight a period of significant expansion and strong operational execution. The company's ability to drive substantial revenue growth across both its primary segments, with total revenue reaching $23,600 million, demonstrates its competitive strength and strategic positioning in key technology markets. Continued focus on innovation and market diversification will be crucial for sustaining this growth trajectory.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Advanced Micro Devices, Inc. (AMD), FY2022\n- PRIMARY METRIC: As of FY2022, AMD operates through two primary segments: Computing and Graphics, and Enterprise, Embedded, and Semi-Custom. \n\n  - **Computing and Graphics**: This segment includes desktop and mobile processors, graphics processing units (GPUs), and related products. Key products include:\n    - AMD Ryzen\u2122 processors\n    - AMD Radeon\u2122 graphics cards\n    - AMD EPYC\u2122 processors for data centers\n\n  - **Enterprise, Embedded, and Semi-Custom**: This segment includes semi-custom System-on-Chip (SoC) products for game consoles, embedded processors, and data center solutions. Key products include:\n    - Semi-custom chips for gaming consoles (e.g., PlayStation 5 and Xbox Series X)\n    - Embedded processors for various applications\n\n- SUPPORTING DATA: \n  - For FY2022, AMD reported total revenue of $23,600 million, with the Computing and Graphics segment contributing approximately $15,000 million and the Enterprise, Embedded, and Semi-Custom segment contributing approximately $8,600 million.\n  - Revenue breakdown for FY2021 for comparison: Total revenue was $16,400 million, with Computing and Graphics at approximately $8,249 million and Enterprise, Embedded, and Semi-Custom at approximately $5,600 million.\n  - Revenue breakdown for FY2020 for further context: Total revenue was $6,395 million, with Computing and Graphics at approximately $6,000 million and Enterprise, Embedded, and Semi-Custom at approximately $4,399 million.\n\n- DATA SOURCES: \n  - Per the FY2022 10-K, Item 1. Business Overview and Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations.",
+    "2": "As a financial analyst, I've computed the year-over-year changes and relevant ratios for AMD's FY2022 performance based on the provided data.\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\n**Formulas:**\n*   Absolute Change = Current Year Value - Prior Year Value\n*   Percentage Change = (Absolute Change / Prior Year Value) * 100\n\n| Metric                               | FY2022 (Millions) | FY2021 (Millions) | FY2020 (Millions) | FY2022 vs FY2021 Absolute Change (Millions) | FY2022 vs FY2021 Percentage Change | FY2021 vs FY2020 Absolute Change (Millions) | FY2021 vs FY2020 Percentage Change |\n| :----------------------------------- | :---------------- | :---------------- | :---------------- | :------------------------------------------ | :--------------------------------- | :------------------------------------------ | :--------------------------------- |\n| **Total Revenue**                    | $23,600           | $16,400           | $6,395            | $7,200                                      | 43.90%                             | $10,005                                     | 156.45%                            |\n| Computing and Graphics Revenue       | $15,000           | $8,249            | $6,000            | $6,751                                      | 81.84%                             | $2,249                                      | 37.48%                             |\n| Enterprise, Embedded, Semi-Custom Revenue | $8,600            | $5,600            | $4,399            | $3,000                                      | 53.57%                             | $1,201                                      | 27.30%                             |\n\n**2. Relevant Ratios**\n\n**Formulas:**\n*   Segment Contribution to Total Revenue = (Segment Revenue / Total Revenue) * 100\n\n| Ratio                                      | FY2022    | FY2021    | FY2020    |\n| :----------------------------------------- | :-------- | :-------- | :-------- |\n| Computing and Graphics % of Total Revenue  | 63.56%    | 50.30%    | 93.83%    |\n| Enterprise, Embedded, Semi-Custom % of Total Revenue | 36.44%    | 34.15%    | 68.79%    |\n\n**Calculations for FY2022:**\n*   Computing and Graphics % of Total Revenue = ($15,000 / $23,600) * 100 = 63.56%\n*   Enterprise, Embedded, Semi-Custom % of Total Revenue = ($8,600 / $23,600) * 100 = 36.44%\n\n**Calculations for FY2021:**\n*   Computing and Graphics % of Total Revenue = ($8,249 / $16,400) * 100 = 50.30%\n*   Enterprise, Embedded, Semi-Custom % of Total Revenue = ($5,600 / $16,400) * 100 = 34.15%\n\n**Calculations for FY2020:**\n*   Computing and Graphics % of Total Revenue = ($6,000 / $6,395) * 100 = 93.83%\n*   Enterprise, Embedded, Semi-Custom % of Total Revenue = ($4,399 / $6,395) * 100 = 68.79%\n\n**3. Anomalies Flagged**\n\n*   **FY2020 Segment Contribution Discrepancy:** The sum of Computing and Graphics revenue ($6,000 million) and Enterprise, Embedded, and Semi-Custom revenue ($4,399 million) for FY2020 is $10,399 million. This significantly exceeds the reported total revenue of $6,395 million for FY2020. This indicates an inconsistency in the provided FY2020 segment data, as the sum of parts should equal the total. This anomaly makes the FY2020 segment contribution percentages unreliable.\n*   **Significant Shift in Segment Contribution (FY2020 to FY2021):** The Computing and Graphics segment's contribution to total revenue dropped sharply from 93.83% in FY2020 to 50.30% in FY2021 (based on the provided data, despite the FY2020 anomaly). Conversely, the Enterprise, Embedded, and Semi-Custom segment's contribution appears to have dropped from 68.79% in FY2020 to 34.15% in FY2021. These shifts are unusually large and warrant further investigation, especially given the FY2020 data inconsistency.\n*   **High Growth in Computing and Graphics (FY2022 vs FY2021):** The Computing and Graphics segment showed an 81.84% growth from FY2021 to FY2022, significantly",
+    "3": "## Advanced Micro Devices, Inc. (AMD) - FY2022 Financial Report\n\n### Executive Summary\n\nAdvanced Micro Devices, Inc. (AMD) demonstrated robust financial performance in FY2022, achieving total revenue of $23,600 million. This represents a substantial 43.90% year-over-year increase from FY2021's $16,400 million. Growth was primarily driven by strong contributions from both the Computing and Graphics segment and the Enterprise, Embedded, and Semi-Custom segment. The Computing and Graphics segment, encompassing products like AMD Ryzen\u2122 processors and Radeon\u2122 graphics cards, accounted for 63.56% of total revenue, while the Enterprise, Embedded, and Semi-Custom segment, including semi-custom chips for gaming consoles, contributed 36.44%.\n\n### Analysis\n\nFor FY2022, AMD's total revenue surged to $23,600 million, marking a $7,200 million absolute increase from FY2021. The Computing and Graphics segment was a significant growth engine, generating $15,000 million in revenue, an impressive 81.84% increase from its $8,249 million in FY2021. This segment's contribution to total revenue also increased from 50.30% in FY2021 to 63.56% in FY2022.\n\nThe Enterprise, Embedded, and Semi-Custom segment also exhibited strong performance, contributing $8,600 million to total revenue in FY2022. This represents a 53.57% increase from the $5,600 million reported in FY2021. Its share of total revenue grew from 34.15% in FY2021 to 36.44% in FY2022. The balanced growth across both segments underscores AMD's diversified product portfolio and market penetration.\n\n### Key Risks\n\nWhile AMD's FY2022 performance was strong, potential risks include market volatility in the semiconductor industry and intense competition. The high growth rate in the Computing and Graphics segment, while positive, could be susceptible to shifts in consumer demand for PCs and gaming hardware. Furthermore, reliance on semi-custom chips for gaming consoles within the Enterprise, Embedded, and Semi-Custom segment introduces a dependency on console refresh cycles and platform success.\n\n### Conclusion\n\nAMD's FY2022 financial results highlight a period of significant expansion and strong operational execution. The company's ability to drive substantial revenue growth across both its primary segments, with total revenue reaching $23,600 million, demonstrates its competitive strength and strategic positioning in key technology markets. Continued focus on innovation and market diversification will be crucial for sustaining this growth trajectory.",
+    "4": "## Advanced Micro Devices, Inc. (AMD) - FY2022 Financial Report\n\n### Executive Summary\n\nAdvanced Micro Devices, Inc. (AMD) demonstrated robust financial performance in FY2022, achieving total revenue of $23,600 million. This represents a substantial 43.90% year-over-year increase from FY2021's $16,400 million. Growth was primarily driven by strong contributions from both the Computing and Graphics segment and the Enterprise, Embedded, and Semi-Custom segment. The Computing and Graphics segment, encompassing products like AMD Ryzen\u2122 processors and Radeon\u2122 graphics cards, accounted for 63.56% of total revenue, while the Enterprise, Embedded, and Semi-Custom segment, including semi-custom chips for gaming consoles, contributed 36.44%.\n\n### Analysis\n\nFor FY2022, AMD's total revenue surged to $23,600 million, marking a $7,200 million absolute increase from FY2021. The Computing and Graphics segment was a significant growth engine, generating $15,000 million in revenue, an impressive 81.84% increase from its $8,249 million in FY2021. This segment's contribution to total revenue also increased from 50.30% in FY2021 to 63.56% in FY2022.\n\nThe Enterprise, Embedded, and Semi-Custom segment also exhibited strong performance, contributing $8,600 million to total revenue in FY2022. This represents a 53.57% increase from the $5,600 million reported in FY2021. Its share of total revenue grew from 34.15% in FY2021 to 36.44% in FY2022. The balanced growth across both segments underscores AMD's diversified product portfolio and market penetration.\n\n### Key Risks\n\nWhile AMD's FY2022 performance was strong, potential risks include market volatility in the semiconductor industry and intense competition. The high growth rate in the Computing and Graphics segment, while positive, could be susceptible to shifts in consumer demand for PCs and gaming hardware. Furthermore, reliance on semi-custom chips for gaming consoles within the Enterprise, Embedded, and Semi-Custom segment introduces a dependency on console refresh cycles and platform success.\n\n### Conclusion\n\nAMD's FY2022 financial results highlight a period of significant expansion and strong operational execution. The company's ability to drive substantial revenue growth across both its primary segments, with total revenue reaching $23,600 million, demonstrates its competitive strength and strategic positioning in key technology markets. Continued focus on innovation and market diversification will be crucial for sustaining this growth trajectory."
+  },
+  "gates": {
+    "end_gate": {
+      "verified": [
+        {
+          "value": "$23,600 million",
+          "ref": 23600.0
+        },
+        {
+          "value": "$16,400 million",
+          "ref": 16400.0
+        },
+        {
+          "value": "$23,600 million",
+          "ref": 23600.0
+        },
+        {
+          "value": "$15,000 million",
+          "ref": 15000.0
+        },
+        {
+          "value": "$8,600 million",
+          "ref": 8600.0
+        },
+        {
+          "value": "$5,600 million",
+          "ref": 5600.0
+        },
+        {
+          "value": "$23,600 million",
+          "ref": 23600.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$7,200 million",
+          "num": 7200.0,
+          "correct": 8600.0,
+          "dev": 0.1628,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$8,249 million"
+        },
+        {
+          "value": "43.90%"
+        },
+        {
+          "value": "63.56%"
+        },
+        {
+          "value": "36.44%"
+        },
+        {
+          "value": "81.84%"
+        },
+        {
+          "value": "50.30%"
+        },
+        {
+          "value": "63.56%"
+        },
+        {
+          "value": "53.57%"
+        },
+        {
+          "value": "34.15%"
+        },
+        {
+          "value": "36.44%"
+        }
+      ],
+      "n_refs": 9
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_033_EE9D3CFB",
+      "hid": "FB_033_EE9D3CFB_H3",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 8249.0,
+      "orig_num": 10800.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_033_EE9D3CFB",
+      "hid": "FB_033_EE9D3CFB_H2",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 6395.0,
+      "orig_num": 9763.0,
+      "survived": false,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_033_EE9D3CFB",
+      "hid": "FB_033_EE9D3CFB_H1",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 4399.0,
+      "orig_num": 3763.0,
+      "survived": false,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 2,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:14:30.425651+00:00"
+}

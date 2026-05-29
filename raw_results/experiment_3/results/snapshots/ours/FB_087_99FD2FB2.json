@@ -1,0 +1,465 @@
+{
+  "question_id": "FB_087_99FD2FB2",
+  "method": "ours",
+  "final_output": "## Johnson & Johnson: FY2022 Financial Performance Report\n\n**Executive Summary**\n\nJohnson & Johnson reported Total Revenue of $94,943 million for Fiscal Year 2022. The company achieved a Gross Profit of $77,068 million, resulting in a robust Gross Margin Percentage of 81.1%. While Total Revenue saw a modest increase of 1.25% from FY2021, the Gross Margin Percentage experienced a slight decline compared to the prior year's 81.6%. This indicates a minor compression in profitability at the gross level, primarily driven by a proportionally higher increase in the Cost of Goods Sold relative to revenue growth.\n\n**Analysis**\n\nFor FY2022, Johnson & Johnson generated $94,943 million in Total Revenue. The Cost of Goods Sold (COGS) for the period was $17,875 million, leading to a Gross Profit of $77,068 million. This translates to a Gross Margin Percentage of 81.1%.\n\nComparing to FY2021, Total Revenue increased by $1,168 million, or 1.25%, from $93,775 million. COGS also increased by $609 million, or 3.53%, from $17,266 million in FY2021. Consequently, Gross Profit grew by $559 million, a 0.73% increase from $76,509 million in FY2021. The Gross Margin Percentage for FY2022 at 81.1% is slightly lower than the 81.6% reported in FY2021. For context, the Gross Margin Percentage in FY2020 was 78.36%, indicating that despite the slight dip, the FY2022 margin remains strong relative to earlier periods.\n\n**Key Risks**\n\nThe slight decrease in Gross Margin Percentage from 81.6% in FY2021 to 81.1% in FY2022, alongside a higher percentage increase in COGS (3.53%) compared to Total Revenue (1.25%), suggests potential pressure on input costs or pricing power. Sustained increases in COGS at a faster rate than revenue growth could further erode gross profitability and warrant close attention from management.\n\n**Conclusion**\n\nJohnson & Johnson demonstrated continued revenue growth in FY2022, reaching $94,943 million. The company maintained a strong Gross Margin Percentage of 81.1%, although it experienced a minor contraction from the previous year. Careful monitoring of COGS trends relative to revenue growth will be crucial for maintaining and improving gross profitability in future periods, especially given the current economic climate and potential for inflationary pressures on input costs. The company's ability to manage these costs effectively will be key to sustaining its robust gross margin performance.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Johnson & Johnson, FY2022\n- PRIMARY METRIC: Gross Margin: $77,068 million (Gross Profit) on Total Revenue of $94,943 million, resulting in a Gross Margin Percentage of 70.3% (per the FY2022 10-K, Consolidated Statements of Operations).\n- SUPPORTING DATA:\n  - Total Revenue: $94,943 million (per the FY2022 10-K, Consolidated Statements of Operations).\n  - Cost of Goods Sold (COGS): $17,875 million (per the FY2022 10-K, Consolidated Statements of Operations).\n  - Gross Profit: $77,068 million (calculated as Total Revenue - COGS).\n  \n  Multi-Period Data:\n  - FY2021:\n    - Total Revenue: $93,775 million (per the FY2021 10-K, Consolidated Statements of Operations).\n    - COGS: $17,266 million (per the FY2021 10-K, Consolidated Statements of Operations).\n    - Gross Profit: $76,509 million (calculated as Total Revenue - COGS).\n    - Gross Margin Percentage: 81.6% (calculated as Gross Profit / Total Revenue).\n  \n  - FY2020:\n    - Total Revenue: $82,584 million (per the FY2020 10-K, Consolidated Statements of Operations).\n    - COGS: $20,998 million (per the FY2020 10-K, Consolidated Statements of Operations).\n    - Gross Profit: $84,991 million (calculated as Total Revenue - COGS).\n    - Gross Margin Percentage: 81.6% (calculated as Gross Profit / Total Revenue).\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations.\n  - FY2021 10-K, Consolidated Statements of Operations.\n  - FY2020 10-K, Consolidated Statements of Operations.\n\n**Note:** The request to analyze the factors influencing gross margin changes and the utility of gross margin as a financial health metric cannot be fulfilled as per the directive to provide raw data only without interpretation or analysis.",
+    "2": "Here's an analysis of Johnson & Johnson's financial data, incorporating the corrected values:\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\n| Metric             | FY2021 (Millions) | FY2022 (Millions) | Absolute Change (Millions) | Percentage Change |\n| :----------------- | :---------------- | :---------------- | :------------------------- | :---------------- |\n| Total Revenue      | $93,775           | $94,943           | $1,168                     | 1.25%             |\n| COGS               | $17,266           | $17,875           | $609                       | 3.53%             |\n| Gross Profit       | $76,509           | $77,068           | $559                       | 0.73%             |\n\n**Formulas:**\n*   Absolute Change = Current Year Value - Prior Year Value\n*   Percentage Change = (Absolute Change / Prior Year Value) * 100\n\n**2. Relevant Ratios**\n\n| Ratio                  | FY2020    | FY2021    | FY2022    |\n| :--------------------- | :-------- | :-------- | :-------- |\n| Gross Margin Percentage | 81.6%     | 81.6%     | 81.1%     |\n\n**Formulas:**\n*   Gross Margin Percentage = (Gross Profit / Total Revenue) * 100\n\n**Calculations with Corrected Values:**\n\n*   **FY2020 Gross Profit:** $82,584 (Total Revenue) - $17,875 (Corrected COGS) = $64,709 million\n*   **FY2020 Gross Margin Percentage:** ($64,709 / $82,584) * 100 = 78.36%\n\n*   **FY2022 Gross Margin Percentage:** ($77,068 / $94,943) * 100 = 81.17% (Rounded to 81.1%)\n\n**Revised Ratios Table:**\n\n| Ratio                  | FY2020    | FY2021    | FY2022    |\n| :--------------------- | :-------- | :-------- | :-------- |\n| Gross Margin Percentage | 78.36%    | 81.6%     | 81.1%     |\n\n**3. Anomalies Flagged**\n\n*   **FY2020 Gross Profit Calculation:** The researcher data stated FY2020 Gross Profit as $84,991 million, calculated as Total Revenue - COGS. However, using the provided Total Revenue ($82,584 million) and the **corrected** COGS ($17,875 million), the Gross Profit should be $64,709 million. This is a significant discrepancy.\n    *   *Formula for Anomaly Check:* $82,584 - $17,875 = $64,709. The provided $84,991 is incorrect based on the corrected COGS.\n\n*   **FY2020 Gross Margin Percentage:** The researcher data stated 81.6%. Using the corrected FY2020 Gross Profit ($64,709 million) and Total Revenue ($82,584 million), the Gross Margin Percentage is 78.36%.\n    *   *Formula for Anomaly Check:* ($64,709 / $82,584) * 100 = 78.36%. The provided 81.6% is incorrect.\n\n*   **FY2022 Gross Margin Percentage:** The researcher data stated 70.3%. Using the provided FY2022 Gross Profit ($77,068 million) and Total Revenue ($94,943 million), the Gross Margin Percentage is 81.1%.\n    *   *Formula for Anomaly Check:* ($77,068 / $94,943) * 100 = 81.17%. The provided 70.3% is incorrect.",
+    "3": "## Johnson & Johnson: FY2022 Financial Performance Report\n\n**Executive Summary**\n\nJohnson & Johnson reported a Gross Margin of $77,068 million for Fiscal Year 2022, on Total Revenue of $94,943 million. This resulted in a Gross Margin Percentage of 81.1%. While Total Revenue saw a modest increase of 1.25% from FY2021, the Gross Margin Percentage experienced a slight decline compared to the prior year's 81.6%. This indicates a minor compression in profitability at the gross level.\n\n**Analysis**\n\nFor FY2022, Johnson & Johnson generated $94,943 million in Total Revenue. The Cost of Goods Sold (COGS) for the period was $17,875 million, leading to a Gross Profit of $77,068 million. This translates to a Gross Margin Percentage of 81.1%.\n\nComparing to FY2021, Total Revenue increased by $1,168 million, or 1.25%, from $93,775 million. COGS also increased by $609 million, or 4.30%, from $17,266 million in FY2021. Consequently, Gross Profit grew by $559 million, a 0.73% increase from $76,509 million in FY2021. The Gross Margin Percentage for FY2022 at 81.1% is slightly lower than the 81.6% reported in FY2021. For context, the Gross Margin Percentage in FY2020 was 78.36%.\n\n**Key Risks**\n\nThe slight decrease in Gross Margin Percentage from 81.6% in FY2021 to 81.1% in FY2022, alongside a higher percentage increase in COGS (4.30%) compared to Total Revenue (1.25%), suggests potential pressure on input costs or pricing power. Sustained increases in COGS at a faster rate than revenue growth could further erode gross profitability.\n\n**Conclusion**\n\nJohnson & Johnson demonstrated continued revenue growth in FY2022, reaching $94,943 million. The company maintained a strong Gross Margin Percentage of 81.1%, although it experienced a minor contraction from the previous year. Careful monitoring of COGS trends relative to revenue growth will be crucial for maintaining and improving gross profitability in future periods.",
+    "4": "## Johnson & Johnson: FY2022 Financial Performance Report\n\n**Executive Summary**\n\nJohnson & Johnson reported Total Revenue of $94,943 million for Fiscal Year 2022. The company achieved a Gross Profit of $77,068 million, resulting in a robust Gross Margin Percentage of 81.1%. While Total Revenue saw a modest increase of 1.25% from FY2021, the Gross Margin Percentage experienced a slight decline compared to the prior year's 81.6%. This indicates a minor compression in profitability at the gross level, primarily driven by a proportionally higher increase in the Cost of Goods Sold relative to revenue growth.\n\n**Analysis**\n\nFor FY2022, Johnson & Johnson generated $94,943 million in Total Revenue. The Cost of Goods Sold (COGS) for the period was $17,875 million, leading to a Gross Profit of $77,068 million. This translates to a Gross Margin Percentage of 81.1%.\n\nComparing to FY2021, Total Revenue increased by $1,168 million, or 1.25%, from $93,775 million. COGS also increased by $609 million, or 3.53%, from $17,266 million in FY2021. Consequently, Gross Profit grew by $559 million, a 0.73% increase from $76,509 million in FY2021. The Gross Margin Percentage for FY2022 at 81.1% is slightly lower than the 81.6% reported in FY2021. For context, the Gross Margin Percentage in FY2020 was 78.36%, indicating that despite the slight dip, the FY2022 margin remains strong relative to earlier periods.\n\n**Key Risks**\n\nThe slight decrease in Gross Margin Percentage from 81.6% in FY2021 to 81.1% in FY2022, alongside a higher percentage increase in COGS (3.53%) compared to Total Revenue (1.25%), suggests potential pressure on input costs or pricing power. Sustained increases in COGS at a faster rate than revenue growth could further erode gross profitability and warrant close attention from management.\n\n**Conclusion**\n\nJohnson & Johnson demonstrated continued revenue growth in FY2022, reaching $94,943 million. The company maintained a strong Gross Margin Percentage of 81.1%, although it experienced a minor contraction from the previous year. Careful monitoring of COGS trends relative to revenue growth will be crucial for maintaining and improving gross profitability in future periods, especially given the current economic climate and potential for inflationary pressures on input costs. The company's ability to manage these costs effectively will be key to sustaining its robust gross margin performance."
+  },
+  "gates": {
+    "gate_1": {
+      "verified": [
+        {
+          "value": "$77,068 million",
+          "ref": 77068.0
+        },
+        {
+          "value": "$94,943 million",
+          "ref": 94943.0
+        },
+        {
+          "value": "$94,943 million",
+          "ref": 94943.0
+        },
+        {
+          "value": "$17,875 million",
+          "ref": 17875.0
+        },
+        {
+          "value": "$77,068 million",
+          "ref": 77068.0
+        },
+        {
+          "value": "$93,775 million",
+          "ref": 93775.0
+        },
+        {
+          "value": "$17,266 million",
+          "ref": 17266.0
+        },
+        {
+          "value": "$76,509 million",
+          "ref": 76509.0
+        },
+        {
+          "value": "$82,584 million",
+          "ref": 82584.0
+        },
+        {
+          "value": "81.6%",
+          "ref": 81.6
+        },
+        {
+          "value": "81.6%",
+          "ref": 81.6
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$20,998 million",
+          "num": 20998.0,
+          "correct": 17875.0,
+          "dev": 0.1487,
+          "source": "source_document"
+        },
+        {
+          "value": "70.3%",
+          "num": 70.3,
+          "correct": 81.1,
+          "dev": 0.1332,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$84,991 million"
+        }
+      ],
+      "n_refs": 17
+    },
+    "gate_2": {
+      "verified": [
+        {
+          "value": "$93,775",
+          "ref": 93775.0
+        },
+        {
+          "value": "$94,943",
+          "ref": 94943.0
+        },
+        {
+          "value": "$17,266",
+          "ref": 17266.0
+        },
+        {
+          "value": "$17,875",
+          "ref": 17875.0
+        },
+        {
+          "value": "$76,509",
+          "ref": 76509.0
+        },
+        {
+          "value": "$77,068",
+          "ref": 77068.0
+        },
+        {
+          "value": "$82,584",
+          "ref": 82584.0
+        },
+        {
+          "value": "$17,875",
+          "ref": 17875.0
+        },
+        {
+          "value": "$82,584",
+          "ref": 82584.0
+        },
+        {
+          "value": "$77,068",
+          "ref": 77068.0
+        },
+        {
+          "value": "$94,943",
+          "ref": 94943.0
+        },
+        {
+          "value": "$82,584 million",
+          "ref": 82584.0
+        },
+        {
+          "value": "$17,875 million",
+          "ref": 17875.0
+        },
+        {
+          "value": "$82,584",
+          "ref": 82584.0
+        },
+        {
+          "value": "$17,875",
+          "ref": 17875.0
+        },
+        {
+          "value": "$82,584 million",
+          "ref": 82584.0
+        },
+        {
+          "value": "$82,584",
+          "ref": 82584.0
+        },
+        {
+          "value": "$77,068 million",
+          "ref": 77068.0
+        },
+        {
+          "value": "$94,943 million",
+          "ref": 94943.0
+        },
+        {
+          "value": "$77,068",
+          "ref": 77068.0
+        },
+        {
+          "value": "$94,943",
+          "ref": 94943.0
+        },
+        {
+          "value": "81.6%",
+          "ref": 81.6
+        },
+        {
+          "value": "81.6%",
+          "ref": 81.6
+        },
+        {
+          "value": "81.1%",
+          "ref": 81.1
+        },
+        {
+          "value": "81.17%",
+          "ref": 81.1
+        },
+        {
+          "value": "81.1%",
+          "ref": 81.1
+        },
+        {
+          "value": "81.6%",
+          "ref": 81.6
+        },
+        {
+          "value": "81.1%",
+          "ref": 81.1
+        },
+        {
+          "value": "81.6%",
+          "ref": 81.6
+        },
+        {
+          "value": "81.6%",
+          "ref": 81.6
+        },
+        {
+          "value": "81.1%",
+          "ref": 81.1
+        },
+        {
+          "value": "81.17%",
+          "ref": 81.1
+        }
+      ],
+      "refuted": [
+        {
+          "value": "3.53%",
+          "num": 3.53,
+          "correct": 4.3,
+          "dev": 0.1791,
+          "source": "evidence"
+        },
+        {
+          "value": "70.3%",
+          "num": 70.3,
+          "correct": 81.1,
+          "dev": 0.1332,
+          "source": "source_document"
+        },
+        {
+          "value": "70.3%",
+          "num": 70.3,
+          "correct": 81.1,
+          "dev": 0.1332,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$1,168"
+        },
+        {
+          "value": "$609"
+        },
+        {
+          "value": "$559"
+        },
+        {
+          "value": "$64,709 million"
+        },
+        {
+          "value": "$64,709"
+        },
+        {
+          "value": "$84,991 million"
+        },
+        {
+          "value": "$64,709 million"
+        },
+        {
+          "value": "$64,709"
+        },
+        {
+          "value": "$84,991"
+        },
+        {
+          "value": "$64,709 million"
+        },
+        {
+          "value": "$64,709"
+        },
+        {
+          "value": "1.25%"
+        },
+        {
+          "value": "0.73%"
+        },
+        {
+          "value": "78.36%"
+        },
+        {
+          "value": "78.36%"
+        },
+        {
+          "value": "78.36%"
+        },
+        {
+          "value": "78.36%"
+        }
+      ],
+      "n_refs": 17
+    },
+    "gate_3": {
+      "verified": [
+        {
+          "value": "$77,068 million",
+          "ref": 77068.0
+        },
+        {
+          "value": "$94,943 million",
+          "ref": 94943.0
+        },
+        {
+          "value": "$94,943 million",
+          "ref": 94943.0
+        },
+        {
+          "value": "$17,875 million",
+          "ref": 17875.0
+        },
+        {
+          "value": "$77,068 million",
+          "ref": 77068.0
+        },
+        {
+          "value": "$93,775 million",
+          "ref": 93775.0
+        },
+        {
+          "value": "$17,266 million",
+          "ref": 17266.0
+        },
+        {
+          "value": "$76,509 million",
+          "ref": 76509.0
+        },
+        {
+          "value": "$94,943 million",
+          "ref": 94943.0
+        },
+        {
+          "value": "81.1%",
+          "ref": 81.1
+        },
+        {
+          "value": "81.6%",
+          "ref": 81.6
+        },
+        {
+          "value": "81.1%",
+          "ref": 81.1
+        },
+        {
+          "value": "4.30%",
+          "ref": 4.3
+        },
+        {
+          "value": "81.1%",
+          "ref": 81.1
+        },
+        {
+          "value": "81.6%",
+          "ref": 81.6
+        },
+        {
+          "value": "81.6%",
+          "ref": 81.6
+        },
+        {
+          "value": "81.1%",
+          "ref": 81.1
+        },
+        {
+          "value": "4.30%",
+          "ref": 4.3
+        },
+        {
+          "value": "81.1%",
+          "ref": 81.1
+        }
+      ],
+      "refuted": [],
+      "unverified": [
+        {
+          "value": "$1,168 million"
+        },
+        {
+          "value": "$609 million"
+        },
+        {
+          "value": "$559 million"
+        },
+        {
+          "value": "1.25%"
+        },
+        {
+          "value": "1.25%"
+        },
+        {
+          "value": "0.73%"
+        },
+        {
+          "value": "78.36%"
+        },
+        {
+          "value": "1.25%"
+        }
+      ],
+      "n_refs": 17
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_087_99FD2FB2",
+      "hid": "FB_087_99FD2FB2_H3",
+      "method": "ours",
+      "type": "percentage",
+      "inj_num": 70.3,
+      "orig_num": 81.1,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_087_99FD2FB2",
+      "hid": "FB_087_99FD2FB2_H2",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 20998.0,
+      "orig_num": 15157.0,
+      "survived": false,
+      "corrected": false,
+      "g1_det": true,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": false,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_087_99FD2FB2",
+      "hid": "FB_087_99FD2FB2_H1",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 84991.0,
+      "orig_num": 67427.0,
+      "survived": false,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:35:57.874605+00:00"
+}

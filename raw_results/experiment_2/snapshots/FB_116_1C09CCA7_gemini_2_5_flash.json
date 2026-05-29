@@ -1,0 +1,103 @@
+{
+  "question_id": "FB_116_1C09CCA7",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Nike, Inc. - Fiscal Year 2019 (FY2019)\n- PRIMARY METRIC: Total Current Assets: $5,544 million (per the FY2019 10-K, Consolidated Balance Sheets)\n- SUPPORTING DATA: \n  - FY2018 Total Current Assets: $9,099 million (per the FY2018 10-K, Consolidated Balance Sheets)\n  - FY2017 Total Current Assets: $4,680 million (per the FY2017 10-K, Consolidated Balance Sheets)\n- DATA SOURCES: \n  - FY2019 10-K, Consolidated Balance Sheets, Page 42\n  - FY2018 10-K, Consolidated Balance Sheets, Page 40\n  - FY2017 10-K, Consolidated Balance Sheets, Page 39\n\nNote: No analysis or interpretation of trends or ratios has been provided as per the directive.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_116_1C09CCA7_H3",
+      "type": "dollar_amount",
+      "original_value": "$7,883 million",
+      "injected_value": "$5,544 million",
+      "original_numeric": "7883",
+      "injected_numeric": "5544",
+      "position_char": 99,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.2968
+    },
+    {
+      "hallucination_id": "FB_116_1C09CCA7_H2",
+      "type": "dollar_amount",
+      "original_value": "$7,477 million",
+      "injected_value": "$9,099 million",
+      "original_numeric": "7477",
+      "injected_numeric": "9099",
+      "position_char": 218,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.2169
+    },
+    {
+      "hallucination_id": "FB_116_1C09CCA7_H1",
+      "type": "dollar_amount",
+      "original_value": "$6,704 million",
+      "injected_value": "$4,680 million",
+      "original_numeric": "6704",
+      "injected_numeric": "4680",
+      "position_char": 317,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3019
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "FY2018 Total Current Assets: $9,099 million",
+        "claim_value": "$9,099 million",
+        "reason": "When compared to FY2017's reported $4,680 million, this represents an approximate 94.4% increase in total current assets year-over-year. Such a massive, nearly doubling, increase for a large, stable company like Nike is highly unusual and suggests potential data inaccuracy or hallucination.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Current Assets: $5,544 million (per the FY2019 10-K, Consolidated Balance Sheets)",
+        "claim_value": "$5,544 million",
+        "reason": "When compared to FY2018's reported $9,099 million, this represents an approximate 39.1% decrease in total current assets year-over-year. While not as extreme as the prior year's reported increase, a nearly 40% drop for a stable company like Nike is still very significant and, especially in conjunction with the preceding year's massive increase, raises strong suspicion about the accuracy of the figures.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 3,
+    "overall_assessment": "The reported year-over-year changes in Nike's Total Current Assets (a nearly 95% increase from FY2017 to FY2018, followed by a nearly 40% decrease from FY2018 to FY2019) are highly implausible for a company of Nike's size and stability, strongly suggesting potential hallucination or inaccuracy in the figures.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"FY2018 Total Current Assets: $9,099 million\",\n      \"claim_value\": \"$9,099 million\",\n      \"reason\": \"When compared to FY2017's reported $4,680 million, this represents an approximate 94.4% increase in total current assets year-over-year. Such a massive, nearly doubling, increase for a large, stable company like Nike is highly unusual and suggests potential data inaccuracy or hallucination.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Current Assets: $5,544 million (per the FY2019 10-K, Consolidated Balance Sheets)\",\n      \"claim_value\": \"$5,544 million\",\n      \"reason\": \"When compared to FY2018's reported $9,099 million, this represents an approximate 39.1% decrease in total current assets year-over-year. While not as extreme as the prior year's reported increase, a nearly 40% drop for a stable company like Nike is still very significant and, especially in conjunction with the preceding year's massive increase, raises strong suspicion about the accuracy of the figures.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 3,\n  \"overall_assessment\": \"The reported year-over-year changes in Nike's Total Current Assets (a nearly 95% increase from FY2017 to FY2018, followed by a nearly 40% decrease from FY2018 to FY2019) are highly implausible for a company of Nike's size and stability, strongly suggesting potential hallucination or inaccuracy in the figures.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_116_1C09CCA7",
+      "hallucination_id": "FB_116_1C09CCA7_H3",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$7,883 million",
+      "injected_value": "$5,544 million",
+      "detected": true,
+      "reason": "When compared to FY2018's reported $9,099 million, this represents an approximate 39.1% decrease in total current assets year-over-year. While not as extreme as the prior year's reported increase, a nearly 40% drop for a stable company like Nike is still very significant and, especially in conjunction with the preceding year's massive increase, raises strong suspicion about the accuracy of the figures.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 3
+    },
+    {
+      "question_id": "FB_116_1C09CCA7",
+      "hallucination_id": "FB_116_1C09CCA7_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$7,477 million",
+      "injected_value": "$9,099 million",
+      "detected": true,
+      "reason": "When compared to FY2017's reported $4,680 million, this represents an approximate 94.4% increase in total current assets year-over-year. Such a massive, nearly doubling, increase for a large, stable company like Nike is highly unusual and suggests potential data inaccuracy or hallucination.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 3
+    },
+    {
+      "question_id": "FB_116_1C09CCA7",
+      "hallucination_id": "FB_116_1C09CCA7_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$6,704 million",
+      "injected_value": "$4,680 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 3
+    }
+  ],
+  "timestamp": "2026-03-25T08:00:34.938642Z"
+}

@@ -1,0 +1,145 @@
+{
+  "question_id": "FB_140_E38BA3D2",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Ulta Beauty, FY2023\n- PRIMARY METRIC: Merchandise Inventories balance at the end of FY2023 was $952.0 million, per the FY2023 10-K, Consolidated Balance Sheets.\n- SUPPORTING DATA: \n  - Merchandise Inventories balance at the end of FY2022 was $1,066.3 million.\n  - Merchandise Inventories balance at the end of FY2021 was $1,266.6 million.\n  - Total Revenue for FY2023 was $3,355.0 million, compared to $2,908.4 million for FY2022 and $2,100.0 million for FY2021.\n  - Cost of Goods Sold (COGS) for FY2023 was $1,919.5 million, compared to $1,112.3 million for FY2022 and $1,186.0 million for FY2021.\n- DATA SOURCES: \n  - FY2023 10-K, Consolidated Balance Sheets\n  - FY2023 10-K, Consolidated Statements of Operations\n\nNote: The request for analysis of the factors contributing to the increase in merchandise inventories balance, including sales growth, supply chain considerations, and seasonal fluctuations, cannot be fulfilled as it requires interpretation and analysis beyond the raw data extraction.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_140_E38BA3D2_H3",
+      "type": "dollar_amount",
+      "original_value": "$1,211.8 million",
+      "injected_value": "$952.0 million",
+      "original_numeric": "1211.8",
+      "injected_numeric": "952.0",
+      "position_char": 115,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2144
+    },
+    {
+      "hallucination_id": "FB_140_E38BA3D2_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,050.5 million",
+      "injected_value": "$1,266.6 million",
+      "original_numeric": "1050.5",
+      "injected_numeric": "1266.6",
+      "position_char": 343,
+      "sentence_approx": 5,
+      "perturbation_delta": 0.2057
+    },
+    {
+      "hallucination_id": "FB_140_E38BA3D2_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,646.5 million",
+      "injected_value": "$1,112.3 million",
+      "original_numeric": "1646.5",
+      "injected_numeric": "1112.3",
+      "position_char": 560,
+      "sentence_approx": 12,
+      "perturbation_delta": -0.3245
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Merchandise Inventories balance at the end of FY2023 was $952.0 million",
+        "claim_value": "$952.0 million",
+        "reason": "This figure is significantly lower than Ulta Beauty's actual merchandise inventory balance for FY2023, which was closer to $1.5 billion. This suggests hallucination.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Merchandise Inventories balance at the end of FY2022 was $1,066.3 million",
+        "claim_value": "$1,066.3 million",
+        "reason": "This figure is significantly lower than Ulta Beauty's actual merchandise inventory balance for FY2022, which was closer to $1.6 billion. This suggests hallucination.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Merchandise Inventories balance at the end of FY2021 was $1,266.6 million",
+        "claim_value": "$1,266.6 million",
+        "reason": "This figure is significantly lower than Ulta Beauty's actual merchandise inventory balance for FY2021, which was closer to $1.4 billion. This suggests hallucination.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Revenue for FY2023 was $3,355.0 million",
+        "claim_value": "$3,355.0 million",
+        "reason": "This figure is drastically lower than Ulta Beauty's actual total revenue for FY2023, which was approximately $11.2 billion. This is a clear hallucination.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Revenue for FY2022 was $2,908.4 million",
+        "claim_value": "$2,908.4 million",
+        "reason": "This figure is drastically lower than Ulta Beauty's actual total revenue for FY2022, which was approximately $9.6 billion. This is a clear hallucination.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Revenue for FY2021 was $2,100.0 million",
+        "claim_value": "$2,100.0 million",
+        "reason": "This figure is drastically lower than Ulta Beauty's actual total revenue for FY2021, which was approximately $8.6 billion. This is a clear hallucination.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Cost of Goods Sold (COGS) for FY2023 was $1,919.5 million",
+        "claim_value": "$1,919.5 million",
+        "reason": "This figure is significantly lower than Ulta Beauty's actual COGS for FY2023, which was closer to $6.5 billion. Given the reported (and hallucinated) revenue of $3,355.0 million for FY2023, the COGS figure is also highly likely to be hallucinated.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Cost of Goods Sold (COGS) for FY2022 was $1,112.3 million",
+        "claim_value": "$1,112.3 million",
+        "reason": "This figure is significantly lower than Ulta Beauty's actual COGS for FY2022, which was closer to $5.6 billion. Furthermore, when combined with the reported (and hallucinated) FY2022 revenue of $2,908.4 million, this COGS figure implies an exceptionally high gross margin of approximately 61.7%, which is highly implausible for a beauty retailer like Ulta (typical margins are 30-40%). This indicates an internal inconsistency and likely hallucination.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Cost of Goods Sold (COGS) for FY2021 was $1,186.0 million",
+        "claim_value": "$1,186.0 million",
+        "reason": "This figure is significantly lower than Ulta Beauty's actual COGS for FY2021, which was closer to $5.0 billion. Given the reported (and hallucinated) revenue of $2,100.0 million for FY2021, the COGS figure is also highly likely to be hallucinated.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 9,
+    "overall_assessment": "The researcher's output contains numerous significant hallucinations, with all reported revenue, COGS, and inventory figures being drastically inaccurate and inconsistent with Ulta Beauty's actual financial performance.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Merchandise Inventories balance at the end of FY2023 was $952.0 million\",\n      \"claim_value\": \"$952.0 million\",\n      \"reason\": \"This figure is significantly lower than Ulta Beauty's actual merchandise inventory balance for FY2023, which was closer to $1.5 billion. This suggests hallucination.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Merchandise Inventories balance at the end of FY2022 was $1,066.3 million\",\n      \"claim_value\": \"$1,066.3 million\",\n      \"reason\": \"This figure is significantly lower than Ulta Beauty's actual merchandise inventory balance for FY2022, which was closer to $1.6 billion. This suggests hallucination.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Merchandise Inventories balance at the end of FY2021 was $1,266.6 million\",\n      \"claim_value\": \"$1,266.6 million\",\n      \"reason\": \"This figure is significantly lower than Ulta Beauty's actual merchandise inventory balance for FY2021, which was closer to $1.4 billion. This suggests hallucination.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Revenue for FY2023 was $3,355.0 million\",\n      \"claim_value\": \"$3,355.0 million\",\n      \"reason\": \"This figure is drastically lower than Ulta Beauty's actual total revenue for FY2023, which was approximately $11.2 billion. This is a clear hallucination.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Revenue for FY2022 was $2,908.4 million\",\n      \"claim_value\": \"$2,908.4 million\",\n      \"reason\": \"This figure is drastically lower than Ulta Beauty's actual total revenue for FY2022, which was approximately $9.6 billion. This is a clear hallucination.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Revenue for FY2021 was $2,100.0 million\",\n      \"claim_value\": \"$2,100.0 million\",\n      \"reason\": \"This figure is drastically lower than Ulta Beauty's actual total revenue for FY2021, which was approximately $8.6 billion. This is a clear hallucination.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Cost of Goods Sold (COGS) for FY2023 was $1,919.5 million\",\n      \"claim_value\": \"$1,919.5 million\",\n      \"reason\": \"This figure is significantly lower than Ulta Beauty's actual COGS for FY2023, which was closer to $6.5 billion. Given the reported (and hallucinated) revenue of $3,355.0 million for FY2023, the COGS figure is also highly likely to be hallucinated.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Cost of Goods Sold (COGS) for FY2022 was $1,112.3 million\",\n      \"claim_value\": \"$1,112.3 million\",\n      \"reason\": \"This figure is significantly lower than Ulta Beauty's actual COGS for FY2022, which was closer to $5.6 billion. Furthermore, when combined with the reported (and hallucinated) FY2022 revenue of $2,908.4 million, this COGS figure implies an exceptionally high gross margin of approximately 61.7%, which is highly implausible for a beauty retailer like Ulta (typical margins are 30-40%). This indicates an internal inconsistency and likely hallucination.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Cost of Goods Sold (COGS) for FY2021 was $1,186.0 million\",\n      \"claim_value\": \"$1,186.0 million\",\n      \"reason\": \"This figure is significantly lower than Ulta Beauty's actual COGS for FY2021, which was closer to $5.0 billion. Given the reported (and hallucinated) revenue of $2,100.0 million for FY2021, the COGS figure is also highly likely to be hallucinated.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 9,\n  \"overall_assessment\": \"The researcher's output contains numerous significant hallucinations, with all reported revenue, COGS, and inventory figures being drastically inaccurate and inconsistent with Ulta Beauty's actual financial performance.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_140_E38BA3D2",
+      "hallucination_id": "FB_140_E38BA3D2_H3",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,211.8 million",
+      "injected_value": "$952.0 million",
+      "detected": true,
+      "reason": "This figure is significantly lower than Ulta Beauty's actual merchandise inventory balance for FY2023, which was closer to $1.5 billion. This suggests hallucination.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 9,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_140_E38BA3D2",
+      "hallucination_id": "FB_140_E38BA3D2_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,050.5 million",
+      "injected_value": "$1,266.6 million",
+      "detected": true,
+      "reason": "This figure is significantly lower than Ulta Beauty's actual merchandise inventory balance for FY2022, which was closer to $1.6 billion. This suggests hallucination.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 9,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_140_E38BA3D2",
+      "hallucination_id": "FB_140_E38BA3D2_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,646.5 million",
+      "injected_value": "$1,112.3 million",
+      "detected": true,
+      "reason": "This figure is significantly lower than Ulta Beauty's actual merchandise inventory balance for FY2022, which was closer to $1.6 billion. This suggests hallucination.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 9,
+      "total_claims_reviewed": 9
+    }
+  ],
+  "timestamp": "2026-03-25T08:05:46.318284Z"
+}

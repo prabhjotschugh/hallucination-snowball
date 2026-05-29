@@ -1,0 +1,188 @@
+{
+  "question_id": "FB_063_38B981AD",
+  "method": "end_check",
+  "final_output": "## Boeing Company: FY2022 Financial Performance Report\n\n### Executive Summary\n\nFor Fiscal Year 2022, The Boeing Company reported a Gross Margin of 9.7%, a significant improvement from 6.3% in FY2021. This enhancement was driven by a 32.33% increase in Gross Profit, reaching $5,162 million. However, this occurred despite a 14.38% decline in Total Revenue to $53,328 million. The company's ability to expand its gross profitability amidst revenue contraction suggests improved cost management or a strategic shift towards higher-margin activities.\n\n### Analysis\n\nBoeing's financial performance in FY2022 shows a notable increase in profitability at the gross level. Gross Profit rose by $1,261 million, from $3,901 million in FY2021 to $5,162 million in FY2022. This positive trend in gross profit occurred even as Total Revenue decreased by $8,955 million, from $62,283 million in FY2021 to $53,328 million in FY2022. Consequently, the Gross Margin improved by 3.4 percentage points, from 6.3% in FY2021 to 9.7% in FY2022, representing a 53.97% increase.\n\nComparing to FY2020, where the Gross Margin was 7.15% (calculated using Gross Profit of $4,195 million and Total Revenue of $58,658 million), the FY2022 margin of 9.7% indicates a sustained recovery in gross profitability, surpassing pre-pandemic levels in terms of margin percentage. This suggests effective operational adjustments and a focus on efficiency.\n\n### Key Risks\n\nWhile the improvement in Gross Margin is positive, the 14.38% year-over-year decrease in Total Revenue from FY2021 to FY2022, amounting to $8,955 million, presents a significant risk. Sustained revenue decline could impact overall financial health, even with improved gross profitability, by limiting investment capacity and market share. The ability to maintain or grow revenue in future periods, particularly through increased aircraft deliveries and service contracts, will be crucial for long-term stability and growth.\n\n### Conclusion\n\nBoeing Company demonstrated a strong recovery in gross profitability in FY2022, with its Gross Margin reaching 9.7%. This improvement was primarily due to a substantial increase in Gross Profit, which grew by $1,261 million to $5,162 million, indicating enhanced operational efficiency. However, the accompanying decline in Total Revenue to $53,328 million highlights the ongoing challenges in revenue generation that the company must address to ensure sustained financial growth and overall market competitiveness. Future reports should monitor revenue trends closely alongside profitability metrics.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Boeing Company, FY2022\n\n- PRIMARY METRIC: Gross Margin for FY2022 is 9.7%, calculated as Gross Profit of $5,162 million divided by Total Revenue of $53,328 million. (per the FY2022 10-K, Consolidated Statements of Operations)\n\n- SUPPORTING DATA:\n  - FY2022:\n    - Total Revenue: $53,328 million (per the FY2022 10-K, Consolidated Statements of Operations)\n    - Gross Profit: $5,162 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  \n  - FY2021:\n    - Total Revenue: $62,283 million (per the FY2021 10-K, Consolidated Statements of Operations)\n    - Gross Profit: $3,901 million (per the FY2021 10-K, Consolidated Statements of Operations)\n    - Gross Margin: 6.3% (calculated as Gross Profit of $3,901 million divided by Total Revenue of $62,283 million)\n\n  - FY2020:\n    - Total Revenue: $58,658 million (per the FY2020 10-K, Consolidated Statements of Operations)\n    - Gross Profit: $4,195 million (per the FY2020 10-K, Consolidated Statements of Operations)\n    - Gross Margin: 0.9% (calculated as Gross Profit of $4,195 million divided by Total Revenue of $71,042 million)\n\n- DATA SOURCES:\n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Statements of Operations\n  - FY2020 10-K, Consolidated Statements of Operations\n\nNote: The analysis of trends in gross margin and the implications on Boeing's overall financial health, as well as the evaluation of gross margin as a metric, are not included as per the instruction to provide raw data only.",
+    "2": "Here's the financial analysis for Boeing Company, FY2022, based on the provided data:\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\n**Total Revenue:**\n\n*   **FY2022 vs. FY2021:**\n    *   Absolute Change = FY2022 Revenue - FY2021 Revenue\n        = $53,328 million - $62,283 million = **-$8,955 million**\n    *   Percentage Change = (Absolute Change / FY2021 Revenue) * 100\n        = (-$8,955 million / $62,283 million) * 100 = **-14.38%**\n\n*   **FY2021 vs. FY2020:**\n    *   Absolute Change = FY2021 Revenue - FY2020 Revenue\n        = $62,283 million - $58,658 million = **$3,625 million**\n    *   Percentage Change = (Absolute Change / FY2020 Revenue) * 100\n        = ($3,625 million / $58,658 million) * 100 = **6.18%**\n\n**Gross Profit:**\n\n*   **FY2022 vs. FY2021:**\n    *   Absolute Change = FY2022 Gross Profit - FY2021 Gross Profit\n        = $5,162 million - $3,901 million = **$1,261 million**\n    *   Percentage Change = (Absolute Change / FY2021 Gross Profit) * 100\n        = ($1,261 million / $3,901 million) * 100 = **32.33%**\n\n*   **FY2021 vs. FY2020:**\n    *   Absolute Change = FY2021 Gross Profit - FY2020 Gross Profit\n        = $3,901 million - $4,195 million = **-$294 million**\n    *   Percentage Change = (Absolute Change / FY2020 Gross Profit) * 100\n        = (-$294 million / $4,195 million) * 100 = **-7.01%**\n\n**Gross Margin:**\n\n*   **FY2022 vs. FY2021:**\n    *   Absolute Change = FY2022 Gross Margin - FY2021 Gross Margin\n        = 9.7% - 6.3% = **3.4 percentage points**\n    *   Percentage Change = ((FY2022 Gross Margin - FY2021 Gross Margin) / FY2021 Gross Margin) * 100\n        = ((0.097 - 0.063) / 0.063) * 100 = **53.97%**\n\n*   **FY2021 vs. FY2020:**\n    *   Absolute Change = FY2021 Gross Margin - FY2020 Gross Margin\n        = 6.3% - 0.9% = **5.4 percentage points**\n    *   Percentage Change = ((FY2021 Gross Margin - FY2020 Gross Margin) / FY2020 Gross Margin) * 100\n        = ((0.063 - 0.009) / 0.009) * 100 = **600.00%**\n\n**2. Relevant Ratios**\n\n*   **Gross Margin (as provided and verified):**\n    *   **FY2022:** (Gross Profit / Total Revenue) = ($5,162 million / $53,328 million) = **9.7%**\n    *   **FY2021:** (Gross Profit / Total Revenue) = ($3,901 million / $62,283 million) = **6.3%**\n    *   **FY2020:** (Gross Profit / Total Revenue) = ($4,195 million / $58,658 million) = **7.15%** (Calculated using correct revenue)\n\n**3. Anomalies Flagged**\n\n*   **FY2020 Gross Margin Calculation:** The researcher data stated FY2020 Gross Margin as 0.9% using Total Revenue of $71,042 million. However, the supporting data for FY2020 lists Total Revenue as $58,658 million.\n    *   **Anomaly:** The denominator used in the researcher's FY2020 Gross Margin calculation ($71,042 million) is inconsistent with the provided FY2020 Total Revenue ($58,658 million).\n    *   **Correction:** Using the provided FY2020 Gross Profit ($4,195 million) and the correct FY2020 Total Revenue ($58,658 million):\n        *   Correct FY2020 Gross Margin = ($4,195 million / $58,658 million) * 100 = **7.15%**\n    *",
+    "3": "## Boeing Company: FY2022 Financial Performance Report\n\n### Executive Summary\n\nFor Fiscal Year 2022, The Boeing Company reported a Gross Margin of 9.7%, a significant improvement from 6.3% in FY2021. This enhancement was driven by a 32.33% increase in Gross Profit, reaching $5,162 million, despite a 14.38% decline in Total Revenue to $53,328 million. The company's ability to expand its gross profitability amidst revenue contraction suggests improved cost management or a shift towards higher-margin activities.\n\n### Analysis\n\nBoeing's financial performance in FY2022 shows a notable increase in profitability at the gross level. Gross Profit rose by $1,261 million, from $3,901 million in FY2021 to $5,162 million in FY2022. This positive trend in gross profit occurred even as Total Revenue decreased by $8,955 million, from $62,283 million in FY2021 to $53,328 million in FY2022. Consequently, the Gross Margin improved by 3.4 percentage points, from 6.3% in FY2021 to 9.7% in FY2022, representing a 53.97% increase.\n\nComparing to FY2020, where the Gross Margin was 7.15% (calculated using Gross Profit of $4,195 million and Total Revenue of $58,658 million), the FY2022 margin of 9.7% indicates a sustained recovery in gross profitability.\n\n### Key Risks\n\nWhile the improvement in Gross Margin is positive, the 14.38% year-over-year decrease in Total Revenue from FY2021 to FY2022, amounting to $8,955 million, presents a significant risk. Sustained revenue decline could impact overall financial health, even with improved gross profitability. The ability to maintain or grow revenue in future periods will be crucial for long-term stability.\n\n### Conclusion\n\nBoeing Company demonstrated a strong recovery in gross profitability in FY2022, with its Gross Margin reaching 9.7%. This improvement was primarily due to a substantial increase in Gross Profit, which grew by $1,261 million to $5,162 million. However, the accompanying decline in Total Revenue to $53,328 million highlights the ongoing challenges in revenue generation that the company must address to ensure sustained financial growth.",
+    "4": "## Boeing Company: FY2022 Financial Performance Report\n\n### Executive Summary\n\nFor Fiscal Year 2022, The Boeing Company reported a Gross Margin of 9.7%, a significant improvement from 6.3% in FY2021. This enhancement was driven by a 32.33% increase in Gross Profit, reaching $5,162 million. However, this occurred despite a 14.38% decline in Total Revenue to $53,328 million. The company's ability to expand its gross profitability amidst revenue contraction suggests improved cost management or a strategic shift towards higher-margin activities.\n\n### Analysis\n\nBoeing's financial performance in FY2022 shows a notable increase in profitability at the gross level. Gross Profit rose by $1,261 million, from $3,901 million in FY2021 to $5,162 million in FY2022. This positive trend in gross profit occurred even as Total Revenue decreased by $8,955 million, from $62,283 million in FY2021 to $53,328 million in FY2022. Consequently, the Gross Margin improved by 3.4 percentage points, from 6.3% in FY2021 to 9.7% in FY2022, representing a 53.97% increase.\n\nComparing to FY2020, where the Gross Margin was 7.15% (calculated using Gross Profit of $4,195 million and Total Revenue of $58,658 million), the FY2022 margin of 9.7% indicates a sustained recovery in gross profitability, surpassing pre-pandemic levels in terms of margin percentage. This suggests effective operational adjustments and a focus on efficiency.\n\n### Key Risks\n\nWhile the improvement in Gross Margin is positive, the 14.38% year-over-year decrease in Total Revenue from FY2021 to FY2022, amounting to $8,955 million, presents a significant risk. Sustained revenue decline could impact overall financial health, even with improved gross profitability, by limiting investment capacity and market share. The ability to maintain or grow revenue in future periods, particularly through increased aircraft deliveries and service contracts, will be crucial for long-term stability and growth.\n\n### Conclusion\n\nBoeing Company demonstrated a strong recovery in gross profitability in FY2022, with its Gross Margin reaching 9.7%. This improvement was primarily due to a substantial increase in Gross Profit, which grew by $1,261 million to $5,162 million, indicating enhanced operational efficiency. However, the accompanying decline in Total Revenue to $53,328 million highlights the ongoing challenges in revenue generation that the company must address to ensure sustained financial growth and overall market competitiveness. Future reports should monitor revenue trends closely alongside profitability metrics."
+  },
+  "gates": {
+    "end_gate": {
+      "verified": [
+        {
+          "value": "$5,162 million",
+          "ref": 5162.0
+        },
+        {
+          "value": "$53,328 million",
+          "ref": 53328.0
+        },
+        {
+          "value": "$3,901 million",
+          "ref": 3901.0
+        },
+        {
+          "value": "$5,162 million",
+          "ref": 5162.0
+        },
+        {
+          "value": "$8,955 million",
+          "ref": 9109.0
+        },
+        {
+          "value": "$62,283 million",
+          "ref": 62283.0
+        },
+        {
+          "value": "$53,328 million",
+          "ref": 53328.0
+        },
+        {
+          "value": "$4,195 million",
+          "ref": 4195.0
+        },
+        {
+          "value": "$58,658 million",
+          "ref": 58658.0
+        },
+        {
+          "value": "$8,955 million",
+          "ref": 9109.0
+        },
+        {
+          "value": "$5,162 million",
+          "ref": 5162.0
+        },
+        {
+          "value": "$53,328 million",
+          "ref": 53328.0
+        },
+        {
+          "value": "9.7%",
+          "ref": 9.7
+        },
+        {
+          "value": "6.3%",
+          "ref": 6.3
+        },
+        {
+          "value": "6.3%",
+          "ref": 6.3
+        },
+        {
+          "value": "9.7%",
+          "ref": 9.7
+        },
+        {
+          "value": "7.15%",
+          "ref": 7.15
+        },
+        {
+          "value": "9.7%",
+          "ref": 9.7
+        },
+        {
+          "value": "9.7%",
+          "ref": 9.7
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$1,261 million",
+          "num": 1261.0,
+          "correct": 2156.0,
+          "dev": 0.4151,
+          "source": "evidence"
+        },
+        {
+          "value": "$1,261 million",
+          "num": 1261.0,
+          "correct": 2156.0,
+          "dev": 0.4151,
+          "source": "evidence"
+        },
+        {
+          "value": "32.33%",
+          "num": 32.33,
+          "correct": 20.88,
+          "dev": 0.3542,
+          "source": "evidence"
+        },
+        {
+          "value": "14.38%",
+          "num": 14.38,
+          "correct": 20.88,
+          "dev": 0.3113,
+          "source": "evidence"
+        },
+        {
+          "value": "3.4 percent",
+          "num": 3.4,
+          "correct": 4.8,
+          "dev": 0.2917,
+          "source": "ground_truth"
+        },
+        {
+          "value": "14.38%",
+          "num": 14.38,
+          "correct": 20.88,
+          "dev": 0.3113,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "53.97%"
+        }
+      ],
+      "n_refs": 50
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_063_38B981AD",
+      "hid": "FB_063_38B981AD_H2",
+      "method": "end_check",
+      "type": "percentage",
+      "inj_num": 0.9,
+      "orig_num": 7.1,
+      "survived": false,
+      "corrected": true,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_063_38B981AD",
+      "hid": "FB_063_38B981AD_H1",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 71042.0,
+      "orig_num": 58658.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 1,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:26:01.318132+00:00"
+}

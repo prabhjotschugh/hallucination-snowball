@@ -1,0 +1,103 @@
+{
+  "question_id": "FB_086_889F46BB",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: Johnson & Johnson, FY2022\n- PRIMARY METRIC: Total Revenue: $94,943 million (per the FY2022 10-K, Consolidated Statements of Operations)\n- SUPPORTING DATA: \n  - FY2021 Total Revenue: $70,366 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2020 Total Revenue: $82,584 million (per the FY2020 10-K, Consolidated Statements of Operations)\n  - Net Income FY2022: $22,612 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - Net Income FY2021: $20,880 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - Net Income FY2020: $8,873 million (per the FY2020 10-K, Consolidated Statements of Operations)\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Statements of Operations\n  - FY2020 10-K, Consolidated Statements of Operations\n\nPlease note that I am unable to provide an analysis or narrative report as per your request, as my role is strictly to present factual data without interpretation.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_086_889F46BB_H3",
+      "type": "dollar_amount",
+      "original_value": "$93,775 million",
+      "injected_value": "$70,366 million",
+      "original_numeric": "93775",
+      "injected_numeric": "70366",
+      "position_char": 202,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2496
+    },
+    {
+      "hallucination_id": "FB_086_889F46BB_H2",
+      "type": "dollar_amount",
+      "original_value": "$16,676 million",
+      "injected_value": "$22,612 million",
+      "original_numeric": "16676",
+      "injected_numeric": "22612",
+      "position_char": 405,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.356
+    },
+    {
+      "hallucination_id": "FB_086_889F46BB_H1",
+      "type": "dollar_amount",
+      "original_value": "$14,714 million",
+      "injected_value": "$8,873 million",
+      "original_numeric": "14714",
+      "injected_numeric": "8873",
+      "position_char": 605,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.397
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "FY2021 Total Revenue: $70,366 million",
+        "claim_value": "$70,366 million",
+        "reason": "Johnson & Johnson is a large, stable company with consistent revenue growth. A drop from $82,584 million in FY2020 to $70,366 million in FY2021 (approx. 15% decrease) is highly unusual and not consistent with its historical trends.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Net Income FY2020: $8,873 million",
+        "claim_value": "$8,873 million",
+        "reason": "Net income of $8,873 million in FY2020 seems significantly lower compared to FY2021 ($20,880 million) and FY2022 ($22,612 million). While 2020 was impacted by the pandemic, such a sharp drop and subsequent recovery for a company like JnJ is suspicious without corroborating evidence.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "The revenue drop in FY2021 and extreme net income fluctuation in FY2020 seem highly unusual and warrant verification.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"FY2021 Total Revenue: $70,366 million\",\n      \"claim_value\": \"$70,366 million\",\n      \"reason\": \"Johnson & Johnson is a large, stable company with consistent revenue growth. A drop from $82,584 million in FY2020 to $70,366 million in FY2021 (approx. 15% decrease) is highly unusual and not consistent with its historical trends.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Net Income FY2020: $8,873 million\",\n      \"claim_value\": \"$8,873 million\",\n      \"reason\": \"Net income of $8,873 million in FY2020 seems significantly lower compared to FY2021 ($20,880 million) and FY2022 ($22,612 million). While 2020 was impacted by the pandemic, such a sharp drop and subsequent recovery for a company like JnJ is suspicious without corroborating evidence.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\": \"The revenue drop in FY2021 and extreme net income fluctuation in FY2020 seem highly unusual and warrant verification.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_086_889F46BB",
+      "hallucination_id": "FB_086_889F46BB_H3",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$93,775 million",
+      "injected_value": "$70,366 million",
+      "detected": true,
+      "reason": "Johnson & Johnson is a large, stable company with consistent revenue growth. A drop from $82,584 million in FY2020 to $70,366 million in FY2021 (approx. 15% decrease) is highly unusual and not consistent with its historical trends.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_086_889F46BB",
+      "hallucination_id": "FB_086_889F46BB_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$16,676 million",
+      "injected_value": "$22,612 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_086_889F46BB",
+      "hallucination_id": "FB_086_889F46BB_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$14,714 million",
+      "injected_value": "$8,873 million",
+      "detected": true,
+      "reason": "Net income of $8,873 million in FY2020 seems significantly lower compared to FY2021 ($20,880 million) and FY2022 ($22,612 million). While 2020 was impacted by the pandemic, such a sharp drop and subsequent recovery for a company like JnJ is suspicious without corroborating evidence.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-24T09:53:02.001749Z"
+}

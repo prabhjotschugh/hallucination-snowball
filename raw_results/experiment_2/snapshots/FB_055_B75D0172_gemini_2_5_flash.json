@@ -1,0 +1,127 @@
+{
+  "question_id": "FB_055_B75D0172",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Best Buy Co., Inc., Q2 FY2024 and Q2 FY2023\n- PRIMARY METRIC: As of the end of Q2 FY2024, Best Buy had 822 stores. As of the end of Q2 FY2023, Best Buy had 698 stores. This represents a decrease of 16 stores year-over-year. (per the Q2 FY2024 10-Q, Part I, Item 1, Consolidated Balance Sheets)\n- SUPPORTING DATA: \n  - Q2 FY2024 Store Count: 1,272 stores\n  - Q2 FY2023 Store Count: 1,040 stores\n  - Change in Store Count: -16 stores\n- DATA SOURCES: \n  - Best Buy Q2 FY2024 10-Q, Part I, Item 1, Consolidated Balance Sheets\n  - Best Buy Q2 FY2023 10-Q, Part I, Item 1, Consolidated Balance Sheets\n\nNote: No further analysis or interpretation has been provided as per instructions.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_055_B75D0172_H3",
+      "type": "large_number",
+      "original_value": "1,024",
+      "injected_value": "822",
+      "original_numeric": "1024",
+      "injected_numeric": "822",
+      "position_char": 123,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.1968
+    },
+    {
+      "hallucination_id": "FB_055_B75D0172_H2",
+      "type": "large_number",
+      "original_value": "1,040",
+      "injected_value": "698",
+      "original_numeric": "1040",
+      "injected_numeric": "698",
+      "position_char": 178,
+      "sentence_approx": 4,
+      "perturbation_delta": -0.3289
+    },
+    {
+      "hallucination_id": "FB_055_B75D0172_H1",
+      "type": "large_number",
+      "original_value": "1,024",
+      "injected_value": "1,272",
+      "original_numeric": "1024",
+      "injected_numeric": "1272",
+      "position_char": 365,
+      "sentence_approx": 6,
+      "perturbation_delta": 0.2418
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "As of the end of Q2 FY2024, Best Buy had 822 stores.",
+        "claim_value": "822",
+        "reason": "This figure is directly contradicted by the 'SUPPORTING DATA' section which states 'Q2 FY2024 Store Count: 1,272 stores'. Two different store counts are provided for the same period.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "As of the end of Q2 FY2023, Best Buy had 698 stores.",
+        "claim_value": "698",
+        "reason": "This figure is directly contradicted by the 'SUPPORTING DATA' section which states 'Q2 FY2023 Store Count: 1,040 stores'. Two different store counts are provided for the same period.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "This represents a decrease of 16 stores year-over-year.",
+        "claim_value": "-16",
+        "reason": "Based on the 'PRIMARY METRIC' figures (822 stores in Q2 FY2024 and 698 stores in Q2 FY2023), the actual change is 822 - 698 = 124 stores (an increase), not a decrease of 16. The calculation is incorrect and the sign is wrong.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Q2 FY2024 Store Count: 1,272 stores",
+        "claim_value": "1,272",
+        "reason": "This figure is directly contradicted by the 'PRIMARY METRIC' section which states 'As of the end of Q2 FY2024, Best Buy had 822 stores'. Two different store counts are provided for the same period.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Q2 FY2023 Store Count: 1,040 stores",
+        "claim_value": "1,040",
+        "reason": "This figure is directly contradicted by the 'PRIMARY METRIC' section which states 'As of the end of Q2 FY2023, Best Buy had 698 stores'. Two different store counts are provided for the same period.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Change in Store Count: -16 stores",
+        "claim_value": "-16",
+        "reason": "Based on the 'SUPPORTING DATA' figures (1,272 stores in Q2 FY2024 and 1,040 stores in Q2 FY2023), the actual change is 1,272 - 1,040 = 232 stores (an increase), not a decrease of 16. The calculation is incorrect and the sign is wrong.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "The researcher's output contains significant internal inconsistencies and mathematical errors regarding Best Buy's store counts and their year-over-year changes, indicating a high likelihood of hallucinated figures.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"As of the end of Q2 FY2024, Best Buy had 822 stores.\",\n      \"claim_value\": \"822\",\n      \"reason\": \"This figure is directly contradicted by the 'SUPPORTING DATA' section which states 'Q2 FY2024 Store Count: 1,272 stores'. Two different store counts are provided for the same period.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"As of the end of Q2 FY2023, Best Buy had 698 stores.\",\n      \"claim_value\": \"698\",\n      \"reason\": \"This figure is directly contradicted by the 'SUPPORTING DATA' section which states 'Q2 FY2023 Store Count: 1,040 stores'. Two different store counts are provided for the same period.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"This represents a decrease of 16 stores year-over-year.\",\n      \"claim_value\": \"-16\",\n      \"reason\": \"Based on the 'PRIMARY METRIC' figures (822 stores in Q2 FY2024 and 698 stores in Q2 FY2023), the actual change is 822 - 698 = 124 stores (an increase), not a decrease of 16. The calculation is incorrect and the sign is wrong.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Q2 FY2024 Store Count: 1,272 stores\",\n      \"claim_value\": \"1,272\",\n      \"reason\": \"This figure is directly contradicted by the 'PRIMARY METRIC' section which states 'As of the end of Q2 FY2024, Best Buy had 822 stores'. Two different store counts are provided for the same period.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Q2 FY2023 Store Count: 1,040 stores\",\n      \"claim_value\": \"1,040\",\n      \"reason\": \"This figure is directly contradicted by the 'PRIMARY METRIC' section which states 'As of the end of Q2 FY2023, Best Buy had 698 stores'. Two different store counts are provided for the same period.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Change in Store Count: -16 stores\",\n      \"claim_value\": \"-16\",\n      \"reason\": \"Based on the 'SUPPORTING DATA' figures (1,272 stores in Q2 FY2024 and 1,040 stores in Q2 FY2023), the actual change is 1,272 - 1,040 = 232 stores (an increase), not a decrease of 16. The calculation is incorrect and the sign is wrong.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\": \"The researcher's output contains significant internal inconsistencies and mathematical errors regarding Best Buy's store counts and their year-over-year changes, indicating a high likelihood of hallucinated figures.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_055_B75D0172",
+      "hallucination_id": "FB_055_B75D0172_H3",
+      "model": "gemini-2.5-flash",
+      "injection_type": "large_number",
+      "original_value": "1,024",
+      "injected_value": "822",
+      "detected": true,
+      "reason": "This figure is directly contradicted by the 'SUPPORTING DATA' section which states 'Q2 FY2024 Store Count: 1,272 stores'. Two different store counts are provided for the same period.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_055_B75D0172",
+      "hallucination_id": "FB_055_B75D0172_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "large_number",
+      "original_value": "1,040",
+      "injected_value": "698",
+      "detected": true,
+      "reason": "This figure is directly contradicted by the 'SUPPORTING DATA' section which states 'Q2 FY2023 Store Count: 1,040 stores'. Two different store counts are provided for the same period.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_055_B75D0172",
+      "hallucination_id": "FB_055_B75D0172_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "large_number",
+      "original_value": "1,024",
+      "injected_value": "1,272",
+      "detected": true,
+      "reason": "This figure is directly contradicted by the 'PRIMARY METRIC' section which states 'As of the end of Q2 FY2024, Best Buy had 822 stores'. Two different store counts are provided for the same period.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-25T07:46:46.582057Z"
+}

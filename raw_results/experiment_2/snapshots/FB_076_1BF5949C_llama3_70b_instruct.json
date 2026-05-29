@@ -1,0 +1,109 @@
+{
+  "question_id": "FB_076_1BF5949C",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: CVS Health, FY2018\n- PRIMARY METRIC: \n  - Revenue: $124,200 million (per the FY2018 10-K, Consolidated Statements of Operations)\n- SUPPORTING DATA: \n  - Property, Plant, and Equipment (PP&E) as of FY2017: $27,991 million (per the FY2018 10-K, Consolidated Balance Sheets)\n  - Property, Plant, and Equipment (PP&E) as of FY2018: $23,135 million (per the FY2018 10-K, Consolidated Balance Sheets)\n  - Average PP&E between FY2017 and FY2018: \n    - Calculation: ($21,643 million + $23,135 million) / 2 = $22,389 million\n- FIXED ASSET TURNOVER RATIO: \n  - Calculation: $194,579 million / $29,388 million = 8.69 (rounded to two decimal places: 8.69)\n- DATA SOURCES: \n  - FY2018 10-K, Consolidated Statements of Operations\n  - FY2018 10-K, Consolidated Balance Sheets\n\nNote: The request for analysis and benchmarking against industry peers has not been fulfilled as per the directive to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_076_1BF5949C_H3",
+      "type": "dollar_amount",
+      "original_value": "$194,579 million",
+      "injected_value": "$124,200 million",
+      "original_numeric": "194579",
+      "injected_numeric": "124200",
+      "position_char": 71,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.3617
+    },
+    {
+      "hallucination_id": "FB_076_1BF5949C_H2",
+      "type": "dollar_amount",
+      "original_value": "$21,643 million",
+      "injected_value": "$27,991 million",
+      "original_numeric": "21643",
+      "injected_numeric": "27991",
+      "position_char": 225,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.2933
+    },
+    {
+      "hallucination_id": "FB_076_1BF5949C_H1",
+      "type": "dollar_amount",
+      "original_value": "$22,389 million",
+      "injected_value": "$29,388 million",
+      "original_numeric": "22389",
+      "injected_numeric": "29388",
+      "position_char": 604,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.3126
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Revenue: $124,200 million",
+        "claim_value": "$124,200 million",
+        "reason": "The revenue figure seems suspiciously round, especially considering the precision of other figures in the output.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Average PP&E between FY2017 and FY2018: $22,389 million",
+        "claim_value": "$22,389 million",
+        "reason": "The average PP&E calculation seems incorrect, as the average of $27,991 million and $23,135 million would be $25,563 million, not $22,389 million.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FIXED ASSET TURNOVER RATIO: $194,579 million / $29,388 million = 8.69",
+        "claim_value": "$194,579 million",
+        "reason": "The revenue figure used in the fixed asset turnover ratio calculation ($194,579 million) does not match the previously stated revenue figure ($124,200 million).",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "The output contains several suspicious claims, including a round revenue figure, an incorrect average PP&E calculation, and a mismatched revenue figure in the fixed asset turnover ratio calculation.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"Revenue: $124,200 million\",\n      \"claim_value\" : \"$124,200 million\",\n      \"reason\"      : \"The revenue figure seems suspiciously round, especially considering the precision of other figures in the output.\",\n      \"confidence\"  : \"medium\"\n    },\n    {\n      \"claim_text\"  : \"Average PP&E between FY2017 and FY2018: $22,389 million\",\n      \"claim_value\" : \"$22,389 million\",\n      \"reason\"      : \"The average PP&E calculation seems incorrect, as the average of $27,991 million and $23,135 million would be $25,563 million, not $22,389 million.\",\n      \"confidence\"  : \"high\"\n    },\n    {\n      \"claim_text\"  : \"FIXED ASSET TURNOVER RATIO: $194,579 million / $29,388 million = 8.69\",\n      \"claim_value\" : \"$194,579 million\",\n      \"reason\"      : \"The revenue figure used in the fixed asset turnover ratio calculation ($194,579 million) does not match the previously stated revenue figure ($124,200 million).\",\n      \"confidence\"  : \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\"   : \"The output contains several suspicious claims, including a round revenue figure, an incorrect average PP&E calculation, and a mismatched revenue figure in the fixed asset turnover ratio calculation.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_076_1BF5949C",
+      "hallucination_id": "FB_076_1BF5949C_H3",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$194,579 million",
+      "injected_value": "$124,200 million",
+      "detected": true,
+      "reason": "The revenue figure seems suspiciously round, especially considering the precision of other figures in the output.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_076_1BF5949C",
+      "hallucination_id": "FB_076_1BF5949C_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$21,643 million",
+      "injected_value": "$27,991 million",
+      "detected": true,
+      "reason": "The average PP&E calculation seems incorrect, as the average of $27,991 million and $23,135 million would be $25,563 million, not $22,389 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_076_1BF5949C",
+      "hallucination_id": "FB_076_1BF5949C_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$22,389 million",
+      "injected_value": "$29,388 million",
+      "detected": true,
+      "reason": "The average PP&E calculation seems incorrect, as the average of $27,991 million and $23,135 million would be $25,563 million, not $22,389 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-27T09:36:45.670168Z"
+}

@@ -1,0 +1,97 @@
+{
+  "question_id": "FB_034_BDBAA961",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Advanced Micro Devices, Inc. (AMD) - Fiscal Year 2022 (FY2022)\n  \n- PRIMARY METRIC: Total Revenue for FY2022 was $23,600 million, as reported in the FY2022 10-K, Consolidated Statements of Operations.\n\n- SUPPORTING DATA: \n  - FY2021 Total Revenue: $22,281 million (per the FY2021 10-K, Consolidated Statements of Operations).\n  - FY2020 Total Revenue: $9,763 million (per the FY2020 10-K, Consolidated Statements of Operations).\n  - Revenue Growth from FY2021 to FY2022: $23,600 million - $16,420 million = $7,180 million (approximately 33.9% increase).\n  - Revenue Growth from FY2020 to FY2021: $10,590 million - $9,763 million = $6,657 million (approximately 68.1% increase).\n\n- DATA SOURCES: \n  - FY2022 10-K filing, Consolidated Statements of Operations.\n  - FY2021 10-K filing, Consolidated Statements of Operations.\n  - FY2020 10-K filing, Consolidated Statements of Operations.\n\n**Note:** The request for analysis of trends, computation of ratios, and benchmarking against industry peers cannot be fulfilled as per the directive to provide raw data only without interpretation or analysis.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_034_BDBAA961_H3",
+      "type": "dollar_amount",
+      "original_value": "$16,420 million",
+      "injected_value": "$22,281 million",
+      "original_numeric": "16420",
+      "injected_numeric": "22281",
+      "position_char": 268,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.3569
+    },
+    {
+      "hallucination_id": "FB_034_BDBAA961_H2",
+      "type": "percentage",
+      "original_value": "43.8%",
+      "injected_value": "33.9%",
+      "original_numeric": "43.8",
+      "injected_numeric": "33.9",
+      "position_char": 557,
+      "sentence_approx": 5,
+      "perturbation_delta": -9.9152
+    },
+    {
+      "hallucination_id": "FB_034_BDBAA961_H1",
+      "type": "dollar_amount",
+      "original_value": "$16,420 million",
+      "injected_value": "$10,590 million",
+      "original_numeric": "16420",
+      "injected_numeric": "10590",
+      "position_char": 616,
+      "sentence_approx": 7,
+      "perturbation_delta": -0.3551
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Revenue Growth from FY2021 to FY2022: $23,600 million - $16,420 million = $7,180 million",
+        "claim_value": "$16,420 million",
+        "reason": "The calculation seems incorrect, as $23,600 million - $22,281 million (FY2021 revenue) would be the correct subtraction, not $16,420 million.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 5,
+    "overall_assessment": "The researcher's output contains a calculation error, which raises concerns about the accuracy of the reported revenue growth.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"Revenue Growth from FY2021 to FY2022: $23,600 million - $16,420 million = $7,180 million\",\n      \"claim_value\" : \"$16,420 million\",\n      \"reason\"      : \"The calculation seems incorrect, as $23,600 million - $22,281 million (FY2021 revenue) would be the correct subtraction, not $16,420 million.\",\n      \"confidence\"  : \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 5,\n  \"overall_assessment\"   : \"The researcher's output contains a calculation error, which raises concerns about the accuracy of the reported revenue growth.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_034_BDBAA961",
+      "hallucination_id": "FB_034_BDBAA961_H3",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$16,420 million",
+      "injected_value": "$22,281 million",
+      "detected": true,
+      "reason": "The calculation seems incorrect, as $23,600 million - $22,281 million (FY2021 revenue) would be the correct subtraction, not $16,420 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 5
+    },
+    {
+      "question_id": "FB_034_BDBAA961",
+      "hallucination_id": "FB_034_BDBAA961_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "percentage",
+      "original_value": "43.8%",
+      "injected_value": "33.9%",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 5
+    },
+    {
+      "question_id": "FB_034_BDBAA961",
+      "hallucination_id": "FB_034_BDBAA961_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$16,420 million",
+      "injected_value": "$10,590 million",
+      "detected": true,
+      "reason": "The calculation seems incorrect, as $23,600 million - $22,281 million (FY2021 revenue) would be the correct subtraction, not $16,420 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 5
+    }
+  ],
+  "timestamp": "2026-03-27T09:30:41.805086Z"
+}

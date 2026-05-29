@@ -1,0 +1,194 @@
+{
+  "question_id": "FB_005_FE85BE68",
+  "method": "end_check",
+  "final_output": "## 3M Company: Fiscal Year 2022 Financial Report\n\n**Executive Summary**\n\n3M Company reported total revenue of $34,229 million for Fiscal Year 2022, representing a decline of 0.6% compared to FY2021. All four primary segments experienced revenue decreases, with the Consumer segment showing the most significant decline at 6.0%. This segment's performance had the most substantial negative impact on overall growth, excluding M&A activities. A significant portion of revenue, $5,009 million (14.63%), is not allocated to the specified segments, indicating an \"Other\" or \"Unallocated\" revenue category.\n\n**Analysis**\n\n3M's FY2022 total revenue of $34,229 million reflects a year-over-year decrease of 0.6%. Segment performance was uniformly negative: Safety & Industrial revenue was $8,236 million, a 2.1% decrease; Transportation & Electronics revenue was $8,303 million, down 2.4%; Health Care revenue was $6,023 million, a 2.6% decrease; and Consumer revenue was $6,658 million, declining by 6.0%. The Consumer segment's 6.0% decline had the most significant negative impact on overall growth. In terms of contribution to total allocated revenue, Transportation & Electronics was the largest segment at 24.3%, followed by Safety & Industrial at 24.1%, Consumer at 19.5%, and Health Care at 17.6%.\n\n**Key Risks**\n\nThe consistent revenue decline across all segments, particularly the pronounced 6.0% decrease in the Consumer segment, signals broad market challenges or competitive pressures. The substantial unallocated revenue of $5,009 million, representing 14.63% of total revenue, presents a lack of transparency regarding a significant portion of the company's operations. Understanding the nature and performance of this unallocated revenue is crucial for a complete financial assessment.\n\n**Conclusion**\n\n3M Company's FY2022 performance was characterized by a modest overall revenue decline of 0.6% to $34,229 million, driven by decreases across all operating segments. The Consumer segment's 6.0% revenue reduction was a primary contributor to this negative trend. Further investigation into the composition and performance of the $5,009 million in unallocated revenue is recommended for a comprehensive understanding of the company's financial health and future outlook.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: 3M Company, Fiscal Year 2022\n- PRIMARY METRIC: Total Revenue: $35,434 million (per the FY2022 10-K, Consolidated Statements of Operations).\n- SUPPORTING DATA:\n  - Segment Performance:\n    - Safety & Industrial: Revenue of $8,236 million, a decrease of 2.1% from 2021.\n    - Transportation & Electronics: Revenue of $8,303 million, a decrease of 2.4% from 2021.\n    - Health Care: Revenue of $6,023 million, a decrease of 2.6% from 2021.\n    - Consumer: Revenue of $6,658 million, a decrease of 6.0% from 2021.\n  - Total Revenue Growth Rate: -0.6% compared to FY2021.\n  - Excluding M&A: The Consumer segment had the most significant negative impact on overall growth, with a revenue decline of 6.0% (per the FY2022 10-K, Segment Information).\n- DATA SOURCES: \n  - 3M Company FY2022 10-K, Consolidated Statements of Operations.\n  - 3M Company FY2022 10-K, Segment Information.",
+    "2": "Here's an analysis of 3M Company's FY2022 performance based on the provided data:\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\n*   **FY2022 Total Revenue:** $35,434 million\n*   **Total Revenue Growth Rate (YoY):** -0.6%\n\n*   **FY2021 Total Revenue Calculation:**\n    *   `FY2021 Total Revenue = FY2022 Total Revenue / (1 + Total Revenue Growth Rate)`\n    *   `FY2021 Total Revenue = $35,434 million / (1 - 0.006)`\n    *   `FY2021 Total Revenue = $35,434 million / 0.994`\n    *   **FY2021 Total Revenue = $35,647.89 million** (approx.)\n\n*   **Absolute Change in Total Revenue:**\n    *   `Absolute Change = FY2022 Total Revenue - FY2021 Total Revenue`\n    *   `Absolute Change = $35,434 million - $35,647.89 million`\n    *   **Absolute Change = -$213.89 million**\n\n*   **Segment-Specific YoY Changes (Absolute):**\n    *   **Safety & Industrial:**\n        *   `FY2021 Revenue = $8,236 million / (1 - 0.021) = $8,412.75 million`\n        *   `Absolute Change = $8,236 million - $8,412.75 million = -$176.75 million`\n    *   **Transportation & Electronics:**\n        *   `FY2021 Revenue = $8,303 million / (1 - 0.024) = $8,507.42 million`\n        *   `Absolute Change = $8,303 million - $8,507.42 million = -$204.42 million`\n    *   **Health Care:**\n        *   `FY2021 Revenue = $6,023 million / (1 - 0.026) = $6,184.03 million`\n        *   `Absolute Change = $6,023 million - $6,184.03 million = -$161.03 million`\n    *   **Consumer:**\n        *   `FY2021 Revenue = $6,658 million / (1 - 0.060) = $7,082.98 million`\n        *   `Absolute Change = $6,658 million - $7,082.98 million = -$424.98 million`\n\n**2. Relevant Ratios**\n\n*   **Segment Contribution to Total Revenue (FY2022):**\n    *   `Segment Contribution = Segment Revenue / Total Revenue`\n    *   **Safety & Industrial:** `$8,236 million / $35,434 million = 23.24%`\n    *   **Transportation & Electronics:** `$8,303 million / $35,434 million = 23.43%`\n    *   **Health Care:** `$6,023 million / $35,434 million = 17.00%`\n    *   **Consumer:** `$6,658 million / $35,434 million = 18.79%`\n\n*   **Sum of Reported Segment Revenues:**\n    *   `Sum = $8,236 + $8,303 + $6,023 + $6,658 = $29,220 million`\n\n*   **Unallocated Revenue / Other Revenue (FY2022):**\n    *   `Unallocated Revenue = Total Revenue - Sum of Reported Segment Revenues`\n    *   `Unallocated Revenue = $35,434 million - $29,220 million = $6,214 million`\n    *   `Percentage of Total Revenue = $6,214 million / $35,434 million = 17.54%`\n\n**3. Anomalies Flagged**\n\n*   **Discrepancy in Segment Sum vs. Total Revenue:** The sum of the four reported segment revenues ($29,220 million) is significantly lower than the stated Total Revenue ($35,434 million). This indicates a substantial portion of revenue ($6,214 million or 17.54%) is not allocated to the provided segments. This is common for \"Other\" or \"Unallocated\" categories in financial reporting but should be noted as it represents a large, undescribed portion of the business.\n*   **Consumer Segment Impact:** The Consumer segment's 6.0% decline is explicitly highlighted as having the \"most significant negative impact on overall growth\" (excluding M&A). This confirms its disproportionate contribution to the overall revenue decline, despite not being the largest segment by revenue.",
+    "3": "## 3M Company: Fiscal Year 2022 Financial Report\n\n**Executive Summary**\n\n3M Company reported total revenue of $35,434 million for Fiscal Year 2022, representing a decline of 0.6% compared to FY2021. All four primary segments experienced revenue decreases, with the Consumer segment showing the most significant decline at 6.0%. This segment's performance was noted as having the most substantial negative impact on overall growth, excluding M&A activities. A significant portion of revenue, $6,214 million (17.54%), is not allocated to the specified segments, indicating a substantial \"Other\" or \"Unallocated\" revenue category.\n\n**Analysis**\n\n3M's FY2022 total revenue of $35,434 million reflects a year-over-year decrease of 0.6%. Segment performance was uniformly negative: Safety & Industrial revenue was $8,236 million, a 2.1% decrease; Transportation & Electronics revenue was $8,303 million, down 2.4%; Health Care revenue was $6,023 million, a 2.6% decrease; and Consumer revenue was $6,658 million, declining by 6.0%. The Consumer segment's 6.0% decline had the most significant negative impact on overall growth. In terms of contribution to total revenue, Transportation & Electronics was the largest segment at 23.43%, followed by Safety & Industrial at 23.24%, Consumer at 18.79%, and Health Care at 17.00%.\n\n**Key Risks**\n\nThe consistent revenue decline across all segments, particularly the pronounced 6.0% decrease in the Consumer segment, signals broad market challenges or competitive pressures. The substantial unallocated revenue of $6,214 million, representing 17.54% of total revenue, presents a lack of transparency regarding a significant portion of the company's operations. Understanding the nature and performance of this unallocated revenue is crucial for a complete financial assessment.\n\n**Conclusion**\n\n3M Company's FY2022 performance was characterized by a modest overall revenue decline of 0.6% to $35,434 million, driven by decreases across all operating segments. The Consumer segment's 6.0% revenue reduction was a primary contributor to this negative trend. Further investigation into the composition and performance of the $6,214 million in unallocated revenue is recommended for a comprehensive understanding of the company's financial health and future outlook.",
+    "4": "## 3M Company: Fiscal Year 2022 Financial Report\n\n**Executive Summary**\n\n3M Company reported total revenue of $34,229 million for Fiscal Year 2022, representing a decline of 0.6% compared to FY2021. All four primary segments experienced revenue decreases, with the Consumer segment showing the most significant decline at 6.0%. This segment's performance had the most substantial negative impact on overall growth, excluding M&A activities. A significant portion of revenue, $5,009 million (14.63%), is not allocated to the specified segments, indicating an \"Other\" or \"Unallocated\" revenue category.\n\n**Analysis**\n\n3M's FY2022 total revenue of $34,229 million reflects a year-over-year decrease of 0.6%. Segment performance was uniformly negative: Safety & Industrial revenue was $8,236 million, a 2.1% decrease; Transportation & Electronics revenue was $8,303 million, down 2.4%; Health Care revenue was $6,023 million, a 2.6% decrease; and Consumer revenue was $6,658 million, declining by 6.0%. The Consumer segment's 6.0% decline had the most significant negative impact on overall growth. In terms of contribution to total allocated revenue, Transportation & Electronics was the largest segment at 24.3%, followed by Safety & Industrial at 24.1%, Consumer at 19.5%, and Health Care at 17.6%.\n\n**Key Risks**\n\nThe consistent revenue decline across all segments, particularly the pronounced 6.0% decrease in the Consumer segment, signals broad market challenges or competitive pressures. The substantial unallocated revenue of $5,009 million, representing 14.63% of total revenue, presents a lack of transparency regarding a significant portion of the company's operations. Understanding the nature and performance of this unallocated revenue is crucial for a complete financial assessment.\n\n**Conclusion**\n\n3M Company's FY2022 performance was characterized by a modest overall revenue decline of 0.6% to $34,229 million, driven by decreases across all operating segments. The Consumer segment's 6.0% revenue reduction was a primary contributor to this negative trend. Further investigation into the composition and performance of the $5,009 million in unallocated revenue is recommended for a comprehensive understanding of the company's financial health and future outlook."
+  },
+  "gates": {
+    "end_gate": {
+      "verified": [
+        {
+          "value": "$8,236 million",
+          "ref": 8303.0
+        },
+        {
+          "value": "$8,303 million",
+          "ref": 8303.0
+        },
+        {
+          "value": "$6,658 million",
+          "ref": 6658.0
+        },
+        {
+          "value": "0.6%",
+          "ref": 0.6
+        },
+        {
+          "value": "6.0%",
+          "ref": 6.0
+        },
+        {
+          "value": "0.6%",
+          "ref": 0.6
+        },
+        {
+          "value": "2.1%",
+          "ref": 2.1
+        },
+        {
+          "value": "2.4%",
+          "ref": 2.4
+        },
+        {
+          "value": "2.6%",
+          "ref": 2.6
+        },
+        {
+          "value": "6.0%",
+          "ref": 6.0
+        },
+        {
+          "value": "6.0%",
+          "ref": 6.0
+        },
+        {
+          "value": "6.0%",
+          "ref": 6.0
+        },
+        {
+          "value": "0.6%",
+          "ref": 0.6
+        },
+        {
+          "value": "6.0%",
+          "ref": 6.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$5,009 million",
+          "num": 5009.0,
+          "correct": 6658.0,
+          "dev": 0.2477,
+          "source": "source_document"
+        },
+        {
+          "value": "$6,023 million",
+          "num": 6023.0,
+          "correct": 6658.0,
+          "dev": 0.0954,
+          "source": "source_document"
+        },
+        {
+          "value": "$5,009 million",
+          "num": 5009.0,
+          "correct": 6658.0,
+          "dev": 0.2477,
+          "source": "source_document"
+        },
+        {
+          "value": "$5,009 million",
+          "num": 5009.0,
+          "correct": 6658.0,
+          "dev": 0.2477,
+          "source": "source_document"
+        },
+        {
+          "value": "14.63%",
+          "num": 14.63,
+          "correct": 9.0,
+          "dev": 0.3848,
+          "source": "evidence"
+        },
+        {
+          "value": "19.5%",
+          "num": 19.5,
+          "correct": 9.0,
+          "dev": 0.5385,
+          "source": "evidence"
+        },
+        {
+          "value": "17.6%",
+          "num": 17.6,
+          "correct": 9.0,
+          "dev": 0.4886,
+          "source": "evidence"
+        },
+        {
+          "value": "14.63%",
+          "num": 14.63,
+          "correct": 9.0,
+          "dev": 0.3848,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$34,229 million"
+        },
+        {
+          "value": "$34,229 million"
+        },
+        {
+          "value": "$34,229 million"
+        },
+        {
+          "value": "24.3%"
+        },
+        {
+          "value": "24.1%"
+        }
+      ],
+      "n_refs": 17
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_005_FE85BE68",
+      "hid": "FB_005_FE85BE68_H2",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 8236.0,
+      "orig_num": 12421.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_005_FE85BE68",
+      "hid": "FB_005_FE85BE68_H1",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 6023.0,
+      "orig_num": 8052.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": true,
+      "any_det": true,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    }
+  ],
+  "quality_score": 4,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:04:30.106988+00:00"
+}

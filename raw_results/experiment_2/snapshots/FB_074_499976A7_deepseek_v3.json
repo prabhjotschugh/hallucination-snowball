@@ -1,0 +1,85 @@
+{
+  "question_id": "FB_074_499976A7",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: Corning Incorporated, FY2022\n- PRIMARY METRIC: \n  - Current Assets: $12,988 million (per the FY2022 10-K, Consolidated Balance Sheets)\n  - Current Liabilities: $9,166 million (per the FY2022 10-K, Consolidated Balance Sheets)\n  - Working Capital: $3,822 million (calculated as Current Assets - Current Liabilities)\n\n- SUPPORTING DATA: \n  - FY2021 Current Assets: $12,078 million (per the FY2021 10-K, Consolidated Balance Sheets)\n  - FY2021 Current Liabilities: $6,078 million (per the FY2021 10-K, Consolidated Balance Sheets)\n  - FY2021 Working Capital: $3,970 million (calculated as Current Assets - Current Liabilities)\n  - FY2020 Current Assets: $11,000 million (per the FY2020 10-K, Consolidated Balance Sheets)\n  - FY2020 Current Liabilities: $9,948 million (per the FY2020 10-K, Consolidated Balance Sheets)\n  - FY2020 Working Capital: $3,600 million (calculated as Current Assets - Current Liabilities)\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Balance Sheets\n  - FY2021 10-K, Consolidated Balance Sheets\n  - FY2020 10-K, Consolidated Balance Sheets\n\n**Note:** The request to assess the relevance of working capital as a metric for Corning and to provide a rationale has not been fulfilled as per the instructions to present raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_074_499976A7_H2",
+      "type": "dollar_amount",
+      "original_value": "$8,108 million",
+      "injected_value": "$6,078 million",
+      "original_numeric": "8108",
+      "injected_numeric": "6078",
+      "position_char": 482,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2503
+    },
+    {
+      "hallucination_id": "FB_074_499976A7_H1",
+      "type": "dollar_amount",
+      "original_value": "$7,400 million",
+      "injected_value": "$9,948 million",
+      "original_numeric": "7400",
+      "injected_numeric": "9948",
+      "position_char": 770,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.3444
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "FY2021 Current Assets: $12,078 million (per the FY2021 10-K, Consolidated Balance Sheets)",
+        "claim_value": "$12,078 million",
+        "reason": "Suspiciously round number for Current Assets, which typically include many line items that would result in more precise figures.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "FY2020 Current Assets: $11,000 million (per the FY2020 10-K, Consolidated Balance Sheets)",
+        "claim_value": "$11,000 million",
+        "reason": "Highly round number for Current Assets, which is unusual for financial reporting where precise amounts are standard.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2020 Current Liabilities: $9,948 million (per the FY2020 10-K, Consolidated Balance Sheets)",
+        "claim_value": "$9,948 million",
+        "reason": "Suspiciously precise number compared to the highly round Current Assets figure ($11,000 million) for the same period, raising doubts about consistency.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "Several claims contain round or inconsistent figures that warrant further verification.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"FY2021 Current Assets: $12,078 million (per the FY2021 10-K, Consolidated Balance Sheets)\",\n      \"claim_value\": \"$12,078 million\",\n      \"reason\": \"Suspiciously round number for Current Assets, which typically include many line items that would result in more precise figures.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"FY2020 Current Assets: $11,000 million (per the FY2020 10-K, Consolidated Balance Sheets)\",\n      \"claim_value\": \"$11,000 million\",\n      \"reason\": \"Highly round number for Current Assets, which is unusual for financial reporting where precise amounts are standard.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2020 Current Liabilities: $9,948 million (per the FY2020 10-K, Consolidated Balance Sheets)\",\n      \"claim_value\": \"$9,948 million\",\n      \"reason\": \"Suspiciously precise number compared to the highly round Current Assets figure ($11,000 million) for the same period, raising doubts about consistency.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\": \"Several claims contain round or inconsistent figures that warrant further verification.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_074_499976A7",
+      "hallucination_id": "FB_074_499976A7_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$8,108 million",
+      "injected_value": "$6,078 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_074_499976A7",
+      "hallucination_id": "FB_074_499976A7_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$7,400 million",
+      "injected_value": "$9,948 million",
+      "detected": true,
+      "reason": "Suspiciously precise number compared to the highly round Current Assets figure ($11,000 million) for the same period, raising doubts about consistency.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-24T09:50:57.721409Z"
+}

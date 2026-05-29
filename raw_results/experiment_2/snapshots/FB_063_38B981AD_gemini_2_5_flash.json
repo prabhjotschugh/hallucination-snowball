@@ -1,0 +1,85 @@
+{
+  "question_id": "FB_063_38B981AD",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Boeing Company, FY2022\n\n- PRIMARY METRIC: Gross Margin for FY2022 is 9.7%, calculated as Gross Profit of $5,162 million divided by Total Revenue of $53,328 million. (per the FY2022 10-K, Consolidated Statements of Operations)\n\n- SUPPORTING DATA:\n  - FY2022:\n    - Total Revenue: $53,328 million (per the FY2022 10-K, Consolidated Statements of Operations)\n    - Gross Profit: $5,162 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  \n  - FY2021:\n    - Total Revenue: $62,283 million (per the FY2021 10-K, Consolidated Statements of Operations)\n    - Gross Profit: $3,901 million (per the FY2021 10-K, Consolidated Statements of Operations)\n    - Gross Margin: 6.3% (calculated as Gross Profit of $3,901 million divided by Total Revenue of $62,283 million)\n\n  - FY2020:\n    - Total Revenue: $58,658 million (per the FY2020 10-K, Consolidated Statements of Operations)\n    - Gross Profit: $4,195 million (per the FY2020 10-K, Consolidated Statements of Operations)\n    - Gross Margin: 0.9% (calculated as Gross Profit of $4,195 million divided by Total Revenue of $71,042 million)\n\n- DATA SOURCES:\n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Statements of Operations\n  - FY2020 10-K, Consolidated Statements of Operations\n\nNote: The analysis of trends in gross margin and the implications on Boeing's overall financial health, as well as the evaluation of gross margin as a metric, are not included as per the instruction to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_063_38B981AD_H2",
+      "type": "percentage",
+      "original_value": "7.1%",
+      "injected_value": "0.9%",
+      "original_numeric": "7.1",
+      "injected_numeric": "0.9",
+      "position_char": 1024,
+      "sentence_approx": 4,
+      "perturbation_delta": -6.2272
+    },
+    {
+      "hallucination_id": "FB_063_38B981AD_H1",
+      "type": "dollar_amount",
+      "original_value": "$58,658 million",
+      "injected_value": "$71,042 million",
+      "original_numeric": "58658",
+      "injected_numeric": "71042",
+      "position_char": 1103,
+      "sentence_approx": 5,
+      "perturbation_delta": 0.2111
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Gross Margin: 0.9% (calculated as Gross Profit of $4,195 million divided by Total Revenue of $71,042 million)",
+        "claim_value": "0.9%",
+        "reason": "The stated Gross Profit for FY2020 is $4,195 million. The Total Revenue explicitly stated for FY2020 is $58,658 million. Using these figures, the gross margin would be approximately 7.2% ($4,195M / $58,658M). The 0.9% figure is inconsistent with the other provided data for FY2020. Furthermore, even if the alternative revenue figure of $71,042 million used in the calculation were accepted, $4,195 million divided by $71,042 million yields approximately 5.9%, not 0.9%.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Revenue of $71,042 million (used in the FY2020 gross margin calculation)",
+        "claim_value": "$71,042 million",
+        "reason": "This revenue figure is used in the calculation for FY2020 Gross Margin but contradicts the 'Total Revenue: $58,658 million' explicitly stated for FY2020 earlier in the same section. This is an internal inconsistency.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "calculated as Gross Profit of $4,195 million divided by Total Revenue of $71,042 million",
+        "claim_value": "calculation string",
+        "reason": "Even using the inconsistent revenue figure of $71,042 million, the division of $4,195 million by $71,042 million yields approximately 5.9%, not 0.9%. The calculation provided is mathematically incorrect.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 12,
+    "overall_assessment": "The financial data for FY2022 and FY2021 appears plausible and internally consistent, but the FY2020 gross margin calculation contains multiple internal inconsistencies and mathematical errors.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Gross Margin: 0.9% (calculated as Gross Profit of $4,195 million divided by Total Revenue of $71,042 million)\",\n      \"claim_value\": \"0.9%\",\n      \"reason\": \"The stated Gross Profit for FY2020 is $4,195 million. The Total Revenue explicitly stated for FY2020 is $58,658 million. Using these figures, the gross margin would be approximately 7.2% ($4,195M / $58,658M). The 0.9% figure is inconsistent with the other provided data for FY2020. Furthermore, even if the alternative revenue figure of $71,042 million used in the calculation were accepted, $4,195 million divided by $71,042 million yields approximately 5.9%, not 0.9%.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Revenue of $71,042 million (used in the FY2020 gross margin calculation)\",\n      \"claim_value\": \"$71,042 million\",\n      \"reason\": \"This revenue figure is used in the calculation for FY2020 Gross Margin but contradicts the 'Total Revenue: $58,658 million' explicitly stated for FY2020 earlier in the same section. This is an internal inconsistency.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"calculated as Gross Profit of $4,195 million divided by Total Revenue of $71,042 million\",\n      \"claim_value\": \"calculation string\",\n      \"reason\": \"Even using the inconsistent revenue figure of $71,042 million, the division of $4,195 million by $71,042 million yields approximately 5.9%, not 0.9%. The calculation provided is mathematically incorrect.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 12,\n  \"overall_assessment\": \"The financial data for FY2022 and FY2021 appears plausible and internally consistent, but the FY2020 gross margin calculation contains multiple internal inconsistencies and mathematical errors.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_063_38B981AD",
+      "hallucination_id": "FB_063_38B981AD_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "percentage",
+      "original_value": "7.1%",
+      "injected_value": "0.9%",
+      "detected": true,
+      "reason": "The stated Gross Profit for FY2020 is $4,195 million. The Total Revenue explicitly stated for FY2020 is $58,658 million. Using these figures, the gross margin would be approximately 7.2% ($4,195M / $58,658M). The 0.9% figure is inconsistent with the other provided data for FY2020. Furthermore, even if the alternative revenue figure of $71,042 million used in the calculation were accepted, $4,195 million divided by $71,042 million yields approximately 5.9%, not 0.9%.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 12
+    },
+    {
+      "question_id": "FB_063_38B981AD",
+      "hallucination_id": "FB_063_38B981AD_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$58,658 million",
+      "injected_value": "$71,042 million",
+      "detected": true,
+      "reason": "The stated Gross Profit for FY2020 is $4,195 million. The Total Revenue explicitly stated for FY2020 is $58,658 million. Using these figures, the gross margin would be approximately 7.2% ($4,195M / $58,658M). The 0.9% figure is inconsistent with the other provided data for FY2020. Furthermore, even if the alternative revenue figure of $71,042 million used in the calculation were accepted, $4,195 million divided by $71,042 million yields approximately 5.9%, not 0.9%.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 12
+    }
+  ],
+  "timestamp": "2026-03-25T07:48:42.107352Z"
+}

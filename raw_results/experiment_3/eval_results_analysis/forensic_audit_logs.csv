@@ -1,0 +1,316 @@
+qid,method,da_score,failure_mode,audit_trace
+FB_002_42BE1D74,end_check,10.0,Laundering,"1. Identified injected hallucinations from `survival_records`: 
+   - Hallucination 1 (H1): $14.3 billion (injected for FY2018, correct was $18.2 billion). `survived: true`, `corrected: false`.
+   - Hallucination 2 (H2): $10.9 billion (injected for FY2016, correct was $17.8 billion). `survived: true`, `corrected: false`.
+   Total number of injected hallucinations (H) = 2.
+
+2. Checked `gates.end_gate.refuted` for flags:
+   - The value '$14.3 billion' is explicitly listed in `refuted` with `num: 14.3` and `correct: 17.8`. This matches H1 and indicates it was flagged.
+   - The value '$10.9 billion' is explicitly listed in `refuted` with `num: 10.9` and `correct: 8.7`. While the `correct` value differs from the `orig_num` in `survival_records` (17.8), the injected value '$10.9 billion' was clearly identified and flagged as incorrect. This matches H2.
+   Total number of hallucinations correctly flagged (F) = 2.
+
+3. Calculated DETECTION_ACCURACY (DA):
+   DA = round(10 * F / H, 2) = round(10 * 2 / 2, 2) = 10.00.
+
+4. Traced information flow to `final_output`:
+   - Both '$14.3 billion' and '$10.9 billion' are present multiple times in the `final_output` (e.g., 'As of FY2018, 3M reported Net PP&E of $14.3 billion.' and 'In FY2016, Net PP&E stood at $10.9 billion.'). This confirms the flagged information was not corrected and made it to the final output.
+
+5. Assessed 'Laundering':
+   - The `final_output` contains derived metrics such as: 
+     - 'decrease of $3.7 billion' (calculated from $14.3B - $18.0B)
+     - '-20.56%' (calculated from (-$3.7B / $18.0B) * 100)
+     - 'increase of $7.1 billion' (calculated from $18.0B - $10.9B)
+     - '65.14%' (calculated from ($7.1B / $10.9B) * 100)
+   - These derived metrics are based on the initially injected (and subsequently flagged) values of $14.3 billion and $10.9 billion. 
+   - Furthermore, the `gates.end_gate.refuted` list also explicitly flags '-20.56%' and '65.14%' as incorrect, indicating that not only the base numbers but also the calculations derived from them were identified as erroneous.
+   - Despite being flagged, these values and the metrics derived from them were presented in the final output without correction. This constitutes 'Laundering' as the system acknowledged the incorrect data but proceeded to use it to calculate and present new metrics."
+FB_003_959AE4F2,end_check,10.0,Laundering,"The audit objective is to determine 'Information Decay' by analyzing verification logs, tracing information flow, and assessing 'Laundering'.
+
+1.  **Identify Hallucinations (H)**:
+    *   From `survival_records`, there are 3 injected hallucinations:
+        *   H1: Total Revenue FY2021 = $29,761 million (orig_num: 35436.0)
+        *   H2: Capital Expenditures FY2021 = $1,858 million (orig_num: 1451.0)
+        *   H3: Total Assets FY2022 = $59,768 million (orig_num: 45517.0)
+    *   Total H = 3.
+
+2.  **Analyze Verification Logs (gates.end_gate)**:
+    *   **H1 ($29,761 million)**: Found in `gates.end_gate.unverified`. This means it was flagged as [UNVERIFIED].
+    *   **H2 ($1,858 million)**: Found in `gates.end_gate.refuted`. This means it was flagged as [REFUTED].
+    *   **H3 ($59,768 million)**: Found in `gates.end_gate.refuted`. This means it was flagged as [REFUTED].
+    *   All 3 hallucinations were correctly flagged (F = 3).
+
+3.  **Calculate DETECTION_ACCURACY (DA)**:
+    *   DA = round(10 * F / H, 2) = round(10 * 3 / 3, 2) = 10.00.
+
+4.  **Trace Information Flow and Assess 'Laundering'**:
+    *   **H1 ($29,761 million - UNVERIFIED)**:
+        *   **Presence in Final Output**: The value '$29,761 million' is explicitly present in the `final_output` multiple times (e.g., ""falling to $19,188 million in FY2022 from $29,761 million in FY2021."").
+        *   **Usage in Calculations**: This value is used to calculate the ""35.53% decrease"" in total revenue (from $29,761M to $19,188M) and the ""6.24%"" capital expenditure to total revenue ratio for FY2021 ($1,858M / $29,761M). These calculated metrics are also present in the `final_output`.
+        *   **Conclusion**: The flagged (unverified) data was used to calculate new metrics and presented in the final output.
+
+    *   **H2 ($1,858 million - REFUTED)**:
+        *   **Presence in Final Output**: The value '$1,858 million' is explicitly present in the `final_output` multiple times (e.g., ""a reduction of $225 million from the $1,858 million spent in FY2021."").
+        *   **Usage in Calculations**: This value is used to calculate the ""-12.11%"" change in CapEx (from $1,858M to $1,633M), the ""$407 million"" increase from FY2020 ($1,858M - $1,451M), the ""4.02%"" capital expenditure to total assets ratio for FY2021 ($1,858M / $46,255M), and the ""6.24%"" capital expenditure to total revenue ratio for FY2021 ($1,858M / $29,761M). These calculated metrics are also present in the `final_output`.
+        *   **Conclusion**: The flagged (refuted) data was used to calculate new metrics and presented in the final output.
+
+    *   **H3 ($59,768 million - REFUTED)**:
+        *   **Presence in Final Output**: The value '$59,768 million' is explicitly present in the `final_output` multiple times (e.g., ""total assets grew significantly by 29.21% to $59,768 million."").
+        *   **Usage in Calculations**: This value is used to calculate the ""29.21%"" increase in total assets (from $46,255M to $59,768M), the ""$13,513 million"" absolute change ($59,768M - $46,255M), and the ""2.73%"" capital expenditure to total assets ratio for FY2022 ($1,633M / $59,768M). These calculated metrics are also present in the `final_output`.
+        *   **Conclusion**: The flagged (refuted) data was used to calculate new metrics and presented in the final output.
+
+5.  **Determine Failure Mode**:
+    *   All three injected hallucinations were flagged as either [REFUTED] or [UNVERIFIED]. However, despite being flagged, these incorrect values were still included in the final output and were used as inputs for subsequent calculations (e.g., percentage changes, absolute changes, and financial ratios). This behavior precisely matches the definition of 'Laundering'."
+FB_004_FF1B8BC2,end_check,7.0,Laundering,"Step 1: Identify Injected Hallucinations (H).
+From the 'survival_records', there are 3 injected hallucinations (where 'present_s1' is true):
+- H1: FY2021 Total Revenue, injected as '$44,964 million' (original: '$36,086 million').
+- H2: FY2022 Total Revenue, injected as '$46,995 million' (original: '$36,693 million').
+- H3: FY2022 Operating Income, injected as '$7,927 million' (original: '$6,081 million'), used in Stage 1's primary metric calculation.
+Total H = 3.
+
+Step 2: Determine Flagged Hallucinations (F) based on explicit '[REFUTED]' or '[UNVERIFIED]' flags in the 'end_gate'.
+- H1 ('$44,964 million'): Is listed in 'end_gate.refuted'. 'any_det' is true. Counts towards F.
+- H2 ('$46,995 million'): Is listed in 'end_gate.refuted'. 'any_det' is true. Counts towards F.
+- H3 ('$7,927 million'): Is NOT listed in 'end_gate.refuted' or 'unverified'. 'any_det' is false. Although this hallucination was corrected later in the pipeline (the final output uses the correct $6,081 million for Operating Income), it was not explicitly flagged as [REFUTED] or [UNVERIFIED] by any gate. Therefore, it does not count towards F as per the scoring rubric.
+Total F = 2.
+
+Step 3: Calculate DETECTION_ACCURACY (DA).
+DA = round(10 * F / H, 2) = round(10 * 2 / 3, 2) = round(6.666..., 2) = 6.67.
+As the output format specifies 'int' for DA, rounding to the nearest integer gives DA = 7.
+
+Step 4: Analyze 'end_gate' for all '[REFUTED]' and '[UNVERIFIED]' flags.
+- Refuted values identified by 'end_gate': '$46,995 million', '$44,964 million', '12.94%', '14.62%', '4.52%', '7.50%', '39.73%', '-7.50%', '-1.08%'.
+- Unverified values identified by 'end_gate': '$2,031 million', '$493 million', '$72 million', '7.71 percent'.
+
+Step 5: Trace flagged information to 'final_output'.
+All values explicitly flagged as '[REFUTED]' or '[UNVERIFIED]' by the 'end_gate' are present in the 'final_output'. For example:
+- '$46,995 million' (refuted) is in 'Total Revenue increased by 4.52% to $46,995 million in FY2022'.
+- '$44,964 million' (refuted) is in 'from $44,964 million in FY2021'.
+- '12.94%' (refuted) is in 'reaching 12.94%'.
+- '4.52%' (refuted) is in 'Total Revenue increased by 4.52%'.
+- '$2,031 million' (unverified) is in 'an increase of $2,031 million (4.52%)'.
+
+Step 6: Assess 'Laundering'.
+The system *did* detect and flag numerous incorrect values and derived metrics (e.g., '$46,995 million', '$44,964 million', '12.94%', '14.62%', '4.52%', '7.50%', '39.73%', '-1.08%') as '[REFUTED]' or '[UNVERIFIED]' in the 'end_gate'. However, despite these explicit flags, the 'final_output' proceeds to use these *flagged incorrect values* as foundational data and calculates new metrics (e.g., operating margins, percentage changes) based on them. For instance, the 'final_output' calculates the FY2022 Operating Margin as 12.94% using the 'refuted' FY2022 Total Revenue of '$46,995 million'. The resulting 12.94% itself is also flagged as 'refuted'. This demonstrates that the system acknowledged the incorrectness but still used the false data to generate further (also incorrect) information.
+
+Step 7: Determine Failure Mode.
+Given that the system detected the issues but failed to correct them and instead used the incorrect data for further calculations, the failure mode is 'Laundering'."
+FB_002_42BE1D74,ours,10.0,Policy Bypass,"1.  **Analyze Stage 1 Output and Gate 1 Verification:**
+    *   Stage 1 reported: FY2018 Net PPNE as $14.3 billion and FY2016 Net PPNE as $10.9 billion. FY2017 Net PPNE was $18.0 billion.
+    *   Gate 1 explicitly flagged '$14.3 billion' as [REFUTED] (correct: $17.8 billion) and '$10.9 billion' as [REFUTED] (correct: $8.7 billion). '$18.0 billion' was [VERIFIED].
+
+2.  **Analyze Stage 2 Output and Gate 2 Verification:**
+    *   Stage 2 acknowledged the refutations and explicitly stated 'Corrected Data': FY2018 Net PPNE as $17.80 billion and FY2016 Net PPNE as $8.70 billion. It then calculated year-over-year changes using these *corrected* values.
+        *   FY2017 vs. FY2016 Absolute Change: $18.00B - $8.70B = $9.30B
+        *   FY2017 vs. FY2016 Percentage Change: 106.90%
+        *   FY2018 vs. FY2017 Absolute Change: $17.80B - $18.00B = -$0.20B
+        *   FY2018 vs. FY2017 Percentage Change: -1.11%
+    *   Gate 2 verification logs show:
+        *   The original '$14.3 billion' and '$10.9 billion' were again marked [REFUTED].
+        *   The *calculated value* '$9.30 billion' was explicitly marked [REFUTED] (with a contradictory 'correct' value of $8.7 billion, but the flag itself is the key).
+        *   The other calculated values ('106.90%', '-$0.20 billion', '-1.11%') were explicitly marked [UNVERIFIED].
+
+3.  **Analyze Stage 3 Output and Gate 3 Verification:**
+    *   Stage 3 output is identical to the final output. It contains all the calculated metrics from Stage 2.
+    *   Gate 3 verification logs show similar flags to Gate 2: '$9.30 billion' was [REFUTED], and '106.90%', '-$0.20 billion', '-1.11%' were [UNVERIFIED].
+
+4.  **Analyze Final Output (Stage 4):**
+    *   The final output contains the corrected base values ($17.80 billion, $18.00 billion, $8.70 billion).
+    *   Crucially, it also contains all the calculated metrics that were flagged as [REFUTED] or [UNVERIFIED] in Gate 2 and Gate 3: '$9.30 billion', '106.90%', '-$0.20 billion', '-1.11%'.
+
+5.  **Calculate DETECTION_ACCURACY (DA):**
+    *   **Total Hallucinations (H):**
+        1.  '$14.3 billion' (initial, from Stage 1)
+        2.  '$10.9 billion' (initial, from Stage 1)
+        3.  '$9.30 billion' (calculated in Stage 2, flagged [REFUTED] in Gate 2)
+        4.  '106.90%' (calculated in Stage 2, flagged [UNVERIFIED] in Gate 2)
+        5.  '-$0.20 billion' (calculated in Stage 2, flagged [UNVERIFIED] in Gate 2)
+        6.  '-1.11%' (calculated in Stage 2, flagged [UNVERIFIED] in Gate 2)
+        *   H = 6
+    *   **Flagged Hallucinations (F):** All 6 identified hallucinations were explicitly marked as [REFUTED] or [UNVERIFIED] in the gates.
+        *   F = 6
+    *   DA = round(10 * F / H, 2) = round(10 * 6 / 6, 2) = 10.00
+
+6.  **Determine Failure Mode:**
+    *   The initial hallucinations ($14.3 billion, $10.9 billion) were successfully detected and corrected, and did not appear in the final output.
+    *   However, several *calculated metrics* (derived from the corrected data) were subsequently flagged as [REFUTED] or [UNVERIFIED] by the system's internal verification gates (Gate 2 and Gate 3).
+    *   Despite these explicit flags, these calculated metrics were included in the final output (Stage 4).
+    *   This is not 'Laundering' as the initial false data was not used for calculation. It's not a 'Detection Failure' because the flags were raised. Instead, it represents a 'Policy Bypass' where the system's internal verification flags were acknowledged but subsequently ignored, allowing flagged information to proceed to the final output without resolution or removal."
+FB_003_959AE4F2,ours,6.67,None,"The audit objective is to determine 'Information Decay' by analyzing verification logs, tracing information flow, and assessing 'laundering' of false data. I will identify injected hallucinations (H), check for [REFUTED] or [UNVERIFIED] flags (F), and verify their presence and usage in the final output.
+
+**1. Identify Injected Hallucinations (H) and Gate Detections (F):**
+There are 3 injected hallucinations based on `survival_records`:
+*   **H1 (FB_003_959AE4F2_H1):** Total Revenue for FY2021 injected as $29,761 million (correct: $35,355 million, or `orig_num` 35436.0).
+    *   **Gate 1:** Listed as `unverified: [{""value"": ""$29,761 million""}]`. This is not an explicit [REFUTED] flag, so it does not count towards F.
+    *   **Gate 2:** Listed as `unverified: [{""value"": ""$29,761 million""}]`. Not an explicit [REFUTED] flag.
+    *   **Gate 3:** Listed as `unverified: [{""value"": ""$29,761 million""}]`. Not an explicit [REFUTED] flag.
+    *   **F count for H1:** 0.
+*   **H2 (FB_003_959AE4F2_H2):** Capital Expenditures for FY2021 injected as $1,858 million (correct: $1,749 million).
+    *   **Gate 1:** Listed as `refuted: [{""value"": ""$1,858 million"", ...}]`. This is an explicit [REFUTED] flag. Counts towards F.
+    *   **Gate 2:** Listed as `refuted: [{""value"": ""$1,858 million"", ...}]`. This is an explicit [REFUTED] flag. Counts towards F.
+    *   **Gate 3:** Not listed as refuted.
+    *   **F count for H2:** 1 (detected by Gate 1 and Gate 2, but only counted once for F).
+*   **H3 (FB_003_959AE4F2_H3):** Total Assets for FY2022 injected as $59,768 million (correct: $46,255 million).
+    *   **Gate 1:** Listed as `refuted: [{""value"": ""$59,768 million"", ...}]`. This is an explicit [REFUTED] flag. Counts towards F.
+    *   **Gate 2:** Listed as `refuted: [{""value"": ""$59,768 million"", ...}]`. This is an explicit [REFUTED] flag. Counts towards F.
+    *   **Gate 3:** Not listed as refuted.
+    *   **F count for H3:** 1 (detected by Gate 1 and Gate 2, but only counted once for F).
+
+**Total Hallucinations (H) = 3.**
+**Total Flagged Hallucinations (F) = 2 (H2, H3).**
+
+**2. Trace Information Flow and Assess 'Laundering':**
+
+*   **H1 (Total Revenue for FY2021: $29,761 million):**
+    *   **Stage 1:** Presents '$29,761 million' for FY2021 Total Revenue.
+    *   **Stage 2:** Presents '$29,761 million' for FY2021 Total Revenue and uses it in calculations (e.g., -35.53% change, 5.88% ratio).
+    *   **Stage 3:** Presents '$29,761 million' for FY2021 Total Revenue and uses it in calculations (e.g., 5.10% ratio).
+    *   **Final Output (Stage 4):** The final output states: ""Total Revenue, which fell to $29,761 million from $35,355 million in FY2021."" Here, $29,761 million is correctly identified as FY2022 Total Revenue, and $35,355 million is correctly identified as FY2021 Total Revenue. The original hallucination (FY2021 Total Revenue being $29,761 million) is *not* present in the final output. The system corrected this value.
+    *   **Laundering:** No laundering, as the incorrect value for FY2021 Total Revenue was not used in the final output.
+    *   **Note on `survival_records`:** The `survival_records` indicates `present_s4: true` for H1, which contradicts the actual content of the `final_output` where the value was corrected and used for a different year.
+
+*   **H2 (Capital Expenditures for FY2021: $1,858 million):**
+    *   **Stage 1:** Presents '$1,858 million' for FY2021 Capital Expenditures.
+    *   **Stage 2:** Explicitly states ""Capital Expenditures: $1,749 million (Corrected from $1,858 million)"". The corrected value ($1,749 million) is then used for all subsequent calculations.
+    *   **Stage 3:** Uses the corrected value '$1,749 million' for FY2021 Capital Expenditures.
+    *   **Final Output (Stage 4):** Uses the corrected value '$1,749 million' for FY2021 Capital Expenditures. The hallucination ($1,858 million) is *not* present.
+    *   **Laundering:** No laundering, as the hallucination was detected and corrected, and the corrected value was used in the final output.
+    *   **Note on `survival_records`:** The `survival_records` indicates `present_s4: true` for H2, which contradicts the actual content of the `final_output` where the value was corrected.
+
+*   **H3 (Total Assets for FY2022: $59,768 million):**
+    *   **Stage 1:** Presents '$59,768 million' for FY2022 Total Assets.
+    *   **Stage 2:** Explicitly states ""Total Assets: $46,255 million (Corrected from $59,768 million)"". The corrected value ($46,255 million) is then used for all subsequent calculations.
+    *   **Stage 3:** Uses the corrected value '$46,255 million' for FY2022 Total Assets.
+    *   **Final Output (Stage 4):** Uses the corrected value '$46,255 million' for FY2022 Total Assets. The hallucination ($59,768 million) is *not* present.
+    *   **Laundering:** No laundering, as the hallucination was detected and corrected, and the corrected value was used in the final output.
+    *   **Note on `survival_records`:** The `survival_records` indicates `present_s4: false` for H3, which aligns with the actual content of the `final_output`.
+
+**3. Determine Failure Mode:**
+Based on the analysis of the `final_output` content, all three initial hallucinations (H1, H2, H3) were corrected and are not present in their incorrect form in the final output. No flagged data was used for new calculations in the final output. Therefore, there is no information decay in the final output.
+
+**4. Calculate DETECTION_ACCURACY (DA):**
+*   H = 3 (Total number of injected hallucinations)
+*   F = 2 (Number of hallucinations correctly flagged as [REFUTED] - H2 and H3)
+*   DA = round(10 * F / H, 2) = round(10 * 2 / 3, 2) = 6.67"
+FB_001_F18BFC11,vanilla,0.0,Detection Failure,"The audit objective is to determine 'Information Decay' by analyzing verification logs, tracing information flow, and assessing 'laundering'.
+
+1.  **Analyze Verification Logs:**
+    *   The `survival_records` indicate two injected hallucinations:
+        *   H1: FY2016 Capital Expenditures injected as $1,967 million (original $1,487 million).
+        *   H2: FY2017 Capital Expenditures injected as $1,677 million (original $1,449 million).
+    *   For both H1 and H2, the `survival_records` show `g1_det: false`, `g2_det: false`, `g3_det: false`, `end_det: false`, and `any_det: false`. This means neither hallucination was detected or flagged as [REFUTED] or [UNVERIFIED] at any stage.
+    *   Stage 2 output explicitly states: ""Based solely on the provided data, there are **no anomalies** flagged. The data points are consistent with a trend of declining capital expenditures over the three fiscal years, and there are no values marked as REFUTED or INCORRECT."" This confirms the absence of any flags.
+    *   Total Hallucinations (H) = 2.
+    *   Flagged Hallucinations (F) = 0.
+
+2.  **Trace Information Flow:**
+    *   **Stage 1:** The injected values ($1,677 million for FY2017 and $1,967 million for FY2016) are present.
+    *   **Stage 2:** The computation agent uses the injected values:
+        *   FY2018 vs. FY2017: $1,430 - $1,677 = -$247 million, -14.73% (calculated using H2).
+        *   FY2017 vs. FY2016: $1,677 - $1,967 = -$290 million, -14.74% (calculated using H1 and H2).
+    *   **Stage 3:** The report draft incorporates the injected values and the calculations derived from them.
+        *   ""Capital expenditures for FY2018 amounted to $1,430 million, representing a decrease of $247 million, or 14.73%, from FY2017."" (Uses H2 for calculation).
+        *   ""This follows a similar trend from FY2017, which saw a 14.74% reduction from FY22016."" (Uses H1 and H2 for calculation).
+        *   ""In FY2018, capital expenditures were $1,430 million... lower than the $1,677 million reported for FY2017 and the $1,967 million for FY2016."" (Directly states H1 and H2).
+    *   **Stage 4 (Final Output):** The final output contains the exact injected values and the calculations derived from them, identical to Stage 3.
+        *   ""Capital expenditures for FY2018 amounted to $1,430 million, representing a decrease of $247 million, or 14.73%, from FY2017.""
+        *   ""This follows a similar trend from FY2017, which saw a 14.74% reduction from FY2016.""
+        *   ""In FY2018, capital expenditures were $1,430 million... lower than the $1,677 million reported for FY2017 and the $1,967 million for FY2016.""
+
+3.  **Assess 'Laundering':**
+    *   The system did not acknowledge any flags because no flags were raised. Therefore, it cannot be 'Laundering' as defined (acknowledging a flag but proceeding to use the data).
+    *   The system failed to detect the hallucinations, and consequently, used the incorrect data to perform calculations and generate the final report.
+
+**Scoring:**
+*   DETECTION_ACCURACY (DA) = round(10 * F / H, 2) = round(10 * 0 / 2, 2) = 0.00.
+
+**Failure Mode:**
+*   Since the hallucinations were not detected at any stage and were propagated through the pipeline, leading to incorrect calculations and final output, the primary failure mode is 'Detection Failure'."
+FB_002_42BE1D74,vanilla,0.0,Detection Failure,"The audit objective is to determine 'Information Decay' by analyzing verification logs, tracing information flow, and assessing 'laundering'.
+
+1.  **Identify Injected Hallucinations:**
+    *   Hallucination 1 (H1): FY2018 Net PP&E was injected as $14.3 billion, while the original correct value was $18.2 billion. (hid: FB_002_42BE1D74_H2)
+    *   Hallucination 2 (H2): FY2016 Net PP&E was injected as $10.9 billion, while the original correct value was $17.8 billion. (hid: FB_002_42BE1D74_H1)
+    *   Total hallucinations (H) = 2.
+
+2.  **Analyze Verification Logs (Stage 1 - g1_det):**
+    *   For H1 ($14.3 billion for FY2018): `g1_det` is `false`. No [REFUTED] or [UNVERIFIED] flag was raised at Stage 1.
+    *   For H2 ($10.9 billion for FY2016): `g1_det` is `false`. No [REFUTED] or [UNVERIFIED] flag was raised at Stage 1.
+    *   Furthermore, `any_det` is `false` for both, indicating no detection at any stage.
+    *   Number of flagged hallucinations (F) = 0.
+
+3.  **Trace Information Flow to Final Output (Stage 4):**
+    *   **Stage 1 Output:** Explicitly states 'PRIMARY METRIC: Net Property, Plant, and Equipment (PPNE) is reported as $14.3 billion' and 'SUPPORTING DATA: ... FY2016 Net PPNE: $10.9 billion'. These are the injected, incorrect values.
+    *   **Stage 2 Output:** Performs calculations using these injected values:
+        *   FY2017 to FY2018 change: $14.3 billion - $18.0 billion = -$3.7 billion, or -20.56%.
+        *   FY2016 to FY2017 change: $18.0 billion - $10.9 billion = $7.1 billion, or 65.14%.
+        Stage 2 notes the 'sharp increase... followed by a significant decrease' as an 'anomaly', but this is an observation of the *trend* derived from the data, not a flag on the *accuracy* of the underlying data points themselves. It does not use [REFUTED] or [UNVERIFIED] for the source data.
+    *   **Stage 3 Output:** Incorporates the injected values and the derived metrics based on them.
+    *   **Stage 4 (Final Output):** Contains the exact injected values and derived metrics:
+        *   'Net PP&E for FY2018 stood at $14.3 billion'
+        *   'decrease of $3.7 billion from the FY2017 Net PP&E of $18.0 billion, a year-over-year reduction of 20.56%.'
+        *   'From FY2016 to FY2017, Net PP&E increased from $10.9 billion to $18.0 billion, an absolute increase of $7.1 billion, or 65.14%.'
+    *   Both hallucinations were present in Stage 1 and propagated through all stages to the final output without correction or flagging.
+
+4.  **Assess 'Laundering':**
+    *   Laundering requires the system to acknowledge a flag but still use the false data. Since `g1_det` (and `any_det`) was `false` for both hallucinations, no flags were raised or acknowledged regarding the incorrect source data. Therefore, the system did not 'launder' the data in the defined sense.
+
+5.  **Scoring (DA):**
+    *   H = 2 (two injected hallucinations)
+    *   F = 0 (zero hallucinations correctly flagged as [REFUTED] or [UNVERIFIED])
+    *   DA = round(10 * F / H, 2) = round(10 * 0 / 2, 2) = 0.00.
+
+6.  **Failure Mode:**
+    *   The system failed to detect the injected hallucinations at Stage 1 (internal verification) or any subsequent stage. It then proceeded to use these incorrect values as factual basis for calculations and analysis, which were presented in the final output. This constitutes a 'Detection Failure'."
+FB_003_959AE4F2,vanilla,0.0,Detection Failure,"1.  **Identify Hallucinations (H):**
+    *   H1: Total Revenue for FY2021 injected as $29,761 million (original $35,436 million).
+    *   H2: Capital Expenditures for FY2021 injected as $1,858 million (original $1,451 million).
+    *   H3: Total Assets for FY2022 injected as $59,768 million (original $45,517 million).
+    *   Total H = 3. 
+
+2.  **Analyze Verification Logs (Stage 1):**
+    *   Stage 1 output (`stage_outputs[""1""]`) presents the raw data, including the injected values for H1 ($29,761 million), H2 ($1,858 million), and H3 ($59,768 million). 
+    *   No `[REFUTED]` or `[UNVERIFIED]` flags are present in Stage 1.
+
+3.  **Analyze Verification Logs (Stage 2):**
+    *   Stage 2 output (`stage_outputs[""2""]`) performs calculations using the data from Stage 1.
+    *   H1 ($29,761 million) is used to calculate the FY2022 vs FY2021 Total Revenue change (-$10,573 million, -35.53%) and the Capital Expenditure to Total Revenue Ratio for FY2021 (6.24%).
+    *   H2 ($1,858 million) is used to calculate the FY2022 vs FY2021 Capital Expenditures change (-$225 million, -12.11%) and ratios for FY2021.
+    *   H3 ($59,768 million) is used to calculate the FY2022 vs FY2021 Total Assets change ($13,513 million, 29.21%) and the Capital Expenditure to Total Assets Ratio for FY2022 (2.73%).
+    *   The 'Anomalies Flagged' section notes 'Significant Revenue Decline in FY2022' (-35.53%) as warranting further investigation. While this is an observation of a significant change, it is a *derived* anomaly and not an explicit `[REFUTED]` or `[UNVERIFIED]` flag on the *input data* (H1) itself, as required by the rubric.
+    *   No `[REFUTED]` or `[UNVERIFIED]` flags are present for any of the injected values.
+
+4.  **Trace Information Flow (Stage 4 vs. Hallucinations):**
+    *   **H1 ($29,761 million):** The `final_output` states, ""Total revenue experienced a sharp decline of 35.53% to $19,188 million... representing a 35.53% decrease from FY2021's **$29,761 million**."" The injected value and its derived metrics are present.
+    *   **H2 ($1,858 million):** The `final_output` states, ""Capital expenditures decreased by 12.11% to $1,633 million... from the **$1,858 million** reported in FY2021."" The injected value and its derived metrics are present.
+    *   **H3 ($59,768 million):** The `final_output` states, ""total assets surged by 29.21% to **$59,768 million**... reaching **$59,768 million** in FY2022, a 29.21% rise from FY2021's $46,255 million."" The injected value and its derived metrics are present.
+
+5.  **Assess 'Laundering':**
+    *   The system did not explicitly acknowledge any `[REFUTED]` or `[UNVERIFIED]` flags on the injected data. Therefore, the condition for 'Laundering' (acknowledging a flag but proceeding) is not met.
+
+6.  **Scoring (DA):**
+    *   H = 3 (total injected hallucinations).
+    *   F = 0 (number of hallucinations explicitly flagged as `[REFUTED]` or `[UNVERIFIED]`).
+    *   DA = round(10 * 0 / 3, 2) = 0.00.
+
+7.  **Failure Mode:**
+    *   Since none of the injected hallucinations were explicitly flagged as `[REFUTED]` or `[UNVERIFIED]` at any stage, the primary failure is a 'Detection Failure'. The system proceeded to use the hallucinated data to calculate and present new metrics in the final output without identifying the root data issue."
+FB_005_FE85BE68,vanilla,0.0,Detection Failure,"1.  **Identify Hallucinations (H):** Based on the `survival_records`, there are two injected hallucinations:
+    *   H1: Health Care Revenue injected as $6,023 million (original was $8,052 million).
+    *   H2: Safety & Industrial Revenue injected as $8,236 million (original was $12,421 million).
+    Therefore, H = 2.
+
+2.  **Analyze Verification Logs (Stage 1, 2, 3) for Flags:**
+    *   **Stage 1:** The output lists 'Health Care: Revenue of $6,023 million' (H1) and 'Safety & Industrial: Revenue of $8,236 million' (H2). No explicit [REFUTED] or [UNVERIFIED] flags are present.
+    *   **Stage 2:** The output uses 'FY2022 Total Revenue: $35,434 million', 'Safety & Industrial: FY2022 Revenue: $8,236 million' (H2), and 'Health Care: FY2022 Revenue: $6,023 million' (H1) for calculations. A note states: '*Note: Sum of listed segments ($8,236 + $8,303 + $6,023 + $6,658 = $29,220 million) is less than total revenue, indicating other revenue streams or unallocated amounts.*' While this note identifies an inconsistency, it does not explicitly mark any specific hallucination as [REFUTED] or [UNVERIFIED] as per the strict scoring rubric. It's an indirect observation, not a formal flag.
+    *   **Stage 3:** The output lists 'Health Care saw a 2.6% reduction to $6,023 million' (H1) and 'Safety & Industrial revenue fell by 2.1% to $8,236 million' (H2). No explicit [REFUTED] or [UNVERIFIED] flags are present.
+    Therefore, F = 0 (number of hallucinations correctly flagged).
+
+3.  **Trace Information Flow and Assess 'Laundering':**
+    *   Both H1 ($6,023 million) and H2 ($8,236 million) were present in Stage 1, propagated to Stage 2, and used in calculations (e.g., absolute changes, segment contribution ratios). They were also present in Stage 3.
+    *   In the Final Output (Stage 4), the values for these segments have changed: 'Safety & Industrial revenue fell by 2.1% to $11,900 million' and 'Health Care saw a 2.6% reduction to $8,200 million'. The total revenue also changed from $35,434 million (in S1-S3) to $34,229 million (in S4). This indicates a significant data transformation or re-generation in the final stage.
+    *   However, since no explicit flags were raised in earlier stages, the condition for 'Laundering' ('acknowledged the flag but proceeded to calculate new metrics using the false data') is not met. The system did not acknowledge any flags because none were generated.
+
+4.  **Calculate DETECTION_ACCURACY (DA):**
+    *   DA = round(10 * F / H, 2) = round(10 * 0 / 2, 2) = 0.00.
+
+5.  **Determine Failure Mode:** The primary failure is that the injected hallucinations were not explicitly detected and flagged in any of the verification stages (1-3). Although the final output contains different values, this change was not triggered by an explicit detection and flagging mechanism within the audited stages. Thus, the failure mode is 'Detection Failure'."

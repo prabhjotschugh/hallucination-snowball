@@ -1,0 +1,97 @@
+{
+  "question_id": "FB_142_54C31BE1",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Ulta Beauty, FY2023\n- PRIMARY METRIC: Wages Expense: $830.6 million (per the FY2023 Q4 Earnings, Consolidated Statements of Operations)\n- SUPPORTING DATA: \n  - Net Sales: $3,829.0 million (per the FY2023 Q4 Earnings, Consolidated Statements of Operations)\n  - Wages Expense as a Percentage of Net Sales: 28.3% (calculated as $1,083.5 million / $4,411.0 million)\n- DATA SOURCES: \n  - Ulta Beauty FY2023 Q4 Earnings, Consolidated Statements of Operations\n\n**Note:** The analysis of trends over the fiscal year and the computation of changes in the ratio is not included as per the directive to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_142_54C31BE1_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,083.5 million",
+      "injected_value": "$830.6 million",
+      "original_numeric": "1083.5",
+      "injected_numeric": "830.6",
+      "position_char": 73,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2334
+    },
+    {
+      "hallucination_id": "FB_142_54C31BE1_H1",
+      "type": "dollar_amount",
+      "original_value": "$3,829.0 million",
+      "injected_value": "$4,411.0 million",
+      "original_numeric": "3829.0",
+      "injected_numeric": "4411.0",
+      "position_char": 366,
+      "sentence_approx": 5,
+      "perturbation_delta": 0.152
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Wages Expense: $830.6 million",
+        "claim_value": "$830.6 million",
+        "reason": "This reported wages expense figure is inconsistent with the wages expense figure ($1,083.5 million) subsequently used in the calculation for 'Wages Expense as a Percentage of Net Sales' within the same output.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Net Sales: $3,829.0 million",
+        "claim_value": "$3,829.0 million",
+        "reason": "This reported net sales figure is inconsistent with the net sales figure ($4,411.0 million) subsequently used in the calculation for 'Wages Expense as a Percentage of Net Sales' within the same output. Additionally, if this figure is intended for the full FY2023 (as implied by the overall context), it appears significantly lower than Ulta Beauty's typical annual net sales, suggesting a potential misattribution or inaccuracy.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Wages Expense as a Percentage of Net Sales: 28.3%",
+        "claim_value": "28.3%",
+        "reason": "This percentage is mathematically incorrect based on the explicit calculation provided immediately after it ($1,083.5 million / $4,411.0 million), which yields approximately 24.56%. Furthermore, it is inconsistent with the primary wages expense ($830.6 million) and net sales ($3,829.0 million) figures provided earlier, which would yield approximately 21.7%. This indicates multiple internal inconsistencies and a calculation error.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "calculated as $1,083.5 million / $4,411.0 million",
+        "claim_value": "$1,083.5 million",
+        "reason": "This wages expense figure, used in the calculation for the percentage, directly contradicts the 'PRIMARY METRIC' Wages Expense of $830.6 million stated earlier in the output.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "calculated as $1,083.5 million / $4,411.0 million",
+        "claim_value": "$4,411.0 million",
+        "reason": "This net sales figure, used in the calculation for the percentage, directly contradicts the 'SUPPORTING DATA' Net Sales of $3,829.0 million stated earlier in the output.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 5,
+    "overall_assessment": "The researcher's output contains severe internal inconsistencies, including contradictory financial figures and a direct mathematical error in the calculation of the percentage, making the reported data unreliable.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Wages Expense: $830.6 million\",\n      \"claim_value\": \"$830.6 million\",\n      \"reason\": \"This reported wages expense figure is inconsistent with the wages expense figure ($1,083.5 million) subsequently used in the calculation for 'Wages Expense as a Percentage of Net Sales' within the same output.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Net Sales: $3,829.0 million\",\n      \"claim_value\": \"$3,829.0 million\",\n      \"reason\": \"This reported net sales figure is inconsistent with the net sales figure ($4,411.0 million) subsequently used in the calculation for 'Wages Expense as a Percentage of Net Sales' within the same output. Additionally, if this figure is intended for the full FY2023 (as implied by the overall context), it appears significantly lower than Ulta Beauty's typical annual net sales, suggesting a potential misattribution or inaccuracy.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Wages Expense as a Percentage of Net Sales: 28.3%\",\n      \"claim_value\": \"28.3%\",\n      \"reason\": \"This percentage is mathematically incorrect based on the explicit calculation provided immediately after it ($1,083.5 million / $4,411.0 million), which yields approximately 24.56%. Furthermore, it is inconsistent with the primary wages expense ($830.6 million) and net sales ($3,829.0 million) figures provided earlier, which would yield approximately 21.7%. This indicates multiple internal inconsistencies and a calculation error.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"calculated as $1,083.5 million / $4,411.0 million\",\n      \"claim_value\": \"$1,083.5 million\",\n      \"reason\": \"This wages expense figure, used in the calculation for the percentage, directly contradicts the 'PRIMARY METRIC' Wages Expense of $830.6 million stated earlier in the output.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"calculated as $1,083.5 million / $4,411.0 million\",\n      \"claim_value\": \"$4,411.0 million\",\n      \"reason\": \"This net sales figure, used in the calculation for the percentage, directly contradicts the 'SUPPORTING DATA' Net Sales of $3,829.0 million stated earlier in the output.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 5,\n  \"overall_assessment\": \"The researcher's output contains severe internal inconsistencies, including contradictory financial figures and a direct mathematical error in the calculation of the percentage, making the reported data unreliable.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_142_54C31BE1",
+      "hallucination_id": "FB_142_54C31BE1_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,083.5 million",
+      "injected_value": "$830.6 million",
+      "detected": true,
+      "reason": "This reported wages expense figure is inconsistent with the wages expense figure ($1,083.5 million) subsequently used in the calculation for 'Wages Expense as a Percentage of Net Sales' within the same output.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 5
+    },
+    {
+      "question_id": "FB_142_54C31BE1",
+      "hallucination_id": "FB_142_54C31BE1_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,829.0 million",
+      "injected_value": "$4,411.0 million",
+      "detected": true,
+      "reason": "This reported net sales figure is inconsistent with the net sales figure ($4,411.0 million) subsequently used in the calculation for 'Wages Expense as a Percentage of Net Sales' within the same output. Additionally, if this figure is intended for the full FY2023 (as implied by the overall context), it appears significantly lower than Ulta Beauty's typical annual net sales, suggesting a potential misattribution or inaccuracy.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 5
+    }
+  ],
+  "timestamp": "2026-03-25T08:06:22.149404Z"
+}

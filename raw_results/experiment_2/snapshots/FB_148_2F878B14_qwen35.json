@@ -1,0 +1,97 @@
+{
+  "question_id": "FB_148_2F878B14",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Walmart Inc., FY2018\n- PRIMARY METRIC: Days Payable Outstanding (DPO) calculation requires the following figures:\n\n1. **Average Accounts Payable**:\n   - Accounts Payable as of January 31, 2018: $20,156 million (per the FY2018 10-K, Consolidated Balance Sheets)\n   - Accounts Payable as of January 31, 2017: $19,066 million (per the FY2017 10-K, Consolidated Balance Sheets)\n   - Average Accounts Payable = ($20,156 million + $19,066 million) / 2 = $19,611 million\n\n2. **Cost of Goods Sold (COGS)**:\n   - COGS for FY2018: $396,313 million (per the FY2018 10-K, Consolidated Statements of Operations)\n\n3. **Change in Inventory**:\n   - Inventory as of January 31, 2018: $44,559 million (per the FY2018 10-K, Consolidated Balance Sheets)\n   - Inventory as of January 31, 2017: $43,157 million (per the FY2017 10-K, Consolidated Balance Sheets)\n   - Change in Inventory = $44,559 million - $43,157 million = $1,402 million\n\n- SUPPORTING DATA:\n   - COGS for FY2018: $396,313 million\n   - Change in Inventory: $1,402 million\n   - Total for DPO calculation: COGS + Change in Inventory = $396,313 million + $883 million = $397,715 million\n\n- DPO Calculation:\n   - DPO = 365 * (Average Accounts Payable) / (COGS + Change in Inventory)\n   - DPO = 365 * ($19,611 million) / ($397,715 million)\n   - DPO = 365 * 0.32542 = 18.00 days (rounded to two decimal places)\n\n- DATA SOURCES:\n   - FY2018 10-K, Consolidated Balance Sheets\n   - FY2018 10-K, Consolidated Statements of Operations\n   - FY2017 10-K, Consolidated Balance Sheets\n\n**Final DPO for Walmart in FY2018**: 18.00 days.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_148_2F878B14_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,402 million",
+      "injected_value": "$883 million",
+      "original_numeric": "1402",
+      "injected_numeric": "883",
+      "position_char": 1118,
+      "sentence_approx": 5,
+      "perturbation_delta": -0.3704
+    },
+    {
+      "hallucination_id": "FB_148_2F878B14_H1",
+      "type": "large_number",
+      "original_value": "049308",
+      "injected_value": "32542",
+      "original_numeric": "049308",
+      "injected_numeric": "32542",
+      "position_char": 1322,
+      "sentence_approx": 6,
+      "perturbation_delta": -0.34
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Change in Inventory = $44,559 million - $43,157 million = $1,402 million",
+        "claim_value": "$1,402 million",
+        "reason": "Internal inconsistency: Later in the same report under 'SUPPORTING DATA', the Change in Inventory is cited as $883 million when calculating the total for DPO, contradicting the earlier calculation of $1,402 million.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total for DPO calculation: COGS + Change in Inventory = $396,313 million + $883 million = $397,715 million",
+        "claim_value": "$883 million",
+        "reason": "Internal inconsistency: This figure contradicts the previously calculated Change in Inventory of $1,402 million. Additionally, $396,313 + $883 equals $397,196, not $397,715.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "DPO = 365 * 0.32542 = 18.00 days",
+        "claim_value": "0.32542",
+        "reason": "Arithmetic hallucination: The ratio of Average AP to Denominator ($19,611 / $397,715) is approximately 0.0493, not 0.32542. Furthermore, 365 multiplied by 0.32542 equals ~118.78, not 18.00.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Final DPO for Walmart in FY2018: 18.00 days",
+        "claim_value": "18.00 days",
+        "reason": "Plausibility concern: Walmart typically maintains a higher DPO (often 40-50 days) due to significant supply chain leverage. A DPO of 18 days is unusually low for this company, suggesting underlying input data (COGS or AP) may be inaccurate.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "COGS for FY2018: $396,313 million",
+        "claim_value": "$396,313 million",
+        "reason": "Suspicious precision: This figure appears to be a digit transposition hallucination of the actual FY2018 COGS (commonly reported around $373,396 million), which significantly impacts the DPO denominator.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 11,
+    "overall_assessment": "The output contains critical internal inconsistencies and arithmetic errors that invalidate the final DPO calculation.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Change in Inventory = $44,559 million - $43,157 million = $1,402 million\",\n      \"claim_value\": \"$1,402 million\",\n      \"reason\": \"Internal inconsistency: Later in the same report under 'SUPPORTING DATA', the Change in Inventory is cited as $883 million when calculating the total for DPO, contradicting the earlier calculation of $1,402 million.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total for DPO calculation: COGS + Change in Inventory = $396,313 million + $883 million = $397,715 million\",\n      \"claim_value\": \"$883 million\",\n      \"reason\": \"Internal inconsistency: This figure contradicts the previously calculated Change in Inventory of $1,402 million. Additionally, $396,313 + $883 equals $397,196, not $397,715.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"DPO = 365 * 0.32542 = 18.00 days\",\n      \"claim_value\": \"0.32542\",\n      \"reason\": \"Arithmetic hallucination: The ratio of Average AP to Denominator ($19,611 / $397,715) is approximately 0.0493, not 0.32542. Furthermore, 365 multiplied by 0.32542 equals ~118.78, not 18.00.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Final DPO for Walmart in FY2018: 18.00 days\",\n      \"claim_value\": \"18.00 days\",\n      \"reason\": \"Plausibility concern: Walmart typically maintains a higher DPO (often 40-50 days) due to significant supply chain leverage. A DPO of 18 days is unusually low for this company, suggesting underlying input data (COGS or AP) may be inaccurate.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"COGS for FY2018: $396,313 million\",\n      \"claim_value\": \"$396,313 million\",\n      \"reason\": \"Suspicious precision: This figure appears to be a digit transposition hallucination of the actual FY2018 COGS (commonly reported around $373,396 million), which significantly impacts the DPO denominator.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 11,\n  \"overall_assessment\": \"The output contains critical internal inconsistencies and arithmetic errors that invalidate the final DPO calculation.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_148_2F878B14",
+      "hallucination_id": "FB_148_2F878B14_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,402 million",
+      "injected_value": "$883 million",
+      "detected": true,
+      "reason": "Internal inconsistency: Later in the same report under 'SUPPORTING DATA', the Change in Inventory is cited as $883 million when calculating the total for DPO, contradicting the earlier calculation of $1,402 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 11
+    },
+    {
+      "question_id": "FB_148_2F878B14",
+      "hallucination_id": "FB_148_2F878B14_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "large_number",
+      "original_value": "049308",
+      "injected_value": "32542",
+      "detected": true,
+      "reason": "Arithmetic hallucination: The ratio of Average AP to Denominator ($19,611 / $397,715) is approximately 0.0493, not 0.32542. Furthermore, 365 multiplied by 0.32542 equals ~118.78, not 18.00.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 11
+    }
+  ],
+  "timestamp": "2026-03-24T13:31:51.057517Z"
+}

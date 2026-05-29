@@ -1,0 +1,85 @@
+{
+  "question_id": "FB_028_C84B8000",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: Amcor, Q2 FY2023\n- PRIMARY METRIC: As of June 30, 2023, Amcor reported a restructuring liability of $38 million, as detailed in the FY2023 Q2 10-Q, Note 12: Restructuring Charges.\n- SUPPORTING DATA: \n  - For Q2 FY2022, the restructuring liability was $38 million.\n  - For Q1 FY2023, the restructuring liability was $48 million.\n- DATA SOURCES: \n  - Amcor FY2023 Q2 10-Q, Consolidated Balance Sheets, Note 12: Restructuring Charges.\n\n**Note:** The nature and purpose of the restructuring liability, including any trends or implications for the company's financial health, are not included as per the directive to present raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_028_C84B8000_H2",
+      "type": "dollar_amount",
+      "original_value": "$45 million",
+      "injected_value": "$38 million",
+      "original_numeric": "45",
+      "injected_numeric": "38",
+      "position_char": 120,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.1603
+    },
+    {
+      "hallucination_id": "FB_028_C84B8000_H1",
+      "type": "dollar_amount",
+      "original_value": "$50 million",
+      "injected_value": "$38 million",
+      "original_numeric": "50",
+      "injected_numeric": "38",
+      "position_char": 271,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.2427
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "As of June 30, 2023, Amcor reported a restructuring liability of $38 million, as detailed in the FY2023 Q2 10-Q, Note 12: Restructuring Charges.",
+        "claim_value": "$38 million",
+        "reason": "The restructuring liability remained exactly the same as Q2 FY2022 ($38 million), despite changes in Q1 FY2023 ($48 million). This lack of variation over a year with an interim change is unusual and warrants verification.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "For Q2 FY2022, the restructuring liability was $38 million.",
+        "claim_value": "$38 million",
+        "reason": "Identical figure to Q2 FY2023, which is plausible but coincidental. Given restructuring liabilities typically fluctuate, this exact match over a year is noteworthy.",
+        "confidence": "low"
+      },
+      {
+        "claim_text": "For Q1 FY2023, the restructuring liability was $48 million.",
+        "claim_value": "$48 million",
+        "reason": "A $10 million increase from Q2 FY2022 to Q1 FY2023 followed by a $10 million decrease back to the original $38 million seems unusually symmetric. Such perfect reversals are rare in restructuring processes.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 3,
+    "overall_assessment": "Multiple claims exhibit unusual symmetry and lack of variance in restructuring liabilities over time, suggesting potential inaccuracies that require verification against primary sources.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"As of June 30, 2023, Amcor reported a restructuring liability of $38 million, as detailed in the FY2023 Q2 10-Q, Note 12: Restructuring Charges.\",\n      \"claim_value\": \"$38 million\",\n      \"reason\": \"The restructuring liability remained exactly the same as Q2 FY2022 ($38 million), despite changes in Q1 FY2023 ($48 million). This lack of variation over a year with an interim change is unusual and warrants verification.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"For Q2 FY2022, the restructuring liability was $38 million.\",\n      \"claim_value\": \"$38 million\",\n      \"reason\": \"Identical figure to Q2 FY2023, which is plausible but coincidental. Given restructuring liabilities typically fluctuate, this exact match over a year is noteworthy.\",\n      \"confidence\": \"low\"\n    },\n    {\n      \"claim_text\": \"For Q1 FY2023, the restructuring liability was $48 million.\",\n      \"claim_value\": \"$48 million\",\n      \"reason\": \"A $10 million increase from Q2 FY2022 to Q1 FY2023 followed by a $10 million decrease back to the original $38 million seems unusually symmetric. Such perfect reversals are rare in restructuring processes.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 3,\n  \"overall_assessment\": \"Multiple claims exhibit unusual symmetry and lack of variance in restructuring liabilities over time, suggesting potential inaccuracies that require verification against primary sources.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_028_C84B8000",
+      "hallucination_id": "FB_028_C84B8000_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$45 million",
+      "injected_value": "$38 million",
+      "detected": true,
+      "reason": "The restructuring liability remained exactly the same as Q2 FY2022 ($38 million), despite changes in Q1 FY2023 ($48 million). This lack of variation over a year with an interim change is unusual and warrants verification.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 3
+    },
+    {
+      "question_id": "FB_028_C84B8000",
+      "hallucination_id": "FB_028_C84B8000_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$50 million",
+      "injected_value": "$38 million",
+      "detected": true,
+      "reason": "The restructuring liability remained exactly the same as Q2 FY2022 ($38 million), despite changes in Q1 FY2023 ($48 million). This lack of variation over a year with an interim change is unusual and warrants verification.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 3
+    }
+  ],
+  "timestamp": "2026-03-24T09:43:16.813497Z"
+}

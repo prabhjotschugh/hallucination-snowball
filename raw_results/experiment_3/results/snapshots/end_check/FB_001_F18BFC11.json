@@ -1,0 +1,126 @@
+{
+  "question_id": "FB_001_F18BFC11",
+  "method": "end_check",
+  "final_output": "## 3M Company: Fiscal Year 2018 Capital Expenditures Report\n\n**Executive Summary**\n\nThis report analyzes 3M Company's capital expenditures for Fiscal Year 2018, drawing data directly from the company's 10-K filings. Capital expenditures for FY2018 amounted to $1,430 million, representing a notable decrease from previous years. This trend of declining capital investment has been consistent over the past three fiscal years, with a significant year-over-year reduction observed.\n\n**Analysis**\n\n3M Company's capital expenditures have shown a consistent downward trend over the past three fiscal years. In FY2018, capital expenditures were $1,430 million. This represents a decrease of $247 million from FY2017's capital expenditures of $1,677 million, equating to a -14.73% reduction.\n\nThis pattern is consistent with the prior period, where FY2017 capital expenditures of $1,677 million were $290 million lower than FY2016's $1,967 million, marking a -14.74% decrease. The capital expenditure growth rate for FY2018 was -14.73%, following a -14.74% growth rate in FY2017. All figures are sourced from 3M Company's respective fiscal year 10-K filings, specifically from the Consolidated Statements of Cash Flows.\n\n**Key Risks**\n\nThe consistent decline in capital expenditures over three consecutive fiscal years, with reductions of -14.73% in FY2018 and -14.74% in FY2017, could indicate a potential reduction in investment in future growth initiatives, asset maintenance, or technological upgrades. Without further context on operational strategies or asset utilization, this trend alone could signal a deceleration in capacity expansion or modernization efforts, potentially impacting long-term competitiveness. While a reduction in capital expenditures could be a strategic move to optimize asset utilization or divest non-core assets, a sustained decline without clear justification could raise concerns about the company's commitment to innovation and future operational capabilities.\n\n**Conclusion**\n\n3M Company's capital expenditures for Fiscal Year 2018 were $1,430 million, continuing a clear trend of decreasing investment. The company has reduced its capital spending by -14.73% from FY2017 to FY2018, following a -14.74% reduction from FY2016 to FY2017. This consistent decline warrants further investigation into the underlying strategic rationale and potential implications for future operational capabilities and market positioning. Understanding whether this trend reflects a deliberate shift towards asset-light strategies, improved capital efficiency, or a curtailment of growth-oriented investments is crucial for a comprehensive assessment of 3M's long-term outlook.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: 3M Company, Fiscal Year 2018\n- PRIMARY METRIC: Capital Expenditures amounted to $1,430 million (USD millions) per the FY2018 10-K, Consolidated Statements of Cash Flows.\n- SUPPORTING DATA: For context, the capital expenditures for the previous fiscal years were as follows:\n  - FY2017: $1,677 million (per the FY2017 10-K, Consolidated Statements of Cash Flows)\n  - FY2016: $1,967 million (per the FY2016 10-K, Consolidated Statements of Cash Flows)\n- DATA SOURCES: \n  - 3M Company FY2018 10-K, Consolidated Statements of Cash Flows\n  - 3M Company FY2017 10-K, Consolidated Statements of Cash Flows\n  - 3M Company FY2016 10-K, Consolidated Statements of Cash Flows\n\nNote: No analysis or interpretation has been provided, as per the requirements.",
+    "2": "Here's the computation of year-over-year changes and relevant ratios for 3M Company's Capital Expenditures, based solely on the provided data:\n\n**Capital Expenditures (USD millions)**\n\n*   **FY2018:** $1,430\n*   **FY2017:** $1,677\n*   **FY2016:** $1,967\n\n---\n\n**1. Year-over-Year Changes**\n\n**FY2018 vs. FY2017:**\n\n*   **Absolute Change:**\n    *   Formula: `Current Year CapEx - Previous Year CapEx`\n    *   Calculation: `$1,430 - $1,677 = -$247 million`\n*   **Percentage Change:**\n    *   Formula: `(Absolute Change / Previous Year CapEx) * 100`\n    *   Calculation: `(-$247 / $1,677) * 100 = -14.73%`\n\n**FY2017 vs. FY2016:**\n\n*   **Absolute Change:**\n    *   Formula: `Current Year CapEx - Previous Year CapEx`\n    *   Calculation: `$1,677 - $1,967 = -$290 million`\n*   **Percentage Change:**\n    *   Formula: `(Absolute Change / Previous Year CapEx) * 100`\n    *   Calculation: `(-$290 / $1,967) * 100 = -14.74%`\n\n---\n\n**2. Relevant Ratios**\n\nGiven only Capital Expenditures data, the most relevant ratios are growth rates.\n\n*   **Capital Expenditure Growth Rate (FY2018):**\n    *   Formula: `(CapEx_FY2018 / CapEx_FY2017) - 1`\n    *   Calculation: `($1,430 / $1,677) - 1 = 0.8527 - 1 = -0.1473` or `-14.73%`\n*   **Capital Expenditure Growth Rate (FY2017):**\n    *   Formula: `(CapEx_FY2017 / CapEx_FY2016) - 1`\n    *   Calculation: `($1,677 / $1,967) - 1 = 0.8526 - 1 = -0.1474` or `-14.74%`\n\n---\n\n**3. Anomalies**\n\n*   No anomalies are flagged based on the provided data. All values are consistent and from official 10-K filings, and there are no \"REFUTED\" or \"INCORRECT\" flags to address. The trend shows consistent year-over-year decreases in capital expenditures.",
+    "3": "## 3M Company: Fiscal Year 2018 Capital Expenditures Report\n\n**Executive Summary**\n\nThis report analyzes 3M Company's capital expenditures for Fiscal Year 2018, drawing data directly from the company's 10-K filings. Capital expenditures for FY2018 amounted to $1,430 million, representing a notable decrease from previous years. This trend of declining capital investment has been consistent over the past three fiscal years, with a significant year-over-year reduction observed.\n\n**Analysis**\n\n3M Company's capital expenditures have shown a consistent downward trend over the past three fiscal years. In FY2018, capital expenditures were $1,430 million. This represents a decrease of $247 million from FY2017's capital expenditures of $1,677 million, equating to a -14.73% reduction.\n\nThis pattern is consistent with the prior period, where FY2017 capital expenditures of $1,677 million were $290 million lower than FY2016's $1,967 million, marking a -14.74% decrease. The capital expenditure growth rate for FY2018 was -14.73%, following a -14.74% growth rate in FY2017. All figures are sourced from 3M Company's respective fiscal year 10-K filings, Consolidated Statements of Cash Flows.\n\n**Key Risks**\n\nThe consistent decline in capital expenditures over three consecutive fiscal years, with reductions of -14.73% in FY2018 and -14.74% in FY2017, could indicate a potential reduction in investment in future growth initiatives, asset maintenance, or technological upgrades. Without further context on operational strategies or asset utilization, this trend alone could signal a deceleration in capacity expansion or modernization efforts, potentially impacting long-term competitiveness.\n\n**Conclusion**\n\n3M Company's capital expenditures for Fiscal Year 2018 were $1,430 million, continuing a clear trend of decreasing investment. The company has reduced its capital spending by -14.73% from FY2017 to FY2018, following a -14.74% reduction from FY2016 to FY2017. This consistent decline warrants further investigation into the underlying strategic rationale and potential implications for future operational capabilities and market positioning.",
+    "4": "## 3M Company: Fiscal Year 2018 Capital Expenditures Report\n\n**Executive Summary**\n\nThis report analyzes 3M Company's capital expenditures for Fiscal Year 2018, drawing data directly from the company's 10-K filings. Capital expenditures for FY2018 amounted to $1,430 million, representing a notable decrease from previous years. This trend of declining capital investment has been consistent over the past three fiscal years, with a significant year-over-year reduction observed.\n\n**Analysis**\n\n3M Company's capital expenditures have shown a consistent downward trend over the past three fiscal years. In FY2018, capital expenditures were $1,430 million. This represents a decrease of $247 million from FY2017's capital expenditures of $1,677 million, equating to a -14.73% reduction.\n\nThis pattern is consistent with the prior period, where FY2017 capital expenditures of $1,677 million were $290 million lower than FY2016's $1,967 million, marking a -14.74% decrease. The capital expenditure growth rate for FY2018 was -14.73%, following a -14.74% growth rate in FY2017. All figures are sourced from 3M Company's respective fiscal year 10-K filings, specifically from the Consolidated Statements of Cash Flows.\n\n**Key Risks**\n\nThe consistent decline in capital expenditures over three consecutive fiscal years, with reductions of -14.73% in FY2018 and -14.74% in FY2017, could indicate a potential reduction in investment in future growth initiatives, asset maintenance, or technological upgrades. Without further context on operational strategies or asset utilization, this trend alone could signal a deceleration in capacity expansion or modernization efforts, potentially impacting long-term competitiveness. While a reduction in capital expenditures could be a strategic move to optimize asset utilization or divest non-core assets, a sustained decline without clear justification could raise concerns about the company's commitment to innovation and future operational capabilities.\n\n**Conclusion**\n\n3M Company's capital expenditures for Fiscal Year 2018 were $1,430 million, continuing a clear trend of decreasing investment. The company has reduced its capital spending by -14.73% from FY2017 to FY2018, following a -14.74% reduction from FY2016 to FY2017. This consistent decline warrants further investigation into the underlying strategic rationale and potential implications for future operational capabilities and market positioning. Understanding whether this trend reflects a deliberate shift towards asset-light strategies, improved capital efficiency, or a curtailment of growth-oriented investments is crucial for a comprehensive assessment of 3M's long-term outlook."
+  },
+  "gates": {
+    "end_gate": {
+      "verified": [
+        {
+          "value": "$1,430 million",
+          "ref": 1430.0
+        },
+        {
+          "value": "$1,430 million",
+          "ref": 1430.0
+        },
+        {
+          "value": "$1,430 million",
+          "ref": 1430.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$1,677 million",
+          "num": 1677.0,
+          "correct": 1577.0,
+          "dev": 0.0596,
+          "source": "evidence"
+        },
+        {
+          "value": "$1,677 million",
+          "num": 1677.0,
+          "correct": 1577.0,
+          "dev": 0.0596,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$247 million"
+        },
+        {
+          "value": "$290 million"
+        },
+        {
+          "value": "$1,967 million"
+        },
+        {
+          "value": "-14.73%"
+        },
+        {
+          "value": "-14.74%"
+        },
+        {
+          "value": "-14.73%"
+        },
+        {
+          "value": "-14.74%"
+        },
+        {
+          "value": "-14.73%"
+        },
+        {
+          "value": "-14.74%"
+        },
+        {
+          "value": "-14.73%"
+        },
+        {
+          "value": "-14.74%"
+        }
+      ],
+      "n_refs": 21
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_001_F18BFC11",
+      "hid": "FB_001_F18BFC11_H2",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 1677.0,
+      "orig_num": 1449.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": true,
+      "any_det": true,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_001_F18BFC11",
+      "hid": "FB_001_F18BFC11_H1",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 1967.0,
+      "orig_num": 1487.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:02:48.468331+00:00"
+}

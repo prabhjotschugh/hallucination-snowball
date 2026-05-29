@@ -1,0 +1,121 @@
+{
+  "question_id": "FB_054_F1BBC565",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Best Buy Co., Inc. - FY 2023 and Q2 FY2024\n- PRIMARY METRIC: \n  - Cash and Cash Equivalents as of the end of FY 2023: $911 million (per the FY2023 10-K, Consolidated Balance Sheets).\n  - Cash and Cash Equivalents as of the end of Q2 FY2024: $1,050 million (per the Q2 FY2024 10-Q, Consolidated Balance Sheets).\n- SUPPORTING DATA: \n  - FY 2023 Cash and Cash Equivalents: $1,200 million\n  - FY 2023 Total Current Assets: $2,191 million (per the FY2023 10-K, Consolidated Balance Sheets).\n  - Q2 FY2024 Total Current Assets: $3,000 million (per the Q2 FY2024 10-Q, Consolidated Balance Sheets).\n- DATA SOURCES: \n  - FY2023 10-K, Consolidated Balance Sheets, filed on March 30, 2023.\n  - Q2 FY2024 10-Q, Consolidated Balance Sheets, filed on September 1, 2023.\n\n**Note:** There was a drop in Cash and Cash Equivalents from FY 2023 to Q2 FY2024, decreasing from $789 million to $1,050 million.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_054_F1BBC565_H3",
+      "type": "dollar_amount",
+      "original_value": "$1,200 million",
+      "injected_value": "$911 million",
+      "original_numeric": "1200",
+      "injected_numeric": "911",
+      "position_char": 138,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.2412
+    },
+    {
+      "hallucination_id": "FB_054_F1BBC565_H2",
+      "type": "dollar_amount",
+      "original_value": "$3,200 million",
+      "injected_value": "$2,191 million",
+      "original_numeric": "3200",
+      "injected_numeric": "2191",
+      "position_char": 441,
+      "sentence_approx": 5,
+      "perturbation_delta": -0.3154
+    },
+    {
+      "hallucination_id": "FB_054_F1BBC565_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,200 million",
+      "injected_value": "$789 million",
+      "original_numeric": "1200",
+      "injected_numeric": "789",
+      "position_char": 879,
+      "sentence_approx": 9,
+      "perturbation_delta": -0.3427
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Cash and Cash Equivalents as of the end of FY 2023: $911 million",
+        "claim_value": "$911 million",
+        "reason": "This figure for FY 2023 Cash and Cash Equivalents is directly contradicted by two other figures provided in the same output for the same period: '$1,200 million' and '$789 million'. It is impossible for all three to be correct.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY 2023 Cash and Cash Equivalents: $1,200 million",
+        "claim_value": "$1,200 million",
+        "reason": "This figure for FY 2023 Cash and Cash Equivalents is directly contradicted by two other figures provided in the same output for the same period: '$911 million' and '$789 million'. It is impossible for all three to be correct.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "There was a drop in Cash and Cash Equivalents from FY 2023 to Q2 FY2024, decreasing from $789 million to $1,050 million.",
+        "claim_value": "$789 million",
+        "reason": "This figure for FY 2023 Cash and Cash Equivalents is directly contradicted by two other figures provided in the same output for the same period: '$911 million' and '$1,200 million'. Additionally, the statement claims a 'drop' but the figures ($789 million to $1,050 million) actually show an increase, which is a logical contradiction.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "There was a drop in Cash and Cash Equivalents from FY 2023 to Q2 FY2024, decreasing from $789 million to $1,050 million.",
+        "claim_value": "drop",
+        "reason": "The statement claims a 'drop' in Cash and Cash Equivalents, but the provided figures ($789 million to $1,050 million) actually indicate an increase, which is a direct logical contradiction.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Q2 FY2024 Total Current Assets: $3,000 million",
+        "claim_value": "$3,000 million",
+        "reason": "This figure is suspiciously round, which can be an indicator of hallucination. Furthermore, an increase from $2,191 million in FY2023 to $3,000 million in Q2 FY2024 (a ~37% increase in 6-9 months) is a very substantial jump for a large, relatively stable retailer like Best Buy, making its plausibility questionable without further context.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 7,
+    "overall_assessment": "The output contains significant internal inconsistencies regarding Best Buy's FY2023 cash and cash equivalents, a direct logical contradiction in the summary statement, and a suspiciously round and rapidly changing current asset figure for Q2 FY2024.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Cash and Cash Equivalents as of the end of FY 2023: $911 million\",\n      \"claim_value\": \"$911 million\",\n      \"reason\": \"This figure for FY 2023 Cash and Cash Equivalents is directly contradicted by two other figures provided in the same output for the same period: '$1,200 million' and '$789 million'. It is impossible for all three to be correct.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY 2023 Cash and Cash Equivalents: $1,200 million\",\n      \"claim_value\": \"$1,200 million\",\n      \"reason\": \"This figure for FY 2023 Cash and Cash Equivalents is directly contradicted by two other figures provided in the same output for the same period: '$911 million' and '$789 million'. It is impossible for all three to be correct.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"There was a drop in Cash and Cash Equivalents from FY 2023 to Q2 FY2024, decreasing from $789 million to $1,050 million.\",\n      \"claim_value\": \"$789 million\",\n      \"reason\": \"This figure for FY 2023 Cash and Cash Equivalents is directly contradicted by two other figures provided in the same output for the same period: '$911 million' and '$1,200 million'. Additionally, the statement claims a 'drop' but the figures ($789 million to $1,050 million) actually show an increase, which is a logical contradiction.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"There was a drop in Cash and Cash Equivalents from FY 2023 to Q2 FY2024, decreasing from $789 million to $1,050 million.\",\n      \"claim_value\": \"drop\",\n      \"reason\": \"The statement claims a 'drop' in Cash and Cash Equivalents, but the provided figures ($789 million to $1,050 million) actually indicate an increase, which is a direct logical contradiction.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Q2 FY2024 Total Current Assets: $3,000 million\",\n      \"claim_value\": \"$3,000 million\",\n      \"reason\": \"This figure is suspiciously round, which can be an indicator of hallucination. Furthermore, an increase from $2,191 million in FY2023 to $3,000 million in Q2 FY2024 (a ~37% increase in 6-9 months) is a very substantial jump for a large, relatively stable retailer like Best Buy, making its plausibility questionable without further context.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 7,\n  \"overall_assessment\": \"The output contains significant internal inconsistencies regarding Best Buy's FY2023 cash and cash equivalents, a direct logical contradiction in the summary statement, and a suspiciously round and rapidly changing current asset figure for Q2 FY2024.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_054_F1BBC565",
+      "hallucination_id": "FB_054_F1BBC565_H3",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,200 million",
+      "injected_value": "$911 million",
+      "detected": true,
+      "reason": "This figure for FY 2023 Cash and Cash Equivalents is directly contradicted by two other figures provided in the same output for the same period: '$1,200 million' and '$789 million'. It is impossible for all three to be correct.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_054_F1BBC565",
+      "hallucination_id": "FB_054_F1BBC565_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,200 million",
+      "injected_value": "$2,191 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_054_F1BBC565",
+      "hallucination_id": "FB_054_F1BBC565_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,200 million",
+      "injected_value": "$789 million",
+      "detected": true,
+      "reason": "This figure for FY 2023 Cash and Cash Equivalents is directly contradicted by two other figures provided in the same output for the same period: '$911 million' and '$789 million'. It is impossible for all three to be correct.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 7
+    }
+  ],
+  "timestamp": "2026-03-25T07:46:34.792358Z"
+}

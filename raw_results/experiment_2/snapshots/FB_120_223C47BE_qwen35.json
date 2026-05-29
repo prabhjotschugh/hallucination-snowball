@@ -1,0 +1,91 @@
+{
+  "question_id": "FB_120_223C47BE",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: PepsiCo, FY2021\n- PRIMARY METRIC: Capital Expenditures (CapEx) amounting to $4.2 billion, per the FY2021 10-K, Consolidated Statements of Cash Flows.\n- SUPPORTING DATA: \n  - FY2020 Capital Expenditures: $3.2 billion, per the FY2020 10-K, Consolidated Statements of Cash Flows.\n  - FY2019 Capital Expenditures: $2.5 billion, per the FY2019 10-K, Consolidated Statements of Cash Flows.\n- DATA SOURCES: \n  - PepsiCo FY2021 10-K, Consolidated Statements of Cash Flows, Page 60.\n  - PepsiCo FY2020 10-K, Consolidated Statements of Cash Flows, Page 60.\n  - PepsiCo FY2019 10-K, Consolidated Statements of Cash Flows, Page 60.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_120_223C47BE_H2",
+      "type": "dollar_amount",
+      "original_value": "$4.2 billion",
+      "injected_value": "$3.2 billion",
+      "original_numeric": "4.2",
+      "injected_numeric": "3.2",
+      "position_char": 223,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.2296
+    },
+    {
+      "hallucination_id": "FB_120_223C47BE_H1",
+      "type": "dollar_amount",
+      "original_value": "$3.4 billion",
+      "injected_value": "$2.5 billion",
+      "original_numeric": "3.4",
+      "injected_numeric": "2.5",
+      "position_char": 330,
+      "sentence_approx": 5,
+      "perturbation_delta": -0.2681
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Capital Expenditures (CapEx) amounting to $4.2 billion, per the FY2021 10-K",
+        "claim_value": "$4.2 billion",
+        "reason": "While within a plausible magnitude for PepsiCo, this figure is likely understated compared to general knowledge of PepsiCo's FY2021 CapEx (typically reported closer to $4.6-$4.7 billion). Additionally, 10-K statements report in millions, not rounded billions, suggesting estimation.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2020 Capital Expenditures: $3.2 billion, per the FY2020 10-K",
+        "claim_value": "$3.2 billion",
+        "reason": "This figure appears significantly understated for a company of PepsiCo's revenue scale (~$80B). Typical CapEx for PepsiCo during this period was closer to $4.0-$4.2 billion. The rounding to one decimal place is also inconsistent with precise 10-K data.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2019 Capital Expenditures: $2.5 billion, per the FY2019 10-K",
+        "claim_value": "$2.5 billion",
+        "reason": "This figure is anomalously low for PepsiCo, a capital-intensive FMCG company. Historical norms suggest CapEx closer to $4.0 billion+. A jump from $2.5B to $4.2B over two years is inconsistent with the stable capital profile of this industry.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "PepsiCo FY2021, FY2020, FY2019 10-K, Consolidated Statements of Cash Flows, Page 60",
+        "claim_value": "Page 60",
+        "reason": "It is statistically highly improbable for the Cash Flow statement to appear on the exact same page number across three different annual reports. 10-K filings vary in length yearly; identical page numbers are a common hallmark of LLM hallucination.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "Multiple high-confidence hallucinations detected in both financial figures and source metadata.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Capital Expenditures (CapEx) amounting to $4.2 billion, per the FY2021 10-K\",\n      \"claim_value\": \"$4.2 billion\",\n      \"reason\": \"While within a plausible magnitude for PepsiCo, this figure is likely understated compared to general knowledge of PepsiCo's FY2021 CapEx (typically reported closer to $4.6-$4.7 billion). Additionally, 10-K statements report in millions, not rounded billions, suggesting estimation.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2020 Capital Expenditures: $3.2 billion, per the FY2020 10-K\",\n      \"claim_value\": \"$3.2 billion\",\n      \"reason\": \"This figure appears significantly understated for a company of PepsiCo's revenue scale (~$80B). Typical CapEx for PepsiCo during this period was closer to $4.0-$4.2 billion. The rounding to one decimal place is also inconsistent with precise 10-K data.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2019 Capital Expenditures: $2.5 billion, per the FY2019 10-K\",\n      \"claim_value\": \"$2.5 billion\",\n      \"reason\": \"This figure is anomalously low for PepsiCo, a capital-intensive FMCG company. Historical norms suggest CapEx closer to $4.0 billion+. A jump from $2.5B to $4.2B over two years is inconsistent with the stable capital profile of this industry.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"PepsiCo FY2021, FY2020, FY2019 10-K, Consolidated Statements of Cash Flows, Page 60\",\n      \"claim_value\": \"Page 60\",\n      \"reason\": \"It is statistically highly improbable for the Cash Flow statement to appear on the exact same page number across three different annual reports. 10-K filings vary in length yearly; identical page numbers are a common hallmark of LLM hallucination.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\": \"Multiple high-confidence hallucinations detected in both financial figures and source metadata.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_120_223C47BE",
+      "hallucination_id": "FB_120_223C47BE_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$4.2 billion",
+      "injected_value": "$3.2 billion",
+      "detected": true,
+      "reason": "While within a plausible magnitude for PepsiCo, this figure is likely understated compared to general knowledge of PepsiCo's FY2021 CapEx (typically reported closer to $4.6-$4.7 billion). Additionally, 10-K statements report in millions, not rounded billions, suggesting estimation.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_120_223C47BE",
+      "hallucination_id": "FB_120_223C47BE_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$3.4 billion",
+      "injected_value": "$2.5 billion",
+      "detected": true,
+      "reason": "This figure is anomalously low for PepsiCo, a capital-intensive FMCG company. Historical norms suggest CapEx closer to $4.0 billion+. A jump from $2.5B to $4.2B over two years is inconsistent with the stable capital profile of this industry.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-24T12:54:43.292451Z"
+}

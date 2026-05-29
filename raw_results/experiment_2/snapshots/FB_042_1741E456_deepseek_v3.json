@@ -1,0 +1,79 @@
+{
+  "question_id": "FB_042_1741E456",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: American Express, FY2022\n- PRIMARY METRIC: Gross Margin: 60.0% (per the FY2022 10-K, Consolidated Statements of Operations)\n- SUPPORTING DATA: \n  - Total Revenue: $52,866 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - Cost of Goods Sold (COGS): $21,143 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - Gross Profit: $31,723 million (calculated as Total Revenue - COGS)\n  \n  **Multi-Period Data:**\n  - FY2021:\n    - Total Revenue: $47,658 million (per the FY2021 10-K, Consolidated Statements of Operations)\n    - COGS: $23,630 million (per the FY2021 10-K, Consolidated Statements of Operations)\n    - Gross Profit: $17,915 million (calculated as Total Revenue - COGS)\n    - Gross Margin: 60.5% (calculated as Gross Profit / Total Revenue)\n\n  - FY2020:\n    - Total Revenue: $36,091 million (per the FY2020 10-K, Consolidated Statements of Operations)\n    - COGS: $15,533 million (per the FY2020 10-K, Consolidated Statements of Operations)\n    - Gross Profit: $20,558 million (calculated as Total Revenue - COGS)\n    - Gross Margin: 56.9% (calculated as Gross Profit / Total Revenue)\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Statements of Operations\n  - FY2020 10-K, Consolidated Statements of Operations\n\n**Note:** The gross margin for American Express is influenced by its business model, which primarily focuses on service fees and interest income rather than traditional product sales. This makes gross margin a less relevant metric for assessing overall financial performance compared to metrics such as net income or operating income, which reflect the company's profitability after accounting for all expenses. \n\nHowever, as per the directive, no interpretation or analysis is provided beyond the raw data extraction.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_042_1741E456_H2",
+      "type": "dollar_amount",
+      "original_value": "$18,816 million",
+      "injected_value": "$23,630 million",
+      "original_numeric": "18816",
+      "injected_numeric": "23630",
+      "position_char": 589,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.2558
+    },
+    {
+      "hallucination_id": "FB_042_1741E456_H1",
+      "type": "dollar_amount",
+      "original_value": "$28,842 million",
+      "injected_value": "$17,915 million",
+      "original_numeric": "28842",
+      "injected_numeric": "17915",
+      "position_char": 686,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3789
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Gross Profit: $17,915 million (calculated as Total Revenue - COGS)",
+        "claim_value": "$17,915 million",
+        "reason": "The calculation appears incorrect; $47,658 million (Total Revenue) - $23,630 million (COGS) should equal approximately $24,028 million, not $17,915 million.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Gross Margin: 60.5% (calculated as Gross Profit / Total Revenue)",
+        "claim_value": "60.5%",
+        "reason": "This value is derived from the incorrect gross profit figure, making it unreliable.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 7,
+    "overall_assessment": "Two significant calculation errors found in the FY2021 data, while FY2022 and FY2020 figures appear consistent.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Gross Profit: $17,915 million (calculated as Total Revenue - COGS)\",\n      \"claim_value\": \"$17,915 million\",\n      \"reason\": \"The calculation appears incorrect; $47,658 million (Total Revenue) - $23,630 million (COGS) should equal approximately $24,028 million, not $17,915 million.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Gross Margin: 60.5% (calculated as Gross Profit / Total Revenue)\",\n      \"claim_value\": \"60.5%\",\n      \"reason\": \"This value is derived from the incorrect gross profit figure, making it unreliable.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 7,\n  \"overall_assessment\": \"Two significant calculation errors found in the FY2021 data, while FY2022 and FY2020 figures appear consistent.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_042_1741E456",
+      "hallucination_id": "FB_042_1741E456_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$18,816 million",
+      "injected_value": "$23,630 million",
+      "detected": true,
+      "reason": "The calculation appears incorrect; $47,658 million (Total Revenue) - $23,630 million (COGS) should equal approximately $24,028 million, not $17,915 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_042_1741E456",
+      "hallucination_id": "FB_042_1741E456_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$28,842 million",
+      "injected_value": "$17,915 million",
+      "detected": true,
+      "reason": "The calculation appears incorrect; $47,658 million (Total Revenue) - $23,630 million (COGS) should equal approximately $24,028 million, not $17,915 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 7
+    }
+  ],
+  "timestamp": "2026-03-24T09:45:43.241571Z"
+}

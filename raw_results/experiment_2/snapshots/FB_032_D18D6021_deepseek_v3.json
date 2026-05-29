@@ -1,0 +1,85 @@
+{
+  "question_id": "FB_032_D18D6021",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: Advanced Micro Devices, Inc. (AMD) for the fiscal year 2022 (FY2022)\n- PRIMARY METRIC: The quick ratio for AMD in FY2022 is 1.32, as reported in the FY2022 10-K, Consolidated Balance Sheets.\n- SUPPORTING DATA: \n  - Current Assets: $6,570 million (per the FY2022 10-K, Consolidated Balance Sheets)\n  - Current Liabilities: $4,973 million (per the FY2022 10-K, Consolidated Balance Sheets)\n  - Inventory: $1,202 million (per the FY2022 10-K, Consolidated Balance Sheets)\n  - Calculation of Quick Ratio: Quick Ratio = (Current Assets - Inventory) / Current Liabilities = ($6,570 million - $1,474 million) / $6,844 million = 1.32\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Balance Sheets\n  - FY2022 10-K, Management's Discussion and Analysis\n\n**Note:** The analysis of liquidity health based on the quick ratio is not included as per the directive for raw data only. Please refer to the downstream analysis for interpretation and implications.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_032_D18D6021_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,202 million",
+      "injected_value": "$1,474 million",
+      "original_numeric": "1202",
+      "injected_numeric": "1474",
+      "position_char": 606,
+      "sentence_approx": 4,
+      "perturbation_delta": 0.2266
+    },
+    {
+      "hallucination_id": "FB_032_D18D6021_H1",
+      "type": "dollar_amount",
+      "original_value": "$4,973 million",
+      "injected_value": "$6,844 million",
+      "original_numeric": "4973",
+      "injected_numeric": "6844",
+      "position_char": 624,
+      "sentence_approx": 4,
+      "perturbation_delta": 0.3762
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Quick Ratio = (Current Assets - Inventory) / Current Liabilities = ($6,570 million - $1,474 million) / $6,844 million = 1.32",
+        "claim_value": "1.32",
+        "reason": "The calculation includes an Inventory value of $1,474 million which contradicts the previously stated Inventory value of $1,202 million. Additionally, the Current Liabilities value used in the calculation ($6,844 million) does not match the stated Current Liabilities of $4,973 million.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Current Liabilities: $4,973 million (per the FY2022 10-K, Consolidated Balance Sheets)",
+        "claim_value": "$4,973 million",
+        "reason": "This value is inconsistent with the Current Liabilities value ($6,844 million) used in the quick ratio calculation. There is a discrepancy between the stated Current Liabilities and the value used in the formula.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Inventory: $1,202 million (per the FY2022 10-K, Consolidated Balance Sheets)",
+        "claim_value": "$1,202 million",
+        "reason": "This value is inconsistent with the Inventory value ($1,474 million) used in the quick ratio calculation. There is a discrepancy between the stated Inventory and the value used in the formula.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 5,
+    "overall_assessment": "Several inconsistencies found in the numerical values used for calculating the quick ratio, indicating potential fabrication or error.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Quick Ratio = (Current Assets - Inventory) / Current Liabilities = ($6,570 million - $1,474 million) / $6,844 million = 1.32\",\n      \"claim_value\": \"1.32\",\n      \"reason\": \"The calculation includes an Inventory value of $1,474 million which contradicts the previously stated Inventory value of $1,202 million. Additionally, the Current Liabilities value used in the calculation ($6,844 million) does not match the stated Current Liabilities of $4,973 million.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Current Liabilities: $4,973 million (per the FY2022 10-K, Consolidated Balance Sheets)\",\n      \"claim_value\": \"$4,973 million\",\n      \"reason\": \"This value is inconsistent with the Current Liabilities value ($6,844 million) used in the quick ratio calculation. There is a discrepancy between the stated Current Liabilities and the value used in the formula.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Inventory: $1,202 million (per the FY2022 10-K, Consolidated Balance Sheets)\",\n      \"claim_value\": \"$1,202 million\",\n      \"reason\": \"This value is inconsistent with the Inventory value ($1,474 million) used in the quick ratio calculation. There is a discrepancy between the stated Inventory and the value used in the formula.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 5,\n  \"overall_assessment\": \"Several inconsistencies found in the numerical values used for calculating the quick ratio, indicating potential fabrication or error.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_032_D18D6021",
+      "hallucination_id": "FB_032_D18D6021_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,202 million",
+      "injected_value": "$1,474 million",
+      "detected": true,
+      "reason": "The calculation includes an Inventory value of $1,474 million which contradicts the previously stated Inventory value of $1,202 million. Additionally, the Current Liabilities value used in the calculation ($6,844 million) does not match the stated Current Liabilities of $4,973 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 5
+    },
+    {
+      "question_id": "FB_032_D18D6021",
+      "hallucination_id": "FB_032_D18D6021_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$4,973 million",
+      "injected_value": "$6,844 million",
+      "detected": true,
+      "reason": "The calculation includes an Inventory value of $1,474 million which contradicts the previously stated Inventory value of $1,202 million. Additionally, the Current Liabilities value used in the calculation ($6,844 million) does not match the stated Current Liabilities of $4,973 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 5
+    }
+  ],
+  "timestamp": "2026-03-24T09:43:59.206944Z"
+}

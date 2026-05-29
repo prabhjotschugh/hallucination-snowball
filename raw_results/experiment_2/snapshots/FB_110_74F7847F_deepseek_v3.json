@@ -1,0 +1,91 @@
+{
+  "question_id": "FB_110_74F7847F",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: MGM Resorts International, First Half of FY2023\n- PRIMARY METRIC: As of June 30, 2023, MGM Resorts reported short-term investments totaling $1,210 million, with the largest portion allocated to U.S. Treasury Bills amounting to $730 million. This information is per the FY2023 Q2 10-Q, Consolidated Balance Sheets.\n- SUPPORTING DATA: \n  - Total short-term investments: $1,500 million (June 30, 2023)\n  - U.S. Treasury Bills: $900 million (June 30, 2023)\n  - Other short-term investments: $600 million (June 30, 2023)\n- DATA SOURCES: \n  - MGM Resorts International FY2023 Q2 10-Q, Consolidated Balance Sheets, Page 5.\n\nPlease note that no trend analysis, ratio computation, or benchmarking against industry standards has been performed as per the directive to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_110_74F7847F_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,500 million",
+      "injected_value": "$1,210 million",
+      "original_numeric": "1500",
+      "injected_numeric": "1210",
+      "position_char": 160,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.1933
+    },
+    {
+      "hallucination_id": "FB_110_74F7847F_H1",
+      "type": "dollar_amount",
+      "original_value": "$900 million",
+      "injected_value": "$730 million",
+      "original_numeric": "900",
+      "injected_numeric": "730",
+      "position_char": 247,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.1893
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "MGM Resorts reported short-term investments totaling $1,210 million",
+        "claim_value": "$1,210 million",
+        "reason": "Inconsistent with the supporting data below which lists total short-term investments as $1,500 million",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "the largest portion allocated to U.S. Treasury Bills amounting to $730 million",
+        "claim_value": "$730 million",
+        "reason": "Inconsistent with the supporting data below which lists U.S. Treasury Bills as $900 million",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total short-term investments: $1,500 million (June 30, 2023)",
+        "claim_value": "$1,500 million",
+        "reason": "Inconsistent with the primary metric above which reports $1,210 million",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "U.S. Treasury Bills: $900 million (June 30, 2023)",
+        "claim_value": "$900 million",
+        "reason": "Inconsistent with the primary metric above which reports $730 million",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 4,
+    "overall_assessment": "Major inconsistencies found between primary metric and supporting data figures.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"MGM Resorts reported short-term investments totaling $1,210 million\",\n      \"claim_value\": \"$1,210 million\",\n      \"reason\": \"Inconsistent with the supporting data below which lists total short-term investments as $1,500 million\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"the largest portion allocated to U.S. Treasury Bills amounting to $730 million\",\n      \"claim_value\": \"$730 million\",\n      \"reason\": \"Inconsistent with the supporting data below which lists U.S. Treasury Bills as $900 million\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total short-term investments: $1,500 million (June 30, 2023)\",\n      \"claim_value\": \"$1,500 million\",\n      \"reason\": \"Inconsistent with the primary metric above which reports $1,210 million\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"U.S. Treasury Bills: $900 million (June 30, 2023)\",\n      \"claim_value\": \"$900 million\",\n      \"reason\": \"Inconsistent with the primary metric above which reports $730 million\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 4,\n  \"overall_assessment\": \"Major inconsistencies found between primary metric and supporting data figures.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_110_74F7847F",
+      "hallucination_id": "FB_110_74F7847F_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,500 million",
+      "injected_value": "$1,210 million",
+      "detected": true,
+      "reason": "Inconsistent with the supporting data below which lists total short-term investments as $1,500 million",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 4
+    },
+    {
+      "question_id": "FB_110_74F7847F",
+      "hallucination_id": "FB_110_74F7847F_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$900 million",
+      "injected_value": "$730 million",
+      "detected": true,
+      "reason": "Inconsistent with the supporting data below which lists U.S. Treasury Bills as $900 million",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 4
+    }
+  ],
+  "timestamp": "2026-03-24T09:57:32.058956Z"
+}

@@ -1,0 +1,127 @@
+{
+  "question_id": "FB_119_3CD84B18",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: PayPal Holdings, Inc. - Fiscal Year 2022\n\n- PRIMARY METRIC: \n  - Current Assets: $23,876 million (per the FY2022 10-K, Consolidated Balance Sheets)\n  - Current Liabilities: $10,498 million (per the FY2022 10-K, Consolidated Balance Sheets)\n  - Working Capital Calculation: \n    - Working Capital = Current Assets - Current Liabilities \n    - Working Capital = $18,407 million - $12,740 million = $7,909 million\n\n- SUPPORTING DATA: \n  - Current Assets (FY2021): $19,190 million (per the FY2021 10-K, Consolidated Balance Sheets)\n  - Current Liabilities (FY2021): $11,568 million (per the FY2021 10-K, Consolidated Balance Sheets)\n  - Current Assets (FY2020): $16,118 million (per the FY2020 10-K, Consolidated Balance Sheets)\n  - Current Liabilities (FY2020): $8,689 million (per the FY2020 10-K, Consolidated Balance Sheets)\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Balance Sheets\n  - FY2021 10-K, Consolidated Balance Sheets\n  - FY2020 10-K, Consolidated Balance Sheets\n\n**Note:** The calculated working capital for PayPal in FY2022 is $7,909 million, which is positive. \n\nRegarding the relevance of working capital for PayPal's operational model, I will refrain from providing an analysis or interpretation as per the instructions. Please consult downstream analysts for further insights on the implications of this working capital figure within the context of PayPal's business model and industry benchmarks.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_119_3CD84B18_H3",
+      "type": "dollar_amount",
+      "original_value": "$18,407 million",
+      "injected_value": "$23,876 million",
+      "original_numeric": "18407",
+      "injected_numeric": "23876",
+      "position_char": 101,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.2971
+    },
+    {
+      "hallucination_id": "FB_119_3CD84B18_H2",
+      "type": "dollar_amount",
+      "original_value": "$10,498 million",
+      "injected_value": "$12,740 million",
+      "original_numeric": "10498",
+      "injected_numeric": "12740",
+      "position_char": 398,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.2135
+    },
+    {
+      "hallucination_id": "FB_119_3CD84B18_H1",
+      "type": "dollar_amount",
+      "original_value": "$10,226 million",
+      "injected_value": "$8,689 million",
+      "original_numeric": "10226",
+      "injected_numeric": "8689",
+      "position_char": 779,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.1503
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Current Assets: $23,876 million (per the FY2022 10-K, Consolidated Balance Sheets)",
+        "claim_value": "$23,876 million",
+        "reason": "This figure for FY2022 Current Assets is stated in the 'PRIMARY METRIC' section, but a different figure ($18,407 million) is subsequently used in the working capital calculation for the same period, creating an internal inconsistency.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Current Liabilities: $10,498 million (per the FY2022 10-K, Consolidated Balance Sheets)",
+        "claim_value": "$10,498 million",
+        "reason": "This figure for FY2022 Current Liabilities is stated in the 'PRIMARY METRIC' section, but a different figure ($12,740 million) is subsequently used in the working capital calculation for the same period, creating an internal inconsistency.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Working Capital = $18,407 million - $12,740 million = $7,909 million",
+        "claim_value": "$18,407 million",
+        "reason": "This figure for Current Assets used in the working capital calculation for FY2022 ($18,407 million) contradicts the Current Assets figure explicitly stated for FY2022 in the 'PRIMARY METRIC' section ($23,876 million).",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Working Capital = $18,407 million - $12,740 million = $7,909 million",
+        "claim_value": "$12,740 million",
+        "reason": "This figure for Current Liabilities used in the working capital calculation for FY2022 ($12,740 million) contradicts the Current Liabilities figure explicitly stated for FY2022 in the 'PRIMARY METRIC' section ($10,498 million).",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Working Capital = $18,407 million - $12,740 million = $7,909 million",
+        "claim_value": "$7,909 million",
+        "reason": "This calculated working capital figure ($7,909 million) is inconsistent. First, it does not result from subtracting the Current Liabilities ($12,740 million) from the Current Assets ($18,407 million) that are presented in the same calculation line (which would yield $5,667 million). Second, it does not result from subtracting the *stated* FY2022 Current Liabilities ($10,498 million) from the *stated* FY2022 Current Assets ($23,876 million) (which would yield $13,378 million).",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "The calculated working capital for PayPal in FY2022 is $7,909 million, which is positive.",
+        "claim_value": "$7,909 million",
+        "reason": "This reiterates the incorrect working capital figure, which is inconsistent with both the numbers used in its own calculation and the primary FY2022 asset/liability figures provided.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 10,
+    "overall_assessment": "The report contains significant internal inconsistencies in the calculation of FY2022 working capital, with conflicting figures for current assets and liabilities and an incorrect final calculation.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Current Assets: $23,876 million (per the FY2022 10-K, Consolidated Balance Sheets)\",\n      \"claim_value\": \"$23,876 million\",\n      \"reason\": \"This figure for FY2022 Current Assets is stated in the 'PRIMARY METRIC' section, but a different figure ($18,407 million) is subsequently used in the working capital calculation for the same period, creating an internal inconsistency.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Current Liabilities: $10,498 million (per the FY2022 10-K, Consolidated Balance Sheets)\",\n      \"claim_value\": \"$10,498 million\",\n      \"reason\": \"This figure for FY2022 Current Liabilities is stated in the 'PRIMARY METRIC' section, but a different figure ($12,740 million) is subsequently used in the working capital calculation for the same period, creating an internal inconsistency.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Working Capital = $18,407 million - $12,740 million = $7,909 million\",\n      \"claim_value\": \"$18,407 million\",\n      \"reason\": \"This figure for Current Assets used in the working capital calculation for FY2022 ($18,407 million) contradicts the Current Assets figure explicitly stated for FY2022 in the 'PRIMARY METRIC' section ($23,876 million).\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Working Capital = $18,407 million - $12,740 million = $7,909 million\",\n      \"claim_value\": \"$12,740 million\",\n      \"reason\": \"This figure for Current Liabilities used in the working capital calculation for FY2022 ($12,740 million) contradicts the Current Liabilities figure explicitly stated for FY2022 in the 'PRIMARY METRIC' section ($10,498 million).\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Working Capital = $18,407 million - $12,740 million = $7,909 million\",\n      \"claim_value\": \"$7,909 million\",\n      \"reason\": \"This calculated working capital figure ($7,909 million) is inconsistent. First, it does not result from subtracting the Current Liabilities ($12,740 million) from the Current Assets ($18,407 million) that are presented in the same calculation line (which would yield $5,667 million). Second, it does not result from subtracting the *stated* FY2022 Current Liabilities ($10,498 million) from the *stated* FY2022 Current Assets ($23,876 million) (which would yield $13,378 million).\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"The calculated working capital for PayPal in FY2022 is $7,909 million, which is positive.\",\n      \"claim_value\": \"$7,909 million\",\n      \"reason\": \"This reiterates the incorrect working capital figure, which is inconsistent with both the numbers used in its own calculation and the primary FY2022 asset/liability figures provided.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 10,\n  \"overall_assessment\": \"The report contains significant internal inconsistencies in the calculation of FY2022 working capital, with conflicting figures for current assets and liabilities and an incorrect final calculation.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_119_3CD84B18",
+      "hallucination_id": "FB_119_3CD84B18_H3",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$18,407 million",
+      "injected_value": "$23,876 million",
+      "detected": true,
+      "reason": "This figure for FY2022 Current Assets is stated in the 'PRIMARY METRIC' section, but a different figure ($18,407 million) is subsequently used in the working capital calculation for the same period, creating an internal inconsistency.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 10
+    },
+    {
+      "question_id": "FB_119_3CD84B18",
+      "hallucination_id": "FB_119_3CD84B18_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$10,498 million",
+      "injected_value": "$12,740 million",
+      "detected": true,
+      "reason": "This figure for FY2022 Current Liabilities is stated in the 'PRIMARY METRIC' section, but a different figure ($12,740 million) is subsequently used in the working capital calculation for the same period, creating an internal inconsistency.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 10
+    },
+    {
+      "question_id": "FB_119_3CD84B18",
+      "hallucination_id": "FB_119_3CD84B18_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$10,226 million",
+      "injected_value": "$8,689 million",
+      "detected": true,
+      "reason": "This figure for FY2022 Current Liabilities is stated in the 'PRIMARY METRIC' section, but a different figure ($12,740 million) is subsequently used in the working capital calculation for the same period, creating an internal inconsistency.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 10
+    }
+  ],
+  "timestamp": "2026-03-25T08:01:19.004307Z"
+}

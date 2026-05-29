@@ -1,0 +1,85 @@
+{
+  "question_id": "FB_040_DBF8FC6A",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: American Express Company, FY2022\n- PRIMARY METRIC: American Express primarily operates in the following geographic regions: United States, International (which includes Europe, Asia, Latin America, and Canada). Specific revenue figures for these regions are as follows:\n  - United States: $40,000 million (per the FY2022 10-K, Consolidated Statements of Operations).\n  - International: $11,000 million (per the FY2022 10-K, Consolidated Statements of Operations).\n- SUPPORTING DATA: \n  - Total Revenue for FY2022: $62,827 million (per the FY2022 10-K, Consolidated Statements of Operations).\n  - Revenue from the United States represented approximately 78.4% of total revenue.\n  - Revenue from International operations represented approximately 29.6% of total revenue.\n- DATA SOURCES: \n  - American Express Company FY2022 10-K, Consolidated Statements of Operations, Page 50.\n  - American Express Company FY2022 10-K, Note 22 - Segment Information, Page 112.\n\nPlease note that I have not included any analysis or interpretation of the data as per your instructions.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_040_DBF8FC6A_H2",
+      "type": "dollar_amount",
+      "original_value": "$51,000 million",
+      "injected_value": "$62,827 million",
+      "original_numeric": "51000",
+      "injected_numeric": "62827",
+      "position_char": 534,
+      "sentence_approx": 4,
+      "perturbation_delta": 0.2319
+    },
+    {
+      "hallucination_id": "FB_040_DBF8FC6A_H1",
+      "type": "percentage",
+      "original_value": "21.6%",
+      "injected_value": "29.6%",
+      "original_numeric": "21.6",
+      "injected_numeric": "29.6",
+      "position_char": 765,
+      "sentence_approx": 7,
+      "perturbation_delta": 8.0344
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Total Revenue for FY2022: $62,827 million (per the FY2022 10-K, Consolidated Statements of Operations).",
+        "claim_value": "$62,827 million",
+        "reason": "Historical financial data indicates American Express FY2022 revenue was approximately $52.9 billion. The reported figure is significantly overstated (by ~$10 billion) and exceeds even FY2023 actuals, suggesting a hallucinated or period-mismatched figure.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Revenue from the United States represented approximately 78.4% of total revenue. Revenue from International operations represented approximately 29.6% of total revenue.",
+        "claim_value": "78.4% and 29.6%",
+        "reason": "The sum of these percentages is 108%. For mutually exclusive geographic segments comprising total revenue, the percentages cannot exceed 100%. This is a mathematical impossibility.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "United States: $40,000 million... International: $11,000 million",
+        "claim_value": "$40,000 million and $11,000 million",
+        "reason": "These figures are suspiciously round compared to the precise total revenue figure ($62,827 million). Additionally, their sum ($51,000 million) does not reconcile with the stated total revenue, leaving ~$11.8 billion unaccounted for without explanation.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 7,
+    "overall_assessment": "The output contains critical mathematical errors and likely hallucinated financial figures that contradict known historical data for American Express FY2022.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Total Revenue for FY2022: $62,827 million (per the FY2022 10-K, Consolidated Statements of Operations).\",\n      \"claim_value\": \"$62,827 million\",\n      \"reason\": \"Historical financial data indicates American Express FY2022 revenue was approximately $52.9 billion. The reported figure is significantly overstated (by ~$10 billion) and exceeds even FY2023 actuals, suggesting a hallucinated or period-mismatched figure.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Revenue from the United States represented approximately 78.4% of total revenue. Revenue from International operations represented approximately 29.6% of total revenue.\",\n      \"claim_value\": \"78.4% and 29.6%\",\n      \"reason\": \"The sum of these percentages is 108%. For mutually exclusive geographic segments comprising total revenue, the percentages cannot exceed 100%. This is a mathematical impossibility.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"United States: $40,000 million... International: $11,000 million\",\n      \"claim_value\": \"$40,000 million and $11,000 million\",\n      \"reason\": \"These figures are suspiciously round compared to the precise total revenue figure ($62,827 million). Additionally, their sum ($51,000 million) does not reconcile with the stated total revenue, leaving ~$11.8 billion unaccounted for without explanation.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 7,\n  \"overall_assessment\": \"The output contains critical mathematical errors and likely hallucinated financial figures that contradict known historical data for American Express FY2022.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_040_DBF8FC6A",
+      "hallucination_id": "FB_040_DBF8FC6A_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$51,000 million",
+      "injected_value": "$62,827 million",
+      "detected": true,
+      "reason": "Historical financial data indicates American Express FY2022 revenue was approximately $52.9 billion. The reported figure is significantly overstated (by ~$10 billion) and exceeds even FY2023 actuals, suggesting a hallucinated or period-mismatched figure.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_040_DBF8FC6A",
+      "hallucination_id": "FB_040_DBF8FC6A_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "percentage",
+      "original_value": "21.6%",
+      "injected_value": "29.6%",
+      "detected": true,
+      "reason": "The sum of these percentages is 108%. For mutually exclusive geographic segments comprising total revenue, the percentages cannot exceed 100%. This is a mathematical impossibility.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 7
+    }
+  ],
+  "timestamp": "2026-03-24T10:57:12.823916Z"
+}

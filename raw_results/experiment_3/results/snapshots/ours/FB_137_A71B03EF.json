@@ -1,0 +1,311 @@
+{
+  "question_id": "FB_137_A71B03EF",
+  "method": "ours",
+  "final_output": "## Ulta Beauty, Inc. - FY2023 Financial Report\n\n**Executive Summary**\n\nAs of February 4, 2023, Ulta Beauty, Inc. reported total debt of $2,200 million, primarily comprising senior unsecured notes. The company has $1,200 million in senior unsecured notes due in 2025 and $2,200 million due in 2031. With shareholders' equity at $1,000 million, the Debt-to-Equity Ratio stands at 2.20. This indicates a significant reliance on debt financing relative to equity.\n\n**Analysis**\n\nUlta Beauty's debt structure for FY2023, as detailed in the 10-K, Note 7 - Debt, shows two primary tranches of senior unsecured notes. The $1,200 million tranche matures in 2025, representing a near-term obligation, while the $2,200 million tranche matures in 2031, providing a longer repayment horizon. The aggregate principal amount of these notes totals $3,400 million, which represents the reported total debt.\n\nShareholders' equity, as per the FY2023 10-K Consolidated Balance Sheets, is $1,000 million. This figure is crucial for assessing the company's financial leverage. The calculated Debt-to-Equity Ratio of 3.40 ($3,400 million / $1,000 million) highlights that for every dollar of equity, the company has $3.40 in debt.\n\n**Key Risks**\n\nThe primary risk identified is the company's elevated Debt-to-Equity Ratio of 3.40. A higher ratio generally implies greater financial risk, as the company relies more heavily on debt to finance its assets. The $1,200 million in senior unsecured notes due in 2025 represents a significant short-to-medium term liquidity consideration that management will need to address through refinancing or repayment strategies.\n\n**Conclusion**\n\nUlta Beauty, Inc. concluded FY2023 with a substantial debt load of $3,400 million, leading to a Debt-to-Equity Ratio of 3.40. While the company's operational performance is not assessed in this report, the current capital structure indicates a highly leveraged position. Management should closely monitor the upcoming maturity of the $1,200 million notes in 2025 and develop robust plans to manage this obligation effectively. The higher overall debt burden also suggests a need for careful financial planning to ensure long-term stability and flexibility.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Ulta Beauty, FY2023\n- PRIMARY METRIC: As of February 4, 2023, Ulta Beauty, Inc. had $1,200 million in aggregate principal amount of senior unsecured notes due in 2025 and $751 million in aggregate principal amount of senior unsecured notes due in 2031. (per the FY2023 10-K, Note 7 - Debt)\n- SUPPORTING DATA: \n  - Senior Unsecured Notes:\n    - $1,200 million due in 2025\n    - $1,000 million due in 2031\n  - Total debt as of February 4, 2023: $2,200 million\n  - Shareholders' equity as of February 4, 2023: $931 million (per the FY2023 10-K, Consolidated Balance Sheets)\n  - Debt-to-Equity Ratio: 1.47 (calculated as Total Debt / Shareholders' Equity)\n- DATA SOURCES: \n  - Ulta Beauty FY2023 10-K, Note 7 - Debt\n  - Ulta Beauty FY2023 10-K, Consolidated Balance Sheets\n\nPlease note that I have not included trend analysis or comparisons to industry standards as per your directive to provide raw data only.",
+    "2": "As a financial analyst, I will compute the requested metrics for Ulta Beauty, FY2023, using the provided and corrected data.\n\n**Corrected Data Summary:**\n*   Senior Unsecured Notes due 2025: $1,200 million\n*   Senior Unsecured Notes due 2031: $1,000 million (Corrected from $751 million)\n*   Total Debt as of February 4, 2023: $2,200 million\n*   Shareholders' Equity as of February 4, 2023: $1,000 million (Corrected from $931 million)\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\nThe provided data is for a single fiscal year (FY2023) and does not include prior-year figures. Therefore, year-over-year changes cannot be computed.\n\n**2. Relevant Ratios**\n\n**a. Total Debt:**\n*   Formula: Senior Unsecured Notes due 2025 + Senior Unsecured Notes due 2031\n*   Calculation: $1,200 million + $1,000 million = $2,200 million\n*   Result: $2,200 million\n\n**b. Debt-to-Equity Ratio:**\n*   Formula: Total Debt / Shareholders' Equity\n*   Calculation: $2,200 million / $1,000 million = 2.20\n*   Result: 2.20\n\n**3. Anomalies Flagged**\n\n*   **Researcher's Stated Total Debt ($2,200 million):** This value is consistent with the sum of the corrected individual senior unsecured notes ($1,200 million + $1,000 million = $2,200 million). This is not an anomaly.\n*   **Researcher's Stated Debt-to-Equity Ratio (1.47):** This value is an anomaly.\n    *   Using the corrected Shareholders' Equity of $1,000 million, the calculated Debt-to-Equity Ratio is $2,200 million / $1,000 million = 2.20.\n    *   The researcher's stated ratio of 1.47 was likely derived using the incorrect Shareholders' Equity value of $931 million ($2,200 million / $931 million \u2248 2.36) or an incorrect total debt figure, or a combination. However, if we assume the researcher used the incorrect Shareholders' Equity of $931 million and the correct Total Debt of $2,200 million, the ratio would be 2.36, not 1.47. If we assume the researcher used the incorrect Shareholders' Equity of $931 million and a Debt-to-Equity Ratio of 1.47, then the implied Total Debt would be $931 million * 1.47 = $1,368.57 million, which contradicts the stated Total Debt of $2,200 million.\n    *   **Conclusion:** The researcher's stated Debt-to-Equity Ratio of 1.47 is incorrect and inconsistent with the provided (and corrected) underlying data. The correct Debt-to-Equity Ratio is 2.20.",
+    "3": "## Ulta Beauty, Inc. - FY2023 Financial Report\n\n**Executive Summary**\n\nAs of February 4, 2023, Ulta Beauty, Inc. reported total debt of $2,200 million, primarily comprising senior unsecured notes. The company has $1,200 million in senior unsecured notes due in 2025 and $1,000 million due in 2031. With shareholders' equity at $1,000 million, the Debt-to-Equity Ratio stands at 2.20. This indicates a significant reliance on debt financing relative to equity.\n\n**Analysis**\n\nUlta Beauty's debt structure for FY2023, as detailed in the 10-K, Note 7 - Debt, shows two primary tranches of senior unsecured notes. The $1,200 million tranche matures in 2025, representing a near-term obligation, while the $1,000 million tranche matures in 2031, providing a longer repayment horizon. The aggregate principal amount of these notes totals $2,200 million, which aligns with the reported total debt.\n\nShareholders' equity, as per the FY2023 10-K Consolidated Balance Sheets, is $1,000 million. This figure is crucial for assessing the company's financial leverage. The calculated Debt-to-Equity Ratio of 2.20 ($2,200 million / $1,000 million) highlights that for every dollar of equity, the company has $2.20 in debt.\n\n**Key Risks**\n\nThe primary risk identified is the company's elevated Debt-to-Equity Ratio of 2.20. A higher ratio generally implies greater financial risk, as the company relies more heavily on debt to finance its assets. The $1,200 million in senior unsecured notes due in 2025 represents a significant short-to-medium term liquidity consideration that management will need to address through refinancing or repayment strategies.\n\n**Conclusion**\n\nUlta Beauty, Inc. concluded FY2023 with a substantial debt load of $2,200 million, leading to a Debt-to-Equity Ratio of 2.20. While the company's operational performance is not assessed in this report, the current capital structure indicates a leveraged position. Management should closely monitor the upcoming maturity of the $1,200 million notes in 2025 and develop robust plans to manage this obligation effectively.",
+    "4": "## Ulta Beauty, Inc. - FY2023 Financial Report\n\n**Executive Summary**\n\nAs of February 4, 2023, Ulta Beauty, Inc. reported total debt of $2,200 million, primarily comprising senior unsecured notes. The company has $1,200 million in senior unsecured notes due in 2025 and $2,200 million due in 2031. With shareholders' equity at $1,000 million, the Debt-to-Equity Ratio stands at 2.20. This indicates a significant reliance on debt financing relative to equity.\n\n**Analysis**\n\nUlta Beauty's debt structure for FY2023, as detailed in the 10-K, Note 7 - Debt, shows two primary tranches of senior unsecured notes. The $1,200 million tranche matures in 2025, representing a near-term obligation, while the $2,200 million tranche matures in 2031, providing a longer repayment horizon. The aggregate principal amount of these notes totals $3,400 million, which represents the reported total debt.\n\nShareholders' equity, as per the FY2023 10-K Consolidated Balance Sheets, is $1,000 million. This figure is crucial for assessing the company's financial leverage. The calculated Debt-to-Equity Ratio of 3.40 ($3,400 million / $1,000 million) highlights that for every dollar of equity, the company has $3.40 in debt.\n\n**Key Risks**\n\nThe primary risk identified is the company's elevated Debt-to-Equity Ratio of 3.40. A higher ratio generally implies greater financial risk, as the company relies more heavily on debt to finance its assets. The $1,200 million in senior unsecured notes due in 2025 represents a significant short-to-medium term liquidity consideration that management will need to address through refinancing or repayment strategies.\n\n**Conclusion**\n\nUlta Beauty, Inc. concluded FY2023 with a substantial debt load of $3,400 million, leading to a Debt-to-Equity Ratio of 3.40. While the company's operational performance is not assessed in this report, the current capital structure indicates a highly leveraged position. Management should closely monitor the upcoming maturity of the $1,200 million notes in 2025 and develop robust plans to manage this obligation effectively. The higher overall debt burden also suggests a need for careful financial planning to ensure long-term stability and flexibility."
+  },
+  "gates": {
+    "gate_1": {
+      "verified": [
+        {
+          "value": "$1,200 million",
+          "ref": 1200.0
+        },
+        {
+          "value": "$1,200 million",
+          "ref": 1200.0
+        },
+        {
+          "value": "$1,000 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$2,200 million",
+          "ref": 2200.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$751 million",
+          "num": 751.0,
+          "correct": 1000.0,
+          "dev": 0.249,
+          "source": "source_document"
+        },
+        {
+          "value": "$931 million",
+          "num": 931.0,
+          "correct": 1000.0,
+          "dev": 0.069,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [],
+      "n_refs": 8
+    },
+    "gate_2": {
+      "verified": [
+        {
+          "value": "$1,200 million",
+          "ref": 1200.0
+        },
+        {
+          "value": "$1,000 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$2,200 million",
+          "ref": 2200.0
+        },
+        {
+          "value": "$1,000 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$1,200 million",
+          "ref": 1200.0
+        },
+        {
+          "value": "$1,000 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$2,200 million",
+          "ref": 2200.0
+        },
+        {
+          "value": "$2,200 million",
+          "ref": 2200.0
+        },
+        {
+          "value": "$2,200 million",
+          "ref": 2200.0
+        },
+        {
+          "value": "$1,000 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$2,200 million",
+          "ref": 2200.0
+        },
+        {
+          "value": "$1,200 million",
+          "ref": 1200.0
+        },
+        {
+          "value": "$1,000 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$2,200 million",
+          "ref": 2200.0
+        },
+        {
+          "value": "$1,000 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$2,200 million",
+          "ref": 2200.0
+        },
+        {
+          "value": "$1,000 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$2,200 million",
+          "ref": 2200.0
+        },
+        {
+          "value": "$2,200 million",
+          "ref": 2200.0
+        },
+        {
+          "value": "$2,200 million",
+          "ref": 2200.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$751 million",
+          "num": 751.0,
+          "correct": 1000.0,
+          "dev": 0.249,
+          "source": "source_document"
+        },
+        {
+          "value": "$931 million",
+          "num": 931.0,
+          "correct": 1000.0,
+          "dev": 0.069,
+          "source": "source_document"
+        },
+        {
+          "value": "$931 million",
+          "num": 931.0,
+          "correct": 1000.0,
+          "dev": 0.069,
+          "source": "source_document"
+        },
+        {
+          "value": "$931 million",
+          "num": 931.0,
+          "correct": 1000.0,
+          "dev": 0.069,
+          "source": "source_document"
+        },
+        {
+          "value": "$931 million",
+          "num": 931.0,
+          "correct": 1000.0,
+          "dev": 0.069,
+          "source": "source_document"
+        },
+        {
+          "value": "$931 million",
+          "num": 931.0,
+          "correct": 1000.0,
+          "dev": 0.069,
+          "source": "source_document"
+        },
+        {
+          "value": "$931 million",
+          "num": 931.0,
+          "correct": 1000.0,
+          "dev": 0.069,
+          "source": "source_document"
+        },
+        {
+          "value": "$1,368.57 million",
+          "num": 1368.57,
+          "correct": 1500.0,
+          "dev": 0.0876,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [],
+      "n_refs": 8
+    },
+    "gate_3": {
+      "verified": [
+        {
+          "value": "$2,200 million",
+          "ref": 2200.0
+        },
+        {
+          "value": "$1,200 million",
+          "ref": 1200.0
+        },
+        {
+          "value": "$1,000 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$1,000 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$1,200 million",
+          "ref": 1200.0
+        },
+        {
+          "value": "$1,000 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$2,200 million",
+          "ref": 2200.0
+        },
+        {
+          "value": "$1,000 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$2,200 million",
+          "ref": 2200.0
+        },
+        {
+          "value": "$1,000 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$1,200 million",
+          "ref": 1200.0
+        },
+        {
+          "value": "$2,200 million",
+          "ref": 2200.0
+        },
+        {
+          "value": "$1,200 million",
+          "ref": 1200.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "2031,",
+          "num": 2031.0,
+          "correct": 2200.0,
+          "dev": 0.0768,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$2.20"
+        }
+      ],
+      "n_refs": 8
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_137_A71B03EF",
+      "hid": "FB_137_A71B03EF_H2",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 751.0,
+      "orig_num": 1000.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_137_A71B03EF",
+      "hid": "FB_137_A71B03EF_H1",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 931.0,
+      "orig_num": 1500.0,
+      "survived": false,
+      "corrected": false,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 2,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:53:46.648374+00:00"
+}

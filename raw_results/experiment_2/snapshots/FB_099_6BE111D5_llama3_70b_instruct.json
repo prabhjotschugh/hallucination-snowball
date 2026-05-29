@@ -1,0 +1,97 @@
+{
+  "question_id": "FB_099_6BE111D5",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: JPMorgan Chase & Co., Q2 2023\n- PRIMARY METRIC: Value at Risk (VaR) for the second fiscal quarter of 2023 was reported as $18 million, per the Q2 2023 10-Q, Risk Management section.\n- SUPPORTING DATA: \n  - Value at Risk (VaR) for the second fiscal quarter of 2022 was reported as $25 million, per the Q2 2022 10-Q, Risk Management section.\n  - Additional context:\n    - Total trading revenue for Q2 2023: $6,231 million, per the Q2 2023 10-Q, Consolidated Statements of Operations.\n    - Total trading revenue for Q2 2022: $9,150 million, per the Q2 2022 10-Q, Consolidated Statements of Operations.\n- DATA SOURCES: \n  - Q2 2023 10-Q, Risk Management section, page 45.\n  - Q2 2022 10-Q, Risk Management section, page 43.\n  - Q2 2023 10-Q, Consolidated Statements of Operations, page 30.\n  - Q2 2022 10-Q, Consolidated Statements of Operations, page 28.\n\nNote: No trend analysis or narrative report is provided as per the instruction to present raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_099_6BE111D5_H3",
+      "type": "dollar_amount",
+      "original_value": "$23 million",
+      "injected_value": "$18 million",
+      "original_numeric": "23",
+      "injected_numeric": "18",
+      "position_char": 142,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.2112
+    },
+    {
+      "hallucination_id": "FB_099_6BE111D5_H2",
+      "type": "dollar_amount",
+      "original_value": "$7,500 million",
+      "injected_value": "$6,231 million",
+      "original_numeric": "7500",
+      "injected_numeric": "6231",
+      "position_char": 425,
+      "sentence_approx": 4,
+      "perturbation_delta": -0.1693
+    },
+    {
+      "hallucination_id": "FB_099_6BE111D5_H1",
+      "type": "dollar_amount",
+      "original_value": "$7,200 million",
+      "injected_value": "$9,150 million",
+      "original_numeric": "7200",
+      "injected_numeric": "9150",
+      "position_char": 543,
+      "sentence_approx": 5,
+      "perturbation_delta": 0.2708
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Value at Risk (VaR) for the second fiscal quarter of 2023 was reported as $18 million",
+        "claim_value": "$18 million",
+        "reason": "VaR of $18 million seems suspiciously low for a large financial institution like JPMorgan Chase, especially considering the total trading revenue of $6,231 million in the same quarter.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 4,
+    "overall_assessment": "The reported VaR figure seems implausibly low, warranting further investigation.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"Value at Risk (VaR) for the second fiscal quarter of 2023 was reported as $18 million\",\n      \"claim_value\" : \"$18 million\",\n      \"reason\"      : \"VaR of $18 million seems suspiciously low for a large financial institution like JPMorgan Chase, especially considering the total trading revenue of $6,231 million in the same quarter.\",\n      \"confidence\"  : \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 4,\n  \"overall_assessment\"   : \"The reported VaR figure seems implausibly low, warranting further investigation.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_099_6BE111D5",
+      "hallucination_id": "FB_099_6BE111D5_H3",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$23 million",
+      "injected_value": "$18 million",
+      "detected": true,
+      "reason": "VaR of $18 million seems suspiciously low for a large financial institution like JPMorgan Chase, especially considering the total trading revenue of $6,231 million in the same quarter.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 4
+    },
+    {
+      "question_id": "FB_099_6BE111D5",
+      "hallucination_id": "FB_099_6BE111D5_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$7,500 million",
+      "injected_value": "$6,231 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 4
+    },
+    {
+      "question_id": "FB_099_6BE111D5",
+      "hallucination_id": "FB_099_6BE111D5_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$7,200 million",
+      "injected_value": "$9,150 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 4
+    }
+  ],
+  "timestamp": "2026-03-27T09:40:00.742687Z"
+}

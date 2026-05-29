@@ -1,0 +1,103 @@
+{
+  "question_id": "FB_053_05E755A5",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: Best Buy Co., Inc. for Fiscal Year 2023 (FY2023)\n  \n- PRIMARY METRIC: \n  - Cash Flows from Operating Activities: $1,210 million (per the FY2023 10-K, Consolidated Statements of Cash Flows)\n  - Cash Flows from Investing Activities: $(1,421) million (per the FY2023 10-K, Consolidated Statements of Cash Flows)\n  - Cash Flows from Financing Activities: $(1,042) million (per the FY2023 10-K, Consolidated Statements of Cash Flows)\n\n- SUPPORTING DATA: \n  - FY2022 Cash Flows from Operating Activities: $1,637 million (per the FY2022 10-K, Consolidated Statements of Cash Flows)\n  - FY2022 Cash Flows from Investing Activities: $(852) million (per the FY2022 10-K, Consolidated Statements of Cash Flows)\n  - FY2022 Cash Flows from Financing Activities: $(1,069) million (per the FY2022 10-K, Consolidated Statements of Cash Flows)\n  \n  - FY2021 Cash Flows from Operating Activities: $2,174 million (per the FY2021 10-K, Consolidated Statements of Cash Flows)\n  - FY2021 Cash Flows from Investing Activities: $(1,071) million (per the FY2021 10-K, Consolidated Statements of Cash Flows)\n  - FY2021 Cash Flows from Financing Activities: $(1,052) million (per the FY2021 10-K, Consolidated Statements of Cash Flows)\n\n- DATA SOURCES: \n  - FY2023 10-K, Consolidated Statements of Cash Flows\n  - FY2022 10-K, Consolidated Statements of Cash Flows\n  - FY2021 10-K, Consolidated Statements of Cash Flows\n\nIn summary, Best Buy's cash flow from operating activities in FY2023 was the highest among the three segments, totaling $1,518 million.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_053_05E755A5_H3",
+      "type": "dollar_amount",
+      "original_value": "$1,518 million",
+      "injected_value": "$1,210 million",
+      "original_numeric": "1518",
+      "injected_numeric": "1210",
+      "position_char": 133,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.203
+    },
+    {
+      "hallucination_id": "FB_053_05E755A5_H2",
+      "type": "large_number",
+      "original_value": "1,188",
+      "injected_value": "1,421",
+      "original_numeric": "1188",
+      "injected_numeric": "1421",
+      "position_char": 253,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.1963
+    },
+    {
+      "hallucination_id": "FB_053_05E755A5_H1",
+      "type": "large_number",
+      "original_value": "1,045",
+      "injected_value": "852",
+      "original_numeric": "1045",
+      "injected_numeric": "852",
+      "position_char": 646,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.1844
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Cash Flows from Operating Activities: $1,210 million (per the FY2023 10-K, Consolidated Statements of Cash Flows)",
+        "claim_value": "$1,210 million",
+        "reason": "Inconsistent with the summary statement at the end which says '$1,518 million'. Both cannot be correct for the same metric in the same year.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "In summary, Best Buy's cash flow from operating activities in FY2023 was the highest among the three segments, totaling $1,518 million.",
+        "claim_value": "$1,518 million",
+        "reason": "Contradicts the earlier stated '$1,210 million' for the same metric. Also abnormally precise compared to other round numbers in the report.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 10,
+    "overall_assessment": "The report contains contradictory figures for FY2023 operating cash flows ($1,210M vs $1,518M), indicating at least one must be incorrect.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Cash Flows from Operating Activities: $1,210 million (per the FY2023 10-K, Consolidated Statements of Cash Flows)\",\n      \"claim_value\": \"$1,210 million\",\n      \"reason\": \"Inconsistent with the summary statement at the end which says '$1,518 million'. Both cannot be correct for the same metric in the same year.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"In summary, Best Buy's cash flow from operating activities in FY2023 was the highest among the three segments, totaling $1,518 million.\",\n      \"claim_value\": \"$1,518 million\",\n      \"reason\": \"Contradicts the earlier stated '$1,210 million' for the same metric. Also abnormally precise compared to other round numbers in the report.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 10,\n  \"overall_assessment\": \"The report contains contradictory figures for FY2023 operating cash flows ($1,210M vs $1,518M), indicating at least one must be incorrect.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_053_05E755A5",
+      "hallucination_id": "FB_053_05E755A5_H3",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,518 million",
+      "injected_value": "$1,210 million",
+      "detected": true,
+      "reason": "Inconsistent with the summary statement at the end which says '$1,518 million'. Both cannot be correct for the same metric in the same year.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 10
+    },
+    {
+      "question_id": "FB_053_05E755A5",
+      "hallucination_id": "FB_053_05E755A5_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "large_number",
+      "original_value": "1,188",
+      "injected_value": "1,421",
+      "detected": true,
+      "reason": "Inconsistent with the summary statement at the end which says '$1,518 million'. Both cannot be correct for the same metric in the same year.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 10
+    },
+    {
+      "question_id": "FB_053_05E755A5",
+      "hallucination_id": "FB_053_05E755A5_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "large_number",
+      "original_value": "1,045",
+      "injected_value": "852",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 10
+    }
+  ],
+  "timestamp": "2026-03-24T09:47:41.947572Z"
+}

@@ -1,0 +1,109 @@
+{
+  "question_id": "FB_086_889F46BB",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Johnson & Johnson, FY2022\n- PRIMARY METRIC: Total Revenue: $94,943 million (per the FY2022 10-K, Consolidated Statements of Operations)\n- SUPPORTING DATA: \n  - FY2021 Total Revenue: $70,366 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2020 Total Revenue: $82,584 million (per the FY2020 10-K, Consolidated Statements of Operations)\n  - Net Income FY2022: $22,612 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - Net Income FY2021: $20,880 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - Net Income FY2020: $8,873 million (per the FY2020 10-K, Consolidated Statements of Operations)\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Statements of Operations\n  - FY2020 10-K, Consolidated Statements of Operations\n\nPlease note that I am unable to provide an analysis or narrative report as per your request, as my role is strictly to present factual data without interpretation.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_086_889F46BB_H3",
+      "type": "dollar_amount",
+      "original_value": "$93,775 million",
+      "injected_value": "$70,366 million",
+      "original_numeric": "93775",
+      "injected_numeric": "70366",
+      "position_char": 202,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2496
+    },
+    {
+      "hallucination_id": "FB_086_889F46BB_H2",
+      "type": "dollar_amount",
+      "original_value": "$16,676 million",
+      "injected_value": "$22,612 million",
+      "original_numeric": "16676",
+      "injected_numeric": "22612",
+      "position_char": 405,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.356
+    },
+    {
+      "hallucination_id": "FB_086_889F46BB_H1",
+      "type": "dollar_amount",
+      "original_value": "$14,714 million",
+      "injected_value": "$8,873 million",
+      "original_numeric": "14714",
+      "injected_numeric": "8873",
+      "position_char": 605,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.397
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "FY2021 Total Revenue: $70,366 million",
+        "claim_value": "$70,366 million",
+        "reason": "Implausible volatility for a mature large-cap company. This figure represents a ~15% decline from 2020 followed by a ~35% surge in 2022. Johnson & Johnson typically exhibits stable revenue growth. Additionally, this creates an unrealistic net profit margin spike from ~10.7% in 2020 to ~29.6% in 2021 without stated cause.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Net Income FY2022: $22,612 million",
+        "claim_value": "$22,612 million",
+        "reason": "While not impossible, this figure contributes to a net margin of ~23.8%. Combined with the suspicious 2021 revenue data, the profitability trend appears inconsistent with typical GAAP results for this period, which generally showed lower net income in 2022 compared to 2021.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Net Income FY2020: $8,873 million",
+        "claim_value": "$8,873 million",
+        "reason": "Implies a net profit margin of ~10.7%, which is significantly lower than the ~20%+ margins claimed for 2021 and 2022. Such a drastic margin contraction and subsequent recovery is unusual for J&J without mention of major impairment charges or one-time costs.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "The reported 2021 Revenue figure creates an impossible volatility profile for a stable conglomerate, and the resulting profit margins fluctuate unrealistically across the three-year period.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"FY2021 Total Revenue: $70,366 million\",\n      \"claim_value\": \"$70,366 million\",\n      \"reason\": \"Implausible volatility for a mature large-cap company. This figure represents a ~15% decline from 2020 followed by a ~35% surge in 2022. Johnson & Johnson typically exhibits stable revenue growth. Additionally, this creates an unrealistic net profit margin spike from ~10.7% in 2020 to ~29.6% in 2021 without stated cause.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Net Income FY2022: $22,612 million\",\n      \"claim_value\": \"$22,612 million\",\n      \"reason\": \"While not impossible, this figure contributes to a net margin of ~23.8%. Combined with the suspicious 2021 revenue data, the profitability trend appears inconsistent with typical GAAP results for this period, which generally showed lower net income in 2022 compared to 2021.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Net Income FY2020: $8,873 million\",\n      \"claim_value\": \"$8,873 million\",\n      \"reason\": \"Implies a net profit margin of ~10.7%, which is significantly lower than the ~20%+ margins claimed for 2021 and 2022. Such a drastic margin contraction and subsequent recovery is unusual for J&J without mention of major impairment charges or one-time costs.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\": \"The reported 2021 Revenue figure creates an impossible volatility profile for a stable conglomerate, and the resulting profit margins fluctuate unrealistically across the three-year period.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_086_889F46BB",
+      "hallucination_id": "FB_086_889F46BB_H3",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$93,775 million",
+      "injected_value": "$70,366 million",
+      "detected": true,
+      "reason": "Implausible volatility for a mature large-cap company. This figure represents a ~15% decline from 2020 followed by a ~35% surge in 2022. Johnson & Johnson typically exhibits stable revenue growth. Additionally, this creates an unrealistic net profit margin spike from ~10.7% in 2020 to ~29.6% in 2021 without stated cause.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_086_889F46BB",
+      "hallucination_id": "FB_086_889F46BB_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$16,676 million",
+      "injected_value": "$22,612 million",
+      "detected": true,
+      "reason": "While not impossible, this figure contributes to a net margin of ~23.8%. Combined with the suspicious 2021 revenue data, the profitability trend appears inconsistent with typical GAAP results for this period, which generally showed lower net income in 2022 compared to 2021.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_086_889F46BB",
+      "hallucination_id": "FB_086_889F46BB_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$14,714 million",
+      "injected_value": "$8,873 million",
+      "detected": true,
+      "reason": "Implies a net profit margin of ~10.7%, which is significantly lower than the ~20%+ margins claimed for 2021 and 2022. Such a drastic margin contraction and subsequent recovery is unusual for J&J without mention of major impairment charges or one-time costs.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-24T11:58:42.402839Z"
+}

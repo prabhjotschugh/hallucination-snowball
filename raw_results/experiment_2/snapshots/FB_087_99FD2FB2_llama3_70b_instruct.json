@@ -1,0 +1,103 @@
+{
+  "question_id": "FB_087_99FD2FB2",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Johnson & Johnson, FY2022\n- PRIMARY METRIC: Gross Margin: $77,068 million (Gross Profit) on Total Revenue of $94,943 million, resulting in a Gross Margin Percentage of 70.3% (per the FY2022 10-K, Consolidated Statements of Operations).\n- SUPPORTING DATA:\n  - Total Revenue: $94,943 million (per the FY2022 10-K, Consolidated Statements of Operations).\n  - Cost of Goods Sold (COGS): $17,875 million (per the FY2022 10-K, Consolidated Statements of Operations).\n  - Gross Profit: $77,068 million (calculated as Total Revenue - COGS).\n  \n  Multi-Period Data:\n  - FY2021:\n    - Total Revenue: $93,775 million (per the FY2021 10-K, Consolidated Statements of Operations).\n    - COGS: $17,266 million (per the FY2021 10-K, Consolidated Statements of Operations).\n    - Gross Profit: $76,509 million (calculated as Total Revenue - COGS).\n    - Gross Margin Percentage: 81.6% (calculated as Gross Profit / Total Revenue).\n  \n  - FY2020:\n    - Total Revenue: $82,584 million (per the FY2020 10-K, Consolidated Statements of Operations).\n    - COGS: $20,998 million (per the FY2020 10-K, Consolidated Statements of Operations).\n    - Gross Profit: $84,991 million (calculated as Total Revenue - COGS).\n    - Gross Margin Percentage: 81.6% (calculated as Gross Profit / Total Revenue).\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations.\n  - FY2021 10-K, Consolidated Statements of Operations.\n  - FY2020 10-K, Consolidated Statements of Operations.\n\n**Note:** The request to analyze the factors influencing gross margin changes and the utility of gross margin as a financial health metric cannot be fulfilled as per the directive to provide raw data only without interpretation or analysis.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_087_99FD2FB2_H3",
+      "type": "percentage",
+      "original_value": "81.1%",
+      "injected_value": "70.3%",
+      "original_numeric": "81.1",
+      "injected_numeric": "70.3",
+      "position_char": 188,
+      "sentence_approx": 1,
+      "perturbation_delta": -10.7797
+    },
+    {
+      "hallucination_id": "FB_087_99FD2FB2_H2",
+      "type": "dollar_amount",
+      "original_value": "$15,157 million",
+      "injected_value": "$20,998 million",
+      "original_numeric": "15157",
+      "injected_numeric": "20998",
+      "position_char": 1061,
+      "sentence_approx": 12,
+      "perturbation_delta": 0.3853
+    },
+    {
+      "hallucination_id": "FB_087_99FD2FB2_H1",
+      "type": "dollar_amount",
+      "original_value": "$67,427 million",
+      "injected_value": "$84,991 million",
+      "original_numeric": "67427",
+      "injected_numeric": "84991",
+      "position_char": 1159,
+      "sentence_approx": 13,
+      "perturbation_delta": 0.2605
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Gross Profit: $84,991 million (calculated as Total Revenue - COGS).",
+        "claim_value": "$84,991 million",
+        "reason": "The calculated Gross Profit seems suspiciously high compared to the Total Revenue of $82,584 million in FY2020.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Gross Margin Percentage: 81.6% (calculated as Gross Profit / Total Revenue).",
+        "claim_value": "81.6%",
+        "reason": "The Gross Margin Percentage is identical for both FY2020 and FY2021, which seems unlikely given the different revenue and COGS figures.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 8,
+    "overall_assessment": "Some claims seem suspicious, but most appear plausible.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"Gross Profit: $84,991 million (calculated as Total Revenue - COGS).\",\n      \"claim_value\" : \"$84,991 million\",\n      \"reason\"      : \"The calculated Gross Profit seems suspiciously high compared to the Total Revenue of $82,584 million in FY2020.\",\n      \"confidence\"  : \"high\"\n    },\n    {\n      \"claim_text\"  : \"Gross Margin Percentage: 81.6% (calculated as Gross Profit / Total Revenue).\",\n      \"claim_value\" : \"81.6%\",\n      \"reason\"      : \"The Gross Margin Percentage is identical for both FY2020 and FY2021, which seems unlikely given the different revenue and COGS figures.\",\n      \"confidence\"  : \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 8,\n  \"overall_assessment\"   : \"Some claims seem suspicious, but most appear plausible.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_087_99FD2FB2",
+      "hallucination_id": "FB_087_99FD2FB2_H3",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "percentage",
+      "original_value": "81.1%",
+      "injected_value": "70.3%",
+      "detected": true,
+      "reason": "The Gross Margin Percentage is identical for both FY2020 and FY2021, which seems unlikely given the different revenue and COGS figures.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 8
+    },
+    {
+      "question_id": "FB_087_99FD2FB2",
+      "hallucination_id": "FB_087_99FD2FB2_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$15,157 million",
+      "injected_value": "$20,998 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 8
+    },
+    {
+      "question_id": "FB_087_99FD2FB2",
+      "hallucination_id": "FB_087_99FD2FB2_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$67,427 million",
+      "injected_value": "$84,991 million",
+      "detected": true,
+      "reason": "The calculated Gross Profit seems suspiciously high compared to the Total Revenue of $82,584 million in FY2020.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 8
+    }
+  ],
+  "timestamp": "2026-03-27T09:38:13.355001Z"
+}

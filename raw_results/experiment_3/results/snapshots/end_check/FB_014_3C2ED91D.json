@@ -1,0 +1,156 @@
+{
+  "question_id": "FB_014_3C2ED91D",
+  "method": "end_check",
+  "final_output": "## Adobe Inc. Financial Performance Report - FY2022\n\n**Executive Summary:**\n\nAdobe Inc. demonstrated robust revenue growth in FY2022, reaching $17,610 million, an 11.56% increase from FY2021. However, this growth was accompanied by a significant decline in operating income, which decreased by 10.28% to $4,381 million. Consequently, the operating margin for FY2022 stood at 24.88%, a notable decrease from 30.93% in FY2021. This indicates a substantial increase in operating expenses relative to revenue growth.\n\n**Analysis:**\n\nAdobe Inc. has shown consistent top-line expansion over the past three fiscal years. Total Revenue grew from $12,873 million in FY2020 to $15,785 million in FY2021, representing a 22.62% increase. This positive trend continued into FY2022, with revenue reaching $17,610 million, an 11.56% increase year-over-year.\n\nDespite this continued revenue growth, operating profitability experienced a reversal in FY2022. Operating Income, which had increased by 32.73% from $3,679 million in FY2020 to $4,883 million in FY2021, declined to $4,381 million in FY2022, a 10.28% decrease. This decline directly impacted the company's operating efficiency, as evidenced by the operating margin. The operating margin decreased from 30.93% in FY2021 to 24.88% in FY2022.\n\n**Key Risks:**\n\nThe primary risk identified is the significant contraction in operating margin during FY2022. The 10.28% decline in operating income despite an 11.56% increase in total revenue suggests that operating expenses grew at a faster rate than revenue. This trend, if sustained, could negatively impact overall profitability and shareholder value. Understanding the specific drivers behind this increase in operating expenses is crucial for future financial health. Potential factors could include increased investment in research and development, higher sales and marketing expenditures, or rising administrative costs.\n\n**Conclusion:**\n\nWhile Adobe Inc. continues to demonstrate strong revenue generation capabilities, the financial performance in FY2022 highlights a challenge in maintaining operating profitability. The decrease in operating income and operating margin warrants further investigation into the company's cost structure and operational efficiency. Management should focus on identifying and mitigating the factors contributing to the disproportionate growth in operating expenses to restore and improve operating margins in future periods. A detailed analysis of cost components and their impact on profitability will be essential for strategic decision-making and ensuring long-term financial stability.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Adobe Inc., FY2022\n- PRIMARY METRIC: Operating Margin: 38.5% (per the FY2022 10-K, Consolidated Statements of Operations)\n- SUPPORTING DATA: \n  - FY2022 Total Revenue: $17,610 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - FY2022 Operating Income: $4,381 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  \n  - FY2021 Total Revenue: $15,785 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2021 Operating Income: $4,883 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2020 Total Revenue: $12,873 million (per the FY2020 10-K, Consolidated Statements of Operations)\n  - FY2020 Operating Income: $3,679 million (per the FY2020 10-K, Consolidated Statements of Operations)\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Statements of Operations\n  - FY2020 10-K, Consolidated Statements of Operations\n\nNote: The operating margin has improved from 30.9% in FY2021 to 32.9% in FY2022, indicating a positive trend in operating margin over the recent fiscal years.",
+    "2": "As a financial analyst, I've reviewed the provided data for Adobe Inc. and computed the requested metrics.\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\n*   **Total Revenue:**\n    *   **FY2022 vs. FY2021:**\n        *   Absolute Change = FY2022 Revenue - FY2021 Revenue = $17,610M - $15,785M = **$1,825M**\n        *   Percentage Change = (Absolute Change / FY2021 Revenue) * 100 = ($1,825M / $15,785M) * 100 = **11.56%**\n    *   **FY2021 vs. FY2020:**\n        *   Absolute Change = FY2021 Revenue - FY2020 Revenue = $15,785M - $12,873M = **$2,912M**\n        *   Percentage Change = (Absolute Change / FY2020 Revenue) * 100 = ($2,912M / $12,873M) * 100 = **22.62%**\n\n*   **Operating Income:**\n    *   **FY2022 vs. FY2021:**\n        *   Absolute Change = FY2022 Operating Income - FY2021 Operating Income = $4,381M - $4,883M = **-$502M**\n        *   Percentage Change = (Absolute Change / FY2021 Operating Income) * 100 = (-$502M / $4,883M) * 100 = **-10.28%**\n    *   **FY2021 vs. FY2020:**\n        *   Absolute Change = FY2021 Operating Income - FY2020 Operating Income = $4,883M - $3,679M = **$1,204M**\n        *   Percentage Change = (Absolute Change / FY2020 Operating Income) * 100 = ($1,204M / $3,679M) * 100 = **32.73%**\n\n**2. Relevant Ratios**\n\n*   **Operating Margin:**\n    *   Formula: (Operating Income / Total Revenue) * 100\n    *   **FY2022:** ($4,381M / $17,610M) * 100 = **24.88%**\n    *   **FY2021:** ($4,883M / $15,785M) * 100 = **30.93%**\n    *   **FY2020:** ($3,679M / $12,873M) * 100 = **28.58%**\n\n**3. Anomalies Flagged**\n\n*   **FY2022 Operating Margin Discrepancy:** The researcher data states a primary metric of \"Operating Margin: 38.5% (per the FY2022 10-K)\" and later notes \"The operating margin has improved from 30.9% in FY2021 to 32.9% in FY2022\". However, based on the provided FY2022 Operating Income ($4,381M) and Total Revenue ($17,610M), the calculated FY2022 Operating Margin is **24.88%**. This is a significant discrepancy from both the 38.5% and 32.9% figures cited.\n\n*   **FY2022 Operating Income Decline:** While Total Revenue grew by 11.56% in FY2022, Operating Income *declined* by 10.28%. This indicates a significant increase in operating expenses relative to revenue growth, leading to a substantial decrease in the operating margin from 30.93% in FY2021 to 24.88% in FY2022. This contradicts the researcher's note that the operating margin \"improved from 30.9% in FY2021 to 32.9% in FY2022.\"\n\n**Summary of Findings:**\n\nAdobe Inc. demonstrated consistent revenue growth from FY2020 to FY2022. However, FY2022 saw a notable decline in operating income and, consequently, operating margin, despite continued revenue growth. There are significant discrepancies between the researcher's stated operating margin figures for FY2022 and the margin calculated directly from the provided operating income and total revenue data. Further investigation into the cause of the operating income decline and the source of the conflicting operating margin figures is recommended.",
+    "3": "## Adobe Inc. Financial Performance Report - FY2022\n\n**Executive Summary:**\n\nAdobe Inc. demonstrated robust revenue growth in FY2022, reaching $17,610 million, an 11.56% increase from FY2021. However, this growth was accompanied by a significant decline in operating income, which decreased by 10.28% to $4,381 million. Consequently, the operating margin for FY2022 stood at 24.88%, a notable decrease from 30.93% in FY2021. This indicates a substantial increase in operating expenses relative to revenue growth.\n\n**Analysis:**\n\nAdobe Inc. has shown consistent top-line expansion over the past three fiscal years. Total Revenue grew from $12,873 million in FY2020 to $15,785 million in FY2021, representing a 22.62% increase. This positive trend continued into FY2022, with revenue reaching $17,610 million, an 11.56% increase year-over-year.\n\nDespite this continued revenue growth, operating profitability experienced a reversal in FY2022. Operating Income, which had increased by 32.73% from $3,679 million in FY2020 to $4,883 million in FY2021, declined to $4,381 million in FY2022, a 10.28% decrease. This decline directly impacted the company's operating efficiency, as evidenced by the operating margin. The operating margin decreased from 30.93% in FY2021 to 24.88% in FY2022.\n\n**Key Risks:**\n\nThe primary risk identified is the significant contraction in operating margin during FY2022. The 10.28% decline in operating income despite an 11.56% increase in total revenue suggests that operating expenses grew at a faster rate than revenue. This trend, if sustained, could negatively impact overall profitability and shareholder value. Understanding the specific drivers behind this increase in operating expenses is crucial for future financial health.\n\n**Conclusion:**\n\nWhile Adobe Inc. continues to demonstrate strong revenue generation capabilities, the financial performance in FY2022 highlights a challenge in maintaining operating profitability. The decrease in operating income and operating margin warrants further investigation into the company's cost structure and operational efficiency. Management should focus on identifying and mitigating the factors contributing to the disproportionate growth in operating expenses to restore and improve operating margins in future periods.",
+    "4": "## Adobe Inc. Financial Performance Report - FY2022\n\n**Executive Summary:**\n\nAdobe Inc. demonstrated robust revenue growth in FY2022, reaching $17,610 million, an 11.56% increase from FY2021. However, this growth was accompanied by a significant decline in operating income, which decreased by 10.28% to $4,381 million. Consequently, the operating margin for FY2022 stood at 24.88%, a notable decrease from 30.93% in FY2021. This indicates a substantial increase in operating expenses relative to revenue growth.\n\n**Analysis:**\n\nAdobe Inc. has shown consistent top-line expansion over the past three fiscal years. Total Revenue grew from $12,873 million in FY2020 to $15,785 million in FY2021, representing a 22.62% increase. This positive trend continued into FY2022, with revenue reaching $17,610 million, an 11.56% increase year-over-year.\n\nDespite this continued revenue growth, operating profitability experienced a reversal in FY2022. Operating Income, which had increased by 32.73% from $3,679 million in FY2020 to $4,883 million in FY2021, declined to $4,381 million in FY2022, a 10.28% decrease. This decline directly impacted the company's operating efficiency, as evidenced by the operating margin. The operating margin decreased from 30.93% in FY2021 to 24.88% in FY2022.\n\n**Key Risks:**\n\nThe primary risk identified is the significant contraction in operating margin during FY2022. The 10.28% decline in operating income despite an 11.56% increase in total revenue suggests that operating expenses grew at a faster rate than revenue. This trend, if sustained, could negatively impact overall profitability and shareholder value. Understanding the specific drivers behind this increase in operating expenses is crucial for future financial health. Potential factors could include increased investment in research and development, higher sales and marketing expenditures, or rising administrative costs.\n\n**Conclusion:**\n\nWhile Adobe Inc. continues to demonstrate strong revenue generation capabilities, the financial performance in FY2022 highlights a challenge in maintaining operating profitability. The decrease in operating income and operating margin warrants further investigation into the company's cost structure and operational efficiency. Management should focus on identifying and mitigating the factors contributing to the disproportionate growth in operating expenses to restore and improve operating margins in future periods. A detailed analysis of cost components and their impact on profitability will be essential for strategic decision-making and ensuring long-term financial stability."
+  },
+  "gates": {
+    "end_gate": {
+      "verified": [
+        {
+          "value": "$17,610 million",
+          "ref": 17610.0
+        },
+        {
+          "value": "$12,873 million",
+          "ref": 12873.0
+        },
+        {
+          "value": "$15,785 million",
+          "ref": 15785.0
+        },
+        {
+          "value": "$17,610 million",
+          "ref": 17610.0
+        },
+        {
+          "value": "$3,679 million",
+          "ref": 3679.0
+        },
+        {
+          "value": "$4,883 million",
+          "ref": 4883.0
+        },
+        {
+          "value": "30.93%",
+          "ref": 30.9
+        },
+        {
+          "value": "32.73%",
+          "ref": 32.9
+        },
+        {
+          "value": "30.93%",
+          "ref": 30.9
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$4,381 million",
+          "num": 4381.0,
+          "correct": 4883.0,
+          "dev": 0.1028,
+          "source": "source_document"
+        },
+        {
+          "value": "$4,381 million",
+          "num": 4381.0,
+          "correct": 4883.0,
+          "dev": 0.1028,
+          "source": "source_document"
+        },
+        {
+          "value": "24.88%",
+          "num": 24.88,
+          "correct": 30.9,
+          "dev": 0.1948,
+          "source": "source_document"
+        },
+        {
+          "value": "22.62%",
+          "num": 22.62,
+          "correct": 30.9,
+          "dev": 0.268,
+          "source": "source_document"
+        },
+        {
+          "value": "24.88%",
+          "num": 24.88,
+          "correct": 30.9,
+          "dev": 0.1948,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "11.56%"
+        },
+        {
+          "value": "10.28%"
+        },
+        {
+          "value": "11.56%"
+        },
+        {
+          "value": "10.28%"
+        },
+        {
+          "value": "10.28%"
+        },
+        {
+          "value": "11.56%"
+        }
+      ],
+      "n_refs": 12
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_014_3C2ED91D",
+      "hid": "FB_014_3C2ED91D_H2",
+      "method": "end_check",
+      "type": "percentage",
+      "inj_num": 38.5,
+      "orig_num": 32.9,
+      "survived": false,
+      "corrected": true,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_014_3C2ED91D",
+      "hid": "FB_014_3C2ED91D_H1",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 4381.0,
+      "orig_num": 5786.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": true,
+      "any_det": true,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:08:02.551350+00:00"
+}

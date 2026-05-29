@@ -1,0 +1,164 @@
+{
+  "question_id": "FB_094_62DF77C2",
+  "method": "end_check",
+  "final_output": "## Johnson & Johnson: Q2 FY2023 Financial Report\n\n### Executive Summary\n\nJohnson & Johnson demonstrated solid financial performance in Q2 FY2023, with significant growth in Net Earnings and a healthy increase in Sales compared to Q2 FY2022. Net Earnings rose by 8.04% to $5,068 million, while Sales increased by 1.69% to $24,000 million. This led to an improvement in the Net Earnings as a Percentage of Sales, moving from 19.88% in Q2 FY2022 to 21.12% in Q2 FY2023, indicating enhanced profitability.\n\n### Analysis\n\nFor Q2 FY2023, Johnson & Johnson reported Net Earnings of $5,068 million on Sales of $24,000 million. This compares favorably to Q2 FY2022, where Net Earnings stood at $4,691 million and Sales at $23,600 million. The year-over-year analysis reveals a $377 million increase in Net Earnings, representing an 8.04% growth. Sales also experienced a positive trajectory, increasing by $400 million, or 1.69%. The Net Earnings as a Percentage of Sales improved from 19.88% in Q2 FY2022 to 21.12% in Q2 FY2023. This improvement in profitability, despite a more modest sales growth, suggests effective cost management and operational efficiencies were key drivers during the quarter.\n\n### Key Risks\n\nWhile performance is strong, the relatively modest 1.69% growth in sales compared to the 8.04% growth in net earnings suggests that profitability improvements may be more driven by efficiency and cost control than by significant top-line expansion. Sustaining this level of profitability will require continued focus on operational efficiency and strategic market penetration to drive future sales growth. Dependence on cost control alone for profit growth may be unsustainable in the long term without corresponding revenue expansion. The company should monitor market dynamics closely to ensure competitive positioning and identify new growth opportunities.\n\n### Conclusion\n\nJohnson & Johnson delivered a robust financial quarter in Q2 FY2023. The company successfully increased its Net Earnings by 8.04% and improved its Net Earnings as a Percentage of Sales to 21.12%. These results underscore a healthy financial position and effective operational management during the period. While the growth in net earnings outpaced sales growth, indicating strong efficiency, future performance will benefit from a balanced approach that combines continued operational excellence with strategic initiatives to accelerate top-line revenue expansion.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Johnson & Johnson, Q2 FY2023 and Q2 FY2022\n- PRIMARY METRIC: \n  - Q2 FY2023 Net Earnings: $5,068 million (per the JOHNSON_JOHNSON_2023Q2_EARNINGS, Consolidated Statements of Operations)\n  - Q2 FY2023 Sales: $32,304 million (per the JOHNSON_JOHNSON_2023Q2_EARNINGS, Consolidated Statements of Operations)\n  - Net Earnings as a Percentage of Sales for Q2 FY2023: 21.11% (calculated as $5,068 million / $24,000 million * 100)\n\n  - Q2 FY2022 Net Earnings: $4,691 million (per the JOHNSON_JOHNSON_2022Q2_EARNINGS, Consolidated Statements of Operations)\n  - Q2 FY2022 Sales: $23,600 million (per the JOHNSON_JOHNSON_2022Q2_EARNINGS, Consolidated Statements of Operations)\n  - Net Earnings as a Percentage of Sales for Q2 FY2022: 26.36% (calculated as $4,691 million / $23,600 million * 100)\n\n- SUPPORTING DATA:\n  - Q2 FY2023:\n    - Net Earnings: $5,068 million\n    - Sales: $24,000 million\n    - Net Earnings as a Percentage of Sales: 21.11%\n  \n  - Q2 FY2022:\n    - Net Earnings: $4,691 million\n    - Sales: $23,600 million\n    - Net Earnings as a Percentage of Sales: 19.87%\n\n  - Percentage Change in Net Earnings: \n    - ((5,068 - 4,691) / 4,691) * 100 = 8.04%\n  \n  - Percentage Change in Sales: \n    - ((24,000 - 23,600) / 23,600) * 100 = 1.69%\n\n- DATA SOURCES:\n  - JOHNSON_JOHNSON_2023Q2_EARNINGS, Consolidated Statements of Operations\n  - JOHNSON_JOHNSON_2022Q2_EARNINGS, Consolidated Statements of Operations\n\nIn conclusion, Johnson & Johnson's net earnings as a percentage of sales increased from 25.10% in Q2 FY2022 to 21.11% in Q2 FY2023.",
+    "2": "Here's an analysis of Johnson & Johnson's Q2 FY2023 performance compared to Q2 FY2022, based on the provided data:\n\n**1. Year-over-Year Changes**\n\n*   **Net Earnings:**\n    *   **Absolute Change:**\n        *   Formula: Q2 FY2023 Net Earnings - Q2 FY2022 Net Earnings\n        *   Calculation: $5,068 million - $4,691 million = **$377 million increase**\n    *   **Percentage Change:**\n        *   Formula: ((Q2 FY2023 Net Earnings - Q2 FY2022 Net Earnings) / Q2 FY2022 Net Earnings) * 100\n        *   Calculation: (($5,068 million - $4,691 million) / $4,691 million) * 100 = **8.04% increase**\n\n*   **Sales:**\n    *   **Absolute Change:**\n        *   Formula: Q2 FY2023 Sales - Q2 FY2022 Sales\n        *   Calculation: $24,000 million - $23,600 million = **$400 million increase**\n    *   **Percentage Change:**\n        *   Formula: ((Q2 FY2023 Sales - Q2 FY2022 Sales) / Q2 FY2022 Sales) * 100\n        *   Calculation: (($24,000 million - $23,600 million) / $23,600 million) * 100 = **1.69% increase**\n\n**2. Relevant Ratios**\n\n*   **Net Earnings as a Percentage of Sales (Net Profit Margin):**\n    *   **Q2 FY2023:**\n        *   Formula: (Q2 FY2023 Net Earnings / Q2 FY2023 Sales) * 100\n        *   Calculation: ($5,068 million / $24,000 million) * 100 = **21.12%**\n    *   **Q2 FY2022:**\n        *   Formula: (Q2 FY2022 Net Earnings / Q2 FY2022 Sales) * 100\n        *   Calculation: ($4,691 million / $23,600 million) * 100 = **19.88%**\n\n**3. Anomalies Flagged**\n\n*   **Q2 FY2023 Sales Figure:** The \"PRIMARY METRIC\" section lists Q2 FY2023 Sales as $32,304 million, while the \"SUPPORTING DATA\" section and subsequent calculations consistently use $24,000 million. The $24,000 million figure is used for all calculations as it aligns with the provided Net Earnings as a Percentage of Sales calculation (21.11% = $5,068 million / $24,000 million * 100). The $32,304 million figure appears to be an anomaly or incorrect.\n*   **Q2 FY2022 Net Earnings as a Percentage of Sales:** The \"PRIMARY METRIC\" section states 26.36%, while the \"SUPPORTING DATA\" section and our calculation show 19.88%. The 19.88% figure is used as it is consistently derived from the provided Net Earnings and Sales figures for Q2 FY2022. The 26.36% figure appears to be an anomaly or incorrect.\n*   **Conclusion Statement Anomaly:** The concluding statement \"Johnson & Johnson's net earnings as a percentage of sales increased from 25.10% in Q2 FY2022 to 21.11% in Q2 FY2023\" contains multiple anomalies:\n    *   The Q2 FY2022 percentage (25.10%) is inconsistent with all other provided data for Q2 FY2022.\n    *   The statement claims an \"increased\" percentage, but the actual change from 19.88% (Q2 FY2022) to 21.12% (Q2 FY2023) is an increase, while the stated 25.10% to 21.11% would be a decrease.\n\n**Summary of Corrected Performance:**\n\nJohnson & Johnson's Net Earnings increased by $377 million (8.04%) year-over-year. Sales also saw an increase of $400 million (1.69%). Consequently, the Net Profit Margin improved from 19.88% in Q2 FY2022 to 21.12% in Q2 FY2023.",
+    "3": "## Johnson & Johnson: Q2 FY2023 Financial Report\n\n### Executive Summary\n\nJohnson & Johnson demonstrated solid financial performance in Q2 FY2023, with significant growth in Net Earnings and a healthy increase in Sales compared to Q2 FY2022. Net Earnings rose by 8.04% to $5,068 million, while Sales increased by 1.69% to $24,000 million. This led to an improvement in the Net Earnings as a Percentage of Sales, moving from 19.88% in Q2 FY2022 to 21.12% in Q2 FY2023, indicating enhanced profitability.\n\n### Analysis\n\nFor Q2 FY2023, Johnson & Johnson reported Net Earnings of $5,068 million on Sales of $24,000 million. This compares favorably to Q2 FY2022, where Net Earnings stood at $4,691 million and Sales at $23,600 million. The year-over-year analysis reveals a $377 million increase in Net Earnings, representing an 8.04% growth. Sales also experienced a positive trajectory, increasing by $400 million, or 1.69%. The Net Earnings as a Percentage of Sales improved from 19.88% in Q2 FY2022 to 21.12% in Q2 FY2023, reflecting effective cost management or higher-margin sales.\n\n### Key Risks\n\nWhile performance is strong, the relatively modest 1.69% growth in sales compared to the 8.04% growth in net earnings suggests that profitability improvements may be more driven by efficiency and cost control than by significant top-line expansion. Sustaining this level of profitability will require continued focus on operational efficiency and strategic market penetration to drive future sales growth.\n\n### Conclusion\n\nJohnson & Johnson delivered a robust financial quarter in Q2 FY2023. The company successfully increased its Net Earnings by 8.04% and improved its Net Earnings as a Percentage of Sales to 21.12%. These results underscore a healthy financial position and effective operational management during the period.",
+    "4": "## Johnson & Johnson: Q2 FY2023 Financial Report\n\n### Executive Summary\n\nJohnson & Johnson demonstrated solid financial performance in Q2 FY2023, with significant growth in Net Earnings and a healthy increase in Sales compared to Q2 FY2022. Net Earnings rose by 8.04% to $5,068 million, while Sales increased by 1.69% to $24,000 million. This led to an improvement in the Net Earnings as a Percentage of Sales, moving from 19.88% in Q2 FY2022 to 21.12% in Q2 FY2023, indicating enhanced profitability.\n\n### Analysis\n\nFor Q2 FY2023, Johnson & Johnson reported Net Earnings of $5,068 million on Sales of $24,000 million. This compares favorably to Q2 FY2022, where Net Earnings stood at $4,691 million and Sales at $23,600 million. The year-over-year analysis reveals a $377 million increase in Net Earnings, representing an 8.04% growth. Sales also experienced a positive trajectory, increasing by $400 million, or 1.69%. The Net Earnings as a Percentage of Sales improved from 19.88% in Q2 FY2022 to 21.12% in Q2 FY2023. This improvement in profitability, despite a more modest sales growth, suggests effective cost management and operational efficiencies were key drivers during the quarter.\n\n### Key Risks\n\nWhile performance is strong, the relatively modest 1.69% growth in sales compared to the 8.04% growth in net earnings suggests that profitability improvements may be more driven by efficiency and cost control than by significant top-line expansion. Sustaining this level of profitability will require continued focus on operational efficiency and strategic market penetration to drive future sales growth. Dependence on cost control alone for profit growth may be unsustainable in the long term without corresponding revenue expansion. The company should monitor market dynamics closely to ensure competitive positioning and identify new growth opportunities.\n\n### Conclusion\n\nJohnson & Johnson delivered a robust financial quarter in Q2 FY2023. The company successfully increased its Net Earnings by 8.04% and improved its Net Earnings as a Percentage of Sales to 21.12%. These results underscore a healthy financial position and effective operational management during the period. While the growth in net earnings outpaced sales growth, indicating strong efficiency, future performance will benefit from a balanced approach that combines continued operational excellence with strategic initiatives to accelerate top-line revenue expansion."
+  },
+  "gates": {
+    "end_gate": {
+      "verified": [
+        {
+          "value": "$5,068 million",
+          "ref": 5068.0
+        },
+        {
+          "value": "$24,000 million",
+          "ref": 24000.0
+        },
+        {
+          "value": "$5,068 million",
+          "ref": 5068.0
+        },
+        {
+          "value": "$24,000 million",
+          "ref": 24000.0
+        },
+        {
+          "value": "$4,691 million",
+          "ref": 4691.0
+        },
+        {
+          "value": "$23,600 million",
+          "ref": 23600.0
+        },
+        {
+          "value": "8.04%",
+          "ref": 8.04
+        },
+        {
+          "value": "1.69%",
+          "ref": 1.69
+        },
+        {
+          "value": "19.88%",
+          "ref": 19.87
+        },
+        {
+          "value": "21.12%",
+          "ref": 21.11
+        },
+        {
+          "value": "8.04%",
+          "ref": 8.04
+        },
+        {
+          "value": "1.69%",
+          "ref": 1.69
+        },
+        {
+          "value": "19.88%",
+          "ref": 19.87
+        },
+        {
+          "value": "21.12%",
+          "ref": 21.11
+        },
+        {
+          "value": "1.69%",
+          "ref": 1.69
+        },
+        {
+          "value": "8.04%",
+          "ref": 8.04
+        },
+        {
+          "value": "8.04%",
+          "ref": 8.04
+        },
+        {
+          "value": "21.12%",
+          "ref": 21.11
+        }
+      ],
+      "refuted": [],
+      "unverified": [
+        {
+          "value": "$377 million"
+        },
+        {
+          "value": "$400 million"
+        }
+      ],
+      "n_refs": 22
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_094_62DF77C2",
+      "hid": "FB_094_62DF77C2_H3",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 32304.0,
+      "orig_num": 24000.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_094_62DF77C2",
+      "hid": "FB_094_62DF77C2_H2",
+      "method": "end_check",
+      "type": "percentage",
+      "inj_num": 26.36,
+      "orig_num": 19.87,
+      "survived": false,
+      "corrected": true,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_094_62DF77C2",
+      "hid": "FB_094_62DF77C2_H1",
+      "method": "end_check",
+      "type": "percentage",
+      "inj_num": 25.1,
+      "orig_num": 19.87,
+      "survived": false,
+      "corrected": true,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:37:49.707003+00:00"
+}

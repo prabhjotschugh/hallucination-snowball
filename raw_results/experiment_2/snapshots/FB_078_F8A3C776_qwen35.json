@@ -1,0 +1,91 @@
+{
+  "question_id": "FB_078_F8A3C776",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: CVS Health Corporation, FY2020, FY2021, FY2022\n- PRIMARY METRIC: CVS Health has disclosed ongoing legal matters that are considered materially significant in their 10-K filings for the years 2020, 2021, and 2022. Specific details are as follows:\n\n  **FY2022:**\n  - **Legal Proceedings**: CVS Health is involved in various legal proceedings, including litigation related to the opioid crisis. The company has recognized a liability of $5.0 billion related to opioid settlements, which is disclosed in the FY2022 10-K, under \"Note 15 - Commitments and Contingencies.\"\n  \n  **FY2021:**\n  - **Legal Proceedings**: CVS Health reported ongoing litigation concerning opioid-related claims. The company noted that it had accrued $2.0 billion for potential settlements and related costs, as stated in the FY2021 10-K, under \"Note 15 - Commitments and Contingencies.\"\n\n  **FY2020:**\n  - **Legal Proceedings**: In the FY2020 10-K, CVS Health disclosed ongoing litigation regarding opioid-related claims, with an estimated liability of $1.4 billion recognized for potential settlements. This information is found in \"Note 15 - Commitments and Contingencies.\"\n\n- SUPPORTING DATA:\n  - **FY2022**: Total liabilities increased due to the opioid settlement accrual. The total liabilities reported were $92.0 billion.\n  - **FY2021**: Total liabilities were reported at $89.0 billion.\n  - **FY2020**: Total liabilities were reported at $86.0 billion.\n\n- DATA SOURCES:\n  - FY2022 10-K, Consolidated Financial Statements, \"Note 15 - Commitments and Contingencies\"\n  - FY2021 10-K, Consolidated Financial Statements, \"Note 15 - Commitments and Contingencies\"\n  - FY2020 10-K, Consolidated Financial Statements, \"Note 15 - Commitments and Contingencies\"\n\nThis report captures the ongoing legal matters CVS Health has faced over the specified years, including the financial implications as reflected in their liability accruals.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_078_F8A3C776_H2",
+      "type": "dollar_amount",
+      "original_value": "$3.0 billion",
+      "injected_value": "$2.0 billion",
+      "original_numeric": "3.0",
+      "injected_numeric": "2.0",
+      "position_char": 741,
+      "sentence_approx": 6,
+      "perturbation_delta": -0.3456
+    },
+    {
+      "hallucination_id": "FB_078_F8A3C776_H1",
+      "type": "dollar_amount",
+      "original_value": "$2.0 billion",
+      "injected_value": "$1.4 billion",
+      "original_numeric": "2.0",
+      "injected_numeric": "1.4",
+      "position_char": 1044,
+      "sentence_approx": 8,
+      "perturbation_delta": -0.3041
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "The total liabilities reported were $92.0 billion... Total liabilities were reported at $89.0 billion... Total liabilities were reported at $86.0 billion.",
+        "claim_value": "$86.0 billion, $89.0 billion, $92.0 billion",
+        "reason": "The total liabilities show a perfect linear increase of exactly $3.0 billion each year. Real financial statements for a company of this size and complexity exhibit variance and do not follow precise arithmetic progressions. This pattern is highly indicative of hallucinated data.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "The company noted that it had accrued $2.0 billion for potential settlements... FY2020... with an estimated liability of $1.4 billion recognized for potential settlements.",
+        "claim_value": "$2.0 billion (2021), $1.4 billion (2020)",
+        "reason": "Prior to the major 2022 settlement framework, companies typically disclosed opioid litigation as contingencies where the loss could not be reasonably estimated. Recognizing specific liabilities on the balance sheet for 2020 and 2021 contradicts standard accounting treatment for unresolved mass tort litigation during that period.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2022 10-K, under 'Note 15 - Commitments and Contingencies.'... FY2021 10-K, under 'Note 15'... FY2020 10-K, under 'Note 15'",
+        "claim_value": "Note 15",
+        "reason": "Citing the exact same note number ('Note 15') for the same topic across three consecutive annual filings is statistically unlikely. Note numbering often shifts slightly year-over-year due to changes in financial statement structure. This consistency is a common LLM hallucination pattern.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "The company has recognized a liability of $5.0 billion related to opioid settlements, which is disclosed in the FY2022 10-K",
+        "claim_value": "$5.0 billion",
+        "reason": "While a settlement of approximately $5 billion was reported in news, the specific accounting recognition in the 10-K often involves present value calculations or different phrasing (e.g., $5.4 billion payable over time). The round number combined with the suspicious accuracy of prior years suggests potential fabrication of the specific booking figure.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "Multiple financial figures exhibit impossible arithmetic patterns and contradict standard accounting practices for legal contingencies, indicating a high likelihood of hallucination.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"The total liabilities reported were $92.0 billion... Total liabilities were reported at $89.0 billion... Total liabilities were reported at $86.0 billion.\",\n      \"claim_value\": \"$86.0 billion, $89.0 billion, $92.0 billion\",\n      \"reason\": \"The total liabilities show a perfect linear increase of exactly $3.0 billion each year. Real financial statements for a company of this size and complexity exhibit variance and do not follow precise arithmetic progressions. This pattern is highly indicative of hallucinated data.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"The company noted that it had accrued $2.0 billion for potential settlements... FY2020... with an estimated liability of $1.4 billion recognized for potential settlements.\",\n      \"claim_value\": \"$2.0 billion (2021), $1.4 billion (2020)\",\n      \"reason\": \"Prior to the major 2022 settlement framework, companies typically disclosed opioid litigation as contingencies where the loss could not be reasonably estimated. Recognizing specific liabilities on the balance sheet for 2020 and 2021 contradicts standard accounting treatment for unresolved mass tort litigation during that period.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2022 10-K, under 'Note 15 - Commitments and Contingencies.'... FY2021 10-K, under 'Note 15'... FY2020 10-K, under 'Note 15'\",\n      \"claim_value\": \"Note 15\",\n      \"reason\": \"Citing the exact same note number ('Note 15') for the same topic across three consecutive annual filings is statistically unlikely. Note numbering often shifts slightly year-over-year due to changes in financial statement structure. This consistency is a common LLM hallucination pattern.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"The company has recognized a liability of $5.0 billion related to opioid settlements, which is disclosed in the FY2022 10-K\",\n      \"claim_value\": \"$5.0 billion\",\n      \"reason\": \"While a settlement of approximately $5 billion was reported in news, the specific accounting recognition in the 10-K often involves present value calculations or different phrasing (e.g., $5.4 billion payable over time). The round number combined with the suspicious accuracy of prior years suggests potential fabrication of the specific booking figure.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\": \"Multiple financial figures exhibit impossible arithmetic patterns and contradict standard accounting practices for legal contingencies, indicating a high likelihood of hallucination.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_078_F8A3C776",
+      "hallucination_id": "FB_078_F8A3C776_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$3.0 billion",
+      "injected_value": "$2.0 billion",
+      "detected": true,
+      "reason": "The total liabilities show a perfect linear increase of exactly $3.0 billion each year. Real financial statements for a company of this size and complexity exhibit variance and do not follow precise arithmetic progressions. This pattern is highly indicative of hallucinated data.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_078_F8A3C776",
+      "hallucination_id": "FB_078_F8A3C776_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$2.0 billion",
+      "injected_value": "$1.4 billion",
+      "detected": true,
+      "reason": "Prior to the major 2022 settlement framework, companies typically disclosed opioid litigation as contingencies where the loss could not be reasonably estimated. Recognizing specific liabilities on the balance sheet for 2020 and 2021 contradicts standard accounting treatment for unresolved mass tort litigation during that period.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-24T11:48:51.616177Z"
+}

@@ -1,0 +1,109 @@
+{
+  "question_id": "FB_115_AE55E4C4",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: Nike, Inc. for Fiscal Years 2016, 2017, and 2018\n- PRIMARY METRIC: \n  - FY2016 COGS: $9,070 million (per the FY2016 10-K, Consolidated Statements of Operations)\n  - FY2016 Revenue: $32,376 million (per the FY2016 10-K, Consolidated Statements of Operations)\n  - COGS as a % of Revenue for FY2016: (12,199 / 21,769) * 100 = 37.7%\n\n  - FY2017 COGS: $12,579 million (per the FY2017 10-K, Consolidated Statements of Operations)\n  - FY2017 Revenue: $34,350 million (per the FY2017 10-K, Consolidated Statements of Operations)\n  - COGS as a % of Revenue for FY2017: (12,579 / 34,350) * 100 = 36.6%\n\n  - FY2018 COGS: $13,202 million (per the FY2018 10-K, Consolidated Statements of Operations)\n  - FY2018 Revenue: $36,397 million (per the FY2018 10-K, Consolidated Statements of Operations)\n  - COGS as a % of Revenue for FY2018: (13,202 / 36,397) * 100 = 36.3%\n\n- SUPPORTING DATA: \n  - FY2016 COGS as a % of Revenue: 37.7%\n  - FY2017 COGS as a % of Revenue: 36.6%\n  - FY2018 COGS as a % of Revenue: 36.3%\n  - Three-Year Average COGS as a % of Revenue: (47.3% + 36.6% + 36.3%) / 3 = 36.8%\n\n- DATA SOURCES: \n  - FY2016 10-K, Consolidated Statements of Operations\n  - FY2017 10-K, Consolidated Statements of Operations\n  - FY2018 10-K, Consolidated Statements of Operations",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_115_AE55E4C4_H3",
+      "type": "dollar_amount",
+      "original_value": "$12,199 million",
+      "injected_value": "$9,070 million",
+      "original_numeric": "12199",
+      "injected_numeric": "9070",
+      "position_char": 105,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.2565
+    },
+    {
+      "hallucination_id": "FB_115_AE55E4C4_H2",
+      "type": "large_number",
+      "original_value": "32,376",
+      "injected_value": "21,769",
+      "original_numeric": "32376",
+      "injected_numeric": "21769",
+      "position_char": 328,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3276
+    },
+    {
+      "hallucination_id": "FB_115_AE55E4C4_H1",
+      "type": "percentage",
+      "original_value": "37.7%",
+      "injected_value": "47.3%",
+      "original_numeric": "37.7",
+      "injected_numeric": "47.3",
+      "position_char": 1068,
+      "sentence_approx": 8,
+      "perturbation_delta": 9.6416
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "FY2016 COGS: $9,070 million (per the FY2016 10-K, Consolidated Statements of Operations)",
+        "claim_value": "$9,070 million",
+        "reason": "This COGS figure seems suspiciously low compared to the FY2017 and FY2018 COGS figures ($12,579 million and $13,202 million respectively). A sudden jump of ~40% in COGS from FY2016 to FY2017 is unusual for a mature company like Nike.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "COGS as a % of Revenue for FY2016: (12,199 / 21,769) * 100 = 37.7%",
+        "claim_value": "37.7%",
+        "reason": "The numerator (12,199) doesn't match the previously stated FY2016 COGS ($9,070 million). There's an inconsistency in which COGS figure is being used for the calculation.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Three-Year Average COGS as a % of Revenue: (47.3% + 36.6% + 36.3%) / 3 = 36.8%",
+        "claim_value": "36.8%",
+        "reason": "The first term in the average (47.3%) doesn't correspond to any of the previously listed percentages for FY2016-FY2018. This suggests a calculation error or misplaced value.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 10,
+    "overall_assessment": "Multiple inconsistencies found in COGS figures and percentage calculations, particularly for FY2016 data and the three-year average computation.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"FY2016 COGS: $9,070 million (per the FY2016 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$9,070 million\",\n      \"reason\": \"This COGS figure seems suspiciously low compared to the FY2017 and FY2018 COGS figures ($12,579 million and $13,202 million respectively). A sudden jump of ~40% in COGS from FY2016 to FY2017 is unusual for a mature company like Nike.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"COGS as a % of Revenue for FY2016: (12,199 / 21,769) * 100 = 37.7%\",\n      \"claim_value\": \"37.7%\",\n      \"reason\": \"The numerator (12,199) doesn't match the previously stated FY2016 COGS ($9,070 million). There's an inconsistency in which COGS figure is being used for the calculation.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Three-Year Average COGS as a % of Revenue: (47.3% + 36.6% + 36.3%) / 3 = 36.8%\",\n      \"claim_value\": \"36.8%\",\n      \"reason\": \"The first term in the average (47.3%) doesn't correspond to any of the previously listed percentages for FY2016-FY2018. This suggests a calculation error or misplaced value.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 10,\n  \"overall_assessment\": \"Multiple inconsistencies found in COGS figures and percentage calculations, particularly for FY2016 data and the three-year average computation.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_115_AE55E4C4",
+      "hallucination_id": "FB_115_AE55E4C4_H3",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$12,199 million",
+      "injected_value": "$9,070 million",
+      "detected": true,
+      "reason": "This COGS figure seems suspiciously low compared to the FY2017 and FY2018 COGS figures ($12,579 million and $13,202 million respectively). A sudden jump of ~40% in COGS from FY2016 to FY2017 is unusual for a mature company like Nike.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 10
+    },
+    {
+      "question_id": "FB_115_AE55E4C4",
+      "hallucination_id": "FB_115_AE55E4C4_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "large_number",
+      "original_value": "32,376",
+      "injected_value": "21,769",
+      "detected": true,
+      "reason": "The numerator (12,199) doesn't match the previously stated FY2016 COGS ($9,070 million). There's an inconsistency in which COGS figure is being used for the calculation.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 10
+    },
+    {
+      "question_id": "FB_115_AE55E4C4",
+      "hallucination_id": "FB_115_AE55E4C4_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "percentage",
+      "original_value": "37.7%",
+      "injected_value": "47.3%",
+      "detected": true,
+      "reason": "The numerator (12,199) doesn't match the previously stated FY2016 COGS ($9,070 million). There's an inconsistency in which COGS figure is being used for the calculation.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 10
+    }
+  ],
+  "timestamp": "2026-03-24T09:58:24.079189Z"
+}

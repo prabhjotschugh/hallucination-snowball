@@ -1,0 +1,73 @@
+{
+  "question_id": "FB_050_A0B82AEA",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Best Buy Co., Inc., Fiscal Year End 2019\n- PRIMARY METRIC: Total Inventories: $4,203 million (per the FY2019 10-K, Consolidated Balance Sheets)\n- SUPPORTING DATA: \n  - FY2018 Total Inventories: $2,780 million (per the FY2018 10-K, Consolidated Balance Sheets)\n  - FY2017 Total Inventories: $4,922 million (per the FY2017 10-K, Consolidated Balance Sheets)\n- DATA SOURCES: \n  - Best Buy FY2019 10-K, Consolidated Balance Sheets\n  - Best Buy FY2018 10-K, Consolidated Balance Sheets\n  - Best Buy FY2017 10-K, Consolidated Balance Sheets\n\nNote: No analysis or interpretation of trends or ratios has been provided as per your instructions.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_050_A0B82AEA_H2",
+      "type": "dollar_amount",
+      "original_value": "$3,719 million",
+      "injected_value": "$2,780 million",
+      "original_numeric": "3719",
+      "injected_numeric": "2780",
+      "position_char": 214,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.2524
+    },
+    {
+      "hallucination_id": "FB_050_A0B82AEA_H1",
+      "type": "dollar_amount",
+      "original_value": "$3,579 million",
+      "injected_value": "$4,922 million",
+      "original_numeric": "3579",
+      "injected_numeric": "4922",
+      "position_char": 310,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.3751
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "FY2019 Total Inventories: $4,203 million",
+        "claim_value": "$4,203 million",
+        "reason": "The reported FY2019 total inventories seem suspiciously precise, especially compared to the surrounding years' figures, which are more rounded (e.g., $2,780 million and $4,922 million).",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 3,
+    "overall_assessment": "The researcher's output appears mostly plausible, but the FY2019 total inventories figure seems overly precise and warrants further verification.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"FY2019 Total Inventories: $4,203 million\",\n      \"claim_value\" : \"$4,203 million\",\n      \"reason\"      : \"The reported FY2019 total inventories seem suspiciously precise, especially compared to the surrounding years' figures, which are more rounded (e.g., $2,780 million and $4,922 million).\",\n      \"confidence\"  : \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 3,\n  \"overall_assessment\"   : \"The researcher's output appears mostly plausible, but the FY2019 total inventories figure seems overly precise and warrants further verification.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_050_A0B82AEA",
+      "hallucination_id": "FB_050_A0B82AEA_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,719 million",
+      "injected_value": "$2,780 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 3
+    },
+    {
+      "question_id": "FB_050_A0B82AEA",
+      "hallucination_id": "FB_050_A0B82AEA_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,579 million",
+      "injected_value": "$4,922 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 3
+    }
+  ],
+  "timestamp": "2026-03-27T09:33:06.913570Z"
+}

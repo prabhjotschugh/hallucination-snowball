@@ -1,0 +1,85 @@
+{
+  "question_id": "FB_137_A71B03EF",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: Ulta Beauty, FY2023\n- PRIMARY METRIC: As of February 4, 2023, Ulta Beauty, Inc. had $1,200 million in aggregate principal amount of senior unsecured notes due in 2025 and $751 million in aggregate principal amount of senior unsecured notes due in 2031. (per the FY2023 10-K, Note 7 - Debt)\n- SUPPORTING DATA: \n  - Senior Unsecured Notes:\n    - $1,200 million due in 2025\n    - $1,000 million due in 2031\n  - Total debt as of February 4, 2023: $2,200 million\n  - Shareholders' equity as of February 4, 2023: $931 million (per the FY2023 10-K, Consolidated Balance Sheets)\n  - Debt-to-Equity Ratio: 1.47 (calculated as Total Debt / Shareholders' Equity)\n- DATA SOURCES: \n  - Ulta Beauty FY2023 10-K, Note 7 - Debt\n  - Ulta Beauty FY2023 10-K, Consolidated Balance Sheets\n\nPlease note that I have not included trend analysis or comparisons to industry standards as per your directive to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_137_A71B03EF_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,000 million",
+      "injected_value": "$751 million",
+      "original_numeric": "1000",
+      "injected_numeric": "751",
+      "position_char": 191,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.2493
+    },
+    {
+      "hallucination_id": "FB_137_A71B03EF_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,500 million",
+      "injected_value": "$931 million",
+      "original_numeric": "1500",
+      "injected_numeric": "931",
+      "position_char": 529,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.3791
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "$751 million in aggregate principal amount of senior unsecured notes due in 2031",
+        "claim_value": "$751 million",
+        "reason": "Inconsistent with the supporting data below which states $1,000 million for 2031 notes, suggesting a possible typo or transcription error",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total debt as of February 4, 2023: $2,200 million",
+        "claim_value": "$2,200 million",
+        "reason": "This implies summation of $1,200m (2025) + $1,000m (2031), but the initial claim listed $751m for 2031 notes. The math only works with the supporting data figure.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Debt-to-Equity Ratio: 1.47",
+        "claim_value": "1.47",
+        "reason": "Calculation appears correct ($2,200m/$931m\u22482.36), suggesting either a miscalculation or possible typo in either the debt or equity figures used",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "Significant inconsistencies exist between initial debt listings and supporting data, with at least one clear calculation error in the debt-to-equity ratio",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"$751 million in aggregate principal amount of senior unsecured notes due in 2031\",\n      \"claim_value\": \"$751 million\",\n      \"reason\": \"Inconsistent with the supporting data below which states $1,000 million for 2031 notes, suggesting a possible typo or transcription error\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total debt as of February 4, 2023: $2,200 million\",\n      \"claim_value\": \"$2,200 million\",\n      \"reason\": \"This implies summation of $1,200m (2025) + $1,000m (2031), but the initial claim listed $751m for 2031 notes. The math only works with the supporting data figure.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Debt-to-Equity Ratio: 1.47\",\n      \"claim_value\": \"1.47\",\n      \"reason\": \"Calculation appears correct ($2,200m/$931m\u22482.36), suggesting either a miscalculation or possible typo in either the debt or equity figures used\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\": \"Significant inconsistencies exist between initial debt listings and supporting data, with at least one clear calculation error in the debt-to-equity ratio\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_137_A71B03EF",
+      "hallucination_id": "FB_137_A71B03EF_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,000 million",
+      "injected_value": "$751 million",
+      "detected": true,
+      "reason": "Inconsistent with the supporting data below which states $1,000 million for 2031 notes, suggesting a possible typo or transcription error",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_137_A71B03EF",
+      "hallucination_id": "FB_137_A71B03EF_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,500 million",
+      "injected_value": "$931 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-24T10:01:24.756409Z"
+}

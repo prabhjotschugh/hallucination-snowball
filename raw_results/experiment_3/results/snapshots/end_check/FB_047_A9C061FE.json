@@ -1,0 +1,253 @@
+{
+  "question_id": "FB_047_A9C061FE",
+  "method": "end_check",
+  "final_output": "## American Water Works: FY2021 Financial Performance Report\n\n### Executive Summary\n\nAmerican Water Works demonstrated robust financial performance in Fiscal Year 2021, with Unadjusted EBITDA reaching $1,426 million. This represents a significant 12.20% increase from the $1,271 million reported in FY2020. The company's operating income also saw a healthy rise, contributing to the overall positive trend. Depreciation and Amortization as a percentage of Operating Income stood at 24.11% for FY2021, indicating a moderate non-cash expense burden relative to core profitability.\n\n### Analysis\n\nFor FY2021, American Water Works reported Operating Income of $1,149 million and Depreciation and Amortization of $277 million. This results in an Unadjusted EBITDA of $1,426 million ($1,149 million + $277 million). Comparing this to FY2020, where Unadjusted EBITDA was $1,271 million (derived from Operating Income of $1,063 million and Depreciation and Amortization of $208 million), the company achieved a year-over-year growth of $155 million, or 12.20%. Looking further back, FY2019's Unadjusted EBITDA was $1,076 million (derived from Operating Income of $832 million and Depreciation and Amortization of $244 million), showing consistent upward momentum in this key profitability metric. The ratio of Depreciation and Amortization to Operating Income was 24.11% in FY2021 ($277 million / $1,149 million), an increase from 19.57% in FY2020 ($208 million / $1,063 million), but lower than the 29.33% observed in FY2019 ($244 million / $832 million).\n\n### Key Observations\n\nA notable fluctuation in Depreciation and Amortization as a percentage of Operating Income (29.33% in FY2019, 19.57% in FY2020, and 24.11% in FY2021) warrants attention. While not inherently negative, such variability could indicate shifts in capital expenditure strategies, asset lifecycles, or significant asset acquisitions/disposals. Further investigation into the underlying causes of these changes would provide a clearer understanding of the company's long-term asset management and investment profile. This trend should be monitored to assess its impact on future capital intensity and operational leverage.\n\n### Conclusion\n\nAmerican Water Works concluded FY2021 with strong financial results, evidenced by a substantial increase in Unadjusted EBITDA to $1,426 million. The consistent growth in Unadjusted EBITDA over the past three fiscal years (FY2019: $1,076 million; FY2020: $1,271 million; FY2021: $1,426 million) highlights the company's operational efficiency and ability to generate cash from its core business activities. The company's performance indicates a healthy financial trajectory, positioning it well for continued growth.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: American Water Works, FY2021\n- PRIMARY METRIC: Unadjusted Operating Income + Depreciation and Amortization (unadjusted EBITDA) is $966 million (per the FY2021 10-K, Consolidated Statements of Operations and Consolidated Statements of Cash Flows).\n- SUPPORTING DATA: \n  - Operating Income for FY2021: $1,149 million (per the FY2021 10-K, Consolidated Statements of Operations).\n  - Depreciation and Amortization for FY2021: $277 million (per the FY2021 10-K, Consolidated Statements of Cash Flows).\n  - For context, Operating Income for FY2020 was $1,063 million and for FY2019 was $832 million.\n  - Depreciation and Amortization for FY2020 was $208 million and for FY2019 was $244 million.\n- DATA SOURCES: \n  - FY2021 10-K, Consolidated Statements of Operations (Operating Income).\n  - FY2021 10-K, Consolidated Statements of Cash Flows (Depreciation and Amortization).",
+    "2": "As a financial analyst, I will compute the year-over-year changes and relevant ratios for American Water Works, FY2021, based on the provided data.\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\nFirst, let's calculate the Unadjusted EBITDA for each year.\n\n*   **Unadjusted EBITDA (FY2021)**\n    *   Formula: Operating Income + Depreciation and Amortization\n    *   Calculation: $1,149 million + $277 million = **$1,426 million**\n    *   *Note: The researcher's primary metric of $966 million is inconsistent with the supporting data. I will use the calculated value of $1,426 million as it aligns with the provided components.*\n\n*   **Unadjusted EBITDA (FY2020)**\n    *   Formula: Operating Income + Depreciation and Amortization\n    *   Calculation: $1,063 million + $208 million = **$1,271 million**\n\n*   **Unadjusted EBITDA (FY2019)**\n    *   Formula: Operating Income + Depreciation and Amortization\n    *   Calculation: $832 million + $244 million = **$1,076 million**\n\nNow, let's compute the year-over-year changes:\n\n*   **Unadjusted EBITDA Change (FY2021 vs. FY2020)**\n    *   Absolute Change: $1,426 million (FY2021) - $1,271 million (FY2020) = **$155 million**\n    *   Percentage Change: ($155 million / $1,271 million) * 100 = **12.20%**\n\n*   **Unadjusted EBITDA Change (FY2020 vs. FY2019)**\n    *   Absolute Change: $1,271 million (FY2020) - $1,076 million (FY2019) = **$195 million**\n    *   Percentage Change: ($195 million / $1,076 million) * 100 = **18.12%**\n\n**2. Relevant Ratios**\n\nGiven the limited data, the most relevant ratio we can calculate is the Depreciation and Amortization as a percentage of Operating Income, which indicates the non-cash expense burden relative to core operating profitability.\n\n*   **D&A / Operating Income (FY2021)**\n    *   Formula: Depreciation and Amortization / Operating Income\n    *   Calculation: $277 million / $1,149 million = **24.11%**\n\n*   **D&A / Operating Income (FY2020)**\n    *   Formula: Depreciation and Amortization / Operating Income\n    *   Calculation: $208 million / $1,063 million = **19.57%**\n\n*   **D&A / Operating Income (FY2019)**\n    *   Formula: Depreciation and Amortization / Operating Income\n    *   Calculation: $244 million / $832 million = **29.33%**\n\n**3. Anomalies Flagged**\n\n*   **Primary Metric Discrepancy:** The most significant anomaly is the researcher's stated \"Unadjusted Operating Income + Depreciation and Amortization (unadjusted EBITDA) is $966 million\" for FY2021. This value is **REFUTED** by the supporting data ($1,149 million Operating Income + $277 million D&A = $1,426 million). I have used the calculated value of $1,426 million, derived directly from the provided components, for all subsequent calculations.\n\n*   **D&A Volatility:** While not an anomaly in itself without further context, the Depreciation and Amortization as a percentage of Operating Income shows some fluctuation (29.33% in FY2019, 19.57% in FY2020, 24.11% in FY2021). A significant drop in FY2020 and subsequent increase in FY2021 could warrant further investigation into capital expenditure cycles or asset disposals/acquisitions.",
+    "3": "## American Water Works: FY2021 Financial Performance Report\n\n### Executive Summary\n\nAmerican Water Works demonstrated robust financial performance in Fiscal Year 2021, with Unadjusted EBITDA reaching $1,426 million. This represents a significant 12.20% increase from the $1,271 million reported in FY2020. The company's operating income also saw a healthy rise, contributing to the overall positive trend. Depreciation and Amortization as a percentage of Operating Income stood at 24.11% for FY2021, indicating a moderate non-cash expense burden relative to core profitability.\n\n### Analysis\n\nFor FY2021, American Water Works reported Operating Income of $1,149 million and Depreciation and Amortization of $277 million. This results in an Unadjusted EBITDA of $1,426 million. Comparing this to FY2020, where Unadjusted EBITDA was $1,271 million (derived from Operating Income of $1,063 million and Depreciation and Amortization of $208 million), the company achieved a year-over-year growth of $155 million, or 12.20%. Looking further back, FY2019's Unadjusted EBITDA was $1,076 million, showing consistent upward momentum in this key profitability metric. The ratio of Depreciation and Amortization to Operating Income was 24.11% in FY2021, an increase from 19.57% in FY2020, but lower than the 29.33% observed in FY2019.\n\n### Key Risks\n\nA notable fluctuation in Depreciation and Amortization as a percentage of Operating Income (29.33% in FY2019, 19.57% in FY2020, and 24.11% in FY2021) warrants attention. While not inherently negative, such variability could indicate shifts in capital expenditure strategies, asset lifecycles, or significant asset acquisitions/disposals. Further investigation into the underlying causes of these changes would provide a clearer understanding of the company's long-term asset management and investment profile.\n\n### Conclusion\n\nAmerican Water Works concluded FY2021 with strong financial results, evidenced by a substantial increase in Unadjusted EBITDA to $1,426 million. The consistent growth in Unadjusted EBITDA over the past three fiscal years (FY2019: $1,076 million; FY2020: $1,271 million; FY2021: $1,426 million) highlights the company's operational efficiency and ability to generate cash from its core business activities. Continued monitoring of the Depreciation and Amortization trends will be crucial for assessing future capital intensity and operational leverage.",
+    "4": "## American Water Works: FY2021 Financial Performance Report\n\n### Executive Summary\n\nAmerican Water Works demonstrated robust financial performance in Fiscal Year 2021, with Unadjusted EBITDA reaching $1,426 million. This represents a significant 12.20% increase from the $1,271 million reported in FY2020. The company's operating income also saw a healthy rise, contributing to the overall positive trend. Depreciation and Amortization as a percentage of Operating Income stood at 24.11% for FY2021, indicating a moderate non-cash expense burden relative to core profitability.\n\n### Analysis\n\nFor FY2021, American Water Works reported Operating Income of $1,149 million and Depreciation and Amortization of $277 million. This results in an Unadjusted EBITDA of $1,426 million ($1,149 million + $277 million). Comparing this to FY2020, where Unadjusted EBITDA was $1,271 million (derived from Operating Income of $1,063 million and Depreciation and Amortization of $208 million), the company achieved a year-over-year growth of $155 million, or 12.20%. Looking further back, FY2019's Unadjusted EBITDA was $1,076 million (derived from Operating Income of $832 million and Depreciation and Amortization of $244 million), showing consistent upward momentum in this key profitability metric. The ratio of Depreciation and Amortization to Operating Income was 24.11% in FY2021 ($277 million / $1,149 million), an increase from 19.57% in FY2020 ($208 million / $1,063 million), but lower than the 29.33% observed in FY2019 ($244 million / $832 million).\n\n### Key Observations\n\nA notable fluctuation in Depreciation and Amortization as a percentage of Operating Income (29.33% in FY2019, 19.57% in FY2020, and 24.11% in FY2021) warrants attention. While not inherently negative, such variability could indicate shifts in capital expenditure strategies, asset lifecycles, or significant asset acquisitions/disposals. Further investigation into the underlying causes of these changes would provide a clearer understanding of the company's long-term asset management and investment profile. This trend should be monitored to assess its impact on future capital intensity and operational leverage.\n\n### Conclusion\n\nAmerican Water Works concluded FY2021 with strong financial results, evidenced by a substantial increase in Unadjusted EBITDA to $1,426 million. The consistent growth in Unadjusted EBITDA over the past three fiscal years (FY2019: $1,076 million; FY2020: $1,271 million; FY2021: $1,426 million) highlights the company's operational efficiency and ability to generate cash from its core business activities. The company's performance indicates a healthy financial trajectory, positioning it well for continued growth."
+  },
+  "gates": {
+    "end_gate": {
+      "verified": [
+        {
+          "value": "$1,426 million",
+          "ref": 1426.0
+        },
+        {
+          "value": "$1,149 million",
+          "ref": 1149.0
+        },
+        {
+          "value": "$277 million",
+          "ref": 277.0
+        },
+        {
+          "value": "$1,426 million",
+          "ref": 1426.0
+        },
+        {
+          "value": "$1,149 million",
+          "ref": 1149.0
+        },
+        {
+          "value": "$277 million",
+          "ref": 277.0
+        },
+        {
+          "value": "$1,063 million",
+          "ref": 1063.0
+        },
+        {
+          "value": "$1,076 million",
+          "ref": 1063.0
+        },
+        {
+          "value": "$244 million",
+          "ref": 244.0
+        },
+        {
+          "value": "$277 million",
+          "ref": 277.0
+        },
+        {
+          "value": "$1,149 million",
+          "ref": 1149.0
+        },
+        {
+          "value": "$1,063 million",
+          "ref": 1063.0
+        },
+        {
+          "value": "$244 million",
+          "ref": 244.0
+        },
+        {
+          "value": "$1,426 million",
+          "ref": 1426.0
+        },
+        {
+          "value": "$1,076 million",
+          "ref": 1063.0
+        },
+        {
+          "value": "$1,426 million",
+          "ref": 1426.0
+        },
+        {
+          "value": "24.11%",
+          "ref": 24.0
+        },
+        {
+          "value": "24.11%",
+          "ref": 24.0
+        },
+        {
+          "value": "24.11%",
+          "ref": 24.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$1,271 million",
+          "num": 1271.0,
+          "correct": 1149.0,
+          "dev": 0.096,
+          "source": "source_document"
+        },
+        {
+          "value": "$1,271 million",
+          "num": 1271.0,
+          "correct": 1149.0,
+          "dev": 0.096,
+          "source": "source_document"
+        },
+        {
+          "value": "$208 million",
+          "num": 208.0,
+          "correct": 244.0,
+          "dev": 0.1475,
+          "source": "source_document"
+        },
+        {
+          "value": "$155 million",
+          "num": 155.0,
+          "correct": 244.0,
+          "dev": 0.3648,
+          "source": "source_document"
+        },
+        {
+          "value": "$832 million",
+          "num": 832.0,
+          "correct": 1019.0,
+          "dev": 0.1835,
+          "source": "source_document"
+        },
+        {
+          "value": "$208 million",
+          "num": 208.0,
+          "correct": 244.0,
+          "dev": 0.1475,
+          "source": "source_document"
+        },
+        {
+          "value": "$832 million",
+          "num": 832.0,
+          "correct": 1019.0,
+          "dev": 0.1835,
+          "source": "source_document"
+        },
+        {
+          "value": "$1,271 million",
+          "num": 1271.0,
+          "correct": 1149.0,
+          "dev": 0.096,
+          "source": "source_document"
+        },
+        {
+          "value": "12.20%",
+          "num": 12.2,
+          "correct": 11.0,
+          "dev": 0.0984,
+          "source": "evidence"
+        },
+        {
+          "value": "12.20%",
+          "num": 12.2,
+          "correct": 11.0,
+          "dev": 0.0984,
+          "source": "evidence"
+        },
+        {
+          "value": "19.57%",
+          "num": 19.57,
+          "correct": 18.0,
+          "dev": 0.0802,
+          "source": "evidence"
+        },
+        {
+          "value": "19.57%",
+          "num": 19.57,
+          "correct": 18.0,
+          "dev": 0.0802,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "29.33%"
+        },
+        {
+          "value": "29.33%"
+        }
+      ],
+      "n_refs": 23
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_047_A9C061FE",
+      "hid": "FB_047_A9C061FE_H3",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 966.0,
+      "orig_num": 1426.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_047_A9C061FE",
+      "hid": "FB_047_A9C061FE_H2",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 832.0,
+      "orig_num": 1019.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": true,
+      "any_det": true,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_047_A9C061FE",
+      "hid": "FB_047_A9C061FE_H1",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 208.0,
+      "orig_num": 263.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": true,
+      "any_det": true,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:20:05.638348+00:00"
+}

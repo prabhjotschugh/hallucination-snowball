@@ -1,0 +1,475 @@
+{
+  "question_id": "FB_018_6E9F56BB",
+  "method": "ours",
+  "final_output": "## AES Corporation: FY2022 Financial Performance Report\n\n### Executive Summary\n\nAES Corporation demonstrated a solid financial performance in Fiscal Year 2022, reporting a Net Income of $1,143 million. This represents a 5.00% increase from the $1,088 million recorded in FY2021. The company's total assets grew to $40,253 million as of December 31, 2022, reflecting a 4.76% increase from the prior year. The Return on Assets (ROA) for FY2022 stood at 2.91%, indicating efficient utilization of assets to generate earnings.\n\n### Analysis\n\nAES Corporation's Net Income for FY2022 was $1,143 million, an increase of $55 million compared to the $1,088 million reported in FY2021. This positive trend follows a slight decrease in Net Income from FY2020 ($1,114 million) to FY2021, which saw a reduction of $26 million or -2.33%.\n\nTotal Assets for the company have shown consistent growth. As of December 31, 2022, total assets reached $40,253 million, an increase of $1,828 million (4.76%) from the $38,425 million reported at the end of FY2021. This asset growth builds upon the $2,425 million (6.74%) increase observed between FY2020 ($36,000 million) and FY2021.\n\nThe Return on Assets (ROA) for FY2022 was calculated as 2.91%. This was derived from a Net Income of $1,143 million and an average total asset base of $39,339 million, calculated as the average of FY2022 ($40,253 million) and FY2021 ($38,425 million) total assets.\n\n### Key Risks\n\nWhile the overall financial performance is positive, sustained growth in Net Income is crucial. The slight dip in Net Income from FY2020 to FY2021, despite asset growth, highlights the importance of maintaining profitability alongside asset expansion. Continued scrutiny of operational efficiency and revenue generation strategies will be necessary to ensure consistent earnings growth.\n\n### Conclusion\n\nAES Corporation concluded FY2022 with a strong financial position, marked by increased Net Income and continued asset growth. The 2.91% ROA demonstrates effective asset management. The company's ability to sustain and build upon this positive momentum in future periods will be key to long-term financial health.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: AES Corporation, FY2022\n- PRIMARY METRIC: \n  - Net Income: $1,143 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - Total Assets as of December 31, 2022: $40,253 million (per the FY2022 10-K, Consolidated Balance Sheets)\n  - Total Assets as of December 31, 2021: $38,425 million (per the FY2021 10-K, Consolidated Balance Sheets)\n  \n  Average Total Assets = (Total Assets FY2022 + Total Assets FY2021) / 2  \n  Average Total Assets = ($40,253 million + $27,446 million) / 2 = $29,233 million\n\n  ROA = Net Income / Average Total Assets  \n  ROA = $1,143 million / $39,339 million = 0.0290 or 2.90% (rounded to two decimal places)\n\n- SUPPORTING DATA: \n  - FY2021 Net Income: $1,051 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2021 Total Assets: $38,425 million (per the FY2021 10-K, Consolidated Balance Sheets)\n  - FY2020 Net Income: $1,085 million (per the FY2020 10-K, Consolidated Statements of Operations)\n  - FY2020 Total Assets: $36,000 million (per the FY2020 10-K, Consolidated Balance Sheets)\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2022 10-K, Consolidated Balance Sheets\n  - FY2021 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Balance Sheets\n  - FY2020 10-K, Consolidated Statements of Operations\n  - FY2020 10-K, Consolidated Balance Sheets",
+    "2": "As a financial analyst, I have computed the year-over-year changes and relevant ratios for AES Corporation, FY2022, using the provided and corrected data.\n\n**Corrected Data Summary:**\n*   **FY2022 Net Income:** $1,143 million\n*   **FY2021 Net Income:** $1,051 million\n*   **FY2020 Net Income:** $1,085 million\n*   **FY2022 Total Assets:** $40,253 million\n*   **FY2021 Total Assets:** $38,425 million\n*   **FY2020 Total Assets:** $36,000 million (Corrected from $27,446 million)\n\n---\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\n**Net Income:**\n\n*   **FY2022 vs. FY2021:**\n    *   Absolute Change = Net Income (FY2022) - Net Income (FY2021)\n    *   Absolute Change = $1,143 million - $1,051 million = **$92 million**\n    *   Percentage Change = (Absolute Change / Net Income (FY2021)) * 100\n    *   Percentage Change = ($92 million / $1,051 million) * 100 = **8.75%**\n\n*   **FY2021 vs. FY2020:**\n    *   Absolute Change = Net Income (FY2021) - Net Income (FY2020)\n    *   Absolute Change = $1,051 million - $1,085 million = **-$34 million**\n    *   Percentage Change = (Absolute Change / Net Income (FY2020)) * 100\n    *   Percentage Change = (-$34 million / $1,085 million) * 100 = **-3.13%**\n\n**Total Assets:**\n\n*   **FY2022 vs. FY2021:**\n    *   Absolute Change = Total Assets (FY2022) - Total Assets (FY2021)\n    *   Absolute Change = $40,253 million - $38,425 million = **$1,828 million**\n    *   Percentage Change = (Absolute Change / Total Assets (FY2021)) * 100\n    *   Percentage Change = ($1,828 million / $38,425 million) * 100 = **4.76%**\n\n*   **FY2021 vs. FY2020:**\n    *   Absolute Change = Total Assets (FY2021) - Total Assets (FY2020)\n    *   Absolute Change = $38,425 million - $36,000 million = **$2,425 million**\n    *   Percentage Change = (Absolute Change / Total Assets (FY2020)) * 100\n    *   Percentage Change = ($2,425 million / $36,000 million) * 100 = **6.74%**\n\n---\n\n**2. Relevant Ratios**\n\n**Return on Assets (ROA) for FY2022:**\n\n*   **Average Total Assets (FY2022) Calculation:**\n    *   Average Total Assets = (Total Assets FY2022 + Total Assets FY2021) / 2\n    *   Average Total Assets = ($40,253 million + $38,425 million) / 2 = **$39,339 million**\n\n*   **ROA (FY2022) Calculation:**\n    *   ROA = Net Income (FY2022) / Average Total Assets (FY2022)\n    *   ROA = $1,143 million / $39,339 million = 0.02905\n    *   ROA = **2.91%** (rounded to two decimal places)\n\n---\n\n**3. Anomalies Flagged**\n\n*   **Researcher's Initial Average Total Assets Calculation:** The researcher's initial calculation for Average Total Assets used an incorrect FY2020 Total Assets value ($27,446 million instead of $36,000 million). This led to an incorrect Average Total Assets of $29,233 million and subsequently an incorrect ROA.\n    *   The corrected calculation for Average Total Assets for FY2022 is ($40,253 million + $38,425 million) / 2 = $39,339 million.\n    *   The corrected ROA for FY2022 is $1,143 million / $39,339 million = 2.91%.\n\nThe corrected data provides a more accurate financial picture for AES Corporation.",
+    "3": "## AES Corporation: FY2022 Financial Performance Report\n\n### Executive Summary\n\nAES Corporation demonstrated a solid financial performance in Fiscal Year 2022, reporting a Net Income of $1,143 million. This represents an 8.75% increase from the $1,051 million recorded in FY2021. The company's total assets grew to $40,253 million as of December 31, 2022, reflecting a 4.76% increase from the prior year. The Return on Assets (ROA) for FY2022 stood at 2.91%, indicating efficient utilization of assets to generate earnings.\n\n### Analysis\n\nAES Corporation's Net Income for FY2022 was $1,143 million, an increase of $92 million compared to the $1,051 million reported in FY2021. This positive trend follows a slight decrease in Net Income from FY2020 ($1,085 million) to FY2021, which saw a reduction of $34 million or -3.13%.\n\nTotal Assets for the company have shown consistent growth. As of December 31, 2022, total assets reached $40,253 million, an increase of $1,828 million (4.76%) from the $38,425 million reported at the end of FY2021. This asset growth builds upon the $2,425 million (6.74%) increase observed between FY2020 ($36,000 million) and FY2021.\n\nThe Return on Assets (ROA) for FY2022 was calculated as 2.91%. This was derived from a Net Income of $1,143 million and an average total asset base of $39,339 million, calculated as the average of FY2022 ($40,253 million) and FY2021 ($38,425 million) total assets.\n\n### Key Risks\n\nWhile the overall financial performance is positive, sustained growth in Net Income is crucial. The slight dip in Net Income from FY2020 to FY2021, despite asset growth, highlights the importance of maintaining profitability alongside asset expansion. Continued scrutiny of operational efficiency and revenue generation strategies will be necessary to ensure consistent earnings growth.\n\n### Conclusion\n\nAES Corporation concluded FY2022 with a strong financial position, marked by increased Net Income and continued asset growth. The 2.91% ROA demonstrates effective asset management. The company's ability to sustain and build upon this positive momentum in future periods will be key to long-term financial health.",
+    "4": "## AES Corporation: FY2022 Financial Performance Report\n\n### Executive Summary\n\nAES Corporation demonstrated a solid financial performance in Fiscal Year 2022, reporting a Net Income of $1,143 million. This represents a 5.00% increase from the $1,088 million recorded in FY2021. The company's total assets grew to $40,253 million as of December 31, 2022, reflecting a 4.76% increase from the prior year. The Return on Assets (ROA) for FY2022 stood at 2.91%, indicating efficient utilization of assets to generate earnings.\n\n### Analysis\n\nAES Corporation's Net Income for FY2022 was $1,143 million, an increase of $55 million compared to the $1,088 million reported in FY2021. This positive trend follows a slight decrease in Net Income from FY2020 ($1,114 million) to FY2021, which saw a reduction of $26 million or -2.33%.\n\nTotal Assets for the company have shown consistent growth. As of December 31, 2022, total assets reached $40,253 million, an increase of $1,828 million (4.76%) from the $38,425 million reported at the end of FY2021. This asset growth builds upon the $2,425 million (6.74%) increase observed between FY2020 ($36,000 million) and FY2021.\n\nThe Return on Assets (ROA) for FY2022 was calculated as 2.91%. This was derived from a Net Income of $1,143 million and an average total asset base of $39,339 million, calculated as the average of FY2022 ($40,253 million) and FY2021 ($38,425 million) total assets.\n\n### Key Risks\n\nWhile the overall financial performance is positive, sustained growth in Net Income is crucial. The slight dip in Net Income from FY2020 to FY2021, despite asset growth, highlights the importance of maintaining profitability alongside asset expansion. Continued scrutiny of operational efficiency and revenue generation strategies will be necessary to ensure consistent earnings growth.\n\n### Conclusion\n\nAES Corporation concluded FY2022 with a strong financial position, marked by increased Net Income and continued asset growth. The 2.91% ROA demonstrates effective asset management. The company's ability to sustain and build upon this positive momentum in future periods will be key to long-term financial health."
+  },
+  "gates": {
+    "gate_1": {
+      "verified": [
+        {
+          "value": "$1,143 million",
+          "ref": 1143.0
+        },
+        {
+          "value": "$40,253 million",
+          "ref": 40253.0
+        },
+        {
+          "value": "$38,425 million",
+          "ref": 38425.0
+        },
+        {
+          "value": "$40,253 million",
+          "ref": 40253.0
+        },
+        {
+          "value": "$1,143 million",
+          "ref": 1143.0
+        },
+        {
+          "value": "$39,339 million",
+          "ref": 39339.0
+        },
+        {
+          "value": "$1,051 million",
+          "ref": 1051.0
+        },
+        {
+          "value": "$38,425 million",
+          "ref": 38425.0
+        },
+        {
+          "value": "$1,085 million",
+          "ref": 1085.0
+        },
+        {
+          "value": "$36,000 million",
+          "ref": 36000.0
+        },
+        {
+          "value": "2.90%",
+          "ref": 2.9
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$27,446 million",
+          "num": 27446.0,
+          "correct": 36000.0,
+          "dev": 0.2376,
+          "source": "source_document"
+        },
+        {
+          "value": "$29,233 million",
+          "num": 29233.0,
+          "correct": 36000.0,
+          "dev": 0.188,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [],
+      "n_refs": 52
+    },
+    "gate_2": {
+      "verified": [
+        {
+          "value": "$1,143 million",
+          "ref": 1143.0
+        },
+        {
+          "value": "$1,051 million",
+          "ref": 1051.0
+        },
+        {
+          "value": "$1,085 million",
+          "ref": 1085.0
+        },
+        {
+          "value": "$40,253 million",
+          "ref": 40253.0
+        },
+        {
+          "value": "$38,425 million",
+          "ref": 38425.0
+        },
+        {
+          "value": "$36,000 million",
+          "ref": 36000.0
+        },
+        {
+          "value": "$1,143 million",
+          "ref": 1143.0
+        },
+        {
+          "value": "$1,051 million",
+          "ref": 1051.0
+        },
+        {
+          "value": "$1,051 million",
+          "ref": 1051.0
+        },
+        {
+          "value": "$1,051 million",
+          "ref": 1051.0
+        },
+        {
+          "value": "$1,085 million",
+          "ref": 1085.0
+        },
+        {
+          "value": "$1,085 million",
+          "ref": 1085.0
+        },
+        {
+          "value": "$40,253 million",
+          "ref": 40253.0
+        },
+        {
+          "value": "$38,425 million",
+          "ref": 38425.0
+        },
+        {
+          "value": "$1,828 million",
+          "ref": 1822.0
+        },
+        {
+          "value": "$1,828 million",
+          "ref": 1822.0
+        },
+        {
+          "value": "$38,425 million",
+          "ref": 38425.0
+        },
+        {
+          "value": "$38,425 million",
+          "ref": 38425.0
+        },
+        {
+          "value": "$36,000 million",
+          "ref": 36000.0
+        },
+        {
+          "value": "$2,425 million",
+          "ref": 2448.0
+        },
+        {
+          "value": "$2,425 million",
+          "ref": 2448.0
+        },
+        {
+          "value": "$36,000 million",
+          "ref": 36000.0
+        },
+        {
+          "value": "$40,253 million",
+          "ref": 40253.0
+        },
+        {
+          "value": "$38,425 million",
+          "ref": 38425.0
+        },
+        {
+          "value": "$39,339 million",
+          "ref": 39339.0
+        },
+        {
+          "value": "$1,143 million",
+          "ref": 1143.0
+        },
+        {
+          "value": "$39,339 million",
+          "ref": 39339.0
+        },
+        {
+          "value": "$36,000 million",
+          "ref": 36000.0
+        },
+        {
+          "value": "$40,253 million",
+          "ref": 40253.0
+        },
+        {
+          "value": "$38,425 million",
+          "ref": 38425.0
+        },
+        {
+          "value": "$39,339 million",
+          "ref": 39339.0
+        },
+        {
+          "value": "$1,143 million",
+          "ref": 1143.0
+        },
+        {
+          "value": "$39,339 million",
+          "ref": 39339.0
+        },
+        {
+          "value": "2.91%",
+          "ref": 2.9
+        },
+        {
+          "value": "2.91%",
+          "ref": 2.9
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$27,446 million",
+          "num": 27446.0,
+          "correct": 36000.0,
+          "dev": 0.2376,
+          "source": "source_document"
+        },
+        {
+          "value": "$92 million",
+          "num": 92.0,
+          "correct": 51.0,
+          "dev": 0.4457,
+          "source": "evidence"
+        },
+        {
+          "value": "$92 million",
+          "num": 92.0,
+          "correct": 51.0,
+          "dev": 0.4457,
+          "source": "evidence"
+        },
+        {
+          "value": "$34 million",
+          "num": 34.0,
+          "correct": 26.0,
+          "dev": 0.2353,
+          "source": "evidence"
+        },
+        {
+          "value": "$34 million",
+          "num": 34.0,
+          "correct": 26.0,
+          "dev": 0.2353,
+          "source": "evidence"
+        },
+        {
+          "value": "$27,446 million",
+          "num": 27446.0,
+          "correct": 36000.0,
+          "dev": 0.2376,
+          "source": "source_document"
+        },
+        {
+          "value": "$29,233 million",
+          "num": 29233.0,
+          "correct": 36000.0,
+          "dev": 0.188,
+          "source": "source_document"
+        },
+        {
+          "value": "8.75%",
+          "num": 8.75,
+          "correct": 5.0,
+          "dev": 0.4286,
+          "source": "evidence"
+        },
+        {
+          "value": "-3.13%",
+          "num": 3.13,
+          "correct": 2.9,
+          "dev": 0.0735,
+          "source": "source_document"
+        },
+        {
+          "value": "6.74%",
+          "num": 6.74,
+          "correct": 5.0,
+          "dev": 0.2582,
+          "source": "evidence"
+        },
+        {
+          "value": "02905",
+          "num": 2905.0,
+          "correct": 3162.0,
+          "dev": 0.0813,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "4.76%"
+        }
+      ],
+      "n_refs": 52
+    },
+    "gate_3": {
+      "verified": [
+        {
+          "value": "$1,143 million",
+          "ref": 1143.0
+        },
+        {
+          "value": "$1,051 million",
+          "ref": 1051.0
+        },
+        {
+          "value": "$40,253 million",
+          "ref": 40253.0
+        },
+        {
+          "value": "$1,143 million",
+          "ref": 1143.0
+        },
+        {
+          "value": "$1,051 million",
+          "ref": 1051.0
+        },
+        {
+          "value": "$1,085 million",
+          "ref": 1085.0
+        },
+        {
+          "value": "$40,253 million",
+          "ref": 40253.0
+        },
+        {
+          "value": "$1,828 million",
+          "ref": 1822.0
+        },
+        {
+          "value": "$38,425 million",
+          "ref": 38425.0
+        },
+        {
+          "value": "$2,425 million",
+          "ref": 2448.0
+        },
+        {
+          "value": "$36,000 million",
+          "ref": 36000.0
+        },
+        {
+          "value": "$1,143 million",
+          "ref": 1143.0
+        },
+        {
+          "value": "$39,339 million",
+          "ref": 39339.0
+        },
+        {
+          "value": "$40,253 million",
+          "ref": 40253.0
+        },
+        {
+          "value": "$38,425 million",
+          "ref": 38425.0
+        },
+        {
+          "value": "2.91%",
+          "ref": 2.9
+        },
+        {
+          "value": "2.91%",
+          "ref": 2.9
+        },
+        {
+          "value": "2.91%",
+          "ref": 2.9
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$92 million",
+          "num": 92.0,
+          "correct": 51.0,
+          "dev": 0.4457,
+          "source": "evidence"
+        },
+        {
+          "value": "$34 million",
+          "num": 34.0,
+          "correct": 26.0,
+          "dev": 0.2353,
+          "source": "evidence"
+        },
+        {
+          "value": "8.75%",
+          "num": 8.75,
+          "correct": 5.0,
+          "dev": 0.4286,
+          "source": "evidence"
+        },
+        {
+          "value": "-3.13%",
+          "num": 3.13,
+          "correct": 2.9,
+          "dev": 0.0735,
+          "source": "source_document"
+        },
+        {
+          "value": "6.74%",
+          "num": 6.74,
+          "correct": 5.0,
+          "dev": 0.2582,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "4.76%"
+        },
+        {
+          "value": "4.76%"
+        }
+      ],
+      "n_refs": 52
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_018_6E9F56BB",
+      "hid": "FB_018_6E9F56BB_H2",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 27446.0,
+      "orig_num": 38425.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_018_6E9F56BB",
+      "hid": "FB_018_6E9F56BB_H1",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 29233.0,
+      "orig_num": 39339.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:09:15.943500+00:00"
+}

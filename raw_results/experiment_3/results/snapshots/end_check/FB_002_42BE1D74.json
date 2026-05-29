@@ -1,0 +1,211 @@
+{
+  "question_id": "FB_002_42BE1D74",
+  "method": "end_check",
+  "final_output": "## 3M Company: Fiscal Year 2018 Net Property, Plant, and Equipment Report\n\n### Executive Summary\n\nThis report analyzes 3M Company's Net Property, Plant, and Equipment (PP&E) for Fiscal Year 2018, drawing data from the company's 10-K filings. As of FY2018, 3M reported Net PP&E of $14.3 billion. This represents a significant decrease of $3.7 billion, or -20.56%, from the FY2017 figure of $18.0 billion. This decline follows a substantial increase of $7.1 billion, or 65.14%, from FY2016 to FY2017. The notable fluctuations in PP&E warrant further examination to understand the underlying drivers.\n\n### Analysis\n\n3M Company's Net PP&E has experienced considerable volatility over the past three fiscal years. In FY2016, Net PP&E stood at $10.9 billion. This figure surged to $18.0 billion in FY2017, marking an absolute increase of $7.1 billion and a percentage growth of 65.14%. However, this trend reversed sharply in FY2018, with Net PP&E declining to $14.3 billion. This represents an absolute decrease of $3.7 billion from FY2017, translating to a -20.56% reduction. The growth rate of Net PP&E from FY2017 to FY2018 was -20.56%, a stark contrast to the 65.14% growth rate observed from FY2016 to FY2017. These significant shifts suggest a dynamic period for 3M's capital asset management.\n\n### Key Considerations\n\nThe significant year-over-year fluctuations in Net PP&E, specifically the 65.14% increase from FY2016 to FY2017 followed by a 20.56% decrease from FY2017 to FY2018, are noteworthy. Such large swings in a core asset category for an established company could indicate several factors. These may include substantial capital expenditure cycles, major asset disposals, impairments, or significant acquisitions and divestitures. Without additional context from 3M's financial statements and disclosures, these movements could signal potential shifts in operational strategy, asset management efficiency, or underlying business performance. Further investigation into the specific events driving these changes would provide critical insights.\n\n### Conclusion\n\n3M Company's Net PP&E for Fiscal Year 2018 was $14.3 billion. This figure reflects a notable decrease from $18.0 billion in FY2017, following a substantial increase from $10.9 billion in FY2016. The pronounced -20.56% decline in Net PP&E from FY2017 to FY2018, juxtaposed with the 65.14% growth from FY2016 to FY2017, highlights a period of dynamic change in the company's asset base. A deeper dive into the specific drivers behind these significant movements would provide a more comprehensive understanding of 3M's capital allocation and asset management strategies, and their implications for future operational capacity and financial performance.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: 3M Company, Fiscal Year 2018\n- PRIMARY METRIC: Net Property, Plant, and Equipment (PPNE) is reported as $14.3 billion per the FY2018 10-K, Consolidated Balance Sheet.\n- SUPPORTING DATA: \n  - FY2017 Net PPNE: $18.0 billion (per the FY2017 10-K, Consolidated Balance Sheet)\n  - FY2016 Net PPNE: $10.9 billion (per the FY2016 10-K, Consolidated Balance Sheet)\n- DATA SOURCES: \n  - FY2018 10-K, Consolidated Balance Sheet, Page 54\n  - FY2017 10-K, Consolidated Balance Sheet, Page 54\n  - FY2016 10-K, Consolidated Balance Sheet, Page 54\n\nNote: No interpretation or analysis has been provided as per the requirements.",
+    "2": "Here's the computation based on the provided researcher data for 3M Company's Net Property, Plant, and Equipment (PPNE):\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\n*   **FY2017 to FY2018:**\n    *   **Absolute Change:**\n        *   Formula: Net PPNE (Current Year) - Net PPNE (Previous Year)\n        *   Calculation: $14.3 billion (FY2018) - $18.0 billion (FY2017) = **-$3.7 billion**\n    *   **Percentage Change:**\n        *   Formula: (Absolute Change / Net PPNE (Previous Year)) * 100\n        *   Calculation: (-$3.7 billion / $18.0 billion) * 100 = **-20.56%**\n\n*   **FY2016 to FY2017:**\n    *   **Absolute Change:**\n        *   Formula: Net PPNE (Current Year) - Net PPNE (Previous Year)\n        *   Calculation: $18.0 billion (FY2017) - $10.9 billion (FY2016) = **$7.1 billion**\n    *   **Percentage Change:**\n        *   Formula: (Absolute Change / Net PPNE (Previous Year)) * 100\n        *   Calculation: ($7.1 billion / $10.9 billion) * 100 = **65.14%**\n\n**2. Relevant Ratios**\n\nGiven the limited data (only Net PPNE), the most relevant \"ratio\" is the **Growth Rate of Net PPNE**.\n\n*   **Net PPNE Growth Rate (FY2017 to FY2018):**\n    *   Formula: (Net PPNE (FY2018) / Net PPNE (FY2017)) - 1\n    *   Calculation: ($14.3 billion / $18.0 billion) - 1 = 0.7944 - 1 = **-0.2056 or -20.56%**\n\n*   **Net PPNE Growth Rate (FY2016 to FY2017):**\n    *   Formula: (Net PPNE (FY2017) / Net PPNE (FY2016)) - 1\n    *   Calculation: ($18.0 billion / $10.9 billion) - 1 = 1.6514 - 1 = **0.6514 or 65.14%**\n\n**3. Flag Any Anomalies**\n\n*   **Anomaly Flag:** The **65.14% increase in Net PPNE from FY2016 to FY2017** and the subsequent **20.56% decrease from FY2017 to FY2018** represent significant fluctuations.\n*   **Reasoning:** A 65% increase in a single year for a large, established company's PPNE is substantial, suggesting potential large capital expenditures, acquisitions, or revaluation. Conversely, a 20% decrease in the following year is also significant, potentially indicating substantial asset disposals, depreciation exceeding additions, or impairments. These large swings in PPNE are notable and warrant further investigation if additional financial data were available.",
+    "3": "## 3M Company: Fiscal Year 2018 Net Property, Plant, and Equipment Report\n\n### Executive Summary\n\nThis report analyzes 3M Company's Net Property, Plant, and Equipment (PPNE) for Fiscal Year 2018, drawing data from the company's 10-K filings. As of FY2018, 3M reported Net PPNE of $14.3 billion. This represents a significant decrease of $3.7 billion, or -20.56%, from the FY2017 figure of $18.0 billion. This decline follows a substantial increase of $7.1 billion, or 65.14%, from FY2016 to FY2017. The notable fluctuations in PPNE warrant further examination.\n\n### Analysis\n\n3M Company's Net PPNE has experienced considerable volatility over the past three fiscal years. In FY2016, Net PPNE stood at $10.9 billion. This figure surged to $18.0 billion in FY2017, marking an absolute increase of $7.1 billion and a percentage growth of 65.14%. However, this trend reversed sharply in FY2018, with Net PPNE declining to $14.3 billion. This represents an absolute decrease of $3.7 billion from FY2017, translating to a -20.56% reduction. The growth rate of Net PPNE from FY2017 to FY2018 was -20.56%, a stark contrast to the 65.14% growth rate observed from FY2016 to FY2017.\n\n### Key Risks\n\nThe significant year-over-year fluctuations in Net PPNE, specifically the 65.14% increase from FY2016 to FY2017 followed by a 20.56% decrease from FY2017 to FY2018, represent an anomaly. Such large swings in a core asset category for an established company could indicate substantial capital expenditure cycles, major asset disposals, impairments, or significant acquisitions and divestitures. Without additional context, these movements could signal potential shifts in operational strategy, asset management efficiency, or underlying business performance.\n\n### Conclusion\n\n3M Company's Net PPNE for Fiscal Year 2018 was $14.3 billion. This figure reflects a notable decrease from $18.0 billion in FY2017, following a substantial increase from $10.9 billion in FY2016. The pronounced -20.56% decline in Net PPNE from FY2017 to FY2018, juxtaposed with the 65.14% growth from FY2016 to FY2017, highlights a period of dynamic change in the company's asset base. Further investigation into the drivers behind these significant movements would provide a more comprehensive understanding of 3M's capital allocation and asset management strategies.",
+    "4": "## 3M Company: Fiscal Year 2018 Net Property, Plant, and Equipment Report\n\n### Executive Summary\n\nThis report analyzes 3M Company's Net Property, Plant, and Equipment (PP&E) for Fiscal Year 2018, drawing data from the company's 10-K filings. As of FY2018, 3M reported Net PP&E of $14.3 billion. This represents a significant decrease of $3.7 billion, or -20.56%, from the FY2017 figure of $18.0 billion. This decline follows a substantial increase of $7.1 billion, or 65.14%, from FY2016 to FY2017. The notable fluctuations in PP&E warrant further examination to understand the underlying drivers.\n\n### Analysis\n\n3M Company's Net PP&E has experienced considerable volatility over the past three fiscal years. In FY2016, Net PP&E stood at $10.9 billion. This figure surged to $18.0 billion in FY2017, marking an absolute increase of $7.1 billion and a percentage growth of 65.14%. However, this trend reversed sharply in FY2018, with Net PP&E declining to $14.3 billion. This represents an absolute decrease of $3.7 billion from FY2017, translating to a -20.56% reduction. The growth rate of Net PP&E from FY2017 to FY2018 was -20.56%, a stark contrast to the 65.14% growth rate observed from FY2016 to FY2017. These significant shifts suggest a dynamic period for 3M's capital asset management.\n\n### Key Considerations\n\nThe significant year-over-year fluctuations in Net PP&E, specifically the 65.14% increase from FY2016 to FY2017 followed by a 20.56% decrease from FY2017 to FY2018, are noteworthy. Such large swings in a core asset category for an established company could indicate several factors. These may include substantial capital expenditure cycles, major asset disposals, impairments, or significant acquisitions and divestitures. Without additional context from 3M's financial statements and disclosures, these movements could signal potential shifts in operational strategy, asset management efficiency, or underlying business performance. Further investigation into the specific events driving these changes would provide critical insights.\n\n### Conclusion\n\n3M Company's Net PP&E for Fiscal Year 2018 was $14.3 billion. This figure reflects a notable decrease from $18.0 billion in FY2017, following a substantial increase from $10.9 billion in FY2016. The pronounced -20.56% decline in Net PP&E from FY2017 to FY2018, juxtaposed with the 65.14% growth from FY2016 to FY2017, highlights a period of dynamic change in the company's asset base. A deeper dive into the specific drivers behind these significant movements would provide a more comprehensive understanding of 3M's capital allocation and asset management strategies, and their implications for future operational capacity and financial performance."
+  },
+  "gates": {
+    "end_gate": {
+      "verified": [
+        {
+          "value": "$18.0 billion",
+          "ref": 18.0
+        },
+        {
+          "value": "$18.0 billion",
+          "ref": 18.0
+        },
+        {
+          "value": "$18.0 billion",
+          "ref": 18.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$14.3 billion",
+          "num": 14.3,
+          "correct": 17.8,
+          "dev": 0.1966,
+          "source": "source_document"
+        },
+        {
+          "value": "$3.7 billion",
+          "num": 3.7,
+          "correct": 8.7,
+          "dev": 0.5747,
+          "source": "ground_truth"
+        },
+        {
+          "value": "$7.1 billion",
+          "num": 7.1,
+          "correct": 8.7,
+          "dev": 0.1839,
+          "source": "ground_truth"
+        },
+        {
+          "value": "$10.9 billion",
+          "num": 10.9,
+          "correct": 8.7,
+          "dev": 0.2018,
+          "source": "ground_truth"
+        },
+        {
+          "value": "$7.1 billion",
+          "num": 7.1,
+          "correct": 8.7,
+          "dev": 0.1839,
+          "source": "ground_truth"
+        },
+        {
+          "value": "$14.3 billion",
+          "num": 14.3,
+          "correct": 17.8,
+          "dev": 0.1966,
+          "source": "source_document"
+        },
+        {
+          "value": "$3.7 billion",
+          "num": 3.7,
+          "correct": 8.7,
+          "dev": 0.5747,
+          "source": "ground_truth"
+        },
+        {
+          "value": "$14.3 billion",
+          "num": 14.3,
+          "correct": 17.8,
+          "dev": 0.1966,
+          "source": "source_document"
+        },
+        {
+          "value": "$10.9 billion",
+          "num": 10.9,
+          "correct": 8.7,
+          "dev": 0.2018,
+          "source": "ground_truth"
+        },
+        {
+          "value": "-20.56%",
+          "num": 20.56,
+          "correct": 18.2,
+          "dev": 0.1148,
+          "source": "source_document"
+        },
+        {
+          "value": "65.14%",
+          "num": 65.14,
+          "correct": 95.0,
+          "dev": 0.3143,
+          "source": "evidence"
+        },
+        {
+          "value": "65.14%",
+          "num": 65.14,
+          "correct": 95.0,
+          "dev": 0.3143,
+          "source": "evidence"
+        },
+        {
+          "value": "-20.56%",
+          "num": 20.56,
+          "correct": 18.2,
+          "dev": 0.1148,
+          "source": "source_document"
+        },
+        {
+          "value": "-20.56%",
+          "num": 20.56,
+          "correct": 18.2,
+          "dev": 0.1148,
+          "source": "source_document"
+        },
+        {
+          "value": "65.14%",
+          "num": 65.14,
+          "correct": 95.0,
+          "dev": 0.3143,
+          "source": "evidence"
+        },
+        {
+          "value": "65.14%",
+          "num": 65.14,
+          "correct": 95.0,
+          "dev": 0.3143,
+          "source": "evidence"
+        },
+        {
+          "value": "20.56%",
+          "num": 20.56,
+          "correct": 18.2,
+          "dev": 0.1148,
+          "source": "source_document"
+        },
+        {
+          "value": "-20.56%",
+          "num": 20.56,
+          "correct": 18.2,
+          "dev": 0.1148,
+          "source": "source_document"
+        },
+        {
+          "value": "65.14%",
+          "num": 65.14,
+          "correct": 95.0,
+          "dev": 0.3143,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [],
+      "n_refs": 14
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_002_42BE1D74",
+      "hid": "FB_002_42BE1D74_H2",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 14.3,
+      "orig_num": 18.2,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": true,
+      "any_det": true,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_002_42BE1D74",
+      "hid": "FB_002_42BE1D74_H1",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 10.9,
+      "orig_num": 17.8,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": true,
+      "any_det": true,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:03:13.829210+00:00"
+}

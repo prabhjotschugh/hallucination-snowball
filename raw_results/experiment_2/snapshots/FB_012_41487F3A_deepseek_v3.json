@@ -1,0 +1,91 @@
+{
+  "question_id": "FB_012_41487F3A",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: Adobe Inc., FY2016\n- PRIMARY METRIC: Operating Income for FY2016: $2,035 million (per the FY2016 10-K, Consolidated Statements of Operations)\n- SUPPORTING DATA: \n  - Operating Income for FY2015: $2,329 million (per the FY2015 10-K, Consolidated Statements of Operations)\n  - Year-over-Year Change in Operating Income: \n    - Calculation: (($2,825 million - $2,329 million) / $2,329 million) * 100 = 32.8%\n    - Rounded Percentage Change: 21.3%\n- DATA SOURCES: \n  - FY2016 10-K, Consolidated Statements of Operations\n  - FY2015 10-K, Consolidated Statements of Operations\n\nNote: The analysis and benchmarking against industry standards were not performed as per the directive to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_012_41487F3A_H2",
+      "type": "dollar_amount",
+      "original_value": "$2,825 million",
+      "injected_value": "$2,035 million",
+      "original_numeric": "2825",
+      "injected_numeric": "2035",
+      "position_char": 86,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.2796
+    },
+    {
+      "hallucination_id": "FB_012_41487F3A_H1",
+      "type": "percentage",
+      "original_value": "21.3%",
+      "injected_value": "32.8%",
+      "original_numeric": "21.3",
+      "injected_numeric": "32.8",
+      "position_char": 419,
+      "sentence_approx": 2,
+      "perturbation_delta": 11.4575
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Operating Income for FY2016: $2,035 million (per the FY2016 10-K, Consolidated Statements of Operations)",
+        "claim_value": "$2,035 million",
+        "reason": "Does not match the calculation context where $2,825 million appears instead.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Operating Income for FY2015: $2,329 million (per the FY2015 10-K, Consolidated Statements of Operations)",
+        "claim_value": "$2,329 million",
+        "reason": "Used a different value ($2,825 million) in the calculation, creating discrepancy.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Calculation: (($2,825 million - $2,329 million) / $2,329 million) * 100 = 32.8%",
+        "claim_value": "$2,825 million",
+        "reason": "Conflicts with reported FY2016 operating income ($2,035 million); unclear origin.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Rounded Percentage Change: 21.3%",
+        "claim_value": "21.3%",
+        "reason": "Does not align with the calculated 32.8%; rounding explanation insufficient.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 4,
+    "overall_assessment": "Highly inconsistent figures and unexplained discrepancies in calculations.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Operating Income for FY2016: $2,035 million (per the FY2016 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$2,035 million\",\n      \"reason\": \"Does not match the calculation context where $2,825 million appears instead.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Operating Income for FY2015: $2,329 million (per the FY2015 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$2,329 million\",\n      \"reason\": \"Used a different value ($2,825 million) in the calculation, creating discrepancy.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Calculation: (($2,825 million - $2,329 million) / $2,329 million) * 100 = 32.8%\",\n      \"claim_value\": \"$2,825 million\",\n      \"reason\": \"Conflicts with reported FY2016 operating income ($2,035 million); unclear origin.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Rounded Percentage Change: 21.3%\",\n      \"claim_value\": \"21.3%\",\n      \"reason\": \"Does not align with the calculated 32.8%; rounding explanation insufficient.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 4,\n  \"overall_assessment\": \"Highly inconsistent figures and unexplained discrepancies in calculations.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_012_41487F3A",
+      "hallucination_id": "FB_012_41487F3A_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$2,825 million",
+      "injected_value": "$2,035 million",
+      "detected": true,
+      "reason": "Does not match the calculation context where $2,825 million appears instead.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 4
+    },
+    {
+      "question_id": "FB_012_41487F3A",
+      "hallucination_id": "FB_012_41487F3A_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "percentage",
+      "original_value": "21.3%",
+      "injected_value": "32.8%",
+      "detected": true,
+      "reason": "Conflicts with reported FY2016 operating income ($2,035 million); unclear origin.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 4
+    }
+  ],
+  "timestamp": "2026-03-24T09:41:10.471526Z"
+}

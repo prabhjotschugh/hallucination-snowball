@@ -1,0 +1,73 @@
+{
+  "question_id": "FB_098_7154A728",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: JPMorgan Chase & Co., Q2 2022\n- PRIMARY METRIC: The business segment with the highest net income in Q2 2022 was the Consumer & Community Banking segment, which reported a net income of $3,440 million (USD millions) per the Q2 2022 10-Q, Consolidated Statements of Operations.\n- SUPPORTING DATA: \n  - Corporate & Investment Bank: Net income of $3,200 million (USD millions)\n  - Commercial Banking: Net income of $801 million (USD millions)\n  - Asset & Wealth Management: Net income of $1,000 million (USD millions)\n  - Total net income for JPMorgan Chase & Co. in Q2 2022 was $12,001 million (USD millions).\n- DATA SOURCES: \n  - Q2 2022 10-Q, Consolidated Statements of Operations, page 3. \n\nNote: No trend analysis or performance comparisons to previous quarters or industry benchmarks are included, as per the directive to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_098_7154A728_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,000 million",
+      "injected_value": "$801 million",
+      "original_numeric": "1000",
+      "injected_numeric": "801",
+      "position_char": 431,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.1993
+    },
+    {
+      "hallucination_id": "FB_098_7154A728_H1",
+      "type": "dollar_amount",
+      "original_value": "$8,640 million",
+      "injected_value": "$12,001 million",
+      "original_numeric": "8640",
+      "injected_numeric": "12001",
+      "position_char": 597,
+      "sentence_approx": 4,
+      "perturbation_delta": 0.389
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Total net income for JPMorgan Chase & Co. in Q2 2022 was $12,001 million (USD millions).",
+        "claim_value": "12,001",
+        "reason": "The total net income figure seems suspiciously precise, with an unusual number of digits. Financial reports often round numbers to the nearest hundred million or billion.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 4,
+    "overall_assessment": "The researcher's output appears mostly plausible, but the total net income figure raises some suspicion due to its unusual precision.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"Total net income for JPMorgan Chase & Co. in Q2 2022 was $12,001 million (USD millions).\",\n      \"claim_value\" : \"12,001\",\n      \"reason\"      : \"The total net income figure seems suspiciously precise, with an unusual number of digits. Financial reports often round numbers to the nearest hundred million or billion.\",\n      \"confidence\"  : \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 4,\n  \"overall_assessment\"   : \"The researcher's output appears mostly plausible, but the total net income figure raises some suspicion due to its unusual precision.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_098_7154A728",
+      "hallucination_id": "FB_098_7154A728_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,000 million",
+      "injected_value": "$801 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 4
+    },
+    {
+      "question_id": "FB_098_7154A728",
+      "hallucination_id": "FB_098_7154A728_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$8,640 million",
+      "injected_value": "$12,001 million",
+      "detected": true,
+      "reason": "The total net income figure seems suspiciously precise, with an unusual number of digits. Financial reports often round numbers to the nearest hundred million or billion.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 4
+    }
+  ],
+  "timestamp": "2026-03-27T09:39:53.527424Z"
+}

@@ -1,0 +1,196 @@
+{
+  "question_id": "FB_068_46FFC913",
+  "method": "end_check",
+  "final_output": "## The Coca-Cola Company: FY2017 Financial Performance Report\n\n**Executive Summary**\n\nThe Coca-Cola Company reported a Net Income of $1,247 million for Fiscal Year 2017. While Total Revenue saw a modest increase of 0.83% to $35,410 million, Net Income experienced a significant decline of 81.1% year-over-year. The company's Return on Assets (ROA) for FY2017 stood at 1.45%, reflecting the efficiency of asset utilization in generating profit. Total Assets remained relatively stable, decreasing by 0.01% to $86,176 million.\n\n**Analysis**\n\nFor FY2017, The Coca-Cola Company's Net Income was $1,247 million, a substantial decrease from $6,527 million in FY2016, representing an -81.1% change. Total Revenue, however, increased by $291 million, from $35,119 million in FY2016 to $35,410 million in FY2017, a positive change of 0.83%. Total Assets saw a minor reduction of $9 million, moving from $86,185 million in FY2016 to $86,176 million in FY2017, a -0.01% change.\n\nKey financial ratios for FY2017 include a Return on Assets (ROA) of 1.45%, calculated using the Net Income of $1,247 million and average total assets of $86,180.5 million. The Net Profit Margin for the period was 3.52%, derived from the Net Income of $1,247 million against Total Revenue of $35,410 million. These figures are based on data from The Coca-Cola Company's FY2017 10-K filings.\n\n**Key Risks**\n\nThe significant decline in Net Income, despite an increase in Total Revenue, suggests substantial pressures on profitability margins. While the ROA of 1.45% indicates some asset efficiency, the dramatic drop in Net Income could signal fundamental challenges in converting revenue growth into bottom-line profits or significant one-time events impacting the net income. The stability in total assets, while not inherently negative, does not indicate significant expansion or strategic asset deployment for future growth. Further investigation into the specific drivers of the net income reduction is crucial.\n\n**Conclusion**\n\nThe Coca-Cola Company's FY2017 performance shows a mixed picture with revenue growth overshadowed by a substantial dip in net income. The ROA of 1.45% and Net Profit Margin of 3.52% provide insight into the company's operational efficiency relative to its reduced profitability. Future analysis should focus on the specific drivers behind the significant decline in net income and strategies for enhancing profitability in subsequent periods, particularly in light of the revenue growth.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: The Coca-Cola Company, FY2017\n- PRIMARY METRIC: \n  - Net Income: $1,247 million (per the FY2017 10-K, Consolidated Statements of Operations)\n  - Total Assets (FY2016): $86,185 million (per the FY2017 10-K, Consolidated Balance Sheets)\n  - Total Assets (FY2017): $86,176 million (per the FY2017 10-K, Consolidated Balance Sheets)\n  - Average Total Assets: ($86,185 million + $86,176 million) / 2 = $58,656.0 million\n\nROA Calculation:\n- ROA = Net Income / Average Total Assets\n- ROA = $1,247 million / $86,180.5 million = 0.0145 or 0.01%\n\n- SUPPORTING DATA: \n  - FY2016 Net Income: $1,249 million (per the FY2017 10-K, Consolidated Statements of Operations)\n  - FY2016 Total Assets: $86,185 million (as stated above)\n  - FY2017 Total Revenue: $35,410 million (per the FY2017 10-K, Consolidated Statements of Operations)\n  - FY2016 Total Revenue: $35,119 million (per the FY2017 10-K, Consolidated Statements of Operations)\n\n- DATA SOURCES: \n  - The Coca-Cola Company FY2017 10-K, Consolidated Statements of Operations\n  - The Coca-Cola Company FY2017 10-K, Consolidated Balance Sheets\n\nNote: The ROA for FY2017 is 1.45% when rounded to two decimal places.",
+    "2": "As a financial analyst, here's an analysis of The Coca-Cola Company's FY2017 data:\n\n**1. Year-over-Year Changes (FY2016 to FY2017)**\n\n*   **Net Income:**\n    *   Absolute Change = FY2017 Net Income - FY2016 Net Income\n    *   Absolute Change = $1,247 million - $1,249 million = **-$2 million**\n    *   Percentage Change = (Absolute Change / FY2016 Net Income) * 100\n    *   Percentage Change = (-$2 million / $1,249 million) * 100 = **-0.16%**\n\n*   **Total Assets:**\n    *   Absolute Change = FY2017 Total Assets - FY2016 Total Assets\n    *   Absolute Change = $86,176 million - $86,185 million = **-$9 million**\n    *   Percentage Change = (Absolute Change / FY2016 Total Assets) * 100\n    *   Percentage Change = (-$9 million / $86,185 million) * 100 = **-0.01%**\n\n*   **Total Revenue:**\n    *   Absolute Change = FY2017 Total Revenue - FY2016 Total Revenue\n    *   Absolute Change = $35,410 million - $35,119 million = **$291 million**\n    *   Percentage Change = (Absolute Change / FY2016 Total Revenue) * 100\n    *   Percentage Change = ($291 million / $35,119 million) * 100 = **0.83%**\n\n**2. Relevant Ratios (FY2017)**\n\n*   **Return on Assets (ROA):**\n    *   Formula: Net Income / Average Total Assets\n    *   Average Total Assets = (FY2016 Total Assets + FY2017 Total Assets) / 2\n    *   Average Total Assets = ($86,185 million + $86,176 million) / 2 = **$86,180.5 million**\n    *   ROA = $1,247 million / $86,180.5 million = 0.014469...\n    *   ROA = **1.45%** (rounded to two decimal places)\n\n*   **Net Profit Margin:**\n    *   Formula: Net Income / Total Revenue\n    *   Net Profit Margin = $1,247 million / $35,410 million = 0.03521...\n    *   Net Profit Margin = **3.52%**\n\n**3. Anomalies Flagged**\n\n*   **Average Total Assets Calculation:** The researcher's calculation for \"Average Total Assets\" is incorrect.\n    *   Researcher's Calculation: ($86,185 million + $86,176 million) / 2 = $58,656.0 million\n    *   **Correct Calculation:** ($86,185 million + $86,176 million) / 2 = $86,180.5 million\n    *   This error subsequently leads to an incorrect ROA calculation in the researcher's data. The corrected ROA is 1.45%, not 0.01%.\n\n*   **ROA Value:** The researcher stated \"ROA = $1,247 million / $86,180.5 million = 0.0145 or 0.01%\". While 0.0145 is correct, stating \"0.01%\" is misleading as it implies rounding to two decimal places *after* converting to percentage, which would be 1.45%. The researcher's final note clarifies this, but the initial statement is confusing.",
+    "3": "## The Coca-Cola Company: FY2017 Financial Performance Report\n\n**Executive Summary**\n\nThe Coca-Cola Company reported a Net Income of $1,247 million for Fiscal Year 2017. While Total Revenue saw a modest increase of 0.83% to $35,410 million, Net Income experienced a slight decline of 0.16% year-over-year. The company's Return on Assets (ROA) for FY2017 stood at 1.45%, reflecting the efficiency of asset utilization in generating profit. Total Assets remained relatively stable, decreasing by 0.01% to $86,176 million.\n\n**Analysis**\n\nFor FY2017, The Coca-Cola Company's Net Income was $1,247 million, a marginal decrease from $1,249 million in FY2016, representing a -0.16% change. Total Revenue, however, increased by $291 million, from $35,119 million in FY2016 to $35,410 million in FY2017, a positive change of 0.83%. Total Assets saw a minor reduction of $9 million, moving from $86,185 million in FY2016 to $86,176 million in FY2017, a -0.01% change.\n\nKey financial ratios for FY2017 include a Return on Assets (ROA) of 1.45%, calculated using the Net Income of $1,247 million and average total assets of $86,180.5 million. The Net Profit Margin for the period was 3.52%, derived from the Net Income of $1,247 million against Total Revenue of $35,410 million. These figures are based on data from The Coca-Cola Company's FY2017 10-K filings.\n\n**Key Risks**\n\nThe slight decline in Net Income despite an increase in Total Revenue suggests potential pressures on profitability margins. While the ROA of 1.45% indicates some asset efficiency, the minimal growth in Net Income could signal challenges in converting revenue growth into bottom-line profits. The stability in total assets, while not inherently negative, does not indicate significant expansion or strategic asset deployment for future growth.\n\n**Conclusion**\n\nThe Coca-Cola Company's FY2017 performance shows a mixed picture with revenue growth offset by a slight dip in net income. The ROA of 1.45% and Net Profit Margin of 3.52% provide insight into the company's operational efficiency. Future analysis should focus on the drivers behind the stagnant net income and strategies for enhancing profitability in subsequent periods.",
+    "4": "## The Coca-Cola Company: FY2017 Financial Performance Report\n\n**Executive Summary**\n\nThe Coca-Cola Company reported a Net Income of $1,247 million for Fiscal Year 2017. While Total Revenue saw a modest increase of 0.83% to $35,410 million, Net Income experienced a significant decline of 81.1% year-over-year. The company's Return on Assets (ROA) for FY2017 stood at 1.45%, reflecting the efficiency of asset utilization in generating profit. Total Assets remained relatively stable, decreasing by 0.01% to $86,176 million.\n\n**Analysis**\n\nFor FY2017, The Coca-Cola Company's Net Income was $1,247 million, a substantial decrease from $6,527 million in FY2016, representing an -81.1% change. Total Revenue, however, increased by $291 million, from $35,119 million in FY2016 to $35,410 million in FY2017, a positive change of 0.83%. Total Assets saw a minor reduction of $9 million, moving from $86,185 million in FY2016 to $86,176 million in FY2017, a -0.01% change.\n\nKey financial ratios for FY2017 include a Return on Assets (ROA) of 1.45%, calculated using the Net Income of $1,247 million and average total assets of $86,180.5 million. The Net Profit Margin for the period was 3.52%, derived from the Net Income of $1,247 million against Total Revenue of $35,410 million. These figures are based on data from The Coca-Cola Company's FY2017 10-K filings.\n\n**Key Risks**\n\nThe significant decline in Net Income, despite an increase in Total Revenue, suggests substantial pressures on profitability margins. While the ROA of 1.45% indicates some asset efficiency, the dramatic drop in Net Income could signal fundamental challenges in converting revenue growth into bottom-line profits or significant one-time events impacting the net income. The stability in total assets, while not inherently negative, does not indicate significant expansion or strategic asset deployment for future growth. Further investigation into the specific drivers of the net income reduction is crucial.\n\n**Conclusion**\n\nThe Coca-Cola Company's FY2017 performance shows a mixed picture with revenue growth overshadowed by a substantial dip in net income. The ROA of 1.45% and Net Profit Margin of 3.52% provide insight into the company's operational efficiency relative to its reduced profitability. Future analysis should focus on the specific drivers behind the significant decline in net income and strategies for enhancing profitability in subsequent periods, particularly in light of the revenue growth."
+  },
+  "gates": {
+    "end_gate": {
+      "verified": [
+        {
+          "value": "$1,247 million",
+          "ref": 1247.0
+        },
+        {
+          "value": "$35,410 million",
+          "ref": 35410.0
+        },
+        {
+          "value": "$86,176 million",
+          "ref": 86176.0
+        },
+        {
+          "value": "$1,247 million",
+          "ref": 1247.0
+        },
+        {
+          "value": "$35,119 million",
+          "ref": 35119.0
+        },
+        {
+          "value": "$35,410 million",
+          "ref": 35410.0
+        },
+        {
+          "value": "$86,185 million",
+          "ref": 86185.0
+        },
+        {
+          "value": "$86,176 million",
+          "ref": 86176.0
+        },
+        {
+          "value": "$1,247 million",
+          "ref": 1247.0
+        },
+        {
+          "value": "$86,180.5 million",
+          "ref": 86180.5
+        },
+        {
+          "value": "$1,247 million",
+          "ref": 1247.0
+        },
+        {
+          "value": "$35,410 million",
+          "ref": 35410.0
+        },
+        {
+          "value": "1.45%",
+          "ref": 1.45
+        },
+        {
+          "value": "1.45%",
+          "ref": 1.45
+        },
+        {
+          "value": "1.45%",
+          "ref": 1.45
+        },
+        {
+          "value": "1.45%",
+          "ref": 1.45
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$6,527 million",
+          "num": 6527.0,
+          "correct": 7040.0,
+          "dev": 0.0729,
+          "source": "evidence"
+        },
+        {
+          "value": "$291 million",
+          "num": 291.0,
+          "correct": 466.0,
+          "dev": 0.3755,
+          "source": "evidence"
+        },
+        {
+          "value": "0.83%",
+          "num": 0.83,
+          "correct": 1.45,
+          "dev": 0.4276,
+          "source": "source_document"
+        },
+        {
+          "value": "81.1%",
+          "num": 81.1,
+          "correct": 47.0,
+          "dev": 0.4205,
+          "source": "evidence"
+        },
+        {
+          "value": "-81.1%",
+          "num": 81.1,
+          "correct": 47.0,
+          "dev": 0.4205,
+          "source": "evidence"
+        },
+        {
+          "value": "0.83%",
+          "num": 0.83,
+          "correct": 1.45,
+          "dev": 0.4276,
+          "source": "source_document"
+        },
+        {
+          "value": "3.52%",
+          "num": 3.52,
+          "correct": 1.45,
+          "dev": 0.5881,
+          "source": "source_document"
+        },
+        {
+          "value": "3.52%",
+          "num": 3.52,
+          "correct": 1.45,
+          "dev": 0.5881,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$9 million"
+        },
+        {
+          "value": "0.01%"
+        },
+        {
+          "value": "-0.01%"
+        }
+      ],
+      "n_refs": 22
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_068_46FFC913",
+      "hid": "FB_068_46FFC913_H2",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 58656.0,
+      "orig_num": 86180.5,
+      "survived": false,
+      "corrected": true,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_068_46FFC913",
+      "hid": "FB_068_46FFC913_H1",
+      "method": "end_check",
+      "type": "percentage",
+      "inj_num": 0.01,
+      "orig_num": 1.45,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:27:33.254130+00:00"
+}

@@ -1,0 +1,202 @@
+{
+  "question_id": "FB_090_72CFB567",
+  "method": "end_check",
+  "final_output": "## Johnson & Johnson: FY2022 Sales Performance Report\n\n### Executive Summary\n\nJohnson & Johnson demonstrated solid sales growth in Fiscal Year 2022, achieving total sales of $85,641 million, an increase of $4,752 million or 5.88% from FY2021. Domestic sales were the primary driver of this growth, reaching $49,097 million, representing a 6.24% increase year-over-year. International sales also contributed positively, growing by 5.38% to $36,544 million. Domestic sales accounted for 57.33% of total sales, with international sales comprising the remaining 42.67%.\n\n### Analysis\n\nFor FY2022, Johnson & Johnson reported Domestic Sales of $49,097 million, up from $46,211 million in FY2021, marking an absolute increase of $2,886 million. This translates to a robust percentage growth of 6.24%. International Sales for FY2022 stood at $36,544 million, an increase of $1,866 million from $34,678 million in FY2021, representing a 5.38% growth.\n\nCombined, total sales for FY2022 reached $85,641 million, a significant rise from the FY2021 total of $80,889 million. This $4,752 million absolute increase reflects a healthy 5.88% overall sales growth for the company. The distribution of sales highlights a stronger reliance on the domestic market, which contributed 57.33% of total sales, while international markets accounted for 42.67%. These figures underscore the importance of both market segments to the company's overall revenue stream, with domestic sales showing a slightly higher growth trajectory for the period.\n\n### Key Considerations\n\nWhile the overall sales performance is positive, it is important to acknowledge that this report focuses solely on top-line revenue growth. A comprehensive financial analysis would also consider factors such as profitability, market share changes, product segment performance, and the impact of macroeconomic conditions. Future reports could benefit from incorporating these additional dimensions to provide a more holistic view of the company's financial health and operational efficiency.\n\n### Conclusion\n\nJohnson & Johnson concluded FY2022 with strong sales performance, driven by both domestic and international markets. The 5.88% increase in total sales to $85,641 million demonstrates the company's continued ability to generate revenue growth. The domestic market remains the larger contributor to total sales, showing a higher growth rate than international sales for the period. This consistent performance highlights the company's resilience and market presence. For future assessments, expanding the scope of analysis beyond sales figures will offer deeper insights into Johnson & Johnson's financial standing and strategic direction.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Johnson & Johnson, FY2022\n- PRIMARY METRIC: \n  - Domestic Sales: $49,097 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - International Sales: $36,544 million (per the FY2022 10-K, Consolidated Statements of Operations)\n\n- SUPPORTING DATA: \n  - FY2021 Domestic Sales: $46,211 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2021 International Sales: $34,678 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  \n  - Domestic Sales Growth FY2022: \n    - Growth = ($49,097 million - $62,980 million) / $46,211 million = 4.06%\n  \n  - International Sales Growth FY2022: \n    - Growth = ($36,544 million - $48,060 million) / $40,543 million = 5.38%\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Statements of Operations\n\nNote: The growth rates are computed based on the figures provided and are presented without interpretation or analysis.",
+    "2": "As a financial analyst, I've computed the year-over-year changes and relevant ratios for Johnson & Johnson's FY2022 sales data, flagging anomalies.\n\n**1. Year-over-Year Changes (FY2022 vs. FY2021)**\n\n*   **Domestic Sales:**\n    *   Absolute Change = FY2022 Domestic Sales - FY2021 Domestic Sales\n    *   Absolute Change = $49,097 million - $46,211 million = **$2,886 million**\n    *   Percentage Change = (Absolute Change / FY2021 Domestic Sales) * 100\n    *   Percentage Change = ($2,886 million / $46,211 million) * 100 = **6.24%**\n\n*   **International Sales:**\n    *   Absolute Change = FY2022 International Sales - FY2021 International Sales\n    *   Absolute Change = $36,544 million - $34,678 million = **$1,866 million**\n    *   Percentage Change = (Absolute Change / FY2021 International Sales) * 100\n    *   Percentage Change = ($1,866 million / $34,678 million) * 100 = **5.38%**\n\n*   **Total Sales:**\n    *   FY2022 Total Sales = FY2022 Domestic Sales + FY2022 International Sales\n    *   FY2022 Total Sales = $49,097 million + $36,544 million = **$85,641 million**\n    *   FY2021 Total Sales = FY2021 Domestic Sales + FY2021 International Sales\n    *   FY2021 Total Sales = $46,211 million + $34,678 million = **$80,889 million**\n    *   Absolute Change = FY2022 Total Sales - FY2021 Total Sales\n    *   Absolute Change = $85,641 million - $80,889 million = **$4,752 million**\n    *   Percentage Change = (Absolute Change / FY2021 Total Sales) * 100\n    *   Percentage Change = ($4,752 million / $80,889 million) * 100 = **5.88%**\n\n**2. Relevant Ratios (FY2022)**\n\n*   **Domestic Sales as % of Total Sales:**\n    *   Ratio = (FY2022 Domestic Sales / FY2022 Total Sales) * 100\n    *   Ratio = ($49,097 million / $85,641 million) * 100 = **57.33%**\n\n*   **International Sales as % of Total Sales:**\n    *   Ratio = (FY2022 International Sales / FY2022 Total Sales) * 100\n    *   Ratio = ($36,544 million / $85,641 million) * 100 = **42.67%**\n\n**3. Anomalies Flagged**\n\n*   **Domestic Sales Growth FY2022 (Researcher Data):** The researcher's calculation for Domestic Sales Growth (4.06%) is incorrect.\n    *   Researcher's Formula: ($49,097 million - $62,980 million) / $46,211 million = 4.06%\n    *   Anomaly: The value \"$62,980 million\" is not present in the provided FY2021 or FY2022 sales figures and leads to an incorrect calculation. My calculated Domestic Sales Growth is 6.24%.\n\n*   **International Sales Growth FY2022 (Researcher Data):** The researcher's calculation for International Sales Growth (5.38%) is incorrect.\n    *   Researcher's Formula: ($36,544 million - $48,060 million) / $40,543 million = 5.38%\n    *   Anomaly: The values \"$48,060 million\" and \"$40,543 million\" are not present in the provided FY2021 or FY2022 sales figures and lead to an incorrect calculation. My calculated International Sales Growth is 5.38%, but the researcher's calculation method is flawed. It coincidentally matches my correct calculation for International Sales Growth, but the underlying figures used by the researcher are incorrect.",
+    "3": "## Johnson & Johnson: FY2022 Sales Performance Report\n\n### Executive Summary\n\nJohnson & Johnson demonstrated solid sales growth in Fiscal Year 2022, achieving total sales of $85,641 million, an increase of $4,752 million or 5.88% from FY2021. Domestic sales were the primary driver of this growth, reaching $49,097 million, representing a 6.24% increase year-over-year. International sales also contributed positively, growing by 5.38% to $36,544 million. Domestic sales accounted for 57.33% of total sales, with international sales comprising the remaining 42.67%.\n\n### Analysis\n\nFor FY2022, Johnson & Johnson reported Domestic Sales of $49,097 million, up from $46,211 million in FY2021, marking an absolute increase of $2,886 million. This translates to a robust percentage growth of 6.24%. International Sales for FY2022 stood at $36,544 million, an increase of $1,866 million from $34,678 million in FY2021, representing a 5.38% growth.\n\nCombined, total sales for FY2022 reached $85,641 million, a significant rise from the FY2021 total of $80,889 million. This $4,752 million absolute increase reflects a healthy 5.88% overall sales growth for the company. The distribution of sales highlights a stronger reliance on the domestic market, which contributed 57.33% of total sales, while international markets accounted for 42.67%.\n\n### Key Risks\n\nWhile the overall sales performance is positive, a key risk lies in the potential for future discrepancies in data reporting or analysis. It is crucial to ensure the accuracy of underlying figures used for growth calculations to avoid misinterpretations of financial performance. The reliance on accurate data from sources like the FY2022 and FY2021 10-K Consolidated Statements of Operations is paramount for sound financial reporting.\n\n### Conclusion\n\nJohnson & Johnson concluded FY2022 with strong sales performance, driven by both domestic and international markets. The 5.88% increase in total sales to $85,641 million demonstrates the company's continued ability to generate revenue growth. The domestic market remains the larger contributor to total sales, showing a higher growth rate than international sales for the period. Continued vigilance in data accuracy and consistent analytical methodologies will be essential for future financial assessments.",
+    "4": "## Johnson & Johnson: FY2022 Sales Performance Report\n\n### Executive Summary\n\nJohnson & Johnson demonstrated solid sales growth in Fiscal Year 2022, achieving total sales of $85,641 million, an increase of $4,752 million or 5.88% from FY2021. Domestic sales were the primary driver of this growth, reaching $49,097 million, representing a 6.24% increase year-over-year. International sales also contributed positively, growing by 5.38% to $36,544 million. Domestic sales accounted for 57.33% of total sales, with international sales comprising the remaining 42.67%.\n\n### Analysis\n\nFor FY2022, Johnson & Johnson reported Domestic Sales of $49,097 million, up from $46,211 million in FY2021, marking an absolute increase of $2,886 million. This translates to a robust percentage growth of 6.24%. International Sales for FY2022 stood at $36,544 million, an increase of $1,866 million from $34,678 million in FY2021, representing a 5.38% growth.\n\nCombined, total sales for FY2022 reached $85,641 million, a significant rise from the FY2021 total of $80,889 million. This $4,752 million absolute increase reflects a healthy 5.88% overall sales growth for the company. The distribution of sales highlights a stronger reliance on the domestic market, which contributed 57.33% of total sales, while international markets accounted for 42.67%. These figures underscore the importance of both market segments to the company's overall revenue stream, with domestic sales showing a slightly higher growth trajectory for the period.\n\n### Key Considerations\n\nWhile the overall sales performance is positive, it is important to acknowledge that this report focuses solely on top-line revenue growth. A comprehensive financial analysis would also consider factors such as profitability, market share changes, product segment performance, and the impact of macroeconomic conditions. Future reports could benefit from incorporating these additional dimensions to provide a more holistic view of the company's financial health and operational efficiency.\n\n### Conclusion\n\nJohnson & Johnson concluded FY2022 with strong sales performance, driven by both domestic and international markets. The 5.88% increase in total sales to $85,641 million demonstrates the company's continued ability to generate revenue growth. The domestic market remains the larger contributor to total sales, showing a higher growth rate than international sales for the period. This consistent performance highlights the company's resilience and market presence. For future assessments, expanding the scope of analysis beyond sales figures will offer deeper insights into Johnson & Johnson's financial standing and strategic direction."
+  },
+  "gates": {
+    "end_gate": {
+      "verified": [
+        {
+          "value": "$49,097 million",
+          "ref": 49097.0
+        },
+        {
+          "value": "$36,544 million",
+          "ref": 36544.0
+        },
+        {
+          "value": "$49,097 million",
+          "ref": 49097.0
+        },
+        {
+          "value": "$46,211 million",
+          "ref": 46211.0
+        },
+        {
+          "value": "$36,544 million",
+          "ref": 36544.0
+        },
+        {
+          "value": "$34,678 million",
+          "ref": 34678.0
+        },
+        {
+          "value": "5.38%",
+          "ref": 5.38
+        },
+        {
+          "value": "5.38%",
+          "ref": 5.38
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$85,641 million",
+          "num": 85641.0,
+          "correct": 93775.0,
+          "dev": 0.0867,
+          "source": "evidence"
+        },
+        {
+          "value": "$4,752 million",
+          "num": 4752.0,
+          "correct": 5678.0,
+          "dev": 0.1631,
+          "source": "evidence"
+        },
+        {
+          "value": "$2,886 million",
+          "num": 2886.0,
+          "correct": 3728.0,
+          "dev": 0.2259,
+          "source": "evidence"
+        },
+        {
+          "value": "$1,866 million",
+          "num": 1866.0,
+          "correct": 3728.0,
+          "dev": 0.4995,
+          "source": "evidence"
+        },
+        {
+          "value": "$85,641 million",
+          "num": 85641.0,
+          "correct": 93775.0,
+          "dev": 0.0867,
+          "source": "evidence"
+        },
+        {
+          "value": "$80,889 million",
+          "num": 80889.0,
+          "correct": 93775.0,
+          "dev": 0.1374,
+          "source": "evidence"
+        },
+        {
+          "value": "$4,752 million",
+          "num": 4752.0,
+          "correct": 5678.0,
+          "dev": 0.1631,
+          "source": "evidence"
+        },
+        {
+          "value": "$85,641 million",
+          "num": 85641.0,
+          "correct": 93775.0,
+          "dev": 0.0867,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "5.88%"
+        },
+        {
+          "value": "6.24%"
+        },
+        {
+          "value": "57.33%"
+        },
+        {
+          "value": "42.67%"
+        },
+        {
+          "value": "6.24%"
+        },
+        {
+          "value": "5.88%"
+        },
+        {
+          "value": "57.33%"
+        },
+        {
+          "value": "42.67%"
+        },
+        {
+          "value": "5.88%"
+        }
+      ],
+      "n_refs": 32
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_090_72CFB567",
+      "hid": "FB_090_72CFB567_H3",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 62980.0,
+      "orig_num": 46211.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_090_72CFB567",
+      "hid": "FB_090_72CFB567_H2",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 48060.0,
+      "orig_num": 34678.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_090_72CFB567",
+      "hid": "FB_090_72CFB567_H1",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 40543.0,
+      "orig_num": 34678.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:36:19.373935+00:00"
+}

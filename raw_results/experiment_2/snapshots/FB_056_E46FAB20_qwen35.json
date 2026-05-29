@@ -1,0 +1,133 @@
+{
+  "question_id": "FB_056_E46FAB20",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Best Buy Co., Inc. for Q2 of FY2024\n- PRIMARY METRIC: Domestic revenue by product category as reported in the 10-Q filing:\n  - Consumer Electronics: $2,500 million (per the Q2 FY2024 10-Q, Consolidated Statements of Operations)\n  - Home Appliances: $1,200 million (per the Q2 FY2024 10-Q, Consolidated Statements of Operations)\n  - Computing and Mobile Phones: $1,519 million (per the Q2 FY2024 10-Q, Consolidated Statements of Operations)\n  - Entertainment: $738 million (per the Q2 FY2024 10-Q, Consolidated Statements of Operations)\n  - Services: $400 million (per the Q2 FY2024 10-Q, Consolidated Statements of Operations)\n\n- SUPPORTING DATA: \n  - Q2 FY2023 Revenue:\n    - Consumer Electronics: $2,300 million\n    - Home Appliances: $1,100 million\n    - Computing and Mobile Phones: $1,700 million\n    - Entertainment: $500 million\n    - Services: $350 million\n  - Q1 FY2024 Revenue:\n    - Consumer Electronics: $2,600 million\n    - Home Appliances: $1,300 million\n    - Computing and Mobile Phones: $1,307 million\n    - Entertainment: $700 million\n    - Services: $450 million\n\n- DATA SOURCES: Best Buy Co., Inc. Q2 FY2024 10-Q, Consolidated Statements of Operations. \n\n**Note:** The Consumer Electronics category exhibited the highest top-line performance in Q2 of FY2024 with revenue of $2,500 million.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_056_E46FAB20_H3",
+      "type": "dollar_amount",
+      "original_value": "$1,800 million",
+      "injected_value": "$1,519 million",
+      "original_numeric": "1800",
+      "injected_numeric": "1519",
+      "position_char": 381,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.1561
+    },
+    {
+      "hallucination_id": "FB_056_E46FAB20_H2",
+      "type": "dollar_amount",
+      "original_value": "$600 million",
+      "injected_value": "$738 million",
+      "original_numeric": "600",
+      "injected_numeric": "738",
+      "position_char": 479,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.2308
+    },
+    {
+      "hallucination_id": "FB_056_E46FAB20_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,900 million",
+      "injected_value": "$1,307 million",
+      "original_numeric": "1900",
+      "injected_numeric": "1307",
+      "position_char": 1024,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.3119
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "DATA SOURCES: Best Buy Co., Inc. Q2 FY2024 10-Q, Consolidated Statements of Operations.",
+        "claim_value": "Consolidated Statements of Operations",
+        "reason": "Product category revenue breakdowns are disclosed in the Notes to Financial Statements (Segment Reporting), not on the face of the Consolidated Statements of Operations. This indicates a fundamental misunderstanding of SEC filing structure or fabrication of source location.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Consumer Electronics: $2,500 million (per the Q2 FY2024 10-Q, Consolidated Statements of Operations)",
+        "claim_value": "$2,500 million",
+        "reason": "SEC filings rarely report segment revenue in exact hundreds of millions. This round number, combined with the incorrect source citation, is highly indicative of LLM hallucination.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Home Appliances: $1,200 million (per the Q2 FY2024 10-Q, Consolidated Statements of Operations)",
+        "claim_value": "$1,200 million",
+        "reason": "Suspiciously round figure for a formal 10-Q filing. Actual reported figures typically include specific millions (e.g., $1,243 million).",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Services: $400 million (per the Q2 FY2024 10-Q, Consolidated Statements of Operations)",
+        "claim_value": "$400 million",
+        "reason": "Suspiciously round figure for a formal 10-Q filing. Actual reported figures typically include specific millions.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Q2 FY2023 Revenue: Consumer Electronics: $2,300 million... Home Appliances: $1,100 million... Computing and Mobile Phones: $1,700 million... Entertainment: $500 million... Services: $350 million",
+        "claim_value": "$2,300 million, $1,100 million, $1,700 million, $500 million, $350 million",
+        "reason": "All five comparative prior-year figures are perfectly round hundreds. The statistical probability of all segment revenues landing on exact round numbers in an actual SEC filing is near zero, strongly suggesting fabrication.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Entertainment: $738 million (per the Q2 FY2024 10-Q, Consolidated Statements of Operations)",
+        "claim_value": "$738 million",
+        "reason": "While this number is precise, the implied year-over-year growth from the claimed $500 million (Q2 FY23) is ~47%. Such a massive swing in the Entertainment category contradicts long-term industry trends of digital substitution and decline in physical media for big-box retailers.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Computing and Mobile Phones: $1,519 million (per the Q2 FY2024 10-Q, Consolidated Statements of Operations)",
+        "claim_value": "$1,519 million",
+        "reason": "While precise, this figure is cited from the Consolidated Statements of Operations which does not contain category breakdowns. Additionally, the sum of all claimed categories (~$6.3B) is significantly lower than Best Buy's typical quarterly domestic revenue (~$9B+), suggesting missing or fabricated data.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 16,
+    "overall_assessment": "The output contains multiple high-confidence indicators of hallucination, including incorrect filing structure citations, statistically improbable round numbers across all prior-year figures, and revenue totals that do not align with the company's typical scale.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"DATA SOURCES: Best Buy Co., Inc. Q2 FY2024 10-Q, Consolidated Statements of Operations.\",\n      \"claim_value\": \"Consolidated Statements of Operations\",\n      \"reason\": \"Product category revenue breakdowns are disclosed in the Notes to Financial Statements (Segment Reporting), not on the face of the Consolidated Statements of Operations. This indicates a fundamental misunderstanding of SEC filing structure or fabrication of source location.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Consumer Electronics: $2,500 million (per the Q2 FY2024 10-Q, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$2,500 million\",\n      \"reason\": \"SEC filings rarely report segment revenue in exact hundreds of millions. This round number, combined with the incorrect source citation, is highly indicative of LLM hallucination.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Home Appliances: $1,200 million (per the Q2 FY2024 10-Q, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$1,200 million\",\n      \"reason\": \"Suspiciously round figure for a formal 10-Q filing. Actual reported figures typically include specific millions (e.g., $1,243 million).\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Services: $400 million (per the Q2 FY2024 10-Q, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$400 million\",\n      \"reason\": \"Suspiciously round figure for a formal 10-Q filing. Actual reported figures typically include specific millions.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Q2 FY2023 Revenue: Consumer Electronics: $2,300 million... Home Appliances: $1,100 million... Computing and Mobile Phones: $1,700 million... Entertainment: $500 million... Services: $350 million\",\n      \"claim_value\": \"$2,300 million, $1,100 million, $1,700 million, $500 million, $350 million\",\n      \"reason\": \"All five comparative prior-year figures are perfectly round hundreds. The statistical probability of all segment revenues landing on exact round numbers in an actual SEC filing is near zero, strongly suggesting fabrication.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Entertainment: $738 million (per the Q2 FY2024 10-Q, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$738 million\",\n      \"reason\": \"While this number is precise, the implied year-over-year growth from the claimed $500 million (Q2 FY23) is ~47%. Such a massive swing in the Entertainment category contradicts long-term industry trends of digital substitution and decline in physical media for big-box retailers.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Computing and Mobile Phones: $1,519 million (per the Q2 FY2024 10-Q, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$1,519 million\",\n      \"reason\": \"While precise, this figure is cited from the Consolidated Statements of Operations which does not contain category breakdowns. Additionally, the sum of all claimed categories (~$6.3B) is significantly lower than Best Buy's typical quarterly domestic revenue (~$9B+), suggesting missing or fabricated data.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 16,\n  \"overall_assessment\": \"The output contains multiple high-confidence indicators of hallucination, including incorrect filing structure citations, statistically improbable round numbers across all prior-year figures, and revenue totals that do not align with the company's typical scale.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_056_E46FAB20",
+      "hallucination_id": "FB_056_E46FAB20_H3",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,800 million",
+      "injected_value": "$1,519 million",
+      "detected": true,
+      "reason": "While precise, this figure is cited from the Consolidated Statements of Operations which does not contain category breakdowns. Additionally, the sum of all claimed categories (~$6.3B) is significantly lower than Best Buy's typical quarterly domestic revenue (~$9B+), suggesting missing or fabricated data.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 7,
+      "total_claims_reviewed": 16
+    },
+    {
+      "question_id": "FB_056_E46FAB20",
+      "hallucination_id": "FB_056_E46FAB20_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$600 million",
+      "injected_value": "$738 million",
+      "detected": true,
+      "reason": "While this number is precise, the implied year-over-year growth from the claimed $500 million (Q2 FY23) is ~47%. Such a massive swing in the Entertainment category contradicts long-term industry trends of digital substitution and decline in physical media for big-box retailers.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 7,
+      "total_claims_reviewed": 16
+    },
+    {
+      "question_id": "FB_056_E46FAB20",
+      "hallucination_id": "FB_056_E46FAB20_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,900 million",
+      "injected_value": "$1,307 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 7,
+      "total_claims_reviewed": 16
+    }
+  ],
+  "timestamp": "2026-03-24T11:22:01.372469Z"
+}

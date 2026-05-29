@@ -1,0 +1,79 @@
+{
+  "question_id": "FB_010_CBE1B721",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Activision Blizzard, FY2017 - FY2019\n- PRIMARY METRIC: \n   - FY2017 Capital Expenditures (Capex): $204 million (per the FY2017 10-K, Consolidated Statements of Cash Flows)\n   - FY2017 Revenue: $7,020 million (per the FY2017 10-K, Consolidated Statements of Operations)\n   - FY2018 Capital Expenditures (Capex): $244 million (per the FY2018 10-K, Consolidated Statements of Cash Flows)\n   - FY2018 Revenue: $7,500 million (per the FY2018 10-K, Consolidated Statements of Operations)\n   - FY2019 Capital Expenditures (Capex): $332 million (per the FY2019 10-K, Consolidated Statements of Cash Flows)\n   - FY2019 Revenue: $6,490 million (per the FY2019 10-K, Consolidated Statements of Operations)\n\n- SUPPORTING DATA:\n   - FY2017 Capex as a % of Revenue: (204 / 7,020) * 100 = 2.9%\n   - FY2018 Capex as a % of Revenue: (244 / 7,500) * 100 = 14.3%\n   - FY2019 Capex as a % of Revenue: (332 / 6,490) * 100 = 5.1%\n   - Three-Year Average of Capex as a % of Revenue: (2.9% + 3.3% + 16.3%) / 3 = 3.8%\n\n- DATA SOURCES: \n   - FY2017 10-K, Consolidated Statements of Cash Flows and Consolidated Statements of Operations\n   - FY2018 10-K, Consolidated Statements of Cash Flows and Consolidated Statements of Operations\n   - FY2019 10-K, Consolidated Statements of Cash Flows and Consolidated Statements of Operations\n\nFinal Result: The FY2017 - FY2019 three-year average of capital expenditures as a percentage of revenue for Activision Blizzard is 3.8%.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_010_CBE1B721_H2",
+      "type": "percentage",
+      "original_value": "3.3%",
+      "injected_value": "14.3%",
+      "original_numeric": "3.3",
+      "injected_numeric": "14.3",
+      "position_char": 858,
+      "sentence_approx": 2,
+      "perturbation_delta": 10.9622
+    },
+    {
+      "hallucination_id": "FB_010_CBE1B721_H1",
+      "type": "percentage",
+      "original_value": "5.1%",
+      "injected_value": "16.3%",
+      "original_numeric": "5.1",
+      "injected_numeric": "16.3",
+      "position_char": 994,
+      "sentence_approx": 6,
+      "perturbation_delta": 11.2167
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "FY2018 Capex as a % of Revenue: (244 / 7,500) * 100 = 14.3%",
+        "claim_value": "14.3%",
+        "reason": "Mathematical error. The calculation 244 divided by 7,500 equals approximately 3.25% (rounded to 3.3%), not 14.3%. This suggests a hallucination or severe calculation failure.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Three-Year Average of Capex as a % of Revenue: (2.9% + 3.3% + 16.3%) / 3 = 3.8%",
+        "claim_value": "3.8%",
+        "reason": "Internal inconsistency and arithmetic error. First, the input percentages (3.3%, 16.3%) contradict the supporting data section which listed FY2018 as 14.3% and FY2019 as 5.1%. Second, the arithmetic is incorrect: (2.9 + 3.3 + 16.3) / 3 equals 7.5%, not 3.8%. The final result appears coincidentally correct based on the raw data (2.9%, 3.3%, 5.1%) but the stated reasoning is fabricated.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 11,
+    "overall_assessment": "While the raw financial figures (revenue and capex amounts) appear plausible for Activision Blizzard during this period, the derived percentages and average calculations contain severe mathematical errors and internal inconsistencies that undermine the reliability of the analysis.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"FY2018 Capex as a % of Revenue: (244 / 7,500) * 100 = 14.3%\",\n      \"claim_value\": \"14.3%\",\n      \"reason\": \"Mathematical error. The calculation 244 divided by 7,500 equals approximately 3.25% (rounded to 3.3%), not 14.3%. This suggests a hallucination or severe calculation failure.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Three-Year Average of Capex as a % of Revenue: (2.9% + 3.3% + 16.3%) / 3 = 3.8%\",\n      \"claim_value\": \"3.8%\",\n      \"reason\": \"Internal inconsistency and arithmetic error. First, the input percentages (3.3%, 16.3%) contradict the supporting data section which listed FY2018 as 14.3% and FY2019 as 5.1%. Second, the arithmetic is incorrect: (2.9 + 3.3 + 16.3) / 3 equals 7.5%, not 3.8%. The final result appears coincidentally correct based on the raw data (2.9%, 3.3%, 5.1%) but the stated reasoning is fabricated.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 11,\n  \"overall_assessment\": \"While the raw financial figures (revenue and capex amounts) appear plausible for Activision Blizzard during this period, the derived percentages and average calculations contain severe mathematical errors and internal inconsistencies that undermine the reliability of the analysis.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_010_CBE1B721",
+      "hallucination_id": "FB_010_CBE1B721_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "percentage",
+      "original_value": "3.3%",
+      "injected_value": "14.3%",
+      "detected": true,
+      "reason": "Mathematical error. The calculation 244 divided by 7,500 equals approximately 3.25% (rounded to 3.3%), not 14.3%. This suggests a hallucination or severe calculation failure.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 11
+    },
+    {
+      "question_id": "FB_010_CBE1B721",
+      "hallucination_id": "FB_010_CBE1B721_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "percentage",
+      "original_value": "5.1%",
+      "injected_value": "16.3%",
+      "detected": true,
+      "reason": "Internal inconsistency and arithmetic error. First, the input percentages (3.3%, 16.3%) contradict the supporting data section which listed FY2018 as 14.3% and FY2019 as 5.1%. Second, the arithmetic is incorrect: (2.9 + 3.3 + 16.3) / 3 equals 7.5%, not 3.8%. The final result appears coincidentally correct based on the raw data (2.9%, 3.3%, 5.1%) but the stated reasoning is fabricated.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 11
+    }
+  ],
+  "timestamp": "2026-03-24T10:17:09.372258Z"
+}

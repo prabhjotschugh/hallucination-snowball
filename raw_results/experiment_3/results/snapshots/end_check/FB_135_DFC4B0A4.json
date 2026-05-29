@@ -1,0 +1,175 @@
+{
+  "question_id": "FB_135_DFC4B0A4",
+  "method": "end_check",
+  "final_output": "## Pfizer Inc. Q2 2023 Financial Report\n\n### Executive Summary\nPfizer Inc. reported total revenues of $18,952 million for Q2 2023. This represents a 10.44% increase from $17,161 million in Q2 2022. This growth was primarily driven by a robust performance in the U.S. market, which saw revenues increase by 26.70%. Conversely, the International region experienced a significant decline of 39.52% year-over-year, impacting the overall geographic revenue mix.\n\n### Analysis\nFor Q2 2023, U.S. revenues stood at $16,404 million, a substantial increase from $12,948 million in Q2 2022. This represents an absolute increase of $3,456 million. In contrast, the International region reported revenues of $2,548 million for Q2 2023, down from $4,213 million in Q2 2022, an absolute decline of $1,665 million. The geographic revenue mix shifted considerably, with the U.S. contributing 86.56% of total revenues in Q2 2023, up from 75.45% in Q2 2022. The International region's contribution decreased from 24.55% to 13.44% over the same period.\n\n### Key Risks\nThe significant decline in International revenues, at 39.52%, highlights a potential concentration risk as the company becomes increasingly reliant on the U.S. market for revenue generation. This shift could expose Pfizer to greater regional economic and regulatory vulnerabilities within the U.S. market. Management should assess strategies to mitigate this geographic imbalance and ensure diversified revenue streams.\n\n### Conclusion\nPfizer Inc.'s Q2 2023 performance demonstrates strong growth in its U.S. operations, which successfully offset a substantial decline in its International segment. While overall revenues increased, the pronounced geographic imbalance warrants close monitoring to ensure diversified and sustainable growth going forward. The company's ability to leverage its U.S. market strength while addressing the challenges in its international markets will be crucial for its long-term financial health and stability.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Pfizer Inc., Q2 2023\n- PRIMARY METRIC: The geographic region that experienced the most significant year-over-year decline in revenues was the International region, which reported revenues of $2,548 million for Q2 2023, down from $4,213 million in Q2 2022, representing a decline of 24.7%. (per the Q2 2023 10-Q, Consolidated Statements of Operations).\n- SUPPORTING DATA: \n  - U.S. Revenues for Q2 2023: $16,404 million, compared to $12,948 million in Q2 2022, reflecting a decline of 0.0%.\n  - International Revenues for Q2 2022: $4,213 million.\n  - U.S. Revenues for Q2 2022: $12,948 million.\n- DATA SOURCES: Pfizer Inc. Q2 2023 10-Q, Consolidated Statements of Operations.",
+    "2": "As a financial analyst, I've reviewed the provided data for Pfizer Inc. Q2 2023.\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\n**International Region:**\n*   **Q2 2023 Revenues:** $2,548 million\n*   **Q2 2022 Revenues:** $4,213 million\n*   **Absolute Change:** Q2 2023 Revenues - Q2 2022 Revenues = $2,548 million - $4,213 million = **-$1,665 million**\n*   **Percentage Change:** (Absolute Change / Q2 2022 Revenues) * 100 = (-$1,665 million / $4,213 million) * 100 = **-39.52%**\n\n**U.S. Region:**\n*   **Q2 2023 Revenues:** $16,404 million\n*   **Q2 2022 Revenues:** $12,948 million\n*   **Absolute Change:** Q2 2023 Revenues - Q2 2022 Revenues = $16,404 million - $12,948 million = **$3,456 million**\n*   **Percentage Change:** (Absolute Change / Q2 2022 Revenues) * 100 = ($3,456 million / $12,948 million) * 100 = **26.70%**\n\n**Total Revenues (U.S. + International):**\n*   **Q2 2023 Total Revenues:** $2,548 million (International) + $16,404 million (U.S.) = **$18,952 million**\n*   **Q2 2022 Total Revenues:** $4,213 million (International) + $12,948 million (U.S.) = **$17,161 million**\n*   **Absolute Change:** Q2 2023 Total Revenues - Q2 2022 Total Revenues = $18,952 million - $17,161 million = **$1,791 million**\n*   **Percentage Change:** (Absolute Change / Q2 2022 Total Revenues) * 100 = ($1,791 million / $17,161 million) * 100 = **10.44%**\n\n**2. Relevant Ratios**\n\n**Geographic Revenue Mix:**\n*   **Q2 2023 U.S. Revenue %:** (U.S. Revenues / Total Revenues) * 100 = ($16,404 million / $18,952 million) * 100 = **86.56%**\n*   **Q2 2023 International Revenue %:** (International Revenues / Total Revenues) * 100 = ($2,548 million / $18,952 million) * 100 = **13.44%**\n*   **Q2 2022 U.S. Revenue %:** (U.S. Revenues / Total Revenues) * 100 = ($12,948 million / $17,161 million) * 100 = **75.45%**\n*   **Q2 2022 International Revenue %:** (International Revenues / Total Revenues) * 100 = ($4,213 million / $17,161 million) * 100 = **24.55%**\n\n**3. Anomalies Flagged**\n\n*   **International Revenue Decline Percentage:** The researcher stated a decline of \"24.7%\" for the International region. My calculation shows a decline of **-39.52%**. This is a significant discrepancy and the researcher's stated percentage is **INCORRECT** based on the provided absolute revenue figures.\n*   **U.S. Revenue Decline Percentage:** The researcher stated a decline of \"0.0%\" for U.S. revenues. My calculation shows an increase of **26.70%**. This is also a significant discrepancy and the researcher's stated percentage is **INCORRECT**.\n\n**Summary of Findings:**\n\nPfizer's Q2 2023 revenues show a substantial shift in geographic contribution. While total revenues increased by 10.44% year-over-year, this was driven entirely by strong U.S. revenue growth (26.70%). The International region experienced a significant decline of 39.52%, leading to a much higher proportion of revenue now coming from the U.S. (86.56% in Q2 2023 vs. 75.45% in Q2 2022). The researcher's stated percentage changes for both U.S. and International revenues were incorrect based on the provided absolute figures.",
+    "3": "## Pfizer Inc. Q2 2023 Financial Report\n\n### Executive Summary\nPfizer Inc. reported total revenues of $18,952 million for Q2 2023, representing a 10.44% increase from $17,161 million in Q2 2022. This growth was primarily driven by a robust performance in the U.S. market, which saw revenues increase by 26.70%. Conversely, the International region experienced a significant decline of 39.52% year-over-year, impacting the overall geographic revenue mix.\n\n### Analysis\nFor Q2 2023, U.S. revenues stood at $16,404 million, a substantial increase from $12,948 million in Q2 2022. This represents an absolute increase of $3,456 million. In contrast, the International region reported revenues of $2,548 million for Q2 2023, down from $4,213 million in Q2 2022, an absolute decline of $1,665 million. The geographic revenue mix shifted considerably, with the U.S. contributing 86.56% of total revenues in Q2 2023, up from 75.45% in Q2 2022. The International region's contribution decreased from 24.55% to 13.44% over the same period.\n\n### Key Risks\nThe significant decline in International revenues, at 39.52%, highlights a potential concentration risk as the company becomes increasingly reliant on the U.S. market for revenue generation. This shift could expose Pfizer to greater regional economic and regulatory vulnerabilities within the U.S. market.\n\n### Conclusion\nPfizer Inc.'s Q2 2023 performance demonstrates strong growth in its U.S. operations, which successfully offset a substantial decline in its International segment. While overall revenues increased, the pronounced geographic imbalance warrants close monitoring to ensure diversified and sustainable growth going forward.",
+    "4": "## Pfizer Inc. Q2 2023 Financial Report\n\n### Executive Summary\nPfizer Inc. reported total revenues of $18,952 million for Q2 2023. This represents a 10.44% increase from $17,161 million in Q2 2022. This growth was primarily driven by a robust performance in the U.S. market, which saw revenues increase by 26.70%. Conversely, the International region experienced a significant decline of 39.52% year-over-year, impacting the overall geographic revenue mix.\n\n### Analysis\nFor Q2 2023, U.S. revenues stood at $16,404 million, a substantial increase from $12,948 million in Q2 2022. This represents an absolute increase of $3,456 million. In contrast, the International region reported revenues of $2,548 million for Q2 2023, down from $4,213 million in Q2 2022, an absolute decline of $1,665 million. The geographic revenue mix shifted considerably, with the U.S. contributing 86.56% of total revenues in Q2 2023, up from 75.45% in Q2 2022. The International region's contribution decreased from 24.55% to 13.44% over the same period.\n\n### Key Risks\nThe significant decline in International revenues, at 39.52%, highlights a potential concentration risk as the company becomes increasingly reliant on the U.S. market for revenue generation. This shift could expose Pfizer to greater regional economic and regulatory vulnerabilities within the U.S. market. Management should assess strategies to mitigate this geographic imbalance and ensure diversified revenue streams.\n\n### Conclusion\nPfizer Inc.'s Q2 2023 performance demonstrates strong growth in its U.S. operations, which successfully offset a substantial decline in its International segment. While overall revenues increased, the pronounced geographic imbalance warrants close monitoring to ensure diversified and sustainable growth going forward. The company's ability to leverage its U.S. market strength while addressing the challenges in its international markets will be crucial for its long-term financial health and stability."
+  },
+  "gates": {
+    "end_gate": {
+      "verified": [
+        {
+          "value": "$12,948 million",
+          "ref": 12948.0
+        },
+        {
+          "value": "$4,213 million",
+          "ref": 4213.0
+        },
+        {
+          "value": "$1,665 million",
+          "ref": 1657.0
+        },
+        {
+          "value": "24.55%",
+          "ref": 24.7
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$18,952 million",
+          "num": 18952.0,
+          "correct": 12948.0,
+          "dev": 0.3168,
+          "source": "source_document"
+        },
+        {
+          "value": "$17,161 million",
+          "num": 17161.0,
+          "correct": 12948.0,
+          "dev": 0.2455,
+          "source": "source_document"
+        },
+        {
+          "value": "$16,404 million",
+          "num": 16404.0,
+          "correct": 12948.0,
+          "dev": 0.2107,
+          "source": "source_document"
+        },
+        {
+          "value": "$2,548 million",
+          "num": 2548.0,
+          "correct": 2322.0,
+          "dev": 0.0887,
+          "source": "evidence"
+        },
+        {
+          "value": "10.44%",
+          "num": 10.44,
+          "correct": 9.0,
+          "dev": 0.1379,
+          "source": "evidence"
+        },
+        {
+          "value": "39.52%",
+          "num": 39.52,
+          "correct": 58.0,
+          "dev": 0.3186,
+          "source": "evidence"
+        },
+        {
+          "value": "75.45%",
+          "num": 75.45,
+          "correct": 69.0,
+          "dev": 0.0855,
+          "source": "evidence"
+        },
+        {
+          "value": "13.44%",
+          "num": 13.44,
+          "correct": 9.0,
+          "dev": 0.3304,
+          "source": "evidence"
+        },
+        {
+          "value": "39.52%",
+          "num": 39.52,
+          "correct": 58.0,
+          "dev": 0.3186,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$3,456 million"
+        },
+        {
+          "value": "26.70%"
+        },
+        {
+          "value": "86.56%"
+        }
+      ],
+      "n_refs": 32
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_135_DFC4B0A4",
+      "hid": "FB_135_DFC4B0A4_H3",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 2548.0,
+      "orig_num": 3174.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": true,
+      "any_det": true,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_135_DFC4B0A4",
+      "hid": "FB_135_DFC4B0A4_H2",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 16404.0,
+      "orig_num": 12427.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": true,
+      "any_det": true,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_135_DFC4B0A4",
+      "hid": "FB_135_DFC4B0A4_H1",
+      "method": "end_check",
+      "type": "percentage",
+      "inj_num": 0.0,
+      "orig_num": 4.0,
+      "survived": false,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": false,
+      "present_s2": false,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:52:47.277507+00:00"
+}

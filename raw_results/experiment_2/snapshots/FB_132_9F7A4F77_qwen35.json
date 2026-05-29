@@ -1,0 +1,85 @@
+{
+  "question_id": "FB_132_9F7A4F77",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Pfizer Inc., Fiscal Year 2019\n- PRIMARY METRIC: Net Income for FY 2019 was $16,305 million (USD), as reported in the FY2019 10-K, Consolidated Statements of Operations.\n- SUPPORTING DATA: \n  - Total Revenue for FY 2019: $51,750 million (USD) (per the FY2019 10-K, Consolidated Statements of Operations).\n  - Cost of Goods Sold (COGS) for FY 2019: $26,881 million (USD) (per the FY2019 10-K, Consolidated Statements of Operations).\n  - Gross Profit for FY 2019: $31,722 million (USD) (calculated as Total Revenue - COGS).\n  - Net Income for FY 2018: $12,671 million (USD) (per the FY2019 10-K, Consolidated Statements of Operations).\n  - Net Income for FY 2017: $22,000 million (USD) (per the FY2019 10-K, Consolidated Statements of Operations).\n\n- EXTRAORDINARY EVENTS: According to the FY2019 10-K, Pfizer recognized a tax benefit of $1,431 million (USD) related to the revaluation of deferred tax assets and liabilities due to the Tax Cuts and Jobs Act, which significantly impacted net income. This event is categorized as extraordinary as it is not part of standard business operations.\n\n- DATA SOURCES: \n  - Pfizer Inc. FY2019 10-K, filed with the SEC on February 6, 2020, Consolidated Statements of Operations.\n  - Pfizer Inc. FY2019 10-K, filed with the SEC on February 6, 2020, Management's Discussion and Analysis of Financial Condition and Results of Operations.\n\nPlease note that I have not included any analysis or implications as per your directive, focusing solely on the extraction of factual data.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_132_9F7A4F77_H2",
+      "type": "dollar_amount",
+      "original_value": "$20,028 million",
+      "injected_value": "$26,881 million",
+      "original_numeric": "20028",
+      "injected_numeric": "26881",
+      "position_char": 367,
+      "sentence_approx": 4,
+      "perturbation_delta": 0.3422
+    },
+    {
+      "hallucination_id": "FB_132_9F7A4F77_H1",
+      "type": "dollar_amount",
+      "original_value": "$2,200 million",
+      "injected_value": "$1,431 million",
+      "original_numeric": "2200",
+      "injected_numeric": "1431",
+      "position_char": 855,
+      "sentence_approx": 8,
+      "perturbation_delta": -0.3494
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Gross Profit for FY 2019: $31,722 million (USD) (calculated as Total Revenue - COGS).",
+        "claim_value": "$31,722 million",
+        "reason": "Internal mathematical inconsistency. The provided Total Revenue ($51,750 million) minus the provided COGS ($26,881 million) equals $24,869 million, not $31,722 million. The claimed Gross Profit is approximately $6.8 billion higher than the components allow.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Net Income for FY 2017: $22,000 million (USD) (per the FY2019 10-K, Consolidated Statements of Operations).",
+        "claim_value": "$22,000 million",
+        "reason": "Suspiciously round number for a specific 10-K line item. Financial statements rarely report exact whole billions without additional digits. Additionally, the year-over-year decline from this figure to FY2018 Net Income ($12,671 million) represents a ~42% drop, which is unusually volatile for a stable large-cap pharmaceutical company without a clearly explained major divestiture or charge in this context.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Pfizer recognized a tax benefit of $1,431 million (USD) related to the revaluation of deferred tax assets and liabilities due to the Tax Cuts and Jobs Act, which significantly impacted net income.",
+        "claim_value": "$1,431 million",
+        "reason": "Temporal inconsistency. The Tax Cuts and Jobs Act (TCJA) was enacted in December 2017. Most significant revaluation impacts (benefits or charges) were recorded in FY2017 or finalized in FY2018. Attributing a material $1.4 billion TCJA revaluation benefit specifically to FY2019 is highly unusual and likely conflates events from earlier fiscal years.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 7,
+    "overall_assessment": "The output contains a critical mathematical error in the Gross Profit calculation and exhibits signs of hallucination regarding the precision of 2017 Net Income and the timing of TCJA tax impacts.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Gross Profit for FY 2019: $31,722 million (USD) (calculated as Total Revenue - COGS).\",\n      \"claim_value\": \"$31,722 million\",\n      \"reason\": \"Internal mathematical inconsistency. The provided Total Revenue ($51,750 million) minus the provided COGS ($26,881 million) equals $24,869 million, not $31,722 million. The claimed Gross Profit is approximately $6.8 billion higher than the components allow.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Net Income for FY 2017: $22,000 million (USD) (per the FY2019 10-K, Consolidated Statements of Operations).\",\n      \"claim_value\": \"$22,000 million\",\n      \"reason\": \"Suspiciously round number for a specific 10-K line item. Financial statements rarely report exact whole billions without additional digits. Additionally, the year-over-year decline from this figure to FY2018 Net Income ($12,671 million) represents a ~42% drop, which is unusually volatile for a stable large-cap pharmaceutical company without a clearly explained major divestiture or charge in this context.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Pfizer recognized a tax benefit of $1,431 million (USD) related to the revaluation of deferred tax assets and liabilities due to the Tax Cuts and Jobs Act, which significantly impacted net income.\",\n      \"claim_value\": \"$1,431 million\",\n      \"reason\": \"Temporal inconsistency. The Tax Cuts and Jobs Act (TCJA) was enacted in December 2017. Most significant revaluation impacts (benefits or charges) were recorded in FY2017 or finalized in FY2018. Attributing a material $1.4 billion TCJA revaluation benefit specifically to FY2019 is highly unusual and likely conflates events from earlier fiscal years.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 7,\n  \"overall_assessment\": \"The output contains a critical mathematical error in the Gross Profit calculation and exhibits signs of hallucination regarding the precision of 2017 Net Income and the timing of TCJA tax impacts.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_132_9F7A4F77",
+      "hallucination_id": "FB_132_9F7A4F77_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$20,028 million",
+      "injected_value": "$26,881 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_132_9F7A4F77",
+      "hallucination_id": "FB_132_9F7A4F77_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$2,200 million",
+      "injected_value": "$1,431 million",
+      "detected": true,
+      "reason": "Temporal inconsistency. The Tax Cuts and Jobs Act (TCJA) was enacted in December 2017. Most significant revaluation impacts (benefits or charges) were recorded in FY2017 or finalized in FY2018. Attributing a material $1.4 billion TCJA revaluation benefit specifically to FY2019 is highly unusual and likely conflates events from earlier fiscal years.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 7
+    }
+  ],
+  "timestamp": "2026-03-24T13:06:07.428218Z"
+}

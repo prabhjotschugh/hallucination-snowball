@@ -1,0 +1,79 @@
+{
+  "question_id": "FB_131_3A78CB5F",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Pfizer Inc. for FY2020 and FY2021\n- PRIMARY METRIC: \n  - Property, Plant, and Equipment (PPNE) as of December 31, 2021: $8,948 million (per the FY2021 10-K, Consolidated Balance Sheets)\n  - Property, Plant, and Equipment (PPNE) as of December 31, 2020: $11,396 million (per the FY2021 10-K, Consolidated Balance Sheets)\n\n- SUPPORTING DATA: \n  - Percentage Change in PPNE from FY2020 to FY2021: \n    - Calculation: [(PPNE FY2021 - PPNE FY2020) / PPNE FY2020] * 100\n    - Percentage Change: [(12,171 - 7,869) / 11,396] * 100 = 6.78%\n  \n- DATA SOURCES: \n  - FY2021 10-K, Consolidated Balance Sheets, pages 63-64. \n  - FY2021 10-K, Management's Discussion and Analysis, page 37 (for context on capital expenditures and investment in physical assets). \n\nNote: No interpretation or analysis of the growth trend has been provided, as per the requirements.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_131_3A78CB5F_H2",
+      "type": "dollar_amount",
+      "original_value": "$12,171 million",
+      "injected_value": "$8,948 million",
+      "original_numeric": "12171",
+      "injected_numeric": "8948",
+      "position_char": 140,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.2648
+    },
+    {
+      "hallucination_id": "FB_131_3A78CB5F_H1",
+      "type": "large_number",
+      "original_value": "11,396",
+      "injected_value": "7,869",
+      "original_numeric": "11396",
+      "injected_numeric": "7869",
+      "position_char": 521,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3095
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Property, Plant, and Equipment (PPNE) as of December 31, 2020: $11,396 million",
+        "claim_value": "$11,396 million",
+        "reason": "The PPNE value for FY2020 seems inconsistent with the calculation for the percentage change, which uses a different value ($7,869) for FY2020.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Percentage Change in PPNE from FY2020 to FY2021: 6.78%",
+        "claim_value": "6.78%",
+        "reason": "The calculation for the percentage change uses an incorrect value for PPNE FY2021 ($12,171) which is not mentioned anywhere else in the output.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 4,
+    "overall_assessment": "The output contains internal inconsistencies and suspicious calculations, which may indicate fabrication or inaccuracy.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"Property, Plant, and Equipment (PPNE) as of December 31, 2020: $11,396 million\",\n      \"claim_value\" : \"$11,396 million\",\n      \"reason\"      : \"The PPNE value for FY2020 seems inconsistent with the calculation for the percentage change, which uses a different value ($7,869) for FY2020.\",\n      \"confidence\"  : \"high\"\n    },\n    {\n      \"claim_text\"  : \"Percentage Change in PPNE from FY2020 to FY2021: 6.78%\",\n      \"claim_value\" : \"6.78%\",\n      \"reason\"      : \"The calculation for the percentage change uses an incorrect value for PPNE FY2021 ($12,171) which is not mentioned anywhere else in the output.\",\n      \"confidence\"  : \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 4,\n  \"overall_assessment\"   : \"The output contains internal inconsistencies and suspicious calculations, which may indicate fabrication or inaccuracy.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_131_3A78CB5F",
+      "hallucination_id": "FB_131_3A78CB5F_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$12,171 million",
+      "injected_value": "$8,948 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 4
+    },
+    {
+      "question_id": "FB_131_3A78CB5F",
+      "hallucination_id": "FB_131_3A78CB5F_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "large_number",
+      "original_value": "11,396",
+      "injected_value": "7,869",
+      "detected": true,
+      "reason": "The PPNE value for FY2020 seems inconsistent with the calculation for the percentage change, which uses a different value ($7,869) for FY2020.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 4
+    }
+  ],
+  "timestamp": "2026-03-27T09:44:31.576404Z"
+}

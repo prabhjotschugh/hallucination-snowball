@@ -1,0 +1,115 @@
+{
+  "question_id": "FB_008_77FDE37A",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: 3M Company, Q2 2023\n- PRIMARY METRIC: \n  - Dividends Declared: $1.08 per share for Q2 2023 (per the Q2 2023 10-Q, Note 5 - Earnings Per Share).\n  \n- SUPPORTING DATA:\n  - Dividends Declared:\n    - Q2 2022: $1.90 per share (per the Q2 2022 10-Q, Note 5 - Earnings Per Share).\n    - Q2 2021: $1.48 per share (per the Q2 2021 10-Q, Note 5 - Earnings Per Share).\n  - Total Dividends Paid:\n    - FY 2022: $5.92 per share (per the FY2022 10-K, Consolidated Statements of Cash Flows).\n    - FY 2021: $5.88 per share (per the FY2021 10-K, Consolidated Statements of Cash Flows).\n    - FY 2020: $7.92 per share (per the FY2020 10-K, Consolidated Statements of Cash Flows).\n  - Payout Ratios:\n    - FY 2022: 62.1% (per the FY2022 10-K, Consolidated Statements of Operations).\n    - FY 2021: 61.8% (per the FY2021 10-K, Consolidated Statements of Operations).\n    - FY 2020: 61.5% (per the FY2020 10-K, Consolidated Statements of Operations).\n\n- DATA SOURCES:\n  - Q2 2023 10-Q, Note 5 - Earnings Per Share\n  - FY2022 10-K, Consolidated Statements of Cash Flows and Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Statements of Cash Flows and Consolidated Statements of Operations\n  - FY2020 10-K, Consolidated Statements of Cash Flows and Consolidated Statements of Operations\n\nNote: The figures provided are exact as reported in the respective filings. No interpretation or analysis has been conducted.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_008_77FDE37A_H3",
+      "type": "dollar_amount",
+      "original_value": "$1.49 ",
+      "injected_value": "$1.08 ",
+      "original_numeric": "1.49",
+      "injected_numeric": "1.08",
+      "position_char": 83,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2747
+    },
+    {
+      "hallucination_id": "FB_008_77FDE37A_H2",
+      "type": "dollar_amount",
+      "original_value": "$1.49 ",
+      "injected_value": "$1.90 ",
+      "original_numeric": "1.49",
+      "injected_numeric": "1.90",
+      "position_char": 225,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.2777
+    },
+    {
+      "hallucination_id": "FB_008_77FDE37A_H1",
+      "type": "dollar_amount",
+      "original_value": "$5.76 ",
+      "injected_value": "$7.92 ",
+      "original_numeric": "5.76",
+      "injected_numeric": "7.92",
+      "position_char": 605,
+      "sentence_approx": 11,
+      "perturbation_delta": 0.3747
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Dividends Declared: $1.90 per share for Q2 2022",
+        "claim_value": "$1.90 per share",
+        "reason": "Internal inconsistency: A $1.90 quarterly dividend implies an annualized rate of $7.60, which directly contradicts the reported FY 2022 total of $5.92 (approx. $1.48/quarter). Additionally, this figure is significantly higher than 3M's historical quarterly rate of ~$1.49 during this period.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Dividends Paid: FY 2020: $7.92 per share",
+        "claim_value": "$7.92 per share",
+        "reason": "Contradicts general financial knowledge: 3M is a known 'Dividend King' that increased dividends annually until 2023. This figure implies a massive ~25% dividend cut in 2021 ($7.92 to $5.88), which did not occur. Historical annual dividends were approximately $5.80 in 2020.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Payout Ratios: FY 2020: 61.5%, FY 2021: 61.8%, FY 2022: 62.1%",
+        "claim_value": "61.5%, 61.8%, 62.1%",
+        "reason": "Suspicious pattern: The payout ratios increase by exactly 0.3% each year. This linear precision is statistically unlikely for real financial data and suggests algorithmic hallucination rather than reported figures.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Dividends Declared: $1.08 per share for Q2 2023",
+        "claim_value": "$1.08 per share",
+        "reason": "Contradicts major financial news: 3M announced a significant dividend cut in early 2023 to $1.01 per quarter. The $1.08 figure appears to be an inaccurate approximation or hallucination of this event.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 9,
+    "overall_assessment": "The output contains multiple high-confidence hallucinations, including internal mathematical inconsistencies between quarterly and annual figures, contradictory dividend trends violating known company history, and suspiciously precise linear patterns in payout ratios.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Dividends Declared: $1.90 per share for Q2 2022\",\n      \"claim_value\": \"$1.90 per share\",\n      \"reason\": \"Internal inconsistency: A $1.90 quarterly dividend implies an annualized rate of $7.60, which directly contradicts the reported FY 2022 total of $5.92 (approx. $1.48/quarter). Additionally, this figure is significantly higher than 3M's historical quarterly rate of ~$1.49 during this period.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Dividends Paid: FY 2020: $7.92 per share\",\n      \"claim_value\": \"$7.92 per share\",\n      \"reason\": \"Contradicts general financial knowledge: 3M is a known 'Dividend King' that increased dividends annually until 2023. This figure implies a massive ~25% dividend cut in 2021 ($7.92 to $5.88), which did not occur. Historical annual dividends were approximately $5.80 in 2020.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Payout Ratios: FY 2020: 61.5%, FY 2021: 61.8%, FY 2022: 62.1%\",\n      \"claim_value\": \"61.5%, 61.8%, 62.1%\",\n      \"reason\": \"Suspicious pattern: The payout ratios increase by exactly 0.3% each year. This linear precision is statistically unlikely for real financial data and suggests algorithmic hallucination rather than reported figures.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Dividends Declared: $1.08 per share for Q2 2023\",\n      \"claim_value\": \"$1.08 per share\",\n      \"reason\": \"Contradicts major financial news: 3M announced a significant dividend cut in early 2023 to $1.01 per quarter. The $1.08 figure appears to be an inaccurate approximation or hallucination of this event.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 9,\n  \"overall_assessment\": \"The output contains multiple high-confidence hallucinations, including internal mathematical inconsistencies between quarterly and annual figures, contradictory dividend trends violating known company history, and suspiciously precise linear patterns in payout ratios.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_008_77FDE37A",
+      "hallucination_id": "FB_008_77FDE37A_H3",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$1.49 ",
+      "injected_value": "$1.08 ",
+      "detected": true,
+      "reason": "Contradicts major financial news: 3M announced a significant dividend cut in early 2023 to $1.01 per quarter. The $1.08 figure appears to be an inaccurate approximation or hallucination of this event.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_008_77FDE37A",
+      "hallucination_id": "FB_008_77FDE37A_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$1.49 ",
+      "injected_value": "$1.90 ",
+      "detected": true,
+      "reason": "Internal inconsistency: A $1.90 quarterly dividend implies an annualized rate of $7.60, which directly contradicts the reported FY 2022 total of $5.92 (approx. $1.48/quarter). Additionally, this figure is significantly higher than 3M's historical quarterly rate of ~$1.49 during this period.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_008_77FDE37A",
+      "hallucination_id": "FB_008_77FDE37A_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$5.76 ",
+      "injected_value": "$7.92 ",
+      "detected": true,
+      "reason": "Contradicts general financial knowledge: 3M is a known 'Dividend King' that increased dividends annually until 2023. This figure implies a massive ~25% dividend cut in 2021 ($7.92 to $5.88), which did not occur. Historical annual dividends were approximately $5.80 in 2020.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 9
+    }
+  ],
+  "timestamp": "2026-03-24T10:14:52.415491Z"
+}

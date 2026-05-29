@@ -1,0 +1,488 @@
+{
+  "question_id": "FB_094_62DF77C2",
+  "method": "ours",
+  "final_output": "## Johnson & Johnson: Q2 FY2023 Financial Performance Report\n\n**Executive Summary**\n\nJohnson & Johnson demonstrated robust financial performance in Q2 FY2023, with Net Earnings increasing by 8.04% to $5,068 million, compared to $4,691 million in Q2 FY2022. Sales also saw a modest increase of 1.69%, reaching $24,000 million from $23,600 million in the prior year. This stronger growth in earnings relative to sales resulted in an improved profitability margin, with Net Earnings as a Percentage of Sales rising from 19.88% in Q2 FY2022 to 21.12% in Q2 FY2023.\n\n**Analysis**\n\nFor Q2 FY2023, Johnson & Johnson reported Net Earnings of $5,068 million on Sales of $24,000 million. This compares favorably to Q2 FY2022, which saw Net Earnings of $4,691 million on Sales of $23,600 million. The 8.04% increase in Net Earnings significantly outpaced the 1.69% growth in Sales year-over-year. Consequently, the company's efficiency in converting sales into profit improved, as evidenced by the Net Earnings as a Percentage of Sales increasing by 1.24 percentage points, from 19.88% in Q2 FY2022 to 21.12% in Q2 FY2023.\n\n**Key Risks**\n\nWhile the overall performance is positive, the relatively modest 1.69% increase in sales could indicate potential challenges in top-line growth. Sustaining strong earnings growth will depend on either continued operational efficiency improvements or an acceleration in sales growth in future periods.\n\n**Conclusion**\n\nJohnson & Johnson delivered a strong Q2 FY2023, marked by significant growth in Net Earnings and an improved profitability margin. The company successfully translated a modest increase in sales into a substantial boost in net income, reflecting effective cost management and operational leverage. This performance positions the company favorably for the remainder of the fiscal year.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Johnson & Johnson, Q2 FY2023 and Q2 FY2022\n- PRIMARY METRIC: \n  - Q2 FY2023 Net Earnings: $5,068 million (per the JOHNSON_JOHNSON_2023Q2_EARNINGS, Consolidated Statements of Operations)\n  - Q2 FY2023 Sales: $32,304 million (per the JOHNSON_JOHNSON_2023Q2_EARNINGS, Consolidated Statements of Operations)\n  - Net Earnings as a Percentage of Sales for Q2 FY2023: 21.11% (calculated as $5,068 million / $24,000 million * 100)\n\n  - Q2 FY2022 Net Earnings: $4,691 million (per the JOHNSON_JOHNSON_2022Q2_EARNINGS, Consolidated Statements of Operations)\n  - Q2 FY2022 Sales: $23,600 million (per the JOHNSON_JOHNSON_2022Q2_EARNINGS, Consolidated Statements of Operations)\n  - Net Earnings as a Percentage of Sales for Q2 FY2022: 26.36% (calculated as $4,691 million / $23,600 million * 100)\n\n- SUPPORTING DATA:\n  - Q2 FY2023:\n    - Net Earnings: $5,068 million\n    - Sales: $24,000 million\n    - Net Earnings as a Percentage of Sales: 21.11%\n  \n  - Q2 FY2022:\n    - Net Earnings: $4,691 million\n    - Sales: $23,600 million\n    - Net Earnings as a Percentage of Sales: 19.87%\n\n  - Percentage Change in Net Earnings: \n    - ((5,068 - 4,691) / 4,691) * 100 = 8.04%\n  \n  - Percentage Change in Sales: \n    - ((24,000 - 23,600) / 23,600) * 100 = 1.69%\n\n- DATA SOURCES:\n  - JOHNSON_JOHNSON_2023Q2_EARNINGS, Consolidated Statements of Operations\n  - JOHNSON_JOHNSON_2022Q2_EARNINGS, Consolidated Statements of Operations\n\nIn conclusion, Johnson & Johnson's net earnings as a percentage of sales increased from 25.10% in Q2 FY2022 to 21.11% in Q2 FY2023.",
+    "2": "Here's an analysis of Johnson & Johnson's Q2 FY2023 performance compared to Q2 FY2022, based on the provided data and corrections:\n\n**1. Year-over-Year Changes**\n\n*   **Net Earnings:**\n    *   Q2 FY2023 Net Earnings: $5,068 million\n    *   Q2 FY2022 Net Earnings: $4,691 million\n    *   Absolute Change = $5,068 million - $4,691 million = **$377 million increase**\n    *   Percentage Change = (($5,068 million - $4,691 million) / $4,691 million) * 100 = **8.04% increase**\n\n*   **Sales:**\n    *   Q2 FY2023 Sales: $24,000 million\n    *   Q2 FY2022 Sales: $23,600 million\n    *   Absolute Change = $24,000 million - $23,600 million = **$400 million increase**\n    *   Percentage Change = (($24,000 million - $23,600 million) / $23,600 million) * 100 = **1.69% increase**\n\n**2. Relevant Ratios (Net Earnings as a Percentage of Sales)**\n\n*   **Q2 FY2023:**\n    *   Net Earnings as a Percentage of Sales = (Net Earnings / Sales) * 100\n    *   Net Earnings as a Percentage of Sales = ($5,068 million / $24,000 million) * 100 = **21.12%** (Rounded from 21.1166%)\n\n*   **Q2 FY2022:**\n    *   Net Earnings as a Percentage of Sales = (Net Earnings / Sales) * 100\n    *   Net Earnings as a Percentage of Sales = ($4,691 million / $23,600 million) * 100 = **19.88%** (Rounded from 19.8771%)\n\n**3. Anomalies Flagged**\n\n*   **Initial Q2 FY2023 Sales Figure:** The researcher initially provided \"$32,304 million\" for Q2 FY2023 Sales, which was **REFUTED**. The correct value of \"$24,000 million\" was used for all calculations. This represents a significant overstatement in the initial data.\n*   **Initial Q2 FY2023 Net Earnings as a Percentage of Sales Calculation:** The researcher's calculation of \"21.11% (calculated as $5,068 million / $24,000 million * 100)\" is consistent with the corrected sales figure.\n*   **Initial Q2 FY2022 Net Earnings as a Percentage of Sales:** The researcher initially provided \"26.36%\" for Q2 FY2022 Net Earnings as a Percentage of Sales, which was **REFUTED**. The correct value of \"19.87%\" (or 19.88% when rounded from calculation) was used. This was a significant overstatement in the initial data.\n*   **Conclusion Statement Anomaly:** The concluding statement \"Johnson & Johnson's net earnings as a percentage of sales increased from 25.10% in Q2 FY2022 to 21.11% in Q2 FY2023\" contains two anomalies:\n    *   \"25.10%\" for Q2 FY2022 was **REFUTED**. The correct value is 19.88%.\n    *   The statement claims an *increase*, but the corrected figures (19.88% to 21.12%) show an *increase*, while the refuted figures (25.10% to 21.11%) would have shown a *decrease*. The corrected data shows an improvement in profitability margin.\n\n**Summary:**\n\nJohnson & Johnson demonstrated strong growth in Net Earnings (8.04%) in Q2 FY2023, outpacing Sales growth (1.69%). This led to an improvement in profitability, with Net Earnings as a Percentage of Sales increasing from 19.88% in Q2 FY2022 to 21.12% in Q2 FY2023.",
+    "3": "## Johnson & Johnson: Q2 FY2023 Financial Performance Report\n\n**Executive Summary**\n\nJohnson & Johnson demonstrated robust financial performance in Q2 FY2023, with Net Earnings increasing by 8.04% to $5,068 million, compared to $4,691 million in Q2 FY2022. Sales also saw a modest increase of 1.69%, reaching $24,000 million from $23,600 million in the prior year. This stronger growth in earnings relative to sales resulted in an improved profitability margin, with Net Earnings as a Percentage of Sales rising from 19.88% in Q2 FY2022 to 21.12% in Q2 FY2023.\n\n**Analysis**\n\nFor Q2 FY2023, Johnson & Johnson reported Net Earnings of $5,068 million on Sales of $24,000 million. This compares favorably to Q2 FY2022, which saw Net Earnings of $4,691 million on Sales of $23,600 million. The 8.04% increase in Net Earnings significantly outpaced the 1.69% growth in Sales year-over-year. Consequently, the company's efficiency in converting sales into profit improved, as evidenced by the Net Earnings as a Percentage of Sales increasing by 1.24 percentage points, from 19.88% in Q2 FY2022 to 21.12% in Q2 FY2023.\n\n**Key Risks**\n\nWhile the overall performance is positive, the relatively modest 1.69% increase in sales could indicate potential challenges in top-line growth. Sustaining strong earnings growth will depend on either continued operational efficiency improvements or an acceleration in sales growth in future periods.\n\n**Conclusion**\n\nJohnson & Johnson delivered a strong Q2 FY2023, marked by significant growth in Net Earnings and an improved profitability margin. The company successfully translated a modest increase in sales into a substantial boost in net income, reflecting effective cost management and operational leverage. This performance positions the company favorably for the remainder of the fiscal year.",
+    "4": "## Johnson & Johnson: Q2 FY2023 Financial Performance Report\n\n**Executive Summary**\n\nJohnson & Johnson demonstrated robust financial performance in Q2 FY2023, with Net Earnings increasing by 8.04% to $5,068 million, compared to $4,691 million in Q2 FY2022. Sales also saw a modest increase of 1.69%, reaching $24,000 million from $23,600 million in the prior year. This stronger growth in earnings relative to sales resulted in an improved profitability margin, with Net Earnings as a Percentage of Sales rising from 19.88% in Q2 FY2022 to 21.12% in Q2 FY2023.\n\n**Analysis**\n\nFor Q2 FY2023, Johnson & Johnson reported Net Earnings of $5,068 million on Sales of $24,000 million. This compares favorably to Q2 FY2022, which saw Net Earnings of $4,691 million on Sales of $23,600 million. The 8.04% increase in Net Earnings significantly outpaced the 1.69% growth in Sales year-over-year. Consequently, the company's efficiency in converting sales into profit improved, as evidenced by the Net Earnings as a Percentage of Sales increasing by 1.24 percentage points, from 19.88% in Q2 FY2022 to 21.12% in Q2 FY2023.\n\n**Key Risks**\n\nWhile the overall performance is positive, the relatively modest 1.69% increase in sales could indicate potential challenges in top-line growth. Sustaining strong earnings growth will depend on either continued operational efficiency improvements or an acceleration in sales growth in future periods.\n\n**Conclusion**\n\nJohnson & Johnson delivered a strong Q2 FY2023, marked by significant growth in Net Earnings and an improved profitability margin. The company successfully translated a modest increase in sales into a substantial boost in net income, reflecting effective cost management and operational leverage. This performance positions the company favorably for the remainder of the fiscal year."
+  },
+  "gates": {
+    "gate_1": {
+      "verified": [
+        {
+          "value": "$5,068 million",
+          "ref": 5068.0
+        },
+        {
+          "value": "$5,068 million",
+          "ref": 5068.0
+        },
+        {
+          "value": "$24,000 million",
+          "ref": 24000.0
+        },
+        {
+          "value": "$4,691 million",
+          "ref": 4691.0
+        },
+        {
+          "value": "$23,600 million",
+          "ref": 23600.0
+        },
+        {
+          "value": "$4,691 million",
+          "ref": 4691.0
+        },
+        {
+          "value": "$23,600 million",
+          "ref": 23600.0
+        },
+        {
+          "value": "$5,068 million",
+          "ref": 5068.0
+        },
+        {
+          "value": "$24,000 million",
+          "ref": 24000.0
+        },
+        {
+          "value": "$4,691 million",
+          "ref": 4691.0
+        },
+        {
+          "value": "$23,600 million",
+          "ref": 23600.0
+        },
+        {
+          "value": "21.11%",
+          "ref": 21.11
+        },
+        {
+          "value": "21.11%",
+          "ref": 21.11
+        },
+        {
+          "value": "19.87%",
+          "ref": 19.87
+        },
+        {
+          "value": "8.04%",
+          "ref": 8.04
+        },
+        {
+          "value": "1.69%",
+          "ref": 1.69
+        },
+        {
+          "value": "21.11%",
+          "ref": 21.11
+        },
+        {
+          "value": "5,068",
+          "ref": 5068.0
+        },
+        {
+          "value": "4,691",
+          "ref": 4691.0
+        },
+        {
+          "value": "4,691",
+          "ref": 4691.0
+        },
+        {
+          "value": "24,000",
+          "ref": 24000.0
+        },
+        {
+          "value": "23,600",
+          "ref": 23600.0
+        },
+        {
+          "value": "23,600",
+          "ref": 23600.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$32,304 million",
+          "num": 32304.0,
+          "correct": 24000.0,
+          "dev": 0.2571,
+          "source": "source_document"
+        },
+        {
+          "value": "26.36%",
+          "num": 26.36,
+          "correct": 21.11,
+          "dev": 0.1992,
+          "source": "source_document"
+        },
+        {
+          "value": "25.10%",
+          "num": 25.1,
+          "correct": 21.11,
+          "dev": 0.159,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [],
+      "n_refs": 22
+    },
+    "gate_2": {
+      "verified": [
+        {
+          "value": "$5,068 million",
+          "ref": 5068.0
+        },
+        {
+          "value": "$4,691 million",
+          "ref": 4691.0
+        },
+        {
+          "value": "$5,068 million",
+          "ref": 5068.0
+        },
+        {
+          "value": "$4,691 million",
+          "ref": 4691.0
+        },
+        {
+          "value": "$5,068 million",
+          "ref": 5068.0
+        },
+        {
+          "value": "$4,691 million",
+          "ref": 4691.0
+        },
+        {
+          "value": "$4,691 million",
+          "ref": 4691.0
+        },
+        {
+          "value": "$24,000 million",
+          "ref": 24000.0
+        },
+        {
+          "value": "$23,600 million",
+          "ref": 23600.0
+        },
+        {
+          "value": "$24,000 million",
+          "ref": 24000.0
+        },
+        {
+          "value": "$23,600 million",
+          "ref": 23600.0
+        },
+        {
+          "value": "$24,000 million",
+          "ref": 24000.0
+        },
+        {
+          "value": "$23,600 million",
+          "ref": 23600.0
+        },
+        {
+          "value": "$23,600 million",
+          "ref": 23600.0
+        },
+        {
+          "value": "$5,068 million",
+          "ref": 5068.0
+        },
+        {
+          "value": "$24,000 million",
+          "ref": 24000.0
+        },
+        {
+          "value": "$4,691 million",
+          "ref": 4691.0
+        },
+        {
+          "value": "$23,600 million",
+          "ref": 23600.0
+        },
+        {
+          "value": "$24,000 million",
+          "ref": 24000.0
+        },
+        {
+          "value": "$5,068 million",
+          "ref": 5068.0
+        },
+        {
+          "value": "$24,000 million",
+          "ref": 24000.0
+        },
+        {
+          "value": "8.04%",
+          "ref": 8.04
+        },
+        {
+          "value": "1.69%",
+          "ref": 1.69
+        },
+        {
+          "value": "21.12%",
+          "ref": 21.11
+        },
+        {
+          "value": "21.1166%",
+          "ref": 21.11
+        },
+        {
+          "value": "19.88%",
+          "ref": 19.87
+        },
+        {
+          "value": "19.8771%",
+          "ref": 19.87
+        },
+        {
+          "value": "21.11%",
+          "ref": 21.11
+        },
+        {
+          "value": "19.87%",
+          "ref": 19.87
+        },
+        {
+          "value": "19.88%",
+          "ref": 19.87
+        },
+        {
+          "value": "21.11%",
+          "ref": 21.11
+        },
+        {
+          "value": "19.88%",
+          "ref": 19.87
+        },
+        {
+          "value": "19.88%",
+          "ref": 19.87
+        },
+        {
+          "value": "21.12%",
+          "ref": 21.11
+        },
+        {
+          "value": "21.11%",
+          "ref": 21.11
+        },
+        {
+          "value": "8.04%",
+          "ref": 8.04
+        },
+        {
+          "value": "1.69%",
+          "ref": 1.69
+        },
+        {
+          "value": "19.88%",
+          "ref": 19.87
+        },
+        {
+          "value": "21.12%",
+          "ref": 21.11
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$32,304 million",
+          "num": 32304.0,
+          "correct": 24000.0,
+          "dev": 0.2571,
+          "source": "source_document"
+        },
+        {
+          "value": "26.36%",
+          "num": 26.36,
+          "correct": 21.11,
+          "dev": 0.1992,
+          "source": "source_document"
+        },
+        {
+          "value": "25.10%",
+          "num": 25.1,
+          "correct": 21.11,
+          "dev": 0.159,
+          "source": "source_document"
+        },
+        {
+          "value": "25.10%",
+          "num": 25.1,
+          "correct": 21.11,
+          "dev": 0.159,
+          "source": "source_document"
+        },
+        {
+          "value": "25.10%",
+          "num": 25.1,
+          "correct": 21.11,
+          "dev": 0.159,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$377 million"
+        },
+        {
+          "value": "$400 million"
+        }
+      ],
+      "n_refs": 22
+    },
+    "gate_3": {
+      "verified": [
+        {
+          "value": "$5,068 million",
+          "ref": 5068.0
+        },
+        {
+          "value": "$4,691 million",
+          "ref": 4691.0
+        },
+        {
+          "value": "$24,000 million",
+          "ref": 24000.0
+        },
+        {
+          "value": "$23,600 million",
+          "ref": 23600.0
+        },
+        {
+          "value": "$5,068 million",
+          "ref": 5068.0
+        },
+        {
+          "value": "$24,000 million",
+          "ref": 24000.0
+        },
+        {
+          "value": "$4,691 million",
+          "ref": 4691.0
+        },
+        {
+          "value": "$23,600 million",
+          "ref": 23600.0
+        },
+        {
+          "value": "8.04%",
+          "ref": 8.04
+        },
+        {
+          "value": "1.69%",
+          "ref": 1.69
+        },
+        {
+          "value": "19.88%",
+          "ref": 19.87
+        },
+        {
+          "value": "21.12%",
+          "ref": 21.11
+        },
+        {
+          "value": "8.04%",
+          "ref": 8.04
+        },
+        {
+          "value": "1.69%",
+          "ref": 1.69
+        },
+        {
+          "value": "19.88%",
+          "ref": 19.87
+        },
+        {
+          "value": "21.12%",
+          "ref": 21.11
+        },
+        {
+          "value": "1.69%",
+          "ref": 1.69
+        }
+      ],
+      "refuted": [
+        {
+          "value": "1.24 percent",
+          "num": 1.24,
+          "correct": 1.69,
+          "dev": 0.2663,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [],
+      "n_refs": 22
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_094_62DF77C2",
+      "hid": "FB_094_62DF77C2_H3",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 32304.0,
+      "orig_num": 24000.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_094_62DF77C2",
+      "hid": "FB_094_62DF77C2_H2",
+      "method": "ours",
+      "type": "percentage",
+      "inj_num": 26.36,
+      "orig_num": 19.87,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_094_62DF77C2",
+      "hid": "FB_094_62DF77C2_H1",
+      "method": "ours",
+      "type": "percentage",
+      "inj_num": 25.1,
+      "orig_num": 19.87,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:38:38.967994+00:00"
+}

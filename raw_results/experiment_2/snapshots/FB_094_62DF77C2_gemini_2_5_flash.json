@@ -1,0 +1,127 @@
+{
+  "question_id": "FB_094_62DF77C2",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Johnson & Johnson, Q2 FY2023 and Q2 FY2022\n- PRIMARY METRIC: \n  - Q2 FY2023 Net Earnings: $5,068 million (per the JOHNSON_JOHNSON_2023Q2_EARNINGS, Consolidated Statements of Operations)\n  - Q2 FY2023 Sales: $32,304 million (per the JOHNSON_JOHNSON_2023Q2_EARNINGS, Consolidated Statements of Operations)\n  - Net Earnings as a Percentage of Sales for Q2 FY2023: 21.11% (calculated as $5,068 million / $24,000 million * 100)\n\n  - Q2 FY2022 Net Earnings: $4,691 million (per the JOHNSON_JOHNSON_2022Q2_EARNINGS, Consolidated Statements of Operations)\n  - Q2 FY2022 Sales: $23,600 million (per the JOHNSON_JOHNSON_2022Q2_EARNINGS, Consolidated Statements of Operations)\n  - Net Earnings as a Percentage of Sales for Q2 FY2022: 26.36% (calculated as $4,691 million / $23,600 million * 100)\n\n- SUPPORTING DATA:\n  - Q2 FY2023:\n    - Net Earnings: $5,068 million\n    - Sales: $24,000 million\n    - Net Earnings as a Percentage of Sales: 21.11%\n  \n  - Q2 FY2022:\n    - Net Earnings: $4,691 million\n    - Sales: $23,600 million\n    - Net Earnings as a Percentage of Sales: 19.87%\n\n  - Percentage Change in Net Earnings: \n    - ((5,068 - 4,691) / 4,691) * 100 = 8.04%\n  \n  - Percentage Change in Sales: \n    - ((24,000 - 23,600) / 23,600) * 100 = 1.69%\n\n- DATA SOURCES:\n  - JOHNSON_JOHNSON_2023Q2_EARNINGS, Consolidated Statements of Operations\n  - JOHNSON_JOHNSON_2022Q2_EARNINGS, Consolidated Statements of Operations\n\nIn conclusion, Johnson & Johnson's net earnings as a percentage of sales increased from 25.10% in Q2 FY2022 to 21.11% in Q2 FY2023.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_094_62DF77C2_H3",
+      "type": "dollar_amount",
+      "original_value": "$24,000 million",
+      "injected_value": "$32,304 million",
+      "original_numeric": "24000",
+      "injected_numeric": "32304",
+      "position_char": 227,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.346
+    },
+    {
+      "hallucination_id": "FB_094_62DF77C2_H2",
+      "type": "percentage",
+      "original_value": "19.87%",
+      "injected_value": "26.36%",
+      "original_numeric": "19.87",
+      "injected_numeric": "26.36",
+      "position_char": 743,
+      "sentence_approx": 2,
+      "perturbation_delta": 6.4922
+    },
+    {
+      "hallucination_id": "FB_094_62DF77C2_H1",
+      "type": "percentage",
+      "original_value": "19.87%",
+      "injected_value": "25.10%",
+      "original_numeric": "19.87",
+      "injected_numeric": "25.10",
+      "position_char": 1518,
+      "sentence_approx": 7,
+      "perturbation_delta": 5.2279
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Q2 FY2023 Sales: $32,304 million",
+        "claim_value": "$32,304 million",
+        "reason": "This sales figure for Q2 FY2023 is contradicted by another sales figure for the same period ($24,000 million) provided later in the 'SUPPORTING DATA' section, indicating a significant internal inconsistency.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Net Earnings as a Percentage of Sales for Q2 FY2023: 21.11% (calculated as $5,068 million / $24,000 million * 100)",
+        "claim_value": "21.11%",
+        "reason": "While the calculation itself is correct based on the provided numbers, the sales figure of $24,000 million used in the calculation contradicts the $32,304 million sales figure stated for the same period earlier in the 'PRIMARY METRIC' section. This makes the resulting percentage unreliable due to inconsistent input data.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Net Earnings as a Percentage of Sales for Q2 FY2022: 26.36% (calculated as $4,691 million / $23,600 million * 100)",
+        "claim_value": "26.36%",
+        "reason": "The calculated percentage (26.36%) is incorrect based on the provided numerator ($4,691 million) and denominator ($23,600 million). The correct calculation is approximately 19.88%.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Sales: $24,000 million",
+        "claim_value": "$24,000 million",
+        "reason": "This sales figure for Q2 FY2023 (under 'SUPPORTING DATA') contradicts the $32,304 million figure provided for the same period in the 'PRIMARY METRIC' section, indicating a significant internal inconsistency.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Net Earnings as a Percentage of Sales: 19.87%",
+        "claim_value": "19.87%",
+        "reason": "While this percentage (under 'SUPPORTING DATA' for Q2 FY2022) is the correct calculation based on the provided Q2 FY2022 Net Earnings ($4,691 million) and Sales ($23,600 million), it directly contradicts the 26.36% stated for the same metric in the 'PRIMARY METRIC' section and the 25.10% stated in the final conclusion. This highlights severe internal inconsistency regarding this key metric.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Johnson & Johnson's net earnings as a percentage of sales increased from 25.10% in Q2 FY2022 to 21.11% in Q2 FY2023.",
+        "claim_value": "increased from 25.10% in Q2 FY2022 to 21.11% in Q2 FY2023",
+        "reason": "1. The Q2 FY2022 percentage (25.10%) contradicts two other figures provided for the same metric in the report (26.36% and 19.87%). 2. The statement claims an 'increase' from 25.10% to 21.11%, but 21.11% is numerically lower than 25.10%, indicating a decrease, not an increase. This is a direct misinterpretation of the numbers.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 18,
+    "overall_assessment": "The researcher's output contains multiple significant internal inconsistencies regarding key financial figures, calculation errors, and a misinterpretation of the trend in the final conclusion.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Q2 FY2023 Sales: $32,304 million\",\n      \"claim_value\": \"$32,304 million\",\n      \"reason\": \"This sales figure for Q2 FY2023 is contradicted by another sales figure for the same period ($24,000 million) provided later in the 'SUPPORTING DATA' section, indicating a significant internal inconsistency.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Net Earnings as a Percentage of Sales for Q2 FY2023: 21.11% (calculated as $5,068 million / $24,000 million * 100)\",\n      \"claim_value\": \"21.11%\",\n      \"reason\": \"While the calculation itself is correct based on the provided numbers, the sales figure of $24,000 million used in the calculation contradicts the $32,304 million sales figure stated for the same period earlier in the 'PRIMARY METRIC' section. This makes the resulting percentage unreliable due to inconsistent input data.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Net Earnings as a Percentage of Sales for Q2 FY2022: 26.36% (calculated as $4,691 million / $23,600 million * 100)\",\n      \"claim_value\": \"26.36%\",\n      \"reason\": \"The calculated percentage (26.36%) is incorrect based on the provided numerator ($4,691 million) and denominator ($23,600 million). The correct calculation is approximately 19.88%.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Sales: $24,000 million\",\n      \"claim_value\": \"$24,000 million\",\n      \"reason\": \"This sales figure for Q2 FY2023 (under 'SUPPORTING DATA') contradicts the $32,304 million figure provided for the same period in the 'PRIMARY METRIC' section, indicating a significant internal inconsistency.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Net Earnings as a Percentage of Sales: 19.87%\",\n      \"claim_value\": \"19.87%\",\n      \"reason\": \"While this percentage (under 'SUPPORTING DATA' for Q2 FY2022) is the correct calculation based on the provided Q2 FY2022 Net Earnings ($4,691 million) and Sales ($23,600 million), it directly contradicts the 26.36% stated for the same metric in the 'PRIMARY METRIC' section and the 25.10% stated in the final conclusion. This highlights severe internal inconsistency regarding this key metric.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Johnson & Johnson's net earnings as a percentage of sales increased from 25.10% in Q2 FY2022 to 21.11% in Q2 FY2023.\",\n      \"claim_value\": \"increased from 25.10% in Q2 FY2022 to 21.11% in Q2 FY2023\",\n      \"reason\": \"1. The Q2 FY2022 percentage (25.10%) contradicts two other figures provided for the same metric in the report (26.36% and 19.87%). 2. The statement claims an 'increase' from 25.10% to 21.11%, but 21.11% is numerically lower than 25.10%, indicating a decrease, not an increase. This is a direct misinterpretation of the numbers.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 18,\n  \"overall_assessment\": \"The researcher's output contains multiple significant internal inconsistencies regarding key financial figures, calculation errors, and a misinterpretation of the trend in the final conclusion.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_094_62DF77C2",
+      "hallucination_id": "FB_094_62DF77C2_H3",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$24,000 million",
+      "injected_value": "$32,304 million",
+      "detected": true,
+      "reason": "This sales figure for Q2 FY2023 is contradicted by another sales figure for the same period ($24,000 million) provided later in the 'SUPPORTING DATA' section, indicating a significant internal inconsistency.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 18
+    },
+    {
+      "question_id": "FB_094_62DF77C2",
+      "hallucination_id": "FB_094_62DF77C2_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "percentage",
+      "original_value": "19.87%",
+      "injected_value": "26.36%",
+      "detected": true,
+      "reason": "The calculated percentage (26.36%) is incorrect based on the provided numerator ($4,691 million) and denominator ($23,600 million). The correct calculation is approximately 19.88%.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 18
+    },
+    {
+      "question_id": "FB_094_62DF77C2",
+      "hallucination_id": "FB_094_62DF77C2_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "percentage",
+      "original_value": "19.87%",
+      "injected_value": "25.10%",
+      "detected": true,
+      "reason": "The calculated percentage (26.36%) is incorrect based on the provided numerator ($4,691 million) and denominator ($23,600 million). The correct calculation is approximately 19.88%.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 18
+    }
+  ],
+  "timestamp": "2026-03-25T07:55:42.167211Z"
+}

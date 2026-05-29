@@ -1,0 +1,103 @@
+{
+  "question_id": "FB_129_1F62F697",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "I'm unable to provide an analysis or narrative report as requested, but I can extract the relevant financial data from PepsiCo's Q1 2023 earnings filings. Here are the details:\n\n- **COMPANY & PERIOD**: PepsiCo, Q1 2023\n- **PRIMARY METRIC**: PepsiCo raised its full-year guidance for FY2023 to a revenue growth of 14.2% and an adjusted earnings per share (EPS) growth of 8% (per the PEPSICO_2023Q1_EARNINGS document, Earnings Call Transcript).\n- **SUPPORTING DATA**:\n  - **Total Revenue**: $17,848 million (Q1 2023), compared to $16,200 million (Q1 2022) \u2014 an increase of 10.2% year-over-year (per the FY2023 Q1 10-Q, Consolidated Statements of Operations).\n  - **Net Income**: $2,054 million (Q1 2023), compared to $1,862 million (Q1 2022) \u2014 an increase of 16.9% year-over-year (per the FY2023 Q1 10-Q, Consolidated Statements of Operations).\n  - **Operating Income**: $3,086 million (Q1 2023), compared to $2,800 million (Q1 2022) \u2014 an increase of 10.2% year-over-year (per the FY2023 Q1 10-Q, Consolidated Statements of Operations).\n  - **Adjusted EPS**: $1.50 (Q1 2023), compared to $1.00 (Q1 2022) \u2014 an increase of 16.3% year-over-year (per the FY2023 Q1 10-Q, Consolidated Statements of Operations).\n- **DATA SOURCES**: \n  - PEPSICO_2023Q1_EARNINGS document, Consolidated Statements of Operations, and Earnings Call Transcript.\n\nPlease note that I have provided only the exact figures and relevant statements as per your request. Further analysis and interpretation should be conducted by subsequent analysts.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_129_1F62F697_H3",
+      "type": "percentage",
+      "original_value": "10%",
+      "injected_value": "14.2%",
+      "original_numeric": "10",
+      "injected_numeric": "14.2",
+      "position_char": 313,
+      "sentence_approx": 2,
+      "perturbation_delta": 4.2192
+    },
+    {
+      "hallucination_id": "FB_129_1F62F697_H2",
+      "type": "percentage",
+      "original_value": "10.3%",
+      "injected_value": "16.9%",
+      "original_numeric": "10.3",
+      "injected_numeric": "16.9",
+      "position_char": 755,
+      "sentence_approx": 5,
+      "perturbation_delta": 6.5824
+    },
+    {
+      "hallucination_id": "FB_129_1F62F697_H1",
+      "type": "dollar_amount",
+      "original_value": "$1.29 ",
+      "injected_value": "$1.00 ",
+      "original_numeric": "1.29",
+      "injected_numeric": "1.00",
+      "position_char": 1084,
+      "sentence_approx": 10,
+      "perturbation_delta": -0.2223
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Net Income: $2,054 million (Q1 2023), compared to $1,862 million (Q1 2022) \u2014 an increase of 16.9% year-over-year",
+        "claim_value": "16.9%",
+        "reason": "The stated year-over-year increase of 16.9% for Net Income is inconsistent with the provided figures. ($2,054 million - $1,862 million) / $1,862 million = $192 million / $1,862 million = approximately 10.3% growth, not 16.9%.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Adjusted EPS: $1.50 (Q1 2023), compared to $1.00 (Q1 2022) \u2014 an increase of 16.3% year-over-year",
+        "claim_value": "16.3%",
+        "reason": "The stated year-over-year increase of 16.3% for Adjusted EPS is inconsistent with the provided figures. ($1.50 - $1.00) / $1.00 = $0.50 / $1.00 = 50% growth, not 16.3%.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 15,
+    "overall_assessment": "Two significant internal inconsistencies were found regarding year-over-year growth calculations for Net Income and Adjusted EPS, indicating potential hallucination or calculation errors.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Net Income: $2,054 million (Q1 2023), compared to $1,862 million (Q1 2022) \u2014 an increase of 16.9% year-over-year\",\n      \"claim_value\": \"16.9%\",\n      \"reason\": \"The stated year-over-year increase of 16.9% for Net Income is inconsistent with the provided figures. ($2,054 million - $1,862 million) / $1,862 million = $192 million / $1,862 million = approximately 10.3% growth, not 16.9%.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Adjusted EPS: $1.50 (Q1 2023), compared to $1.00 (Q1 2022) \u2014 an increase of 16.3% year-over-year\",\n      \"claim_value\": \"16.3%\",\n      \"reason\": \"The stated year-over-year increase of 16.3% for Adjusted EPS is inconsistent with the provided figures. ($1.50 - $1.00) / $1.00 = $0.50 / $1.00 = 50% growth, not 16.3%.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 15,\n  \"overall_assessment\": \"Two significant internal inconsistencies were found regarding year-over-year growth calculations for Net Income and Adjusted EPS, indicating potential hallucination or calculation errors.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_129_1F62F697",
+      "hallucination_id": "FB_129_1F62F697_H3",
+      "model": "gemini-2.5-flash",
+      "injection_type": "percentage",
+      "original_value": "10%",
+      "injected_value": "14.2%",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 15
+    },
+    {
+      "question_id": "FB_129_1F62F697",
+      "hallucination_id": "FB_129_1F62F697_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "percentage",
+      "original_value": "10.3%",
+      "injected_value": "16.9%",
+      "detected": true,
+      "reason": "The stated year-over-year increase of 16.9% for Net Income is inconsistent with the provided figures. ($2,054 million - $1,862 million) / $1,862 million = $192 million / $1,862 million = approximately 10.3% growth, not 16.9%.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 15
+    },
+    {
+      "question_id": "FB_129_1F62F697",
+      "hallucination_id": "FB_129_1F62F697_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$1.29 ",
+      "injected_value": "$1.00 ",
+      "detected": true,
+      "reason": "The stated year-over-year increase of 16.3% for Adjusted EPS is inconsistent with the provided figures. ($1.50 - $1.00) / $1.00 = $0.50 / $1.00 = 50% growth, not 16.3%.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 15
+    }
+  ],
+  "timestamp": "2026-03-25T08:03:03.541723Z"
+}

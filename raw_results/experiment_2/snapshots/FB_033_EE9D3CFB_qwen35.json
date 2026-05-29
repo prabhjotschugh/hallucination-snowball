@@ -1,0 +1,121 @@
+{
+  "question_id": "FB_033_EE9D3CFB",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Advanced Micro Devices, Inc. (AMD), FY2022\n- PRIMARY METRIC: As of FY2022, AMD operates through two primary segments: Computing and Graphics, and Enterprise, Embedded, and Semi-Custom. \n\n  - **Computing and Graphics**: This segment includes desktop and mobile processors, graphics processing units (GPUs), and related products. Key products include:\n    - AMD Ryzen\u2122 processors\n    - AMD Radeon\u2122 graphics cards\n    - AMD EPYC\u2122 processors for data centers\n\n  - **Enterprise, Embedded, and Semi-Custom**: This segment includes semi-custom System-on-Chip (SoC) products for game consoles, embedded processors, and data center solutions. Key products include:\n    - Semi-custom chips for gaming consoles (e.g., PlayStation 5 and Xbox Series X)\n    - Embedded processors for various applications\n\n- SUPPORTING DATA: \n  - For FY2022, AMD reported total revenue of $23,600 million, with the Computing and Graphics segment contributing approximately $15,000 million and the Enterprise, Embedded, and Semi-Custom segment contributing approximately $8,600 million.\n  - Revenue breakdown for FY2021 for comparison: Total revenue was $16,400 million, with Computing and Graphics at approximately $8,249 million and Enterprise, Embedded, and Semi-Custom at approximately $5,600 million.\n  - Revenue breakdown for FY2020 for further context: Total revenue was $6,395 million, with Computing and Graphics at approximately $6,000 million and Enterprise, Embedded, and Semi-Custom at approximately $4,399 million.\n\n- DATA SOURCES: \n  - Per the FY2022 10-K, Item 1. Business Overview and Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_033_EE9D3CFB_H3",
+      "type": "dollar_amount",
+      "original_value": "$10,800 million",
+      "injected_value": "$8,249 million",
+      "original_numeric": "10800",
+      "injected_numeric": "8249",
+      "position_char": 1204,
+      "sentence_approx": 8,
+      "perturbation_delta": -0.2362
+    },
+    {
+      "hallucination_id": "FB_033_EE9D3CFB_H2",
+      "type": "dollar_amount",
+      "original_value": "$9,763 million",
+      "injected_value": "$6,395 million",
+      "original_numeric": "9763",
+      "injected_numeric": "6395",
+      "position_char": 1367,
+      "sentence_approx": 9,
+      "perturbation_delta": -0.345
+    },
+    {
+      "hallucination_id": "FB_033_EE9D3CFB_H1",
+      "type": "dollar_amount",
+      "original_value": "$3,763 million",
+      "injected_value": "$4,399 million",
+      "original_numeric": "3763",
+      "injected_numeric": "4399",
+      "position_char": 1502,
+      "sentence_approx": 9,
+      "perturbation_delta": 0.1691
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "As of FY2022, AMD operates through two primary segments: Computing and Graphics, and Enterprise, Embedded, and Semi-Custom.",
+        "claim_value": "Two primary segments (Computing and Graphics; Enterprise, Embedded, and Semi-Custom)",
+        "reason": "Following the Xilinx acquisition closed in February 2022, AMD reorganized its reportable segments into four categories (Data Center, Client, Gaming, Embedded) for FY2022 reporting. The two-segment structure reflects the pre-acquisition model.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "AMD EPYC\u2122 processors for data centers [listed under] Computing and Graphics",
+        "claim_value": "EPYC processors in Computing and Graphics segment",
+        "reason": "EPYC is a server/data center product. Historically, under the two-segment model, data center products were classified under 'Enterprise, Embedded, and Semi-Custom', not 'Computing and Graphics' (which covered Client CPUs and GPUs).",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Revenue breakdown for FY2021... Total revenue was $16,400 million, with Computing and Graphics at approximately $8,249 million and Enterprise, Embedded, and Semi-Custom at approximately $5,600 million.",
+        "claim_value": "FY2021 Segment Sum ($13,849M) vs Total ($16,400M)",
+        "reason": "Internal inconsistency: The sum of the reported segments ($8,249M + $5,600M = $13,849M) does not equal the reported total revenue ($16,400M). There is an unaccounted discrepancy of approximately $2.55 billion.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Revenue breakdown for FY2020... Total revenue was $6,395 million, with Computing and Graphics at approximately $6,000 million and Enterprise, Embedded, and Semi-Custom at approximately $4,399 million.",
+        "claim_value": "FY2020 Segment Sum ($10,399M) vs Total ($6,395M)",
+        "reason": "Internal inconsistency: The sum of the reported segments ($6,000M + $4,399M = $10,399M) significantly exceeds the reported total revenue ($6,395M). Additionally, the total revenue figure of $6.4B is suspiciously low for FY2020 given general knowledge of AMD's ~$9.7B revenue that year.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Revenue breakdown for FY2020 for further context: Total revenue was $6,395 million",
+        "claim_value": "$6,395 million",
+        "reason": "Plausibility concern: AMD's FY2020 revenue was approximately $9.76 billion. A figure of $6.4 billion resembles FY2019 levels more than FY2020, suggesting a potential hallucination of the period or figure.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 11,
+    "overall_assessment": "The output contains critical internal mathematical inconsistencies in FY2020 and FY2021 segment breakdowns, outdated segment structure information for FY2022 post-Xilinx acquisition, and misclassified product lines.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"As of FY2022, AMD operates through two primary segments: Computing and Graphics, and Enterprise, Embedded, and Semi-Custom.\",\n      \"claim_value\": \"Two primary segments (Computing and Graphics; Enterprise, Embedded, and Semi-Custom)\",\n      \"reason\": \"Following the Xilinx acquisition closed in February 2022, AMD reorganized its reportable segments into four categories (Data Center, Client, Gaming, Embedded) for FY2022 reporting. The two-segment structure reflects the pre-acquisition model.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"AMD EPYC\u2122 processors for data centers [listed under] Computing and Graphics\",\n      \"claim_value\": \"EPYC processors in Computing and Graphics segment\",\n      \"reason\": \"EPYC is a server/data center product. Historically, under the two-segment model, data center products were classified under 'Enterprise, Embedded, and Semi-Custom', not 'Computing and Graphics' (which covered Client CPUs and GPUs).\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Revenue breakdown for FY2021... Total revenue was $16,400 million, with Computing and Graphics at approximately $8,249 million and Enterprise, Embedded, and Semi-Custom at approximately $5,600 million.\",\n      \"claim_value\": \"FY2021 Segment Sum ($13,849M) vs Total ($16,400M)\",\n      \"reason\": \"Internal inconsistency: The sum of the reported segments ($8,249M + $5,600M = $13,849M) does not equal the reported total revenue ($16,400M). There is an unaccounted discrepancy of approximately $2.55 billion.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Revenue breakdown for FY2020... Total revenue was $6,395 million, with Computing and Graphics at approximately $6,000 million and Enterprise, Embedded, and Semi-Custom at approximately $4,399 million.\",\n      \"claim_value\": \"FY2020 Segment Sum ($10,399M) vs Total ($6,395M)\",\n      \"reason\": \"Internal inconsistency: The sum of the reported segments ($6,000M + $4,399M = $10,399M) significantly exceeds the reported total revenue ($6,395M). Additionally, the total revenue figure of $6.4B is suspiciously low for FY2020 given general knowledge of AMD's ~$9.7B revenue that year.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Revenue breakdown for FY2020 for further context: Total revenue was $6,395 million\",\n      \"claim_value\": \"$6,395 million\",\n      \"reason\": \"Plausibility concern: AMD's FY2020 revenue was approximately $9.76 billion. A figure of $6.4 billion resembles FY2019 levels more than FY2020, suggesting a potential hallucination of the period or figure.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 11,\n  \"overall_assessment\": \"The output contains critical internal mathematical inconsistencies in FY2020 and FY2021 segment breakdowns, outdated segment structure information for FY2022 post-Xilinx acquisition, and misclassified product lines.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_033_EE9D3CFB",
+      "hallucination_id": "FB_033_EE9D3CFB_H3",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$10,800 million",
+      "injected_value": "$8,249 million",
+      "detected": true,
+      "reason": "Internal inconsistency: The sum of the reported segments ($8,249M + $5,600M = $13,849M) does not equal the reported total revenue ($16,400M). There is an unaccounted discrepancy of approximately $2.55 billion.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 11
+    },
+    {
+      "question_id": "FB_033_EE9D3CFB",
+      "hallucination_id": "FB_033_EE9D3CFB_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$9,763 million",
+      "injected_value": "$6,395 million",
+      "detected": true,
+      "reason": "Internal inconsistency: The sum of the reported segments ($6,000M + $4,399M = $10,399M) significantly exceeds the reported total revenue ($6,395M). Additionally, the total revenue figure of $6.4B is suspiciously low for FY2020 given general knowledge of AMD's ~$9.7B revenue that year.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 11
+    },
+    {
+      "question_id": "FB_033_EE9D3CFB",
+      "hallucination_id": "FB_033_EE9D3CFB_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,763 million",
+      "injected_value": "$4,399 million",
+      "detected": true,
+      "reason": "Internal inconsistency: The sum of the reported segments ($6,000M + $4,399M = $10,399M) significantly exceeds the reported total revenue ($6,395M). Additionally, the total revenue figure of $6.4B is suspiciously low for FY2020 given general knowledge of AMD's ~$9.7B revenue that year.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 11
+    }
+  ],
+  "timestamp": "2026-03-24T10:46:09.598757Z"
+}

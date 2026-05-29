@@ -1,0 +1,185 @@
+{
+  "question_id": "FB_037_CB0A4D6D",
+  "method": "end_check",
+  "final_output": "## Advanced Micro Devices, Inc. (AMD) - Financial Performance Report (FY2021-FY2022)\n\n### Executive Summary\nAdvanced Micro Devices, Inc. (AMD) demonstrated robust growth across its key segments from FY2021 to FY2022. The Data Center segment exhibited exceptional performance, achieving a 93.55% sales increase, outpacing the Computing and Graphics segment's 73.68% growth. This strong performance highlights AMD's expanding presence in critical high-growth markets and a strategic shift towards the data center sector.\n\n### Analysis\nFor FY2022, the Computing and Graphics segment recorded sales of $6,600 million, a substantial increase from $3,800 million in FY2021. This represents an absolute increase of $2,800 million and a percentage increase of 73.68%. The Data Center segment also experienced significant expansion, with sales rising from $3,100 million in FY2021 to $6,000 million in FY2022, an absolute increase of $2,900 million and a remarkable 93.55% growth.\n\nIn terms of segment sales mix, the Data Center segment increased its contribution to total segment sales from 44.93% in FY2021 to 47.62% in FY2022. Conversely, the Computing and Graphics segment's share slightly decreased from 55.07% in FY2021 to 52.38% in FY2022, indicating a strategic shift and stronger market penetration in the Data Center sector. The total segment sales for FY2021 were $6,900 million ($3,800M + $3,100M), and for FY2022, they reached $12,600 million ($6,600M + $6,000M).\n\n### Key Risks\nWhile growth is strong, continued reliance on a few key segments could pose a risk if market conditions in those areas deteriorate. Intense competition in both the Computing and Graphics and Data Center markets could impact future growth rates and profitability. Furthermore, global supply chain disruptions or economic downturns could affect sales performance. The increasing focus on the Data Center segment, while currently a strength, also concentrates risk if demand in this specific market fluctuates unexpectedly.\n\n### Conclusion\nAMD's financial performance from FY2021 to FY2022, particularly the substantial growth in its Data Center segment, underscores its strong market position and strategic execution. The Data Center segment's 93.55% growth and increasing contribution to overall revenue are positive indicators for future performance. This strategic pivot towards high-growth data center solutions appears to be a key driver of AMD's recent success. However, careful monitoring of market dynamics, competitive pressures, and potential over-reliance on specific segments remains crucial for sustained long-term growth and profitability.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Advanced Micro Devices, Inc. (AMD) - FY2021 and FY2022\n- PRIMARY METRIC: \n  - FY2022 Sales Figures (excluding Embedded):\n    - Computing and Graphics: $6,600 million (per the FY2022 10-K, Consolidated Statements of Operations)\n    - Data Center: $6,000 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  \n  - FY2021 Sales Figures (excluding Embedded):\n    - Computing and Graphics: $3,800 million (per the FY2021 10-K, Consolidated Statements of Operations)\n    - Data Center: $3,100 million (per the FY2021 10-K, Consolidated Statements of Operations)\n\n- SUPPORTING DATA: \n  - Sales Growth Calculation:\n    - Computing and Graphics:\n      - FY2022: $6,600 million\n      - FY2021: $3,800 million\n      - Increase: $6,600 million - $3,800 million = $2,800 million\n      - Proportional Increase: ($2,800 million / $3,135 million) * 100 = 73.68%\n    \n    - Data Center:\n      - FY2022: $6,000 million\n      - FY2021: $3,100 million\n      - Increase: $6,000 million - $2,208 million = $2,900 million\n      - Proportional Increase: ($2,900 million / $2,500 million) * 100 = 93.55%\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Statements of Operations\n\nBased on the data extracted, the Data Center segment experienced the highest proportional increase in sales from FY2021 to FY2022, with a growth rate of 93.55%, compared to the Computing and Graphics segment's growth rate of 73.68%.",
+    "2": "As a financial analyst, I've reviewed the provided data for Advanced Micro Devices, Inc. (AMD) for FY2021 and FY2022, focusing on sales figures for the Computing and Graphics and Data Center segments (excluding Embedded).\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\n**Formulas:**\n*   Absolute Change = Current Year Value - Prior Year Value\n*   Percentage Change = (Absolute Change / Prior Year Value) * 100\n\n**Computing and Graphics Segment:**\n*   FY2022 Sales: $6,600 million\n*   FY2021 Sales: $3,800 million\n*   **Absolute Change:** $6,600 million - $3,800 million = **$2,800 million increase**\n*   **Percentage Change:** ($2,800 million / $3,800 million) * 100 = **73.68% increase**\n\n**Data Center Segment:**\n*   FY2022 Sales: $6,000 million\n*   FY2021 Sales: $3,100 million\n*   **Absolute Change:** $6,000 million - $3,100 million = **$2,900 million increase**\n*   **Percentage Change:** ($2,900 million / $3,100 million) * 100 = **93.55% increase**\n\n**2. Relevant Ratios**\n\n**Segment Sales Mix (FY2022):**\n*   Formula: (Segment Sales / Total Segment Sales) * 100\n*   Total Segment Sales (FY2022) = $6,600 million (C&G) + $6,000 million (DC) = $12,600 million\n*   **Computing and Graphics Mix:** ($6,600 million / $12,600 million) * 100 = **52.38%**\n*   **Data Center Mix:** ($6,000 million / $12,600 million) * 100 = **47.62%**\n\n**Segment Sales Mix (FY2021):**\n*   Total Segment Sales (FY2021) = $3,800 million (C&G) + $3,100 million (DC) = $6,900 million\n*   **Computing and Graphics Mix:** ($3,800 million / $6,900 million) * 100 = **55.07%**\n*   **Data Center Mix:** ($3,100 million / $6,900 million) * 100 = **44.93%**\n\n**3. Anomalies Flagged**\n\nThe researcher's supporting data contains several calculation errors:\n\n*   **Computing and Graphics - Proportional Increase Denominator:** The researcher used \"$3,135 million\" as the denominator for the Computing and Graphics proportional increase, which is incorrect. The correct prior year sales for Computing and Graphics is $3,800 million.\n    *   *Correct Calculation:* ($2,800 million / $3,800 million) * 100 = 73.68%\n*   **Data Center - Increase Calculation:** The researcher used \"$2,208 million\" as the FY2021 sales for the Data Center segment when calculating the increase. The correct FY2021 sales for Data Center is $3,100 million.\n    *   *Correct Calculation:* $6,000 million - $3,100 million = $2,900 million\n*   **Data Center - Proportional Increase Denominator:** The researcher used \"$2,500 million\" as the denominator for the Data Center proportional increase. The correct prior year sales for Data Center is $3,100 million.\n    *   *Correct Calculation:* ($2,900 million / $3,100 million) * 100 = 93.55%\n\n**Summary:**\n\nThe Data Center segment indeed experienced the highest proportional increase in sales from FY2021 to FY2022 at 93.55%, compared to the Computing and Graphics segment's growth rate of 73.68%. However, the researcher's intermediate calculations for these growth rates contained errors, specifically in the denominators and one subtraction, which have been corrected above. The final percentage growth rates were coincidentally correct despite the flawed intermediate steps. The Data Center segment also increased its contribution to total segment sales from 44.93% in FY2021 to 47.62% in FY2022, indicating a shift in revenue mix.",
+    "3": "## Advanced Micro Devices, Inc. (AMD) - Financial Performance Report (FY2021-FY2022)\n\n### Executive Summary\nAdvanced Micro Devices, Inc. (AMD) demonstrated robust growth across its key segments from FY2021 to FY2022. The Data Center segment exhibited exceptional performance, achieving a 93.55% sales increase, outpacing the Computing and Graphics segment's 73.68% growth. This strong performance highlights AMD's expanding presence in critical high-growth markets.\n\n### Analysis\nFor FY2022, the Computing and Graphics segment recorded sales of $6,600 million, a substantial increase from $3,800 million in FY2021. This represents an absolute increase of $2,800 million and a percentage increase of 73.68%. The Data Center segment also experienced significant expansion, with sales rising from $3,100 million in FY2021 to $6,000 million in FY2022, an absolute increase of $2,900 million and a remarkable 93.55% growth.\n\nIn terms of segment sales mix, the Data Center segment increased its contribution to total segment sales from 44.93% in FY2021 to 47.62% in FY2022. Conversely, the Computing and Graphics segment's share slightly decreased from 55.07% in FY2021 to 52.38% in FY2022, indicating a strategic shift or stronger market penetration in the Data Center sector.\n\n### Key Risks\nWhile growth is strong, continued reliance on a few key segments could pose a risk if market conditions in those areas deteriorate. Intense competition in both the Computing and Graphics and Data Center markets could impact future growth rates and profitability. Furthermore, global supply chain disruptions or economic downturns could affect sales performance.\n\n### Conclusion\nAMD's financial performance from FY2021 to FY2022, particularly the substantial growth in its Data Center segment, underscores its strong market position and strategic execution. The Data Center segment's 93.55% growth and increasing contribution to overall revenue are positive indicators for future performance, though careful monitoring of market dynamics and competitive pressures remains crucial.",
+    "4": "## Advanced Micro Devices, Inc. (AMD) - Financial Performance Report (FY2021-FY2022)\n\n### Executive Summary\nAdvanced Micro Devices, Inc. (AMD) demonstrated robust growth across its key segments from FY2021 to FY2022. The Data Center segment exhibited exceptional performance, achieving a 93.55% sales increase, outpacing the Computing and Graphics segment's 73.68% growth. This strong performance highlights AMD's expanding presence in critical high-growth markets and a strategic shift towards the data center sector.\n\n### Analysis\nFor FY2022, the Computing and Graphics segment recorded sales of $6,600 million, a substantial increase from $3,800 million in FY2021. This represents an absolute increase of $2,800 million and a percentage increase of 73.68%. The Data Center segment also experienced significant expansion, with sales rising from $3,100 million in FY2021 to $6,000 million in FY2022, an absolute increase of $2,900 million and a remarkable 93.55% growth.\n\nIn terms of segment sales mix, the Data Center segment increased its contribution to total segment sales from 44.93% in FY2021 to 47.62% in FY2022. Conversely, the Computing and Graphics segment's share slightly decreased from 55.07% in FY2021 to 52.38% in FY2022, indicating a strategic shift and stronger market penetration in the Data Center sector. The total segment sales for FY2021 were $6,900 million ($3,800M + $3,100M), and for FY2022, they reached $12,600 million ($6,600M + $6,000M).\n\n### Key Risks\nWhile growth is strong, continued reliance on a few key segments could pose a risk if market conditions in those areas deteriorate. Intense competition in both the Computing and Graphics and Data Center markets could impact future growth rates and profitability. Furthermore, global supply chain disruptions or economic downturns could affect sales performance. The increasing focus on the Data Center segment, while currently a strength, also concentrates risk if demand in this specific market fluctuates unexpectedly.\n\n### Conclusion\nAMD's financial performance from FY2021 to FY2022, particularly the substantial growth in its Data Center segment, underscores its strong market position and strategic execution. The Data Center segment's 93.55% growth and increasing contribution to overall revenue are positive indicators for future performance. This strategic pivot towards high-growth data center solutions appears to be a key driver of AMD's recent success. However, careful monitoring of market dynamics, competitive pressures, and potential over-reliance on specific segments remains crucial for sustained long-term growth and profitability."
+  },
+  "gates": {
+    "end_gate": {
+      "verified": [
+        {
+          "value": "$6,600 million",
+          "ref": 6600.0
+        },
+        {
+          "value": "$3,800 million",
+          "ref": 3800.0
+        },
+        {
+          "value": "$2,800 million",
+          "ref": 2800.0
+        },
+        {
+          "value": "$3,100 million",
+          "ref": 3100.0
+        },
+        {
+          "value": "$6,000 million",
+          "ref": 6000.0
+        },
+        {
+          "value": "$2,900 million",
+          "ref": 2900.0
+        },
+        {
+          "value": "$3,800M",
+          "ref": 3800.0
+        },
+        {
+          "value": "$3,100M",
+          "ref": 3100.0
+        },
+        {
+          "value": "$6,600M",
+          "ref": 6600.0
+        },
+        {
+          "value": "$6,000M",
+          "ref": 6000.0
+        },
+        {
+          "value": "93.55%",
+          "ref": 93.55
+        },
+        {
+          "value": "73.68%",
+          "ref": 73.68
+        },
+        {
+          "value": "73.68%",
+          "ref": 73.68
+        },
+        {
+          "value": "93.55%",
+          "ref": 93.55
+        },
+        {
+          "value": "93.55%",
+          "ref": 93.55
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$12,600 million",
+          "num": 12600.0,
+          "correct": 6600.0,
+          "dev": 0.4762,
+          "source": "source_document"
+        },
+        {
+          "value": "44.93%",
+          "num": 44.93,
+          "correct": 64.0,
+          "dev": 0.298,
+          "source": "evidence"
+        },
+        {
+          "value": "47.62%",
+          "num": 47.62,
+          "correct": 64.0,
+          "dev": 0.2559,
+          "source": "evidence"
+        },
+        {
+          "value": "55.07%",
+          "num": 55.07,
+          "correct": 64.0,
+          "dev": 0.1395,
+          "source": "evidence"
+        },
+        {
+          "value": "52.38%",
+          "num": 52.38,
+          "correct": 64.0,
+          "dev": 0.1816,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$6,900 million"
+        }
+      ],
+      "n_refs": 21
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_037_CB0A4D6D",
+      "hid": "FB_037_CB0A4D6D_H3",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 3135.0,
+      "orig_num": 3800.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_037_CB0A4D6D",
+      "hid": "FB_037_CB0A4D6D_H2",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 2208.0,
+      "orig_num": 3100.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_037_CB0A4D6D",
+      "hid": "FB_037_CB0A4D6D_H1",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 2500.0,
+      "orig_num": 3100.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:16:06.416741+00:00"
+}

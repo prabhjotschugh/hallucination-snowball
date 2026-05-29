@@ -1,0 +1,492 @@
+{
+  "question_id": "FB_071_0CB99E74",
+  "method": "ours",
+  "final_output": "## Financial Report: Corning Inc. - FY2020 Days Payable Outstanding\n\n**Executive Summary**\n\nThis report analyzes Corning Inc.'s Days Payable Outstanding (DPO) for Fiscal Year 2020, based on verified financial data. The DPO, a key liquidity metric, indicates the average number of days the company takes to pay its suppliers. After correcting for several data discrepancies, Corning Inc.'s DPO for FY2020 is calculated to be **48.11 days**. This figure reflects the company's payment efficiency and working capital management during the period.\n\n**Analysis**\n\nCorning Inc. reported an Average Accounts Payable of **$1,561.5 million** for FY2020, derived from FY2019 Accounts Payable of $1,469 million and FY2020 Accounts Payable of $1,654 million. The Cost of Goods Sold (COGS) for FY2020 was **$10,137 million**.\n\nA critical component of the DPO calculation is the change in inventory. The FY2019 Inventory was $3,056 million, and the corrected FY2020 Inventory is $4,177 million. This results in a Change in Inventory of **$1,121 million** ($4,177 million - $3,056 million).\n\nUsing the DPO formula: DPO = 365 * (Average Accounts Payable) / (FY2020 COGS + Change in Inventory), the calculation is as follows:\nDPO = 365 * ($1,561.5 million) / ($10,137 million + $1,121 million)\nDPO = 365 * ($1,561.5 million) / ($11,258 million)\nDPO = 365 * 0.1387 = **48.11 days** (rounded to two decimal places).\n\nYear-over-year, Accounts Payable increased by **$111 million** (7.56%), from $1,469 million in FY2019 to $1,654 million in FY2020. Inventory also increased by **$1,121 million** (36.68%), from $3,056 million in FY2019 to $4,177 million in FY2020.\n\n**Key Risks**\n\nThe primary risk identified in this analysis pertains to data integrity. Several initial figures provided for the DPO calculation were incorrect, specifically regarding the FY2020 Inventory value and subsequent Change in Inventory. Reliance on unverified data can lead to inaccurate financial metrics and misinformed decision-making. The corrected DPO of 48.11 days is significantly different from the initially calculated 49.86 days, highlighting the importance of rigorous data verification.\n\n**Conclusion**\n\nCorning Inc.'s Days Payable Outstanding for Fiscal Year 2020 stands at **48.11 days**. This metric provides insight into the company's operational efficiency in managing its payables. The discrepancies encountered during the data verification process underscore the necessity of robust data validation protocols to ensure the accuracy and reliability of financial reporting.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Corning Inc., FY2020\n- PRIMARY METRIC: Days Payable Outstanding (DPO) calculation requires specific figures which are as follows:\n\n1. **Average Accounts Payable (FY2019 and FY2020)**:\n   - FY2019 Accounts Payable: $1,469 million (per the FY2019 10-K, Consolidated Balance Sheets)\n   - FY2020 Accounts Payable: $1,654 million (per the FY2020 10-K, Consolidated Balance Sheets)\n   - Average Accounts Payable = ($1,469 million + $1,654 million) / 2 = $1,561.5 million\n\n2. **FY2020 Cost of Goods Sold (COGS)**:\n   - COGS for FY2020: $10,137 million (per the FY2020 10-K, Consolidated Statements of Operations)\n\n3. **Change in Inventory (FY2019 to FY2020)**:\n   - FY2019 Inventory: $3,056 million (per the FY2019 10-K, Consolidated Balance Sheets)\n   - FY2020 Inventory: $3,167 million (per the FY2020 10-K, Consolidated Balance Sheets)\n   - Change in Inventory = $4,292 million - $3,056 million = $111 million\n\n- SUPPORTING DATA:\n   - Average Accounts Payable: $1,561.5 million\n   - FY2020 COGS: $10,137 million\n   - Change in Inventory: $111 million\n\n- DATA SOURCES:\n   - FY2019 10-K, Consolidated Balance Sheets\n   - FY2020 10-K, Consolidated Balance Sheets\n   - FY2020 10-K, Consolidated Statements of Operations\n\n**DPO Calculation**:\nUsing the formula provided:\nDPO = 365 * (Average Accounts Payable) / (FY2020 COGS + Change in Inventory)\nDPO = 365 * ($1,561.5 million) / ($10,137 million + $73 million)\nDPO = 365 * ($1,561.5 million) / ($7,381 million)\nDPO = 365 * 0.152 = 55.58 days\n\n- FINAL DPO: 55.58 days (rounded to two decimal places)\n\nPlease note that the analysis and implications of this metric in the context of industry benchmarks and historical trends have not been included as per your directive for raw data only.",
+    "2": "As a financial analyst, I will compute the year-over-year changes, relevant ratios, and flag anomalies for Corning Inc. using the provided and corrected data.\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\n*   **Accounts Payable:**\n    *   FY2019 Accounts Payable: $1,469 million\n    *   FY2020 Accounts Payable: $1,654 million\n    *   Absolute Change = FY2020 AP - FY2019 AP = $1,654 million - $1,469 million = **$185 million**\n    *   Percentage Change = (Absolute Change / FY2019 AP) * 100 = ($185 million / $1,469 million) * 100 = **12.59%**\n\n*   **Inventory:**\n    *   FY2019 Inventory: $3,056 million\n    *   FY2020 Inventory: $3,167 million\n    *   Absolute Change = FY2020 Inventory - FY2019 Inventory = $3,167 million - $3,056 million = **$111 million**\n    *   Percentage Change = (Absolute Change / FY2019 Inventory) * 100 = ($111 million / $3,056 million) * 100 = **3.63%**\n\n**2. Relevant Ratios: Days Payable Outstanding (DPO)**\n\nFirst, let's re-calculate the DPO using the corrected values:\n\n*   **Average Accounts Payable:** ($1,469 million + $1,654 million) / 2 = **$1,561.5 million** (Verified Correct)\n*   **FY2020 COGS:** **$10,137 million** (Verified Correct)\n*   **Change in Inventory (Corrected):**\n    *   FY2019 Inventory: $3,056 million\n    *   FY2020 Inventory (Corrected): $3,767 million (Using corrected value for FY2020 Inventory)\n    *   Change in Inventory = $3,767 million - $3,056 million = **$711 million** (This is the correct change, not the previously stated $111 million or $100 million)\n\nNow, applying the DPO formula with corrected values:\n\n*   DPO = 365 * (Average Accounts Payable) / (FY2020 COGS + Change in Inventory)\n*   DPO = 365 * ($1,561.5 million) / ($10,137 million + $711 million)\n*   DPO = 365 * ($1,561.5 million) / ($10,848 million)\n*   DPO = 365 * 0.144 = **52.56 days** (rounded to two decimal places)\n\n**3. Flag Any Anomalies**\n\n*   **Researcher's DPO Calculation:** The researcher's final DPO of 55.58 days is incorrect due to using several refuted values in the calculation. Specifically:\n    *   The \"Change in Inventory\" was initially calculated incorrectly as $111 million, then used as $73 million in the DPO formula. The correct change in inventory, based on corrected FY2020 inventory, is $711 million.\n    *   The denominator for DPO was incorrectly stated as $7,381 million. The correct denominator (COGS + Change in Inventory) is $10,137 million + $711 million = $10,848 million.\n*   **Inventory Value Anomaly:** The researcher initially stated \"Change in Inventory = $4,292 million - $3,056 million = $111 million\". This is anomalous because $4,292 million was refuted as the FY2020 inventory. The correct FY2020 inventory is $3,767 million. This led to an incorrect \"Change in Inventory\" figure.\n\nThe corrected DPO for Corning Inc. for FY2020 is **52.56 days**.",
+    "3": "## Financial Report: Corning Inc. - FY2020 Days Payable Outstanding\n\n**Executive Summary**\n\nThis report analyzes Corning Inc.'s Days Payable Outstanding (DPO) for Fiscal Year 2020, based on verified financial data. The DPO, a key liquidity metric, indicates the average number of days the company takes to pay its suppliers. After correcting for several data discrepancies, Corning Inc.'s DPO for FY2020 is calculated to be **49.86 days**. This figure reflects the company's payment efficiency and working capital management during the period.\n\n**Analysis**\n\nCorning Inc. reported an Average Accounts Payable of **$1,561.5 million** for FY2020, derived from FY2019 Accounts Payable of $1,469 million and FY2020 Accounts Payable of $1,654 million. The Cost of Goods Sold (COGS) for FY2020 was **$10,137 million**.\n\nA critical component of the DPO calculation is the change in inventory. The FY2019 Inventory was $3,056 million, and the corrected FY2020 Inventory is $3,767 million. This results in a Change in Inventory of **$711 million** ($3,767 million - $3,056 million).\n\nUsing the DPO formula: DPO = 365 * (Average Accounts Payable) / (FY2020 COGS + Change in Inventory), the calculation is as follows:\nDPO = 365 * ($1,561.5 million) / ($10,137 million + $711 million)\nDPO = 365 * ($1,561.5 million) / ($10,848 million)\nDPO = 365 * 0.144 = **49.86 days** (rounded to two decimal places).\n\nYear-over-year, Accounts Payable increased by **$185 million** (12.59%), from $1,469 million in FY2019 to $1,654 million in FY2020. Inventory also increased by **$711 million** (23.26%), from $3,056 million in FY2019 to $3,767 million in FY2020.\n\n**Key Risks**\n\nThe primary risk identified in this analysis pertains to data integrity. Several initial figures provided for the DPO calculation were incorrect, specifically regarding the FY2020 Inventory value and subsequent Change in Inventory. Reliance on unverified data can lead to inaccurate financial metrics and misinformed decision-making. The corrected DPO of 49.86 days is significantly different from the initially calculated 55.58 days, highlighting the importance of rigorous data verification.\n\n**Conclusion**\n\nCorning Inc.'s Days Payable Outstanding for Fiscal Year 2020 stands at **49.86 days**. This metric provides insight into the company's operational efficiency in managing its payables. The discrepancies encountered during the data verification process underscore the necessity of robust data validation protocols to ensure the accuracy and reliability of financial reporting.",
+    "4": "## Financial Report: Corning Inc. - FY2020 Days Payable Outstanding\n\n**Executive Summary**\n\nThis report analyzes Corning Inc.'s Days Payable Outstanding (DPO) for Fiscal Year 2020, based on verified financial data. The DPO, a key liquidity metric, indicates the average number of days the company takes to pay its suppliers. After correcting for several data discrepancies, Corning Inc.'s DPO for FY2020 is calculated to be **48.11 days**. This figure reflects the company's payment efficiency and working capital management during the period.\n\n**Analysis**\n\nCorning Inc. reported an Average Accounts Payable of **$1,561.5 million** for FY2020, derived from FY2019 Accounts Payable of $1,469 million and FY2020 Accounts Payable of $1,654 million. The Cost of Goods Sold (COGS) for FY2020 was **$10,137 million**.\n\nA critical component of the DPO calculation is the change in inventory. The FY2019 Inventory was $3,056 million, and the corrected FY2020 Inventory is $4,177 million. This results in a Change in Inventory of **$1,121 million** ($4,177 million - $3,056 million).\n\nUsing the DPO formula: DPO = 365 * (Average Accounts Payable) / (FY2020 COGS + Change in Inventory), the calculation is as follows:\nDPO = 365 * ($1,561.5 million) / ($10,137 million + $1,121 million)\nDPO = 365 * ($1,561.5 million) / ($11,258 million)\nDPO = 365 * 0.1387 = **48.11 days** (rounded to two decimal places).\n\nYear-over-year, Accounts Payable increased by **$111 million** (7.56%), from $1,469 million in FY2019 to $1,654 million in FY2020. Inventory also increased by **$1,121 million** (36.68%), from $3,056 million in FY2019 to $4,177 million in FY2020.\n\n**Key Risks**\n\nThe primary risk identified in this analysis pertains to data integrity. Several initial figures provided for the DPO calculation were incorrect, specifically regarding the FY2020 Inventory value and subsequent Change in Inventory. Reliance on unverified data can lead to inaccurate financial metrics and misinformed decision-making. The corrected DPO of 48.11 days is significantly different from the initially calculated 49.86 days, highlighting the importance of rigorous data verification.\n\n**Conclusion**\n\nCorning Inc.'s Days Payable Outstanding for Fiscal Year 2020 stands at **48.11 days**. This metric provides insight into the company's operational efficiency in managing its payables. The discrepancies encountered during the data verification process underscore the necessity of robust data validation protocols to ensure the accuracy and reliability of financial reporting."
+  },
+  "gates": {
+    "gate_1": {
+      "verified": [
+        {
+          "value": "$1,469 million",
+          "ref": 1469.0
+        },
+        {
+          "value": "$1,654 million",
+          "ref": 1654.0
+        },
+        {
+          "value": "$1,469 million",
+          "ref": 1469.0
+        },
+        {
+          "value": "$1,654 million",
+          "ref": 1654.0
+        },
+        {
+          "value": "$1,561.5 million",
+          "ref": 1561.5
+        },
+        {
+          "value": "$10,137 million",
+          "ref": 10137.0
+        },
+        {
+          "value": "$3,056 million",
+          "ref": 3056.0
+        },
+        {
+          "value": "$3,167 million",
+          "ref": 3167.0
+        },
+        {
+          "value": "$3,056 million",
+          "ref": 3056.0
+        },
+        {
+          "value": "$111 million",
+          "ref": 111.0
+        },
+        {
+          "value": "$1,561.5 million",
+          "ref": 1561.5
+        },
+        {
+          "value": "$10,137 million",
+          "ref": 10137.0
+        },
+        {
+          "value": "$111 million",
+          "ref": 111.0
+        },
+        {
+          "value": "$1,561.5 million",
+          "ref": 1561.5
+        },
+        {
+          "value": "$10,137 million",
+          "ref": 10137.0
+        },
+        {
+          "value": "$1,561.5 million",
+          "ref": 1561.5
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$4,292 million",
+          "num": 4292.0,
+          "correct": 3767.0,
+          "dev": 0.1223,
+          "source": "evidence"
+        },
+        {
+          "value": "$73 million",
+          "num": 73.0,
+          "correct": 100.0,
+          "dev": 0.27,
+          "source": "evidence"
+        },
+        {
+          "value": "$7,381 million",
+          "num": 7381.0,
+          "correct": 7772.0,
+          "dev": 0.0503,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [],
+      "n_refs": 44
+    },
+    "gate_2": {
+      "verified": [
+        {
+          "value": "$1,469 million",
+          "ref": 1469.0
+        },
+        {
+          "value": "$1,654 million",
+          "ref": 1654.0
+        },
+        {
+          "value": "$1,654 million",
+          "ref": 1654.0
+        },
+        {
+          "value": "$1,469 million",
+          "ref": 1469.0
+        },
+        {
+          "value": "$1,469 million",
+          "ref": 1469.0
+        },
+        {
+          "value": "$3,056 million",
+          "ref": 3056.0
+        },
+        {
+          "value": "$3,167 million",
+          "ref": 3167.0
+        },
+        {
+          "value": "$3,167 million",
+          "ref": 3167.0
+        },
+        {
+          "value": "$3,056 million",
+          "ref": 3056.0
+        },
+        {
+          "value": "$111 million",
+          "ref": 111.0
+        },
+        {
+          "value": "$111 million",
+          "ref": 111.0
+        },
+        {
+          "value": "$3,056 million",
+          "ref": 3056.0
+        },
+        {
+          "value": "$1,469 million",
+          "ref": 1469.0
+        },
+        {
+          "value": "$1,654 million",
+          "ref": 1654.0
+        },
+        {
+          "value": "$1,561.5 million",
+          "ref": 1561.5
+        },
+        {
+          "value": "$10,137 million",
+          "ref": 10137.0
+        },
+        {
+          "value": "$3,056 million",
+          "ref": 3056.0
+        },
+        {
+          "value": "$3,767 million",
+          "ref": 3767.0
+        },
+        {
+          "value": "$3,767 million",
+          "ref": 3767.0
+        },
+        {
+          "value": "$3,056 million",
+          "ref": 3056.0
+        },
+        {
+          "value": "$111 million",
+          "ref": 111.0
+        },
+        {
+          "value": "$100 million",
+          "ref": 100.0
+        },
+        {
+          "value": "$1,561.5 million",
+          "ref": 1561.5
+        },
+        {
+          "value": "$10,137 million",
+          "ref": 10137.0
+        },
+        {
+          "value": "$1,561.5 million",
+          "ref": 1561.5
+        },
+        {
+          "value": "$111 million",
+          "ref": 111.0
+        },
+        {
+          "value": "$10,137 million",
+          "ref": 10137.0
+        },
+        {
+          "value": "$3,056 million",
+          "ref": 3056.0
+        },
+        {
+          "value": "$111 million",
+          "ref": 111.0
+        },
+        {
+          "value": "$3,767 million",
+          "ref": 3767.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$185 million",
+          "num": 185.0,
+          "correct": 111.0,
+          "dev": 0.4,
+          "source": "source_document"
+        },
+        {
+          "value": "$185 million",
+          "num": 185.0,
+          "correct": 111.0,
+          "dev": 0.4,
+          "source": "source_document"
+        },
+        {
+          "value": "$711 million",
+          "num": 711.0,
+          "correct": 1121.0,
+          "dev": 0.3657,
+          "source": "evidence"
+        },
+        {
+          "value": "$711 million",
+          "num": 711.0,
+          "correct": 1121.0,
+          "dev": 0.3657,
+          "source": "evidence"
+        },
+        {
+          "value": "$73 million",
+          "num": 73.0,
+          "correct": 100.0,
+          "dev": 0.27,
+          "source": "evidence"
+        },
+        {
+          "value": "$711 million",
+          "num": 711.0,
+          "correct": 1121.0,
+          "dev": 0.3657,
+          "source": "evidence"
+        },
+        {
+          "value": "$7,381 million",
+          "num": 7381.0,
+          "correct": 7772.0,
+          "dev": 0.0503,
+          "source": "evidence"
+        },
+        {
+          "value": "$711 million",
+          "num": 711.0,
+          "correct": 1121.0,
+          "dev": 0.3657,
+          "source": "evidence"
+        },
+        {
+          "value": "$4,292 million",
+          "num": 4292.0,
+          "correct": 3767.0,
+          "dev": 0.1223,
+          "source": "evidence"
+        },
+        {
+          "value": "$4,292 million",
+          "num": 4292.0,
+          "correct": 3767.0,
+          "dev": 0.1223,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$10,848 million"
+        },
+        {
+          "value": "$10,848 million"
+        },
+        {
+          "value": "12.59%"
+        },
+        {
+          "value": "3.63%"
+        }
+      ],
+      "n_refs": 44
+    },
+    "gate_3": {
+      "verified": [
+        {
+          "value": "$1,561.5 million",
+          "ref": 1561.5
+        },
+        {
+          "value": "$1,469 million",
+          "ref": 1469.0
+        },
+        {
+          "value": "$1,654 million",
+          "ref": 1654.0
+        },
+        {
+          "value": "$10,137 million",
+          "ref": 10137.0
+        },
+        {
+          "value": "$3,056 million",
+          "ref": 3056.0
+        },
+        {
+          "value": "$3,767 million",
+          "ref": 3767.0
+        },
+        {
+          "value": "$3,767 million",
+          "ref": 3767.0
+        },
+        {
+          "value": "$3,056 million",
+          "ref": 3056.0
+        },
+        {
+          "value": "$1,561.5 million",
+          "ref": 1561.5
+        },
+        {
+          "value": "$10,137 million",
+          "ref": 10137.0
+        },
+        {
+          "value": "$1,561.5 million",
+          "ref": 1561.5
+        },
+        {
+          "value": "$1,469 million",
+          "ref": 1469.0
+        },
+        {
+          "value": "$1,654 million",
+          "ref": 1654.0
+        },
+        {
+          "value": "$3,056 million",
+          "ref": 3056.0
+        },
+        {
+          "value": "$3,767 million",
+          "ref": 3767.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$711 million",
+          "num": 711.0,
+          "correct": 1121.0,
+          "dev": 0.3657,
+          "source": "evidence"
+        },
+        {
+          "value": "$711 million",
+          "num": 711.0,
+          "correct": 1121.0,
+          "dev": 0.3657,
+          "source": "evidence"
+        },
+        {
+          "value": "$185 million",
+          "num": 185.0,
+          "correct": 111.0,
+          "dev": 0.4,
+          "source": "source_document"
+        },
+        {
+          "value": "$711 million",
+          "num": 711.0,
+          "correct": 1121.0,
+          "dev": 0.3657,
+          "source": "evidence"
+        },
+        {
+          "value": "23.26%",
+          "num": 23.26,
+          "correct": 41.0,
+          "dev": 0.4327,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$10,848 million"
+        },
+        {
+          "value": "12.59%"
+        }
+      ],
+      "n_refs": 44
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_071_0CB99E74",
+      "hid": "FB_071_0CB99E74_H3",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 4292.0,
+      "orig_num": 3167.0,
+      "survived": false,
+      "corrected": false,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_071_0CB99E74",
+      "hid": "FB_071_0CB99E74_H2",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 73.0,
+      "orig_num": 111.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_071_0CB99E74",
+      "hid": "FB_071_0CB99E74_H1",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 7381.0,
+      "orig_num": 10248.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 4,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:29:30.357146+00:00"
+}

@@ -1,0 +1,103 @@
+{
+  "question_id": "FB_090_72CFB567",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Johnson & Johnson, FY2022\n- PRIMARY METRIC: \n  - Domestic Sales: $49,097 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - International Sales: $36,544 million (per the FY2022 10-K, Consolidated Statements of Operations)\n\n- SUPPORTING DATA: \n  - FY2021 Domestic Sales: $46,211 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2021 International Sales: $34,678 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  \n  - Domestic Sales Growth FY2022: \n    - Growth = ($49,097 million - $62,980 million) / $46,211 million = 4.06%\n  \n  - International Sales Growth FY2022: \n    - Growth = ($36,544 million - $48,060 million) / $40,543 million = 5.38%\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Statements of Operations\n\nNote: The growth rates are computed based on the figures provided and are presented without interpretation or analysis.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_090_72CFB567_H3",
+      "type": "dollar_amount",
+      "original_value": "$46,211 million",
+      "injected_value": "$62,980 million",
+      "original_numeric": "46211",
+      "injected_numeric": "62980",
+      "position_char": 570,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.3629
+    },
+    {
+      "hallucination_id": "FB_090_72CFB567_H2",
+      "type": "dollar_amount",
+      "original_value": "$34,678 million",
+      "injected_value": "$48,060 million",
+      "original_numeric": "34678",
+      "injected_numeric": "48060",
+      "position_char": 690,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.3859
+    },
+    {
+      "hallucination_id": "FB_090_72CFB567_H1",
+      "type": "dollar_amount",
+      "original_value": "$34,678 million",
+      "injected_value": "$40,543 million",
+      "original_numeric": "34678",
+      "injected_numeric": "40543",
+      "position_char": 709,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.1691
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Domestic Sales Growth FY2022: Growth = ($49,097 million - $62,980 million) / $46,211 million = 4.06%",
+        "claim_value": "4.06%",
+        "reason": "The calculation is incorrect, as it subtracts a larger number ($62,980 million) from a smaller number ($49,097 million), which would result in a negative growth rate, not 4.06%.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "International Sales Growth FY2022: Growth = ($36,544 million - $48,060 million) / $40,543 million = 5.38%",
+        "claim_value": "5.38%",
+        "reason": "The calculation is incorrect, as it subtracts a larger number ($48,060 million) from a smaller number ($36,544 million), which would result in a negative growth rate, not 5.38%.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "The researcher's output contains incorrect calculations for growth rates, which raises concerns about the accuracy of the entire report.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"Domestic Sales Growth FY2022: Growth = ($49,097 million - $62,980 million) / $46,211 million = 4.06%\",\n      \"claim_value\" : \"4.06%\",\n      \"reason\"      : \"The calculation is incorrect, as it subtracts a larger number ($62,980 million) from a smaller number ($49,097 million), which would result in a negative growth rate, not 4.06%.\",\n      \"confidence\"  : \"high\"\n    },\n    {\n      \"claim_text\"  : \"International Sales Growth FY2022: Growth = ($36,544 million - $48,060 million) / $40,543 million = 5.38%\",\n      \"claim_value\" : \"5.38%\",\n      \"reason\"      : \"The calculation is incorrect, as it subtracts a larger number ($48,060 million) from a smaller number ($36,544 million), which would result in a negative growth rate, not 5.38%.\",\n      \"confidence\"  : \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\"   : \"The researcher's output contains incorrect calculations for growth rates, which raises concerns about the accuracy of the entire report.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_090_72CFB567",
+      "hallucination_id": "FB_090_72CFB567_H3",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$46,211 million",
+      "injected_value": "$62,980 million",
+      "detected": true,
+      "reason": "The calculation is incorrect, as it subtracts a larger number ($62,980 million) from a smaller number ($49,097 million), which would result in a negative growth rate, not 4.06%.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_090_72CFB567",
+      "hallucination_id": "FB_090_72CFB567_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$34,678 million",
+      "injected_value": "$48,060 million",
+      "detected": true,
+      "reason": "The calculation is incorrect, as it subtracts a larger number ($48,060 million) from a smaller number ($36,544 million), which would result in a negative growth rate, not 5.38%.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_090_72CFB567",
+      "hallucination_id": "FB_090_72CFB567_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$34,678 million",
+      "injected_value": "$40,543 million",
+      "detected": true,
+      "reason": "The calculation is incorrect, as it subtracts a larger number ($48,060 million) from a smaller number ($36,544 million), which would result in a negative growth rate, not 5.38%.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-27T09:38:48.679335Z"
+}

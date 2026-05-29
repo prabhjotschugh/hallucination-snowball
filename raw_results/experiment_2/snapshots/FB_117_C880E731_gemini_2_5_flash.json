@@ -1,0 +1,115 @@
+{
+  "question_id": "FB_117_C880E731",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Nike, Inc. FY2021\n- PRIMARY METRIC: \n  - Cost of Goods Sold (COGS) for FY2021: $22,160 million (per the FY2021 10-K, Consolidated Statements of Operations).\n- SUPPORTING DATA: \n  - Average Inventory for FY2020: $4,703 million (per the FY2021 10-K, Consolidated Balance Sheets).\n  - Inventory at the end of FY2021: $5,200 million (per the FY2021 10-K, Consolidated Balance Sheets).\n  - Average Inventory for FY2021: ($4,703 million + $6,037 million) / 2 = $6,546.86 million.\n- CALCULATION:\n  - Inventory Turnover Ratio = COGS / Average Inventory = $22,160 million / $3,274.29 million = 4.47 (rounded to two decimal places).\n- DATA SOURCES: \n  - FY2021 10-K, Consolidated Statements of Operations (COGS).\n  - FY2021 10-K, Consolidated Balance Sheets (Inventory figures).",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_117_C880E731_H3",
+      "type": "dollar_amount",
+      "original_value": "$5,200 million",
+      "injected_value": "$6,037 million",
+      "original_numeric": "5200",
+      "injected_numeric": "6037",
+      "position_char": 453,
+      "sentence_approx": 5,
+      "perturbation_delta": 0.161
+    },
+    {
+      "hallucination_id": "FB_117_C880E731_H2",
+      "type": "dollar_amount",
+      "original_value": "$4,951.50 million",
+      "injected_value": "$6,546.86 million",
+      "original_numeric": "4951.50",
+      "injected_numeric": "6546.86",
+      "position_char": 475,
+      "sentence_approx": 5,
+      "perturbation_delta": 0.3222
+    },
+    {
+      "hallucination_id": "FB_117_C880E731_H1",
+      "type": "dollar_amount",
+      "original_value": "$4,951.50 million",
+      "injected_value": "$3,274.29 million",
+      "original_numeric": "4951.50",
+      "injected_numeric": "3274.29",
+      "position_char": 585,
+      "sentence_approx": 7,
+      "perturbation_delta": -0.3387
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Average Inventory for FY2021: ($4,703 million + $6,037 million) / 2",
+        "claim_value": "$6,037 million",
+        "reason": "This figure, presented as an inventory value for FY2021, directly contradicts the 'Inventory at the end of FY2021: $5,200 million' stated earlier in the researcher's output. This indicates a likely hallucination or fabrication.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Average Inventory for FY2021: ($4,703 million + $6,037 million) / 2 = $6,546.86 million.",
+        "claim_value": "$6,546.86 million",
+        "reason": "The calculation ($4,703 million + $6,037 million) / 2 actually equals $5,370 million, not $6,546.86 million. This is a mathematical error.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Inventory Turnover Ratio = COGS / Average Inventory = $22,160 million / $3,274.29 million",
+        "claim_value": "$3,274.29 million",
+        "reason": "This figure for Average Inventory used in the final ratio calculation contradicts the 'Average Inventory for FY2021: ... = $6,546.86 million' calculated in the preceding step. This is an internal inconsistency and indicates a likely hallucination.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Inventory Turnover Ratio = COGS / Average Inventory = $22,160 million / $3,274.29 million = 4.47",
+        "claim_value": "4.47",
+        "reason": "The calculation $22,160 million / $3,274.29 million actually equals approximately 6.77, not 4.47. This is a mathematical error.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 7,
+    "overall_assessment": "The researcher's output contains multiple internal inconsistencies and mathematical errors in its calculations, rendering the final inventory turnover ratio unreliable.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Average Inventory for FY2021: ($4,703 million + $6,037 million) / 2\",\n      \"claim_value\": \"$6,037 million\",\n      \"reason\": \"This figure, presented as an inventory value for FY2021, directly contradicts the 'Inventory at the end of FY2021: $5,200 million' stated earlier in the researcher's output. This indicates a likely hallucination or fabrication.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Average Inventory for FY2021: ($4,703 million + $6,037 million) / 2 = $6,546.86 million.\",\n      \"claim_value\": \"$6,546.86 million\",\n      \"reason\": \"The calculation ($4,703 million + $6,037 million) / 2 actually equals $5,370 million, not $6,546.86 million. This is a mathematical error.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Inventory Turnover Ratio = COGS / Average Inventory = $22,160 million / $3,274.29 million\",\n      \"claim_value\": \"$3,274.29 million\",\n      \"reason\": \"This figure for Average Inventory used in the final ratio calculation contradicts the 'Average Inventory for FY2021: ... = $6,546.86 million' calculated in the preceding step. This is an internal inconsistency and indicates a likely hallucination.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Inventory Turnover Ratio = COGS / Average Inventory = $22,160 million / $3,274.29 million = 4.47\",\n      \"claim_value\": \"4.47\",\n      \"reason\": \"The calculation $22,160 million / $3,274.29 million actually equals approximately 6.77, not 4.47. This is a mathematical error.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 7,\n  \"overall_assessment\": \"The researcher's output contains multiple internal inconsistencies and mathematical errors in its calculations, rendering the final inventory turnover ratio unreliable.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_117_C880E731",
+      "hallucination_id": "FB_117_C880E731_H3",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$5,200 million",
+      "injected_value": "$6,037 million",
+      "detected": true,
+      "reason": "This figure, presented as an inventory value for FY2021, directly contradicts the 'Inventory at the end of FY2021: $5,200 million' stated earlier in the researcher's output. This indicates a likely hallucination or fabrication.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_117_C880E731",
+      "hallucination_id": "FB_117_C880E731_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$4,951.50 million",
+      "injected_value": "$6,546.86 million",
+      "detected": true,
+      "reason": "The calculation ($4,703 million + $6,037 million) / 2 actually equals $5,370 million, not $6,546.86 million. This is a mathematical error.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_117_C880E731",
+      "hallucination_id": "FB_117_C880E731_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$4,951.50 million",
+      "injected_value": "$3,274.29 million",
+      "detected": true,
+      "reason": "This figure for Average Inventory used in the final ratio calculation contradicts the 'Average Inventory for FY2021: ... = $6,546.86 million' calculated in the preceding step. This is an internal inconsistency and indicates a likely hallucination.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 7
+    }
+  ],
+  "timestamp": "2026-03-25T08:00:54.298663Z"
+}

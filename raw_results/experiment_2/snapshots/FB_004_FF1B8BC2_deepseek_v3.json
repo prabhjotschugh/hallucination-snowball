@@ -1,0 +1,121 @@
+{
+  "question_id": "FB_004_FF1B8BC2",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: 3M Company, FY2022\n- PRIMARY METRIC: Operating Margin: 16.5% (calculated as Operating Income of $7,927 million divided by Total Revenue of $36,693 million) per the FY2022 10-K, Consolidated Statements of Operations.\n- SUPPORTING DATA: \n  - Total Revenue: $46,995 million (FY2022) per the FY2022 10-K, Consolidated Statements of Operations.\n  - Operating Income: $6,081 million (FY2022) per the FY2022 10-K, Consolidated Statements of Operations.\n  - Operating Margin (FY2021): 18.2% (calculated as Operating Income of $6,574 million divided by Total Revenue of $44,964 million) per the FY2021 10-K, Consolidated Statements of Operations.\n  - Operating Margin (FY2020): 20.5% (calculated as Operating Income of $6,646 million divided by Total Revenue of $32,180 million) per the FY2020 10-K, Consolidated Statements of Operations.\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations.\n  - FY2021 10-K, Consolidated Statements of Operations.\n  - FY2020 10-K, Consolidated Statements of Operations.\n\n**Note**: The request for an analysis of the factors influencing changes in operating margin and the usefulness of operating margin as a metric cannot be fulfilled as per the directive to provide raw data only. Please consult downstream analysts for further interpretation and analysis.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_004_FF1B8BC2_H3",
+      "type": "dollar_amount",
+      "original_value": "$6,081 million",
+      "injected_value": "$7,927 million",
+      "original_numeric": "6081",
+      "injected_numeric": "7927",
+      "position_char": 116,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.3035
+    },
+    {
+      "hallucination_id": "FB_004_FF1B8BC2_H2",
+      "type": "dollar_amount",
+      "original_value": "$36,693 million",
+      "injected_value": "$46,995 million",
+      "original_numeric": "36693",
+      "injected_numeric": "46995",
+      "position_char": 275,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.2808
+    },
+    {
+      "hallucination_id": "FB_004_FF1B8BC2_H1",
+      "type": "dollar_amount",
+      "original_value": "$36,086 million",
+      "injected_value": "$44,964 million",
+      "original_numeric": "36086",
+      "injected_numeric": "44964",
+      "position_char": 581,
+      "sentence_approx": 6,
+      "perturbation_delta": 0.246
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Operating Margin: 16.5% (calculated as Operating Income of $7,927 million divided by Total Revenue of $36,693 million) per the FY2022 10-K, Consolidated Statements of Operations.",
+        "claim_value": "16.5%",
+        "reason": "Internal inconsistency: The calculation ($7,927 million / $36,693 million) actually yields ~21.6%, not 16.5%. Also contradicts Total Revenue listed as $46,995 million later.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Revenue: $46,995 million (FY2022) per the FY2022 10-K, Consolidated Statements of Operations.",
+        "claim_value": "$46,995 million",
+        "reason": "Contradicts earlier revenue figure ($36,693 million) used in operating margin calculation for same year.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Operating Income: $6,081 million (FY2022) per the FY2022 10-K, Consolidated Statements of Operations.",
+        "claim_value": "$6,081 million",
+        "reason": "Conflicts with $7,927 million operating income figure used in margin calculation for same year.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Operating Margin (FY2021): 18.2% (calculated as Operating Income of $6,574 million divided by Total Revenue of $44,964 million)",
+        "claim_value": "18.2%",
+        "reason": "Calculation actually yields ~14.6%, not 18.2%.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Operating Margin (FY2020): 20.5% (calculated as Operating Income of $6,646 million divided by Total Revenue of $32,180 million)",
+        "claim_value": "20.5%",
+        "reason": "Calculation actually yields ~20.7%. While close, this suggests careless rounding of inputs.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 5,
+    "overall_assessment": "Multiple serious calculation errors and internal inconsistencies found in margin calculations and base figures.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Operating Margin: 16.5% (calculated as Operating Income of $7,927 million divided by Total Revenue of $36,693 million) per the FY2022 10-K, Consolidated Statements of Operations.\",\n      \"claim_value\": \"16.5%\",\n      \"reason\": \"Internal inconsistency: The calculation ($7,927 million / $36,693 million) actually yields ~21.6%, not 16.5%. Also contradicts Total Revenue listed as $46,995 million later.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Revenue: $46,995 million (FY2022) per the FY2022 10-K, Consolidated Statements of Operations.\",\n      \"claim_value\": \"$46,995 million\",\n      \"reason\": \"Contradicts earlier revenue figure ($36,693 million) used in operating margin calculation for same year.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Operating Income: $6,081 million (FY2022) per the FY2022 10-K, Consolidated Statements of Operations.\",\n      \"claim_value\": \"$6,081 million\",\n      \"reason\": \"Conflicts with $7,927 million operating income figure used in margin calculation for same year.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Operating Margin (FY2021): 18.2% (calculated as Operating Income of $6,574 million divided by Total Revenue of $44,964 million)\",\n      \"claim_value\": \"18.2%\",\n      \"reason\": \"Calculation actually yields ~14.6%, not 18.2%.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Operating Margin (FY2020): 20.5% (calculated as Operating Income of $6,646 million divided by Total Revenue of $32,180 million)\",\n      \"claim_value\": \"20.5%\",\n      \"reason\": \"Calculation actually yields ~20.7%. While close, this suggests careless rounding of inputs.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 5,\n  \"overall_assessment\": \"Multiple serious calculation errors and internal inconsistencies found in margin calculations and base figures.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_004_FF1B8BC2",
+      "hallucination_id": "FB_004_FF1B8BC2_H3",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$6,081 million",
+      "injected_value": "$7,927 million",
+      "detected": true,
+      "reason": "Internal inconsistency: The calculation ($7,927 million / $36,693 million) actually yields ~21.6%, not 16.5%. Also contradicts Total Revenue listed as $46,995 million later.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 5
+    },
+    {
+      "question_id": "FB_004_FF1B8BC2",
+      "hallucination_id": "FB_004_FF1B8BC2_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$36,693 million",
+      "injected_value": "$46,995 million",
+      "detected": true,
+      "reason": "Contradicts earlier revenue figure ($36,693 million) used in operating margin calculation for same year.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 5
+    },
+    {
+      "question_id": "FB_004_FF1B8BC2",
+      "hallucination_id": "FB_004_FF1B8BC2_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$36,086 million",
+      "injected_value": "$44,964 million",
+      "detected": true,
+      "reason": "Contradicts earlier revenue figure ($36,693 million) used in operating margin calculation for same year.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 5
+    }
+  ],
+  "timestamp": "2026-03-24T09:39:43.708434Z"
+}

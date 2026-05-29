@@ -1,0 +1,61 @@
+{
+  "question_id": "FB_106_EB0A9203",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: MGM Resorts International, Fiscal Year 2022\n- PRIMARY METRIC: MGM Resorts International declared dividends of $0.01 per share on December 15, 2021, which was paid on January 15, 2022, totaling $1 million for the fiscal year 2022. This is reported in the FY2022 10-K, Consolidated Statements of Shareholders' Equity.\n- SUPPORTING DATA: \n  - For FY2021, MGM Resorts declared dividends of $0.01 per share, totaling $2 million.\n  - For FY2020, MGM Resorts did not declare any dividends due to the impact of the COVID-19 pandemic.\n- DATA SOURCES: \n  - MGM Resorts International FY2022 10-K, Consolidated Statements of Shareholders' Equity, page 54.\n  - MGM Resorts International FY2021 10-K, Consolidated Statements of Shareholders' Equity, page 53.\n  - MGM Resorts International FY2020 10-K, Consolidated Statements of Shareholders' Equity, page 52.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_106_EB0A9203_H2",
+      "type": "dollar_amount",
+      "original_value": "$2 million",
+      "injected_value": "$1 million",
+      "original_numeric": "2",
+      "injected_numeric": "1",
+      "position_char": 213,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.254
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "MGM Resorts International declared dividends of $0.01 per share on December 15, 2021, which was paid on January 15, 2022, totaling $1 million for the fiscal year 2022.",
+        "claim_value": "$0.01 per share... totaling $1 million",
+        "reason": "MGM Resorts suspended its common stock dividend in March 2020 and did not reinstate it during FY2022. Additionally, a $1 million total payout implies approximately 100 million shares outstanding, whereas MGM typically has over 300 million shares outstanding, making the math inconsistent with known share counts.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "For FY2021, MGM Resorts declared dividends of $0.01 per share, totaling $2 million.",
+        "claim_value": "$0.01 per share, totaling $2 million",
+        "reason": "MGM Resorts did not pay dividends in FY2021 due to pandemic-related capital preservation. Furthermore, the total payout dropping from $2 million (2021) to $1 million (2022) at the same per-share rate implies a 50% reduction in share count, which did not occur.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "MGM Resorts International FY2022 10-K... page 54. ... FY2021 10-K... page 53. ... FY2020 10-K... page 52.",
+        "claim_value": "page 54... page 53... page 52",
+        "reason": "Sequential page numbers across three consecutive annual filings are statistically improbable. 10-K filings vary in length and structure year-over-year, and this pattern is a common indicator of hallucinated citations.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 10,
+    "overall_assessment": "The output contains multiple high-confidence hallucinations regarding dividend payments that contradict known corporate actions and internal mathematical consistency.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"MGM Resorts International declared dividends of $0.01 per share on December 15, 2021, which was paid on January 15, 2022, totaling $1 million for the fiscal year 2022.\",\n      \"claim_value\": \"$0.01 per share... totaling $1 million\",\n      \"reason\": \"MGM Resorts suspended its common stock dividend in March 2020 and did not reinstate it during FY2022. Additionally, a $1 million total payout implies approximately 100 million shares outstanding, whereas MGM typically has over 300 million shares outstanding, making the math inconsistent with known share counts.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"For FY2021, MGM Resorts declared dividends of $0.01 per share, totaling $2 million.\",\n      \"claim_value\": \"$0.01 per share, totaling $2 million\",\n      \"reason\": \"MGM Resorts did not pay dividends in FY2021 due to pandemic-related capital preservation. Furthermore, the total payout dropping from $2 million (2021) to $1 million (2022) at the same per-share rate implies a 50% reduction in share count, which did not occur.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"MGM Resorts International FY2022 10-K... page 54. ... FY2021 10-K... page 53. ... FY2020 10-K... page 52.\",\n      \"claim_value\": \"page 54... page 53... page 52\",\n      \"reason\": \"Sequential page numbers across three consecutive annual filings are statistically improbable. 10-K filings vary in length and structure year-over-year, and this pattern is a common indicator of hallucinated citations.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 10,\n  \"overall_assessment\": \"The output contains multiple high-confidence hallucinations regarding dividend payments that contradict known corporate actions and internal mathematical consistency.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_106_EB0A9203",
+      "hallucination_id": "FB_106_EB0A9203_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$2 million",
+      "injected_value": "$1 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 10
+    }
+  ],
+  "timestamp": "2026-03-24T12:31:45.475277Z"
+}

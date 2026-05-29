@@ -1,0 +1,121 @@
+{
+  "question_id": "FB_056_E46FAB20",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: Best Buy Co., Inc. for Q2 of FY2024\n- PRIMARY METRIC: Domestic revenue by product category as reported in the 10-Q filing:\n  - Consumer Electronics: $2,500 million (per the Q2 FY2024 10-Q, Consolidated Statements of Operations)\n  - Home Appliances: $1,200 million (per the Q2 FY2024 10-Q, Consolidated Statements of Operations)\n  - Computing and Mobile Phones: $1,519 million (per the Q2 FY2024 10-Q, Consolidated Statements of Operations)\n  - Entertainment: $738 million (per the Q2 FY2024 10-Q, Consolidated Statements of Operations)\n  - Services: $400 million (per the Q2 FY2024 10-Q, Consolidated Statements of Operations)\n\n- SUPPORTING DATA: \n  - Q2 FY2023 Revenue:\n    - Consumer Electronics: $2,300 million\n    - Home Appliances: $1,100 million\n    - Computing and Mobile Phones: $1,700 million\n    - Entertainment: $500 million\n    - Services: $350 million\n  - Q1 FY2024 Revenue:\n    - Consumer Electronics: $2,600 million\n    - Home Appliances: $1,300 million\n    - Computing and Mobile Phones: $1,307 million\n    - Entertainment: $700 million\n    - Services: $450 million\n\n- DATA SOURCES: Best Buy Co., Inc. Q2 FY2024 10-Q, Consolidated Statements of Operations. \n\n**Note:** The Consumer Electronics category exhibited the highest top-line performance in Q2 of FY2024 with revenue of $2,500 million.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_056_E46FAB20_H3",
+      "type": "dollar_amount",
+      "original_value": "$1,800 million",
+      "injected_value": "$1,519 million",
+      "original_numeric": "1800",
+      "injected_numeric": "1519",
+      "position_char": 381,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.1561
+    },
+    {
+      "hallucination_id": "FB_056_E46FAB20_H2",
+      "type": "dollar_amount",
+      "original_value": "$600 million",
+      "injected_value": "$738 million",
+      "original_numeric": "600",
+      "injected_numeric": "738",
+      "position_char": 479,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.2308
+    },
+    {
+      "hallucination_id": "FB_056_E46FAB20_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,900 million",
+      "injected_value": "$1,307 million",
+      "original_numeric": "1900",
+      "injected_numeric": "1307",
+      "position_char": 1024,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.3119
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Consumer Electronics: $2,500 million (per the Q2 FY2024 10-Q, Consolidated Statements of Operations)",
+        "claim_value": "$2,500 million",
+        "reason": "The figure is suspiciously round compared to other categories which have more precise values (e.g., $1,519 million for Computing and Mobile Phones). This could indicate fabrication.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Home Appliances: $1,200 million (per the Q2 FY2024 10-Q, Consolidated Statements of Operations)",
+        "claim_value": "$1,200 million",
+        "reason": "The figure is suspiciously round compared to other categories which have more precise values. This could indicate fabrication.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Entertainment: $738 million (per the Q2 FY2024 10-Q, Consolidated Statements of Operations)",
+        "claim_value": "$738 million",
+        "reason": "The figure is unusually precise compared to other categories with round numbers. This inconsistency in reporting style raises suspicions.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Q2 FY2023 Revenue: Entertainment: $500 million",
+        "claim_value": "$500 million",
+        "reason": "The figure is suspiciously round compared to other categories in the same period which have more precise values (e.g., $1,700 million for Computing and Mobile Phones).",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Q1 FY2024 Revenue: Computing and Mobile Phones: $1,307 million",
+        "claim_value": "$1,307 million",
+        "reason": "The figure is unusually precise compared to other categories in the same period with round numbers (e.g., $2,600 million for Consumer Electronics). This inconsistency in reporting style raises suspicions.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 10,
+    "overall_assessment": "Several claims contain suspiciously round or unusually precise figures, indicating potential fabrication or inaccuracy.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Consumer Electronics: $2,500 million (per the Q2 FY2024 10-Q, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$2,500 million\",\n      \"reason\": \"The figure is suspiciously round compared to other categories which have more precise values (e.g., $1,519 million for Computing and Mobile Phones). This could indicate fabrication.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Home Appliances: $1,200 million (per the Q2 FY2024 10-Q, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$1,200 million\",\n      \"reason\": \"The figure is suspiciously round compared to other categories which have more precise values. This could indicate fabrication.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Entertainment: $738 million (per the Q2 FY2024 10-Q, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$738 million\",\n      \"reason\": \"The figure is unusually precise compared to other categories with round numbers. This inconsistency in reporting style raises suspicions.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Q2 FY2023 Revenue: Entertainment: $500 million\",\n      \"claim_value\": \"$500 million\",\n      \"reason\": \"The figure is suspiciously round compared to other categories in the same period which have more precise values (e.g., $1,700 million for Computing and Mobile Phones).\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Q1 FY2024 Revenue: Computing and Mobile Phones: $1,307 million\",\n      \"claim_value\": \"$1,307 million\",\n      \"reason\": \"The figure is unusually precise compared to other categories in the same period with round numbers (e.g., $2,600 million for Consumer Electronics). This inconsistency in reporting style raises suspicions.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 10,\n  \"overall_assessment\": \"Several claims contain suspiciously round or unusually precise figures, indicating potential fabrication or inaccuracy.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_056_E46FAB20",
+      "hallucination_id": "FB_056_E46FAB20_H3",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,800 million",
+      "injected_value": "$1,519 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 10
+    },
+    {
+      "question_id": "FB_056_E46FAB20",
+      "hallucination_id": "FB_056_E46FAB20_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$600 million",
+      "injected_value": "$738 million",
+      "detected": true,
+      "reason": "The figure is unusually precise compared to other categories with round numbers. This inconsistency in reporting style raises suspicions.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 10
+    },
+    {
+      "question_id": "FB_056_E46FAB20",
+      "hallucination_id": "FB_056_E46FAB20_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,900 million",
+      "injected_value": "$1,307 million",
+      "detected": true,
+      "reason": "The figure is unusually precise compared to other categories in the same period with round numbers (e.g., $2,600 million for Consumer Electronics). This inconsistency in reporting style raises suspicions.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 10
+    }
+  ],
+  "timestamp": "2026-03-24T09:48:15.332937Z"
+}

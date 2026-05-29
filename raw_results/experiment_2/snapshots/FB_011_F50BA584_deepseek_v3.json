@@ -1,0 +1,79 @@
+{
+  "question_id": "FB_011_F50BA584",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: Adobe Inc., FY2015\n- PRIMARY METRIC: \n  - Cash from Operations: $1,051 million (per the FY2015 10-K, Consolidated Statements of Cash Flows)\n  - Total Current Liabilities: $1,034 million (per the FY2015 10-K, Consolidated Balance Sheets)\n  - Operating Cash Flow Ratio: 0.98 (calculated as $1,626 million / $1,660 million)\n\n- SUPPORTING DATA: \n  - FY2014 Cash from Operations: $1,564 million (per the FY2014 10-K, Consolidated Statements of Cash Flows)\n  - FY2014 Total Current Liabilities: $1,486 million (per the FY2014 10-K, Consolidated Balance Sheets)\n  - FY2013 Cash from Operations: $1,223 million (per the FY2013 10-K, Consolidated Statements of Cash Flows)\n  - FY2013 Total Current Liabilities: $1,267 million (per the FY2013 10-K, Consolidated Balance Sheets)\n\n- DATA SOURCES: \n  - Adobe Inc. FY2015 10-K, Consolidated Statements of Cash Flows\n  - Adobe Inc. FY2015 10-K, Consolidated Balance Sheets\n  - Adobe Inc. FY2014 10-K, Consolidated Statements of Cash Flows\n  - Adobe Inc. FY2014 10-K, Consolidated Balance Sheets\n  - Adobe Inc. FY2013 10-K, Consolidated Statements of Cash Flows\n  - Adobe Inc. FY2013 10-K, Consolidated Balance Sheets\n\nNote: The operating cash flow ratio for FY2015 is calculated as 0.98, rounded to two decimal places as requested.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_011_F50BA584_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,626 million",
+      "injected_value": "$1,051 million",
+      "original_numeric": "1626",
+      "injected_numeric": "1051",
+      "position_char": 84,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3534
+    },
+    {
+      "hallucination_id": "FB_011_F50BA584_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,660 million",
+      "injected_value": "$1,034 million",
+      "original_numeric": "1660",
+      "injected_numeric": "1034",
+      "position_char": 191,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3773
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Operating Cash Flow Ratio: 0.98 (calculated as $1,626 million / $1,660 million)",
+        "claim_value": "$1,626 million / $1,660 million",
+        "reason": "The calculation uses different numbers ($1,626m/$1,660m) than stated earlier ($1,051m/$1,034m). Also, $1,626m/$1,660m would actually yield 0.98, but the stated components don't match the primary metric values.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2014 Cash from Operations: $1,564 million",
+        "claim_value": "$1,564 million",
+        "reason": "This seems inconsistent with the stated FY2015 cash flows being lower ($1,051m), as Adobe's business was generally growing during this period. A sharp decline in cash flows year-over-year without explanation is suspicious.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "There are significant inconsistencies in the calculation methodology and some implausible year-over-year trends.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Operating Cash Flow Ratio: 0.98 (calculated as $1,626 million / $1,660 million)\",\n      \"claim_value\": \"$1,626 million / $1,660 million\",\n      \"reason\": \"The calculation uses different numbers ($1,626m/$1,660m) than stated earlier ($1,051m/$1,034m). Also, $1,626m/$1,660m would actually yield 0.98, but the stated components don't match the primary metric values.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2014 Cash from Operations: $1,564 million\",\n      \"claim_value\": \"$1,564 million\",\n      \"reason\": \"This seems inconsistent with the stated FY2015 cash flows being lower ($1,051m), as Adobe's business was generally growing during this period. A sharp decline in cash flows year-over-year without explanation is suspicious.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\": \"There are significant inconsistencies in the calculation methodology and some implausible year-over-year trends.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_011_F50BA584",
+      "hallucination_id": "FB_011_F50BA584_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,626 million",
+      "injected_value": "$1,051 million",
+      "detected": true,
+      "reason": "This seems inconsistent with the stated FY2015 cash flows being lower ($1,051m), as Adobe's business was generally growing during this period. A sharp decline in cash flows year-over-year without explanation is suspicious.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_011_F50BA584",
+      "hallucination_id": "FB_011_F50BA584_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,660 million",
+      "injected_value": "$1,034 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-24T09:40:59.775874Z"
+}

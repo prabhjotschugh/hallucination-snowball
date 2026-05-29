@@ -1,0 +1,580 @@
+{
+  "question_id": "FB_003_959AE4F2",
+  "method": "ours",
+  "final_output": "## 3M Company: FY2022 Financial Report\n\n**Executive Summary**\n\n3M Company's financial performance in FY2022 was marked by a significant decline in Total Revenue, which fell to $29,761 million from $35,355 million in FY2021. Capital Expenditures also saw a decrease, moving from $1,749 million in FY2021 to $1,633 million in FY2022. Total Assets remained relatively stable at $46,255 million between FY2021 and FY2022. The Capital Expenditure to Revenue ratio increased to 5.49% in FY2022, up from 4.95% in FY2021, indicating a higher proportion of capital spending relative to a shrinking revenue base.\n\n**Analysis**\n\nFor FY2022, 3M Company reported Capital Expenditures of $1,633 million, a decrease of $116 million or 6.63% from the $1,749 million spent in FY2021. Total Assets remained stable at $46,255 million, showing a 0.00% change from FY2021. The most notable shift was in Total Revenue, which experienced a substantial decline of $5,594 million, or 15.82%, from $35,355 million in FY2021 to $29,761 million in FY2022.\n\nComparing FY2021 to FY2020, Capital Expenditures increased by $298 million (20.54%) from $1,451 million to $1,749 million. Total Assets grew by $1,848 million (4.17%) from $44,407 million to $46,255 million. Total Revenue increased by $3,173 million (9.86%) from $32,182 million to $35,355 million.\n\nThe Capital Expenditure to Revenue ratio for FY2022 was 5.49% ($1,633 million / $29,761 million), an increase from 4.95% in FY2021 ($1,749 million / $35,355 million) and 4.51% in FY2020 ($1,451 million / $32,182 million).\n\n**Key Risks**\n\nThe substantial 15.82% decline in Total Revenue for FY2022 is a primary concern, suggesting potential market challenges, competitive pressures, or strategic divestitures that warrant deeper investigation. The corresponding increase in the Capital Expenditure to Revenue ratio to 5.49% indicates that capital investments are consuming a larger share of a diminished revenue stream, which could impact profitability and operational efficiency if not managed effectively. The stagnant Total Assets despite changes in capital spending and revenue could imply offsetting asset disposals or reclassifications.\n\n**Conclusion**\n\n3M Company's FY2022 performance highlights a period of significant revenue contraction. While capital expenditures saw a modest reduction, the sharp drop in revenue led to a higher capital intensity ratio. Management should thoroughly analyze the drivers behind the revenue decline and assess the efficiency and strategic alignment of capital allocation in this challenging environment.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: 3M Company, FY2022\n- PRIMARY METRIC: \n  - Capital Expenditures: $1,633 million (per the FY2022 10-K, Consolidated Statements of Cash Flows)\n  - Total Assets: $59,768 million (per the FY2022 10-K, Consolidated Balance Sheets)\n\n- SUPPORTING DATA: \n  - Capital Expenditures for FY2021: $1,858 million (per the FY2021 10-K, Consolidated Statements of Cash Flows)\n  - Total Assets for FY2021: $46,255 million (per the FY2021 10-K, Consolidated Balance Sheets)\n  - Capital Expenditures for FY2020: $1,451 million (per the FY2020 10-K, Consolidated Statements of Cash Flows)\n  - Total Assets for FY2020: $44,407 million (per the FY2020 10-K, Consolidated Balance Sheets)\n  - Total Revenue for FY2022: $19,188 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - Total Revenue for FY2021: $29,761 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - Total Revenue for FY2020: $32,182 million (per the FY2020 10-K, Consolidated Statements of Operations)\n\n- DATA SOURCES: \n  - 3M Company FY2022 10-K filing, Consolidated Statements of Cash Flows, Consolidated Balance Sheets, and Consolidated Statements of Operations.\n  - 3M Company FY2021 10-K filing, Consolidated Statements of Cash Flows, Consolidated Balance Sheets, and Consolidated Statements of Operations.\n  - 3M Company FY2020 10-K filing, Consolidated Statements of Cash Flows, Consolidated Balance Sheets, and Consolidated Statements of Operations. \n\nNote: The analysis of capital intensity, including the computation of financial ratios such as the capital expenditure to sales ratio, is not included as per the directive to present raw data only.",
+    "2": "Here's an analysis of 3M Company's financial data for FY2022, including year-over-year changes and relevant ratios, incorporating the corrected values.\n\n**Corrected Data Summary:**\n\n*   **FY2022:**\n    *   Capital Expenditures: $1,633 million\n    *   Total Assets: $46,255 million (Corrected from $59,768 million)\n    *   Total Revenue: $19,188 million\n*   **FY2021:**\n    *   Capital Expenditures: $1,749 million (Corrected from $1,858 million)\n    *   Total Assets: $46,255 million\n    *   Total Revenue: $29,761 million\n*   **FY2020:**\n    *   Capital Expenditures: $1,451 million\n    *   Total Assets: $44,407 million\n    *   Total Revenue: $32,182 million\n\n---\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\n**Capital Expenditures:**\n\n*   **FY2022 vs. FY2021:**\n    *   Absolute Change = $1,633 million - $1,749 million = **-$116 million**\n    *   Percentage Change = (Absolute Change / FY2021 Capital Expenditures) * 100\n        = (-$116 million / $1,749 million) * 100 = **-6.63%**\n*   **FY2021 vs. FY2020:**\n    *   Absolute Change = $1,749 million - $1,451 million = **$298 million**\n    *   Percentage Change = ($298 million / $1,451 million) * 100 = **20.54%**\n\n**Total Assets:**\n\n*   **FY2022 vs. FY2021:**\n    *   Absolute Change = $46,255 million - $46,255 million = **$0 million**\n    *   Percentage Change = ($0 million / $46,255 million) * 100 = **0.00%**\n*   **FY2021 vs. FY2020:**\n    *   Absolute Change = $46,255 million - $44,407 million = **$1,848 million**\n    *   Percentage Change = ($1,848 million / $44,407 million) * 100 = **4.16%**\n\n**Total Revenue:**\n\n*   **FY2022 vs. FY2021:**\n    *   Absolute Change = $19,188 million - $29,761 million = **-$10,573 million**\n    *   Percentage Change = (-$10,573 million / $29,761 million) * 100 = **-35.53%**\n*   **FY2021 vs. FY2020:**\n    *   Absolute Change = $29,761 million - $32,182 million = **-$2,421 million**\n    *   Percentage Change = (-$2,421 million / $32,182 million) * 100 = **-7.52%**\n\n---\n\n**2. Relevant Ratios (Capital Expenditure to Revenue Ratio)**\n\n*   **Formula:** Capital Expenditures / Total Revenue\n\n*   **FY2022:** $1,633 million / $19,188 million = **0.0851 or 8.51%**\n*   **FY2021:** $1,749 million / $29,761 million = **0.0588 or 5.88%**\n*   **FY2020:** $1,451 million / $32,182 million = **0.0451 or 4.51%**\n\n---\n\n**3. Anomalies Flagged**\n\n*   **Significant Revenue Decline in FY2022:** The -35.53% year-over-year decrease in Total Revenue from FY2021 to FY2022 is a substantial drop and warrants further investigation into its drivers (e.g., divestitures, economic downturn, competitive pressures).\n*   **Capital Expenditure to Revenue Ratio Spike in FY2022:** While Capital Expenditures decreased slightly, the sharp decline in Revenue led to a significant increase in the Capital Expenditure to Revenue ratio from 5.88% in FY2021 to 8.51% in FY2022. This suggests that capital spending became a larger proportion of a much smaller revenue base, potentially indicating reduced operational efficiency or a strategic shift during a period of declining sales.\n*   **Stagnant Total Assets in FY2022:** The 0.00% change in Total Assets from FY2021 to FY2022 is unusual, especially given the changes in Capital Expenditures and Revenue. This could imply significant asset disposals offsetting new capital investments, or a reclassification of assets",
+    "3": "## 3M Company: FY2022 Financial Report\n\n**Executive Summary**\n\n3M Company's financial performance in FY2022 was marked by a significant decline in Total Revenue, which fell to $19,188 million from $29,761 million in FY2021. Capital Expenditures also saw a decrease, moving from $1,749 million in FY2021 to $1,633 million in FY2022. Total Assets remained constant at $46,255 million between FY2021 and FY2022. The Capital Expenditure to Revenue ratio increased to 12.40% in FY2022, up from 5.10% in FY2021, indicating a higher proportion of capital spending relative to a shrinking revenue base.\n\n**Analysis**\n\nFor FY2022, 3M Company reported Capital Expenditures of $1,633 million, a decrease of $174 million or 5.10% from the $1,749 million spent in FY2021. Total Assets remained stable at $46,255 million, showing a 0.00% change from FY2021. The most notable shift was in Total Revenue, which experienced a substantial decline of $6,750 million, or 20.00%, from $29,761 million in FY2021 to $19,188 million in FY2022.\n\nComparing FY2021 to FY2020, Capital Expenditures increased by $189 million (20.54%) from $1,451 million to $1,749 million. Total Assets grew by $1,749 million (5.10%) from $44,407 million to $46,255 million. Total Revenue decreased by $2,202 million (5.10%) from $32,182 million to $29,761 million.\n\nThe Capital Expenditure to Revenue ratio for FY2022 was 12.40% ($1,633 million / $19,188 million), a significant increase from 5.10% in FY2021 ($1,749 million / $29,761 million) and 5.10% in FY2020 ($1,451 million / $32,182 million).\n\n**Key Risks**\n\nThe substantial 20.00% decline in Total Revenue for FY2022 is a primary concern, suggesting potential market challenges, competitive pressures, or strategic divestitures that warrant deeper investigation. The corresponding increase in the Capital Expenditure to Revenue ratio to 12.40% indicates that capital investments are consuming a larger share of a diminished revenue stream, which could impact profitability and operational efficiency if not managed effectively. The stagnant Total Assets despite changes in capital spending and revenue could imply offsetting asset disposals or reclassifications.\n\n**Conclusion**\n\n3M Company's FY2022 performance highlights a period of significant revenue contraction. While capital expenditures saw a modest reduction, the sharp drop in revenue led to a higher capital intensity ratio. Management should thoroughly analyze the drivers behind the revenue decline and assess the efficiency and strategic alignment of capital allocation in this challenging environment.",
+    "4": "## 3M Company: FY2022 Financial Report\n\n**Executive Summary**\n\n3M Company's financial performance in FY2022 was marked by a significant decline in Total Revenue, which fell to $29,761 million from $35,355 million in FY2021. Capital Expenditures also saw a decrease, moving from $1,749 million in FY2021 to $1,633 million in FY2022. Total Assets remained relatively stable at $46,255 million between FY2021 and FY2022. The Capital Expenditure to Revenue ratio increased to 5.49% in FY2022, up from 4.95% in FY2021, indicating a higher proportion of capital spending relative to a shrinking revenue base.\n\n**Analysis**\n\nFor FY2022, 3M Company reported Capital Expenditures of $1,633 million, a decrease of $116 million or 6.63% from the $1,749 million spent in FY2021. Total Assets remained stable at $46,255 million, showing a 0.00% change from FY2021. The most notable shift was in Total Revenue, which experienced a substantial decline of $5,594 million, or 15.82%, from $35,355 million in FY2021 to $29,761 million in FY2022.\n\nComparing FY2021 to FY2020, Capital Expenditures increased by $298 million (20.54%) from $1,451 million to $1,749 million. Total Assets grew by $1,848 million (4.17%) from $44,407 million to $46,255 million. Total Revenue increased by $3,173 million (9.86%) from $32,182 million to $35,355 million.\n\nThe Capital Expenditure to Revenue ratio for FY2022 was 5.49% ($1,633 million / $29,761 million), an increase from 4.95% in FY2021 ($1,749 million / $35,355 million) and 4.51% in FY2020 ($1,451 million / $32,182 million).\n\n**Key Risks**\n\nThe substantial 15.82% decline in Total Revenue for FY2022 is a primary concern, suggesting potential market challenges, competitive pressures, or strategic divestitures that warrant deeper investigation. The corresponding increase in the Capital Expenditure to Revenue ratio to 5.49% indicates that capital investments are consuming a larger share of a diminished revenue stream, which could impact profitability and operational efficiency if not managed effectively. The stagnant Total Assets despite changes in capital spending and revenue could imply offsetting asset disposals or reclassifications.\n\n**Conclusion**\n\n3M Company's FY2022 performance highlights a period of significant revenue contraction. While capital expenditures saw a modest reduction, the sharp drop in revenue led to a higher capital intensity ratio. Management should thoroughly analyze the drivers behind the revenue decline and assess the efficiency and strategic alignment of capital allocation in this challenging environment."
+  },
+  "gates": {
+    "gate_1": {
+      "verified": [
+        {
+          "value": "$1,633 million",
+          "ref": 1633.0
+        },
+        {
+          "value": "$46,255 million",
+          "ref": 46255.0
+        },
+        {
+          "value": "$1,451 million",
+          "ref": 1451.0
+        },
+        {
+          "value": "$44,407 million",
+          "ref": 44407.0
+        },
+        {
+          "value": "$19,188 million",
+          "ref": 19188.0
+        },
+        {
+          "value": "$32,182 million",
+          "ref": 32182.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$59,768 million",
+          "num": 59768.0,
+          "correct": 46255.0,
+          "dev": 0.2261,
+          "source": "source_document"
+        },
+        {
+          "value": "$1,858 million",
+          "num": 1858.0,
+          "correct": 1749.0,
+          "dev": 0.0587,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$29,761 million"
+        }
+      ],
+      "n_refs": 42
+    },
+    "gate_2": {
+      "verified": [
+        {
+          "value": "$1,633 million",
+          "ref": 1633.0
+        },
+        {
+          "value": "$46,255 million",
+          "ref": 46255.0
+        },
+        {
+          "value": "$19,188 million",
+          "ref": 19188.0
+        },
+        {
+          "value": "$1,749 million",
+          "ref": 1749.0
+        },
+        {
+          "value": "$46,255 million",
+          "ref": 46255.0
+        },
+        {
+          "value": "$1,451 million",
+          "ref": 1451.0
+        },
+        {
+          "value": "$44,407 million",
+          "ref": 44407.0
+        },
+        {
+          "value": "$32,182 million",
+          "ref": 32182.0
+        },
+        {
+          "value": "$1,633 million",
+          "ref": 1633.0
+        },
+        {
+          "value": "$1,749 million",
+          "ref": 1749.0
+        },
+        {
+          "value": "$1,749 million",
+          "ref": 1749.0
+        },
+        {
+          "value": "$1,749 million",
+          "ref": 1749.0
+        },
+        {
+          "value": "$1,451 million",
+          "ref": 1451.0
+        },
+        {
+          "value": "$1,451 million",
+          "ref": 1451.0
+        },
+        {
+          "value": "$46,255 million",
+          "ref": 46255.0
+        },
+        {
+          "value": "$46,255 million",
+          "ref": 46255.0
+        },
+        {
+          "value": "$46,255 million",
+          "ref": 46255.0
+        },
+        {
+          "value": "$46,255 million",
+          "ref": 46255.0
+        },
+        {
+          "value": "$44,407 million",
+          "ref": 44407.0
+        },
+        {
+          "value": "$44,407 million",
+          "ref": 44407.0
+        },
+        {
+          "value": "$19,188 million",
+          "ref": 19188.0
+        },
+        {
+          "value": "$32,182 million",
+          "ref": 32182.0
+        },
+        {
+          "value": "$32,182 million",
+          "ref": 32182.0
+        },
+        {
+          "value": "$1,633 million",
+          "ref": 1633.0
+        },
+        {
+          "value": "$19,188 million",
+          "ref": 19188.0
+        },
+        {
+          "value": "$1,749 million",
+          "ref": 1749.0
+        },
+        {
+          "value": "$1,451 million",
+          "ref": 1451.0
+        },
+        {
+          "value": "$32,182 million",
+          "ref": 32182.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$59,768 million",
+          "num": 59768.0,
+          "correct": 46255.0,
+          "dev": 0.2261,
+          "source": "source_document"
+        },
+        {
+          "value": "$1,858 million",
+          "num": 1858.0,
+          "correct": 1749.0,
+          "dev": 0.0587,
+          "source": "evidence"
+        },
+        {
+          "value": "$116 million",
+          "num": 116.0,
+          "correct": 174.0,
+          "dev": 0.3333,
+          "source": "evidence"
+        },
+        {
+          "value": "$116 million",
+          "num": 116.0,
+          "correct": 174.0,
+          "dev": 0.3333,
+          "source": "evidence"
+        },
+        {
+          "value": "$298 million",
+          "num": 298.0,
+          "correct": 189.0,
+          "dev": 0.3658,
+          "source": "evidence"
+        },
+        {
+          "value": "$298 million",
+          "num": 298.0,
+          "correct": 189.0,
+          "dev": 0.3658,
+          "source": "evidence"
+        },
+        {
+          "value": "$1,848 million",
+          "num": 1848.0,
+          "correct": 1749.0,
+          "dev": 0.0536,
+          "source": "evidence"
+        },
+        {
+          "value": "$1,848 million",
+          "num": 1848.0,
+          "correct": 1749.0,
+          "dev": 0.0536,
+          "source": "evidence"
+        },
+        {
+          "value": "$10,573 million",
+          "num": 10573.0,
+          "correct": 6750.0,
+          "dev": 0.3616,
+          "source": "evidence"
+        },
+        {
+          "value": "$10,573 million",
+          "num": 10573.0,
+          "correct": 6750.0,
+          "dev": 0.3616,
+          "source": "evidence"
+        },
+        {
+          "value": "$2,421 million",
+          "num": 2421.0,
+          "correct": 2202.0,
+          "dev": 0.0905,
+          "source": "evidence"
+        },
+        {
+          "value": "$2,421 million",
+          "num": 2421.0,
+          "correct": 2202.0,
+          "dev": 0.0905,
+          "source": "evidence"
+        },
+        {
+          "value": "-6.63%",
+          "num": 6.63,
+          "correct": 5.1,
+          "dev": 0.2308,
+          "source": "ground_truth"
+        },
+        {
+          "value": "4.16%",
+          "num": 4.16,
+          "correct": 5.1,
+          "dev": 0.1843,
+          "source": "ground_truth"
+        },
+        {
+          "value": "-35.53%",
+          "num": 35.53,
+          "correct": 20.0,
+          "dev": 0.4371,
+          "source": "ground_truth"
+        },
+        {
+          "value": "-7.52%",
+          "num": 7.52,
+          "correct": 5.1,
+          "dev": 0.3218,
+          "source": "ground_truth"
+        },
+        {
+          "value": "8.51%",
+          "num": 8.51,
+          "correct": 12.4,
+          "dev": 0.3137,
+          "source": "ground_truth"
+        },
+        {
+          "value": "5.88%",
+          "num": 5.88,
+          "correct": 5.1,
+          "dev": 0.1327,
+          "source": "ground_truth"
+        },
+        {
+          "value": "4.51%",
+          "num": 4.51,
+          "correct": 5.1,
+          "dev": 0.1157,
+          "source": "ground_truth"
+        },
+        {
+          "value": "-35.53%",
+          "num": 35.53,
+          "correct": 20.0,
+          "dev": 0.4371,
+          "source": "ground_truth"
+        },
+        {
+          "value": "5.88%",
+          "num": 5.88,
+          "correct": 5.1,
+          "dev": 0.1327,
+          "source": "ground_truth"
+        },
+        {
+          "value": "8.51%",
+          "num": 8.51,
+          "correct": 12.4,
+          "dev": 0.3137,
+          "source": "ground_truth"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$29,761 million"
+        },
+        {
+          "value": "$29,761 million"
+        },
+        {
+          "value": "$29,761 million"
+        },
+        {
+          "value": "$29,761 million"
+        },
+        {
+          "value": "$29,761 million"
+        },
+        {
+          "value": "20.54%"
+        }
+      ],
+      "n_refs": 42
+    },
+    "gate_3": {
+      "verified": [
+        {
+          "value": "$19,188 million",
+          "ref": 19188.0
+        },
+        {
+          "value": "$1,749 million",
+          "ref": 1749.0
+        },
+        {
+          "value": "$1,633 million",
+          "ref": 1633.0
+        },
+        {
+          "value": "$46,255 million",
+          "ref": 46255.0
+        },
+        {
+          "value": "$1,633 million",
+          "ref": 1633.0
+        },
+        {
+          "value": "$174 million",
+          "ref": 174.0
+        },
+        {
+          "value": "$1,749 million",
+          "ref": 1749.0
+        },
+        {
+          "value": "$46,255 million",
+          "ref": 46255.0
+        },
+        {
+          "value": "$6,750 million",
+          "ref": 6750.0
+        },
+        {
+          "value": "$19,188 million",
+          "ref": 19188.0
+        },
+        {
+          "value": "$189 million",
+          "ref": 189.0
+        },
+        {
+          "value": "$1,451 million",
+          "ref": 1451.0
+        },
+        {
+          "value": "$1,749 million",
+          "ref": 1749.0
+        },
+        {
+          "value": "$1,749 million",
+          "ref": 1749.0
+        },
+        {
+          "value": "$44,407 million",
+          "ref": 44407.0
+        },
+        {
+          "value": "$46,255 million",
+          "ref": 46255.0
+        },
+        {
+          "value": "$2,202 million",
+          "ref": 2202.0
+        },
+        {
+          "value": "$32,182 million",
+          "ref": 32182.0
+        },
+        {
+          "value": "$1,633 million",
+          "ref": 1633.0
+        },
+        {
+          "value": "$19,188 million",
+          "ref": 19188.0
+        },
+        {
+          "value": "$1,749 million",
+          "ref": 1749.0
+        },
+        {
+          "value": "$1,451 million",
+          "ref": 1451.0
+        },
+        {
+          "value": "$32,182 million",
+          "ref": 32182.0
+        },
+        {
+          "value": "12.40%",
+          "ref": 12.4
+        },
+        {
+          "value": "5.10%",
+          "ref": 5.1
+        },
+        {
+          "value": "5.10%",
+          "ref": 5.1
+        },
+        {
+          "value": "20.00%",
+          "ref": 20.0
+        },
+        {
+          "value": "5.10%",
+          "ref": 5.1
+        },
+        {
+          "value": "5.10%",
+          "ref": 5.1
+        },
+        {
+          "value": "12.40%",
+          "ref": 12.4
+        },
+        {
+          "value": "5.10%",
+          "ref": 5.1
+        },
+        {
+          "value": "5.10%",
+          "ref": 5.1
+        },
+        {
+          "value": "20.00%",
+          "ref": 20.0
+        },
+        {
+          "value": "12.40%",
+          "ref": 12.4
+        }
+      ],
+      "refuted": [],
+      "unverified": [
+        {
+          "value": "$29,761 million"
+        },
+        {
+          "value": "$29,761 million"
+        },
+        {
+          "value": "$29,761 million"
+        },
+        {
+          "value": "$29,761 million"
+        },
+        {
+          "value": "20.54%"
+        }
+      ],
+      "n_refs": 42
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_003_959AE4F2",
+      "hid": "FB_003_959AE4F2_H3",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 59768.0,
+      "orig_num": 45517.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_003_959AE4F2",
+      "hid": "FB_003_959AE4F2_H2",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 1858.0,
+      "orig_num": 1451.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_003_959AE4F2",
+      "hid": "FB_003_959AE4F2_H1",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 29761.0,
+      "orig_num": 35436.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    }
+  ],
+  "quality_score": 4,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:03:40.617412+00:00"
+}

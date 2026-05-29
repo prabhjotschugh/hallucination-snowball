@@ -1,0 +1,115 @@
+{
+  "question_id": "FB_129_1F62F697",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "I'm unable to provide an analysis or narrative report as requested, but I can extract the relevant financial data from PepsiCo's Q1 2023 earnings filings. Here are the details:\n\n- **COMPANY & PERIOD**: PepsiCo, Q1 2023\n- **PRIMARY METRIC**: PepsiCo raised its full-year guidance for FY2023 to a revenue growth of 14.2% and an adjusted earnings per share (EPS) growth of 8% (per the PEPSICO_2023Q1_EARNINGS document, Earnings Call Transcript).\n- **SUPPORTING DATA**:\n  - **Total Revenue**: $17,848 million (Q1 2023), compared to $16,200 million (Q1 2022) \u2014 an increase of 10.2% year-over-year (per the FY2023 Q1 10-Q, Consolidated Statements of Operations).\n  - **Net Income**: $2,054 million (Q1 2023), compared to $1,862 million (Q1 2022) \u2014 an increase of 16.9% year-over-year (per the FY2023 Q1 10-Q, Consolidated Statements of Operations).\n  - **Operating Income**: $3,086 million (Q1 2023), compared to $2,800 million (Q1 2022) \u2014 an increase of 10.2% year-over-year (per the FY2023 Q1 10-Q, Consolidated Statements of Operations).\n  - **Adjusted EPS**: $1.50 (Q1 2023), compared to $1.00 (Q1 2022) \u2014 an increase of 16.3% year-over-year (per the FY2023 Q1 10-Q, Consolidated Statements of Operations).\n- **DATA SOURCES**: \n  - PEPSICO_2023Q1_EARNINGS document, Consolidated Statements of Operations, and Earnings Call Transcript.\n\nPlease note that I have provided only the exact figures and relevant statements as per your request. Further analysis and interpretation should be conducted by subsequent analysts.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_129_1F62F697_H3",
+      "type": "percentage",
+      "original_value": "10%",
+      "injected_value": "14.2%",
+      "original_numeric": "10",
+      "injected_numeric": "14.2",
+      "position_char": 313,
+      "sentence_approx": 2,
+      "perturbation_delta": 4.2192
+    },
+    {
+      "hallucination_id": "FB_129_1F62F697_H2",
+      "type": "percentage",
+      "original_value": "10.3%",
+      "injected_value": "16.9%",
+      "original_numeric": "10.3",
+      "injected_numeric": "16.9",
+      "position_char": 755,
+      "sentence_approx": 5,
+      "perturbation_delta": 6.5824
+    },
+    {
+      "hallucination_id": "FB_129_1F62F697_H1",
+      "type": "dollar_amount",
+      "original_value": "$1.29 ",
+      "injected_value": "$1.00 ",
+      "original_numeric": "1.29",
+      "injected_numeric": "1.00",
+      "position_char": 1084,
+      "sentence_approx": 10,
+      "perturbation_delta": -0.2223
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Adjusted EPS: $1.50 (Q1 2023), compared to $1.00 (Q1 2022) \u2014 an increase of 16.3% year-over-year",
+        "claim_value": "$1.50 vs $1.00 (16.3% growth)",
+        "reason": "Mathematical impossibility: An increase from $1.00 to $1.50 represents 50% growth, not 16.3%. This indicates either the prior year EPS figure or the growth rate is hallucinated.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Net Income: $2,054 million (Q1 2023), compared to $1,862 million (Q1 2022) \u2014 an increase of 16.9% year-over-year",
+        "claim_value": "16.9% growth",
+        "reason": "Mathematical inconsistency: The provided dollar amounts ($2,054M vs $1,862M) yield a growth rate of approximately 10.3%, not 16.9%.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "PepsiCo raised its full-year guidance for FY2023 to a revenue growth of 14.2%",
+        "claim_value": "14.2% revenue growth",
+        "reason": "Highly implausible for a mature consumer staples company like PepsiCo to guide on total reported revenue growth of this magnitude; they typically guide on Organic Revenue Growth (mid-single digits).",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Adjusted EPS ... (per the FY2023 Q1 10-Q, Consolidated Statements of Operations)",
+        "claim_value": "Source attribution",
+        "reason": "Technical accounting error: Adjusted EPS is a Non-GAAP measure and is not reported in the GAAP Consolidated Statements of Operations within a 10-Q filing; it is found in earnings releases or reconciliation tables.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 14,
+    "overall_assessment": "Multiple critical mathematical inconsistencies and accounting technical errors suggest significant hallucination in the financial figures.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Adjusted EPS: $1.50 (Q1 2023), compared to $1.00 (Q1 2022) \u2014 an increase of 16.3% year-over-year\",\n      \"claim_value\": \"$1.50 vs $1.00 (16.3% growth)\",\n      \"reason\": \"Mathematical impossibility: An increase from $1.00 to $1.50 represents 50% growth, not 16.3%. This indicates either the prior year EPS figure or the growth rate is hallucinated.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Net Income: $2,054 million (Q1 2023), compared to $1,862 million (Q1 2022) \u2014 an increase of 16.9% year-over-year\",\n      \"claim_value\": \"16.9% growth\",\n      \"reason\": \"Mathematical inconsistency: The provided dollar amounts ($2,054M vs $1,862M) yield a growth rate of approximately 10.3%, not 16.9%.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"PepsiCo raised its full-year guidance for FY2023 to a revenue growth of 14.2%\",\n      \"claim_value\": \"14.2% revenue growth\",\n      \"reason\": \"Highly implausible for a mature consumer staples company like PepsiCo to guide on total reported revenue growth of this magnitude; they typically guide on Organic Revenue Growth (mid-single digits).\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Adjusted EPS ... (per the FY2023 Q1 10-Q, Consolidated Statements of Operations)\",\n      \"claim_value\": \"Source attribution\",\n      \"reason\": \"Technical accounting error: Adjusted EPS is a Non-GAAP measure and is not reported in the GAAP Consolidated Statements of Operations within a 10-Q filing; it is found in earnings releases or reconciliation tables.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 14,\n  \"overall_assessment\": \"Multiple critical mathematical inconsistencies and accounting technical errors suggest significant hallucination in the financial figures.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_129_1F62F697",
+      "hallucination_id": "FB_129_1F62F697_H3",
+      "model": "Qwen3.5-397B",
+      "injection_type": "percentage",
+      "original_value": "10%",
+      "injected_value": "14.2%",
+      "detected": true,
+      "reason": "Highly implausible for a mature consumer staples company like PepsiCo to guide on total reported revenue growth of this magnitude; they typically guide on Organic Revenue Growth (mid-single digits).",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 14
+    },
+    {
+      "question_id": "FB_129_1F62F697",
+      "hallucination_id": "FB_129_1F62F697_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "percentage",
+      "original_value": "10.3%",
+      "injected_value": "16.9%",
+      "detected": true,
+      "reason": "Mathematical inconsistency: The provided dollar amounts ($2,054M vs $1,862M) yield a growth rate of approximately 10.3%, not 16.9%.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 14
+    },
+    {
+      "question_id": "FB_129_1F62F697",
+      "hallucination_id": "FB_129_1F62F697_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$1.29 ",
+      "injected_value": "$1.00 ",
+      "detected": true,
+      "reason": "Mathematical impossibility: An increase from $1.00 to $1.50 represents 50% growth, not 16.3%. This indicates either the prior year EPS figure or the growth rate is hallucinated.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 14
+    }
+  ],
+  "timestamp": "2026-03-24T13:02:25.439802Z"
+}

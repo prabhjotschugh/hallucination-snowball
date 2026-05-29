@@ -1,0 +1,79 @@
+{
+  "question_id": "FB_030_DF79B84F",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Amcor, FY 2023 vs FY 2022\n- PRIMARY METRIC: The real change in sales for Amcor in FY 2023 compared to FY 2022, excluding the effects of foreign exchange movements, passthrough costs, and one-off items, is not explicitly stated in the available filings. However, the reported sales figures are as follows:\n  - FY 2023 Net Sales: $16,612 million (per the Q4 2023 earnings report, Consolidated Statements of Operations)\n  - FY 2022 Net Sales: $8,955 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  \n  The nominal change in sales is $500 million. To determine the real change excluding the specified factors, further details on the adjustments for FX, passthrough costs, and one-off items would be required, which are not provided in the filings.\n\n- SUPPORTING DATA: \n  - FY 2023 Net Sales: $14,000 million (per the Q4 2023 earnings report, Consolidated Statements of Operations)\n  - FY 2022 Net Sales: $13,500 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - FY 2021 Net Sales: $12,500 million (per the FY2021 10-K, Consolidated Statements of Operations)\n\n- DATA SOURCES: \n  - Q4 2023 Earnings Report, Consolidated Statements of Operations\n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Statements of Operations\n\nPlease note that the specific adjustments for foreign exchange, passthrough costs, and one-off items are not detailed in the available filings, which limits the ability to calculate the real change in sales accurately.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_030_DF79B84F_H2",
+      "type": "dollar_amount",
+      "original_value": "$14,000 million",
+      "injected_value": "$16,612 million",
+      "original_numeric": "14000",
+      "injected_numeric": "16612",
+      "position_char": 348,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.1866
+    },
+    {
+      "hallucination_id": "FB_030_DF79B84F_H1",
+      "type": "dollar_amount",
+      "original_value": "$13,500 million",
+      "injected_value": "$8,955 million",
+      "original_numeric": "13500",
+      "injected_numeric": "8955",
+      "position_char": 460,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3367
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "FY 2023 Net Sales: $16,612 million",
+        "claim_value": "$16,612 million",
+        "reason": "The reported FY 2023 Net Sales figure is inconsistent with the supporting data, which lists FY 2023 Net Sales as $14,000 million.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY 2022 Net Sales: $8,955 million",
+        "claim_value": "$8,955 million",
+        "reason": "The reported FY 2022 Net Sales figure is inconsistent with the supporting data, which lists FY 2022 Net Sales as $13,500 million.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 5,
+    "overall_assessment": "The researcher's output contains inconsistent sales figures, which raises concerns about the accuracy of the data.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"FY 2023 Net Sales: $16,612 million\",\n      \"claim_value\" : \"$16,612 million\",\n      \"reason\"      : \"The reported FY 2023 Net Sales figure is inconsistent with the supporting data, which lists FY 2023 Net Sales as $14,000 million.\",\n      \"confidence\"  : \"high\"\n    },\n    {\n      \"claim_text\"  : \"FY 2022 Net Sales: $8,955 million\",\n      \"claim_value\" : \"$8,955 million\",\n      \"reason\"      : \"The reported FY 2022 Net Sales figure is inconsistent with the supporting data, which lists FY 2022 Net Sales as $13,500 million.\",\n      \"confidence\"  : \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 5,\n  \"overall_assessment\"   : \"The researcher's output contains inconsistent sales figures, which raises concerns about the accuracy of the data.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_030_DF79B84F",
+      "hallucination_id": "FB_030_DF79B84F_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$14,000 million",
+      "injected_value": "$16,612 million",
+      "detected": true,
+      "reason": "The reported FY 2023 Net Sales figure is inconsistent with the supporting data, which lists FY 2023 Net Sales as $14,000 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 5
+    },
+    {
+      "question_id": "FB_030_DF79B84F",
+      "hallucination_id": "FB_030_DF79B84F_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$13,500 million",
+      "injected_value": "$8,955 million",
+      "detected": true,
+      "reason": "The reported FY 2022 Net Sales figure is inconsistent with the supporting data, which lists FY 2022 Net Sales as $13,500 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 5
+    }
+  ],
+  "timestamp": "2026-03-27T09:30:05.540013Z"
+}

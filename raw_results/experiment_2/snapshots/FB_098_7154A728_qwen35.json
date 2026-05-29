@@ -1,0 +1,85 @@
+{
+  "question_id": "FB_098_7154A728",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: JPMorgan Chase & Co., Q2 2022\n- PRIMARY METRIC: The business segment with the highest net income in Q2 2022 was the Consumer & Community Banking segment, which reported a net income of $3,440 million (USD millions) per the Q2 2022 10-Q, Consolidated Statements of Operations.\n- SUPPORTING DATA: \n  - Corporate & Investment Bank: Net income of $3,200 million (USD millions)\n  - Commercial Banking: Net income of $801 million (USD millions)\n  - Asset & Wealth Management: Net income of $1,000 million (USD millions)\n  - Total net income for JPMorgan Chase & Co. in Q2 2022 was $12,001 million (USD millions).\n- DATA SOURCES: \n  - Q2 2022 10-Q, Consolidated Statements of Operations, page 3. \n\nNote: No trend analysis or performance comparisons to previous quarters or industry benchmarks are included, as per the directive to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_098_7154A728_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,000 million",
+      "injected_value": "$801 million",
+      "original_numeric": "1000",
+      "injected_numeric": "801",
+      "position_char": 431,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.1993
+    },
+    {
+      "hallucination_id": "FB_098_7154A728_H1",
+      "type": "dollar_amount",
+      "original_value": "$8,640 million",
+      "injected_value": "$12,001 million",
+      "original_numeric": "8640",
+      "injected_numeric": "12001",
+      "position_char": 597,
+      "sentence_approx": 4,
+      "perturbation_delta": 0.389
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Total net income for JPMorgan Chase & Co. in Q2 2022 was $12,001 million (USD millions).",
+        "claim_value": "$12,001 million",
+        "reason": "Internal inconsistency: The sum of the reported segment net incomes ($3,440 + $3,200 + $801 + $1,000 = $8,441 million) does not reconcile with the claimed total. A $3.5 billion variance attributed to unallocated corporate items is highly unusual (typically negative or smaller). Additionally, general financial knowledge indicates JPM's Q2 2022 net income was approximately $8.65 billion, while $12 billion aligns more closely with Q2 2021 results, suggesting a hallucinated or conflated figure.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Asset & Wealth Management: Net income of $1,000 million (USD millions)",
+        "claim_value": "$1,000 million",
+        "reason": "Suspicious precision: Compared to other segment figures ($801 million, $3,440 million), this number is suspiciously round. SEC filings typically report exact figures (e.g., $1,023 million) rather than exact thousands unless explicitly rounded in a summary, which contradicts the claim of being sourced directly from the 10-Q statements.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "DATA SOURCES: Q2 2022 10-Q, Consolidated Statements of Operations, page 3.",
+        "claim_value": "Consolidated Statements of Operations, page 3",
+        "reason": "Structural inaccuracy: Segment-level net income data is disclosed in the 'Segment Information' notes (typically Note 11 or similar) within a 10-Q, not on the 'Consolidated Statements of Operations' (the face of the income statement). Furthermore, page 3 of a 10-Q is typically the cover or financial highlights, not detailed segment reporting.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "The output contains critical hallucinations regarding the total net income figure and the location of segment data within SEC filings, alongside suspicious rounding in segment specifics.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Total net income for JPMorgan Chase & Co. in Q2 2022 was $12,001 million (USD millions).\",\n      \"claim_value\": \"$12,001 million\",\n      \"reason\": \"Internal inconsistency: The sum of the reported segment net incomes ($3,440 + $3,200 + $801 + $1,000 = $8,441 million) does not reconcile with the claimed total. A $3.5 billion variance attributed to unallocated corporate items is highly unusual (typically negative or smaller). Additionally, general financial knowledge indicates JPM's Q2 2022 net income was approximately $8.65 billion, while $12 billion aligns more closely with Q2 2021 results, suggesting a hallucinated or conflated figure.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Asset & Wealth Management: Net income of $1,000 million (USD millions)\",\n      \"claim_value\": \"$1,000 million\",\n      \"reason\": \"Suspicious precision: Compared to other segment figures ($801 million, $3,440 million), this number is suspiciously round. SEC filings typically report exact figures (e.g., $1,023 million) rather than exact thousands unless explicitly rounded in a summary, which contradicts the claim of being sourced directly from the 10-Q statements.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"DATA SOURCES: Q2 2022 10-Q, Consolidated Statements of Operations, page 3.\",\n      \"claim_value\": \"Consolidated Statements of Operations, page 3\",\n      \"reason\": \"Structural inaccuracy: Segment-level net income data is disclosed in the 'Segment Information' notes (typically Note 11 or similar) within a 10-Q, not on the 'Consolidated Statements of Operations' (the face of the income statement). Furthermore, page 3 of a 10-Q is typically the cover or financial highlights, not detailed segment reporting.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\": \"The output contains critical hallucinations regarding the total net income figure and the location of segment data within SEC filings, alongside suspicious rounding in segment specifics.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_098_7154A728",
+      "hallucination_id": "FB_098_7154A728_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,000 million",
+      "injected_value": "$801 million",
+      "detected": true,
+      "reason": "Suspicious precision: Compared to other segment figures ($801 million, $3,440 million), this number is suspiciously round. SEC filings typically report exact figures (e.g., $1,023 million) rather than exact thousands unless explicitly rounded in a summary, which contradicts the claim of being sourced directly from the 10-Q statements.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_098_7154A728",
+      "hallucination_id": "FB_098_7154A728_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$8,640 million",
+      "injected_value": "$12,001 million",
+      "detected": true,
+      "reason": "Internal inconsistency: The sum of the reported segment net incomes ($3,440 + $3,200 + $801 + $1,000 = $8,441 million) does not reconcile with the claimed total. A $3.5 billion variance attributed to unallocated corporate items is highly unusual (typically negative or smaller). Additionally, general financial knowledge indicates JPM's Q2 2022 net income was approximately $8.65 billion, while $12 billion aligns more closely with Q2 2021 results, suggesting a hallucinated or conflated figure.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-24T12:22:11.065534Z"
+}

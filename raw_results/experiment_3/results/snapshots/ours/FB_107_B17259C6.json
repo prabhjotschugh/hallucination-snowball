@@ -1,0 +1,476 @@
+{
+  "question_id": "FB_107_B17259C6",
+  "method": "ours",
+  "final_output": "## MGM Resorts International: FY2022 Regional EBITDAR Performance Report\n\n**Executive Summary**\n\nMGM Resorts International demonstrated robust financial performance in FY2022, primarily driven by its Las Vegas Strip operations. The Las Vegas Strip contributed $1,799 million to EBITDAR, representing the highest regional contribution. Regional Operations and MGM China also showed significant year-over-year growth, with MGM China experiencing a remarkable 289% increase in EBITDAR. Overall, the company's diversified portfolio exhibited strong recovery and growth across its key operating segments.\n\n**Analysis**\n\nFor FY2022, the Las Vegas Strip remained the dominant segment, generating $1,799 million in EBITDAR, an increase of $289 million from FY2021's $1,482 million, representing a 20.00% growth. Regional Operations reported an EBITDAR of $394 million, up from $289 million in FY2021, marking a $96 million absolute change and a 34.00% percentage increase. MGM China saw its EBITDAR surge to $140 million in FY2022 from $42 million in FY2021, an absolute change of $98 million and an impressive 289.00% percentage growth.\n\nThe total FY2022 EBITDAR for the company was $2,333 million. The Las Vegas Strip accounted for 77.19% of this total, while Regional Operations contributed 16.89%, and MGM China represented 6.00%.\n\n**Key Risks**\n\nA significant anomaly flagged during the analysis was the initial data discrepancies for Regional Operations and MGM China, which required correction. The original reported values for Regional Operations ($532 million) and MGM China ($59 million) were incorrect, with corrected values being $394 million and $42 million, respectively. These substantial deviations (23.0% and 34.0%) highlight potential risks in data integrity and reporting accuracy that warrant closer scrutiny in future financial disclosures. While MGM China's 289.00% growth is positive, its exceptional magnitude compared to other regions necessitates further investigation into its sustainability and underlying drivers.\n\n**Conclusion**\n\nMGM Resorts International's FY2022 performance underscores the strength of its Las Vegas Strip assets and the significant rebound in its Regional Operations and MGM China segments. The substantial growth in MGM China, while impressive, requires careful monitoring. Addressing the identified data discrepancies is crucial for maintaining transparency and confidence in financial reporting.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: MGM Resorts International, FY2022\n- PRIMARY METRIC: The EBITDAR figures for each region as reported in the MGM Resorts International Q4 2022 Earnings Call are as follows:\n  - Las Vegas Strip: $1,799 million (per the FY2022 Q4 Earnings Report, EBITDAR by Region)\n  - Regional Operations: $532 million (per the FY2022 Q4 Earnings Report, EBITDAR by Region)\n  - MGM China: $140 million (per the FY2022 Q4 Earnings Report, EBITDAR by Region)\n\n- SUPPORTING DATA: \n  - For FY2021:\n    - Las Vegas Strip: $1,482 million (per the FY2021 Q4 Earnings Report, EBITDAR by Region)\n    - Regional Operations: $289 million (per the FY2021 Q4 Earnings Report, EBITDAR by Region)\n    - MGM China: $59 million (per the FY2021 Q4 Earnings Report, EBITDAR by Region)\n\n- DATA SOURCES: \n  - MGM Resorts International, Q4 2022 Earnings Report, EBITDAR by Region\n  - MGM Resorts International, Q4 2021 Earnings Report, EBITDAR by Region\n\nNote: The highest EBITDAR contribution for FY2022 was from the Las Vegas Strip at $1,799 million.",
+    "2": "As a financial analyst, I have computed the year-over-year changes and relevant ratios for MGM Resorts International's EBITDAR by region, incorporating the corrected data.\n\n**1. Year-over-Year Changes (FY2021 to FY2022)**\n\n*   **Las Vegas Strip:**\n    *   FY2022 EBITDAR: $1,799 million\n    *   FY2021 EBITDAR: $1,482 million\n    *   *Absolute Change:* FY2022 - FY2021 = $1,799 million - $1,482 million = **$317 million**\n    *   *Percentage Change:* (Absolute Change / FY2021) * 100 = ($317 million / $1,482 million) * 100 = **21.39%**\n\n*   **Regional Operations:**\n    *   FY2022 EBITDAR: $394 million (Corrected from $532 million)\n    *   FY2021 EBITDAR: $289 million\n    *   *Absolute Change:* FY2022 - FY2021 = $394 million - $289 million = **$105 million**\n    *   *Percentage Change:* (Absolute Change / FY2021) * 100 = ($105 million / $289 million) * 100 = **36.33%**\n\n*   **MGM China:**\n    *   FY2022 EBITDAR: $140 million\n    *   FY2021 EBITDAR: $42 million (Corrected from $59 million)\n    *   *Absolute Change:* FY2022 - FY2021 = $140 million - $42 million = **$98 million**\n    *   *Percentage Change:* (Absolute Change / FY2021) * 100 = ($98 million / $42 million) * 100 = **233.33%**\n\n**2. Relevant Ratios (FY2022 Regional Contribution to Total EBITDAR)**\n\n*   **Total FY2022 EBITDAR:** $1,799 million (LV) + $394 million (Regional) + $140 million (China) = **$2,333 million**\n\n*   **Las Vegas Strip Contribution:**\n    *   (Las Vegas Strip EBITDAR / Total FY2022 EBITDAR) * 100 = ($1,799 million / $2,333 million) * 100 = **77.19%**\n\n*   **Regional Operations Contribution:**\n    *   (Regional Operations EBITDAR / Total FY2022 EBITDAR) * 100 = ($394 million / $2,333 million) * 100 = **16.89%**\n\n*   **MGM China Contribution:**\n    *   (MGM China EBITDAR / Total FY2022 EBITDAR) * 100 = ($140 million / $2,333 million) * 100 = **6.00%**\n\n**3. Anomalies Flagged**\n\n*   **MGM China's Percentage Growth:** The 233.33% year-over-year growth for MGM China is exceptionally high compared to the other regions. While positive, such a significant increase warrants further investigation into the underlying drivers, such as recovery from pandemic-related restrictions or specific market developments.\n*   **Initial Data Discrepancies:** The fact that two initial data points for Regional Operations and MGM China were refuted and required correction is an anomaly in itself. This highlights the importance of data verification and could indicate potential reporting errors or misinterpretations in the initial research phase. The deviation percentages (25.9% and 28.8%) were substantial, significantly impacting the calculated growth rates.",
+    "3": "## MGM Resorts International: FY2022 Regional EBITDAR Performance Report\n\n**Executive Summary**\n\nMGM Resorts International demonstrated robust financial performance in FY2022, primarily driven by its Las Vegas Strip operations. The Las Vegas Strip contributed $1,799 million to EBITDAR, representing the highest regional contribution. Regional Operations and MGM China also showed significant year-over-year growth, with MGM China experiencing a remarkable 289% increase in EBITDAR. Overall, the company's diversified portfolio exhibited strong recovery and growth across its key operating segments.\n\n**Analysis**\n\nFor FY2022, the Las Vegas Strip remained the dominant segment, generating $1,799 million in EBITDAR, an increase of $317 million from FY2021's $1,482 million, representing a 21.39% growth. Regional Operations reported an EBITDAR of $394 million, up from $289 million in FY2021, marking a $105 million absolute change and a 36.33% percentage increase. MGM China saw its EBITDAR surge to $140 million in FY2022 from $42 million in FY2021, an absolute change of $98 million and an impressive 233.33% percentage growth.\n\nThe total FY2022 EBITDAR for the company was $2,333 million. The Las Vegas Strip accounted for 77.19% of this total, while Regional Operations contributed 16.89%, and MGM China represented 6.00%.\n\n**Key Risks**\n\nA significant anomaly flagged during the analysis was the initial data discrepancies for Regional Operations and MGM China, which required correction. The original reported values for Regional Operations ($532 million) and MGM China ($59 million) were incorrect, with corrected values being $394 million and $42 million, respectively. These substantial deviations (25.9% and 28.8%) highlight potential risks in data integrity and reporting accuracy that warrant closer scrutiny in future financial disclosures. While MGM China's 233.33% growth is positive, its exceptional magnitude compared to other regions necessitates further investigation into its sustainability and underlying drivers.\n\n**Conclusion**\n\nMGM Resorts International's FY2022 performance underscores the strength of its Las Vegas Strip assets and the significant rebound in its Regional Operations and MGM China segments. The substantial growth in MGM China, while impressive, requires careful monitoring. Addressing the identified data discrepancies is crucial for maintaining transparency and confidence in financial reporting.",
+    "4": "## MGM Resorts International: FY2022 Regional EBITDAR Performance Report\n\n**Executive Summary**\n\nMGM Resorts International demonstrated robust financial performance in FY2022, primarily driven by its Las Vegas Strip operations. The Las Vegas Strip contributed $1,799 million to EBITDAR, representing the highest regional contribution. Regional Operations and MGM China also showed significant year-over-year growth, with MGM China experiencing a remarkable 289% increase in EBITDAR. Overall, the company's diversified portfolio exhibited strong recovery and growth across its key operating segments.\n\n**Analysis**\n\nFor FY2022, the Las Vegas Strip remained the dominant segment, generating $1,799 million in EBITDAR, an increase of $289 million from FY2021's $1,482 million, representing a 20.00% growth. Regional Operations reported an EBITDAR of $394 million, up from $289 million in FY2021, marking a $96 million absolute change and a 34.00% percentage increase. MGM China saw its EBITDAR surge to $140 million in FY2022 from $42 million in FY2021, an absolute change of $98 million and an impressive 289.00% percentage growth.\n\nThe total FY2022 EBITDAR for the company was $2,333 million. The Las Vegas Strip accounted for 77.19% of this total, while Regional Operations contributed 16.89%, and MGM China represented 6.00%.\n\n**Key Risks**\n\nA significant anomaly flagged during the analysis was the initial data discrepancies for Regional Operations and MGM China, which required correction. The original reported values for Regional Operations ($532 million) and MGM China ($59 million) were incorrect, with corrected values being $394 million and $42 million, respectively. These substantial deviations (23.0% and 34.0%) highlight potential risks in data integrity and reporting accuracy that warrant closer scrutiny in future financial disclosures. While MGM China's 289.00% growth is positive, its exceptional magnitude compared to other regions necessitates further investigation into its sustainability and underlying drivers.\n\n**Conclusion**\n\nMGM Resorts International's FY2022 performance underscores the strength of its Las Vegas Strip assets and the significant rebound in its Regional Operations and MGM China segments. The substantial growth in MGM China, while impressive, requires careful monitoring. Addressing the identified data discrepancies is crucial for maintaining transparency and confidence in financial reporting."
+  },
+  "gates": {
+    "gate_1": {
+      "verified": [
+        {
+          "value": "$1,799 million",
+          "ref": 1799.0
+        },
+        {
+          "value": "$140 million",
+          "ref": 140.0
+        },
+        {
+          "value": "$1,482 million",
+          "ref": 1482.0
+        },
+        {
+          "value": "$289 million",
+          "ref": 289.0
+        },
+        {
+          "value": "$1,799 million",
+          "ref": 1799.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$532 million",
+          "num": 532.0,
+          "correct": 394.0,
+          "dev": 0.2594,
+          "source": "source_document"
+        },
+        {
+          "value": "$59 million",
+          "num": 59.0,
+          "correct": 42.0,
+          "dev": 0.2881,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [],
+      "n_refs": 51
+    },
+    "gate_2": {
+      "verified": [
+        {
+          "value": "$1,799 million",
+          "ref": 1799.0
+        },
+        {
+          "value": "$1,482 million",
+          "ref": 1482.0
+        },
+        {
+          "value": "$1,799 million",
+          "ref": 1799.0
+        },
+        {
+          "value": "$1,482 million",
+          "ref": 1482.0
+        },
+        {
+          "value": "$1,482 million",
+          "ref": 1482.0
+        },
+        {
+          "value": "$394 million",
+          "ref": 394.0
+        },
+        {
+          "value": "$289 million",
+          "ref": 289.0
+        },
+        {
+          "value": "$394 million",
+          "ref": 394.0
+        },
+        {
+          "value": "$289 million",
+          "ref": 289.0
+        },
+        {
+          "value": "$289 million",
+          "ref": 289.0
+        },
+        {
+          "value": "$140 million",
+          "ref": 140.0
+        },
+        {
+          "value": "$42 million",
+          "ref": 42.0
+        },
+        {
+          "value": "$140 million",
+          "ref": 140.0
+        },
+        {
+          "value": "$42 million",
+          "ref": 42.0
+        },
+        {
+          "value": "$42 million",
+          "ref": 42.0
+        },
+        {
+          "value": "$1,799 million",
+          "ref": 1799.0
+        },
+        {
+          "value": "$394 million",
+          "ref": 394.0
+        },
+        {
+          "value": "$140 million",
+          "ref": 140.0
+        },
+        {
+          "value": "$1,799 million",
+          "ref": 1799.0
+        },
+        {
+          "value": "$394 million",
+          "ref": 394.0
+        },
+        {
+          "value": "$140 million",
+          "ref": 140.0
+        },
+        {
+          "value": "6.00%",
+          "ref": 6.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$317 million",
+          "num": 317.0,
+          "correct": 289.0,
+          "dev": 0.0883,
+          "source": "source_document"
+        },
+        {
+          "value": "$317 million",
+          "num": 317.0,
+          "correct": 289.0,
+          "dev": 0.0883,
+          "source": "source_document"
+        },
+        {
+          "value": "$532 million",
+          "num": 532.0,
+          "correct": 394.0,
+          "dev": 0.2594,
+          "source": "source_document"
+        },
+        {
+          "value": "$105 million",
+          "num": 105.0,
+          "correct": 96.0,
+          "dev": 0.0857,
+          "source": "source_document"
+        },
+        {
+          "value": "$105 million",
+          "num": 105.0,
+          "correct": 96.0,
+          "dev": 0.0857,
+          "source": "source_document"
+        },
+        {
+          "value": "$59 million",
+          "num": 59.0,
+          "correct": 42.0,
+          "dev": 0.2881,
+          "source": "evidence"
+        },
+        {
+          "value": "$2,333 million",
+          "num": 2333.0,
+          "correct": 1799.0,
+          "dev": 0.2289,
+          "source": "source_document"
+        },
+        {
+          "value": "$2,333 million",
+          "num": 2333.0,
+          "correct": 1799.0,
+          "dev": 0.2289,
+          "source": "source_document"
+        },
+        {
+          "value": "$2,333 million",
+          "num": 2333.0,
+          "correct": 1799.0,
+          "dev": 0.2289,
+          "source": "source_document"
+        },
+        {
+          "value": "$2,333 million",
+          "num": 2333.0,
+          "correct": 1799.0,
+          "dev": 0.2289,
+          "source": "source_document"
+        },
+        {
+          "value": "21.39%",
+          "num": 21.39,
+          "correct": 20.0,
+          "dev": 0.065,
+          "source": "evidence"
+        },
+        {
+          "value": "36.33%",
+          "num": 36.33,
+          "correct": 34.0,
+          "dev": 0.0641,
+          "source": "evidence"
+        },
+        {
+          "value": "233.33%",
+          "num": 233.33,
+          "correct": 289.0,
+          "dev": 0.1926,
+          "source": "source_document"
+        },
+        {
+          "value": "77.19%",
+          "num": 77.19,
+          "correct": 90.0,
+          "dev": 0.1423,
+          "source": "ground_truth"
+        },
+        {
+          "value": "16.89%",
+          "num": 16.89,
+          "correct": 16.0,
+          "dev": 0.0527,
+          "source": "evidence"
+        },
+        {
+          "value": "233.33%",
+          "num": 233.33,
+          "correct": 289.0,
+          "dev": 0.1926,
+          "source": "source_document"
+        },
+        {
+          "value": "25.9%",
+          "num": 25.9,
+          "correct": 23.0,
+          "dev": 0.112,
+          "source": "evidence"
+        },
+        {
+          "value": "28.8%",
+          "num": 28.8,
+          "correct": 34.0,
+          "dev": 0.1529,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$98 million"
+        },
+        {
+          "value": "$98 million"
+        }
+      ],
+      "n_refs": 51
+    },
+    "gate_3": {
+      "verified": [
+        {
+          "value": "$1,799 million",
+          "ref": 1799.0
+        },
+        {
+          "value": "$1,799 million",
+          "ref": 1799.0
+        },
+        {
+          "value": "$1,482 million",
+          "ref": 1482.0
+        },
+        {
+          "value": "$394 million",
+          "ref": 394.0
+        },
+        {
+          "value": "$289 million",
+          "ref": 289.0
+        },
+        {
+          "value": "$140 million",
+          "ref": 140.0
+        },
+        {
+          "value": "$42 million",
+          "ref": 42.0
+        },
+        {
+          "value": "$394 million",
+          "ref": 394.0
+        },
+        {
+          "value": "$42 million",
+          "ref": 42.0
+        },
+        {
+          "value": "289%",
+          "ref": 289.0
+        },
+        {
+          "value": "6.00%",
+          "ref": 6.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$317 million",
+          "num": 317.0,
+          "correct": 289.0,
+          "dev": 0.0883,
+          "source": "source_document"
+        },
+        {
+          "value": "$105 million",
+          "num": 105.0,
+          "correct": 96.0,
+          "dev": 0.0857,
+          "source": "source_document"
+        },
+        {
+          "value": "$2,333 million",
+          "num": 2333.0,
+          "correct": 1799.0,
+          "dev": 0.2289,
+          "source": "source_document"
+        },
+        {
+          "value": "$532 million",
+          "num": 532.0,
+          "correct": 394.0,
+          "dev": 0.2594,
+          "source": "source_document"
+        },
+        {
+          "value": "$59 million",
+          "num": 59.0,
+          "correct": 42.0,
+          "dev": 0.2881,
+          "source": "evidence"
+        },
+        {
+          "value": "21.39%",
+          "num": 21.39,
+          "correct": 20.0,
+          "dev": 0.065,
+          "source": "evidence"
+        },
+        {
+          "value": "36.33%",
+          "num": 36.33,
+          "correct": 34.0,
+          "dev": 0.0641,
+          "source": "evidence"
+        },
+        {
+          "value": "233.33%",
+          "num": 233.33,
+          "correct": 289.0,
+          "dev": 0.1926,
+          "source": "source_document"
+        },
+        {
+          "value": "77.19%",
+          "num": 77.19,
+          "correct": 90.0,
+          "dev": 0.1423,
+          "source": "ground_truth"
+        },
+        {
+          "value": "16.89%",
+          "num": 16.89,
+          "correct": 16.0,
+          "dev": 0.0527,
+          "source": "evidence"
+        },
+        {
+          "value": "25.9%",
+          "num": 25.9,
+          "correct": 23.0,
+          "dev": 0.112,
+          "source": "evidence"
+        },
+        {
+          "value": "28.8%",
+          "num": 28.8,
+          "correct": 34.0,
+          "dev": 0.1529,
+          "source": "evidence"
+        },
+        {
+          "value": "233.33%",
+          "num": 233.33,
+          "correct": 289.0,
+          "dev": 0.1926,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$98 million"
+        }
+      ],
+      "n_refs": 51
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_107_B17259C6",
+      "hid": "FB_107_B17259C6_H2",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 532.0,
+      "orig_num": 394.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": true,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_107_B17259C6",
+      "hid": "FB_107_B17259C6_H1",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 59.0,
+      "orig_num": 96.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": true,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    }
+  ],
+  "quality_score": 3,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:43:46.129969+00:00"
+}

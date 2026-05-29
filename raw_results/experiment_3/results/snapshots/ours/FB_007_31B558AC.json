@@ -1,0 +1,490 @@
+{
+  "question_id": "FB_007_31B558AC",
+  "method": "ours",
+  "final_output": "## 3M Company: Q2 2023 Debt Analysis\n\n### Executive Summary\n\nAs of June 30, 2023, 3M Company reported total debt outstanding of $8,000 million. The company's debt portfolio includes seven registered notes totaling $8,000 million, with maturities ranging from 2024 to 2032. Interest expense for Q2 2023 was $100 million, resulting in an annualized average cost of debt of 4.25%. Key risks include significant maturities in the near term and potential refinancing challenges in a rising interest rate environment.\n\n### Analysis\n\n3M Company's debt structure as of Q2 2023 is primarily composed of fixed-rate notes. The largest single maturity is $1,000 million in 2024 (2.250% Notes). Other substantial maturities include $1,009 million in 2025 (2.750% Notes) and $1,000 million in 2026 (3.000% Notes). The weighted average coupon rate for the registered notes is 2.82%, calculated from a total annual interest of $100 million on $8,000 million principal. The average cost of debt for Q2 2023, derived from the $100 million interest expense and $8,000 million total debt, stands at 4.25% annualized.\n\n### Key Risks\n\nA primary risk is the concentration of maturities in the near future, with $1,000 million due in 2024, $750 million in 2025, and $1,000 million in 2026. This necessitates effective liquidity management and potential refinancing activities. The 0.010% Notes due 2028, while having a low coupon, warrant scrutiny to understand their specific terms and any associated risks. All registered notes sum to the total debt outstanding, indicating a transparent debt structure.\n\n### Conclusion\n\n3M Company maintains a substantial debt load of $8,000 million. While the current average cost of debt is 4.25%, the upcoming maturities, particularly in 2024 and 2025, require close monitoring. The company's ability to refinance this debt at favorable rates will be crucial, especially given the current interest rate environment. Further investigation into the specific terms of the 0.010% Notes due 2028 is recommended for a comprehensive risk assessment.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: 3M Company, Q2 2023\n- PRIMARY METRIC: As of June 30, 2023, 3M Company had the following debt securities registered to trade on a national securities exchange:\n  1. **3M Company 2.250% Notes due 2024** - $1,000 million (per the Q2 2023 10-Q, Note 7 - Debt).\n  2. **3M Company 2.750% Notes due 2025** - $1009 million (per the Q2 2023 10-Q, Note 7 - Debt).\n  3. **3M Company 3.000% Notes due 2026** - $1,000 million (per the Q2 2023 10-Q, Note 7 - Debt).\n  4. **3M Company 3.500% Notes due 2027** - $1,000 million (per the Q2 2023 10-Q, Note 7 - Debt).\n  5. **3M Company 0.010% Notes due 2028** - $1,000 million (per the Q2 2023 10-Q, Note 7 - Debt).\n  6. **3M Company 4.000% Notes due 2030** - $1,000 million (per the Q2 2023 10-Q, Note 7 - Debt).\n  7. **3M Company 8.500% Notes due 2032** - $1,000 million (per the Q2 2023 10-Q, Note 7 - Debt).\n\n- SUPPORTING DATA: \n  - Total Debt Outstanding: $8,000 million as of June 30, 2023 (per the Q2 2023 10-Q, Consolidated Balance Sheets).\n  - Interest Expense for Q2 2023: $100 million (per the Q2 2023 10-Q, Consolidated Statements of Operations).\n  - Maturity Schedule:\n    - 2024: $1,000 million\n    - 2025: $750 million\n    - 2026: $1,000 million\n    - 2027: $1,000 million\n    - 2028: $1,000 million\n    - 2030: $1,000 million\n    - 2032: $1,000 million\n\n- DATA SOURCES: \n  - 3M Company Q2 2023 10-Q, Note 7 - Debt\n  - 3M Company Q2 2023 10-Q, Consolidated Balance Sheets\n  - 3M Company Q2 2023 10-Q, Consolidated Statements of Operations\n\nAll figures are reported as they appear in the official SEC filing, ensuring factual precision.",
+    "2": "Here's an analysis of 3M Company's debt as of Q2 2023, incorporating the corrected data:\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\nThe provided data is for Q2 2023 only, without comparative Q2 2022 data. Therefore, year-over-year changes cannot be computed.\n\n**2. Relevant Ratios**\n\n*   **Total Debt Outstanding:** $8,000 million\n*   **Interest Expense (Q2 2023):** $100 million\n\n**a. Average Cost of Debt (Q2 2023)**\n\nThis ratio estimates the average interest rate 3M is paying on its total debt during the quarter.\n\n*   **Formula:** (Interest Expense / Total Debt Outstanding) * 4 (to annualize)\n*   **Calculation:** ($100 million / $8,000 million) * 4 = 0.0125 * 4 = 0.05\n*   **Result:** 5.00%\n\n**b. Weighted Average Coupon Rate (Based on Registered Notes)**\n\nThis ratio calculates the average coupon rate based on the principal amount of each registered note.\n\n*   **Corrected 8.500% Notes due 2032:** $1,000 million at 4.250%\n\n| Note Due | Principal ($M) | Coupon Rate | Interest ($M) |\n| :------- | :------------- | :---------- | :------------ |\n| 2024     | 1,000          | 2.250%      | 22.50         |\n| 2025     | 1,009          | 2.750%      | 27.75         |\n| 2026     | 1,000          | 3.000%      | 30.00         |\n| 2027     | 1,000          | 3.500%      | 35.00         |\n| 2028     | 1,000          | 0.010%      | 0.10          |\n| 2030     | 1,000          | 4.000%      | 40.00         |\n| 2032     | 1,000          | 4.250%      | 42.50         |\n| **Total**| **7,009**      |             | **197.85**    |\n\n*   **Formula:** Total Annual Interest / Total Principal of Registered Notes\n*   **Calculation:** $197.85 million / $7,009 million = 0.02823\n*   **Result:** 2.82%\n\n**3. Anomalies Flagged**\n\n*   **Discrepancy in Total Debt:**\n    *   The sum of the principal amounts for the seven registered notes is $7,009 million.\n    *   However, the \"Total Debt Outstanding\" reported on the Consolidated Balance Sheets is $8,000 million.\n    *   **Anomaly:** There is a difference of $991 million ($8,000 million - $7,009 million) in total debt. This suggests that 3M has other forms of debt (e.g., commercial paper, term loans, other unregistered notes) not detailed in the \"Note 7 - Debt\" section regarding registered securities.\n\n*   **Maturity Schedule vs. Registered Notes:**\n    *   The maturity schedule for 2025 shows $750 million, while the 2.750% Notes due 2025 are $1,009 million.\n    *   **Anomaly:** This indicates that a portion of the 2025 notes ($259 million) may be classified differently (e.g., current portion of long-term debt) or that there are other debt instruments maturing in 2025 not explicitly listed as \"registered notes.\"\n\n*   **Low Coupon Rate on 2028 Notes:**\n    *   The 3M Company 0.010% Notes due 2028 have an exceptionally low coupon rate.\n    *   **Anomaly:** While possible for certain debt structures (e.g., zero-coupon bonds or bonds issued at a deep discount), this is notably lower than other notes and the overall average cost of debt, warranting further investigation into its specific terms.",
+    "3": "## 3M Company: Q2 2023 Debt Analysis\n\n### Executive Summary\n\nAs of June 30, 2023, 3M Company reported total debt outstanding of $8,000 million. The company's debt portfolio includes seven registered notes totaling $8,000 million, with maturities ranging from 2024 to 2032. Interest expense for Q2 2023 was $100 million, resulting in an annualized average cost of debt of 5.00%. Key risks include significant maturities in the near term and potential refinancing challenges in a rising interest rate environment.\n\n### Analysis\n\n3M Company's debt structure as of Q2 2023 is primarily composed of fixed-rate notes. The largest single maturity is $1,000 million in 2024 (2.250% Notes). Other substantial maturities include $1,009 million in 2025 (2.750% Notes) and $1,000 million in 2026 (3.000% Notes). The weighted average coupon rate for the registered notes is 2.82%, calculated from a total annual interest of $197.85 million on $7,009 million principal. The average cost of debt for Q2 2023, derived from the $100 million interest expense and $8,000 million total debt, stands at 5.00% annualized.\n\n### Key Risks\n\nA primary risk is the concentration of maturities in the near future, with $1,000 million due in 2024, $750 million in 2025, and $1,000 million in 2026. This necessitates effective liquidity management and potential refinancing activities. The 0.010% Notes due 2028, while having a low coupon, warrant scrutiny to understand their specific terms and any associated risks. The discrepancy between the sum of registered notes ($7,009 million) and the total debt outstanding ($8,000 million) suggests additional, unspecified debt instruments, which could introduce unforeseen risks if their terms are less favorable.\n\n### Conclusion\n\n3M Company maintains a substantial debt load of $8,000 million. While the current average cost of debt is 5.00%, the upcoming maturities, particularly in 2024 and 2025, require close monitoring. The company's ability to refinance this debt at favorable rates will be crucial, especially given the current interest rate environment. Further investigation into the nature of the $991 million difference between registered notes and total debt, as well as the specific terms of the 0.010% Notes due 2028, is recommended for a comprehensive risk assessment.",
+    "4": "## 3M Company: Q2 2023 Debt Analysis\n\n### Executive Summary\n\nAs of June 30, 2023, 3M Company reported total debt outstanding of $8,000 million. The company's debt portfolio includes seven registered notes totaling $8,000 million, with maturities ranging from 2024 to 2032. Interest expense for Q2 2023 was $100 million, resulting in an annualized average cost of debt of 4.25%. Key risks include significant maturities in the near term and potential refinancing challenges in a rising interest rate environment.\n\n### Analysis\n\n3M Company's debt structure as of Q2 2023 is primarily composed of fixed-rate notes. The largest single maturity is $1,000 million in 2024 (2.250% Notes). Other substantial maturities include $1,009 million in 2025 (2.750% Notes) and $1,000 million in 2026 (3.000% Notes). The weighted average coupon rate for the registered notes is 2.82%, calculated from a total annual interest of $100 million on $8,000 million principal. The average cost of debt for Q2 2023, derived from the $100 million interest expense and $8,000 million total debt, stands at 4.25% annualized.\n\n### Key Risks\n\nA primary risk is the concentration of maturities in the near future, with $1,000 million due in 2024, $750 million in 2025, and $1,000 million in 2026. This necessitates effective liquidity management and potential refinancing activities. The 0.010% Notes due 2028, while having a low coupon, warrant scrutiny to understand their specific terms and any associated risks. All registered notes sum to the total debt outstanding, indicating a transparent debt structure.\n\n### Conclusion\n\n3M Company maintains a substantial debt load of $8,000 million. While the current average cost of debt is 4.25%, the upcoming maturities, particularly in 2024 and 2025, require close monitoring. The company's ability to refinance this debt at favorable rates will be crucial, especially given the current interest rate environment. Further investigation into the specific terms of the 0.010% Notes due 2028 is recommended for a comprehensive risk assessment."
+  },
+  "gates": {
+    "gate_1": {
+      "verified": [
+        {
+          "value": "$1,000 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$1009 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$1,000 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$1,000 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$1,000 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$1,000 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$1,000 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$8,000 million",
+          "ref": 8000.0
+        },
+        {
+          "value": "$100 million",
+          "ref": 100.0
+        },
+        {
+          "value": "$1,000 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$750 million",
+          "ref": 750.0
+        },
+        {
+          "value": "$1,000 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$1,000 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$1,000 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$1,000 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$1,000 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "2.250%",
+          "ref": 2.25
+        },
+        {
+          "value": "2.750%",
+          "ref": 2.75
+        },
+        {
+          "value": "3.000%",
+          "ref": 3.0
+        },
+        {
+          "value": "3.500%",
+          "ref": 3.5
+        },
+        {
+          "value": "0.010%",
+          "ref": 0.01
+        },
+        {
+          "value": "4.000%",
+          "ref": 4.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "8.500%",
+          "num": 8.5,
+          "correct": 4.25,
+          "dev": 0.5,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [],
+      "n_refs": 18
+    },
+    "gate_2": {
+      "verified": [
+        {
+          "value": "$8,000 million",
+          "ref": 8000.0
+        },
+        {
+          "value": "$100 million",
+          "ref": 100.0
+        },
+        {
+          "value": "$100 million",
+          "ref": 100.0
+        },
+        {
+          "value": "$8,000 million",
+          "ref": 8000.0
+        },
+        {
+          "value": "$1,000 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$8,000 million",
+          "ref": 8000.0
+        },
+        {
+          "value": "$991 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$8,000 million",
+          "ref": 8000.0
+        },
+        {
+          "value": "$750 million",
+          "ref": 750.0
+        },
+        {
+          "value": "$1,009 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "4.250%",
+          "ref": 4.25
+        },
+        {
+          "value": "2.250%",
+          "ref": 2.25
+        },
+        {
+          "value": "2.750%",
+          "ref": 2.75
+        },
+        {
+          "value": "3.000%",
+          "ref": 3.0
+        },
+        {
+          "value": "3.500%",
+          "ref": 3.5
+        },
+        {
+          "value": "0.010%",
+          "ref": 0.01
+        },
+        {
+          "value": "4.000%",
+          "ref": 4.0
+        },
+        {
+          "value": "4.250%",
+          "ref": 4.25
+        },
+        {
+          "value": "2.750%",
+          "ref": 2.75
+        },
+        {
+          "value": "0.010%",
+          "ref": 0.01
+        },
+        {
+          "value": "1,000",
+          "ref": 1000.0
+        },
+        {
+          "value": "1,009",
+          "ref": 1000.0
+        },
+        {
+          "value": "1,000",
+          "ref": 1000.0
+        },
+        {
+          "value": "1,000",
+          "ref": 1000.0
+        },
+        {
+          "value": "1,000",
+          "ref": 1000.0
+        },
+        {
+          "value": "1,000",
+          "ref": 1000.0
+        },
+        {
+          "value": "1,000",
+          "ref": 1000.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$197.85 million",
+          "num": 197.85,
+          "correct": 100.0,
+          "dev": 0.4946,
+          "source": "source_document"
+        },
+        {
+          "value": "$7,009 million",
+          "num": 7009.0,
+          "correct": 8000.0,
+          "dev": 0.1239,
+          "source": "source_document"
+        },
+        {
+          "value": "$7,009 million",
+          "num": 7009.0,
+          "correct": 8000.0,
+          "dev": 0.1239,
+          "source": "source_document"
+        },
+        {
+          "value": "$7,009 million",
+          "num": 7009.0,
+          "correct": 8000.0,
+          "dev": 0.1239,
+          "source": "source_document"
+        },
+        {
+          "value": "$259 million",
+          "num": 259.0,
+          "correct": 500.0,
+          "dev": 0.482,
+          "source": "evidence"
+        },
+        {
+          "value": "5.00%",
+          "num": 5.0,
+          "correct": 4.25,
+          "dev": 0.15,
+          "source": "source_document"
+        },
+        {
+          "value": "8.500%",
+          "num": 8.5,
+          "correct": 4.25,
+          "dev": 0.5,
+          "source": "source_document"
+        },
+        {
+          "value": "7,009",
+          "num": 7009.0,
+          "correct": 8000.0,
+          "dev": 0.1239,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "2.82%"
+        },
+        {
+          "value": "02823"
+        }
+      ],
+      "n_refs": 18
+    },
+    "gate_3": {
+      "verified": [
+        {
+          "value": "$8,000 million",
+          "ref": 8000.0
+        },
+        {
+          "value": "$8,000 million",
+          "ref": 8000.0
+        },
+        {
+          "value": "$100 million",
+          "ref": 100.0
+        },
+        {
+          "value": "$1,000 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$1,009 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$1,000 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$100 million",
+          "ref": 100.0
+        },
+        {
+          "value": "$8,000 million",
+          "ref": 8000.0
+        },
+        {
+          "value": "$1,000 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$750 million",
+          "ref": 750.0
+        },
+        {
+          "value": "$1,000 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "$8,000 million",
+          "ref": 8000.0
+        },
+        {
+          "value": "$8,000 million",
+          "ref": 8000.0
+        },
+        {
+          "value": "$991 million",
+          "ref": 1000.0
+        },
+        {
+          "value": "2.250%",
+          "ref": 2.25
+        },
+        {
+          "value": "2.750%",
+          "ref": 2.75
+        },
+        {
+          "value": "3.000%",
+          "ref": 3.0
+        },
+        {
+          "value": "0.010%",
+          "ref": 0.01
+        },
+        {
+          "value": "0.010%",
+          "ref": 0.01
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$197.85 million",
+          "num": 197.85,
+          "correct": 100.0,
+          "dev": 0.4946,
+          "source": "source_document"
+        },
+        {
+          "value": "$7,009 million",
+          "num": 7009.0,
+          "correct": 8000.0,
+          "dev": 0.1239,
+          "source": "source_document"
+        },
+        {
+          "value": "$7,009 million",
+          "num": 7009.0,
+          "correct": 8000.0,
+          "dev": 0.1239,
+          "source": "source_document"
+        },
+        {
+          "value": "5.00%",
+          "num": 5.0,
+          "correct": 4.25,
+          "dev": 0.15,
+          "source": "source_document"
+        },
+        {
+          "value": "5.00%",
+          "num": 5.0,
+          "correct": 4.25,
+          "dev": 0.15,
+          "source": "source_document"
+        },
+        {
+          "value": "5.00%",
+          "num": 5.0,
+          "correct": 4.25,
+          "dev": 0.15,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "2.82%"
+        }
+      ],
+      "n_refs": 18
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_007_31B558AC",
+      "hid": "FB_007_31B558AC_H3",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 1009.0,
+      "orig_num": 750.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_007_31B558AC",
+      "hid": "FB_007_31B558AC_H2",
+      "method": "ours",
+      "type": "percentage",
+      "inj_num": 0.01,
+      "orig_num": 3.75,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_007_31B558AC",
+      "hid": "FB_007_31B558AC_H1",
+      "method": "ours",
+      "type": "percentage",
+      "inj_num": 8.5,
+      "orig_num": 4.25,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 2,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:05:18.731753+00:00"
+}

@@ -1,0 +1,79 @@
+{
+  "question_id": "FB_042_1741E456",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: American Express, FY2022\n- PRIMARY METRIC: Gross Margin: 60.0% (per the FY2022 10-K, Consolidated Statements of Operations)\n- SUPPORTING DATA: \n  - Total Revenue: $52,866 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - Cost of Goods Sold (COGS): $21,143 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - Gross Profit: $31,723 million (calculated as Total Revenue - COGS)\n  \n  **Multi-Period Data:**\n  - FY2021:\n    - Total Revenue: $47,658 million (per the FY2021 10-K, Consolidated Statements of Operations)\n    - COGS: $23,630 million (per the FY2021 10-K, Consolidated Statements of Operations)\n    - Gross Profit: $17,915 million (calculated as Total Revenue - COGS)\n    - Gross Margin: 60.5% (calculated as Gross Profit / Total Revenue)\n\n  - FY2020:\n    - Total Revenue: $36,091 million (per the FY2020 10-K, Consolidated Statements of Operations)\n    - COGS: $15,533 million (per the FY2020 10-K, Consolidated Statements of Operations)\n    - Gross Profit: $20,558 million (calculated as Total Revenue - COGS)\n    - Gross Margin: 56.9% (calculated as Gross Profit / Total Revenue)\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Statements of Operations\n  - FY2020 10-K, Consolidated Statements of Operations\n\n**Note:** The gross margin for American Express is influenced by its business model, which primarily focuses on service fees and interest income rather than traditional product sales. This makes gross margin a less relevant metric for assessing overall financial performance compared to metrics such as net income or operating income, which reflect the company's profitability after accounting for all expenses. \n\nHowever, as per the directive, no interpretation or analysis is provided beyond the raw data extraction.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_042_1741E456_H2",
+      "type": "dollar_amount",
+      "original_value": "$18,816 million",
+      "injected_value": "$23,630 million",
+      "original_numeric": "18816",
+      "injected_numeric": "23630",
+      "position_char": 589,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.2558
+    },
+    {
+      "hallucination_id": "FB_042_1741E456_H1",
+      "type": "dollar_amount",
+      "original_value": "$28,842 million",
+      "injected_value": "$17,915 million",
+      "original_numeric": "28842",
+      "injected_numeric": "17915",
+      "position_char": 686,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3789
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Gross Margin: 60.0% (per the FY2022 10-K, Consolidated Statements of Operations)",
+        "claim_value": "60.0%",
+        "reason": "The reported gross margin is suspiciously precise, with no decimal places, which is unusual for a financial metric.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Gross Margin: 60.5% (calculated as Gross Profit / Total Revenue)",
+        "claim_value": "60.5%",
+        "reason": "The reported gross margin is suspiciously close to the previous year's value, with only a 0.5% difference, which may indicate fabrication or copying of previous data.",
+        "confidence": "low"
+      }
+    ],
+    "total_claims_reviewed": 8,
+    "overall_assessment": "The output appears to be mostly plausible, but some gross margin figures seem suspiciously precise or consistent.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"Gross Margin: 60.0% (per the FY2022 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\" : \"60.0%\",\n      \"reason\"      : \"The reported gross margin is suspiciously precise, with no decimal places, which is unusual for a financial metric.\",\n      \"confidence\"  : \"medium\"\n    },\n    {\n      \"claim_text\"  : \"Gross Margin: 60.5% (calculated as Gross Profit / Total Revenue)\",\n      \"claim_value\" : \"60.5%\",\n      \"reason\"      : \"The reported gross margin is suspiciously close to the previous year's value, with only a 0.5% difference, which may indicate fabrication or copying of previous data.\",\n      \"confidence\"  : \"low\"\n    }\n  ],\n  \"total_claims_reviewed\": 8,\n  \"overall_assessment\"   : \"The output appears to be mostly plausible, but some gross margin figures seem suspiciously precise or consistent.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_042_1741E456",
+      "hallucination_id": "FB_042_1741E456_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$18,816 million",
+      "injected_value": "$23,630 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 8
+    },
+    {
+      "question_id": "FB_042_1741E456",
+      "hallucination_id": "FB_042_1741E456_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$28,842 million",
+      "injected_value": "$17,915 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 8
+    }
+  ],
+  "timestamp": "2026-03-27T09:32:00.856036Z"
+}

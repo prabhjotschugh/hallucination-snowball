@@ -1,0 +1,200 @@
+{
+  "question_id": "FB_050_A0B82AEA",
+  "method": "end_check",
+  "final_output": "## Best Buy Co., Inc. - Fiscal Year 2019 Inventory Report\n\n**Executive Summary**\n\nThis report provides an analysis of Best Buy Co., Inc.'s inventory levels for the fiscal year ended 2019, drawing data directly from the company's 10-K filings. As of FY2019, Total Inventories stood at $4,203 million. This represents a significant increase of $1,423 million, or 51.19%, compared to the FY2018 figure of $2,780 million. This substantial growth follows a notable decrease in the prior period, where FY2018 inventories were $2,780 million, down $2,142 million or 43.52% from FY2017's $4,922 million.\n\n**Analysis**\n\nBest Buy Co., Inc. reported Total Inventories of $4,203 million for the fiscal year ended 2019, as per the FY2019 10-K Consolidated Balance Sheets. This figure marks a considerable increase from the previous fiscal year. Specifically, the absolute change in Total Inventories from FY2018 to FY2019 was $1,423 million ($4,203 million - $2,780 million). This translates to a percentage increase of 51.19% (($1,423 million / $2,780 million) * 100).\n\nLooking at the preceding period, Total Inventories for FY2018 were $2,780 million. This was a decrease of $2,142 million from FY2017's Total Inventories of $4,922 million, representing a percentage decrease of 43.52% ((-$2,142 million / $4,922 million) * 100).\n\n**Key Risks**\n\nThe significant year-over-year fluctuations in inventory levels present potential risks. The 51.19% increase in inventory from FY2018 to FY2019, following a 43.52% decrease from FY2017 to FY2018, indicates considerable volatility. Such large swings could suggest challenges in demand forecasting, supply chain management, or potential obsolescence risks if the increased inventory in FY2019 does not align with sales demand. An unexpected downturn in consumer spending or increased competition could also lead to inventory write-downs, impacting profitability.\n\n**Conclusion**\n\nBest Buy Co., Inc. concluded Fiscal Year 2019 with Total Inventories of $4,203 million. This represents a substantial 51.19% increase from the $2,780 million reported in FY2018. This growth follows a significant 43.52% reduction in inventory from FY2017 to FY2018. The pronounced changes in inventory levels across these periods warrant close monitoring by stakeholders to assess the effectiveness of inventory management strategies and potential impacts on future financial performance. Further investigation into the specific drivers behind these fluctuations would provide a more comprehensive understanding of the company's operational efficiency and market positioning.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Best Buy Co., Inc., Fiscal Year End 2019\n- PRIMARY METRIC: Total Inventories: $4,203 million (per the FY2019 10-K, Consolidated Balance Sheets)\n- SUPPORTING DATA: \n  - FY2018 Total Inventories: $2,780 million (per the FY2018 10-K, Consolidated Balance Sheets)\n  - FY2017 Total Inventories: $4,922 million (per the FY2017 10-K, Consolidated Balance Sheets)\n- DATA SOURCES: \n  - Best Buy FY2019 10-K, Consolidated Balance Sheets\n  - Best Buy FY2018 10-K, Consolidated Balance Sheets\n  - Best Buy FY2017 10-K, Consolidated Balance Sheets\n\nNote: No analysis or interpretation of trends or ratios has been provided as per your instructions.",
+    "2": "Here's the computation based on the provided data:\n\n**Best Buy Co., Inc. - Inventory Analysis**\n\n**1. Year-over-Year Changes**\n\n*   **FY2019 vs. FY2018:**\n    *   **Absolute Change:**\n        *   Formula: `Total Inventories (Current Year) - Total Inventories (Prior Year)`\n        *   Calculation: `$4,203 million - $2,780 million = $1,423 million`\n    *   **Percentage Change:**\n        *   Formula: `(Absolute Change / Total Inventories (Prior Year)) * 100`\n        *   Calculation: `($1,423 million / $2,780 million) * 100 = 51.19%`\n\n*   **FY2018 vs. FY2017:**\n    *   **Absolute Change:**\n        *   Formula: `Total Inventories (Current Year) - Total Inventories (Prior Year)`\n        *   Calculation: `$2,780 million - $4,922 million = -$2,142 million`\n    *   **Percentage Change:**\n        *   Formula: `(Absolute Change / Total Inventories (Prior Year)) * 100`\n        *   Calculation: `(-$2,142 million / $4,922 million) * 100 = -43.52%`\n\n**2. Relevant Ratios**\n\nGiven only inventory data, the most relevant ratio we can compute is the **Inventory Growth Rate**.\n\n*   **Inventory Growth Rate (FY2019):**\n    *   Formula: `((Total Inventories FY2019 - Total Inventories FY2018) / Total Inventories FY2018) * 100`\n    *   Calculation: `(($4,203 million - $2,780 million) / $2,780 million) * 100 = 51.19%`\n\n*   **Inventory Growth Rate (FY2018):**\n    *   Formula: `((Total Inventories FY2018 - Total Inventories FY2017) / Total Inventories FY2017) * 100`\n    *   Calculation: `(($2,780 million - $4,922 million) / $4,922 million) * 100 = -43.52%`\n\n**3. Anomalies**\n\n*   **FY2018 Inventory:** The significant decrease in total inventories from FY2017 to FY2018 (a 43.52% drop) stands out.\n*   **FY2019 Inventory:** The substantial increase in total inventories from FY2018 to FY2019 (a 51.19% rise) is also notable, especially following the prior year's large decrease.\n\nThese large swings in inventory levels year-over-year could be considered anomalies without further context (e.g., sales data, supply chain changes, strategic shifts).",
+    "3": "## Best Buy Co., Inc. - Fiscal Year 2019 Inventory Report\n\n**Executive Summary**\n\nThis report provides an analysis of Best Buy Co., Inc.'s inventory levels for the fiscal year ended 2019, drawing data directly from the company's 10-K filings. As of FY2019, Total Inventories stood at $4,203 million. This represents a significant increase of $1,423 million, or 51.19%, compared to the FY2018 figure of $2,780 million. This substantial growth follows a notable decrease in the prior period, where FY2018 inventories were $2,780 million, down $2,142 million or 43.52% from FY2017's $4,922 million.\n\n**Analysis**\n\nBest Buy Co., Inc. reported Total Inventories of $4,203 million for the fiscal year ended 2019, as per the FY2019 10-K Consolidated Balance Sheets. This figure marks a considerable increase from the previous fiscal year. Specifically, the absolute change in Total Inventories from FY2018 to FY2019 was $1,423 million ($4,203 million - $2,780 million). This translates to a percentage increase of 51.19% (($1,423 million / $2,780 million) * 100).\n\nLooking at the preceding period, Total Inventories for FY2018 were $2,780 million. This was a decrease of $2,142 million from FY2017's Total Inventories of $4,922 million, representing a percentage decrease of 43.52% ((-$2,142 million / $4,922 million) * 100).\n\n**Key Risks**\n\nThe significant year-over-year fluctuations in inventory levels present potential risks. The 51.19% increase in inventory from FY2018 to FY2019, following a 43.52% decrease from FY2017 to FY2018, indicates considerable volatility. Such large swings could suggest challenges in demand forecasting, supply chain management, or potential obsolescence risks if the increased inventory in FY2019 does not align with sales demand.\n\n**Conclusion**\n\nBest Buy Co., Inc. concluded Fiscal Year 2019 with Total Inventories of $4,203 million. This represents a substantial 51.19% increase from the $2,780 million reported in FY2018. This growth follows a significant 43.52% reduction in inventory from FY2017 to FY2018. The pronounced changes in inventory levels across these periods warrant close monitoring.",
+    "4": "## Best Buy Co., Inc. - Fiscal Year 2019 Inventory Report\n\n**Executive Summary**\n\nThis report provides an analysis of Best Buy Co., Inc.'s inventory levels for the fiscal year ended 2019, drawing data directly from the company's 10-K filings. As of FY2019, Total Inventories stood at $4,203 million. This represents a significant increase of $1,423 million, or 51.19%, compared to the FY2018 figure of $2,780 million. This substantial growth follows a notable decrease in the prior period, where FY2018 inventories were $2,780 million, down $2,142 million or 43.52% from FY2017's $4,922 million.\n\n**Analysis**\n\nBest Buy Co., Inc. reported Total Inventories of $4,203 million for the fiscal year ended 2019, as per the FY2019 10-K Consolidated Balance Sheets. This figure marks a considerable increase from the previous fiscal year. Specifically, the absolute change in Total Inventories from FY2018 to FY2019 was $1,423 million ($4,203 million - $2,780 million). This translates to a percentage increase of 51.19% (($1,423 million / $2,780 million) * 100).\n\nLooking at the preceding period, Total Inventories for FY2018 were $2,780 million. This was a decrease of $2,142 million from FY2017's Total Inventories of $4,922 million, representing a percentage decrease of 43.52% ((-$2,142 million / $4,922 million) * 100).\n\n**Key Risks**\n\nThe significant year-over-year fluctuations in inventory levels present potential risks. The 51.19% increase in inventory from FY2018 to FY2019, following a 43.52% decrease from FY2017 to FY2018, indicates considerable volatility. Such large swings could suggest challenges in demand forecasting, supply chain management, or potential obsolescence risks if the increased inventory in FY2019 does not align with sales demand. An unexpected downturn in consumer spending or increased competition could also lead to inventory write-downs, impacting profitability.\n\n**Conclusion**\n\nBest Buy Co., Inc. concluded Fiscal Year 2019 with Total Inventories of $4,203 million. This represents a substantial 51.19% increase from the $2,780 million reported in FY2018. This growth follows a significant 43.52% reduction in inventory from FY2017 to FY2018. The pronounced changes in inventory levels across these periods warrant close monitoring by stakeholders to assess the effectiveness of inventory management strategies and potential impacts on future financial performance. Further investigation into the specific drivers behind these fluctuations would provide a more comprehensive understanding of the company's operational efficiency and market positioning."
+  },
+  "gates": {
+    "end_gate": {
+      "verified": [
+        {
+          "value": "$4,203 million",
+          "ref": 4203.0
+        },
+        {
+          "value": "$4,203 million",
+          "ref": 4203.0
+        },
+        {
+          "value": "$4,203 million",
+          "ref": 4203.0
+        },
+        {
+          "value": "$4,203 million",
+          "ref": 4203.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$2,780 million",
+          "num": 2780.0,
+          "correct": 3579.0,
+          "dev": 0.2232,
+          "source": "source_document"
+        },
+        {
+          "value": "$2,780 million",
+          "num": 2780.0,
+          "correct": 3579.0,
+          "dev": 0.2232,
+          "source": "source_document"
+        },
+        {
+          "value": "$2,142 million",
+          "num": 2142.0,
+          "correct": 3579.0,
+          "dev": 0.4015,
+          "source": "source_document"
+        },
+        {
+          "value": "$4,922 million",
+          "num": 4922.0,
+          "correct": 5409.0,
+          "dev": 0.09,
+          "source": "ground_truth"
+        },
+        {
+          "value": "$2,780 million",
+          "num": 2780.0,
+          "correct": 3579.0,
+          "dev": 0.2232,
+          "source": "source_document"
+        },
+        {
+          "value": "$2,780 million",
+          "num": 2780.0,
+          "correct": 3579.0,
+          "dev": 0.2232,
+          "source": "source_document"
+        },
+        {
+          "value": "$2,780 million",
+          "num": 2780.0,
+          "correct": 3579.0,
+          "dev": 0.2232,
+          "source": "source_document"
+        },
+        {
+          "value": "$2,142 million",
+          "num": 2142.0,
+          "correct": 3579.0,
+          "dev": 0.4015,
+          "source": "source_document"
+        },
+        {
+          "value": "$4,922 million",
+          "num": 4922.0,
+          "correct": 5409.0,
+          "dev": 0.09,
+          "source": "ground_truth"
+        },
+        {
+          "value": "$2,142 million",
+          "num": 2142.0,
+          "correct": 3579.0,
+          "dev": 0.4015,
+          "source": "source_document"
+        },
+        {
+          "value": "$4,922 million",
+          "num": 4922.0,
+          "correct": 5409.0,
+          "dev": 0.09,
+          "source": "ground_truth"
+        },
+        {
+          "value": "$2,780 million",
+          "num": 2780.0,
+          "correct": 3579.0,
+          "dev": 0.2232,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$1,423 million"
+        },
+        {
+          "value": "$1,423 million"
+        },
+        {
+          "value": "$1,423 million"
+        },
+        {
+          "value": "51.19%"
+        },
+        {
+          "value": "43.52%"
+        },
+        {
+          "value": "51.19%"
+        },
+        {
+          "value": "43.52%"
+        },
+        {
+          "value": "51.19%"
+        },
+        {
+          "value": "43.52%"
+        },
+        {
+          "value": "51.19%"
+        },
+        {
+          "value": "43.52%"
+        }
+      ],
+      "n_refs": 8
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_050_A0B82AEA",
+      "hid": "FB_050_A0B82AEA_H2",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 2780.0,
+      "orig_num": 3719.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": true,
+      "any_det": true,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_050_A0B82AEA",
+      "hid": "FB_050_A0B82AEA_H1",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 4922.0,
+      "orig_num": 3579.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": true,
+      "any_det": true,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:21:15.983165+00:00"
+}

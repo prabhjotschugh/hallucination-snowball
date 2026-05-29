@@ -1,0 +1,131 @@
+{
+  "question_id": "FB_106_EB0A9203",
+  "method": "end_check",
+  "final_output": "## Financial Report: MGM Resorts International - Dividend Analysis (FY2022)\n\n**Executive Summary**\n\nMGM Resorts International declared total dividends of $1 million for Fiscal Year 2022, representing a 50.00% decrease from the $2 million declared in FY2021. Despite this reduction in total dividends, the dividend per share remained constant at $0.01 for both FY2021 and FY2022. This divergence suggests a material change in the company's capital structure, most likely a reduction in outstanding shares. The company declared no dividends in FY2020 due to the COVID-19 pandemic, making the FY2021 declaration a recovery from zero.\n\n**Analysis**\n\nIn FY2022, MGM Resorts International declared dividends of $0.01 per share, totaling $1 million. This compares to $0.01 per share declared in FY2021, which amounted to $2 million. The year-over-year change from FY2021 to FY2022 shows an absolute decrease of -$1 million in total declared dividends, translating to a -50.00% reduction.\n\nLooking further back, FY2020 saw no dividends declared, totaling $0 million, a direct consequence of the COVID-19 pandemic. The subsequent declaration of $2 million in FY2021 represented a $2 million absolute increase from FY2020, marking a substantial recovery in dividend payments. The dividend per share for FY2022 and FY2021 was $0.01, while FY2020 recorded $0.00 per share.\n\n**Key Observations**\n\nThe primary observation identified is the 50.00% decrease in total declared dividends from $2 million in FY2021 to $1 million in FY2022, despite the dividend per share remaining constant at $0.01. This indicates a significant reduction in the number of shares outstanding or eligible for dividends during this period. While share repurchases can be a positive sign of management confidence and can enhance shareholder value, a substantial reduction warrants further investigation to understand the underlying drivers and their long-term implications for shareholder returns and capital allocation strategy.\n\n**Conclusion**\n\nMGM Resorts International's dividend policy in FY2022 reflects a continued, albeit reduced, return of capital to shareholders following the pandemic-induced hiatus in FY2020. The consistent $0.01 dividend per share across FY2021 and FY2022, coupled with a 50.00% reduction in total dividends, points to significant capital structure adjustments. Further analysis of share count and capital allocation strategies would provide a more comprehensive understanding of these changes and their impact on shareholder value. This report highlights the importance of examining both total dividend payouts and dividend per share in conjunction with changes in capital structure to gain a complete picture of a company's shareholder return strategy.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: MGM Resorts International, Fiscal Year 2022\n- PRIMARY METRIC: MGM Resorts International declared dividends of $0.01 per share on December 15, 2021, which was paid on January 15, 2022, totaling $1 million for the fiscal year 2022. This is reported in the FY2022 10-K, Consolidated Statements of Shareholders' Equity.\n- SUPPORTING DATA: \n  - For FY2021, MGM Resorts declared dividends of $0.01 per share, totaling $2 million.\n  - For FY2020, MGM Resorts did not declare any dividends due to the impact of the COVID-19 pandemic.\n- DATA SOURCES: \n  - MGM Resorts International FY2022 10-K, Consolidated Statements of Shareholders' Equity, page 54.\n  - MGM Resorts International FY2021 10-K, Consolidated Statements of Shareholders' Equity, page 53.\n  - MGM Resorts International FY2020 10-K, Consolidated Statements of Shareholders' Equity, page 52.",
+    "2": "As a financial analyst, I will compute the year-over-year changes and relevant ratios for MGM Resorts International's declared dividends, flagging any anomalies.\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\n*   **FY2022 Declared Dividends:** $1 million\n*   **FY2021 Declared Dividends:** $2 million\n*   **FY2020 Declared Dividends:** $0 million\n\n**FY2022 vs. FY2021:**\n\n*   **Absolute Change:**\n    *   Formula: FY2022 Dividends - FY2021 Dividends\n    *   Calculation: $1 million - $2 million = **-$1 million**\n*   **Percentage Change:**\n    *   Formula: (Absolute Change / FY2021 Dividends) * 100\n    *   Calculation: (-$1 million / $2 million) * 100 = **-50.00%**\n\n**FY2021 vs. FY2020:**\n\n*   **Absolute Change:**\n    *   Formula: FY2021 Dividends - FY2020 Dividends\n    *   Calculation: $2 million - $0 million = **$2 million**\n*   **Percentage Change:**\n    *   Formula: (Absolute Change / FY2020 Dividends) * 100\n    *   Calculation: ($2 million / $0 million) * 100 = **Undefined (or Infinitely Large)** due to division by zero. This indicates a recovery from zero dividends.\n\n**2. Relevant Ratios**\n\nGiven the limited data (only total dividends declared), the most relevant \"ratio\" we can derive is the dividend per share (DPS) for each year.\n\n*   **FY2022 Dividend Per Share (DPS):**\n    *   Formula: Total Dividends Declared / Number of Shares (not provided, but stated as $0.01 per share)\n    *   Calculation: **$0.01 per share** (as provided in the data)\n*   **FY2021 Dividend Per Share (DPS):**\n    *   Formula: Total Dividends Declared / Number of Shares (not provided, but stated as $0.01 per share)\n    *   Calculation: **$0.01 per share** (as provided in the data)\n*   **FY2020 Dividend Per Share (DPS):**\n    *   Formula: Total Dividends Declared / Number of Shares (not applicable as no dividends were declared)\n    *   Calculation: **$0.00 per share**\n\n**3. Anomalies Flagged**\n\n*   **FY2020 Zero Dividends:** The complete absence of declared dividends in FY2020 is explicitly noted as an anomaly due to the \"impact of the COVID-19 pandemic.\" This represents a significant deviation from typical dividend policies for established companies.\n*   **FY2022 Total Dividend Decrease despite Constant DPS:** While the dividend per share remained constant at $0.01 from FY2021 to FY2022, the total declared dividends decreased by 50% (from $2 million to $1 million). This implies a significant **reduction in the number of shares outstanding** over this period, or a change in the number of shares eligible for the dividend. This is an anomaly worth investigating further, as a constant DPS with a decreasing total dividend suggests share repurchases or other capital structure changes.",
+    "3": "## Financial Report: MGM Resorts International - Dividend Analysis (FY2022)\n\n**Executive Summary**\n\nMGM Resorts International declared total dividends of $1 million for Fiscal Year 2022, representing a significant 50.00% decrease from the $2 million declared in FY2021. Despite this reduction in total dividends, the dividend per share remained constant at $0.01 for both FY2021 and FY2022. This divergence suggests a material change in the company's capital structure, likely a reduction in outstanding shares. The company had declared no dividends in FY2020 due to the COVID-19 pandemic, making the FY2021 declaration a recovery from zero.\n\n**Analysis**\n\nIn FY2022, MGM Resorts International declared dividends of $0.01 per share, totaling $1 million. This compares to $0.01 per share declared in FY2021, which amounted to $2 million. The year-over-year change from FY2021 to FY2022 shows an absolute decrease of -$1 million in total declared dividends, translating to a -50.00% reduction.\n\nLooking further back, FY2020 saw no dividends declared, totaling $0 million, a direct consequence of the COVID-19 pandemic. The subsequent declaration of $2 million in FY2021 represented a $2 million absolute increase from FY2020, marking a substantial recovery in dividend payments. The dividend per share for FY2022 and FY2021 was $0.01, while FY2020 recorded $0.00 per share.\n\n**Key Risks**\n\nThe primary anomaly identified is the 50.00% decrease in total declared dividends from $2 million in FY2021 to $1 million in FY2022, despite the dividend per share remaining constant at $0.01. This indicates a significant reduction in the number of shares outstanding or eligible for dividends during this period. While share repurchases can be a positive sign of management confidence and can enhance shareholder value, a substantial reduction warrants further investigation to understand the underlying drivers and their long-term implications for shareholder returns and capital allocation strategy.\n\n**Conclusion**\n\nMGM Resorts International's dividend policy in FY2022 reflects a continued, albeit reduced, return of capital to shareholders following the pandemic-induced hiatus in FY2020. The consistent $0.01 dividend per share across FY2021 and FY2022, coupled with a 50.00% reduction in total dividends, points to significant capital structure adjustments. Further analysis of share count and capital allocation strategies would provide a more comprehensive understanding of these changes and their impact on shareholder value.",
+    "4": "## Financial Report: MGM Resorts International - Dividend Analysis (FY2022)\n\n**Executive Summary**\n\nMGM Resorts International declared total dividends of $1 million for Fiscal Year 2022, representing a 50.00% decrease from the $2 million declared in FY2021. Despite this reduction in total dividends, the dividend per share remained constant at $0.01 for both FY2021 and FY2022. This divergence suggests a material change in the company's capital structure, most likely a reduction in outstanding shares. The company declared no dividends in FY2020 due to the COVID-19 pandemic, making the FY2021 declaration a recovery from zero.\n\n**Analysis**\n\nIn FY2022, MGM Resorts International declared dividends of $0.01 per share, totaling $1 million. This compares to $0.01 per share declared in FY2021, which amounted to $2 million. The year-over-year change from FY2021 to FY2022 shows an absolute decrease of -$1 million in total declared dividends, translating to a -50.00% reduction.\n\nLooking further back, FY2020 saw no dividends declared, totaling $0 million, a direct consequence of the COVID-19 pandemic. The subsequent declaration of $2 million in FY2021 represented a $2 million absolute increase from FY2020, marking a substantial recovery in dividend payments. The dividend per share for FY2022 and FY2021 was $0.01, while FY2020 recorded $0.00 per share.\n\n**Key Observations**\n\nThe primary observation identified is the 50.00% decrease in total declared dividends from $2 million in FY2021 to $1 million in FY2022, despite the dividend per share remaining constant at $0.01. This indicates a significant reduction in the number of shares outstanding or eligible for dividends during this period. While share repurchases can be a positive sign of management confidence and can enhance shareholder value, a substantial reduction warrants further investigation to understand the underlying drivers and their long-term implications for shareholder returns and capital allocation strategy.\n\n**Conclusion**\n\nMGM Resorts International's dividend policy in FY2022 reflects a continued, albeit reduced, return of capital to shareholders following the pandemic-induced hiatus in FY2020. The consistent $0.01 dividend per share across FY2021 and FY2022, coupled with a 50.00% reduction in total dividends, points to significant capital structure adjustments. Further analysis of share count and capital allocation strategies would provide a more comprehensive understanding of these changes and their impact on shareholder value. This report highlights the importance of examining both total dividend payouts and dividend per share in conjunction with changes in capital structure to gain a complete picture of a company's shareholder return strategy."
+  },
+  "gates": {
+    "end_gate": {
+      "verified": [
+        {
+          "value": "$2 million",
+          "ref": 2.0
+        },
+        {
+          "value": "$0.01",
+          "ref": 0.01
+        },
+        {
+          "value": "$0.01",
+          "ref": 0.01
+        },
+        {
+          "value": "$0.01",
+          "ref": 0.01
+        },
+        {
+          "value": "$2 million",
+          "ref": 2.0
+        },
+        {
+          "value": "$2 million",
+          "ref": 2.0
+        },
+        {
+          "value": "$2 million",
+          "ref": 2.0
+        },
+        {
+          "value": "$0.01",
+          "ref": 0.01
+        },
+        {
+          "value": "$2 million",
+          "ref": 2.0
+        },
+        {
+          "value": "$0.01",
+          "ref": 0.01
+        },
+        {
+          "value": "$0.01",
+          "ref": 0.01
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$1 million",
+          "num": 1.0,
+          "correct": 2.0,
+          "dev": 0.5,
+          "source": "source_document"
+        },
+        {
+          "value": "$1 million",
+          "num": 1.0,
+          "correct": 2.0,
+          "dev": 0.5,
+          "source": "source_document"
+        },
+        {
+          "value": "$1 million",
+          "num": 1.0,
+          "correct": 2.0,
+          "dev": 0.5,
+          "source": "source_document"
+        },
+        {
+          "value": "$1 million",
+          "num": 1.0,
+          "correct": 2.0,
+          "dev": 0.5,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "50.00%"
+        },
+        {
+          "value": "-50.00%"
+        },
+        {
+          "value": "50.00%"
+        },
+        {
+          "value": "50.00%"
+        }
+      ],
+      "n_refs": 6
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_106_EB0A9203",
+      "hid": "FB_106_EB0A9203_H2",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 1.0,
+      "orig_num": 2.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": true,
+      "any_det": true,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:42:36.354025+00:00"
+}

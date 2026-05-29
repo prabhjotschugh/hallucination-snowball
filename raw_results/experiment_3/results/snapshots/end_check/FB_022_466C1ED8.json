@@ -1,0 +1,142 @@
+{
+  "question_id": "FB_022_466C1ED8",
+  "method": "end_check",
+  "final_output": "## Amcor - Financial Report: Net Accounts Receivable Analysis (FY2020)\n\n**Executive Summary:**\nAmcor's Net Accounts Receivable (AR) for FY2020 stood at $947 million, continuing a downward trend observed over the past three fiscal years. This represents a significant decrease of $206 million, or -17.87%, from the FY2019 figure of $1,153 million. The rate of decline in FY2020 was notably more pronounced compared to the prior year, where AR decreased by $82 million (-6.64%) from FY2018's $1,235 million. This consistent reduction suggests potential improvements in collection efficiency or credit management.\n\n**Analysis:**\nAmcor has demonstrated a consistent reduction in its Net Accounts Receivable over the period analyzed. In FY2018, Net AR was $1,235 million. This decreased to $1,153 million in FY2019, an absolute change of -$82 million and a percentage change of -6.64%. The trend accelerated into FY2020, with Net AR falling to $947 million. This represents an absolute change of -$206 million from FY2019, marking a -17.87% decrease. The data, sourced from Amcor's FY2020, FY2019, and FY2018 10-K filings, indicates a clear pattern of declining outstanding receivables. This sustained reduction could be indicative of more stringent credit policies, improved collection processes, or a shift in sales mix towards customers with shorter payment terms.\n\n**Key Considerations:**\nThe accelerated decline in Net Accounts Receivable in FY2020, at -17.87% compared to -6.64% in FY2019, warrants further examination. While a reduction in AR can signify improved collection efficiency or stricter credit policies, a substantial and accelerated decrease could also point to other factors, such as a significant reduction in sales volume, particularly in the latter part of the fiscal year, or a substantial write-off of uncollectible accounts. Without corresponding revenue data and details on Amcor's credit policies and sales performance, it is difficult to ascertain the exact drivers behind this pronounced change and fully assess its implications.\n\n**Conclusion:**\nAmcor's Net Accounts Receivable has consistently decreased over the past three fiscal years, from $1,235 million in FY2018 to $1,153 million in FY2019, and further to $947 million in FY2020. The most recent fiscal year saw a particularly sharp decline of -17.87%. While this trend generally suggests positive improvements in working capital management, the accelerated rate of decline in FY2020 necessitates further investigation. A comprehensive analysis incorporating sales and revenue figures, along with insights into Amcor's credit management strategies, would be crucial to fully understand the implications of this accelerated reduction in receivables and determine whether it reflects operational efficiencies or other underlying business dynamics.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Amcor, FY2020\n- PRIMARY METRIC: Net Accounts Receivable (AR) for FY2020 is $947 million (per the FY2020 10-K, Consolidated Balance Sheets).\n- SUPPORTING DATA: \n  - FY2019 Net Accounts Receivable: $1,153 million (per the FY2019 10-K, Consolidated Balance Sheets).\n  - FY2018 Net Accounts Receivable: $1,235 million (per the FY2018 10-K, Consolidated Balance Sheets).\n- DATA SOURCES: \n  - FY2020 10-K, Consolidated Balance Sheets, Page 56.\n  - FY2019 10-K, Consolidated Balance Sheets, Page 54.\n  - FY2018 10-K, Consolidated Balance Sheets, Page 53.\n\nNote: No ratios or interpretations have been included as per the directive to present raw data only.",
+    "2": "As a financial analyst, I will compute the year-over-year changes and relevant ratios for Amcor's Net Accounts Receivable, flagging any anomalies.\n\n**1. Year-over-Year Changes (Net Accounts Receivable)**\n\n*   **FY2019 to FY2020:**\n    *   **Absolute Change:**\n        *   Formula: AR (Current Year) - AR (Previous Year)\n        *   Calculation: $947 million (FY2020) - $1,153 million (FY2019) = **-$206 million**\n    *   **Percentage Change:**\n        *   Formula: (Absolute Change / AR (Previous Year)) * 100\n        *   Calculation: (-$206 million / $1,153 million) * 100 = **-17.87%**\n\n*   **FY2018 to FY2019:**\n    *   **Absolute Change:**\n        *   Formula: AR (Current Year) - AR (Previous Year)\n        *   Calculation: $1,153 million (FY2019) - $1,235 million (FY2018) = **-$82 million**\n    *   **Percentage Change:**\n        *   Formula: (Absolute Change / AR (Previous Year)) * 100\n        *   Calculation: (-$82 million / $1,235 million) * 100 = **-6.64%**\n\n**2. Relevant Ratios**\n\nGiven the limited data (only Net Accounts Receivable), the most relevant \"ratio\" we can derive is the trend of AR itself. Without sales or revenue data, traditional AR turnover or Days Sales Outstanding (DSO) cannot be calculated.\n\n*   **AR Trend:**\n    *   FY2018: $1,235 million\n    *   FY2019: $1,153 million\n    *   FY2020: $947 million\n\n**3. Anomalies**\n\n*   **Consistent Decline:** Amcor's Net Accounts Receivable has shown a consistent year-over-year decline from FY2018 to FY2020.\n*   **Accelerated Decline in FY2020:** The percentage decrease in Net AR from FY2019 to FY2020 (-17.87%) is significantly larger than the decrease from FY2018 to FY2019 (-6.64%). This accelerated decline in FY2020 could be an anomaly warranting further investigation, potentially indicating changes in credit policy, sales volume, collection efficiency, or even the impact of the COVID-19 pandemic on customer payment behavior or Amcor's revenue recognition.",
+    "3": "## Amcor - Financial Report: Net Accounts Receivable Analysis (FY2020)\n\n**Executive Summary:**\nAmcor's Net Accounts Receivable (AR) for FY2020 stood at $947 million, continuing a downward trend observed over the past three fiscal years. This represents a significant decrease of $206 million, or -17.87%, from the FY2019 figure of $1,153 million. The rate of decline in FY2020 was notably more pronounced compared to the prior year, where AR decreased by $82 million (-6.64%) from FY2018's $1,235 million.\n\n**Analysis:**\nAmcor has demonstrated a consistent reduction in its Net Accounts Receivable over the period analyzed. In FY2018, Net AR was $1,235 million. This decreased to $1,153 million in FY2019, an absolute change of -$82 million and a percentage change of -6.64%. The trend accelerated into FY2020, with Net AR falling to $947 million. This represents an absolute change of -$206 million from FY2019, marking a -17.87% decrease. The data, sourced from Amcor's FY2020, FY2019, and FY2018 10-K filings, indicates a clear pattern of declining outstanding receivables.\n\n**Key Risks:**\nThe accelerated decline in Net Accounts Receivable in FY2020, at -17.87% compared to -6.64% in FY2019, presents a potential anomaly. While a reduction in AR can signify improved collection efficiency or stricter credit policies, a substantial and accelerated decrease could also point to a significant reduction in sales volume, particularly in the latter part of the fiscal year. Without corresponding revenue data, it is difficult to ascertain the exact drivers behind this pronounced change.\n\n**Conclusion:**\nAmcor's Net Accounts Receivable has consistently decreased over the past three fiscal years, from $1,235 million in FY2018 to $1,153 million in FY2019, and further to $947 million in FY2020. The most recent fiscal year saw a particularly sharp decline of -17.87%. Further investigation, incorporating sales and revenue figures, would be necessary to fully understand the implications of this accelerated reduction in receivables.",
+    "4": "## Amcor - Financial Report: Net Accounts Receivable Analysis (FY2020)\n\n**Executive Summary:**\nAmcor's Net Accounts Receivable (AR) for FY2020 stood at $947 million, continuing a downward trend observed over the past three fiscal years. This represents a significant decrease of $206 million, or -17.87%, from the FY2019 figure of $1,153 million. The rate of decline in FY2020 was notably more pronounced compared to the prior year, where AR decreased by $82 million (-6.64%) from FY2018's $1,235 million. This consistent reduction suggests potential improvements in collection efficiency or credit management.\n\n**Analysis:**\nAmcor has demonstrated a consistent reduction in its Net Accounts Receivable over the period analyzed. In FY2018, Net AR was $1,235 million. This decreased to $1,153 million in FY2019, an absolute change of -$82 million and a percentage change of -6.64%. The trend accelerated into FY2020, with Net AR falling to $947 million. This represents an absolute change of -$206 million from FY2019, marking a -17.87% decrease. The data, sourced from Amcor's FY2020, FY2019, and FY2018 10-K filings, indicates a clear pattern of declining outstanding receivables. This sustained reduction could be indicative of more stringent credit policies, improved collection processes, or a shift in sales mix towards customers with shorter payment terms.\n\n**Key Considerations:**\nThe accelerated decline in Net Accounts Receivable in FY2020, at -17.87% compared to -6.64% in FY2019, warrants further examination. While a reduction in AR can signify improved collection efficiency or stricter credit policies, a substantial and accelerated decrease could also point to other factors, such as a significant reduction in sales volume, particularly in the latter part of the fiscal year, or a substantial write-off of uncollectible accounts. Without corresponding revenue data and details on Amcor's credit policies and sales performance, it is difficult to ascertain the exact drivers behind this pronounced change and fully assess its implications.\n\n**Conclusion:**\nAmcor's Net Accounts Receivable has consistently decreased over the past three fiscal years, from $1,235 million in FY2018 to $1,153 million in FY2019, and further to $947 million in FY2020. The most recent fiscal year saw a particularly sharp decline of -17.87%. While this trend generally suggests positive improvements in working capital management, the accelerated rate of decline in FY2020 necessitates further investigation. A comprehensive analysis incorporating sales and revenue figures, along with insights into Amcor's credit management strategies, would be crucial to fully understand the implications of this accelerated reduction in receivables and determine whether it reflects operational efficiencies or other underlying business dynamics."
+  },
+  "gates": {
+    "end_gate": {
+      "verified": [
+        {
+          "value": "$1,153 million",
+          "ref": 1153.0
+        },
+        {
+          "value": "$1,153 million",
+          "ref": 1153.0
+        },
+        {
+          "value": "$1,153 million",
+          "ref": 1153.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$947 million",
+          "num": 947.0,
+          "correct": 1049.3,
+          "dev": 0.0975,
+          "source": "evidence"
+        },
+        {
+          "value": "$947 million",
+          "num": 947.0,
+          "correct": 1049.3,
+          "dev": 0.0975,
+          "source": "evidence"
+        },
+        {
+          "value": "$947 million",
+          "num": 947.0,
+          "correct": 1049.3,
+          "dev": 0.0975,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$206 million"
+        },
+        {
+          "value": "$82 million"
+        },
+        {
+          "value": "$1,235 million"
+        },
+        {
+          "value": "$1,235 million"
+        },
+        {
+          "value": "$82 million"
+        },
+        {
+          "value": "$206 million"
+        },
+        {
+          "value": "$1,235 million"
+        },
+        {
+          "value": "-17.87%"
+        },
+        {
+          "value": "-6.64%"
+        },
+        {
+          "value": "-6.64%"
+        },
+        {
+          "value": "-17.87%"
+        },
+        {
+          "value": "-17.87%"
+        },
+        {
+          "value": "-6.64%"
+        },
+        {
+          "value": "-17.87%"
+        }
+      ],
+      "n_refs": 9
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_022_466C1ED8",
+      "hid": "FB_022_466C1ED8_H2",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 947.0,
+      "orig_num": 1205.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": true,
+      "any_det": true,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_022_466C1ED8",
+      "hid": "FB_022_466C1ED8_H1",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 1235.0,
+      "orig_num": 1063.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:10:50.237330+00:00"
+}

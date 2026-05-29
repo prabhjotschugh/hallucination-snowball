@@ -1,0 +1,79 @@
+{
+  "question_id": "FB_015_5E139DB3",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Adobe Inc., FY2022\n- PRIMARY METRIC: Free Cash Flow Conversion: 103% (per the FY2022 10-K, Management's Discussion and Analysis of Financial Condition and Results of Operations)\n- SUPPORTING DATA: \n  - Free Cash Flow:\n    - FY2022: $3,695 million (per the FY2022 10-K, Consolidated Statements of Cash Flows)\n    - FY2021: $4,251 million (per the FY2021 10-K, Consolidated Statements of Cash Flows)\n    - FY2020: $4,076 million (per the FY2020 10-K, Consolidated Statements of Cash Flows)\n  - Operating Cash Flow:\n    - FY2022: $4,750 million (per the FY2022 10-K, Consolidated Statements of Cash Flows)\n    - FY2021: $4,205 million (per the FY2021 10-K, Consolidated Statements of Cash Flows)\n    - FY2020: $3,337 million (per the FY2020 10-K, Consolidated Statements of Cash Flows)\n- DATA SOURCES: \n  - FY2022 10-K, Management's Discussion and Analysis of Financial Condition and Results of Operations\n  - FY2022 10-K, Consolidated Statements of Cash Flows\n  - FY2021 10-K, Consolidated Statements of Cash Flows\n  - FY2020 10-K, Consolidated Statements of Cash Flows\n\nNote: The free cash flow conversion ratio is calculated as Free Cash Flow divided by Operating Cash Flow. For FY2022, this is $4,895 million / $4,750 million = 103%. The trend shows an increase in free cash flow from FY2020 to FY2022, indicating an improvement in free cash flow generation.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_015_5E139DB3_H2",
+      "type": "dollar_amount",
+      "original_value": "$4,895 million",
+      "injected_value": "$3,695 million",
+      "original_numeric": "4895",
+      "injected_numeric": "3695",
+      "position_char": 252,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.2452
+    },
+    {
+      "hallucination_id": "FB_015_5E139DB3_H1",
+      "type": "dollar_amount",
+      "original_value": "$3,396 million",
+      "injected_value": "$4,076 million",
+      "original_numeric": "3396",
+      "injected_numeric": "4076",
+      "position_char": 432,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.2002
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Free Cash Flow Conversion: 103%",
+        "claim_value": "103%",
+        "reason": "Free cash flow conversion ratio above 100% is unusual and may indicate an error in calculation or data",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Free Cash Flow: $3,695 million (per the FY2022 10-K, Consolidated Statements of Cash Flows)",
+        "claim_value": "$3,695 million",
+        "reason": "The reported free cash flow value is lower than the operating cash flow value, which is unusual",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "The researcher's output contains some suspicious claims that warrant further verification",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"Free Cash Flow Conversion: 103%\",\n      \"claim_value\" : \"103%\",\n      \"reason\"      : \"Free cash flow conversion ratio above 100% is unusual and may indicate an error in calculation or data\",\n      \"confidence\"  : \"high\"\n    },\n    {\n      \"claim_text\"  : \"Free Cash Flow: $3,695 million (per the FY2022 10-K, Consolidated Statements of Cash Flows)\",\n      \"claim_value\" : \"$3,695 million\",\n      \"reason\"      : \"The reported free cash flow value is lower than the operating cash flow value, which is unusual\",\n      \"confidence\"  : \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\"   : \"The researcher's output contains some suspicious claims that warrant further verification\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_015_5E139DB3",
+      "hallucination_id": "FB_015_5E139DB3_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$4,895 million",
+      "injected_value": "$3,695 million",
+      "detected": true,
+      "reason": "The reported free cash flow value is lower than the operating cash flow value, which is unusual",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_015_5E139DB3",
+      "hallucination_id": "FB_015_5E139DB3_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,396 million",
+      "injected_value": "$4,076 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-27T09:28:18.965212Z"
+}

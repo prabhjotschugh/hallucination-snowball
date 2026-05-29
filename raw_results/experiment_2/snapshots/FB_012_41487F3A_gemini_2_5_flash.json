@@ -1,0 +1,91 @@
+{
+  "question_id": "FB_012_41487F3A",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Adobe Inc., FY2016\n- PRIMARY METRIC: Operating Income for FY2016: $2,035 million (per the FY2016 10-K, Consolidated Statements of Operations)\n- SUPPORTING DATA: \n  - Operating Income for FY2015: $2,329 million (per the FY2015 10-K, Consolidated Statements of Operations)\n  - Year-over-Year Change in Operating Income: \n    - Calculation: (($2,825 million - $2,329 million) / $2,329 million) * 100 = 32.8%\n    - Rounded Percentage Change: 21.3%\n- DATA SOURCES: \n  - FY2016 10-K, Consolidated Statements of Operations\n  - FY2015 10-K, Consolidated Statements of Operations\n\nNote: The analysis and benchmarking against industry standards were not performed as per the directive to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_012_41487F3A_H2",
+      "type": "dollar_amount",
+      "original_value": "$2,825 million",
+      "injected_value": "$2,035 million",
+      "original_numeric": "2825",
+      "injected_numeric": "2035",
+      "position_char": 86,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.2796
+    },
+    {
+      "hallucination_id": "FB_012_41487F3A_H1",
+      "type": "percentage",
+      "original_value": "21.3%",
+      "injected_value": "32.8%",
+      "original_numeric": "21.3",
+      "injected_numeric": "32.8",
+      "position_char": 419,
+      "sentence_approx": 2,
+      "perturbation_delta": 11.4575
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Operating Income for FY2016: $2,035 million",
+        "claim_value": "$2,035 million",
+        "reason": "This figure for FY2016 operating income is presented as the 'PRIMARY METRIC' but is contradicted by the figure ($2,825 million) subsequently used for FY2016 operating income in the year-over-year change calculation. This represents a severe internal inconsistency.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Calculation: (($2,825 million - $2,329 million) / $2,329 million) * 100 = 32.8%",
+        "claim_value": "$2,825 million",
+        "reason": "This figure for FY22016 operating income, used in the year-over-year change calculation, directly contradicts the 'PRIMARY METRIC' stated earlier in the output, which claims FY2016 operating income is $2,035 million. This is a clear internal inconsistency.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Calculation: (($2,825 million - $2,329 million) / $2,329 million) * 100 = 32.8%",
+        "claim_value": "32.8%",
+        "reason": "While arithmetically correct based on the inputs ($2,825 million and $2,329 million), the FY2016 operating income figure ($2,825 million) used in this calculation contradicts the primary FY2016 operating income figure ($2,035 million) stated elsewhere in the output. Therefore, the resulting percentage change is based on internally inconsistent data.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Rounded Percentage Change: 21.3%",
+        "claim_value": "21.3%",
+        "reason": "This percentage does not logically follow from the immediately preceding calculated percentage of 32.8%. Rounding 32.8% to one decimal place would still be 32.8%. This is a clear internal inconsistency in the rounding process.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 9,
+    "overall_assessment": "The researcher's output contains significant internal inconsistencies regarding the FY2016 operating income figure and the subsequent calculation and rounding of the year-over-year change.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Operating Income for FY2016: $2,035 million\",\n      \"claim_value\": \"$2,035 million\",\n      \"reason\": \"This figure for FY2016 operating income is presented as the 'PRIMARY METRIC' but is contradicted by the figure ($2,825 million) subsequently used for FY2016 operating income in the year-over-year change calculation. This represents a severe internal inconsistency.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Calculation: (($2,825 million - $2,329 million) / $2,329 million) * 100 = 32.8%\",\n      \"claim_value\": \"$2,825 million\",\n      \"reason\": \"This figure for FY22016 operating income, used in the year-over-year change calculation, directly contradicts the 'PRIMARY METRIC' stated earlier in the output, which claims FY2016 operating income is $2,035 million. This is a clear internal inconsistency.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Calculation: (($2,825 million - $2,329 million) / $2,329 million) * 100 = 32.8%\",\n      \"claim_value\": \"32.8%\",\n      \"reason\": \"While arithmetically correct based on the inputs ($2,825 million and $2,329 million), the FY2016 operating income figure ($2,825 million) used in this calculation contradicts the primary FY2016 operating income figure ($2,035 million) stated elsewhere in the output. Therefore, the resulting percentage change is based on internally inconsistent data.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Rounded Percentage Change: 21.3%\",\n      \"claim_value\": \"21.3%\",\n      \"reason\": \"This percentage does not logically follow from the immediately preceding calculated percentage of 32.8%. Rounding 32.8% to one decimal place would still be 32.8%. This is a clear internal inconsistency in the rounding process.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 9,\n  \"overall_assessment\": \"The researcher's output contains significant internal inconsistencies regarding the FY2016 operating income figure and the subsequent calculation and rounding of the year-over-year change.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_012_41487F3A",
+      "hallucination_id": "FB_012_41487F3A_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$2,825 million",
+      "injected_value": "$2,035 million",
+      "detected": true,
+      "reason": "This figure for FY2016 operating income is presented as the 'PRIMARY METRIC' but is contradicted by the figure ($2,825 million) subsequently used for FY2016 operating income in the year-over-year change calculation. This represents a severe internal inconsistency.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_012_41487F3A",
+      "hallucination_id": "FB_012_41487F3A_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "percentage",
+      "original_value": "21.3%",
+      "injected_value": "32.8%",
+      "detected": true,
+      "reason": "This figure for FY22016 operating income, used in the year-over-year change calculation, directly contradicts the 'PRIMARY METRIC' stated earlier in the output, which claims FY2016 operating income is $2,035 million. This is a clear internal inconsistency.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 9
+    }
+  ],
+  "timestamp": "2026-03-25T07:36:53.008368Z"
+}

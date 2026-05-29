@@ -1,0 +1,85 @@
+{
+  "question_id": "FB_015_5E139DB3",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Adobe Inc., FY2022\n- PRIMARY METRIC: Free Cash Flow Conversion: 103% (per the FY2022 10-K, Management's Discussion and Analysis of Financial Condition and Results of Operations)\n- SUPPORTING DATA: \n  - Free Cash Flow:\n    - FY2022: $3,695 million (per the FY2022 10-K, Consolidated Statements of Cash Flows)\n    - FY2021: $4,251 million (per the FY2021 10-K, Consolidated Statements of Cash Flows)\n    - FY2020: $4,076 million (per the FY2020 10-K, Consolidated Statements of Cash Flows)\n  - Operating Cash Flow:\n    - FY2022: $4,750 million (per the FY2022 10-K, Consolidated Statements of Cash Flows)\n    - FY2021: $4,205 million (per the FY2021 10-K, Consolidated Statements of Cash Flows)\n    - FY2020: $3,337 million (per the FY2020 10-K, Consolidated Statements of Cash Flows)\n- DATA SOURCES: \n  - FY2022 10-K, Management's Discussion and Analysis of Financial Condition and Results of Operations\n  - FY2022 10-K, Consolidated Statements of Cash Flows\n  - FY2021 10-K, Consolidated Statements of Cash Flows\n  - FY2020 10-K, Consolidated Statements of Cash Flows\n\nNote: The free cash flow conversion ratio is calculated as Free Cash Flow divided by Operating Cash Flow. For FY2022, this is $4,895 million / $4,750 million = 103%. The trend shows an increase in free cash flow from FY2020 to FY2022, indicating an improvement in free cash flow generation.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_015_5E139DB3_H2",
+      "type": "dollar_amount",
+      "original_value": "$4,895 million",
+      "injected_value": "$3,695 million",
+      "original_numeric": "4895",
+      "injected_numeric": "3695",
+      "position_char": 252,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.2452
+    },
+    {
+      "hallucination_id": "FB_015_5E139DB3_H1",
+      "type": "dollar_amount",
+      "original_value": "$3,396 million",
+      "injected_value": "$4,076 million",
+      "original_numeric": "3396",
+      "injected_numeric": "4076",
+      "position_char": 432,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.2002
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Free Cash Flow Conversion: 103%",
+        "claim_value": "103%",
+        "reason": "This Free Cash Flow Conversion ratio is inconsistent with the Free Cash Flow ($3,695 million) and Operating Cash Flow ($4,750 million) figures provided for FY2022 in the 'Supporting Data' section. Based on those figures, the conversion ratio would be approximately 77.8% ($3,695M / $4,750M). The 103% figure appears to be derived from a different, unstated Free Cash Flow value.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "For FY2022, this is $4,895 million / $4,750 million = 103%.",
+        "claim_value": "$4,895 million",
+        "reason": "The Free Cash Flow figure of $4,895 million used in this calculation directly contradicts the Free Cash Flow figure of $3,695 million provided for FY2022 in the 'Supporting Data' section. This indicates an internal inconsistency or hallucination regarding the actual Free Cash Flow for FY2022.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "The trend shows an increase in free cash flow from FY2020 to FY2022, indicating an improvement in free cash flow generation.",
+        "claim_value": "an increase in free cash flow from FY2020 to FY2022",
+        "reason": "The provided Free Cash Flow figures are: FY2020 ($4,076 million), FY2021 ($4,251 million), and FY2022 ($3,695 million). While FCF increased from FY2020 to FY2021, it subsequently decreased significantly from FY2021 to FY2022. Therefore, stating an 'increase... from FY2020 to FY2022' is inaccurate and misrepresents the actual trend, which shows a decline in the most recent year.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 10,
+    "overall_assessment": "Multiple significant internal inconsistencies were found regarding Free Cash Flow figures and the derived conversion ratio for FY2022, as well as an inaccurate description of the Free Cash Flow trend.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Free Cash Flow Conversion: 103%\",\n      \"claim_value\": \"103%\",\n      \"reason\": \"This Free Cash Flow Conversion ratio is inconsistent with the Free Cash Flow ($3,695 million) and Operating Cash Flow ($4,750 million) figures provided for FY2022 in the 'Supporting Data' section. Based on those figures, the conversion ratio would be approximately 77.8% ($3,695M / $4,750M). The 103% figure appears to be derived from a different, unstated Free Cash Flow value.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"For FY2022, this is $4,895 million / $4,750 million = 103%.\",\n      \"claim_value\": \"$4,895 million\",\n      \"reason\": \"The Free Cash Flow figure of $4,895 million used in this calculation directly contradicts the Free Cash Flow figure of $3,695 million provided for FY2022 in the 'Supporting Data' section. This indicates an internal inconsistency or hallucination regarding the actual Free Cash Flow for FY2022.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"The trend shows an increase in free cash flow from FY2020 to FY2022, indicating an improvement in free cash flow generation.\",\n      \"claim_value\": \"an increase in free cash flow from FY2020 to FY2022\",\n      \"reason\": \"The provided Free Cash Flow figures are: FY2020 ($4,076 million), FY2021 ($4,251 million), and FY2022 ($3,695 million). While FCF increased from FY2020 to FY2021, it subsequently decreased significantly from FY2021 to FY2022. Therefore, stating an 'increase... from FY2020 to FY2022' is inaccurate and misrepresents the actual trend, which shows a decline in the most recent year.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 10,\n  \"overall_assessment\": \"Multiple significant internal inconsistencies were found regarding Free Cash Flow figures and the derived conversion ratio for FY2022, as well as an inaccurate description of the Free Cash Flow trend.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_015_5E139DB3",
+      "hallucination_id": "FB_015_5E139DB3_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$4,895 million",
+      "injected_value": "$3,695 million",
+      "detected": true,
+      "reason": "The Free Cash Flow figure of $4,895 million used in this calculation directly contradicts the Free Cash Flow figure of $3,695 million provided for FY2022 in the 'Supporting Data' section. This indicates an internal inconsistency or hallucination regarding the actual Free Cash Flow for FY2022.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 10
+    },
+    {
+      "question_id": "FB_015_5E139DB3",
+      "hallucination_id": "FB_015_5E139DB3_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,396 million",
+      "injected_value": "$4,076 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 10
+    }
+  ],
+  "timestamp": "2026-03-25T07:37:31.597903Z"
+}

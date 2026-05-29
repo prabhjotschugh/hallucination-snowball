@@ -1,0 +1,170 @@
+{
+  "question_id": "FB_115_AE55E4C4",
+  "method": "end_check",
+  "final_output": "## Nike, Inc. Financial Performance Report (FY2016-FY2018)\n\n**Executive Summary:**\nNike, Inc. demonstrated consistent revenue growth from FY2016 to FY2018, with revenue increasing from $32,376 million to $36,397 million. However, a significant increase in Cost of Goods Sold (COGS) in FY2017 led to a notable compression in Gross Profit Margin. While revenue continued to grow, the company's profitability, as measured by Gross Profit Margin, stabilized at a lower level in FY2017 and FY2018 compared to FY2016.\n\n**Analysis:**\nNike's revenue grew by 6.10% from $32,376 million in FY2016 to $34,350 million in FY2017, and further by 5.96% to $36,397 million in FY2018. This consistent top-line growth highlights strong market demand for Nike products.\n\nHowever, COGS experienced a substantial increase of 38.69% from $9,070 million in FY2016 to $12,579 million in FY2017. This disproportionate rise in costs relative to revenue growth resulted in a sharp decline in the Gross Profit Margin from 71.95% in FY2016 to 63.39% in FY2017. The COGS as a percentage of revenue also increased significantly from 28.05% in FY2016 to 36.62% in FY2017. In FY2018, COGS increased by a more moderate 4.95% to $13,202 million, and the Gross Profit Margin slightly improved to 63.69%, with COGS as a percentage of revenue at 36.27%.\n\n**Key Risks:**\nThe primary risk identified is the substantial increase in COGS in FY2017, which significantly impacted the company's gross profitability. While COGS growth moderated in FY2018, the Gross Profit Margin has not recovered to FY2016 levels. This indicates a potential shift in cost structure, supply chain inefficiencies, or pricing pressures that could continue to affect profitability if not effectively managed.\n\n**Conclusion:**\nNike, Inc. has successfully maintained revenue growth over the three-year period. However, the dramatic increase in COGS in FY2017 represents a critical shift in the company's financial performance. Moving forward, close monitoring of COGS and strategies to optimize cost efficiency will be crucial for improving gross profitability and ensuring sustainable financial health.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Nike, Inc. for Fiscal Years 2016, 2017, and 2018\n- PRIMARY METRIC: \n  - FY2016 COGS: $9,070 million (per the FY2016 10-K, Consolidated Statements of Operations)\n  - FY2016 Revenue: $32,376 million (per the FY2016 10-K, Consolidated Statements of Operations)\n  - COGS as a % of Revenue for FY2016: (12,199 / 21,769) * 100 = 37.7%\n\n  - FY2017 COGS: $12,579 million (per the FY2017 10-K, Consolidated Statements of Operations)\n  - FY2017 Revenue: $34,350 million (per the FY2017 10-K, Consolidated Statements of Operations)\n  - COGS as a % of Revenue for FY2017: (12,579 / 34,350) * 100 = 36.6%\n\n  - FY2018 COGS: $13,202 million (per the FY2018 10-K, Consolidated Statements of Operations)\n  - FY2018 Revenue: $36,397 million (per the FY2018 10-K, Consolidated Statements of Operations)\n  - COGS as a % of Revenue for FY2018: (13,202 / 36,397) * 100 = 36.3%\n\n- SUPPORTING DATA: \n  - FY2016 COGS as a % of Revenue: 37.7%\n  - FY2017 COGS as a % of Revenue: 36.6%\n  - FY2018 COGS as a % of Revenue: 36.3%\n  - Three-Year Average COGS as a % of Revenue: (47.3% + 36.6% + 36.3%) / 3 = 36.8%\n\n- DATA SOURCES: \n  - FY2016 10-K, Consolidated Statements of Operations\n  - FY2017 10-K, Consolidated Statements of Operations\n  - FY2018 10-K, Consolidated Statements of Operations",
+    "2": "## Nike, Inc. Financial Analysis (FY2016-FY2018)\n\n### 1. Year-over-Year Changes\n\n**Formulas:**\n* **Absolute Change:** Current Year Value - Prior Year Value\n* **Percentage Change:** (Absolute Change / Prior Year Value) * 100\n\n| Metric | FY2016 (Millions) | FY2017 (Millions) | FY2018 (Millions) | FY2017 vs FY2016 (Absolute) | FY2017 vs FY2016 (%) | FY2018 vs FY2017 (Absolute) | FY2018 vs FY2017 (%) |\n|---|---|---|---|---|---|---|---|\n| **Revenue** | $32,376 | $34,350 | $36,397 | $1,974 | 6.10% | $2,047 | 5.96% |\n| **COGS** | $9,070 | $12,579 | $13,202 | $3,509 | 38.69% | $623 | 4.95% |\n\n### 2. Relevant Ratios\n\n**Formulas:**\n* **Gross Profit Margin:** (Revenue - COGS) / Revenue * 100\n* **COGS as a % of Revenue:** COGS / Revenue * 100\n\n| Ratio | FY2016 | FY2017 | FY2018 |\n|---|---|---|---|\n| **Gross Profit Margin** | 71.95% | 63.39% | 63.69% |\n| **COGS as a % of Revenue** | 28.05% | 36.62% | 36.27% |\n\n**Calculations for Ratios:**\n* **FY2016 Gross Profit Margin:** (($32,376 - $9,070) / $32,376) * 100 = 71.95%\n* **FY2016 COGS as a % of Revenue:** ($9,070 / $32,376) * 100 = 28.05%\n* **FY2017 Gross Profit Margin:** (($34,350 - $12,579) / $34,350) * 100 = 63.39%\n* **FY2017 COGS as a % of Revenue:** ($12,579 / $34,350) * 100 = 36.62%\n* **FY2018 Gross Profit Margin:** (($36,397 - $13,202) / $36,397) * 100 = 63.69%\n* **FY2018 COGS as a % of Revenue:** ($13,202 / $36,397) * 100 = 36.27%\n\n### 3. Anomalies\n\n**Anomaly Flagged:** The researcher's provided \"COGS as a % of Revenue for FY2016\" of 37.7% is **incorrect**.\n\n**Reasoning:**\nUsing the provided FY2016 COGS ($9,070 million) and FY2016 Revenue ($32,376 million), the correct calculation for COGS as a % of Revenue is:\n($9,070 / $32,376) * 100 = **28.05%**.\n\nThe researcher's calculation of (12,199 / 21,769) * 100 = 37.7% uses different COGS and Revenue figures than those explicitly stated for FY2016, leading to a discrepancy.\n\n**Impact of Anomaly:**\nThe incorrect FY2016 COGS as a % of Revenue (37.7%) also leads to an incorrect \"Three-Year Average COGS as a % of Revenue\" of 36.8%. Using the corrected FY2016 value (28.05%), the corrected three-year average would be:\n(28.05% + 36.6% + 36.3%) / 3 = **33.65%**.\n\n**Financial Implications:**\nThe significant jump in COGS in FY2017 (38.69% increase) compared to a more modest revenue growth (6.10%) is notable. This led to a substantial decrease in Gross Profit Margin from 71.95% in FY2016 to 63.39% in FY2017. While the COGS growth moderated in FY2018, the Gross Profit Margin remained relatively flat. This indicates a shift in Nike's cost structure or pricing strategy post-FY2016.",
+    "3": "## Nike, Inc. Financial Performance Report (FY2016-FY2018)\n\n**Executive Summary:**\nNike, Inc. demonstrated consistent revenue growth from FY2016 to FY2018, with revenue increasing from $32,376 million to $36,397 million. However, a significant increase in Cost of Goods Sold (COGS) in FY2017 led to a notable compression in Gross Profit Margin. While revenue continued to grow, the company's profitability, as measured by Gross Profit Margin, stabilized at a lower level in FY2017 and FY2018 compared to FY2016.\n\n**Analysis:**\nNike's revenue grew by 6.10% from $32,376 million in FY2016 to $34,350 million in FY2017, and further by 5.96% to $36,397 million in FY2018. This consistent top-line growth highlights strong market demand for Nike products.\nHowever, COGS experienced a substantial increase of 38.69% from $9,070 million in FY2016 to $12,579 million in FY2017. This disproportionate rise in costs relative to revenue growth resulted in a sharp decline in the Gross Profit Margin from 71.95% in FY2016 to 63.39% in FY2017. The COGS as a percentage of revenue also increased significantly from 28.05% in FY2016 to 36.62% in FY2017. In FY2018, COGS increased by a more moderate 4.95% to $13,202 million, and the Gross Profit Margin slightly improved to 63.69%, with COGS as a percentage of revenue at 36.27%.\n\n**Key Risks:**\nThe primary risk identified is the substantial increase in COGS in FY2017, which significantly impacted the company's gross profitability. While COGS growth moderated in FY2018, the Gross Profit Margin has not recovered to FY2016 levels. This indicates a potential shift in cost structure, supply chain inefficiencies, or pricing pressures that could continue to affect profitability if not effectively managed.\n\n**Conclusion:**\nNike, Inc. has successfully maintained revenue growth over the three-year period. However, the dramatic increase in COGS in FY2017 represents a critical shift in the company's financial performance. Moving forward, close monitoring of COGS and strategies to optimize cost efficiency will be crucial for improving gross profitability and ensuring sustainable financial health.",
+    "4": "## Nike, Inc. Financial Performance Report (FY2016-FY2018)\n\n**Executive Summary:**\nNike, Inc. demonstrated consistent revenue growth from FY2016 to FY2018, with revenue increasing from $32,376 million to $36,397 million. However, a significant increase in Cost of Goods Sold (COGS) in FY2017 led to a notable compression in Gross Profit Margin. While revenue continued to grow, the company's profitability, as measured by Gross Profit Margin, stabilized at a lower level in FY2017 and FY2018 compared to FY2016.\n\n**Analysis:**\nNike's revenue grew by 6.10% from $32,376 million in FY2016 to $34,350 million in FY2017, and further by 5.96% to $36,397 million in FY2018. This consistent top-line growth highlights strong market demand for Nike products.\n\nHowever, COGS experienced a substantial increase of 38.69% from $9,070 million in FY2016 to $12,579 million in FY2017. This disproportionate rise in costs relative to revenue growth resulted in a sharp decline in the Gross Profit Margin from 71.95% in FY2016 to 63.39% in FY2017. The COGS as a percentage of revenue also increased significantly from 28.05% in FY2016 to 36.62% in FY2017. In FY2018, COGS increased by a more moderate 4.95% to $13,202 million, and the Gross Profit Margin slightly improved to 63.69%, with COGS as a percentage of revenue at 36.27%.\n\n**Key Risks:**\nThe primary risk identified is the substantial increase in COGS in FY2017, which significantly impacted the company's gross profitability. While COGS growth moderated in FY2018, the Gross Profit Margin has not recovered to FY2016 levels. This indicates a potential shift in cost structure, supply chain inefficiencies, or pricing pressures that could continue to affect profitability if not effectively managed.\n\n**Conclusion:**\nNike, Inc. has successfully maintained revenue growth over the three-year period. However, the dramatic increase in COGS in FY2017 represents a critical shift in the company's financial performance. Moving forward, close monitoring of COGS and strategies to optimize cost efficiency will be crucial for improving gross profitability and ensuring sustainable financial health."
+  },
+  "gates": {
+    "end_gate": {
+      "verified": [
+        {
+          "value": "$32,376 million",
+          "ref": 32376.0
+        },
+        {
+          "value": "$36,397 million",
+          "ref": 36397.0
+        },
+        {
+          "value": "$32,376 million",
+          "ref": 32376.0
+        },
+        {
+          "value": "$34,350 million",
+          "ref": 34350.0
+        },
+        {
+          "value": "$36,397 million",
+          "ref": 36397.0
+        },
+        {
+          "value": "$12,579 million",
+          "ref": 12579.0
+        },
+        {
+          "value": "$13,202 million",
+          "ref": 13202.0
+        },
+        {
+          "value": "36.62%",
+          "ref": 36.6
+        },
+        {
+          "value": "36.27%",
+          "ref": 36.3
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$9,070 million",
+          "num": 9070.0,
+          "correct": 12199.0,
+          "dev": 0.2565,
+          "source": "source_document"
+        },
+        {
+          "value": "71.95%",
+          "num": 71.95,
+          "correct": 55.1,
+          "dev": 0.2342,
+          "source": "ground_truth"
+        },
+        {
+          "value": "63.39%",
+          "num": 63.39,
+          "correct": 55.1,
+          "dev": 0.1308,
+          "source": "ground_truth"
+        },
+        {
+          "value": "28.05%",
+          "num": 28.05,
+          "correct": 36.3,
+          "dev": 0.2273,
+          "source": "source_document"
+        },
+        {
+          "value": "63.69%",
+          "num": 63.69,
+          "correct": 55.1,
+          "dev": 0.1349,
+          "source": "ground_truth"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "6.10%"
+        },
+        {
+          "value": "5.96%"
+        },
+        {
+          "value": "38.69%"
+        },
+        {
+          "value": "4.95%"
+        }
+      ],
+      "n_refs": 11
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_115_AE55E4C4",
+      "hid": "FB_115_AE55E4C4_H3",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 9070.0,
+      "orig_num": 12199.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": true,
+      "any_det": true,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_115_AE55E4C4",
+      "hid": "FB_115_AE55E4C4_H2",
+      "method": "end_check",
+      "type": "large_number",
+      "inj_num": 21769.0,
+      "orig_num": 32376.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_115_AE55E4C4",
+      "hid": "FB_115_AE55E4C4_H1",
+      "method": "end_check",
+      "type": "percentage",
+      "inj_num": 47.3,
+      "orig_num": 37.7,
+      "survived": false,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": false,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 4,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:46:08.491870+00:00"
+}

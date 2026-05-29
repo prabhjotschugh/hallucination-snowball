@@ -1,0 +1,188 @@
+{
+  "question_id": "FB_104_AE0FFD33",
+  "method": "ours",
+  "final_output": "## Financial Report: MGM Resorts International - Accounts Payable Analysis (FY2018)\n\n**Executive Summary**\n\nThis report analyzes the Accounts Payable for MGM Resorts International for the fiscal year 2018, with comparative data from FY2017 and FY2016. The primary finding is the remarkable consistency of Accounts Payable, which remained at $1,295 million across all three fiscal years. This stability resulted in zero year-over-year absolute and percentage changes. While this indicates a highly consistent short-term liability, the identical values for three consecutive years are an anomaly that warrants further investigation.\n\n**Analysis**\n\nMGM Resorts International reported Accounts Payable of $1,295 million for FY2018, as per the FY2018 10-K Consolidated Balance Sheets. This figure is identical to the Accounts Payable reported for FY2017 ($1,295 million) and FY2016 ($1,295 million).\n\nThe year-over-year change in Accounts Payable from FY2017 to FY2018 was $0 million, representing a 0.00% change. Similarly, the change from FY2016 to FY2017 was also $0 million, or 0.00%. This unprecedented stability in a dynamic balance sheet item is the most significant observation from the provided data. Without additional financial statement data such as Cost of Goods Sold (COGS) or Purchases, standard ratios like Accounts Payable Turnover or Days Payable Outstanding cannot be computed.\n\n**Key Risks**\n\nThe primary risk identified is the **anomalous consistency of Accounts Payable** at $1,295 million for three consecutive fiscal years (FY2016, FY2017, and FY2018). It is highly unusual for a company of MGM Resorts International's scale to maintain an identical Accounts Payable balance over such a period. This could indicate a potential data entry error in the source documents or a highly unusual operational pattern that requires deeper scrutiny to ensure data accuracy and proper financial reporting.\n\n**Conclusion**\n\nMGM Resorts International's Accounts Payable remained constant at $1,295 million for FY2016, FY2017, and FY2018. This resulted in no year-over-year change in this short-term liability. While stable liabilities can be positive, the absolute identical values for three consecutive years are highly unusual and flagged as an anomaly. Further investigation into the underlying data and operational context is recommended to understand this consistent figure and confirm its accuracy.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: MGM Resorts International, FY2018\n- PRIMARY METRIC: Accounts Payable: $952 million (per the FY2018 10-K, Consolidated Balance Sheets)\n- SUPPORTING DATA: \n  - FY2017 Accounts Payable: $1,050 million (per the FY2017 10-K, Consolidated Balance Sheets)\n  - FY2016 Accounts Payable: $1,084 million (per the FY2016 10-K, Consolidated Balance Sheets)\n- DATA SOURCES: \n  - FY2018 10-K, Consolidated Balance Sheets\n  - FY2017 10-K, Consolidated Balance Sheets\n  - FY2016 10-K, Consolidated Balance Sheets\n\nNote: No interpretation or analysis has been provided as per the directive.",
+    "2": "As a financial analyst, I will compute the year-over-year changes and relevant ratios for MGM Resorts International's Accounts Payable, using the corrected data.\n\n**Corrected Accounts Payable Data:**\n*   **FY2018:** $1,295 million\n*   **FY2017:** $1,295 million\n*   **FY2016:** $1,295 million\n\n---\n\n**1. Year-over-Year Changes (Accounts Payable)**\n\n*   **Absolute Change (FY2017 to FY2018):**\n    *   Formula: Accounts Payable (Current Year) - Accounts Payable (Previous Year)\n    *   Calculation: $1,295 million (FY2018) - $1,295 million (FY2017) = **$0 million**\n\n*   **Percentage Change (FY2017 to FY2018):**\n    *   Formula: (Absolute Change / Accounts Payable (Previous Year)) * 100\n    *   Calculation: ($0 million / $1,295 million) * 100 = **0.00%**\n\n*   **Absolute Change (FY2016 to FY2017):**\n    *   Formula: Accounts Payable (Current Year) - Accounts Payable (Previous Year)\n    *   Calculation: $1,295 million (FY2017) - $1,295 million (FY2016) = **$0 million**\n\n*   **Percentage Change (FY2016 to FY2017):**\n    *   Formula: (Absolute Change / Accounts Payable (Previous Year)) * 100\n    *   Calculation: ($0 million / $1,295 million) * 100 = **0.00%**\n\n---\n\n**2. Relevant Ratios**\n\nGiven only Accounts Payable data, a common relevant ratio is the **Accounts Payable Turnover Ratio** or **Days Payable Outstanding (DPO)**. However, these ratios require Cost of Goods Sold (COGS) or Purchases data, which is not provided.\n\nWithout additional financial statement data (e.g., COGS, Revenue, Total Current Liabilities), no other standard financial ratios can be computed solely from Accounts Payable figures.\n\n---\n\n**3. Anomalies**\n\nThe most significant anomaly is the **identical Accounts Payable value across all three fiscal years ($1,295 million for FY2016, FY2017, and FY2018)**.\n\n*   **Flagged Anomaly:** Accounts Payable remained constant at $1,295 million for FY2016, FY2017, and FY2018.\n*   **Reason for Flagging:** It is highly unusual for a dynamic balance sheet item like Accounts Payable to remain precisely the same for three consecutive years in a company of MGM Resorts International's size and operational complexity. This suggests a potential data entry error or an extremely rare and stable operational pattern.",
+    "3": "## Financial Report: MGM Resorts International - Accounts Payable Analysis (FY2018)\n\n**Executive Summary**\n\nThis report analyzes the Accounts Payable for MGM Resorts International for the fiscal year 2018, with comparative data from FY2017 and FY2016. The primary finding is the remarkable consistency of Accounts Payable, which remained at $1,295 million across all three fiscal years. This stability resulted in zero year-over-year absolute and percentage changes. While this indicates a highly consistent short-term liability, the identical values for three consecutive years are an anomaly that warrants further investigation.\n\n**Analysis**\n\nMGM Resorts International reported Accounts Payable of $1,295 million for FY2018, as per the FY2018 10-K Consolidated Balance Sheets. This figure is identical to the Accounts Payable reported for FY2017 ($1,295 million) and FY2016 ($1,295 million).\n\nThe year-over-year change in Accounts Payable from FY2017 to FY2018 was $0 million, representing a 0.00% change. Similarly, the change from FY2016 to FY2017 was also $0 million, or 0.00%. This unprecedented stability in a dynamic balance sheet item is the most significant observation from the provided data. Without additional financial statement data such as Cost of Goods Sold (COGS) or Purchases, standard ratios like Accounts Payable Turnover or Days Payable Outstanding cannot be computed.\n\n**Key Risks**\n\nThe primary risk identified is the **anomalous consistency of Accounts Payable** at $1,295 million for three consecutive fiscal years (FY2016, FY2017, and FY2018). It is highly unusual for a company of MGM Resorts International's scale to maintain an identical Accounts Payable balance over such a period. This could indicate a potential data entry error in the source documents or a highly unusual operational pattern that requires deeper scrutiny to ensure data accuracy and proper financial reporting.\n\n**Conclusion**\n\nMGM Resorts International's Accounts Payable remained constant at $1,295 million for FY2016, FY2017, and FY2018. This resulted in no year-over-year change in this short-term liability. While stable liabilities can be positive, the absolute identical values for three consecutive years are highly unusual and flagged as an anomaly. Further investigation into the underlying data and operational context is recommended to understand this consistent figure and confirm its accuracy.",
+    "4": "## Financial Report: MGM Resorts International - Accounts Payable Analysis (FY2018)\n\n**Executive Summary**\n\nThis report analyzes the Accounts Payable for MGM Resorts International for the fiscal year 2018, with comparative data from FY2017 and FY2016. The primary finding is the remarkable consistency of Accounts Payable, which remained at $1,295 million across all three fiscal years. This stability resulted in zero year-over-year absolute and percentage changes. While this indicates a highly consistent short-term liability, the identical values for three consecutive years are an anomaly that warrants further investigation.\n\n**Analysis**\n\nMGM Resorts International reported Accounts Payable of $1,295 million for FY2018, as per the FY2018 10-K Consolidated Balance Sheets. This figure is identical to the Accounts Payable reported for FY2017 ($1,295 million) and FY2016 ($1,295 million).\n\nThe year-over-year change in Accounts Payable from FY2017 to FY2018 was $0 million, representing a 0.00% change. Similarly, the change from FY2016 to FY2017 was also $0 million, or 0.00%. This unprecedented stability in a dynamic balance sheet item is the most significant observation from the provided data. Without additional financial statement data such as Cost of Goods Sold (COGS) or Purchases, standard ratios like Accounts Payable Turnover or Days Payable Outstanding cannot be computed.\n\n**Key Risks**\n\nThe primary risk identified is the **anomalous consistency of Accounts Payable** at $1,295 million for three consecutive fiscal years (FY2016, FY2017, and FY2018). It is highly unusual for a company of MGM Resorts International's scale to maintain an identical Accounts Payable balance over such a period. This could indicate a potential data entry error in the source documents or a highly unusual operational pattern that requires deeper scrutiny to ensure data accuracy and proper financial reporting.\n\n**Conclusion**\n\nMGM Resorts International's Accounts Payable remained constant at $1,295 million for FY2016, FY2017, and FY2018. This resulted in no year-over-year change in this short-term liability. While stable liabilities can be positive, the absolute identical values for three consecutive years are highly unusual and flagged as an anomaly. Further investigation into the underlying data and operational context is recommended to understand this consistent figure and confirm its accuracy."
+  },
+  "gates": {
+    "gate_1": {
+      "verified": [],
+      "refuted": [
+        {
+          "value": "$952 million",
+          "num": 952.0,
+          "correct": 1295.0,
+          "dev": 0.2649,
+          "source": "source_document"
+        },
+        {
+          "value": "$1,050 million",
+          "num": 1050.0,
+          "correct": 1295.0,
+          "dev": 0.1892,
+          "source": "source_document"
+        },
+        {
+          "value": "$1,084 million",
+          "num": 1084.0,
+          "correct": 1295.0,
+          "dev": 0.1629,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [],
+      "n_refs": 42
+    },
+    "gate_2": {
+      "verified": [
+        {
+          "value": "$1,295 million",
+          "ref": 1295.0
+        },
+        {
+          "value": "$1,295 million",
+          "ref": 1295.0
+        },
+        {
+          "value": "$1,295 million",
+          "ref": 1295.0
+        },
+        {
+          "value": "$1,295 million",
+          "ref": 1295.0
+        },
+        {
+          "value": "$1,295 million",
+          "ref": 1295.0
+        },
+        {
+          "value": "$1,295 million",
+          "ref": 1295.0
+        },
+        {
+          "value": "$1,295 million",
+          "ref": 1295.0
+        },
+        {
+          "value": "$1,295 million",
+          "ref": 1295.0
+        },
+        {
+          "value": "$1,295 million",
+          "ref": 1295.0
+        },
+        {
+          "value": "$1,295 million",
+          "ref": 1295.0
+        },
+        {
+          "value": "$1,295 million",
+          "ref": 1295.0
+        }
+      ],
+      "refuted": [],
+      "unverified": [],
+      "n_refs": 42
+    },
+    "gate_3": {
+      "verified": [
+        {
+          "value": "$1,295 million",
+          "ref": 1295.0
+        },
+        {
+          "value": "$1,295 million",
+          "ref": 1295.0
+        },
+        {
+          "value": "$1,295 million",
+          "ref": 1295.0
+        },
+        {
+          "value": "$1,295 million",
+          "ref": 1295.0
+        },
+        {
+          "value": "$1,295 million",
+          "ref": 1295.0
+        },
+        {
+          "value": "$1,295 million",
+          "ref": 1295.0
+        }
+      ],
+      "refuted": [],
+      "unverified": [],
+      "n_refs": 42
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_104_AE0FFD33",
+      "hid": "FB_104_AE0FFD33_H3",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 952.0,
+      "orig_num": 1479.0,
+      "survived": false,
+      "corrected": false,
+      "g1_det": true,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": false,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_104_AE0FFD33",
+      "hid": "FB_104_AE0FFD33_H2",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 1050.0,
+      "orig_num": 1379.0,
+      "survived": false,
+      "corrected": false,
+      "g1_det": true,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": false,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_104_AE0FFD33",
+      "hid": "FB_104_AE0FFD33_H1",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 1084.0,
+      "orig_num": 1295.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": false,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:42:31.524325+00:00"
+}

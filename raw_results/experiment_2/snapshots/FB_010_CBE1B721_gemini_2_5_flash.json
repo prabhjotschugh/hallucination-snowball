@@ -1,0 +1,79 @@
+{
+  "question_id": "FB_010_CBE1B721",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Activision Blizzard, FY2017 - FY2019\n- PRIMARY METRIC: \n   - FY2017 Capital Expenditures (Capex): $204 million (per the FY2017 10-K, Consolidated Statements of Cash Flows)\n   - FY2017 Revenue: $7,020 million (per the FY2017 10-K, Consolidated Statements of Operations)\n   - FY2018 Capital Expenditures (Capex): $244 million (per the FY2018 10-K, Consolidated Statements of Cash Flows)\n   - FY2018 Revenue: $7,500 million (per the FY2018 10-K, Consolidated Statements of Operations)\n   - FY2019 Capital Expenditures (Capex): $332 million (per the FY2019 10-K, Consolidated Statements of Cash Flows)\n   - FY2019 Revenue: $6,490 million (per the FY2019 10-K, Consolidated Statements of Operations)\n\n- SUPPORTING DATA:\n   - FY2017 Capex as a % of Revenue: (204 / 7,020) * 100 = 2.9%\n   - FY2018 Capex as a % of Revenue: (244 / 7,500) * 100 = 14.3%\n   - FY2019 Capex as a % of Revenue: (332 / 6,490) * 100 = 5.1%\n   - Three-Year Average of Capex as a % of Revenue: (2.9% + 3.3% + 16.3%) / 3 = 3.8%\n\n- DATA SOURCES: \n   - FY2017 10-K, Consolidated Statements of Cash Flows and Consolidated Statements of Operations\n   - FY2018 10-K, Consolidated Statements of Cash Flows and Consolidated Statements of Operations\n   - FY2019 10-K, Consolidated Statements of Cash Flows and Consolidated Statements of Operations\n\nFinal Result: The FY2017 - FY2019 three-year average of capital expenditures as a percentage of revenue for Activision Blizzard is 3.8%.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_010_CBE1B721_H2",
+      "type": "percentage",
+      "original_value": "3.3%",
+      "injected_value": "14.3%",
+      "original_numeric": "3.3",
+      "injected_numeric": "14.3",
+      "position_char": 858,
+      "sentence_approx": 2,
+      "perturbation_delta": 10.9622
+    },
+    {
+      "hallucination_id": "FB_010_CBE1B721_H1",
+      "type": "percentage",
+      "original_value": "5.1%",
+      "injected_value": "16.3%",
+      "original_numeric": "5.1",
+      "injected_numeric": "16.3",
+      "position_char": 994,
+      "sentence_approx": 6,
+      "perturbation_delta": 11.2167
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "FY2018 Capex as a % of Revenue: (244 / 7,500) * 100 = 14.3%",
+        "claim_value": "14.3%",
+        "reason": "The calculation (244 / 7,500) * 100 equals approximately 3.3%, not 14.3%. This is a significant arithmetic error.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Three-Year Average of Capex as a % of Revenue: (2.9% + 3.3% + 16.3%) / 3 = 3.8%",
+        "claim_value": "3.8%",
+        "reason": "This calculation contains multiple inconsistencies and errors: 1. The FY2018 percentage (3.3%) used in the sum contradicts the previously stated 14.3% for FY2018. 2. The FY2019 percentage (16.3%) used in the sum contradicts the previously stated 5.1% for FY2019 and appears fabricated. 3. The arithmetic (2.9% + 3.3% + 16.3%) / 3 equals 7.5%, not 3.8%. While the final result of 3.8% is numerically correct if the *actual* correct individual percentages (2.9%, 3.3%, 5.1%) were used, the calculation shown is fundamentally flawed.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 14,
+    "overall_assessment": "The researcher's output contains significant arithmetic errors and internal inconsistencies in the calculation of FY2018 capex as a percentage of revenue and the subsequent three-year average.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"FY2018 Capex as a % of Revenue: (244 / 7,500) * 100 = 14.3%\",\n      \"claim_value\": \"14.3%\",\n      \"reason\": \"The calculation (244 / 7,500) * 100 equals approximately 3.3%, not 14.3%. This is a significant arithmetic error.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Three-Year Average of Capex as a % of Revenue: (2.9% + 3.3% + 16.3%) / 3 = 3.8%\",\n      \"claim_value\": \"3.8%\",\n      \"reason\": \"This calculation contains multiple inconsistencies and errors: 1. The FY2018 percentage (3.3%) used in the sum contradicts the previously stated 14.3% for FY2018. 2. The FY2019 percentage (16.3%) used in the sum contradicts the previously stated 5.1% for FY2019 and appears fabricated. 3. The arithmetic (2.9% + 3.3% + 16.3%) / 3 equals 7.5%, not 3.8%. While the final result of 3.8% is numerically correct if the *actual* correct individual percentages (2.9%, 3.3%, 5.1%) were used, the calculation shown is fundamentally flawed.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 14,\n  \"overall_assessment\": \"The researcher's output contains significant arithmetic errors and internal inconsistencies in the calculation of FY2018 capex as a percentage of revenue and the subsequent three-year average.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_010_CBE1B721",
+      "hallucination_id": "FB_010_CBE1B721_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "percentage",
+      "original_value": "3.3%",
+      "injected_value": "14.3%",
+      "detected": true,
+      "reason": "The calculation (244 / 7,500) * 100 equals approximately 3.3%, not 14.3%. This is a significant arithmetic error.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 14
+    },
+    {
+      "question_id": "FB_010_CBE1B721",
+      "hallucination_id": "FB_010_CBE1B721_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "percentage",
+      "original_value": "5.1%",
+      "injected_value": "16.3%",
+      "detected": true,
+      "reason": "This calculation contains multiple inconsistencies and errors: 1. The FY2018 percentage (3.3%) used in the sum contradicts the previously stated 14.3% for FY2018. 2. The FY2019 percentage (16.3%) used in the sum contradicts the previously stated 5.1% for FY2019 and appears fabricated. 3. The arithmetic (2.9% + 3.3% + 16.3%) / 3 equals 7.5%, not 3.8%. While the final result of 3.8% is numerically correct if the *actual* correct individual percentages (2.9%, 3.3%, 5.1%) were used, the calculation shown is fundamentally flawed.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 14
+    }
+  ],
+  "timestamp": "2026-03-25T07:36:28.176355Z"
+}

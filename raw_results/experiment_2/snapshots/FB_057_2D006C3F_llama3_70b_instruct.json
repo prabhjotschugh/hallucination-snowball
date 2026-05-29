@@ -1,0 +1,97 @@
+{
+  "question_id": "FB_057_2D006C3F",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Block, Inc. (formerly Square, Inc.), FY2016\n- PRIMARY METRIC: Working Capital Ratio = Total Current Assets / Total Current Liabilities\n  - Total Current Assets: $1,059.4 million (per the FY2016 10-K, Consolidated Balance Sheets)\n  - Total Current Liabilities: $467.5 million (per the FY2016 10-K, Consolidated Balance Sheets)\n  - Working Capital Ratio: 2.26 (calculated as $1,059.4 million / $606.8 million)\n\n- SUPPORTING DATA:\n  - FY2015 Total Current Assets: $259.8 million (per the FY2015 10-K, Consolidated Balance Sheets)\n  - FY2015 Total Current Liabilities: $220.5 million (per the FY2015 10-K, Consolidated Balance Sheets)\n  - FY2015 Working Capital Ratio: 1.64 (calculated as $360.6 million / $220.5 million)\n  \n  - FY2017 Total Current Assets: $788.1 million (per the FY2017 10-K, Consolidated Balance Sheets)\n  - FY2017 Total Current Liabilities: $670.0 million (per the FY2017 10-K, Consolidated Balance Sheets)\n  - FY2017 Working Capital Ratio: 1.79 (calculated as $1,197.5 million / $670.0 million)\n\n- DATA SOURCES:\n  - FY2016 10-K, Consolidated Balance Sheets\n  - FY2015 10-K, Consolidated Balance Sheets\n  - FY2017 10-K, Consolidated Balance Sheets\n\nNote: The working capital ratio is calculated based on the provided figures for total current assets and total current liabilities for FY2016, FY2015, and FY2017.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_057_2D006C3F_H3",
+      "type": "dollar_amount",
+      "original_value": "$467.5 million",
+      "injected_value": "$606.8 million",
+      "original_numeric": "467.5",
+      "injected_numeric": "606.8",
+      "position_char": 412,
+      "sentence_approx": 7,
+      "perturbation_delta": 0.2979
+    },
+    {
+      "hallucination_id": "FB_057_2D006C3F_H2",
+      "type": "dollar_amount",
+      "original_value": "$360.6 million",
+      "injected_value": "$259.8 million",
+      "original_numeric": "360.6",
+      "injected_numeric": "259.8",
+      "position_char": 481,
+      "sentence_approx": 8,
+      "perturbation_delta": -0.2795
+    },
+    {
+      "hallucination_id": "FB_057_2D006C3F_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,197.5 million",
+      "injected_value": "$788.1 million",
+      "original_numeric": "1197.5",
+      "injected_numeric": "788.1",
+      "position_char": 774,
+      "sentence_approx": 13,
+      "perturbation_delta": -0.3419
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Working Capital Ratio: 2.26 (calculated as $1,059.4 million / $606.8 million)",
+        "claim_value": "2.26",
+        "reason": "The calculation is incorrect, the correct calculation is $1,059.4 million / $467.5 million, not $606.8 million.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 9,
+    "overall_assessment": "The researcher output contains a calculation error in the working capital ratio for FY2016.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"Working Capital Ratio: 2.26 (calculated as $1,059.4 million / $606.8 million)\",\n      \"claim_value\" : \"2.26\",\n      \"reason\"      : \"The calculation is incorrect, the correct calculation is $1,059.4 million / $467.5 million, not $606.8 million.\",\n      \"confidence\"  : \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 9,\n  \"overall_assessment\"   : \"The researcher output contains a calculation error in the working capital ratio for FY2016.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_057_2D006C3F",
+      "hallucination_id": "FB_057_2D006C3F_H3",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$467.5 million",
+      "injected_value": "$606.8 million",
+      "detected": true,
+      "reason": "The calculation is incorrect, the correct calculation is $1,059.4 million / $467.5 million, not $606.8 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_057_2D006C3F",
+      "hallucination_id": "FB_057_2D006C3F_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$360.6 million",
+      "injected_value": "$259.8 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_057_2D006C3F",
+      "hallucination_id": "FB_057_2D006C3F_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,197.5 million",
+      "injected_value": "$788.1 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 9
+    }
+  ],
+  "timestamp": "2026-03-27T09:34:11.828433Z"
+}

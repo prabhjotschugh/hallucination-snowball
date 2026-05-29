@@ -1,0 +1,85 @@
+{
+  "question_id": "FB_101_79109208",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Lockheed Martin, FY2020\n- PRIMARY METRIC: \n  - FY2020 Revenue: $65,398 million (per the FY2020 10-K, Consolidated Statements of Operations)\n  - Total Assets at FY2019 End: $45,200 million (per the FY2020 10-K, Consolidated Balance Sheets)\n  - Total Assets at FY2020 End: $48,400 million (per the FY2020 10-K, Consolidated Balance Sheets)\n  \n- SUPPORTING DATA:\n  - Average Total Assets = (Total Assets FY2019 + Total Assets FY2020) / 2\n  - Average Total Assets = ($37,987 million + $48,400 million) / 2 = $64,022 million\n  - Asset Turnover Ratio = FY2020 Revenue / Average Total Assets\n  - Asset Turnover Ratio = $65,398 million / $46,800 million = 1.39\n\n- DATA SOURCES: \n  - FY2020 10-K, Consolidated Statements of Operations for revenue\n  - FY2020 10-K, Consolidated Balance Sheets for total assets at FY2019 and FY2020 end\n\n**Note:** The asset turnover ratio calculated is 1.39, rounded to two decimal places as requested.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_101_79109208_H2",
+      "type": "dollar_amount",
+      "original_value": "$45,200 million",
+      "injected_value": "$37,987 million",
+      "original_numeric": "45200",
+      "injected_numeric": "37987",
+      "position_char": 483,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.1596
+    },
+    {
+      "hallucination_id": "FB_101_79109208_H1",
+      "type": "dollar_amount",
+      "original_value": "$46,800 million",
+      "injected_value": "$64,022 million",
+      "original_numeric": "46800",
+      "injected_numeric": "64022",
+      "position_char": 524,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.368
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Total Assets at FY2019 End: $45,200 million",
+        "claim_value": "$45,200 million",
+        "reason": "The calculation for Average Total Assets uses $37,987 million as Total Assets FY2019, which is inconsistent with the reported $45,200 million.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Average Total Assets = ($37,987 million + $48,400 million) / 2 = $64,022 million",
+        "claim_value": "$64,022 million",
+        "reason": "The calculation is incorrect, the correct average would be ($45,200 million + $48,400 million) / 2.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Asset Turnover Ratio = $65,398 million / $46,800 million = 1.39",
+        "claim_value": "$46,800 million",
+        "reason": "The denominator used in the calculation is incorrect, it should be the correct average total assets.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "The output contains internal inconsistencies and calculation errors, making the reported asset turnover ratio unreliable.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"Total Assets at FY2019 End: $45,200 million\",\n      \"claim_value\" : \"$45,200 million\",\n      \"reason\"      : \"The calculation for Average Total Assets uses $37,987 million as Total Assets FY2019, which is inconsistent with the reported $45,200 million.\",\n      \"confidence\"  : \"high\"\n    },\n    {\n      \"claim_text\"  : \"Average Total Assets = ($37,987 million + $48,400 million) / 2 = $64,022 million\",\n      \"claim_value\" : \"$64,022 million\",\n      \"reason\"      : \"The calculation is incorrect, the correct average would be ($45,200 million + $48,400 million) / 2.\",\n      \"confidence\"  : \"high\"\n    },\n    {\n      \"claim_text\"  : \"Asset Turnover Ratio = $65,398 million / $46,800 million = 1.39\",\n      \"claim_value\" : \"$46,800 million\",\n      \"reason\"      : \"The denominator used in the calculation is incorrect, it should be the correct average total assets.\",\n      \"confidence\"  : \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\"   : \"The output contains internal inconsistencies and calculation errors, making the reported asset turnover ratio unreliable.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_101_79109208",
+      "hallucination_id": "FB_101_79109208_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$45,200 million",
+      "injected_value": "$37,987 million",
+      "detected": true,
+      "reason": "The calculation for Average Total Assets uses $37,987 million as Total Assets FY2019, which is inconsistent with the reported $45,200 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_101_79109208",
+      "hallucination_id": "FB_101_79109208_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$46,800 million",
+      "injected_value": "$64,022 million",
+      "detected": true,
+      "reason": "The calculation for Average Total Assets uses $37,987 million as Total Assets FY2019, which is inconsistent with the reported $45,200 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-27T09:40:29.232780Z"
+}

@@ -1,0 +1,109 @@
+{
+  "question_id": "FB_128_F410AC0E",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: PepsiCo, as of May 26, 2023\n- PRIMARY METRIC: The total borrowing capacity under PepsiCo's unsecured revolving credit agreements is $4,150 million (USD 3 billion) per the 8-K filing dated May 30, 2023, Item 1.01.\n- SUPPORTING DATA: \n  - As of the end of Q1 2023 (March 25, 2023), PepsiCo reported total debt of $27,616 million (USD 41.173 billion) per the FY2022 10-K, Consolidated Balance Sheets.\n  - For Q1 2023, PepsiCo's total assets were reported at $107,506 million (USD 92.575 billion) per the FY2022 10-K, Consolidated Balance Sheets.\n- DATA SOURCES: \n  - 8-K filing dated May 30, 2023, Item 1.01.\n  - FY2022 10-K, Consolidated Balance Sheets, filed on February 10, 2023.\n\nNote: No trends in borrowing practices or financial ratios have been computed as per the requirement to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_128_F410AC0E_H3",
+      "type": "dollar_amount",
+      "original_value": "$3,000 million",
+      "injected_value": "$4,150 million",
+      "original_numeric": "3000",
+      "injected_numeric": "4150",
+      "position_char": 152,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.3832
+    },
+    {
+      "hallucination_id": "FB_128_F410AC0E_H2",
+      "type": "dollar_amount",
+      "original_value": "$41,173 million",
+      "injected_value": "$27,616 million",
+      "original_numeric": "41173",
+      "injected_numeric": "27616",
+      "position_char": 331,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.3293
+    },
+    {
+      "hallucination_id": "FB_128_F410AC0E_H1",
+      "type": "dollar_amount",
+      "original_value": "$92,575 million",
+      "injected_value": "$107,506 million",
+      "original_numeric": "92575",
+      "injected_numeric": "107506",
+      "position_char": 475,
+      "sentence_approx": 5,
+      "perturbation_delta": 0.1613
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "The total borrowing capacity under PepsiCo's unsecured revolving credit agreements is $4,150 million (USD 3 billion) per the 8-K filing dated May 30, 2023, Item 1.01.",
+        "claim_value": "$4,150 million (USD 3 billion)",
+        "reason": "The figures $4,150 million and USD 3 billion are not equivalent ($4,150 million is $4.15 billion). This is a clear inconsistency in the reported values.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "As of the end of Q1 2023 (March 25, 2023), PepsiCo reported total debt of $27,616 million (USD 41.173 billion) per the FY2022 10-K, Consolidated Balance Sheets.",
+        "claim_value": "$27,616 million (USD 41.173 billion)",
+        "reason": "The figures $27,616 million and USD 41.173 billion are wildly different ($27,616 million is $27.616 billion, not $41.173 billion). This is a major inconsistency.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "For Q1 2023, PepsiCo's total assets were reported at $107,506 million (USD 92.575 billion) per the FY2022 10-K, Consolidated Balance Sheets.",
+        "claim_value": "$107,506 million (USD 92.575 billion)",
+        "reason": "The figures $107,506 million and USD 92.575 billion are not equivalent ($107,506 million is $107.506 billion, not $92.575 billion). This is another inconsistency.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 3,
+    "overall_assessment": "Multiple glaring inconsistencies in reported financial figures, particularly in the conversion between millions and billions, suggesting potential fabrication or major errors.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"The total borrowing capacity under PepsiCo's unsecured revolving credit agreements is $4,150 million (USD 3 billion) per the 8-K filing dated May 30, 2023, Item 1.01.\",\n      \"claim_value\": \"$4,150 million (USD 3 billion)\",\n      \"reason\": \"The figures $4,150 million and USD 3 billion are not equivalent ($4,150 million is $4.15 billion). This is a clear inconsistency in the reported values.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"As of the end of Q1 2023 (March 25, 2023), PepsiCo reported total debt of $27,616 million (USD 41.173 billion) per the FY2022 10-K, Consolidated Balance Sheets.\",\n      \"claim_value\": \"$27,616 million (USD 41.173 billion)\",\n      \"reason\": \"The figures $27,616 million and USD 41.173 billion are wildly different ($27,616 million is $27.616 billion, not $41.173 billion). This is a major inconsistency.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"For Q1 2023, PepsiCo's total assets were reported at $107,506 million (USD 92.575 billion) per the FY2022 10-K, Consolidated Balance Sheets.\",\n      \"claim_value\": \"$107,506 million (USD 92.575 billion)\",\n      \"reason\": \"The figures $107,506 million and USD 92.575 billion are not equivalent ($107,506 million is $107.506 billion, not $92.575 billion). This is another inconsistency.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 3,\n  \"overall_assessment\": \"Multiple glaring inconsistencies in reported financial figures, particularly in the conversion between millions and billions, suggesting potential fabrication or major errors.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_128_F410AC0E",
+      "hallucination_id": "FB_128_F410AC0E_H3",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,000 million",
+      "injected_value": "$4,150 million",
+      "detected": true,
+      "reason": "The figures $4,150 million and USD 3 billion are not equivalent ($4,150 million is $4.15 billion). This is a clear inconsistency in the reported values.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 3
+    },
+    {
+      "question_id": "FB_128_F410AC0E",
+      "hallucination_id": "FB_128_F410AC0E_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$41,173 million",
+      "injected_value": "$27,616 million",
+      "detected": true,
+      "reason": "The figures $4,150 million and USD 3 billion are not equivalent ($4,150 million is $4.15 billion). This is a clear inconsistency in the reported values.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 3
+    },
+    {
+      "question_id": "FB_128_F410AC0E",
+      "hallucination_id": "FB_128_F410AC0E_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$92,575 million",
+      "injected_value": "$107,506 million",
+      "detected": true,
+      "reason": "The figures $107,506 million and USD 92.575 billion are not equivalent ($107,506 million is $107.506 billion, not $92.575 billion). This is another inconsistency.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 3
+    }
+  ],
+  "timestamp": "2026-03-24T09:59:58.064714Z"
+}

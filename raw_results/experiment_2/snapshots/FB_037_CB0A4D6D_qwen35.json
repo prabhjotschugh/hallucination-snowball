@@ -1,0 +1,121 @@
+{
+  "question_id": "FB_037_CB0A4D6D",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Advanced Micro Devices, Inc. (AMD) - FY2021 and FY2022\n- PRIMARY METRIC: \n  - FY2022 Sales Figures (excluding Embedded):\n    - Computing and Graphics: $6,600 million (per the FY2022 10-K, Consolidated Statements of Operations)\n    - Data Center: $6,000 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  \n  - FY2021 Sales Figures (excluding Embedded):\n    - Computing and Graphics: $3,800 million (per the FY2021 10-K, Consolidated Statements of Operations)\n    - Data Center: $3,100 million (per the FY2021 10-K, Consolidated Statements of Operations)\n\n- SUPPORTING DATA: \n  - Sales Growth Calculation:\n    - Computing and Graphics:\n      - FY2022: $6,600 million\n      - FY2021: $3,800 million\n      - Increase: $6,600 million - $3,800 million = $2,800 million\n      - Proportional Increase: ($2,800 million / $3,135 million) * 100 = 73.68%\n    \n    - Data Center:\n      - FY2022: $6,000 million\n      - FY2021: $3,100 million\n      - Increase: $6,000 million - $2,208 million = $2,900 million\n      - Proportional Increase: ($2,900 million / $2,500 million) * 100 = 93.55%\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Statements of Operations\n\nBased on the data extracted, the Data Center segment experienced the highest proportional increase in sales from FY2021 to FY2022, with a growth rate of 93.55%, compared to the Computing and Graphics segment's growth rate of 73.68%.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_037_CB0A4D6D_H3",
+      "type": "dollar_amount",
+      "original_value": "$3,800 million",
+      "injected_value": "$3,135 million",
+      "original_numeric": "3800",
+      "injected_numeric": "3135",
+      "position_char": 852,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.175
+    },
+    {
+      "hallucination_id": "FB_037_CB0A4D6D_H2",
+      "type": "dollar_amount",
+      "original_value": "$3,100 million",
+      "injected_value": "$2,208 million",
+      "original_numeric": "3100",
+      "injected_numeric": "2208",
+      "position_char": 1004,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.2879
+    },
+    {
+      "hallucination_id": "FB_037_CB0A4D6D_H1",
+      "type": "dollar_amount",
+      "original_value": "$3,100 million",
+      "injected_value": "$2,500 million",
+      "original_numeric": "3100",
+      "injected_numeric": "2500",
+      "position_char": 1085,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.1935
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "per the FY2022 10-K, Consolidated Statements of Operations",
+        "claim_value": "Consolidated Statements of Operations",
+        "reason": "Segment-specific sales figures are disclosed in the Notes to the Financial Statements (typically 'Segment Information'), not on the face of the Consolidated Statements of Operations which only shows total consolidated revenue.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Computing and Graphics: $6,600 million... Computing and Graphics: $3,800 million",
+        "claim_value": "Computing and Graphics segment name for FY2022",
+        "reason": "AMD reorganized its reporting segments in 2022 following the Xilinx acquisition. FY2022 reports 'Client' and 'Gaming' separately, not combined as 'Computing and Graphics'. Using FY21 segment names for FY22 data is structurally inaccurate.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Proportional Increase: ($2,800 million / $3,135 million) * 100 = 73.68%",
+        "claim_value": "$3,135 million",
+        "reason": "Internal inconsistency: The stated FY2021 Sales figure for Computing and Graphics is $3,800 million, but the calculation uses $3,135 million as the denominator. $2,800/$3,800 equals 73.68%, indicating the formula text is hallucinated.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Increase: $6,000 million - $2,208 million = $2,900 million",
+        "claim_value": "$2,208 million",
+        "reason": "Internal inconsistency and arithmetic error: The stated FY2021 Data Center Sales is $3,100 million, but the calculation subtracts $2,208 million. Additionally, $6,000 - $2,208 equals $3,792, not $2,900.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Proportional Increase: ($2,900 million / $2,500 million) * 100 = 93.55%",
+        "claim_value": "$2,500 million",
+        "reason": "Internal inconsistency: The stated FY2021 Data Center Sales is $3,100 million, but the calculation uses $2,500 million as the denominator. $2,900/$3,100 equals 93.55%, indicating the formula text is hallucinated.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 12,
+    "overall_assessment": "While the top-line revenue figures align roughly with public data, the supporting calculations contain severe arithmetic errors and internal inconsistencies, and the cited financial statement location and segment naming conventions are inaccurate for the reported periods.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"per the FY2022 10-K, Consolidated Statements of Operations\",\n      \"claim_value\": \"Consolidated Statements of Operations\",\n      \"reason\": \"Segment-specific sales figures are disclosed in the Notes to the Financial Statements (typically 'Segment Information'), not on the face of the Consolidated Statements of Operations which only shows total consolidated revenue.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Computing and Graphics: $6,600 million... Computing and Graphics: $3,800 million\",\n      \"claim_value\": \"Computing and Graphics segment name for FY2022\",\n      \"reason\": \"AMD reorganized its reporting segments in 2022 following the Xilinx acquisition. FY2022 reports 'Client' and 'Gaming' separately, not combined as 'Computing and Graphics'. Using FY21 segment names for FY22 data is structurally inaccurate.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Proportional Increase: ($2,800 million / $3,135 million) * 100 = 73.68%\",\n      \"claim_value\": \"$3,135 million\",\n      \"reason\": \"Internal inconsistency: The stated FY2021 Sales figure for Computing and Graphics is $3,800 million, but the calculation uses $3,135 million as the denominator. $2,800/$3,800 equals 73.68%, indicating the formula text is hallucinated.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Increase: $6,000 million - $2,208 million = $2,900 million\",\n      \"claim_value\": \"$2,208 million\",\n      \"reason\": \"Internal inconsistency and arithmetic error: The stated FY2021 Data Center Sales is $3,100 million, but the calculation subtracts $2,208 million. Additionally, $6,000 - $2,208 equals $3,792, not $2,900.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Proportional Increase: ($2,900 million / $2,500 million) * 100 = 93.55%\",\n      \"claim_value\": \"$2,500 million\",\n      \"reason\": \"Internal inconsistency: The stated FY2021 Data Center Sales is $3,100 million, but the calculation uses $2,500 million as the denominator. $2,900/$3,100 equals 93.55%, indicating the formula text is hallucinated.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 12,\n  \"overall_assessment\": \"While the top-line revenue figures align roughly with public data, the supporting calculations contain severe arithmetic errors and internal inconsistencies, and the cited financial statement location and segment naming conventions are inaccurate for the reported periods.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_037_CB0A4D6D",
+      "hallucination_id": "FB_037_CB0A4D6D_H3",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,800 million",
+      "injected_value": "$3,135 million",
+      "detected": true,
+      "reason": "Internal inconsistency: The stated FY2021 Sales figure for Computing and Graphics is $3,800 million, but the calculation uses $3,135 million as the denominator. $2,800/$3,800 equals 73.68%, indicating the formula text is hallucinated.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 12
+    },
+    {
+      "question_id": "FB_037_CB0A4D6D",
+      "hallucination_id": "FB_037_CB0A4D6D_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,100 million",
+      "injected_value": "$2,208 million",
+      "detected": true,
+      "reason": "Internal inconsistency: The stated FY2021 Sales figure for Computing and Graphics is $3,800 million, but the calculation uses $3,135 million as the denominator. $2,800/$3,800 equals 73.68%, indicating the formula text is hallucinated.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 12
+    },
+    {
+      "question_id": "FB_037_CB0A4D6D",
+      "hallucination_id": "FB_037_CB0A4D6D_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,100 million",
+      "injected_value": "$2,500 million",
+      "detected": true,
+      "reason": "Internal inconsistency: The stated FY2021 Sales figure for Computing and Graphics is $3,800 million, but the calculation uses $3,135 million as the denominator. $2,800/$3,800 equals 73.68%, indicating the formula text is hallucinated.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 12
+    }
+  ],
+  "timestamp": "2026-03-24T10:52:01.336307Z"
+}

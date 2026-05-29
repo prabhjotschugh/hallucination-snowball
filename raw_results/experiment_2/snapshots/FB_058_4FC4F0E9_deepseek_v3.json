@@ -1,0 +1,109 @@
+{
+  "question_id": "FB_058_4FC4F0E9",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: Block, Inc. (formerly Square, Inc.), FY2019 and FY2020\n- PRIMARY METRIC: \n  - Total Revenue FY2019: $5,585 million (per the FY2020 10-K, Consolidated Statements of Operations)\n  - Total Revenue FY2020: $9,493 million (per the FY2020 10-K, Consolidated Statements of Operations)\n  - Growth Rate: 91.9% (calculated as [(9,493 - 4,711) / 4,711] * 100)\n- SUPPORTING DATA: \n  - FY2019 Total Revenue: $4,711 million\n  - FY2020 Total Revenue: $12,544 million\n- DATA SOURCES: \n  - FY2020 10-K, Consolidated Statements of Operations\n\nNote: The growth rate has been calculated based on the exact figures from the SEC filing without interpretation or analysis.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_058_4FC4F0E9_H3",
+      "type": "dollar_amount",
+      "original_value": "$4,711 million",
+      "injected_value": "$5,585 million",
+      "original_numeric": "4711",
+      "injected_numeric": "5585",
+      "position_char": 120,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.1856
+    },
+    {
+      "hallucination_id": "FB_058_4FC4F0E9_H2",
+      "type": "percentage",
+      "original_value": "101.6%",
+      "injected_value": "91.9%",
+      "original_numeric": "101.6",
+      "injected_numeric": "91.9",
+      "position_char": 315,
+      "sentence_approx": 3,
+      "perturbation_delta": -9.6753
+    },
+    {
+      "hallucination_id": "FB_058_4FC4F0E9_H1",
+      "type": "dollar_amount",
+      "original_value": "$9,493 million",
+      "injected_value": "$12,544 million",
+      "original_numeric": "9493",
+      "injected_numeric": "12544",
+      "position_char": 457,
+      "sentence_approx": 4,
+      "perturbation_delta": 0.3214
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Total Revenue FY2019: $5,585 million (per the FY2020 10-K, Consolidated Statements of Operations)",
+        "claim_value": "$5,585 million",
+        "reason": "Value for FY2019 revenue is stated as both $5,585 million (PRIMARY METRIC) and $4,711 million (SUPPORTING DATA). These conflicting values cannot both be correct.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Growth Rate: 91.9% (calculated as [(9,493 - 4,711) / 4,711] * 100)",
+        "claim_value": "91.9%",
+        "reason": "Growth rate calculation is incorrectly documented (uses FY2019 $4,711m vs. $5,585m), and the formula numerator is inconsistent with documented values (9,493 vs. 12,544). Either the formula or figures appear fabricated.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2020 Total Revenue: $12,544 million",
+        "claim_value": "$12,544 million",
+        "reason": "Contradicts the PRIMARY METRIC claim of $9,493 million for FY2020 revenue. Only one can be correct.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 7,
+    "overall_assessment": "Multiple severe contradictions exist in revenue figures and growth rate calculation, suggesting likely fabrication or gross error in the output.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Total Revenue FY2019: $5,585 million (per the FY2020 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$5,585 million\",\n      \"reason\": \"Value for FY2019 revenue is stated as both $5,585 million (PRIMARY METRIC) and $4,711 million (SUPPORTING DATA). These conflicting values cannot both be correct.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Growth Rate: 91.9% (calculated as [(9,493 - 4,711) / 4,711] * 100)\",\n      \"claim_value\": \"91.9%\",\n      \"reason\": \"Growth rate calculation is incorrectly documented (uses FY2019 $4,711m vs. $5,585m), and the formula numerator is inconsistent with documented values (9,493 vs. 12,544). Either the formula or figures appear fabricated.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2020 Total Revenue: $12,544 million\",\n      \"claim_value\": \"$12,544 million\",\n      \"reason\": \"Contradicts the PRIMARY METRIC claim of $9,493 million for FY2020 revenue. Only one can be correct.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 7,\n  \"overall_assessment\": \"Multiple severe contradictions exist in revenue figures and growth rate calculation, suggesting likely fabrication or gross error in the output.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_058_4FC4F0E9",
+      "hallucination_id": "FB_058_4FC4F0E9_H3",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$4,711 million",
+      "injected_value": "$5,585 million",
+      "detected": true,
+      "reason": "Value for FY2019 revenue is stated as both $5,585 million (PRIMARY METRIC) and $4,711 million (SUPPORTING DATA). These conflicting values cannot both be correct.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_058_4FC4F0E9",
+      "hallucination_id": "FB_058_4FC4F0E9_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "percentage",
+      "original_value": "101.6%",
+      "injected_value": "91.9%",
+      "detected": true,
+      "reason": "Growth rate calculation is incorrectly documented (uses FY2019 $4,711m vs. $5,585m), and the formula numerator is inconsistent with documented values (9,493 vs. 12,544). Either the formula or figures appear fabricated.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_058_4FC4F0E9",
+      "hallucination_id": "FB_058_4FC4F0E9_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$9,493 million",
+      "injected_value": "$12,544 million",
+      "detected": true,
+      "reason": "Contradicts the PRIMARY METRIC claim of $9,493 million for FY2020 revenue. Only one can be correct.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 7
+    }
+  ],
+  "timestamp": "2026-03-24T09:48:36.956500Z"
+}

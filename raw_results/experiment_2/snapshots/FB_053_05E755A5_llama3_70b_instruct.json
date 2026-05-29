@@ -1,0 +1,97 @@
+{
+  "question_id": "FB_053_05E755A5",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Best Buy Co., Inc. for Fiscal Year 2023 (FY2023)\n  \n- PRIMARY METRIC: \n  - Cash Flows from Operating Activities: $1,210 million (per the FY2023 10-K, Consolidated Statements of Cash Flows)\n  - Cash Flows from Investing Activities: $(1,421) million (per the FY2023 10-K, Consolidated Statements of Cash Flows)\n  - Cash Flows from Financing Activities: $(1,042) million (per the FY2023 10-K, Consolidated Statements of Cash Flows)\n\n- SUPPORTING DATA: \n  - FY2022 Cash Flows from Operating Activities: $1,637 million (per the FY2022 10-K, Consolidated Statements of Cash Flows)\n  - FY2022 Cash Flows from Investing Activities: $(852) million (per the FY2022 10-K, Consolidated Statements of Cash Flows)\n  - FY2022 Cash Flows from Financing Activities: $(1,069) million (per the FY2022 10-K, Consolidated Statements of Cash Flows)\n  \n  - FY2021 Cash Flows from Operating Activities: $2,174 million (per the FY2021 10-K, Consolidated Statements of Cash Flows)\n  - FY2021 Cash Flows from Investing Activities: $(1,071) million (per the FY2021 10-K, Consolidated Statements of Cash Flows)\n  - FY2021 Cash Flows from Financing Activities: $(1,052) million (per the FY2021 10-K, Consolidated Statements of Cash Flows)\n\n- DATA SOURCES: \n  - FY2023 10-K, Consolidated Statements of Cash Flows\n  - FY2022 10-K, Consolidated Statements of Cash Flows\n  - FY2021 10-K, Consolidated Statements of Cash Flows\n\nIn summary, Best Buy's cash flow from operating activities in FY2023 was the highest among the three segments, totaling $1,518 million.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_053_05E755A5_H3",
+      "type": "dollar_amount",
+      "original_value": "$1,518 million",
+      "injected_value": "$1,210 million",
+      "original_numeric": "1518",
+      "injected_numeric": "1210",
+      "position_char": 133,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.203
+    },
+    {
+      "hallucination_id": "FB_053_05E755A5_H2",
+      "type": "large_number",
+      "original_value": "1,188",
+      "injected_value": "1,421",
+      "original_numeric": "1188",
+      "injected_numeric": "1421",
+      "position_char": 253,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.1963
+    },
+    {
+      "hallucination_id": "FB_053_05E755A5_H1",
+      "type": "large_number",
+      "original_value": "1,045",
+      "injected_value": "852",
+      "original_numeric": "1045",
+      "injected_numeric": "852",
+      "position_char": 646,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.1844
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "In summary, Best Buy's cash flow from operating activities in FY2023 was the highest among the three segments, totaling $1,518 million.",
+        "claim_value": "$1,518 million",
+        "reason": "The reported cash flow from operating activities in FY2023 is $1,210 million, not $1,518 million, which is a discrepancy of $308 million.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 9,
+    "overall_assessment": "The researcher's summary statement contains an error, but the individual data points seem plausible.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"In summary, Best Buy's cash flow from operating activities in FY2023 was the highest among the three segments, totaling $1,518 million.\",\n      \"claim_value\" : \"$1,518 million\",\n      \"reason\"      : \"The reported cash flow from operating activities in FY2023 is $1,210 million, not $1,518 million, which is a discrepancy of $308 million.\",\n      \"confidence\"  : \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 9,\n  \"overall_assessment\"   : \"The researcher's summary statement contains an error, but the individual data points seem plausible.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_053_05E755A5",
+      "hallucination_id": "FB_053_05E755A5_H3",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,518 million",
+      "injected_value": "$1,210 million",
+      "detected": true,
+      "reason": "The reported cash flow from operating activities in FY2023 is $1,210 million, not $1,518 million, which is a discrepancy of $308 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_053_05E755A5",
+      "hallucination_id": "FB_053_05E755A5_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "large_number",
+      "original_value": "1,188",
+      "injected_value": "1,421",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_053_05E755A5",
+      "hallucination_id": "FB_053_05E755A5_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "large_number",
+      "original_value": "1,045",
+      "injected_value": "852",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 9
+    }
+  ],
+  "timestamp": "2026-03-27T09:33:33.868073Z"
+}

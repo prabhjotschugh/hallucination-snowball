@@ -1,0 +1,523 @@
+{
+  "question_id": "FB_115_AE55E4C4",
+  "method": "ours",
+  "final_output": "## Nike, Inc. Financial Performance Report (FY2016-FY2018)\n\n**Executive Summary**\n\nNike, Inc. demonstrated consistent revenue growth and improved cost efficiency over the fiscal years 2016 to 2018. Revenue increased from $32,376 million in FY2016 to $36,397 million in FY2018, while the Cost of Goods Sold (COGS) as a percentage of revenue steadily declined from 37.7% to 36.3%. This indicates effective management of production costs relative to sales, contributing to an improving gross margin profile.\n\n**Analysis**\n\nNike, Inc. experienced robust top-line growth during the period. Revenue grew by 6.10% from $32,376 million in FY2016 to $34,350 million in FY2017, and further increased by 5.96% to $36,397 million in FY2018. Concurrently, COGS also increased, but at a slower pace than revenue. COGS rose by 3.11% from $12,199 million in FY2016 to $12,579 million in FY2017, and by 4.95% to $13,202 million in FY2018.\n\nThe efficiency in managing COGS is evident in the declining COGS as a percentage of revenue. This key metric decreased from 37.7% in FY2016 to 36.6% in FY2017, and further to 36.3% in FY2018. The three-year average for COGS as a percentage of revenue stands at 36.9%, highlighting a sustained effort in cost optimization. This consistent reduction in the COGS ratio indicates that Nike was able to increase its gross profit margin over the period, a positive indicator of operational efficiency.\n\n**Key Risks**\n\nWhile the trend in COGS as a percentage of revenue is positive, continued vigilance is required to manage supply chain costs, raw material price fluctuations, and manufacturing expenses. Any significant increase in these areas without a corresponding increase in product pricing or sales volume could reverse the positive trend in cost efficiency and negatively impact profitability. Furthermore, global economic shifts, currency fluctuations, and competitive pressures remain ongoing factors that could influence future financial performance.\n\n**Conclusion**\n\nNike, Inc. exhibited strong financial performance from FY2016 to FY2018, characterized by consistent revenue growth and an improving gross margin profile. The company's ability to grow revenue while simultaneously reducing its COGS as a percentage of revenue indicates effective operational management and a healthy financial trajectory during this period. This demonstrates a strong capacity to manage core business costs while expanding market reach.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Nike, Inc. for Fiscal Years 2016, 2017, and 2018\n- PRIMARY METRIC: \n  - FY2016 COGS: $9,070 million (per the FY2016 10-K, Consolidated Statements of Operations)\n  - FY2016 Revenue: $32,376 million (per the FY2016 10-K, Consolidated Statements of Operations)\n  - COGS as a % of Revenue for FY2016: (12,199 / 21,769) * 100 = 37.7%\n\n  - FY2017 COGS: $12,579 million (per the FY2017 10-K, Consolidated Statements of Operations)\n  - FY2017 Revenue: $34,350 million (per the FY2017 10-K, Consolidated Statements of Operations)\n  - COGS as a % of Revenue for FY2017: (12,579 / 34,350) * 100 = 36.6%\n\n  - FY2018 COGS: $13,202 million (per the FY2018 10-K, Consolidated Statements of Operations)\n  - FY2018 Revenue: $36,397 million (per the FY2018 10-K, Consolidated Statements of Operations)\n  - COGS as a % of Revenue for FY2018: (13,202 / 36,397) * 100 = 36.3%\n\n- SUPPORTING DATA: \n  - FY2016 COGS as a % of Revenue: 37.7%\n  - FY2017 COGS as a % of Revenue: 36.6%\n  - FY2018 COGS as a % of Revenue: 36.3%\n  - Three-Year Average COGS as a % of Revenue: (47.3% + 36.6% + 36.3%) / 3 = 36.8%\n\n- DATA SOURCES: \n  - FY2016 10-K, Consolidated Statements of Operations\n  - FY2017 10-K, Consolidated Statements of Operations\n  - FY2018 10-K, Consolidated Statements of Operations",
+    "2": "Here's an analysis of Nike, Inc.'s financial data for Fiscal Years 2016-2018:\n\n**1. Year-over-Year Changes**\n\n| Metric | FY2016 (Corrected) | FY2017 | FY2018 | FY2017 vs FY2016 (Absolute) | FY2017 vs FY2016 (%) | FY2018 vs FY2017 (Absolute) | FY2018 vs FY2017 (%) |\n|---|---|---|---|---|---|---|---|\n| **Revenue ($M)** | 32,376 | 34,350 | 36,397 | 1,974 | 6.10% | 2,047 | 5.96% |\n| **COGS ($M)** | 12,199 | 12,579 | 13,202 | 380 | 3.11% | 623 | 4.95% |\n\n**Formulas:**\n*   **Absolute Change:** Current Year Value - Prior Year Value\n*   **Percentage Change:** (Absolute Change / Prior Year Value) * 100\n\n**Calculations:**\n*   **Revenue FY2017 vs FY2016:**\n    *   Absolute: $34,350 - $32,376 = $1,974 million\n    *   Percentage: ($1,974 / $32,376) * 100 = 6.10%\n*   **Revenue FY2018 vs FY2017:**\n    *   Absolute: $36,397 - $34,350 = $2,047 million\n    *   Percentage: ($2,047 / $34,350) * 100 = 5.96%\n*   **COGS FY2017 vs FY2016:**\n    *   Absolute: $12,579 - $12,199 = $380 million\n    *   Percentage: ($380 / $12,199) * 100 = 3.11%\n*   **COGS FY2018 vs FY2017:**\n    *   Absolute: $13,202 - $12,579 = $623 million\n    *   Percentage: ($623 / $12,579) * 100 = 4.95%\n\n**2. Relevant Ratios**\n\n| Ratio | FY2016 (Corrected) | FY2017 | FY2018 | Three-Year Average (Corrected) |\n|---|---|---|---|---|\n| **COGS as a % of Revenue** | 37.7% | 36.6% | 36.3% | 36.9% |\n\n**Formulas:**\n*   **COGS as a % of Revenue:** (COGS / Revenue) * 100\n*   **Three-Year Average:** (Sum of Annual Ratios) / Number of Years\n\n**Calculations:**\n*   **FY2016 COGS as a % of Revenue:** ($12,199 / $32,376) * 100 = 37.7% (Matches provided value)\n*   **FY2017 COGS as a % of Revenue:** ($12,579 / $34,350) * 100 = 36.6% (Matches provided value)\n*   **FY2018 COGS as a % of Revenue:** ($13,202 / $36,397) * 100 = 36.3% (Matches provided value)\n*   **Three-Year Average COGS as a % of Revenue:** (37.7% + 36.6% + 36.3%) / 3 = 36.9%\n\n**3. Anomalies Flagged**\n\n*   **FY2016 COGS as a % of Revenue (Researcher's calculation):** The researcher's calculation of (12,199 / 21,769) * 100 = 37.7% for FY2016 is anomalous. While the final percentage is correct, the denominator used ($21,769 million) was incorrect. The correct denominator (Revenue) for FY2016 is $32,376 million.\n    *   **Anomaly:** Incorrect denominator used in the calculation, despite yielding the correct final ratio.\n    *   **Corrected Calculation:** ($12,199 / $32,376) * 100 = 37.7%\n\n*   **Three-Year Average COGS as a % of Revenue (Researcher's calculation):** The researcher's calculation of (47.3% + 36.6% + 36.3%) / 3 = 36.8% is anomalous. The value 47.3% for FY2016 was incorrect. Using the corrected FY2",
+    "3": "## Nike, Inc. Financial Performance Report (FY2016-FY2018)\n\n**Executive Summary**\n\nNike, Inc. demonstrated consistent revenue growth and improved cost efficiency over the fiscal years 2016 to 2018. Revenue increased from $32,376 million in FY2016 to $36,397 million in FY2018, while the Cost of Goods Sold (COGS) as a percentage of revenue steadily declined from 37.7% to 36.3%. This indicates effective management of production costs relative to sales.\n\n**Analysis**\n\nNike, Inc. experienced robust top-line growth during the period. Revenue grew by 6.10% from $32,376 million in FY2016 to $34,350 million in FY2017, and further increased by 5.96% to $36,397 million in FY2018. Concurrently, COGS also increased, but at a slower pace than revenue. COGS rose by 3.11% from $12,199 million in FY2016 to $12,579 million in FY2017, and by 4.95% to $13,202 million in FY2018.\n\nThe efficiency in managing COGS is evident in the declining COGS as a percentage of revenue. This key metric decreased from 37.7% in FY2016 to 36.6% in FY2017, and further to 36.3% in FY2018. The three-year average for COGS as a percentage of revenue stands at 36.9%, highlighting a sustained effort in cost optimization.\n\n**Key Risks**\n\nWhile the trend in COGS as a percentage of revenue is positive, continued vigilance is required to manage supply chain costs, raw material price fluctuations, and manufacturing expenses. Any significant increase in these areas without a corresponding increase in product pricing or sales volume could reverse the positive trend in cost efficiency.\n\n**Conclusion**\n\nNike, Inc. exhibited strong financial performance from FY2016 to FY2018, characterized by consistent revenue growth and an improving gross margin profile. The company's ability to grow revenue while simultaneously reducing its COGS as a percentage of revenue indicates effective operational management and a healthy financial trajectory during this period.",
+    "4": "## Nike, Inc. Financial Performance Report (FY2016-FY2018)\n\n**Executive Summary**\n\nNike, Inc. demonstrated consistent revenue growth and improved cost efficiency over the fiscal years 2016 to 2018. Revenue increased from $32,376 million in FY2016 to $36,397 million in FY2018, while the Cost of Goods Sold (COGS) as a percentage of revenue steadily declined from 37.7% to 36.3%. This indicates effective management of production costs relative to sales, contributing to an improving gross margin profile.\n\n**Analysis**\n\nNike, Inc. experienced robust top-line growth during the period. Revenue grew by 6.10% from $32,376 million in FY2016 to $34,350 million in FY2017, and further increased by 5.96% to $36,397 million in FY2018. Concurrently, COGS also increased, but at a slower pace than revenue. COGS rose by 3.11% from $12,199 million in FY2016 to $12,579 million in FY2017, and by 4.95% to $13,202 million in FY2018.\n\nThe efficiency in managing COGS is evident in the declining COGS as a percentage of revenue. This key metric decreased from 37.7% in FY2016 to 36.6% in FY2017, and further to 36.3% in FY2018. The three-year average for COGS as a percentage of revenue stands at 36.9%, highlighting a sustained effort in cost optimization. This consistent reduction in the COGS ratio indicates that Nike was able to increase its gross profit margin over the period, a positive indicator of operational efficiency.\n\n**Key Risks**\n\nWhile the trend in COGS as a percentage of revenue is positive, continued vigilance is required to manage supply chain costs, raw material price fluctuations, and manufacturing expenses. Any significant increase in these areas without a corresponding increase in product pricing or sales volume could reverse the positive trend in cost efficiency and negatively impact profitability. Furthermore, global economic shifts, currency fluctuations, and competitive pressures remain ongoing factors that could influence future financial performance.\n\n**Conclusion**\n\nNike, Inc. exhibited strong financial performance from FY2016 to FY2018, characterized by consistent revenue growth and an improving gross margin profile. The company's ability to grow revenue while simultaneously reducing its COGS as a percentage of revenue indicates effective operational management and a healthy financial trajectory during this period. This demonstrates a strong capacity to manage core business costs while expanding market reach."
+  },
+  "gates": {
+    "gate_1": {
+      "verified": [
+        {
+          "value": "$32,376 million",
+          "ref": 32376.0
+        },
+        {
+          "value": "$12,579 million",
+          "ref": 12579.0
+        },
+        {
+          "value": "$34,350 million",
+          "ref": 34350.0
+        },
+        {
+          "value": "$13,202 million",
+          "ref": 13202.0
+        },
+        {
+          "value": "$36,397 million",
+          "ref": 36397.0
+        },
+        {
+          "value": "37.7%",
+          "ref": 37.7
+        },
+        {
+          "value": "36.6%",
+          "ref": 36.6
+        },
+        {
+          "value": "36.3%",
+          "ref": 36.3
+        },
+        {
+          "value": "37.7%",
+          "ref": 37.7
+        },
+        {
+          "value": "36.6%",
+          "ref": 36.6
+        },
+        {
+          "value": "36.3%",
+          "ref": 36.3
+        },
+        {
+          "value": "36.6%",
+          "ref": 36.6
+        },
+        {
+          "value": "36.3%",
+          "ref": 36.3
+        },
+        {
+          "value": "36.8%",
+          "ref": 36.8
+        },
+        {
+          "value": "12,199",
+          "ref": 12199.0
+        },
+        {
+          "value": "12,579",
+          "ref": 12579.0
+        },
+        {
+          "value": "34,350",
+          "ref": 34350.0
+        },
+        {
+          "value": "13,202",
+          "ref": 13202.0
+        },
+        {
+          "value": "36,397",
+          "ref": 36397.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$9,070 million",
+          "num": 9070.0,
+          "correct": 12199.0,
+          "dev": 0.2565,
+          "source": "source_document"
+        },
+        {
+          "value": "47.3%",
+          "num": 47.3,
+          "correct": 55.1,
+          "dev": 0.1416,
+          "source": "ground_truth"
+        },
+        {
+          "value": "21,769",
+          "num": 21769.0,
+          "correct": 32376.0,
+          "dev": 0.3276,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [],
+      "n_refs": 11
+    },
+    "gate_2": {
+      "verified": [
+        {
+          "value": "$34,350",
+          "ref": 34350.0
+        },
+        {
+          "value": "$32,376",
+          "ref": 32376.0
+        },
+        {
+          "value": "$32,376",
+          "ref": 32376.0
+        },
+        {
+          "value": "$36,397",
+          "ref": 36397.0
+        },
+        {
+          "value": "$34,350",
+          "ref": 34350.0
+        },
+        {
+          "value": "$34,350",
+          "ref": 34350.0
+        },
+        {
+          "value": "$12,579",
+          "ref": 12579.0
+        },
+        {
+          "value": "$12,199",
+          "ref": 12199.0
+        },
+        {
+          "value": "$12,199",
+          "ref": 12199.0
+        },
+        {
+          "value": "$13,202",
+          "ref": 13202.0
+        },
+        {
+          "value": "$12,579",
+          "ref": 12579.0
+        },
+        {
+          "value": "$12,579",
+          "ref": 12579.0
+        },
+        {
+          "value": "$12,199",
+          "ref": 12199.0
+        },
+        {
+          "value": "$32,376",
+          "ref": 32376.0
+        },
+        {
+          "value": "$12,579",
+          "ref": 12579.0
+        },
+        {
+          "value": "$34,350",
+          "ref": 34350.0
+        },
+        {
+          "value": "$13,202",
+          "ref": 13202.0
+        },
+        {
+          "value": "$36,397",
+          "ref": 36397.0
+        },
+        {
+          "value": "$32,376 million",
+          "ref": 32376.0
+        },
+        {
+          "value": "$12,199",
+          "ref": 12199.0
+        },
+        {
+          "value": "$32,376",
+          "ref": 32376.0
+        },
+        {
+          "value": "37.7%",
+          "ref": 37.7
+        },
+        {
+          "value": "36.6%",
+          "ref": 36.6
+        },
+        {
+          "value": "36.3%",
+          "ref": 36.3
+        },
+        {
+          "value": "36.9%",
+          "ref": 36.8
+        },
+        {
+          "value": "37.7%",
+          "ref": 37.7
+        },
+        {
+          "value": "36.6%",
+          "ref": 36.6
+        },
+        {
+          "value": "36.3%",
+          "ref": 36.3
+        },
+        {
+          "value": "37.7%",
+          "ref": 37.7
+        },
+        {
+          "value": "36.6%",
+          "ref": 36.6
+        },
+        {
+          "value": "36.3%",
+          "ref": 36.3
+        },
+        {
+          "value": "36.9%",
+          "ref": 36.8
+        },
+        {
+          "value": "37.7%",
+          "ref": 37.7
+        },
+        {
+          "value": "37.7%",
+          "ref": 37.7
+        },
+        {
+          "value": "36.6%",
+          "ref": 36.6
+        },
+        {
+          "value": "36.3%",
+          "ref": 36.3
+        },
+        {
+          "value": "36.8%",
+          "ref": 36.8
+        },
+        {
+          "value": "32,376",
+          "ref": 32376.0
+        },
+        {
+          "value": "34,350",
+          "ref": 34350.0
+        },
+        {
+          "value": "36,397",
+          "ref": 36397.0
+        },
+        {
+          "value": "12,199",
+          "ref": 12199.0
+        },
+        {
+          "value": "12,579",
+          "ref": 12579.0
+        },
+        {
+          "value": "13,202",
+          "ref": 13202.0
+        },
+        {
+          "value": "12,199",
+          "ref": 12199.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$21,769 million",
+          "num": 21769.0,
+          "correct": 32376.0,
+          "dev": 0.3276,
+          "source": "source_document"
+        },
+        {
+          "value": "47.3%",
+          "num": 47.3,
+          "correct": 55.1,
+          "dev": 0.1416,
+          "source": "ground_truth"
+        },
+        {
+          "value": "47.3%",
+          "num": 47.3,
+          "correct": 55.1,
+          "dev": 0.1416,
+          "source": "ground_truth"
+        },
+        {
+          "value": "21,769",
+          "num": 21769.0,
+          "correct": 32376.0,
+          "dev": 0.3276,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$1,974 million"
+        },
+        {
+          "value": "$1,974"
+        },
+        {
+          "value": "$2,047 million"
+        },
+        {
+          "value": "$2,047"
+        },
+        {
+          "value": "$380 million"
+        },
+        {
+          "value": "$380"
+        },
+        {
+          "value": "$623 million"
+        },
+        {
+          "value": "$623"
+        },
+        {
+          "value": "6.10%"
+        },
+        {
+          "value": "5.96%"
+        },
+        {
+          "value": "3.11%"
+        },
+        {
+          "value": "4.95%"
+        },
+        {
+          "value": "6.10%"
+        },
+        {
+          "value": "5.96%"
+        },
+        {
+          "value": "3.11%"
+        },
+        {
+          "value": "4.95%"
+        },
+        {
+          "value": "2,047"
+        }
+      ],
+      "n_refs": 11
+    },
+    "gate_3": {
+      "verified": [
+        {
+          "value": "$32,376 million",
+          "ref": 32376.0
+        },
+        {
+          "value": "$36,397 million",
+          "ref": 36397.0
+        },
+        {
+          "value": "$32,376 million",
+          "ref": 32376.0
+        },
+        {
+          "value": "$34,350 million",
+          "ref": 34350.0
+        },
+        {
+          "value": "$36,397 million",
+          "ref": 36397.0
+        },
+        {
+          "value": "$12,199 million",
+          "ref": 12199.0
+        },
+        {
+          "value": "$12,579 million",
+          "ref": 12579.0
+        },
+        {
+          "value": "$13,202 million",
+          "ref": 13202.0
+        },
+        {
+          "value": "37.7%",
+          "ref": 37.7
+        },
+        {
+          "value": "36.3%",
+          "ref": 36.3
+        },
+        {
+          "value": "37.7%",
+          "ref": 37.7
+        },
+        {
+          "value": "36.6%",
+          "ref": 36.6
+        },
+        {
+          "value": "36.3%",
+          "ref": 36.3
+        },
+        {
+          "value": "36.9%",
+          "ref": 36.8
+        }
+      ],
+      "refuted": [],
+      "unverified": [
+        {
+          "value": "6.10%"
+        },
+        {
+          "value": "5.96%"
+        },
+        {
+          "value": "3.11%"
+        },
+        {
+          "value": "4.95%"
+        }
+      ],
+      "n_refs": 11
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_115_AE55E4C4",
+      "hid": "FB_115_AE55E4C4_H3",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 9070.0,
+      "orig_num": 12199.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": false,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_115_AE55E4C4",
+      "hid": "FB_115_AE55E4C4_H2",
+      "method": "ours",
+      "type": "large_number",
+      "inj_num": 21769.0,
+      "orig_num": 32376.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_115_AE55E4C4",
+      "hid": "FB_115_AE55E4C4_H1",
+      "method": "ours",
+      "type": "percentage",
+      "inj_num": 47.3,
+      "orig_num": 37.7,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:46:53.079134+00:00"
+}

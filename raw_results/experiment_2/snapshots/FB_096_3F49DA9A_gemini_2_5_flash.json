@@ -1,0 +1,97 @@
+{
+  "question_id": "FB_096_3F49DA9A",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: JPMorgan Chase & Co., Q1 2021\n- PRIMARY METRIC: \n  - Total Assets: $3,686,000 million (per the Q1 2021 10-Q, Consolidated Balance Sheets)\n  - Total Liabilities: $2,632,855 million (per the Q1 2021 10-Q, Consolidated Balance Sheets)\n\n- SUPPORTING DATA: \n  - Shareholders' Equity: $126,259 million (calculated as Total Assets - Total Liabilities, per the Q1 2021 10-Q, Consolidated Balance Sheets)\n  - Outstanding Shares: 1,899 million (approximate figure based on historical data; please verify against the latest filings for precision)\n\n- DATA SOURCES: \n  - JPMorgan Chase & Co. Q1 2021 10-Q, Consolidated Balance Sheets\n\n**Note:** The analysis of potential liquidation value and per-share distribution to shareholders requires additional assumptions regarding the realizable value of assets and the treatment of outstanding debts and obligations, which are not provided in this data extraction report. Please consult further financial analysis for detailed calculations and assumptions.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_096_3F49DA9A_H3",
+      "type": "dollar_amount",
+      "original_value": "$3,478,000 million",
+      "injected_value": "$2,632,855 million",
+      "original_numeric": "3478000",
+      "injected_numeric": "2632855",
+      "position_char": 181,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.243
+    },
+    {
+      "hallucination_id": "FB_096_3F49DA9A_H2",
+      "type": "dollar_amount",
+      "original_value": "$208,000 million",
+      "injected_value": "$126,259 million",
+      "original_numeric": "208000",
+      "injected_numeric": "126259",
+      "position_char": 299,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.393
+    },
+    {
+      "hallucination_id": "FB_096_3F49DA9A_H1",
+      "type": "large_number",
+      "original_value": "3,000",
+      "injected_value": "1,899",
+      "original_numeric": "3000",
+      "injected_numeric": "1899",
+      "position_char": 440,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3669
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Shareholders' Equity: $126,259 million (calculated as Total Assets - Total Liabilities, per the Q1 2021 10-Q, Consolidated Balance Sheets)",
+        "claim_value": "$126,259 million",
+        "reason": "The reported Shareholders' Equity of $126,259 million is inconsistent with the provided Total Assets ($3,686,000 million) and Total Liabilities ($2,632,855 million). Calculating Total Assets - Total Liabilities yields $1,053,145 million, which is significantly different from the reported figure. This indicates a likely hallucination or calculation error in the reported equity value or its derivation.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 4,
+    "overall_assessment": "One significant internal inconsistency was found regarding the calculation of Shareholders' Equity, suggesting a potential hallucination or error in that specific figure.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Shareholders' Equity: $126,259 million (calculated as Total Assets - Total Liabilities, per the Q1 2021 10-Q, Consolidated Balance Sheets)\",\n      \"claim_value\": \"$126,259 million\",\n      \"reason\": \"The reported Shareholders' Equity of $126,259 million is inconsistent with the provided Total Assets ($3,686,000 million) and Total Liabilities ($2,632,855 million). Calculating Total Assets - Total Liabilities yields $1,053,145 million, which is significantly different from the reported figure. This indicates a likely hallucination or calculation error in the reported equity value or its derivation.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 4,\n  \"overall_assessment\": \"One significant internal inconsistency was found regarding the calculation of Shareholders' Equity, suggesting a potential hallucination or error in that specific figure.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_096_3F49DA9A",
+      "hallucination_id": "FB_096_3F49DA9A_H3",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,478,000 million",
+      "injected_value": "$2,632,855 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 4
+    },
+    {
+      "question_id": "FB_096_3F49DA9A",
+      "hallucination_id": "FB_096_3F49DA9A_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$208,000 million",
+      "injected_value": "$126,259 million",
+      "detected": true,
+      "reason": "The reported Shareholders' Equity of $126,259 million is inconsistent with the provided Total Assets ($3,686,000 million) and Total Liabilities ($2,632,855 million). Calculating Total Assets - Total Liabilities yields $1,053,145 million, which is significantly different from the reported figure. This indicates a likely hallucination or calculation error in the reported equity value or its derivation.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 4
+    },
+    {
+      "question_id": "FB_096_3F49DA9A",
+      "hallucination_id": "FB_096_3F49DA9A_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "large_number",
+      "original_value": "3,000",
+      "injected_value": "1,899",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 4
+    }
+  ],
+  "timestamp": "2026-03-25T07:56:04.338121Z"
+}

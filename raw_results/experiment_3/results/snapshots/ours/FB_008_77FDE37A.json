@@ -1,0 +1,476 @@
+{
+  "question_id": "FB_008_77FDE37A",
+  "method": "ours",
+  "final_output": "## 3M Company: Q2 2023 Dividend Performance Report\n\n### Executive Summary\n\n3M Company declared a dividend of $1.00 per share for Q2 2023, representing a significant year-over-year decrease of 33.33% compared to Q2 2022. This follows a slight increase in Q2 2022 over Q2 2021, where the dividend rose by $0.02 (1.35%). Annual total dividends paid saw a substantial decline of 41.20% from FY 2020 to FY 2021, before a modest increase of 0.68% in FY 2022. Despite these fluctuations in dividend payments, the company has maintained a remarkably stable payout ratio, ranging from 61.5% in FY 2020 to 62.1% in FY 2022.\n\n### Analysis\n\nFor Q2 2023, 3M Company declared a dividend of $1.00 per share. This marks a decrease of $0.50 from the $1.50 per share declared in Q2 2022, equating to a -33.33% year-over-year change. In contrast, the dividend declared in Q2 2022 ($1.50) was slightly higher than the $1.48 declared in Q2 2021, an increase of $0.02 or 1.35%.\n\nLooking at total dividends paid annually, FY 2022 saw $5.92 per share, a 0.68% increase from the $5.88 per share paid in FY 2021. However, FY 2021's total dividends paid of $5.88 per share represented a significant 41.20% decrease from the $10.00 per share paid in FY 2020. The company's payout ratios have remained consistent, at 61.5% in FY 2020, 61.8% in FY 2021, and 62.1% in FY 2022.\n\n### Key Risks\n\nThe primary risk identified is the substantial year-over-year decrease of 33.33% in dividends declared for Q2 2023. This significant reduction, coupled with the sharp 41.20% decline in total dividends paid between FY 2020 and FY 2021, suggests potential underlying pressures on earnings or a shift in capital allocation strategy. While the payout ratios have remained stable, indicating that the company is distributing a consistent proportion of its earnings, the absolute decline in dividends warrants close monitoring.\n\n### Conclusion\n\n3M Company's dividend performance in Q2 2023 shows a notable reduction in the declared dividend per share. While annual payout ratios have been stable, the significant decrease in Q2 2023 dividends and the sharp drop in total dividends paid in FY 2021 highlight a period of considerable change in dividend distribution. Investors should consider these trends in the context of the company's overall financial health and future earnings outlook.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: 3M Company, Q2 2023\n- PRIMARY METRIC: \n  - Dividends Declared: $1.08 per share for Q2 2023 (per the Q2 2023 10-Q, Note 5 - Earnings Per Share).\n  \n- SUPPORTING DATA:\n  - Dividends Declared:\n    - Q2 2022: $1.90 per share (per the Q2 2022 10-Q, Note 5 - Earnings Per Share).\n    - Q2 2021: $1.48 per share (per the Q2 2021 10-Q, Note 5 - Earnings Per Share).\n  - Total Dividends Paid:\n    - FY 2022: $5.92 per share (per the FY2022 10-K, Consolidated Statements of Cash Flows).\n    - FY 2021: $5.88 per share (per the FY2021 10-K, Consolidated Statements of Cash Flows).\n    - FY 2020: $7.92 per share (per the FY2020 10-K, Consolidated Statements of Cash Flows).\n  - Payout Ratios:\n    - FY 2022: 62.1% (per the FY2022 10-K, Consolidated Statements of Operations).\n    - FY 2021: 61.8% (per the FY2021 10-K, Consolidated Statements of Operations).\n    - FY 2020: 61.5% (per the FY2020 10-K, Consolidated Statements of Operations).\n\n- DATA SOURCES:\n  - Q2 2023 10-Q, Note 5 - Earnings Per Share\n  - FY2022 10-K, Consolidated Statements of Cash Flows and Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Statements of Cash Flows and Consolidated Statements of Operations\n  - FY2020 10-K, Consolidated Statements of Cash Flows and Consolidated Statements of Operations\n\nNote: The figures provided are exact as reported in the respective filings. No interpretation or analysis has been conducted.",
+    "2": "As a financial analyst, I will compute the year-over-year changes and relevant ratios for 3M Company's dividends, flagging any anomalies based on the provided and corrected data.\n\n**Corrected Data Summary:**\n\n*   **Dividends Declared (per share):**\n    *   Q2 2023: $1.00 (Corrected from $1.08)\n    *   Q2 2022: $1.50 (Corrected from $1.90)\n    *   Q2 2021: $1.48\n*   **Total Dividends Paid (per share):**\n    *   FY 2022: $5.92\n    *   FY 2021: $5.88\n    *   FY 2020: $10.00 (Corrected from $7.92)\n*   **Payout Ratios:**\n    *   FY 2022: 62.1%\n    *   FY 2021: 61.8%\n    *   FY 2020: 61.5%\n\n---\n\n**1. Year-over-Year Changes (Dividends Declared per share):**\n\n*   **Q2 2023 vs. Q2 2022:**\n    *   **Absolute Change:**\n        *   Formula: Dividends Declared (Q2 2023) - Dividends Declared (Q2 2022)\n        *   Calculation: $1.00 - $1.50 = **-$0.50**\n    *   **Percentage Change:**\n        *   Formula: (Absolute Change / Dividends Declared (Q2 2022)) * 100%\n        *   Calculation: (-$0.50 / $1.50) * 100% = **-33.33%**\n\n*   **Q2 2022 vs. Q2 2021:**\n    *   **Absolute Change:**\n        *   Formula: Dividends Declared (Q2 2022) - Dividends Declared (Q2 2021)\n        *   Calculation: $1.50 - $1.48 = **$0.02**\n    *   **Percentage Change:**\n        *   Formula: (Absolute Change / Dividends Declared (Q2 2021)) * 100%\n        *   Calculation: ($0.02 / $1.48) * 100% = **1.35%**\n\n---\n\n**2. Relevant Ratios (Annual Dividend Growth Rate - Total Dividends Paid):**\n\n*   **FY 2022 vs. FY 2021:**\n    *   **Growth Rate:**\n        *   Formula: ((Total Dividends Paid (FY 2022) / Total Dividends Paid (FY 2021)) - 1) * 100%\n        *   Calculation: (($5.92 / $5.88) - 1) * 100% = **0.68%**\n\n*   **FY 2021 vs. FY 2020:**\n    *   **Growth Rate:**\n        *   Formula: ((Total Dividends Paid (FY 2021) / Total Dividends Paid (FY 2020)) - 1) * 100%\n        *   Calculation: (($5.88 / $10.00) - 1) * 100% = **-41.20%**\n\n---\n\n**3. Anomalies Flagged:**\n\n*   **Significant Decrease in Q2 2023 Dividends Declared:** The **-33.33%** year-over-year decrease in dividends declared from Q2 2022 to Q2 2023 is a substantial reduction. This contrasts sharply with the slight increase observed between Q2 2021 and Q2 2022.\n*   **Sharp Decline in FY 2021 Total Dividends Paid:** The **-41.20%** decrease in total dividends paid from FY 2020 to FY 2021 is a very significant drop. This is a major anomaly, especially when compared to the relatively stable payout ratios and the slight increase in total dividends paid from FY 2021 to FY 2022. This large decline warrants further investigation into the company's financial performance and dividend policy changes during FY 2021.\n*   **Payout Ratios Stability:** The payout ratios (61.5% to 62.1% from FY 2020 to FY 2022) show remarkable stability, which is generally a positive sign of consistent dividend policy. However, the sharp decline in total dividends paid in FY 2021, despite a stable payout ratio, suggests a significant drop in earnings per share during that period.",
+    "3": "## 3M Company: Q2 2023 Dividend Performance Report\n\n### Executive Summary\n\n3M Company declared a dividend of $1.00 per share for Q2 2023, representing a significant year-over-year decrease of 33.33% compared to Q2 2022. This follows a slight increase of $0.02 (1.35%) in Q2 2022 over Q2 2021. Annual total dividends paid saw a substantial decline of 41.20% from FY 2020 to FY 2021, before a modest increase of 0.68% in FY 2022. Despite these fluctuations in dividend payments, the company has maintained a remarkably stable payout ratio, ranging from 61.5% in FY 2020 to 62.1% in FY 2022.\n\n### Analysis\n\nFor Q2 2023, 3M Company declared a dividend of $1.00 per share. This marks a decrease of $0.50 from the $1.50 per share declared in Q2 2022, equating to a -33.33% year-over-year change. In contrast, the dividend declared in Q2 2022 ($1.50) was slightly higher than the $1.48 declared in Q2 2021, an increase of $0.02 or 1.35%.\n\nLooking at total dividends paid annually, FY 2022 saw $5.92 per share, a 0.68% increase from the $5.88 per share paid in FY 2021. However, FY 2021's total dividends paid of $5.88 per share represented a significant 41.20% decrease from the $10.00 per share paid in FY 2020. The company's payout ratios have remained consistent, at 61.5% in FY 2020, 61.8% in FY 2021, and 62.1% in FY 2022.\n\n### Key Risks\n\nThe primary risk identified is the substantial year-over-year decrease of 33.33% in dividends declared for Q2 2023. This significant reduction, coupled with the sharp 41.20% decline in total dividends paid between FY 2020 and FY 2021, suggests potential underlying pressures on earnings or a shift in capital allocation strategy. While the payout ratios have remained stable, indicating that the company is distributing a consistent proportion of its earnings, the absolute decline in dividends warrants close monitoring.\n\n### Conclusion\n\n3M Company's dividend performance in Q2 2023 shows a notable reduction in the declared dividend per share. While annual payout ratios have been stable, the significant decrease in Q2 2023 dividends and the sharp drop in total dividends paid in FY 2021 highlight a period of considerable change in dividend distribution. Investors should consider these trends in the context of the company's overall financial health and future earnings outlook.",
+    "4": "## 3M Company: Q2 2023 Dividend Performance Report\n\n### Executive Summary\n\n3M Company declared a dividend of $1.00 per share for Q2 2023, representing a significant year-over-year decrease of 33.33% compared to Q2 2022. This follows a slight increase in Q2 2022 over Q2 2021, where the dividend rose by $0.02 (1.35%). Annual total dividends paid saw a substantial decline of 41.20% from FY 2020 to FY 2021, before a modest increase of 0.68% in FY 2022. Despite these fluctuations in dividend payments, the company has maintained a remarkably stable payout ratio, ranging from 61.5% in FY 2020 to 62.1% in FY 2022.\n\n### Analysis\n\nFor Q2 2023, 3M Company declared a dividend of $1.00 per share. This marks a decrease of $0.50 from the $1.50 per share declared in Q2 2022, equating to a -33.33% year-over-year change. In contrast, the dividend declared in Q2 2022 ($1.50) was slightly higher than the $1.48 declared in Q2 2021, an increase of $0.02 or 1.35%.\n\nLooking at total dividends paid annually, FY 2022 saw $5.92 per share, a 0.68% increase from the $5.88 per share paid in FY 2021. However, FY 2021's total dividends paid of $5.88 per share represented a significant 41.20% decrease from the $10.00 per share paid in FY 2020. The company's payout ratios have remained consistent, at 61.5% in FY 2020, 61.8% in FY 2021, and 62.1% in FY 2022.\n\n### Key Risks\n\nThe primary risk identified is the substantial year-over-year decrease of 33.33% in dividends declared for Q2 2023. This significant reduction, coupled with the sharp 41.20% decline in total dividends paid between FY 2020 and FY 2021, suggests potential underlying pressures on earnings or a shift in capital allocation strategy. While the payout ratios have remained stable, indicating that the company is distributing a consistent proportion of its earnings, the absolute decline in dividends warrants close monitoring.\n\n### Conclusion\n\n3M Company's dividend performance in Q2 2023 shows a notable reduction in the declared dividend per share. While annual payout ratios have been stable, the significant decrease in Q2 2023 dividends and the sharp drop in total dividends paid in FY 2021 highlight a period of considerable change in dividend distribution. Investors should consider these trends in the context of the company's overall financial health and future earnings outlook."
+  },
+  "gates": {
+    "gate_1": {
+      "verified": [
+        {
+          "value": "$1.48",
+          "ref": 1.48
+        },
+        {
+          "value": "$5.92",
+          "ref": 5.92
+        },
+        {
+          "value": "$5.88",
+          "ref": 5.88
+        },
+        {
+          "value": "62.1%",
+          "ref": 62.1
+        },
+        {
+          "value": "61.8%",
+          "ref": 61.8
+        },
+        {
+          "value": "61.5%",
+          "ref": 61.5
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$1.08",
+          "num": 1.08,
+          "correct": 1.0,
+          "dev": 0.0741,
+          "source": "evidence"
+        },
+        {
+          "value": "$1.90",
+          "num": 1.9,
+          "correct": 1.5,
+          "dev": 0.2105,
+          "source": "evidence"
+        },
+        {
+          "value": "$7.92",
+          "num": 7.92,
+          "correct": 10.0,
+          "dev": 0.208,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [],
+      "n_refs": 33
+    },
+    "gate_2": {
+      "verified": [
+        {
+          "value": "$1.00",
+          "ref": 1.0
+        },
+        {
+          "value": "$1.50",
+          "ref": 1.5
+        },
+        {
+          "value": "$1.48",
+          "ref": 1.48
+        },
+        {
+          "value": "$5.92",
+          "ref": 5.92
+        },
+        {
+          "value": "$5.88",
+          "ref": 5.88
+        },
+        {
+          "value": "$10.00",
+          "ref": 10.0
+        },
+        {
+          "value": "$1.00",
+          "ref": 1.0
+        },
+        {
+          "value": "$1.50",
+          "ref": 1.5
+        },
+        {
+          "value": "$1.50",
+          "ref": 1.5
+        },
+        {
+          "value": "$1.50",
+          "ref": 1.5
+        },
+        {
+          "value": "$1.48",
+          "ref": 1.48
+        },
+        {
+          "value": "$1.48",
+          "ref": 1.48
+        },
+        {
+          "value": "$5.92",
+          "ref": 5.92
+        },
+        {
+          "value": "$5.88",
+          "ref": 5.88
+        },
+        {
+          "value": "$5.88",
+          "ref": 5.88
+        },
+        {
+          "value": "$10.00",
+          "ref": 10.0
+        },
+        {
+          "value": "62.1%",
+          "ref": 62.1
+        },
+        {
+          "value": "61.8%",
+          "ref": 61.8
+        },
+        {
+          "value": "61.5%",
+          "ref": 61.5
+        },
+        {
+          "value": "-41.20%",
+          "ref": 41.0
+        },
+        {
+          "value": "-41.20%",
+          "ref": 41.0
+        },
+        {
+          "value": "61.5%",
+          "ref": 61.5
+        },
+        {
+          "value": "62.1%",
+          "ref": 62.1
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$1.08",
+          "num": 1.08,
+          "correct": 1.0,
+          "dev": 0.0741,
+          "source": "evidence"
+        },
+        {
+          "value": "$1.90",
+          "num": 1.9,
+          "correct": 1.5,
+          "dev": 0.2105,
+          "source": "evidence"
+        },
+        {
+          "value": "$7.92",
+          "num": 7.92,
+          "correct": 10.0,
+          "dev": 0.208,
+          "source": "evidence"
+        },
+        {
+          "value": "$0.50",
+          "num": 0.5,
+          "correct": 1.0,
+          "dev": 0.5,
+          "source": "evidence"
+        },
+        {
+          "value": "$0.50",
+          "num": 0.5,
+          "correct": 1.0,
+          "dev": 0.5,
+          "source": "evidence"
+        },
+        {
+          "value": "100%",
+          "num": 100.0,
+          "correct": 80.0,
+          "dev": 0.2,
+          "source": "evidence"
+        },
+        {
+          "value": "100%",
+          "num": 100.0,
+          "correct": 80.0,
+          "dev": 0.2,
+          "source": "evidence"
+        },
+        {
+          "value": "100%",
+          "num": 100.0,
+          "correct": 80.0,
+          "dev": 0.2,
+          "source": "evidence"
+        },
+        {
+          "value": "100%",
+          "num": 100.0,
+          "correct": 80.0,
+          "dev": 0.2,
+          "source": "evidence"
+        },
+        {
+          "value": "1.35%",
+          "num": 1.35,
+          "correct": 1.48,
+          "dev": 0.0878,
+          "source": "source_document"
+        },
+        {
+          "value": "100%",
+          "num": 100.0,
+          "correct": 80.0,
+          "dev": 0.2,
+          "source": "evidence"
+        },
+        {
+          "value": "100%",
+          "num": 100.0,
+          "correct": 80.0,
+          "dev": 0.2,
+          "source": "evidence"
+        },
+        {
+          "value": "0.68%",
+          "num": 0.68,
+          "correct": 1.0,
+          "dev": 0.32,
+          "source": "evidence"
+        },
+        {
+          "value": "100%",
+          "num": 100.0,
+          "correct": 80.0,
+          "dev": 0.2,
+          "source": "evidence"
+        },
+        {
+          "value": "100%",
+          "num": 100.0,
+          "correct": 80.0,
+          "dev": 0.2,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$0.02"
+        },
+        {
+          "value": "$0.02"
+        },
+        {
+          "value": "-33.33%"
+        },
+        {
+          "value": "-33.33%"
+        }
+      ],
+      "n_refs": 33
+    },
+    "gate_3": {
+      "verified": [
+        {
+          "value": "$1.00",
+          "ref": 1.0
+        },
+        {
+          "value": "$1.00",
+          "ref": 1.0
+        },
+        {
+          "value": "$1.50",
+          "ref": 1.5
+        },
+        {
+          "value": "$1.50",
+          "ref": 1.5
+        },
+        {
+          "value": "$1.48",
+          "ref": 1.48
+        },
+        {
+          "value": "$5.92",
+          "ref": 5.92
+        },
+        {
+          "value": "$5.88",
+          "ref": 5.88
+        },
+        {
+          "value": "$5.88",
+          "ref": 5.88
+        },
+        {
+          "value": "$10.00",
+          "ref": 10.0
+        },
+        {
+          "value": "41.20%",
+          "ref": 41.0
+        },
+        {
+          "value": "61.5%",
+          "ref": 61.5
+        },
+        {
+          "value": "62.1%",
+          "ref": 62.1
+        },
+        {
+          "value": "41.20%",
+          "ref": 41.0
+        },
+        {
+          "value": "61.5%",
+          "ref": 61.5
+        },
+        {
+          "value": "61.8%",
+          "ref": 61.8
+        },
+        {
+          "value": "62.1%",
+          "ref": 62.1
+        },
+        {
+          "value": "41.20%",
+          "ref": 41.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$0.50",
+          "num": 0.5,
+          "correct": 1.0,
+          "dev": 0.5,
+          "source": "evidence"
+        },
+        {
+          "value": "1.35%",
+          "num": 1.35,
+          "correct": 1.48,
+          "dev": 0.0878,
+          "source": "source_document"
+        },
+        {
+          "value": "0.68%",
+          "num": 0.68,
+          "correct": 1.0,
+          "dev": 0.32,
+          "source": "evidence"
+        },
+        {
+          "value": "1.35%",
+          "num": 1.35,
+          "correct": 1.48,
+          "dev": 0.0878,
+          "source": "source_document"
+        },
+        {
+          "value": "0.68%",
+          "num": 0.68,
+          "correct": 1.0,
+          "dev": 0.32,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$0.02"
+        },
+        {
+          "value": "$0.02"
+        },
+        {
+          "value": "33.33%"
+        },
+        {
+          "value": "-33.33%"
+        },
+        {
+          "value": "33.33%"
+        }
+      ],
+      "n_refs": 33
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_008_77FDE37A",
+      "hid": "FB_008_77FDE37A_H3",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 1.08,
+      "orig_num": 1.49,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_008_77FDE37A",
+      "hid": "FB_008_77FDE37A_H2",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 1.9,
+      "orig_num": 1.49,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_008_77FDE37A",
+      "hid": "FB_008_77FDE37A_H1",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 7.92,
+      "orig_num": 5.76,
+      "survived": false,
+      "corrected": false,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 2,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:05:43.717690+00:00"
+}

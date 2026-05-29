@@ -1,0 +1,505 @@
+{
+  "question_id": "FB_074_499976A7",
+  "method": "ours",
+  "final_output": "## Corning Incorporated: FY2022 Working Capital Report\n\n**Executive Summary**\n\nCorning Incorporated's working capital position for Fiscal Year 2022 stands at $3,822 million, a modest decrease of $148 million (-3.73%) from FY2021. This decline is primarily driven by a significant increase in current liabilities, despite growth in current assets. The current ratio, a key liquidity indicator, decreased to 1.42x in FY2022 from 1.63x in FY2021, indicating a slight reduction in short-term liquidity.\n\n**Analysis**\n\nIn FY2022, Corning's Current Assets increased by $831 million (6.88%) to $12,988 million from $12,157 million in FY2021. However, Current Liabilities saw a more substantial increase of $1,766 million, rising to $9,166 million from $7,400 million in FY2021. This disproportionate growth led to the observed decrease in working capital.\n\nLooking at the trend, working capital has fluctuated over the past three fiscal years. It experienced a significant increase of $1,830 million (89.47%) from FY2020 ($2,045 million) to FY2021 ($3,875 million), largely due to a decrease in current liabilities during that period. The current ratio also reflects this volatility, moving from 1.20x in FY2020 to 1.63x in FY2021, before settling at 1.42x in FY2022.\n\n**Key Risks**\n\nThe primary risk identified is the notable increase in current liabilities in FY2022, which outpaced current asset growth and led to a reduction in working capital and the current ratio. This trend, if continued, could impact the company's ability to meet its short-term obligations. The significant fluctuation in current liabilities over the past three years warrants further investigation to understand the underlying operational or financial drivers.\n\n**Conclusion**\n\nCorning Incorporated maintains a positive working capital position in FY2022, indicating its ability to cover short-term liabilities. However, the decrease in working capital and the current ratio from FY2021 to FY2022, driven by a substantial rise in current liabilities, suggests a need for close monitoring of short-term liquidity management. Further analysis into the composition and drivers of current liabilities would be beneficial to assess the sustainability of the company's short-term financial health.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Corning Incorporated, FY2022\n- PRIMARY METRIC: \n  - Current Assets: $12,988 million (per the FY2022 10-K, Consolidated Balance Sheets)\n  - Current Liabilities: $9,166 million (per the FY2022 10-K, Consolidated Balance Sheets)\n  - Working Capital: $3,822 million (calculated as Current Assets - Current Liabilities)\n\n- SUPPORTING DATA: \n  - FY2021 Current Assets: $12,078 million (per the FY2021 10-K, Consolidated Balance Sheets)\n  - FY2021 Current Liabilities: $6,078 million (per the FY2021 10-K, Consolidated Balance Sheets)\n  - FY2021 Working Capital: $3,970 million (calculated as Current Assets - Current Liabilities)\n  - FY2020 Current Assets: $11,000 million (per the FY2020 10-K, Consolidated Balance Sheets)\n  - FY2020 Current Liabilities: $9,948 million (per the FY2020 10-K, Consolidated Balance Sheets)\n  - FY2020 Working Capital: $3,600 million (calculated as Current Assets - Current Liabilities)\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Balance Sheets\n  - FY2021 10-K, Consolidated Balance Sheets\n  - FY2020 10-K, Consolidated Balance Sheets\n\n**Note:** The request to assess the relevance of working capital as a metric for Corning and to provide a rationale has not been fulfilled as per the instructions to present raw data only.",
+    "2": "Here's an analysis of Corning Incorporated's working capital, year-over-year changes, and relevant ratios, incorporating the corrected data:\n\n**Corrected Data Summary:**\n\n| Metric               | FY2022 ($M) | FY2021 ($M) | FY2020 ($M) |\n| :------------------- | :---------- | :---------- | :---------- |\n| Current Assets       | 12,988      | 12,078      | 11,000      |\n| Current Liabilities  | 9,166       | 7,400       | 9,166       |\n| Working Capital      | 3,822       | 3,970       | 1,834       |\n\n*Note: FY2021 Current Liabilities corrected from $6,078M to $7,400M. FY2020 Current Liabilities corrected from $9,948M to $9,166M. FY2020 Working Capital recalculated as $11,000M - $9,166M = $1,834M.*\n\n**1. Year-over-Year Changes:**\n\n**Formulas:**\n*   Absolute Change = Current Year Value - Prior Year Value\n*   Percentage Change = (Absolute Change / Prior Year Value) * 100\n\n| Metric               | FY2022 vs FY2021 (Absolute Change) | FY2022 vs FY2021 (Percentage Change) | FY2021 vs FY2020 (Absolute Change) | FY2021 vs FY2020 (Percentage Change) |\n| :------------------- | :--------------------------------- | :----------------------------------- | :--------------------------------- | :----------------------------------- |\n| Current Assets       | $910 M                             | 7.53%                                | $1,078 M                           | 9.80%                                |\n| Current Liabilities  | $1,766 M                           | 23.86%                               | -$1,766 M                          | -19.27%                              |\n| Working Capital      | -$148 M                            | -3.73%                               | $2,136 M                           | 116.47%                              |\n\n**Calculations:**\n*   **Current Assets:**\n    *   FY22 vs FY21: $12,988M - $12,078M = $910M; ($910M / $12,078M) * 100 = 7.53%\n    *   FY21 vs FY20: $12,078M - $11,000M = $1,078M; ($1,078M / $11,000M) * 100 = 9.80%\n*   **Current Liabilities:**\n    *   FY22 vs FY21: $9,166M - $7,400M = $1,766M; ($1,766M / $7,400M) * 100 = 23.86%\n    *   FY21 vs FY20: $7,400M - $9,166M = -$1,766M; (-$1,766M / $9,166M) * 100 = -19.27%\n*   **Working Capital:**\n    *   FY22 vs FY21: $3,822M - $3,970M = -$148M; (-$148M / $3,970M) * 100 = -3.73%\n    *   FY21 vs FY20: $3,970M - $1,834M = $2,136M; ($2,136M / $1,834M) * 100 = 116.47%\n\n**2. Relevant Ratios (Current Ratio):**\n\n**Formula:**\n*   Current Ratio = Current Assets / Current Liabilities\n\n| Ratio         | FY2022 | FY2021 | FY2020 |\n| :------------ | :----- | :----- | :----- |\n| Current Ratio | 1.42x  | 1.63x  | 1.20x  |\n\n**Calculations:**\n*   FY2022: $12,988M / $9,166M = 1.42x\n*   FY2021: $12,078M / $7,400M = 1.63x\n*   FY2020: $11,000M / $9,166M = 1.20x\n\n**3. Anomalies:**\n\n*   **Significant Fluctuation in Current Liabilities:** The current liabilities show a substantial decrease of 19.27% from FY2020 to FY2021, followed by a sharp increase of 23.86% from FY202",
+    "3": "## Corning Incorporated: FY2022 Working Capital Report\n\n**Executive Summary**\n\nCorning Incorporated's working capital position for Fiscal Year 2022 stands at $3,822 million, a modest decrease of $148 million (-3.73%) from FY2021. This decline is primarily driven by a significant increase in current liabilities, despite growth in current assets. The current ratio, a key liquidity indicator, decreased to 1.42x in FY2022 from 1.63x in FY2021, indicating a slight reduction in short-term liquidity.\n\n**Analysis**\n\nIn FY2022, Corning's Current Assets increased by $910 million (7.53%) to $12,988 million from $12,078 million in FY2021. However, Current Liabilities saw a more substantial increase of $1,766 million, rising to $9,166 million from $7,400 million in FY2021. This disproportionate growth led to the observed decrease in working capital.\n\nLooking at the trend, working capital has fluctuated over the past three fiscal years. It experienced a significant increase of $2,136 million (116.47%) from FY2020 ($1,834 million) to FY2021 ($3,970 million), largely due to a decrease in current liabilities during that period. The current ratio also reflects this volatility, moving from 1.20x in FY2020 to 1.63x in FY2021, before settling at 1.42x in FY2022.\n\n**Key Risks**\n\nThe primary risk identified is the notable increase in current liabilities in FY2022, which outpaced current asset growth and led to a reduction in working capital and the current ratio. This trend, if continued, could impact the company's ability to meet its short-term obligations. The significant fluctuation in current liabilities over the past three years warrants further investigation to understand the underlying operational or financial drivers.\n\n**Conclusion**\n\nCorning Incorporated maintains a positive working capital position in FY2022, indicating its ability to cover short-term liabilities. However, the decrease in working capital and the current ratio from FY2021 to FY2022, driven by a substantial rise in current liabilities, suggests a need for close monitoring of short-term liquidity management. Further analysis into the composition and drivers of current liabilities would be beneficial to assess the sustainability of the company's short-term financial health.",
+    "4": "## Corning Incorporated: FY2022 Working Capital Report\n\n**Executive Summary**\n\nCorning Incorporated's working capital position for Fiscal Year 2022 stands at $3,822 million, a modest decrease of $148 million (-3.73%) from FY2021. This decline is primarily driven by a significant increase in current liabilities, despite growth in current assets. The current ratio, a key liquidity indicator, decreased to 1.42x in FY2022 from 1.63x in FY2021, indicating a slight reduction in short-term liquidity.\n\n**Analysis**\n\nIn FY2022, Corning's Current Assets increased by $831 million (6.88%) to $12,988 million from $12,157 million in FY2021. However, Current Liabilities saw a more substantial increase of $1,766 million, rising to $9,166 million from $7,400 million in FY2021. This disproportionate growth led to the observed decrease in working capital.\n\nLooking at the trend, working capital has fluctuated over the past three fiscal years. It experienced a significant increase of $1,830 million (89.47%) from FY2020 ($2,045 million) to FY2021 ($3,875 million), largely due to a decrease in current liabilities during that period. The current ratio also reflects this volatility, moving from 1.20x in FY2020 to 1.63x in FY2021, before settling at 1.42x in FY2022.\n\n**Key Risks**\n\nThe primary risk identified is the notable increase in current liabilities in FY2022, which outpaced current asset growth and led to a reduction in working capital and the current ratio. This trend, if continued, could impact the company's ability to meet its short-term obligations. The significant fluctuation in current liabilities over the past three years warrants further investigation to understand the underlying operational or financial drivers.\n\n**Conclusion**\n\nCorning Incorporated maintains a positive working capital position in FY2022, indicating its ability to cover short-term liabilities. However, the decrease in working capital and the current ratio from FY2021 to FY2022, driven by a substantial rise in current liabilities, suggests a need for close monitoring of short-term liquidity management. Further analysis into the composition and drivers of current liabilities would be beneficial to assess the sustainability of the company's short-term financial health."
+  },
+  "gates": {
+    "gate_1": {
+      "verified": [
+        {
+          "value": "$12,988 million",
+          "ref": 12988.0
+        },
+        {
+          "value": "$9,166 million",
+          "ref": 9166.0
+        },
+        {
+          "value": "$3,822 million",
+          "ref": 3822.0
+        },
+        {
+          "value": "$12,078 million",
+          "ref": 12078.0
+        },
+        {
+          "value": "$3,970 million",
+          "ref": 3970.0
+        },
+        {
+          "value": "$11,000 million",
+          "ref": 11000.0
+        },
+        {
+          "value": "$3,600 million",
+          "ref": 3600.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$6,078 million",
+          "num": 6078.0,
+          "correct": 7400.0,
+          "dev": 0.1786,
+          "source": "source_document"
+        },
+        {
+          "value": "$9,948 million",
+          "num": 9948.0,
+          "correct": 9166.0,
+          "dev": 0.0786,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [],
+      "n_refs": 19
+    },
+    "gate_2": {
+      "verified": [
+        {
+          "value": "$7,400M",
+          "ref": 7400.0
+        },
+        {
+          "value": "$9,166M",
+          "ref": 9166.0
+        },
+        {
+          "value": "$11,000M",
+          "ref": 11000.0
+        },
+        {
+          "value": "$9,166M",
+          "ref": 9166.0
+        },
+        {
+          "value": "$1,834M",
+          "ref": 1830.0
+        },
+        {
+          "value": "$12,988M",
+          "ref": 12988.0
+        },
+        {
+          "value": "$12,078M",
+          "ref": 12078.0
+        },
+        {
+          "value": "$12,078M",
+          "ref": 12078.0
+        },
+        {
+          "value": "$12,078M",
+          "ref": 12078.0
+        },
+        {
+          "value": "$11,000M",
+          "ref": 11000.0
+        },
+        {
+          "value": "$11,000M",
+          "ref": 11000.0
+        },
+        {
+          "value": "$9,166M",
+          "ref": 9166.0
+        },
+        {
+          "value": "$7,400M",
+          "ref": 7400.0
+        },
+        {
+          "value": "$7,400M",
+          "ref": 7400.0
+        },
+        {
+          "value": "$7,400M",
+          "ref": 7400.0
+        },
+        {
+          "value": "$9,166M",
+          "ref": 9166.0
+        },
+        {
+          "value": "$9,166M",
+          "ref": 9166.0
+        },
+        {
+          "value": "$3,822M",
+          "ref": 3822.0
+        },
+        {
+          "value": "$3,970M",
+          "ref": 3970.0
+        },
+        {
+          "value": "$3,970M",
+          "ref": 3970.0
+        },
+        {
+          "value": "$3,970M",
+          "ref": 3970.0
+        },
+        {
+          "value": "$1,834M",
+          "ref": 1830.0
+        },
+        {
+          "value": "$1,834M",
+          "ref": 1830.0
+        },
+        {
+          "value": "$12,988M",
+          "ref": 12988.0
+        },
+        {
+          "value": "$9,166M",
+          "ref": 9166.0
+        },
+        {
+          "value": "$12,078M",
+          "ref": 12078.0
+        },
+        {
+          "value": "$7,400M",
+          "ref": 7400.0
+        },
+        {
+          "value": "$11,000M",
+          "ref": 11000.0
+        },
+        {
+          "value": "$9,166M",
+          "ref": 9166.0
+        },
+        {
+          "value": "12,988",
+          "ref": 12988.0
+        },
+        {
+          "value": "12,078",
+          "ref": 12078.0
+        },
+        {
+          "value": "11,000",
+          "ref": 11000.0
+        },
+        {
+          "value": "9,166",
+          "ref": 9166.0
+        },
+        {
+          "value": "7,400",
+          "ref": 7400.0
+        },
+        {
+          "value": "9,166",
+          "ref": 9166.0
+        },
+        {
+          "value": "3,822",
+          "ref": 3822.0
+        },
+        {
+          "value": "3,970",
+          "ref": 3970.0
+        },
+        {
+          "value": "1,834",
+          "ref": 1830.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$6,078M",
+          "num": 6078.0,
+          "correct": 7400.0,
+          "dev": 0.1786,
+          "source": "source_document"
+        },
+        {
+          "value": "$9,948M",
+          "num": 9948.0,
+          "correct": 9166.0,
+          "dev": 0.0786,
+          "source": "source_document"
+        },
+        {
+          "value": "$910 M",
+          "num": 910.0,
+          "correct": 831.0,
+          "dev": 0.0868,
+          "source": "ground_truth"
+        },
+        {
+          "value": "$1,078 M",
+          "num": 1078.0,
+          "correct": 1175.0,
+          "dev": 0.0826,
+          "source": "evidence"
+        },
+        {
+          "value": "$2,136 M",
+          "num": 2136.0,
+          "correct": 1830.0,
+          "dev": 0.1433,
+          "source": "evidence"
+        },
+        {
+          "value": "$910M",
+          "num": 910.0,
+          "correct": 831.0,
+          "dev": 0.0868,
+          "source": "ground_truth"
+        },
+        {
+          "value": "$910M",
+          "num": 910.0,
+          "correct": 831.0,
+          "dev": 0.0868,
+          "source": "ground_truth"
+        },
+        {
+          "value": "$1,078M",
+          "num": 1078.0,
+          "correct": 1175.0,
+          "dev": 0.0826,
+          "source": "evidence"
+        },
+        {
+          "value": "$1,078M",
+          "num": 1078.0,
+          "correct": 1175.0,
+          "dev": 0.0826,
+          "source": "evidence"
+        },
+        {
+          "value": "$2,136M",
+          "num": 2136.0,
+          "correct": 1830.0,
+          "dev": 0.1433,
+          "source": "evidence"
+        },
+        {
+          "value": "$2,136M",
+          "num": 2136.0,
+          "correct": 1830.0,
+          "dev": 0.1433,
+          "source": "evidence"
+        },
+        {
+          "value": "23.86%",
+          "num": 23.86,
+          "correct": 40.0,
+          "dev": 0.4035,
+          "source": "evidence"
+        },
+        {
+          "value": "-19.27%",
+          "num": 19.27,
+          "correct": 40.0,
+          "dev": 0.5182,
+          "source": "evidence"
+        },
+        {
+          "value": "23.86%",
+          "num": 23.86,
+          "correct": 40.0,
+          "dev": 0.4035,
+          "source": "evidence"
+        },
+        {
+          "value": "-19.27%",
+          "num": 19.27,
+          "correct": 40.0,
+          "dev": 0.5182,
+          "source": "evidence"
+        },
+        {
+          "value": "19.27%",
+          "num": 19.27,
+          "correct": 40.0,
+          "dev": 0.5182,
+          "source": "evidence"
+        },
+        {
+          "value": "23.86%",
+          "num": 23.86,
+          "correct": 40.0,
+          "dev": 0.4035,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$1,766 M"
+        },
+        {
+          "value": "$1,766 M"
+        },
+        {
+          "value": "$148 M"
+        },
+        {
+          "value": "$1,766M"
+        },
+        {
+          "value": "$1,766M"
+        },
+        {
+          "value": "$1,766M"
+        },
+        {
+          "value": "$1,766M"
+        },
+        {
+          "value": "$148M"
+        },
+        {
+          "value": "$148M"
+        },
+        {
+          "value": "7.53%"
+        },
+        {
+          "value": "9.80%"
+        },
+        {
+          "value": "-3.73%"
+        },
+        {
+          "value": "116.47%"
+        },
+        {
+          "value": "7.53%"
+        },
+        {
+          "value": "9.80%"
+        },
+        {
+          "value": "-3.73%"
+        },
+        {
+          "value": "116.47%"
+        }
+      ],
+      "n_refs": 19
+    },
+    "gate_3": {
+      "verified": [
+        {
+          "value": "$3,822 million",
+          "ref": 3822.0
+        },
+        {
+          "value": "$12,988 million",
+          "ref": 12988.0
+        },
+        {
+          "value": "$12,078 million",
+          "ref": 12078.0
+        },
+        {
+          "value": "$9,166 million",
+          "ref": 9166.0
+        },
+        {
+          "value": "$7,400 million",
+          "ref": 7400.0
+        },
+        {
+          "value": "$1,834 million",
+          "ref": 1830.0
+        },
+        {
+          "value": "$3,970 million",
+          "ref": 3970.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$910 million",
+          "num": 910.0,
+          "correct": 831.0,
+          "dev": 0.0868,
+          "source": "ground_truth"
+        },
+        {
+          "value": "$2,136 million",
+          "num": 2136.0,
+          "correct": 1830.0,
+          "dev": 0.1433,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$148 million"
+        },
+        {
+          "value": "$1,766 million"
+        },
+        {
+          "value": "-3.73%"
+        },
+        {
+          "value": "7.53%"
+        },
+        {
+          "value": "116.47%"
+        }
+      ],
+      "n_refs": 19
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_074_499976A7",
+      "hid": "FB_074_499976A7_H2",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 6078.0,
+      "orig_num": 8108.0,
+      "survived": false,
+      "corrected": false,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_074_499976A7",
+      "hid": "FB_074_499976A7_H1",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 9948.0,
+      "orig_num": 7400.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:30:41.705291+00:00"
+}

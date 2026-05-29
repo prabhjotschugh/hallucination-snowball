@@ -1,0 +1,66 @@
+{
+  "question_id": "FB_036_47FD0B96",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Advanced Micro Devices (AMD), Fiscal Year 2022\n- PRIMARY METRIC: \n  - Cash flows from operating activities: **$1,851 million** (per the FY2022 10-K, Consolidated Statements of Cash Flows)\n  - Cash flows from investing activities: **$(1,823) million** (per the FY2022 10-K, Consolidated Statements of Cash Flows)\n  - Cash flows from financing activities: **$(802) million** (per the FY2022 10-K, Consolidated Statements of Cash Flows)\n\n- SUPPORTING DATA:\n  - Cash flows from operating activities for FY2021: **$1,891 million** (per the FY2021 10-K, Consolidated Statements of Cash Flows)\n  - Cash flows from investing activities for FY2021: **$(1,829) million** (per the FY2021 10-K, Consolidated Statements of Cash Flows)\n  - Cash flows from financing activities for FY2021: **$(1,031) million** (per the FY2021 10-K, Consolidated Statements of Cash Flows)\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Cash Flows\n  - FY2021 10-K, Consolidated Statements of Cash Flows\n\nIn summary, for fiscal year 2022, Advanced Micro Devices generated the most cash flow from operating activities, totaling $1,851 million.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_036_47FD0B96_H2",
+      "type": "large_number",
+      "original_value": "1,028",
+      "injected_value": "802",
+      "original_numeric": "1028",
+      "injected_numeric": "802",
+      "position_char": 378,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2195
+    },
+    {
+      "hallucination_id": "FB_036_47FD0B96_H1",
+      "type": "large_number",
+      "original_value": "1,525",
+      "injected_value": "1,829",
+      "original_numeric": "1525",
+      "injected_numeric": "1829",
+      "position_char": 666,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.1995
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "All reported financial figures for AMD's cash flows in FY2021 and FY2022 appear plausible and internally consistent, with reasonable year-over-year changes.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\": \"All reported financial figures for AMD's cash flows in FY2021 and FY2022 appear plausible and internally consistent, with reasonable year-over-year changes.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_036_47FD0B96",
+      "hallucination_id": "FB_036_47FD0B96_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "large_number",
+      "original_value": "1,028",
+      "injected_value": "802",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 0,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_036_47FD0B96",
+      "hallucination_id": "FB_036_47FD0B96_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "large_number",
+      "original_value": "1,525",
+      "injected_value": "1,829",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 0,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-25T07:42:18.599016Z"
+}

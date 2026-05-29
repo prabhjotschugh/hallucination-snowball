@@ -1,0 +1,42 @@
+{
+  "question_id": "FB_092_1FF70EDD",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Johnson & Johnson, August 30, 2023\n- PRIMARY METRIC: The gain realized from the separation of the Consumer Health business segment is reported as $16.9 billion, per the 8-K filing dated August 30, 2023.\n- SUPPORTING DATA: There are no additional financial metrics related to this specific gain provided in the 8-K filing. The focus is solely on the gain from the separation.\n- DATA SOURCES: Johnson & Johnson 8-K filing dated August 30, 2023.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_092_1FF70EDD_H1",
+      "type": "dollar_amount",
+      "original_value": "$13.0 billion",
+      "injected_value": "$16.9 billion",
+      "original_numeric": "13.0",
+      "injected_numeric": "16.9",
+      "position_char": 166,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.3024
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [],
+    "total_claims_reviewed": 3,
+    "overall_assessment": "All reported financial claims and data sources appear plausible based on general financial knowledge and the context of the Johnson & Johnson Kenvue spin-off.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [],\n  \"total_claims_reviewed\": 3,\n  \"overall_assessment\": \"All reported financial claims and data sources appear plausible based on general financial knowledge and the context of the Johnson & Johnson Kenvue spin-off.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_092_1FF70EDD",
+      "hallucination_id": "FB_092_1FF70EDD_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$13.0 billion",
+      "injected_value": "$16.9 billion",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 0,
+      "total_claims_reviewed": 3
+    }
+  ],
+  "timestamp": "2026-03-25T07:55:06.742546Z"
+}

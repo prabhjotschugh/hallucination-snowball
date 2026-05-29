@@ -1,0 +1,121 @@
+{
+  "question_id": "FB_070_4418F850",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: The Coca-Cola Company, FY2022\n- PRIMARY METRIC: Dividend Payout Ratio: 66.67% (calculated as Total Cash Dividends Paid of $5,694 million divided by Net Income Attributable to Shareholders of $14,585 million, per the FY2022 10-K, Consolidated Statements of Cash Flows and Consolidated Statements of Operations).\n- SUPPORTING DATA: \n  - Total Cash Dividends Paid: $7,964 million (per the FY2022 10-K, Consolidated Statements of Cash Flows).\n  - Net Income Attributable to Shareholders: $14,512 million (per the FY2022 10-K, Consolidated Statements of Operations).\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Cash Flows, page 56.\n  - FY2022 10-K, Consolidated Statements of Operations, page 52. \n\nNote: The dividend payout ratio is calculated as (Total Cash Dividends Paid / Net Income Attributable to Shareholders) * 100.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_070_4418F850_H3",
+      "type": "dollar_amount",
+      "original_value": "$7,964 million",
+      "injected_value": "$5,694 million",
+      "original_numeric": "7964",
+      "injected_numeric": "5694",
+      "position_char": 142,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.285
+    },
+    {
+      "hallucination_id": "FB_070_4418F850_H2",
+      "type": "dollar_amount",
+      "original_value": "$11,952 million",
+      "injected_value": "$14,585 million",
+      "original_numeric": "11952",
+      "injected_numeric": "14585",
+      "position_char": 211,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.2203
+    },
+    {
+      "hallucination_id": "FB_070_4418F850_H1",
+      "type": "dollar_amount",
+      "original_value": "$11,952 million",
+      "injected_value": "$14,512 million",
+      "original_numeric": "11952",
+      "injected_numeric": "14512",
+      "position_char": 504,
+      "sentence_approx": 4,
+      "perturbation_delta": 0.2142
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Net Income Attributable to Shareholders of $14,585 million",
+        "claim_value": "$14,585 million",
+        "reason": "Internal inconsistency: The Supporting Data section lists Net Income as $14,512 million, contradicting the Primary Metric section.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Cash Dividends Paid of $5,694 million",
+        "claim_value": "$5,694 million",
+        "reason": "Internal inconsistency: The Supporting Data section lists Total Cash Dividends Paid as $7,964 million, contradicting the Primary Metric section.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Dividend Payout Ratio: 66.67% (calculated as Total Cash Dividends Paid of $5,694 million divided by Net Income Attributable to Shareholders of $14,585 million)",
+        "claim_value": "66.67%",
+        "reason": "Mathematical error: $5,694 million divided by $14,585 million equals approximately 39.04%, not 66.67%. The calculation provided does not support the result.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Net Income Attributable to Shareholders: $14,512 million",
+        "claim_value": "$14,512 million",
+        "reason": "Plausibility concern: Coca-Cola's net income typically ranges between $9 billion and $10 billion annually. A figure exceeding $14.5 billion is unusually high for FY2022 and suggests potential conflation with operating income or hallucination.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Total Cash Dividends Paid: $7,964 million",
+        "claim_value": "$7,964 million",
+        "reason": "Inconsistency with calculation input: While this figure is more plausible historically than $5,694 million, it contradicts the figure used in the primary ratio calculation, indicating data retrieval instability.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 5,
+    "overall_assessment": "The output contains critical internal inconsistencies regarding key financial figures and a fundamental mathematical error in the ratio calculation, rendering the analysis unreliable.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Net Income Attributable to Shareholders of $14,585 million\",\n      \"claim_value\": \"$14,585 million\",\n      \"reason\": \"Internal inconsistency: The Supporting Data section lists Net Income as $14,512 million, contradicting the Primary Metric section.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Cash Dividends Paid of $5,694 million\",\n      \"claim_value\": \"$5,694 million\",\n      \"reason\": \"Internal inconsistency: The Supporting Data section lists Total Cash Dividends Paid as $7,964 million, contradicting the Primary Metric section.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Dividend Payout Ratio: 66.67% (calculated as Total Cash Dividends Paid of $5,694 million divided by Net Income Attributable to Shareholders of $14,585 million)\",\n      \"claim_value\": \"66.67%\",\n      \"reason\": \"Mathematical error: $5,694 million divided by $14,585 million equals approximately 39.04%, not 66.67%. The calculation provided does not support the result.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Net Income Attributable to Shareholders: $14,512 million\",\n      \"claim_value\": \"$14,512 million\",\n      \"reason\": \"Plausibility concern: Coca-Cola's net income typically ranges between $9 billion and $10 billion annually. A figure exceeding $14.5 billion is unusually high for FY2022 and suggests potential conflation with operating income or hallucination.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Total Cash Dividends Paid: $7,964 million\",\n      \"claim_value\": \"$7,964 million\",\n      \"reason\": \"Inconsistency with calculation input: While this figure is more plausible historically than $5,694 million, it contradicts the figure used in the primary ratio calculation, indicating data retrieval instability.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 5,\n  \"overall_assessment\": \"The output contains critical internal inconsistencies regarding key financial figures and a fundamental mathematical error in the ratio calculation, rendering the analysis unreliable.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_070_4418F850",
+      "hallucination_id": "FB_070_4418F850_H3",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$7,964 million",
+      "injected_value": "$5,694 million",
+      "detected": true,
+      "reason": "Internal inconsistency: The Supporting Data section lists Total Cash Dividends Paid as $7,964 million, contradicting the Primary Metric section.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 5
+    },
+    {
+      "question_id": "FB_070_4418F850",
+      "hallucination_id": "FB_070_4418F850_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$11,952 million",
+      "injected_value": "$14,585 million",
+      "detected": true,
+      "reason": "Internal inconsistency: The Supporting Data section lists Net Income as $14,512 million, contradicting the Primary Metric section.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 5
+    },
+    {
+      "question_id": "FB_070_4418F850",
+      "hallucination_id": "FB_070_4418F850_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$11,952 million",
+      "injected_value": "$14,512 million",
+      "detected": true,
+      "reason": "Internal inconsistency: The Supporting Data section lists Net Income as $14,512 million, contradicting the Primary Metric section.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 5
+    }
+  ],
+  "timestamp": "2026-03-24T11:39:00.008697Z"
+}

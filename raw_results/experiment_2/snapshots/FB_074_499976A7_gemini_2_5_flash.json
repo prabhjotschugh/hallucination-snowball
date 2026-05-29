@@ -1,0 +1,79 @@
+{
+  "question_id": "FB_074_499976A7",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Corning Incorporated, FY2022\n- PRIMARY METRIC: \n  - Current Assets: $12,988 million (per the FY2022 10-K, Consolidated Balance Sheets)\n  - Current Liabilities: $9,166 million (per the FY2022 10-K, Consolidated Balance Sheets)\n  - Working Capital: $3,822 million (calculated as Current Assets - Current Liabilities)\n\n- SUPPORTING DATA: \n  - FY2021 Current Assets: $12,078 million (per the FY2021 10-K, Consolidated Balance Sheets)\n  - FY2021 Current Liabilities: $6,078 million (per the FY2021 10-K, Consolidated Balance Sheets)\n  - FY2021 Working Capital: $3,970 million (calculated as Current Assets - Current Liabilities)\n  - FY2020 Current Assets: $11,000 million (per the FY2020 10-K, Consolidated Balance Sheets)\n  - FY2020 Current Liabilities: $9,948 million (per the FY2020 10-K, Consolidated Balance Sheets)\n  - FY2020 Working Capital: $3,600 million (calculated as Current Assets - Current Liabilities)\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Balance Sheets\n  - FY2021 10-K, Consolidated Balance Sheets\n  - FY2020 10-K, Consolidated Balance Sheets\n\n**Note:** The request to assess the relevance of working capital as a metric for Corning and to provide a rationale has not been fulfilled as per the instructions to present raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_074_499976A7_H2",
+      "type": "dollar_amount",
+      "original_value": "$8,108 million",
+      "injected_value": "$6,078 million",
+      "original_numeric": "8108",
+      "injected_numeric": "6078",
+      "position_char": 482,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2503
+    },
+    {
+      "hallucination_id": "FB_074_499976A7_H1",
+      "type": "dollar_amount",
+      "original_value": "$7,400 million",
+      "injected_value": "$9,948 million",
+      "original_numeric": "7400",
+      "injected_numeric": "9948",
+      "position_char": 770,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.3444
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "FY2021 Working Capital: $3,970 million (calculated as Current Assets - Current Liabilities)",
+        "claim_value": "$3,970 million",
+        "reason": "The stated working capital of $3,970 million for FY2021 is inconsistent with the provided current assets ($12,078 million) and current liabilities ($6,078 million). The correct calculation ($12,078 - $6,078) should be $6,000 million, not $3,970 million.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2020 Working Capital: $3,600 million (calculated as Current Assets - Current Liabilities)",
+        "claim_value": "$3,600 million",
+        "reason": "The stated working capital of $3,600 million for FY2020 is inconsistent with the provided current assets ($11,000 million) and current liabilities ($9,948 million). The correct calculation ($11,000 - $9,948) should be $1,052 million, not $3,600 million.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 13,
+    "overall_assessment": "The researcher's output contains significant internal inconsistencies in the calculation of working capital for FY2021 and FY2020, indicating potential fabrication or hallucination of these specific figures.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"FY2021 Working Capital: $3,970 million (calculated as Current Assets - Current Liabilities)\",\n      \"claim_value\": \"$3,970 million\",\n      \"reason\": \"The stated working capital of $3,970 million for FY2021 is inconsistent with the provided current assets ($12,078 million) and current liabilities ($6,078 million). The correct calculation ($12,078 - $6,078) should be $6,000 million, not $3,970 million.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2020 Working Capital: $3,600 million (calculated as Current Assets - Current Liabilities)\",\n      \"claim_value\": \"$3,600 million\",\n      \"reason\": \"The stated working capital of $3,600 million for FY2020 is inconsistent with the provided current assets ($11,000 million) and current liabilities ($9,948 million). The correct calculation ($11,000 - $9,948) should be $1,052 million, not $3,600 million.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 13,\n  \"overall_assessment\": \"The researcher's output contains significant internal inconsistencies in the calculation of working capital for FY2021 and FY2020, indicating potential fabrication or hallucination of these specific figures.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_074_499976A7",
+      "hallucination_id": "FB_074_499976A7_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$8,108 million",
+      "injected_value": "$6,078 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 13
+    },
+    {
+      "question_id": "FB_074_499976A7",
+      "hallucination_id": "FB_074_499976A7_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$7,400 million",
+      "injected_value": "$9,948 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 13
+    }
+  ],
+  "timestamp": "2026-03-25T07:51:08.412593Z"
+}

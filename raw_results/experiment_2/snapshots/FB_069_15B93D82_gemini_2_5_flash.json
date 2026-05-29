@@ -1,0 +1,85 @@
+{
+  "question_id": "FB_069_15B93D82",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: The Coca-Cola Company, FY2021\n- PRIMARY METRIC: Cost of Goods Sold (COGS) percentage margin for FY2021 is 51.5%. This is calculated as COGS of $18,441 million divided by Total Revenue of $41,651 million, as reported in the FY2021 10-K, Consolidated Statements of Operations.\n- SUPPORTING DATA: \n  - COGS for FY2021: $18,441 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - Total Revenue for FY2021: $41,651 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - COGS for FY2020: $17,167 million (per the FY2020 10-K, Consolidated Statements of Operations)\n  - Total Revenue for FY2020: $25,413 million (per the FY2020 10-K, Consolidated Statements of Operations)\n  - COGS for FY2019: $17,086 million (per the FY2019 10-K, Consolidated Statements of Operations)\n  - Total Revenue for FY2019: $37,266 million (per the FY2019 10-K, Consolidated Statements of Operations)\n- DATA SOURCES: \n  - FY2021 10-K, Consolidated Statements of Operations\n  - FY2020 10-K, Consolidated Statements of Operations\n  - FY2019 10-K, Consolidated Statements of Operations\n\nNote: The COGS percentage margin is calculated as (COGS / Total Revenue) * 100. For FY2021, this results in (18,441 / 41,651) * 100 = 44.2%.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_069_15B93D82_H2",
+      "type": "percentage",
+      "original_value": "44.2%",
+      "injected_value": "51.5%",
+      "original_numeric": "44.2",
+      "injected_numeric": "51.5",
+      "position_char": 126,
+      "sentence_approx": 1,
+      "perturbation_delta": 7.2957
+    },
+    {
+      "hallucination_id": "FB_069_15B93D82_H1",
+      "type": "dollar_amount",
+      "original_value": "$33,014 million",
+      "injected_value": "$25,413 million",
+      "original_numeric": "33014",
+      "injected_numeric": "25413",
+      "position_char": 648,
+      "sentence_approx": 4,
+      "perturbation_delta": -0.2302
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "COGS percentage margin for FY2021 is 51.5%.",
+        "claim_value": "51.5%",
+        "reason": "This claim is internally inconsistent with the provided supporting data and the researcher's own calculation note. Using the reported COGS of $18,441 million and Total Revenue of $41,651 million, the correct COGS percentage margin is (18,441 / 41,651) * 100 = 44.2%, which is also stated in the 'Note' section.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Revenue for FY2020: $25,413 million",
+        "claim_value": "$25,413 million",
+        "reason": "This revenue figure, when combined with the reported COGS for FY2020 ($17,167 million), results in a COGS percentage of 67.55% (17,167 / 25,413 * 100). This implies an unusually low gross margin of 32.45% for Coca-Cola, which typically operates with gross margins in the high 50s to low 60s. This is significantly out of line with the COGS percentages calculated for FY2019 (45.85%) and FY2021 (44.2%). Additionally, a revenue drop from $37.2B in 2019 to $25.4B in 2020 (a ~32% decrease) followed by a jump to $41.6B in 2021 (a ~64% increase) represents extreme volatility for a company like Coca-Cola, even considering the impact of COVID-19, making the 2020 revenue figure highly suspicious.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "COGS for FY2020: $17,167 million",
+        "claim_value": "$17,167 million",
+        "reason": "This COGS figure, when combined with the reported Total Revenue for FY2020 ($25,413 million), leads to an implausibly high COGS percentage of 67.55% for Coca-Cola. This gross margin (32.45%) is significantly lower than typical for the company and inconsistent with the COGS percentages calculated for FY2019 (45.85%) and FY2021 (44.2%). This figure is suspicious in context with the reported revenue for the same period.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 10,
+    "overall_assessment": "Multiple financial claims for FY2020 and the primary FY2021 COGS percentage margin are suspicious due to internal inconsistencies and implausible ratios for the company.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"COGS percentage margin for FY2021 is 51.5%.\",\n      \"claim_value\": \"51.5%\",\n      \"reason\": \"This claim is internally inconsistent with the provided supporting data and the researcher's own calculation note. Using the reported COGS of $18,441 million and Total Revenue of $41,651 million, the correct COGS percentage margin is (18,441 / 41,651) * 100 = 44.2%, which is also stated in the 'Note' section.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Revenue for FY2020: $25,413 million\",\n      \"claim_value\": \"$25,413 million\",\n      \"reason\": \"This revenue figure, when combined with the reported COGS for FY2020 ($17,167 million), results in a COGS percentage of 67.55% (17,167 / 25,413 * 100). This implies an unusually low gross margin of 32.45% for Coca-Cola, which typically operates with gross margins in the high 50s to low 60s. This is significantly out of line with the COGS percentages calculated for FY2019 (45.85%) and FY2021 (44.2%). Additionally, a revenue drop from $37.2B in 2019 to $25.4B in 2020 (a ~32% decrease) followed by a jump to $41.6B in 2021 (a ~64% increase) represents extreme volatility for a company like Coca-Cola, even considering the impact of COVID-19, making the 2020 revenue figure highly suspicious.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"COGS for FY2020: $17,167 million\",\n      \"claim_value\": \"$17,167 million\",\n      \"reason\": \"This COGS figure, when combined with the reported Total Revenue for FY2020 ($25,413 million), leads to an implausibly high COGS percentage of 67.55% for Coca-Cola. This gross margin (32.45%) is significantly lower than typical for the company and inconsistent with the COGS percentages calculated for FY2019 (45.85%) and FY2021 (44.2%). This figure is suspicious in context with the reported revenue for the same period.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 10,\n  \"overall_assessment\": \"Multiple financial claims for FY2020 and the primary FY2021 COGS percentage margin are suspicious due to internal inconsistencies and implausible ratios for the company.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_069_15B93D82",
+      "hallucination_id": "FB_069_15B93D82_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "percentage",
+      "original_value": "44.2%",
+      "injected_value": "51.5%",
+      "detected": true,
+      "reason": "This claim is internally inconsistent with the provided supporting data and the researcher's own calculation note. Using the reported COGS of $18,441 million and Total Revenue of $41,651 million, the correct COGS percentage margin is (18,441 / 41,651) * 100 = 44.2%, which is also stated in the 'Note' section.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 10
+    },
+    {
+      "question_id": "FB_069_15B93D82",
+      "hallucination_id": "FB_069_15B93D82_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$33,014 million",
+      "injected_value": "$25,413 million",
+      "detected": true,
+      "reason": "This revenue figure, when combined with the reported COGS for FY2020 ($17,167 million), results in a COGS percentage of 67.55% (17,167 / 25,413 * 100). This implies an unusually low gross margin of 32.45% for Coca-Cola, which typically operates with gross margins in the high 50s to low 60s. This is significantly out of line with the COGS percentages calculated for FY2019 (45.85%) and FY2021 (44.2%). Additionally, a revenue drop from $37.2B in 2019 to $25.4B in 2020 (a ~32% decrease) followed by a jump to $41.6B in 2021 (a ~64% increase) represents extreme volatility for a company like Coca-Cola, even considering the impact of COVID-19, making the 2020 revenue figure highly suspicious.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 10
+    }
+  ],
+  "timestamp": "2026-03-25T07:50:09.994773Z"
+}

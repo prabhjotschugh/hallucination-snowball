@@ -1,0 +1,211 @@
+{
+  "question_id": "FB_073_5495DBB9",
+  "method": "end_check",
+  "final_output": "## Financial Report: Corning Incorporated - Effective Tax Rate Analysis (FY2021-FY2022)\n\n**Executive Summary**\n\nCorning Incorporated experienced a notable decrease in its Effective Tax Rate (ETR) from 14.4% in FY2021 to 9.9% in FY2022. This 4.5 percentage point reduction occurred despite a substantial increase in Pre-Tax Income, which rose by $269 million (14.69%) to $2,100 million in FY2022. Concurrently, Income Tax Expense decreased by $14 million (6.33%) to $207 million. The lower ETR indicates improved tax efficiency or the impact of specific tax provisions during the period.\n\n**Analysis**\n\nFor FY2021, Corning Incorporated reported an Effective Tax Rate of 14.4%, based on an Income Tax Expense of $221 million and Pre-Tax Income of $1,831 million. In FY2022, the Effective Tax Rate decreased to 9.9%. This reduction was driven by a decrease in Income Tax Expense to $207 million, even as Pre-Tax Income grew significantly to $2,100 million. The absolute change in the Effective Tax Rate was a decrease of 4.5 percentage points, representing a 31.25% reduction from the FY2021 rate. The $269 million increase in Pre-Tax Income from FY2021 to FY2022, coupled with a $14 million reduction in Income Tax Expense, highlights a favorable shift in the company's tax burden relative to its profitability. This suggests that the company either benefited from specific tax incentives, a more favorable geographical mix of earnings, or effective tax planning strategies that reduced its overall tax liability despite increased earnings.\n\n**Key Risks**\n\nThe primary risk identified is the potential for misinterpretation of the change in the Effective Tax Rate. While the reported ETR decreased by 4.5 percentage points, it is crucial to understand the underlying drivers. Future tax rates could be subject to changes in tax legislation, geographical mix of earnings, or the expiration of specific tax incentives. Any significant shifts in these factors could reverse the observed trend, leading to an increased tax burden. Furthermore, a detailed breakdown of the components contributing to the tax expense (e.g., federal, state, international taxes, and the impact of discrete items) would provide a more comprehensive understanding of the ETR's volatility and sustainability.\n\n**Conclusion**\n\nCorning Incorporated demonstrated enhanced tax efficiency in FY2022, with its Effective Tax Rate falling to 9.9% from 14.4% in FY2021. This favorable movement was achieved alongside robust growth in Pre-Tax Income. The reduction in Income Tax Expense to $207 million, despite higher profitability, suggests effective tax planning or the benefit of specific tax items during the period. Stakeholders should monitor future disclosures for detailed explanations of the factors contributing to this significant reduction in the Effective Tax Rate to assess the sustainability of this trend and its potential impact on future financial performance.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Corning Incorporated, FY2021 and FY2022\n- PRIMARY METRIC: \n  - Effective Tax Rate for FY2021: 14.4% (per the FY2021 10-K, Note 12 - Income Taxes)\n  - Effective Tax Rate for FY2022: 9.9% (per the FY2022 10-K, Note 12 - Income Taxes)\n- CHANGE IN EFFECTIVE TAX RATE: Decrease of 0.5 percentage points from FY2021 to FY2022.\n\n- SUPPORTING DATA:\n  - Income Tax Expense for FY2021: $221 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - Income Tax Expense for FY2022: $207 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - Pre-Tax Income for FY2021: $1,831 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - Pre-Tax Income for FY2022: $2,100 million (per the FY2022 10-K, Consolidated Statements of Operations)\n\n- DATA SOURCES:\n  - FY2021 10-K, Note 12 - Income Taxes\n  - FY2021 10-K, Consolidated Statements of Operations\n  - FY2022 10-K, Note 12 - Income Taxes\n  - FY2022 10-K, Consolidated Statements of Operations",
+    "2": "As a financial analyst, I've reviewed the provided data for Corning Incorporated for FY2021 and FY2022.\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\n*   **Effective Tax Rate:**\n    *   FY2021: 14.4%\n    *   FY2022: 9.9%\n    *   Absolute Change = FY2022 ETR - FY2021 ETR = 9.9% - 14.4% = **-4.5 percentage points**\n    *   Percentage Change = (Absolute Change / FY2021 ETR) * 100 = (-4.5% / 14.4%) * 100 = **-31.25%**\n\n*   **Income Tax Expense:**\n    *   FY2021: $221 million\n    *   FY2022: $207 million\n    *   Absolute Change = FY2022 Tax Expense - FY2021 Tax Expense = $207M - $221M = **-$14 million**\n    *   Percentage Change = (Absolute Change / FY2021 Tax Expense) * 100 = (-$14M / $221M) * 100 = **-6.33%**\n\n*   **Pre-Tax Income:**\n    *   FY2021: $1,831 million\n    *   FY2022: $2,100 million\n    *   Absolute Change = FY2022 Pre-Tax Income - FY2021 Pre-Tax Income = $2,100M - $1,831M = **$269 million**\n    *   Percentage Change = (Absolute Change / FY2021 Pre-Tax Income) * 100 = ($269M / $1,831M) * 100 = **14.69%**\n\n**2. Relevant Ratios**\n\n*   **Effective Tax Rate (Calculated):**\n    *   Formula: (Income Tax Expense / Pre-Tax Income) * 100\n    *   FY2021: ($221M / $1,831M) * 100 = **12.07%**\n    *   FY2022: ($207M / $2,100M) * 100 = **9.86%**\n\n**3. Anomalies**\n\nThe primary anomaly identified is the discrepancy in the reported \"Change in Effective Tax Rate\" provided by the researcher versus the calculated change.\n\n*   **Researcher's Reported Change:** Decrease of 0.5 percentage points.\n*   **Calculated Change (using primary metric data):** 9.9% - 14.4% = -4.5 percentage points.\n*   **Calculated Change (using supporting data ratios):** 9.86% - 12.07% = -2.21 percentage points.\n\nThe researcher's stated change of -0.5 percentage points is significantly different from both the change derived from the provided primary metric data (-4.5 percentage points) and the change derived from the supporting data's calculated effective tax rates (-2.21 percentage points). This suggests an error in the researcher's summary statement regarding the change in effective tax rate.\n\nFurthermore, there is a discrepancy between the effective tax rates explicitly stated in the \"PRIMARY METRIC\" section (14.4% for FY2021) and the effective tax rate calculated using the \"SUPPORTING DATA\" (12.07% for FY2021). The FY2022 rates are very close (9.9% stated vs. 9.86% calculated). For consistency and accuracy, the explicitly stated effective tax rates from the 10-K notes (14.4% and 9.9%) are generally preferred as the primary metric.",
+    "3": "## Financial Report: Corning Incorporated - Effective Tax Rate Analysis (FY2021-FY2022)\n\n**Executive Summary**\n\nCorning Incorporated experienced a notable decrease in its Effective Tax Rate (ETR) from 14.4% in FY2021 to 9.9% in FY2022. This 4.5 percentage point reduction occurred despite a substantial increase in Pre-Tax Income, which rose by $269 million (14.69%) to $2,100 million in FY2022. Concurrently, Income Tax Expense decreased by $14 million (6.33%) to $207 million. The lower ETR indicates improved tax efficiency or the impact of specific tax provisions during the period.\n\n**Analysis**\n\nFor FY2021, Corning Incorporated reported an Effective Tax Rate of 14.4%, based on an Income Tax Expense of $221 million and Pre-Tax Income of $1,831 million. In FY2022, the Effective Tax Rate decreased to 9.9%. This reduction was driven by a decrease in Income Tax Expense to $207 million, even as Pre-Tax Income grew significantly to $2,100 million. The absolute change in the Effective Tax Rate was a decrease of 4.5 percentage points, representing a 31.25% reduction from the FY2021 rate. The $269 million increase in Pre-Tax Income from FY2021 to FY2022, coupled with a $14 million reduction in Income Tax Expense, highlights a favorable shift in the company's tax burden relative to its profitability.\n\n**Key Risks**\n\nThe primary risk identified is the potential for misinterpretation of the change in the Effective Tax Rate. While the reported ETR decreased by 4.5 percentage points, it is crucial to understand the underlying drivers. Future tax rates could be subject to changes in tax legislation, geographical mix of earnings, or the expiration of specific tax incentives. Any significant shifts in these factors could reverse the observed trend, leading to an increased tax burden.\n\n**Conclusion**\n\nCorning Incorporated demonstrated enhanced tax efficiency in FY2022, with its Effective Tax Rate falling to 9.9% from 14.4% in FY2021. This favorable movement was achieved alongside robust growth in Pre-Tax Income. The reduction in Income Tax Expense to $207 million, despite higher profitability, suggests effective tax planning or the benefit of specific tax items during the period. Stakeholders should monitor future disclosures for detailed explanations of the factors contributing to this significant reduction in the Effective Tax Rate.",
+    "4": "## Financial Report: Corning Incorporated - Effective Tax Rate Analysis (FY2021-FY2022)\n\n**Executive Summary**\n\nCorning Incorporated experienced a notable decrease in its Effective Tax Rate (ETR) from 14.4% in FY2021 to 9.9% in FY2022. This 4.5 percentage point reduction occurred despite a substantial increase in Pre-Tax Income, which rose by $269 million (14.69%) to $2,100 million in FY2022. Concurrently, Income Tax Expense decreased by $14 million (6.33%) to $207 million. The lower ETR indicates improved tax efficiency or the impact of specific tax provisions during the period.\n\n**Analysis**\n\nFor FY2021, Corning Incorporated reported an Effective Tax Rate of 14.4%, based on an Income Tax Expense of $221 million and Pre-Tax Income of $1,831 million. In FY2022, the Effective Tax Rate decreased to 9.9%. This reduction was driven by a decrease in Income Tax Expense to $207 million, even as Pre-Tax Income grew significantly to $2,100 million. The absolute change in the Effective Tax Rate was a decrease of 4.5 percentage points, representing a 31.25% reduction from the FY2021 rate. The $269 million increase in Pre-Tax Income from FY2021 to FY2022, coupled with a $14 million reduction in Income Tax Expense, highlights a favorable shift in the company's tax burden relative to its profitability. This suggests that the company either benefited from specific tax incentives, a more favorable geographical mix of earnings, or effective tax planning strategies that reduced its overall tax liability despite increased earnings.\n\n**Key Risks**\n\nThe primary risk identified is the potential for misinterpretation of the change in the Effective Tax Rate. While the reported ETR decreased by 4.5 percentage points, it is crucial to understand the underlying drivers. Future tax rates could be subject to changes in tax legislation, geographical mix of earnings, or the expiration of specific tax incentives. Any significant shifts in these factors could reverse the observed trend, leading to an increased tax burden. Furthermore, a detailed breakdown of the components contributing to the tax expense (e.g., federal, state, international taxes, and the impact of discrete items) would provide a more comprehensive understanding of the ETR's volatility and sustainability.\n\n**Conclusion**\n\nCorning Incorporated demonstrated enhanced tax efficiency in FY2022, with its Effective Tax Rate falling to 9.9% from 14.4% in FY2021. This favorable movement was achieved alongside robust growth in Pre-Tax Income. The reduction in Income Tax Expense to $207 million, despite higher profitability, suggests effective tax planning or the benefit of specific tax items during the period. Stakeholders should monitor future disclosures for detailed explanations of the factors contributing to this significant reduction in the Effective Tax Rate to assess the sustainability of this trend and its potential impact on future financial performance."
+  },
+  "gates": {
+    "end_gate": {
+      "verified": [
+        {
+          "value": "$269 million",
+          "ref": 264.0
+        },
+        {
+          "value": "$2,100 million",
+          "ref": 2100.0
+        },
+        {
+          "value": "$14 million",
+          "ref": 13.9
+        },
+        {
+          "value": "$1,831 million",
+          "ref": 1831.0
+        },
+        {
+          "value": "$2,100 million",
+          "ref": 2100.0
+        },
+        {
+          "value": "$269 million",
+          "ref": 264.0
+        },
+        {
+          "value": "$14 million",
+          "ref": 13.9
+        },
+        {
+          "value": "14.4%",
+          "ref": 14.4
+        },
+        {
+          "value": "14.69%",
+          "ref": 14.4
+        },
+        {
+          "value": "14.4%",
+          "ref": 14.4
+        },
+        {
+          "value": "31.25%",
+          "ref": 31.0
+        },
+        {
+          "value": "14.4%",
+          "ref": 14.4
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$207 million",
+          "num": 207.0,
+          "correct": 238.0,
+          "dev": 0.1303,
+          "source": "evidence"
+        },
+        {
+          "value": "$221 million",
+          "num": 221.0,
+          "correct": 238.0,
+          "dev": 0.0714,
+          "source": "evidence"
+        },
+        {
+          "value": "$207 million",
+          "num": 207.0,
+          "correct": 238.0,
+          "dev": 0.1303,
+          "source": "evidence"
+        },
+        {
+          "value": "$207 million",
+          "num": 207.0,
+          "correct": 238.0,
+          "dev": 0.1303,
+          "source": "evidence"
+        },
+        {
+          "value": "9.9%",
+          "num": 9.9,
+          "correct": 11.0,
+          "dev": 0.1,
+          "source": "evidence"
+        },
+        {
+          "value": "4.5 percent",
+          "num": 4.5,
+          "correct": 3.4,
+          "dev": 0.2444,
+          "source": "evidence"
+        },
+        {
+          "value": "6.33%",
+          "num": 6.33,
+          "correct": 11.0,
+          "dev": 0.4245,
+          "source": "evidence"
+        },
+        {
+          "value": "9.9%",
+          "num": 9.9,
+          "correct": 11.0,
+          "dev": 0.1,
+          "source": "evidence"
+        },
+        {
+          "value": "4.5 percent",
+          "num": 4.5,
+          "correct": 3.4,
+          "dev": 0.2444,
+          "source": "evidence"
+        },
+        {
+          "value": "4.5 percent",
+          "num": 4.5,
+          "correct": 3.4,
+          "dev": 0.2444,
+          "source": "evidence"
+        },
+        {
+          "value": "9.9%",
+          "num": 9.9,
+          "correct": 11.0,
+          "dev": 0.1,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [],
+      "n_refs": 34
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_073_5495DBB9",
+      "hid": "FB_073_5495DBB9_H3",
+      "method": "end_check",
+      "type": "percentage",
+      "inj_num": 9.9,
+      "orig_num": 13.9,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": true,
+      "any_det": true,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_073_5495DBB9",
+      "hid": "FB_073_5495DBB9_H2",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 221.0,
+      "orig_num": 264.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": true,
+      "any_det": true,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_073_5495DBB9",
+      "hid": "FB_073_5495DBB9_H1",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 207.0,
+      "orig_num": 292.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": true,
+      "any_det": true,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:29:34.655313+00:00"
+}

@@ -1,0 +1,292 @@
+{
+  "question_id": "FB_004_FF1B8BC2",
+  "method": "end_check",
+  "final_output": "## 3M Company: FY2022 Financial Performance Report\n\n### Executive Summary\n\n3M Company reported a decline in its operating margin for Fiscal Year 2022, reaching 12.94%. This represents a decrease from 14.62% in FY2021 and 20.65% in FY2020. While Total Revenue increased by 4.52% to $46,995 million in FY2022 from $44,964 million in FY2021, Operating Income decreased by 7.50% to $6,081 million from $6,574 million over the same period.\n\n### Analysis\n\nFor FY2022, 3M Company's Total Revenue stood at $46,995 million, an increase of $2,031 million (4.52%) compared to FY2021's Total Revenue of $44,964 million. This follows a significant 39.73% increase in Total Revenue from FY2020 ($32,180 million) to FY2021.\n\nDespite the revenue growth, Operating Income experienced a decline. In FY2022, Operating Income was $6,081 million, a decrease of $493 million (-7.50%) from $6,574 million in FY2021. This continues a trend of decreasing operating income, as FY2021 also saw a $72 million (-1.08%) reduction from FY2020's $6,646 million.\n\nConsequently, the Operating Margin for FY2022 was 12.94% (calculated as $6,081 million Operating Income divided by $46,995 million Total Revenue). This marks a substantial decrease of 1.68 percentage points from the 14.62% recorded in FY2021 (calculated as $6,574 million Operating Income divided by $44,964 million Total Revenue), and a 7.71 percentage point decline from the 20.65% in FY2020 (calculated as $6,646 million Operating Income divided by $32,180 million Total Revenue).\n\n### Key Risks\n\nThe consistent decline in operating margin over the past three fiscal years, from 20.65% in FY2020 to 12.94% in FY2022, indicates a potential erosion of profitability efficiency. While revenue has grown, the more significant percentage decrease in operating income suggests increasing operational costs relative to sales, or other pressures impacting core profitability. This trend warrants close attention from management and investors.\n\n### Conclusion\n\n3M Company's financial performance in FY2022 shows a mixed picture of revenue growth alongside a notable contraction in operating profitability. The increase in Total Revenue to $46,995 million was overshadowed by a decrease in Operating Income to $6,081 million, resulting in an Operating Margin of 12.94%. This trend of declining operating margin, which has persisted over the last three fiscal years, indicates potential challenges in cost management or pricing power that could impact future financial health.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: 3M Company, FY2022\n- PRIMARY METRIC: Operating Margin: 16.5% (calculated as Operating Income of $7,927 million divided by Total Revenue of $36,693 million) per the FY2022 10-K, Consolidated Statements of Operations.\n- SUPPORTING DATA: \n  - Total Revenue: $46,995 million (FY2022) per the FY2022 10-K, Consolidated Statements of Operations.\n  - Operating Income: $6,081 million (FY2022) per the FY2022 10-K, Consolidated Statements of Operations.\n  - Operating Margin (FY2021): 18.2% (calculated as Operating Income of $6,574 million divided by Total Revenue of $44,964 million) per the FY2021 10-K, Consolidated Statements of Operations.\n  - Operating Margin (FY2020): 20.5% (calculated as Operating Income of $6,646 million divided by Total Revenue of $32,180 million) per the FY2020 10-K, Consolidated Statements of Operations.\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations.\n  - FY2021 10-K, Consolidated Statements of Operations.\n  - FY2020 10-K, Consolidated Statements of Operations.\n\n**Note**: The request for an analysis of the factors influencing changes in operating margin and the usefulness of operating margin as a metric cannot be fulfilled as per the directive to provide raw data only. Please consult downstream analysts for further interpretation and analysis.",
+    "2": "As a financial analyst, I have computed the requested metrics based on the provided researcher data for 3M Company.\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\n**Total Revenue:**\n\n*   **FY2022 Total Revenue:** $46,995 million\n*   **FY2021 Total Revenue:** $44,964 million\n*   **FY2020 Total Revenue:** $32,180 million\n\n*   **FY2022 vs. FY2021 Total Revenue Change:**\n    *   Absolute Change = FY2022 Total Revenue - FY2021 Total Revenue\n    *   Absolute Change = $46,995 million - $44,964 million = **$2,031 million**\n    *   Percentage Change = (Absolute Change / FY2021 Total Revenue) * 100\n    *   Percentage Change = ($2,031 million / $44,964 million) * 100 = **4.52%**\n\n*   **FY2021 vs. FY2020 Total Revenue Change:**\n    *   Absolute Change = FY2021 Total Revenue - FY2020 Total Revenue\n    *   Absolute Change = $44,964 million - $32,180 million = **$12,784 million**\n    *   Percentage Change = (Absolute Change / FY2020 Total Revenue) * 100\n    *   Percentage Change = ($12,784 million / $32,180 million) * 100 = **39.73%**\n\n**Operating Income:**\n\n*   **FY2022 Operating Income:** $6,081 million\n*   **FY2021 Operating Income:** $6,574 million\n*   **FY2020 Operating Income:** $6,646 million\n\n*   **FY2022 vs. FY2021 Operating Income Change:**\n    *   Absolute Change = FY2022 Operating Income - FY2021 Operating Income\n    *   Absolute Change = $6,081 million - $6,574 million = **-$493 million**\n    *   Percentage Change = (Absolute Change / FY2021 Operating Income) * 100\n    *   Percentage Change = (-$493 million / $6,574 million) * 100 = **-7.50%**\n\n*   **FY2021 vs. FY2020 Operating Income Change:**\n    *   Absolute Change = FY2021 Operating Income - FY2020 Operating Income\n    *   Absolute Change = $6,574 million - $6,646 million = **-$72 million**\n    *   Percentage Change = (Absolute Change / FY2020 Operating Income) * 100\n    *   Percentage Change = (-$72 million / $6,646 million) * 100 = **-1.08%**\n\n**Operating Margin:**\n\n*   **FY2022 Operating Margin:** 16.5%\n*   **FY2021 Operating Margin:** 18.2%\n*   **FY2020 Operating Margin:** 20.5%\n\n*   **FY2022 vs. FY2021 Operating Margin Change:**\n    *   Absolute Change = FY2022 Operating Margin - FY2021 Operating Margin\n    *   Absolute Change = 16.5% - 18.2% = **-1.7 percentage points**\n    *   Percentage Change = (Absolute Change / FY2021 Operating Margin) * 100\n    *   Percentage Change = (-1.7% / 18.2%) * 100 = **-9.34%**\n\n*   **FY2021 vs. FY2020 Operating Margin Change:**\n    *   Absolute Change = FY2021 Operating Margin - FY2020 Operating Margin\n    *   Absolute Change = 18.2% - 20.5% = **-2.3 percentage points**\n    *   Percentage Change = (Absolute Change / FY2020 Operating Margin) * 100\n    *   Percentage Change = (-2.3% / 20.5%) * 100 = **-11.22%**\n\n**2. Relevant Ratios**\n\n*   **Operating Margin (FY2022 - Recalculated):**\n    *   Formula: Operating Income / Total Revenue\n    *   Calculation: $6,081 million / $46,995 million = **12.94%**\n\n*   **Operating Margin (FY2021 - Provided):** 18.2%\n*   **Operating Margin (FY2020 - Provided):** 20.5%\n\n**3. Anomalies Flagged**\n\n*   **FY2022 Operating Margin Discrepancy:** The primary metric provided states an Operating Margin of 16.5% for FY2022, calculated as Operating Income of $7,927 million divided by Total Revenue of $36",
+    "3": "## 3M Company: FY2022 Financial Performance Report\n\n### Executive Summary\n\n3M Company reported a decline in its operating margin for Fiscal Year 2022, reaching 12.94%. This represents a decrease from 18.2% in FY2021 and 20.5% in FY2020. While Total Revenue increased by 4.52% to $46,995 million in FY2022 from $44,964 million in FY2021, Operating Income decreased by 7.50% to $6,081 million from $6,574 million over the same period.\n\n### Analysis\n\nFor FY2022, 3M Company's Total Revenue stood at $46,995 million, an increase of $2,031 million (4.52%) compared to FY2021's Total Revenue of $44,964 million. This follows a significant 39.73% increase in Total Revenue from FY2020 ($32,180 million) to FY2021.\n\nDespite the revenue growth, Operating Income experienced a decline. In FY2022, Operating Income was $6,081 million, a decrease of $493 million (-7.50%) from $6,574 million in FY2021. This continues a trend of decreasing operating income, as FY2021 also saw a $72 million (-1.08%) reduction from FY2020's $6,646 million.\n\nConsequently, the Operating Margin for FY2022 was 12.94% (calculated as $6,081 million Operating Income divided by $46,995 million Total Revenue). This marks a substantial decrease of 5.26 percentage points from the 18.2% recorded in FY2021, and a 7.56 percentage point decline from the 20.5% in FY2020.\n\n### Key Risks\n\nThe consistent decline in operating margin over the past three fiscal years, from 20.5% in FY2020 to 12.94% in FY2022, indicates a potential erosion of profitability efficiency. While revenue has grown, the more significant percentage decrease in operating income suggests increasing operational costs relative to sales, or other pressures impacting core profitability.\n\n### Conclusion\n\n3M Company's financial performance in FY2022 shows a mixed picture of revenue growth alongside a notable contraction in operating profitability. The increase in Total Revenue to $46,995 million was overshadowed by a decrease in Operating Income to $6,081 million, resulting in an Operating Margin of 12.94%. This trend of declining operating margin warrants close monitoring.",
+    "4": "## 3M Company: FY2022 Financial Performance Report\n\n### Executive Summary\n\n3M Company reported a decline in its operating margin for Fiscal Year 2022, reaching 12.94%. This represents a decrease from 14.62% in FY2021 and 20.65% in FY2020. While Total Revenue increased by 4.52% to $46,995 million in FY2022 from $44,964 million in FY2021, Operating Income decreased by 7.50% to $6,081 million from $6,574 million over the same period.\n\n### Analysis\n\nFor FY2022, 3M Company's Total Revenue stood at $46,995 million, an increase of $2,031 million (4.52%) compared to FY2021's Total Revenue of $44,964 million. This follows a significant 39.73% increase in Total Revenue from FY2020 ($32,180 million) to FY2021.\n\nDespite the revenue growth, Operating Income experienced a decline. In FY2022, Operating Income was $6,081 million, a decrease of $493 million (-7.50%) from $6,574 million in FY2021. This continues a trend of decreasing operating income, as FY2021 also saw a $72 million (-1.08%) reduction from FY2020's $6,646 million.\n\nConsequently, the Operating Margin for FY2022 was 12.94% (calculated as $6,081 million Operating Income divided by $46,995 million Total Revenue). This marks a substantial decrease of 1.68 percentage points from the 14.62% recorded in FY2021 (calculated as $6,574 million Operating Income divided by $44,964 million Total Revenue), and a 7.71 percentage point decline from the 20.65% in FY2020 (calculated as $6,646 million Operating Income divided by $32,180 million Total Revenue).\n\n### Key Risks\n\nThe consistent decline in operating margin over the past three fiscal years, from 20.65% in FY2020 to 12.94% in FY2022, indicates a potential erosion of profitability efficiency. While revenue has grown, the more significant percentage decrease in operating income suggests increasing operational costs relative to sales, or other pressures impacting core profitability. This trend warrants close attention from management and investors.\n\n### Conclusion\n\n3M Company's financial performance in FY2022 shows a mixed picture of revenue growth alongside a notable contraction in operating profitability. The increase in Total Revenue to $46,995 million was overshadowed by a decrease in Operating Income to $6,081 million, resulting in an Operating Margin of 12.94%. This trend of declining operating margin, which has persisted over the last three fiscal years, indicates potential challenges in cost management or pricing power that could impact future financial health."
+  },
+  "gates": {
+    "end_gate": {
+      "verified": [
+        {
+          "value": "$6,081 million",
+          "ref": 6081.0
+        },
+        {
+          "value": "$6,574 million",
+          "ref": 6574.0
+        },
+        {
+          "value": "$32,180 million",
+          "ref": 32180.0
+        },
+        {
+          "value": "$6,081 million",
+          "ref": 6081.0
+        },
+        {
+          "value": "$6,574 million",
+          "ref": 6574.0
+        },
+        {
+          "value": "$6,646 million",
+          "ref": 6646.0
+        },
+        {
+          "value": "$6,081 million",
+          "ref": 6081.0
+        },
+        {
+          "value": "$6,574 million",
+          "ref": 6574.0
+        },
+        {
+          "value": "$6,646 million",
+          "ref": 6646.0
+        },
+        {
+          "value": "$32,180 million",
+          "ref": 32180.0
+        },
+        {
+          "value": "$6,081 million",
+          "ref": 6081.0
+        },
+        {
+          "value": "20.65%",
+          "ref": 20.5
+        },
+        {
+          "value": "1.68 percent",
+          "ref": 1.7
+        },
+        {
+          "value": "20.65%",
+          "ref": 20.5
+        },
+        {
+          "value": "20.65%",
+          "ref": 20.5
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$46,995 million",
+          "num": 46995.0,
+          "correct": 36693.0,
+          "dev": 0.2192,
+          "source": "source_document"
+        },
+        {
+          "value": "$44,964 million",
+          "num": 44964.0,
+          "correct": 36693.0,
+          "dev": 0.1839,
+          "source": "source_document"
+        },
+        {
+          "value": "$46,995 million",
+          "num": 46995.0,
+          "correct": 36693.0,
+          "dev": 0.2192,
+          "source": "source_document"
+        },
+        {
+          "value": "$44,964 million",
+          "num": 44964.0,
+          "correct": 36693.0,
+          "dev": 0.1839,
+          "source": "source_document"
+        },
+        {
+          "value": "$46,995 million",
+          "num": 46995.0,
+          "correct": 36693.0,
+          "dev": 0.2192,
+          "source": "source_document"
+        },
+        {
+          "value": "$44,964 million",
+          "num": 44964.0,
+          "correct": 36693.0,
+          "dev": 0.1839,
+          "source": "source_document"
+        },
+        {
+          "value": "$46,995 million",
+          "num": 46995.0,
+          "correct": 36693.0,
+          "dev": 0.2192,
+          "source": "source_document"
+        },
+        {
+          "value": "12.94%",
+          "num": 12.94,
+          "correct": 16.5,
+          "dev": 0.2158,
+          "source": "source_document"
+        },
+        {
+          "value": "14.62%",
+          "num": 14.62,
+          "correct": 16.5,
+          "dev": 0.1139,
+          "source": "source_document"
+        },
+        {
+          "value": "4.52%",
+          "num": 4.52,
+          "correct": 2.7,
+          "dev": 0.4027,
+          "source": "evidence"
+        },
+        {
+          "value": "7.50%",
+          "num": 7.5,
+          "correct": 8.0,
+          "dev": 0.0625,
+          "source": "evidence"
+        },
+        {
+          "value": "4.52%",
+          "num": 4.52,
+          "correct": 2.7,
+          "dev": 0.4027,
+          "source": "evidence"
+        },
+        {
+          "value": "39.73%",
+          "num": 39.73,
+          "correct": 20.5,
+          "dev": 0.484,
+          "source": "source_document"
+        },
+        {
+          "value": "-7.50%",
+          "num": 7.5,
+          "correct": 8.0,
+          "dev": 0.0625,
+          "source": "evidence"
+        },
+        {
+          "value": "-1.08%",
+          "num": 1.08,
+          "correct": 1.0,
+          "dev": 0.0741,
+          "source": "evidence"
+        },
+        {
+          "value": "12.94%",
+          "num": 12.94,
+          "correct": 16.5,
+          "dev": 0.2158,
+          "source": "source_document"
+        },
+        {
+          "value": "14.62%",
+          "num": 14.62,
+          "correct": 16.5,
+          "dev": 0.1139,
+          "source": "source_document"
+        },
+        {
+          "value": "12.94%",
+          "num": 12.94,
+          "correct": 16.5,
+          "dev": 0.2158,
+          "source": "source_document"
+        },
+        {
+          "value": "12.94%",
+          "num": 12.94,
+          "correct": 16.5,
+          "dev": 0.2158,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$2,031 million"
+        },
+        {
+          "value": "$493 million"
+        },
+        {
+          "value": "$72 million"
+        },
+        {
+          "value": "7.71 percent"
+        }
+      ],
+      "n_refs": 15
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_004_FF1B8BC2",
+      "hid": "FB_004_FF1B8BC2_H3",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 7927.0,
+      "orig_num": 6081.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_004_FF1B8BC2",
+      "hid": "FB_004_FF1B8BC2_H2",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 46995.0,
+      "orig_num": 36693.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": true,
+      "any_det": true,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_004_FF1B8BC2",
+      "hid": "FB_004_FF1B8BC2_H1",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 44964.0,
+      "orig_num": 36086.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": true,
+      "any_det": true,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:04:06.907753+00:00"
+}

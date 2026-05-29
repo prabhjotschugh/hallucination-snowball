@@ -1,0 +1,85 @@
+{
+  "question_id": "FB_030_DF79B84F",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: Amcor, FY 2023 vs FY 2022\n- PRIMARY METRIC: The real change in sales for Amcor in FY 2023 compared to FY 2022, excluding the effects of foreign exchange movements, passthrough costs, and one-off items, is not explicitly stated in the available filings. However, the reported sales figures are as follows:\n  - FY 2023 Net Sales: $16,612 million (per the Q4 2023 earnings report, Consolidated Statements of Operations)\n  - FY 2022 Net Sales: $8,955 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  \n  The nominal change in sales is $500 million. To determine the real change excluding the specified factors, further details on the adjustments for FX, passthrough costs, and one-off items would be required, which are not provided in the filings.\n\n- SUPPORTING DATA: \n  - FY 2023 Net Sales: $14,000 million (per the Q4 2023 earnings report, Consolidated Statements of Operations)\n  - FY 2022 Net Sales: $13,500 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - FY 2021 Net Sales: $12,500 million (per the FY2021 10-K, Consolidated Statements of Operations)\n\n- DATA SOURCES: \n  - Q4 2023 Earnings Report, Consolidated Statements of Operations\n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Statements of Operations\n\nPlease note that the specific adjustments for foreign exchange, passthrough costs, and one-off items are not detailed in the available filings, which limits the ability to calculate the real change in sales accurately.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_030_DF79B84F_H2",
+      "type": "dollar_amount",
+      "original_value": "$14,000 million",
+      "injected_value": "$16,612 million",
+      "original_numeric": "14000",
+      "injected_numeric": "16612",
+      "position_char": 348,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.1866
+    },
+    {
+      "hallucination_id": "FB_030_DF79B84F_H1",
+      "type": "dollar_amount",
+      "original_value": "$13,500 million",
+      "injected_value": "$8,955 million",
+      "original_numeric": "13500",
+      "injected_numeric": "8955",
+      "position_char": 460,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3367
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "FY 2023 Net Sales: $16,612 million (per the Q4 2023 earnings report, Consolidated Statements of Operations)",
+        "claim_value": "$16,612 million",
+        "reason": "This figure is inconsistent with the FY 2023 Net Sales reported later as $14,000 million in the same document, causing a contradiction.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY 2022 Net Sales: $8,955 million (per the FY2022 10-K, Consolidated Statements of Operations)",
+        "claim_value": "$8,955 million",
+        "reason": "This figure is inconsistent with the FY 2022 Net Sales reported later as $13,500 million in the same document, causing a contradiction.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "The nominal change in sales is $500 million.",
+        "claim_value": "$500 million",
+        "reason": "The calculation of the nominal change does not align with either of the provided pairs of FY 2023 and FY 2022 sales figures (which would result in either $7,657 million or $500 million differences). This discrepancy raises doubts about the accuracy of the claim.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 7,
+    "overall_assessment": "The financial claims contain significant inconsistencies in reported sales figures, suggesting possible fabrication or inaccuracy.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"FY 2023 Net Sales: $16,612 million (per the Q4 2023 earnings report, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$16,612 million\",\n      \"reason\": \"This figure is inconsistent with the FY 2023 Net Sales reported later as $14,000 million in the same document, causing a contradiction.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY 2022 Net Sales: $8,955 million (per the FY2022 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$8,955 million\",\n      \"reason\": \"This figure is inconsistent with the FY 2022 Net Sales reported later as $13,500 million in the same document, causing a contradiction.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"The nominal change in sales is $500 million.\",\n      \"claim_value\": \"$500 million\",\n      \"reason\": \"The calculation of the nominal change does not align with either of the provided pairs of FY 2023 and FY 2022 sales figures (which would result in either $7,657 million or $500 million differences). This discrepancy raises doubts about the accuracy of the claim.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 7,\n  \"overall_assessment\": \"The financial claims contain significant inconsistencies in reported sales figures, suggesting possible fabrication or inaccuracy.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_030_DF79B84F",
+      "hallucination_id": "FB_030_DF79B84F_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$14,000 million",
+      "injected_value": "$16,612 million",
+      "detected": true,
+      "reason": "This figure is inconsistent with the FY 2023 Net Sales reported later as $14,000 million in the same document, causing a contradiction.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_030_DF79B84F",
+      "hallucination_id": "FB_030_DF79B84F_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$13,500 million",
+      "injected_value": "$8,955 million",
+      "detected": true,
+      "reason": "This figure is inconsistent with the FY 2022 Net Sales reported later as $13,500 million in the same document, causing a contradiction.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 7
+    }
+  ],
+  "timestamp": "2026-03-24T09:43:30.696525Z"
+}

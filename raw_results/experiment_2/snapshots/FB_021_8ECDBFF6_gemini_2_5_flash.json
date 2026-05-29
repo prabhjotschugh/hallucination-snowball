@@ -1,0 +1,79 @@
+{
+  "question_id": "FB_021_8ECDBFF6",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Amazon.com, Inc. FY2019\n- PRIMARY METRIC: Net income attributable to shareholders: $14,743 million (per the FY2019 10-K, Consolidated Statements of Operations).\n- SUPPORTING DATA: \n  - FY2018 Net income attributable to shareholders: $10,073 million (per the FY2018 10-K, Consolidated Statements of Operations).\n  - FY2017 Net income attributable to shareholders: $2,112 million (per the FY2017 10-K, Consolidated Statements of Operations).\n- DATA SOURCES: \n  - FY2019 10-K, Consolidated Statements of Operations.\n  - FY2018 10-K, Consolidated Statements of Operations.\n  - FY2017 10-K, Consolidated Statements of Operations. \n\nNote: No financial ratios or narrative analysis have been included, as per the instruction to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_021_8ECDBFF6_H2",
+      "type": "dollar_amount",
+      "original_value": "$11,588 million",
+      "injected_value": "$14,743 million",
+      "original_numeric": "11588",
+      "injected_numeric": "14743",
+      "position_char": 103,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.2722
+    },
+    {
+      "hallucination_id": "FB_021_8ECDBFF6_H1",
+      "type": "dollar_amount",
+      "original_value": "$3,033 million",
+      "injected_value": "$2,112 million",
+      "original_numeric": "3033",
+      "injected_numeric": "2112",
+      "position_char": 383,
+      "sentence_approx": 5,
+      "perturbation_delta": -0.3036
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Net income attributable to shareholders: $14,743 million (per the FY2019 10-K, Consolidated Statements of Operations).",
+        "claim_value": "$14,743 million",
+        "reason": "The reported net income of $14,743 million for FY2019 appears somewhat high for Amazon's profitability during that specific period, based on general financial knowledge of the company's historical performance.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "FY2017 Net income attributable to shareholders: $2,112 million (per the FY2017 10-K, Consolidated Statements of Operations).",
+        "claim_value": "$2,112 million",
+        "reason": "The reported net income of $2,112 million for FY2017 seems unusually low for Amazon. When compared to the FY2018 net income of $10,073 million, it implies an approximate 377% year-over-year growth. Such an extreme increase in net income for a company of Amazon's scale is highly improbable without a major, specific, and usually explained event, strongly suggesting a potential hallucination or inaccuracy.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 7,
+    "overall_assessment": "Two specific net income figures (FY2019 and FY2017) are flagged as suspicious due to implausibility relative to general financial knowledge and an extremely high implied year-over-year growth rate for FY2017.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Net income attributable to shareholders: $14,743 million (per the FY2019 10-K, Consolidated Statements of Operations).\",\n      \"claim_value\": \"$14,743 million\",\n      \"reason\": \"The reported net income of $14,743 million for FY2019 appears somewhat high for Amazon's profitability during that specific period, based on general financial knowledge of the company's historical performance.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"FY2017 Net income attributable to shareholders: $2,112 million (per the FY2017 10-K, Consolidated Statements of Operations).\",\n      \"claim_value\": \"$2,112 million\",\n      \"reason\": \"The reported net income of $2,112 million for FY2017 seems unusually low for Amazon. When compared to the FY2018 net income of $10,073 million, it implies an approximate 377% year-over-year growth. Such an extreme increase in net income for a company of Amazon's scale is highly improbable without a major, specific, and usually explained event, strongly suggesting a potential hallucination or inaccuracy.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 7,\n  \"overall_assessment\": \"Two specific net income figures (FY2019 and FY2017) are flagged as suspicious due to implausibility relative to general financial knowledge and an extremely high implied year-over-year growth rate for FY2017.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_021_8ECDBFF6",
+      "hallucination_id": "FB_021_8ECDBFF6_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$11,588 million",
+      "injected_value": "$14,743 million",
+      "detected": true,
+      "reason": "The reported net income of $14,743 million for FY2019 appears somewhat high for Amazon's profitability during that specific period, based on general financial knowledge of the company's historical performance.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_021_8ECDBFF6",
+      "hallucination_id": "FB_021_8ECDBFF6_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,033 million",
+      "injected_value": "$2,112 million",
+      "detected": true,
+      "reason": "The reported net income of $2,112 million for FY2017 seems unusually low for Amazon. When compared to the FY2018 net income of $10,073 million, it implies an approximate 377% year-over-year growth. Such an extreme increase in net income for a company of Amazon's scale is highly improbable without a major, specific, and usually explained event, strongly suggesting a potential hallucination or inaccuracy.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 7
+    }
+  ],
+  "timestamp": "2026-03-25T07:39:01.044092Z"
+}

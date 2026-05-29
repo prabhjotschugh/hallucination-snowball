@@ -1,0 +1,91 @@
+{
+  "question_id": "FB_022_466C1ED8",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Amcor, FY2020\n- PRIMARY METRIC: Net Accounts Receivable (AR) for FY2020 is $947 million (per the FY2020 10-K, Consolidated Balance Sheets).\n- SUPPORTING DATA: \n  - FY2019 Net Accounts Receivable: $1,153 million (per the FY2019 10-K, Consolidated Balance Sheets).\n  - FY2018 Net Accounts Receivable: $1,235 million (per the FY2018 10-K, Consolidated Balance Sheets).\n- DATA SOURCES: \n  - FY2020 10-K, Consolidated Balance Sheets, Page 56.\n  - FY2019 10-K, Consolidated Balance Sheets, Page 54.\n  - FY2018 10-K, Consolidated Balance Sheets, Page 53.\n\nNote: No ratios or interpretations have been included as per the directive to present raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_022_466C1ED8_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,205 million",
+      "injected_value": "$947 million",
+      "original_numeric": "1205",
+      "injected_numeric": "947",
+      "position_char": 95,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2139
+    },
+    {
+      "hallucination_id": "FB_022_466C1ED8_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,063 million",
+      "injected_value": "$1,235 million",
+      "original_numeric": "1063",
+      "injected_numeric": "1235",
+      "position_char": 321,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.1617
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "per the FY2020 10-K, Consolidated Balance Sheets",
+        "claim_value": "FY2020 10-K",
+        "reason": "Amcor is a Foreign Private Issuer (FPI) incorporated in Switzerland and listed on the NYSE. FPIs file Form 20-F with the SEC, not Form 10-K. This indicates a fundamental hallucination regarding the regulatory filing type.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "per the FY2018 10-K, Consolidated Balance Sheets",
+        "claim_value": "FY2018 10-K",
+        "reason": "In FY2018, prior to the Bemis merger completion (June 2019), Amcor was primarily listed on the ASX (Australia) and reported in AUD. It was not a US filer submitting a 10-K in 2018. This claim is historically impossible.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2020 Net Accounts Receivable (AR) for FY2020 is $947 million",
+        "claim_value": "$947 million",
+        "reason": "Amcor completed the acquisition of Bemis in June 2019. FY2020 represents the first full year of the combined entity, which significantly increased revenue scale. A decrease in AR from $1,235 million (FY2018) to $947 million (FY2020) contradicts the expected consolidation impact of a major acquisition unless accompanied by massive divestitures or policy changes not mentioned.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "FY2020 10-K, Consolidated Balance Sheets, Page 56",
+        "claim_value": "Page 56",
+        "reason": "Specific page numbers cited for SEC filings are a common hallucination pattern in LLMs. Given the filing type (10-K) is already incorrect, the specific page number is almost certainly fabricated.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 9,
+    "overall_assessment": "The output contains critical structural hallucinations regarding SEC filing types (10-K vs 20-F) and historical listing status, rendering the financial data sources unreliable.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"per the FY2020 10-K, Consolidated Balance Sheets\",\n      \"claim_value\": \"FY2020 10-K\",\n      \"reason\": \"Amcor is a Foreign Private Issuer (FPI) incorporated in Switzerland and listed on the NYSE. FPIs file Form 20-F with the SEC, not Form 10-K. This indicates a fundamental hallucination regarding the regulatory filing type.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"per the FY2018 10-K, Consolidated Balance Sheets\",\n      \"claim_value\": \"FY2018 10-K\",\n      \"reason\": \"In FY2018, prior to the Bemis merger completion (June 2019), Amcor was primarily listed on the ASX (Australia) and reported in AUD. It was not a US filer submitting a 10-K in 2018. This claim is historically impossible.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2020 Net Accounts Receivable (AR) for FY2020 is $947 million\",\n      \"claim_value\": \"$947 million\",\n      \"reason\": \"Amcor completed the acquisition of Bemis in June 2019. FY2020 represents the first full year of the combined entity, which significantly increased revenue scale. A decrease in AR from $1,235 million (FY2018) to $947 million (FY2020) contradicts the expected consolidation impact of a major acquisition unless accompanied by massive divestitures or policy changes not mentioned.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"FY2020 10-K, Consolidated Balance Sheets, Page 56\",\n      \"claim_value\": \"Page 56\",\n      \"reason\": \"Specific page numbers cited for SEC filings are a common hallucination pattern in LLMs. Given the filing type (10-K) is already incorrect, the specific page number is almost certainly fabricated.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 9,\n  \"overall_assessment\": \"The output contains critical structural hallucinations regarding SEC filing types (10-K vs 20-F) and historical listing status, rendering the financial data sources unreliable.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_022_466C1ED8",
+      "hallucination_id": "FB_022_466C1ED8_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,205 million",
+      "injected_value": "$947 million",
+      "detected": true,
+      "reason": "Amcor completed the acquisition of Bemis in June 2019. FY2020 represents the first full year of the combined entity, which significantly increased revenue scale. A decrease in AR from $1,235 million (FY2018) to $947 million (FY2020) contradicts the expected consolidation impact of a major acquisition unless accompanied by massive divestitures or policy changes not mentioned.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_022_466C1ED8",
+      "hallucination_id": "FB_022_466C1ED8_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,063 million",
+      "injected_value": "$1,235 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 9
+    }
+  ],
+  "timestamp": "2026-03-24T10:33:07.194256Z"
+}

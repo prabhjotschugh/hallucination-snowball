@@ -1,0 +1,115 @@
+{
+  "question_id": "FB_048_79F71CE3",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: American Water Works Company, Inc. - FY2022\n- PRIMARY METRIC: \n  - Current Assets: $2,203 million (per the FY2022 10-K, Consolidated Balance Sheets)\n  - Current Liabilities: $1,823 million (per the FY2022 10-K, Consolidated Balance Sheets)\n  - Working Capital: $522 million (calculated as Current Assets - Current Liabilities)\n\n- SUPPORTING DATA: \n  - FY2021 Current Assets: $2,063 million (per the FY2021 10-K, Consolidated Balance Sheets)\n  - FY2021 Current Liabilities: $1,448 million (per the FY2021 10-K, Consolidated Balance Sheets)\n  - FY2021 Working Capital: $615 million (calculated as Current Assets - Current Liabilities)\n  \n  - FY2020 Current Assets: $1,974 million (per the FY2020 10-K, Consolidated Balance Sheets)\n  - FY2020 Current Liabilities: $1,368 million (per the FY2020 10-K, Consolidated Balance Sheets)\n  - FY2020 Working Capital: $721 million (calculated as Current Assets - Current Liabilities)\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Balance Sheets\n  - FY2021 10-K, Consolidated Balance Sheets\n  - FY2020 10-K, Consolidated Balance Sheets\n\n**Note on Relevance of Working Capital:**\nWorking capital, defined as the difference between current assets and current liabilities, is typically a measure of a company's short-term liquidity and operational efficiency. However, for American Water Works, a regulated utility company, working capital may not be as relevant a metric due to the nature of its business model. \n\nUtilities often have stable and predictable cash flows due to regulatory frameworks and long-term contracts, which can lead to a consistent ability to meet short-term obligations without the same level of reliance on working capital as seen in other industries. Moreover, the capital-intensive nature of the utility sector means that significant investments are often funded through long-term debt or equity rather than relying on current assets. \n\nTherefore, while American Water Works does have positive working capital for FY2022, the significance of this figure may be limited in evaluating the company's financial health relative to its operational model and industry standards.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_048_79F71CE3_H3",
+      "type": "dollar_amount",
+      "original_value": "$1,519 million",
+      "injected_value": "$1,823 million",
+      "original_numeric": "1519",
+      "injected_numeric": "1823",
+      "position_char": 194,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.2
+    },
+    {
+      "hallucination_id": "FB_048_79F71CE3_H2",
+      "type": "dollar_amount",
+      "original_value": "$684 million",
+      "injected_value": "$522 million",
+      "original_numeric": "684",
+      "injected_numeric": "522",
+      "position_char": 281,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.2365
+    },
+    {
+      "hallucination_id": "FB_048_79F71CE3_H1",
+      "type": "dollar_amount",
+      "original_value": "$606 million",
+      "injected_value": "$721 million",
+      "original_numeric": "606",
+      "injected_numeric": "721",
+      "position_char": 875,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.1904
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "FY2021 Current Assets: $2,063 million (per the FY2021 10-K, Consolidated Balance Sheets)",
+        "claim_value": "$2,063 million",
+        "reason": "The figure is suspiciously precise compared to the rounded figures for FY2022 and FY2020.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "FY2021 Current Liabilities: $1,448 million (per the FY2021 10-K, Consolidated Balance Sheets)",
+        "claim_value": "$1,448 million",
+        "reason": "The figure is suspiciously precise compared to the rounded figures for FY2022 and FY2020.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "FY2020 Current Assets: $1,974 million (per the FY2020 10-K, Consolidated Balance Sheets)",
+        "claim_value": "$1,974 million",
+        "reason": "The figure is suspiciously precise compared to the rounded figures for FY2022 and FY2021.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "FY2020 Current Liabilities: $1,368 million (per the FY2020 10-K, Consolidated Balance Sheets)",
+        "claim_value": "$1,368 million",
+        "reason": "The figure is suspiciously precise compared to the rounded figures for FY2022 and FY2021.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 8,
+    "overall_assessment": "Several figures are suspiciously precise compared to others, suggesting potential fabrication or inaccuracy.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"FY2021 Current Assets: $2,063 million (per the FY2021 10-K, Consolidated Balance Sheets)\",\n      \"claim_value\": \"$2,063 million\",\n      \"reason\": \"The figure is suspiciously precise compared to the rounded figures for FY2022 and FY2020.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"FY2021 Current Liabilities: $1,448 million (per the FY2021 10-K, Consolidated Balance Sheets)\",\n      \"claim_value\": \"$1,448 million\",\n      \"reason\": \"The figure is suspiciously precise compared to the rounded figures for FY2022 and FY2020.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"FY2020 Current Assets: $1,974 million (per the FY2020 10-K, Consolidated Balance Sheets)\",\n      \"claim_value\": \"$1,974 million\",\n      \"reason\": \"The figure is suspiciously precise compared to the rounded figures for FY2022 and FY2021.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"FY2020 Current Liabilities: $1,368 million (per the FY2020 10-K, Consolidated Balance Sheets)\",\n      \"claim_value\": \"$1,368 million\",\n      \"reason\": \"The figure is suspiciously precise compared to the rounded figures for FY2022 and FY2021.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 8,\n  \"overall_assessment\": \"Several figures are suspiciously precise compared to others, suggesting potential fabrication or inaccuracy.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_048_79F71CE3",
+      "hallucination_id": "FB_048_79F71CE3_H3",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,519 million",
+      "injected_value": "$1,823 million",
+      "detected": true,
+      "reason": "The figure is suspiciously precise compared to the rounded figures for FY2022 and FY2020.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 8
+    },
+    {
+      "question_id": "FB_048_79F71CE3",
+      "hallucination_id": "FB_048_79F71CE3_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$684 million",
+      "injected_value": "$522 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 8
+    },
+    {
+      "question_id": "FB_048_79F71CE3",
+      "hallucination_id": "FB_048_79F71CE3_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$606 million",
+      "injected_value": "$721 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 8
+    }
+  ],
+  "timestamp": "2026-03-24T09:46:41.929199Z"
+}

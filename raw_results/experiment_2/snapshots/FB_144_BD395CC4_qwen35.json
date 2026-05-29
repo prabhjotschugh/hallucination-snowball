@@ -1,0 +1,85 @@
+{
+  "question_id": "FB_144_BD395CC4",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Verizon Communications Inc., FY 2021\n- PRIMARY METRIC: As of FY 2021, Verizon projected retiree benefit obligations for the year 2024 to be $2,611 million (USD millions) per the FY2021 10-K, Note 12 - Employee Benefits.\n- SUPPORTING DATA: \n  - For FY 2020, the projected retiree benefit obligations were $4,598 million (USD millions).\n  - For FY 2019, the projected retiree benefit obligations were $3,400 million (USD millions).\n- DATA SOURCES: \n  - FY2021 10-K, Note 12 - Employee Benefits\n  - FY2020 10-K, Note 12 - Employee Benefits\n  - FY2019 10-K, Note 12 - Employee Benefits\n\nPlease note that the analysis of trends and computation of financial ratios is beyond the scope of this data extraction report and should be conducted by downstream analysts.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_144_BD395CC4_H2",
+      "type": "dollar_amount",
+      "original_value": "$3,800 million",
+      "injected_value": "$2,611 million",
+      "original_numeric": "3800",
+      "injected_numeric": "2611",
+      "position_char": 160,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3129
+    },
+    {
+      "hallucination_id": "FB_144_BD395CC4_H1",
+      "type": "dollar_amount",
+      "original_value": "$3,600 million",
+      "injected_value": "$4,598 million",
+      "original_numeric": "3600",
+      "injected_numeric": "4598",
+      "position_char": 324,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.2772
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "As of FY 2021, Verizon projected retiree benefit obligations for the year 2024 to be $2,611 million (USD millions) per the FY2021 10-K, Note 12 - Employee Benefits.",
+        "claim_value": "$2,611 million",
+        "reason": "Accounting terminology error: 10-K filings disclose 'Expected Benefit Payments' for future years, not 'Obligations'. Obligations (PBO/APBO) are measured as of the balance sheet date. Additionally, Verizon's total benefit liabilities are typically in the tens of billions, making this figure suspiciously low unless it refers to annual payments, in which case the label 'obligations' is incorrect.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "For FY 2020, the projected retiree benefit obligations were $4,598 million (USD millions).",
+        "claim_value": "$4,598 million",
+        "reason": "Magnitude inconsistency: Verizon's total retiree benefit obligations (PBO + OPEB) are historically in the range of $20-$30 billion, not low billions. If this refers to annual payments, the terminology 'obligations' is incorrect. The precision suggests fabrication.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "For FY 2019, the projected retiree benefit obligations were $3,400 million (USD millions).",
+        "claim_value": "$3,400 million",
+        "reason": "Suspicious rounding: This figure is suspiciously round compared to the precise $2,611 million and $4,598 million figures, a common pattern in LLM hallucinations. Also suffers from the same magnitude and terminology issues as the other claims.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 3,
+    "overall_assessment": "The output contains critical accounting terminology errors confusing 'obligations' with 'expected payments', reports magnitudes inconsistent with Verizon's known liability scale, and exhibits suspicious number precision patterns indicative of hallucination.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"As of FY 2021, Verizon projected retiree benefit obligations for the year 2024 to be $2,611 million (USD millions) per the FY2021 10-K, Note 12 - Employee Benefits.\",\n      \"claim_value\": \"$2,611 million\",\n      \"reason\": \"Accounting terminology error: 10-K filings disclose 'Expected Benefit Payments' for future years, not 'Obligations'. Obligations (PBO/APBO) are measured as of the balance sheet date. Additionally, Verizon's total benefit liabilities are typically in the tens of billions, making this figure suspiciously low unless it refers to annual payments, in which case the label 'obligations' is incorrect.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"For FY 2020, the projected retiree benefit obligations were $4,598 million (USD millions).\",\n      \"claim_value\": \"$4,598 million\",\n      \"reason\": \"Magnitude inconsistency: Verizon's total retiree benefit obligations (PBO + OPEB) are historically in the range of $20-$30 billion, not low billions. If this refers to annual payments, the terminology 'obligations' is incorrect. The precision suggests fabrication.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"For FY 2019, the projected retiree benefit obligations were $3,400 million (USD millions).\",\n      \"claim_value\": \"$3,400 million\",\n      \"reason\": \"Suspicious rounding: This figure is suspiciously round compared to the precise $2,611 million and $4,598 million figures, a common pattern in LLM hallucinations. Also suffers from the same magnitude and terminology issues as the other claims.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 3,\n  \"overall_assessment\": \"The output contains critical accounting terminology errors confusing 'obligations' with 'expected payments', reports magnitudes inconsistent with Verizon's known liability scale, and exhibits suspicious number precision patterns indicative of hallucination.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_144_BD395CC4",
+      "hallucination_id": "FB_144_BD395CC4_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,800 million",
+      "injected_value": "$2,611 million",
+      "detected": true,
+      "reason": "Accounting terminology error: 10-K filings disclose 'Expected Benefit Payments' for future years, not 'Obligations'. Obligations (PBO/APBO) are measured as of the balance sheet date. Additionally, Verizon's total benefit liabilities are typically in the tens of billions, making this figure suspiciously low unless it refers to annual payments, in which case the label 'obligations' is incorrect.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 3
+    },
+    {
+      "question_id": "FB_144_BD395CC4",
+      "hallucination_id": "FB_144_BD395CC4_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,600 million",
+      "injected_value": "$4,598 million",
+      "detected": true,
+      "reason": "Magnitude inconsistency: Verizon's total retiree benefit obligations (PBO + OPEB) are historically in the range of $20-$30 billion, not low billions. If this refers to annual payments, the terminology 'obligations' is incorrect. The precision suggests fabrication.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 3
+    }
+  ],
+  "timestamp": "2026-03-24T13:23:13.264288Z"
+}

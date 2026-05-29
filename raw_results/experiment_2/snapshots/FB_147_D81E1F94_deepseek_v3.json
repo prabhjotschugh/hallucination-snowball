@@ -1,0 +1,109 @@
+{
+  "question_id": "FB_147_D81E1F94",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: Verizon Communications Inc., Fiscal Years 2021 and 2022\n- PRIMARY METRIC: \n  - Total Debt as of December 31, 2022: $214,715 million (per the FY2022 10-K, Consolidated Balance Sheets).\n  - Total Debt as of December 31, 2021: $212,971 million (per the FY2021 10-K, Consolidated Balance Sheets).\n- SUPPORTING DATA: \n  - Total Assets as of December 31, 2022: $232,000 million (per the FY2022 10-K, Consolidated Balance Sheets).\n  - Total Assets as of December 31, 2021: $234,000 million (per the FY2021 10-K, Consolidated Balance Sheets).\n  - Total Equity as of December 31, 2022: $70,000 million (per the FY2022 10-K, Consolidated Balance Sheets).\n  - Total Equity as of December 31, 2021: $50,809 million (per the FY2021 10-K, Consolidated Balance Sheets).\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Balance Sheets, Page 38.\n  - FY2021 10-K, Consolidated Balance Sheets, Page 37.\n\n**Note:** The figures presented are exact as reported in the respective filings.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_147_D81E1F94_H3",
+      "type": "dollar_amount",
+      "original_value": "$164,000 million",
+      "injected_value": "$214,715 million",
+      "original_numeric": "164000",
+      "injected_numeric": "214715",
+      "position_char": 135,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.3092
+    },
+    {
+      "hallucination_id": "FB_147_D81E1F94_H2",
+      "type": "dollar_amount",
+      "original_value": "$159,000 million",
+      "injected_value": "$212,971 million",
+      "original_numeric": "159000",
+      "injected_numeric": "212971",
+      "position_char": 244,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.3394
+    },
+    {
+      "hallucination_id": "FB_147_D81E1F94_H1",
+      "type": "dollar_amount",
+      "original_value": "$75,000 million",
+      "injected_value": "$50,809 million",
+      "original_numeric": "75000",
+      "injected_numeric": "50809",
+      "position_char": 707,
+      "sentence_approx": 7,
+      "perturbation_delta": -0.3225
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Total Assets as of December 31, 2022: $232,000 million (per the FY2022 10-K, Consolidated Balance Sheets).",
+        "claim_value": "$232,000 million",
+        "reason": "Assets figure is suspiciously round (ending in exact 000). Typically, balance sheet figures are more precise.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Total Assets as of December 31, 2021: $234,000 million (per the FY2021 10-K, Consolidated Balance Sheets).",
+        "claim_value": "$234,000 million",
+        "reason": "Assets figure is suspiciously round (ending in exact 000). Typically, balance sheet figures are more precise.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Total Equity as of December 31, 2022: $70,000 million (per the FY2022 10-K, Consolidated Balance Sheets).",
+        "claim_value": "$70,000 million",
+        "reason": "Equity figure is suspiciously round (ending in exact 000), especially when compared to precise equity figure ($50,809 million) for 2021.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "Several balance sheet figures are suspiciously round, suggesting potential fabrication or inaccuracy.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Total Assets as of December 31, 2022: $232,000 million (per the FY2022 10-K, Consolidated Balance Sheets).\",\n      \"claim_value\": \"$232,000 million\",\n      \"reason\": \"Assets figure is suspiciously round (ending in exact 000). Typically, balance sheet figures are more precise.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Total Assets as of December 31, 2021: $234,000 million (per the FY2021 10-K, Consolidated Balance Sheets).\",\n      \"claim_value\": \"$234,000 million\",\n      \"reason\": \"Assets figure is suspiciously round (ending in exact 000). Typically, balance sheet figures are more precise.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Total Equity as of December 31, 2022: $70,000 million (per the FY2022 10-K, Consolidated Balance Sheets).\",\n      \"claim_value\": \"$70,000 million\",\n      \"reason\": \"Equity figure is suspiciously round (ending in exact 000), especially when compared to precise equity figure ($50,809 million) for 2021.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\": \"Several balance sheet figures are suspiciously round, suggesting potential fabrication or inaccuracy.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_147_D81E1F94",
+      "hallucination_id": "FB_147_D81E1F94_H3",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$164,000 million",
+      "injected_value": "$214,715 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_147_D81E1F94",
+      "hallucination_id": "FB_147_D81E1F94_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$159,000 million",
+      "injected_value": "$212,971 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_147_D81E1F94",
+      "hallucination_id": "FB_147_D81E1F94_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$75,000 million",
+      "injected_value": "$50,809 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-24T10:03:01.958467Z"
+}

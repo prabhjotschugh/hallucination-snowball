@@ -1,0 +1,115 @@
+{
+  "question_id": "FB_135_DFC4B0A4",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Pfizer Inc., Q2 2023\n- PRIMARY METRIC: The geographic region that experienced the most significant year-over-year decline in revenues was the International region, which reported revenues of $2,548 million for Q2 2023, down from $4,213 million in Q2 2022, representing a decline of 24.7%. (per the Q2 2023 10-Q, Consolidated Statements of Operations).\n- SUPPORTING DATA: \n  - U.S. Revenues for Q2 2023: $16,404 million, compared to $12,948 million in Q2 2022, reflecting a decline of 0.0%.\n  - International Revenues for Q2 2022: $4,213 million.\n  - U.S. Revenues for Q2 2022: $12,948 million.\n- DATA SOURCES: Pfizer Inc. Q2 2023 10-Q, Consolidated Statements of Operations.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_135_DFC4B0A4_H3",
+      "type": "dollar_amount",
+      "original_value": "$3,174 million",
+      "injected_value": "$2,548 million",
+      "original_numeric": "3174",
+      "injected_numeric": "2548",
+      "position_char": 211,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.1972
+    },
+    {
+      "hallucination_id": "FB_135_DFC4B0A4_H2",
+      "type": "dollar_amount",
+      "original_value": "$12,427 million",
+      "injected_value": "$16,404 million",
+      "original_numeric": "12427",
+      "injected_numeric": "16404",
+      "position_char": 423,
+      "sentence_approx": 7,
+      "perturbation_delta": 0.3201
+    },
+    {
+      "hallucination_id": "FB_135_DFC4B0A4_H1",
+      "type": "percentage",
+      "original_value": "4.0%",
+      "injected_value": "0.0%",
+      "original_numeric": "4.0",
+      "injected_numeric": "0.0",
+      "position_char": 504,
+      "sentence_approx": 7,
+      "perturbation_delta": -6.8871
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "reflecting a decline of 0.0%",
+        "claim_value": "0.0%",
+        "reason": "Internal mathematical inconsistency: The provided dollar figures show an increase from $12,948 million to $16,404 million, which is approximately a 26.7% increase, not a 0.0% decline.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "representing a decline of 24.7%",
+        "claim_value": "24.7%",
+        "reason": "Internal mathematical inconsistency: The provided dollar figures show a decrease from $4,213 million to $2,548 million, which is approximately a 39.5% decline, not 24.7%.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "U.S. Revenues for Q2 2023: $16,404 million",
+        "claim_value": "$16,404 million",
+        "reason": "Plausibility conflict: Pfizer's total consolidated global revenue for Q2 2023 was approximately $12.7 billion. A single geographic region (U.S.) cannot exceed the total company revenue.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "International region... revenues of $2,548 million for Q2 2023, down from $4,213 million in Q2 2022",
+        "claim_value": "$2,548 million / $4,213 million",
+        "reason": "Plausibility conflict: Combined with the U.S. revenue claim, the implied total revenue (~$18.9 billion) contradicts the known significant revenue contraction Pfizer experienced in 2023 (from ~$27.7B in Q2 2022 to ~$12.7B in Q2 2023).",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "The output contains critical internal mathematical errors and contradicts widely known financial data regarding Pfizer's total revenue contraction in 2023.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"reflecting a decline of 0.0%\",\n      \"claim_value\": \"0.0%\",\n      \"reason\": \"Internal mathematical inconsistency: The provided dollar figures show an increase from $12,948 million to $16,404 million, which is approximately a 26.7% increase, not a 0.0% decline.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"representing a decline of 24.7%\",\n      \"claim_value\": \"24.7%\",\n      \"reason\": \"Internal mathematical inconsistency: The provided dollar figures show a decrease from $4,213 million to $2,548 million, which is approximately a 39.5% decline, not 24.7%.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"U.S. Revenues for Q2 2023: $16,404 million\",\n      \"claim_value\": \"$16,404 million\",\n      \"reason\": \"Plausibility conflict: Pfizer's total consolidated global revenue for Q2 2023 was approximately $12.7 billion. A single geographic region (U.S.) cannot exceed the total company revenue.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"International region... revenues of $2,548 million for Q2 2023, down from $4,213 million in Q2 2022\",\n      \"claim_value\": \"$2,548 million / $4,213 million\",\n      \"reason\": \"Plausibility conflict: Combined with the U.S. revenue claim, the implied total revenue (~$18.9 billion) contradicts the known significant revenue contraction Pfizer experienced in 2023 (from ~$27.7B in Q2 2022 to ~$12.7B in Q2 2023).\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\": \"The output contains critical internal mathematical errors and contradicts widely known financial data regarding Pfizer's total revenue contraction in 2023.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_135_DFC4B0A4",
+      "hallucination_id": "FB_135_DFC4B0A4_H3",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,174 million",
+      "injected_value": "$2,548 million",
+      "detected": true,
+      "reason": "Plausibility conflict: Combined with the U.S. revenue claim, the implied total revenue (~$18.9 billion) contradicts the known significant revenue contraction Pfizer experienced in 2023 (from ~$27.7B in Q2 2022 to ~$12.7B in Q2 2023).",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_135_DFC4B0A4",
+      "hallucination_id": "FB_135_DFC4B0A4_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$12,427 million",
+      "injected_value": "$16,404 million",
+      "detected": true,
+      "reason": "Plausibility conflict: Pfizer's total consolidated global revenue for Q2 2023 was approximately $12.7 billion. A single geographic region (U.S.) cannot exceed the total company revenue.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_135_DFC4B0A4",
+      "hallucination_id": "FB_135_DFC4B0A4_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "percentage",
+      "original_value": "4.0%",
+      "injected_value": "0.0%",
+      "detected": true,
+      "reason": "Internal mathematical inconsistency: The provided dollar figures show an increase from $12,948 million to $16,404 million, which is approximately a 26.7% increase, not a 0.0% decline.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-24T13:10:48.302353Z"
+}

@@ -1,0 +1,97 @@
+{
+  "question_id": "FB_049_4416C718",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Best Buy Co., Inc. for FY2015, FY2016, and FY2017\n- PRIMARY METRIC: \n  - FY2015 Net Profit: $1,185 million (per the FY2017 10-K, Consolidated Statements of Operations)\n  - FY2016 Net Profit: $924 million (per the FY2017 10-K, Consolidated Statements of Operations)\n  - FY2017 Net Profit: $1,200 million (per the FY2017 10-K, Consolidated Statements of Operations)\n\n- SUPPORTING DATA: \n  - FY2015 Total Revenue: $40,349 million (per the FY2017 10-K, Consolidated Statements of Operations)\n  - FY2016 Total Revenue: $39,351 million (per the FY2017 10-K, Consolidated Statements of Operations)\n  - FY2017 Total Revenue: $39,206 million (per the FY2017 10-K, Consolidated Statements of Operations)\n\n- NET PROFIT MARGIN CALCULATION:\n  - FY2015 Net Profit Margin: ($1,185 million / $40,349 million) * 100 = 0.0%\n  - FY2016 Net Profit Margin: ($1,173 million / $39,351 million) * 100 = 3.0%\n  - FY2017 Net Profit Margin: ($1,200 million / $39,206 million) * 100 = 3.1%\n  \n- THREE-YEAR AVERAGE NET PROFIT MARGIN: \n  - Average = (0.0% + 3.0% + 3.1%) / 3 = 3.0%\n\n- DATA SOURCES: Best Buy Co., Inc. FY2017 10-K, Consolidated Statements of Operations.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_049_4416C718_H3",
+      "type": "dollar_amount",
+      "original_value": "$1,173 million",
+      "injected_value": "$924 million",
+      "original_numeric": "1173",
+      "injected_numeric": "924",
+      "position_char": 211,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.2126
+    },
+    {
+      "hallucination_id": "FB_049_4416C718_H2",
+      "type": "percentage",
+      "original_value": "2.9%",
+      "injected_value": "0.0%",
+      "original_numeric": "2.9",
+      "injected_numeric": "0.0",
+      "position_char": 823,
+      "sentence_approx": 3,
+      "perturbation_delta": -10.786
+    },
+    {
+      "hallucination_id": "FB_049_4416C718_H1",
+      "type": "percentage",
+      "original_value": "2.9%",
+      "injected_value": "0.0%",
+      "original_numeric": "2.9",
+      "injected_numeric": "0.0",
+      "position_char": 1043,
+      "sentence_approx": 6,
+      "perturbation_delta": -10.4915
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "FY2015 Net Profit Margin: ($1,185 million / $40,349 million) * 100 = 0.0%",
+        "claim_value": "0.0%",
+        "reason": "A 0% net profit margin is highly unusual for a company like Best Buy, which is a large retailer. It is likely that the net profit figure is incorrect or the calculation is wrong.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 9,
+    "overall_assessment": "The FY2015 net profit margin seems suspiciously low, but the other figures appear plausible.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"FY2015 Net Profit Margin: ($1,185 million / $40,349 million) * 100 = 0.0%\",\n      \"claim_value\" : \"0.0%\",\n      \"reason\"      : \"A 0% net profit margin is highly unusual for a company like Best Buy, which is a large retailer. It is likely that the net profit figure is incorrect or the calculation is wrong.\",\n      \"confidence\"  : \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 9,\n  \"overall_assessment\"   : \"The FY2015 net profit margin seems suspiciously low, but the other figures appear plausible.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_049_4416C718",
+      "hallucination_id": "FB_049_4416C718_H3",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,173 million",
+      "injected_value": "$924 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_049_4416C718",
+      "hallucination_id": "FB_049_4416C718_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "percentage",
+      "original_value": "2.9%",
+      "injected_value": "0.0%",
+      "detected": true,
+      "reason": "A 0% net profit margin is highly unusual for a company like Best Buy, which is a large retailer. It is likely that the net profit figure is incorrect or the calculation is wrong.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_049_4416C718",
+      "hallucination_id": "FB_049_4416C718_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "percentage",
+      "original_value": "2.9%",
+      "injected_value": "0.0%",
+      "detected": true,
+      "reason": "A 0% net profit margin is highly unusual for a company like Best Buy, which is a large retailer. It is likely that the net profit figure is incorrect or the calculation is wrong.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 9
+    }
+  ],
+  "timestamp": "2026-03-27T09:33:00.457209Z"
+}

@@ -1,0 +1,115 @@
+{
+  "question_id": "FB_105_61DCE693",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: MGM Resorts International, Fiscal Years 2018 to 2020\n- PRIMARY METRIC: \n  - FY2018 Capital Expenditures: $1,074 million (per the FY2020 10-K, Consolidated Statements of Cash Flows)\n  - FY2019 Capital Expenditures: $1,176 million (per the FY2020 10-K, Consolidated Statements of Cash Flows)\n  - FY2020 Capital Expenditures: $1,025 million (per the FY2020 10-K, Consolidated Statements of Cash Flows)\n  \n  - FY2018 Total Revenue: $8,743 million (per the FY2020 10-K, Consolidated Statements of Operations)\n  - FY2019 Total Revenue: $17,790 million (per the FY2020 10-K, Consolidated Statements of Operations)\n  - FY2020 Total Revenue: $5,184 million (per the FY2020 10-K, Consolidated Statements of Operations)\n\n- SUPPORTING DATA:\n  - FY2018 Capex as a % of Revenue: (1,074 / 12,865) * 100 = 8.34%\n  - FY2019 Capex as a % of Revenue: (1,176 / 13,165) * 100 = 8.93%\n  - FY2020 Capex as a % of Revenue: (1,025 / 5,184) * 100 = 12.12%\n\n  - Three-Year Average of Capex as a % of Revenue: \n    - (8.34% + 8.93% + 19.74%) / 3 = 12.34%\n    - Rounded to one decimal place: 12.3%\n\n- DATA SOURCES: \n  - FY2020 10-K, Consolidated Statements of Cash Flows\n  - FY2020 10-K, Consolidated Statements of Operations\n\nPlease note that the above figures are exact as reported in the specified filings, and the calculations for capex as a percentage of revenue have been performed based on these figures.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_105_61DCE693_H3",
+      "type": "dollar_amount",
+      "original_value": "$12,865 million",
+      "injected_value": "$8,743 million",
+      "original_numeric": "12865",
+      "injected_numeric": "8743",
+      "position_char": 448,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.3204
+    },
+    {
+      "hallucination_id": "FB_105_61DCE693_H2",
+      "type": "dollar_amount",
+      "original_value": "$13,165 million",
+      "injected_value": "$17,790 million",
+      "original_numeric": "13165",
+      "injected_numeric": "17790",
+      "position_char": 551,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.3513
+    },
+    {
+      "hallucination_id": "FB_105_61DCE693_H1",
+      "type": "percentage",
+      "original_value": "19.74%",
+      "injected_value": "12.12%",
+      "original_numeric": "19.74",
+      "injected_numeric": "12.12",
+      "position_char": 944,
+      "sentence_approx": 3,
+      "perturbation_delta": -7.6235
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "FY2018 Total Revenue: $8,743 million (per the FY2020 10-K, Consolidated Statements of Operations)",
+        "claim_value": "$8,743 million",
+        "reason": "Internal inconsistency: The supporting data calculation for FY2018 uses a denominator of $12,865 million, not $8,743 million. Additionally, $12.8B is more consistent with historical MGM revenue than $8.7B, suggesting the primary metric figure is hallucinated.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2019 Total Revenue: $17,790 million (per the FY2020 10-K, Consolidated Statements of Operations)",
+        "claim_value": "$17,790 million",
+        "reason": "Internal inconsistency: The supporting data calculation for FY2019 uses a denominator of $13,165 million, not $17,790 million. Also, a 104% YoY revenue increase from 2018 to 2019 is highly implausible for MGM Resorts without a major disclosed acquisition.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2020 Capex as a % of Revenue: (1,025 / 5,184) * 100 = 12.12%",
+        "claim_value": "12.12%",
+        "reason": "Mathematical error: 1,025 divided by 5,184 equals approximately 19.77%, not 12.12%. This indicates a hallucinated calculation result.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Three-Year Average of Capex as a % of Revenue: (8.34% + 8.93% + 19.74%) / 3 = 12.34%",
+        "claim_value": "19.74%",
+        "reason": "Internal inconsistency: The figure 19.74% used in the average calculation contradicts the FY2020 Capex % line item (12.12%) stated earlier in the same report, indicating disjointed data generation.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 11,
+    "overall_assessment": "The report contains critical internal inconsistencies between stated revenue figures and calculation denominators, alongside blatant mathematical errors in percentage calculations, indicating significant data hallucination.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"FY2018 Total Revenue: $8,743 million (per the FY2020 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$8,743 million\",\n      \"reason\": \"Internal inconsistency: The supporting data calculation for FY2018 uses a denominator of $12,865 million, not $8,743 million. Additionally, $12.8B is more consistent with historical MGM revenue than $8.7B, suggesting the primary metric figure is hallucinated.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2019 Total Revenue: $17,790 million (per the FY2020 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$17,790 million\",\n      \"reason\": \"Internal inconsistency: The supporting data calculation for FY2019 uses a denominator of $13,165 million, not $17,790 million. Also, a 104% YoY revenue increase from 2018 to 2019 is highly implausible for MGM Resorts without a major disclosed acquisition.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2020 Capex as a % of Revenue: (1,025 / 5,184) * 100 = 12.12%\",\n      \"claim_value\": \"12.12%\",\n      \"reason\": \"Mathematical error: 1,025 divided by 5,184 equals approximately 19.77%, not 12.12%. This indicates a hallucinated calculation result.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Three-Year Average of Capex as a % of Revenue: (8.34% + 8.93% + 19.74%) / 3 = 12.34%\",\n      \"claim_value\": \"19.74%\",\n      \"reason\": \"Internal inconsistency: The figure 19.74% used in the average calculation contradicts the FY2020 Capex % line item (12.12%) stated earlier in the same report, indicating disjointed data generation.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 11,\n  \"overall_assessment\": \"The report contains critical internal inconsistencies between stated revenue figures and calculation denominators, alongside blatant mathematical errors in percentage calculations, indicating significant data hallucination.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_105_61DCE693",
+      "hallucination_id": "FB_105_61DCE693_H3",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$12,865 million",
+      "injected_value": "$8,743 million",
+      "detected": true,
+      "reason": "Internal inconsistency: The supporting data calculation for FY2018 uses a denominator of $12,865 million, not $8,743 million. Additionally, $12.8B is more consistent with historical MGM revenue than $8.7B, suggesting the primary metric figure is hallucinated.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 11
+    },
+    {
+      "question_id": "FB_105_61DCE693",
+      "hallucination_id": "FB_105_61DCE693_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$13,165 million",
+      "injected_value": "$17,790 million",
+      "detected": true,
+      "reason": "Internal inconsistency: The supporting data calculation for FY2019 uses a denominator of $13,165 million, not $17,790 million. Also, a 104% YoY revenue increase from 2018 to 2019 is highly implausible for MGM Resorts without a major disclosed acquisition.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 11
+    },
+    {
+      "question_id": "FB_105_61DCE693",
+      "hallucination_id": "FB_105_61DCE693_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "percentage",
+      "original_value": "19.74%",
+      "injected_value": "12.12%",
+      "detected": true,
+      "reason": "Mathematical error: 1,025 divided by 5,184 equals approximately 19.77%, not 12.12%. This indicates a hallucinated calculation result.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 11
+    }
+  ],
+  "timestamp": "2026-03-24T12:30:32.685236Z"
+}

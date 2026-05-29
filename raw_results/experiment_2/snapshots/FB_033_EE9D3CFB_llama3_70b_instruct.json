@@ -1,0 +1,97 @@
+{
+  "question_id": "FB_033_EE9D3CFB",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Advanced Micro Devices, Inc. (AMD), FY2022\n- PRIMARY METRIC: As of FY2022, AMD operates through two primary segments: Computing and Graphics, and Enterprise, Embedded, and Semi-Custom. \n\n  - **Computing and Graphics**: This segment includes desktop and mobile processors, graphics processing units (GPUs), and related products. Key products include:\n    - AMD Ryzen\u2122 processors\n    - AMD Radeon\u2122 graphics cards\n    - AMD EPYC\u2122 processors for data centers\n\n  - **Enterprise, Embedded, and Semi-Custom**: This segment includes semi-custom System-on-Chip (SoC) products for game consoles, embedded processors, and data center solutions. Key products include:\n    - Semi-custom chips for gaming consoles (e.g., PlayStation 5 and Xbox Series X)\n    - Embedded processors for various applications\n\n- SUPPORTING DATA: \n  - For FY2022, AMD reported total revenue of $23,600 million, with the Computing and Graphics segment contributing approximately $15,000 million and the Enterprise, Embedded, and Semi-Custom segment contributing approximately $8,600 million.\n  - Revenue breakdown for FY2021 for comparison: Total revenue was $16,400 million, with Computing and Graphics at approximately $8,249 million and Enterprise, Embedded, and Semi-Custom at approximately $5,600 million.\n  - Revenue breakdown for FY2020 for further context: Total revenue was $6,395 million, with Computing and Graphics at approximately $6,000 million and Enterprise, Embedded, and Semi-Custom at approximately $4,399 million.\n\n- DATA SOURCES: \n  - Per the FY2022 10-K, Item 1. Business Overview and Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_033_EE9D3CFB_H3",
+      "type": "dollar_amount",
+      "original_value": "$10,800 million",
+      "injected_value": "$8,249 million",
+      "original_numeric": "10800",
+      "injected_numeric": "8249",
+      "position_char": 1204,
+      "sentence_approx": 8,
+      "perturbation_delta": -0.2362
+    },
+    {
+      "hallucination_id": "FB_033_EE9D3CFB_H2",
+      "type": "dollar_amount",
+      "original_value": "$9,763 million",
+      "injected_value": "$6,395 million",
+      "original_numeric": "9763",
+      "injected_numeric": "6395",
+      "position_char": 1367,
+      "sentence_approx": 9,
+      "perturbation_delta": -0.345
+    },
+    {
+      "hallucination_id": "FB_033_EE9D3CFB_H1",
+      "type": "dollar_amount",
+      "original_value": "$3,763 million",
+      "injected_value": "$4,399 million",
+      "original_numeric": "3763",
+      "injected_numeric": "4399",
+      "position_char": 1502,
+      "sentence_approx": 9,
+      "perturbation_delta": 0.1691
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Revenue breakdown for FY2020 for further context: Total revenue was $6,395 million, with Computing and Graphics at approximately $6,000 million and Enterprise, Embedded, and Semi-Custom at approximately $4,399 million.",
+        "claim_value": "$6,000 million and $4,399 million",
+        "reason": "The segment revenues add up to more than the total revenue, which is an internal inconsistency.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 5,
+    "overall_assessment": "The researcher's output contains a potential error in the FY2020 revenue breakdown, which warrants further verification.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"Revenue breakdown for FY2020 for further context: Total revenue was $6,395 million, with Computing and Graphics at approximately $6,000 million and Enterprise, Embedded, and Semi-Custom at approximately $4,399 million.\",\n      \"claim_value\" : \"$6,000 million and $4,399 million\",\n      \"reason\"      : \"The segment revenues add up to more than the total revenue, which is an internal inconsistency.\",\n      \"confidence\"  : \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 5,\n  \"overall_assessment\"   : \"The researcher's output contains a potential error in the FY2020 revenue breakdown, which warrants further verification.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_033_EE9D3CFB",
+      "hallucination_id": "FB_033_EE9D3CFB_H3",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$10,800 million",
+      "injected_value": "$8,249 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 5
+    },
+    {
+      "question_id": "FB_033_EE9D3CFB",
+      "hallucination_id": "FB_033_EE9D3CFB_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$9,763 million",
+      "injected_value": "$6,395 million",
+      "detected": true,
+      "reason": "The segment revenues add up to more than the total revenue, which is an internal inconsistency.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 5
+    },
+    {
+      "question_id": "FB_033_EE9D3CFB",
+      "hallucination_id": "FB_033_EE9D3CFB_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,763 million",
+      "injected_value": "$4,399 million",
+      "detected": true,
+      "reason": "The segment revenues add up to more than the total revenue, which is an internal inconsistency.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 5
+    }
+  ],
+  "timestamp": "2026-03-27T09:30:33.114456Z"
+}

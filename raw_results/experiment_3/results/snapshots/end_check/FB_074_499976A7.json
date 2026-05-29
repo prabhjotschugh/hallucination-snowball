@@ -1,0 +1,159 @@
+{
+  "question_id": "FB_074_499976A7",
+  "method": "end_check",
+  "final_output": "## Financial Report: Corning Incorporated - FY2022 Working Capital Analysis\n\n### Executive Summary\n\nCorning Incorporated's working capital position for Fiscal Year 2022 demonstrates a slight decline in overall working capital and a notable decrease in its current ratio compared to FY2021. While current assets grew by 7.53% to $12,988 million, current liabilities experienced a significant 50.81% increase, reaching $9,166 million. This led to a working capital of $3,822 million, a 3.73% decrease from FY2021, and a current ratio of 1.42, down from 1.99 in the prior year.\n\n### Analysis\n\nCorning's current assets have shown consistent growth over the past three fiscal years, increasing from $11,000 million in FY2020 to $12,078 million in FY2021 (a 9.80% increase) and further to $12,988 million in FY2022 (a 7.53% increase). However, the trajectory of current liabilities has been more volatile. After a substantial decrease of 38.90% from $9,948 million in FY2020 to $6,078 million in FY2021, current liabilities surged by 50.81% to $9,166 million in FY2022. This significant increase in short-term obligations in FY2022 directly impacted the company's working capital, which decreased by $148 million to $3,822 million, and its current ratio, which fell from 1.99 to 1.42.\n\n### Key Risks\n\nThe primary risk identified is the substantial increase in current liabilities in FY2022, which led to a significant reduction in the current ratio. A current ratio of 1.42, while still above 1.0, indicates a reduced buffer for meeting short-term obligations compared to the previous year. The volatility in current liabilities over the past three years (a -38.90% change from FY2020 to FY2021, followed by a 50.81% change from FY2021 to FY2022) suggests potential shifts in the company's short-term financing strategies or operational liability management that warrant further investigation.\n\n### Conclusion\n\nCorning Incorporated's FY2022 financial position, as reflected in its working capital, shows a healthy absolute working capital of $3,822 million. However, the notable increase in current liabilities and the subsequent decline in the current ratio to 1.42 signal a need for close monitoring of short-term liquidity and liability management strategies moving forward. While the current ratio remains above the generally accepted benchmark of 1.0, the significant year-over-year decrease warrants attention to ensure continued financial flexibility and operational stability.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Corning Incorporated, FY2022\n- PRIMARY METRIC: \n  - Current Assets: $12,988 million (per the FY2022 10-K, Consolidated Balance Sheets)\n  - Current Liabilities: $9,166 million (per the FY2022 10-K, Consolidated Balance Sheets)\n  - Working Capital: $3,822 million (calculated as Current Assets - Current Liabilities)\n\n- SUPPORTING DATA: \n  - FY2021 Current Assets: $12,078 million (per the FY2021 10-K, Consolidated Balance Sheets)\n  - FY2021 Current Liabilities: $6,078 million (per the FY2021 10-K, Consolidated Balance Sheets)\n  - FY2021 Working Capital: $3,970 million (calculated as Current Assets - Current Liabilities)\n  - FY2020 Current Assets: $11,000 million (per the FY2020 10-K, Consolidated Balance Sheets)\n  - FY2020 Current Liabilities: $9,948 million (per the FY2020 10-K, Consolidated Balance Sheets)\n  - FY2020 Working Capital: $3,600 million (calculated as Current Assets - Current Liabilities)\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Balance Sheets\n  - FY2021 10-K, Consolidated Balance Sheets\n  - FY2020 10-K, Consolidated Balance Sheets\n\n**Note:** The request to assess the relevance of working capital as a metric for Corning and to provide a rationale has not been fulfilled as per the instructions to present raw data only.",
+    "2": "As a financial analyst, I have computed the year-over-year changes and relevant ratios for Corning Incorporated based on the provided data.\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\n**Formulas:**\n*   Absolute Change = Current Year Value - Prior Year Value\n*   Percentage Change = (Absolute Change / Prior Year Value) * 100\n\n| Metric             | FY2022 Value ($M) | FY2021 Value ($M) | FY2020 Value ($M) | FY2022 vs FY2021 Absolute Change ($M) | FY2022 vs FY2021 Percentage Change (%) | FY2021 vs FY2020 Absolute Change ($M) | FY2021 vs FY2020 Percentage Change (%) |\n| :----------------- | :---------------- | :---------------- | :---------------- | :------------------------------------ | :------------------------------------- | :------------------------------------ | :------------------------------------- |\n| Current Assets     | 12,988            | 12,078            | 11,000            | 910                                   | 7.53%                                  | 1,078                                 | 9.80%                                  |\n| Current Liabilities| 9,166             | 6,078             | 9,948             | 3,088                                 | 50.81%                                 | (3,870)                               | -38.90%                                |\n| Working Capital    | 3,822             | 3,970             | 3,600             | (148)                                 | -3.73%                                 | 370                                   | 10.28%                                 |\n\n**2. Relevant Ratios**\n\n**Formulas:**\n*   Current Ratio = Current Assets / Current Liabilities\n*   Working Capital Turnover (not calculable with provided data)\n\n| Ratio           | FY2022 | FY2021 | FY2020 |\n| :-------------- | :----- | :----- | :----- |\n| Current Ratio   | 1.42   | 1.99   | 1.11   |\n\n**Calculations:**\n*   FY2022 Current Ratio = $12,988M / $9,166M = 1.42\n*   FY2021 Current Ratio = $12,078M / $6,078M = 1.99\n*   FY2020 Current Ratio = $11,000M / $9,948M = 1.11\n\n**3. Anomalies Flagged**\n\n*   **FY2022 Current Liabilities Growth:** The 50.81% increase in Current Liabilities from FY2021 to FY2022 is a significant jump, leading to a substantial decrease in the Current Ratio.\n*   **FY2021 Current Liabilities Decrease:** The -38.90% decrease in Current Liabilities from FY2020 to FY2021 is also a notable fluctuation, contributing to the higher Current Ratio in FY2021.\n*   **Working Capital Volatility:** While Working Capital itself shows more moderate percentage changes, the underlying components (Current Assets and Current Liabilities) exhibit considerable volatility year-over-year, particularly in Current Liabilities. This suggests shifts in Corning's short-term financing or operational liabilities.",
+    "3": "## Financial Report: Corning Incorporated - FY2022 Working Capital Analysis\n\n### Executive Summary\n\nCorning Incorporated's working capital position for Fiscal Year 2022 demonstrates a slight decline in overall working capital and a notable decrease in its current ratio compared to FY2021. While current assets grew by 7.53% to $12,988 million, current liabilities experienced a significant 50.81% increase, reaching $9,166 million. This led to a working capital of $3,822 million, a 3.73% decrease from FY2021, and a current ratio of 1.42, down from 1.99 in the prior year.\n\n### Analysis\n\nCorning's current assets have shown consistent growth over the past three fiscal years, increasing from $11,000 million in FY2020 to $12,078 million in FY2021 (a 9.80% increase) and further to $12,988 million in FY2022 (a 7.53% increase). However, the trajectory of current liabilities has been more volatile. After a substantial decrease of 38.90% from $9,948 million in FY2020 to $6,078 million in FY2021, current liabilities surged by 50.81% to $9,166 million in FY2022. This significant increase in short-term obligations in FY2022 directly impacted the company's working capital, which decreased by $148 million to $3,822 million, and its current ratio, which fell from 1.99 to 1.42.\n\n### Key Risks\n\nThe primary risk identified is the substantial increase in current liabilities in FY2022, which led to a significant reduction in the current ratio. A current ratio of 1.42, while still above 1.0, indicates a reduced buffer for meeting short-term obligations compared to the previous year. The volatility in current liabilities over the past three years (a -38.90% change from FY2020 to FY2021, followed by a 50.81% change from FY2021 to FY2022) suggests potential shifts in the company's short-term financing strategies or operational liability management that warrant further investigation.\n\n### Conclusion\n\nCorning Incorporated's FY2022 financial position, as reflected in its working capital, shows a healthy absolute working capital of $3,822 million. However, the notable increase in current liabilities and the subsequent decline in the current ratio to 1.42 signal a need for close monitoring of short-term liquidity and liability management strategies moving forward.",
+    "4": "## Financial Report: Corning Incorporated - FY2022 Working Capital Analysis\n\n### Executive Summary\n\nCorning Incorporated's working capital position for Fiscal Year 2022 demonstrates a slight decline in overall working capital and a notable decrease in its current ratio compared to FY2021. While current assets grew by 7.53% to $12,988 million, current liabilities experienced a significant 50.81% increase, reaching $9,166 million. This led to a working capital of $3,822 million, a 3.73% decrease from FY2021, and a current ratio of 1.42, down from 1.99 in the prior year.\n\n### Analysis\n\nCorning's current assets have shown consistent growth over the past three fiscal years, increasing from $11,000 million in FY2020 to $12,078 million in FY2021 (a 9.80% increase) and further to $12,988 million in FY2022 (a 7.53% increase). However, the trajectory of current liabilities has been more volatile. After a substantial decrease of 38.90% from $9,948 million in FY2020 to $6,078 million in FY2021, current liabilities surged by 50.81% to $9,166 million in FY2022. This significant increase in short-term obligations in FY2022 directly impacted the company's working capital, which decreased by $148 million to $3,822 million, and its current ratio, which fell from 1.99 to 1.42.\n\n### Key Risks\n\nThe primary risk identified is the substantial increase in current liabilities in FY2022, which led to a significant reduction in the current ratio. A current ratio of 1.42, while still above 1.0, indicates a reduced buffer for meeting short-term obligations compared to the previous year. The volatility in current liabilities over the past three years (a -38.90% change from FY2020 to FY2021, followed by a 50.81% change from FY2021 to FY2022) suggests potential shifts in the company's short-term financing strategies or operational liability management that warrant further investigation.\n\n### Conclusion\n\nCorning Incorporated's FY2022 financial position, as reflected in its working capital, shows a healthy absolute working capital of $3,822 million. However, the notable increase in current liabilities and the subsequent decline in the current ratio to 1.42 signal a need for close monitoring of short-term liquidity and liability management strategies moving forward. While the current ratio remains above the generally accepted benchmark of 1.0, the significant year-over-year decrease warrants attention to ensure continued financial flexibility and operational stability."
+  },
+  "gates": {
+    "end_gate": {
+      "verified": [
+        {
+          "value": "$12,988 million",
+          "ref": 12988.0
+        },
+        {
+          "value": "$9,166 million",
+          "ref": 9166.0
+        },
+        {
+          "value": "$3,822 million",
+          "ref": 3822.0
+        },
+        {
+          "value": "$11,000 million",
+          "ref": 11000.0
+        },
+        {
+          "value": "$12,078 million",
+          "ref": 12078.0
+        },
+        {
+          "value": "$12,988 million",
+          "ref": 12988.0
+        },
+        {
+          "value": "$9,166 million",
+          "ref": 9166.0
+        },
+        {
+          "value": "$3,822 million",
+          "ref": 3822.0
+        },
+        {
+          "value": "$3,822 million",
+          "ref": 3822.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$9,948 million",
+          "num": 9948.0,
+          "correct": 9166.0,
+          "dev": 0.0786,
+          "source": "source_document"
+        },
+        {
+          "value": "$6,078 million",
+          "num": 6078.0,
+          "correct": 7400.0,
+          "dev": 0.1786,
+          "source": "source_document"
+        },
+        {
+          "value": "50.81%",
+          "num": 50.81,
+          "correct": 42.0,
+          "dev": 0.1734,
+          "source": "evidence"
+        },
+        {
+          "value": "50.81%",
+          "num": 50.81,
+          "correct": 42.0,
+          "dev": 0.1734,
+          "source": "evidence"
+        },
+        {
+          "value": "50.81%",
+          "num": 50.81,
+          "correct": 42.0,
+          "dev": 0.1734,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$148 million"
+        },
+        {
+          "value": "7.53%"
+        },
+        {
+          "value": "3.73%"
+        },
+        {
+          "value": "9.80%"
+        },
+        {
+          "value": "7.53%"
+        },
+        {
+          "value": "38.90%"
+        },
+        {
+          "value": "-38.90%"
+        }
+      ],
+      "n_refs": 19
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_074_499976A7",
+      "hid": "FB_074_499976A7_H2",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 6078.0,
+      "orig_num": 8108.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": true,
+      "any_det": true,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_074_499976A7",
+      "hid": "FB_074_499976A7_H1",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 9948.0,
+      "orig_num": 7400.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": true,
+      "any_det": true,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:29:58.272447+00:00"
+}

@@ -1,0 +1,121 @@
+{
+  "question_id": "FB_070_4418F850",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: The Coca-Cola Company, FY2022\n- PRIMARY METRIC: Dividend Payout Ratio: 66.67% (calculated as Total Cash Dividends Paid of $5,694 million divided by Net Income Attributable to Shareholders of $14,585 million, per the FY2022 10-K, Consolidated Statements of Cash Flows and Consolidated Statements of Operations).\n- SUPPORTING DATA: \n  - Total Cash Dividends Paid: $7,964 million (per the FY2022 10-K, Consolidated Statements of Cash Flows).\n  - Net Income Attributable to Shareholders: $14,512 million (per the FY2022 10-K, Consolidated Statements of Operations).\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Cash Flows, page 56.\n  - FY2022 10-K, Consolidated Statements of Operations, page 52. \n\nNote: The dividend payout ratio is calculated as (Total Cash Dividends Paid / Net Income Attributable to Shareholders) * 100.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_070_4418F850_H3",
+      "type": "dollar_amount",
+      "original_value": "$7,964 million",
+      "injected_value": "$5,694 million",
+      "original_numeric": "7964",
+      "injected_numeric": "5694",
+      "position_char": 142,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.285
+    },
+    {
+      "hallucination_id": "FB_070_4418F850_H2",
+      "type": "dollar_amount",
+      "original_value": "$11,952 million",
+      "injected_value": "$14,585 million",
+      "original_numeric": "11952",
+      "injected_numeric": "14585",
+      "position_char": 211,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.2203
+    },
+    {
+      "hallucination_id": "FB_070_4418F850_H1",
+      "type": "dollar_amount",
+      "original_value": "$11,952 million",
+      "injected_value": "$14,512 million",
+      "original_numeric": "11952",
+      "injected_numeric": "14512",
+      "position_char": 504,
+      "sentence_approx": 4,
+      "perturbation_delta": 0.2142
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Dividend Payout Ratio: 66.67%",
+        "claim_value": "66.67%",
+        "reason": "This calculated ratio is inconsistent with both sets of component figures provided. Using the 'PRIMARY METRIC' figures ($5,694 million / $14,585 million) yields 39.04%. Using the 'SUPPORTING DATA' figures ($7,964 million / $14,512 million) yields 54.88%. The stated ratio does not align with any of the provided numbers.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Cash Dividends Paid of $5,694 million",
+        "claim_value": "$5,694 million",
+        "reason": "This figure for Total Cash Dividends Paid directly contradicts the 'SUPPORTING DATA' claim of '$7,964 million' for the exact same metric and period.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Net Income Attributable to Shareholders of $14,585 million",
+        "claim_value": "$14,585 million",
+        "reason": "This figure for Net Income Attributable to Shareholders directly contradicts the 'SUPPORTING DATA' claim of '$14,512 million' for the exact same metric and period.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Cash Dividends Paid: $7,964 million",
+        "claim_value": "$7,964 million",
+        "reason": "This figure for Total Cash Dividends Paid directly contradicts the 'PRIMARY METRIC' claim of '$5,694 million' for the exact same metric and period.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Net Income Attributable to Shareholders: $14,512 million",
+        "claim_value": "$14,512 million",
+        "reason": "This figure for Net Income Attributable to Shareholders directly contradicts the 'PRIMARY METRIC' claim of '$14,585 million' for the exact same metric and period.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 8,
+    "overall_assessment": "Multiple severe internal inconsistencies were found regarding the dividend payout ratio and its component figures, indicating potential hallucination or data fabrication.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Dividend Payout Ratio: 66.67%\",\n      \"claim_value\": \"66.67%\",\n      \"reason\": \"This calculated ratio is inconsistent with both sets of component figures provided. Using the 'PRIMARY METRIC' figures ($5,694 million / $14,585 million) yields 39.04%. Using the 'SUPPORTING DATA' figures ($7,964 million / $14,512 million) yields 54.88%. The stated ratio does not align with any of the provided numbers.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Cash Dividends Paid of $5,694 million\",\n      \"claim_value\": \"$5,694 million\",\n      \"reason\": \"This figure for Total Cash Dividends Paid directly contradicts the 'SUPPORTING DATA' claim of '$7,964 million' for the exact same metric and period.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Net Income Attributable to Shareholders of $14,585 million\",\n      \"claim_value\": \"$14,585 million\",\n      \"reason\": \"This figure for Net Income Attributable to Shareholders directly contradicts the 'SUPPORTING DATA' claim of '$14,512 million' for the exact same metric and period.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Cash Dividends Paid: $7,964 million\",\n      \"claim_value\": \"$7,964 million\",\n      \"reason\": \"This figure for Total Cash Dividends Paid directly contradicts the 'PRIMARY METRIC' claim of '$5,694 million' for the exact same metric and period.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Net Income Attributable to Shareholders: $14,512 million\",\n      \"claim_value\": \"$14,512 million\",\n      \"reason\": \"This figure for Net Income Attributable to Shareholders directly contradicts the 'PRIMARY METRIC' claim of '$14,585 million' for the exact same metric and period.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 8,\n  \"overall_assessment\": \"Multiple severe internal inconsistencies were found regarding the dividend payout ratio and its component figures, indicating potential hallucination or data fabrication.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_070_4418F850",
+      "hallucination_id": "FB_070_4418F850_H3",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$7,964 million",
+      "injected_value": "$5,694 million",
+      "detected": true,
+      "reason": "This figure for Total Cash Dividends Paid directly contradicts the 'SUPPORTING DATA' claim of '$7,964 million' for the exact same metric and period.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 8
+    },
+    {
+      "question_id": "FB_070_4418F850",
+      "hallucination_id": "FB_070_4418F850_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$11,952 million",
+      "injected_value": "$14,585 million",
+      "detected": true,
+      "reason": "This figure for Net Income Attributable to Shareholders directly contradicts the 'SUPPORTING DATA' claim of '$14,512 million' for the exact same metric and period.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 8
+    },
+    {
+      "question_id": "FB_070_4418F850",
+      "hallucination_id": "FB_070_4418F850_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$11,952 million",
+      "injected_value": "$14,512 million",
+      "detected": true,
+      "reason": "This figure for Net Income Attributable to Shareholders directly contradicts the 'SUPPORTING DATA' claim of '$14,512 million' for the exact same metric and period.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 8
+    }
+  ],
+  "timestamp": "2026-03-25T07:50:23.704203Z"
+}

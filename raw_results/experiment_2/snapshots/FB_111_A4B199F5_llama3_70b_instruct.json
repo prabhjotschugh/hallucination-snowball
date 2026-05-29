@@ -1,0 +1,97 @@
+{
+  "question_id": "FB_111_A4B199F5",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Microsoft Corporation, Fiscal Year 2016\n- PRIMARY METRIC: Cost of Goods Sold (COGS) for FY2016 is $15,037 million (per the FY2016 10-K, Consolidated Statements of Operations).\n- SUPPORTING DATA: \n  - FY2015 COGS: $19,557 million (per the FY2015 10-K, Consolidated Statements of Operations).\n  - FY2014 COGS: $28,477 million (per the FY2014 10-K, Consolidated Statements of Operations).\n- DATA SOURCES: \n  - FY2016 10-K, Consolidated Statements of Operations, page 51.\n  - FY2015 10-K, Consolidated Statements of Operations, page 51.\n  - FY2014 10-K, Consolidated Statements of Operations, page 51. \n\nNote: No financial ratios or narrative analysis has been provided as per the directive to present raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_111_A4B199F5_H3",
+      "type": "dollar_amount",
+      "original_value": "$24,060 million",
+      "injected_value": "$15,037 million",
+      "original_numeric": "24060",
+      "injected_numeric": "15037",
+      "position_char": 118,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.375
+    },
+    {
+      "hallucination_id": "FB_111_A4B199F5_H2",
+      "type": "dollar_amount",
+      "original_value": "$23,198 million",
+      "injected_value": "$19,557 million",
+      "original_numeric": "23198",
+      "injected_numeric": "19557",
+      "position_char": 233,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.1569
+    },
+    {
+      "hallucination_id": "FB_111_A4B199F5_H1",
+      "type": "dollar_amount",
+      "original_value": "$23,674 million",
+      "injected_value": "$28,477 million",
+      "original_numeric": "23674",
+      "injected_numeric": "28477",
+      "position_char": 328,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.2029
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "FY2014 COGS: $28,477 million",
+        "claim_value": "$28,477 million",
+        "reason": "The reported FY2014 COGS seems suspiciously high compared to FY2015 and FY2016 figures, which are significantly lower. A 47% drop in COGS from FY2014 to FY2015 and another 23% drop from FY2015 to FY2016 is unusual and warrants further investigation.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 3,
+    "overall_assessment": "The FY2014 COGS figure appears anomalous and may require further verification.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"FY2014 COGS: $28,477 million\",\n      \"claim_value\" : \"$28,477 million\",\n      \"reason\"      : \"The reported FY2014 COGS seems suspiciously high compared to FY2015 and FY2016 figures, which are significantly lower. A 47% drop in COGS from FY2014 to FY2015 and another 23% drop from FY2015 to FY2016 is unusual and warrants further investigation.\",\n      \"confidence\"  : \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 3,\n  \"overall_assessment\"   : \"The FY2014 COGS figure appears anomalous and may require further verification.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_111_A4B199F5",
+      "hallucination_id": "FB_111_A4B199F5_H3",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$24,060 million",
+      "injected_value": "$15,037 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 3
+    },
+    {
+      "question_id": "FB_111_A4B199F5",
+      "hallucination_id": "FB_111_A4B199F5_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$23,198 million",
+      "injected_value": "$19,557 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 3
+    },
+    {
+      "question_id": "FB_111_A4B199F5",
+      "hallucination_id": "FB_111_A4B199F5_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$23,674 million",
+      "injected_value": "$28,477 million",
+      "detected": true,
+      "reason": "The reported FY2014 COGS seems suspiciously high compared to FY2015 and FY2016 figures, which are significantly lower. A 47% drop in COGS from FY2014 to FY2015 and another 23% drop from FY2015 to FY2016 is unusual and warrants further investigation.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 3
+    }
+  ],
+  "timestamp": "2026-03-27T09:41:48.493166Z"
+}

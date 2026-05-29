@@ -1,0 +1,109 @@
+{
+  "question_id": "FB_033_EE9D3CFB",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: Advanced Micro Devices, Inc. (AMD), FY2022\n- PRIMARY METRIC: As of FY2022, AMD operates through two primary segments: Computing and Graphics, and Enterprise, Embedded, and Semi-Custom. \n\n  - **Computing and Graphics**: This segment includes desktop and mobile processors, graphics processing units (GPUs), and related products. Key products include:\n    - AMD Ryzen\u2122 processors\n    - AMD Radeon\u2122 graphics cards\n    - AMD EPYC\u2122 processors for data centers\n\n  - **Enterprise, Embedded, and Semi-Custom**: This segment includes semi-custom System-on-Chip (SoC) products for game consoles, embedded processors, and data center solutions. Key products include:\n    - Semi-custom chips for gaming consoles (e.g., PlayStation 5 and Xbox Series X)\n    - Embedded processors for various applications\n\n- SUPPORTING DATA: \n  - For FY2022, AMD reported total revenue of $23,600 million, with the Computing and Graphics segment contributing approximately $15,000 million and the Enterprise, Embedded, and Semi-Custom segment contributing approximately $8,600 million.\n  - Revenue breakdown for FY2021 for comparison: Total revenue was $16,400 million, with Computing and Graphics at approximately $8,249 million and Enterprise, Embedded, and Semi-Custom at approximately $5,600 million.\n  - Revenue breakdown for FY2020 for further context: Total revenue was $6,395 million, with Computing and Graphics at approximately $6,000 million and Enterprise, Embedded, and Semi-Custom at approximately $4,399 million.\n\n- DATA SOURCES: \n  - Per the FY2022 10-K, Item 1. Business Overview and Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_033_EE9D3CFB_H3",
+      "type": "dollar_amount",
+      "original_value": "$10,800 million",
+      "injected_value": "$8,249 million",
+      "original_numeric": "10800",
+      "injected_numeric": "8249",
+      "position_char": 1204,
+      "sentence_approx": 8,
+      "perturbation_delta": -0.2362
+    },
+    {
+      "hallucination_id": "FB_033_EE9D3CFB_H2",
+      "type": "dollar_amount",
+      "original_value": "$9,763 million",
+      "injected_value": "$6,395 million",
+      "original_numeric": "9763",
+      "injected_numeric": "6395",
+      "position_char": 1367,
+      "sentence_approx": 9,
+      "perturbation_delta": -0.345
+    },
+    {
+      "hallucination_id": "FB_033_EE9D3CFB_H1",
+      "type": "dollar_amount",
+      "original_value": "$3,763 million",
+      "injected_value": "$4,399 million",
+      "original_numeric": "3763",
+      "injected_numeric": "4399",
+      "position_char": 1502,
+      "sentence_approx": 9,
+      "perturbation_delta": 0.1691
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "For FY2022, AMD reported total revenue of $23,600 million, with the Computing and Graphics segment contributing approximately $15,000 million and the Enterprise, Embedded, and Semi-Custom segment contributing approximately $8,600 million.",
+        "claim_value": "$15,000 million (Computing and Graphics segment revenue), $8,600 million (Enterprise, Embedded, and Semi-Custom segment revenue)",
+        "reason": "Segment revenues sum to $23,600 million, which matches the claimed total revenue. However, the figures are suspiciously round (ending in exact thousands) and deviate significantly from historical trends (FY2021: Computing and Graphics was $8,249 million, FY2020: $6,000 million). A near doubling in Computing and Graphics revenue from FY2021 to FY2022 seems unusually high without extraordinary circumstances.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Revenue breakdown for FY2021 for comparison: Total revenue was $16,400 million, with Computing and Graphics at approximately $8,249 million and Enterprise, Embedded, and Semi-Custom at approximately $5,600 million.",
+        "claim_value": "$5,600 million (Enterprise, Embedded, and Semi-Custom segment revenue FY2021)",
+        "reason": "The Enterprise segment revenue ($5,600 million) is suspiciously round compared to the precise Computing and Graphics figure ($8,249 million). Mixed precision within the same report is unusual.",
+        "confidence": "low"
+      },
+      {
+        "claim_text": "Revenue breakdown for FY2020 for further context: Total revenue was $6,395 million, with Computing and Graphics at approximately $6,000 million and Enterprise, Embedded, and Semi-Custom at approximately $4,399 million.",
+        "claim_value": "$6,000 million (Computing and Graphics segment revenue FY2020)",
+        "reason": "The Computing and Graphics figure is suspiciously round compared to the precise Enterprise segment figure ($4,399 million). Mixed precision raises red flags about data consistency.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "Multiple claims show suspiciously round numbers or inconsistent precision, especially for segment revenues, warranting verification against primary sources.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"For FY2022, AMD reported total revenue of $23,600 million, with the Computing and Graphics segment contributing approximately $15,000 million and the Enterprise, Embedded, and Semi-Custom segment contributing approximately $8,600 million.\",\n      \"claim_value\": \"$15,000 million (Computing and Graphics segment revenue), $8,600 million (Enterprise, Embedded, and Semi-Custom segment revenue)\",\n      \"reason\": \"Segment revenues sum to $23,600 million, which matches the claimed total revenue. However, the figures are suspiciously round (ending in exact thousands) and deviate significantly from historical trends (FY2021: Computing and Graphics was $8,249 million, FY2020: $6,000 million). A near doubling in Computing and Graphics revenue from FY2021 to FY2022 seems unusually high without extraordinary circumstances.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Revenue breakdown for FY2021 for comparison: Total revenue was $16,400 million, with Computing and Graphics at approximately $8,249 million and Enterprise, Embedded, and Semi-Custom at approximately $5,600 million.\",\n      \"claim_value\": \"$5,600 million (Enterprise, Embedded, and Semi-Custom segment revenue FY2021)\",\n      \"reason\": \"The Enterprise segment revenue ($5,600 million) is suspiciously round compared to the precise Computing and Graphics figure ($8,249 million). Mixed precision within the same report is unusual.\",\n      \"confidence\": \"low\"\n    },\n    {\n      \"claim_text\": \"Revenue breakdown for FY2020 for further context: Total revenue was $6,395 million, with Computing and Graphics at approximately $6,000 million and Enterprise, Embedded, and Semi-Custom at approximately $4,399 million.\",\n      \"claim_value\": \"$6,000 million (Computing and Graphics segment revenue FY2020)\",\n      \"reason\": \"The Computing and Graphics figure is suspiciously round compared to the precise Enterprise segment figure ($4,399 million). Mixed precision raises red flags about data consistency.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\": \"Multiple claims show suspiciously round numbers or inconsistent precision, especially for segment revenues, warranting verification against primary sources.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_033_EE9D3CFB",
+      "hallucination_id": "FB_033_EE9D3CFB_H3",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$10,800 million",
+      "injected_value": "$8,249 million",
+      "detected": true,
+      "reason": "The Enterprise segment revenue ($5,600 million) is suspiciously round compared to the precise Computing and Graphics figure ($8,249 million). Mixed precision within the same report is unusual.",
+      "confidence": "low",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_033_EE9D3CFB",
+      "hallucination_id": "FB_033_EE9D3CFB_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$9,763 million",
+      "injected_value": "$6,395 million",
+      "detected": true,
+      "reason": "The Computing and Graphics figure is suspiciously round compared to the precise Enterprise segment figure ($4,399 million). Mixed precision raises red flags about data consistency.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_033_EE9D3CFB",
+      "hallucination_id": "FB_033_EE9D3CFB_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,763 million",
+      "injected_value": "$4,399 million",
+      "detected": true,
+      "reason": "The Computing and Graphics figure is suspiciously round compared to the precise Enterprise segment figure ($4,399 million). Mixed precision raises red flags about data consistency.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-24T09:44:15.903985Z"
+}

@@ -1,0 +1,85 @@
+{
+  "question_id": "FB_009_ABDB2F6B",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Activision Blizzard, FY2019\n- PRIMARY METRIC: \n  - Revenue: $6,489 million (per the FY2019 10-K, Consolidated Statements of Operations)\n  \n- SUPPORTING DATA: \n  - Property, Plant, and Equipment (PP&E) as of December 31, 2019: $1,049 million (per the FY2019 10-K, Consolidated Balance Sheets)\n  - Property, Plant, and Equipment (PP&E) as of December 31, 2018: $1,025 million (per the FY2019 10-K, Consolidated Balance Sheets)\n  - Average PP&E between FY2018 and FY2019: \n    - Calculation: ($1,049 million + $1,274 million) / 2 = $1,037 million\n\n- FIXED ASSET TURNOVER RATIO: \n  - Calculation: $6,489 million / $1,435 million = 6.26 (rounded to two decimal places: 6.26)\n\n- DATA SOURCES: \n  - FY2019 10-K, Consolidated Statements of Operations\n  - FY2019 10-K, Consolidated Balance Sheets",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_009_ABDB2F6B_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,025 million",
+      "injected_value": "$1,274 million",
+      "original_numeric": "1025",
+      "injected_numeric": "1274",
+      "position_char": 527,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.2429
+    },
+    {
+      "hallucination_id": "FB_009_ABDB2F6B_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,037 million",
+      "injected_value": "$1,435 million",
+      "original_numeric": "1037",
+      "injected_numeric": "1435",
+      "position_char": 630,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.3838
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Property, Plant, and Equipment (PP&E) as of December 31, 2018: $1,025 million",
+        "claim_value": "$1,025 million",
+        "reason": "The calculation for average PP&E uses $1,274 million, which is not provided as a separate data point. This inconsistency raises suspicion.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Average PP&E between FY2018 and FY2019: $1,037 million",
+        "claim_value": "$1,037 million",
+        "reason": "The calculation uses an unexplained $1,274 million, which is not provided as a separate data point. This inconsistency raises suspicion.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FIXED ASSET TURNOVER RATIO: $6,489 million / $1,435 million = 6.26",
+        "claim_value": "$1,435 million",
+        "reason": "The denominator $1,435 million is not the calculated average PP&E of $1,037 million. This inconsistency raises suspicion.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 7,
+    "overall_assessment": "The output contains inconsistencies in the calculation of average PP&E and the fixed asset turnover ratio, which raises suspicions about the accuracy of the results.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"Property, Plant, and Equipment (PP&E) as of December 31, 2018: $1,025 million\",\n      \"claim_value\" : \"$1,025 million\",\n      \"reason\"      : \"The calculation for average PP&E uses $1,274 million, which is not provided as a separate data point. This inconsistency raises suspicion.\",\n      \"confidence\"  : \"high\"\n    },\n    {\n      \"claim_text\"  : \"Average PP&E between FY2018 and FY2019: $1,037 million\",\n      \"claim_value\" : \"$1,037 million\",\n      \"reason\"      : \"The calculation uses an unexplained $1,274 million, which is not provided as a separate data point. This inconsistency raises suspicion.\",\n      \"confidence\"  : \"high\"\n    },\n    {\n      \"claim_text\"  : \"FIXED ASSET TURNOVER RATIO: $6,489 million / $1,435 million = 6.26\",\n      \"claim_value\" : \"$1,435 million\",\n      \"reason\"      : \"The denominator $1,435 million is not the calculated average PP&E of $1,037 million. This inconsistency raises suspicion.\",\n      \"confidence\"  : \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 7,\n  \"overall_assessment\"   : \"The output contains inconsistencies in the calculation of average PP&E and the fixed asset turnover ratio, which raises suspicions about the accuracy of the results.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_009_ABDB2F6B",
+      "hallucination_id": "FB_009_ABDB2F6B_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,025 million",
+      "injected_value": "$1,274 million",
+      "detected": true,
+      "reason": "The calculation for average PP&E uses $1,274 million, which is not provided as a separate data point. This inconsistency raises suspicion.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_009_ABDB2F6B",
+      "hallucination_id": "FB_009_ABDB2F6B_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,037 million",
+      "injected_value": "$1,435 million",
+      "detected": true,
+      "reason": "The calculation for average PP&E uses $1,274 million, which is not provided as a separate data point. This inconsistency raises suspicion.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 7
+    }
+  ],
+  "timestamp": "2026-03-27T09:27:16.808296Z"
+}

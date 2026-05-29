@@ -1,0 +1,73 @@
+{
+  "question_id": "FB_142_54C31BE1",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: Ulta Beauty, FY2023\n- PRIMARY METRIC: Wages Expense: $830.6 million (per the FY2023 Q4 Earnings, Consolidated Statements of Operations)\n- SUPPORTING DATA: \n  - Net Sales: $3,829.0 million (per the FY2023 Q4 Earnings, Consolidated Statements of Operations)\n  - Wages Expense as a Percentage of Net Sales: 28.3% (calculated as $1,083.5 million / $4,411.0 million)\n- DATA SOURCES: \n  - Ulta Beauty FY2023 Q4 Earnings, Consolidated Statements of Operations\n\n**Note:** The analysis of trends over the fiscal year and the computation of changes in the ratio is not included as per the directive to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_142_54C31BE1_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,083.5 million",
+      "injected_value": "$830.6 million",
+      "original_numeric": "1083.5",
+      "injected_numeric": "830.6",
+      "position_char": 73,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2334
+    },
+    {
+      "hallucination_id": "FB_142_54C31BE1_H1",
+      "type": "dollar_amount",
+      "original_value": "$3,829.0 million",
+      "injected_value": "$4,411.0 million",
+      "original_numeric": "3829.0",
+      "injected_numeric": "4411.0",
+      "position_char": 366,
+      "sentence_approx": 5,
+      "perturbation_delta": 0.152
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Wages Expense as a Percentage of Net Sales: 28.3% (calculated as $1,083.5 million / $4,411.0 million)",
+        "claim_value": "28.3%",
+        "reason": "The calculation uses $1,083.5 million for wages expense when earlier it was stated as $830.6 million, and $4,411.0 million for net sales when earlier it was stated as $3,829.0 million. This inconsistency in figures suggests potential fabrication or error.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 3,
+    "overall_assessment": "The wages expense as a percentage of net sales calculation contains inconsistencies with the provided figures, raising suspicion of inaccuracy.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Wages Expense as a Percentage of Net Sales: 28.3% (calculated as $1,083.5 million / $4,411.0 million)\",\n      \"claim_value\": \"28.3%\",\n      \"reason\": \"The calculation uses $1,083.5 million for wages expense when earlier it was stated as $830.6 million, and $4,411.0 million for net sales when earlier it was stated as $3,829.0 million. This inconsistency in figures suggests potential fabrication or error.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 3,\n  \"overall_assessment\": \"The wages expense as a percentage of net sales calculation contains inconsistencies with the provided figures, raising suspicion of inaccuracy.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_142_54C31BE1",
+      "hallucination_id": "FB_142_54C31BE1_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,083.5 million",
+      "injected_value": "$830.6 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 3
+    },
+    {
+      "question_id": "FB_142_54C31BE1",
+      "hallucination_id": "FB_142_54C31BE1_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,829.0 million",
+      "injected_value": "$4,411.0 million",
+      "detected": true,
+      "reason": "The calculation uses $1,083.5 million for wages expense when earlier it was stated as $830.6 million, and $4,411.0 million for net sales when earlier it was stated as $3,829.0 million. This inconsistency in figures suggests potential fabrication or error.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 3
+    }
+  ],
+  "timestamp": "2026-03-24T10:02:28.535865Z"
+}

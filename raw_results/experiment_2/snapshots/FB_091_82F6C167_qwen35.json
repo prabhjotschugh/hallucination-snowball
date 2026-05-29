@@ -1,0 +1,109 @@
+{
+  "question_id": "FB_091_82F6C167",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Johnson & Johnson, effective August 30, 2023\n- PRIMARY METRIC: The business segment classified as a discontinued operation is the \"Consumer Health\" segment, as detailed in the 8-K filing dated August 30, 2023.\n- SUPPORTING DATA: \n  - For context, the Consumer Health segment reported revenues of:\n    - $4,690 million for Q2 2023 (per the Q2 2023 10-Q, Consolidated Statements of Operations)\n    - $2,388 million for Q2 2022 (per the Q2 2022 10-Q, Consolidated Statements of Operations)\n    - $2,481 million for Q2 2021 (per the Q2 2021 10-Q, Consolidated Statements of Operations)\n- DATA SOURCES: \n  - Johnson & Johnson 8-K filing dated August 30, 2023\n  - Johnson & Johnson Q2 2023 10-Q, Consolidated Statements of Operations\n  - Johnson & Johnson Q2 2022 10-Q, Consolidated Statements of Operations\n  - Johnson & Johnson Q2 2021 10-Q, Consolidated Statements of Operations\n\nNote: The implications of this discontinuation on the company's overall financial health and trends in revenue or profitability associated with the segment over recent quarters were not included in the data extraction as per the directive to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_091_82F6C167_H3",
+      "type": "dollar_amount",
+      "original_value": "$3,694 million",
+      "injected_value": "$4,690 million",
+      "original_numeric": "3694",
+      "injected_numeric": "4690",
+      "position_char": 323,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.2697
+    },
+    {
+      "hallucination_id": "FB_091_82F6C167_H2",
+      "type": "dollar_amount",
+      "original_value": "$3,650 million",
+      "injected_value": "$2,388 million",
+      "original_numeric": "3650",
+      "injected_numeric": "2388",
+      "position_char": 418,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3457
+    },
+    {
+      "hallucination_id": "FB_091_82F6C167_H1",
+      "type": "dollar_amount",
+      "original_value": "$3,580 million",
+      "injected_value": "$2,481 million",
+      "original_numeric": "3580",
+      "injected_numeric": "2481",
+      "position_char": 513,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3069
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "$4,690 million for Q2 2023 (per the Q2 2023 10-Q, Consolidated Statements of Operations)",
+        "claim_value": "$4,690 million",
+        "reason": "This figure represents a ~96% year-over-year increase compared to the reported Q2 2022 revenue ($2,388 million). Such growth is economically implausible for a mature consumer health segment (stable staples) during a divestiture period without major acquisitions. The figure may represent Year-to-Date revenue mislabeled as Q2, or a hallucination.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "$2,388 million for Q2 2022 (per the Q2 2022 10-Q, Consolidated Statements of Operations)",
+        "claim_value": "$2,388 million",
+        "reason": "This figure is inconsistent with the known scale of the Johnson & Johnson Consumer Health business (later Kenvue), which reported approximately $15 billion in annual sales for 2022. This implies an average quarterly revenue of ~$3.75 billion, making $2.388 billion suspiciously low for a full quarter.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "per the Q2 2023 10-Q, Consolidated Statements of Operations",
+        "claim_value": "Consolidated Statements of Operations",
+        "reason": "Segment-specific revenue breakdowns are typically disclosed in the 'Segment Information' notes to the financial statements, not on the face of the Consolidated Statements of Operations, which generally reports total corporate revenue only. This suggests a potential hallucination of the source document structure.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "While the strategic context (Consumer Health spin-off) is accurate, the specific revenue figures exhibit implausible growth trends and inconsistencies with the known scale of the business, and the cited source location for segment data is technically inaccurate.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"$4,690 million for Q2 2023 (per the Q2 2023 10-Q, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$4,690 million\",\n      \"reason\": \"This figure represents a ~96% year-over-year increase compared to the reported Q2 2022 revenue ($2,388 million). Such growth is economically implausible for a mature consumer health segment (stable staples) during a divestiture period without major acquisitions. The figure may represent Year-to-Date revenue mislabeled as Q2, or a hallucination.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"$2,388 million for Q2 2022 (per the Q2 2022 10-Q, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$2,388 million\",\n      \"reason\": \"This figure is inconsistent with the known scale of the Johnson & Johnson Consumer Health business (later Kenvue), which reported approximately $15 billion in annual sales for 2022. This implies an average quarterly revenue of ~$3.75 billion, making $2.388 billion suspiciously low for a full quarter.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"per the Q2 2023 10-Q, Consolidated Statements of Operations\",\n      \"claim_value\": \"Consolidated Statements of Operations\",\n      \"reason\": \"Segment-specific revenue breakdowns are typically disclosed in the 'Segment Information' notes to the financial statements, not on the face of the Consolidated Statements of Operations, which generally reports total corporate revenue only. This suggests a potential hallucination of the source document structure.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\": \"While the strategic context (Consumer Health spin-off) is accurate, the specific revenue figures exhibit implausible growth trends and inconsistencies with the known scale of the business, and the cited source location for segment data is technically inaccurate.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_091_82F6C167",
+      "hallucination_id": "FB_091_82F6C167_H3",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,694 million",
+      "injected_value": "$4,690 million",
+      "detected": true,
+      "reason": "This figure represents a ~96% year-over-year increase compared to the reported Q2 2022 revenue ($2,388 million). Such growth is economically implausible for a mature consumer health segment (stable staples) during a divestiture period without major acquisitions. The figure may represent Year-to-Date revenue mislabeled as Q2, or a hallucination.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_091_82F6C167",
+      "hallucination_id": "FB_091_82F6C167_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,650 million",
+      "injected_value": "$2,388 million",
+      "detected": true,
+      "reason": "This figure is inconsistent with the known scale of the Johnson & Johnson Consumer Health business (later Kenvue), which reported approximately $15 billion in annual sales for 2022. This implies an average quarterly revenue of ~$3.75 billion, making $2.388 billion suspiciously low for a full quarter.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_091_82F6C167",
+      "hallucination_id": "FB_091_82F6C167_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,580 million",
+      "injected_value": "$2,481 million",
+      "detected": true,
+      "reason": "This figure is inconsistent with the known scale of the Johnson & Johnson Consumer Health business (later Kenvue), which reported approximately $15 billion in annual sales for 2022. This implies an average quarterly revenue of ~$3.75 billion, making $2.388 billion suspiciously low for a full quarter.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-24T12:10:54.310721Z"
+}

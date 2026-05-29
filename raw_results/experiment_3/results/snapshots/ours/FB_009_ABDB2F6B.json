@@ -1,0 +1,245 @@
+{
+  "question_id": "FB_009_ABDB2F6B",
+  "method": "ours",
+  "final_output": "## Activision Blizzard: FY2019 Financial Performance Report\n\n**Executive Summary**\n\nActivision Blizzard reported a strong financial performance for Fiscal Year 2019, with total revenue reaching $6,489 million. The company demonstrated efficient utilization of its fixed assets, as evidenced by a Fixed Asset Turnover Ratio of 6.26x. Property, Plant, and Equipment (PP&E) saw a modest increase of 2.34% year-over-year, indicating controlled capital expenditure while supporting revenue generation.\n\n**Analysis**\n\nFor FY2019, Activision Blizzard generated $6,489 million in revenue, as reported in its 10-K Consolidated Statements of Operations. The company's Property, Plant, and Equipment (PP&E) increased from $1,025 million as of December 31, 2018, to $1,049 million as of December 31, 2019. This represents an absolute increase of $24 million, or a 2.34% growth in fixed assets.\n\nTo assess asset efficiency, the Fixed Asset Turnover Ratio was calculated. The average PP&E for the period, derived from the FY2018 and FY2019 year-end figures, is ($1,049 million + $1,025 million) / 2 = $1,037 million. Dividing the FY2019 revenue by this average PP&E yields a Fixed Asset Turnover Ratio of $6,489 million / $1,037 million = 6.26x. This ratio indicates that for every dollar invested in fixed assets, Activision Blizzard generated $6.26 in revenue, signifying effective management and deployment of its operational assets.\n\n**Key Risks**\n\nWhile the Fixed Asset Turnover Ratio of 6.26x suggests efficient asset utilization, a sustained increase in revenue without corresponding growth in PP&E could indicate potential capacity constraints in the future. Conversely, significant capital expenditure without a proportional increase in revenue could dilute this efficiency. These factors highlight the importance of balancing capital investment with revenue growth to maintain optimal asset utilization.\n\n**Conclusion**\n\nActivision Blizzard's FY2019 financial results highlight robust revenue generation and efficient management of its fixed assets. The 2.34% increase in PP&E supports ongoing operations, while the Fixed Asset Turnover Ratio of 6.26x demonstrates the company's ability to effectively leverage its physical assets to drive sales. These metrics collectively paint a picture of a financially sound and operationally efficient enterprise for the fiscal year, showcasing prudent capital management alongside strong revenue performance.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Activision Blizzard, FY2019\n- PRIMARY METRIC: \n  - Revenue: $6,489 million (per the FY2019 10-K, Consolidated Statements of Operations)\n  \n- SUPPORTING DATA: \n  - Property, Plant, and Equipment (PP&E) as of December 31, 2019: $1,049 million (per the FY2019 10-K, Consolidated Balance Sheets)\n  - Property, Plant, and Equipment (PP&E) as of December 31, 2018: $1,025 million (per the FY2019 10-K, Consolidated Balance Sheets)\n  - Average PP&E between FY2018 and FY2019: \n    - Calculation: ($1,049 million + $1,274 million) / 2 = $1,037 million\n\n- FIXED ASSET TURNOVER RATIO: \n  - Calculation: $6,489 million / $1,435 million = 6.26 (rounded to two decimal places: 6.26)\n\n- DATA SOURCES: \n  - FY2019 10-K, Consolidated Statements of Operations\n  - FY2019 10-K, Consolidated Balance Sheets",
+    "2": "Here's an analysis of Activision Blizzard's FY2019 data:\n\n**1. Year-over-Year Changes (PP&E)**\n\n*   **PP&E (Absolute Change):**\n    *   Formula: PP&E (Current Year) - PP&E (Prior Year)\n    *   Calculation: $1,049 million (FY2019) - $1,025 million (FY2018) = **$24 million**\n\n*   **PP&E (Percentage Change):**\n    *   Formula: (Absolute Change / PP&E (Prior Year)) * 100\n    *   Calculation: ($24 million / $1,025 million) * 100 = **2.34%**\n\n**2. Relevant Ratios**\n\n*   **Average PP&E (FY2018-FY2019):**\n    *   Formula: (PP&E (FY2019) + PP&E (FY2018)) / 2\n    *   Calculation: ($1,049 million + $1,025 million) / 2 = **$1,037 million**\n\n*   **Fixed Asset Turnover Ratio:**\n    *   Formula: Revenue / Average PP&E\n    *   Calculation: $6,489 million / $1,037 million = **6.26x** (rounded to two decimal places)\n\n**3. Anomalies Flagged**\n\n*   **Researcher's Average PP&E Calculation:** The researcher's calculation used an incorrect value of $1,274 million instead of the correct $1,049 million for FY2019 PP&E. This led to an incorrect average. The corrected average is $1,037 million.\n\n*   **Researcher's Fixed Asset Turnover Ratio Calculation:** The researcher's calculation used an incorrect denominator of $1,435 million. Based on the corrected average PP&E of $1,037 million, the Fixed Asset Turnover Ratio is 6.26x. The researcher's stated result of 6.26 was coincidental despite using incorrect input values.\n\n**Summary:**\n\nActivision Blizzard saw a modest increase in its Property, Plant, and Equipment of 2.34% from FY2018 to FY2019. The company's Fixed Asset Turnover Ratio for FY2019 is 6.26x, indicating that for every dollar of fixed assets, the company generated $6.26 in revenue. This suggests efficient utilization of its fixed assets to generate sales.",
+    "3": "## Activision Blizzard: FY2019 Financial Performance Report\n\n**Executive Summary**\n\nActivision Blizzard reported a strong financial performance for Fiscal Year 2019, with total revenue reaching $6,489 million. The company demonstrated efficient utilization of its fixed assets, as evidenced by a Fixed Asset Turnover Ratio of 6.26x. Property, Plant, and Equipment (PP&E) saw a modest increase of 2.34% year-over-year, indicating controlled capital expenditure while supporting revenue generation.\n\n**Analysis**\n\nFor FY2019, Activision Blizzard generated $6,489 million in revenue, as reported in its 10-K Consolidated Statements of Operations. The company's Property, Plant, and Equipment (PP&E) increased from $1,025 million as of December 31, 2018, to $1,049 million as of December 31, 2019. This represents an absolute increase of $24 million, or a 2.34% growth in fixed assets.\n\nTo assess asset efficiency, the Fixed Asset Turnover Ratio was calculated. The average PP&E for the period, derived from the FY2018 and FY2019 year-end figures, is ($1,049 million + $1,025 million) / 2 = $1,037 million. Dividing the FY2019 revenue by this average PP&E yields a Fixed Asset Turnover Ratio of $6,489 million / $1,037 million = 6.26x. This ratio indicates that for every dollar invested in fixed assets, Activision Blizzard generated $6.26 in revenue, signifying effective management and deployment of its operational assets.\n\n**Key Risks**\n\nWhile the Fixed Asset Turnover Ratio of 6.26x suggests efficient asset utilization, a sustained increase in revenue without corresponding growth in PP&E could indicate potential capacity constraints in the future. Conversely, significant capital expenditure without a proportional increase in revenue could dilute this efficiency.\n\n**Conclusion**\n\nActivision Blizzard's FY2019 financial results highlight robust revenue generation and efficient management of its fixed assets. The 2.34% increase in PP&E supports ongoing operations, while the Fixed Asset Turnover Ratio of 6.26x demonstrates the company's ability to effectively leverage its physical assets to drive sales. These metrics collectively paint a picture of a financially sound and operationally efficient enterprise for the fiscal year.",
+    "4": "## Activision Blizzard: FY2019 Financial Performance Report\n\n**Executive Summary**\n\nActivision Blizzard reported a strong financial performance for Fiscal Year 2019, with total revenue reaching $6,489 million. The company demonstrated efficient utilization of its fixed assets, as evidenced by a Fixed Asset Turnover Ratio of 6.26x. Property, Plant, and Equipment (PP&E) saw a modest increase of 2.34% year-over-year, indicating controlled capital expenditure while supporting revenue generation.\n\n**Analysis**\n\nFor FY2019, Activision Blizzard generated $6,489 million in revenue, as reported in its 10-K Consolidated Statements of Operations. The company's Property, Plant, and Equipment (PP&E) increased from $1,025 million as of December 31, 2018, to $1,049 million as of December 31, 2019. This represents an absolute increase of $24 million, or a 2.34% growth in fixed assets.\n\nTo assess asset efficiency, the Fixed Asset Turnover Ratio was calculated. The average PP&E for the period, derived from the FY2018 and FY2019 year-end figures, is ($1,049 million + $1,025 million) / 2 = $1,037 million. Dividing the FY2019 revenue by this average PP&E yields a Fixed Asset Turnover Ratio of $6,489 million / $1,037 million = 6.26x. This ratio indicates that for every dollar invested in fixed assets, Activision Blizzard generated $6.26 in revenue, signifying effective management and deployment of its operational assets.\n\n**Key Risks**\n\nWhile the Fixed Asset Turnover Ratio of 6.26x suggests efficient asset utilization, a sustained increase in revenue without corresponding growth in PP&E could indicate potential capacity constraints in the future. Conversely, significant capital expenditure without a proportional increase in revenue could dilute this efficiency. These factors highlight the importance of balancing capital investment with revenue growth to maintain optimal asset utilization.\n\n**Conclusion**\n\nActivision Blizzard's FY2019 financial results highlight robust revenue generation and efficient management of its fixed assets. The 2.34% increase in PP&E supports ongoing operations, while the Fixed Asset Turnover Ratio of 6.26x demonstrates the company's ability to effectively leverage its physical assets to drive sales. These metrics collectively paint a picture of a financially sound and operationally efficient enterprise for the fiscal year, showcasing prudent capital management alongside strong revenue performance."
+  },
+  "gates": {
+    "gate_1": {
+      "verified": [
+        {
+          "value": "$6,489 million",
+          "ref": 6489.0
+        },
+        {
+          "value": "$1,049 million",
+          "ref": 1049.0
+        },
+        {
+          "value": "$1,025 million",
+          "ref": 1025.0
+        },
+        {
+          "value": "$1,049 million",
+          "ref": 1049.0
+        },
+        {
+          "value": "$1,037 million",
+          "ref": 1037.0
+        },
+        {
+          "value": "$6,489 million",
+          "ref": 6489.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$1,274 million",
+          "num": 1274.0,
+          "correct": 1049.0,
+          "dev": 0.1766,
+          "source": "source_document"
+        },
+        {
+          "value": "$1,435 million",
+          "num": 1435.0,
+          "correct": 1049.0,
+          "dev": 0.269,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [],
+      "n_refs": 12
+    },
+    "gate_2": {
+      "verified": [
+        {
+          "value": "$1,049 million",
+          "ref": 1049.0
+        },
+        {
+          "value": "$1,025 million",
+          "ref": 1025.0
+        },
+        {
+          "value": "$1,025 million",
+          "ref": 1025.0
+        },
+        {
+          "value": "$1,049 million",
+          "ref": 1049.0
+        },
+        {
+          "value": "$1,025 million",
+          "ref": 1025.0
+        },
+        {
+          "value": "$1,037 million",
+          "ref": 1037.0
+        },
+        {
+          "value": "$6,489 million",
+          "ref": 6489.0
+        },
+        {
+          "value": "$1,037 million",
+          "ref": 1037.0
+        },
+        {
+          "value": "$1,049 million",
+          "ref": 1049.0
+        },
+        {
+          "value": "$1,037 million",
+          "ref": 1037.0
+        },
+        {
+          "value": "$1,037 million",
+          "ref": 1037.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$1,274 million",
+          "num": 1274.0,
+          "correct": 1049.0,
+          "dev": 0.1766,
+          "source": "source_document"
+        },
+        {
+          "value": "$1,435 million",
+          "num": 1435.0,
+          "correct": 1049.0,
+          "dev": 0.269,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$24 million"
+        },
+        {
+          "value": "$24 million"
+        },
+        {
+          "value": "$6.26"
+        },
+        {
+          "value": "2.34%"
+        },
+        {
+          "value": "2.34%"
+        }
+      ],
+      "n_refs": 12
+    },
+    "gate_3": {
+      "verified": [
+        {
+          "value": "$6,489 million",
+          "ref": 6489.0
+        },
+        {
+          "value": "$6,489 million",
+          "ref": 6489.0
+        },
+        {
+          "value": "$1,025 million",
+          "ref": 1025.0
+        },
+        {
+          "value": "$1,049 million",
+          "ref": 1049.0
+        },
+        {
+          "value": "$1,049 million",
+          "ref": 1049.0
+        },
+        {
+          "value": "$1,025 million",
+          "ref": 1025.0
+        },
+        {
+          "value": "$1,037 million",
+          "ref": 1037.0
+        },
+        {
+          "value": "$6,489 million",
+          "ref": 6489.0
+        },
+        {
+          "value": "$1,037 million",
+          "ref": 1037.0
+        }
+      ],
+      "refuted": [],
+      "unverified": [
+        {
+          "value": "$24 million"
+        },
+        {
+          "value": "$6.26"
+        },
+        {
+          "value": "2.34%"
+        },
+        {
+          "value": "2.34%"
+        },
+        {
+          "value": "2.34%"
+        }
+      ],
+      "n_refs": 12
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_009_ABDB2F6B",
+      "hid": "FB_009_ABDB2F6B_H2",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 1274.0,
+      "orig_num": 1025.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_009_ABDB2F6B",
+      "hid": "FB_009_ABDB2F6B_H1",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 1435.0,
+      "orig_num": 1037.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:06:05.991415+00:00"
+}

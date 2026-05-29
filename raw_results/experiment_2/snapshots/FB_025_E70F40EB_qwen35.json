@@ -1,0 +1,127 @@
+{
+  "question_id": "FB_025_E70F40EB",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Amcor plc, FY2023, FY2022, FY2021\n- PRIMARY METRIC: \n  - **FY2023 Acquisitions**: Amcor completed the acquisition of **Nampak Flexible**, a leading flexible packaging company in Africa, for **USD 300 million**. This acquisition was aimed at expanding Amcor's footprint in the African market and enhancing its product offerings in flexible packaging. (Source: per the FY2023 10-K, Note 3 - Acquisitions)\n  \n  - **FY2022 Acquisitions**: Amcor acquired **Bemis Company, Inc.** for **USD 6.8 billion** in a strategic move to create a global leader in packaging. This acquisition was finalized in June 2019 but continued to impact financial performance through FY2022. (Source: per the FY2022 10-K, Note 3 - Acquisitions)\n\n  - **FY2021 Acquisitions**: In FY2021, Amcor acquired **the assets of the flexible packaging business of the company** for **USD 450 million**, which was intended to strengthen its position in the North American market. (Source: per the FY2021 10-K, Note 3 - Acquisitions)\n\n- SUPPORTING DATA: \n  - **FY2023 Financial Performance**: Total revenue for FY2023 was **USD 14,000 million**, with net income of **USD 1,669 million**. The acquisition of Nampak Flexible is expected to contribute to revenue growth in the coming years.\n  \n  - **FY2022 Financial Performance**: Total revenue for FY2022 was **USD 17,880 million**, with net income of **USD 897 million**. The Bemis acquisition contributed to revenue growth and cost synergies, enhancing overall profitability.\n  \n  - **FY2021 Financial Performance**: Total revenue for FY2021 was **USD 12,800 million**, with net income of **USD 1,000 million**. The flexible packaging assets acquisition helped to diversify product offerings and expand market reach.\n\n- DATA SOURCES: \n  - FY2023 10-K, Note 3 - Acquisitions\n  - FY2022 10-K, Note 3 - Acquisitions\n  - FY2021 10-K, Note 3 - Acquisitions\n\nPlease note that while the strategic rationale behind these acquisitions is mentioned, further analysis of their impact on financial performance is not included as per the directive to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_025_E70F40EB_H3",
+      "type": "large_number",
+      "original_value": "1,200",
+      "injected_value": "1,669",
+      "original_numeric": "1200",
+      "injected_numeric": "1669",
+      "position_char": 1149,
+      "sentence_approx": 8,
+      "perturbation_delta": 0.3907
+    },
+    {
+      "hallucination_id": "FB_025_E70F40EB_H2",
+      "type": "large_number",
+      "original_value": "13,500",
+      "injected_value": "17,880",
+      "original_numeric": "13500",
+      "injected_numeric": "17880",
+      "position_char": 1342,
+      "sentence_approx": 10,
+      "perturbation_delta": 0.3244
+    },
+    {
+      "hallucination_id": "FB_025_E70F40EB_H1",
+      "type": "large_number",
+      "original_value": "1,100",
+      "injected_value": "897",
+      "original_numeric": "1100",
+      "injected_numeric": "897",
+      "position_char": 1385,
+      "sentence_approx": 10,
+      "perturbation_delta": -0.1847
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Source: per the FY2023 10-K, Note 3 - Acquisitions",
+        "claim_value": "10-K",
+        "reason": "Amcor plc is a foreign private issuer (headquartered in Switzerland) listed on the NYSE; it files Form 20-F with the SEC, not Form 10-K. This indicates a hallucinated source document.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2022 Acquisitions: Amcor acquired Bemis Company, Inc. for USD 6.8 billion... This acquisition was finalized in June 2019 but continued to impact financial performance through FY2022.",
+        "claim_value": "FY2022 Acquisitions",
+        "reason": "Categorizing a deal closed in June 2019 (FY2020) as a FY2022 acquisition is factually incorrect. While integration continued, the transaction belongs to FY2020.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2023 Acquisitions: Amcor completed the acquisition of Nampak Flexible... for USD 300 million.",
+        "claim_value": "USD 300 million",
+        "reason": "The acquisition of the remaining stake in Nampak Products Limited was announced in 2023 but completed in early 2024. Reporting it as completed in FY2023 (ending June 30) is likely inaccurate.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Total revenue for FY2022 was USD 17,880 million",
+        "claim_value": "USD 17,880 million",
+        "reason": "This figure represents a ~40% increase from FY2021 and a ~22% decrease to FY2023. Such volatility is highly unusual for a stable industrial packaging company without major divestitures, suggesting hallucination.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "In FY2021, Amcor acquired the assets of the flexible packaging business of the company for USD 450 million",
+        "claim_value": "assets of the flexible packaging business of the company",
+        "reason": "The phrasing 'business of the company' is nonsensical (implies buying itself) and vague. This lacks specific target naming typical of legitimate acquisition disclosures.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total revenue for FY2021 was USD 12,800 million",
+        "claim_value": "USD 12,800 million",
+        "reason": "Combined with the FY2022 figure, this creates an implausible revenue trajectory. Amcor's revenue has historically been more stable around the USD 14-15 billion range during this period.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 15,
+    "overall_assessment": "The output contains multiple critical hallucinations regarding regulatory filing types, acquisition timing, and financial figure stability.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Source: per the FY2023 10-K, Note 3 - Acquisitions\",\n      \"claim_value\": \"10-K\",\n      \"reason\": \"Amcor plc is a foreign private issuer (headquartered in Switzerland) listed on the NYSE; it files Form 20-F with the SEC, not Form 10-K. This indicates a hallucinated source document.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2022 Acquisitions: Amcor acquired Bemis Company, Inc. for USD 6.8 billion... This acquisition was finalized in June 2019 but continued to impact financial performance through FY2022.\",\n      \"claim_value\": \"FY2022 Acquisitions\",\n      \"reason\": \"Categorizing a deal closed in June 2019 (FY2020) as a FY2022 acquisition is factually incorrect. While integration continued, the transaction belongs to FY2020.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2023 Acquisitions: Amcor completed the acquisition of Nampak Flexible... for USD 300 million.\",\n      \"claim_value\": \"USD 300 million\",\n      \"reason\": \"The acquisition of the remaining stake in Nampak Products Limited was announced in 2023 but completed in early 2024. Reporting it as completed in FY2023 (ending June 30) is likely inaccurate.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Total revenue for FY2022 was USD 17,880 million\",\n      \"claim_value\": \"USD 17,880 million\",\n      \"reason\": \"This figure represents a ~40% increase from FY2021 and a ~22% decrease to FY2023. Such volatility is highly unusual for a stable industrial packaging company without major divestitures, suggesting hallucination.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"In FY2021, Amcor acquired the assets of the flexible packaging business of the company for USD 450 million\",\n      \"claim_value\": \"assets of the flexible packaging business of the company\",\n      \"reason\": \"The phrasing 'business of the company' is nonsensical (implies buying itself) and vague. This lacks specific target naming typical of legitimate acquisition disclosures.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total revenue for FY2021 was USD 12,800 million\",\n      \"claim_value\": \"USD 12,800 million\",\n      \"reason\": \"Combined with the FY2022 figure, this creates an implausible revenue trajectory. Amcor's revenue has historically been more stable around the USD 14-15 billion range during this period.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 15,\n  \"overall_assessment\": \"The output contains multiple critical hallucinations regarding regulatory filing types, acquisition timing, and financial figure stability.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_025_E70F40EB",
+      "hallucination_id": "FB_025_E70F40EB_H3",
+      "model": "Qwen3.5-397B",
+      "injection_type": "large_number",
+      "original_value": "1,200",
+      "injected_value": "1,669",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 15
+    },
+    {
+      "question_id": "FB_025_E70F40EB",
+      "hallucination_id": "FB_025_E70F40EB_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "large_number",
+      "original_value": "13,500",
+      "injected_value": "17,880",
+      "detected": true,
+      "reason": "This figure represents a ~40% increase from FY2021 and a ~22% decrease to FY2023. Such volatility is highly unusual for a stable industrial packaging company without major divestitures, suggesting hallucination.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 15
+    },
+    {
+      "question_id": "FB_025_E70F40EB",
+      "hallucination_id": "FB_025_E70F40EB_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "large_number",
+      "original_value": "1,100",
+      "injected_value": "897",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 15
+    }
+  ],
+  "timestamp": "2026-03-24T10:36:06.421279Z"
+}

@@ -1,0 +1,103 @@
+{
+  "question_id": "FB_070_4418F850",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: The Coca-Cola Company, FY2022\n- PRIMARY METRIC: Dividend Payout Ratio: 66.67% (calculated as Total Cash Dividends Paid of $5,694 million divided by Net Income Attributable to Shareholders of $14,585 million, per the FY2022 10-K, Consolidated Statements of Cash Flows and Consolidated Statements of Operations).\n- SUPPORTING DATA: \n  - Total Cash Dividends Paid: $7,964 million (per the FY2022 10-K, Consolidated Statements of Cash Flows).\n  - Net Income Attributable to Shareholders: $14,512 million (per the FY2022 10-K, Consolidated Statements of Operations).\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Cash Flows, page 56.\n  - FY2022 10-K, Consolidated Statements of Operations, page 52. \n\nNote: The dividend payout ratio is calculated as (Total Cash Dividends Paid / Net Income Attributable to Shareholders) * 100.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_070_4418F850_H3",
+      "type": "dollar_amount",
+      "original_value": "$7,964 million",
+      "injected_value": "$5,694 million",
+      "original_numeric": "7964",
+      "injected_numeric": "5694",
+      "position_char": 142,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.285
+    },
+    {
+      "hallucination_id": "FB_070_4418F850_H2",
+      "type": "dollar_amount",
+      "original_value": "$11,952 million",
+      "injected_value": "$14,585 million",
+      "original_numeric": "11952",
+      "injected_numeric": "14585",
+      "position_char": 211,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.2203
+    },
+    {
+      "hallucination_id": "FB_070_4418F850_H1",
+      "type": "dollar_amount",
+      "original_value": "$11,952 million",
+      "injected_value": "$14,512 million",
+      "original_numeric": "11952",
+      "injected_numeric": "14512",
+      "position_char": 504,
+      "sentence_approx": 4,
+      "perturbation_delta": 0.2142
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Total Cash Dividends Paid: $7,964 million",
+        "claim_value": "$7,964 million",
+        "reason": "Inconsistent with calculation of dividend payout ratio, which uses $5,694 million as Total Cash Dividends Paid",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Net Income Attributable to Shareholders: $14,512 million",
+        "claim_value": "$14,512 million",
+        "reason": "Inconsistent with calculation of dividend payout ratio, which uses $14,585 million as Net Income Attributable to Shareholders",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 4,
+    "overall_assessment": "Inconsistencies found in supporting data, potentially indicating errors or hallucinations.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"Total Cash Dividends Paid: $7,964 million\",\n      \"claim_value\" : \"$7,964 million\",\n      \"reason\"      : \"Inconsistent with calculation of dividend payout ratio, which uses $5,694 million as Total Cash Dividends Paid\",\n      \"confidence\"  : \"high\"\n    },\n    {\n      \"claim_text\"  : \"Net Income Attributable to Shareholders: $14,512 million\",\n      \"claim_value\" : \"$14,512 million\",\n      \"reason\"      : \"Inconsistent with calculation of dividend payout ratio, which uses $14,585 million as Net Income Attributable to Shareholders\",\n      \"confidence\"  : \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 4,\n  \"overall_assessment\"   : \"Inconsistencies found in supporting data, potentially indicating errors or hallucinations.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_070_4418F850",
+      "hallucination_id": "FB_070_4418F850_H3",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$7,964 million",
+      "injected_value": "$5,694 million",
+      "detected": true,
+      "reason": "Inconsistent with calculation of dividend payout ratio, which uses $5,694 million as Total Cash Dividends Paid",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 4
+    },
+    {
+      "question_id": "FB_070_4418F850",
+      "hallucination_id": "FB_070_4418F850_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$11,952 million",
+      "injected_value": "$14,585 million",
+      "detected": true,
+      "reason": "Inconsistent with calculation of dividend payout ratio, which uses $14,585 million as Net Income Attributable to Shareholders",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 4
+    },
+    {
+      "question_id": "FB_070_4418F850",
+      "hallucination_id": "FB_070_4418F850_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$11,952 million",
+      "injected_value": "$14,512 million",
+      "detected": true,
+      "reason": "Inconsistent with calculation of dividend payout ratio, which uses $14,585 million as Net Income Attributable to Shareholders",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 4
+    }
+  ],
+  "timestamp": "2026-03-27T09:35:50.066373Z"
+}

@@ -1,0 +1,103 @@
+{
+  "question_id": "FB_064_7576A9AF",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: The Boeing Company, FY2022\n- PRIMARY METRIC: Boeing's primary customer segments as of FY2022 include Commercial Airplanes, Defense, Space & Security, and Global Services. The revenue contributions from these segments are as follows:\n  - Commercial Airplanes: $27,100 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - Defense, Space & Security: $26,300 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - Global Services: $16,300 million (per the FY2022 10-K, Consolidated Statements of Operations)\n\n- SUPPORTING DATA:\n  - FY2021 Revenue Contributions:\n    - Commercial Airplanes: $12,426 million (per the FY2021 10-K, Consolidated Statements of Operations)\n    - Defense, Space & Security: $22,100 million (per the FY2021 10-K, Consolidated Statements of Operations)\n    - Global Services: $18,525 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2020 Revenue Contributions:\n    - Commercial Airplanes: $39,000 million (per the FY2020 10-K, Consolidated Statements of Operations)\n    - Defense, Space & Security: $26,400 million (per the FY2020 10-K, Consolidated Statements of Operations)\n    - Global Services: $19,162 million (per the FY2020 10-K, Consolidated Statements of Operations)\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Statements of Operations\n  - FY2020 10-K, Consolidated Statements of Operations\n\nNote: This report strictly contains factual data as requested. Further analysis or interpretation is not included.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_064_7576A9AF_H3",
+      "type": "dollar_amount",
+      "original_value": "$14,800 million",
+      "injected_value": "$12,426 million",
+      "original_numeric": "14800",
+      "injected_numeric": "12426",
+      "position_char": 644,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.1604
+    },
+    {
+      "hallucination_id": "FB_064_7576A9AF_H2",
+      "type": "dollar_amount",
+      "original_value": "$15,300 million",
+      "injected_value": "$18,525 million",
+      "original_numeric": "15300",
+      "injected_numeric": "18525",
+      "position_char": 854,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.2108
+    },
+    {
+      "hallucination_id": "FB_064_7576A9AF_H1",
+      "type": "dollar_amount",
+      "original_value": "$15,100 million",
+      "injected_value": "$19,162 million",
+      "original_numeric": "15100",
+      "injected_numeric": "19162",
+      "position_char": 1203,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.269
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Commercial Airplanes: $27,100 million",
+        "claim_value": "$27,100 million",
+        "reason": "Unusual year-over-year increase of 118% in Commercial Airplanes revenue from FY2021 to FY2022, which seems unreasonable given the industry trends and Boeing's historical performance.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Global Services: $16,300 million",
+        "claim_value": "$16,300 million",
+        "reason": "Suspiciously low revenue contribution from Global Services in FY2022 compared to FY2021, with a decrease of 12% despite being a relatively stable segment.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 9,
+    "overall_assessment": "Some revenue contributions seem suspiciously unusual or inconsistent with expected trends, warranting further verification.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"Commercial Airplanes: $27,100 million\",\n      \"claim_value\" : \"$27,100 million\",\n      \"reason\"      : \"Unusual year-over-year increase of 118% in Commercial Airplanes revenue from FY2021 to FY2022, which seems unreasonable given the industry trends and Boeing's historical performance.\",\n      \"confidence\"  : \"high\"\n    },\n    {\n      \"claim_text\"  : \"Global Services: $16,300 million\",\n      \"claim_value\" : \"$16,300 million\",\n      \"reason\"      : \"Suspiciously low revenue contribution from Global Services in FY2022 compared to FY2021, with a decrease of 12% despite being a relatively stable segment.\",\n      \"confidence\"  : \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 9,\n  \"overall_assessment\"   : \"Some revenue contributions seem suspiciously unusual or inconsistent with expected trends, warranting further verification.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_064_7576A9AF",
+      "hallucination_id": "FB_064_7576A9AF_H3",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$14,800 million",
+      "injected_value": "$12,426 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_064_7576A9AF",
+      "hallucination_id": "FB_064_7576A9AF_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$15,300 million",
+      "injected_value": "$18,525 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_064_7576A9AF",
+      "hallucination_id": "FB_064_7576A9AF_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$15,100 million",
+      "injected_value": "$19,162 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 9
+    }
+  ],
+  "timestamp": "2026-03-27T09:35:09.072569Z"
+}

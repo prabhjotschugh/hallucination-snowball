@@ -1,0 +1,66 @@
+{
+  "question_id": "FB_127_E1B380E5",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: PepsiCo, Inc. - May 26, 2023\n- PRIMARY METRIC: The unsecured five-year revolving credit agreement was increased by $1.0 billion, raising the total commitment to $4.6 billion, as reported in the 8-K filing dated May 30, 2023, under Item 1.01.\n- SUPPORTING DATA: No additional multi-period data is applicable to this specific increase in the revolving credit agreement.\n- DATA SOURCES: SEC Form 8-K filed on May 30, 2023, Item 1.01.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_127_E1B380E5_H2",
+      "type": "dollar_amount",
+      "original_value": "$1.5 billion",
+      "injected_value": "$1.0 billion",
+      "original_numeric": "1.5",
+      "injected_numeric": "1.0",
+      "position_char": 135,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3125
+    },
+    {
+      "hallucination_id": "FB_127_E1B380E5_H1",
+      "type": "dollar_amount",
+      "original_value": "$5.5 billion",
+      "injected_value": "$4.6 billion",
+      "original_numeric": "5.5",
+      "injected_numeric": "4.6",
+      "position_char": 181,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.1561
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [],
+    "total_claims_reviewed": 5,
+    "overall_assessment": "The financial figures and reporting details appear plausible and internally consistent for a company of PepsiCo's size and the described event. No claims were identified as suspicious based on general financial knowledge.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [],\n  \"total_claims_reviewed\": 5,\n  \"overall_assessment\": \"The financial figures and reporting details appear plausible and internally consistent for a company of PepsiCo's size and the described event. No claims were identified as suspicious based on general financial knowledge.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_127_E1B380E5",
+      "hallucination_id": "FB_127_E1B380E5_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$1.5 billion",
+      "injected_value": "$1.0 billion",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 0,
+      "total_claims_reviewed": 5
+    },
+    {
+      "question_id": "FB_127_E1B380E5",
+      "hallucination_id": "FB_127_E1B380E5_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$5.5 billion",
+      "injected_value": "$4.6 billion",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 0,
+      "total_claims_reviewed": 5
+    }
+  ],
+  "timestamp": "2026-03-25T08:02:40.779759Z"
+}

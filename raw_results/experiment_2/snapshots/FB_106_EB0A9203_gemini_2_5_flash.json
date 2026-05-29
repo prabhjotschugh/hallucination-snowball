@@ -1,0 +1,55 @@
+{
+  "question_id": "FB_106_EB0A9203",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: MGM Resorts International, Fiscal Year 2022\n- PRIMARY METRIC: MGM Resorts International declared dividends of $0.01 per share on December 15, 2021, which was paid on January 15, 2022, totaling $1 million for the fiscal year 2022. This is reported in the FY2022 10-K, Consolidated Statements of Shareholders' Equity.\n- SUPPORTING DATA: \n  - For FY2021, MGM Resorts declared dividends of $0.01 per share, totaling $2 million.\n  - For FY2020, MGM Resorts did not declare any dividends due to the impact of the COVID-19 pandemic.\n- DATA SOURCES: \n  - MGM Resorts International FY2022 10-K, Consolidated Statements of Shareholders' Equity, page 54.\n  - MGM Resorts International FY2021 10-K, Consolidated Statements of Shareholders' Equity, page 53.\n  - MGM Resorts International FY2020 10-K, Consolidated Statements of Shareholders' Equity, page 52.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_106_EB0A9203_H2",
+      "type": "dollar_amount",
+      "original_value": "$2 million",
+      "injected_value": "$1 million",
+      "original_numeric": "2",
+      "injected_numeric": "1",
+      "position_char": 213,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.254
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "totaling $1 million for the fiscal year 2022",
+        "claim_value": "$1 million",
+        "reason": "Given the reported dividend per share of $0.01 for both FY2021 and FY2022, a total dividend of $1 million in FY2022 implies approximately 100 million shares outstanding. This represents a 50% reduction from the implied 200 million shares outstanding in FY2021 (based on $0.01/share totaling $2 million). Such a drastic reduction in shares outstanding for a company of MGM's size in a single year is highly unusual without a major corporate event (e.g., a massive share buyback or reverse stock split) and suggests an internal inconsistency in the reported figures.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "For FY2021, MGM Resorts declared dividends of $0.01 per share, totaling $2 million.",
+        "claim_value": "$2 million",
+        "reason": "Given the reported dividend per share of $0.01 for both FY2021 and FY2022, a total dividend of $2 million in FY2021 implies approximately 200 million shares outstanding. This figure, when compared to the implied 100 million shares outstanding in FY2022 (based on $0.01/share totaling $1 million), suggests a 50% reduction in shares outstanding in a single year. Such a drastic reduction for a company of MGM's size is highly unusual and points to an internal inconsistency in the reported figures.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 11,
+    "overall_assessment": "The dividend per share amounts are consistent, but the total dividend amounts for FY2021 and FY2022 imply a highly improbable 50% reduction in shares outstanding year-over-year, indicating a likely hallucination or inaccuracy in the total dividend figures.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"totaling $1 million for the fiscal year 2022\",\n      \"claim_value\": \"$1 million\",\n      \"reason\": \"Given the reported dividend per share of $0.01 for both FY2021 and FY2022, a total dividend of $1 million in FY2022 implies approximately 100 million shares outstanding. This represents a 50% reduction from the implied 200 million shares outstanding in FY2021 (based on $0.01/share totaling $2 million). Such a drastic reduction in shares outstanding for a company of MGM's size in a single year is highly unusual without a major corporate event (e.g., a massive share buyback or reverse stock split) and suggests an internal inconsistency in the reported figures.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"For FY2021, MGM Resorts declared dividends of $0.01 per share, totaling $2 million.\",\n      \"claim_value\": \"$2 million\",\n      \"reason\": \"Given the reported dividend per share of $0.01 for both FY2021 and FY2022, a total dividend of $2 million in FY2021 implies approximately 200 million shares outstanding. This figure, when compared to the implied 100 million shares outstanding in FY2022 (based on $0.01/share totaling $1 million), suggests a 50% reduction in shares outstanding in a single year. Such a drastic reduction for a company of MGM's size is highly unusual and points to an internal inconsistency in the reported figures.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 11,\n  \"overall_assessment\": \"The dividend per share amounts are consistent, but the total dividend amounts for FY2021 and FY2022 imply a highly improbable 50% reduction in shares outstanding year-over-year, indicating a likely hallucination or inaccuracy in the total dividend figures.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_106_EB0A9203",
+      "hallucination_id": "FB_106_EB0A9203_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$2 million",
+      "injected_value": "$1 million",
+      "detected": true,
+      "reason": "Given the reported dividend per share of $0.01 for both FY2021 and FY2022, a total dividend of $1 million in FY2022 implies approximately 100 million shares outstanding. This represents a 50% reduction from the implied 200 million shares outstanding in FY2021 (based on $0.01/share totaling $2 million). Such a drastic reduction in shares outstanding for a company of MGM's size in a single year is highly unusual without a major corporate event (e.g., a massive share buyback or reverse stock split) and suggests an internal inconsistency in the reported figures.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 11
+    }
+  ],
+  "timestamp": "2026-03-25T07:58:18.443430Z"
+}

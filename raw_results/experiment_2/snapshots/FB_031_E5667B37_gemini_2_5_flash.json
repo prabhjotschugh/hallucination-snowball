@@ -1,0 +1,127 @@
+{
+  "question_id": "FB_031_E5667B37",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Advanced Micro Devices, Inc. (AMD) - Fiscal Year 2015\n- PRIMARY METRIC: Depreciation and Amortization (D&A) for FY2015 was $1,184 million, as reported in the FY2015 10-K, Consolidated Statements of Cash Flows.\n- SUPPORTING DATA: \n  - Total Revenue for FY2015 was $4,045 million (per the FY2015 10-K, Consolidated Statements of Operations).\n  - D&A Margin Calculation: D&A Margin = (D&A / Total Revenue) * 100 = ($1,184 million / $4,045 million) * 100 = 29.3%.\n  - For context, D&A for FY2014 was $762 million, and Total Revenue was $7,678 million, resulting in a D&A Margin of 29.4%.\n  - D&A for FY2013 was $1,206 million, and Total Revenue was $5,329 million, resulting in a D&A Margin of 22.6%.\n- DATA SOURCES: \n  - FY2015 10-K, Consolidated Statements of Cash Flows (D&A figure).\n  - FY2015 10-K, Consolidated Statements of Operations (Total Revenue figure).\n  - FY2014 10-K, Consolidated Statements of Cash Flows and Consolidated Statements of Operations (for prior-year figures).\n  - FY2013 10-K, Consolidated Statements of Cash Flows and Consolidated Statements of Operations (for prior-year figures).",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_031_E5667B37_H3",
+      "type": "dollar_amount",
+      "original_value": "$1,165 million",
+      "injected_value": "$762 million",
+      "original_numeric": "1165",
+      "injected_numeric": "762",
+      "position_char": 516,
+      "sentence_approx": 6,
+      "perturbation_delta": -0.3457
+    },
+    {
+      "hallucination_id": "FB_031_E5667B37_H2",
+      "type": "dollar_amount",
+      "original_value": "$5,506 million",
+      "injected_value": "$7,678 million",
+      "original_numeric": "5506",
+      "injected_numeric": "7678",
+      "position_char": 554,
+      "sentence_approx": 6,
+      "perturbation_delta": 0.3944
+    },
+    {
+      "hallucination_id": "FB_031_E5667B37_H1",
+      "type": "percentage",
+      "original_value": "21.2%",
+      "injected_value": "29.4%",
+      "original_numeric": "21.2",
+      "injected_numeric": "29.4",
+      "position_char": 599,
+      "sentence_approx": 6,
+      "perturbation_delta": 8.1789
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Depreciation and Amortization (D&A) for FY2015 was $1,184 million",
+        "claim_value": "$1,184 million",
+        "reason": "This D&A figure is exceptionally high for AMD in 2015, especially when compared to its stated revenue of $4,045 million, resulting in a D&A margin of 29.3%. While AMD is an asset-heavy company, this magnitude of D&A is unusually high for typical D&A and could suggest an unstated impairment charge or a hallucinated figure.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "D&A Margin Calculation: ... = 29.3%.",
+        "claim_value": "29.3%",
+        "reason": "While mathematically correct based on the provided (and suspicious) D&A and revenue figures for FY2015, a D&A margin of 29.3% is exceptionally high for a semiconductor company, reinforcing the suspicion about the underlying D&A figure's plausibility.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Total Revenue for FY2014 was $7,678 million",
+        "claim_value": "$7,678 million",
+        "reason": "This revenue figure is implausibly high for AMD in FY2014. AMD's revenues in the mid-2010s were generally in the $4-6 billion range. A jump to $7.6 billion from $5.3 billion in FY2013 and then a sharp drop to $4.0 billion in FY2015 represents an extremely volatile and unlikely revenue trend for a company of AMD's nature without major M&A or divestitures.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "resulting in a D&A Margin of 29.4%.",
+        "claim_value": "29.4%",
+        "reason": "This is a direct mathematical inconsistency. Based on the researcher's own provided figures for FY2014 (D&A of $762 million and Total Revenue of $7,678 million), the D&A Margin should be ($762 million / $7,678 million) * 100 = 9.92%, not 29.4%.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "D&A for FY2013 was $1,206 million",
+        "claim_value": "$1,206 million",
+        "reason": "Similar to the FY2015 D&A, this figure seems exceptionally high for AMD in FY2013 relative to its stated revenue of $5,329 million, resulting in a D&A margin of 22.6%. This magnitude of D&A is unusually high for a semiconductor company's typical D&A, suggesting potential misclassification or hallucination of a large non-cash charge.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "resulting in a D&A Margin of 22.6%.",
+        "claim_value": "22.6%",
+        "reason": "While mathematically correct based on the provided (and suspicious) D&A and revenue figures for FY2013, a D&A margin of 22.6% is exceptionally high for a semiconductor company, reinforcing the suspicion about the underlying D&A figure's plausibility.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 9,
+    "overall_assessment": "The researcher's output contains several highly suspicious financial figures, particularly concerning prior-year revenue and D&A amounts, and a clear mathematical inconsistency in the FY2014 D&A margin calculation, which casts doubt on the overall accuracy of the provided context and potentially the primary metric.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Depreciation and Amortization (D&A) for FY2015 was $1,184 million\",\n      \"claim_value\": \"$1,184 million\",\n      \"reason\": \"This D&A figure is exceptionally high for AMD in 2015, especially when compared to its stated revenue of $4,045 million, resulting in a D&A margin of 29.3%. While AMD is an asset-heavy company, this magnitude of D&A is unusually high for typical D&A and could suggest an unstated impairment charge or a hallucinated figure.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"D&A Margin Calculation: ... = 29.3%.\",\n      \"claim_value\": \"29.3%\",\n      \"reason\": \"While mathematically correct based on the provided (and suspicious) D&A and revenue figures for FY2015, a D&A margin of 29.3% is exceptionally high for a semiconductor company, reinforcing the suspicion about the underlying D&A figure's plausibility.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Total Revenue for FY2014 was $7,678 million\",\n      \"claim_value\": \"$7,678 million\",\n      \"reason\": \"This revenue figure is implausibly high for AMD in FY2014. AMD's revenues in the mid-2010s were generally in the $4-6 billion range. A jump to $7.6 billion from $5.3 billion in FY2013 and then a sharp drop to $4.0 billion in FY2015 represents an extremely volatile and unlikely revenue trend for a company of AMD's nature without major M&A or divestitures.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"resulting in a D&A Margin of 29.4%.\",\n      \"claim_value\": \"29.4%\",\n      \"reason\": \"This is a direct mathematical inconsistency. Based on the researcher's own provided figures for FY2014 (D&A of $762 million and Total Revenue of $7,678 million), the D&A Margin should be ($762 million / $7,678 million) * 100 = 9.92%, not 29.4%.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"D&A for FY2013 was $1,206 million\",\n      \"claim_value\": \"$1,206 million\",\n      \"reason\": \"Similar to the FY2015 D&A, this figure seems exceptionally high for AMD in FY2013 relative to its stated revenue of $5,329 million, resulting in a D&A margin of 22.6%. This magnitude of D&A is unusually high for a semiconductor company's typical D&A, suggesting potential misclassification or hallucination of a large non-cash charge.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"resulting in a D&A Margin of 22.6%.\",\n      \"claim_value\": \"22.6%\",\n      \"reason\": \"While mathematically correct based on the provided (and suspicious) D&A and revenue figures for FY2013, a D&A margin of 22.6% is exceptionally high for a semiconductor company, reinforcing the suspicion about the underlying D&A figure's plausibility.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 9,\n  \"overall_assessment\": \"The researcher's output contains several highly suspicious financial figures, particularly concerning prior-year revenue and D&A amounts, and a clear mathematical inconsistency in the FY2014 D&A margin calculation, which casts doubt on the overall accuracy of the provided context and potentially the primary metric.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_031_E5667B37",
+      "hallucination_id": "FB_031_E5667B37_H3",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,165 million",
+      "injected_value": "$762 million",
+      "detected": true,
+      "reason": "This D&A figure is exceptionally high for AMD in 2015, especially when compared to its stated revenue of $4,045 million, resulting in a D&A margin of 29.3%. While AMD is an asset-heavy company, this magnitude of D&A is unusually high for typical D&A and could suggest an unstated impairment charge or a hallucinated figure.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_031_E5667B37",
+      "hallucination_id": "FB_031_E5667B37_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$5,506 million",
+      "injected_value": "$7,678 million",
+      "detected": true,
+      "reason": "This revenue figure is implausibly high for AMD in FY2014. AMD's revenues in the mid-2010s were generally in the $4-6 billion range. A jump to $7.6 billion from $5.3 billion in FY2013 and then a sharp drop to $4.0 billion in FY2015 represents an extremely volatile and unlikely revenue trend for a company of AMD's nature without major M&A or divestitures.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_031_E5667B37",
+      "hallucination_id": "FB_031_E5667B37_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "percentage",
+      "original_value": "21.2%",
+      "injected_value": "29.4%",
+      "detected": true,
+      "reason": "While mathematically correct based on the provided (and suspicious) D&A and revenue figures for FY2015, a D&A margin of 29.3% is exceptionally high for a semiconductor company, reinforcing the suspicion about the underlying D&A figure's plausibility.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 9
+    }
+  ],
+  "timestamp": "2026-03-25T07:41:05.204952Z"
+}

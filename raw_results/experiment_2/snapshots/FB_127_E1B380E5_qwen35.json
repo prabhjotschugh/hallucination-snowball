@@ -1,0 +1,73 @@
+{
+  "question_id": "FB_127_E1B380E5",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: PepsiCo, Inc. - May 26, 2023\n- PRIMARY METRIC: The unsecured five-year revolving credit agreement was increased by $1.0 billion, raising the total commitment to $4.6 billion, as reported in the 8-K filing dated May 30, 2023, under Item 1.01.\n- SUPPORTING DATA: No additional multi-period data is applicable to this specific increase in the revolving credit agreement.\n- DATA SOURCES: SEC Form 8-K filed on May 30, 2023, Item 1.01.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_127_E1B380E5_H2",
+      "type": "dollar_amount",
+      "original_value": "$1.5 billion",
+      "injected_value": "$1.0 billion",
+      "original_numeric": "1.5",
+      "injected_numeric": "1.0",
+      "position_char": 135,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3125
+    },
+    {
+      "hallucination_id": "FB_127_E1B380E5_H1",
+      "type": "dollar_amount",
+      "original_value": "$5.5 billion",
+      "injected_value": "$4.6 billion",
+      "original_numeric": "5.5",
+      "injected_numeric": "4.6",
+      "position_char": 181,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.1561
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "The unsecured five-year revolving credit agreement was increased by $1.0 billion, raising the total commitment to $4.6 billion",
+        "claim_value": "$1.0 billion increase, $4.6 billion total",
+        "reason": "Large-cap corporate credit facilities are typically structured in round numbers (e.g., $4.0B, $4.5B, $5.0B). A total commitment of $4.6 billion implies a previous facility size of $3.6 billion, which is an unusual non-round figure for a company of PepsiCo's scale. This level of specific precision is a common indicator of LLM hallucination when exact source documents are not accessible.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 5,
+    "overall_assessment": "Filing logistics and dates are consistent with market holidays and SEC standards, but the specific credit facility figures exhibit unusual precision inconsistent with typical round-number facility structures.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"The unsecured five-year revolving credit agreement was increased by $1.0 billion, raising the total commitment to $4.6 billion\",\n      \"claim_value\": \"$1.0 billion increase, $4.6 billion total\",\n      \"reason\": \"Large-cap corporate credit facilities are typically structured in round numbers (e.g., $4.0B, $4.5B, $5.0B). A total commitment of $4.6 billion implies a previous facility size of $3.6 billion, which is an unusual non-round figure for a company of PepsiCo's scale. This level of specific precision is a common indicator of LLM hallucination when exact source documents are not accessible.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 5,\n  \"overall_assessment\": \"Filing logistics and dates are consistent with market holidays and SEC standards, but the specific credit facility figures exhibit unusual precision inconsistent with typical round-number facility structures.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_127_E1B380E5",
+      "hallucination_id": "FB_127_E1B380E5_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$1.5 billion",
+      "injected_value": "$1.0 billion",
+      "detected": true,
+      "reason": "Large-cap corporate credit facilities are typically structured in round numbers (e.g., $4.0B, $4.5B, $5.0B). A total commitment of $4.6 billion implies a previous facility size of $3.6 billion, which is an unusual non-round figure for a company of PepsiCo's scale. This level of specific precision is a common indicator of LLM hallucination when exact source documents are not accessible.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 5
+    },
+    {
+      "question_id": "FB_127_E1B380E5",
+      "hallucination_id": "FB_127_E1B380E5_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$5.5 billion",
+      "injected_value": "$4.6 billion",
+      "detected": true,
+      "reason": "Large-cap corporate credit facilities are typically structured in round numbers (e.g., $4.0B, $4.5B, $5.0B). A total commitment of $4.6 billion implies a previous facility size of $3.6 billion, which is an unusual non-round figure for a company of PepsiCo's scale. This level of specific precision is a common indicator of LLM hallucination when exact source documents are not accessible.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 5
+    }
+  ],
+  "timestamp": "2026-03-24T12:59:41.297541Z"
+}

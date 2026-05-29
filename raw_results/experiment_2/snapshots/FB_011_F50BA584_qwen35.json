@@ -1,0 +1,91 @@
+{
+  "question_id": "FB_011_F50BA584",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Adobe Inc., FY2015\n- PRIMARY METRIC: \n  - Cash from Operations: $1,051 million (per the FY2015 10-K, Consolidated Statements of Cash Flows)\n  - Total Current Liabilities: $1,034 million (per the FY2015 10-K, Consolidated Balance Sheets)\n  - Operating Cash Flow Ratio: 0.98 (calculated as $1,626 million / $1,660 million)\n\n- SUPPORTING DATA: \n  - FY2014 Cash from Operations: $1,564 million (per the FY2014 10-K, Consolidated Statements of Cash Flows)\n  - FY2014 Total Current Liabilities: $1,486 million (per the FY2014 10-K, Consolidated Balance Sheets)\n  - FY2013 Cash from Operations: $1,223 million (per the FY2013 10-K, Consolidated Statements of Cash Flows)\n  - FY2013 Total Current Liabilities: $1,267 million (per the FY2013 10-K, Consolidated Balance Sheets)\n\n- DATA SOURCES: \n  - Adobe Inc. FY2015 10-K, Consolidated Statements of Cash Flows\n  - Adobe Inc. FY2015 10-K, Consolidated Balance Sheets\n  - Adobe Inc. FY2014 10-K, Consolidated Statements of Cash Flows\n  - Adobe Inc. FY2014 10-K, Consolidated Balance Sheets\n  - Adobe Inc. FY2013 10-K, Consolidated Statements of Cash Flows\n  - Adobe Inc. FY2013 10-K, Consolidated Balance Sheets\n\nNote: The operating cash flow ratio for FY2015 is calculated as 0.98, rounded to two decimal places as requested.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_011_F50BA584_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,626 million",
+      "injected_value": "$1,051 million",
+      "original_numeric": "1626",
+      "injected_numeric": "1051",
+      "position_char": 84,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3534
+    },
+    {
+      "hallucination_id": "FB_011_F50BA584_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,660 million",
+      "injected_value": "$1,034 million",
+      "original_numeric": "1660",
+      "injected_numeric": "1034",
+      "position_char": 191,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3773
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Cash from Operations: $1,051 million (per the FY2015 10-K, Consolidated Statements of Cash Flows)",
+        "claim_value": "$1,051 million",
+        "reason": "Internal inconsistency: The output later states the ratio is calculated using $1,626 million for Cash from Operations. These two figures for the same metric in the same fiscal year contradict each other within the same response.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Current Liabilities: $1,034 million (per the FY2015 10-K, Consolidated Balance Sheets)",
+        "claim_value": "$1,034 million",
+        "reason": "Internal inconsistency: The output later states the ratio is calculated using $1,660 million for Total Current Liabilities. These two figures for the same metric in the same fiscal year contradict each other within the same response.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Operating Cash Flow Ratio: 0.98 (calculated as $1,626 million / $1,660 million)",
+        "claim_value": "0.98",
+        "reason": "Mathematical inconsistency with primary metrics: The ratio 0.98 is derived from $1,626/$1,660, but the Primary Metric section lists inputs of $1,051/$1,034 which would equal ~1.02. The source inputs for the ratio do not match the reported source inputs.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2015 Cash from Operations: $1,051 million ... FY2014 Cash from Operations: $1,564 million",
+        "claim_value": "$1,051 million vs $1,564 million",
+        "reason": "Plausibility concern: A ~33% year-over-year decline in Operating Cash Flow for Adobe during FY2015 is inconsistent with the company's known high-growth trajectory during its Creative Cloud subscription transition period. The alternative figure provided in the calculation line ($1,626 million) showing growth is more plausible.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 9,
+    "overall_assessment": "The output contains critical internal inconsistencies where the primary metric values contradict the values used in the calculation explanation, indicating significant hallucination or data processing errors.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Cash from Operations: $1,051 million (per the FY2015 10-K, Consolidated Statements of Cash Flows)\",\n      \"claim_value\": \"$1,051 million\",\n      \"reason\": \"Internal inconsistency: The output later states the ratio is calculated using $1,626 million for Cash from Operations. These two figures for the same metric in the same fiscal year contradict each other within the same response.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Current Liabilities: $1,034 million (per the FY2015 10-K, Consolidated Balance Sheets)\",\n      \"claim_value\": \"$1,034 million\",\n      \"reason\": \"Internal inconsistency: The output later states the ratio is calculated using $1,660 million for Total Current Liabilities. These two figures for the same metric in the same fiscal year contradict each other within the same response.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Operating Cash Flow Ratio: 0.98 (calculated as $1,626 million / $1,660 million)\",\n      \"claim_value\": \"0.98\",\n      \"reason\": \"Mathematical inconsistency with primary metrics: The ratio 0.98 is derived from $1,626/$1,660, but the Primary Metric section lists inputs of $1,051/$1,034 which would equal ~1.02. The source inputs for the ratio do not match the reported source inputs.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2015 Cash from Operations: $1,051 million ... FY2014 Cash from Operations: $1,564 million\",\n      \"claim_value\": \"$1,051 million vs $1,564 million\",\n      \"reason\": \"Plausibility concern: A ~33% year-over-year decline in Operating Cash Flow for Adobe during FY2015 is inconsistent with the company's known high-growth trajectory during its Creative Cloud subscription transition period. The alternative figure provided in the calculation line ($1,626 million) showing growth is more plausible.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 9,\n  \"overall_assessment\": \"The output contains critical internal inconsistencies where the primary metric values contradict the values used in the calculation explanation, indicating significant hallucination or data processing errors.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_011_F50BA584",
+      "hallucination_id": "FB_011_F50BA584_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,626 million",
+      "injected_value": "$1,051 million",
+      "detected": true,
+      "reason": "Internal inconsistency: The output later states the ratio is calculated using $1,626 million for Cash from Operations. These two figures for the same metric in the same fiscal year contradict each other within the same response.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_011_F50BA584",
+      "hallucination_id": "FB_011_F50BA584_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,660 million",
+      "injected_value": "$1,034 million",
+      "detected": true,
+      "reason": "Internal inconsistency: The output later states the ratio is calculated using $1,626 million for Cash from Operations. These two figures for the same metric in the same fiscal year contradict each other within the same response.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 9
+    }
+  ],
+  "timestamp": "2026-03-24T10:18:27.208611Z"
+}

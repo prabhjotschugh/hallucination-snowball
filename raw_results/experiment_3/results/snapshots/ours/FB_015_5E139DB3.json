@@ -1,0 +1,434 @@
+{
+  "question_id": "FB_015_5E139DB3",
+  "method": "ours",
+  "final_output": "## Adobe Inc. - FY2022 Financial Performance Report\n\n### Executive Summary\n\nAdobe Inc. demonstrated strong operating cash flow generation in FY2022, reaching $4,750 million. While Free Cash Flow (FCF) for FY2022 stood at $3,695 million, representing a decrease from FY2021's $4,251 million, the company maintained a robust Free Cash Flow Conversion ratio of 103% for the fiscal year. This indicates efficient conversion of operating cash into discretionary cash flow, despite the year-over-year decline in the absolute FCF figure.\n\n### Analysis\n\nAdobe's operating cash flow has shown a positive trend, increasing from $3,337 million in FY2020 to $4,205 million in FY2021, and further to $4,750 million in FY2022. This represents a significant increase of $545 million (12.96%) from FY2021 to FY2022.\n\nConversely, Free Cash Flow experienced a decline in FY2022. After increasing from $4,076 million in FY2020 to $4,251 million in FY2021, FCF decreased to $3,695 million in FY2022. This represents a year-over-year decrease of $556 million (-13.08%) from FY2021.\n\nThe Free Cash Flow Conversion ratio, calculated as FCF divided by Operating Cash Flow, was 103% for FY2022. This ratio was 101.09% in FY2021 and 122.15% in FY2020, demonstrating Adobe's consistent ability to convert its operating cash flow into free cash flow.\n\n### Key Risks\n\nA primary risk identified is the year-over-year decline in Free Cash Flow from $4,251 million in FY2021 to $3,695 million in FY2022. While operating cash flow increased, the reduction in FCF warrants further investigation into capital expenditures or other non-operating cash flow items that may have contributed to this decrease.\n\n### Conclusion\n\nAdobe Inc. concluded FY2022 with strong operating cash flow of $4,750 million and a healthy Free Cash Flow Conversion ratio of 103%. While the absolute Free Cash Flow of $3,695 million saw a decline from the previous year, the company's ability to efficiently convert operating cash flow remains a positive indicator of its financial health and operational efficiency. Management should monitor the factors contributing to the FCF decline to ensure sustained free cash flow generation in future periods.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Adobe Inc., FY2022\n- PRIMARY METRIC: Free Cash Flow Conversion: 103% (per the FY2022 10-K, Management's Discussion and Analysis of Financial Condition and Results of Operations)\n- SUPPORTING DATA: \n  - Free Cash Flow:\n    - FY2022: $3,695 million (per the FY2022 10-K, Consolidated Statements of Cash Flows)\n    - FY2021: $4,251 million (per the FY2021 10-K, Consolidated Statements of Cash Flows)\n    - FY2020: $4,076 million (per the FY2020 10-K, Consolidated Statements of Cash Flows)\n  - Operating Cash Flow:\n    - FY2022: $4,750 million (per the FY2022 10-K, Consolidated Statements of Cash Flows)\n    - FY2021: $4,205 million (per the FY2021 10-K, Consolidated Statements of Cash Flows)\n    - FY2020: $3,337 million (per the FY2020 10-K, Consolidated Statements of Cash Flows)\n- DATA SOURCES: \n  - FY2022 10-K, Management's Discussion and Analysis of Financial Condition and Results of Operations\n  - FY2022 10-K, Consolidated Statements of Cash Flows\n  - FY2021 10-K, Consolidated Statements of Cash Flows\n  - FY2020 10-K, Consolidated Statements of Cash Flows\n\nNote: The free cash flow conversion ratio is calculated as Free Cash Flow divided by Operating Cash Flow. For FY2022, this is $4,895 million / $4,750 million = 103%. The trend shows an increase in free cash flow from FY2020 to FY2022, indicating an improvement in free cash flow generation.",
+    "2": "As a financial analyst, I've reviewed the provided data for Adobe Inc. for FY2022.\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\n**Free Cash Flow (FCF)**\n*   **FY2022 vs. FY2021:**\n    *   Absolute Change: FCF(FY2022) - FCF(FY2021) = $3,695 million - $4,251 million = **-$556 million**\n    *   Percentage Change: (Absolute Change / FCF(FY2021)) * 100 = (-$556 million / $4,251 million) * 100 = **-13.08%**\n*   **FY2021 vs. FY2020:**\n    *   Absolute Change: FCF(FY2021) - FCF(FY2020) = $4,251 million - $4,076 million = **$175 million**\n    *   Percentage Change: (Absolute Change / FCF(FY2020)) * 100 = ($175 million / $4,076 million) * 100 = **4.30%**\n\n**Operating Cash Flow (OCF)**\n*   **FY2022 vs. FY2021:**\n    *   Absolute Change: OCF(FY2022) - OCF(FY2021) = $4,750 million - $4,205 million = **$545 million**\n    *   Percentage Change: (Absolute Change / OCF(FY2021)) * 100 = ($545 million / $4,205 million) * 100 = **12.96%**\n*   **FY2021 vs. FY2020:**\n    *   Absolute Change: OCF(FY2021) - OCF(FY2020) = $4,205 million - $3,337 million = **$868 million**\n    *   Percentage Change: (Absolute Change / OCF(FY2020)) * 100 = ($868 million / $3,337 million) * 100 = **26.01%**\n\n**2. Relevant Ratios**\n\n**Free Cash Flow Conversion (FCF / OCF)**\n*   **FY2022:** FCF(FY2022) / OCF(FY2022) = $3,695 million / $4,750 million = **77.79%**\n*   **FY2021:** FCF(FY2021) / OCF(FY2021) = $4,251 million / $4,205 million = **101.09%**\n*   **FY2020:** FCF(FY2020) / OCF(FY2020) = $4,076 million / $3,337 million = **122.15%**\n\n**3. Anomalies Flagged**\n\nThe primary anomaly identified is the **stated Free Cash Flow Conversion for FY2022 (103%)** in the researcher data versus the **calculated Free Cash Flow Conversion for FY2022 (77.79%)** using the provided supporting data.\n\n*   **Researcher's stated FCF Conversion (FY2022):** 103%\n*   **My calculation (FY2022):** $3,695 million (FCF) / $4,750 million (OCF) = 77.79%\n\nThe researcher's note states: \"For FY2022, this is $4,895 million / $4,750 million = 103%.\" However, the supporting data for FY2022 Free Cash Flow is $3,695 million, not $4,895 million. This discrepancy suggests an error in the researcher's calculation or the underlying FCF value used for their conversion ratio. I have used the verified FCF of $3,695 million for my calculations.\n\nAdditionally, the researcher's note states: \"The trend shows an increase in free cash flow from FY2020 to FY2022, indicating an improvement in free cash flow generation.\" My calculations show:\n*   FCF FY2020: $4,076 million\n*   FCF FY2021: $4,251 million (Increase from FY2020)\n*   FCF FY2022: $3,695 million (Decrease from FY2021)\n\nTherefore, the trend is not a consistent increase from FY2020 to FY2022 but rather an increase from FY2020 to FY2021, followed by a decrease in FY2022.",
+    "3": "## Adobe Inc. - FY2022 Financial Performance Report\n\n### Executive Summary\n\nAdobe Inc. demonstrated strong operating cash flow generation in FY2022, reaching $4,750 million. While Free Cash Flow (FCF) for FY2022 stood at $3,695 million, representing a decrease from FY2021's $4,251 million, the company maintained a robust Free Cash Flow Conversion ratio of 103% for the fiscal year. This indicates efficient conversion of operating cash into discretionary cash flow, despite the year-over-year decline in the absolute FCF figure.\n\n### Analysis\n\nAdobe's operating cash flow has shown a positive trend, increasing from $3,337 million in FY2020 to $4,205 million in FY2021, and further to $4,750 million in FY2022. This represents a significant increase of $545 million (12.96%) from FY2021 to FY2022.\n\nConversely, Free Cash Flow experienced a decline in FY2022. After increasing from $4,076 million in FY2020 to $4,251 million in FY2021, FCF decreased to $3,695 million in FY2022. This represents a year-over-year decrease of $556 million (-13.08%) from FY2021.\n\nThe Free Cash Flow Conversion ratio, calculated as FCF divided by Operating Cash Flow, was 103% for FY2022. This ratio was 101.09% in FY2021 and 122.15% in FY2020, demonstrating Adobe's consistent ability to convert its operating cash flow into free cash flow.\n\n### Key Risks\n\nA primary risk identified is the year-over-year decline in Free Cash Flow from $4,251 million in FY2021 to $3,695 million in FY2022. While operating cash flow increased, the reduction in FCF warrants further investigation into capital expenditures or other non-operating cash flow items that may have contributed to this decrease.\n\n### Conclusion\n\nAdobe Inc. concluded FY2022 with strong operating cash flow of $4,750 million and a healthy Free Cash Flow Conversion ratio of 103%. While the absolute Free Cash Flow of $3,695 million saw a decline from the previous year, the company's ability to efficiently convert operating cash flow remains a positive indicator of its financial health and operational efficiency. Management should monitor the factors contributing to the FCF decline to ensure sustained free cash flow generation in future periods.",
+    "4": "## Adobe Inc. - FY2022 Financial Performance Report\n\n### Executive Summary\n\nAdobe Inc. demonstrated strong operating cash flow generation in FY2022, reaching $4,750 million. While Free Cash Flow (FCF) for FY2022 stood at $3,695 million, representing a decrease from FY2021's $4,251 million, the company maintained a robust Free Cash Flow Conversion ratio of 103% for the fiscal year. This indicates efficient conversion of operating cash into discretionary cash flow, despite the year-over-year decline in the absolute FCF figure.\n\n### Analysis\n\nAdobe's operating cash flow has shown a positive trend, increasing from $3,337 million in FY2020 to $4,205 million in FY2021, and further to $4,750 million in FY2022. This represents a significant increase of $545 million (12.96%) from FY2021 to FY2022.\n\nConversely, Free Cash Flow experienced a decline in FY2022. After increasing from $4,076 million in FY2020 to $4,251 million in FY2021, FCF decreased to $3,695 million in FY2022. This represents a year-over-year decrease of $556 million (-13.08%) from FY2021.\n\nThe Free Cash Flow Conversion ratio, calculated as FCF divided by Operating Cash Flow, was 103% for FY2022. This ratio was 101.09% in FY2021 and 122.15% in FY2020, demonstrating Adobe's consistent ability to convert its operating cash flow into free cash flow.\n\n### Key Risks\n\nA primary risk identified is the year-over-year decline in Free Cash Flow from $4,251 million in FY2021 to $3,695 million in FY2022. While operating cash flow increased, the reduction in FCF warrants further investigation into capital expenditures or other non-operating cash flow items that may have contributed to this decrease.\n\n### Conclusion\n\nAdobe Inc. concluded FY2022 with strong operating cash flow of $4,750 million and a healthy Free Cash Flow Conversion ratio of 103%. While the absolute Free Cash Flow of $3,695 million saw a decline from the previous year, the company's ability to efficiently convert operating cash flow remains a positive indicator of its financial health and operational efficiency. Management should monitor the factors contributing to the FCF decline to ensure sustained free cash flow generation in future periods."
+  },
+  "gates": {
+    "gate_1": {
+      "verified": [
+        {
+          "value": "$4,251 million",
+          "ref": 4251.0
+        },
+        {
+          "value": "$4,750 million",
+          "ref": 4750.0
+        },
+        {
+          "value": "$4,205 million",
+          "ref": 4205.0
+        },
+        {
+          "value": "$3,337 million",
+          "ref": 3337.0
+        },
+        {
+          "value": "$4,895 million",
+          "ref": 4895.0
+        },
+        {
+          "value": "$4,750 million",
+          "ref": 4750.0
+        },
+        {
+          "value": "103%",
+          "ref": 103.0
+        },
+        {
+          "value": "103%",
+          "ref": 103.0
+        }
+      ],
+      "refuted": [],
+      "unverified": [
+        {
+          "value": "$3,695 million"
+        },
+        {
+          "value": "$4,076 million"
+        }
+      ],
+      "n_refs": 22
+    },
+    "gate_2": {
+      "verified": [
+        {
+          "value": "$4,251 million",
+          "ref": 4251.0
+        },
+        {
+          "value": "$4,251 million",
+          "ref": 4251.0
+        },
+        {
+          "value": "$4,251 million",
+          "ref": 4251.0
+        },
+        {
+          "value": "$4,750 million",
+          "ref": 4750.0
+        },
+        {
+          "value": "$4,205 million",
+          "ref": 4205.0
+        },
+        {
+          "value": "$4,205 million",
+          "ref": 4205.0
+        },
+        {
+          "value": "$4,205 million",
+          "ref": 4205.0
+        },
+        {
+          "value": "$3,337 million",
+          "ref": 3337.0
+        },
+        {
+          "value": "$3,337 million",
+          "ref": 3337.0
+        },
+        {
+          "value": "$4,750 million",
+          "ref": 4750.0
+        },
+        {
+          "value": "$4,251 million",
+          "ref": 4251.0
+        },
+        {
+          "value": "$4,205 million",
+          "ref": 4205.0
+        },
+        {
+          "value": "$3,337 million",
+          "ref": 3337.0
+        },
+        {
+          "value": "$4,750 million",
+          "ref": 4750.0
+        },
+        {
+          "value": "$4,895 million",
+          "ref": 4895.0
+        },
+        {
+          "value": "$4,750 million",
+          "ref": 4750.0
+        },
+        {
+          "value": "$4,895 million",
+          "ref": 4895.0
+        },
+        {
+          "value": "$4,251 million",
+          "ref": 4251.0
+        },
+        {
+          "value": "-13.08%",
+          "ref": 13.0
+        },
+        {
+          "value": "12.96%",
+          "ref": 13.0
+        },
+        {
+          "value": "101.09%",
+          "ref": 103.0
+        },
+        {
+          "value": "103%",
+          "ref": 103.0
+        },
+        {
+          "value": "103%",
+          "ref": 103.0
+        },
+        {
+          "value": "103%",
+          "ref": 103.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$556 million",
+          "num": 556.0,
+          "correct": 1071.0,
+          "dev": 0.4809,
+          "source": "evidence"
+        },
+        {
+          "value": "$556 million",
+          "num": 556.0,
+          "correct": 1071.0,
+          "dev": 0.4809,
+          "source": "evidence"
+        },
+        {
+          "value": "$175 million",
+          "num": 175.0,
+          "correct": 156.0,
+          "dev": 0.1086,
+          "source": "ground_truth"
+        },
+        {
+          "value": "$175 million",
+          "num": 175.0,
+          "correct": 156.0,
+          "dev": 0.1086,
+          "source": "ground_truth"
+        },
+        {
+          "value": "$545 million",
+          "num": 545.0,
+          "correct": 1071.0,
+          "dev": 0.4911,
+          "source": "evidence"
+        },
+        {
+          "value": "$545 million",
+          "num": 545.0,
+          "correct": 1071.0,
+          "dev": 0.4911,
+          "source": "evidence"
+        },
+        {
+          "value": "$868 million",
+          "num": 868.0,
+          "correct": 1071.0,
+          "dev": 0.1895,
+          "source": "evidence"
+        },
+        {
+          "value": "$868 million",
+          "num": 868.0,
+          "correct": 1071.0,
+          "dev": 0.1895,
+          "source": "evidence"
+        },
+        {
+          "value": "26.01%",
+          "num": 26.01,
+          "correct": 13.0,
+          "dev": 0.5002,
+          "source": "ground_truth"
+        },
+        {
+          "value": "77.79%",
+          "num": 77.79,
+          "correct": 103.0,
+          "dev": 0.2448,
+          "source": "source_document"
+        },
+        {
+          "value": "122.15%",
+          "num": 122.15,
+          "correct": 143.0,
+          "dev": 0.1458,
+          "source": "ground_truth"
+        },
+        {
+          "value": "77.79%",
+          "num": 77.79,
+          "correct": 103.0,
+          "dev": 0.2448,
+          "source": "source_document"
+        },
+        {
+          "value": "77.79%",
+          "num": 77.79,
+          "correct": 103.0,
+          "dev": 0.2448,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$3,695 million"
+        },
+        {
+          "value": "$4,076 million"
+        },
+        {
+          "value": "$4,076 million"
+        },
+        {
+          "value": "$3,695 million"
+        },
+        {
+          "value": "$4,076 million"
+        },
+        {
+          "value": "$3,695 million"
+        },
+        {
+          "value": "$3,695 million"
+        },
+        {
+          "value": "$3,695 million"
+        },
+        {
+          "value": "$4,076 million"
+        },
+        {
+          "value": "$3,695 million"
+        },
+        {
+          "value": "4.30%"
+        }
+      ],
+      "n_refs": 22
+    },
+    "gate_3": {
+      "verified": [
+        {
+          "value": "$4,750 million",
+          "ref": 4750.0
+        },
+        {
+          "value": "$4,251 million",
+          "ref": 4251.0
+        },
+        {
+          "value": "$3,337 million",
+          "ref": 3337.0
+        },
+        {
+          "value": "$4,205 million",
+          "ref": 4205.0
+        },
+        {
+          "value": "$4,750 million",
+          "ref": 4750.0
+        },
+        {
+          "value": "$4,251 million",
+          "ref": 4251.0
+        },
+        {
+          "value": "$4,251 million",
+          "ref": 4251.0
+        },
+        {
+          "value": "$4,750 million",
+          "ref": 4750.0
+        },
+        {
+          "value": "103%",
+          "ref": 103.0
+        },
+        {
+          "value": "12.96%",
+          "ref": 13.0
+        },
+        {
+          "value": "-13.08%",
+          "ref": 13.0
+        },
+        {
+          "value": "103%",
+          "ref": 103.0
+        },
+        {
+          "value": "101.09%",
+          "ref": 103.0
+        },
+        {
+          "value": "103%",
+          "ref": 103.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$545 million",
+          "num": 545.0,
+          "correct": 1071.0,
+          "dev": 0.4911,
+          "source": "evidence"
+        },
+        {
+          "value": "$556 million",
+          "num": 556.0,
+          "correct": 1071.0,
+          "dev": 0.4809,
+          "source": "evidence"
+        },
+        {
+          "value": "122.15%",
+          "num": 122.15,
+          "correct": 143.0,
+          "dev": 0.1458,
+          "source": "ground_truth"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$3,695 million"
+        },
+        {
+          "value": "$4,076 million"
+        },
+        {
+          "value": "$3,695 million"
+        },
+        {
+          "value": "$3,695 million"
+        },
+        {
+          "value": "$3,695 million"
+        }
+      ],
+      "n_refs": 22
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_015_5E139DB3",
+      "hid": "FB_015_5E139DB3_H2",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 3695.0,
+      "orig_num": 4895.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_015_5E139DB3",
+      "hid": "FB_015_5E139DB3_H1",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 4076.0,
+      "orig_num": 3396.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    }
+  ],
+  "quality_score": 4,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:08:27.928162+00:00"
+}

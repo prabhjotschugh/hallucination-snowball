@@ -1,0 +1,79 @@
+{
+  "question_id": "FB_021_8ECDBFF6",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: Amazon.com, Inc. FY2019\n- PRIMARY METRIC: Net income attributable to shareholders: $14,743 million (per the FY2019 10-K, Consolidated Statements of Operations).\n- SUPPORTING DATA: \n  - FY2018 Net income attributable to shareholders: $10,073 million (per the FY2018 10-K, Consolidated Statements of Operations).\n  - FY2017 Net income attributable to shareholders: $2,112 million (per the FY2017 10-K, Consolidated Statements of Operations).\n- DATA SOURCES: \n  - FY2019 10-K, Consolidated Statements of Operations.\n  - FY2018 10-K, Consolidated Statements of Operations.\n  - FY2017 10-K, Consolidated Statements of Operations. \n\nNote: No financial ratios or narrative analysis have been included, as per the instruction to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_021_8ECDBFF6_H2",
+      "type": "dollar_amount",
+      "original_value": "$11,588 million",
+      "injected_value": "$14,743 million",
+      "original_numeric": "11588",
+      "injected_numeric": "14743",
+      "position_char": 103,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.2722
+    },
+    {
+      "hallucination_id": "FB_021_8ECDBFF6_H1",
+      "type": "dollar_amount",
+      "original_value": "$3,033 million",
+      "injected_value": "$2,112 million",
+      "original_numeric": "3033",
+      "injected_numeric": "2112",
+      "position_char": 383,
+      "sentence_approx": 5,
+      "perturbation_delta": -0.3036
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Net income attributable to shareholders: $14,743 million (per the FY2019 10-K, Consolidated Statements of Operations).",
+        "claim_value": "$14,743 million",
+        "reason": "Amazon's reported net income for FY2019 was $11.588 billion, not $14.743 billion. This appears to be a significant overstatement.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2018 Net income attributable to shareholders: $10,073 million (per the FY2018 10-K, Consolidated Statements of Operations).",
+        "claim_value": "$10,073 million",
+        "reason": "Amazon's reported net income for FY2018 was $10.073 billion, which matches published reports. However, the claimed FY2019 figure being higher than FY2018 contradicts Amazon's actual reported decrease in net income for 2019.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 3,
+    "overall_assessment": "The FY2019 net income claim is clearly fabricated, while the FY2018 figure appears accurate but creates inconsistency with the erroneous FY2019 report.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Net income attributable to shareholders: $14,743 million (per the FY2019 10-K, Consolidated Statements of Operations).\",\n      \"claim_value\": \"$14,743 million\",\n      \"reason\": \"Amazon's reported net income for FY2019 was $11.588 billion, not $14.743 billion. This appears to be a significant overstatement.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2018 Net income attributable to shareholders: $10,073 million (per the FY2018 10-K, Consolidated Statements of Operations).\",\n      \"claim_value\": \"$10,073 million\",\n      \"reason\": \"Amazon's reported net income for FY2018 was $10.073 billion, which matches published reports. However, the claimed FY2019 figure being higher than FY2018 contradicts Amazon's actual reported decrease in net income for 2019.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 3,\n  \"overall_assessment\": \"The FY2019 net income claim is clearly fabricated, while the FY2018 figure appears accurate but creates inconsistency with the erroneous FY2019 report.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_021_8ECDBFF6",
+      "hallucination_id": "FB_021_8ECDBFF6_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$11,588 million",
+      "injected_value": "$14,743 million",
+      "detected": true,
+      "reason": "Amazon's reported net income for FY2019 was $11.588 billion, not $14.743 billion. This appears to be a significant overstatement.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 3
+    },
+    {
+      "question_id": "FB_021_8ECDBFF6",
+      "hallucination_id": "FB_021_8ECDBFF6_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,033 million",
+      "injected_value": "$2,112 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 3
+    }
+  ],
+  "timestamp": "2026-03-24T09:42:23.136685Z"
+}

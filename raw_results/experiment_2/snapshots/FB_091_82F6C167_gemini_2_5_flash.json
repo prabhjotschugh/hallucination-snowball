@@ -1,0 +1,109 @@
+{
+  "question_id": "FB_091_82F6C167",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Johnson & Johnson, effective August 30, 2023\n- PRIMARY METRIC: The business segment classified as a discontinued operation is the \"Consumer Health\" segment, as detailed in the 8-K filing dated August 30, 2023.\n- SUPPORTING DATA: \n  - For context, the Consumer Health segment reported revenues of:\n    - $4,690 million for Q2 2023 (per the Q2 2023 10-Q, Consolidated Statements of Operations)\n    - $2,388 million for Q2 2022 (per the Q2 2022 10-Q, Consolidated Statements of Operations)\n    - $2,481 million for Q2 2021 (per the Q2 2021 10-Q, Consolidated Statements of Operations)\n- DATA SOURCES: \n  - Johnson & Johnson 8-K filing dated August 30, 2023\n  - Johnson & Johnson Q2 2023 10-Q, Consolidated Statements of Operations\n  - Johnson & Johnson Q2 2022 10-Q, Consolidated Statements of Operations\n  - Johnson & Johnson Q2 2021 10-Q, Consolidated Statements of Operations\n\nNote: The implications of this discontinuation on the company's overall financial health and trends in revenue or profitability associated with the segment over recent quarters were not included in the data extraction as per the directive to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_091_82F6C167_H3",
+      "type": "dollar_amount",
+      "original_value": "$3,694 million",
+      "injected_value": "$4,690 million",
+      "original_numeric": "3694",
+      "injected_numeric": "4690",
+      "position_char": 323,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.2697
+    },
+    {
+      "hallucination_id": "FB_091_82F6C167_H2",
+      "type": "dollar_amount",
+      "original_value": "$3,650 million",
+      "injected_value": "$2,388 million",
+      "original_numeric": "3650",
+      "injected_numeric": "2388",
+      "position_char": 418,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3457
+    },
+    {
+      "hallucination_id": "FB_091_82F6C167_H1",
+      "type": "dollar_amount",
+      "original_value": "$3,580 million",
+      "injected_value": "$2,481 million",
+      "original_numeric": "3580",
+      "injected_numeric": "2481",
+      "position_char": 513,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3069
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "revenues of: $4,690 million for Q2 2023",
+        "claim_value": "$4,690 million",
+        "reason": "This revenue figure for J&J's Consumer Health segment in Q2 2023 appears implausibly high. Publicly available information indicates J&J's Consumer Health segment sales were closer to $4.0 billion for that period. Furthermore, when compared to the reported Q2 2022 figure, it implies an unusually high year-over-year growth rate (nearly 96%) for a stable consumer health business, which is highly suspicious.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "revenues of: ... $2,388 million for Q2 2022",
+        "claim_value": "$2,388 million",
+        "reason": "This revenue figure for J&J's Consumer Health segment in Q2 2022 appears implausibly low. Publicly available information indicates J&J's Consumer Health segment sales were closer to $3.8 billion for that period.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "revenues of: ... $2,481 million for Q2 2021",
+        "claim_value": "$2,481 million",
+        "reason": "This revenue figure for J&J's Consumer Health segment in Q2 2021 appears implausibly low. Publicly available information indicates J&J's Consumer Health segment sales were closer to $3.7 billion for that period.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 12,
+    "overall_assessment": "While the identification of the Consumer Health segment as a discontinued operation and the associated dates/filings appear correct, the specific revenue figures provided for the segment across Q2 2021, Q2 2022, and Q2 2023 are highly suspicious due to implausible magnitudes and an inconsistent year-over-year growth trend.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"revenues of: $4,690 million for Q2 2023\",\n      \"claim_value\": \"$4,690 million\",\n      \"reason\": \"This revenue figure for J&J's Consumer Health segment in Q2 2023 appears implausibly high. Publicly available information indicates J&J's Consumer Health segment sales were closer to $4.0 billion for that period. Furthermore, when compared to the reported Q2 2022 figure, it implies an unusually high year-over-year growth rate (nearly 96%) for a stable consumer health business, which is highly suspicious.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"revenues of: ... $2,388 million for Q2 2022\",\n      \"claim_value\": \"$2,388 million\",\n      \"reason\": \"This revenue figure for J&J's Consumer Health segment in Q2 2022 appears implausibly low. Publicly available information indicates J&J's Consumer Health segment sales were closer to $3.8 billion for that period.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"revenues of: ... $2,481 million for Q2 2021\",\n      \"claim_value\": \"$2,481 million\",\n      \"reason\": \"This revenue figure for J&J's Consumer Health segment in Q2 2021 appears implausibly low. Publicly available information indicates J&J's Consumer Health segment sales were closer to $3.7 billion for that period.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 12,\n  \"overall_assessment\": \"While the identification of the Consumer Health segment as a discontinued operation and the associated dates/filings appear correct, the specific revenue figures provided for the segment across Q2 2021, Q2 2022, and Q2 2023 are highly suspicious due to implausible magnitudes and an inconsistent year-over-year growth trend.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_091_82F6C167",
+      "hallucination_id": "FB_091_82F6C167_H3",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,694 million",
+      "injected_value": "$4,690 million",
+      "detected": true,
+      "reason": "This revenue figure for J&J's Consumer Health segment in Q2 2023 appears implausibly high. Publicly available information indicates J&J's Consumer Health segment sales were closer to $4.0 billion for that period. Furthermore, when compared to the reported Q2 2022 figure, it implies an unusually high year-over-year growth rate (nearly 96%) for a stable consumer health business, which is highly suspicious.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 12
+    },
+    {
+      "question_id": "FB_091_82F6C167",
+      "hallucination_id": "FB_091_82F6C167_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,650 million",
+      "injected_value": "$2,388 million",
+      "detected": true,
+      "reason": "This revenue figure for J&J's Consumer Health segment in Q2 2022 appears implausibly low. Publicly available information indicates J&J's Consumer Health segment sales were closer to $3.8 billion for that period.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 12
+    },
+    {
+      "question_id": "FB_091_82F6C167",
+      "hallucination_id": "FB_091_82F6C167_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,580 million",
+      "injected_value": "$2,481 million",
+      "detected": true,
+      "reason": "This revenue figure for J&J's Consumer Health segment in Q2 2022 appears implausibly low. Publicly available information indicates J&J's Consumer Health segment sales were closer to $3.8 billion for that period.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 12
+    }
+  ],
+  "timestamp": "2026-03-25T07:55:01.344801Z"
+}

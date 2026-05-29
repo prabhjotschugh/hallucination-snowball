@@ -1,0 +1,91 @@
+{
+  "question_id": "FB_145_F02E8ED1",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Verizon Communications Inc. (FY 2022)\n- PRIMARY METRIC: Quick Ratio: 0.95 (per the FY2022 10-K, Consolidated Balance Sheets)\n- SUPPORTING DATA: \n  - Current Assets: $37,936 million (FY 2022, per the FY2022 10-K, Consolidated Balance Sheets)\n  - Current Liabilities: $28,683 million (FY 2022, per the FY2022 10-K, Consolidated Balance Sheets)\n  - Cash and Cash Equivalents: $3,095 million (FY 2022, per the FY2022 10-K, Consolidated Balance Sheets)\n  - Accounts Receivable: $7,911 million (FY 2022, per the FY2022 10-K, Consolidated Balance Sheets)\n  - Inventory: $1,178 million (FY 2022, per the FY2022 10-K, Consolidated Balance Sheets)\n  \n  Historical Quick Ratios:\n  - FY 2021: Quick Ratio: 0.92 (per the FY2021 10-K, Consolidated Balance Sheets)\n  - FY 2020: Quick Ratio: 0.89 (per the FY2020 10-K, Consolidated Balance Sheets)\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Balance Sheets\n  - FY2021 10-K, Consolidated Balance Sheets\n  - FY2020 10-K, Consolidated Balance Sheets\n\n**Note:** The quick ratio is calculated as (Current Assets - Inventory) / Current Liabilities. The relevance of the quick ratio in assessing liquidity can vary depending on the nature of the company's operations and the industry standards. However, this report strictly presents the data as requested without analysis or interpretation.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_145_F02E8ED1_H2",
+      "type": "dollar_amount",
+      "original_value": "$27,241 million",
+      "injected_value": "$37,936 million",
+      "original_numeric": "27241",
+      "injected_numeric": "37936",
+      "position_char": 185,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.3926
+    },
+    {
+      "hallucination_id": "FB_145_F02E8ED1_H1",
+      "type": "dollar_amount",
+      "original_value": "$12,066 million",
+      "injected_value": "$7,911 million",
+      "original_numeric": "12066",
+      "injected_numeric": "7911",
+      "position_char": 493,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.3443
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Quick Ratio: 0.95 (per the FY2022 10-K, Consolidated Balance Sheets)",
+        "claim_value": "0.95",
+        "reason": "Internal mathematical inconsistency. Using the researcher's own provided formula ((Current Assets - Inventory) / Current Liabilities), the calculation is ($37,936 - $1,178) / $28,683 = 1.28, not 0.95. Using the standard formula ((Cash + Accounts Receivable) / Current Liabilities), the calculation is ($3,095 + $7,911) / $28,683 = 0.38. The reported ratio matches neither the provided data nor standard accounting practices.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Current Liabilities: $28,683 million (FY 2022, per the FY2022 10-K, Consolidated Balance Sheets)",
+        "claim_value": "$28,683 million",
+        "reason": "This figure contributes to the internal inconsistency. For the Quick Ratio to be 0.95 with the provided liquid assets (Cash + AR = ~$11B), Current Liabilities would need to be approximately $11.5B. Conversely, if Current Liabilities are $28.7B, the Quick Ratio should be ~0.38. Additionally, for a company of Verizon's scale, Current Liabilities are typically higher due to significant short-term debt obligations.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Historical Quick Ratios: FY 2021: 0.92... FY 2020: 0.89",
+        "claim_value": "0.92, 0.89",
+        "reason": "Given the high confidence that the FY2022 Quick Ratio is hallucinated due to mathematical impossibility with its own supporting data, the historical trend data (showing a smooth linear increase from 0.89 to 0.95) is likely fabricated to create a plausible-looking narrative rather than reflecting actual volatile financial performance.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "The quick ratio is calculated as (Current Assets - Inventory) / Current Liabilities.",
+        "claim_value": "Formula Definition",
+        "reason": "While a common approximation, this definition excludes prepaid expenses and other non-liquid current assets. More critically, even applying this specific definition to the provided numbers yields 1.28, proving the reported 0.95 figure is inconsistent with the provided balance sheet data.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 8,
+    "overall_assessment": "The output contains severe internal mathematical inconsistencies where the reported Quick Ratio does not match the provided balance sheet components using either the stated formula or standard accounting formulas, indicating likely hallucination of financial figures.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Quick Ratio: 0.95 (per the FY2022 10-K, Consolidated Balance Sheets)\",\n      \"claim_value\": \"0.95\",\n      \"reason\": \"Internal mathematical inconsistency. Using the researcher's own provided formula ((Current Assets - Inventory) / Current Liabilities), the calculation is ($37,936 - $1,178) / $28,683 = 1.28, not 0.95. Using the standard formula ((Cash + Accounts Receivable) / Current Liabilities), the calculation is ($3,095 + $7,911) / $28,683 = 0.38. The reported ratio matches neither the provided data nor standard accounting practices.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Current Liabilities: $28,683 million (FY 2022, per the FY2022 10-K, Consolidated Balance Sheets)\",\n      \"claim_value\": \"$28,683 million\",\n      \"reason\": \"This figure contributes to the internal inconsistency. For the Quick Ratio to be 0.95 with the provided liquid assets (Cash + AR = ~$11B), Current Liabilities would need to be approximately $11.5B. Conversely, if Current Liabilities are $28.7B, the Quick Ratio should be ~0.38. Additionally, for a company of Verizon's scale, Current Liabilities are typically higher due to significant short-term debt obligations.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Historical Quick Ratios: FY 2021: 0.92... FY 2020: 0.89\",\n      \"claim_value\": \"0.92, 0.89\",\n      \"reason\": \"Given the high confidence that the FY2022 Quick Ratio is hallucinated due to mathematical impossibility with its own supporting data, the historical trend data (showing a smooth linear increase from 0.89 to 0.95) is likely fabricated to create a plausible-looking narrative rather than reflecting actual volatile financial performance.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"The quick ratio is calculated as (Current Assets - Inventory) / Current Liabilities.\",\n      \"claim_value\": \"Formula Definition\",\n      \"reason\": \"While a common approximation, this definition excludes prepaid expenses and other non-liquid current assets. More critically, even applying this specific definition to the provided numbers yields 1.28, proving the reported 0.95 figure is inconsistent with the provided balance sheet data.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 8,\n  \"overall_assessment\": \"The output contains severe internal mathematical inconsistencies where the reported Quick Ratio does not match the provided balance sheet components using either the stated formula or standard accounting formulas, indicating likely hallucination of financial figures.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_145_F02E8ED1",
+      "hallucination_id": "FB_145_F02E8ED1_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$27,241 million",
+      "injected_value": "$37,936 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 8
+    },
+    {
+      "question_id": "FB_145_F02E8ED1",
+      "hallucination_id": "FB_145_F02E8ED1_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$12,066 million",
+      "injected_value": "$7,911 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 8
+    }
+  ],
+  "timestamp": "2026-03-24T13:27:05.722975Z"
+}

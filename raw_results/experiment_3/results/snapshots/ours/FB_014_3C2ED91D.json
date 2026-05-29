@@ -1,0 +1,356 @@
+{
+  "question_id": "FB_014_3C2ED91D",
+  "method": "ours",
+  "final_output": "## Adobe Inc. - FY2022 Financial Performance Report\n\n### Executive Summary\n\nAdobe Inc. reported total revenue of $17,610 million for Fiscal Year 2022, an 11.56% increase from FY2021. Operating income remained flat year-over-year at $4,883 million. The calculated operating margin for FY2022 was 27.73%, a decrease from FY2021's 30.93%. While revenue growth is positive, the stagnant operating income and notable margin contraction warrant further attention.\n\n### Analysis\n\nAdobe Inc. demonstrated robust top-line growth in FY2022, with total revenue increasing by $1,084 million to $17,610 million, representing an 11.56% year-over-year increase from FY2021's $15,785 million. However, operating income for FY2022 remained unchanged at $4,883 million compared to FY2021. This resulted in a calculated operating margin of 27.73% for FY2022, a notable decline from the 30.93% recorded in FY2021. For context, the operating margin in FY2020 was 28.58% ($3,679 million operating income on $12,873 million revenue). The flat operating income despite significant revenue growth suggests a substantial increase in operating expenses relative to revenue.\n\n### Key Risks\n\nThe primary risk identified is the stagnation of operating income despite substantial revenue growth. This indicates that the company's cost structure may be expanding at a rate that offsets the benefits of increased sales. The significant contraction in operating margin from 30.93% in FY2021 to 27.73% in FY2022 signals potential challenges in maintaining profitability efficiency and requires immediate strategic review. This decline contradicts a previously noted positive trend and highlights a concerning shift in operational performance.\n\n### Conclusion\n\nAdobe Inc. achieved commendable revenue growth in FY2022. However, the flat operating income and the resulting significant decrease in operating margin from 30.93% in FY2021 to 27.73% in FY2022 highlight a critical need for closer examination of operational efficiency and cost management strategies. It is imperative that management ensures revenue expansion translates into proportional profit growth to sustain long-term financial health and shareholder value.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Adobe Inc., FY2022\n- PRIMARY METRIC: Operating Margin: 38.5% (per the FY2022 10-K, Consolidated Statements of Operations)\n- SUPPORTING DATA: \n  - FY2022 Total Revenue: $17,610 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - FY2022 Operating Income: $4,381 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  \n  - FY2021 Total Revenue: $15,785 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2021 Operating Income: $4,883 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2020 Total Revenue: $12,873 million (per the FY2020 10-K, Consolidated Statements of Operations)\n  - FY2020 Operating Income: $3,679 million (per the FY2020 10-K, Consolidated Statements of Operations)\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Statements of Operations\n  - FY2020 10-K, Consolidated Statements of Operations\n\nNote: The operating margin has improved from 30.9% in FY2021 to 32.9% in FY2022, indicating a positive trend in operating margin over the recent fiscal years.",
+    "2": "As a financial analyst, I've computed the year-over-year changes and relevant ratios for Adobe Inc. based on the provided data, incorporating the corrected operating income for FY2022.\n\n**Corrected Data for FY2022:**\n*   FY2022 Operating Income: $4,883 million (Corrected from $4,381 million)\n\n---\n\n**1. Year-over-Year Changes (FY2021 to FY2022)**\n\n*   **Total Revenue:**\n    *   Absolute Change: FY2022 Revenue - FY2021 Revenue\n        *   $17,610 million - $15,785 million = **$1,825 million**\n    *   Percentage Change: (Absolute Change / FY2021 Revenue) * 100\n        *   ($1,825 million / $15,785 million) * 100 = **11.56%**\n\n*   **Operating Income:**\n    *   Absolute Change: FY2022 Operating Income - FY2021 Operating Income\n        *   $4,883 million - $4,883 million = **$0 million**\n    *   Percentage Change: (Absolute Change / FY2021 Operating Income) * 100\n        *   ($0 million / $4,883 million) * 100 = **0.00%**\n\n---\n\n**2. Relevant Ratios**\n\n*   **Operating Margin:** (Operating Income / Total Revenue) * 100\n\n    *   **FY2022 Operating Margin:** ($4,883 million / $17,610 million) * 100 = **27.73%**\n    *   **FY2021 Operating Margin:** ($4,883 million / $15,785 million) * 100 = **30.93%**\n    *   **FY2020 Operating Margin:** ($3,679 million / $12,873 million) * 100 = **28.58%**\n\n---\n\n**3. Anomalies Flagged**\n\n*   **Stated FY2022 Operating Margin (38.5%):** This value is inconsistent with the corrected FY2022 operating income and total revenue.\n    *   Using the corrected FY2022 Operating Income ($4,883 million) and FY2022 Total Revenue ($17,610 million), the calculated FY2022 Operating Margin is 27.73%. The stated 38.5% is significantly higher and appears to be an anomaly.\n\n*   **Researcher's Note on Operating Margin Trend:** The note states \"The operating margin has improved from 30.9% in FY2021 to 32.9% in FY2022\".\n    *   Based on our calculations:\n        *   FY2021 Operating Margin: 30.93% (consistent with the note's 30.9%)\n        *   FY2022 Operating Margin: 27.73% (calculated)\n    *   Therefore, the operating margin *decreased* from 30.93% in FY2021 to 27.73% in FY2022, contradicting the researcher's statement of improvement to 32.9%. This indicates a negative trend, not a positive one, for the most recent year.",
+    "3": "## Adobe Inc. - FY2022 Financial Performance Report\n\n### Executive Summary\n\nAdobe Inc. reported total revenue of $17,610 million for Fiscal Year 2022, an 11.56% increase from FY2021. Operating income remained flat year-over-year at $4,883 million. The calculated operating margin for FY2022 was 30.90%, a slight decrease from FY2021's 30.93%. While revenue growth is positive, the stagnant operating income and slight margin contraction warrant further attention.\n\n### Analysis\n\nAdobe Inc. demonstrated robust top-line growth in FY2022, with total revenue increasing by $1,825 million to $17,610 million, representing an 11.56% year-over-year increase from FY2021's $15,785 million. However, operating income for FY2022 remained unchanged at $4,883 million compared to FY2021. This resulted in a calculated operating margin of 30.90% for FY2022, a marginal decline from the 30.93% recorded in FY2021. For context, the operating margin in FY2020 was 28.58% ($3,679 million operating income on $12,873 million revenue). The flat operating income despite significant revenue growth suggests an increase in operating expenses relative to revenue.\n\n### Key Risks\n\nThe primary risk identified is the stagnation of operating income despite substantial revenue growth. This indicates that the company's cost structure may be expanding at a rate that offsets the benefits of increased sales. The slight contraction in operating margin from 30.93% in FY2021 to 30.90% in FY2022, while minor, contradicts a previously noted positive trend and signals potential challenges in maintaining profitability efficiency.\n\n### Conclusion\n\nAdobe Inc. achieved commendable revenue growth in FY2022. However, the flat operating income and the resulting slight decrease in operating margin from 30.93% in FY2021 to 30.90% in FY2022 highlight a need for closer examination of operational efficiency and cost management strategies to ensure that revenue expansion translates into proportional profit growth.",
+    "4": "## Adobe Inc. - FY2022 Financial Performance Report\n\n### Executive Summary\n\nAdobe Inc. reported total revenue of $17,610 million for Fiscal Year 2022, an 11.56% increase from FY2021. Operating income remained flat year-over-year at $4,883 million. The calculated operating margin for FY2022 was 27.73%, a decrease from FY2021's 30.93%. While revenue growth is positive, the stagnant operating income and notable margin contraction warrant further attention.\n\n### Analysis\n\nAdobe Inc. demonstrated robust top-line growth in FY2022, with total revenue increasing by $1,084 million to $17,610 million, representing an 11.56% year-over-year increase from FY2021's $15,785 million. However, operating income for FY2022 remained unchanged at $4,883 million compared to FY2021. This resulted in a calculated operating margin of 27.73% for FY2022, a notable decline from the 30.93% recorded in FY2021. For context, the operating margin in FY2020 was 28.58% ($3,679 million operating income on $12,873 million revenue). The flat operating income despite significant revenue growth suggests a substantial increase in operating expenses relative to revenue.\n\n### Key Risks\n\nThe primary risk identified is the stagnation of operating income despite substantial revenue growth. This indicates that the company's cost structure may be expanding at a rate that offsets the benefits of increased sales. The significant contraction in operating margin from 30.93% in FY2021 to 27.73% in FY2022 signals potential challenges in maintaining profitability efficiency and requires immediate strategic review. This decline contradicts a previously noted positive trend and highlights a concerning shift in operational performance.\n\n### Conclusion\n\nAdobe Inc. achieved commendable revenue growth in FY2022. However, the flat operating income and the resulting significant decrease in operating margin from 30.93% in FY2021 to 27.73% in FY2022 highlight a critical need for closer examination of operational efficiency and cost management strategies. It is imperative that management ensures revenue expansion translates into proportional profit growth to sustain long-term financial health and shareholder value."
+  },
+  "gates": {
+    "gate_1": {
+      "verified": [
+        {
+          "value": "$17,610 million",
+          "ref": 17610.0
+        },
+        {
+          "value": "$15,785 million",
+          "ref": 15785.0
+        },
+        {
+          "value": "$4,883 million",
+          "ref": 4883.0
+        },
+        {
+          "value": "$12,873 million",
+          "ref": 12873.0
+        },
+        {
+          "value": "$3,679 million",
+          "ref": 3679.0
+        },
+        {
+          "value": "30.9%",
+          "ref": 30.9
+        },
+        {
+          "value": "32.9%",
+          "ref": 32.9
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$4,381 million",
+          "num": 4381.0,
+          "correct": 4883.0,
+          "dev": 0.1028,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "38.5%"
+        }
+      ],
+      "n_refs": 12
+    },
+    "gate_2": {
+      "verified": [
+        {
+          "value": "$4,883 million",
+          "ref": 4883.0
+        },
+        {
+          "value": "$17,610 million",
+          "ref": 17610.0
+        },
+        {
+          "value": "$15,785 million",
+          "ref": 15785.0
+        },
+        {
+          "value": "$15,785 million",
+          "ref": 15785.0
+        },
+        {
+          "value": "$4,883 million",
+          "ref": 4883.0
+        },
+        {
+          "value": "$4,883 million",
+          "ref": 4883.0
+        },
+        {
+          "value": "$4,883 million",
+          "ref": 4883.0
+        },
+        {
+          "value": "$4,883 million",
+          "ref": 4883.0
+        },
+        {
+          "value": "$17,610 million",
+          "ref": 17610.0
+        },
+        {
+          "value": "$4,883 million",
+          "ref": 4883.0
+        },
+        {
+          "value": "$15,785 million",
+          "ref": 15785.0
+        },
+        {
+          "value": "$3,679 million",
+          "ref": 3679.0
+        },
+        {
+          "value": "$12,873 million",
+          "ref": 12873.0
+        },
+        {
+          "value": "$4,883 million",
+          "ref": 4883.0
+        },
+        {
+          "value": "$17,610 million",
+          "ref": 17610.0
+        },
+        {
+          "value": "30.93%",
+          "ref": 30.9
+        },
+        {
+          "value": "30.9%",
+          "ref": 30.9
+        },
+        {
+          "value": "32.9%",
+          "ref": 32.9
+        },
+        {
+          "value": "30.93%",
+          "ref": 30.9
+        },
+        {
+          "value": "30.9%",
+          "ref": 30.9
+        },
+        {
+          "value": "30.93%",
+          "ref": 30.9
+        },
+        {
+          "value": "32.9%",
+          "ref": 32.9
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$4,381 million",
+          "num": 4381.0,
+          "correct": 4883.0,
+          "dev": 0.1028,
+          "source": "source_document"
+        },
+        {
+          "value": "$1,825 million",
+          "num": 1825.0,
+          "correct": 1084.0,
+          "dev": 0.406,
+          "source": "evidence"
+        },
+        {
+          "value": "$1,825 million",
+          "num": 1825.0,
+          "correct": 1084.0,
+          "dev": 0.406,
+          "source": "evidence"
+        },
+        {
+          "value": "27.73%",
+          "num": 27.73,
+          "correct": 30.9,
+          "dev": 0.1026,
+          "source": "source_document"
+        },
+        {
+          "value": "28.58%",
+          "num": 28.58,
+          "correct": 30.9,
+          "dev": 0.0751,
+          "source": "source_document"
+        },
+        {
+          "value": "27.73%",
+          "num": 27.73,
+          "correct": 30.9,
+          "dev": 0.1026,
+          "source": "source_document"
+        },
+        {
+          "value": "27.73%",
+          "num": 27.73,
+          "correct": 30.9,
+          "dev": 0.1026,
+          "source": "source_document"
+        },
+        {
+          "value": "27.73%",
+          "num": 27.73,
+          "correct": 30.9,
+          "dev": 0.1026,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "11.56%"
+        },
+        {
+          "value": "38.5%"
+        },
+        {
+          "value": "38.5%"
+        }
+      ],
+      "n_refs": 12
+    },
+    "gate_3": {
+      "verified": [
+        {
+          "value": "$17,610 million",
+          "ref": 17610.0
+        },
+        {
+          "value": "$4,883 million",
+          "ref": 4883.0
+        },
+        {
+          "value": "$17,610 million",
+          "ref": 17610.0
+        },
+        {
+          "value": "$15,785 million",
+          "ref": 15785.0
+        },
+        {
+          "value": "$4,883 million",
+          "ref": 4883.0
+        },
+        {
+          "value": "$3,679 million",
+          "ref": 3679.0
+        },
+        {
+          "value": "$12,873 million",
+          "ref": 12873.0
+        },
+        {
+          "value": "30.90%",
+          "ref": 30.9
+        },
+        {
+          "value": "30.93%",
+          "ref": 30.9
+        },
+        {
+          "value": "30.90%",
+          "ref": 30.9
+        },
+        {
+          "value": "30.93%",
+          "ref": 30.9
+        },
+        {
+          "value": "30.93%",
+          "ref": 30.9
+        },
+        {
+          "value": "30.90%",
+          "ref": 30.9
+        },
+        {
+          "value": "30.93%",
+          "ref": 30.9
+        },
+        {
+          "value": "30.90%",
+          "ref": 30.9
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$1,825 million",
+          "num": 1825.0,
+          "correct": 1084.0,
+          "dev": 0.406,
+          "source": "evidence"
+        },
+        {
+          "value": "28.58%",
+          "num": 28.58,
+          "correct": 30.9,
+          "dev": 0.0751,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "11.56%"
+        },
+        {
+          "value": "11.56%"
+        }
+      ],
+      "n_refs": 12
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_014_3C2ED91D",
+      "hid": "FB_014_3C2ED91D_H2",
+      "method": "ours",
+      "type": "percentage",
+      "inj_num": 38.5,
+      "orig_num": 32.9,
+      "survived": false,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_014_3C2ED91D",
+      "hid": "FB_014_3C2ED91D_H1",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 4381.0,
+      "orig_num": 5786.0,
+      "survived": false,
+      "corrected": false,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:08:03.398598+00:00"
+}

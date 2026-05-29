@@ -1,0 +1,184 @@
+{
+  "question_id": "FB_077_6547C156",
+  "method": "end_check",
+  "final_output": "## CVS Health: Financial Performance Report - FY2022\n\n**Executive Summary**\n\nCVS Health demonstrated a continued trend of decreasing capital expenditures in FY2022. Capital expenditures for the year were $2,148 million, marking a 23.29% reduction from FY2021's $2,800 million. This decline follows a multi-year pattern. Concurrently, total assets experienced a modest increase of 1.59%, reaching $134,300 million in FY2022 from $132,200 million in FY2021. Consequently, the capital expenditure to total assets ratio also decreased, standing at 1.60% in FY2022, down from 2.12% in FY2021 and 4.00% in FY2020.\n\n**Analysis**\n\nCVS Health's capital expenditures have consistently declined over the past three fiscal years, from $3,128 million in FY2020 to $2,800 million in FY2021, and further to $2,148 million in FY2022. This represents an absolute decrease of $652 million from FY2021 to FY2022. In contrast, total assets have shown growth, notably a significant 69.04% increase from $78,204 million in FY2020 to $132,200 million in FY2021. This was followed by a more modest absolute increase of $2,100 million to $134,300 million in FY2022. The declining capital expenditure to total assets ratio indicates a reduced proportion of total assets being allocated to new capital investments, suggesting a potential shift in investment strategy or a focus on optimizing existing assets.\n\n**Key Risks**\n\nThe consistent decline in capital expenditures could signal a reduction in investment in future growth initiatives, infrastructure upgrades, or technological advancements. While this strategy might improve short-term cash flow and profitability, it could potentially impact long-term competitiveness or operational efficiency if not strategically managed and balanced with necessary reinvestment. The significant increase in total assets from FY2020 to FY2021, while generally positive, warrants further investigation to understand its primary drivers and to ensure sustainable asset utilization and returns.\n\n**Conclusion**\n\nCVS Health's FY2022 financial data indicates a strategic shift towards lower capital investment relative to its expanding asset base. While total assets continue to grow, the sustained reduction in capital expenditures and the declining capital expenditure to total assets ratio suggest a period of consolidation, optimization, or a more selective approach to new investments rather than aggressive expansion. Further in-depth analysis would be beneficial to understand the underlying reasons for these trends and their potential long-term implications for the company's growth trajectory, operational capabilities, and market positioning.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: CVS Health, FY2022\n- PRIMARY METRIC: \n  - Capital Expenditures: $2,148 million (per the FY2022 10-K, Consolidated Statements of Cash Flows)\n  - Total Assets: $134,300 million (per the FY2022 10-K, Consolidated Balance Sheets)\n\n- SUPPORTING DATA: \n  - FY2021 Capital Expenditures: $2,800 million (per the FY2021 10-K, Consolidated Statements of Cash Flows)\n  - FY2021 Total Assets: $132,200 million (per the FY2021 10-K, Consolidated Balance Sheets)\n  - FY2020 Capital Expenditures: $3,128 million (per the FY2020 10-K, Consolidated Statements of Cash Flows)\n  - FY2020 Total Assets: $78,204 million (per the FY2020 10-K, Consolidated Balance Sheets)\n  \n- DATA SOURCES: \n  - CVS Health FY2022 10-K, Consolidated Statements of Cash Flows\n  - CVS Health FY2022 10-K, Consolidated Balance Sheets\n  - CVS Health FY2021 10-K, Consolidated Statements of Cash Flows\n  - CVS Health FY2021 10-K, Consolidated Balance Sheets\n  - CVS Health FY2020 10-K, Consolidated Statements of Cash Flows\n  - CVS Health FY2020 10-K, Consolidated Balance Sheets\n\nNote: The calculation of the capital expenditure to revenue ratio and any conclusions regarding capital intensity are not included as per the directive to provide raw data only.",
+    "2": "Here's an analysis of CVS Health's capital expenditures and total assets for FY2022, including year-over-year changes and relevant ratios.\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\n**Capital Expenditures (CapEx)**\n\n*   **FY2022 CapEx:** $2,148 million\n*   **FY2021 CapEx:** $2,800 million\n*   **FY2020 CapEx:** $3,128 million\n\n*   **FY2022 vs. FY2021:**\n    *   Absolute Change = FY2022 CapEx - FY2021 CapEx = $2,148M - $2,800M = **-$652 million**\n    *   Percentage Change = (Absolute Change / FY2021 CapEx) * 100 = (-$652M / $2,800M) * 100 = **-23.29%**\n\n*   **FY2021 vs. FY2020:**\n    *   Absolute Change = FY2021 CapEx - FY2020 CapEx = $2,800M - $3,128M = **-$328 million**\n    *   Percentage Change = (Absolute Change / FY2020 CapEx) * 100 = (-$328M / $3,128M) * 100 = **-10.49%**\n\n**Total Assets**\n\n*   **FY2022 Total Assets:** $134,300 million\n*   **FY2021 Total Assets:** $132,200 million\n*   **FY2020 Total Assets:** $78,204 million\n\n*   **FY2022 vs. FY2021:**\n    *   Absolute Change = FY2022 Total Assets - FY2021 Total Assets = $134,300M - $132,200M = **$2,100 million**\n    *   Percentage Change = (Absolute Change / FY2021 Total Assets) * 100 = ($2,100M / $132,200M) * 100 = **1.59%**\n\n*   **FY2021 vs. FY2020:**\n    *   Absolute Change = FY2021 Total Assets - FY2020 Total Assets = $132,200M - $78,204M = **$53,996 million**\n    *   Percentage Change = (Absolute Change / FY2020 Total Assets) * 100 = ($53,996M / $78,204M) * 100 = **69.04%**\n\n**2. Relevant Ratios**\n\n**Capital Expenditure to Total Assets Ratio**\n*Formula: Capital Expenditures / Total Assets*\n\n*   **FY2022:** $2,148M / $134,300M = **0.0160 or 1.60%**\n*   **FY2021:** $2,800M / $132,200M = **0.0212 or 2.12%**\n*   **FY2020:** $3,128M / $78,204M = **0.0400 or 4.00%**\n\n**3. Anomalies**\n\n*   **Significant Increase in Total Assets (FY2021 vs. FY2020):** The 69.04% increase in total assets from FY2020 to FY2021 is a substantial jump. This would typically warrant further investigation into potential acquisitions, significant asset revaluations, or other major balance sheet events during FY2021.\n*   **Consistent Decline in Capital Expenditures:** Capital expenditures have declined year-over-year for both periods analyzed (FY2022 vs. FY2021 and FY2021 vs. FY2020). This trend could indicate a shift in investment strategy, completion of major projects, or a focus on optimizing existing assets rather than expanding aggressively.\n*   **Declining CapEx to Total Assets Ratio:** The ratio has consistently decreased from 4.00% in FY2020 to 1.60% in FY2022. This suggests that the company is spending a smaller proportion of its total asset base on new capital investments.",
+    "3": "## CVS Health: Financial Performance Report - FY2022\n\n**Executive Summary**\n\nCVS Health experienced a notable decrease in capital expenditures during FY2022, continuing a multi-year trend. Capital expenditures for FY2022 stood at $2,148 million, a 23.29% reduction from FY2021's $2,800 million. Concurrently, total assets saw a modest increase of 1.59% to $134,300 million in FY2022 from $132,200 million in FY2021. The capital expenditure to total assets ratio also declined, reaching 1.60% in FY2022, down from 2.12% in FY2021 and 4.00% in FY2020.\n\n**Analysis**\n\nCVS Health's capital expenditures have consistently decreased over the past three fiscal years, from $3,128 million in FY2020 to $2,800 million in FY2021, and further to $2,148 million in FY2022. This represents a -$652 million absolute change from FY2021 to FY2022. In contrast, total assets have shown growth, particularly a significant 69.04% increase from $78,204 million in FY2020 to $132,200 million in FY2021, followed by a more modest $2,100 million absolute increase to $134,300 million in FY2022. The declining capital expenditure to total assets ratio indicates a reduced proportion of total assets being allocated to new capital investments.\n\n**Key Risks**\n\nThe consistent decline in capital expenditures could signal a reduction in investment in future growth initiatives, infrastructure upgrades, or technological advancements. While this might improve short-term cash flow, it could potentially impact long-term competitiveness or operational efficiency if not strategically managed. The significant increase in total assets from FY2020 to FY2021, while positive, warrants further investigation to understand its drivers and ensure sustainable asset utilization.\n\n**Conclusion**\n\nCVS Health's FY2022 financial data indicates a strategic shift towards lower capital investment relative to its asset base. While total assets continue to grow, the sustained reduction in capital expenditures and the declining capital expenditure to total assets ratio suggest a period of consolidation or optimization rather than aggressive expansion. Further analysis would be beneficial to understand the underlying reasons for these trends and their potential long-term implications for the company's growth trajectory and operational capabilities.",
+    "4": "## CVS Health: Financial Performance Report - FY2022\n\n**Executive Summary**\n\nCVS Health demonstrated a continued trend of decreasing capital expenditures in FY2022. Capital expenditures for the year were $2,148 million, marking a 23.29% reduction from FY2021's $2,800 million. This decline follows a multi-year pattern. Concurrently, total assets experienced a modest increase of 1.59%, reaching $134,300 million in FY2022 from $132,200 million in FY2021. Consequently, the capital expenditure to total assets ratio also decreased, standing at 1.60% in FY2022, down from 2.12% in FY2021 and 4.00% in FY2020.\n\n**Analysis**\n\nCVS Health's capital expenditures have consistently declined over the past three fiscal years, from $3,128 million in FY2020 to $2,800 million in FY2021, and further to $2,148 million in FY2022. This represents an absolute decrease of $652 million from FY2021 to FY2022. In contrast, total assets have shown growth, notably a significant 69.04% increase from $78,204 million in FY2020 to $132,200 million in FY2021. This was followed by a more modest absolute increase of $2,100 million to $134,300 million in FY2022. The declining capital expenditure to total assets ratio indicates a reduced proportion of total assets being allocated to new capital investments, suggesting a potential shift in investment strategy or a focus on optimizing existing assets.\n\n**Key Risks**\n\nThe consistent decline in capital expenditures could signal a reduction in investment in future growth initiatives, infrastructure upgrades, or technological advancements. While this strategy might improve short-term cash flow and profitability, it could potentially impact long-term competitiveness or operational efficiency if not strategically managed and balanced with necessary reinvestment. The significant increase in total assets from FY2020 to FY2021, while generally positive, warrants further investigation to understand its primary drivers and to ensure sustainable asset utilization and returns.\n\n**Conclusion**\n\nCVS Health's FY2022 financial data indicates a strategic shift towards lower capital investment relative to its expanding asset base. While total assets continue to grow, the sustained reduction in capital expenditures and the declining capital expenditure to total assets ratio suggest a period of consolidation, optimization, or a more selective approach to new investments rather than aggressive expansion. Further in-depth analysis would be beneficial to understand the underlying reasons for these trends and their potential long-term implications for the company's growth trajectory, operational capabilities, and market positioning."
+  },
+  "gates": {
+    "end_gate": {
+      "verified": [
+        {
+          "value": "$2,800 million",
+          "ref": 2800.0
+        },
+        {
+          "value": "$134,300 million",
+          "ref": 134300.0
+        },
+        {
+          "value": "$132,200 million",
+          "ref": 132200.0
+        },
+        {
+          "value": "$3,128 million",
+          "ref": 3100.0
+        },
+        {
+          "value": "$2,800 million",
+          "ref": 2800.0
+        },
+        {
+          "value": "$132,200 million",
+          "ref": 132200.0
+        },
+        {
+          "value": "$134,300 million",
+          "ref": 134300.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$2,148 million",
+          "num": 2148.0,
+          "correct": 2500.0,
+          "dev": 0.1408,
+          "source": "source_document"
+        },
+        {
+          "value": "$2,148 million",
+          "num": 2148.0,
+          "correct": 2500.0,
+          "dev": 0.1408,
+          "source": "source_document"
+        },
+        {
+          "value": "$652 million",
+          "num": 652.0,
+          "correct": 1300.0,
+          "dev": 0.4985,
+          "source": "evidence"
+        },
+        {
+          "value": "$78,204 million",
+          "num": 78204.0,
+          "correct": 128000.0,
+          "dev": 0.389,
+          "source": "source_document"
+        },
+        {
+          "value": "$2,100 million",
+          "num": 2100.0,
+          "correct": 2500.0,
+          "dev": 0.16,
+          "source": "source_document"
+        },
+        {
+          "value": "1.59%",
+          "num": 1.59,
+          "correct": 1.82,
+          "dev": 0.1264,
+          "source": "ground_truth"
+        },
+        {
+          "value": "1.60%",
+          "num": 1.6,
+          "correct": 1.82,
+          "dev": 0.1209,
+          "source": "ground_truth"
+        },
+        {
+          "value": "2.12%",
+          "num": 2.12,
+          "correct": 1.82,
+          "dev": 0.1415,
+          "source": "ground_truth"
+        },
+        {
+          "value": "4.00%",
+          "num": 4.0,
+          "correct": 3.39,
+          "dev": 0.1525,
+          "source": "ground_truth"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "23.29%"
+        },
+        {
+          "value": "69.04%"
+        }
+      ],
+      "n_refs": 18
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_077_6547C156",
+      "hid": "FB_077_6547C156_H3",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 2148.0,
+      "orig_num": 3100.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": true,
+      "any_det": true,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_077_6547C156",
+      "hid": "FB_077_6547C156_H2",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 3128.0,
+      "orig_num": 2500.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_077_6547C156",
+      "hid": "FB_077_6547C156_H1",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 78204.0,
+      "orig_num": 128000.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": true,
+      "any_det": true,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    }
+  ],
+  "quality_score": 4,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:31:09.823554+00:00"
+}

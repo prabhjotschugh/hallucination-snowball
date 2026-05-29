@@ -1,0 +1,73 @@
+{
+  "question_id": "FB_075_D5F39BB5",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Costco Wholesale Corporation, Fiscal Year 2021\n- PRIMARY METRIC: Total Assets: $38,256 million (per the FY2021 10-K, Consolidated Balance Sheets)\n- SUPPORTING DATA: \n  - Total Assets FY2020: $41,694 million (per the FY2020 10-K, Consolidated Balance Sheets)\n  - Total Assets FY2019: $47,192 million (per the FY2019 10-K, Consolidated Balance Sheets)\n- DATA SOURCES: \n  - FY2021 10-K, Consolidated Balance Sheets\n  - FY2020 10-K, Consolidated Balance Sheets\n  - FY2019 10-K, Consolidated Balance Sheets\n\nNote: No financial ratios or analysis have been computed as per the directive to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_075_D5F39BB5_H2",
+      "type": "dollar_amount",
+      "original_value": "$59,431 million",
+      "injected_value": "$38,256 million",
+      "original_numeric": "59431",
+      "injected_numeric": "38256",
+      "position_char": 99,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.3563
+    },
+    {
+      "hallucination_id": "FB_075_D5F39BB5_H1",
+      "type": "dollar_amount",
+      "original_value": "$53,189 million",
+      "injected_value": "$41,694 million",
+      "original_numeric": "53189",
+      "injected_numeric": "41694",
+      "position_char": 211,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2161
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Total Assets FY2019: $47,192 million",
+        "claim_value": "$47,192 million",
+        "reason": "The reported total assets for FY2019 seem suspiciously high compared to FY2020 and FY2021. A decline of $8,938 million (18.9%) from FY2019 to FY2020 is unusual for a stable company like Costco.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 3,
+    "overall_assessment": "The researcher's output appears mostly plausible, but the reported total assets for FY2019 raise some concerns.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"Total Assets FY2019: $47,192 million\",\n      \"claim_value\" : \"$47,192 million\",\n      \"reason\"      : \"The reported total assets for FY2019 seem suspiciously high compared to FY2020 and FY2021. A decline of $8,938 million (18.9%) from FY2019 to FY2020 is unusual for a stable company like Costco.\",\n      \"confidence\"  : \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 3,\n  \"overall_assessment\"   : \"The researcher's output appears mostly plausible, but the reported total assets for FY2019 raise some concerns.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_075_D5F39BB5",
+      "hallucination_id": "FB_075_D5F39BB5_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$59,431 million",
+      "injected_value": "$38,256 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 3
+    },
+    {
+      "question_id": "FB_075_D5F39BB5",
+      "hallucination_id": "FB_075_D5F39BB5_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$53,189 million",
+      "injected_value": "$41,694 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 3
+    }
+  ],
+  "timestamp": "2026-03-27T09:36:31.207870Z"
+}

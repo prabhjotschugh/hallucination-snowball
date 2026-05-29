@@ -1,0 +1,73 @@
+{
+  "question_id": "FB_145_F02E8ED1",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Verizon Communications Inc. (FY 2022)\n- PRIMARY METRIC: Quick Ratio: 0.95 (per the FY2022 10-K, Consolidated Balance Sheets)\n- SUPPORTING DATA: \n  - Current Assets: $37,936 million (FY 2022, per the FY2022 10-K, Consolidated Balance Sheets)\n  - Current Liabilities: $28,683 million (FY 2022, per the FY2022 10-K, Consolidated Balance Sheets)\n  - Cash and Cash Equivalents: $3,095 million (FY 2022, per the FY2022 10-K, Consolidated Balance Sheets)\n  - Accounts Receivable: $7,911 million (FY 2022, per the FY2022 10-K, Consolidated Balance Sheets)\n  - Inventory: $1,178 million (FY 2022, per the FY2022 10-K, Consolidated Balance Sheets)\n  \n  Historical Quick Ratios:\n  - FY 2021: Quick Ratio: 0.92 (per the FY2021 10-K, Consolidated Balance Sheets)\n  - FY 2020: Quick Ratio: 0.89 (per the FY2020 10-K, Consolidated Balance Sheets)\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Balance Sheets\n  - FY2021 10-K, Consolidated Balance Sheets\n  - FY2020 10-K, Consolidated Balance Sheets\n\n**Note:** The quick ratio is calculated as (Current Assets - Inventory) / Current Liabilities. The relevance of the quick ratio in assessing liquidity can vary depending on the nature of the company's operations and the industry standards. However, this report strictly presents the data as requested without analysis or interpretation.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_145_F02E8ED1_H2",
+      "type": "dollar_amount",
+      "original_value": "$27,241 million",
+      "injected_value": "$37,936 million",
+      "original_numeric": "27241",
+      "injected_numeric": "37936",
+      "position_char": 185,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.3926
+    },
+    {
+      "hallucination_id": "FB_145_F02E8ED1_H1",
+      "type": "dollar_amount",
+      "original_value": "$12,066 million",
+      "injected_value": "$7,911 million",
+      "original_numeric": "12066",
+      "injected_numeric": "7911",
+      "position_char": 493,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.3443
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Current Assets: $37,936 million (FY 2022, per the FY2022 10-K, Consolidated Balance Sheets)",
+        "claim_value": "$37,936 million",
+        "reason": "The reported current assets figure seems suspiciously round, with an unusual number of trailing digits. Typically, financial figures are reported with fewer significant digits.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 7,
+    "overall_assessment": "The report appears to be generally plausible, but some figures seem suspiciously round or precise.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"Current Assets: $37,936 million (FY 2022, per the FY2022 10-K, Consolidated Balance Sheets)\",\n      \"claim_value\" : \"$37,936 million\",\n      \"reason\"      : \"The reported current assets figure seems suspiciously round, with an unusual number of trailing digits. Typically, financial figures are reported with fewer significant digits.\",\n      \"confidence\"  : \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 7,\n  \"overall_assessment\"   : \"The report appears to be generally plausible, but some figures seem suspiciously round or precise.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_145_F02E8ED1",
+      "hallucination_id": "FB_145_F02E8ED1_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$27,241 million",
+      "injected_value": "$37,936 million",
+      "detected": true,
+      "reason": "The reported current assets figure seems suspiciously round, with an unusual number of trailing digits. Typically, financial figures are reported with fewer significant digits.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_145_F02E8ED1",
+      "hallucination_id": "FB_145_F02E8ED1_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$12,066 million",
+      "injected_value": "$7,911 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 7
+    }
+  ],
+  "timestamp": "2026-03-27T09:46:30.863092Z"
+}

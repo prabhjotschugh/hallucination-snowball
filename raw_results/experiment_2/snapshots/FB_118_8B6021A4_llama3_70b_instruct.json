@@ -1,0 +1,97 @@
+{
+  "question_id": "FB_118_8B6021A4",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Nike, Inc. - Fiscal Year 2023\n- PRIMARY METRIC: \n  - Cash Flows from Operating Activities: $5,066 million (per the FY2023 10-K, Consolidated Statements of Cash Flows)\n  - Cash Flows from Investing Activities: $(1,308) million (per the FY2023 10-K, Consolidated Statements of Cash Flows)\n  - Cash Flows from Financing Activities: $(1,749) million (per the FY2023 10-K, Consolidated Statements of Cash Flows)\n\n- SUPPORTING DATA:\n  - Fiscal Year 2022:\n    - Cash Flows from Operating Activities: $5,200 million (per the FY2022 10-K, Consolidated Statements of Cash Flows)\n    - Cash Flows from Investing Activities: $(739) million (per the FY2022 10-K, Consolidated Statements of Cash Flows)\n    - Cash Flows from Financing Activities: $(1,533) million (per the FY2022 10-K, Consolidated Statements of Cash Flows)\n  \n  - Fiscal Year 2021:\n    - Cash Flows from Operating Activities: $7,663 million (per the FY2021 10-K, Consolidated Statements of Cash Flows)\n    - Cash Flows from Investing Activities: $(1,042) million (per the FY2021 10-K, Consolidated Statements of Cash Flows)\n    - Cash Flows from Financing Activities: $(1,605) million (per the FY2021 10-K, Consolidated Statements of Cash Flows)\n\n- DATA SOURCES:\n  - FY2023 10-K, Consolidated Statements of Cash Flows\n  - FY2022 10-K, Consolidated Statements of Cash Flows\n  - FY2021 10-K, Consolidated Statements of Cash Flows\n\nIn summary, for FY2023, Nike's cash flow from operating activities was the highest at $4,216 million, indicating that this segment contributed the most to the overall cash flow.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_118_8B6021A4_H3",
+      "type": "large_number",
+      "original_value": "1,112",
+      "injected_value": "739",
+      "original_numeric": "1112",
+      "injected_numeric": "739",
+      "position_char": 635,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3357
+    },
+    {
+      "hallucination_id": "FB_118_8B6021A4_H2",
+      "type": "dollar_amount",
+      "original_value": "$5,752 million",
+      "injected_value": "$7,663 million",
+      "original_numeric": "5752",
+      "injected_numeric": "7663",
+      "position_char": 902,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.3322
+    },
+    {
+      "hallucination_id": "FB_118_8B6021A4_H1",
+      "type": "dollar_amount",
+      "original_value": "$5,066 million",
+      "injected_value": "$4,216 million",
+      "original_numeric": "5066",
+      "injected_numeric": "4216",
+      "position_char": 1491,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.1678
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "In summary, for FY2023, Nike's cash flow from operating activities was the highest at $4,216 million",
+        "claim_value": "$4,216 million",
+        "reason": "The reported value of $4,216 million for FY2023 cash flow from operating activities does not match the previously stated value of $5,066 million",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 9,
+    "overall_assessment": "The researcher's summary statement appears to contain an error, contradicting the previously reported cash flow value for FY2023.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"In summary, for FY2023, Nike's cash flow from operating activities was the highest at $4,216 million\",\n      \"claim_value\" : \"$4,216 million\",\n      \"reason\"      : \"The reported value of $4,216 million for FY2023 cash flow from operating activities does not match the previously stated value of $5,066 million\",\n      \"confidence\"  : \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 9,\n  \"overall_assessment\"   : \"The researcher's summary statement appears to contain an error, contradicting the previously reported cash flow value for FY2023.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_118_8B6021A4",
+      "hallucination_id": "FB_118_8B6021A4_H3",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "large_number",
+      "original_value": "1,112",
+      "injected_value": "739",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_118_8B6021A4",
+      "hallucination_id": "FB_118_8B6021A4_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$5,752 million",
+      "injected_value": "$7,663 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_118_8B6021A4",
+      "hallucination_id": "FB_118_8B6021A4_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$5,066 million",
+      "injected_value": "$4,216 million",
+      "detected": true,
+      "reason": "The reported value of $4,216 million for FY2023 cash flow from operating activities does not match the previously stated value of $5,066 million",
+      "confidence": "high",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 9
+    }
+  ],
+  "timestamp": "2026-03-27T09:42:50.299017Z"
+}

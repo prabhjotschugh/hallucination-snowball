@@ -1,0 +1,85 @@
+{
+  "question_id": "FB_018_6E9F56BB",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: AES Corporation, FY2022\n- PRIMARY METRIC: \n  - Net Income: $1,143 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - Total Assets as of December 31, 2022: $40,253 million (per the FY2022 10-K, Consolidated Balance Sheets)\n  - Total Assets as of December 31, 2021: $38,425 million (per the FY2021 10-K, Consolidated Balance Sheets)\n  \n  Average Total Assets = (Total Assets FY2022 + Total Assets FY2021) / 2  \n  Average Total Assets = ($40,253 million + $27,446 million) / 2 = $29,233 million\n\n  ROA = Net Income / Average Total Assets  \n  ROA = $1,143 million / $39,339 million = 0.0290 or 2.90% (rounded to two decimal places)\n\n- SUPPORTING DATA: \n  - FY2021 Net Income: $1,051 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2021 Total Assets: $38,425 million (per the FY2021 10-K, Consolidated Balance Sheets)\n  - FY2020 Net Income: $1,085 million (per the FY2020 10-K, Consolidated Statements of Operations)\n  - FY2020 Total Assets: $36,000 million (per the FY2020 10-K, Consolidated Balance Sheets)\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2022 10-K, Consolidated Balance Sheets\n  - FY2021 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Balance Sheets\n  - FY2020 10-K, Consolidated Statements of Operations\n  - FY2020 10-K, Consolidated Balance Sheets",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_018_6E9F56BB_H2",
+      "type": "dollar_amount",
+      "original_value": "$38,425 million",
+      "injected_value": "$27,446 million",
+      "original_numeric": "38425",
+      "injected_numeric": "27446",
+      "position_char": 495,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2857
+    },
+    {
+      "hallucination_id": "FB_018_6E9F56BB_H1",
+      "type": "dollar_amount",
+      "original_value": "$39,339 million",
+      "injected_value": "$29,233 million",
+      "original_numeric": "39339",
+      "injected_numeric": "29233",
+      "position_char": 518,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2569
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Total Assets as of December 31, 2021: $38,425 million",
+        "claim_value": "$38,425 million",
+        "reason": "The calculation for Average Total Assets uses $27,446 million as Total Assets FY2021, which is inconsistent with the reported value of $38,425 million.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Average Total Assets = ($40,253 million + $27,446 million) / 2 = $29,233 million",
+        "claim_value": "$29,233 million",
+        "reason": "The calculation uses an incorrect value for Total Assets FY2021, which affects the average total assets.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "ROA = $1,143 million / $39,339 million = 0.0290 or 2.90%",
+        "claim_value": "$39,339 million",
+        "reason": "The denominator used in the ROA calculation is incorrect, it should be the average total assets, not $39,339 million.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 9,
+    "overall_assessment": "The researcher's output contains internal inconsistencies and calculation errors that affect the reported ROA.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Total Assets as of December 31, 2021: $38,425 million\",\n      \"claim_value\": \"$38,425 million\",\n      \"reason\": \"The calculation for Average Total Assets uses $27,446 million as Total Assets FY2021, which is inconsistent with the reported value of $38,425 million.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Average Total Assets = ($40,253 million + $27,446 million) / 2 = $29,233 million\",\n      \"claim_value\": \"$29,233 million\",\n      \"reason\": \"The calculation uses an incorrect value for Total Assets FY2021, which affects the average total assets.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"ROA = $1,143 million / $39,339 million = 0.0290 or 2.90%\",\n      \"claim_value\": \"$39,339 million\",\n      \"reason\": \"The denominator used in the ROA calculation is incorrect, it should be the average total assets, not $39,339 million.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 9,\n  \"overall_assessment\": \"The researcher's output contains internal inconsistencies and calculation errors that affect the reported ROA.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_018_6E9F56BB",
+      "hallucination_id": "FB_018_6E9F56BB_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$38,425 million",
+      "injected_value": "$27,446 million",
+      "detected": true,
+      "reason": "The calculation for Average Total Assets uses $27,446 million as Total Assets FY2021, which is inconsistent with the reported value of $38,425 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_018_6E9F56BB",
+      "hallucination_id": "FB_018_6E9F56BB_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$39,339 million",
+      "injected_value": "$29,233 million",
+      "detected": true,
+      "reason": "The calculation for Average Total Assets uses $27,446 million as Total Assets FY2021, which is inconsistent with the reported value of $38,425 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 9
+    }
+  ],
+  "timestamp": "2026-03-27T09:28:45.095024Z"
+}

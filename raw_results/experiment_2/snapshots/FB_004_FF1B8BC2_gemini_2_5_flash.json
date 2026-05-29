@@ -1,0 +1,133 @@
+{
+  "question_id": "FB_004_FF1B8BC2",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: 3M Company, FY2022\n- PRIMARY METRIC: Operating Margin: 16.5% (calculated as Operating Income of $7,927 million divided by Total Revenue of $36,693 million) per the FY2022 10-K, Consolidated Statements of Operations.\n- SUPPORTING DATA: \n  - Total Revenue: $46,995 million (FY2022) per the FY2022 10-K, Consolidated Statements of Operations.\n  - Operating Income: $6,081 million (FY2022) per the FY2022 10-K, Consolidated Statements of Operations.\n  - Operating Margin (FY2021): 18.2% (calculated as Operating Income of $6,574 million divided by Total Revenue of $44,964 million) per the FY2021 10-K, Consolidated Statements of Operations.\n  - Operating Margin (FY2020): 20.5% (calculated as Operating Income of $6,646 million divided by Total Revenue of $32,180 million) per the FY2020 10-K, Consolidated Statements of Operations.\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations.\n  - FY2021 10-K, Consolidated Statements of Operations.\n  - FY2020 10-K, Consolidated Statements of Operations.\n\n**Note**: The request for an analysis of the factors influencing changes in operating margin and the usefulness of operating margin as a metric cannot be fulfilled as per the directive to provide raw data only. Please consult downstream analysts for further interpretation and analysis.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_004_FF1B8BC2_H3",
+      "type": "dollar_amount",
+      "original_value": "$6,081 million",
+      "injected_value": "$7,927 million",
+      "original_numeric": "6081",
+      "injected_numeric": "7927",
+      "position_char": 116,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.3035
+    },
+    {
+      "hallucination_id": "FB_004_FF1B8BC2_H2",
+      "type": "dollar_amount",
+      "original_value": "$36,693 million",
+      "injected_value": "$46,995 million",
+      "original_numeric": "36693",
+      "injected_numeric": "46995",
+      "position_char": 275,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.2808
+    },
+    {
+      "hallucination_id": "FB_004_FF1B8BC2_H1",
+      "type": "dollar_amount",
+      "original_value": "$36,086 million",
+      "injected_value": "$44,964 million",
+      "original_numeric": "36086",
+      "injected_numeric": "44964",
+      "position_char": 581,
+      "sentence_approx": 6,
+      "perturbation_delta": 0.246
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Operating Margin: 16.5%",
+        "claim_value": "16.5%",
+        "reason": "The stated operating margin of 16.5% for FY2022 does not match the calculation provided immediately after it ($7,927 million / $36,693 million = 21.6%).",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Operating Income of $7,927 million",
+        "claim_value": "$7,927 million",
+        "reason": "This operating income figure for FY2022 contradicts another operating income figure provided for the same year ($6,081 million) in the supporting data section.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Revenue of $36,693 million",
+        "claim_value": "$36,693 million",
+        "reason": "This total revenue figure for FY2022 contradicts another total revenue figure provided for the same year ($46,995 million) in the supporting data section.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Revenue: $46,995 million (FY2022)",
+        "claim_value": "$46,995 million",
+        "reason": "This total revenue figure for FY2022 contradicts another total revenue figure provided for the same year ($36,693 million) in the primary metric calculation.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Operating Income: $6,081 million (FY2022)",
+        "claim_value": "$6,081 million",
+        "reason": "This operating income figure for FY2022 contradicts another operating income figure provided for the same year ($7,927 million) in the primary metric calculation.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Operating Margin (FY2021): 18.2%",
+        "claim_value": "18.2%",
+        "reason": "The stated operating margin of 18.2% for FY2021 does not match the calculation provided immediately after it ($6,574 million / $44,964 million = 14.6%).",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Operating Margin (FY2020): 20.5%",
+        "claim_value": "20.5%",
+        "reason": "The stated operating margin of 20.5% for FY2020 does not precisely match the calculation provided immediately after it ($6,646 million / $32,180 million = 20.7%).",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 11,
+    "overall_assessment": "Multiple significant internal inconsistencies and calculation errors were found across the reported financial figures for FY2022, FY2021, and FY2020, rendering the data highly unreliable.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Operating Margin: 16.5%\",\n      \"claim_value\": \"16.5%\",\n      \"reason\": \"The stated operating margin of 16.5% for FY2022 does not match the calculation provided immediately after it ($7,927 million / $36,693 million = 21.6%).\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Operating Income of $7,927 million\",\n      \"claim_value\": \"$7,927 million\",\n      \"reason\": \"This operating income figure for FY2022 contradicts another operating income figure provided for the same year ($6,081 million) in the supporting data section.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Revenue of $36,693 million\",\n      \"claim_value\": \"$36,693 million\",\n      \"reason\": \"This total revenue figure for FY2022 contradicts another total revenue figure provided for the same year ($46,995 million) in the supporting data section.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Revenue: $46,995 million (FY2022)\",\n      \"claim_value\": \"$46,995 million\",\n      \"reason\": \"This total revenue figure for FY2022 contradicts another total revenue figure provided for the same year ($36,693 million) in the primary metric calculation.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Operating Income: $6,081 million (FY2022)\",\n      \"claim_value\": \"$6,081 million\",\n      \"reason\": \"This operating income figure for FY2022 contradicts another operating income figure provided for the same year ($7,927 million) in the primary metric calculation.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Operating Margin (FY2021): 18.2%\",\n      \"claim_value\": \"18.2%\",\n      \"reason\": \"The stated operating margin of 18.2% for FY2021 does not match the calculation provided immediately after it ($6,574 million / $44,964 million = 14.6%).\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Operating Margin (FY2020): 20.5%\",\n      \"claim_value\": \"20.5%\",\n      \"reason\": \"The stated operating margin of 20.5% for FY2020 does not precisely match the calculation provided immediately after it ($6,646 million / $32,180 million = 20.7%).\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 11,\n  \"overall_assessment\": \"Multiple significant internal inconsistencies and calculation errors were found across the reported financial figures for FY2022, FY2021, and FY2020, rendering the data highly unreliable.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_004_FF1B8BC2",
+      "hallucination_id": "FB_004_FF1B8BC2_H3",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$6,081 million",
+      "injected_value": "$7,927 million",
+      "detected": true,
+      "reason": "This operating income figure for FY2022 contradicts another operating income figure provided for the same year ($6,081 million) in the supporting data section.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 7,
+      "total_claims_reviewed": 11
+    },
+    {
+      "question_id": "FB_004_FF1B8BC2",
+      "hallucination_id": "FB_004_FF1B8BC2_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$36,693 million",
+      "injected_value": "$46,995 million",
+      "detected": true,
+      "reason": "This total revenue figure for FY2022 contradicts another total revenue figure provided for the same year ($46,995 million) in the supporting data section.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 7,
+      "total_claims_reviewed": 11
+    },
+    {
+      "question_id": "FB_004_FF1B8BC2",
+      "hallucination_id": "FB_004_FF1B8BC2_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$36,086 million",
+      "injected_value": "$44,964 million",
+      "detected": true,
+      "reason": "This total revenue figure for FY2022 contradicts another total revenue figure provided for the same year ($46,995 million) in the supporting data section.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 7,
+      "total_claims_reviewed": 11
+    }
+  ],
+  "timestamp": "2026-03-25T07:34:55.209632Z"
+}

@@ -1,0 +1,97 @@
+{
+  "question_id": "FB_091_82F6C167",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Johnson & Johnson, effective August 30, 2023\n- PRIMARY METRIC: The business segment classified as a discontinued operation is the \"Consumer Health\" segment, as detailed in the 8-K filing dated August 30, 2023.\n- SUPPORTING DATA: \n  - For context, the Consumer Health segment reported revenues of:\n    - $4,690 million for Q2 2023 (per the Q2 2023 10-Q, Consolidated Statements of Operations)\n    - $2,388 million for Q2 2022 (per the Q2 2022 10-Q, Consolidated Statements of Operations)\n    - $2,481 million for Q2 2021 (per the Q2 2021 10-Q, Consolidated Statements of Operations)\n- DATA SOURCES: \n  - Johnson & Johnson 8-K filing dated August 30, 2023\n  - Johnson & Johnson Q2 2023 10-Q, Consolidated Statements of Operations\n  - Johnson & Johnson Q2 2022 10-Q, Consolidated Statements of Operations\n  - Johnson & Johnson Q2 2021 10-Q, Consolidated Statements of Operations\n\nNote: The implications of this discontinuation on the company's overall financial health and trends in revenue or profitability associated with the segment over recent quarters were not included in the data extraction as per the directive to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_091_82F6C167_H3",
+      "type": "dollar_amount",
+      "original_value": "$3,694 million",
+      "injected_value": "$4,690 million",
+      "original_numeric": "3694",
+      "injected_numeric": "4690",
+      "position_char": 323,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.2697
+    },
+    {
+      "hallucination_id": "FB_091_82F6C167_H2",
+      "type": "dollar_amount",
+      "original_value": "$3,650 million",
+      "injected_value": "$2,388 million",
+      "original_numeric": "3650",
+      "injected_numeric": "2388",
+      "position_char": 418,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3457
+    },
+    {
+      "hallucination_id": "FB_091_82F6C167_H1",
+      "type": "dollar_amount",
+      "original_value": "$3,580 million",
+      "injected_value": "$2,481 million",
+      "original_numeric": "3580",
+      "injected_numeric": "2481",
+      "position_char": 513,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3069
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "The Consumer Health segment reported revenues of: $4,690 million for Q2 2023",
+        "claim_value": "$4,690 million",
+        "reason": "The reported revenue figure seems suspiciously round, especially compared to the other reported figures which have more decimal places.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 3,
+    "overall_assessment": "The researcher's output appears mostly plausible, but one revenue figure seems suspiciously round and warrants further verification.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"The Consumer Health segment reported revenues of: $4,690 million for Q2 2023\",\n      \"claim_value\" : \"$4,690 million\",\n      \"reason\"      : \"The reported revenue figure seems suspiciously round, especially compared to the other reported figures which have more decimal places.\",\n      \"confidence\"  : \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 3,\n  \"overall_assessment\"   : \"The researcher's output appears mostly plausible, but one revenue figure seems suspiciously round and warrants further verification.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_091_82F6C167",
+      "hallucination_id": "FB_091_82F6C167_H3",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,694 million",
+      "injected_value": "$4,690 million",
+      "detected": true,
+      "reason": "The reported revenue figure seems suspiciously round, especially compared to the other reported figures which have more decimal places.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 3
+    },
+    {
+      "question_id": "FB_091_82F6C167",
+      "hallucination_id": "FB_091_82F6C167_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,650 million",
+      "injected_value": "$2,388 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 3
+    },
+    {
+      "question_id": "FB_091_82F6C167",
+      "hallucination_id": "FB_091_82F6C167_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,580 million",
+      "injected_value": "$2,481 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 3
+    }
+  ],
+  "timestamp": "2026-03-27T09:38:54.616479Z"
+}

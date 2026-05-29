@@ -1,0 +1,42 @@
+{
+  "question_id": "FB_093_3013F02B",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Johnson & Johnson, August 30, 2023\n- PRIMARY METRIC: Cash proceeds from the separation of Kenvue amounted to $4,412 million (USD millions) per the 8-K filing dated August 30, 2023, Item 2.01.\n- SUPPORTING DATA: No additional financial metrics related to this specific transaction were provided in the filing.\n- DATA SOURCES: SEC 8-K filing dated August 30, 2023, Item 2.01.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_093_3013F02B_H1",
+      "type": "dollar_amount",
+      "original_value": "$3,500 million",
+      "injected_value": "$4,412 million",
+      "original_numeric": "3500",
+      "injected_numeric": "4412",
+      "position_char": 129,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.2607
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [],
+    "total_claims_reviewed": 1,
+    "overall_assessment": "The reported cash proceeds figure and its attributed source appear plausible given the context of a major corporate separation for a large company like Johnson & Johnson.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [],\n  \"total_claims_reviewed\": 1,\n  \"overall_assessment\": \"The reported cash proceeds figure and its attributed source appear plausible given the context of a major corporate separation for a large company like Johnson & Johnson.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_093_3013F02B",
+      "hallucination_id": "FB_093_3013F02B_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,500 million",
+      "injected_value": "$4,412 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 0,
+      "total_claims_reviewed": 1
+    }
+  ],
+  "timestamp": "2026-03-25T07:55:13.913195Z"
+}

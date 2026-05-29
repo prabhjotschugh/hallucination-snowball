@@ -1,0 +1,79 @@
+{
+  "question_id": "FB_102_F5764A3D",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Lockheed Martin Corporation, FY2021\n- PRIMARY METRIC: Net Working Capital = Total Current Assets - Total Current Liabilities = $16,467 million (per the FY2021 10-K, Consolidated Balance Sheets).\n- SUPPORTING DATA: \n  - Total Current Assets: $36,134 million (per the FY2021 10-K, Consolidated Balance Sheets).\n  - Total Current Liabilities: $13,945 million (per the FY2021 10-K, Consolidated Balance Sheets).\n  - FY2020 Net Working Capital: $23,514 million (Total Current Assets: $35,100 million; Total Current Liabilities: $11,586 million, per the FY2020 10-K, Consolidated Balance Sheets).\n  - FY2019 Net Working Capital: $19,958 million (Total Current Assets: $32,200 million; Total Current Liabilities: $14,968 million, per the FY2019 10-K, Consolidated Balance Sheets).\n- DATA SOURCES: \n  - FY2021 10-K, Consolidated Balance Sheets.\n  - FY2020 10-K, Consolidated Balance Sheets.\n  - FY2019 10-K, Consolidated Balance Sheets.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_102_F5764A3D_H2",
+      "type": "dollar_amount",
+      "original_value": "$22,189 million",
+      "injected_value": "$16,467 million",
+      "original_numeric": "22189",
+      "injected_numeric": "16467",
+      "position_char": 147,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2579
+    },
+    {
+      "hallucination_id": "FB_102_F5764A3D_H1",
+      "type": "dollar_amount",
+      "original_value": "$12,242 million",
+      "injected_value": "$14,968 million",
+      "original_numeric": "12242",
+      "injected_numeric": "14968",
+      "position_char": 726,
+      "sentence_approx": 5,
+      "perturbation_delta": 0.2227
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Net Working Capital = Total Current Assets - Total Current Liabilities = $16,467 million",
+        "claim_value": "$16,467 million",
+        "reason": "The reported Net Working Capital of $16,467 million for FY2021 does not equal the difference between the provided Total Current Assets ($36,134 million) and Total Current Liabilities ($13,945 million). The correct calculation is $36,134 million - $13,945 million = $22,189 million, indicating an internal arithmetic inconsistency.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2019 Net Working Capital: $19,958 million",
+        "claim_value": "$19,958 million",
+        "reason": "The reported Net Working Capital of $19,958 million for FY2019 does not equal the difference between the provided Total Current Assets ($32,200 million) and Total Current Liabilities ($14,968 million). The correct calculation is $32,200 million - $14,968 million = $17,232 million, indicating an internal arithmetic inconsistency.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 9,
+    "overall_assessment": "Two significant internal arithmetic inconsistencies were found in the calculation of Net Working Capital for FY2021 and FY2019, indicating potential data fabrication or calculation errors.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Net Working Capital = Total Current Assets - Total Current Liabilities = $16,467 million\",\n      \"claim_value\": \"$16,467 million\",\n      \"reason\": \"The reported Net Working Capital of $16,467 million for FY2021 does not equal the difference between the provided Total Current Assets ($36,134 million) and Total Current Liabilities ($13,945 million). The correct calculation is $36,134 million - $13,945 million = $22,189 million, indicating an internal arithmetic inconsistency.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2019 Net Working Capital: $19,958 million\",\n      \"claim_value\": \"$19,958 million\",\n      \"reason\": \"The reported Net Working Capital of $19,958 million for FY2019 does not equal the difference between the provided Total Current Assets ($32,200 million) and Total Current Liabilities ($14,968 million). The correct calculation is $32,200 million - $14,968 million = $17,232 million, indicating an internal arithmetic inconsistency.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 9,\n  \"overall_assessment\": \"Two significant internal arithmetic inconsistencies were found in the calculation of Net Working Capital for FY2021 and FY2019, indicating potential data fabrication or calculation errors.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_102_F5764A3D",
+      "hallucination_id": "FB_102_F5764A3D_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$22,189 million",
+      "injected_value": "$16,467 million",
+      "detected": true,
+      "reason": "The reported Net Working Capital of $16,467 million for FY2021 does not equal the difference between the provided Total Current Assets ($36,134 million) and Total Current Liabilities ($13,945 million). The correct calculation is $36,134 million - $13,945 million = $22,189 million, indicating an internal arithmetic inconsistency.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_102_F5764A3D",
+      "hallucination_id": "FB_102_F5764A3D_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$12,242 million",
+      "injected_value": "$14,968 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 9
+    }
+  ],
+  "timestamp": "2026-03-25T07:57:13.695035Z"
+}

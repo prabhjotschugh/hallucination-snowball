@@ -1,0 +1,97 @@
+{
+  "question_id": "FB_025_E70F40EB",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Amcor plc, FY2023, FY2022, FY2021\n- PRIMARY METRIC: \n  - **FY2023 Acquisitions**: Amcor completed the acquisition of **Nampak Flexible**, a leading flexible packaging company in Africa, for **USD 300 million**. This acquisition was aimed at expanding Amcor's footprint in the African market and enhancing its product offerings in flexible packaging. (Source: per the FY2023 10-K, Note 3 - Acquisitions)\n  \n  - **FY2022 Acquisitions**: Amcor acquired **Bemis Company, Inc.** for **USD 6.8 billion** in a strategic move to create a global leader in packaging. This acquisition was finalized in June 2019 but continued to impact financial performance through FY2022. (Source: per the FY2022 10-K, Note 3 - Acquisitions)\n\n  - **FY2021 Acquisitions**: In FY2021, Amcor acquired **the assets of the flexible packaging business of the company** for **USD 450 million**, which was intended to strengthen its position in the North American market. (Source: per the FY2021 10-K, Note 3 - Acquisitions)\n\n- SUPPORTING DATA: \n  - **FY2023 Financial Performance**: Total revenue for FY2023 was **USD 14,000 million**, with net income of **USD 1,669 million**. The acquisition of Nampak Flexible is expected to contribute to revenue growth in the coming years.\n  \n  - **FY2022 Financial Performance**: Total revenue for FY2022 was **USD 17,880 million**, with net income of **USD 897 million**. The Bemis acquisition contributed to revenue growth and cost synergies, enhancing overall profitability.\n  \n  - **FY2021 Financial Performance**: Total revenue for FY2021 was **USD 12,800 million**, with net income of **USD 1,000 million**. The flexible packaging assets acquisition helped to diversify product offerings and expand market reach.\n\n- DATA SOURCES: \n  - FY2023 10-K, Note 3 - Acquisitions\n  - FY2022 10-K, Note 3 - Acquisitions\n  - FY2021 10-K, Note 3 - Acquisitions\n\nPlease note that while the strategic rationale behind these acquisitions is mentioned, further analysis of their impact on financial performance is not included as per the directive to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_025_E70F40EB_H3",
+      "type": "large_number",
+      "original_value": "1,200",
+      "injected_value": "1,669",
+      "original_numeric": "1200",
+      "injected_numeric": "1669",
+      "position_char": 1149,
+      "sentence_approx": 8,
+      "perturbation_delta": 0.3907
+    },
+    {
+      "hallucination_id": "FB_025_E70F40EB_H2",
+      "type": "large_number",
+      "original_value": "13,500",
+      "injected_value": "17,880",
+      "original_numeric": "13500",
+      "injected_numeric": "17880",
+      "position_char": 1342,
+      "sentence_approx": 10,
+      "perturbation_delta": 0.3244
+    },
+    {
+      "hallucination_id": "FB_025_E70F40EB_H1",
+      "type": "large_number",
+      "original_value": "1,100",
+      "injected_value": "897",
+      "original_numeric": "1100",
+      "injected_numeric": "897",
+      "position_char": 1385,
+      "sentence_approx": 10,
+      "perturbation_delta": -0.1847
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Amcor acquired the assets of the flexible packaging business of the company for USD 450 million",
+        "claim_value": "USD 450 million",
+        "reason": "The description of the acquisition is vague, and the company name is not specified, which raises concerns about the accuracy of the claim.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 7,
+    "overall_assessment": "Most claims appear plausible, but one acquisition claim lacks specificity and raises concerns about accuracy.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"Amcor acquired the assets of the flexible packaging business of the company for USD 450 million\",\n      \"claim_value\" : \"USD 450 million\",\n      \"reason\"      : \"The description of the acquisition is vague, and the company name is not specified, which raises concerns about the accuracy of the claim.\",\n      \"confidence\"  : \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 7,\n  \"overall_assessment\"   : \"Most claims appear plausible, but one acquisition claim lacks specificity and raises concerns about accuracy.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_025_E70F40EB",
+      "hallucination_id": "FB_025_E70F40EB_H3",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "large_number",
+      "original_value": "1,200",
+      "injected_value": "1,669",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_025_E70F40EB",
+      "hallucination_id": "FB_025_E70F40EB_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "large_number",
+      "original_value": "13,500",
+      "injected_value": "17,880",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_025_E70F40EB",
+      "hallucination_id": "FB_025_E70F40EB_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "large_number",
+      "original_value": "1,100",
+      "injected_value": "897",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 7
+    }
+  ],
+  "timestamp": "2026-03-27T09:29:31.204215Z"
+}

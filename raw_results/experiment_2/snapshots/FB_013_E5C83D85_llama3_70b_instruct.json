@@ -1,0 +1,73 @@
+{
+  "question_id": "FB_013_E5C83D85",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Adobe Inc., FY2017\n- PRIMARY METRIC: Operating Cash Flow Ratio = Cash from Operations / Total Current Liabilities\n  - Cash from Operations: $3,257 million (per the FY2017 10-K, Consolidated Statements of Cash Flows)\n  - Total Current Liabilities: $2,737 million (per the FY2017 10-K, Consolidated Balance Sheets)\n  - Operating Cash Flow Ratio = $3,257 million / $2,737 million = 1.19 (rounded to two decimal places)\n\n- SUPPORTING DATA:\n  - Cash from Operations for FY2016: $2,397 million (per the FY2016 10-K, Consolidated Statements of Cash Flows)\n  - Total Current Liabilities for FY2016: $2,470 million (per the FY2016 10-K, Consolidated Balance Sheets)\n  - Cash from Operations for FY2015: $3,504 million (per the FY2015 10-K, Consolidated Statements of Cash Flows)\n  - Total Current Liabilities for FY2015: $2,197 million (per the FY2015 10-K, Consolidated Balance Sheets)\n\n- DATA SOURCES:\n  - FY2017 10-K: Consolidated Statements of Cash Flows and Consolidated Balance Sheets\n  - FY2016 10-K: Consolidated Statements of Cash Flows and Consolidated Balance Sheets\n  - FY2015 10-K: Consolidated Statements of Cash Flows and Consolidated Balance Sheets",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_013_E5C83D85_H2",
+      "type": "dollar_amount",
+      "original_value": "$2,927 million",
+      "injected_value": "$2,397 million",
+      "original_numeric": "2927",
+      "injected_numeric": "2397",
+      "position_char": 493,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.181
+    },
+    {
+      "hallucination_id": "FB_013_E5C83D85_H1",
+      "type": "dollar_amount",
+      "original_value": "$2,628 million",
+      "injected_value": "$3,504 million",
+      "original_numeric": "2628",
+      "injected_numeric": "3504",
+      "position_char": 714,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.3335
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Cash from Operations for FY2015: $3,504 million",
+        "claim_value": "$3,504 million",
+        "reason": "The reported cash from operations for FY2015 seems suspiciously high compared to FY2016 and FY2017, which are significantly lower.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "The operating cash flow ratio calculation appears plausible, but some supporting data points seem inconsistent.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"Cash from Operations for FY2015: $3,504 million\",\n      \"claim_value\" : \"$3,504 million\",\n      \"reason\"      : \"The reported cash from operations for FY2015 seems suspiciously high compared to FY2016 and FY2017, which are significantly lower.\",\n      \"confidence\"  : \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\"   : \"The operating cash flow ratio calculation appears plausible, but some supporting data points seem inconsistent.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_013_E5C83D85",
+      "hallucination_id": "FB_013_E5C83D85_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$2,927 million",
+      "injected_value": "$2,397 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_013_E5C83D85",
+      "hallucination_id": "FB_013_E5C83D85_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$2,628 million",
+      "injected_value": "$3,504 million",
+      "detected": true,
+      "reason": "The reported cash from operations for FY2015 seems suspiciously high compared to FY2016 and FY2017, which are significantly lower.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-27T09:27:57.840909Z"
+}

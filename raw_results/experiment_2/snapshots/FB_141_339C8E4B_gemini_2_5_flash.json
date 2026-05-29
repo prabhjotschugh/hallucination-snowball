@@ -1,0 +1,127 @@
+{
+  "question_id": "FB_141_339C8E4B",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Ulta Beauty, FY 2023\n- PRIMARY METRIC: Total stock repurchase expenditure for FY 2023: $1,000 million (per the FY2023 10-K, Consolidated Statements of Cash Flows). Total stock repurchase expenditure for Q4 FY 2023: $298 million (per the Q4 FY 2023 10-Q, Consolidated Statements of Cash Flows).\n- SUPPORTING DATA: \n  - Total stock repurchase expenditure for FY 2022: $800 million (per the FY2022 10-K, Consolidated Statements of Cash Flows).\n  - Total stock repurchase expenditure for Q4 FY 2022: $200 million (per the Q4 FY 2022 10-Q, Consolidated Statements of Cash Flows).\n  - Total cash flows from financing activities for FY 2023: $1,001 million (per the FY2023 10-K, Consolidated Statements of Cash Flows).\n  - Total cash flows from financing activities for FY 2022: $1,200 million (per the FY2022 10-K, Consolidated Statements of Cash Flows).\n- DATA SOURCES: \n  - FY2023 10-K, Consolidated Statements of Cash Flows, page 45.\n  - Q4 FY 2023 10-Q, Consolidated Statements of Cash Flows, page 12.\n  - FY2022 10-K, Consolidated Statements of Cash Flows, page 44.\n  - Q4 FY 2022 10-Q, Consolidated Statements of Cash Flows, page 11.\n\nTo calculate the percentage of total stock repurchase expenditure allocated to Q4 FY 2023:\nPercentage = (Q4 FY 2023 Repurchase Expenditure / FY 2023 Total Repurchase Expenditure) * 100\nPercentage = ($250 million / $1,000 million) * 100 = 25%\n\nThus, 18.1% of Ulta Beauty's total spend on stock repurchases for FY 2023 occurred in Q4 of FY 2023.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_141_339C8E4B_H3",
+      "type": "dollar_amount",
+      "original_value": "$250 million",
+      "injected_value": "$298 million",
+      "original_numeric": "250",
+      "injected_numeric": "298",
+      "position_char": 235,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.1926
+    },
+    {
+      "hallucination_id": "FB_141_339C8E4B_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,500 million",
+      "injected_value": "$1,001 million",
+      "original_numeric": "1500",
+      "injected_numeric": "1001",
+      "position_char": 655,
+      "sentence_approx": 5,
+      "perturbation_delta": -0.3324
+    },
+    {
+      "hallucination_id": "FB_141_339C8E4B_H1",
+      "type": "percentage",
+      "original_value": "25%",
+      "injected_value": "18.1%",
+      "original_numeric": "25",
+      "injected_numeric": "18.1",
+      "position_char": 1404,
+      "sentence_approx": 11,
+      "perturbation_delta": -6.9065
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Total stock repurchase expenditure for Q4 FY 2023: $298 million (per the Q4 FY 2023 10-Q, Consolidated Statements of Cash Flows).",
+        "claim_value": "$298 million",
+        "reason": "The cited source document, 'Q4 FY 2023 10-Q', is highly suspicious. Companies typically file 10-Qs for Q1, Q2, and Q3. Q4 financial data is generally included in the annual 10-K, not a separate Q4 10-Q.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total stock repurchase expenditure for Q4 FY 2022: $200 million (per the Q4 FY 2022 10-Q, Consolidated Statements of Cash Flows).",
+        "claim_value": "$200 million",
+        "reason": "The cited source document, 'Q4 FY 2022 10-Q', is highly suspicious. Companies typically file 10-Qs for Q1, Q2, and Q3. Q4 financial data is generally included in the annual 10-K, not a separate Q4 10-Q.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Q4 FY 2023 10-Q, Consolidated Statements of Cash Flows, page 12.",
+        "claim_value": "Q4 FY 2023 10-Q",
+        "reason": "This data source is suspicious because a 'Q4 10-Q' is not a standard SEC filing. Q4 financial data is typically reported within the annual 10-K.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Q4 FY 2022 10-Q, Consolidated Statements of Cash Flows, page 11.",
+        "claim_value": "Q4 FY 2022 10-Q",
+        "reason": "This data source is suspicious because a 'Q4 10-Q' is not a standard SEC filing. Q4 financial data is typically reported within the annual 10-K.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Percentage = ($250 million / $1,000 million) * 100 = 25%",
+        "claim_value": "$250 million",
+        "reason": "The figure of '$250 million' used for Q4 FY 2023 repurchase expenditure in this calculation directly contradicts the earlier stated figure for Q4 FY 2023 repurchase expenditure, which was '$298 million'. This is a clear internal inconsistency.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Thus, 18.1% of Ulta Beauty's total spend on stock repurchases for FY 2023 occurred in Q4 of FY 2023.",
+        "claim_value": "18.1%",
+        "reason": "This final percentage (18.1%) is inconsistent with both the Q4 FY 2023 repurchase figure initially stated ($298 million, which would yield 29.8%) and the Q4 FY 2023 repurchase figure used in the calculation ($250 million, which yielded 25%). It appears to be a hallucinated final answer.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 14,
+    "overall_assessment": "Multiple significant inconsistencies were found, including contradictory financial figures, a hallucinated final answer, and the citation of non-existent SEC filing types (Q4 10-Qs).",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Total stock repurchase expenditure for Q4 FY 2023: $298 million (per the Q4 FY 2023 10-Q, Consolidated Statements of Cash Flows).\",\n      \"claim_value\": \"$298 million\",\n      \"reason\": \"The cited source document, 'Q4 FY 2023 10-Q', is highly suspicious. Companies typically file 10-Qs for Q1, Q2, and Q3. Q4 financial data is generally included in the annual 10-K, not a separate Q4 10-Q.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total stock repurchase expenditure for Q4 FY 2022: $200 million (per the Q4 FY 2022 10-Q, Consolidated Statements of Cash Flows).\",\n      \"claim_value\": \"$200 million\",\n      \"reason\": \"The cited source document, 'Q4 FY 2022 10-Q', is highly suspicious. Companies typically file 10-Qs for Q1, Q2, and Q3. Q4 financial data is generally included in the annual 10-K, not a separate Q4 10-Q.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Q4 FY 2023 10-Q, Consolidated Statements of Cash Flows, page 12.\",\n      \"claim_value\": \"Q4 FY 2023 10-Q\",\n      \"reason\": \"This data source is suspicious because a 'Q4 10-Q' is not a standard SEC filing. Q4 financial data is typically reported within the annual 10-K.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Q4 FY 2022 10-Q, Consolidated Statements of Cash Flows, page 11.\",\n      \"claim_value\": \"Q4 FY 2022 10-Q\",\n      \"reason\": \"This data source is suspicious because a 'Q4 10-Q' is not a standard SEC filing. Q4 financial data is typically reported within the annual 10-K.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Percentage = ($250 million / $1,000 million) * 100 = 25%\",\n      \"claim_value\": \"$250 million\",\n      \"reason\": \"The figure of '$250 million' used for Q4 FY 2023 repurchase expenditure in this calculation directly contradicts the earlier stated figure for Q4 FY 2023 repurchase expenditure, which was '$298 million'. This is a clear internal inconsistency.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Thus, 18.1% of Ulta Beauty's total spend on stock repurchases for FY 2023 occurred in Q4 of FY 2023.\",\n      \"claim_value\": \"18.1%\",\n      \"reason\": \"This final percentage (18.1%) is inconsistent with both the Q4 FY 2023 repurchase figure initially stated ($298 million, which would yield 29.8%) and the Q4 FY 2023 repurchase figure used in the calculation ($250 million, which yielded 25%). It appears to be a hallucinated final answer.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 14,\n  \"overall_assessment\": \"Multiple significant inconsistencies were found, including contradictory financial figures, a hallucinated final answer, and the citation of non-existent SEC filing types (Q4 10-Qs).\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_141_339C8E4B",
+      "hallucination_id": "FB_141_339C8E4B_H3",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$250 million",
+      "injected_value": "$298 million",
+      "detected": true,
+      "reason": "The cited source document, 'Q4 FY 2023 10-Q', is highly suspicious. Companies typically file 10-Qs for Q1, Q2, and Q3. Q4 financial data is generally included in the annual 10-K, not a separate Q4 10-Q.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 14
+    },
+    {
+      "question_id": "FB_141_339C8E4B",
+      "hallucination_id": "FB_141_339C8E4B_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,500 million",
+      "injected_value": "$1,001 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 14
+    },
+    {
+      "question_id": "FB_141_339C8E4B",
+      "hallucination_id": "FB_141_339C8E4B_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "percentage",
+      "original_value": "25%",
+      "injected_value": "18.1%",
+      "detected": true,
+      "reason": "This final percentage (18.1%) is inconsistent with both the Q4 FY 2023 repurchase figure initially stated ($298 million, which would yield 29.8%) and the Q4 FY 2023 repurchase figure used in the calculation ($250 million, which yielded 25%). It appears to be a hallucinated final answer.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 14
+    }
+  ],
+  "timestamp": "2026-03-25T08:06:01.557367Z"
+}

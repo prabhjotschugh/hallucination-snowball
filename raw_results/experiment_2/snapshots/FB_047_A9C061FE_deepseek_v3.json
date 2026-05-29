@@ -1,0 +1,90 @@
+{
+  "question_id": "FB_047_A9C061FE",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: American Water Works, FY2021\n- PRIMARY METRIC: Unadjusted Operating Income + Depreciation and Amortization (unadjusted EBITDA) is $966 million (per the FY2021 10-K, Consolidated Statements of Operations and Consolidated Statements of Cash Flows).\n- SUPPORTING DATA: \n  - Operating Income for FY2021: $1,149 million (per the FY2021 10-K, Consolidated Statements of Operations).\n  - Depreciation and Amortization for FY2021: $277 million (per the FY2021 10-K, Consolidated Statements of Cash Flows).\n  - For context, Operating Income for FY2020 was $1,063 million and for FY2019 was $832 million.\n  - Depreciation and Amortization for FY2020 was $208 million and for FY2019 was $244 million.\n- DATA SOURCES: \n  - FY2021 10-K, Consolidated Statements of Operations (Operating Income).\n  - FY2021 10-K, Consolidated Statements of Cash Flows (Depreciation and Amortization).",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_047_A9C061FE_H3",
+      "type": "dollar_amount",
+      "original_value": "$1,426 million",
+      "injected_value": "$966 million",
+      "original_numeric": "1426",
+      "injected_numeric": "966",
+      "position_char": 150,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.3228
+    },
+    {
+      "hallucination_id": "FB_047_A9C061FE_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,019 million",
+      "injected_value": "$832 million",
+      "original_numeric": "1019",
+      "injected_numeric": "832",
+      "position_char": 603,
+      "sentence_approx": 4,
+      "perturbation_delta": -0.1839
+    },
+    {
+      "hallucination_id": "FB_047_A9C061FE_H1",
+      "type": "dollar_amount",
+      "original_value": "$263 million",
+      "injected_value": "$208 million",
+      "original_numeric": "263",
+      "injected_numeric": "208",
+      "position_char": 668,
+      "sentence_approx": 5,
+      "perturbation_delta": -0.211
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [],
+    "total_claims_reviewed": 5,
+    "overall_assessment": "All financial claims appear plausible and internally consistent, with no obvious signs of fabrication.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [],\n  \"total_claims_reviewed\": 5,\n  \"overall_assessment\": \"All financial claims appear plausible and internally consistent, with no obvious signs of fabrication.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_047_A9C061FE",
+      "hallucination_id": "FB_047_A9C061FE_H3",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,426 million",
+      "injected_value": "$966 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 0,
+      "total_claims_reviewed": 5
+    },
+    {
+      "question_id": "FB_047_A9C061FE",
+      "hallucination_id": "FB_047_A9C061FE_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,019 million",
+      "injected_value": "$832 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 0,
+      "total_claims_reviewed": 5
+    },
+    {
+      "question_id": "FB_047_A9C061FE",
+      "hallucination_id": "FB_047_A9C061FE_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$263 million",
+      "injected_value": "$208 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 0,
+      "total_claims_reviewed": 5
+    }
+  ],
+  "timestamp": "2026-03-24T09:46:30.713837Z"
+}

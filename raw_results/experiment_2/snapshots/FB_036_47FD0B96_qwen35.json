@@ -1,0 +1,85 @@
+{
+  "question_id": "FB_036_47FD0B96",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Advanced Micro Devices (AMD), Fiscal Year 2022\n- PRIMARY METRIC: \n  - Cash flows from operating activities: **$1,851 million** (per the FY2022 10-K, Consolidated Statements of Cash Flows)\n  - Cash flows from investing activities: **$(1,823) million** (per the FY2022 10-K, Consolidated Statements of Cash Flows)\n  - Cash flows from financing activities: **$(802) million** (per the FY2022 10-K, Consolidated Statements of Cash Flows)\n\n- SUPPORTING DATA:\n  - Cash flows from operating activities for FY2021: **$1,891 million** (per the FY2021 10-K, Consolidated Statements of Cash Flows)\n  - Cash flows from investing activities for FY2021: **$(1,829) million** (per the FY2021 10-K, Consolidated Statements of Cash Flows)\n  - Cash flows from financing activities for FY2021: **$(1,031) million** (per the FY2021 10-K, Consolidated Statements of Cash Flows)\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Cash Flows\n  - FY2021 10-K, Consolidated Statements of Cash Flows\n\nIn summary, for fiscal year 2022, Advanced Micro Devices generated the most cash flow from operating activities, totaling $1,851 million.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_036_47FD0B96_H2",
+      "type": "large_number",
+      "original_value": "1,028",
+      "injected_value": "802",
+      "original_numeric": "1028",
+      "injected_numeric": "802",
+      "position_char": 378,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2195
+    },
+    {
+      "hallucination_id": "FB_036_47FD0B96_H1",
+      "type": "large_number",
+      "original_value": "1,525",
+      "injected_value": "1,829",
+      "original_numeric": "1525",
+      "injected_numeric": "1829",
+      "position_char": 666,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.1995
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Cash flows from operating activities: **$1,851 million** (per the FY2022 10-K, Consolidated Statements of Cash Flows)",
+        "claim_value": "$1,851 million",
+        "reason": "AMD's revenue grew approximately 44% in FY22 following the Xilinx consolidation. Operating cash flow should typically correlate with this significant top-line and profitability growth, rather than decreasing slightly from the FY21 level of $1,891 million.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Cash flows from investing activities: **$(1,823) million** (per the FY2022 10-K, Consolidated Statements of Cash Flows)",
+        "claim_value": "$(1,823) million",
+        "reason": "AMD closed the $49 billion Xilinx acquisition in February 2022. This transformative M&A event typically results in a massive cash outflow in investing activities (often tens of billions), making a figure similar to the prior year's capital expenditure level highly implausible.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Cash flows from financing activities: **$(802) million** (per the FY2022 10-K, Consolidated Statements of Cash Flows)",
+        "claim_value": "$(802) million",
+        "reason": "To fund the Xilinx acquisition, AMD issued significant debt and equity. Financing activities should reflect a substantial net cash inflow from these proceeds, rather than a net outflow similar to the prior year.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "The FY22 cash flow figures are highly suspicious as they fail to reflect the financial impact of the transformative Xilinx acquisition closed during that fiscal year, showing implausible year-over-year stability.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Cash flows from operating activities: **$1,851 million** (per the FY2022 10-K, Consolidated Statements of Cash Flows)\",\n      \"claim_value\": \"$1,851 million\",\n      \"reason\": \"AMD's revenue grew approximately 44% in FY22 following the Xilinx consolidation. Operating cash flow should typically correlate with this significant top-line and profitability growth, rather than decreasing slightly from the FY21 level of $1,891 million.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Cash flows from investing activities: **$(1,823) million** (per the FY2022 10-K, Consolidated Statements of Cash Flows)\",\n      \"claim_value\": \"$(1,823) million\",\n      \"reason\": \"AMD closed the $49 billion Xilinx acquisition in February 2022. This transformative M&A event typically results in a massive cash outflow in investing activities (often tens of billions), making a figure similar to the prior year's capital expenditure level highly implausible.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Cash flows from financing activities: **$(802) million** (per the FY2022 10-K, Consolidated Statements of Cash Flows)\",\n      \"claim_value\": \"$(802) million\",\n      \"reason\": \"To fund the Xilinx acquisition, AMD issued significant debt and equity. Financing activities should reflect a substantial net cash inflow from these proceeds, rather than a net outflow similar to the prior year.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\": \"The FY22 cash flow figures are highly suspicious as they fail to reflect the financial impact of the transformative Xilinx acquisition closed during that fiscal year, showing implausible year-over-year stability.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_036_47FD0B96",
+      "hallucination_id": "FB_036_47FD0B96_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "large_number",
+      "original_value": "1,028",
+      "injected_value": "802",
+      "detected": true,
+      "reason": "To fund the Xilinx acquisition, AMD issued significant debt and equity. Financing activities should reflect a substantial net cash inflow from these proceeds, rather than a net outflow similar to the prior year.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_036_47FD0B96",
+      "hallucination_id": "FB_036_47FD0B96_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "large_number",
+      "original_value": "1,525",
+      "injected_value": "1,829",
+      "detected": true,
+      "reason": "AMD's revenue grew approximately 44% in FY22 following the Xilinx consolidation. Operating cash flow should typically correlate with this significant top-line and profitability growth, rather than decreasing slightly from the FY21 level of $1,891 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-24T10:50:33.915458Z"
+}

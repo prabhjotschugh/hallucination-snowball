@@ -1,0 +1,103 @@
+{
+  "question_id": "FB_081_4E1CC3D9",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: Foot Locker, Inc. - May 20, 2022\n- PRIMARY METRIC: The voting results for each nominee as presented in the 8-K filing dated May 20, 2022, are as follows:\n  - **Richard A. Johnson**: Votes For: 47,656,123; Votes Against: 8,321,456; Abstentions: 1,234,567 (per the 8-K filing, Item 5.07).\n  - **Jill M. Granoff**: Votes For: 63,263,625; Votes Against: 7,654,321; Abstentions: 1,234,567 (per the 8-K filing, Item 5.07).\n  - **Michael B. McGarry**: Votes For: 47,987,654; Votes Against: 7,987,654; Abstentions: 1,234,567 (per the 8-K filing, Item 5.07).\n  - **Michele A. Buck**: Votes For: 48,654,321; Votes Against: 6,543,210; Abstentions: 1,234,567 (per the 8-K filing, Item 5.07).\n  - **M. Scott McCarty**: Votes For: 47,123,456; Votes Against: 12,416,701; Abstentions: 1,234,567 (per the 8-K filing, Item 5.07).\n\n- SUPPORTING DATA: \n  - Total Votes For: 239,545,010 (sum of all votes for nominees).\n  - Total Votes Against: 41,383,184 (sum of all votes against nominees).\n  - Total Abstentions: 6,174,835 (sum of all abstentions).\n  \n  The nominee with the highest votes against was **M. Scott McCarty** with 9,876,543 votes against, which is significantly higher than the next highest, **Richard A. Johnson**, with 8,321,456 votes against.\n\n- DATA SOURCES: Foot Locker, Inc. 8-K filing dated May 20, 2022, Item 5.07 - \"Submission of Matters to a Vote of Security Holders\".",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_081_4E1CC3D9_H2",
+      "type": "large_number",
+      "original_value": "48,123,456",
+      "injected_value": "63,263,625",
+      "original_numeric": "48123456",
+      "injected_numeric": "63263625",
+      "position_char": 343,
+      "sentence_approx": 6,
+      "perturbation_delta": 0.3146
+    },
+    {
+      "hallucination_id": "FB_081_4E1CC3D9_H1",
+      "type": "large_number",
+      "original_value": "9,876,543",
+      "injected_value": "12,416,701",
+      "original_numeric": "9876543",
+      "injected_numeric": "12416701",
+      "position_char": 764,
+      "sentence_approx": 15,
+      "perturbation_delta": 0.2572
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Votes For: 47,656,123; Votes Against: 8,321,456; Abstentions: 1,234,567 (per the 8-K filing, Item 5.07).",
+        "claim_value": "1,234,567 abstentions",
+        "reason": "The same abstention figure (1,234,567) is repeated across all nominees, which is highly unusual for real voting data where abstentions would naturally vary.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Votes For: 63,263,625; Votes Against: 7,654,321; Abstentions: 1,234,567 (per the 8-K filing, Item 5.07).",
+        "claim_value": "1,234,567 abstentions",
+        "reason": "Identical abstention figure as other nominees, suggesting possible fabrication.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Votes For: 47,987,654; Votes Against: 7,987,654; Abstentions: 1,234,567 (per the 8-K filing, Item 5.07).",
+        "claim_value": "1,234,567 abstentions",
+        "reason": "Abstention figure matches other nominees exactly, which is statistically improbable.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Votes For: 48,654,321; Votes Against: 6,543,210; Abstentions: 1,234,567 (per the 8-K filing, Item 5.07).",
+        "claim_value": "1,234,567 abstentions",
+        "reason": "Repeated identical abstention count across all entries raises red flags about data authenticity.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Votes For: 47,123,456; Votes Against: 12,416,701; Abstentions: 1,234,567 (per the 8-K filing, Item 5.07).",
+        "claim_value": "1,234,567 abstentions",
+        "reason": "Same abstention number appears again, making this consistent pattern highly suspicious.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Abstentions: 6,174,835 (sum of all abstentions).",
+        "claim_value": "6,174,835",
+        "reason": "This is exactly 5x the repeated 1,234,567 abstention figure (1,234,567 x 5 = 6,174,835), confirming artificial calculation rather than real voting data.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 18,
+    "overall_assessment": "Multiple instances of identical abstention figures across all nominees suggest fabricated data rather than authentic voting results.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Votes For: 47,656,123; Votes Against: 8,321,456; Abstentions: 1,234,567 (per the 8-K filing, Item 5.07).\",\n      \"claim_value\": \"1,234,567 abstentions\",\n      \"reason\": \"The same abstention figure (1,234,567) is repeated across all nominees, which is highly unusual for real voting data where abstentions would naturally vary.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Votes For: 63,263,625; Votes Against: 7,654,321; Abstentions: 1,234,567 (per the 8-K filing, Item 5.07).\",\n      \"claim_value\": \"1,234,567 abstentions\",\n      \"reason\": \"Identical abstention figure as other nominees, suggesting possible fabrication.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Votes For: 47,987,654; Votes Against: 7,987,654; Abstentions: 1,234,567 (per the 8-K filing, Item 5.07).\",\n      \"claim_value\": \"1,234,567 abstentions\",\n      \"reason\": \"Abstention figure matches other nominees exactly, which is statistically improbable.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Votes For: 48,654,321; Votes Against: 6,543,210; Abstentions: 1,234,567 (per the 8-K filing, Item 5.07).\",\n      \"claim_value\": \"1,234,567 abstentions\",\n      \"reason\": \"Repeated identical abstention count across all entries raises red flags about data authenticity.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Votes For: 47,123,456; Votes Against: 12,416,701; Abstentions: 1,234,567 (per the 8-K filing, Item 5.07).\",\n      \"claim_value\": \"1,234,567 abstentions\",\n      \"reason\": \"Same abstention number appears again, making this consistent pattern highly suspicious.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Abstentions: 6,174,835 (sum of all abstentions).\",\n      \"claim_value\": \"6,174,835\",\n      \"reason\": \"This is exactly 5x the repeated 1,234,567 abstention figure (1,234,567 x 5 = 6,174,835), confirming artificial calculation rather than real voting data.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 18,\n  \"overall_assessment\": \"Multiple instances of identical abstention figures across all nominees suggest fabricated data rather than authentic voting results.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_081_4E1CC3D9",
+      "hallucination_id": "FB_081_4E1CC3D9_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "large_number",
+      "original_value": "48,123,456",
+      "injected_value": "63,263,625",
+      "detected": true,
+      "reason": "Identical abstention figure as other nominees, suggesting possible fabrication.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 18
+    },
+    {
+      "question_id": "FB_081_4E1CC3D9",
+      "hallucination_id": "FB_081_4E1CC3D9_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "large_number",
+      "original_value": "9,876,543",
+      "injected_value": "12,416,701",
+      "detected": true,
+      "reason": "Same abstention number appears again, making this consistent pattern highly suspicious.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 18
+    }
+  ],
+  "timestamp": "2026-03-24T09:52:11.069819Z"
+}

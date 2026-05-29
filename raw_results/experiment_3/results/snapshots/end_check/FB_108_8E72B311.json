@@ -1,0 +1,158 @@
+{
+  "question_id": "FB_108_8E72B311",
+  "method": "end_check",
+  "final_output": "## Financial Report: MGM Resorts International - FY2022\n\n**Executive Summary**\n\nMGM Resorts International reported an increase in Adjusted EBIT for FY2022, reaching $1,158 million, an 8.94% increase from FY2021. However, this positive trend was significantly impacted by a substantial 45.51% increase in Interest Expense, which rose to $438 million in FY2022 from $301 million in FY2021. Consequently, the company's Interest Coverage Ratio declined from 3.53x in FY2021 to 2.64x in FY2022, indicating a reduced capacity to cover its interest obligations from operating earnings.\n\n**Analysis**\n\nMGM Resorts International's Adjusted EBIT has shown consistent growth over the past three fiscal years, increasing from $1,020 million in FY2020 to $1,063 million in FY2021, and further to $1,158 million in FY2022. This represents an 8.94% year-over-year growth from FY2021 to FY2022. Conversely, Interest Expense has exhibited significant volatility. After a decrease from $474 million in FY2020 to $301 million in FY2021, it surged by 45.51% to $438 million in FY2022. This disproportionate increase in interest expense relative to the growth in Adjusted EBIT has negatively impacted the company's financial leverage. The Interest Coverage Ratio, calculated as Adjusted EBIT divided by Interest Expense, decreased from 3.53x in FY2021 to 2.64x in FY2022, despite the growth in operating earnings.\n\n**Key Risks**\n\nThe primary risk identified is the significant increase in Interest Expense, which outpaced the growth in Adjusted EBIT. This trend, if sustained, could further erode the Interest Coverage Ratio, potentially signaling increased financial risk and reduced flexibility in managing debt obligations. The volatility in interest expense over the past three years warrants close monitoring. Future increases in interest rates could exacerbate this risk, making debt servicing more challenging.\n\n**Conclusion**\n\nWhile MGM Resorts International achieved an 8.94% increase in Adjusted EBIT to $1,158 million in FY2022, the substantial 45.51% rise in Interest Expense to $438 million led to a deterioration of the Interest Coverage Ratio from 3.53x in FY2021 to 2.64x in FY2022. This indicates a weakening ability to service debt from operating profits and highlights the need for careful management of interest-bearing liabilities going forward. Management should assess the drivers of this increased interest expense and consider strategies to mitigate future volatility and improve the interest coverage position.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: MGM Resorts International, FY2022\n- PRIMARY METRIC: Adjusted EBIT for FY2022 was $1,158 million (per the FY2022 10-K, Consolidated Statements of Operations). Annual Interest Expense for FY2022 was $438 million (per the FY2022 10-K, Note 8 - Debt).\n- INTEREST COVERAGE RATIO: The interest coverage ratio for FY2022 is calculated as Adjusted EBIT / Interest Expense = $793 million / $438 million = 2.64.\n- SUPPORTING DATA:\n  - Adjusted EBIT for FY2021: $1,063 million (per the FY2021 10-K, Consolidated Statements of Operations).\n  - Interest Expense for FY2021: $301 million (per the FY2021 10-K, Note 8 - Debt).\n  - Adjusted EBIT for FY2020: $1,020 million (per the FY2020 10-K, Consolidated Statements of Operations).\n  - Interest Expense for FY2020: $474 million (per the FY2020 10-K, Note 8 - Debt).\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations, Note 8 - Debt.\n  - FY2021 10-K, Consolidated Statements of Operations, Note 8 - Debt.\n  - FY2020 10-K, Consolidated Statements of Operations, Note 8 - Debt.\n\nPlease note that I have provided the exact figures and supporting data as requested, but I have not included any analysis or benchmarking against industry peers, as per your directive.",
+    "2": "As a financial analyst, I have reviewed the provided data for MGM Resorts International.\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\n| Metric             | FY2022 (A) | FY2021 (B) | FY2020 (C) | FY2022 vs FY2021 Absolute (A-B) | FY2022 vs FY2021 Percentage ((A-B)/B) | FY2021 vs FY2020 Absolute (B-C) | FY2021 vs FY2020 Percentage ((B-C)/C) |\n| :----------------- | :--------- | :--------- | :--------- | :------------------------------ | :------------------------------------ | :------------------------------ | :------------------------------------ |\n| Adjusted EBIT      | $1,158M    | $1,063M    | $1,020M    | $95M                            | 8.94%                                 | $43M                            | 4.22%                                 |\n| Interest Expense   | $438M      | $301M      | $474M      | $137M                           | 45.51%                                | -$173M                          | -36.50%                               |\n\n**Formulas:**\n*   **Absolute Change (Current Year vs. Prior Year):** Current Year Value - Prior Year Value\n*   **Percentage Change (Current Year vs. Prior Year):** (Current Year Value - Prior Year Value) / Prior Year Value\n\n**2. Relevant Ratios**\n\n| Ratio                    | FY2022 | FY2021 | FY2020 |\n| :----------------------- | :----- | :----- | :----- |\n| Interest Coverage Ratio  | 2.64x  | 3.53x  | 2.15x  |\n\n**Formulas:**\n*   **Interest Coverage Ratio:** Adjusted EBIT / Interest Expense\n\n**Calculations:**\n*   **FY2022 Interest Coverage Ratio:** $1,158M / $438M = 2.64x\n*   **FY2021 Interest Coverage Ratio:** $1,063M / $301M = 3.53x\n*   **FY2020 Interest Coverage Ratio:** $1,020M / $474M = 2.15x\n\n**3. Anomalies Flagged**\n\n*   **FY2022 Interest Coverage Ratio Calculation Discrepancy:** The researcher data states the FY2022 Interest Coverage Ratio as \"$793 million / $438 million = 2.64\". However, based on the provided Adjusted EBIT of $1,158 million for FY2022 and Interest Expense of $438 million, the correct calculation should be $1,158 million / $438 million = 2.64. The numerator \"$793 million\" is incorrect. I have used the correct Adjusted EBIT of $1,158 million for my calculations.\n\n*   **Significant Increase in Interest Expense (FY2021 to FY2022):** Interest Expense increased by 45.51% from FY2021 to FY2022, which is a substantial jump compared to the 8.94% increase in Adjusted EBIT over the same period. This led to a notable decrease in the Interest Coverage Ratio from 3.53x in FY2021 to 2.64x in FY2022.\n\n*   **Significant Decrease in Interest Expense (FY2020 to FY2021):** Interest Expense decreased by 36.50% from FY2020 to FY2021, while Adjusted EBIT saw a modest increase. This contributed to a significant improvement in the Interest Coverage Ratio from 2.15x in FY2020 to 3.53x in FY2021.",
+    "3": "## Financial Report: MGM Resorts International - FY2022\n\n**Executive Summary**\n\nMGM Resorts International demonstrated an increase in Adjusted EBIT for FY2022, reaching $1,158 million, an 8.94% increase from FY2021. However, this positive trend was overshadowed by a substantial 45.51% increase in Interest Expense, which rose to $438 million in FY2022 from $301 million in FY2021. Consequently, the company's Interest Coverage Ratio declined from 3.53x in FY2021 to 2.64x in FY2022, indicating a reduced capacity to cover its interest obligations from operating earnings.\n\n**Analysis**\n\nMGM Resorts International's Adjusted EBIT has shown consistent growth over the past three fiscal years, increasing from $1,020 million in FY2020 to $1,063 million in FY2021, and further to $1,158 million in FY2022. This represents an 8.94% year-over-year growth from FY2021 to FY2022. Conversely, Interest Expense has exhibited significant volatility. After a 36.50% decrease from $474 million in FY2020 to $301 million in FY2021, it surged by 45.51% to $438 million in FY2022. This disproportionate increase in interest expense relative to the growth in Adjusted EBIT has negatively impacted the company's financial leverage. The Interest Coverage Ratio, calculated as Adjusted EBIT divided by Interest Expense, decreased from 3.53x in FY2021 to 2.64x in FY2022, despite the growth in operating earnings.\n\n**Key Risks**\n\nThe primary risk identified is the significant increase in Interest Expense, which outpaced the growth in Adjusted EBIT. This trend, if sustained, could further erode the Interest Coverage Ratio, potentially signaling increased financial risk and reduced flexibility in managing debt obligations. The volatility in interest expense over the past three years warrants close monitoring.\n\n**Conclusion**\n\nWhile MGM Resorts International achieved an 8.94% increase in Adjusted EBIT to $1,158 million in FY2022, the substantial 45.51% rise in Interest Expense to $438 million led to a deterioration of the Interest Coverage Ratio from 3.53x in FY2021 to 2.64x in FY2022. This indicates a weakening ability to service debt from operating profits and highlights the need for careful management of interest-bearing liabilities going forward.",
+    "4": "## Financial Report: MGM Resorts International - FY2022\n\n**Executive Summary**\n\nMGM Resorts International reported an increase in Adjusted EBIT for FY2022, reaching $1,158 million, an 8.94% increase from FY2021. However, this positive trend was significantly impacted by a substantial 45.51% increase in Interest Expense, which rose to $438 million in FY2022 from $301 million in FY2021. Consequently, the company's Interest Coverage Ratio declined from 3.53x in FY2021 to 2.64x in FY2022, indicating a reduced capacity to cover its interest obligations from operating earnings.\n\n**Analysis**\n\nMGM Resorts International's Adjusted EBIT has shown consistent growth over the past three fiscal years, increasing from $1,020 million in FY2020 to $1,063 million in FY2021, and further to $1,158 million in FY2022. This represents an 8.94% year-over-year growth from FY2021 to FY2022. Conversely, Interest Expense has exhibited significant volatility. After a decrease from $474 million in FY2020 to $301 million in FY2021, it surged by 45.51% to $438 million in FY2022. This disproportionate increase in interest expense relative to the growth in Adjusted EBIT has negatively impacted the company's financial leverage. The Interest Coverage Ratio, calculated as Adjusted EBIT divided by Interest Expense, decreased from 3.53x in FY2021 to 2.64x in FY2022, despite the growth in operating earnings.\n\n**Key Risks**\n\nThe primary risk identified is the significant increase in Interest Expense, which outpaced the growth in Adjusted EBIT. This trend, if sustained, could further erode the Interest Coverage Ratio, potentially signaling increased financial risk and reduced flexibility in managing debt obligations. The volatility in interest expense over the past three years warrants close monitoring. Future increases in interest rates could exacerbate this risk, making debt servicing more challenging.\n\n**Conclusion**\n\nWhile MGM Resorts International achieved an 8.94% increase in Adjusted EBIT to $1,158 million in FY2022, the substantial 45.51% rise in Interest Expense to $438 million led to a deterioration of the Interest Coverage Ratio from 3.53x in FY2021 to 2.64x in FY2022. This indicates a weakening ability to service debt from operating profits and highlights the need for careful management of interest-bearing liabilities going forward. Management should assess the drivers of this increased interest expense and consider strategies to mitigate future volatility and improve the interest coverage position."
+  },
+  "gates": {
+    "end_gate": {
+      "verified": [
+        {
+          "value": "$1,158 million",
+          "ref": 1158.0
+        },
+        {
+          "value": "$438 million",
+          "ref": 438.0
+        },
+        {
+          "value": "$1,020 million",
+          "ref": 1020.0
+        },
+        {
+          "value": "$1,063 million",
+          "ref": 1063.0
+        },
+        {
+          "value": "$1,158 million",
+          "ref": 1158.0
+        },
+        {
+          "value": "$474 million",
+          "ref": 474.0
+        },
+        {
+          "value": "$438 million",
+          "ref": 438.0
+        },
+        {
+          "value": "$1,158 million",
+          "ref": 1158.0
+        },
+        {
+          "value": "$438 million",
+          "ref": 438.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$301 million",
+          "num": 301.0,
+          "correct": 410.0,
+          "dev": 0.2659,
+          "source": "source_document"
+        },
+        {
+          "value": "$301 million",
+          "num": 301.0,
+          "correct": 410.0,
+          "dev": 0.2659,
+          "source": "source_document"
+        },
+        {
+          "value": "8.94%",
+          "num": 8.94,
+          "correct": 19.0,
+          "dev": 0.5295,
+          "source": "evidence"
+        },
+        {
+          "value": "45.51%",
+          "num": 45.51,
+          "correct": 25.0,
+          "dev": 0.4507,
+          "source": "evidence"
+        },
+        {
+          "value": "8.94%",
+          "num": 8.94,
+          "correct": 19.0,
+          "dev": 0.5295,
+          "source": "evidence"
+        },
+        {
+          "value": "45.51%",
+          "num": 45.51,
+          "correct": 25.0,
+          "dev": 0.4507,
+          "source": "evidence"
+        },
+        {
+          "value": "8.94%",
+          "num": 8.94,
+          "correct": 19.0,
+          "dev": 0.5295,
+          "source": "evidence"
+        },
+        {
+          "value": "45.51%",
+          "num": 45.51,
+          "correct": 25.0,
+          "dev": 0.4507,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [],
+      "n_refs": 60
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_108_8E72B311",
+      "hid": "FB_108_8E72B311_H2",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 793.0,
+      "orig_num": 1158.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_108_8E72B311",
+      "hid": "FB_108_8E72B311_H1",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 301.0,
+      "orig_num": 410.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": true,
+      "any_det": true,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:43:22.834314+00:00"
+}

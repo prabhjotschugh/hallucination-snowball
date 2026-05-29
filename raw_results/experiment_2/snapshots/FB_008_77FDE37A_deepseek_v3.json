@@ -1,0 +1,115 @@
+{
+  "question_id": "FB_008_77FDE37A",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: 3M Company, Q2 2023\n- PRIMARY METRIC: \n  - Dividends Declared: $1.08 per share for Q2 2023 (per the Q2 2023 10-Q, Note 5 - Earnings Per Share).\n  \n- SUPPORTING DATA:\n  - Dividends Declared:\n    - Q2 2022: $1.90 per share (per the Q2 2022 10-Q, Note 5 - Earnings Per Share).\n    - Q2 2021: $1.48 per share (per the Q2 2021 10-Q, Note 5 - Earnings Per Share).\n  - Total Dividends Paid:\n    - FY 2022: $5.92 per share (per the FY2022 10-K, Consolidated Statements of Cash Flows).\n    - FY 2021: $5.88 per share (per the FY2021 10-K, Consolidated Statements of Cash Flows).\n    - FY 2020: $7.92 per share (per the FY2020 10-K, Consolidated Statements of Cash Flows).\n  - Payout Ratios:\n    - FY 2022: 62.1% (per the FY2022 10-K, Consolidated Statements of Operations).\n    - FY 2021: 61.8% (per the FY2021 10-K, Consolidated Statements of Operations).\n    - FY 2020: 61.5% (per the FY2020 10-K, Consolidated Statements of Operations).\n\n- DATA SOURCES:\n  - Q2 2023 10-Q, Note 5 - Earnings Per Share\n  - FY2022 10-K, Consolidated Statements of Cash Flows and Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Statements of Cash Flows and Consolidated Statements of Operations\n  - FY2020 10-K, Consolidated Statements of Cash Flows and Consolidated Statements of Operations\n\nNote: The figures provided are exact as reported in the respective filings. No interpretation or analysis has been conducted.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_008_77FDE37A_H3",
+      "type": "dollar_amount",
+      "original_value": "$1.49 ",
+      "injected_value": "$1.08 ",
+      "original_numeric": "1.49",
+      "injected_numeric": "1.08",
+      "position_char": 83,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2747
+    },
+    {
+      "hallucination_id": "FB_008_77FDE37A_H2",
+      "type": "dollar_amount",
+      "original_value": "$1.49 ",
+      "injected_value": "$1.90 ",
+      "original_numeric": "1.49",
+      "injected_numeric": "1.90",
+      "position_char": 225,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.2777
+    },
+    {
+      "hallucination_id": "FB_008_77FDE37A_H1",
+      "type": "dollar_amount",
+      "original_value": "$5.76 ",
+      "injected_value": "$7.92 ",
+      "original_numeric": "5.76",
+      "injected_numeric": "7.92",
+      "position_char": 605,
+      "sentence_approx": 11,
+      "perturbation_delta": 0.3747
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Dividends Declared: $1.08 per share for Q2 2023",
+        "claim_value": "$1.08 per share",
+        "reason": "This is suspiciously low compared to the previous quarter's data (Q2 2022: $1.90 per share). A nearly 50% drop in dividends for a stable company like 3M is unusual without a clear explanation (e.g., a major financial event).",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Dividends Declared: Q2 2022: $1.90 per share",
+        "claim_value": "$1.90 per share",
+        "reason": "This seems unusually high compared to the annual FY2022 dividends ($5.92 per share). If Q2 was $1.90, extrapolating to four quarters would suggest ~$7.60 per share, which contradicts the annual figure.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Dividends Paid: FY 2020: $7.92 per share",
+        "claim_value": "$7.92 per share",
+        "reason": "This is inconsistent with the trend shown from FY2021-FY2022 (~$5.88-$5.92). A sudden ~35% drop from FY2020 to FY2021 seems extreme for a stable dividend-paying company.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Payout Ratios: FY 2022: 62.1%",
+        "claim_value": "62.1%",
+        "reason": "The payout ratios for FY2020-FY2022 are suspiciously similar (61.5%-62.1%). While possible, it's unusual for payout ratios to remain so stable across years, especially given the fluctuations in dividends paid.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 8,
+    "overall_assessment": "Several dividend-related figures appear inconsistent with typical stable dividend trends, suggesting potential inaccuracies.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Dividends Declared: $1.08 per share for Q2 2023\",\n      \"claim_value\": \"$1.08 per share\",\n      \"reason\": \"This is suspiciously low compared to the previous quarter's data (Q2 2022: $1.90 per share). A nearly 50% drop in dividends for a stable company like 3M is unusual without a clear explanation (e.g., a major financial event).\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Dividends Declared: Q2 2022: $1.90 per share\",\n      \"claim_value\": \"$1.90 per share\",\n      \"reason\": \"This seems unusually high compared to the annual FY2022 dividends ($5.92 per share). If Q2 was $1.90, extrapolating to four quarters would suggest ~$7.60 per share, which contradicts the annual figure.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Dividends Paid: FY 2020: $7.92 per share\",\n      \"claim_value\": \"$7.92 per share\",\n      \"reason\": \"This is inconsistent with the trend shown from FY2021-FY2022 (~$5.88-$5.92). A sudden ~35% drop from FY2020 to FY2021 seems extreme for a stable dividend-paying company.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Payout Ratios: FY 2022: 62.1%\",\n      \"claim_value\": \"62.1%\",\n      \"reason\": \"The payout ratios for FY2020-FY2022 are suspiciously similar (61.5%-62.1%). While possible, it's unusual for payout ratios to remain so stable across years, especially given the fluctuations in dividends paid.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 8,\n  \"overall_assessment\": \"Several dividend-related figures appear inconsistent with typical stable dividend trends, suggesting potential inaccuracies.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_008_77FDE37A",
+      "hallucination_id": "FB_008_77FDE37A_H3",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$1.49 ",
+      "injected_value": "$1.08 ",
+      "detected": true,
+      "reason": "This is suspiciously low compared to the previous quarter's data (Q2 2022: $1.90 per share). A nearly 50% drop in dividends for a stable company like 3M is unusual without a clear explanation (e.g., a major financial event).",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 8
+    },
+    {
+      "question_id": "FB_008_77FDE37A",
+      "hallucination_id": "FB_008_77FDE37A_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$1.49 ",
+      "injected_value": "$1.90 ",
+      "detected": true,
+      "reason": "This seems unusually high compared to the annual FY2022 dividends ($5.92 per share). If Q2 was $1.90, extrapolating to four quarters would suggest ~$7.60 per share, which contradicts the annual figure.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 8
+    },
+    {
+      "question_id": "FB_008_77FDE37A",
+      "hallucination_id": "FB_008_77FDE37A_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$5.76 ",
+      "injected_value": "$7.92 ",
+      "detected": true,
+      "reason": "This is inconsistent with the trend shown from FY2021-FY2022 (~$5.88-$5.92). A sudden ~35% drop from FY2020 to FY2021 seems extreme for a stable dividend-paying company.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 8
+    }
+  ],
+  "timestamp": "2026-03-24T09:40:25.898548Z"
+}

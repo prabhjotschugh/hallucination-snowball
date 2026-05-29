@@ -1,0 +1,227 @@
+{
+  "question_id": "FB_139_4FC46F83",
+  "method": "end_check",
+  "final_output": "## Ulta Beauty: Financial Report on SG&A Expenses (FY2023)\n\n**Executive Summary**\n\nUlta Beauty's Selling, General, and Administrative (SG&A) expenses for Fiscal Year 2023 totaled $1,255.4 million, representing 40.82% of Net Sales of $3,075.4 million. This marks a notable decrease in the SG&A to Net Sales ratio compared to FY2022, which stood at 69.86%. While absolute SG&A expenses increased by $68.9 million (5.81%) from FY2022, the significant growth in Net Sales has led to improved efficiency in this key operational metric.\n\n**Analysis**\n\nIn FY2023, Ulta Beauty reported SG&A expenses of $1,255.4 million, an increase from $1,186.5 million in FY2022. This represents an absolute increase of $68.9 million, or 5.81% year-over-year. Comparing FY2022 to FY2021, SG&A expenses rose from $1,063.0 million to $1,186.5 million, an absolute increase of $123.5 million, or 11.62%.\n\nWhen examining SG&A as a percentage of Net Sales, the trend shows a significant improvement in FY2023. The ratio for FY2023 was 40.82% ($1,255.4 million SG&A / $3,075.4 million Net Sales). This is a substantial reduction from FY2022, where the ratio was 69.86% ($1,186.5 million SG&A / $1,698.3 million Net Sales). Looking further back, the FY2021 ratio was 50.14% ($1,063.0 million SG&A / $2,120.0 million Net Sales). The decrease in this ratio from FY2022 to FY2023 indicates enhanced operational leverage relative to sales growth.\n\n**Key Considerations**\n\nIt is important to note that the SG&A as a percentage of Net Sales for FY2022 and FY2021, as calculated for this report, differs from some previously reported figures. For consistency and accuracy within this analysis, the percentages of 69.86% for FY2022 and 50.14% for FY2021 have been derived directly from the corresponding absolute SG&A expenses and Net Sales figures provided. This ensures that the trends discussed are based on internally consistent data.\n\n**Conclusion**\n\nUlta Beauty's FY2023 performance demonstrates a positive trend in managing SG&A expenses relative to its sales volume. While absolute SG&A expenses continue to grow, the significant reduction in the SG&A as a percentage of Net Sales from 69.86% in FY2022 to 40.82% in FY2023 suggests improved efficiency and scalability within the company's operations. This improvement indicates effective cost management strategies in place, allowing the company to grow sales more rapidly than its operational overhead. Continued monitoring of this ratio will be crucial for assessing ongoing cost management effectiveness and identifying further opportunities for operational leverage.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Ulta Beauty, FY2023\n- PRIMARY METRIC: SG&A Expenses: $1,255.4 million (per the FY2023 Q4 Earnings Report, Consolidated Statements of Operations). Net Sales: $3,075.4 million (per the FY2023 Q4 Earnings Report, Consolidated Statements of Operations). SG&A as a percentage of Net Sales: 40.8%.\n- SUPPORTING DATA: \n  - FY2022 SG&A Expenses: $1,186.5 million (per the FY2022 10-K, Consolidated Statements of Operations). Net Sales: $1,698.3 million (per the FY2022 10-K, Consolidated Statements of Operations). SG&A as a percentage of Net Sales: 31.4%.\n  - FY2021 SG&A Expenses: $1,063.0 million (per the FY2021 10-K, Consolidated Statements of Operations). Net Sales: $2,120.0 million (per the FY2021 10-K, Consolidated Statements of Operations). SG&A as a percentage of Net Sales: 43.9%.\n- DATA SOURCES: \n  - FY2023 Q4 Earnings Report, Consolidated Statements of Operations.\n  - FY2022 10-K, Consolidated Statements of Operations.\n  - FY2021 10-K, Consolidated Statements of Operations.\n\nNote: The request for analysis of factors contributing to the reduction in SG&A expenses as a percentage of net sales, operational efficiencies, changes in marketing strategies, or shifts in sales volume, as well as broader industry context, requires interpretation and is outside the scope of raw data extraction. Please consult subsequent analysts for that analysis.",
+    "2": "Here's an analysis of Ulta Beauty's SG&A expenses based on the provided data:\n\n**1. Year-over-Year Changes (SG&A Expenses)**\n\n*   **FY2023 vs. FY2022:**\n    *   **Absolute Change:**\n        *   Formula: SG&A (Current Year) - SG&A (Previous Year)\n        *   Calculation: $1,255.4 million - $1,186.5 million = **$68.9 million**\n    *   **Percentage Change:**\n        *   Formula: (Absolute Change / SG&A (Previous Year)) * 100\n        *   Calculation: ($68.9 million / $1,186.5 million) * 100 = **5.81%**\n\n*   **FY2022 vs. FY2021:**\n    *   **Absolute Change:**\n        *   Formula: SG&A (Current Year) - SG&A (Previous Year)\n        *   Calculation: $1,186.5 million - $1,063.0 million = **$123.5 million**\n    *   **Percentage Change:**\n        *   Formula: (Absolute Change / SG&A (Previous Year)) * 100\n        *   Calculation: ($123.5 million / $1,063.0 million) * 100 = **11.62%**\n\n**2. Relevant Ratios (SG&A as a Percentage of Net Sales)**\n\n*   **FY2023:**\n    *   Formula: (SG&A Expenses / Net Sales) * 100\n    *   Calculation: ($1,255.4 million / $3,075.4 million) * 100 = **40.82%**\n    *   *Provided Value:* 40.8% (Matches calculation)\n\n*   **FY2022:**\n    *   Formula: (SG&A Expenses / Net Sales) * 100\n    *   Calculation: ($1,186.5 million / $1,698.3 million) * 100 = **69.86%**\n    *   *Provided Value:* 31.4%\n\n*   **FY2021:**\n    *   Formula: (SG&A Expenses / Net Sales) * 100\n    *   Calculation: ($1,063.0 million / $2,120.0 million) * 100 = **50.14%**\n    *   *Provided Value:* 43.9%\n\n**3. Anomalies Flagged**\n\n*   **FY2022 SG&A as a percentage of Net Sales:**\n    *   The provided value of **31.4%** for FY2022 is significantly different from the calculated value of **69.86%** using the provided SG&A Expenses ($1,186.5 million) and Net Sales ($1,698.3 million) for FY2022. This discrepancy is a **major anomaly**.\n    *   *Action:* Based on the instruction to use CORRECT values, the calculated **69.86%** should be considered the correct ratio for FY2022 based on the provided raw SG&A and Net Sales figures.\n\n*   **FY2021 SG&A as a percentage of Net Sales:**\n    *   The provided value of **43.9%** for FY2021 is also significantly different from the calculated value of **50.14%** using the provided SG&A Expenses ($1,063.0 million) and Net Sales ($2,120.0 million) for FY2021. This is also a **significant anomaly**.\n    *   *Action:* The calculated **50.14%** should be considered the correct ratio for FY2021 based on the provided raw SG&A and Net Sales figures.\n\n**Summary of Ratios (Using Calculated Values for Anomalies):**\n\n*   **FY2023 SG&A as % of Net Sales:** 40.82%\n*   **FY2022 SG&A as % of Net Sales:** 69.86% (Calculated, replacing anomalous 31.4%)\n*   **FY2021 SG&A as % of Net Sales:** 50.14% (Calculated, replacing anomalous 43.9%)",
+    "3": "## Ulta Beauty: Financial Report on SG&A Expenses (FY2023)\n\n**Executive Summary**\n\nUlta Beauty's Selling, General, and Administrative (SG&A) expenses for Fiscal Year 2023 totaled $1,255.4 million, representing 40.82% of Net Sales of $3,075.4 million. This marks a notable decrease in the SG&A to Net Sales ratio compared to FY2022, which stood at 69.86%. While absolute SG&A expenses increased by $68.9 million (5.81%) from FY2022, the significant growth in Net Sales has led to improved efficiency in this key operational metric.\n\n**Analysis**\n\nIn FY2023, Ulta Beauty reported SG&A expenses of $1,255.4 million, an increase from $1,186.5 million in FY2022. This represents an absolute increase of $68.9 million, or 5.81% year-over-year. Comparing FY2022 to FY2021, SG&A expenses rose from $1,063.0 million to $1,186.5 million, an absolute increase of $123.5 million, or 11.62%.\n\nWhen examining SG&A as a percentage of Net Sales, the trend shows a significant improvement in FY2023. The ratio for FY2023 was 40.82% ($1,255.4 million SG&A / $3,075.4 million Net Sales). This is a substantial reduction from FY2022, where the ratio was 69.86% ($1,186.5 million SG&A / $1,698.3 million Net Sales). Looking further back, the FY2021 ratio was 50.14% ($1,063.0 million SG&A / $2,120.0 million Net Sales). The decrease in this ratio from FY2022 to FY2023 indicates enhanced operational leverage relative to sales growth.\n\n**Key Risks**\n\nThe primary risk identified in this analysis pertains to the historical accuracy of reported SG&A as a percentage of Net Sales. Discrepancies were noted in the provided historical data for FY2022 and FY2021, where the stated percentages (31.4% and 43.9% respectively) did not align with calculations derived from the corresponding absolute SG&A expenses and Net Sales figures. For this report, the calculated values of 69.86% for FY2022 and 50.14% for FY2021 have been used. Reliance on potentially inaccurate historical ratios could lead to misinformed strategic decisions.\n\n**Conclusion**\n\nUlta Beauty's FY2023 performance demonstrates a positive trend in managing SG&A expenses relative to its sales volume. While absolute SG&A expenses continue to grow, the significant reduction in the SG&A as a percentage of Net Sales from 69.86% in FY2022 to 40.82% in FY2023 suggests improved efficiency and scalability within the company's operations. Continued monitoring of this ratio will be crucial for assessing ongoing cost management effectiveness.",
+    "4": "## Ulta Beauty: Financial Report on SG&A Expenses (FY2023)\n\n**Executive Summary**\n\nUlta Beauty's Selling, General, and Administrative (SG&A) expenses for Fiscal Year 2023 totaled $1,255.4 million, representing 40.82% of Net Sales of $3,075.4 million. This marks a notable decrease in the SG&A to Net Sales ratio compared to FY2022, which stood at 69.86%. While absolute SG&A expenses increased by $68.9 million (5.81%) from FY2022, the significant growth in Net Sales has led to improved efficiency in this key operational metric.\n\n**Analysis**\n\nIn FY2023, Ulta Beauty reported SG&A expenses of $1,255.4 million, an increase from $1,186.5 million in FY2022. This represents an absolute increase of $68.9 million, or 5.81% year-over-year. Comparing FY2022 to FY2021, SG&A expenses rose from $1,063.0 million to $1,186.5 million, an absolute increase of $123.5 million, or 11.62%.\n\nWhen examining SG&A as a percentage of Net Sales, the trend shows a significant improvement in FY2023. The ratio for FY2023 was 40.82% ($1,255.4 million SG&A / $3,075.4 million Net Sales). This is a substantial reduction from FY2022, where the ratio was 69.86% ($1,186.5 million SG&A / $1,698.3 million Net Sales). Looking further back, the FY2021 ratio was 50.14% ($1,063.0 million SG&A / $2,120.0 million Net Sales). The decrease in this ratio from FY2022 to FY2023 indicates enhanced operational leverage relative to sales growth.\n\n**Key Considerations**\n\nIt is important to note that the SG&A as a percentage of Net Sales for FY2022 and FY2021, as calculated for this report, differs from some previously reported figures. For consistency and accuracy within this analysis, the percentages of 69.86% for FY2022 and 50.14% for FY2021 have been derived directly from the corresponding absolute SG&A expenses and Net Sales figures provided. This ensures that the trends discussed are based on internally consistent data.\n\n**Conclusion**\n\nUlta Beauty's FY2023 performance demonstrates a positive trend in managing SG&A expenses relative to its sales volume. While absolute SG&A expenses continue to grow, the significant reduction in the SG&A as a percentage of Net Sales from 69.86% in FY2022 to 40.82% in FY2023 suggests improved efficiency and scalability within the company's operations. This improvement indicates effective cost management strategies in place, allowing the company to grow sales more rapidly than its operational overhead. Continued monitoring of this ratio will be crucial for assessing ongoing cost management effectiveness and identifying further opportunities for operational leverage."
+  },
+  "gates": {
+    "end_gate": {
+      "verified": [
+        {
+          "value": "$1,255.4 million",
+          "ref": 1255.4
+        },
+        {
+          "value": "$3,075.4 million",
+          "ref": 3075.4
+        },
+        {
+          "value": "$1,255.4 million",
+          "ref": 1255.4
+        },
+        {
+          "value": "$1,186.5 million",
+          "ref": 1186.5
+        },
+        {
+          "value": "$1,063.0 million",
+          "ref": 1063.0
+        },
+        {
+          "value": "$1,186.5 million",
+          "ref": 1186.5
+        },
+        {
+          "value": "$1,255.4 million",
+          "ref": 1255.4
+        },
+        {
+          "value": "$3,075.4 million",
+          "ref": 3075.4
+        },
+        {
+          "value": "$1,186.5 million",
+          "ref": 1186.5
+        },
+        {
+          "value": "$1,063.0 million",
+          "ref": 1063.0
+        },
+        {
+          "value": "$2,120.0 million",
+          "ref": 2120.0
+        },
+        {
+          "value": "40.82%",
+          "ref": 40.8
+        },
+        {
+          "value": "40.82%",
+          "ref": 40.8
+        },
+        {
+          "value": "50.14%",
+          "ref": 50.1
+        },
+        {
+          "value": "50.14%",
+          "ref": 50.1
+        },
+        {
+          "value": "40.82%",
+          "ref": 40.8
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$68.9 million",
+          "num": 68.9,
+          "correct": 50.1,
+          "dev": 0.2729,
+          "source": "source_document"
+        },
+        {
+          "value": "$68.9 million",
+          "num": 68.9,
+          "correct": 50.1,
+          "dev": 0.2729,
+          "source": "source_document"
+        },
+        {
+          "value": "$123.5 million",
+          "num": 123.5,
+          "correct": 289.4,
+          "dev": 0.5733,
+          "source": "evidence"
+        },
+        {
+          "value": "$1,698.3 million",
+          "num": 1698.3,
+          "correct": 2120.0,
+          "dev": 0.1989,
+          "source": "source_document"
+        },
+        {
+          "value": "69.86%",
+          "num": 69.86,
+          "correct": 50.1,
+          "dev": 0.2829,
+          "source": "source_document"
+        },
+        {
+          "value": "5.81%",
+          "num": 5.81,
+          "correct": 5.41,
+          "dev": 0.0688,
+          "source": "evidence"
+        },
+        {
+          "value": "5.81%",
+          "num": 5.81,
+          "correct": 5.41,
+          "dev": 0.0688,
+          "source": "evidence"
+        },
+        {
+          "value": "11.62%",
+          "num": 11.62,
+          "correct": 10.8,
+          "dev": 0.0706,
+          "source": "evidence"
+        },
+        {
+          "value": "69.86%",
+          "num": 69.86,
+          "correct": 50.1,
+          "dev": 0.2829,
+          "source": "source_document"
+        },
+        {
+          "value": "69.86%",
+          "num": 69.86,
+          "correct": 50.1,
+          "dev": 0.2829,
+          "source": "source_document"
+        },
+        {
+          "value": "69.86%",
+          "num": 69.86,
+          "correct": 50.1,
+          "dev": 0.2829,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [],
+      "n_refs": 61
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_139_4FC46F83",
+      "hid": "FB_139_4FC46F83_H3",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 1698.3,
+      "orig_num": 2800.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": true,
+      "any_det": true,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_139_4FC46F83",
+      "hid": "FB_139_4FC46F83_H2",
+      "method": "end_check",
+      "type": "percentage",
+      "inj_num": 31.4,
+      "orig_num": 42.4,
+      "survived": false,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_139_4FC46F83",
+      "hid": "FB_139_4FC46F83_H1",
+      "method": "end_check",
+      "type": "percentage",
+      "inj_num": 43.9,
+      "orig_num": 50.1,
+      "survived": false,
+      "corrected": true,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:53:58.675313+00:00"
+}

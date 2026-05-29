@@ -1,0 +1,85 @@
+{
+  "question_id": "FB_137_A71B03EF",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Ulta Beauty, FY2023\n- PRIMARY METRIC: As of February 4, 2023, Ulta Beauty, Inc. had $1,200 million in aggregate principal amount of senior unsecured notes due in 2025 and $751 million in aggregate principal amount of senior unsecured notes due in 2031. (per the FY2023 10-K, Note 7 - Debt)\n- SUPPORTING DATA: \n  - Senior Unsecured Notes:\n    - $1,200 million due in 2025\n    - $1,000 million due in 2031\n  - Total debt as of February 4, 2023: $2,200 million\n  - Shareholders' equity as of February 4, 2023: $931 million (per the FY2023 10-K, Consolidated Balance Sheets)\n  - Debt-to-Equity Ratio: 1.47 (calculated as Total Debt / Shareholders' Equity)\n- DATA SOURCES: \n  - Ulta Beauty FY2023 10-K, Note 7 - Debt\n  - Ulta Beauty FY2023 10-K, Consolidated Balance Sheets\n\nPlease note that I have not included trend analysis or comparisons to industry standards as per your directive to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_137_A71B03EF_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,000 million",
+      "injected_value": "$751 million",
+      "original_numeric": "1000",
+      "injected_numeric": "751",
+      "position_char": 191,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.2493
+    },
+    {
+      "hallucination_id": "FB_137_A71B03EF_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,500 million",
+      "injected_value": "$931 million",
+      "original_numeric": "1500",
+      "injected_numeric": "931",
+      "position_char": 529,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.3791
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "$1,000 million due in 2031",
+        "claim_value": "1,000 million",
+        "reason": "This figure for senior unsecured notes due in 2031 directly contradicts the primary metric provided earlier in the output, which states '$751 million in aggregate principal amount of senior unsecured notes due in 2031'. This is a clear internal inconsistency.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Shareholders' equity as of February 4, 2023: $931 million",
+        "claim_value": "931 million",
+        "reason": "This figure for shareholders' equity seems implausibly low for a company of Ulta Beauty's size and market capitalization (typically in the tens of billions). A company with $2.2 billion in total debt and less than $1 billion in equity would indicate very high leverage, which is unusual for a stable, profitable retailer like Ulta.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Debt-to-Equity Ratio: 1.47",
+        "claim_value": "1.47",
+        "reason": "The stated Debt-to-Equity Ratio of 1.47 is calculated as Total Debt / Shareholders' Equity. Using the provided figures ($2,200 million Total Debt / $931 million Shareholders' Equity), the actual calculation yields approximately 2.36, not 1.47. This is a clear internal inconsistency and calculation error.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 7,
+    "overall_assessment": "The researcher's output contains significant internal inconsistencies regarding debt figures and a calculation error for the debt-to-equity ratio, in addition to an implausibly low figure for shareholders' equity.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"$1,000 million due in 2031\",\n      \"claim_value\": \"1,000 million\",\n      \"reason\": \"This figure for senior unsecured notes due in 2031 directly contradicts the primary metric provided earlier in the output, which states '$751 million in aggregate principal amount of senior unsecured notes due in 2031'. This is a clear internal inconsistency.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Shareholders' equity as of February 4, 2023: $931 million\",\n      \"claim_value\": \"931 million\",\n      \"reason\": \"This figure for shareholders' equity seems implausibly low for a company of Ulta Beauty's size and market capitalization (typically in the tens of billions). A company with $2.2 billion in total debt and less than $1 billion in equity would indicate very high leverage, which is unusual for a stable, profitable retailer like Ulta.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Debt-to-Equity Ratio: 1.47\",\n      \"claim_value\": \"1.47\",\n      \"reason\": \"The stated Debt-to-Equity Ratio of 1.47 is calculated as Total Debt / Shareholders' Equity. Using the provided figures ($2,200 million Total Debt / $931 million Shareholders' Equity), the actual calculation yields approximately 2.36, not 1.47. This is a clear internal inconsistency and calculation error.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 7,\n  \"overall_assessment\": \"The researcher's output contains significant internal inconsistencies regarding debt figures and a calculation error for the debt-to-equity ratio, in addition to an implausibly low figure for shareholders' equity.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_137_A71B03EF",
+      "hallucination_id": "FB_137_A71B03EF_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,000 million",
+      "injected_value": "$751 million",
+      "detected": true,
+      "reason": "This figure for senior unsecured notes due in 2031 directly contradicts the primary metric provided earlier in the output, which states '$751 million in aggregate principal amount of senior unsecured notes due in 2031'. This is a clear internal inconsistency.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_137_A71B03EF",
+      "hallucination_id": "FB_137_A71B03EF_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,500 million",
+      "injected_value": "$931 million",
+      "detected": true,
+      "reason": "This figure for shareholders' equity seems implausibly low for a company of Ulta Beauty's size and market capitalization (typically in the tens of billions). A company with $2.2 billion in total debt and less than $1 billion in equity would indicate very high leverage, which is unusual for a stable, profitable retailer like Ulta.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 7
+    }
+  ],
+  "timestamp": "2026-03-25T08:04:39.746489Z"
+}

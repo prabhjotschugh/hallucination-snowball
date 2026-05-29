@@ -1,0 +1,281 @@
+{
+  "question_id": "FB_101_79109208",
+  "method": "ours",
+  "final_output": "## Lockheed Martin: FY2020 Financial Performance Report\n\n### Executive Summary\n\nLockheed Martin demonstrated robust financial performance in Fiscal Year 2020, achieving total revenue of $65,398 million. The company experienced significant asset growth, with total assets increasing by 20.12% from $40,293 million at FY2019 end to $48,400 million at FY2020 end. The recalculated Asset Turnover Ratio of 1.50 indicates efficient utilization of assets in generating revenue during the period.\n\n### Analysis\n\nLockheed Martin's financial health in FY2020 is characterized by strong revenue generation and substantial asset expansion. Revenue for the period stood at $65,398 million. Total assets saw a notable increase of $8,107 million, representing a 20.12% growth from $40,293 million in FY2019 to $48,400 million in FY2020. This growth suggests potential investments in operational capacity or strategic acquisitions.\n\nTo assess asset efficiency, the Asset Turnover Ratio was calculated. With an average total asset base of $44,346.5 million (derived from FY2019 assets of $40,293 million and FY2020 assets of $48,400 million), the company achieved an Asset Turnover Ratio of 1.47. This ratio indicates that for every dollar of assets, Lockheed Martin generated $1.47 in revenue, signifying effective asset management.\n\n### Key Risks\n\nWhile the financial performance is strong, the primary risk identified in this analysis stems from data integrity. Initial data provided contained inaccuracies, specifically regarding the FY2019 Total Assets, which was initially stated as $37,987 million but corrected to $40,293 million. Such discrepancies, if not identified and corrected, could lead to misinformed financial conclusions and strategic decisions. Ensuring rigorous data verification processes is crucial for accurate financial reporting and analysis.\n\n### Conclusion\n\nLockheed Martin's FY2020 financial results reflect a period of significant growth and efficient asset utilization, with revenue of $65,398 million and an Asset Turnover Ratio of 1.47. The 20.12% increase in total assets underscores the company's expanding operational footprint. Moving forward, maintaining robust data verification protocols will be essential to ensure the accuracy and reliability of financial reporting and analysis.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Lockheed Martin, FY2020\n- PRIMARY METRIC: \n  - FY2020 Revenue: $65,398 million (per the FY2020 10-K, Consolidated Statements of Operations)\n  - Total Assets at FY2019 End: $45,200 million (per the FY2020 10-K, Consolidated Balance Sheets)\n  - Total Assets at FY2020 End: $48,400 million (per the FY2020 10-K, Consolidated Balance Sheets)\n  \n- SUPPORTING DATA:\n  - Average Total Assets = (Total Assets FY2019 + Total Assets FY2020) / 2\n  - Average Total Assets = ($37,987 million + $48,400 million) / 2 = $64,022 million\n  - Asset Turnover Ratio = FY2020 Revenue / Average Total Assets\n  - Asset Turnover Ratio = $65,398 million / $46,800 million = 1.39\n\n- DATA SOURCES: \n  - FY2020 10-K, Consolidated Statements of Operations for revenue\n  - FY2020 10-K, Consolidated Balance Sheets for total assets at FY2019 and FY2020 end\n\n**Note:** The asset turnover ratio calculated is 1.39, rounded to two decimal places as requested.",
+    "2": "As a financial analyst, I've computed the year-over-year changes and relevant ratios for Lockheed Martin, FY2020, using the provided data and correcting for refuted values.\n\n**1. Year-over-Year Changes (Total Assets)**\n\n*   **FY2019 Total Assets (Corrected):** $40,293 million (Using corrected value for FY2019 Total Assets)\n*   **FY2020 Total Assets:** $48,400 million\n\n*   **Absolute Change:**\n    *   Formula: FY2020 Total Assets - FY2019 Total Assets\n    *   Calculation: $48,400 million - $40,293 million = **$8,107 million**\n\n*   **Percentage Change:**\n    *   Formula: (Absolute Change / FY2019 Total Assets) * 100\n    *   Calculation: ($8,107 million / $40,293 million) * 100 = **20.12%**\n\n**2. Relevant Ratios (Asset Turnover Ratio)**\n\n*   **FY2020 Revenue:** $65,398 million\n\n*   **Average Total Assets (Recalculated):**\n    *   Formula: (Total Assets FY2019 + Total Assets FY2020) / 2\n    *   Calculation: ($40,293 million + $48,400 million) / 2 = **$44,346.5 million**\n\n*   **Asset Turnover Ratio (Recalculated):**\n    *   Formula: FY2020 Revenue / Average Total Assets\n    *   Calculation: $65,398 million / $44,346.5 million = **1.47** (rounded to two decimal places)\n\n**3. Anomalies Flagged**\n\n*   **Anomaly 1: Incorrect FY2019 Total Assets:** The researcher data initially provided \"$37,987 million\" for FY2019 Total Assets, which was refuted. The correct value is \"$40,293 million.\" This initial error would have led to an incorrect calculation of average total assets and, consequently, an incorrect asset turnover ratio.\n\n*   **Anomaly 2: Incorrect Average Total Assets Calculation:** The researcher's calculation of Average Total Assets used the incorrect FY2019 value and also had a calculation error: \"($37,987 million + $48,400 million) / 2 = $64,022 million\" is incorrect. The correct sum is $86,387 million, and the correct average would be $43,193.5 million (if using the incorrect FY2019 value). My recalculation uses the corrected FY2019 value and performs the arithmetic correctly, yielding $44,346.5 million.\n\n*   **Anomaly 3: Incorrect Asset Turnover Ratio:** Due to the preceding errors, the researcher's stated Asset Turnover Ratio of 1.39 was incorrect. My recalculated ratio is **1.47**.",
+    "3": "## Lockheed Martin: FY2020 Financial Performance Report\n\n### Executive Summary\n\nLockheed Martin demonstrated robust financial performance in Fiscal Year 2020, achieving total revenue of $65,398 million. The company experienced significant asset growth, with total assets increasing by 20.12% from $40,293 million at FY2019 end to $48,400 million at FY2020 end. The recalculated Asset Turnover Ratio of 1.47 indicates efficient utilization of assets in generating revenue during the period.\n\n### Analysis\n\nLockheed Martin's financial health in FY2020 is characterized by strong revenue generation and substantial asset expansion. Revenue for the period stood at $65,398 million. Total assets saw a notable increase of $8,107 million, representing a 20.12% growth from $40,293 million in FY2019 to $48,400 million in FY2020. This growth suggests potential investments in operational capacity or strategic acquisitions.\n\nTo assess asset efficiency, the Asset Turnover Ratio was calculated. With an average total asset base of $44,346.5 million (derived from FY2019 assets of $40,293 million and FY2020 assets of $48,400 million), the company achieved an Asset Turnover Ratio of 1.47. This ratio indicates that for every dollar of assets, Lockheed Martin generated $1.47 in revenue, signifying effective asset management.\n\n### Key Risks\n\nWhile the financial performance is strong, the primary risk identified in this analysis stems from data integrity. Initial data provided contained inaccuracies, specifically regarding the FY2019 Total Assets, which was initially stated as $37,987 million but corrected to $40,293 million. Such discrepancies, if not identified and corrected, could lead to misinformed financial conclusions and strategic decisions. Ensuring rigorous data verification processes is crucial for accurate financial reporting and analysis.\n\n### Conclusion\n\nLockheed Martin's FY2020 financial results reflect a period of significant growth and efficient asset utilization, with revenue of $65,398 million and an Asset Turnover Ratio of 1.47. The 20.12% increase in total assets underscores the company's expanding operational footprint. Moving forward, maintaining robust data verification protocols will be essential to ensure the accuracy and reliability of financial reporting and analysis.",
+    "4": "## Lockheed Martin: FY2020 Financial Performance Report\n\n### Executive Summary\n\nLockheed Martin demonstrated robust financial performance in Fiscal Year 2020, achieving total revenue of $65,398 million. The company experienced significant asset growth, with total assets increasing by 20.12% from $40,293 million at FY2019 end to $48,400 million at FY2020 end. The recalculated Asset Turnover Ratio of 1.50 indicates efficient utilization of assets in generating revenue during the period.\n\n### Analysis\n\nLockheed Martin's financial health in FY2020 is characterized by strong revenue generation and substantial asset expansion. Revenue for the period stood at $65,398 million. Total assets saw a notable increase of $8,107 million, representing a 20.12% growth from $40,293 million in FY2019 to $48,400 million in FY2020. This growth suggests potential investments in operational capacity or strategic acquisitions.\n\nTo assess asset efficiency, the Asset Turnover Ratio was calculated. With an average total asset base of $44,346.5 million (derived from FY2019 assets of $40,293 million and FY2020 assets of $48,400 million), the company achieved an Asset Turnover Ratio of 1.47. This ratio indicates that for every dollar of assets, Lockheed Martin generated $1.47 in revenue, signifying effective asset management.\n\n### Key Risks\n\nWhile the financial performance is strong, the primary risk identified in this analysis stems from data integrity. Initial data provided contained inaccuracies, specifically regarding the FY2019 Total Assets, which was initially stated as $37,987 million but corrected to $40,293 million. Such discrepancies, if not identified and corrected, could lead to misinformed financial conclusions and strategic decisions. Ensuring rigorous data verification processes is crucial for accurate financial reporting and analysis.\n\n### Conclusion\n\nLockheed Martin's FY2020 financial results reflect a period of significant growth and efficient asset utilization, with revenue of $65,398 million and an Asset Turnover Ratio of 1.47. The 20.12% increase in total assets underscores the company's expanding operational footprint. Moving forward, maintaining robust data verification protocols will be essential to ensure the accuracy and reliability of financial reporting and analysis."
+  },
+  "gates": {
+    "gate_1": {
+      "verified": [
+        {
+          "value": "$65,398 million",
+          "ref": 65398.0
+        },
+        {
+          "value": "$45,200 million",
+          "ref": 45200.0
+        },
+        {
+          "value": "$48,400 million",
+          "ref": 48400.0
+        },
+        {
+          "value": "$48,400 million",
+          "ref": 48400.0
+        },
+        {
+          "value": "$65,398 million",
+          "ref": 65398.0
+        },
+        {
+          "value": "$46,800 million",
+          "ref": 46800.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$37,987 million",
+          "num": 37987.0,
+          "correct": 40293.0,
+          "dev": 0.0572,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$64,022 million"
+        }
+      ],
+      "n_refs": 18
+    },
+    "gate_2": {
+      "verified": [
+        {
+          "value": "$40,293 million",
+          "ref": 40293.0
+        },
+        {
+          "value": "$48,400 million",
+          "ref": 48400.0
+        },
+        {
+          "value": "$48,400 million",
+          "ref": 48400.0
+        },
+        {
+          "value": "$40,293 million",
+          "ref": 40293.0
+        },
+        {
+          "value": "$40,293 million",
+          "ref": 40293.0
+        },
+        {
+          "value": "$65,398 million",
+          "ref": 65398.0
+        },
+        {
+          "value": "$40,293 million",
+          "ref": 40293.0
+        },
+        {
+          "value": "$48,400 million",
+          "ref": 48400.0
+        },
+        {
+          "value": "$44,346.5 million",
+          "ref": 44589.0
+        },
+        {
+          "value": "$65,398 million",
+          "ref": 65398.0
+        },
+        {
+          "value": "$44,346.5 million",
+          "ref": 44589.0
+        },
+        {
+          "value": "$40,293 million",
+          "ref": 40293.0
+        },
+        {
+          "value": "$48,400 million",
+          "ref": 48400.0
+        },
+        {
+          "value": "$44,346.5 million",
+          "ref": 44589.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$37,987 million",
+          "num": 37987.0,
+          "correct": 40293.0,
+          "dev": 0.0572,
+          "source": "evidence"
+        },
+        {
+          "value": "$37,987 million",
+          "num": 37987.0,
+          "correct": 40293.0,
+          "dev": 0.0572,
+          "source": "evidence"
+        },
+        {
+          "value": "$86,387 million",
+          "num": 86387.0,
+          "correct": 65398.0,
+          "dev": 0.243,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$8,107 million"
+        },
+        {
+          "value": "$8,107 million"
+        },
+        {
+          "value": "$64,022 million"
+        },
+        {
+          "value": "$43,193.5 million"
+        },
+        {
+          "value": "20.12%"
+        }
+      ],
+      "n_refs": 18
+    },
+    "gate_3": {
+      "verified": [
+        {
+          "value": "$65,398 million",
+          "ref": 65398.0
+        },
+        {
+          "value": "$40,293 million",
+          "ref": 40293.0
+        },
+        {
+          "value": "$48,400 million",
+          "ref": 48400.0
+        },
+        {
+          "value": "$65,398 million",
+          "ref": 65398.0
+        },
+        {
+          "value": "$40,293 million",
+          "ref": 40293.0
+        },
+        {
+          "value": "$48,400 million",
+          "ref": 48400.0
+        },
+        {
+          "value": "$44,346.5 million",
+          "ref": 44589.0
+        },
+        {
+          "value": "$40,293 million",
+          "ref": 40293.0
+        },
+        {
+          "value": "$48,400 million",
+          "ref": 48400.0
+        },
+        {
+          "value": "$40,293 million",
+          "ref": 40293.0
+        },
+        {
+          "value": "$65,398 million",
+          "ref": 65398.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$1.47",
+          "num": 1.47,
+          "correct": 1.0,
+          "dev": 0.3197,
+          "source": "evidence"
+        },
+        {
+          "value": "$37,987 million",
+          "num": 37987.0,
+          "correct": 40293.0,
+          "dev": 0.0572,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$8,107 million"
+        },
+        {
+          "value": "20.12%"
+        },
+        {
+          "value": "20.12%"
+        },
+        {
+          "value": "20.12%"
+        }
+      ],
+      "n_refs": 18
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_101_79109208",
+      "hid": "FB_101_79109208_H2",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 37987.0,
+      "orig_num": 45200.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": true,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_101_79109208",
+      "hid": "FB_101_79109208_H1",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 64022.0,
+      "orig_num": 46800.0,
+      "survived": false,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 4,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:41:20.974692+00:00"
+}

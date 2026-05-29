@@ -1,0 +1,97 @@
+{
+  "question_id": "FB_082_4FFC55E4",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: General Mills, FY2019\n- PRIMARY METRIC: Cash Conversion Cycle (CCC) = DIO + DSO - DPO\n\n### Data Extraction\n\n**1. Average Inventory:**\n- FY2019 Inventory: $1,334 million (per the FY2019 10-K, Consolidated Balance Sheets)\n- FY2018 Inventory: $1,029 million (per the FY2018 10-K, Consolidated Balance Sheets)\n- Average Inventory = ($1,059 million + $1,029 million) / 2 = $1,044 million\n\n**2. Cost of Goods Sold (COGS) for FY2019:**\n- COGS: $3,643 million (per the FY2019 10-K, Consolidated Statements of Operations)\n\n**3. Average Accounts Receivable:**\n- FY2019 Accounts Receivable: $1,058 million (per the FY2019 10-K, Consolidated Balance Sheets)\n- FY2018 Accounts Receivable: $1,035 million (per the FY2018 10-K, Consolidated Balance Sheets)\n- Average Accounts Receivable = ($1,058 million + $1,035 million) / 2 = $1,046.5 million\n\n**4. Revenue for FY2019:**\n- Revenue: $16,868 million (per the FY2019 10-K, Consolidated Statements of Operations)\n\n**5. Average Accounts Payable:**\n- FY2019 Accounts Payable: $1,457 million (per the FY2019 10-K, Consolidated Balance Sheets)\n- FY2018 Accounts Payable: $1,525 million (per the FY2018 10-K, Consolidated Balance Sheets)\n- Average Accounts Payable = ($1,457 million + $1,525 million) / 2 = $1,491 million\n\n**6. Change in Inventory:**\n- Change in Inventory = FY2019 Inventory - FY2018 Inventory = $1,059 million - $1,029 million = $30 million\n\n### Calculations\n\n**DIO (Days Inventory Outstanding):**\n- DIO = 365 * (Average Inventory / COGS)\n- DIO = 365 * ($1,044 million / $3,643 million) = 104.06 days\n\n**DSO (Days Sales Outstanding):**\n- DSO = 365 * (Average Accounts Receivable / Revenue)\n- DSO = 365 * ($1,046.5 million / $16,868 million) = 22.61 days\n\n**DPO (Days Payable Outstanding):**\n- DPO = 365 * (Average Accounts Payable / (COGS + Change in Inventory))\n- DPO = 365 * ($1,491 million / ($3,643 million + $37 million)) = 149.36 days\n\n### Cash Conversion Cycle (CCC):\n- CCC = DIO + DSO - DPO\n- CCC = 104.06 days + 22.61 days - 149.36 days = -22.69 days\n\n### Summary of Metrics:\n- DIO: 104.06 days\n- DSO: 22.61 days\n- DPO: 149.36 days\n- Cash Conversion Cycle (CCC): -22.69 days\n\n### DATA SOURCES:\n- FY2019 10-K, Consolidated Balance Sheets\n- FY2019 10-K, Consolidated Statements of Operations\n- FY2018 10-K, Consolidated Balance Sheets\n- FY2018 10-K, Consolidated Statements of Operations\n\nThis report presents the cash conversion cycle for General Mills for FY2019, with all figures sourced directly from the relevant SEC filings.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_082_4FFC55E4_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,059 million",
+      "injected_value": "$1,334 million",
+      "original_numeric": "1059",
+      "injected_numeric": "1334",
+      "position_char": 174,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.2594
+    },
+    {
+      "hallucination_id": "FB_082_4FFC55E4_H1",
+      "type": "dollar_amount",
+      "original_value": "$30 million",
+      "injected_value": "$37 million",
+      "original_numeric": "30",
+      "injected_numeric": "37",
+      "position_char": 1880,
+      "sentence_approx": 11,
+      "perturbation_delta": 0.2245
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "FY2019 Inventory: $1,334 million (per the FY2019 10-K, Consolidated Balance Sheets)",
+        "claim_value": "$1,334 million",
+        "reason": "Internal inconsistency: The extraction states $1,334 million, but the subsequent calculation uses $1,059 million for FY2019 Inventory. This suggests a hallucination or data handling error.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Average Inventory = ($1,059 million + $1,029 million) / 2 = $1,044 million",
+        "claim_value": "$1,059 million",
+        "reason": "Contradicts the previously extracted FY2019 Inventory figure of $1,334 million within the same report.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "COGS: $3,643 million (per the FY2019 10-K, Consolidated Statements of Operations)",
+        "claim_value": "$3,643 million",
+        "reason": "Industry plausibility issue: For a CPG company like General Mills with $16.8B revenue, this COGS implies a ~78% gross margin. Typical food manufacturing gross margins are 30-45%. This figure likely represents SG&A or is hallucinated.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Change in Inventory = FY2019 Inventory - FY2018 Inventory = $1,059 million - $1,029 million = $30 million",
+        "claim_value": "$30 million",
+        "reason": "Internal inconsistency: While the math here is correct (1059-1029=30), the subsequent DPO calculation uses $37 million for this same variable.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "DPO = 365 * ($1,491 million / ($3,643 million + $37 million)) = 149.36 days",
+        "claim_value": "$37 million",
+        "reason": "Internal inconsistency: Uses $37 million for change in inventory despite the previous line explicitly calculating it as $30 million. This alters the DPO result artificially.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 17,
+    "overall_assessment": "The report contains critical internal inconsistencies in inventory values and arithmetic, along with a COGS figure that implies an impossible gross margin for the industry.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"FY2019 Inventory: $1,334 million (per the FY2019 10-K, Consolidated Balance Sheets)\",\n      \"claim_value\": \"$1,334 million\",\n      \"reason\": \"Internal inconsistency: The extraction states $1,334 million, but the subsequent calculation uses $1,059 million for FY2019 Inventory. This suggests a hallucination or data handling error.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Average Inventory = ($1,059 million + $1,029 million) / 2 = $1,044 million\",\n      \"claim_value\": \"$1,059 million\",\n      \"reason\": \"Contradicts the previously extracted FY2019 Inventory figure of $1,334 million within the same report.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"COGS: $3,643 million (per the FY2019 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$3,643 million\",\n      \"reason\": \"Industry plausibility issue: For a CPG company like General Mills with $16.8B revenue, this COGS implies a ~78% gross margin. Typical food manufacturing gross margins are 30-45%. This figure likely represents SG&A or is hallucinated.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Change in Inventory = FY2019 Inventory - FY2018 Inventory = $1,059 million - $1,029 million = $30 million\",\n      \"claim_value\": \"$30 million\",\n      \"reason\": \"Internal inconsistency: While the math here is correct (1059-1029=30), the subsequent DPO calculation uses $37 million for this same variable.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"DPO = 365 * ($1,491 million / ($3,643 million + $37 million)) = 149.36 days\",\n      \"claim_value\": \"$37 million\",\n      \"reason\": \"Internal inconsistency: Uses $37 million for change in inventory despite the previous line explicitly calculating it as $30 million. This alters the DPO result artificially.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 17,\n  \"overall_assessment\": \"The report contains critical internal inconsistencies in inventory values and arithmetic, along with a COGS figure that implies an impossible gross margin for the industry.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_082_4FFC55E4",
+      "hallucination_id": "FB_082_4FFC55E4_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,059 million",
+      "injected_value": "$1,334 million",
+      "detected": true,
+      "reason": "Internal inconsistency: The extraction states $1,334 million, but the subsequent calculation uses $1,059 million for FY2019 Inventory. This suggests a hallucination or data handling error.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 17
+    },
+    {
+      "question_id": "FB_082_4FFC55E4",
+      "hallucination_id": "FB_082_4FFC55E4_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$30 million",
+      "injected_value": "$37 million",
+      "detected": true,
+      "reason": "Internal inconsistency: While the math here is correct (1059-1029=30), the subsequent DPO calculation uses $37 million for this same variable.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 17
+    }
+  ],
+  "timestamp": "2026-03-24T11:53:02.515805Z"
+}

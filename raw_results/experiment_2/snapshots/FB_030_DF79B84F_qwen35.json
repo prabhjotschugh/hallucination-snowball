@@ -1,0 +1,97 @@
+{
+  "question_id": "FB_030_DF79B84F",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Amcor, FY 2023 vs FY 2022\n- PRIMARY METRIC: The real change in sales for Amcor in FY 2023 compared to FY 2022, excluding the effects of foreign exchange movements, passthrough costs, and one-off items, is not explicitly stated in the available filings. However, the reported sales figures are as follows:\n  - FY 2023 Net Sales: $16,612 million (per the Q4 2023 earnings report, Consolidated Statements of Operations)\n  - FY 2022 Net Sales: $8,955 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  \n  The nominal change in sales is $500 million. To determine the real change excluding the specified factors, further details on the adjustments for FX, passthrough costs, and one-off items would be required, which are not provided in the filings.\n\n- SUPPORTING DATA: \n  - FY 2023 Net Sales: $14,000 million (per the Q4 2023 earnings report, Consolidated Statements of Operations)\n  - FY 2022 Net Sales: $13,500 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - FY 2021 Net Sales: $12,500 million (per the FY2021 10-K, Consolidated Statements of Operations)\n\n- DATA SOURCES: \n  - Q4 2023 Earnings Report, Consolidated Statements of Operations\n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Statements of Operations\n\nPlease note that the specific adjustments for foreign exchange, passthrough costs, and one-off items are not detailed in the available filings, which limits the ability to calculate the real change in sales accurately.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_030_DF79B84F_H2",
+      "type": "dollar_amount",
+      "original_value": "$14,000 million",
+      "injected_value": "$16,612 million",
+      "original_numeric": "14000",
+      "injected_numeric": "16612",
+      "position_char": 348,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.1866
+    },
+    {
+      "hallucination_id": "FB_030_DF79B84F_H1",
+      "type": "dollar_amount",
+      "original_value": "$13,500 million",
+      "injected_value": "$8,955 million",
+      "original_numeric": "13500",
+      "injected_numeric": "8955",
+      "position_char": 460,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3367
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "FY 2023 Net Sales: $16,612 million... FY 2022 Net Sales: $8,955 million",
+        "claim_value": "$16,612 million (FY23) and $8,955 million (FY22)",
+        "reason": "Direct internal contradiction with Supporting Data section which lists FY23 as $14,000 million and FY22 as $13,500 million. Additionally, an increase from $8.9B to $16.6B (approx 85% growth) is implausible for a mature packaging company like Amcor without major M&A disclosure.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY 2023 Net Sales: $14,000 million... FY 2022 Net Sales: $13,500 million",
+        "claim_value": "$14,000 million (FY23) and $13,500 million (FY22)",
+        "reason": "Direct internal contradiction with Primary Metric section. Furthermore, these figures are suspiciously round (exact hundreds of millions), which is atypical for actual audited financial statements found in Consolidated Statements of Operations.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "The nominal change in sales is $500 million.",
+        "claim_value": "$500 million",
+        "reason": "Mathematical inconsistency. This figure matches the difference in the Supporting Data ($14,000 - $13,500), but contradicts the Primary Metric data ($16,612 - $8,955 = $7,657 million). Indicates hallucinated or mismatched data sources.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2022 10-K, Consolidated Statements of Operations",
+        "claim_value": "10-K",
+        "reason": "Amcor is a foreign private issuer headquartered in Australia (listed on NYSE). They typically file Form 20-F with the SEC, not Form 10-K. Referring to a 10-K is likely a hallucination of the filing type.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "adjustments for foreign exchange, passthrough costs, and one-off items are not detailed in the available filings",
+        "claim_value": "not detailed",
+        "reason": "Large-cap industrials like Amcor typically provide organic sales growth reconciliations or discuss FX impacts in their Earnings Releases and MD&A sections. Stating these are entirely unavailable is suspicious for a company of this size.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 5,
+    "overall_assessment": "The output contains critical internal contradictions regarding revenue figures, mathematical inconsistencies, and likely hallucinated filing types, rendering the financial data unreliable.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"FY 2023 Net Sales: $16,612 million... FY 2022 Net Sales: $8,955 million\",\n      \"claim_value\": \"$16,612 million (FY23) and $8,955 million (FY22)\",\n      \"reason\": \"Direct internal contradiction with Supporting Data section which lists FY23 as $14,000 million and FY22 as $13,500 million. Additionally, an increase from $8.9B to $16.6B (approx 85% growth) is implausible for a mature packaging company like Amcor without major M&A disclosure.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY 2023 Net Sales: $14,000 million... FY 2022 Net Sales: $13,500 million\",\n      \"claim_value\": \"$14,000 million (FY23) and $13,500 million (FY22)\",\n      \"reason\": \"Direct internal contradiction with Primary Metric section. Furthermore, these figures are suspiciously round (exact hundreds of millions), which is atypical for actual audited financial statements found in Consolidated Statements of Operations.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"The nominal change in sales is $500 million.\",\n      \"claim_value\": \"$500 million\",\n      \"reason\": \"Mathematical inconsistency. This figure matches the difference in the Supporting Data ($14,000 - $13,500), but contradicts the Primary Metric data ($16,612 - $8,955 = $7,657 million). Indicates hallucinated or mismatched data sources.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2022 10-K, Consolidated Statements of Operations\",\n      \"claim_value\": \"10-K\",\n      \"reason\": \"Amcor is a foreign private issuer headquartered in Australia (listed on NYSE). They typically file Form 20-F with the SEC, not Form 10-K. Referring to a 10-K is likely a hallucination of the filing type.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"adjustments for foreign exchange, passthrough costs, and one-off items are not detailed in the available filings\",\n      \"claim_value\": \"not detailed\",\n      \"reason\": \"Large-cap industrials like Amcor typically provide organic sales growth reconciliations or discuss FX impacts in their Earnings Releases and MD&A sections. Stating these are entirely unavailable is suspicious for a company of this size.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 5,\n  \"overall_assessment\": \"The output contains critical internal contradictions regarding revenue figures, mathematical inconsistencies, and likely hallucinated filing types, rendering the financial data unreliable.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_030_DF79B84F",
+      "hallucination_id": "FB_030_DF79B84F_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$14,000 million",
+      "injected_value": "$16,612 million",
+      "detected": true,
+      "reason": "Direct internal contradiction with Supporting Data section which lists FY23 as $14,000 million and FY22 as $13,500 million. Additionally, an increase from $8.9B to $16.6B (approx 85% growth) is implausible for a mature packaging company like Amcor without major M&A disclosure.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 5
+    },
+    {
+      "question_id": "FB_030_DF79B84F",
+      "hallucination_id": "FB_030_DF79B84F_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$13,500 million",
+      "injected_value": "$8,955 million",
+      "detected": true,
+      "reason": "Direct internal contradiction with Supporting Data section which lists FY23 as $14,000 million and FY22 as $13,500 million. Additionally, an increase from $8.9B to $16.6B (approx 85% growth) is implausible for a mature packaging company like Amcor without major M&A disclosure.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 5
+    }
+  ],
+  "timestamp": "2026-03-24T10:41:21.220496Z"
+}

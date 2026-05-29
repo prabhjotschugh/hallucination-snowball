@@ -1,0 +1,115 @@
+{
+  "question_id": "FB_033_EE9D3CFB",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Advanced Micro Devices, Inc. (AMD), FY2022\n- PRIMARY METRIC: As of FY2022, AMD operates through two primary segments: Computing and Graphics, and Enterprise, Embedded, and Semi-Custom. \n\n  - **Computing and Graphics**: This segment includes desktop and mobile processors, graphics processing units (GPUs), and related products. Key products include:\n    - AMD Ryzen\u2122 processors\n    - AMD Radeon\u2122 graphics cards\n    - AMD EPYC\u2122 processors for data centers\n\n  - **Enterprise, Embedded, and Semi-Custom**: This segment includes semi-custom System-on-Chip (SoC) products for game consoles, embedded processors, and data center solutions. Key products include:\n    - Semi-custom chips for gaming consoles (e.g., PlayStation 5 and Xbox Series X)\n    - Embedded processors for various applications\n\n- SUPPORTING DATA: \n  - For FY2022, AMD reported total revenue of $23,600 million, with the Computing and Graphics segment contributing approximately $15,000 million and the Enterprise, Embedded, and Semi-Custom segment contributing approximately $8,600 million.\n  - Revenue breakdown for FY2021 for comparison: Total revenue was $16,400 million, with Computing and Graphics at approximately $8,249 million and Enterprise, Embedded, and Semi-Custom at approximately $5,600 million.\n  - Revenue breakdown for FY2020 for further context: Total revenue was $6,395 million, with Computing and Graphics at approximately $6,000 million and Enterprise, Embedded, and Semi-Custom at approximately $4,399 million.\n\n- DATA SOURCES: \n  - Per the FY2022 10-K, Item 1. Business Overview and Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_033_EE9D3CFB_H3",
+      "type": "dollar_amount",
+      "original_value": "$10,800 million",
+      "injected_value": "$8,249 million",
+      "original_numeric": "10800",
+      "injected_numeric": "8249",
+      "position_char": 1204,
+      "sentence_approx": 8,
+      "perturbation_delta": -0.2362
+    },
+    {
+      "hallucination_id": "FB_033_EE9D3CFB_H2",
+      "type": "dollar_amount",
+      "original_value": "$9,763 million",
+      "injected_value": "$6,395 million",
+      "original_numeric": "9763",
+      "injected_numeric": "6395",
+      "position_char": 1367,
+      "sentence_approx": 9,
+      "perturbation_delta": -0.345
+    },
+    {
+      "hallucination_id": "FB_033_EE9D3CFB_H1",
+      "type": "dollar_amount",
+      "original_value": "$3,763 million",
+      "injected_value": "$4,399 million",
+      "original_numeric": "3763",
+      "injected_numeric": "4399",
+      "position_char": 1502,
+      "sentence_approx": 9,
+      "perturbation_delta": 0.1691
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Computing and Graphics at approximately $8,249 million",
+        "claim_value": "$8,249 million",
+        "reason": "The sum of the reported segment revenues for FY2021 ($8,249 million for Computing and Graphics + $5,600 million for Enterprise, Embedded, and Semi-Custom = $13,849 million) does not match the stated total revenue for FY2021 ($16,400 million). This indicates a significant internal inconsistency or hallucination.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Enterprise, Embedded, and Semi-Custom at approximately $5,600 million",
+        "claim_value": "$5,600 million",
+        "reason": "The sum of the reported segment revenues for FY2021 ($8,249 million for Computing and Graphics + $5,600 million for Enterprise, Embedded, and Semi-Custom = $13,849 million) does not match the stated total revenue for FY2021 ($16,400 million). This indicates a significant internal inconsistency or hallucination.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Computing and Graphics at approximately $6,000 million",
+        "claim_value": "$6,000 million",
+        "reason": "The sum of the reported segment revenues for FY2020 ($6,000 million for Computing and Graphics + $4,399 million for Enterprise, Embedded, and Semi-Custom = $10,399 million) does not match the stated total revenue for FY2020 ($6,395 million). This indicates a significant internal inconsistency or hallucination.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Enterprise, Embedded, and Semi-Custom at approximately $4,399 million",
+        "claim_value": "$4,399 million",
+        "reason": "The sum of the reported segment revenues for FY2020 ($6,000 million for Computing and Graphics + $4,399 million for Enterprise, Embedded, and Semi-Custom = $10,399 million) does not match the stated total revenue for FY2020 ($6,395 million). This indicates a significant internal inconsistency or hallucination.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 9,
+    "overall_assessment": "The financial data for FY2021 and FY2020 contains significant internal inconsistencies where the sum of reported segment revenues does not match the stated total revenue for those years, strongly suggesting hallucination.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Computing and Graphics at approximately $8,249 million\",\n      \"claim_value\": \"$8,249 million\",\n      \"reason\": \"The sum of the reported segment revenues for FY2021 ($8,249 million for Computing and Graphics + $5,600 million for Enterprise, Embedded, and Semi-Custom = $13,849 million) does not match the stated total revenue for FY2021 ($16,400 million). This indicates a significant internal inconsistency or hallucination.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Enterprise, Embedded, and Semi-Custom at approximately $5,600 million\",\n      \"claim_value\": \"$5,600 million\",\n      \"reason\": \"The sum of the reported segment revenues for FY2021 ($8,249 million for Computing and Graphics + $5,600 million for Enterprise, Embedded, and Semi-Custom = $13,849 million) does not match the stated total revenue for FY2021 ($16,400 million). This indicates a significant internal inconsistency or hallucination.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Computing and Graphics at approximately $6,000 million\",\n      \"claim_value\": \"$6,000 million\",\n      \"reason\": \"The sum of the reported segment revenues for FY2020 ($6,000 million for Computing and Graphics + $4,399 million for Enterprise, Embedded, and Semi-Custom = $10,399 million) does not match the stated total revenue for FY2020 ($6,395 million). This indicates a significant internal inconsistency or hallucination.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Enterprise, Embedded, and Semi-Custom at approximately $4,399 million\",\n      \"claim_value\": \"$4,399 million\",\n      \"reason\": \"The sum of the reported segment revenues for FY2020 ($6,000 million for Computing and Graphics + $4,399 million for Enterprise, Embedded, and Semi-Custom = $10,399 million) does not match the stated total revenue for FY2020 ($6,395 million). This indicates a significant internal inconsistency or hallucination.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 9,\n  \"overall_assessment\": \"The financial data for FY2021 and FY2020 contains significant internal inconsistencies where the sum of reported segment revenues does not match the stated total revenue for those years, strongly suggesting hallucination.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_033_EE9D3CFB",
+      "hallucination_id": "FB_033_EE9D3CFB_H3",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$10,800 million",
+      "injected_value": "$8,249 million",
+      "detected": true,
+      "reason": "The sum of the reported segment revenues for FY2021 ($8,249 million for Computing and Graphics + $5,600 million for Enterprise, Embedded, and Semi-Custom = $13,849 million) does not match the stated total revenue for FY2021 ($16,400 million). This indicates a significant internal inconsistency or hallucination.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_033_EE9D3CFB",
+      "hallucination_id": "FB_033_EE9D3CFB_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$9,763 million",
+      "injected_value": "$6,395 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_033_EE9D3CFB",
+      "hallucination_id": "FB_033_EE9D3CFB_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,763 million",
+      "injected_value": "$4,399 million",
+      "detected": true,
+      "reason": "The sum of the reported segment revenues for FY2020 ($6,000 million for Computing and Graphics + $4,399 million for Enterprise, Embedded, and Semi-Custom = $10,399 million) does not match the stated total revenue for FY2020 ($6,395 million). This indicates a significant internal inconsistency or hallucination.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 9
+    }
+  ],
+  "timestamp": "2026-03-25T07:41:42.214305Z"
+}

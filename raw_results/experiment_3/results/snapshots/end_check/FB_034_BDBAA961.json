@@ -1,0 +1,182 @@
+{
+  "question_id": "FB_034_BDBAA961",
+  "method": "end_check",
+  "final_output": "## Advanced Micro Devices, Inc. (AMD) - Fiscal Year 2022 Revenue Report\n\n### Executive Summary\n\nAdvanced Micro Devices, Inc. (AMD) reported total revenue of $23,600 million for Fiscal Year 2022, as detailed in its FY2022 10-K filing. This represents a 5.92% increase from the FY2021 total revenue of $22,281 million. While positive, this growth rate is significantly lower than the 128.22% revenue growth experienced from FY2020 to FY2021, where revenue increased from $9,763 million to $22,281 million.\n\n### Analysis\n\nAMD's revenue trajectory demonstrates robust growth over the past two fiscal years. Total revenue for FY2022 reached $23,600 million, an absolute increase of $1,319 million compared to FY2021. This translates to a year-over-year revenue growth rate of 5.92%. Looking back further, the company achieved substantial growth between FY2020 and FY2021, with revenue surging from $9,763 million to $22,281 million, marking an absolute increase of $12,518 million and an impressive 128.22% growth rate. All figures are derived from AMD's respective 10-K filings.\n\n### Key Risks\n\nA primary risk identified is the notable deceleration in revenue growth from 128.22% (FY2020-FY2021) to 5.92% (FY2021-FY2022). While still positive, this significant slowdown warrants close monitoring. Future reports should analyze the underlying factors contributing to this deceleration to assess its sustainability and potential impact on AMD's market position and profitability. This shift in growth momentum could be attributed to various factors, including market saturation, increased competition, or broader economic headwinds. A deeper dive into segment-specific performance and market conditions will be crucial for a comprehensive understanding.\n\n### Conclusion\n\nAMD concluded Fiscal Year 2022 with total revenue of $23,600 million, reflecting continued, albeit slower, growth. The 5.92% revenue increase from FY2021 indicates ongoing expansion. However, the substantial drop in growth rate compared to the prior period's 128.22% highlights a shift in the company's growth momentum that requires further investigation in subsequent financial analyses. While the company continues to expand, the significant deceleration in its growth trajectory merits careful consideration and detailed examination to understand its implications for future performance and strategic planning.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Advanced Micro Devices, Inc. (AMD) - Fiscal Year 2022 (FY2022)\n  \n- PRIMARY METRIC: Total Revenue for FY2022 was $23,600 million, as reported in the FY2022 10-K, Consolidated Statements of Operations.\n\n- SUPPORTING DATA: \n  - FY2021 Total Revenue: $22,281 million (per the FY2021 10-K, Consolidated Statements of Operations).\n  - FY2020 Total Revenue: $9,763 million (per the FY2020 10-K, Consolidated Statements of Operations).\n  - Revenue Growth from FY2021 to FY2022: $23,600 million - $16,420 million = $7,180 million (approximately 33.9% increase).\n  - Revenue Growth from FY2020 to FY2021: $10,590 million - $9,763 million = $6,657 million (approximately 68.1% increase).\n\n- DATA SOURCES: \n  - FY2022 10-K filing, Consolidated Statements of Operations.\n  - FY2021 10-K filing, Consolidated Statements of Operations.\n  - FY2020 10-K filing, Consolidated Statements of Operations.\n\n**Note:** The request for analysis of trends, computation of ratios, and benchmarking against industry peers cannot be fulfilled as per the directive to provide raw data only without interpretation or analysis.",
+    "2": "As a financial analyst, I will compute the year-over-year changes and relevant ratios for AMD's Total Revenue, flagging any anomalies based *only* on the provided data.\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\n*   **FY2021 to FY2022:**\n    *   **Absolute Change:**\n        *   Formula: FY2022 Total Revenue - FY2021 Total Revenue\n        *   Calculation: $23,600 million - $22,281 million = **$1,319 million**\n    *   **Percentage Change:**\n        *   Formula: (Absolute Change / FY2021 Total Revenue) * 100\n        *   Calculation: ($1,319 million / $22,281 million) * 100 = **5.92%**\n\n*   **FY2020 to FY2021:**\n    *   **Absolute Change:**\n        *   Formula: FY2021 Total Revenue - FY2020 Total Revenue\n        *   Calculation: $22,281 million - $9,763 million = **$12,518 million**\n    *   **Percentage Change:**\n        *   Formula: (Absolute Change / FY2020 Total Revenue) * 100\n        *   Calculation: ($12,518 million / $9,763 million) * 100 = **128.22%**\n\n**2. Relevant Ratios**\n\nGiven the limited data (only Total Revenue), the most relevant \"ratio\" we can compute is the **Revenue Growth Rate**, which is the percentage change calculated above.\n\n*   **Revenue Growth Rate (FY2021 to FY2022): 5.92%**\n*   **Revenue Growth Rate (FY2020 to FY2021): 128.22%**\n\n**3. Anomalies Flagged**\n\n*   **Anomaly 1: FY2021-FY2022 Revenue Growth Calculation Discrepancy**\n    *   The researcher data states: \"Revenue Growth from FY2021 to FY2022: $23,600 million - $16,420 million = $7,180 million (approximately 33.9% increase).\"\n    *   **Issue:** The FY2021 Total Revenue used in this calculation ($16,420 million) **does not match** the provided \"FY2021 Total Revenue: $22,281 million\" from the FY2021 10-K.\n    *   **Corrected Calculation (using provided FY2021 Total Revenue of $22,281 million):**\n        *   Absolute Change: $23,600 million - $22,281 million = $1,319 million\n        *   Percentage Change: ($1,319 million / $22,281 million) * 100 = 5.92%\n    *   **Flag:** The researcher's stated absolute and percentage growth for FY2021-FY2022 is **INCORRECT** based on the provided FY2021 Total Revenue.\n\n*   **Anomaly 2: FY2020-FY2021 Revenue Growth Calculation Discrepancy**\n    *   The researcher data states: \"Revenue Growth from FY2020 to FY2021: $10,590 million - $9,763 million = $6,657 million (approximately 68.1% increase).\"\n    *   **Issue:** The FY2021 Total Revenue used in this calculation ($10,590 million) **does not match** the provided \"FY2021 Total Revenue: $22,281 million\" from the FY2021 10-K.\n    *   **Corrected Calculation (using provided FY2021 Total Revenue of $22,281 million):**\n        *   Absolute Change: $22,281 million - $9,763 million = $12,518 million\n        *   Percentage Change: ($12,518 million / $9,763 million) * 100 = 128.22%\n    *   **Flag:** The researcher's stated absolute and percentage growth for FY2020-FY2021 is **INCORRECT** based on the provided FY2021 Total Revenue.",
+    "3": "## Advanced Micro Devices, Inc. (AMD) - Fiscal Year 2022 Revenue Report\n\n### Executive Summary\n\nAdvanced Micro Devices, Inc. (AMD) reported total revenue of $23,600 million for Fiscal Year 2022, as detailed in its FY2022 10-K filing. This represents a 5.92% increase from the FY2021 total revenue of $22,281 million. While positive, this growth rate is significantly lower than the 128.22% revenue growth experienced from FY2020 to FY2021, where revenue increased from $9,763 million to $22,281 million.\n\n### Analysis\n\nAMD's revenue trajectory demonstrates robust growth over the past two fiscal years. Total revenue for FY2022 reached $23,600 million, an absolute increase of $1,319 million compared to FY2021. This translates to a year-over-year revenue growth rate of 5.92%. Looking back further, the company achieved substantial growth between FY2020 and FY2021, with revenue surging from $9,763 million to $22,281 million, marking an absolute increase of $12,518 million and an impressive 128.22% growth rate. All figures are derived from AMD's respective 10-K filings.\n\n### Key Risks\n\nA primary risk identified is the notable deceleration in revenue growth from 128.22% (FY2020-FY2021) to 5.92% (FY2021-FY2022). While still positive, this significant slowdown warrants close monitoring. Future reports should analyze the underlying factors contributing to this deceleration to assess its sustainability and potential impact on AMD's market position and profitability.\n\n### Conclusion\n\nAMD concluded Fiscal Year 2022 with total revenue of $23,600 million, reflecting continued, albeit slower, growth. The 5.92% revenue increase from FY2021 indicates ongoing expansion. However, the substantial drop in growth rate compared to the prior period's 128.22% highlights a shift in the company's growth momentum that requires further investigation in subsequent financial analyses.",
+    "4": "## Advanced Micro Devices, Inc. (AMD) - Fiscal Year 2022 Revenue Report\n\n### Executive Summary\n\nAdvanced Micro Devices, Inc. (AMD) reported total revenue of $23,600 million for Fiscal Year 2022, as detailed in its FY2022 10-K filing. This represents a 5.92% increase from the FY2021 total revenue of $22,281 million. While positive, this growth rate is significantly lower than the 128.22% revenue growth experienced from FY2020 to FY2021, where revenue increased from $9,763 million to $22,281 million.\n\n### Analysis\n\nAMD's revenue trajectory demonstrates robust growth over the past two fiscal years. Total revenue for FY2022 reached $23,600 million, an absolute increase of $1,319 million compared to FY2021. This translates to a year-over-year revenue growth rate of 5.92%. Looking back further, the company achieved substantial growth between FY2020 and FY2021, with revenue surging from $9,763 million to $22,281 million, marking an absolute increase of $12,518 million and an impressive 128.22% growth rate. All figures are derived from AMD's respective 10-K filings.\n\n### Key Risks\n\nA primary risk identified is the notable deceleration in revenue growth from 128.22% (FY2020-FY2021) to 5.92% (FY2021-FY2022). While still positive, this significant slowdown warrants close monitoring. Future reports should analyze the underlying factors contributing to this deceleration to assess its sustainability and potential impact on AMD's market position and profitability. This shift in growth momentum could be attributed to various factors, including market saturation, increased competition, or broader economic headwinds. A deeper dive into segment-specific performance and market conditions will be crucial for a comprehensive understanding.\n\n### Conclusion\n\nAMD concluded Fiscal Year 2022 with total revenue of $23,600 million, reflecting continued, albeit slower, growth. The 5.92% revenue increase from FY2021 indicates ongoing expansion. However, the substantial drop in growth rate compared to the prior period's 128.22% highlights a shift in the company's growth momentum that requires further investigation in subsequent financial analyses. While the company continues to expand, the significant deceleration in its growth trajectory merits careful consideration and detailed examination to understand its implications for future performance and strategic planning."
+  },
+  "gates": {
+    "end_gate": {
+      "verified": [
+        {
+          "value": "$23,600 million",
+          "ref": 23600.0
+        },
+        {
+          "value": "$9,763 million",
+          "ref": 9763.0
+        },
+        {
+          "value": "$23,600 million",
+          "ref": 23600.0
+        },
+        {
+          "value": "$9,763 million",
+          "ref": 9763.0
+        },
+        {
+          "value": "$23,600 million",
+          "ref": 23600.0
+        },
+        {
+          "value": "5.92%",
+          "ref": 5.9
+        },
+        {
+          "value": "5.92%",
+          "ref": 5.9
+        },
+        {
+          "value": "5.92%",
+          "ref": 5.9
+        },
+        {
+          "value": "5.92%",
+          "ref": 5.9
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$22,281 million",
+          "num": 22281.0,
+          "correct": 23600.0,
+          "dev": 0.0559,
+          "source": "source_document"
+        },
+        {
+          "value": "$22,281 million",
+          "num": 22281.0,
+          "correct": 23600.0,
+          "dev": 0.0559,
+          "source": "source_document"
+        },
+        {
+          "value": "$22,281 million",
+          "num": 22281.0,
+          "correct": 23600.0,
+          "dev": 0.0559,
+          "source": "source_document"
+        },
+        {
+          "value": "$12,518 million",
+          "num": 12518.0,
+          "correct": 9763.0,
+          "dev": 0.2201,
+          "source": "source_document"
+        },
+        {
+          "value": "128.22%",
+          "num": 128.22,
+          "correct": 68.1,
+          "dev": 0.4689,
+          "source": "source_document"
+        },
+        {
+          "value": "128.22%",
+          "num": 128.22,
+          "correct": 68.1,
+          "dev": 0.4689,
+          "source": "source_document"
+        },
+        {
+          "value": "128.22%",
+          "num": 128.22,
+          "correct": 68.1,
+          "dev": 0.4689,
+          "source": "source_document"
+        },
+        {
+          "value": "128.22%",
+          "num": 128.22,
+          "correct": 68.1,
+          "dev": 0.4689,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$1,319 million"
+        }
+      ],
+      "n_refs": 26
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_034_BDBAA961",
+      "hid": "FB_034_BDBAA961_H3",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 22281.0,
+      "orig_num": 16420.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": true,
+      "any_det": true,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_034_BDBAA961",
+      "hid": "FB_034_BDBAA961_H2",
+      "method": "end_check",
+      "type": "percentage",
+      "inj_num": 33.9,
+      "orig_num": 43.8,
+      "survived": false,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_034_BDBAA961",
+      "hid": "FB_034_BDBAA961_H1",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 10590.0,
+      "orig_num": 16420.0,
+      "survived": false,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:14:53.601197+00:00"
+}

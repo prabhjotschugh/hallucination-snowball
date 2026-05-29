@@ -1,0 +1,73 @@
+{
+  "question_id": "FB_127_E1B380E5",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: PepsiCo, Inc. - May 26, 2023\n- PRIMARY METRIC: The unsecured five-year revolving credit agreement was increased by $1.0 billion, raising the total commitment to $4.6 billion, as reported in the 8-K filing dated May 30, 2023, under Item 1.01.\n- SUPPORTING DATA: No additional multi-period data is applicable to this specific increase in the revolving credit agreement.\n- DATA SOURCES: SEC Form 8-K filed on May 30, 2023, Item 1.01.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_127_E1B380E5_H2",
+      "type": "dollar_amount",
+      "original_value": "$1.5 billion",
+      "injected_value": "$1.0 billion",
+      "original_numeric": "1.5",
+      "injected_numeric": "1.0",
+      "position_char": 135,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3125
+    },
+    {
+      "hallucination_id": "FB_127_E1B380E5_H1",
+      "type": "dollar_amount",
+      "original_value": "$5.5 billion",
+      "injected_value": "$4.6 billion",
+      "original_numeric": "5.5",
+      "injected_numeric": "4.6",
+      "position_char": 181,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.1561
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "The unsecured five-year revolving credit agreement was increased by $1.0 billion, raising the total commitment to $4.6 billion",
+        "claim_value": "$1.0 billion increase to $4.6 billion",
+        "reason": "Figures are suspiciously round ($1.0 billion, $4.6 billion) without any cents or more precise figures, which is uncommon for financial disclosures of this magnitude.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 2,
+    "overall_assessment": "The round dollar amounts without precise decimals raise suspicion, otherwise the context seems plausible.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"The unsecured five-year revolving credit agreement was increased by $1.0 billion, raising the total commitment to $4.6 billion\",\n      \"claim_value\": \"$1.0 billion increase to $4.6 billion\",\n      \"reason\": \"Figures are suspiciously round ($1.0 billion, $4.6 billion) without any cents or more precise figures, which is uncommon for financial disclosures of this magnitude.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 2,\n  \"overall_assessment\": \"The round dollar amounts without precise decimals raise suspicion, otherwise the context seems plausible.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_127_E1B380E5",
+      "hallucination_id": "FB_127_E1B380E5_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$1.5 billion",
+      "injected_value": "$1.0 billion",
+      "detected": true,
+      "reason": "Figures are suspiciously round ($1.0 billion, $4.6 billion) without any cents or more precise figures, which is uncommon for financial disclosures of this magnitude.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 2
+    },
+    {
+      "question_id": "FB_127_E1B380E5",
+      "hallucination_id": "FB_127_E1B380E5_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$5.5 billion",
+      "injected_value": "$4.6 billion",
+      "detected": true,
+      "reason": "Figures are suspiciously round ($1.0 billion, $4.6 billion) without any cents or more precise figures, which is uncommon for financial disclosures of this magnitude.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 2
+    }
+  ],
+  "timestamp": "2026-03-24T09:59:45.095293Z"
+}

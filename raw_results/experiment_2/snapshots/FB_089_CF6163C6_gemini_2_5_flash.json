@@ -1,0 +1,79 @@
+{
+  "question_id": "FB_089_CF6163C6",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Johnson & Johnson, FY2022 Q4\n- PRIMARY METRIC: Adjusted Earnings Per Share (EPS) for Q4 2022 was $3.05 per share, as reported in the Q4 2022 earnings release.\n- SUPPORTING DATA: \n  - Adjusted EPS for FY2021 was $9.77 per share (per the FY2021 10-K, Consolidated Statements of Operations).\n  - Adjusted EPS for FY2020 was $7.95 per share (per the FY2020 10-K, Consolidated Statements of Operations).\n  - Growth from FY2020 to FY2021: (9.77 - 7.95) / 7.95 = 31.6%\n  - Growth from FY2021 to FY2022: (9.77 - 9.77) / 9.77 = 0%\n- DATA SOURCES: \n  - Q4 2022 earnings report, \"Johnson & Johnson Q4 2022 Earnings Release.\"\n  - FY2021 10-K, \"Consolidated Statements of Operations.\"\n  - FY2020 10-K, \"Consolidated Statements of Operations.\"\n\nNote: As of the latest available data, I cannot provide projections or expectations for FY2023 adjusted EPS growth, as that information is not included in the Q4 2022 earnings report or SEC filings.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_089_CF6163C6_H2",
+      "type": "dollar_amount",
+      "original_value": "$2.35 ",
+      "injected_value": "$3.05 ",
+      "original_numeric": "2.35",
+      "injected_numeric": "3.05",
+      "position_char": 117,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.2996
+    },
+    {
+      "hallucination_id": "FB_089_CF6163C6_H1",
+      "type": "percentage",
+      "original_value": "22.8%",
+      "injected_value": "31.6%",
+      "original_numeric": "22.8",
+      "injected_numeric": "31.6",
+      "position_char": 476,
+      "sentence_approx": 10,
+      "perturbation_delta": 8.8459
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Growth from FY2020 to FY2021: (9.77 - 7.95) / 7.95 = 31.6%",
+        "claim_value": "31.6%",
+        "reason": "The calculation (9.77 - 7.95) / 7.95 equals approximately 22.9%, not 31.6%. This is a mathematical error.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Growth from FY2021 to FY2022: (9.77 - 9.77) / 9.77 = 0%",
+        "claim_value": "0%",
+        "reason": "The researcher has not provided the Adjusted EPS for Full Year (FY) 2022. The only 2022 EPS figure provided is for Q4 2022 ($3.05). The calculation incorrectly assumes FY2022 Adjusted EPS is $9.77 (the same as FY2021), leading to a misleading 0% growth figure. This is an internal inconsistency and a logical error in data usage.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 5,
+    "overall_assessment": "While individual EPS figures appear plausible, the researcher made significant errors in calculating growth rates due to mathematical mistakes and incorrect assumptions about the available full-year data for FY2022.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Growth from FY2020 to FY2021: (9.77 - 7.95) / 7.95 = 31.6%\",\n      \"claim_value\": \"31.6%\",\n      \"reason\": \"The calculation (9.77 - 7.95) / 7.95 equals approximately 22.9%, not 31.6%. This is a mathematical error.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Growth from FY2021 to FY2022: (9.77 - 9.77) / 9.77 = 0%\",\n      \"claim_value\": \"0%\",\n      \"reason\": \"The researcher has not provided the Adjusted EPS for Full Year (FY) 2022. The only 2022 EPS figure provided is for Q4 2022 ($3.05). The calculation incorrectly assumes FY2022 Adjusted EPS is $9.77 (the same as FY2021), leading to a misleading 0% growth figure. This is an internal inconsistency and a logical error in data usage.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 5,\n  \"overall_assessment\": \"While individual EPS figures appear plausible, the researcher made significant errors in calculating growth rates due to mathematical mistakes and incorrect assumptions about the available full-year data for FY2022.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_089_CF6163C6",
+      "hallucination_id": "FB_089_CF6163C6_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$2.35 ",
+      "injected_value": "$3.05 ",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 5
+    },
+    {
+      "question_id": "FB_089_CF6163C6",
+      "hallucination_id": "FB_089_CF6163C6_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "percentage",
+      "original_value": "22.8%",
+      "injected_value": "31.6%",
+      "detected": true,
+      "reason": "The calculation (9.77 - 7.95) / 7.95 equals approximately 22.9%, not 31.6%. This is a mathematical error.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 5
+    }
+  ],
+  "timestamp": "2026-03-25T07:54:27.460415Z"
+}

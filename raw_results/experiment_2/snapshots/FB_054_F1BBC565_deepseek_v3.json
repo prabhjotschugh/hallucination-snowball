@@ -1,0 +1,109 @@
+{
+  "question_id": "FB_054_F1BBC565",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: Best Buy Co., Inc. - FY 2023 and Q2 FY2024\n- PRIMARY METRIC: \n  - Cash and Cash Equivalents as of the end of FY 2023: $911 million (per the FY2023 10-K, Consolidated Balance Sheets).\n  - Cash and Cash Equivalents as of the end of Q2 FY2024: $1,050 million (per the Q2 FY2024 10-Q, Consolidated Balance Sheets).\n- SUPPORTING DATA: \n  - FY 2023 Cash and Cash Equivalents: $1,200 million\n  - FY 2023 Total Current Assets: $2,191 million (per the FY2023 10-K, Consolidated Balance Sheets).\n  - Q2 FY2024 Total Current Assets: $3,000 million (per the Q2 FY2024 10-Q, Consolidated Balance Sheets).\n- DATA SOURCES: \n  - FY2023 10-K, Consolidated Balance Sheets, filed on March 30, 2023.\n  - Q2 FY2024 10-Q, Consolidated Balance Sheets, filed on September 1, 2023.\n\n**Note:** There was a drop in Cash and Cash Equivalents from FY 2023 to Q2 FY2024, decreasing from $789 million to $1,050 million.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_054_F1BBC565_H3",
+      "type": "dollar_amount",
+      "original_value": "$1,200 million",
+      "injected_value": "$911 million",
+      "original_numeric": "1200",
+      "injected_numeric": "911",
+      "position_char": 138,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.2412
+    },
+    {
+      "hallucination_id": "FB_054_F1BBC565_H2",
+      "type": "dollar_amount",
+      "original_value": "$3,200 million",
+      "injected_value": "$2,191 million",
+      "original_numeric": "3200",
+      "injected_numeric": "2191",
+      "position_char": 441,
+      "sentence_approx": 5,
+      "perturbation_delta": -0.3154
+    },
+    {
+      "hallucination_id": "FB_054_F1BBC565_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,200 million",
+      "injected_value": "$789 million",
+      "original_numeric": "1200",
+      "injected_numeric": "789",
+      "position_char": 879,
+      "sentence_approx": 9,
+      "perturbation_delta": -0.3427
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Cash and Cash Equivalents as of the end of FY 2023: $911 million (per the FY2023 10-K, Consolidated Balance Sheets).",
+        "claim_value": "$911 million",
+        "reason": "Inconsistent with later claim of FY 2023 Cash and Cash Equivalents as $1,200 million and $789 million, suggesting possible fabrication or misreporting.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY 2023 Cash and Cash Equivalents: $1,200 million",
+        "claim_value": "$1,200 million",
+        "reason": "Conflicts with earlier claim of $911 million and later mention of $789 million for the same period.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "There was a drop in Cash and Cash Equivalents from FY 2023 to Q2 FY2024, decreasing from $789 million to $1,050 million.",
+        "claim_value": "$789 million to $1,050 million",
+        "reason": "Contradicts earlier claims of FY 2023 figures ($911 million, $1,200 million) and suggests an increase rather than a drop.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "Multiple inconsistencies in reported Cash and Cash Equivalents for FY 2023 suggest potential fabrication or serious reporting errors.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Cash and Cash Equivalents as of the end of FY 2023: $911 million (per the FY2023 10-K, Consolidated Balance Sheets).\",\n      \"claim_value\": \"$911 million\",\n      \"reason\": \"Inconsistent with later claim of FY 2023 Cash and Cash Equivalents as $1,200 million and $789 million, suggesting possible fabrication or misreporting.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY 2023 Cash and Cash Equivalents: $1,200 million\",\n      \"claim_value\": \"$1,200 million\",\n      \"reason\": \"Conflicts with earlier claim of $911 million and later mention of $789 million for the same period.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"There was a drop in Cash and Cash Equivalents from FY 2023 to Q2 FY2024, decreasing from $789 million to $1,050 million.\",\n      \"claim_value\": \"$789 million to $1,050 million\",\n      \"reason\": \"Contradicts earlier claims of FY 2023 figures ($911 million, $1,200 million) and suggests an increase rather than a drop.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\": \"Multiple inconsistencies in reported Cash and Cash Equivalents for FY 2023 suggest potential fabrication or serious reporting errors.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_054_F1BBC565",
+      "hallucination_id": "FB_054_F1BBC565_H3",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,200 million",
+      "injected_value": "$911 million",
+      "detected": true,
+      "reason": "Inconsistent with later claim of FY 2023 Cash and Cash Equivalents as $1,200 million and $789 million, suggesting possible fabrication or misreporting.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_054_F1BBC565",
+      "hallucination_id": "FB_054_F1BBC565_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,200 million",
+      "injected_value": "$2,191 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_054_F1BBC565",
+      "hallucination_id": "FB_054_F1BBC565_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,200 million",
+      "injected_value": "$789 million",
+      "detected": true,
+      "reason": "Conflicts with earlier claim of $911 million and later mention of $789 million for the same period.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-24T09:47:52.372688Z"
+}

@@ -1,0 +1,103 @@
+{
+  "question_id": "FB_107_B17259C6",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: MGM Resorts International, FY2022\n- PRIMARY METRIC: The EBITDAR figures for each region as reported in the MGM Resorts International Q4 2022 Earnings Call are as follows:\n  - Las Vegas Strip: $1,799 million (per the FY2022 Q4 Earnings Report, EBITDAR by Region)\n  - Regional Operations: $532 million (per the FY2022 Q4 Earnings Report, EBITDAR by Region)\n  - MGM China: $140 million (per the FY2022 Q4 Earnings Report, EBITDAR by Region)\n\n- SUPPORTING DATA: \n  - For FY2021:\n    - Las Vegas Strip: $1,482 million (per the FY2021 Q4 Earnings Report, EBITDAR by Region)\n    - Regional Operations: $289 million (per the FY2021 Q4 Earnings Report, EBITDAR by Region)\n    - MGM China: $59 million (per the FY2021 Q4 Earnings Report, EBITDAR by Region)\n\n- DATA SOURCES: \n  - MGM Resorts International, Q4 2022 Earnings Report, EBITDAR by Region\n  - MGM Resorts International, Q4 2021 Earnings Report, EBITDAR by Region\n\nNote: The highest EBITDAR contribution for FY2022 was from the Las Vegas Strip at $1,799 million.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_107_B17259C6_H2",
+      "type": "dollar_amount",
+      "original_value": "$394 million",
+      "injected_value": "$532 million",
+      "original_numeric": "394",
+      "injected_numeric": "532",
+      "position_char": 307,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.3492
+    },
+    {
+      "hallucination_id": "FB_107_B17259C6_H1",
+      "type": "dollar_amount",
+      "original_value": "$96 million",
+      "injected_value": "$59 million",
+      "original_numeric": "96",
+      "injected_numeric": "59",
+      "position_char": 700,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.3881
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Las Vegas Strip: $1,799 million (per the FY2022 Q4 Earnings Report, EBITDAR by Region)",
+        "claim_value": "$1,799 million",
+        "reason": "The figure is unusually rounded (exactly $1,799 million) for a financial metric, which is often reported with greater precision.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Regional Operations: $532 million (per the FY2022 Q4 Earnings Report, EBITDAR by Region)",
+        "claim_value": "$532 million",
+        "reason": "The figure is unusually rounded (exactly $532 million) for a financial metric, which is often reported with greater precision.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "MGM China: $140 million (per the FY2022 Q4 Earnings Report, EBITDAR by Region)",
+        "claim_value": "$140 million",
+        "reason": "The figure is unusually rounded (exactly $140 million) for a financial metric, which is often reported with greater precision.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Las Vegas Strip: $1,482 million (per the FY2021 Q4 Earnings Report, EBITDAR by Region)",
+        "claim_value": "$1,482 million",
+        "reason": "The figure is unusually rounded (exactly $1,482 million) for a financial metric, which is often reported with greater precision.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Regional Operations: $289 million (per the FY2021 Q4 Earnings Report, EBITDAR by Region)",
+        "claim_value": "$289 million",
+        "reason": "The figure is unusually rounded (exactly $289 million) for a financial metric, which is often reported with greater precision.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "MGM China: $59 million (per the FY2021 Q4 Earnings Report, EBITDAR by Region)",
+        "claim_value": "$59 million",
+        "reason": "The figure is unusually rounded (exactly $59 million) for a financial metric, which is often reported with greater precision.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "All EBITDAR figures provided are unusually rounded, which is uncommon for precise financial reporting, raising suspicion about their accuracy.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Las Vegas Strip: $1,799 million (per the FY2022 Q4 Earnings Report, EBITDAR by Region)\",\n      \"claim_value\": \"$1,799 million\",\n      \"reason\": \"The figure is unusually rounded (exactly $1,799 million) for a financial metric, which is often reported with greater precision.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Regional Operations: $532 million (per the FY2022 Q4 Earnings Report, EBITDAR by Region)\",\n      \"claim_value\": \"$532 million\",\n      \"reason\": \"The figure is unusually rounded (exactly $532 million) for a financial metric, which is often reported with greater precision.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"MGM China: $140 million (per the FY2022 Q4 Earnings Report, EBITDAR by Region)\",\n      \"claim_value\": \"$140 million\",\n      \"reason\": \"The figure is unusually rounded (exactly $140 million) for a financial metric, which is often reported with greater precision.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Las Vegas Strip: $1,482 million (per the FY2021 Q4 Earnings Report, EBITDAR by Region)\",\n      \"claim_value\": \"$1,482 million\",\n      \"reason\": \"The figure is unusually rounded (exactly $1,482 million) for a financial metric, which is often reported with greater precision.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Regional Operations: $289 million (per the FY2021 Q4 Earnings Report, EBITDAR by Region)\",\n      \"claim_value\": \"$289 million\",\n      \"reason\": \"The figure is unusually rounded (exactly $289 million) for a financial metric, which is often reported with greater precision.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"MGM China: $59 million (per the FY2021 Q4 Earnings Report, EBITDAR by Region)\",\n      \"claim_value\": \"$59 million\",\n      \"reason\": \"The figure is unusually rounded (exactly $59 million) for a financial metric, which is often reported with greater precision.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\": \"All EBITDAR figures provided are unusually rounded, which is uncommon for precise financial reporting, raising suspicion about their accuracy.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_107_B17259C6",
+      "hallucination_id": "FB_107_B17259C6_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$394 million",
+      "injected_value": "$532 million",
+      "detected": true,
+      "reason": "The figure is unusually rounded (exactly $532 million) for a financial metric, which is often reported with greater precision.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_107_B17259C6",
+      "hallucination_id": "FB_107_B17259C6_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$96 million",
+      "injected_value": "$59 million",
+      "detected": true,
+      "reason": "The figure is unusually rounded (exactly $59 million) for a financial metric, which is often reported with greater precision.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-24T09:57:03.400699Z"
+}

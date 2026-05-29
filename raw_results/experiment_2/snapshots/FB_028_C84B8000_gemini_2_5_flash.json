@@ -1,0 +1,85 @@
+{
+  "question_id": "FB_028_C84B8000",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Amcor, Q2 FY2023\n- PRIMARY METRIC: As of June 30, 2023, Amcor reported a restructuring liability of $38 million, as detailed in the FY2023 Q2 10-Q, Note 12: Restructuring Charges.\n- SUPPORTING DATA: \n  - For Q2 FY2022, the restructuring liability was $38 million.\n  - For Q1 FY2023, the restructuring liability was $48 million.\n- DATA SOURCES: \n  - Amcor FY2023 Q2 10-Q, Consolidated Balance Sheets, Note 12: Restructuring Charges.\n\n**Note:** The nature and purpose of the restructuring liability, including any trends or implications for the company's financial health, are not included as per the directive to present raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_028_C84B8000_H2",
+      "type": "dollar_amount",
+      "original_value": "$45 million",
+      "injected_value": "$38 million",
+      "original_numeric": "45",
+      "injected_numeric": "38",
+      "position_char": 120,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.1603
+    },
+    {
+      "hallucination_id": "FB_028_C84B8000_H1",
+      "type": "dollar_amount",
+      "original_value": "$50 million",
+      "injected_value": "$38 million",
+      "original_numeric": "50",
+      "injected_numeric": "38",
+      "position_char": 271,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.2427
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "As of June 30, 2023, Amcor reported a restructuring liability of $38 million, as detailed in the FY2023 Q2 10-Q",
+        "claim_value": "June 30, 2023 and FY2023 Q2 10-Q",
+        "reason": "For a company with a June 30 fiscal year end, June 30, 2023, marks the end of FY2023 (Q4), not Q2 FY2023. A Q2 FY2023 10-Q would cover the period ending December 31, 2022. This is a fundamental mismatch between the reported date and the associated filing period.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "For Q2 FY2022, the restructuring liability was $38 million.",
+        "claim_value": "$38 million",
+        "reason": "The restructuring liability is reported as exactly $38 million for Q2 FY2022 and again for June 30, 2023 (which is FY2023 year-end, not Q2 FY2023). It is highly unusual for a restructuring liability, which typically fluctuates as charges are incurred and payments are made, to remain precisely the same over multiple fiscal periods spanning over a year.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "DATA SOURCES: Amcor FY2023 Q2 10-Q, Consolidated Balance Sheets, Note 12: Restructuring Charges.",
+        "claim_value": "FY2023 Q2 10-Q",
+        "reason": "This reiterates the previous inconsistency. Data for June 30, 2023 (FY2023 year-end) would be found in the FY2023 10-K or potentially a Q4 10-Q, not a Q2 10-Q.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 11,
+    "overall_assessment": "The output contains significant inconsistencies regarding fiscal periods and filing types, and a highly suspicious repetition of a specific liability amount across different reporting periods.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"As of June 30, 2023, Amcor reported a restructuring liability of $38 million, as detailed in the FY2023 Q2 10-Q\",\n      \"claim_value\": \"June 30, 2023 and FY2023 Q2 10-Q\",\n      \"reason\": \"For a company with a June 30 fiscal year end, June 30, 2023, marks the end of FY2023 (Q4), not Q2 FY2023. A Q2 FY2023 10-Q would cover the period ending December 31, 2022. This is a fundamental mismatch between the reported date and the associated filing period.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"For Q2 FY2022, the restructuring liability was $38 million.\",\n      \"claim_value\": \"$38 million\",\n      \"reason\": \"The restructuring liability is reported as exactly $38 million for Q2 FY2022 and again for June 30, 2023 (which is FY2023 year-end, not Q2 FY2023). It is highly unusual for a restructuring liability, which typically fluctuates as charges are incurred and payments are made, to remain precisely the same over multiple fiscal periods spanning over a year.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"DATA SOURCES: Amcor FY2023 Q2 10-Q, Consolidated Balance Sheets, Note 12: Restructuring Charges.\",\n      \"claim_value\": \"FY2023 Q2 10-Q\",\n      \"reason\": \"This reiterates the previous inconsistency. Data for June 30, 2023 (FY2023 year-end) would be found in the FY2023 10-K or potentially a Q4 10-Q, not a Q2 10-Q.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 11,\n  \"overall_assessment\": \"The output contains significant inconsistencies regarding fiscal periods and filing types, and a highly suspicious repetition of a specific liability amount across different reporting periods.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_028_C84B8000",
+      "hallucination_id": "FB_028_C84B8000_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$45 million",
+      "injected_value": "$38 million",
+      "detected": true,
+      "reason": "The restructuring liability is reported as exactly $38 million for Q2 FY2022 and again for June 30, 2023 (which is FY2023 year-end, not Q2 FY2023). It is highly unusual for a restructuring liability, which typically fluctuates as charges are incurred and payments are made, to remain precisely the same over multiple fiscal periods spanning over a year.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 11
+    },
+    {
+      "question_id": "FB_028_C84B8000",
+      "hallucination_id": "FB_028_C84B8000_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$50 million",
+      "injected_value": "$38 million",
+      "detected": true,
+      "reason": "The restructuring liability is reported as exactly $38 million for Q2 FY2022 and again for June 30, 2023 (which is FY2023 year-end, not Q2 FY2023). It is highly unusual for a restructuring liability, which typically fluctuates as charges are incurred and payments are made, to remain precisely the same over multiple fiscal periods spanning over a year.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 11
+    }
+  ],
+  "timestamp": "2026-03-25T07:40:17.985729Z"
+}

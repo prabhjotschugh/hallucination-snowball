@@ -1,0 +1,276 @@
+{
+  "question_id": "FB_144_BD395CC4",
+  "method": "ours",
+  "final_output": "## Verizon Communications Inc. - FY 2021 Retiree Benefit Obligations Report\n\n**Executive Summary**\n\nVerizon Communications Inc.'s projected retiree benefit obligations for FY 2021, specifically for the year 2024, stood at $3,400 million. This represents a notable shift from the prior year, where obligations were $3,800 million in FY 2020. The trend indicates a decrease in projected obligations, following an increase in the preceding period.\n\n**Analysis**\n\nVerizon's projected retiree benefit obligations, as detailed in the FY2021 10-K, Note 12 - Employee Benefits, show a fluctuating pattern. For FY 2019, these obligations were $3,400 million. They subsequently increased to $3,800 million in FY 2020, representing an 11.76% growth from FY 2019. However, the FY 2021 projection for 2024 obligations decreased to $3,400 million, marking a -10.53% change from FY 2020. This reversal from growth to decline warrants further investigation into the underlying factors.\n\n**Key Risks**\n\nA significant risk identified is the initial inaccuracy in reported data, with several values requiring correction from the source documents. For instance, the FY 2021 projected obligation was initially reported incorrectly, with a 58.00% deviation from the correct value of $3,400 million. Similarly, the FY 2020 obligation was initially incorrect, with a 4.40% deviation from the correct value of $3,800 million. Such discrepancies underscore the importance of robust data verification processes to ensure the reliability of financial reporting and analysis.\n\n**Conclusion**\n\nVerizon's projected retiree benefit obligations demonstrate a dynamic trend, with an increase from FY 2019 to FY 2020, followed by a decrease in FY 2021. The corrected figures of $3,400 million for FY 2019 and FY 2021 (projected for 2024), and $3,800 million for FY 2020, provide a clearer picture of these obligations. The substantial data corrections highlight a critical need for enhanced data integrity protocols to prevent misrepresentation and ensure accurate financial assessments.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Verizon Communications Inc., FY 2021\n- PRIMARY METRIC: As of FY 2021, Verizon projected retiree benefit obligations for the year 2024 to be $2,611 million (USD millions) per the FY2021 10-K, Note 12 - Employee Benefits.\n- SUPPORTING DATA: \n  - For FY 2020, the projected retiree benefit obligations were $4,598 million (USD millions).\n  - For FY 2019, the projected retiree benefit obligations were $3,400 million (USD millions).\n- DATA SOURCES: \n  - FY2021 10-K, Note 12 - Employee Benefits\n  - FY2020 10-K, Note 12 - Employee Benefits\n  - FY2019 10-K, Note 12 - Employee Benefits\n\nPlease note that the analysis of trends and computation of financial ratios is beyond the scope of this data extraction report and should be conducted by downstream analysts.",
+    "2": "As a financial analyst, I have computed the year-over-year changes and relevant ratios for Verizon Communications Inc.'s projected retiree benefit obligations, utilizing the corrected data.\n\n**Corrected Researcher Data:**\n\n*   **FY 2021 (Projected for 2024):** $3,400 million (Corrected from $2,611 million)\n*   **FY 2020:** $3,800 million (Corrected from $4,598 million)\n*   **FY 2019:** $3,400 million (Verified correct)\n\n---\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\n*   **FY 2020 vs. FY 2019:**\n    *   **Absolute Change:**\n        *   Formula: FY2020 Value - FY2019 Value\n        *   Calculation: $3,800 million - $3,400 million = **$400 million**\n    *   **Percentage Change:**\n        *   Formula: (Absolute Change / FY2019 Value) * 100\n        *   Calculation: ($400 million / $3,400 million) * 100 = **11.76%**\n\n*   **FY 2021 vs. FY 2020:**\n    *   **Absolute Change:**\n        *   Formula: FY2021 Value - FY2020 Value\n        *   Calculation: $3,400 million - $3,800 million = **-$400 million**\n    *   **Percentage Change:**\n        *   Formula: (Absolute Change / FY2020 Value) * 100\n        *   Calculation: (-$400 million / $3,800 million) * 100 = **-10.53%**\n\n---\n\n**2. Relevant Ratios**\n\nGiven the limited scope of the data (only projected retiree benefit obligations), the most relevant ratio is the **Year-over-Year Growth Rate** (which is the percentage change calculated above).\n\n*   **FY 2020 Growth Rate:** 11.76%\n*   **FY 2021 Growth Rate:** -10.53%\n\n---\n\n**3. Anomalies Flagged**\n\n*   **Significant Data Corrections:** The initial researcher data contained two \"REFUTED\" values with substantial deviations (23.2% and 17.4%). This highlights a critical anomaly in the data collection or transcription process, necessitating rigorous verification before analysis.\n*   **Shift from Growth to Decline:** The projected retiree benefit obligations showed an increase of 11.76% from FY 2019 to FY 2020, followed by a decline of 10.53% from FY 2020 to FY 2021. This reversal in trend, particularly the decrease, could be an anomaly depending on the underlying factors influencing these obligations (e.g., changes in actuarial assumptions, plan amendments, or workforce demographics). Further investigation into the drivers of this change would be warranted.",
+    "3": "## Verizon Communications Inc. - FY 2021 Retiree Benefit Obligations Report\n\n**Executive Summary**\n\nVerizon Communications Inc.'s projected retiree benefit obligations for FY 2021, specifically for the year 2024, stood at $3,400 million. This represents a notable shift from the prior year, where obligations were $3,800 million in FY 2020. The trend indicates a decrease in projected obligations, following an increase in the preceding period.\n\n**Analysis**\n\nVerizon's projected retiree benefit obligations, as detailed in the FY2021 10-K, Note 12 - Employee Benefits, show a fluctuating pattern. For FY 2019, these obligations were $3,400 million. They subsequently increased to $3,800 million in FY 2020, representing an 11.76% growth from FY 2019. However, the FY 2021 projection for 2024 obligations decreased to $3,400 million, marking a -10.53% change from FY 2020. This reversal from growth to decline warrants further investigation into the underlying factors.\n\n**Key Risks**\n\nA significant risk identified is the initial inaccuracy in reported data, with several values requiring correction from the source documents. For instance, the FY 2021 projected obligation was initially reported incorrectly, with a 23.2% deviation from the correct value of $3,400 million. Similarly, the FY 2020 obligation was initially incorrect, with a 17.4% deviation from the correct value of $3,800 million. Such discrepancies underscore the importance of robust data verification processes to ensure the reliability of financial reporting and analysis.\n\n**Conclusion**\n\nVerizon's projected retiree benefit obligations demonstrate a dynamic trend, with an increase from FY 2019 to FY 2020, followed by a decrease in FY 2021. The corrected figures of $3,400 million for FY 2019 and FY 2021 (projected for 2024), and $3,800 million for FY 2020, provide a clearer picture of these obligations. The substantial data corrections highlight a critical need for enhanced data integrity protocols to prevent misrepresentation and ensure accurate financial assessments.",
+    "4": "## Verizon Communications Inc. - FY 2021 Retiree Benefit Obligations Report\n\n**Executive Summary**\n\nVerizon Communications Inc.'s projected retiree benefit obligations for FY 2021, specifically for the year 2024, stood at $3,400 million. This represents a notable shift from the prior year, where obligations were $3,800 million in FY 2020. The trend indicates a decrease in projected obligations, following an increase in the preceding period.\n\n**Analysis**\n\nVerizon's projected retiree benefit obligations, as detailed in the FY2021 10-K, Note 12 - Employee Benefits, show a fluctuating pattern. For FY 2019, these obligations were $3,400 million. They subsequently increased to $3,800 million in FY 2020, representing an 11.76% growth from FY 2019. However, the FY 2021 projection for 2024 obligations decreased to $3,400 million, marking a -10.53% change from FY 2020. This reversal from growth to decline warrants further investigation into the underlying factors.\n\n**Key Risks**\n\nA significant risk identified is the initial inaccuracy in reported data, with several values requiring correction from the source documents. For instance, the FY 2021 projected obligation was initially reported incorrectly, with a 58.00% deviation from the correct value of $3,400 million. Similarly, the FY 2020 obligation was initially incorrect, with a 4.40% deviation from the correct value of $3,800 million. Such discrepancies underscore the importance of robust data verification processes to ensure the reliability of financial reporting and analysis.\n\n**Conclusion**\n\nVerizon's projected retiree benefit obligations demonstrate a dynamic trend, with an increase from FY 2019 to FY 2020, followed by a decrease in FY 2021. The corrected figures of $3,400 million for FY 2019 and FY 2021 (projected for 2024), and $3,800 million for FY 2020, provide a clearer picture of these obligations. The substantial data corrections highlight a critical need for enhanced data integrity protocols to prevent misrepresentation and ensure accurate financial assessments."
+  },
+  "gates": {
+    "gate_1": {
+      "verified": [
+        {
+          "value": "$3,400 million",
+          "ref": 3400.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$2,611 million",
+          "num": 2611.0,
+          "correct": 3400.0,
+          "dev": 0.2321,
+          "source": "source_document"
+        },
+        {
+          "value": "$4,598 million",
+          "num": 4598.0,
+          "correct": 3800.0,
+          "dev": 0.1736,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [],
+      "n_refs": 28
+    },
+    "gate_2": {
+      "verified": [
+        {
+          "value": "$3,400 million",
+          "ref": 3400.0
+        },
+        {
+          "value": "$3,800 million",
+          "ref": 3800.0
+        },
+        {
+          "value": "$3,400 million",
+          "ref": 3400.0
+        },
+        {
+          "value": "$3,800 million",
+          "ref": 3800.0
+        },
+        {
+          "value": "$3,400 million",
+          "ref": 3400.0
+        },
+        {
+          "value": "$3,400 million",
+          "ref": 3400.0
+        },
+        {
+          "value": "$3,400 million",
+          "ref": 3400.0
+        },
+        {
+          "value": "$3,800 million",
+          "ref": 3800.0
+        },
+        {
+          "value": "$3,800 million",
+          "ref": 3800.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$2,611 million",
+          "num": 2611.0,
+          "correct": 3400.0,
+          "dev": 0.2321,
+          "source": "source_document"
+        },
+        {
+          "value": "$4,598 million",
+          "num": 4598.0,
+          "correct": 3800.0,
+          "dev": 0.1736,
+          "source": "source_document"
+        },
+        {
+          "value": "$400 million",
+          "num": 400.0,
+          "correct": 453.0,
+          "dev": 0.117,
+          "source": "evidence"
+        },
+        {
+          "value": "$400 million",
+          "num": 400.0,
+          "correct": 453.0,
+          "dev": 0.117,
+          "source": "evidence"
+        },
+        {
+          "value": "$400 million",
+          "num": 400.0,
+          "correct": 453.0,
+          "dev": 0.117,
+          "source": "evidence"
+        },
+        {
+          "value": "$400 million",
+          "num": 400.0,
+          "correct": 453.0,
+          "dev": 0.117,
+          "source": "evidence"
+        },
+        {
+          "value": "-10.53%",
+          "num": 10.53,
+          "correct": 4.4,
+          "dev": 0.5821,
+          "source": "evidence"
+        },
+        {
+          "value": "-10.53%",
+          "num": 10.53,
+          "correct": 4.4,
+          "dev": 0.5821,
+          "source": "evidence"
+        },
+        {
+          "value": "23.2%",
+          "num": 23.2,
+          "correct": 58.0,
+          "dev": 0.6,
+          "source": "evidence"
+        },
+        {
+          "value": "10.53%",
+          "num": 10.53,
+          "correct": 4.4,
+          "dev": 0.5821,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "11.76%"
+        },
+        {
+          "value": "11.76%"
+        },
+        {
+          "value": "17.4%"
+        },
+        {
+          "value": "11.76%"
+        }
+      ],
+      "n_refs": 28
+    },
+    "gate_3": {
+      "verified": [
+        {
+          "value": "$3,400 million",
+          "ref": 3400.0
+        },
+        {
+          "value": "$3,800 million",
+          "ref": 3800.0
+        },
+        {
+          "value": "$3,400 million",
+          "ref": 3400.0
+        },
+        {
+          "value": "$3,800 million",
+          "ref": 3800.0
+        },
+        {
+          "value": "$3,400 million",
+          "ref": 3400.0
+        },
+        {
+          "value": "$3,400 million",
+          "ref": 3400.0
+        },
+        {
+          "value": "$3,800 million",
+          "ref": 3800.0
+        },
+        {
+          "value": "$3,400 million",
+          "ref": 3400.0
+        },
+        {
+          "value": "$3,800 million",
+          "ref": 3800.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "-10.53%",
+          "num": 10.53,
+          "correct": 4.4,
+          "dev": 0.5821,
+          "source": "evidence"
+        },
+        {
+          "value": "23.2%",
+          "num": 23.2,
+          "correct": 58.0,
+          "dev": 0.6,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "11.76%"
+        },
+        {
+          "value": "17.4%"
+        }
+      ],
+      "n_refs": 28
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_144_BD395CC4",
+      "hid": "FB_144_BD395CC4_H2",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 2611.0,
+      "orig_num": 3800.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_144_BD395CC4",
+      "hid": "FB_144_BD395CC4_H1",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 4598.0,
+      "orig_num": 3600.0,
+      "survived": false,
+      "corrected": false,
+      "g1_det": true,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 2,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:56:34.031663+00:00"
+}

@@ -1,0 +1,204 @@
+{
+  "question_id": "FB_109_F3781DA6",
+  "method": "end_check",
+  "final_output": "## MGM Resorts International: FY2022 Financial Performance Report\n\n### Executive Summary\n\nFor the fiscal year 2022, MGM Resorts International reported total revenue of $7,066 million across its key operating segments. The Las Vegas Strip segment was the primary revenue driver, contributing 68.89% of the total. Regional Operations contributed 16.32% with $1,153 million in revenue, while MGM China represented the weakest topline performer, generating $1,045 million, or 14.79% of total revenue. Analysis of Q4 2022 performance indicates a strong finish to the year for the Las Vegas Strip and Regional Operations segments, with Q4 revenues representing 33.85% and 29.05% of their respective full-year totals.\n\n### Analysis\n\nMGM Resorts International's FY2022 revenue distribution highlights a significant reliance on its Las Vegas Strip operations, which generated $4,868 million. Regional Operations contributed $1,153 million, demonstrating a substantial domestic presence outside of Las Vegas. The MGM China segment recorded the lowest revenue among the three, at $1,045 million.\n\nSegment contributions to total FY2022 revenue were:\n*   Las Vegas Strip: 68.89%\n*   Regional Operations: 16.32%\n*   MGM China: 14.79%\n*(Note: The sum of these percentages is 100.00%, confirming internal consistency.)*\n\nExamining Q4 2022 performance relative to the full year reveals distinct trends. MGM China's Q4 revenue of $210 million accounted for 20.09% of its annual revenue, which is consistent with an even distribution across quarters (25% per quarter would be perfectly even). In contrast, the Las Vegas Strip segment generated $1,648 million in Q4, representing 33.85% of its full-year revenue. Similarly, Regional Operations reported Q4 revenue of $335 million, making up 29.05% of its annual total. These higher-than-average Q4 contributions for Las Vegas Strip and Regional Operations suggest a strong seasonal uplift or specific positive events impacting these segments in the final quarter of 2022.\n\n### Key Risks\n\nThe disproportionate reliance on the Las Vegas Strip segment (68.89% of total revenue) presents a concentration risk. Any adverse economic conditions, regulatory changes, or competitive pressures specifically impacting the Las Vegas market could significantly affect the company's overall financial performance. The relatively lower contribution from MGM China also indicates potential vulnerabilities related to its market dynamics or operational challenges, particularly given the impact of ongoing geopolitical and public health factors in the region during 2022.\n\n### Conclusion\n\nMGM Resorts International concluded FY2022 with a total revenue of $7,066 million, predominantly driven by its Las Vegas Strip operations. While MGM China's performance was the weakest among segments, the strong Q4 showing for Las Vegas Strip and Regional Operations suggests robust demand in these domestic markets towards the end of the year. Future reports should aim to include year-over-year comparisons to provide deeper insights into growth trajectories and performance trends across all segments, offering a more comprehensive view of the company's financial health and strategic positioning.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: MGM Resorts International, FY2022\n- PRIMARY METRIC: The region with the weakest topline results in FY2022 was the \"MGM China\" segment, which reported revenue of $1,045 million. This figure is sourced from the FY2022 10-K, Consolidated Statements of Operations.\n- SUPPORTING DATA: \n  - Las Vegas Strip: Revenue of $4,868 million (FY2022 10-K, Consolidated Statements of Operations).\n  - Regional Operations: Revenue of $1,153 million (FY2022 10-K, Consolidated Statements of Operations).\n  - MGM China (Q4 2022): Revenue of $210 million (Q4 2022 Earnings Report, Consolidated Statements of Operations).\n  - Las Vegas Strip (Q4 2022): Revenue of $1,648 million (Q4 2022 Earnings Report, Consolidated Statements of Operations).\n  - Regional Operations (Q4 2022): Revenue of $335 million (Q4 2022 Earnings Report, Consolidated Statements of Operations).\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations.\n  - Q4 2022 Earnings Report, Consolidated Statements of Operations. \n\nNote: All figures are reported in USD millions as presented in the respective filings.",
+    "2": "As a financial analyst, I will compute the requested metrics for MGM Resorts International, FY2022, using the provided data.\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\nThe provided data only includes FY2022 and Q4 2022 figures. To calculate year-over-year changes, we would need data from FY2021 or Q4 2021, which is not available. Therefore, **year-over-year changes cannot be computed with the given data.**\n\n**2. Relevant Ratios**\n\nGiven the available data (segment revenues), the most relevant ratios we can compute are segment contributions to total revenue.\n\n*   **Total FY2022 Revenue (Sum of Segments):**\n    *   Formula: MGM China FY2022 Revenue + Las Vegas Strip FY2022 Revenue + Regional Operations FY2022 Revenue\n    *   Calculation: $1,045 million + $4,868 million + $1,153 million = **$7,066 million**\n\n*   **MGM China FY2022 Revenue Contribution:**\n    *   Formula: (MGM China FY2022 Revenue / Total FY2022 Revenue) * 100\n    *   Calculation: ($1,045 million / $7,066 million) * 100 = **14.79%**\n\n*   **Las Vegas Strip FY2022 Revenue Contribution:**\n    *   Formula: (Las Vegas Strip FY2022 Revenue / Total FY2022 Revenue) * 100\n    *   Calculation: ($4,868 million / $7,066 million) * 100 = **68.89%**\n\n*   **Regional Operations FY2022 Revenue Contribution:**\n    *   Formula: (Regional Operations FY2022 Revenue / Total FY2022 Revenue) * 100\n    *   Calculation: ($1,153 million / $7,066 million) * 100 = **16.32%**\n\n**3. Flag Any Anomalies**\n\nAn anomaly can be identified by comparing the Q4 2022 revenue to the full-year FY2022 revenue for each segment. Q4 revenue should generally be a portion of the full-year revenue.\n\n*   **MGM China:**\n    *   Q4 2022 Revenue: $210 million\n    *   FY2022 Revenue: $1,045 million\n    *   Q4 Contribution to FY: ($210 million / $1,045 million) * 100 = **20.09%** (This seems reasonable, as Q4 is one-fourth of the year).\n\n*   **Las Vegas Strip:**\n    *   Q4 2022 Revenue: $1,648 million\n    *   FY2022 Revenue: $4,868 million\n    *   Q4 Contribution to FY: ($1,648 million / $4,868 million) * 100 = **33.85%**\n\n*   **Regional Operations:**\n    *   Q4 2022 Revenue: $335 million\n    *   FY2022 Revenue: $1,153 million\n    *   Q4 Contribution to FY: ($335 million / $1,153 million) * 100 = **29.05%**\n\n**Anomaly Flagged:**\n\nThe **Las Vegas Strip** segment shows a Q4 2022 revenue contribution of **33.85%** to its full-year FY2022 revenue. Similarly, **Regional Operations** shows **29.05%**. While Q4 is typically a strong quarter for some segments, these percentages are significantly higher than the expected 25% (one-fourth of the year) and also higher than MGM China's 20.09%. This suggests that Q4 was a particularly strong quarter for Las Vegas Strip and Regional Operations, or that revenue generation was heavily weighted towards the latter part of the year for these segments. This is not necessarily an error but an observation that warrants further investigation into seasonal trends or specific events impacting these segments in Q4 2022.",
+    "3": "## MGM Resorts International: FY2022 Financial Performance Report\n\n### Executive Summary\n\nFor the fiscal year 2022, MGM Resorts International reported total revenue of $7,066 million across its key operating segments. The Las Vegas Strip segment was the primary revenue driver, contributing 68.89% of the total. MGM China represented the weakest topline performer, generating $1,045 million, or 14.79% of total revenue. Regional Operations contributed 16.32% with $1,153 million in revenue. Analysis of Q4 2022 performance indicates a strong finish to the year for the Las Vegas Strip and Regional Operations segments, with Q4 revenues representing 33.85% and 29.05% of their respective full-year totals.\n\n### Analysis\n\nMGM Resorts International's FY2022 revenue distribution highlights a significant reliance on its Las Vegas Strip operations, which generated $4,868 million. Regional Operations contributed $1,153 million, demonstrating a substantial domestic presence outside of Las Vegas. The MGM China segment recorded the lowest revenue among the three, at $1,045 million.\n\nSegment contributions to total FY2022 revenue were:\n*   Las Vegas Strip: 68.89%\n*   Regional Operations: 16.32%\n*   MGM China: 14.79%\n\nExamining Q4 2022 performance relative to the full year reveals distinct trends. MGM China's Q4 revenue of $210 million accounted for 20.09% of its annual revenue, which is consistent with an even distribution across quarters. In contrast, the Las Vegas Strip segment generated $1,648 million in Q4, representing 33.85% of its full-year revenue. Similarly, Regional Operations reported Q4 revenue of $335 million, making up 29.05% of its annual total. These higher-than-average Q4 contributions for Las Vegas Strip and Regional Operations suggest a strong seasonal uplift or specific positive events impacting these segments in the final quarter of 2022.\n\n### Key Risks\n\nThe disproportionate reliance on the Las Vegas Strip segment (68.89% of total revenue) presents a concentration risk. Any adverse economic conditions, regulatory changes, or competitive pressures specifically impacting the Las Vegas market could significantly affect the company's overall financial performance. The relatively lower contribution from MGM China also indicates potential vulnerabilities related to its market dynamics or operational challenges.\n\n### Conclusion\n\nMGM Resorts International concluded FY2022 with a total revenue of $7,066 million, predominantly driven by its Las Vegas Strip operations. While MGM China's performance was the weakest among segments, the strong Q4 showing for Las Vegas Strip and Regional Operations suggests robust demand in these domestic markets towards the end of the year. Future reports should aim to include year-over-year comparisons to provide deeper insights into growth trajectories and performance trends across all segments.",
+    "4": "## MGM Resorts International: FY2022 Financial Performance Report\n\n### Executive Summary\n\nFor the fiscal year 2022, MGM Resorts International reported total revenue of $7,066 million across its key operating segments. The Las Vegas Strip segment was the primary revenue driver, contributing 68.89% of the total. Regional Operations contributed 16.32% with $1,153 million in revenue, while MGM China represented the weakest topline performer, generating $1,045 million, or 14.79% of total revenue. Analysis of Q4 2022 performance indicates a strong finish to the year for the Las Vegas Strip and Regional Operations segments, with Q4 revenues representing 33.85% and 29.05% of their respective full-year totals.\n\n### Analysis\n\nMGM Resorts International's FY2022 revenue distribution highlights a significant reliance on its Las Vegas Strip operations, which generated $4,868 million. Regional Operations contributed $1,153 million, demonstrating a substantial domestic presence outside of Las Vegas. The MGM China segment recorded the lowest revenue among the three, at $1,045 million.\n\nSegment contributions to total FY2022 revenue were:\n*   Las Vegas Strip: 68.89%\n*   Regional Operations: 16.32%\n*   MGM China: 14.79%\n*(Note: The sum of these percentages is 100.00%, confirming internal consistency.)*\n\nExamining Q4 2022 performance relative to the full year reveals distinct trends. MGM China's Q4 revenue of $210 million accounted for 20.09% of its annual revenue, which is consistent with an even distribution across quarters (25% per quarter would be perfectly even). In contrast, the Las Vegas Strip segment generated $1,648 million in Q4, representing 33.85% of its full-year revenue. Similarly, Regional Operations reported Q4 revenue of $335 million, making up 29.05% of its annual total. These higher-than-average Q4 contributions for Las Vegas Strip and Regional Operations suggest a strong seasonal uplift or specific positive events impacting these segments in the final quarter of 2022.\n\n### Key Risks\n\nThe disproportionate reliance on the Las Vegas Strip segment (68.89% of total revenue) presents a concentration risk. Any adverse economic conditions, regulatory changes, or competitive pressures specifically impacting the Las Vegas market could significantly affect the company's overall financial performance. The relatively lower contribution from MGM China also indicates potential vulnerabilities related to its market dynamics or operational challenges, particularly given the impact of ongoing geopolitical and public health factors in the region during 2022.\n\n### Conclusion\n\nMGM Resorts International concluded FY2022 with a total revenue of $7,066 million, predominantly driven by its Las Vegas Strip operations. While MGM China's performance was the weakest among segments, the strong Q4 showing for Las Vegas Strip and Regional Operations suggests robust demand in these domestic markets towards the end of the year. Future reports should aim to include year-over-year comparisons to provide deeper insights into growth trajectories and performance trends across all segments, offering a more comprehensive view of the company's financial health and strategic positioning."
+  },
+  "gates": {
+    "end_gate": {
+      "verified": [
+        {
+          "value": "$1,153 million",
+          "ref": 1153.0
+        },
+        {
+          "value": "$1,045 million",
+          "ref": 1045.0
+        },
+        {
+          "value": "$1,153 million",
+          "ref": 1153.0
+        },
+        {
+          "value": "$1,045 million",
+          "ref": 1045.0
+        },
+        {
+          "value": "$1,648 million",
+          "ref": 1648.0
+        },
+        {
+          "value": "$335 million",
+          "ref": 335.0
+        },
+        {
+          "value": "33.85%",
+          "ref": 33.9
+        },
+        {
+          "value": "25%",
+          "ref": 25.0
+        },
+        {
+          "value": "33.85%",
+          "ref": 33.9
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$7,066 million",
+          "num": 7066.0,
+          "correct": 6324.0,
+          "dev": 0.105,
+          "source": "source_document"
+        },
+        {
+          "value": "$4,868 million",
+          "num": 4868.0,
+          "correct": 6324.0,
+          "dev": 0.2302,
+          "source": "source_document"
+        },
+        {
+          "value": "$7,066 million",
+          "num": 7066.0,
+          "correct": 6324.0,
+          "dev": 0.105,
+          "source": "source_document"
+        },
+        {
+          "value": "68.89%",
+          "num": 68.89,
+          "correct": 77.0,
+          "dev": 0.1053,
+          "source": "evidence"
+        },
+        {
+          "value": "16.32%",
+          "num": 16.32,
+          "correct": 13.1,
+          "dev": 0.1973,
+          "source": "evidence"
+        },
+        {
+          "value": "14.79%",
+          "num": 14.79,
+          "correct": 13.1,
+          "dev": 0.1143,
+          "source": "evidence"
+        },
+        {
+          "value": "29.05%",
+          "num": 29.05,
+          "correct": 25.0,
+          "dev": 0.1394,
+          "source": "evidence"
+        },
+        {
+          "value": "68.89%",
+          "num": 68.89,
+          "correct": 77.0,
+          "dev": 0.1053,
+          "source": "evidence"
+        },
+        {
+          "value": "16.32%",
+          "num": 16.32,
+          "correct": 13.1,
+          "dev": 0.1973,
+          "source": "evidence"
+        },
+        {
+          "value": "14.79%",
+          "num": 14.79,
+          "correct": 13.1,
+          "dev": 0.1143,
+          "source": "evidence"
+        },
+        {
+          "value": "100.00%",
+          "num": 100.0,
+          "correct": 81.0,
+          "dev": 0.19,
+          "source": "evidence"
+        },
+        {
+          "value": "20.09%",
+          "num": 20.09,
+          "correct": 25.0,
+          "dev": 0.1964,
+          "source": "evidence"
+        },
+        {
+          "value": "29.05%",
+          "num": 29.05,
+          "correct": 25.0,
+          "dev": 0.1394,
+          "source": "evidence"
+        },
+        {
+          "value": "68.89%",
+          "num": 68.89,
+          "correct": 77.0,
+          "dev": 0.1053,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$210 million"
+        }
+      ],
+      "n_refs": 44
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_109_F3781DA6",
+      "hid": "FB_109_F3781DA6_H2",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 4868.0,
+      "orig_num": 6324.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": true,
+      "any_det": true,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_109_F3781DA6",
+      "hid": "FB_109_F3781DA6_H1",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 210.0,
+      "orig_num": 251.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    }
+  ],
+  "quality_score": 4,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:43:47.628139+00:00"
+}

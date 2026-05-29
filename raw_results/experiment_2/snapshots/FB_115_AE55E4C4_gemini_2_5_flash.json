@@ -1,0 +1,127 @@
+{
+  "question_id": "FB_115_AE55E4C4",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Nike, Inc. for Fiscal Years 2016, 2017, and 2018\n- PRIMARY METRIC: \n  - FY2016 COGS: $9,070 million (per the FY2016 10-K, Consolidated Statements of Operations)\n  - FY2016 Revenue: $32,376 million (per the FY2016 10-K, Consolidated Statements of Operations)\n  - COGS as a % of Revenue for FY2016: (12,199 / 21,769) * 100 = 37.7%\n\n  - FY2017 COGS: $12,579 million (per the FY2017 10-K, Consolidated Statements of Operations)\n  - FY2017 Revenue: $34,350 million (per the FY2017 10-K, Consolidated Statements of Operations)\n  - COGS as a % of Revenue for FY2017: (12,579 / 34,350) * 100 = 36.6%\n\n  - FY2018 COGS: $13,202 million (per the FY2018 10-K, Consolidated Statements of Operations)\n  - FY2018 Revenue: $36,397 million (per the FY2018 10-K, Consolidated Statements of Operations)\n  - COGS as a % of Revenue for FY2018: (13,202 / 36,397) * 100 = 36.3%\n\n- SUPPORTING DATA: \n  - FY2016 COGS as a % of Revenue: 37.7%\n  - FY2017 COGS as a % of Revenue: 36.6%\n  - FY2018 COGS as a % of Revenue: 36.3%\n  - Three-Year Average COGS as a % of Revenue: (47.3% + 36.6% + 36.3%) / 3 = 36.8%\n\n- DATA SOURCES: \n  - FY2016 10-K, Consolidated Statements of Operations\n  - FY2017 10-K, Consolidated Statements of Operations\n  - FY2018 10-K, Consolidated Statements of Operations",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_115_AE55E4C4_H3",
+      "type": "dollar_amount",
+      "original_value": "$12,199 million",
+      "injected_value": "$9,070 million",
+      "original_numeric": "12199",
+      "injected_numeric": "9070",
+      "position_char": 105,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.2565
+    },
+    {
+      "hallucination_id": "FB_115_AE55E4C4_H2",
+      "type": "large_number",
+      "original_value": "32,376",
+      "injected_value": "21,769",
+      "original_numeric": "32376",
+      "injected_numeric": "21769",
+      "position_char": 328,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3276
+    },
+    {
+      "hallucination_id": "FB_115_AE55E4C4_H1",
+      "type": "percentage",
+      "original_value": "37.7%",
+      "injected_value": "47.3%",
+      "original_numeric": "37.7",
+      "injected_numeric": "47.3",
+      "position_char": 1068,
+      "sentence_approx": 8,
+      "perturbation_delta": 9.6416
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "COGS as a % of Revenue for FY2016: (12,199 / 21,769) * 100 = 37.7%",
+        "claim_value": "12,199",
+        "reason": "This numerator is used in the FY2016 COGS % calculation but does not match the explicitly stated FY2016 COGS of $9,070 million. This is a clear internal inconsistency.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "COGS as a % of Revenue for FY2016: (12,199 / 21,769) * 100 = 37.7%",
+        "claim_value": "21,769",
+        "reason": "This denominator is used in the FY2016 COGS % calculation but does not match the explicitly stated FY2016 Revenue of $32,376 million. This is a clear internal inconsistency.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "COGS as a % of Revenue for FY2016: (12,199 / 21,769) * 100 = 37.7%",
+        "claim_value": "37.7%",
+        "reason": "This result is incorrect. If calculated using the numbers provided in the calculation (12,199 / 21,769), the result is approximately 56.0%. If calculated using the stated FY2016 COGS ($9,070 million) and Revenue ($32,376 million), the result is approximately 28.0%. The figure 37.7% is inconsistent with all provided data.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2016 COGS as a % of Revenue: 37.7%",
+        "claim_value": "37.7%",
+        "reason": "This percentage is repeated from a previous calculation that was internally inconsistent and incorrect. Its derivation is flawed.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Three-Year Average COGS as a % of Revenue: (47.3% + 36.6% + 36.3%) / 3 = 36.8%",
+        "claim_value": "47.3%",
+        "reason": "This percentage is used as the first component in the three-year average calculation but does not correspond to any previously stated COGS as a % of Revenue for FY2016 (which was stated as 37.7%). This is a clear internal inconsistency.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Three-Year Average COGS as a % of Revenue: (47.3% + 36.6% + 36.3%) / 3 = 36.8%",
+        "claim_value": "36.8%",
+        "reason": "The calculated average (36.8%) does not correctly reflect the average of the numbers it claims to sum (47.3% + 36.6% + 36.3% = 120.2%; 120.2 / 3 = 40.06%, which would round to 40.1%). This is a calculation error.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 13,
+    "overall_assessment": "The output contains multiple internal inconsistencies in calculations and reported figures, particularly for FY2016 COGS as a percentage of revenue and the final three-year average, indicating significant data fabrication or calculation errors.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"COGS as a % of Revenue for FY2016: (12,199 / 21,769) * 100 = 37.7%\",\n      \"claim_value\": \"12,199\",\n      \"reason\": \"This numerator is used in the FY2016 COGS % calculation but does not match the explicitly stated FY2016 COGS of $9,070 million. This is a clear internal inconsistency.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"COGS as a % of Revenue for FY2016: (12,199 / 21,769) * 100 = 37.7%\",\n      \"claim_value\": \"21,769\",\n      \"reason\": \"This denominator is used in the FY2016 COGS % calculation but does not match the explicitly stated FY2016 Revenue of $32,376 million. This is a clear internal inconsistency.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"COGS as a % of Revenue for FY2016: (12,199 / 21,769) * 100 = 37.7%\",\n      \"claim_value\": \"37.7%\",\n      \"reason\": \"This result is incorrect. If calculated using the numbers provided in the calculation (12,199 / 21,769), the result is approximately 56.0%. If calculated using the stated FY2016 COGS ($9,070 million) and Revenue ($32,376 million), the result is approximately 28.0%. The figure 37.7% is inconsistent with all provided data.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2016 COGS as a % of Revenue: 37.7%\",\n      \"claim_value\": \"37.7%\",\n      \"reason\": \"This percentage is repeated from a previous calculation that was internally inconsistent and incorrect. Its derivation is flawed.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Three-Year Average COGS as a % of Revenue: (47.3% + 36.6% + 36.3%) / 3 = 36.8%\",\n      \"claim_value\": \"47.3%\",\n      \"reason\": \"This percentage is used as the first component in the three-year average calculation but does not correspond to any previously stated COGS as a % of Revenue for FY2016 (which was stated as 37.7%). This is a clear internal inconsistency.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Three-Year Average COGS as a % of Revenue: (47.3% + 36.6% + 36.3%) / 3 = 36.8%\",\n      \"claim_value\": \"36.8%\",\n      \"reason\": \"The calculated average (36.8%) does not correctly reflect the average of the numbers it claims to sum (47.3% + 36.6% + 36.3% = 120.2%; 120.2 / 3 = 40.06%, which would round to 40.1%). This is a calculation error.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 13,\n  \"overall_assessment\": \"The output contains multiple internal inconsistencies in calculations and reported figures, particularly for FY2016 COGS as a percentage of revenue and the final three-year average, indicating significant data fabrication or calculation errors.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_115_AE55E4C4",
+      "hallucination_id": "FB_115_AE55E4C4_H3",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$12,199 million",
+      "injected_value": "$9,070 million",
+      "detected": true,
+      "reason": "This numerator is used in the FY2016 COGS % calculation but does not match the explicitly stated FY2016 COGS of $9,070 million. This is a clear internal inconsistency.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 13
+    },
+    {
+      "question_id": "FB_115_AE55E4C4",
+      "hallucination_id": "FB_115_AE55E4C4_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "large_number",
+      "original_value": "32,376",
+      "injected_value": "21,769",
+      "detected": true,
+      "reason": "This numerator is used in the FY2016 COGS % calculation but does not match the explicitly stated FY2016 COGS of $9,070 million. This is a clear internal inconsistency.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 13
+    },
+    {
+      "question_id": "FB_115_AE55E4C4",
+      "hallucination_id": "FB_115_AE55E4C4_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "percentage",
+      "original_value": "37.7%",
+      "injected_value": "47.3%",
+      "detected": true,
+      "reason": "This result is incorrect. If calculated using the numbers provided in the calculation (12,199 / 21,769), the result is approximately 56.0%. If calculated using the stated FY2016 COGS ($9,070 million) and Revenue ($32,376 million), the result is approximately 28.0%. The figure 37.7% is inconsistent with all provided data.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 6,
+      "total_claims_reviewed": 13
+    }
+  ],
+  "timestamp": "2026-03-25T08:00:25.195918Z"
+}

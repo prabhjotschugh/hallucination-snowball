@@ -1,0 +1,79 @@
+{
+  "question_id": "FB_072_05A484DC",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Corning Inc., FY2019 - FY2021\n- PRIMARY METRIC: \n  - FY2019 Operating Income: $3,206 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2019 Total Revenue: $8,255 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2019 Operating Income Margin: (Operating Income / Total Revenue) * 100 = (2,118 / 11,500) * 100 = 27.9%\n  \n  - FY2020 Operating Income: $2,824 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2020 Total Revenue: $11,200 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2020 Operating Income Margin: (Operating Income / Total Revenue) * 100 = (2,824 / 11,200) * 100 = 25.2%\n  \n  - FY2021 Operating Income: $4,076 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2021 Total Revenue: $12,500 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2021 Operating Income Margin: (Operating Income / Total Revenue) * 100 = (4,076 / 12,500) * 100 = 32.6%\n\n- SUPPORTING DATA: \n  - FY2019 Operating Income Margin: 27.9%\n  - FY2020 Operating Income Margin: 25.2%\n  - FY2021 Operating Income Margin: 32.6%\n  - Three-Year Average Operating Income Margin: (27.9% + 25.2% + 32.6%) / 3 = 28.6%\n\n- DATA SOURCES: \n  - FY2021 10-K, Consolidated Statements of Operations, pages 50-51. \n\nNote: The request for insights into observable trends and benchmarking against industry standards has not been fulfilled as per the instruction to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_072_05A484DC_H2",
+      "type": "dollar_amount",
+      "original_value": "$11,500 million",
+      "injected_value": "$8,255 million",
+      "original_numeric": "11500",
+      "injected_numeric": "8255",
+      "position_char": 200,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.2822
+    },
+    {
+      "hallucination_id": "FB_072_05A484DC_H1",
+      "type": "large_number",
+      "original_value": "3,206",
+      "injected_value": "2,118",
+      "original_numeric": "3206",
+      "injected_numeric": "2118",
+      "position_char": 357,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3393
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "FY2019 Operating Income: $3,206 million",
+        "claim_value": "$3,206 million",
+        "reason": "The provided calculation for FY2019 Operating Income Margin uses $2,118 million, not $3,206 million.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2019 Operating Income Margin: (2,118 / 11,500) * 100 = 27.9%",
+        "claim_value": "11,500",
+        "reason": "The total revenue for FY2019 is stated as $8,255 million, not $11,500 million.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 8,
+    "overall_assessment": "The researcher's output contains internal inconsistencies and calculation errors.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"FY2019 Operating Income: $3,206 million\",\n      \"claim_value\" : \"$3,206 million\",\n      \"reason\"      : \"The provided calculation for FY2019 Operating Income Margin uses $2,118 million, not $3,206 million.\",\n      \"confidence\"  : \"high\"\n    },\n    {\n      \"claim_text\"  : \"FY2019 Operating Income Margin: (2,118 / 11,500) * 100 = 27.9%\",\n      \"claim_value\" : \"11,500\",\n      \"reason\"      : \"The total revenue for FY2019 is stated as $8,255 million, not $11,500 million.\",\n      \"confidence\"  : \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 8,\n  \"overall_assessment\"   : \"The researcher's output contains internal inconsistencies and calculation errors.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_072_05A484DC",
+      "hallucination_id": "FB_072_05A484DC_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$11,500 million",
+      "injected_value": "$8,255 million",
+      "detected": true,
+      "reason": "The total revenue for FY2019 is stated as $8,255 million, not $11,500 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 8
+    },
+    {
+      "question_id": "FB_072_05A484DC",
+      "hallucination_id": "FB_072_05A484DC_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "large_number",
+      "original_value": "3,206",
+      "injected_value": "2,118",
+      "detected": true,
+      "reason": "The provided calculation for FY2019 Operating Income Margin uses $2,118 million, not $3,206 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 8
+    }
+  ],
+  "timestamp": "2026-03-27T09:36:08.557825Z"
+}

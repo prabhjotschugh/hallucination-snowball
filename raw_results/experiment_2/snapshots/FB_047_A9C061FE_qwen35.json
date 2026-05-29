@@ -1,0 +1,103 @@
+{
+  "question_id": "FB_047_A9C061FE",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: American Water Works, FY2021\n- PRIMARY METRIC: Unadjusted Operating Income + Depreciation and Amortization (unadjusted EBITDA) is $966 million (per the FY2021 10-K, Consolidated Statements of Operations and Consolidated Statements of Cash Flows).\n- SUPPORTING DATA: \n  - Operating Income for FY2021: $1,149 million (per the FY2021 10-K, Consolidated Statements of Operations).\n  - Depreciation and Amortization for FY2021: $277 million (per the FY2021 10-K, Consolidated Statements of Cash Flows).\n  - For context, Operating Income for FY2020 was $1,063 million and for FY2019 was $832 million.\n  - Depreciation and Amortization for FY2020 was $208 million and for FY2019 was $244 million.\n- DATA SOURCES: \n  - FY2021 10-K, Consolidated Statements of Operations (Operating Income).\n  - FY2021 10-K, Consolidated Statements of Cash Flows (Depreciation and Amortization).",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_047_A9C061FE_H3",
+      "type": "dollar_amount",
+      "original_value": "$1,426 million",
+      "injected_value": "$966 million",
+      "original_numeric": "1426",
+      "injected_numeric": "966",
+      "position_char": 150,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.3228
+    },
+    {
+      "hallucination_id": "FB_047_A9C061FE_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,019 million",
+      "injected_value": "$832 million",
+      "original_numeric": "1019",
+      "injected_numeric": "832",
+      "position_char": 603,
+      "sentence_approx": 4,
+      "perturbation_delta": -0.1839
+    },
+    {
+      "hallucination_id": "FB_047_A9C061FE_H1",
+      "type": "dollar_amount",
+      "original_value": "$263 million",
+      "injected_value": "$208 million",
+      "original_numeric": "263",
+      "injected_numeric": "208",
+      "position_char": 668,
+      "sentence_approx": 5,
+      "perturbation_delta": -0.211
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Unadjusted Operating Income + Depreciation and Amortization (unadjusted EBITDA) is $966 million",
+        "claim_value": "$966 million",
+        "reason": "Internal mathematical inconsistency: The text states Operating Income is $1,149 million and D&A is $277 million. Their sum is $1,426 million, not $966 million. Additionally, EBITDA cannot be lower than Operating Income when D&A is positive. The $966 million figure likely corresponds to Net Income, indicating a label hallucination.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Depreciation and Amortization for FY2021: $277 million",
+        "claim_value": "$277 million",
+        "reason": "Suspiciously low for a capital-intensive water utility with $1,149 million in Operating Income. Typically, D&A for such utilities is a larger proportion of Operating Income (often 40-60%). This figure also contributes to the impossible EBITDA calculation found in the primary metric claim.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 7,
+    "overall_assessment": "The output contains a critical mathematical error where the reported EBITDA is lower than Operating Income and does not match the sum of its stated components, suggesting significant hallucination or data mislabeling.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Unadjusted Operating Income + Depreciation and Amortization (unadjusted EBITDA) is $966 million\",\n      \"claim_value\": \"$966 million\",\n      \"reason\": \"Internal mathematical inconsistency: The text states Operating Income is $1,149 million and D&A is $277 million. Their sum is $1,426 million, not $966 million. Additionally, EBITDA cannot be lower than Operating Income when D&A is positive. The $966 million figure likely corresponds to Net Income, indicating a label hallucination.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Depreciation and Amortization for FY2021: $277 million\",\n      \"claim_value\": \"$277 million\",\n      \"reason\": \"Suspiciously low for a capital-intensive water utility with $1,149 million in Operating Income. Typically, D&A for such utilities is a larger proportion of Operating Income (often 40-60%). This figure also contributes to the impossible EBITDA calculation found in the primary metric claim.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 7,\n  \"overall_assessment\": \"The output contains a critical mathematical error where the reported EBITDA is lower than Operating Income and does not match the sum of its stated components, suggesting significant hallucination or data mislabeling.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_047_A9C061FE",
+      "hallucination_id": "FB_047_A9C061FE_H3",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,426 million",
+      "injected_value": "$966 million",
+      "detected": true,
+      "reason": "Internal mathematical inconsistency: The text states Operating Income is $1,149 million and D&A is $277 million. Their sum is $1,426 million, not $966 million. Additionally, EBITDA cannot be lower than Operating Income when D&A is positive. The $966 million figure likely corresponds to Net Income, indicating a label hallucination.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_047_A9C061FE",
+      "hallucination_id": "FB_047_A9C061FE_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,019 million",
+      "injected_value": "$832 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_047_A9C061FE",
+      "hallucination_id": "FB_047_A9C061FE_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$263 million",
+      "injected_value": "$208 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 7
+    }
+  ],
+  "timestamp": "2026-03-24T11:10:33.685725Z"
+}

@@ -1,0 +1,121 @@
+{
+  "question_id": "FB_004_FF1B8BC2",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: 3M Company, FY2022\n- PRIMARY METRIC: Operating Margin: 16.5% (calculated as Operating Income of $7,927 million divided by Total Revenue of $36,693 million) per the FY2022 10-K, Consolidated Statements of Operations.\n- SUPPORTING DATA: \n  - Total Revenue: $46,995 million (FY2022) per the FY2022 10-K, Consolidated Statements of Operations.\n  - Operating Income: $6,081 million (FY2022) per the FY2022 10-K, Consolidated Statements of Operations.\n  - Operating Margin (FY2021): 18.2% (calculated as Operating Income of $6,574 million divided by Total Revenue of $44,964 million) per the FY2021 10-K, Consolidated Statements of Operations.\n  - Operating Margin (FY2020): 20.5% (calculated as Operating Income of $6,646 million divided by Total Revenue of $32,180 million) per the FY2020 10-K, Consolidated Statements of Operations.\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations.\n  - FY2021 10-K, Consolidated Statements of Operations.\n  - FY2020 10-K, Consolidated Statements of Operations.\n\n**Note**: The request for an analysis of the factors influencing changes in operating margin and the usefulness of operating margin as a metric cannot be fulfilled as per the directive to provide raw data only. Please consult downstream analysts for further interpretation and analysis.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_004_FF1B8BC2_H3",
+      "type": "dollar_amount",
+      "original_value": "$6,081 million",
+      "injected_value": "$7,927 million",
+      "original_numeric": "6081",
+      "injected_numeric": "7927",
+      "position_char": 116,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.3035
+    },
+    {
+      "hallucination_id": "FB_004_FF1B8BC2_H2",
+      "type": "dollar_amount",
+      "original_value": "$36,693 million",
+      "injected_value": "$46,995 million",
+      "original_numeric": "36693",
+      "injected_numeric": "46995",
+      "position_char": 275,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.2808
+    },
+    {
+      "hallucination_id": "FB_004_FF1B8BC2_H1",
+      "type": "dollar_amount",
+      "original_value": "$36,086 million",
+      "injected_value": "$44,964 million",
+      "original_numeric": "36086",
+      "injected_numeric": "44964",
+      "position_char": 581,
+      "sentence_approx": 6,
+      "perturbation_delta": 0.246
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Operating Margin: 16.5% (calculated as Operating Income of $7,927 million divided by Total Revenue of $36,693 million)",
+        "claim_value": "16.5%",
+        "reason": "Mathematical error: $7,927 million divided by $36,693 million equals approximately 21.6%, not 16.5%. Additionally, these figures contradict the Supporting Data section for the same year.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Revenue: $46,995 million (FY2022) per the FY2022 10-K, Consolidated Statements of Operations.",
+        "claim_value": "$46,995 million",
+        "reason": "Internal inconsistency: Contradicts the Total Revenue of $36,693 million cited in the Primary Metric section for the same period. Also appears inflated compared to typical 3M revenue scales (~$34B).",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Operating Income: $6,081 million (FY2022) per the FY2022 10-K, Consolidated Statements of Operations.",
+        "claim_value": "$6,081 million",
+        "reason": "Internal inconsistency: Contradicts the Operating Income of $7,927 million cited in the Primary Metric section for the same period.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Operating Margin (FY2021): 18.2% (calculated as Operating Income of $6,574 million divided by Total Revenue of $44,964 million)",
+        "claim_value": "18.2%",
+        "reason": "Mathematical error: $6,574 million divided by $44,964 million equals approximately 14.6%, not 18.2%.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Revenue: $44,964 million (FY2021) per the FY2021 10-K, Consolidated Statements of Operations.",
+        "claim_value": "$44,964 million",
+        "reason": "Plausibility concern: When compared to the reported FY2020 revenue of $32,180 million within the same output, this implies a ~40% YoY increase, which is highly unusual for a mature industrial conglomerate like 3M without major M&A.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 11,
+    "overall_assessment": "The output contains critical internal contradictions regarding FY2022 figures, multiple mathematical errors in margin calculations, and implausible revenue growth trends.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Operating Margin: 16.5% (calculated as Operating Income of $7,927 million divided by Total Revenue of $36,693 million)\",\n      \"claim_value\": \"16.5%\",\n      \"reason\": \"Mathematical error: $7,927 million divided by $36,693 million equals approximately 21.6%, not 16.5%. Additionally, these figures contradict the Supporting Data section for the same year.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Revenue: $46,995 million (FY2022) per the FY2022 10-K, Consolidated Statements of Operations.\",\n      \"claim_value\": \"$46,995 million\",\n      \"reason\": \"Internal inconsistency: Contradicts the Total Revenue of $36,693 million cited in the Primary Metric section for the same period. Also appears inflated compared to typical 3M revenue scales (~$34B).\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Operating Income: $6,081 million (FY2022) per the FY2022 10-K, Consolidated Statements of Operations.\",\n      \"claim_value\": \"$6,081 million\",\n      \"reason\": \"Internal inconsistency: Contradicts the Operating Income of $7,927 million cited in the Primary Metric section for the same period.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Operating Margin (FY2021): 18.2% (calculated as Operating Income of $6,574 million divided by Total Revenue of $44,964 million)\",\n      \"claim_value\": \"18.2%\",\n      \"reason\": \"Mathematical error: $6,574 million divided by $44,964 million equals approximately 14.6%, not 18.2%.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Revenue: $44,964 million (FY2021) per the FY2021 10-K, Consolidated Statements of Operations.\",\n      \"claim_value\": \"$44,964 million\",\n      \"reason\": \"Plausibility concern: When compared to the reported FY2020 revenue of $32,180 million within the same output, this implies a ~40% YoY increase, which is highly unusual for a mature industrial conglomerate like 3M without major M&A.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 11,\n  \"overall_assessment\": \"The output contains critical internal contradictions regarding FY2022 figures, multiple mathematical errors in margin calculations, and implausible revenue growth trends.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_004_FF1B8BC2",
+      "hallucination_id": "FB_004_FF1B8BC2_H3",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$6,081 million",
+      "injected_value": "$7,927 million",
+      "detected": true,
+      "reason": "Mathematical error: $7,927 million divided by $36,693 million equals approximately 21.6%, not 16.5%. Additionally, these figures contradict the Supporting Data section for the same year.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 11
+    },
+    {
+      "question_id": "FB_004_FF1B8BC2",
+      "hallucination_id": "FB_004_FF1B8BC2_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$36,693 million",
+      "injected_value": "$46,995 million",
+      "detected": true,
+      "reason": "Internal inconsistency: Contradicts the Total Revenue of $36,693 million cited in the Primary Metric section for the same period. Also appears inflated compared to typical 3M revenue scales (~$34B).",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 11
+    },
+    {
+      "question_id": "FB_004_FF1B8BC2",
+      "hallucination_id": "FB_004_FF1B8BC2_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$36,086 million",
+      "injected_value": "$44,964 million",
+      "detected": true,
+      "reason": "Internal inconsistency: Contradicts the Total Revenue of $36,693 million cited in the Primary Metric section for the same period. Also appears inflated compared to typical 3M revenue scales (~$34B).",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 11
+    }
+  ],
+  "timestamp": "2026-03-24T10:09:13.051314Z"
+}

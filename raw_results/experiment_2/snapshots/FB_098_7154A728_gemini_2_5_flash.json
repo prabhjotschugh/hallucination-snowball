@@ -1,0 +1,73 @@
+{
+  "question_id": "FB_098_7154A728",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: JPMorgan Chase & Co., Q2 2022\n- PRIMARY METRIC: The business segment with the highest net income in Q2 2022 was the Consumer & Community Banking segment, which reported a net income of $3,440 million (USD millions) per the Q2 2022 10-Q, Consolidated Statements of Operations.\n- SUPPORTING DATA: \n  - Corporate & Investment Bank: Net income of $3,200 million (USD millions)\n  - Commercial Banking: Net income of $801 million (USD millions)\n  - Asset & Wealth Management: Net income of $1,000 million (USD millions)\n  - Total net income for JPMorgan Chase & Co. in Q2 2022 was $12,001 million (USD millions).\n- DATA SOURCES: \n  - Q2 2022 10-Q, Consolidated Statements of Operations, page 3. \n\nNote: No trend analysis or performance comparisons to previous quarters or industry benchmarks are included, as per the directive to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_098_7154A728_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,000 million",
+      "injected_value": "$801 million",
+      "original_numeric": "1000",
+      "injected_numeric": "801",
+      "position_char": 431,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.1993
+    },
+    {
+      "hallucination_id": "FB_098_7154A728_H1",
+      "type": "dollar_amount",
+      "original_value": "$8,640 million",
+      "injected_value": "$12,001 million",
+      "original_numeric": "8640",
+      "injected_numeric": "12001",
+      "position_char": 597,
+      "sentence_approx": 4,
+      "perturbation_delta": 0.389
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Total net income for JPMorgan Chase & Co. in Q2 2022 was $12,001 million (USD millions).",
+        "claim_value": "12001",
+        "reason": "The reported total net income of $12,001 million does not reconcile with the sum of the provided segment net incomes. The sum of Consumer & Community Banking ($3,440 million), Corporate & Investment Bank ($3,200 million), Commercial Banking ($801 million), and Asset & Wealth Management ($1,000 million) is $8,441 million. This leaves a discrepancy of $3,560 million, which is a significant amount not accounted for by an explicit 'Corporate' or 'Other' segment, suggesting an internal inconsistency or potential hallucination.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 5,
+    "overall_assessment": "One significant internal inconsistency was found where the reported total net income did not match the sum of the provided segment net incomes.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Total net income for JPMorgan Chase & Co. in Q2 2022 was $12,001 million (USD millions).\",\n      \"claim_value\": \"12001\",\n      \"reason\": \"The reported total net income of $12,001 million does not reconcile with the sum of the provided segment net incomes. The sum of Consumer & Community Banking ($3,440 million), Corporate & Investment Bank ($3,200 million), Commercial Banking ($801 million), and Asset & Wealth Management ($1,000 million) is $8,441 million. This leaves a discrepancy of $3,560 million, which is a significant amount not accounted for by an explicit 'Corporate' or 'Other' segment, suggesting an internal inconsistency or potential hallucination.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 5,\n  \"overall_assessment\": \"One significant internal inconsistency was found where the reported total net income did not match the sum of the provided segment net incomes.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_098_7154A728",
+      "hallucination_id": "FB_098_7154A728_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,000 million",
+      "injected_value": "$801 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 5
+    },
+    {
+      "question_id": "FB_098_7154A728",
+      "hallucination_id": "FB_098_7154A728_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$8,640 million",
+      "injected_value": "$12,001 million",
+      "detected": true,
+      "reason": "The reported total net income of $12,001 million does not reconcile with the sum of the provided segment net incomes. The sum of Consumer & Community Banking ($3,440 million), Corporate & Investment Bank ($3,200 million), Commercial Banking ($801 million), and Asset & Wealth Management ($1,000 million) is $8,441 million. This leaves a discrepancy of $3,560 million, which is a significant amount not accounted for by an explicit 'Corporate' or 'Other' segment, suggesting an internal inconsistency or potential hallucination.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 5
+    }
+  ],
+  "timestamp": "2026-03-25T07:56:25.039406Z"
+}

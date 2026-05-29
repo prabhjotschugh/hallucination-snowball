@@ -1,0 +1,6 @@
+model,detection_pct,ci_lo_pct,ci_hi_pct,survival_pct,n
+Llama 3 70B Instruct,51.4,46.2,56.6,48.6,346
+Gemini 2.5 Flash,72.5,67.6,77.2,27.5,346
+DeepSeek-V3.2,75.7,71.1,80.3,24.3,346
+Qwen3.5-397B,87.0,83.2,90.5,13.0,346
+GPT-4o Judge (Exp.1 S1),72.0,67.1,76.6,28.0,346

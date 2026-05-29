@@ -1,0 +1,509 @@
+{
+  "question_id": "FB_010_CBE1B721",
+  "method": "ours",
+  "final_output": "## Activision Blizzard: Financial Performance Review (FY2017 - FY2019)\n\n### Executive Summary\nActivision Blizzard demonstrated a consistent increase in Capital Expenditures (Capex) from FY2017 to FY2019, while revenue experienced growth in FY2018 before a significant decline in FY2019. The ratio of Capex as a percentage of revenue shows an upward trend, indicating a growing allocation of revenue towards capital investments. The three-year average of Capex as a percentage of revenue for the period stands at 3.8%.\n\n### Analysis\nActivision Blizzard's financial performance from FY2017 to FY2019 reveals distinct trends in capital expenditures and revenue. Capex steadily increased, rising from $204 million in FY2017 to $244 million in FY2018, and further to $332 million in FY2019. This represents a 19.61% increase from FY2017 to FY2018, and a 36.07% increase from FY2018 to FY2019.\n\nRevenue, however, showed a more varied pattern. It grew from $7,020 million in FY2017 to $7,500 million in FY2018, a 6.84% increase. Subsequently, revenue declined to $6,490 million in FY2019, representing a -13.47% decrease from the prior year.\n\nThe ratio of Capex as a percentage of revenue also increased over the period. In FY2017, Capex was 2.9% of revenue. This increased to 3.3% in FY2018 and further to 5.1% in FY2019. The three-year average of Capex as a percentage of revenue for FY2017-FY2019 is 3.8%.\n\n### Key Risks\nThe significant increase in Capex as a percentage of revenue, particularly in FY2019 when revenue declined, could signal potential pressure on profitability and cash flow if not managed effectively. The substantial drop in revenue in FY2019, following a period of growth, highlights potential market challenges or operational shifts that warrant close monitoring.\n\n### Conclusion\nActivision Blizzard's financial data from FY2017 to FY2019 indicates a strategic increase in capital investments, as evidenced by the rising Capex figures and the increasing Capex as a percentage of revenue. While revenue initially grew, the decline in FY2019 presents a challenge that could impact future financial performance. The three-year average of Capex as a percentage of revenue at 3.8% provides a benchmark for evaluating the company's investment intensity relative to its revenue generation.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Activision Blizzard, FY2017 - FY2019\n- PRIMARY METRIC: \n   - FY2017 Capital Expenditures (Capex): $204 million (per the FY2017 10-K, Consolidated Statements of Cash Flows)\n   - FY2017 Revenue: $7,020 million (per the FY2017 10-K, Consolidated Statements of Operations)\n   - FY2018 Capital Expenditures (Capex): $244 million (per the FY2018 10-K, Consolidated Statements of Cash Flows)\n   - FY2018 Revenue: $7,500 million (per the FY2018 10-K, Consolidated Statements of Operations)\n   - FY2019 Capital Expenditures (Capex): $332 million (per the FY2019 10-K, Consolidated Statements of Cash Flows)\n   - FY2019 Revenue: $6,490 million (per the FY2019 10-K, Consolidated Statements of Operations)\n\n- SUPPORTING DATA:\n   - FY2017 Capex as a % of Revenue: (204 / 7,020) * 100 = 2.9%\n   - FY2018 Capex as a % of Revenue: (244 / 7,500) * 100 = 14.3%\n   - FY2019 Capex as a % of Revenue: (332 / 6,490) * 100 = 5.1%\n   - Three-Year Average of Capex as a % of Revenue: (2.9% + 3.3% + 16.3%) / 3 = 3.8%\n\n- DATA SOURCES: \n   - FY2017 10-K, Consolidated Statements of Cash Flows and Consolidated Statements of Operations\n   - FY2018 10-K, Consolidated Statements of Cash Flows and Consolidated Statements of Operations\n   - FY2019 10-K, Consolidated Statements of Cash Flows and Consolidated Statements of Operations\n\nFinal Result: The FY2017 - FY2019 three-year average of capital expenditures as a percentage of revenue for Activision Blizzard is 3.8%.",
+    "2": "As a financial analyst, I've reviewed the provided data for Activision Blizzard from FY2017 to FY2019.\n\n**1. Year-over-Year Changes**\n\n| Metric             | FY2017 (Millions) | FY2018 (Millions) | FY2019 (Millions) | FY2018 vs FY2017 (Absolute) | FY2018 vs FY2017 (Percentage) | FY2019 vs FY2018 (Absolute) | FY2019 vs FY2018 (Percentage) |\n| :----------------- | :---------------- | :---------------- | :---------------- | :-------------------------- | :---------------------------- | :-------------------------- | :---------------------------- |\n| **Capital Expenditures (Capex)** | $204              | $244              | $332              | $40                         | 19.61%                        | $88                         | 36.07%                        |\n| **Revenue**        | $7,020            | $7,500            | $6,490            | $480                        | 6.84%                         | -$1,010                     | -13.47%                       |\n\n**Formulas:**\n*   **Absolute Change:** Current Year Value - Prior Year Value\n    *   FY2018 Capex Absolute Change: $244 - $204 = $40\n    *   FY2019 Capex Absolute Change: $332 - $244 = $88\n    *   FY2018 Revenue Absolute Change: $7,500 - $7,020 = $480\n    *   FY2019 Revenue Absolute Change: $6,490 - $7,500 = -$1,010\n*   **Percentage Change:** (Absolute Change / Prior Year Value) * 100\n    *   FY2018 Capex % Change: ($40 / $204) * 100 = 19.61%\n    *   FY2019 Capex % Change: ($88 / $244) * 100 = 36.07%\n    *   FY2018 Revenue % Change: ($480 / $7,020) * 100 = 6.84%\n    *   FY2019 Revenue % Change: (-$1,010 / $7,500) * 100 = -13.47%\n\n**2. Relevant Ratios**\n\n| Ratio                               | FY2017 | FY2018 | FY2019 |\n| :---------------------------------- | :----- | :----- | :----- |\n| **Capex as a % of Revenue**         | 2.91%  | 3.25%  | 5.12%  |\n\n**Formulas:**\n*   **Capex as a % of Revenue:** (Capex / Revenue) * 100\n    *   FY2017: ($204 / $7,020) * 100 = 2.91%\n    *   FY2018: ($244 / $7,500) * 100 = 3.25%\n    *   FY2019: ($332 / $6,490) * 100 = 5.12%\n\n**3. Anomalies Flagged**\n\nThe provided \"SUPPORTING DATA\" contains an anomaly:\n\n*   **FY2018 Capex as a % of Revenue:** The researcher data states 14.3%, but my calculation using the provided primary metrics ($244 / $7,500) * 100 = 3.25%. The researcher's value of 14.3% is incorrect.\n*   **FY2019 Capex as a % of Revenue:** The researcher data states 5.1%, but my calculation using the provided primary metrics ($332 / $6,490) * 100 = 5.12%. While close, the researcher's value is rounded differently.\n*   **Three-Year Average of Capex as a % of Revenue:** The researcher's calculation uses (2.9% + 3.3% + 16.3%) / 3 = 3.8%. This average is incorrect because it uses the erroneous 14.3% (presented as 16.3% in the average calculation) for FY2018.\n\n**Corrected Three-Year Average of Capex as a % of Revenue:**\nUsing the correctly calculated ratios: (2.91% + 3.25% + 5.12%) / 3 = **3.76%**\n\n**Summary:**\nActivision Blizzard saw consistent growth in Capex from FY2017 to FY2019, with a significant increase in FY2019. Revenue, however, experienced a notable decline in FY2019 after growing in FY2018. The Capex as a % of Revenue ratio shows an increasing trend, indicating that a larger portion of revenue is being allocated to capital expenditures, particularly in FY2",
+    "3": "## Activision Blizzard: Financial Performance Review (FY2017 - FY2019)\n\n### Executive Summary\nActivision Blizzard demonstrated a consistent increase in Capital Expenditures (Capex) from FY2017 to FY2019, while revenue experienced growth in FY2018 before a significant decline in FY2019. The ratio of Capex as a percentage of revenue shows an upward trend, indicating a growing allocation of revenue towards capital investments. The three-year average of Capex as a percentage of revenue for the period stands at 3.8%.\n\n### Analysis\nActivision Blizzard's financial performance from FY2017 to FY2019 reveals distinct trends in capital expenditures and revenue. Capex steadily increased, rising from $204 million in FY2017 to $244 million in FY2018, and further to $332 million in FY2019. This represents a 19.61% increase from FY2017 to FY2018, and a 36.07% increase from FY2018 to FY2019.\n\nRevenue, however, showed a more varied pattern. It grew from $7,020 million in FY2017 to $7,500 million in FY2018, a 6.84% increase. Subsequently, revenue declined to $6,490 million in FY2019, representing a -13.47% decrease from the prior year.\n\nThe ratio of Capex as a percentage of revenue also increased over the period. In FY2017, Capex was 2.9% of revenue. This increased to 3.3% in FY2018 and further to 5.1% in FY2019. The three-year average of Capex as a percentage of revenue for FY2017-FY2019 is 3.8%.\n\n### Key Risks\nThe significant increase in Capex as a percentage of revenue, particularly in FY2019 when revenue declined, could signal potential pressure on profitability and cash flow if not managed effectively. The substantial drop in revenue in FY2019, following a period of growth, highlights potential market challenges or operational shifts that warrant close monitoring.\n\n### Conclusion\nActivision Blizzard's financial data from FY2017 to FY2019 indicates a strategic increase in capital investments, as evidenced by the rising Capex figures and the increasing Capex as a percentage of revenue. While revenue initially grew, the decline in FY2019 presents a challenge that could impact future financial performance. The three-year average of Capex as a percentage of revenue at 3.8% provides a benchmark for evaluating the company's investment intensity relative to its revenue generation.",
+    "4": "## Activision Blizzard: Financial Performance Review (FY2017 - FY2019)\n\n### Executive Summary\nActivision Blizzard demonstrated a consistent increase in Capital Expenditures (Capex) from FY2017 to FY2019, while revenue experienced growth in FY2018 before a significant decline in FY2019. The ratio of Capex as a percentage of revenue shows an upward trend, indicating a growing allocation of revenue towards capital investments. The three-year average of Capex as a percentage of revenue for the period stands at 3.8%.\n\n### Analysis\nActivision Blizzard's financial performance from FY2017 to FY2019 reveals distinct trends in capital expenditures and revenue. Capex steadily increased, rising from $204 million in FY2017 to $244 million in FY2018, and further to $332 million in FY2019. This represents a 19.61% increase from FY2017 to FY2018, and a 36.07% increase from FY2018 to FY2019.\n\nRevenue, however, showed a more varied pattern. It grew from $7,020 million in FY2017 to $7,500 million in FY2018, a 6.84% increase. Subsequently, revenue declined to $6,490 million in FY2019, representing a -13.47% decrease from the prior year.\n\nThe ratio of Capex as a percentage of revenue also increased over the period. In FY2017, Capex was 2.9% of revenue. This increased to 3.3% in FY2018 and further to 5.1% in FY2019. The three-year average of Capex as a percentage of revenue for FY2017-FY2019 is 3.8%.\n\n### Key Risks\nThe significant increase in Capex as a percentage of revenue, particularly in FY2019 when revenue declined, could signal potential pressure on profitability and cash flow if not managed effectively. The substantial drop in revenue in FY2019, following a period of growth, highlights potential market challenges or operational shifts that warrant close monitoring.\n\n### Conclusion\nActivision Blizzard's financial data from FY2017 to FY2019 indicates a strategic increase in capital investments, as evidenced by the rising Capex figures and the increasing Capex as a percentage of revenue. While revenue initially grew, the decline in FY2019 presents a challenge that could impact future financial performance. The three-year average of Capex as a percentage of revenue at 3.8% provides a benchmark for evaluating the company's investment intensity relative to its revenue generation."
+  },
+  "gates": {
+    "gate_1": {
+      "verified": [
+        {
+          "value": "$204 million",
+          "ref": 204.0
+        },
+        {
+          "value": "$7,020 million",
+          "ref": 7020.0
+        },
+        {
+          "value": "$244 million",
+          "ref": 244.0
+        },
+        {
+          "value": "$7,500 million",
+          "ref": 7500.0
+        },
+        {
+          "value": "$332 million",
+          "ref": 332.0
+        },
+        {
+          "value": "$6,490 million",
+          "ref": 6490.0
+        },
+        {
+          "value": "2.9%",
+          "ref": 2.9
+        },
+        {
+          "value": "5.1%",
+          "ref": 5.1
+        },
+        {
+          "value": "2.9%",
+          "ref": 2.9
+        },
+        {
+          "value": "3.3%",
+          "ref": 3.3
+        },
+        {
+          "value": "3.8%",
+          "ref": 3.8
+        },
+        {
+          "value": "3.8%",
+          "ref": 3.8
+        },
+        {
+          "value": "7,020",
+          "ref": 7020.0
+        },
+        {
+          "value": "7,500",
+          "ref": 7500.0
+        },
+        {
+          "value": "6,490",
+          "ref": 6490.0
+        }
+      ],
+      "refuted": [],
+      "unverified": [
+        {
+          "value": "14.3%"
+        },
+        {
+          "value": "16.3%"
+        }
+      ],
+      "n_refs": 13
+    },
+    "gate_2": {
+      "verified": [
+        {
+          "value": "$204",
+          "ref": 204.0
+        },
+        {
+          "value": "$244",
+          "ref": 244.0
+        },
+        {
+          "value": "$332",
+          "ref": 332.0
+        },
+        {
+          "value": "$7,020",
+          "ref": 7020.0
+        },
+        {
+          "value": "$7,500",
+          "ref": 7500.0
+        },
+        {
+          "value": "$6,490",
+          "ref": 6490.0
+        },
+        {
+          "value": "$244",
+          "ref": 244.0
+        },
+        {
+          "value": "$204",
+          "ref": 204.0
+        },
+        {
+          "value": "$332",
+          "ref": 332.0
+        },
+        {
+          "value": "$244",
+          "ref": 244.0
+        },
+        {
+          "value": "$7,500",
+          "ref": 7500.0
+        },
+        {
+          "value": "$7,020",
+          "ref": 7020.0
+        },
+        {
+          "value": "$6,490",
+          "ref": 6490.0
+        },
+        {
+          "value": "$7,500",
+          "ref": 7500.0
+        },
+        {
+          "value": "$204",
+          "ref": 204.0
+        },
+        {
+          "value": "$244",
+          "ref": 244.0
+        },
+        {
+          "value": "$7,020",
+          "ref": 7020.0
+        },
+        {
+          "value": "$7,500",
+          "ref": 7500.0
+        },
+        {
+          "value": "$204",
+          "ref": 204.0
+        },
+        {
+          "value": "$7,020",
+          "ref": 7020.0
+        },
+        {
+          "value": "$244",
+          "ref": 244.0
+        },
+        {
+          "value": "$7,500",
+          "ref": 7500.0
+        },
+        {
+          "value": "$332",
+          "ref": 332.0
+        },
+        {
+          "value": "$6,490",
+          "ref": 6490.0
+        },
+        {
+          "value": "$244",
+          "ref": 244.0
+        },
+        {
+          "value": "$7,500",
+          "ref": 7500.0
+        },
+        {
+          "value": "$332",
+          "ref": 332.0
+        },
+        {
+          "value": "$6,490",
+          "ref": 6490.0
+        },
+        {
+          "value": "2.91%",
+          "ref": 2.9
+        },
+        {
+          "value": "3.25%",
+          "ref": 3.3
+        },
+        {
+          "value": "5.12%",
+          "ref": 5.1
+        },
+        {
+          "value": "2.91%",
+          "ref": 2.9
+        },
+        {
+          "value": "3.25%",
+          "ref": 3.3
+        },
+        {
+          "value": "5.12%",
+          "ref": 5.1
+        },
+        {
+          "value": "3.25%",
+          "ref": 3.3
+        },
+        {
+          "value": "5.1%",
+          "ref": 5.1
+        },
+        {
+          "value": "5.12%",
+          "ref": 5.1
+        },
+        {
+          "value": "2.9%",
+          "ref": 2.9
+        },
+        {
+          "value": "3.3%",
+          "ref": 3.3
+        },
+        {
+          "value": "3.8%",
+          "ref": 3.8
+        },
+        {
+          "value": "2.91%",
+          "ref": 2.9
+        },
+        {
+          "value": "3.25%",
+          "ref": 3.3
+        },
+        {
+          "value": "5.12%",
+          "ref": 5.1
+        },
+        {
+          "value": "3.76%",
+          "ref": 3.8
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$88",
+          "num": 88.0,
+          "correct": 204.0,
+          "dev": 0.5686,
+          "source": "source_document"
+        },
+        {
+          "value": "$480",
+          "num": 480.0,
+          "correct": 332.0,
+          "dev": 0.3083,
+          "source": "source_document"
+        },
+        {
+          "value": "$1,010",
+          "num": 1010.0,
+          "correct": 1740.0,
+          "dev": 0.4195,
+          "source": "evidence"
+        },
+        {
+          "value": "$88",
+          "num": 88.0,
+          "correct": 204.0,
+          "dev": 0.5686,
+          "source": "source_document"
+        },
+        {
+          "value": "$480",
+          "num": 480.0,
+          "correct": 332.0,
+          "dev": 0.3083,
+          "source": "source_document"
+        },
+        {
+          "value": "$1,010",
+          "num": 1010.0,
+          "correct": 1740.0,
+          "dev": 0.4195,
+          "source": "evidence"
+        },
+        {
+          "value": "$88",
+          "num": 88.0,
+          "correct": 204.0,
+          "dev": 0.5686,
+          "source": "source_document"
+        },
+        {
+          "value": "$480",
+          "num": 480.0,
+          "correct": 332.0,
+          "dev": 0.3083,
+          "source": "source_document"
+        },
+        {
+          "value": "$1,010",
+          "num": 1010.0,
+          "correct": 1740.0,
+          "dev": 0.4195,
+          "source": "evidence"
+        },
+        {
+          "value": "6.84%",
+          "num": 6.84,
+          "correct": 5.1,
+          "dev": 0.2544,
+          "source": "source_document"
+        },
+        {
+          "value": "6.84%",
+          "num": 6.84,
+          "correct": 5.1,
+          "dev": 0.2544,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$40"
+        },
+        {
+          "value": "$40"
+        },
+        {
+          "value": "$40"
+        },
+        {
+          "value": "19.61%"
+        },
+        {
+          "value": "36.07%"
+        },
+        {
+          "value": "-13.47%"
+        },
+        {
+          "value": "19.61%"
+        },
+        {
+          "value": "36.07%"
+        },
+        {
+          "value": "-13.47%"
+        },
+        {
+          "value": "14.3%"
+        },
+        {
+          "value": "14.3%"
+        },
+        {
+          "value": "16.3%"
+        },
+        {
+          "value": "14.3%"
+        },
+        {
+          "value": "16.3%"
+        }
+      ],
+      "n_refs": 13
+    },
+    "gate_3": {
+      "verified": [
+        {
+          "value": "$204 million",
+          "ref": 204.0
+        },
+        {
+          "value": "$244 million",
+          "ref": 244.0
+        },
+        {
+          "value": "$332 million",
+          "ref": 332.0
+        },
+        {
+          "value": "$7,020 million",
+          "ref": 7020.0
+        },
+        {
+          "value": "$7,500 million",
+          "ref": 7500.0
+        },
+        {
+          "value": "$6,490 million",
+          "ref": 6490.0
+        },
+        {
+          "value": "3.8%",
+          "ref": 3.8
+        },
+        {
+          "value": "2.9%",
+          "ref": 2.9
+        },
+        {
+          "value": "3.3%",
+          "ref": 3.3
+        },
+        {
+          "value": "5.1%",
+          "ref": 5.1
+        },
+        {
+          "value": "3.8%",
+          "ref": 3.8
+        },
+        {
+          "value": "3.8%",
+          "ref": 3.8
+        }
+      ],
+      "refuted": [
+        {
+          "value": "6.84%",
+          "num": 6.84,
+          "correct": 5.1,
+          "dev": 0.2544,
+          "source": "source_document"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "19.61%"
+        },
+        {
+          "value": "36.07%"
+        },
+        {
+          "value": "-13.47%"
+        }
+      ],
+      "n_refs": 13
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_010_CBE1B721",
+      "hid": "FB_010_CBE1B721_H2",
+      "method": "ours",
+      "type": "percentage",
+      "inj_num": 14.3,
+      "orig_num": 3.3,
+      "survived": false,
+      "corrected": true,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_010_CBE1B721",
+      "hid": "FB_010_CBE1B721_H1",
+      "method": "ours",
+      "type": "percentage",
+      "inj_num": 16.3,
+      "orig_num": 5.1,
+      "survived": false,
+      "corrected": true,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:06:30.880943+00:00"
+}

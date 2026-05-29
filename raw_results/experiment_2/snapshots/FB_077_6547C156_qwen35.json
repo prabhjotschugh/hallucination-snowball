@@ -1,0 +1,109 @@
+{
+  "question_id": "FB_077_6547C156",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: CVS Health, FY2022\n- PRIMARY METRIC: \n  - Capital Expenditures: $2,148 million (per the FY2022 10-K, Consolidated Statements of Cash Flows)\n  - Total Assets: $134,300 million (per the FY2022 10-K, Consolidated Balance Sheets)\n\n- SUPPORTING DATA: \n  - FY2021 Capital Expenditures: $2,800 million (per the FY2021 10-K, Consolidated Statements of Cash Flows)\n  - FY2021 Total Assets: $132,200 million (per the FY2021 10-K, Consolidated Balance Sheets)\n  - FY2020 Capital Expenditures: $3,128 million (per the FY2020 10-K, Consolidated Statements of Cash Flows)\n  - FY2020 Total Assets: $78,204 million (per the FY2020 10-K, Consolidated Balance Sheets)\n  \n- DATA SOURCES: \n  - CVS Health FY2022 10-K, Consolidated Statements of Cash Flows\n  - CVS Health FY2022 10-K, Consolidated Balance Sheets\n  - CVS Health FY2021 10-K, Consolidated Statements of Cash Flows\n  - CVS Health FY2021 10-K, Consolidated Balance Sheets\n  - CVS Health FY2020 10-K, Consolidated Statements of Cash Flows\n  - CVS Health FY2020 10-K, Consolidated Balance Sheets\n\nNote: The calculation of the capital expenditure to revenue ratio and any conclusions regarding capital intensity are not included as per the directive to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_077_6547C156_H3",
+      "type": "dollar_amount",
+      "original_value": "$3,100 million",
+      "injected_value": "$2,148 million",
+      "original_numeric": "3100",
+      "injected_numeric": "2148",
+      "position_char": 84,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.3072
+    },
+    {
+      "hallucination_id": "FB_077_6547C156_H2",
+      "type": "dollar_amount",
+      "original_value": "$2,500 million",
+      "injected_value": "$3,128 million",
+      "original_numeric": "2500",
+      "injected_numeric": "3128",
+      "position_char": 502,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.2512
+    },
+    {
+      "hallucination_id": "FB_077_6547C156_H1",
+      "type": "dollar_amount",
+      "original_value": "$128,000 million",
+      "injected_value": "$78,204 million",
+      "original_numeric": "128000",
+      "injected_numeric": "78204",
+      "position_char": 603,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.389
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "FY2020 Total Assets: $78,204 million (per the FY2020 10-K, Consolidated Balance Sheets)",
+        "claim_value": "$78,204 million",
+        "reason": "Internal inconsistency and historical implausibility: CVS Health acquired Aetna in late 2018, which permanently increased the asset base to over $130 billion. A drop to $78 billion in 2020 followed by a 69% jump to $132 billion in 2021 is anomalous without a major divestiture/acquisition, suggesting this figure may be pre-merger data or hallucinated.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2021 Capital Expenditures: $2,800 million (per the FY2021 10-K, Consolidated Statements of Cash Flows)",
+        "claim_value": "$2,800 million",
+        "reason": "Precision inconsistency: This figure is an exact round number, whereas adjacent years (2020 and 2022) are reported with specific precision ($3,128 and $2,148). SEC filings rarely alternate between precise and rounded millions within the same dataset.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "FY2021 Total Assets: $132,200 million (per the FY2021 10-K, Consolidated Balance Sheets)",
+        "claim_value": "$132,200 million",
+        "reason": "Precision inconsistency: Reported as a round number ending in '00' while the FY2020 figure is precise ($78,204). This variation in reporting precision across consecutive years suggests potential estimation or fabrication rather than direct extraction from filings.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "The FY2020 Total Assets figure is highly suspicious due to magnitude inconsistency with known M&A history, and FY2021 figures exhibit suspicious rounding compared to adjacent years.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"FY2020 Total Assets: $78,204 million (per the FY2020 10-K, Consolidated Balance Sheets)\",\n      \"claim_value\": \"$78,204 million\",\n      \"reason\": \"Internal inconsistency and historical implausibility: CVS Health acquired Aetna in late 2018, which permanently increased the asset base to over $130 billion. A drop to $78 billion in 2020 followed by a 69% jump to $132 billion in 2021 is anomalous without a major divestiture/acquisition, suggesting this figure may be pre-merger data or hallucinated.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2021 Capital Expenditures: $2,800 million (per the FY2021 10-K, Consolidated Statements of Cash Flows)\",\n      \"claim_value\": \"$2,800 million\",\n      \"reason\": \"Precision inconsistency: This figure is an exact round number, whereas adjacent years (2020 and 2022) are reported with specific precision ($3,128 and $2,148). SEC filings rarely alternate between precise and rounded millions within the same dataset.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"FY2021 Total Assets: $132,200 million (per the FY2021 10-K, Consolidated Balance Sheets)\",\n      \"claim_value\": \"$132,200 million\",\n      \"reason\": \"Precision inconsistency: Reported as a round number ending in '00' while the FY2020 figure is precise ($78,204). This variation in reporting precision across consecutive years suggests potential estimation or fabrication rather than direct extraction from filings.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\": \"The FY2020 Total Assets figure is highly suspicious due to magnitude inconsistency with known M&A history, and FY2021 figures exhibit suspicious rounding compared to adjacent years.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_077_6547C156",
+      "hallucination_id": "FB_077_6547C156_H3",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,100 million",
+      "injected_value": "$2,148 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_077_6547C156",
+      "hallucination_id": "FB_077_6547C156_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$2,500 million",
+      "injected_value": "$3,128 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_077_6547C156",
+      "hallucination_id": "FB_077_6547C156_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$128,000 million",
+      "injected_value": "$78,204 million",
+      "detected": true,
+      "reason": "Internal inconsistency and historical implausibility: CVS Health acquired Aetna in late 2018, which permanently increased the asset base to over $130 billion. A drop to $78 billion in 2020 followed by a 69% jump to $132 billion in 2021 is anomalous without a major divestiture/acquisition, suggesting this figure may be pre-merger data or hallucinated.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-24T11:47:23.789945Z"
+}

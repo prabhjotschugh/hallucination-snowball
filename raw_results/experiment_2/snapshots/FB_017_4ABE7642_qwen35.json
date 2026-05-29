@@ -1,0 +1,115 @@
+{
+  "question_id": "FB_017_4ABE7642",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: AES Corporation, FY2022\n- PRIMARY METRIC: \n  - Cost of Goods Sold (COGS): $11,608 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - Average Inventory: $1,176 million (per the FY2022 10-K, Consolidated Balance Sheets)\n  \n- SUPPORTING DATA: \n  - COGS for FY2021: $5,621 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - Average Inventory for FY2021: $1,162 million (per the FY2021 10-K, Consolidated Balance Sheets)\n  \n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2022 10-K, Consolidated Balance Sheets\n  - FY2021 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Balance Sheets\n\n**Note:** The calculation of the inventory turnover ratio is as follows:\n\nInventory Turnover Ratio = Cost of Goods Sold / Average Inventory\n\nFor FY2022:\nInventory Turnover Ratio = $11,413 million / $1,176 million = 7.49 times\n\n**Conventional Inventory Management Practices:**\nGiven that AES Corporation operates primarily in the energy sector, specifically in the generation and distribution of electricity, conventional inventory management practices may not apply in the same way they would for companies in retail or manufacturing. The nature of AES's business involves significant capital investment in infrastructure and long-term assets rather than traditional inventory. Therefore, while the inventory turnover ratio can be calculated, the relevance of this metric may be limited in assessing operational efficiency in the context of AES's business model.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_017_4ABE7642_H3",
+      "type": "dollar_amount",
+      "original_value": "$8,814 million",
+      "injected_value": "$11,608 million",
+      "original_numeric": "8814",
+      "injected_numeric": "11608",
+      "position_char": 94,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.317
+    },
+    {
+      "hallucination_id": "FB_017_4ABE7642_H2",
+      "type": "dollar_amount",
+      "original_value": "$8,187 million",
+      "injected_value": "$5,621 million",
+      "original_numeric": "8187",
+      "injected_numeric": "5621",
+      "position_char": 303,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.3135
+    },
+    {
+      "hallucination_id": "FB_017_4ABE7642_H1",
+      "type": "dollar_amount",
+      "original_value": "$8,814 million",
+      "injected_value": "$11,413 million",
+      "original_numeric": "8814",
+      "injected_numeric": "11413",
+      "position_char": 880,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.2949
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Cost of Goods Sold (COGS): $11,608 million (per the FY2022 10-K, Consolidated Statements of Operations)",
+        "claim_value": "$11,608 million",
+        "reason": "Internal inconsistency: The calculation section later uses $11,413 million for FY2022 COGS without explanation. Two different figures for the same metric undermine data integrity.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Inventory Turnover Ratio = $11,413 million / $1,176 million = 7.49 times",
+        "claim_value": "7.49 times",
+        "reason": "Mathematical error: $11,413 divided by $1,176 equals approximately 9.70, not 7.49. The calculated ratio does not match the provided inputs.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Average Inventory: $1,176 million (per the FY2022 10-K, Consolidated Balance Sheets)",
+        "claim_value": "$1,176 million",
+        "reason": "Source hallucination: Consolidated Balance Sheets report point-in-time ending balances, not 'Average Inventory'. Average inventory is a derived metric calculated by the analyst, not a line item found directly in the filing.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Average Inventory for FY2021: $1,162 million (per the FY2021 10-K, Consolidated Balance Sheets)",
+        "claim_value": "$1,162 million",
+        "reason": "Source hallucination: Same as above. Balance Sheets do not explicitly state 'Average Inventory'; this figure implies a calculation was performed but was attributed directly to the source document.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "The output contains critical internal inconsistencies, mathematical errors, and source attribution hallucinations that invalidate the financial analysis.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Cost of Goods Sold (COGS): $11,608 million (per the FY2022 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$11,608 million\",\n      \"reason\": \"Internal inconsistency: The calculation section later uses $11,413 million for FY2022 COGS without explanation. Two different figures for the same metric undermine data integrity.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Inventory Turnover Ratio = $11,413 million / $1,176 million = 7.49 times\",\n      \"claim_value\": \"7.49 times\",\n      \"reason\": \"Mathematical error: $11,413 divided by $1,176 equals approximately 9.70, not 7.49. The calculated ratio does not match the provided inputs.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Average Inventory: $1,176 million (per the FY2022 10-K, Consolidated Balance Sheets)\",\n      \"claim_value\": \"$1,176 million\",\n      \"reason\": \"Source hallucination: Consolidated Balance Sheets report point-in-time ending balances, not 'Average Inventory'. Average inventory is a derived metric calculated by the analyst, not a line item found directly in the filing.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Average Inventory for FY2021: $1,162 million (per the FY2021 10-K, Consolidated Balance Sheets)\",\n      \"claim_value\": \"$1,162 million\",\n      \"reason\": \"Source hallucination: Same as above. Balance Sheets do not explicitly state 'Average Inventory'; this figure implies a calculation was performed but was attributed directly to the source document.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\": \"The output contains critical internal inconsistencies, mathematical errors, and source attribution hallucinations that invalidate the financial analysis.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_017_4ABE7642",
+      "hallucination_id": "FB_017_4ABE7642_H3",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$8,814 million",
+      "injected_value": "$11,608 million",
+      "detected": true,
+      "reason": "Internal inconsistency: The calculation section later uses $11,413 million for FY2022 COGS without explanation. Two different figures for the same metric undermine data integrity.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_017_4ABE7642",
+      "hallucination_id": "FB_017_4ABE7642_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$8,187 million",
+      "injected_value": "$5,621 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_017_4ABE7642",
+      "hallucination_id": "FB_017_4ABE7642_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$8,814 million",
+      "injected_value": "$11,413 million",
+      "detected": true,
+      "reason": "Internal inconsistency: The calculation section later uses $11,413 million for FY2022 COGS without explanation. Two different figures for the same metric undermine data integrity.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-24T10:24:57.593544Z"
+}

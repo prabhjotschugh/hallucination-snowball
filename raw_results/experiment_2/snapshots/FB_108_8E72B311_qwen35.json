@@ -1,0 +1,85 @@
+{
+  "question_id": "FB_108_8E72B311",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: MGM Resorts International, FY2022\n- PRIMARY METRIC: Adjusted EBIT for FY2022 was $1,158 million (per the FY2022 10-K, Consolidated Statements of Operations). Annual Interest Expense for FY2022 was $438 million (per the FY2022 10-K, Note 8 - Debt).\n- INTEREST COVERAGE RATIO: The interest coverage ratio for FY2022 is calculated as Adjusted EBIT / Interest Expense = $793 million / $438 million = 2.64.\n- SUPPORTING DATA:\n  - Adjusted EBIT for FY2021: $1,063 million (per the FY2021 10-K, Consolidated Statements of Operations).\n  - Interest Expense for FY2021: $301 million (per the FY2021 10-K, Note 8 - Debt).\n  - Adjusted EBIT for FY2020: $1,020 million (per the FY2020 10-K, Consolidated Statements of Operations).\n  - Interest Expense for FY2020: $474 million (per the FY2020 10-K, Note 8 - Debt).\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations, Note 8 - Debt.\n  - FY2021 10-K, Consolidated Statements of Operations, Note 8 - Debt.\n  - FY2020 10-K, Consolidated Statements of Operations, Note 8 - Debt.\n\nPlease note that I have provided the exact figures and supporting data as requested, but I have not included any analysis or benchmarking against industry peers, as per your directive.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_108_8E72B311_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,158 million",
+      "injected_value": "$793 million",
+      "original_numeric": "1158",
+      "injected_numeric": "793",
+      "position_char": 386,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.3155
+    },
+    {
+      "hallucination_id": "FB_108_8E72B311_H1",
+      "type": "dollar_amount",
+      "original_value": "$410 million",
+      "injected_value": "$301 million",
+      "original_numeric": "410",
+      "injected_numeric": "301",
+      "position_char": 583,
+      "sentence_approx": 6,
+      "perturbation_delta": -0.267
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "The interest coverage ratio for FY2022 is calculated as Adjusted EBIT / Interest Expense = $793 million / $438 million = 2.64.",
+        "claim_value": "$793 million / $438 million = 2.64",
+        "reason": "Internal inconsistency and mathematical error. The numerator ($793 million) contradicts the previously stated FY2022 Adjusted EBIT ($1,158 million). Additionally, $793 million divided by $438 million equals approximately 1.81, not 2.64. The ratio 2.64 is consistent with $1,158 million, indicating the $793 million figure is hallucinated.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Adjusted EBIT for FY2020: $1,020 million (per the FY2020 10-K, Consolidated Statements of Operations).",
+        "claim_value": "$1,020 million",
+        "reason": "Plausibility concern. MGM Resorts operations were severely impacted by pandemic-related closures in 2020. Reporting an Adjusted EBIT figure nearly equivalent to 2021 and 2022 levels ($1,020m vs $1,063m/$1,158m) contradicts general knowledge of the sector's significant profitability decline during that period.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Adjusted EBIT for FY2022 was $1,158 million (per the FY2022 10-K, Consolidated Statements of Operations).",
+        "claim_value": "Consolidated Statements of Operations",
+        "reason": "Technical accounting inaccuracy. Adjusted EBIT is a non-GAAP financial measure and would not appear directly on the GAAP Consolidated Statements of Operations. It is typically found in a reconciliation table or management discussion section.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 7,
+    "overall_assessment": "The output contains critical internal inconsistencies, mathematical errors, and technical accounting inaccuracies regarding financial statement classification.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"The interest coverage ratio for FY2022 is calculated as Adjusted EBIT / Interest Expense = $793 million / $438 million = 2.64.\",\n      \"claim_value\": \"$793 million / $438 million = 2.64\",\n      \"reason\": \"Internal inconsistency and mathematical error. The numerator ($793 million) contradicts the previously stated FY2022 Adjusted EBIT ($1,158 million). Additionally, $793 million divided by $438 million equals approximately 1.81, not 2.64. The ratio 2.64 is consistent with $1,158 million, indicating the $793 million figure is hallucinated.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Adjusted EBIT for FY2020: $1,020 million (per the FY2020 10-K, Consolidated Statements of Operations).\",\n      \"claim_value\": \"$1,020 million\",\n      \"reason\": \"Plausibility concern. MGM Resorts operations were severely impacted by pandemic-related closures in 2020. Reporting an Adjusted EBIT figure nearly equivalent to 2021 and 2022 levels ($1,020m vs $1,063m/$1,158m) contradicts general knowledge of the sector's significant profitability decline during that period.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Adjusted EBIT for FY2022 was $1,158 million (per the FY2022 10-K, Consolidated Statements of Operations).\",\n      \"claim_value\": \"Consolidated Statements of Operations\",\n      \"reason\": \"Technical accounting inaccuracy. Adjusted EBIT is a non-GAAP financial measure and would not appear directly on the GAAP Consolidated Statements of Operations. It is typically found in a reconciliation table or management discussion section.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 7,\n  \"overall_assessment\": \"The output contains critical internal inconsistencies, mathematical errors, and technical accounting inaccuracies regarding financial statement classification.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_108_8E72B311",
+      "hallucination_id": "FB_108_8E72B311_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,158 million",
+      "injected_value": "$793 million",
+      "detected": true,
+      "reason": "Internal inconsistency and mathematical error. The numerator ($793 million) contradicts the previously stated FY2022 Adjusted EBIT ($1,158 million). Additionally, $793 million divided by $438 million equals approximately 1.81, not 2.64. The ratio 2.64 is consistent with $1,158 million, indicating the $793 million figure is hallucinated.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_108_8E72B311",
+      "hallucination_id": "FB_108_8E72B311_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$410 million",
+      "injected_value": "$301 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 7
+    }
+  ],
+  "timestamp": "2026-03-24T12:37:03.715474Z"
+}

@@ -1,0 +1,79 @@
+{
+  "question_id": "FB_144_BD395CC4",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: Verizon Communications Inc., FY 2021\n- PRIMARY METRIC: As of FY 2021, Verizon projected retiree benefit obligations for the year 2024 to be $2,611 million (USD millions) per the FY2021 10-K, Note 12 - Employee Benefits.\n- SUPPORTING DATA: \n  - For FY 2020, the projected retiree benefit obligations were $4,598 million (USD millions).\n  - For FY 2019, the projected retiree benefit obligations were $3,400 million (USD millions).\n- DATA SOURCES: \n  - FY2021 10-K, Note 12 - Employee Benefits\n  - FY2020 10-K, Note 12 - Employee Benefits\n  - FY2019 10-K, Note 12 - Employee Benefits\n\nPlease note that the analysis of trends and computation of financial ratios is beyond the scope of this data extraction report and should be conducted by downstream analysts.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_144_BD395CC4_H2",
+      "type": "dollar_amount",
+      "original_value": "$3,800 million",
+      "injected_value": "$2,611 million",
+      "original_numeric": "3800",
+      "injected_numeric": "2611",
+      "position_char": 160,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3129
+    },
+    {
+      "hallucination_id": "FB_144_BD395CC4_H1",
+      "type": "dollar_amount",
+      "original_value": "$3,600 million",
+      "injected_value": "$4,598 million",
+      "original_numeric": "3600",
+      "injected_numeric": "4598",
+      "position_char": 324,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.2772
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "As of FY 2021, Verizon projected retiree benefit obligations for the year 2024 to be $2,611 million (USD millions)",
+        "claim_value": "$2,611 million",
+        "reason": "The projected obligation for 2024 is significantly lower than the 2020 and 2019 figures ($4,598M and $3,400M respectively), which is unusual without explanation for a large reduction in retiree benefits.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "For FY 2020, the projected retiree benefit obligations were $4,598 million (USD millions)",
+        "claim_value": "$4,598 million",
+        "reason": "This figure is higher than both 2019 and the projection for 2024, which could indicate a spike followed by a sharp decline. Such volatility in retiree benefit obligations is uncommon without structural changes or divestitures.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 3,
+    "overall_assessment": "The figures provided show unusual volatility in retiree benefit obligations across the years, particularly the sharp decline from 2020 to the 2024 projection, which merits further verification.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"As of FY 2021, Verizon projected retiree benefit obligations for the year 2024 to be $2,611 million (USD millions)\",\n      \"claim_value\": \"$2,611 million\",\n      \"reason\": \"The projected obligation for 2024 is significantly lower than the 2020 and 2019 figures ($4,598M and $3,400M respectively), which is unusual without explanation for a large reduction in retiree benefits.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"For FY 2020, the projected retiree benefit obligations were $4,598 million (USD millions)\",\n      \"claim_value\": \"$4,598 million\",\n      \"reason\": \"This figure is higher than both 2019 and the projection for 2024, which could indicate a spike followed by a sharp decline. Such volatility in retiree benefit obligations is uncommon without structural changes or divestitures.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 3,\n  \"overall_assessment\": \"The figures provided show unusual volatility in retiree benefit obligations across the years, particularly the sharp decline from 2020 to the 2024 projection, which merits further verification.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_144_BD395CC4",
+      "hallucination_id": "FB_144_BD395CC4_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,800 million",
+      "injected_value": "$2,611 million",
+      "detected": true,
+      "reason": "The projected obligation for 2024 is significantly lower than the 2020 and 2019 figures ($4,598M and $3,400M respectively), which is unusual without explanation for a large reduction in retiree benefits.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 3
+    },
+    {
+      "question_id": "FB_144_BD395CC4",
+      "hallucination_id": "FB_144_BD395CC4_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,600 million",
+      "injected_value": "$4,598 million",
+      "detected": true,
+      "reason": "This figure is higher than both 2019 and the projection for 2024, which could indicate a spike followed by a sharp decline. Such volatility in retiree benefit obligations is uncommon without structural changes or divestitures.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 3
+    }
+  ],
+  "timestamp": "2026-03-24T10:02:46.083881Z"
+}

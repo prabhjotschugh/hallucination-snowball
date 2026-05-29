@@ -1,0 +1,170 @@
+{
+  "question_id": "FB_119_3CD84B18",
+  "method": "end_check",
+  "final_output": "## Financial Report: PayPal Holdings, Inc. - Fiscal Year 2022\n\n### Executive Summary\n\nPayPal Holdings, Inc. demonstrated a robust improvement in its short-term liquidity position during Fiscal Year 2022. The company's Working Capital significantly increased to $13,378 million, up from $7,622 million in FY2021. This positive trend is primarily driven by a substantial 24.42% increase in Current Assets, reaching $23,876 million, coupled with a 9.25% decrease in Current Liabilities to $10,498 million. The Current Ratio also strengthened to 2.27x, indicating a healthy ability to cover short-term obligations.\n\n### Analysis\n\nPayPal's financial health, particularly its short-term liquidity, showed considerable strengthening in FY2022. Current Assets grew by $4,686 million (24.42%) from $19,190 million in FY2021 to $23,876 million in FY2022. Concurrently, Current Liabilities decreased by $1,070 million (-9.25%) from $11,568 million in FY2021 to $10,498 million in FY2022. This combined effect led to a substantial increase in Working Capital from $7,622 million in FY2021 to $13,378 million in FY2022. The Current Ratio, a key liquidity indicator, improved from 1.66x in FY2021 to 2.27x in FY2022, surpassing the 1.86x reported in FY2020. This indicates a stronger capacity to meet immediate financial obligations compared to previous years.\n\n### Key Considerations\n\nWhile the overall trend in liquidity is positive, maintaining this strong position will require sustained growth in Current Assets and prudent management of Current Liabilities. Accuracy in financial reporting is paramount for reliable financial assessments.\n\n### Conclusion\n\nPayPal Holdings, Inc. concluded Fiscal Year 2022 with a significantly enhanced liquidity profile. The substantial increase in Working Capital to $13,378 million and the improved Current Ratio of 2.27x reflect a robust short-term financial position. This strong performance is attributable to effective asset management and a reduction in short-term liabilities. Continued vigilance in financial reporting and strategic management of working capital components will be essential for PayPal's ongoing financial stability.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: PayPal Holdings, Inc. - Fiscal Year 2022\n\n- PRIMARY METRIC: \n  - Current Assets: $23,876 million (per the FY2022 10-K, Consolidated Balance Sheets)\n  - Current Liabilities: $10,498 million (per the FY2022 10-K, Consolidated Balance Sheets)\n  - Working Capital Calculation: \n    - Working Capital = Current Assets - Current Liabilities \n    - Working Capital = $18,407 million - $12,740 million = $7,909 million\n\n- SUPPORTING DATA: \n  - Current Assets (FY2021): $19,190 million (per the FY2021 10-K, Consolidated Balance Sheets)\n  - Current Liabilities (FY2021): $11,568 million (per the FY2021 10-K, Consolidated Balance Sheets)\n  - Current Assets (FY2020): $16,118 million (per the FY2020 10-K, Consolidated Balance Sheets)\n  - Current Liabilities (FY2020): $8,689 million (per the FY2020 10-K, Consolidated Balance Sheets)\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Balance Sheets\n  - FY2021 10-K, Consolidated Balance Sheets\n  - FY2020 10-K, Consolidated Balance Sheets\n\n**Note:** The calculated working capital for PayPal in FY2022 is $7,909 million, which is positive. \n\nRegarding the relevance of working capital for PayPal's operational model, I will refrain from providing an analysis or interpretation as per the instructions. Please consult downstream analysts for further insights on the implications of this working capital figure within the context of PayPal's business model and industry benchmarks.",
+    "2": "Here's an analysis of PayPal Holdings, Inc.'s financial data for FY2022, including year-over-year changes and relevant ratios.\n\n**Data Correction:**\nThe provided \"Working Capital Calculation\" for FY2022 uses incorrect Current Assets and Current Liabilities values. We will use the primary metric values provided for FY2022.\n\n**Corrected FY2022 Data:**\n*   Current Assets (FY2022): $23,876 million\n*   Current Liabilities (FY2022): $10,498 million\n\n---\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\n**Formulas:**\n*   Absolute Change = Current Year Value - Prior Year Value\n*   Percentage Change = (Absolute Change / Prior Year Value) * 100\n\n| Metric             | FY2022 (M) | FY2021 (M) | FY2020 (M) | Abs Change (22-21) (M) | % Change (22-21) | Abs Change (21-20) (M) | % Change (21-20) |\n| :----------------- | :--------- | :--------- | :--------- | :--------------------- | :--------------- | :--------------------- | :--------------- |\n| Current Assets     | $23,876    | $19,190    | $16,118    | $4,686                 | 24.42%           | $3,072                 | 19.06%           |\n| Current Liabilities| $10,498    | $11,568    | $8,689     | -$1,070                | -9.25%           | $2,879                 | 33.13%           |\n\n---\n\n**2. Relevant Ratios**\n\n**Formulas:**\n*   Working Capital = Current Assets - Current Liabilities\n*   Current Ratio = Current Assets / Current Liabilities\n\n| Ratio             | FY2022 (M) | FY2021 (M) | FY2020 (M) |\n| :---------------- | :--------- | :--------- | :--------- |\n| **Working Capital** |            |            |            |\n| Current Assets    | $23,876    | $19,190    | $16,118    |\n| Current Liabilities| $10,498    | $11,568    | $8,689     |\n| **Working Capital** | **$13,378**| **$7,622** | **$7,429** |\n|                   |            |            |            |\n| **Current Ratio** |            |            |            |\n| Current Assets    | $23,876    | $19,190    | $16,118    |\n| Current Liabilities| $10,498    | $11,568    | $8,689     |\n| **Current Ratio** | **2.27x**  | **1.66x**  | **1.86x**  |\n\n---\n\n**3. Anomalies Flagged**\n\n*   **FY2022 Working Capital Calculation Discrepancy:** The researcher data provided an incorrect working capital calculation for FY2022 ($7,909 million) using refuted Current Assets ($18,407 million) and Current Liabilities ($12,740 million). The correct Working Capital for FY2022, based on the primary metric data, is **$13,378 million**. This is a significant difference and was corrected in the analysis.\n\n*   **Current Liabilities Trend (FY2022):** While Current Assets increased significantly (24.42%), Current Liabilities decreased by 9.25% from FY2021 to FY2022. This is notable as it contributes to a substantial increase in both Working Capital and the Current Ratio for FY2022. In contrast, Current Liabilities increased significantly from FY2020 to FY2021 (33.13%).",
+    "3": "## Financial Report: PayPal Holdings, Inc. - Fiscal Year 2022\n\n### Executive Summary\n\nPayPal Holdings, Inc. demonstrated a robust improvement in its short-term liquidity position during Fiscal Year 2022. The company's Working Capital significantly increased to $13,378 million, up from $7,622 million in FY2021. This positive trend is primarily driven by a substantial 24.42% increase in Current Assets, reaching $23,876 million, coupled with a 9.25% decrease in Current Liabilities to $10,498 million. The Current Ratio also strengthened to 2.27x, indicating a healthy ability to cover short-term obligations.\n\n### Analysis\n\nPayPal's financial health, particularly its short-term liquidity, showed considerable strengthening in FY2022. Current Assets grew by $4,686 million (24.42%) from $19,190 million in FY2021 to $23,876 million in FY2022. Concurrently, Current Liabilities decreased by $1,070 million (-9.25%) from $11,568 million in FY2021 to $10,498 million in FY2022. This combined effect led to a substantial increase in Working Capital from $7,622 million in FY2021 to $13,378 million in FY2022. The Current Ratio, a key liquidity indicator, improved from 1.66x in FY2021 to 2.27x in FY2022, surpassing the 1.86x reported in FY2020. This indicates a stronger capacity to meet immediate financial obligations compared to previous years.\n\n### Key Risks\n\nA primary risk identified is the initial discrepancy in the provided FY2022 Working Capital calculation. The corrected Working Capital of $13,378 million significantly differs from the initially presented $7,909 million. Such data inconsistencies can lead to misinformed financial assessments if not rigorously verified. While the current trend in liquidity is positive, sustained growth in Current Assets and prudent management of Current Liabilities will be crucial for maintaining this strong position.\n\n### Conclusion\n\nPayPal Holdings, Inc. concluded Fiscal Year 2022 with a significantly enhanced liquidity profile. The substantial increase in Working Capital to $13,378 million and the improved Current Ratio of 2.27x reflect a robust short-term financial position. This strong performance is attributable to effective asset management and a reduction in short-term liabilities. Continued vigilance in financial reporting accuracy and strategic management of working capital components will be essential for PayPal's ongoing financial stability.",
+    "4": "## Financial Report: PayPal Holdings, Inc. - Fiscal Year 2022\n\n### Executive Summary\n\nPayPal Holdings, Inc. demonstrated a robust improvement in its short-term liquidity position during Fiscal Year 2022. The company's Working Capital significantly increased to $13,378 million, up from $7,622 million in FY2021. This positive trend is primarily driven by a substantial 24.42% increase in Current Assets, reaching $23,876 million, coupled with a 9.25% decrease in Current Liabilities to $10,498 million. The Current Ratio also strengthened to 2.27x, indicating a healthy ability to cover short-term obligations.\n\n### Analysis\n\nPayPal's financial health, particularly its short-term liquidity, showed considerable strengthening in FY2022. Current Assets grew by $4,686 million (24.42%) from $19,190 million in FY2021 to $23,876 million in FY2022. Concurrently, Current Liabilities decreased by $1,070 million (-9.25%) from $11,568 million in FY2021 to $10,498 million in FY2022. This combined effect led to a substantial increase in Working Capital from $7,622 million in FY2021 to $13,378 million in FY2022. The Current Ratio, a key liquidity indicator, improved from 1.66x in FY2021 to 2.27x in FY2022, surpassing the 1.86x reported in FY2020. This indicates a stronger capacity to meet immediate financial obligations compared to previous years.\n\n### Key Considerations\n\nWhile the overall trend in liquidity is positive, maintaining this strong position will require sustained growth in Current Assets and prudent management of Current Liabilities. Accuracy in financial reporting is paramount for reliable financial assessments.\n\n### Conclusion\n\nPayPal Holdings, Inc. concluded Fiscal Year 2022 with a significantly enhanced liquidity profile. The substantial increase in Working Capital to $13,378 million and the improved Current Ratio of 2.27x reflect a robust short-term financial position. This strong performance is attributable to effective asset management and a reduction in short-term liabilities. Continued vigilance in financial reporting and strategic management of working capital components will be essential for PayPal's ongoing financial stability."
+  },
+  "gates": {
+    "end_gate": {
+      "verified": [
+        {
+          "value": "$10,498 million",
+          "ref": 10498.0
+        },
+        {
+          "value": "$19,190 million",
+          "ref": 19190.0
+        },
+        {
+          "value": "$11,568 million",
+          "ref": 11568.0
+        },
+        {
+          "value": "$10,498 million",
+          "ref": 10498.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$13,378 million",
+          "num": 13378.0,
+          "correct": 11880.0,
+          "dev": 0.112,
+          "source": "evidence"
+        },
+        {
+          "value": "$23,876 million",
+          "num": 23876.0,
+          "correct": 19190.0,
+          "dev": 0.1963,
+          "source": "source_document"
+        },
+        {
+          "value": "$4,686 million",
+          "num": 4686.0,
+          "correct": 4000.0,
+          "dev": 0.1464,
+          "source": "evidence"
+        },
+        {
+          "value": "$23,876 million",
+          "num": 23876.0,
+          "correct": 19190.0,
+          "dev": 0.1963,
+          "source": "source_document"
+        },
+        {
+          "value": "$1,070 million",
+          "num": 1070.0,
+          "correct": 1136.0,
+          "dev": 0.0581,
+          "source": "evidence"
+        },
+        {
+          "value": "$13,378 million",
+          "num": 13378.0,
+          "correct": 11880.0,
+          "dev": 0.112,
+          "source": "evidence"
+        },
+        {
+          "value": "$13,378 million",
+          "num": 13378.0,
+          "correct": 11880.0,
+          "dev": 0.112,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$7,622 million"
+        },
+        {
+          "value": "$7,622 million"
+        },
+        {
+          "value": "24.42%"
+        },
+        {
+          "value": "9.25%"
+        },
+        {
+          "value": "24.42%"
+        },
+        {
+          "value": "-9.25%"
+        }
+      ],
+      "n_refs": 16
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_119_3CD84B18",
+      "hid": "FB_119_3CD84B18_H3",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 23876.0,
+      "orig_num": 18407.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": true,
+      "any_det": true,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_119_3CD84B18",
+      "hid": "FB_119_3CD84B18_H2",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 12740.0,
+      "orig_num": 10498.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": true,
+      "any_det": true,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_119_3CD84B18",
+      "hid": "FB_119_3CD84B18_H1",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 8689.0,
+      "orig_num": 10226.0,
+      "survived": false,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:47:46.916060+00:00"
+}

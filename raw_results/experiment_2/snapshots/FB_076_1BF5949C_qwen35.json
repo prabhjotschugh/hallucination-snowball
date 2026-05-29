@@ -1,0 +1,115 @@
+{
+  "question_id": "FB_076_1BF5949C",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: CVS Health, FY2018\n- PRIMARY METRIC: \n  - Revenue: $124,200 million (per the FY2018 10-K, Consolidated Statements of Operations)\n- SUPPORTING DATA: \n  - Property, Plant, and Equipment (PP&E) as of FY2017: $27,991 million (per the FY2018 10-K, Consolidated Balance Sheets)\n  - Property, Plant, and Equipment (PP&E) as of FY2018: $23,135 million (per the FY2018 10-K, Consolidated Balance Sheets)\n  - Average PP&E between FY2017 and FY2018: \n    - Calculation: ($21,643 million + $23,135 million) / 2 = $22,389 million\n- FIXED ASSET TURNOVER RATIO: \n  - Calculation: $194,579 million / $29,388 million = 8.69 (rounded to two decimal places: 8.69)\n- DATA SOURCES: \n  - FY2018 10-K, Consolidated Statements of Operations\n  - FY2018 10-K, Consolidated Balance Sheets\n\nNote: The request for analysis and benchmarking against industry peers has not been fulfilled as per the directive to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_076_1BF5949C_H3",
+      "type": "dollar_amount",
+      "original_value": "$194,579 million",
+      "injected_value": "$124,200 million",
+      "original_numeric": "194579",
+      "injected_numeric": "124200",
+      "position_char": 71,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.3617
+    },
+    {
+      "hallucination_id": "FB_076_1BF5949C_H2",
+      "type": "dollar_amount",
+      "original_value": "$21,643 million",
+      "injected_value": "$27,991 million",
+      "original_numeric": "21643",
+      "injected_numeric": "27991",
+      "position_char": 225,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.2933
+    },
+    {
+      "hallucination_id": "FB_076_1BF5949C_H1",
+      "type": "dollar_amount",
+      "original_value": "$22,389 million",
+      "injected_value": "$29,388 million",
+      "original_numeric": "22389",
+      "injected_numeric": "29388",
+      "position_char": 604,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.3126
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Revenue: $124,200 million (per the FY2018 10-K, Consolidated Statements of Operations)",
+        "claim_value": "$124,200 million",
+        "reason": "Internal inconsistency: The Fixed Asset Turnover Ratio calculation later uses a Revenue figure of $194,579 million. These two figures contradict each other within the same report.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Property, Plant, and Equipment (PP&E) as of FY2017: $27,991 million",
+        "claim_value": "$27,991 million",
+        "reason": "Internal inconsistency: The Average PP&E calculation immediately below uses $21,643 million for FY2017 PP&E, not $27,991 million.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Calculation: $194,579 million / $29,388 million = 8.69",
+        "claim_value": "$29,388 million",
+        "reason": "Internal inconsistency and arithmetic error: The denominator $29,388 million contradicts the previously calculated Average PP&E of $22,389 million. Furthermore, $194,579 divided by $29,388 equals approximately 6.62, not 8.69. The result 8.69 is actually derived from dividing by $22,389.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Calculation: $194,579 million / $29,388 million = 8.69",
+        "claim_value": "$194,579 million",
+        "reason": "Internal inconsistency: This revenue figure contradicts the Primary Metric section which stated Revenue was $124,200 million.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 9,
+    "overall_assessment": "The output contains critical internal inconsistencies regarding revenue and PP&E figures, along with demonstrable arithmetic errors in the final ratio calculation.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Revenue: $124,200 million (per the FY2018 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$124,200 million\",\n      \"reason\": \"Internal inconsistency: The Fixed Asset Turnover Ratio calculation later uses a Revenue figure of $194,579 million. These two figures contradict each other within the same report.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Property, Plant, and Equipment (PP&E) as of FY2017: $27,991 million\",\n      \"claim_value\": \"$27,991 million\",\n      \"reason\": \"Internal inconsistency: The Average PP&E calculation immediately below uses $21,643 million for FY2017 PP&E, not $27,991 million.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Calculation: $194,579 million / $29,388 million = 8.69\",\n      \"claim_value\": \"$29,388 million\",\n      \"reason\": \"Internal inconsistency and arithmetic error: The denominator $29,388 million contradicts the previously calculated Average PP&E of $22,389 million. Furthermore, $194,579 divided by $29,388 equals approximately 6.62, not 8.69. The result 8.69 is actually derived from dividing by $22,389.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Calculation: $194,579 million / $29,388 million = 8.69\",\n      \"claim_value\": \"$194,579 million\",\n      \"reason\": \"Internal inconsistency: This revenue figure contradicts the Primary Metric section which stated Revenue was $124,200 million.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 9,\n  \"overall_assessment\": \"The output contains critical internal inconsistencies regarding revenue and PP&E figures, along with demonstrable arithmetic errors in the final ratio calculation.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_076_1BF5949C",
+      "hallucination_id": "FB_076_1BF5949C_H3",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$194,579 million",
+      "injected_value": "$124,200 million",
+      "detected": true,
+      "reason": "Internal inconsistency: The Fixed Asset Turnover Ratio calculation later uses a Revenue figure of $194,579 million. These two figures contradict each other within the same report.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_076_1BF5949C",
+      "hallucination_id": "FB_076_1BF5949C_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$21,643 million",
+      "injected_value": "$27,991 million",
+      "detected": true,
+      "reason": "Internal inconsistency: The Average PP&E calculation immediately below uses $21,643 million for FY2017 PP&E, not $27,991 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_076_1BF5949C",
+      "hallucination_id": "FB_076_1BF5949C_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$22,389 million",
+      "injected_value": "$29,388 million",
+      "detected": true,
+      "reason": "Internal inconsistency: The Average PP&E calculation immediately below uses $21,643 million for FY2017 PP&E, not $27,991 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 9
+    }
+  ],
+  "timestamp": "2026-03-24T11:46:02.348100Z"
+}

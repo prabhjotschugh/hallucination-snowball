@@ -1,0 +1,436 @@
+{
+  "question_id": "FB_105_61DCE693",
+  "method": "ours",
+  "final_output": "## MGM Resorts International: Financial Performance Review (FY2018-FY2020)\n\n### Executive Summary\n\nThis report analyzes the financial performance of MGM Resorts International (MGM) from Fiscal Year 2018 to 2020, focusing on Capital Expenditures and Total Revenue. The period reveals significant volatility, particularly in FY2020, driven by external economic factors. Capital expenditures remained relatively stable, while revenue experienced a dramatic increase in FY2019 followed by a sharp decline in FY2020. The average Capital Expenditures as a percentage of Total Revenue over the three years was 13.3%.\n\n### Analysis\n\nMGM's Capital Expenditures demonstrated a slight increase from $1,074 million in FY2018 to $1,176 million in FY2019, representing an 8.93% rise. In FY2020, capital expenditures decreased to $1,025 million, a -12.84% reduction from the prior year. Total Revenue, however, showed more significant fluctuations. FY2019 saw a substantial increase to $17,790 million from $8,743 million in FY2018, a 103.48% jump. This was followed by a sharp decline in FY2020, with Total Revenue plummeting to $5,184 million, a -70.86% decrease from FY2019.\n\nThe ratio of Capital Expenditures to Total Revenue highlights these trends. In FY2018, this ratio stood at 12.28%. It decreased to 7.90% in FY2019 due to the significant revenue growth. However, in FY2020, despite a reduction in absolute capital expenditures, the drastic drop in revenue caused this ratio to surge to 19.77%. The three-year average for Capital Expenditures as a percentage of Total Revenue is 13.3%.\n\n### Key Risks\n\nThe primary risk identified is the extreme revenue volatility, particularly the sharp decline in FY2020. This indicates a high susceptibility to external economic shocks, such as the COVID-19 pandemic, which severely impacted the hospitality and entertainment sectors. While capital expenditures were managed downwards in FY2020, the elevated Capex as a percentage of revenue in that year suggests potential pressure on operational efficiency during downturns. The significant revenue increase in FY2019 warrants further investigation to understand its sustainability and if it was driven by one-off events.\n\n### Conclusion\n\nMGM Resorts International experienced a challenging period between FY2018 and FY2020, characterized by substantial revenue fluctuations. While capital expenditures remained relatively consistent, the dramatic decline in FY2020 revenue underscores the company's vulnerability to macroeconomic events. Future performance will heavily depend on the recovery of the global travel and entertainment industry and MGM's ability to adapt its operational and capital allocation strategies to mitigate such risks.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: MGM Resorts International, Fiscal Years 2018 to 2020\n- PRIMARY METRIC: \n  - FY2018 Capital Expenditures: $1,074 million (per the FY2020 10-K, Consolidated Statements of Cash Flows)\n  - FY2019 Capital Expenditures: $1,176 million (per the FY2020 10-K, Consolidated Statements of Cash Flows)\n  - FY2020 Capital Expenditures: $1,025 million (per the FY2020 10-K, Consolidated Statements of Cash Flows)\n  \n  - FY2018 Total Revenue: $8,743 million (per the FY2020 10-K, Consolidated Statements of Operations)\n  - FY2019 Total Revenue: $17,790 million (per the FY2020 10-K, Consolidated Statements of Operations)\n  - FY2020 Total Revenue: $5,184 million (per the FY2020 10-K, Consolidated Statements of Operations)\n\n- SUPPORTING DATA:\n  - FY2018 Capex as a % of Revenue: (1,074 / 12,865) * 100 = 8.34%\n  - FY2019 Capex as a % of Revenue: (1,176 / 13,165) * 100 = 8.93%\n  - FY2020 Capex as a % of Revenue: (1,025 / 5,184) * 100 = 12.12%\n\n  - Three-Year Average of Capex as a % of Revenue: \n    - (8.34% + 8.93% + 19.74%) / 3 = 12.34%\n    - Rounded to one decimal place: 12.3%\n\n- DATA SOURCES: \n  - FY2020 10-K, Consolidated Statements of Cash Flows\n  - FY2020 10-K, Consolidated Statements of Operations\n\nPlease note that the above figures are exact as reported in the specified filings, and the calculations for capex as a percentage of revenue have been performed based on these figures.",
+    "2": "As a financial analyst, I've reviewed the provided data for MGM Resorts International (MGM) from FY2018 to FY2020.\n\n**1. Year-over-Year Changes (Capital Expenditures & Total Revenue)**\n\n| Metric                 | FY2018      | FY2019      | FY2020      | YoY Change (FY19 vs FY18) Absolute | YoY Change (FY19 vs FY18) Percentage | YoY Change (FY20 vs FY19) Absolute | YoY Change (FY20 vs FY19) Percentage |\n| :--------------------- | :---------- | :---------- | :---------- | :--------------------------------- | :----------------------------------- | :--------------------------------- | :----------------------------------- |\n| **Capital Expenditures** | $1,074 M    | $1,176 M    | $1,025 M    | $102 M                             | 9.50%                                | -$151 M                            | -12.84%                              |\n| **Total Revenue**      | $8,743 M    | $17,790 M   | $5,184 M    | $9,047 M                           | 103.48%                              | -$12,606 M                         | -70.86%                              |\n\n**Formulas:**\n*   **Absolute Change:** Current Year Value - Prior Year Value\n*   **Percentage Change:** (Absolute Change / Prior Year Value) * 100\n\n**2. Relevant Ratios: Capital Expenditures as a % of Total Revenue**\n\n| Year  | Capital Expenditures | Total Revenue | Capex as % of Revenue |\n| :---- | :------------------- | :------------ | :-------------------- |\n| FY2018 | $1,074 M             | $8,743 M      | 12.28%                |\n| FY2019 | $1,176 M             | $17,790 M     | 6.61%                 |\n| FY2020 | $1,025 M             | $5,184 M      | 19.77%                |\n\n**Formulas:**\n*   **Capex as % of Revenue:** (Capital Expenditures / Total Revenue) * 100\n\n**Three-Year Average of Capex as a % of Revenue:**\n(12.28% + 6.61% + 19.77%) / 3 = **12.89%** (Rounded to one decimal place: 12.9%)\n\n**3. Anomalies Flagged**\n\n*   **FY2019 Total Revenue:** The reported Total Revenue for FY2019 ($17,790 million) shows an exceptionally large increase of 103.48% from FY2018. This is a significant jump for a company of MGM's size and warrants further investigation to understand the underlying drivers (e.g., major acquisitions, divestitures, or accounting changes).\n*   **FY2020 Total Revenue:** Following the substantial FY2019 revenue, FY2020 Total Revenue ($5,184 million) experienced a drastic decline of -70.86%. This sharp drop is highly anomalous and is almost certainly attributable to the severe impact of the COVID-19 pandemic on the hospitality and entertainment industry, which heavily affected MGM's operations.\n*   **Supporting Data Discrepancy (FY2018 & FY2019 Capex as a % of Revenue):** The provided \"SUPPORTING DATA\" for FY2018 and FY2019 Capex as a % of Revenue uses different Total Revenue figures ($12,865M and $13,165M respectively) than the \"PRIMARY METRIC\" ($8,743M and $17,790M). My calculations use the \"PRIMARY METRIC\" Total Revenue figures, resulting in different percentages (12.28% and 6.61% vs. 8.34% and 8.93% in supporting data). The \"PRIMARY METRIC\" revenue figures are explicitly stated as from the FY2020 10-K, Consolidated Statements of Operations, making them the authoritative source for this analysis.\n*   **Supporting Data Discrepancy (FY2020 Capex as a % of Revenue):** The \"SUPPORTING DATA\" states FY2020 Capex as a % of Revenue as 12.12%, while my calculation using the provided primary metrics (1,025 / 5,184) * 100 results in 19.77%. This is a significant difference.\n*   **Supporting Data Discrepancy (Three-Year Average):** The \"SUPPORTING DATA\" uses 19.74% for FY2020 Capex as a % of Revenue in its average calculation, which is close to my calculated 19.77% but still different. More importantly, it uses the incorrect FY2018 and FY2019 percentages, leading to a different average (12.3% vs. my 12.9%).",
+    "3": "## MGM Resorts International: Financial Performance Review (FY2018-FY2020)\n\n### Executive Summary\n\nThis report analyzes the financial performance of MGM Resorts International (MGM) from Fiscal Year 2018 to 2020, focusing on Capital Expenditures and Total Revenue. The period reveals significant volatility, particularly in FY2020, driven by external economic factors. Capital expenditures remained relatively stable, while revenue experienced a dramatic increase in FY2019 followed by a sharp decline in FY2020. The average Capital Expenditures as a percentage of Total Revenue over the three years was 12.9%.\n\n### Analysis\n\nMGM's Capital Expenditures demonstrated a slight increase from $1,074 million in FY2018 to $1,176 million in FY2019, representing a 9.50% rise. In FY2020, capital expenditures decreased to $1,025 million, a -12.84% reduction from the prior year. Total Revenue, however, showed more significant fluctuations. FY2019 saw a substantial increase to $17,790 million from $8,743 million in FY2018, a 103.48% jump. This was followed by a sharp decline in FY2020, with Total Revenue plummeting to $5,184 million, a -70.86% decrease from FY2019.\n\nThe ratio of Capital Expenditures to Total Revenue highlights these trends. In FY2018, this ratio stood at 12.28%. It decreased to 6.61% in FY2019 due to the significant revenue growth. However, in FY2020, despite a reduction in absolute capital expenditures, the drastic drop in revenue caused this ratio to surge to 19.77%. The three-year average for Capital Expenditures as a percentage of Total Revenue is 12.9%.\n\n### Key Risks\n\nThe primary risk identified is the extreme revenue volatility, particularly the sharp decline in FY2020. This indicates a high susceptibility to external economic shocks, such as the COVID-19 pandemic, which severely impacted the hospitality and entertainment sectors. While capital expenditures were managed downwards in FY2020, the elevated Capex as a percentage of revenue in that year suggests potential pressure on operational efficiency during downturns. The significant revenue increase in FY2019 warrants further investigation to understand its sustainability and if it was driven by one-off events.\n\n### Conclusion\n\nMGM Resorts International experienced a challenging period between FY2018 and FY2020, characterized by substantial revenue fluctuations. While capital expenditures remained relatively consistent, the dramatic decline in FY2020 revenue underscores the company's vulnerability to macroeconomic events. Future performance will heavily depend on the recovery of the global travel and entertainment industry and MGM's ability to adapt its operational and capital allocation strategies to mitigate such risks.",
+    "4": "## MGM Resorts International: Financial Performance Review (FY2018-FY2020)\n\n### Executive Summary\n\nThis report analyzes the financial performance of MGM Resorts International (MGM) from Fiscal Year 2018 to 2020, focusing on Capital Expenditures and Total Revenue. The period reveals significant volatility, particularly in FY2020, driven by external economic factors. Capital expenditures remained relatively stable, while revenue experienced a dramatic increase in FY2019 followed by a sharp decline in FY2020. The average Capital Expenditures as a percentage of Total Revenue over the three years was 13.3%.\n\n### Analysis\n\nMGM's Capital Expenditures demonstrated a slight increase from $1,074 million in FY2018 to $1,176 million in FY2019, representing an 8.93% rise. In FY2020, capital expenditures decreased to $1,025 million, a -12.84% reduction from the prior year. Total Revenue, however, showed more significant fluctuations. FY2019 saw a substantial increase to $17,790 million from $8,743 million in FY2018, a 103.48% jump. This was followed by a sharp decline in FY2020, with Total Revenue plummeting to $5,184 million, a -70.86% decrease from FY2019.\n\nThe ratio of Capital Expenditures to Total Revenue highlights these trends. In FY2018, this ratio stood at 12.28%. It decreased to 7.90% in FY2019 due to the significant revenue growth. However, in FY2020, despite a reduction in absolute capital expenditures, the drastic drop in revenue caused this ratio to surge to 19.77%. The three-year average for Capital Expenditures as a percentage of Total Revenue is 13.3%.\n\n### Key Risks\n\nThe primary risk identified is the extreme revenue volatility, particularly the sharp decline in FY2020. This indicates a high susceptibility to external economic shocks, such as the COVID-19 pandemic, which severely impacted the hospitality and entertainment sectors. While capital expenditures were managed downwards in FY2020, the elevated Capex as a percentage of revenue in that year suggests potential pressure on operational efficiency during downturns. The significant revenue increase in FY2019 warrants further investigation to understand its sustainability and if it was driven by one-off events.\n\n### Conclusion\n\nMGM Resorts International experienced a challenging period between FY2018 and FY2020, characterized by substantial revenue fluctuations. While capital expenditures remained relatively consistent, the dramatic decline in FY2020 revenue underscores the company's vulnerability to macroeconomic events. Future performance will heavily depend on the recovery of the global travel and entertainment industry and MGM's ability to adapt its operational and capital allocation strategies to mitigate such risks."
+  },
+  "gates": {
+    "gate_1": {
+      "verified": [
+        {
+          "value": "$1,074 million",
+          "ref": 1074.0
+        },
+        {
+          "value": "$1,176 million",
+          "ref": 1176.0
+        },
+        {
+          "value": "$1,025 million",
+          "ref": 1025.0
+        },
+        {
+          "value": "$8,743 million",
+          "ref": 8656.0
+        },
+        {
+          "value": "$17,790 million",
+          "ref": 18140.0
+        },
+        {
+          "value": "$5,184 million",
+          "ref": 5184.0
+        },
+        {
+          "value": "8.34%",
+          "ref": 8.34
+        },
+        {
+          "value": "8.93%",
+          "ref": 8.93
+        },
+        {
+          "value": "12.12%",
+          "ref": 12.3
+        },
+        {
+          "value": "8.34%",
+          "ref": 8.34
+        },
+        {
+          "value": "8.93%",
+          "ref": 8.93
+        },
+        {
+          "value": "19.74%",
+          "ref": 19.74
+        },
+        {
+          "value": "12.34%",
+          "ref": 12.34
+        },
+        {
+          "value": "12.3%",
+          "ref": 12.3
+        },
+        {
+          "value": "1,074",
+          "ref": 1074.0
+        },
+        {
+          "value": "12,865",
+          "ref": 12865.0
+        },
+        {
+          "value": "1,176",
+          "ref": 1176.0
+        },
+        {
+          "value": "13,165",
+          "ref": 13165.0
+        },
+        {
+          "value": "1,025",
+          "ref": 1025.0
+        },
+        {
+          "value": "5,184",
+          "ref": 5184.0
+        }
+      ],
+      "refuted": [],
+      "unverified": [],
+      "n_refs": 128
+    },
+    "gate_2": {
+      "verified": [
+        {
+          "value": "$1,074 M",
+          "ref": 1074.0
+        },
+        {
+          "value": "$1,176 M",
+          "ref": 1176.0
+        },
+        {
+          "value": "$1,025 M",
+          "ref": 1025.0
+        },
+        {
+          "value": "$8,743 M",
+          "ref": 8656.0
+        },
+        {
+          "value": "$17,790 M",
+          "ref": 18140.0
+        },
+        {
+          "value": "$5,184 M",
+          "ref": 5184.0
+        },
+        {
+          "value": "$1,074 M",
+          "ref": 1074.0
+        },
+        {
+          "value": "$8,743 M",
+          "ref": 8656.0
+        },
+        {
+          "value": "$1,176 M",
+          "ref": 1176.0
+        },
+        {
+          "value": "$17,790 M",
+          "ref": 18140.0
+        },
+        {
+          "value": "$1,025 M",
+          "ref": 1025.0
+        },
+        {
+          "value": "$5,184 M",
+          "ref": 5184.0
+        },
+        {
+          "value": "$17,790 million",
+          "ref": 18140.0
+        },
+        {
+          "value": "$5,184 million",
+          "ref": 5184.0
+        },
+        {
+          "value": "$12,865M",
+          "ref": 12865.0
+        },
+        {
+          "value": "$13,165M",
+          "ref": 13165.0
+        },
+        {
+          "value": "$8,743M",
+          "ref": 8656.0
+        },
+        {
+          "value": "$17,790M",
+          "ref": 18140.0
+        },
+        {
+          "value": "12.28%",
+          "ref": 12.3
+        },
+        {
+          "value": "19.77%",
+          "ref": 19.74
+        },
+        {
+          "value": "12.28%",
+          "ref": 12.3
+        },
+        {
+          "value": "19.77%",
+          "ref": 19.74
+        },
+        {
+          "value": "12.28%",
+          "ref": 12.3
+        },
+        {
+          "value": "8.34%",
+          "ref": 8.34
+        },
+        {
+          "value": "8.93%",
+          "ref": 8.93
+        },
+        {
+          "value": "12.12%",
+          "ref": 12.3
+        },
+        {
+          "value": "19.77%",
+          "ref": 19.74
+        },
+        {
+          "value": "19.74%",
+          "ref": 19.74
+        },
+        {
+          "value": "19.77%",
+          "ref": 19.74
+        },
+        {
+          "value": "12.3%",
+          "ref": 12.3
+        },
+        {
+          "value": "1,025",
+          "ref": 1025.0
+        },
+        {
+          "value": "5,184",
+          "ref": 5184.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "9.50%",
+          "num": 9.5,
+          "correct": 8.93,
+          "dev": 0.06,
+          "source": "source_document"
+        },
+        {
+          "value": "6.61%",
+          "num": 6.61,
+          "correct": 7.9,
+          "dev": 0.1633,
+          "source": "ground_truth"
+        },
+        {
+          "value": "6.61%",
+          "num": 6.61,
+          "correct": 7.9,
+          "dev": 0.1633,
+          "source": "ground_truth"
+        },
+        {
+          "value": "6.61%",
+          "num": 6.61,
+          "correct": 7.9,
+          "dev": 0.1633,
+          "source": "ground_truth"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$102 M"
+        },
+        {
+          "value": "$151 M"
+        },
+        {
+          "value": "$9,047 M"
+        },
+        {
+          "value": "$12,606 M"
+        },
+        {
+          "value": "-12.84%"
+        },
+        {
+          "value": "103.48%"
+        },
+        {
+          "value": "-70.86%"
+        },
+        {
+          "value": "12.89%"
+        },
+        {
+          "value": "12.9%"
+        },
+        {
+          "value": "103.48%"
+        },
+        {
+          "value": "-70.86%"
+        },
+        {
+          "value": "12.9%"
+        }
+      ],
+      "n_refs": 128
+    },
+    "gate_3": {
+      "verified": [
+        {
+          "value": "$1,074 million",
+          "ref": 1074.0
+        },
+        {
+          "value": "$1,176 million",
+          "ref": 1176.0
+        },
+        {
+          "value": "$1,025 million",
+          "ref": 1025.0
+        },
+        {
+          "value": "$17,790 million",
+          "ref": 18140.0
+        },
+        {
+          "value": "$8,743 million",
+          "ref": 8656.0
+        },
+        {
+          "value": "$5,184 million",
+          "ref": 5184.0
+        },
+        {
+          "value": "12.28%",
+          "ref": 12.3
+        },
+        {
+          "value": "19.77%",
+          "ref": 19.74
+        }
+      ],
+      "refuted": [
+        {
+          "value": "9.50%",
+          "num": 9.5,
+          "correct": 8.93,
+          "dev": 0.06,
+          "source": "source_document"
+        },
+        {
+          "value": "6.61%",
+          "num": 6.61,
+          "correct": 7.9,
+          "dev": 0.1633,
+          "source": "ground_truth"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "12.9%"
+        },
+        {
+          "value": "-12.84%"
+        },
+        {
+          "value": "103.48%"
+        },
+        {
+          "value": "-70.86%"
+        },
+        {
+          "value": "12.9%"
+        }
+      ],
+      "n_refs": 128
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_105_61DCE693",
+      "hid": "FB_105_61DCE693_H3",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 8743.0,
+      "orig_num": 12865.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_105_61DCE693",
+      "hid": "FB_105_61DCE693_H2",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 17790.0,
+      "orig_num": 13165.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_105_61DCE693",
+      "hid": "FB_105_61DCE693_H1",
+      "method": "ours",
+      "type": "percentage",
+      "inj_num": 12.12,
+      "orig_num": 19.74,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    }
+  ],
+  "quality_score": 3,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:42:57.471274+00:00"
+}

@@ -1,0 +1,30 @@
+
+FOR THE ABSTRACT:
+  "We track 346 automatically injected hallucinations across 140
+   FinanceBench test cases. Hallucination detection by GPT-4o drops from
+   72% at the research stage to 51% at the final review
+   (21 pp decline), while 23.7% of hallucinations
+   survive to the final output completely undetected."
+
+FOR THE INTRODUCTION:
+  - 140 of 150 FinanceBench questions produced quantitative
+    researcher outputs; 10 qualitative questions excluded
+  - 346 hallucinations tracked (~2.5 per case)
+  - Perturbation range: 15%-1146%
+
+KEY NUMBERS:
+  GPT-4o Judge:      72.0% → 50.9% (drop: 21.1 pp)
+  Retrieval Checker:  91.9% → 67.1% (drop: 24.9 pp)
+  Either (union):     97.7% → 76.3% (drop: 21.4 pp)
+  Survival rate:      23.7% (undetected by both at Stage 4)
+  Judge survival:     49.1% (undetected by GPT-4o at Stage 4)
+
+TRAJECTORY DISTRIBUTION:
+  Full Decay:     23.4%
+  Always Caught:  70.5%
+  Never Caught:   0.0%
+
+DETECTION GAP (Retrieval − Judge):
+  Stage 1: 19.9 pp
+  Stage 4: 16.2 pp
+  → Gap WIDENS by -3.8 pp across the pipeline

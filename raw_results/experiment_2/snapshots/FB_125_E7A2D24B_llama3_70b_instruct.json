@@ -1,0 +1,109 @@
+{
+  "question_id": "FB_125_E7A2D24B",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: PepsiCo, FY2022\n- PRIMARY METRIC: Unadjusted EBITDA percentage margin for FY2022 is 18.6%. This is calculated from unadjusted operating income of $17,408 million and total revenue of $55,509 million. (Source: per the FY2022 10-K, Consolidated Statements of Operations and Consolidated Statements of Cash Flows).\n- SUPPORTING DATA: \n  - Unadjusted Operating Income: $13,209 million (per the FY2022 10-K, Consolidated Statements of Operations).\n  - Depreciation & Amortization (D&A): $3,979 million (per the FY2022 10-K, Consolidated Statements of Cash Flows).\n  - Total Revenue: $55,509 million (per the FY2022 10-K, Consolidated Statements of Operations).\n  - Unadjusted EBITDA Calculation: Unadjusted EBITDA = Operating Income + D&A = $13,209 million + $3,979 million = $22,497 million.\n  - EBITDA Margin Calculation: EBITDA Margin = (Unadjusted EBITDA / Total Revenue) * 100 = ($17,188 million / $55,509 million) * 100 = 30.9%.\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations (for Operating Income and Total Revenue).\n  - FY2022 10-K, Consolidated Statements of Cash Flows (for Depreciation & Amortization). \n\nPlease note that the EBITDA margin reported here is based on the calculation of unadjusted EBITDA as defined by the figures extracted from the stated financial documents.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_125_E7A2D24B_H3",
+      "type": "percentage",
+      "original_value": "23.9%",
+      "injected_value": "18.6%",
+      "original_numeric": "23.9",
+      "injected_numeric": "18.6",
+      "position_char": 104,
+      "sentence_approx": 1,
+      "perturbation_delta": -5.2866
+    },
+    {
+      "hallucination_id": "FB_125_E7A2D24B_H2",
+      "type": "dollar_amount",
+      "original_value": "$13,209 million",
+      "injected_value": "$17,408 million",
+      "original_numeric": "13209",
+      "injected_numeric": "17408",
+      "position_char": 166,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.3179
+    },
+    {
+      "hallucination_id": "FB_125_E7A2D24B_H1",
+      "type": "dollar_amount",
+      "original_value": "$17,188 million",
+      "injected_value": "$22,497 million",
+      "original_numeric": "17188",
+      "injected_numeric": "22497",
+      "position_char": 791,
+      "sentence_approx": 8,
+      "perturbation_delta": 0.3089
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Unadjusted EBITDA percentage margin for FY2022 is 18.6%.",
+        "claim_value": "18.6%",
+        "reason": "The calculation provided later in the output shows an EBITDA margin of 30.9%, not 18.6%. This inconsistency raises concerns about the accuracy of the initial claim.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Unadjusted operating income of $17,408 million",
+        "claim_value": "$17,408 million",
+        "reason": "The supporting data section lists unadjusted operating income as $13,209 million, not $17,408 million. This discrepancy suggests an error or fabrication.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Unadjusted EBITDA = $17,188 million",
+        "claim_value": "$17,188 million",
+        "reason": "The calculation provided earlier in the output shows an unadjusted EBITDA of $22,497 million, not $17,188 million. This inconsistency raises concerns about the accuracy of the claim.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 7,
+    "overall_assessment": "The output contains multiple inconsistencies and errors, suggesting a high likelihood of fabrication or inaccuracy.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"Unadjusted EBITDA percentage margin for FY2022 is 18.6%.\",\n      \"claim_value\" : \"18.6%\",\n      \"reason\"      : \"The calculation provided later in the output shows an EBITDA margin of 30.9%, not 18.6%. This inconsistency raises concerns about the accuracy of the initial claim.\",\n      \"confidence\"  : \"high\"\n    },\n    {\n      \"claim_text\"  : \"Unadjusted operating income of $17,408 million\",\n      \"claim_value\" : \"$17,408 million\",\n      \"reason\"      : \"The supporting data section lists unadjusted operating income as $13,209 million, not $17,408 million. This discrepancy suggests an error or fabrication.\",\n      \"confidence\"  : \"high\"\n    },\n    {\n      \"claim_text\"  : \"Unadjusted EBITDA = $17,188 million\",\n      \"claim_value\" : \"$17,188 million\",\n      \"reason\"      : \"The calculation provided earlier in the output shows an unadjusted EBITDA of $22,497 million, not $17,188 million. This inconsistency raises concerns about the accuracy of the claim.\",\n      \"confidence\"  : \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 7,\n  \"overall_assessment\"   : \"The output contains multiple inconsistencies and errors, suggesting a high likelihood of fabrication or inaccuracy.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_125_E7A2D24B",
+      "hallucination_id": "FB_125_E7A2D24B_H3",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "percentage",
+      "original_value": "23.9%",
+      "injected_value": "18.6%",
+      "detected": true,
+      "reason": "The calculation provided later in the output shows an EBITDA margin of 30.9%, not 18.6%. This inconsistency raises concerns about the accuracy of the initial claim.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_125_E7A2D24B",
+      "hallucination_id": "FB_125_E7A2D24B_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$13,209 million",
+      "injected_value": "$17,408 million",
+      "detected": true,
+      "reason": "The supporting data section lists unadjusted operating income as $13,209 million, not $17,408 million. This discrepancy suggests an error or fabrication.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_125_E7A2D24B",
+      "hallucination_id": "FB_125_E7A2D24B_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$17,188 million",
+      "injected_value": "$22,497 million",
+      "detected": true,
+      "reason": "The supporting data section lists unadjusted operating income as $13,209 million, not $17,408 million. This discrepancy suggests an error or fabrication.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 7
+    }
+  ],
+  "timestamp": "2026-03-27T09:43:30.296790Z"
+}

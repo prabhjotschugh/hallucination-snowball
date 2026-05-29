@@ -1,0 +1,97 @@
+{
+  "question_id": "FB_029_CA5B2B49",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Amcor, FY 2023\n- PRIMARY METRIC: Adjusted Non-GAAP EBITDA for FY 2023 was reported as $2,622 million per the Q4 FY2023 earnings report, Consolidated Statements of Operations.\n- SUPPORTING DATA: \n  - Adjusted Non-GAAP EBITDA for FY 2022 was $2,100 million.\n  - Adjusted Non-GAAP EBITDA for FY 2021 was $1,517 million.\n- DATA SOURCES: \n  - Q4 FY2023 Earnings Report, Consolidated Statements of Operations.\n  - Q4 FY2022 Earnings Report, Consolidated Statements of Operations.\n  - Q4 FY2021 Earnings Report, Consolidated Statements of Operations.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_029_CA5B2B49_H2",
+      "type": "dollar_amount",
+      "original_value": "$2,200 million",
+      "injected_value": "$2,622 million",
+      "original_numeric": "2200",
+      "injected_numeric": "2622",
+      "position_char": 106,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.1917
+    },
+    {
+      "hallucination_id": "FB_029_CA5B2B49_H1",
+      "type": "dollar_amount",
+      "original_value": "$2,000 million",
+      "injected_value": "$1,517 million",
+      "original_numeric": "2000",
+      "injected_numeric": "1517",
+      "position_char": 321,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.2417
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Adjusted Non-GAAP EBITDA for FY 2023 was reported as $2,622 million per the Q4 FY2023 earnings report, Consolidated Statements of Operations.",
+        "claim_value": "Consolidated Statements of Operations",
+        "reason": "Non-GAAP financial measures (like Adjusted EBITDA) are never reported within the GAAP Consolidated Statements of Operations. They are found in supplemental schedules or press releases. This indicates a fundamental hallucination of financial statement structure.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Adjusted Non-GAAP EBITDA for FY 2022 was $2,100 million.",
+        "claim_value": "$2,100 million",
+        "reason": "This figure is suspiciously round compared to the precise figures reported for FY2021 ($1,517 million) and FY2023 ($2,622 million). Financial filings rarely present exact hundred-million round numbers for non-GAAP metrics alongside precise figures.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Adjusted Non-GAAP EBITDA for FY 2021 was $1,517 million.",
+        "claim_value": "38% growth rate (implied)",
+        "reason": "The implied year-over-year growth from FY2021 ($1,517m) to FY2022 ($2,100m) is approximately 38%. For a mature industrial packaging company like Amcor, such a significant swing in profitability without a major acquisition is unusual and warrants verification.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Q4 FY2022 Earnings Report, Consolidated Statements of Operations.",
+        "claim_value": "Consolidated Statements of Operations",
+        "reason": "Same as FY2023 claim. Non-GAAP data cannot be sourced from the GAAP Consolidated Statements of Operations. This source citation is structurally incorrect.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Q4 FY2021 Earnings Report, Consolidated Statements of Operations.",
+        "claim_value": "Consolidated Statements of Operations",
+        "reason": "Same as FY2023 claim. Non-GAAP data cannot be sourced from the GAAP Consolidated Statements of Operations. This source citation is structurally incorrect.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "The output contains critical accounting errors regarding financial statement structure and exhibits suspicious numerical precision inconsistencies.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Adjusted Non-GAAP EBITDA for FY 2023 was reported as $2,622 million per the Q4 FY2023 earnings report, Consolidated Statements of Operations.\",\n      \"claim_value\": \"Consolidated Statements of Operations\",\n      \"reason\": \"Non-GAAP financial measures (like Adjusted EBITDA) are never reported within the GAAP Consolidated Statements of Operations. They are found in supplemental schedules or press releases. This indicates a fundamental hallucination of financial statement structure.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Adjusted Non-GAAP EBITDA for FY 2022 was $2,100 million.\",\n      \"claim_value\": \"$2,100 million\",\n      \"reason\": \"This figure is suspiciously round compared to the precise figures reported for FY2021 ($1,517 million) and FY2023 ($2,622 million). Financial filings rarely present exact hundred-million round numbers for non-GAAP metrics alongside precise figures.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Adjusted Non-GAAP EBITDA for FY 2021 was $1,517 million.\",\n      \"claim_value\": \"38% growth rate (implied)\",\n      \"reason\": \"The implied year-over-year growth from FY2021 ($1,517m) to FY2022 ($2,100m) is approximately 38%. For a mature industrial packaging company like Amcor, such a significant swing in profitability without a major acquisition is unusual and warrants verification.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Q4 FY2022 Earnings Report, Consolidated Statements of Operations.\",\n      \"claim_value\": \"Consolidated Statements of Operations\",\n      \"reason\": \"Same as FY2023 claim. Non-GAAP data cannot be sourced from the GAAP Consolidated Statements of Operations. This source citation is structurally incorrect.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Q4 FY2021 Earnings Report, Consolidated Statements of Operations.\",\n      \"claim_value\": \"Consolidated Statements of Operations\",\n      \"reason\": \"Same as FY2023 claim. Non-GAAP data cannot be sourced from the GAAP Consolidated Statements of Operations. This source citation is structurally incorrect.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\": \"The output contains critical accounting errors regarding financial statement structure and exhibits suspicious numerical precision inconsistencies.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_029_CA5B2B49",
+      "hallucination_id": "FB_029_CA5B2B49_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$2,200 million",
+      "injected_value": "$2,622 million",
+      "detected": true,
+      "reason": "Non-GAAP financial measures (like Adjusted EBITDA) are never reported within the GAAP Consolidated Statements of Operations. They are found in supplemental schedules or press releases. This indicates a fundamental hallucination of financial statement structure.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_029_CA5B2B49",
+      "hallucination_id": "FB_029_CA5B2B49_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$2,000 million",
+      "injected_value": "$1,517 million",
+      "detected": true,
+      "reason": "This figure is suspiciously round compared to the precise figures reported for FY2021 ($1,517 million) and FY2023 ($2,622 million). Financial filings rarely present exact hundred-million round numbers for non-GAAP metrics alongside precise figures.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 5,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-24T10:40:08.423408Z"
+}

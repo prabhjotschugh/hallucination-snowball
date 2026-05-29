@@ -1,0 +1,97 @@
+{
+  "question_id": "FB_073_5495DBB9",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Corning Incorporated, FY2021 and FY2022\n- PRIMARY METRIC: \n  - Effective Tax Rate for FY2021: 14.4% (per the FY2021 10-K, Note 12 - Income Taxes)\n  - Effective Tax Rate for FY2022: 9.9% (per the FY2022 10-K, Note 12 - Income Taxes)\n- CHANGE IN EFFECTIVE TAX RATE: Decrease of 0.5 percentage points from FY2021 to FY2022.\n\n- SUPPORTING DATA:\n  - Income Tax Expense for FY2021: $221 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - Income Tax Expense for FY2022: $207 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - Pre-Tax Income for FY2021: $1,831 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - Pre-Tax Income for FY2022: $2,100 million (per the FY2022 10-K, Consolidated Statements of Operations)\n\n- DATA SOURCES:\n  - FY2021 10-K, Note 12 - Income Taxes\n  - FY2021 10-K, Consolidated Statements of Operations\n  - FY2022 10-K, Note 12 - Income Taxes\n  - FY2022 10-K, Consolidated Statements of Operations",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_073_5495DBB9_H3",
+      "type": "percentage",
+      "original_value": "13.9%",
+      "injected_value": "9.9%",
+      "original_numeric": "13.9",
+      "injected_numeric": "9.9",
+      "position_char": 201,
+      "sentence_approx": 2,
+      "perturbation_delta": -4.0411
+    },
+    {
+      "hallucination_id": "FB_073_5495DBB9_H2",
+      "type": "dollar_amount",
+      "original_value": "$264 million",
+      "injected_value": "$221 million",
+      "original_numeric": "264",
+      "injected_numeric": "221",
+      "position_char": 397,
+      "sentence_approx": 5,
+      "perturbation_delta": -0.1646
+    },
+    {
+      "hallucination_id": "FB_073_5495DBB9_H1",
+      "type": "dollar_amount",
+      "original_value": "$292 million",
+      "injected_value": "$207 million",
+      "original_numeric": "292",
+      "injected_numeric": "207",
+      "position_char": 506,
+      "sentence_approx": 5,
+      "perturbation_delta": -0.2914
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "CHANGE IN EFFECTIVE TAX RATE: Decrease of 0.5 percentage points from FY2021 to FY2022.",
+        "claim_value": "0.5 percentage points",
+        "reason": "The reported change in effective tax rate (0.5 percentage points) is inconsistent with the provided effective tax rates (14.4% to 9.9%). The actual change would be a decrease of 4.5 percentage points.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 8,
+    "overall_assessment": "The researcher's output contains an internal inconsistency in the reported change in effective tax rate.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"CHANGE IN EFFECTIVE TAX RATE: Decrease of 0.5 percentage points from FY2021 to FY2022.\",\n      \"claim_value\" : \"0.5 percentage points\",\n      \"reason\"      : \"The reported change in effective tax rate (0.5 percentage points) is inconsistent with the provided effective tax rates (14.4% to 9.9%). The actual change would be a decrease of 4.5 percentage points.\",\n      \"confidence\"  : \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 8,\n  \"overall_assessment\"   : \"The researcher's output contains an internal inconsistency in the reported change in effective tax rate.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_073_5495DBB9",
+      "hallucination_id": "FB_073_5495DBB9_H3",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "percentage",
+      "original_value": "13.9%",
+      "injected_value": "9.9%",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 8
+    },
+    {
+      "question_id": "FB_073_5495DBB9",
+      "hallucination_id": "FB_073_5495DBB9_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$264 million",
+      "injected_value": "$221 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 8
+    },
+    {
+      "question_id": "FB_073_5495DBB9",
+      "hallucination_id": "FB_073_5495DBB9_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$292 million",
+      "injected_value": "$207 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 8
+    }
+  ],
+  "timestamp": "2026-03-27T09:36:15.757210Z"
+}

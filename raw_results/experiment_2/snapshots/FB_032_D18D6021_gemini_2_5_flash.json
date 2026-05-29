@@ -1,0 +1,91 @@
+{
+  "question_id": "FB_032_D18D6021",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Advanced Micro Devices, Inc. (AMD) for the fiscal year 2022 (FY2022)\n- PRIMARY METRIC: The quick ratio for AMD in FY2022 is 1.32, as reported in the FY2022 10-K, Consolidated Balance Sheets.\n- SUPPORTING DATA: \n  - Current Assets: $6,570 million (per the FY2022 10-K, Consolidated Balance Sheets)\n  - Current Liabilities: $4,973 million (per the FY2022 10-K, Consolidated Balance Sheets)\n  - Inventory: $1,202 million (per the FY2022 10-K, Consolidated Balance Sheets)\n  - Calculation of Quick Ratio: Quick Ratio = (Current Assets - Inventory) / Current Liabilities = ($6,570 million - $1,474 million) / $6,844 million = 1.32\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Balance Sheets\n  - FY2022 10-K, Management's Discussion and Analysis\n\n**Note:** The analysis of liquidity health based on the quick ratio is not included as per the directive for raw data only. Please refer to the downstream analysis for interpretation and implications.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_032_D18D6021_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,202 million",
+      "injected_value": "$1,474 million",
+      "original_numeric": "1202",
+      "injected_numeric": "1474",
+      "position_char": 606,
+      "sentence_approx": 4,
+      "perturbation_delta": 0.2266
+    },
+    {
+      "hallucination_id": "FB_032_D18D6021_H1",
+      "type": "dollar_amount",
+      "original_value": "$4,973 million",
+      "injected_value": "$6,844 million",
+      "original_numeric": "4973",
+      "injected_numeric": "6844",
+      "position_char": 624,
+      "sentence_approx": 4,
+      "perturbation_delta": 0.3762
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "$1,474 million",
+        "claim_value": "$1,474 million",
+        "reason": "This inventory figure used in the quick ratio calculation ($1,474 million) directly contradicts the inventory figure explicitly stated in the 'SUPPORTING DATA' section ($1,202 million).",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "$6,844 million",
+        "claim_value": "$6,844 million",
+        "reason": "This current liabilities figure used in the quick ratio calculation ($6,844 million) directly contradicts the current liabilities figure explicitly stated in the 'SUPPORTING DATA' section ($4,973 million).",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "1.32",
+        "claim_value": "1.32",
+        "reason": "The stated quick ratio of 1.32 does not result from the numbers provided in the calculation itself: ($6,570 million - $1,474 million) / $6,844 million = $5,096 million / $6,844 million \u2248 0.7446. This indicates a clear calculation error.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "The quick ratio for AMD in FY2022 is 1.32",
+        "claim_value": "1.32",
+        "reason": "This primary quick ratio claim is inconsistent with the supporting data provided ($6,570 million Current Assets, $1,202 million Inventory, $4,973 million Current Liabilities, which would yield ($6,570 - $1,202) / $4,973 \u2248 1.08) and also inconsistent with the numbers used in the calculation line (which would yield \u2248 0.74).",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 8,
+    "overall_assessment": "The report contains significant internal inconsistencies and calculation errors regarding the quick ratio and its components, indicating potential hallucination of figures.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"$1,474 million\",\n      \"claim_value\": \"$1,474 million\",\n      \"reason\": \"This inventory figure used in the quick ratio calculation ($1,474 million) directly contradicts the inventory figure explicitly stated in the 'SUPPORTING DATA' section ($1,202 million).\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"$6,844 million\",\n      \"claim_value\": \"$6,844 million\",\n      \"reason\": \"This current liabilities figure used in the quick ratio calculation ($6,844 million) directly contradicts the current liabilities figure explicitly stated in the 'SUPPORTING DATA' section ($4,973 million).\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"1.32\",\n      \"claim_value\": \"1.32\",\n      \"reason\": \"The stated quick ratio of 1.32 does not result from the numbers provided in the calculation itself: ($6,570 million - $1,474 million) / $6,844 million = $5,096 million / $6,844 million \\u2248 0.7446. This indicates a clear calculation error.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"The quick ratio for AMD in FY2022 is 1.32\",\n      \"claim_value\": \"1.32\",\n      \"reason\": \"This primary quick ratio claim is inconsistent with the supporting data provided ($6,570 million Current Assets, $1,202 million Inventory, $4,973 million Current Liabilities, which would yield ($6,570 - $1,202) / $4,973 \\u2248 1.08) and also inconsistent with the numbers used in the calculation line (which would yield \\u2248 0.74).\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 8,\n  \"overall_assessment\": \"The report contains significant internal inconsistencies and calculation errors regarding the quick ratio and its components, indicating potential hallucination of figures.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_032_D18D6021",
+      "hallucination_id": "FB_032_D18D6021_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,202 million",
+      "injected_value": "$1,474 million",
+      "detected": true,
+      "reason": "This inventory figure used in the quick ratio calculation ($1,474 million) directly contradicts the inventory figure explicitly stated in the 'SUPPORTING DATA' section ($1,202 million).",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 8
+    },
+    {
+      "question_id": "FB_032_D18D6021",
+      "hallucination_id": "FB_032_D18D6021_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$4,973 million",
+      "injected_value": "$6,844 million",
+      "detected": true,
+      "reason": "This current liabilities figure used in the quick ratio calculation ($6,844 million) directly contradicts the current liabilities figure explicitly stated in the 'SUPPORTING DATA' section ($4,973 million).",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 8
+    }
+  ],
+  "timestamp": "2026-03-25T07:41:21.648872Z"
+}

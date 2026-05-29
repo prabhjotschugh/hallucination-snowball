@@ -1,0 +1,133 @@
+{
+  "question_id": "FB_138_1767BBA1",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Ulta Beauty, FY2022 and FY2023\n- PRIMARY METRIC: \n  - In FY2022, Ulta Beauty acquired **Dermstore** for **$350 million** in cash, as reported in the FY2022 10-K, under the \"Acquisitions\" section.\n  - In FY2023, Ulta Beauty did not report any major acquisitions in the FY2023 10-K.\n\n- SUPPORTING DATA: \n  - For FY2022:\n    - Total Revenue: **$5,245.6 million** (per the FY2022 10-K, Consolidated Statements of Operations)\n    - Net Income: **$489.5 million** (per the FY2022 10-K, Consolidated Statements of Operations)\n    - Total Assets: **$2,212.1 million** (per the FY2022 10-K, Consolidated Balance Sheets)\n  \n  - For FY2023:\n    - Total Revenue: **$4,200.0 million** (per the FY2023 10-K, Consolidated Statements of Operations)\n    - Net Income: **$550.0 million** (per the FY2023 10-K, Consolidated Statements of Operations)\n    - Total Assets: **$2,497.7 million** (per the FY2023 10-K, Consolidated Balance Sheets)\n\n- DATA SOURCES: \n  - FY2022 10-K, \"Acquisitions\" section, Consolidated Statements of Operations, Consolidated Balance Sheets\n  - FY2023 10-K, Consolidated Statements of Operations, Consolidated Balance Sheets\n\nNote: No additional acquisitions were reported for FY2023 in the filings.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_138_1767BBA1_H3",
+      "type": "dollar_amount",
+      "original_value": "$3,900.5 million",
+      "injected_value": "$5,245.6 million",
+      "original_numeric": "3900.5",
+      "injected_numeric": "5245.6",
+      "position_char": 361,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.3449
+    },
+    {
+      "hallucination_id": "FB_138_1767BBA1_H2",
+      "type": "dollar_amount",
+      "original_value": "$3,200.2 million",
+      "injected_value": "$2,212.1 million",
+      "original_numeric": "3200.2",
+      "injected_numeric": "2212.1",
+      "position_char": 561,
+      "sentence_approx": 5,
+      "perturbation_delta": -0.3088
+    },
+    {
+      "hallucination_id": "FB_138_1767BBA1_H1",
+      "type": "dollar_amount",
+      "original_value": "$3,500.0 million",
+      "injected_value": "$2,497.7 million",
+      "original_numeric": "3500.0",
+      "injected_numeric": "2497.7",
+      "position_char": 873,
+      "sentence_approx": 8,
+      "perturbation_delta": -0.2864
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "In FY2022, Ulta Beauty acquired Dermstore for $350 million in cash",
+        "claim_value": "Dermstore acquisition for $350 million",
+        "reason": "Ulta Beauty did not acquire Dermstore in FY2022. Dermstore was acquired by The Hut Group (THG) from Target in 2020. This claim is factually incorrect.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Revenue: $5,245.6 million (per the FY2022 10-K, Consolidated Statements of Operations)",
+        "claim_value": "$5,245.6 million",
+        "reason": "Ulta Beauty's actual total revenue for FY2022 (ending January 28, 2023) was approximately $10.2 billion. The reported figure of $5.2 billion is significantly understated and implausible for a company of Ulta's scale.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Net Income: $489.5 million (per the FY2022 10-K, Consolidated Statements of Operations)",
+        "claim_value": "$489.5 million",
+        "reason": "Ulta Beauty's actual net income for FY2022 was approximately $1.2 billion. The reported figure of $489.5 million is significantly understated.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Assets: $2,212.1 million (per the FY2022 10-K, Consolidated Balance Sheets)",
+        "claim_value": "$2,212.1 million",
+        "reason": "Ulta Beauty's actual total assets for FY2022 were approximately $5.2 billion. The reported figure of $2.2 billion is significantly understated.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Revenue: $4,200.0 million (per the FY2023 10-K, Consolidated Statements of Operations)",
+        "claim_value": "$4,200.0 million",
+        "reason": "Ulta Beauty's actual total revenue for FY2023 (ending February 3, 2024) was approximately $11.2 billion. The reported figure of $4.2 billion is significantly understated. Furthermore, it implies a substantial year-over-year revenue *decline* from the already incorrect FY2022 figure ($5.2B to $4.2B), which is highly inconsistent with Ulta's historical growth and market position.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Net Income: $550.0 million (per the FY2023 10-K, Consolidated Statements of Operations)",
+        "claim_value": "$550.0 million",
+        "reason": "Ulta Beauty's actual net income for FY2023 was approximately $1.3 billion. The reported figure of $550.0 million is significantly understated. This figure also implies an increase in net income from the (incorrect) FY2022 figure ($489.5M) despite a significant (and incorrect) revenue decline, which is an internal inconsistency.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Assets: $2,497.7 million (per the FY2023 10-K, Consolidated Balance Sheets)",
+        "claim_value": "$2,497.7 million",
+        "reason": "Ulta Beauty's actual total assets for FY2023 were approximately $5.6 billion. The reported figure of $2.5 billion is significantly understated.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 8,
+    "overall_assessment": "The researcher output contains multiple significant factual errors regarding Ulta Beauty's acquisitions and core financial metrics for both FY2022 and FY2023, indicating widespread hallucination.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"In FY2022, Ulta Beauty acquired Dermstore for $350 million in cash\",\n      \"claim_value\": \"Dermstore acquisition for $350 million\",\n      \"reason\": \"Ulta Beauty did not acquire Dermstore in FY2022. Dermstore was acquired by The Hut Group (THG) from Target in 2020. This claim is factually incorrect.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Revenue: $5,245.6 million (per the FY2022 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$5,245.6 million\",\n      \"reason\": \"Ulta Beauty's actual total revenue for FY2022 (ending January 28, 2023) was approximately $10.2 billion. The reported figure of $5.2 billion is significantly understated and implausible for a company of Ulta's scale.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Net Income: $489.5 million (per the FY2022 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$489.5 million\",\n      \"reason\": \"Ulta Beauty's actual net income for FY2022 was approximately $1.2 billion. The reported figure of $489.5 million is significantly understated.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Assets: $2,212.1 million (per the FY2022 10-K, Consolidated Balance Sheets)\",\n      \"claim_value\": \"$2,212.1 million\",\n      \"reason\": \"Ulta Beauty's actual total assets for FY2022 were approximately $5.2 billion. The reported figure of $2.2 billion is significantly understated.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Revenue: $4,200.0 million (per the FY2023 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$4,200.0 million\",\n      \"reason\": \"Ulta Beauty's actual total revenue for FY2023 (ending February 3, 2024) was approximately $11.2 billion. The reported figure of $4.2 billion is significantly understated. Furthermore, it implies a substantial year-over-year revenue *decline* from the already incorrect FY2022 figure ($5.2B to $4.2B), which is highly inconsistent with Ulta's historical growth and market position.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Net Income: $550.0 million (per the FY2023 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$550.0 million\",\n      \"reason\": \"Ulta Beauty's actual net income for FY2023 was approximately $1.3 billion. The reported figure of $550.0 million is significantly understated. This figure also implies an increase in net income from the (incorrect) FY2022 figure ($489.5M) despite a significant (and incorrect) revenue decline, which is an internal inconsistency.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Assets: $2,497.7 million (per the FY2023 10-K, Consolidated Balance Sheets)\",\n      \"claim_value\": \"$2,497.7 million\",\n      \"reason\": \"Ulta Beauty's actual total assets for FY2023 were approximately $5.6 billion. The reported figure of $2.5 billion is significantly understated.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 8,\n  \"overall_assessment\": \"The researcher output contains multiple significant factual errors regarding Ulta Beauty's acquisitions and core financial metrics for both FY2022 and FY2023, indicating widespread hallucination.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_138_1767BBA1",
+      "hallucination_id": "FB_138_1767BBA1_H3",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,900.5 million",
+      "injected_value": "$5,245.6 million",
+      "detected": true,
+      "reason": "Ulta Beauty's actual total revenue for FY2022 (ending January 28, 2023) was approximately $10.2 billion. The reported figure of $5.2 billion is significantly understated and implausible for a company of Ulta's scale.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 7,
+      "total_claims_reviewed": 8
+    },
+    {
+      "question_id": "FB_138_1767BBA1",
+      "hallucination_id": "FB_138_1767BBA1_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,200.2 million",
+      "injected_value": "$2,212.1 million",
+      "detected": true,
+      "reason": "Ulta Beauty's actual total assets for FY2022 were approximately $5.2 billion. The reported figure of $2.2 billion is significantly understated.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 7,
+      "total_claims_reviewed": 8
+    },
+    {
+      "question_id": "FB_138_1767BBA1",
+      "hallucination_id": "FB_138_1767BBA1_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,500.0 million",
+      "injected_value": "$2,497.7 million",
+      "detected": true,
+      "reason": "Ulta Beauty's actual total assets for FY2023 were approximately $5.6 billion. The reported figure of $2.5 billion is significantly understated.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 7,
+      "total_claims_reviewed": 8
+    }
+  ],
+  "timestamp": "2026-03-25T08:04:51.287742Z"
+}

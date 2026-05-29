@@ -1,0 +1,222 @@
+{
+  "question_id": "FB_060_D8048F85",
+  "method": "ours",
+  "final_output": "## Boeing Company: FY2018 Financial Report\n\n### Executive Summary\n\nThis report analyzes key financial metrics for Boeing Company for Fiscal Year 2018, based on data from the FY2018 10-K. An in-depth review of the balance sheet components reveals significant inconsistencies. Specifically, Net Property, Plant, and Equipment (PP&E) is reported at $115,274 million, exceeding the stated Total Assets of $85,028 million. Furthermore, the fundamental accounting equation (Assets = Liabilities + Equity) does not balance with the provided figures. These discrepancies necessitate a thorough re-examination of the source data before any definitive financial conclusions can be drawn.\n\n### Analysis\n\nFor FY2018, Boeing Company reported Net Property, Plant, and Equipment of $115,274 million. Total Assets were stated as $85,028 million, Total Liabilities as $103,227 million, and Shareholders' Equity as $36,433 million.\n\nTwo key ratios were calculated:\n\n*   **PP&E to Total Assets Ratio:** This ratio is calculated as Net PP&E / Total Assets. Using the provided figures, $115,274 million / $85,028 million results in a ratio of 1.3557 or 135.57%. This indicates that Net PP&E is significantly larger than Total Assets, which is a fundamental accounting impossibility as PP&E is a component of Total Assets.\n*   **Debt-to-Equity Ratio:** Calculated as Total Liabilities / Shareholders' Equity, this ratio is $103,227 million / $36,433 million, yielding a value of 2.8333. This suggests a substantial reliance on debt financing relative to equity.\n\n### Key Risks\n\nThe primary risk identified is the significant inconsistency within the provided financial data itself. The Net PP&E figure of $115,274 million cannot logically exceed the Total Assets of $85,028 million. Additionally, the fundamental accounting equation does not balance, as Total Assets ($85,028 million) do not equal the sum of Total Liabilities ($103,227 million) and Shareholders' Equity ($36,433 million), which sum to $139,660 million. These anomalies raise serious concerns about the accuracy and reliability of the underlying data.\n\n### Conclusion\n\nThe financial data provided for Boeing Company's FY2018 contains critical inconsistencies that prevent a reliable financial assessment. The reported Net PP&E exceeding Total Assets and the imbalance in the accounting equation indicate potential data entry errors or misinterpretation of the source documents. It is imperative to reconcile these discrepancies by re-verifying all figures directly from the Boeing Company FY2018 10-K, Consolidated Balance Sheet, before any further analysis or investment decisions are made.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Boeing Company, FY2018\n- PRIMARY METRIC: Net Property, Plant, and Equipment: $115,274 million (per the FY2018 10-K, Consolidated Balance Sheet)\n- SUPPORTING DATA: \n  - Total Assets: $85,028 million (FY2018 10-K, Consolidated Balance Sheet)\n  - Total Liabilities: $103,227 million (FY2018 10-K, Consolidated Balance Sheet)\n  - Shareholders' Equity: $36,433 million (FY2018 10-K, Consolidated Balance Sheet)\n- DATA SOURCES: Boeing Company FY2018 10-K, Consolidated Balance Sheet, filed with the SEC on February 8, 2019.",
+    "2": "As a financial analyst, I've reviewed the provided data for Boeing Company, FY2018.\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\nThe provided data is for a single fiscal year (FY2018). Therefore, **year-over-year changes cannot be computed** as there is no prior year's data for comparison.\n\n**2. Relevant Ratios (FY2018)**\n\n*   **Property, Plant, and Equipment (PP&E) to Total Assets Ratio**\n    *   Formula: Net PP&E / Total Assets\n    *   Calculation: $115,274 million / $85,028 million = **1.3557 or 135.57%**\n    *   Interpretation: This ratio indicates that Boeing's Net PP&E is significantly larger than its Total Assets.\n\n*   **Debt-to-Equity Ratio**\n    *   Formula: Total Liabilities / Shareholders' Equity\n    *   Calculation: $103,227 million / $36,433 million = **2.8333**\n    *   Interpretation: For every dollar of equity, Boeing has approximately $2.83 in debt. This suggests a relatively high reliance on debt financing.\n\n**3. Anomalies Flagged**\n\n*   **PP&E to Total Assets Ratio (135.57%)**: This is a significant anomaly. Net Property, Plant, and Equipment *cannot* exceed Total Assets, as PP&E is a component of Total Assets. This suggests a potential data entry error or misinterpretation of the source data.\n\n    *   **Cross-Verification Check**:\n        *   Total Assets = Total Liabilities + Shareholders' Equity\n        *   $85,028 million = $103,227 million + $36,433 million\n        *   $85,028 million = $139,660 million\n\n    *   The fundamental accounting equation (Assets = Liabilities + Equity) does not balance with the provided figures ($85,028 million vs. $139,660 million). This confirms a significant inconsistency in the provided \"Supporting Data\" for Total Assets, Total Liabilities, and Shareholders' Equity, or the \"Primary Metric\" for Net PP&E.\n\n**Conclusion:**\n\nWhile year-over-year changes cannot be calculated, the computed ratios highlight a critical anomaly. The provided data for Boeing Company's FY2018 appears inconsistent, specifically regarding the relationship between Net PP&E and Total Assets, and the fundamental accounting equation. Further investigation into the source data (Boeing Company FY2018 10-K) is strongly recommended to reconcile these discrepancies before drawing definitive conclusions.",
+    "3": "## Boeing Company: FY2018 Financial Report\n\n### Executive Summary\n\nThis report analyzes key financial metrics for Boeing Company for Fiscal Year 2018, based on data from the FY2018 10-K. While year-over-year comparisons are not possible with the provided single-year data, an in-depth review of the balance sheet components reveals significant inconsistencies. Specifically, Net Property, Plant, and Equipment (PP&E) is reported at $115,274 million, exceeding the stated Total Assets of $85,028 million. Furthermore, the fundamental accounting equation (Assets = Liabilities + Equity) does not balance with the provided figures. These discrepancies necessitate a thorough re-examination of the source data before any definitive financial conclusions can be drawn.\n\n### Analysis\n\nFor FY2018, Boeing Company reported Net Property, Plant, and Equipment of $115,274 million. Total Assets were stated as $85,028 million, Total Liabilities as $103,227 million, and Shareholders' Equity as $36,433 million.\n\nTwo key ratios were calculated:\n\n*   **PP&E to Total Assets Ratio:** This ratio is calculated as Net PP&E / Total Assets. Using the provided figures, $115,274 million / $85,028 million results in a ratio of 1.3557 or 135.57%. This indicates that Net PP&E is significantly larger than Total Assets, which is a fundamental accounting impossibility as PP&E is a component of Total Assets.\n*   **Debt-to-Equity Ratio:** Calculated as Total Liabilities / Shareholders' Equity, this ratio is $103,227 million / $36,433 million, yielding a value of 2.8333. This suggests a substantial reliance on debt financing relative to equity.\n\n### Key Risks\n\nThe primary risk identified is the significant inconsistency within the provided financial data itself. The Net PP&E figure of $115,274 million cannot logically exceed the Total Assets of $85,028 million. Additionally, the fundamental accounting equation does not balance, as Total Assets ($85,028 million) do not equal the sum of Total Liabilities ($103,227 million) and Shareholders' Equity ($36,433 million), which sum to $139,660 million. These anomalies raise serious concerns about the accuracy and reliability of the underlying data.\n\n### Conclusion\n\nThe financial data provided for Boeing Company's FY2018 contains critical inconsistencies that prevent a reliable financial assessment. The reported Net PP&E exceeding Total Assets and the imbalance in the accounting equation indicate potential data entry errors or misinterpretation of the source documents. It is imperative to reconcile these discrepancies by re-verifying all figures directly from the Boeing Company FY2018 10-K, Consolidated Balance Sheet, before any further analysis or investment decisions are made.",
+    "4": "## Boeing Company: FY2018 Financial Report\n\n### Executive Summary\n\nThis report analyzes key financial metrics for Boeing Company for Fiscal Year 2018, based on data from the FY2018 10-K. An in-depth review of the balance sheet components reveals significant inconsistencies. Specifically, Net Property, Plant, and Equipment (PP&E) is reported at $115,274 million, exceeding the stated Total Assets of $85,028 million. Furthermore, the fundamental accounting equation (Assets = Liabilities + Equity) does not balance with the provided figures. These discrepancies necessitate a thorough re-examination of the source data before any definitive financial conclusions can be drawn.\n\n### Analysis\n\nFor FY2018, Boeing Company reported Net Property, Plant, and Equipment of $115,274 million. Total Assets were stated as $85,028 million, Total Liabilities as $103,227 million, and Shareholders' Equity as $36,433 million.\n\nTwo key ratios were calculated:\n\n*   **PP&E to Total Assets Ratio:** This ratio is calculated as Net PP&E / Total Assets. Using the provided figures, $115,274 million / $85,028 million results in a ratio of 1.3557 or 135.57%. This indicates that Net PP&E is significantly larger than Total Assets, which is a fundamental accounting impossibility as PP&E is a component of Total Assets.\n*   **Debt-to-Equity Ratio:** Calculated as Total Liabilities / Shareholders' Equity, this ratio is $103,227 million / $36,433 million, yielding a value of 2.8333. This suggests a substantial reliance on debt financing relative to equity.\n\n### Key Risks\n\nThe primary risk identified is the significant inconsistency within the provided financial data itself. The Net PP&E figure of $115,274 million cannot logically exceed the Total Assets of $85,028 million. Additionally, the fundamental accounting equation does not balance, as Total Assets ($85,028 million) do not equal the sum of Total Liabilities ($103,227 million) and Shareholders' Equity ($36,433 million), which sum to $139,660 million. These anomalies raise serious concerns about the accuracy and reliability of the underlying data.\n\n### Conclusion\n\nThe financial data provided for Boeing Company's FY2018 contains critical inconsistencies that prevent a reliable financial assessment. The reported Net PP&E exceeding Total Assets and the imbalance in the accounting equation indicate potential data entry errors or misinterpretation of the source documents. It is imperative to reconcile these discrepancies by re-verifying all figures directly from the Boeing Company FY2018 10-K, Consolidated Balance Sheet, before any further analysis or investment decisions are made."
+  },
+  "gates": {
+    "gate_1": {
+      "verified": [
+        {
+          "value": "$115,274 million",
+          "ref": 117359.0
+        },
+        {
+          "value": "$85,028 million",
+          "ref": 83535.0
+        },
+        {
+          "value": "$103,227 million",
+          "ref": 103227.0
+        },
+        {
+          "value": "$36,433 million",
+          "ref": 36433.0
+        }
+      ],
+      "refuted": [],
+      "unverified": [],
+      "n_refs": 20
+    },
+    "gate_2": {
+      "verified": [
+        {
+          "value": "$115,274 million",
+          "ref": 117359.0
+        },
+        {
+          "value": "$85,028 million",
+          "ref": 83535.0
+        },
+        {
+          "value": "$103,227 million",
+          "ref": 103227.0
+        },
+        {
+          "value": "$36,433 million",
+          "ref": 36433.0
+        },
+        {
+          "value": "$85,028 million",
+          "ref": 83535.0
+        },
+        {
+          "value": "$103,227 million",
+          "ref": 103227.0
+        },
+        {
+          "value": "$36,433 million",
+          "ref": 36433.0
+        },
+        {
+          "value": "$85,028 million",
+          "ref": 83535.0
+        },
+        {
+          "value": "$139,660 million",
+          "ref": 139660.0
+        },
+        {
+          "value": "$85,028 million",
+          "ref": 83535.0
+        },
+        {
+          "value": "$139,660 million",
+          "ref": 139660.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$2.83",
+          "num": 2.83,
+          "correct": 5.0,
+          "dev": 0.434,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "135.57%"
+        },
+        {
+          "value": "135.57%"
+        }
+      ],
+      "n_refs": 20
+    },
+    "gate_3": {
+      "verified": [
+        {
+          "value": "$115,274 million",
+          "ref": 117359.0
+        },
+        {
+          "value": "$85,028 million",
+          "ref": 83535.0
+        },
+        {
+          "value": "$115,274 million",
+          "ref": 117359.0
+        },
+        {
+          "value": "$85,028 million",
+          "ref": 83535.0
+        },
+        {
+          "value": "$103,227 million",
+          "ref": 103227.0
+        },
+        {
+          "value": "$36,433 million",
+          "ref": 36433.0
+        },
+        {
+          "value": "$115,274 million",
+          "ref": 117359.0
+        },
+        {
+          "value": "$85,028 million",
+          "ref": 83535.0
+        },
+        {
+          "value": "$103,227 million",
+          "ref": 103227.0
+        },
+        {
+          "value": "$36,433 million",
+          "ref": 36433.0
+        },
+        {
+          "value": "$115,274 million",
+          "ref": 117359.0
+        },
+        {
+          "value": "$85,028 million",
+          "ref": 83535.0
+        },
+        {
+          "value": "$85,028 million",
+          "ref": 83535.0
+        },
+        {
+          "value": "$103,227 million",
+          "ref": 103227.0
+        },
+        {
+          "value": "$36,433 million",
+          "ref": 36433.0
+        },
+        {
+          "value": "$139,660 million",
+          "ref": 139660.0
+        }
+      ],
+      "refuted": [],
+      "unverified": [
+        {
+          "value": "135.57%"
+        }
+      ],
+      "n_refs": 20
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_060_D8048F85",
+      "hid": "FB_060_D8048F85_H2",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 115274.0,
+      "orig_num": 83535.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_060_D8048F85",
+      "hid": "FB_060_D8048F85_H1",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 85028.0,
+      "orig_num": 139660.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:25:28.858085+00:00"
+}

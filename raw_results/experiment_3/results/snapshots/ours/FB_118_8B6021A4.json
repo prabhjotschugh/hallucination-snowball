@@ -1,0 +1,382 @@
+{
+  "question_id": "FB_118_8B6021A4",
+  "method": "ours",
+  "final_output": "## Nike, Inc. - Fiscal Year 2023 Financial Report\n\n### Executive Summary\n\nNike, Inc. experienced a decrease in its net cash position in Fiscal Year 2023, with total cash flow declining to $1,837 million from $3,800 million in FY2022. While operating activities remained the primary source of cash, generating $5,066 million, this represented a slight decrease of 2.58% from the prior year. Significant increases in cash outflows from both investing and financing activities contributed to the overall reduction in cash.\n\n### Analysis\n\nCash Flows from Operating Activities for FY2023 were $5,066 million, a modest decline of $134 million (2.58%) compared to FY2022's $5,200 million. This follows a more substantial decrease of $1,837 million (26.15%) from FY2021 ($7,037 million) to FY2022.\n\nCash Flows from Investing Activities saw a significant increase in outflow, reaching $(1,308) million in FY2023, a 77.00% increase in outflow compared to $(739) million in FY2022. This indicates increased capital expenditures or acquisitions.\n\nCash Flows from Financing Activities also increased in outflow to $(1,749) million in FY2023, a 14.09% increase from $(1,533) million in FY2022.\n\nThe Net Change in Cash (Total Cash Flow) for FY2023 was $1,837 million, down from $3,800 million in FY2022 and $5,016 million in FY2021. The Cash Flow from Operations to Investing Activities Ratio declined to 3.87x in FY2023 from 7.04x in FY2022, indicating a smaller proportion of operating cash flow available to cover investment needs.\n\n### Key Risks\n\nA primary risk is the sustained decline in operating cash flow, evidenced by the 26.15% drop from FY2021 to FY2022 and a further 2.58% decrease into FY2023. Concurrently, the substantial 77.00% increase in investing cash outflows in FY2023 suggests higher capital intensity, which, combined with decreasing operational cash generation, could strain liquidity if not managed effectively. The declining trend in the Cash Flow from Operations to Investing Activities Ratio signals reduced financial flexibility.\n\n### Conclusion\n\nNike, Inc.'s financial performance in FY2023 reflects a challenging environment with decreasing operational cash generation and increasing capital deployment. While operating activities remain robust, the significant increase in investing and financing outflows led to a reduced net cash position. Management should closely monitor the efficiency of capital allocation and strategies to bolster operating cash flow to maintain financial health and flexibility.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Nike, Inc. - Fiscal Year 2023\n- PRIMARY METRIC: \n  - Cash Flows from Operating Activities: $5,066 million (per the FY2023 10-K, Consolidated Statements of Cash Flows)\n  - Cash Flows from Investing Activities: $(1,308) million (per the FY2023 10-K, Consolidated Statements of Cash Flows)\n  - Cash Flows from Financing Activities: $(1,749) million (per the FY2023 10-K, Consolidated Statements of Cash Flows)\n\n- SUPPORTING DATA:\n  - Fiscal Year 2022:\n    - Cash Flows from Operating Activities: $5,200 million (per the FY2022 10-K, Consolidated Statements of Cash Flows)\n    - Cash Flows from Investing Activities: $(739) million (per the FY2022 10-K, Consolidated Statements of Cash Flows)\n    - Cash Flows from Financing Activities: $(1,533) million (per the FY2022 10-K, Consolidated Statements of Cash Flows)\n  \n  - Fiscal Year 2021:\n    - Cash Flows from Operating Activities: $7,663 million (per the FY2021 10-K, Consolidated Statements of Cash Flows)\n    - Cash Flows from Investing Activities: $(1,042) million (per the FY2021 10-K, Consolidated Statements of Cash Flows)\n    - Cash Flows from Financing Activities: $(1,605) million (per the FY2021 10-K, Consolidated Statements of Cash Flows)\n\n- DATA SOURCES:\n  - FY2023 10-K, Consolidated Statements of Cash Flows\n  - FY2022 10-K, Consolidated Statements of Cash Flows\n  - FY2021 10-K, Consolidated Statements of Cash Flows\n\nIn summary, for FY2023, Nike's cash flow from operating activities was the highest at $4,216 million, indicating that this segment contributed the most to the overall cash flow.",
+    "2": "As a financial analyst, I've reviewed the provided data for Nike, Inc. and computed the requested metrics.\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\n| Metric                               | FY2023 Value ($M) | FY2022 Value ($M) | FY2021 Value ($M) | FY23 vs FY22 Absolute Change ($M) | FY23 vs FY22 Percentage Change (%) | FY22 vs FY21 Absolute Change ($M) | FY22 vs FY21 Percentage Change (%) |\n| :----------------------------------- | :---------------- | :---------------- | :---------------- | :-------------------------------- | :--------------------------------- | :-------------------------------- | :--------------------------------- |\n| Cash Flows from Operating Activities | 5,066             | 5,200             | 7,663             | -134                              | -2.58%                             | -2,463                            | -32.14%                            |\n| Cash Flows from Investing Activities | (1,308)           | (739)             | (1,042)           | -569                              | 77.00%                             | 303                               | -29.08%                            |\n| Cash Flows from Financing Activities | (1,749)           | (1,533)           | (1,605)           | -216                              | 14.09%                             | 72                                | -4.49%                             |\n\n**Formulas:**\n*   **Absolute Change:** Current Year Value - Prior Year Value\n*   **Percentage Change:** (Absolute Change / Prior Year Value) * 100\n\n**2. Relevant Ratios**\n\n**Net Change in Cash (Total Cash Flow)**\n*   **FY2023:** $5,066 + $(-1,308) + $(-1,749) = $2,009 million\n*   **FY2022:** $5,200 + $(-739) + $(-1,533) = $2,928 million\n*   **FY2021:** $7,663 + $(-1,042) + $(-1,605) = $5,016 million\n\n**Formula:** Operating Activities + Investing Activities + Financing Activities\n\n**Cash Flow from Operations to Investing Activities Ratio**\n*   **FY2023:** $5,066 / $1,308 = 3.87x\n*   **FY2022:** $5,200 / $739 = 7.04x\n*   **FY2021:** $7,663 / $1,042 = 7.35x\n\n**Formula:** Cash Flows from Operating Activities / Absolute Value of Cash Flows from Investing Activities\n\n**3. Anomalies Flagged**\n\n*   **FY2023 Cash Flows from Operating Activities:** The researcher's summary states \"$4,216 million\" for FY2023 operating cash flow, but the detailed data explicitly provides \"$5,066 million.\" **The $4,216 million figure is incorrect and should be disregarded.** The correct value is $5,066 million.\n*   **Significant Decline in Operating Cash Flow (FY2022 vs FY2021):** A 32.14% decrease in operating cash flow from FY2021 to FY2022 is substantial and warrants further investigation into its drivers (e.g., changes in working capital, profitability).\n*   **Large Increase in Investing Cash Outflow (FY2023 vs FY2022):** Cash outflows from investing activities increased by 77.00% in FY2023 compared to FY2022. This suggests a significant increase in capital expenditures or acquisitions, which could be a strategic move but impacts free cash flow.\n*   **Decreasing Trend in Cash Flow from Operations to Investing Activities Ratio:** This ratio has declined from 7.35x in FY2021 to 3.87x in FY2023. While still positive, the trend indicates that a smaller proportion of operating cash flow is available to cover investing activities, potentially signaling increased capital intensity or reduced operational efficiency in generating cash relative to investment needs.",
+    "3": "## Nike, Inc. - Fiscal Year 2023 Financial Report\n\n### Executive Summary\n\nNike, Inc. experienced a decrease in its net cash position in Fiscal Year 2023, with total cash flow declining to $2,009 million from $2,928 million in FY2022. While operating activities remained the primary source of cash, generating $5,066 million, this represented a slight decrease of 2.58% from the prior year. Significant increases in cash outflows from both investing and financing activities contributed to the overall reduction in cash.\n\n### Analysis\n\nCash Flows from Operating Activities for FY2023 were $5,066 million, a modest decline of $134 million (2.58%) compared to FY2022's $5,200 million. This follows a more substantial decrease of $2,463 million (32.14%) from FY2021 ($7,663 million) to FY2022.\n\nCash Flows from Investing Activities saw a significant increase in outflow, reaching $(1,308) million in FY2023, a 77.00% increase in outflow compared to $(739) million in FY2022. This indicates increased capital expenditures or acquisitions.\n\nCash Flows from Financing Activities also increased in outflow to $(1,749) million in FY2023, a 14.09% increase from $(1,533) million in FY2022.\n\nThe Net Change in Cash (Total Cash Flow) for FY2023 was $2,009 million, down from $2,928 million in FY2022 and $5,016 million in FY2021. The Cash Flow from Operations to Investing Activities Ratio declined to 3.87x in FY2023 from 7.04x in FY2022, indicating a smaller proportion of operating cash flow available to cover investment needs.\n\n### Key Risks\n\nA primary risk is the sustained decline in operating cash flow, evidenced by the 32.14% drop from FY2021 to FY2022 and a further 2.58% decrease into FY2023. Concurrently, the substantial 77.00% increase in investing cash outflows in FY2023 suggests higher capital intensity, which, combined with decreasing operational cash generation, could strain liquidity if not managed effectively. The declining trend in the Cash Flow from Operations to Investing Activities Ratio signals reduced financial flexibility.\n\n### Conclusion\n\nNike, Inc.'s financial performance in FY2023 reflects a challenging environment with decreasing operational cash generation and increasing capital deployment. While operating activities remain robust, the significant increase in investing and financing outflows led to a reduced net cash position. Management should closely monitor the efficiency of capital allocation and strategies to bolster operating cash flow to maintain financial health and flexibility.",
+    "4": "## Nike, Inc. - Fiscal Year 2023 Financial Report\n\n### Executive Summary\n\nNike, Inc. experienced a decrease in its net cash position in Fiscal Year 2023, with total cash flow declining to $1,837 million from $3,800 million in FY2022. While operating activities remained the primary source of cash, generating $5,066 million, this represented a slight decrease of 2.58% from the prior year. Significant increases in cash outflows from both investing and financing activities contributed to the overall reduction in cash.\n\n### Analysis\n\nCash Flows from Operating Activities for FY2023 were $5,066 million, a modest decline of $134 million (2.58%) compared to FY2022's $5,200 million. This follows a more substantial decrease of $1,837 million (26.15%) from FY2021 ($7,037 million) to FY2022.\n\nCash Flows from Investing Activities saw a significant increase in outflow, reaching $(1,308) million in FY2023, a 77.00% increase in outflow compared to $(739) million in FY2022. This indicates increased capital expenditures or acquisitions.\n\nCash Flows from Financing Activities also increased in outflow to $(1,749) million in FY2023, a 14.09% increase from $(1,533) million in FY2022.\n\nThe Net Change in Cash (Total Cash Flow) for FY2023 was $1,837 million, down from $3,800 million in FY2022 and $5,016 million in FY2021. The Cash Flow from Operations to Investing Activities Ratio declined to 3.87x in FY2023 from 7.04x in FY2022, indicating a smaller proportion of operating cash flow available to cover investment needs.\n\n### Key Risks\n\nA primary risk is the sustained decline in operating cash flow, evidenced by the 26.15% drop from FY2021 to FY2022 and a further 2.58% decrease into FY2023. Concurrently, the substantial 77.00% increase in investing cash outflows in FY2023 suggests higher capital intensity, which, combined with decreasing operational cash generation, could strain liquidity if not managed effectively. The declining trend in the Cash Flow from Operations to Investing Activities Ratio signals reduced financial flexibility.\n\n### Conclusion\n\nNike, Inc.'s financial performance in FY2023 reflects a challenging environment with decreasing operational cash generation and increasing capital deployment. While operating activities remain robust, the significant increase in investing and financing outflows led to a reduced net cash position. Management should closely monitor the efficiency of capital allocation and strategies to bolster operating cash flow to maintain financial health and flexibility."
+  },
+  "gates": {
+    "gate_1": {
+      "verified": [
+        {
+          "value": "$5,066 million",
+          "ref": 5066.0
+        },
+        {
+          "value": "$5,200 million",
+          "ref": 5200.0
+        },
+        {
+          "value": "1,308",
+          "ref": 1308.0
+        },
+        {
+          "value": "1,749",
+          "ref": 1749.0
+        },
+        {
+          "value": "1,533",
+          "ref": 1533.0
+        },
+        {
+          "value": "1,042",
+          "ref": 1042.0
+        },
+        {
+          "value": "1,605",
+          "ref": 1605.0
+        }
+      ],
+      "refuted": [],
+      "unverified": [
+        {
+          "value": "$7,663 million"
+        },
+        {
+          "value": "$4,216 million"
+        }
+      ],
+      "n_refs": 25
+    },
+    "gate_2": {
+      "verified": [
+        {
+          "value": "$5,066",
+          "ref": 5066.0
+        },
+        {
+          "value": "$5,200",
+          "ref": 5200.0
+        },
+        {
+          "value": "$5,016 million",
+          "ref": 5066.0
+        },
+        {
+          "value": "$5,066",
+          "ref": 5066.0
+        },
+        {
+          "value": "$1,308",
+          "ref": 1308.0
+        },
+        {
+          "value": "$5,200",
+          "ref": 5200.0
+        },
+        {
+          "value": "$1,042",
+          "ref": 1042.0
+        },
+        {
+          "value": "$5,066 million",
+          "ref": 5066.0
+        },
+        {
+          "value": "$5,066 million",
+          "ref": 5066.0
+        },
+        {
+          "value": "5,066",
+          "ref": 5066.0
+        },
+        {
+          "value": "5,200",
+          "ref": 5200.0
+        },
+        {
+          "value": "1,308",
+          "ref": 1308.0
+        },
+        {
+          "value": "1,042",
+          "ref": 1042.0
+        },
+        {
+          "value": "1,749",
+          "ref": 1749.0
+        },
+        {
+          "value": "1,533",
+          "ref": 1533.0
+        },
+        {
+          "value": "1,605",
+          "ref": 1605.0
+        },
+        {
+          "value": "1,308",
+          "ref": 1308.0
+        },
+        {
+          "value": "1,749",
+          "ref": 1749.0
+        },
+        {
+          "value": "1,533",
+          "ref": 1533.0
+        },
+        {
+          "value": "1,042",
+          "ref": 1042.0
+        },
+        {
+          "value": "1,605",
+          "ref": 1605.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$2,009 million",
+          "num": 2009.0,
+          "correct": 1837.0,
+          "dev": 0.0856,
+          "source": "evidence"
+        },
+        {
+          "value": "$2,928 million",
+          "num": 2928.0,
+          "correct": 3800.0,
+          "dev": 0.2295,
+          "source": "evidence"
+        },
+        {
+          "value": "$739",
+          "num": 739.0,
+          "correct": 1042.0,
+          "dev": 0.2908,
+          "source": "source_document"
+        },
+        {
+          "value": "2,463",
+          "num": 2463.0,
+          "correct": 1837.0,
+          "dev": 0.2542,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$7,663"
+        },
+        {
+          "value": "$7,663"
+        },
+        {
+          "value": "$4,216 million"
+        },
+        {
+          "value": "$4,216 million"
+        },
+        {
+          "value": "-2.58%"
+        },
+        {
+          "value": "-32.14%"
+        },
+        {
+          "value": "77.00%"
+        },
+        {
+          "value": "-29.08%"
+        },
+        {
+          "value": "14.09%"
+        },
+        {
+          "value": "-4.49%"
+        },
+        {
+          "value": "32.14%"
+        },
+        {
+          "value": "77.00%"
+        },
+        {
+          "value": "7,663"
+        }
+      ],
+      "n_refs": 25
+    },
+    "gate_3": {
+      "verified": [
+        {
+          "value": "$5,066 million",
+          "ref": 5066.0
+        },
+        {
+          "value": "$5,066 million",
+          "ref": 5066.0
+        },
+        {
+          "value": "$5,200 million",
+          "ref": 5200.0
+        },
+        {
+          "value": "$5,016 million",
+          "ref": 5066.0
+        },
+        {
+          "value": "1,308",
+          "ref": 1308.0
+        },
+        {
+          "value": "1,749",
+          "ref": 1749.0
+        },
+        {
+          "value": "1,533",
+          "ref": 1533.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$2,009 million",
+          "num": 2009.0,
+          "correct": 1837.0,
+          "dev": 0.0856,
+          "source": "evidence"
+        },
+        {
+          "value": "$2,928 million",
+          "num": 2928.0,
+          "correct": 3800.0,
+          "dev": 0.2295,
+          "source": "evidence"
+        },
+        {
+          "value": "$2,463 million",
+          "num": 2463.0,
+          "correct": 1837.0,
+          "dev": 0.2542,
+          "source": "evidence"
+        },
+        {
+          "value": "$2,009 million",
+          "num": 2009.0,
+          "correct": 1837.0,
+          "dev": 0.0856,
+          "source": "evidence"
+        },
+        {
+          "value": "$2,928 million",
+          "num": 2928.0,
+          "correct": 3800.0,
+          "dev": 0.2295,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "$134 million"
+        },
+        {
+          "value": "$7,663 million"
+        },
+        {
+          "value": "2.58%"
+        },
+        {
+          "value": "2.58%"
+        },
+        {
+          "value": "32.14%"
+        },
+        {
+          "value": "77.00%"
+        },
+        {
+          "value": "14.09%"
+        },
+        {
+          "value": "32.14%"
+        },
+        {
+          "value": "2.58%"
+        },
+        {
+          "value": "77.00%"
+        }
+      ],
+      "n_refs": 25
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_118_8B6021A4",
+      "hid": "FB_118_8B6021A4_H3",
+      "method": "ours",
+      "type": "large_number",
+      "inj_num": 739.0,
+      "orig_num": 1112.0,
+      "survived": false,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": true,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": true,
+      "actionable": true,
+      "present_s1": false,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_118_8B6021A4",
+      "hid": "FB_118_8B6021A4_H2",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 7663.0,
+      "orig_num": 5752.0,
+      "survived": false,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": false
+    },
+    {
+      "qid": "FB_118_8B6021A4",
+      "hid": "FB_118_8B6021A4_H1",
+      "method": "ours",
+      "type": "dollar_amount",
+      "inj_num": 4216.0,
+      "orig_num": 5066.0,
+      "survived": false,
+      "corrected": true,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": false,
+      "present_s4": false
+    }
+  ],
+  "quality_score": 2,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:48:03.772662+00:00"
+}

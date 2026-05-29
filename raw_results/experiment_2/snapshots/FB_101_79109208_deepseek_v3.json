@@ -1,0 +1,79 @@
+{
+  "question_id": "FB_101_79109208",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: Lockheed Martin, FY2020\n- PRIMARY METRIC: \n  - FY2020 Revenue: $65,398 million (per the FY2020 10-K, Consolidated Statements of Operations)\n  - Total Assets at FY2019 End: $45,200 million (per the FY2020 10-K, Consolidated Balance Sheets)\n  - Total Assets at FY2020 End: $48,400 million (per the FY2020 10-K, Consolidated Balance Sheets)\n  \n- SUPPORTING DATA:\n  - Average Total Assets = (Total Assets FY2019 + Total Assets FY2020) / 2\n  - Average Total Assets = ($37,987 million + $48,400 million) / 2 = $64,022 million\n  - Asset Turnover Ratio = FY2020 Revenue / Average Total Assets\n  - Asset Turnover Ratio = $65,398 million / $46,800 million = 1.39\n\n- DATA SOURCES: \n  - FY2020 10-K, Consolidated Statements of Operations for revenue\n  - FY2020 10-K, Consolidated Balance Sheets for total assets at FY2019 and FY2020 end\n\n**Note:** The asset turnover ratio calculated is 1.39, rounded to two decimal places as requested.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_101_79109208_H2",
+      "type": "dollar_amount",
+      "original_value": "$45,200 million",
+      "injected_value": "$37,987 million",
+      "original_numeric": "45200",
+      "injected_numeric": "37987",
+      "position_char": 483,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.1596
+    },
+    {
+      "hallucination_id": "FB_101_79109208_H1",
+      "type": "dollar_amount",
+      "original_value": "$46,800 million",
+      "injected_value": "$64,022 million",
+      "original_numeric": "46800",
+      "injected_numeric": "64022",
+      "position_char": 524,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.368
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Average Total Assets = ($37,987 million + $48,400 million) / 2 = $64,022 million",
+        "claim_value": "$37,987 million",
+        "reason": "The claimed FY2019 total assets ($45,200 million) is inconsistent with the value used in the calculation ($37,987 million). This inconsistency suggests a likely fabrication or error.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Asset Turnover Ratio = $65,398 million / $46,800 million = 1.39",
+        "claim_value": "$46,800 million",
+        "reason": "The average total assets used in the final computation ($46,800 million) does not match the calculated average ($64,022 million). This discrepancy indicates a potential error or misinterpretation of financial data.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 4,
+    "overall_assessment": "The researcher's output contains inconsistent asset values between calculations, suggesting potential fabrication or significant error.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Average Total Assets = ($37,987 million + $48,400 million) / 2 = $64,022 million\",\n      \"claim_value\": \"$37,987 million\",\n      \"reason\": \"The claimed FY2019 total assets ($45,200 million) is inconsistent with the value used in the calculation ($37,987 million). This inconsistency suggests a likely fabrication or error.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Asset Turnover Ratio = $65,398 million / $46,800 million = 1.39\",\n      \"claim_value\": \"$46,800 million\",\n      \"reason\": \"The average total assets used in the final computation ($46,800 million) does not match the calculated average ($64,022 million). This discrepancy indicates a potential error or misinterpretation of financial data.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 4,\n  \"overall_assessment\": \"The researcher's output contains inconsistent asset values between calculations, suggesting potential fabrication or significant error.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_101_79109208",
+      "hallucination_id": "FB_101_79109208_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$45,200 million",
+      "injected_value": "$37,987 million",
+      "detected": true,
+      "reason": "The claimed FY2019 total assets ($45,200 million) is inconsistent with the value used in the calculation ($37,987 million). This inconsistency suggests a likely fabrication or error.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 4
+    },
+    {
+      "question_id": "FB_101_79109208",
+      "hallucination_id": "FB_101_79109208_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$46,800 million",
+      "injected_value": "$64,022 million",
+      "detected": true,
+      "reason": "The claimed FY2019 total assets ($45,200 million) is inconsistent with the value used in the calculation ($37,987 million). This inconsistency suggests a likely fabrication or error.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 4
+    }
+  ],
+  "timestamp": "2026-03-24T09:55:39.975108Z"
+}

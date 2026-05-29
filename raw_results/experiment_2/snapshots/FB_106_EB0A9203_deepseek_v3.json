@@ -1,0 +1,55 @@
+{
+  "question_id": "FB_106_EB0A9203",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: MGM Resorts International, Fiscal Year 2022\n- PRIMARY METRIC: MGM Resorts International declared dividends of $0.01 per share on December 15, 2021, which was paid on January 15, 2022, totaling $1 million for the fiscal year 2022. This is reported in the FY2022 10-K, Consolidated Statements of Shareholders' Equity.\n- SUPPORTING DATA: \n  - For FY2021, MGM Resorts declared dividends of $0.01 per share, totaling $2 million.\n  - For FY2020, MGM Resorts did not declare any dividends due to the impact of the COVID-19 pandemic.\n- DATA SOURCES: \n  - MGM Resorts International FY2022 10-K, Consolidated Statements of Shareholders' Equity, page 54.\n  - MGM Resorts International FY2021 10-K, Consolidated Statements of Shareholders' Equity, page 53.\n  - MGM Resorts International FY2020 10-K, Consolidated Statements of Shareholders' Equity, page 52.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_106_EB0A9203_H2",
+      "type": "dollar_amount",
+      "original_value": "$2 million",
+      "injected_value": "$1 million",
+      "original_numeric": "2",
+      "injected_numeric": "1",
+      "position_char": 213,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.254
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "MGM Resorts International declared dividends of $0.01 per share on December 15, 2021, which was paid on January 15, 2022, totaling $1 million for the fiscal year 2022.",
+        "claim_value": "$1 million",
+        "reason": "The total dividend amount appears unusually low for a company of MGM's size, given that $0.01 per share totals $1 million implies only ~100 million shares outstanding, which seems inconsistent with MGM's actual share count (typically >300 million shares).",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "For FY2021, MGM Resorts declared dividends of $0.01 per share, totaling $2 million.",
+        "claim_value": "$2 million",
+        "reason": "Doubling the total payout while maintaining the same per-share dividend suggests the share count doubled in a year, which is inconsistent with MGM's stable share structure during this period.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 4,
+    "overall_assessment": "The declared dividend totals ($1M and $2M) are implausible given MGM's typical share count, suggesting potential fabrication.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"MGM Resorts International declared dividends of $0.01 per share on December 15, 2021, which was paid on January 15, 2022, totaling $1 million for the fiscal year 2022.\",\n      \"claim_value\": \"$1 million\",\n      \"reason\": \"The total dividend amount appears unusually low for a company of MGM's size, given that $0.01 per share totals $1 million implies only ~100 million shares outstanding, which seems inconsistent with MGM's actual share count (typically >300 million shares).\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"For FY2021, MGM Resorts declared dividends of $0.01 per share, totaling $2 million.\",\n      \"claim_value\": \"$2 million\",\n      \"reason\": \"Doubling the total payout while maintaining the same per-share dividend suggests the share count doubled in a year, which is inconsistent with MGM's stable share structure during this period.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 4,\n  \"overall_assessment\": \"The declared dividend totals ($1M and $2M) are implausible given MGM's typical share count, suggesting potential fabrication.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_106_EB0A9203",
+      "hallucination_id": "FB_106_EB0A9203_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$2 million",
+      "injected_value": "$1 million",
+      "detected": true,
+      "reason": "The total dividend amount appears unusually low for a company of MGM's size, given that $0.01 per share totals $1 million implies only ~100 million shares outstanding, which seems inconsistent with MGM's actual share count (typically >300 million shares).",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 4
+    }
+  ],
+  "timestamp": "2026-03-24T09:56:47.876504Z"
+}

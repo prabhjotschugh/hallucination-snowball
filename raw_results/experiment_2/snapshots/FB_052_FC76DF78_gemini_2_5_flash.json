@@ -1,0 +1,115 @@
+{
+  "question_id": "FB_052_FC76DF78",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Best Buy Co., Inc. - Fiscal Years 2023, 2022, and 2021\n- PRIMARY METRIC: \n  - FY2023: Best Buy did not report any major acquisitions in the FY2023 10-K, as per the Consolidated Financial Statements and Notes.\n  - FY2022: Best Buy acquired the home technology services company, \"Geek Squad,\" for USD 3.0 billion, as noted in the FY2022 10-K, under the section \"Business Acquisitions.\"\n  - FY2021: Best Buy acquired the health technology company, \"GreatCall,\" for USD 800 million, as per the FY2021 10-K, under the section \"Business Acquisitions.\"\n\n- SUPPORTING DATA: \n  - FY2023: No acquisitions reported.\n  - FY2022: Total revenue was USD 51,764 million, and net income was USD 1,157 million (per the FY2022 10-K, Consolidated Statements of Operations).\n  - FY2021: Total revenue was USD 32,254 million, and net income was USD 1,229 million (per the FY2021 10-K, Consolidated Statements of Operations).\n\n- DATA SOURCES: \n  - FY2023 10-K, Consolidated Financial Statements and Notes.\n  - FY2022 10-K, Consolidated Financial Statements and Notes.\n  - FY2021 10-K, Consolidated Financial Statements and Notes. \n\nNote: The analysis of strategic implications and trends in acquisition size, sector focus, and their impact on Best Buy's financial performance is not included as per the directive to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_052_FC76DF78_H3",
+      "type": "large_number",
+      "original_value": "1,846",
+      "injected_value": "1,157",
+      "original_numeric": "1846",
+      "injected_numeric": "1157",
+      "position_char": 698,
+      "sentence_approx": 8,
+      "perturbation_delta": -0.373
+    },
+    {
+      "hallucination_id": "FB_052_FC76DF78_H2",
+      "type": "large_number",
+      "original_value": "47,262",
+      "injected_value": "32,254",
+      "original_numeric": "47262",
+      "injected_numeric": "32254",
+      "position_char": 808,
+      "sentence_approx": 9,
+      "perturbation_delta": -0.3175
+    },
+    {
+      "hallucination_id": "FB_052_FC76DF78_H1",
+      "type": "large_number",
+      "original_value": "1,570",
+      "injected_value": "1,229",
+      "original_numeric": "1570",
+      "injected_numeric": "1229",
+      "position_char": 847,
+      "sentence_approx": 9,
+      "perturbation_delta": -0.2174
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Best Buy acquired the home technology services company, \"Geek Squad,\" for USD 3.0 billion, as noted in the FY2022 10-K, under the section \"Business Acquisitions.\"",
+        "claim_value": "USD 3.0 billion",
+        "reason": "Geek Squad was acquired by Best Buy in 2002, not in FY2022. The timing of this acquisition is incorrect.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Best Buy acquired the health technology company, \"GreatCall,\" for USD 800 million, as per the FY2021 10-K, under the section \"Business Acquisitions.\"",
+        "claim_value": "USD 800 million",
+        "reason": "GreatCall was acquired by Best Buy in 2018, not in FY2021. The timing of this acquisition is incorrect.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total revenue was USD 51,764 million",
+        "claim_value": "USD 51,764 million",
+        "reason": "When compared to the reported FY2021 revenue of USD 32,254 million, this implies an implausible year-over-year increase of over 60% for a mature retailer like Best Buy. Such a massive revenue jump is highly unlikely without a major, publicly known event (like a large merger) which is not mentioned, and it's inconsistent with the reported slight decrease in net income for the same period.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total revenue was USD 32,254 million",
+        "claim_value": "USD 32,254 million",
+        "reason": "When compared to the reported FY2022 revenue of USD 51,764 million, this implies an implausible year-over-year increase of over 60% for a mature retailer like Best Buy. Such a massive revenue jump is highly unlikely without a major, publicly known event (like a large merger) which is not mentioned, and it's inconsistent with the reported slight decrease in net income for the same period.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 7,
+    "overall_assessment": "The researcher output contains significant factual errors regarding the timing of major acquisitions and highly implausible year-over-year revenue figures for Best Buy.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Best Buy acquired the home technology services company, \\\"Geek Squad,\\\" for USD 3.0 billion, as noted in the FY2022 10-K, under the section \\\"Business Acquisitions.\\\"\",\n      \"claim_value\": \"USD 3.0 billion\",\n      \"reason\": \"Geek Squad was acquired by Best Buy in 2002, not in FY2022. The timing of this acquisition is incorrect.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Best Buy acquired the health technology company, \\\"GreatCall,\\\" for USD 800 million, as per the FY2021 10-K, under the section \\\"Business Acquisitions.\\\"\",\n      \"claim_value\": \"USD 800 million\",\n      \"reason\": \"GreatCall was acquired by Best Buy in 2018, not in FY2021. The timing of this acquisition is incorrect.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total revenue was USD 51,764 million\",\n      \"claim_value\": \"USD 51,764 million\",\n      \"reason\": \"When compared to the reported FY2021 revenue of USD 32,254 million, this implies an implausible year-over-year increase of over 60% for a mature retailer like Best Buy. Such a massive revenue jump is highly unlikely without a major, publicly known event (like a large merger) which is not mentioned, and it's inconsistent with the reported slight decrease in net income for the same period.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total revenue was USD 32,254 million\",\n      \"claim_value\": \"USD 32,254 million\",\n      \"reason\": \"When compared to the reported FY2022 revenue of USD 51,764 million, this implies an implausible year-over-year increase of over 60% for a mature retailer like Best Buy. Such a massive revenue jump is highly unlikely without a major, publicly known event (like a large merger) which is not mentioned, and it's inconsistent with the reported slight decrease in net income for the same period.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 7,\n  \"overall_assessment\": \"The researcher output contains significant factual errors regarding the timing of major acquisitions and highly implausible year-over-year revenue figures for Best Buy.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_052_FC76DF78",
+      "hallucination_id": "FB_052_FC76DF78_H3",
+      "model": "gemini-2.5-flash",
+      "injection_type": "large_number",
+      "original_value": "1,846",
+      "injected_value": "1,157",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_052_FC76DF78",
+      "hallucination_id": "FB_052_FC76DF78_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "large_number",
+      "original_value": "47,262",
+      "injected_value": "32,254",
+      "detected": true,
+      "reason": "When compared to the reported FY2022 revenue of USD 51,764 million, this implies an implausible year-over-year increase of over 60% for a mature retailer like Best Buy. Such a massive revenue jump is highly unlikely without a major, publicly known event (like a large merger) which is not mentioned, and it's inconsistent with the reported slight decrease in net income for the same period.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_052_FC76DF78",
+      "hallucination_id": "FB_052_FC76DF78_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "large_number",
+      "original_value": "1,570",
+      "injected_value": "1,229",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 7
+    }
+  ],
+  "timestamp": "2026-03-25T07:46:10.059316Z"
+}

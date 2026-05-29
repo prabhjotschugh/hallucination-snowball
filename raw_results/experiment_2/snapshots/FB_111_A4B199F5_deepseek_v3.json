@@ -1,0 +1,103 @@
+{
+  "question_id": "FB_111_A4B199F5",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: Microsoft Corporation, Fiscal Year 2016\n- PRIMARY METRIC: Cost of Goods Sold (COGS) for FY2016 is $15,037 million (per the FY2016 10-K, Consolidated Statements of Operations).\n- SUPPORTING DATA: \n  - FY2015 COGS: $19,557 million (per the FY2015 10-K, Consolidated Statements of Operations).\n  - FY2014 COGS: $28,477 million (per the FY2014 10-K, Consolidated Statements of Operations).\n- DATA SOURCES: \n  - FY2016 10-K, Consolidated Statements of Operations, page 51.\n  - FY2015 10-K, Consolidated Statements of Operations, page 51.\n  - FY2014 10-K, Consolidated Statements of Operations, page 51. \n\nNote: No financial ratios or narrative analysis has been provided as per the directive to present raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_111_A4B199F5_H3",
+      "type": "dollar_amount",
+      "original_value": "$24,060 million",
+      "injected_value": "$15,037 million",
+      "original_numeric": "24060",
+      "injected_numeric": "15037",
+      "position_char": 118,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.375
+    },
+    {
+      "hallucination_id": "FB_111_A4B199F5_H2",
+      "type": "dollar_amount",
+      "original_value": "$23,198 million",
+      "injected_value": "$19,557 million",
+      "original_numeric": "23198",
+      "injected_numeric": "19557",
+      "position_char": 233,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.1569
+    },
+    {
+      "hallucination_id": "FB_111_A4B199F5_H1",
+      "type": "dollar_amount",
+      "original_value": "$23,674 million",
+      "injected_value": "$28,477 million",
+      "original_numeric": "23674",
+      "injected_numeric": "28477",
+      "position_char": 328,
+      "sentence_approx": 3,
+      "perturbation_delta": 0.2029
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Cost of Goods Sold (COGS) for FY2016 is $15,037 million (per the FY2016 10-K, Consolidated Statements of Operations).",
+        "claim_value": "$15,037 million",
+        "reason": "A ~48% decrease from FY2015 COGS ($19,557 million) seems unusual unless there was a significant restructuring or divestiture, which was not mentioned.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "FY2015 COGS: $19,557 million (per the FY2015 10-K, Consolidated Statements of Operations).",
+        "claim_value": "$19,557 million",
+        "reason": "A ~31.3% decrease from FY2014 COGS ($28,477 million) is also unusually large for a company like Microsoft without noted major changes in business operations.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 3,
+    "overall_assessment": "Multiple COGS figures show unusually large year-over-year declines without explanation, raising suspicion.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Cost of Goods Sold (COGS) for FY2016 is $15,037 million (per the FY2016 10-K, Consolidated Statements of Operations).\",\n      \"claim_value\": \"$15,037 million\",\n      \"reason\": \"A ~48% decrease from FY2015 COGS ($19,557 million) seems unusual unless there was a significant restructuring or divestiture, which was not mentioned.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"FY2015 COGS: $19,557 million (per the FY2015 10-K, Consolidated Statements of Operations).\",\n      \"claim_value\": \"$19,557 million\",\n      \"reason\": \"A ~31.3% decrease from FY2014 COGS ($28,477 million) is also unusually large for a company like Microsoft without noted major changes in business operations.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 3,\n  \"overall_assessment\": \"Multiple COGS figures show unusually large year-over-year declines without explanation, raising suspicion.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_111_A4B199F5",
+      "hallucination_id": "FB_111_A4B199F5_H3",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$24,060 million",
+      "injected_value": "$15,037 million",
+      "detected": true,
+      "reason": "A ~48% decrease from FY2015 COGS ($19,557 million) seems unusual unless there was a significant restructuring or divestiture, which was not mentioned.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 3
+    },
+    {
+      "question_id": "FB_111_A4B199F5",
+      "hallucination_id": "FB_111_A4B199F5_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$23,198 million",
+      "injected_value": "$19,557 million",
+      "detected": true,
+      "reason": "A ~31.3% decrease from FY2014 COGS ($28,477 million) is also unusually large for a company like Microsoft without noted major changes in business operations.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 3
+    },
+    {
+      "question_id": "FB_111_A4B199F5",
+      "hallucination_id": "FB_111_A4B199F5_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$23,674 million",
+      "injected_value": "$28,477 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 3
+    }
+  ],
+  "timestamp": "2026-03-24T09:57:39.901288Z"
+}

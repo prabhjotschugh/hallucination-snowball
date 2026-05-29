@@ -1,0 +1,79 @@
+{
+  "question_id": "FB_110_74F7847F",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: MGM Resorts International, First Half of FY2023\n- PRIMARY METRIC: As of June 30, 2023, MGM Resorts reported short-term investments totaling $1,210 million, with the largest portion allocated to U.S. Treasury Bills amounting to $730 million. This information is per the FY2023 Q2 10-Q, Consolidated Balance Sheets.\n- SUPPORTING DATA: \n  - Total short-term investments: $1,500 million (June 30, 2023)\n  - U.S. Treasury Bills: $900 million (June 30, 2023)\n  - Other short-term investments: $600 million (June 30, 2023)\n- DATA SOURCES: \n  - MGM Resorts International FY2023 Q2 10-Q, Consolidated Balance Sheets, Page 5.\n\nPlease note that no trend analysis, ratio computation, or benchmarking against industry standards has been performed as per the directive to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_110_74F7847F_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,500 million",
+      "injected_value": "$1,210 million",
+      "original_numeric": "1500",
+      "injected_numeric": "1210",
+      "position_char": 160,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.1933
+    },
+    {
+      "hallucination_id": "FB_110_74F7847F_H1",
+      "type": "dollar_amount",
+      "original_value": "$900 million",
+      "injected_value": "$730 million",
+      "original_numeric": "900",
+      "injected_numeric": "730",
+      "position_char": 247,
+      "sentence_approx": 3,
+      "perturbation_delta": -0.1893
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Total short-term investments: $1,500 million (June 30, 2023)",
+        "claim_value": "$1,500 million",
+        "reason": "Inconsistent with the primary metric which states total short-term investments are $1,210 million",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "U.S. Treasury Bills: $900 million (June 30, 2023)",
+        "claim_value": "$900 million",
+        "reason": "Inconsistent with the primary metric which states U.S. Treasury Bills are $730 million",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 4,
+    "overall_assessment": "Inconsistencies found in supporting data, primary metric and supporting data do not match.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"Total short-term investments: $1,500 million (June 30, 2023)\",\n      \"claim_value\" : \"$1,500 million\",\n      \"reason\"      : \"Inconsistent with the primary metric which states total short-term investments are $1,210 million\",\n      \"confidence\"  : \"high\"\n    },\n    {\n      \"claim_text\"  : \"U.S. Treasury Bills: $900 million (June 30, 2023)\",\n      \"claim_value\" : \"$900 million\",\n      \"reason\"      : \"Inconsistent with the primary metric which states U.S. Treasury Bills are $730 million\",\n      \"confidence\"  : \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 4,\n  \"overall_assessment\"   : \"Inconsistencies found in supporting data, primary metric and supporting data do not match.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_110_74F7847F",
+      "hallucination_id": "FB_110_74F7847F_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,500 million",
+      "injected_value": "$1,210 million",
+      "detected": true,
+      "reason": "Inconsistent with the primary metric which states total short-term investments are $1,210 million",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 4
+    },
+    {
+      "question_id": "FB_110_74F7847F",
+      "hallucination_id": "FB_110_74F7847F_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$900 million",
+      "injected_value": "$730 million",
+      "detected": true,
+      "reason": "Inconsistent with the primary metric which states U.S. Treasury Bills are $730 million",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 4
+    }
+  ],
+  "timestamp": "2026-03-27T09:41:39.884839Z"
+}

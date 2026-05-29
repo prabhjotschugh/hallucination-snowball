@@ -1,0 +1,115 @@
+{
+  "question_id": "FB_064_7576A9AF",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: The Boeing Company, FY2022\n- PRIMARY METRIC: Boeing's primary customer segments as of FY2022 include Commercial Airplanes, Defense, Space & Security, and Global Services. The revenue contributions from these segments are as follows:\n  - Commercial Airplanes: $27,100 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - Defense, Space & Security: $26,300 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - Global Services: $16,300 million (per the FY2022 10-K, Consolidated Statements of Operations)\n\n- SUPPORTING DATA:\n  - FY2021 Revenue Contributions:\n    - Commercial Airplanes: $12,426 million (per the FY2021 10-K, Consolidated Statements of Operations)\n    - Defense, Space & Security: $22,100 million (per the FY2021 10-K, Consolidated Statements of Operations)\n    - Global Services: $18,525 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - FY2020 Revenue Contributions:\n    - Commercial Airplanes: $39,000 million (per the FY2020 10-K, Consolidated Statements of Operations)\n    - Defense, Space & Security: $26,400 million (per the FY2020 10-K, Consolidated Statements of Operations)\n    - Global Services: $19,162 million (per the FY2020 10-K, Consolidated Statements of Operations)\n\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Statements of Operations\n  - FY2020 10-K, Consolidated Statements of Operations\n\nNote: This report strictly contains factual data as requested. Further analysis or interpretation is not included.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_064_7576A9AF_H3",
+      "type": "dollar_amount",
+      "original_value": "$14,800 million",
+      "injected_value": "$12,426 million",
+      "original_numeric": "14800",
+      "injected_numeric": "12426",
+      "position_char": 644,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.1604
+    },
+    {
+      "hallucination_id": "FB_064_7576A9AF_H2",
+      "type": "dollar_amount",
+      "original_value": "$15,300 million",
+      "injected_value": "$18,525 million",
+      "original_numeric": "15300",
+      "injected_numeric": "18525",
+      "position_char": 854,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.2108
+    },
+    {
+      "hallucination_id": "FB_064_7576A9AF_H1",
+      "type": "dollar_amount",
+      "original_value": "$15,100 million",
+      "injected_value": "$19,162 million",
+      "original_numeric": "15100",
+      "injected_numeric": "19162",
+      "position_char": 1203,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.269
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Commercial Airplanes: $39,000 million (per the FY2020 10-K, Consolidated Statements of Operations)",
+        "claim_value": "$39,000 million",
+        "reason": "This figure is implausibly high for Boeing's Commercial Airplanes segment in FY2020. This period was severely impacted by the 737 MAX grounding and the global COVID-19 pandemic, which drastically reduced air travel and new aircraft orders/deliveries. Revenue for this segment was known to be significantly lower in 2020 than in pre-pandemic years or even 2022. The reported figure suggests a boom, which is contrary to well-known historical events.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Commercial Airplanes: $12,426 million (per the FY2021 10-K, Consolidated Statements of Operations)",
+        "claim_value": "$12,426 million",
+        "reason": "This figure seems implausibly low for FY2021, especially when compared to the reported FY2022 figure of $27,100 million. While 2021 was still challenging, a drop to this level from the (incorrectly reported) $39,000 million in 2020, followed by more than doubling to 2022, suggests an erratic and unlikely trend for a segment of this size. It also appears too low given the actual recovery trajectory for Boeing's commercial division.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Defense, Space & Security: $22,100 million (per the FY2021 10-K, Consolidated Statements of Operations)",
+        "claim_value": "$22,100 million",
+        "reason": "This figure appears inconsistent with the reported revenues for the same segment in FY2020 ($26,400 million) and FY2022 ($26,300 million). Defense revenues are generally more stable than commercial, and a significant dip in 2021 followed by a recovery to nearly the 2020 level in 2022 without a clear external driver seems unusual.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Global Services: $19,162 million (per the FY22 10-K, Consolidated Statements of Operations)",
+        "claim_value": "$19,162 million",
+        "reason": "This figure seems implausibly high for FY2020, especially when compared to the reported FY2021 ($18,525 million) and FY2022 ($16,300 million) figures, which show a declining trend. While Global Services can be more resilient, a peak in 2020 followed by a decline doesn't align with the general impact of COVID-19 on air travel and related services, which would likely have seen a dip or slower growth in 2020.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 9,
+    "overall_assessment": "The report contains several highly suspicious financial figures, particularly for the Commercial Airplanes segment in FY2020, which contradicts well-known historical events for Boeing. Other segment figures also show implausible year-over-year trends.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Commercial Airplanes: $39,000 million (per the FY2020 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$39,000 million\",\n      \"reason\": \"This figure is implausibly high for Boeing's Commercial Airplanes segment in FY2020. This period was severely impacted by the 737 MAX grounding and the global COVID-19 pandemic, which drastically reduced air travel and new aircraft orders/deliveries. Revenue for this segment was known to be significantly lower in 2020 than in pre-pandemic years or even 2022. The reported figure suggests a boom, which is contrary to well-known historical events.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Commercial Airplanes: $12,426 million (per the FY2021 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$12,426 million\",\n      \"reason\": \"This figure seems implausibly low for FY2021, especially when compared to the reported FY2022 figure of $27,100 million. While 2021 was still challenging, a drop to this level from the (incorrectly reported) $39,000 million in 2020, followed by more than doubling to 2022, suggests an erratic and unlikely trend for a segment of this size. It also appears too low given the actual recovery trajectory for Boeing's commercial division.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Defense, Space & Security: $22,100 million (per the FY2021 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$22,100 million\",\n      \"reason\": \"This figure appears inconsistent with the reported revenues for the same segment in FY2020 ($26,400 million) and FY2022 ($26,300 million). Defense revenues are generally more stable than commercial, and a significant dip in 2021 followed by a recovery to nearly the 2020 level in 2022 without a clear external driver seems unusual.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Global Services: $19,162 million (per the FY22 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$19,162 million\",\n      \"reason\": \"This figure seems implausibly high for FY2020, especially when compared to the reported FY2021 ($18,525 million) and FY2022 ($16,300 million) figures, which show a declining trend. While Global Services can be more resilient, a peak in 2020 followed by a decline doesn't align with the general impact of COVID-19 on air travel and related services, which would likely have seen a dip or slower growth in 2020.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 9,\n  \"overall_assessment\": \"The report contains several highly suspicious financial figures, particularly for the Commercial Airplanes segment in FY2020, which contradicts well-known historical events for Boeing. Other segment figures also show implausible year-over-year trends.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_064_7576A9AF",
+      "hallucination_id": "FB_064_7576A9AF_H3",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$14,800 million",
+      "injected_value": "$12,426 million",
+      "detected": true,
+      "reason": "This figure seems implausibly low for FY2021, especially when compared to the reported FY2022 figure of $27,100 million. While 2021 was still challenging, a drop to this level from the (incorrectly reported) $39,000 million in 2020, followed by more than doubling to 2022, suggests an erratic and unlikely trend for a segment of this size. It also appears too low given the actual recovery trajectory for Boeing's commercial division.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_064_7576A9AF",
+      "hallucination_id": "FB_064_7576A9AF_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$15,300 million",
+      "injected_value": "$18,525 million",
+      "detected": true,
+      "reason": "This figure seems implausibly high for FY2020, especially when compared to the reported FY2021 ($18,525 million) and FY2022 ($16,300 million) figures, which show a declining trend. While Global Services can be more resilient, a peak in 2020 followed by a decline doesn't align with the general impact of COVID-19 on air travel and related services, which would likely have seen a dip or slower growth in 2020.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_064_7576A9AF",
+      "hallucination_id": "FB_064_7576A9AF_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$15,100 million",
+      "injected_value": "$19,162 million",
+      "detected": true,
+      "reason": "This figure seems implausibly high for FY2020, especially when compared to the reported FY2021 ($18,525 million) and FY2022 ($16,300 million) figures, which show a declining trend. While Global Services can be more resilient, a peak in 2020 followed by a decline doesn't align with the general impact of COVID-19 on air travel and related services, which would likely have seen a dip or slower growth in 2020.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 9
+    }
+  ],
+  "timestamp": "2026-03-25T07:49:03.314166Z"
+}

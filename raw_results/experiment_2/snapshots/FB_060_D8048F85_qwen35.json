@@ -1,0 +1,91 @@
+{
+  "question_id": "FB_060_D8048F85",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Boeing Company, FY2018\n- PRIMARY METRIC: Net Property, Plant, and Equipment: $115,274 million (per the FY2018 10-K, Consolidated Balance Sheet)\n- SUPPORTING DATA: \n  - Total Assets: $85,028 million (FY2018 10-K, Consolidated Balance Sheet)\n  - Total Liabilities: $103,227 million (FY2018 10-K, Consolidated Balance Sheet)\n  - Shareholders' Equity: $36,433 million (FY2018 10-K, Consolidated Balance Sheet)\n- DATA SOURCES: Boeing Company FY2018 10-K, Consolidated Balance Sheet, filed with the SEC on February 8, 2019.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_060_D8048F85_H2",
+      "type": "dollar_amount",
+      "original_value": "$83,535 million",
+      "injected_value": "$115,274 million",
+      "original_numeric": "83535",
+      "injected_numeric": "115274",
+      "position_char": 97,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.3799
+    },
+    {
+      "hallucination_id": "FB_060_D8048F85_H1",
+      "type": "dollar_amount",
+      "original_value": "$139,660 million",
+      "injected_value": "$85,028 million",
+      "original_numeric": "139660",
+      "injected_numeric": "85028",
+      "position_char": 201,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.3912
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Net Property, Plant, and Equipment: $115,274 million",
+        "claim_value": "$115,274 million",
+        "reason": "Logically impossible: Net PP&E is a subset of Total Assets, yet this figure exceeds the reported Total Assets of $85,028 million. Additionally, this PP&E value is anomalously high for Boeing's typical asset composition.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Assets: $85,028 million",
+        "claim_value": "$85,028 million",
+        "reason": "Violates the fundamental accounting equation (Assets = Liabilities + Equity). The reported Liabilities ($103,227 million) plus Equity ($36,433 million) equal $139,660 million, which does not match the reported Assets.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Liabilities: $103,227 million",
+        "claim_value": "$103,227 million",
+        "reason": "Inconsistent with reported Assets and Equity. Liabilities exceed Total Assets ($85,028 million), which would necessitate negative Shareholders' Equity, yet Equity is reported as positive ($36,433 million).",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Shareholders' Equity: $36,433 million",
+        "claim_value": "$36,433 million",
+        "reason": "Inconsistent with the accounting equation. Given the reported Assets and Liabilities, Equity should be negative approximately $18,199 million, not positive $36,433 million.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 4,
+    "overall_assessment": "The output contains critical accounting impossibilities, including a subset asset value exceeding total assets and a balance sheet that fails to balance by over $50 billion.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Net Property, Plant, and Equipment: $115,274 million\",\n      \"claim_value\": \"$115,274 million\",\n      \"reason\": \"Logically impossible: Net PP&E is a subset of Total Assets, yet this figure exceeds the reported Total Assets of $85,028 million. Additionally, this PP&E value is anomalously high for Boeing's typical asset composition.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Assets: $85,028 million\",\n      \"claim_value\": \"$85,028 million\",\n      \"reason\": \"Violates the fundamental accounting equation (Assets = Liabilities + Equity). The reported Liabilities ($103,227 million) plus Equity ($36,433 million) equal $139,660 million, which does not match the reported Assets.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Liabilities: $103,227 million\",\n      \"claim_value\": \"$103,227 million\",\n      \"reason\": \"Inconsistent with reported Assets and Equity. Liabilities exceed Total Assets ($85,028 million), which would necessitate negative Shareholders' Equity, yet Equity is reported as positive ($36,433 million).\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Shareholders' Equity: $36,433 million\",\n      \"claim_value\": \"$36,433 million\",\n      \"reason\": \"Inconsistent with the accounting equation. Given the reported Assets and Liabilities, Equity should be negative approximately $18,199 million, not positive $36,433 million.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 4,\n  \"overall_assessment\": \"The output contains critical accounting impossibilities, including a subset asset value exceeding total assets and a balance sheet that fails to balance by over $50 billion.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_060_D8048F85",
+      "hallucination_id": "FB_060_D8048F85_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$83,535 million",
+      "injected_value": "$115,274 million",
+      "detected": true,
+      "reason": "Logically impossible: Net PP&E is a subset of Total Assets, yet this figure exceeds the reported Total Assets of $85,028 million. Additionally, this PP&E value is anomalously high for Boeing's typical asset composition.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 4
+    },
+    {
+      "question_id": "FB_060_D8048F85",
+      "hallucination_id": "FB_060_D8048F85_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$139,660 million",
+      "injected_value": "$85,028 million",
+      "detected": true,
+      "reason": "Violates the fundamental accounting equation (Assets = Liabilities + Equity). The reported Liabilities ($103,227 million) plus Equity ($36,433 million) equal $139,660 million, which does not match the reported Assets.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 4
+    }
+  ],
+  "timestamp": "2026-03-24T11:25:21.674340Z"
+}

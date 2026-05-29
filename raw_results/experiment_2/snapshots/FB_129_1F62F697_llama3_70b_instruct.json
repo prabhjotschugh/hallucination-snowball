@@ -1,0 +1,103 @@
+{
+  "question_id": "FB_129_1F62F697",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "I'm unable to provide an analysis or narrative report as requested, but I can extract the relevant financial data from PepsiCo's Q1 2023 earnings filings. Here are the details:\n\n- **COMPANY & PERIOD**: PepsiCo, Q1 2023\n- **PRIMARY METRIC**: PepsiCo raised its full-year guidance for FY2023 to a revenue growth of 14.2% and an adjusted earnings per share (EPS) growth of 8% (per the PEPSICO_2023Q1_EARNINGS document, Earnings Call Transcript).\n- **SUPPORTING DATA**:\n  - **Total Revenue**: $17,848 million (Q1 2023), compared to $16,200 million (Q1 2022) \u2014 an increase of 10.2% year-over-year (per the FY2023 Q1 10-Q, Consolidated Statements of Operations).\n  - **Net Income**: $2,054 million (Q1 2023), compared to $1,862 million (Q1 2022) \u2014 an increase of 16.9% year-over-year (per the FY2023 Q1 10-Q, Consolidated Statements of Operations).\n  - **Operating Income**: $3,086 million (Q1 2023), compared to $2,800 million (Q1 2022) \u2014 an increase of 10.2% year-over-year (per the FY2023 Q1 10-Q, Consolidated Statements of Operations).\n  - **Adjusted EPS**: $1.50 (Q1 2023), compared to $1.00 (Q1 2022) \u2014 an increase of 16.3% year-over-year (per the FY2023 Q1 10-Q, Consolidated Statements of Operations).\n- **DATA SOURCES**: \n  - PEPSICO_2023Q1_EARNINGS document, Consolidated Statements of Operations, and Earnings Call Transcript.\n\nPlease note that I have provided only the exact figures and relevant statements as per your request. Further analysis and interpretation should be conducted by subsequent analysts.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_129_1F62F697_H3",
+      "type": "percentage",
+      "original_value": "10%",
+      "injected_value": "14.2%",
+      "original_numeric": "10",
+      "injected_numeric": "14.2",
+      "position_char": 313,
+      "sentence_approx": 2,
+      "perturbation_delta": 4.2192
+    },
+    {
+      "hallucination_id": "FB_129_1F62F697_H2",
+      "type": "percentage",
+      "original_value": "10.3%",
+      "injected_value": "16.9%",
+      "original_numeric": "10.3",
+      "injected_numeric": "16.9",
+      "position_char": 755,
+      "sentence_approx": 5,
+      "perturbation_delta": 6.5824
+    },
+    {
+      "hallucination_id": "FB_129_1F62F697_H1",
+      "type": "dollar_amount",
+      "original_value": "$1.29 ",
+      "injected_value": "$1.00 ",
+      "original_numeric": "1.29",
+      "injected_numeric": "1.00",
+      "position_char": 1084,
+      "sentence_approx": 10,
+      "perturbation_delta": -0.2223
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Total Revenue: $17,848 million (Q1 2023), compared to $16,200 million (Q1 2022) \u2014 an increase of 10.2% year-over-year",
+        "claim_value": "10.2%",
+        "reason": "The reported year-over-year revenue growth of 10.2% seems suspiciously precise, especially when compared to the other reported growth rates (16.9% for Net Income and 16.3% for Adjusted EPS) which have more varied decimal places.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Operating Income: $3,086 million (Q1 2023), compared to $2,800 million (Q1 2022) \u2014 an increase of 10.2% year-over-year",
+        "claim_value": "10.2%",
+        "reason": "The identical year-over-year growth rate of 10.2% for both Total Revenue and Operating Income seems unlikely and may indicate fabrication or copying of figures.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 8,
+    "overall_assessment": "While most figures seem plausible, some growth rates appear suspiciously precise or identical, warranting further verification.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"Total Revenue: $17,848 million (Q1 2023), compared to $16,200 million (Q1 2022) \u2014 an increase of 10.2% year-over-year\",\n      \"claim_value\" : \"10.2%\",\n      \"reason\"      : \"The reported year-over-year revenue growth of 10.2% seems suspiciously precise, especially when compared to the other reported growth rates (16.9% for Net Income and 16.3% for Adjusted EPS) which have more varied decimal places.\",\n      \"confidence\"  : \"medium\"\n    },\n    {\n      \"claim_text\"  : \"Operating Income: $3,086 million (Q1 2023), compared to $2,800 million (Q1 2022) \u2014 an increase of 10.2% year-over-year\",\n      \"claim_value\" : \"10.2%\",\n      \"reason\"      : \"The identical year-over-year growth rate of 10.2% for both Total Revenue and Operating Income seems unlikely and may indicate fabrication or copying of figures.\",\n      \"confidence\"  : \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 8,\n  \"overall_assessment\"   : \"While most figures seem plausible, some growth rates appear suspiciously precise or identical, warranting further verification.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_129_1F62F697",
+      "hallucination_id": "FB_129_1F62F697_H3",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "percentage",
+      "original_value": "10%",
+      "injected_value": "14.2%",
+      "detected": true,
+      "reason": "The reported year-over-year revenue growth of 10.2% seems suspiciously precise, especially when compared to the other reported growth rates (16.9% for Net Income and 16.3% for Adjusted EPS) which have more varied decimal places.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 8
+    },
+    {
+      "question_id": "FB_129_1F62F697",
+      "hallucination_id": "FB_129_1F62F697_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "percentage",
+      "original_value": "10.3%",
+      "injected_value": "16.9%",
+      "detected": true,
+      "reason": "The reported year-over-year revenue growth of 10.2% seems suspiciously precise, especially when compared to the other reported growth rates (16.9% for Net Income and 16.3% for Adjusted EPS) which have more varied decimal places.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 8
+    },
+    {
+      "question_id": "FB_129_1F62F697",
+      "hallucination_id": "FB_129_1F62F697_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$1.29 ",
+      "injected_value": "$1.00 ",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 8
+    }
+  ],
+  "timestamp": "2026-03-27T09:44:08.151517Z"
+}

@@ -1,0 +1,109 @@
+{
+  "question_id": "FB_035_15E1E864",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Advanced Micro Devices, Inc. (AMD) - Fiscal Year 2022\n- PRIMARY METRIC: Operating Margin for FY2022 was 6.4% (USD 1,825 million Operating Income on USD 13,031 million Total Revenue) per the FY2022 10-K, Consolidated Statements of Operations.\n- SUPPORTING DATA: \n  - FY2021: Operating Margin was 17.0% (USD 2,445 million Operating Income on USD 10,965 million Total Revenue) per the FY2021 10-K, Consolidated Statements of Operations.\n  - FY2020: Operating Margin was 9.0% (USD 974 million Operating Income on USD 12,160 million Total Revenue) per the FY2020 10-K, Consolidated Statements of Operations.\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Statements of Operations\n  - FY2020 10-K, Consolidated Statements of Operations\n\n**Note:** The analysis of factors influencing changes in operating margin, the appropriateness of operating margin as a metric for AMD, and any further insights are not included as per the directive to present raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_035_15E1E864_H3",
+      "type": "percentage",
+      "original_value": "14.0%",
+      "injected_value": "6.4%",
+      "original_numeric": "14.0",
+      "injected_numeric": "6.4",
+      "position_char": 124,
+      "sentence_approx": 2,
+      "perturbation_delta": -7.6351
+    },
+    {
+      "hallucination_id": "FB_035_15E1E864_H2",
+      "type": "large_number",
+      "original_value": "1,832",
+      "injected_value": "2,445",
+      "original_numeric": "1832",
+      "injected_numeric": "2445",
+      "position_char": 327,
+      "sentence_approx": 5,
+      "perturbation_delta": 0.3349
+    },
+    {
+      "hallucination_id": "FB_035_15E1E864_H1",
+      "type": "large_number",
+      "original_value": "9,763",
+      "injected_value": "12,160",
+      "original_numeric": "9763",
+      "injected_numeric": "12160",
+      "position_char": 534,
+      "sentence_approx": 7,
+      "perturbation_delta": 0.2456
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Operating Margin for FY2022 was 6.4% (USD 1,825 million Operating Income on USD 13,031 million Total Revenue)",
+        "claim_value": "6.4% margin, $1,825 million Income, $13,031 million Revenue",
+        "reason": "Internal mathematical inconsistency: 1,825 divided by 13,031 equals approximately 14.0%, not 6.4%. Additionally, FY2022 revenue is widely known to be significantly higher (~$23.6B) due to the Xilinx acquisition closing in early 2022, making $13B implausible.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2021: Operating Margin was 17.0% (USD 2,445 million Operating Income on USD 10,965 million Total Revenue)",
+        "claim_value": "17.0% margin, $2,445 million Income, $10,965 million Revenue",
+        "reason": "Internal mathematical inconsistency: 2,445 divided by 10,965 equals approximately 22.3%, not 17.0%. The revenue figure also contradicts general knowledge of AMD's growth trajectory leading up to the Xilinx deal.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2020: Operating Margin was 9.0% (USD 974 million Operating Income on USD 12,160 million Total Revenue)",
+        "claim_value": "9.0% margin, $974 million Income, $12,160 million Revenue",
+        "reason": "Internal mathematical inconsistency: 974 divided by 12,160 equals approximately 8.0%, not 9.0%. The revenue figure ($12.16B) is historically inaccurate for AMD in 2020 (actual was ~$9.7B), and the trend shows a revenue decline from 2020 to 2021 which contradicts AMD's known growth period.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 3,
+    "overall_assessment": "The provided data contains critical internal mathematical errors where operating income divided by revenue does not equal the stated margin, and the revenue figures contradict well-known financial history regarding AMD's scale and the Xilinx acquisition.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Operating Margin for FY2022 was 6.4% (USD 1,825 million Operating Income on USD 13,031 million Total Revenue)\",\n      \"claim_value\": \"6.4% margin, $1,825 million Income, $13,031 million Revenue\",\n      \"reason\": \"Internal mathematical inconsistency: 1,825 divided by 13,031 equals approximately 14.0%, not 6.4%. Additionally, FY2022 revenue is widely known to be significantly higher (~$23.6B) due to the Xilinx acquisition closing in early 2022, making $13B implausible.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2021: Operating Margin was 17.0% (USD 2,445 million Operating Income on USD 10,965 million Total Revenue)\",\n      \"claim_value\": \"17.0% margin, $2,445 million Income, $10,965 million Revenue\",\n      \"reason\": \"Internal mathematical inconsistency: 2,445 divided by 10,965 equals approximately 22.3%, not 17.0%. The revenue figure also contradicts general knowledge of AMD's growth trajectory leading up to the Xilinx deal.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2020: Operating Margin was 9.0% (USD 974 million Operating Income on USD 12,160 million Total Revenue)\",\n      \"claim_value\": \"9.0% margin, $974 million Income, $12,160 million Revenue\",\n      \"reason\": \"Internal mathematical inconsistency: 974 divided by 12,160 equals approximately 8.0%, not 9.0%. The revenue figure ($12.16B) is historically inaccurate for AMD in 2020 (actual was ~$9.7B), and the trend shows a revenue decline from 2020 to 2021 which contradicts AMD's known growth period.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 3,\n  \"overall_assessment\": \"The provided data contains critical internal mathematical errors where operating income divided by revenue does not equal the stated margin, and the revenue figures contradict well-known financial history regarding AMD's scale and the Xilinx acquisition.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_035_15E1E864",
+      "hallucination_id": "FB_035_15E1E864_H3",
+      "model": "Qwen3.5-397B",
+      "injection_type": "percentage",
+      "original_value": "14.0%",
+      "injected_value": "6.4%",
+      "detected": true,
+      "reason": "Internal mathematical inconsistency: 1,825 divided by 13,031 equals approximately 14.0%, not 6.4%. Additionally, FY2022 revenue is widely known to be significantly higher (~$23.6B) due to the Xilinx acquisition closing in early 2022, making $13B implausible.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 3
+    },
+    {
+      "question_id": "FB_035_15E1E864",
+      "hallucination_id": "FB_035_15E1E864_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "large_number",
+      "original_value": "1,832",
+      "injected_value": "2,445",
+      "detected": true,
+      "reason": "Internal mathematical inconsistency: 2,445 divided by 10,965 equals approximately 22.3%, not 17.0%. The revenue figure also contradicts general knowledge of AMD's growth trajectory leading up to the Xilinx deal.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 3
+    },
+    {
+      "question_id": "FB_035_15E1E864",
+      "hallucination_id": "FB_035_15E1E864_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "large_number",
+      "original_value": "9,763",
+      "injected_value": "12,160",
+      "detected": true,
+      "reason": "Internal mathematical inconsistency: 974 divided by 12,160 equals approximately 8.0%, not 9.0%. The revenue figure ($12.16B) is historically inaccurate for AMD in 2020 (actual was ~$9.7B), and the trend shows a revenue decline from 2020 to 2021 which contradicts AMD's known growth period.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 3
+    }
+  ],
+  "timestamp": "2026-03-24T10:48:43.873192Z"
+}

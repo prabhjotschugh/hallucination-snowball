@@ -1,0 +1,109 @@
+{
+  "question_id": "FB_088_DD231ABD",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: Johnson & Johnson, FY2022\n- PRIMARY METRIC: \n  - Total Revenue: $130,473 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - Ending Inventory: $16,790 million (per the FY2022 10-K, Consolidated Balance Sheets)\n  \n  **Inventory Turnover Ratio Calculation:**\n  - Inventory Turnover Ratio = Total Revenue / Average Inventory\n  - Average Inventory (assuming ending inventory is representative for simplicity) = $16,790 million\n  - Inventory Turnover Ratio = $94,943 million / $16,790 million = 5.65 times\n\n- SUPPORTING DATA:\n  - Total Revenue for FY2021: $93,775 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - Ending Inventory for FY2021: $19,470 million (per the FY2021 10-K, Consolidated Balance Sheets)\n  - Total Revenue for FY2020: $82,584 million (per the FY2020 10-K, Consolidated Statements of Operations)\n  - Ending Inventory for FY2020: $18,618 million (per the FY2020 10-K, Consolidated Balance Sheets)\n\n- DATA SOURCES:\n  - FY2022 10-K, Consolidated Statements of Operations and Consolidated Balance Sheets\n  - FY2021 10-K, Consolidated Statements of Operations and Consolidated Balance Sheets\n  - FY2020 10-K, Consolidated Statements of Operations and Consolidated Balance Sheets\n\n**Note:** The inventory turnover ratio calculated here is based on the assumption that the ending inventory is representative of average inventory for the year. Johnson & Johnson operates in a diverse healthcare sector, which may lead to variations in inventory management practices compared to traditional retail or manufacturing companies. The company\u2019s inventory may include products with varying shelf lives and demand cycles, which can affect turnover metrics. Therefore, while the calculated ratio is 5.65 times, it may not fully reflect operational efficiency in the same way it would for companies with more consistent inventory turnover.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_088_DD231ABD_H3",
+      "type": "dollar_amount",
+      "original_value": "$94,943 million",
+      "injected_value": "$130,473 million",
+      "original_numeric": "94943",
+      "injected_numeric": "130473",
+      "position_char": 84,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.3742
+    },
+    {
+      "hallucination_id": "FB_088_DD231ABD_H2",
+      "type": "dollar_amount",
+      "original_value": "$15,120 million",
+      "injected_value": "$19,470 million",
+      "original_numeric": "15120",
+      "injected_numeric": "19470",
+      "position_char": 701,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.2877
+    },
+    {
+      "hallucination_id": "FB_088_DD231ABD_H1",
+      "type": "dollar_amount",
+      "original_value": "$14,230 million",
+      "injected_value": "$18,618 million",
+      "original_numeric": "14230",
+      "injected_numeric": "18618",
+      "position_char": 908,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.3084
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Total Revenue: $130,473 million (per the FY2022 10-K, Consolidated Statements of Operations)",
+        "claim_value": "$130,473 million",
+        "reason": "This figure is significantly higher than Johnson & Johnson's actual reported consolidated revenue for FY2022 (which was approximately $94.9 billion). A nearly 40% year-over-year revenue growth for a company of J&J's size and maturity is highly implausible without major, publicly known events, suggesting this figure is likely hallucinated or incorrect.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Inventory Turnover Ratio = $94,943 million / $16,790 million = 5.65 times",
+        "claim_value": "$94,943 million",
+        "reason": "This figure is used as the numerator for the FY2022 Inventory Turnover Ratio calculation. However, the 'PRIMARY METRIC' section explicitly states 'Total Revenue: $130,473 million' for FY2022. This creates a direct internal inconsistency, as the calculation uses a different revenue figure than the one explicitly stated for the same period. The source of this $94,943 million figure is not clearly identified as FY2022 revenue within the calculation step itself, nor does it match the stated FY2021 revenue ($93,775 million).",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Inventory Turnover Ratio = $94,943 million / $16,790 million = 5.65 times",
+        "claim_value": "5.65 times",
+        "reason": "The calculated ratio of 5.65 times is based on a numerator ($94,943 million) that contradicts the explicitly stated FY2022 Total Revenue ($130,473 million). If the stated FY2022 revenue of $130,473 million were used with the ending inventory of $16,790 million, the ratio would be approximately 7.77 times. Therefore, the calculated ratio is inconsistent with the primary revenue figure provided for FY2022.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 8,
+    "overall_assessment": "The researcher's output contains a significant hallucination regarding Johnson & Johnson's FY2022 revenue, which subsequently leads to internal inconsistencies in the calculated inventory turnover ratio, despite some other figures being accurate.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Total Revenue: $130,473 million (per the FY2022 10-K, Consolidated Statements of Operations)\",\n      \"claim_value\": \"$130,473 million\",\n      \"reason\": \"This figure is significantly higher than Johnson & Johnson's actual reported consolidated revenue for FY2022 (which was approximately $94.9 billion). A nearly 40% year-over-year revenue growth for a company of J&J's size and maturity is highly implausible without major, publicly known events, suggesting this figure is likely hallucinated or incorrect.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Inventory Turnover Ratio = $94,943 million / $16,790 million = 5.65 times\",\n      \"claim_value\": \"$94,943 million\",\n      \"reason\": \"This figure is used as the numerator for the FY2022 Inventory Turnover Ratio calculation. However, the 'PRIMARY METRIC' section explicitly states 'Total Revenue: $130,473 million' for FY2022. This creates a direct internal inconsistency, as the calculation uses a different revenue figure than the one explicitly stated for the same period. The source of this $94,943 million figure is not clearly identified as FY2022 revenue within the calculation step itself, nor does it match the stated FY2021 revenue ($93,775 million).\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Inventory Turnover Ratio = $94,943 million / $16,790 million = 5.65 times\",\n      \"claim_value\": \"5.65 times\",\n      \"reason\": \"The calculated ratio of 5.65 times is based on a numerator ($94,943 million) that contradicts the explicitly stated FY2022 Total Revenue ($130,473 million). If the stated FY2022 revenue of $130,473 million were used with the ending inventory of $16,790 million, the ratio would be approximately 7.77 times. Therefore, the calculated ratio is inconsistent with the primary revenue figure provided for FY2022.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 8,\n  \"overall_assessment\": \"The researcher's output contains a significant hallucination regarding Johnson & Johnson's FY2022 revenue, which subsequently leads to internal inconsistencies in the calculated inventory turnover ratio, despite some other figures being accurate.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_088_DD231ABD",
+      "hallucination_id": "FB_088_DD231ABD_H3",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$94,943 million",
+      "injected_value": "$130,473 million",
+      "detected": true,
+      "reason": "This figure is significantly higher than Johnson & Johnson's actual reported consolidated revenue for FY2022 (which was approximately $94.9 billion). A nearly 40% year-over-year revenue growth for a company of J&J's size and maturity is highly implausible without major, publicly known events, suggesting this figure is likely hallucinated or incorrect.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 8
+    },
+    {
+      "question_id": "FB_088_DD231ABD",
+      "hallucination_id": "FB_088_DD231ABD_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$15,120 million",
+      "injected_value": "$19,470 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 8
+    },
+    {
+      "question_id": "FB_088_DD231ABD",
+      "hallucination_id": "FB_088_DD231ABD_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$14,230 million",
+      "injected_value": "$18,618 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 8
+    }
+  ],
+  "timestamp": "2026-03-25T07:54:17.898624Z"
+}

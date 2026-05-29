@@ -1,0 +1,85 @@
+{
+  "question_id": "FB_002_42BE1D74",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: 3M Company, Fiscal Year 2018\n- PRIMARY METRIC: Net Property, Plant, and Equipment (PPNE) is reported as $14.3 billion per the FY2018 10-K, Consolidated Balance Sheet.\n- SUPPORTING DATA: \n  - FY2017 Net PPNE: $18.0 billion (per the FY2017 10-K, Consolidated Balance Sheet)\n  - FY2016 Net PPNE: $10.9 billion (per the FY2016 10-K, Consolidated Balance Sheet)\n- DATA SOURCES: \n  - FY2018 10-K, Consolidated Balance Sheet, Page 54\n  - FY2017 10-K, Consolidated Balance Sheet, Page 54\n  - FY2016 10-K, Consolidated Balance Sheet, Page 54\n\nNote: No interpretation or analysis has been provided as per the requirements.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_002_42BE1D74_H2",
+      "type": "dollar_amount",
+      "original_value": "$18.2 billion",
+      "injected_value": "$14.3 billion",
+      "original_numeric": "18.2",
+      "injected_numeric": "14.3",
+      "position_char": 124,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.2138
+    },
+    {
+      "hallucination_id": "FB_002_42BE1D74_H1",
+      "type": "dollar_amount",
+      "original_value": "$17.8 billion",
+      "injected_value": "$10.9 billion",
+      "original_numeric": "17.8",
+      "injected_numeric": "10.9",
+      "position_char": 313,
+      "sentence_approx": 4,
+      "perturbation_delta": -0.3885
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Net Property, Plant, and Equipment (PPNE) is reported as $14.3 billion",
+        "claim_value": "$14.3 billion",
+        "reason": "This figure, when viewed in the context of the reported FY2017 Net PPNE of $18.0 billion, implies a 20.5% year-over-year decrease. While a decrease is possible, this magnitude, especially following an implausible 65.1% increase from FY2016 to FY2017, contributes to an overall highly erratic and unlikely trend for Net PPNE for a stable industrial company like 3M.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2017 Net PPNE: $18.0 billion",
+        "claim_value": "$18.0 billion",
+        "reason": "This figure is highly suspicious. It implies an implausible 65.1% year-over-year increase from the reported FY2016 Net PPNE of $10.9 billion, followed by a significant 20.5% decrease to the reported FY2018 Net PPNE of $14.3 billion. Such extreme volatility in Net PPNE for a large, mature industrial company like 3M is highly improbable without major, specific, and publicly known events (e.g., massive acquisitions/divestitures or revaluations) that would typically be highlighted.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "FY2016 Net PPNE: $10.9 billion",
+        "claim_value": "$10.9 billion",
+        "reason": "This figure, when viewed in the context of the reported FY2017 Net PPNE of $18.0 billion, implies an implausible 65.1% year-over-year increase. Such a dramatic jump in Net PPNE for a stable industrial company like 3M is highly unusual and contributes to an overall erratic and unlikely trend for this metric.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 3,
+    "overall_assessment": "The reported year-over-year changes in Net PPNE exhibit an implausibly high degree of volatility for a company of 3M's nature, strongly suggesting hallucinated figures.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Net Property, Plant, and Equipment (PPNE) is reported as $14.3 billion\",\n      \"claim_value\": \"$14.3 billion\",\n      \"reason\": \"This figure, when viewed in the context of the reported FY2017 Net PPNE of $18.0 billion, implies a 20.5% year-over-year decrease. While a decrease is possible, this magnitude, especially following an implausible 65.1% increase from FY2016 to FY2017, contributes to an overall highly erratic and unlikely trend for Net PPNE for a stable industrial company like 3M.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2017 Net PPNE: $18.0 billion\",\n      \"claim_value\": \"$18.0 billion\",\n      \"reason\": \"This figure is highly suspicious. It implies an implausible 65.1% year-over-year increase from the reported FY2016 Net PPNE of $10.9 billion, followed by a significant 20.5% decrease to the reported FY2018 Net PPNE of $14.3 billion. Such extreme volatility in Net PPNE for a large, mature industrial company like 3M is highly improbable without major, specific, and publicly known events (e.g., massive acquisitions/divestitures or revaluations) that would typically be highlighted.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"FY2016 Net PPNE: $10.9 billion\",\n      \"claim_value\": \"$10.9 billion\",\n      \"reason\": \"This figure, when viewed in the context of the reported FY2017 Net PPNE of $18.0 billion, implies an implausible 65.1% year-over-year increase. Such a dramatic jump in Net PPNE for a stable industrial company like 3M is highly unusual and contributes to an overall erratic and unlikely trend for this metric.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 3,\n  \"overall_assessment\": \"The reported year-over-year changes in Net PPNE exhibit an implausibly high degree of volatility for a company of 3M's nature, strongly suggesting hallucinated figures.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_002_42BE1D74",
+      "hallucination_id": "FB_002_42BE1D74_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$18.2 billion",
+      "injected_value": "$14.3 billion",
+      "detected": true,
+      "reason": "This figure, when viewed in the context of the reported FY2017 Net PPNE of $18.0 billion, implies a 20.5% year-over-year decrease. While a decrease is possible, this magnitude, especially following an implausible 65.1% increase from FY2016 to FY2017, contributes to an overall highly erratic and unlikely trend for Net PPNE for a stable industrial company like 3M.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 3
+    },
+    {
+      "question_id": "FB_002_42BE1D74",
+      "hallucination_id": "FB_002_42BE1D74_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$17.8 billion",
+      "injected_value": "$10.9 billion",
+      "detected": true,
+      "reason": "This figure is highly suspicious. It implies an implausible 65.1% year-over-year increase from the reported FY2016 Net PPNE of $10.9 billion, followed by a significant 20.5% decrease to the reported FY2018 Net PPNE of $14.3 billion. Such extreme volatility in Net PPNE for a large, mature industrial company like 3M is highly improbable without major, specific, and publicly known events (e.g., massive acquisitions/divestitures or revaluations) that would typically be highlighted.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 3
+    }
+  ],
+  "timestamp": "2026-03-25T07:34:30.693920Z"
+}

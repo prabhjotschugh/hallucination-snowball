@@ -1,0 +1,79 @@
+{
+  "question_id": "FB_131_3A78CB5F",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Pfizer Inc. for FY2020 and FY2021\n- PRIMARY METRIC: \n  - Property, Plant, and Equipment (PPNE) as of December 31, 2021: $8,948 million (per the FY2021 10-K, Consolidated Balance Sheets)\n  - Property, Plant, and Equipment (PPNE) as of December 31, 2020: $11,396 million (per the FY2021 10-K, Consolidated Balance Sheets)\n\n- SUPPORTING DATA: \n  - Percentage Change in PPNE from FY2020 to FY2021: \n    - Calculation: [(PPNE FY2021 - PPNE FY2020) / PPNE FY2020] * 100\n    - Percentage Change: [(12,171 - 7,869) / 11,396] * 100 = 6.78%\n  \n- DATA SOURCES: \n  - FY2021 10-K, Consolidated Balance Sheets, pages 63-64. \n  - FY2021 10-K, Management's Discussion and Analysis, page 37 (for context on capital expenditures and investment in physical assets). \n\nNote: No interpretation or analysis of the growth trend has been provided, as per the requirements.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_131_3A78CB5F_H2",
+      "type": "dollar_amount",
+      "original_value": "$12,171 million",
+      "injected_value": "$8,948 million",
+      "original_numeric": "12171",
+      "injected_numeric": "8948",
+      "position_char": 140,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.2648
+    },
+    {
+      "hallucination_id": "FB_131_3A78CB5F_H1",
+      "type": "large_number",
+      "original_value": "11,396",
+      "injected_value": "7,869",
+      "original_numeric": "11396",
+      "injected_numeric": "7869",
+      "position_char": 521,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3095
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Property, Plant, and Equipment (PPNE) as of December 31, 2021: $8,948 million... Property, Plant, and Equipment (PPNE) as of December 31, 2020: $11,396 million",
+        "claim_value": "$8,948 million and $11,396 million",
+        "reason": "These values indicate a year-over-year decrease of approximately 21%, which directly contradicts the reported positive percentage change of 6.78%. Additionally, these specific values are ignored in the subsequent calculation section, which uses entirely different figures (12,171 and 7,869).",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Percentage Change: [(12,171 - 7,869) / 11,396] * 100 = 6.78%",
+        "claim_value": "6.78%",
+        "reason": "This claim contains two critical errors. First, the arithmetic is incorrect: (12,171 - 7,869) / 11,396 equals approximately 37.75%, not 6.78%. Second, the input numbers (12,171 and 7,869) do not match the PPNE values stated earlier in the report ($8,948 million and $11,396 million), indicating severe internal inconsistency or hallucination.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 5,
+    "overall_assessment": "The output contains critical internal inconsistencies where stated financial figures contradict both the calculation inputs and the final growth percentage, alongside demonstrable arithmetic errors.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Property, Plant, and Equipment (PPNE) as of December 31, 2021: $8,948 million... Property, Plant, and Equipment (PPNE) as of December 31, 2020: $11,396 million\",\n      \"claim_value\": \"$8,948 million and $11,396 million\",\n      \"reason\": \"These values indicate a year-over-year decrease of approximately 21%, which directly contradicts the reported positive percentage change of 6.78%. Additionally, these specific values are ignored in the subsequent calculation section, which uses entirely different figures (12,171 and 7,869).\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Percentage Change: [(12,171 - 7,869) / 11,396] * 100 = 6.78%\",\n      \"claim_value\": \"6.78%\",\n      \"reason\": \"This claim contains two critical errors. First, the arithmetic is incorrect: (12,171 - 7,869) / 11,396 equals approximately 37.75%, not 6.78%. Second, the input numbers (12,171 and 7,869) do not match the PPNE values stated earlier in the report ($8,948 million and $11,396 million), indicating severe internal inconsistency or hallucination.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 5,\n  \"overall_assessment\": \"The output contains critical internal inconsistencies where stated financial figures contradict both the calculation inputs and the final growth percentage, alongside demonstrable arithmetic errors.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_131_3A78CB5F",
+      "hallucination_id": "FB_131_3A78CB5F_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$12,171 million",
+      "injected_value": "$8,948 million",
+      "detected": true,
+      "reason": "These values indicate a year-over-year decrease of approximately 21%, which directly contradicts the reported positive percentage change of 6.78%. Additionally, these specific values are ignored in the subsequent calculation section, which uses entirely different figures (12,171 and 7,869).",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 5
+    },
+    {
+      "question_id": "FB_131_3A78CB5F",
+      "hallucination_id": "FB_131_3A78CB5F_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "large_number",
+      "original_value": "11,396",
+      "injected_value": "7,869",
+      "detected": true,
+      "reason": "This claim contains two critical errors. First, the arithmetic is incorrect: (12,171 - 7,869) / 11,396 equals approximately 37.75%, not 6.78%. Second, the input numbers (12,171 and 7,869) do not match the PPNE values stated earlier in the report ($8,948 million and $11,396 million), indicating severe internal inconsistency or hallucination.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 5
+    }
+  ],
+  "timestamp": "2026-03-24T13:04:54.875501Z"
+}

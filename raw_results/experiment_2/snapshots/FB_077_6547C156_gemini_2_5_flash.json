@@ -1,0 +1,97 @@
+{
+  "question_id": "FB_077_6547C156",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: CVS Health, FY2022\n- PRIMARY METRIC: \n  - Capital Expenditures: $2,148 million (per the FY2022 10-K, Consolidated Statements of Cash Flows)\n  - Total Assets: $134,300 million (per the FY2022 10-K, Consolidated Balance Sheets)\n\n- SUPPORTING DATA: \n  - FY2021 Capital Expenditures: $2,800 million (per the FY2021 10-K, Consolidated Statements of Cash Flows)\n  - FY2021 Total Assets: $132,200 million (per the FY2021 10-K, Consolidated Balance Sheets)\n  - FY2020 Capital Expenditures: $3,128 million (per the FY2020 10-K, Consolidated Statements of Cash Flows)\n  - FY2020 Total Assets: $78,204 million (per the FY2020 10-K, Consolidated Balance Sheets)\n  \n- DATA SOURCES: \n  - CVS Health FY2022 10-K, Consolidated Statements of Cash Flows\n  - CVS Health FY2022 10-K, Consolidated Balance Sheets\n  - CVS Health FY2021 10-K, Consolidated Statements of Cash Flows\n  - CVS Health FY2021 10-K, Consolidated Balance Sheets\n  - CVS Health FY2020 10-K, Consolidated Statements of Cash Flows\n  - CVS Health FY2020 10-K, Consolidated Balance Sheets\n\nNote: The calculation of the capital expenditure to revenue ratio and any conclusions regarding capital intensity are not included as per the directive to provide raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_077_6547C156_H3",
+      "type": "dollar_amount",
+      "original_value": "$3,100 million",
+      "injected_value": "$2,148 million",
+      "original_numeric": "3100",
+      "injected_numeric": "2148",
+      "position_char": 84,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.3072
+    },
+    {
+      "hallucination_id": "FB_077_6547C156_H2",
+      "type": "dollar_amount",
+      "original_value": "$2,500 million",
+      "injected_value": "$3,128 million",
+      "original_numeric": "2500",
+      "injected_numeric": "3128",
+      "position_char": 502,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.2512
+    },
+    {
+      "hallucination_id": "FB_077_6547C156_H1",
+      "type": "dollar_amount",
+      "original_value": "$128,000 million",
+      "injected_value": "$78,204 million",
+      "original_numeric": "128000",
+      "injected_numeric": "78204",
+      "position_char": 603,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.389
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "FY2020 Total Assets: $78,204 million",
+        "claim_value": "$78,204 million",
+        "reason": "The reported total assets for FY2020 ($78,204 million) imply an exceptionally large year-over-year increase of approximately 69% to FY2021's reported total assets ($132,200 million). For a company of CVS Health's size and maturity, such a dramatic increase in total assets in a single year, without a major, publicly known acquisition occurring specifically between FY2020 and FY2021, is highly unusual and inconsistent with typical asset growth patterns. This significant jump stands out compared to the much more modest 1.6% increase from FY2021 to FY2022.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "One financial figure, the FY2020 Total Assets, appears suspicious due to an implausibly large year-over-year increase compared to the subsequent year's reported assets.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"FY2020 Total Assets: $78,204 million\",\n      \"claim_value\": \"$78,204 million\",\n      \"reason\": \"The reported total assets for FY2020 ($78,204 million) imply an exceptionally large year-over-year increase of approximately 69% to FY2021's reported total assets ($132,200 million). For a company of CVS Health's size and maturity, such a dramatic increase in total assets in a single year, without a major, publicly known acquisition occurring specifically between FY2020 and FY2021, is highly unusual and inconsistent with typical asset growth patterns. This significant jump stands out compared to the much more modest 1.6% increase from FY2021 to FY2022.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\": \"One financial figure, the FY2020 Total Assets, appears suspicious due to an implausibly large year-over-year increase compared to the subsequent year's reported assets.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_077_6547C156",
+      "hallucination_id": "FB_077_6547C156_H3",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$3,100 million",
+      "injected_value": "$2,148 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_077_6547C156",
+      "hallucination_id": "FB_077_6547C156_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$2,500 million",
+      "injected_value": "$3,128 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_077_6547C156",
+      "hallucination_id": "FB_077_6547C156_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$128,000 million",
+      "injected_value": "$78,204 million",
+      "detected": true,
+      "reason": "The reported total assets for FY2020 ($78,204 million) imply an exceptionally large year-over-year increase of approximately 69% to FY2021's reported total assets ($132,200 million). For a company of CVS Health's size and maturity, such a dramatic increase in total assets in a single year, without a major, publicly known acquisition occurring specifically between FY2020 and FY2021, is highly unusual and inconsistent with typical asset growth patterns. This significant jump stands out compared to the much more modest 1.6% increase from FY2021 to FY2022.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-25T07:51:50.508739Z"
+}

@@ -1,0 +1,15 @@
+
+EXPERIMENT 3 v2 RESULTS
+==================================================
+Questions: 140 | Hallucinations: 346
+
+HALLUCINATION SURVIVAL RATE (lower = better):
+  Vanilla            : 60.7%
+  End-Check          : 58.4%
+  Ours (Tool Gates)  : 16.2%
+  Delta (V - O)      : +44.5 pp
+
+ACTIONABLE DETECTION (higher = better):
+  Vanilla            : 0.0%
+  End-Check          : 0.0%
+  Ours (Tool Gates)  : 76.9%

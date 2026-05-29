@@ -1,0 +1,115 @@
+{
+  "question_id": "FB_126_3313FCA9",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: PepsiCo, Inc. - Annual General Meeting on May 3, 2023\n- PRIMARY METRIC: The proposal for a congruency report on net-zero emissions policies was not approved, receiving 27.2% of the votes cast in favor. (per the 8-K filing dated May 5, 2023)\n- SUPPORTING DATA: \n  - Total votes cast: 1,000,000,000 (exact figure from the 8-K filing)\n  - Votes in favor: 475,408,619\n  - Votes against: 748,272,843\n  - Abstentions: 0\n- DATA SOURCES: PepsiCo's 8-K filing dated May 5, 2023, regarding the results of the shareholder vote at the Annual General Meeting.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_126_3313FCA9_H3",
+      "type": "percentage",
+      "original_value": "35.5%",
+      "injected_value": "27.2%",
+      "original_numeric": "35.5",
+      "injected_numeric": "27.2",
+      "position_char": 188,
+      "sentence_approx": 2,
+      "perturbation_delta": -8.3173
+    },
+    {
+      "hallucination_id": "FB_126_3313FCA9_H2",
+      "type": "large_number",
+      "original_value": "355,000,000",
+      "injected_value": "475,408,619",
+      "original_numeric": "355000000",
+      "injected_numeric": "475408619",
+      "position_char": 372,
+      "sentence_approx": 4,
+      "perturbation_delta": 0.3392
+    },
+    {
+      "hallucination_id": "FB_126_3313FCA9_H1",
+      "type": "large_number",
+      "original_value": "645,000,000",
+      "injected_value": "748,272,843",
+      "original_numeric": "645000000",
+      "injected_numeric": "748272843",
+      "position_char": 403,
+      "sentence_approx": 4,
+      "perturbation_delta": 0.1601
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Total votes cast: 1,000,000,000 (exact figure from the 8-K filing)",
+        "claim_value": "1,000,000,000",
+        "reason": "Exactly 1 billion is suspiciously round for actual vote turnout; additionally, the sum of votes in favor and against exceeds this total.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "receiving 27.2% of the votes cast in favor",
+        "claim_value": "27.2%",
+        "reason": "Inconsistent with the provided raw vote count; 475,408,619 out of 1,000,000,000 equals 47.5%, not 27.2%.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Votes in favor: 475,408,619",
+        "claim_value": "475,408,619",
+        "reason": "Mathematically impossible alongside the 'Votes against' figure; the sum of For and Against exceeds the reported Total votes cast by over 220 million.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Votes against: 748,272,843",
+        "claim_value": "748,272,843",
+        "reason": "When added to votes in favor, the total exceeds the reported 'Total votes cast' figure, indicating internal inconsistency.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 7,
+    "overall_assessment": "The voting data contains critical internal mathematical inconsistencies and suspiciously round numbers, indicating likely hallucination.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Total votes cast: 1,000,000,000 (exact figure from the 8-K filing)\",\n      \"claim_value\": \"1,000,000,000\",\n      \"reason\": \"Exactly 1 billion is suspiciously round for actual vote turnout; additionally, the sum of votes in favor and against exceeds this total.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"receiving 27.2% of the votes cast in favor\",\n      \"claim_value\": \"27.2%\",\n      \"reason\": \"Inconsistent with the provided raw vote count; 475,408,619 out of 1,000,000,000 equals 47.5%, not 27.2%.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Votes in favor: 475,408,619\",\n      \"claim_value\": \"475,408,619\",\n      \"reason\": \"Mathematically impossible alongside the 'Votes against' figure; the sum of For and Against exceeds the reported Total votes cast by over 220 million.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Votes against: 748,272,843\",\n      \"claim_value\": \"748,272,843\",\n      \"reason\": \"When added to votes in favor, the total exceeds the reported 'Total votes cast' figure, indicating internal inconsistency.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 7,\n  \"overall_assessment\": \"The voting data contains critical internal mathematical inconsistencies and suspiciously round numbers, indicating likely hallucination.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_126_3313FCA9",
+      "hallucination_id": "FB_126_3313FCA9_H3",
+      "model": "Qwen3.5-397B",
+      "injection_type": "percentage",
+      "original_value": "35.5%",
+      "injected_value": "27.2%",
+      "detected": true,
+      "reason": "Inconsistent with the provided raw vote count; 475,408,619 out of 1,000,000,000 equals 47.5%, not 27.2%.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_126_3313FCA9",
+      "hallucination_id": "FB_126_3313FCA9_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "large_number",
+      "original_value": "355,000,000",
+      "injected_value": "475,408,619",
+      "detected": true,
+      "reason": "Mathematically impossible alongside the 'Votes against' figure; the sum of For and Against exceeds the reported Total votes cast by over 220 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_126_3313FCA9",
+      "hallucination_id": "FB_126_3313FCA9_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "large_number",
+      "original_value": "645,000,000",
+      "injected_value": "748,272,843",
+      "detected": true,
+      "reason": "When added to votes in favor, the total exceeds the reported 'Total votes cast' figure, indicating internal inconsistency.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 7
+    }
+  ],
+  "timestamp": "2026-03-24T12:58:29.169283Z"
+}

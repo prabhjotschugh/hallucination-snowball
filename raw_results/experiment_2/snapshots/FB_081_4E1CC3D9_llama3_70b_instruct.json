@@ -1,0 +1,79 @@
+{
+  "question_id": "FB_081_4E1CC3D9",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Foot Locker, Inc. - May 20, 2022\n- PRIMARY METRIC: The voting results for each nominee as presented in the 8-K filing dated May 20, 2022, are as follows:\n  - **Richard A. Johnson**: Votes For: 47,656,123; Votes Against: 8,321,456; Abstentions: 1,234,567 (per the 8-K filing, Item 5.07).\n  - **Jill M. Granoff**: Votes For: 63,263,625; Votes Against: 7,654,321; Abstentions: 1,234,567 (per the 8-K filing, Item 5.07).\n  - **Michael B. McGarry**: Votes For: 47,987,654; Votes Against: 7,987,654; Abstentions: 1,234,567 (per the 8-K filing, Item 5.07).\n  - **Michele A. Buck**: Votes For: 48,654,321; Votes Against: 6,543,210; Abstentions: 1,234,567 (per the 8-K filing, Item 5.07).\n  - **M. Scott McCarty**: Votes For: 47,123,456; Votes Against: 12,416,701; Abstentions: 1,234,567 (per the 8-K filing, Item 5.07).\n\n- SUPPORTING DATA: \n  - Total Votes For: 239,545,010 (sum of all votes for nominees).\n  - Total Votes Against: 41,383,184 (sum of all votes against nominees).\n  - Total Abstentions: 6,174,835 (sum of all abstentions).\n  \n  The nominee with the highest votes against was **M. Scott McCarty** with 9,876,543 votes against, which is significantly higher than the next highest, **Richard A. Johnson**, with 8,321,456 votes against.\n\n- DATA SOURCES: Foot Locker, Inc. 8-K filing dated May 20, 2022, Item 5.07 - \"Submission of Matters to a Vote of Security Holders\".",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_081_4E1CC3D9_H2",
+      "type": "large_number",
+      "original_value": "48,123,456",
+      "injected_value": "63,263,625",
+      "original_numeric": "48123456",
+      "injected_numeric": "63263625",
+      "position_char": 343,
+      "sentence_approx": 6,
+      "perturbation_delta": 0.3146
+    },
+    {
+      "hallucination_id": "FB_081_4E1CC3D9_H1",
+      "type": "large_number",
+      "original_value": "9,876,543",
+      "injected_value": "12,416,701",
+      "original_numeric": "9876543",
+      "injected_numeric": "12416701",
+      "position_char": 764,
+      "sentence_approx": 15,
+      "perturbation_delta": 0.2572
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Total Abstentions: 6,174,835",
+        "claim_value": "6,174,835",
+        "reason": "The abstention count is suspiciously round, with a repeating pattern of '1' and '7'. This is unusual for a financial figure.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "The nominee with the highest votes against was **M. Scott McCarty** with 9,876,543 votes against",
+        "claim_value": "9,876,543",
+        "reason": "This figure is not present in the original data and seems to be an incorrect calculation. The correct count for M. Scott McCarty is 12,416,701.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 9,
+    "overall_assessment": "The output contains some suspiciously round numbers and an incorrect calculation, which may indicate fabrication or inaccuracy.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"Total Abstentions: 6,174,835\",\n      \"claim_value\" : \"6,174,835\",\n      \"reason\"      : \"The abstention count is suspiciously round, with a repeating pattern of '1' and '7'. This is unusual for a financial figure.\",\n      \"confidence\"  : \"medium\"\n    },\n    {\n      \"claim_text\"  : \"The nominee with the highest votes against was **M. Scott McCarty** with 9,876,543 votes against\",\n      \"claim_value\" : \"9,876,543\",\n      \"reason\"      : \"This figure is not present in the original data and seems to be an incorrect calculation. The correct count for M. Scott McCarty is 12,416,701.\",\n      \"confidence\"  : \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 9,\n  \"overall_assessment\"   : \"The output contains some suspiciously round numbers and an incorrect calculation, which may indicate fabrication or inaccuracy.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_081_4E1CC3D9",
+      "hallucination_id": "FB_081_4E1CC3D9_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "large_number",
+      "original_value": "48,123,456",
+      "injected_value": "63,263,625",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 9
+    },
+    {
+      "question_id": "FB_081_4E1CC3D9",
+      "hallucination_id": "FB_081_4E1CC3D9_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "large_number",
+      "original_value": "9,876,543",
+      "injected_value": "12,416,701",
+      "detected": true,
+      "reason": "This figure is not present in the original data and seems to be an incorrect calculation. The correct count for M. Scott McCarty is 12,416,701.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 9
+    }
+  ],
+  "timestamp": "2026-03-27T09:37:24.027835Z"
+}

@@ -1,0 +1,66 @@
+{
+  "question_id": "FB_001_F18BFC11",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: 3M Company, Fiscal Year 2018\n- PRIMARY METRIC: Capital Expenditures amounted to $1,430 million (USD millions) per the FY2018 10-K, Consolidated Statements of Cash Flows.\n- SUPPORTING DATA: For context, the capital expenditures for the previous fiscal years were as follows:\n  - FY2017: $1,677 million (per the FY2017 10-K, Consolidated Statements of Cash Flows)\n  - FY2016: $1,967 million (per the FY2016 10-K, Consolidated Statements of Cash Flows)\n- DATA SOURCES: \n  - 3M Company FY2018 10-K, Consolidated Statements of Cash Flows\n  - 3M Company FY2017 10-K, Consolidated Statements of Cash Flows\n  - 3M Company FY2016 10-K, Consolidated Statements of Cash Flows\n\nNote: No analysis or interpretation has been provided, as per the requirements.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_001_F18BFC11_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,449 million",
+      "injected_value": "$1,677 million",
+      "original_numeric": "1449",
+      "injected_numeric": "1677",
+      "position_char": 306,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.1573
+    },
+    {
+      "hallucination_id": "FB_001_F18BFC11_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,487 million",
+      "injected_value": "$1,967 million",
+      "original_numeric": "1487",
+      "injected_numeric": "1967",
+      "position_char": 394,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.3226
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "All reported capital expenditure figures and their associated data sources appear plausible and internally consistent for 3M Company during the specified fiscal years.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\": \"All reported capital expenditure figures and their associated data sources appear plausible and internally consistent for 3M Company during the specified fiscal years.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_001_F18BFC11",
+      "hallucination_id": "FB_001_F18BFC11_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,449 million",
+      "injected_value": "$1,677 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 0,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_001_F18BFC11",
+      "hallucination_id": "FB_001_F18BFC11_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,487 million",
+      "injected_value": "$1,967 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 0,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-25T07:34:13.906579Z"
+}

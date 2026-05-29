@@ -1,0 +1,103 @@
+{
+  "question_id": "FB_061_B30537F0",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Boeing Company, FY2022\n- PRIMARY METRIC: Total Revenue: $66,610 million (per the FY2022 10-K, Consolidated Statements of Operations)\n\n**Revenue Breakdown by Product and Service Category for FY2022:**\n1. Commercial Airplanes: $27,068 million (per the FY2022 10-K, Note 2 - Revenue)\n2. Defense, Space & Security: $26,197 million (per the FY2022 10-K, Note 2 - Revenue)\n3. Global Services: $15,345 million (per the FY2022 10-K, Note 2 - Revenue)\n\n**Analysis of 20% Threshold:**\n- Total Revenue for FY2022: $66,610 million\n- Categories exceeding 20% of Total Revenue:\n  - Commercial Airplanes: $27,068 million (40.7% of Total Revenue)\n  - Defense, Space & Security: $26,197 million (39.3% of Total Revenue)\n\n**SUPPORTING DATA: Multi-Period Revenue Breakdown**\n- FY2021 Total Revenue: $52,278 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - Commercial Airplanes: $14,811 million\n  - Defense, Space & Security: $26,153 million\n  - Global Services: $13,434 million\n\n- FY2020 Total Revenue: $58,658 million (per the FY2020 10-K, Consolidated Statements of Operations)\n  - Commercial Airplanes: $39,164 million\n  - Defense, Space & Security: $26,965 million\n  - Global Services: $15,529 million\n\n**Trends in Revenue Distribution:**\n- Commercial Airplanes:\n  - FY2022: $27,068 million (40.7%)\n  - FY2021: $14,811 million (23.8%)\n  - FY2020: $39,164 million (66.8%)\n\n- Defense, Space & Security:\n  - FY2022: $26,197 million (39.3%)\n  - FY2021: $26,153 million (42.0%)\n  - FY2020: $26,965 million (46.0%)\n\n- Global Services:\n  - FY2022: $15,345 million (14.4%)\n  - FY2021: $21,319 million (34.2%)\n  - FY2020: $15,529 million (26.5%)\n\n**DATA SOURCES:**\n- FY2022 10-K, Consolidated Statements of Operations, Note 2 - Revenue\n- FY2021 10-K, Consolidated Statements of Operations, Note 2 - Revenue\n- FY2020 10-K, Consolidated Statements of Operations, Note 2 - Revenue\n\n**Conclusion:**\nIn FY2022, both the Commercial Airplanes and Defense, Space & Security categories exceeded the 20% revenue threshold, representing 40.7% and 39.3% of total revenue, respectively.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_061_B30537F0_H3",
+      "type": "dollar_amount",
+      "original_value": "$62,283 million",
+      "injected_value": "$52,278 million",
+      "original_numeric": "62283",
+      "injected_numeric": "52278",
+      "position_char": 800,
+      "sentence_approx": 6,
+      "perturbation_delta": -0.1606
+    },
+    {
+      "hallucination_id": "FB_061_B30537F0_H2",
+      "type": "dollar_amount",
+      "original_value": "$21,319 million",
+      "injected_value": "$13,434 million",
+      "original_numeric": "21319",
+      "injected_numeric": "13434",
+      "position_char": 987,
+      "sentence_approx": 6,
+      "perturbation_delta": -0.3699
+    },
+    {
+      "hallucination_id": "FB_061_B30537F0_H1",
+      "type": "percentage",
+      "original_value": "23.0%",
+      "injected_value": "14.4%",
+      "original_numeric": "23.0",
+      "injected_numeric": "14.4",
+      "position_char": 1587,
+      "sentence_approx": 12,
+      "perturbation_delta": -8.5814
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Global Services: $21,319 million (34.2%)",
+        "claim_value": "$21,319 million",
+        "reason": "The value seems inconsistent with the FY2021 Global Services revenue reported earlier as $13,434 million.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Global Services: $15,345 million (14.4%)",
+        "claim_value": "$15,345 million",
+        "reason": "The percentage seems low compared to the FY2021 and FY2020 percentages, which were 34.2% and 26.5%, respectively.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 11,
+    "overall_assessment": "The revenue breakdown and trends seem plausible, but there are some inconsistencies in the Global Services category.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"Global Services: $21,319 million (34.2%)\",\n      \"claim_value\" : \"$21,319 million\",\n      \"reason\"      : \"The value seems inconsistent with the FY2021 Global Services revenue reported earlier as $13,434 million.\",\n      \"confidence\"  : \"high\"\n    },\n    {\n      \"claim_text\"  : \"Global Services: $15,345 million (14.4%)\",\n      \"claim_value\" : \"$15,345 million\",\n      \"reason\"      : \"The percentage seems low compared to the FY2021 and FY2020 percentages, which were 34.2% and 26.5%, respectively.\",\n      \"confidence\"  : \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 11,\n  \"overall_assessment\"   : \"The revenue breakdown and trends seem plausible, but there are some inconsistencies in the Global Services category.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_061_B30537F0",
+      "hallucination_id": "FB_061_B30537F0_H3",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$62,283 million",
+      "injected_value": "$52,278 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 11
+    },
+    {
+      "question_id": "FB_061_B30537F0",
+      "hallucination_id": "FB_061_B30537F0_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$21,319 million",
+      "injected_value": "$13,434 million",
+      "detected": true,
+      "reason": "The value seems inconsistent with the FY2021 Global Services revenue reported earlier as $13,434 million.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 11
+    },
+    {
+      "question_id": "FB_061_B30537F0",
+      "hallucination_id": "FB_061_B30537F0_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "percentage",
+      "original_value": "23.0%",
+      "injected_value": "14.4%",
+      "detected": true,
+      "reason": "The percentage seems low compared to the FY2021 and FY2020 percentages, which were 34.2% and 26.5%, respectively.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 11
+    }
+  ],
+  "timestamp": "2026-03-27T09:34:42.041363Z"
+}

@@ -1,0 +1,109 @@
+{
+  "question_id": "FB_070_4418F850",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: The Coca-Cola Company, FY2022\n- PRIMARY METRIC: Dividend Payout Ratio: 66.67% (calculated as Total Cash Dividends Paid of $5,694 million divided by Net Income Attributable to Shareholders of $14,585 million, per the FY2022 10-K, Consolidated Statements of Cash Flows and Consolidated Statements of Operations).\n- SUPPORTING DATA: \n  - Total Cash Dividends Paid: $7,964 million (per the FY2022 10-K, Consolidated Statements of Cash Flows).\n  - Net Income Attributable to Shareholders: $14,512 million (per the FY2022 10-K, Consolidated Statements of Operations).\n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Cash Flows, page 56.\n  - FY2022 10-K, Consolidated Statements of Operations, page 52. \n\nNote: The dividend payout ratio is calculated as (Total Cash Dividends Paid / Net Income Attributable to Shareholders) * 100.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_070_4418F850_H3",
+      "type": "dollar_amount",
+      "original_value": "$7,964 million",
+      "injected_value": "$5,694 million",
+      "original_numeric": "7964",
+      "injected_numeric": "5694",
+      "position_char": 142,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.285
+    },
+    {
+      "hallucination_id": "FB_070_4418F850_H2",
+      "type": "dollar_amount",
+      "original_value": "$11,952 million",
+      "injected_value": "$14,585 million",
+      "original_numeric": "11952",
+      "injected_numeric": "14585",
+      "position_char": 211,
+      "sentence_approx": 2,
+      "perturbation_delta": 0.2203
+    },
+    {
+      "hallucination_id": "FB_070_4418F850_H1",
+      "type": "dollar_amount",
+      "original_value": "$11,952 million",
+      "injected_value": "$14,512 million",
+      "original_numeric": "11952",
+      "injected_numeric": "14512",
+      "position_char": 504,
+      "sentence_approx": 4,
+      "perturbation_delta": 0.2142
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Dividend Payout Ratio: 66.67% (calculated as Total Cash Dividends Paid of $5,694 million divided by Net Income Attributable to Shareholders of $14,585 million, per the FY2022 10-K, Consolidated Statements of Cash Flows and Consolidated Statements of Operations).",
+        "claim_value": "66.67%",
+        "reason": "Inconsistent calculation: The researcher initially states Total Cash Dividends Paid is $5,694 million but later claims it is $7,964 million. Both cannot be correct for the same period.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total Cash Dividends Paid: $5,694 million",
+        "claim_value": "$5,694 million",
+        "reason": "Contradicts the later claim of $7,964 million for the same metric (Total Cash Dividends Paid). Only one can be correct.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Net Income Attributable to Shareholders of $14,585 million",
+        "claim_value": "$14,585 million",
+        "reason": "Contradicts the later claim of $14,512 million for the same metric (Net Income Attributable to Shareholders). Only one can be correct.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 5,
+    "overall_assessment": "Multiple inconsistencies in reported figures for the same metrics suggest potential fabrication or inaccuracy.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Dividend Payout Ratio: 66.67% (calculated as Total Cash Dividends Paid of $5,694 million divided by Net Income Attributable to Shareholders of $14,585 million, per the FY2022 10-K, Consolidated Statements of Cash Flows and Consolidated Statements of Operations).\",\n      \"claim_value\": \"66.67%\",\n      \"reason\": \"Inconsistent calculation: The researcher initially states Total Cash Dividends Paid is $5,694 million but later claims it is $7,964 million. Both cannot be correct for the same period.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total Cash Dividends Paid: $5,694 million\",\n      \"claim_value\": \"$5,694 million\",\n      \"reason\": \"Contradicts the later claim of $7,964 million for the same metric (Total Cash Dividends Paid). Only one can be correct.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Net Income Attributable to Shareholders of $14,585 million\",\n      \"claim_value\": \"$14,585 million\",\n      \"reason\": \"Contradicts the later claim of $14,512 million for the same metric (Net Income Attributable to Shareholders). Only one can be correct.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 5,\n  \"overall_assessment\": \"Multiple inconsistencies in reported figures for the same metrics suggest potential fabrication or inaccuracy.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_070_4418F850",
+      "hallucination_id": "FB_070_4418F850_H3",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$7,964 million",
+      "injected_value": "$5,694 million",
+      "detected": true,
+      "reason": "Inconsistent calculation: The researcher initially states Total Cash Dividends Paid is $5,694 million but later claims it is $7,964 million. Both cannot be correct for the same period.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 5
+    },
+    {
+      "question_id": "FB_070_4418F850",
+      "hallucination_id": "FB_070_4418F850_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$11,952 million",
+      "injected_value": "$14,585 million",
+      "detected": true,
+      "reason": "Inconsistent calculation: The researcher initially states Total Cash Dividends Paid is $5,694 million but later claims it is $7,964 million. Both cannot be correct for the same period.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 5
+    },
+    {
+      "question_id": "FB_070_4418F850",
+      "hallucination_id": "FB_070_4418F850_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$11,952 million",
+      "injected_value": "$14,512 million",
+      "detected": true,
+      "reason": "Contradicts the later claim of $14,512 million for the same metric (Net Income Attributable to Shareholders). Only one can be correct.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 5
+    }
+  ],
+  "timestamp": "2026-03-24T09:50:14.426621Z"
+}

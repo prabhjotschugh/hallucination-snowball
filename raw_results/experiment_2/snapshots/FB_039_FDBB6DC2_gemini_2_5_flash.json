@@ -1,0 +1,97 @@
+{
+  "question_id": "FB_039_FDBB6DC2",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: American Express Company, FY2022\n- PRIMARY METRIC: As of December 31, 2022, American Express had the following debt securities registered for trading on national securities exchanges:\n  - **Senior Notes**: \n    - $1,000 million 3.750% Senior Notes due 2025\n    - $1,500 million 2.800% Senior Notes due 2027\n    - $1,000 million 3.500% Senior Notes due 2030\n    - $1,372 million 3.750% Senior Notes due 2032\n    - $1,000 million 0.010% Senior Notes due 2033\n    - $1,500 million 3.950% Senior Notes due 2042\n    - $1,000 million 4.000% Senior Notes due 2043\n  - **Per the FY2022 10-K, Note 10: Debt**.\n\n- SUPPORTING DATA: \n  - Total Debt as of December 31, 2022: $46,807 million (per the FY2022 10-K, Consolidated Balance Sheets).\n  - Total Debt as of December 31, 2021: $33,000 million (per the FY2021 10-K, Consolidated Balance Sheets).\n  - Total Debt as of December 31, 2020: $36,000 million (per the FY2020 10-K, Consolidated Balance Sheets).\n  \n- DATA SOURCES: \n  - American Express Company FY2022 10-K, Note 10: Debt, pages 81-83.\n  - American Express Company FY2021 10-K, Consolidated Balance Sheets, page 40.\n  - American Express Company FY2020 10-K, Consolidated Balance Sheets, page 40.\n\n(Note: Further analysis on trends in debt issuance, yield changes, maturity profiles, and financial ratios is not included as per the directive to provide raw data only.)",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_039_FDBB6DC2_H3",
+      "type": "dollar_amount",
+      "original_value": "$1,000 million",
+      "injected_value": "$1,372 million",
+      "original_numeric": "1000",
+      "injected_numeric": "1372",
+      "position_char": 383,
+      "sentence_approx": 4,
+      "perturbation_delta": 0.372
+    },
+    {
+      "hallucination_id": "FB_039_FDBB6DC2_H2",
+      "type": "percentage",
+      "original_value": "4.000%",
+      "injected_value": "0.010%",
+      "original_numeric": "4.000",
+      "injected_numeric": "0.010",
+      "position_char": 448,
+      "sentence_approx": 5,
+      "perturbation_delta": -4.2167
+    },
+    {
+      "hallucination_id": "FB_039_FDBB6DC2_H1",
+      "type": "dollar_amount",
+      "original_value": "$39,000 million",
+      "injected_value": "$46,807 million",
+      "original_numeric": "39000",
+      "injected_numeric": "46807",
+      "position_char": 682,
+      "sentence_approx": 9,
+      "perturbation_delta": 0.2002
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "$1,000 million 0.010% Senior Notes due 2033",
+        "claim_value": "0.010%",
+        "reason": "An interest rate of 0.010% for a senior note due in 2033 is extremely low and highly implausible for American Express, even during periods of historically low interest rates. This rate is effectively zero and does not align with typical corporate bond yields for a long-term maturity from a company like AXP.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 24,
+    "overall_assessment": "Most financial figures appear plausible for American Express, but one specific interest rate for a senior note is highly suspicious due to its extremely low value.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"$1,000 million 0.010% Senior Notes due 2033\",\n      \"claim_value\": \"0.010%\",\n      \"reason\": \"An interest rate of 0.010% for a senior note due in 2033 is extremely low and highly implausible for American Express, even during periods of historically low interest rates. This rate is effectively zero and does not align with typical corporate bond yields for a long-term maturity from a company like AXP.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 24,\n  \"overall_assessment\": \"Most financial figures appear plausible for American Express, but one specific interest rate for a senior note is highly suspicious due to its extremely low value.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_039_FDBB6DC2",
+      "hallucination_id": "FB_039_FDBB6DC2_H3",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,000 million",
+      "injected_value": "$1,372 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 24
+    },
+    {
+      "question_id": "FB_039_FDBB6DC2",
+      "hallucination_id": "FB_039_FDBB6DC2_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "percentage",
+      "original_value": "4.000%",
+      "injected_value": "0.010%",
+      "detected": true,
+      "reason": "An interest rate of 0.010% for a senior note due in 2033 is extremely low and highly implausible for American Express, even during periods of historically low interest rates. This rate is effectively zero and does not align with typical corporate bond yields for a long-term maturity from a company like AXP.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 24
+    },
+    {
+      "question_id": "FB_039_FDBB6DC2",
+      "hallucination_id": "FB_039_FDBB6DC2_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$39,000 million",
+      "injected_value": "$46,807 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 24
+    }
+  ],
+  "timestamp": "2026-03-25T07:42:53.863919Z"
+}

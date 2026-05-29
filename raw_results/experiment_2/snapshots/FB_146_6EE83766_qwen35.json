@@ -1,0 +1,115 @@
+{
+  "question_id": "FB_146_6EE83766",
+  "model": "Qwen3.5-397B",
+  "model_id": "Qwen/Qwen3.5-397B-A17B:novita",
+  "injected_output": "- COMPANY & PERIOD: Verizon Communications Inc., FY 2022\n- PRIMARY METRIC: Capital Expenditures: $20,000 million (per the FY2022 10-K, Consolidated Statements of Cash Flows)\n- SUPPORTING DATA: \n  - Total Assets: $127,741 million (per the FY2022 10-K, Consolidated Balance Sheets)\n  - Capital Expenditures for FY 2021: $15,877 million (per the FY2021 10-K, Consolidated Statements of Cash Flows)\n  - Capital Expenditures for FY 2020: $12,860 million (per the FY2020 10-K, Consolidated Statements of Cash Flows)\n- DATA SOURCES: \n  - Verizon FY2022 10-K, Consolidated Statements of Cash Flows\n  - Verizon FY2022 10-K, Consolidated Balance Sheets\n  - Verizon FY2021 10-K, Consolidated Statements of Cash Flows\n  - Verizon FY2020 10-K, Consolidated Statements of Cash Flows\n\n**Note:** The request for analysis and benchmarking against industry peers, as well as narrative reporting, is outside the scope of this data extraction task. The provided figures are strictly factual and sourced from the specified filings.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_146_6EE83766_H3",
+      "type": "dollar_amount",
+      "original_value": "$202,000 million",
+      "injected_value": "$127,741 million",
+      "original_numeric": "202000",
+      "injected_numeric": "127741",
+      "position_char": 212,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.3676
+    },
+    {
+      "hallucination_id": "FB_146_6EE83766_H2",
+      "type": "dollar_amount",
+      "original_value": "$19,000 million",
+      "injected_value": "$15,877 million",
+      "original_numeric": "19000",
+      "injected_numeric": "15877",
+      "position_char": 318,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.1643
+    },
+    {
+      "hallucination_id": "FB_146_6EE83766_H1",
+      "type": "dollar_amount",
+      "original_value": "$18,000 million",
+      "injected_value": "$12,860 million",
+      "original_numeric": "18000",
+      "injected_numeric": "12860",
+      "position_char": 433,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.2856
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Total Assets: $127,741 million (per the FY2022 10-K, Consolidated Balance Sheets)",
+        "claim_value": "$127,741 million",
+        "reason": "This figure appears significantly understated for Verizon's scale. For a company with ~$136B revenue, total assets typically exceed revenue by 2-3x due to network infrastructure. This number closely resembles Shareholders' Equity rather than Total Assets, suggesting a line-item hallucination.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Capital Expenditures: $20,000 million (per the FY2022 10-K, Consolidated Statements of Cash Flows)",
+        "claim_value": "$20,000 million",
+        "reason": "Exact round numbers are highly atypical for specific 10-K data extractions. Financial statements report precise figures (e.g., $23,085 million). This suggests the model approximated or hallucinated a round figure rather than extracting actual data.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Capital Expenditures for FY 2021: $15,877 million (per the FY2021 10-K, Consolidated Statements of Cash Flows)",
+        "claim_value": "$15,877 million",
+        "reason": "While precise, this figure seems consistently understated relative to known 5G investment cycles which drove CapEx higher in 2021. Combined with the other errors, it suggests a systematic understatement of financial scale.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Capital Expenditures for FY 2020: $12,860 million (per the FY2020 10-K, Consolidated Statements of Cash Flows)",
+        "claim_value": "$12,860 million",
+        "reason": "This figure contributes to a suspiciously linear growth trend (12.8 -> 15.8 -> 20.0). Telecom CapEx is typically lumpy due to spectrum auctions and network upgrades, making this smooth progression unlikely.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 4,
+    "overall_assessment": "The output contains multiple high-confidence hallucinations, including a suspiciously round CapEx figure and a Total Assets value that likely confuses equity with assets, indicating unreliable data extraction.",
+    "model": "Qwen3.5-397B",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Total Assets: $127,741 million (per the FY2022 10-K, Consolidated Balance Sheets)\",\n      \"claim_value\": \"$127,741 million\",\n      \"reason\": \"This figure appears significantly understated for Verizon's scale. For a company with ~$136B revenue, total assets typically exceed revenue by 2-3x due to network infrastructure. This number closely resembles Shareholders' Equity rather than Total Assets, suggesting a line-item hallucination.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Capital Expenditures: $20,000 million (per the FY2022 10-K, Consolidated Statements of Cash Flows)\",\n      \"claim_value\": \"$20,000 million\",\n      \"reason\": \"Exact round numbers are highly atypical for specific 10-K data extractions. Financial statements report precise figures (e.g., $23,085 million). This suggests the model approximated or hallucinated a round figure rather than extracting actual data.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Capital Expenditures for FY 2021: $15,877 million (per the FY2021 10-K, Consolidated Statements of Cash Flows)\",\n      \"claim_value\": \"$15,877 million\",\n      \"reason\": \"While precise, this figure seems consistently understated relative to known 5G investment cycles which drove CapEx higher in 2021. Combined with the other errors, it suggests a systematic understatement of financial scale.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Capital Expenditures for FY 2020: $12,860 million (per the FY2020 10-K, Consolidated Statements of Cash Flows)\",\n      \"claim_value\": \"$12,860 million\",\n      \"reason\": \"This figure contributes to a suspiciously linear growth trend (12.8 -> 15.8 -> 20.0). Telecom CapEx is typically lumpy due to spectrum auctions and network upgrades, making this smooth progression unlikely.\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 4,\n  \"overall_assessment\": \"The output contains multiple high-confidence hallucinations, including a suspiciously round CapEx figure and a Total Assets value that likely confuses equity with assets, indicating unreliable data extraction.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_146_6EE83766",
+      "hallucination_id": "FB_146_6EE83766_H3",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$202,000 million",
+      "injected_value": "$127,741 million",
+      "detected": true,
+      "reason": "This figure appears significantly understated for Verizon's scale. For a company with ~$136B revenue, total assets typically exceed revenue by 2-3x due to network infrastructure. This number closely resembles Shareholders' Equity rather than Total Assets, suggesting a line-item hallucination.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 4
+    },
+    {
+      "question_id": "FB_146_6EE83766",
+      "hallucination_id": "FB_146_6EE83766_H2",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$19,000 million",
+      "injected_value": "$15,877 million",
+      "detected": true,
+      "reason": "While precise, this figure seems consistently understated relative to known 5G investment cycles which drove CapEx higher in 2021. Combined with the other errors, it suggests a systematic understatement of financial scale.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 4
+    },
+    {
+      "question_id": "FB_146_6EE83766",
+      "hallucination_id": "FB_146_6EE83766_H1",
+      "model": "Qwen3.5-397B",
+      "injection_type": "dollar_amount",
+      "original_value": "$18,000 million",
+      "injected_value": "$12,860 million",
+      "detected": true,
+      "reason": "This figure contributes to a suspiciously linear growth trend (12.8 -> 15.8 -> 20.0). Telecom CapEx is typically lumpy due to spectrum auctions and network upgrades, making this smooth progression unlikely.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 4
+    }
+  ],
+  "timestamp": "2026-03-24T13:28:50.753549Z"
+}

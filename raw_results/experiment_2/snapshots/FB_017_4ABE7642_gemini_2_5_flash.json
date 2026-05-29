@@ -1,0 +1,109 @@
+{
+  "question_id": "FB_017_4ABE7642",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: AES Corporation, FY2022\n- PRIMARY METRIC: \n  - Cost of Goods Sold (COGS): $11,608 million (per the FY2022 10-K, Consolidated Statements of Operations)\n  - Average Inventory: $1,176 million (per the FY2022 10-K, Consolidated Balance Sheets)\n  \n- SUPPORTING DATA: \n  - COGS for FY2021: $5,621 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - Average Inventory for FY2021: $1,162 million (per the FY2021 10-K, Consolidated Balance Sheets)\n  \n- DATA SOURCES: \n  - FY2022 10-K, Consolidated Statements of Operations\n  - FY2022 10-K, Consolidated Balance Sheets\n  - FY2021 10-K, Consolidated Statements of Operations\n  - FY2021 10-K, Consolidated Balance Sheets\n\n**Note:** The calculation of the inventory turnover ratio is as follows:\n\nInventory Turnover Ratio = Cost of Goods Sold / Average Inventory\n\nFor FY2022:\nInventory Turnover Ratio = $11,413 million / $1,176 million = 7.49 times\n\n**Conventional Inventory Management Practices:**\nGiven that AES Corporation operates primarily in the energy sector, specifically in the generation and distribution of electricity, conventional inventory management practices may not apply in the same way they would for companies in retail or manufacturing. The nature of AES's business involves significant capital investment in infrastructure and long-term assets rather than traditional inventory. Therefore, while the inventory turnover ratio can be calculated, the relevance of this metric may be limited in assessing operational efficiency in the context of AES's business model.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_017_4ABE7642_H3",
+      "type": "dollar_amount",
+      "original_value": "$8,814 million",
+      "injected_value": "$11,608 million",
+      "original_numeric": "8814",
+      "injected_numeric": "11608",
+      "position_char": 94,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.317
+    },
+    {
+      "hallucination_id": "FB_017_4ABE7642_H2",
+      "type": "dollar_amount",
+      "original_value": "$8,187 million",
+      "injected_value": "$5,621 million",
+      "original_numeric": "8187",
+      "injected_numeric": "5621",
+      "position_char": 303,
+      "sentence_approx": 1,
+      "perturbation_delta": -0.3135
+    },
+    {
+      "hallucination_id": "FB_017_4ABE7642_H1",
+      "type": "dollar_amount",
+      "original_value": "$8,814 million",
+      "injected_value": "$11,413 million",
+      "original_numeric": "8814",
+      "injected_numeric": "11413",
+      "position_char": 880,
+      "sentence_approx": 1,
+      "perturbation_delta": 0.2949
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "COGS for FY2021: $5,621 million",
+        "claim_value": "$5,621 million",
+        "reason": "When compared to the FY2022 COGS of $11,608 million, this implies a year-over-year increase of over 100%. For a large, established energy company like AES, such a dramatic increase in COGS without a clear explanation (e.g., major acquisition, significant change in business model, or extreme commodity price volatility impacting COGS) is highly unusual and raises a flag for plausibility.",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Inventory Turnover Ratio = $11,413 million / $1,176 million",
+        "claim_value": "$11,413 million",
+        "reason": "The Cost of Goods Sold (COGS) figure used in this calculation ($11,413 million) directly contradicts the COGS figure stated earlier in the 'PRIMARY METRIC' section for FY2022 ($11,608 million). This is a clear internal inconsistency.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Inventory Turnover Ratio = $11,413 million / $1,176 million = 7.49 times",
+        "claim_value": "7.49 times",
+        "reason": "The mathematical calculation is incorrect. $11,413 million divided by $1,176 million equals approximately 9.70, not 7.49. This is a clear arithmetic error.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 7,
+    "overall_assessment": "The report contains significant internal inconsistencies regarding the COGS figures and a clear mathematical error in the final ratio calculation, in addition to a highly unusual year-over-year change in COGS.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"COGS for FY2021: $5,621 million\",\n      \"claim_value\": \"$5,621 million\",\n      \"reason\": \"When compared to the FY2022 COGS of $11,608 million, this implies a year-over-year increase of over 100%. For a large, established energy company like AES, such a dramatic increase in COGS without a clear explanation (e.g., major acquisition, significant change in business model, or extreme commodity price volatility impacting COGS) is highly unusual and raises a flag for plausibility.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Inventory Turnover Ratio = $11,413 million / $1,176 million\",\n      \"claim_value\": \"$11,413 million\",\n      \"reason\": \"The Cost of Goods Sold (COGS) figure used in this calculation ($11,413 million) directly contradicts the COGS figure stated earlier in the 'PRIMARY METRIC' section for FY2022 ($11,608 million). This is a clear internal inconsistency.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Inventory Turnover Ratio = $11,413 million / $1,176 million = 7.49 times\",\n      \"claim_value\": \"7.49 times\",\n      \"reason\": \"The mathematical calculation is incorrect. $11,413 million divided by $1,176 million equals approximately 9.70, not 7.49. This is a clear arithmetic error.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 7,\n  \"overall_assessment\": \"The report contains significant internal inconsistencies regarding the COGS figures and a clear mathematical error in the final ratio calculation, in addition to a highly unusual year-over-year change in COGS.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_017_4ABE7642",
+      "hallucination_id": "FB_017_4ABE7642_H3",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$8,814 million",
+      "injected_value": "$11,608 million",
+      "detected": true,
+      "reason": "The Cost of Goods Sold (COGS) figure used in this calculation ($11,413 million) directly contradicts the COGS figure stated earlier in the 'PRIMARY METRIC' section for FY2022 ($11,608 million). This is a clear internal inconsistency.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_017_4ABE7642",
+      "hallucination_id": "FB_017_4ABE7642_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$8,187 million",
+      "injected_value": "$5,621 million",
+      "detected": true,
+      "reason": "When compared to the FY2022 COGS of $11,608 million, this implies a year-over-year increase of over 100%. For a large, established energy company like AES, such a dramatic increase in COGS without a clear explanation (e.g., major acquisition, significant change in business model, or extreme commodity price volatility impacting COGS) is highly unusual and raises a flag for plausibility.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_017_4ABE7642",
+      "hallucination_id": "FB_017_4ABE7642_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$8,814 million",
+      "injected_value": "$11,413 million",
+      "detected": true,
+      "reason": "The Cost of Goods Sold (COGS) figure used in this calculation ($11,413 million) directly contradicts the COGS figure stated earlier in the 'PRIMARY METRIC' section for FY2022 ($11,608 million). This is a clear internal inconsistency.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 7
+    }
+  ],
+  "timestamp": "2026-03-25T07:37:44.175553Z"
+}

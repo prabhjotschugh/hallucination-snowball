@@ -1,0 +1,79 @@
+{
+  "question_id": "FB_010_CBE1B721",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Activision Blizzard, FY2017 - FY2019\n- PRIMARY METRIC: \n   - FY2017 Capital Expenditures (Capex): $204 million (per the FY2017 10-K, Consolidated Statements of Cash Flows)\n   - FY2017 Revenue: $7,020 million (per the FY2017 10-K, Consolidated Statements of Operations)\n   - FY2018 Capital Expenditures (Capex): $244 million (per the FY2018 10-K, Consolidated Statements of Cash Flows)\n   - FY2018 Revenue: $7,500 million (per the FY2018 10-K, Consolidated Statements of Operations)\n   - FY2019 Capital Expenditures (Capex): $332 million (per the FY2019 10-K, Consolidated Statements of Cash Flows)\n   - FY2019 Revenue: $6,490 million (per the FY2019 10-K, Consolidated Statements of Operations)\n\n- SUPPORTING DATA:\n   - FY2017 Capex as a % of Revenue: (204 / 7,020) * 100 = 2.9%\n   - FY2018 Capex as a % of Revenue: (244 / 7,500) * 100 = 14.3%\n   - FY2019 Capex as a % of Revenue: (332 / 6,490) * 100 = 5.1%\n   - Three-Year Average of Capex as a % of Revenue: (2.9% + 3.3% + 16.3%) / 3 = 3.8%\n\n- DATA SOURCES: \n   - FY2017 10-K, Consolidated Statements of Cash Flows and Consolidated Statements of Operations\n   - FY2018 10-K, Consolidated Statements of Cash Flows and Consolidated Statements of Operations\n   - FY2019 10-K, Consolidated Statements of Cash Flows and Consolidated Statements of Operations\n\nFinal Result: The FY2017 - FY2019 three-year average of capital expenditures as a percentage of revenue for Activision Blizzard is 3.8%.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_010_CBE1B721_H2",
+      "type": "percentage",
+      "original_value": "3.3%",
+      "injected_value": "14.3%",
+      "original_numeric": "3.3",
+      "injected_numeric": "14.3",
+      "position_char": 858,
+      "sentence_approx": 2,
+      "perturbation_delta": 10.9622
+    },
+    {
+      "hallucination_id": "FB_010_CBE1B721_H1",
+      "type": "percentage",
+      "original_value": "5.1%",
+      "injected_value": "16.3%",
+      "original_numeric": "5.1",
+      "injected_numeric": "16.3",
+      "position_char": 994,
+      "sentence_approx": 6,
+      "perturbation_delta": 11.2167
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "FY2018 Capex as a % of Revenue: (244 / 7,500) * 100 = 14.3%",
+        "claim_value": "14.3%",
+        "reason": "The calculated percentage seems unusually high compared to the other years. A 14.3% capex to revenue ratio is unusually high for a stable company like Activision Blizzard.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Three-Year Average of Capex as a % of Revenue: (2.9% + 3.3% + 16.3%) / 3 = 3.8%",
+        "claim_value": "3.8%",
+        "reason": "The calculation seems incorrect. The correct calculation should be (2.9% + 5.1% + 2.9%) / 3, not (2.9% + 3.3% + 16.3%) / 3.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 8,
+    "overall_assessment": "The researcher's output contains some suspicious calculations and ratios that seem inconsistent with the company's profile.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"FY2018 Capex as a % of Revenue: (244 / 7,500) * 100 = 14.3%\",\n      \"claim_value\" : \"14.3%\",\n      \"reason\"      : \"The calculated percentage seems unusually high compared to the other years. A 14.3% capex to revenue ratio is unusually high for a stable company like Activision Blizzard.\",\n      \"confidence\"  : \"high\"\n    },\n    {\n      \"claim_text\"  : \"Three-Year Average of Capex as a % of Revenue: (2.9% + 3.3% + 16.3%) / 3 = 3.8%\",\n      \"claim_value\" : \"3.8%\",\n      \"reason\"      : \"The calculation seems incorrect. The correct calculation should be (2.9% + 5.1% + 2.9%) / 3, not (2.9% + 3.3% + 16.3%) / 3.\",\n      \"confidence\"  : \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 8,\n  \"overall_assessment\"   : \"The researcher's output contains some suspicious calculations and ratios that seem inconsistent with the company's profile.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_010_CBE1B721",
+      "hallucination_id": "FB_010_CBE1B721_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "percentage",
+      "original_value": "3.3%",
+      "injected_value": "14.3%",
+      "detected": true,
+      "reason": "The calculated percentage seems unusually high compared to the other years. A 14.3% capex to revenue ratio is unusually high for a stable company like Activision Blizzard.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 8
+    },
+    {
+      "question_id": "FB_010_CBE1B721",
+      "hallucination_id": "FB_010_CBE1B721_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "percentage",
+      "original_value": "5.1%",
+      "injected_value": "16.3%",
+      "detected": true,
+      "reason": "The calculation seems incorrect. The correct calculation should be (2.9% + 5.1% + 2.9%) / 3, not (2.9% + 3.3% + 16.3%) / 3.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 8
+    }
+  ],
+  "timestamp": "2026-03-27T09:27:32.193556Z"
+}

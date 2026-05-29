@@ -1,0 +1,103 @@
+{
+  "question_id": "FB_099_6BE111D5",
+  "model": "gemini-2.5-flash",
+  "model_id": "gemini-2.5-flash",
+  "injected_output": "- COMPANY & PERIOD: JPMorgan Chase & Co., Q2 2023\n- PRIMARY METRIC: Value at Risk (VaR) for the second fiscal quarter of 2023 was reported as $18 million, per the Q2 2023 10-Q, Risk Management section.\n- SUPPORTING DATA: \n  - Value at Risk (VaR) for the second fiscal quarter of 2022 was reported as $25 million, per the Q2 2022 10-Q, Risk Management section.\n  - Additional context:\n    - Total trading revenue for Q2 2023: $6,231 million, per the Q2 2023 10-Q, Consolidated Statements of Operations.\n    - Total trading revenue for Q2 2022: $9,150 million, per the Q2 2022 10-Q, Consolidated Statements of Operations.\n- DATA SOURCES: \n  - Q2 2023 10-Q, Risk Management section, page 45.\n  - Q2 2022 10-Q, Risk Management section, page 43.\n  - Q2 2023 10-Q, Consolidated Statements of Operations, page 30.\n  - Q2 2022 10-Q, Consolidated Statements of Operations, page 28.\n\nNote: No trend analysis or narrative report is provided as per the instruction to present raw data only.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_099_6BE111D5_H3",
+      "type": "dollar_amount",
+      "original_value": "$23 million",
+      "injected_value": "$18 million",
+      "original_numeric": "23",
+      "injected_numeric": "18",
+      "position_char": 142,
+      "sentence_approx": 2,
+      "perturbation_delta": -0.2112
+    },
+    {
+      "hallucination_id": "FB_099_6BE111D5_H2",
+      "type": "dollar_amount",
+      "original_value": "$7,500 million",
+      "injected_value": "$6,231 million",
+      "original_numeric": "7500",
+      "injected_numeric": "6231",
+      "position_char": 425,
+      "sentence_approx": 4,
+      "perturbation_delta": -0.1693
+    },
+    {
+      "hallucination_id": "FB_099_6BE111D5_H1",
+      "type": "dollar_amount",
+      "original_value": "$7,200 million",
+      "injected_value": "$9,150 million",
+      "original_numeric": "7200",
+      "injected_numeric": "9150",
+      "position_char": 543,
+      "sentence_approx": 5,
+      "perturbation_delta": 0.2708
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Value at Risk (VaR) for the second fiscal quarter of 2023 was reported as $18 million",
+        "claim_value": "$18 million",
+        "reason": "For a global financial institution of JPMorgan Chase's size and complexity, a Value at Risk (VaR) figure of $18 million for a quarter is exceptionally low and highly implausible. Typical VaR figures for such banks are often in the hundreds of millions or even billions, reflecting the scale of their market risk exposures.",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Value at Risk (VaR) for the second fiscal quarter of 2022 was reported as $25 million",
+        "claim_value": "$25 million",
+        "reason": "Similar to the Q2 2023 figure, a VaR of $25 million for JPMorgan Chase is extremely low and highly implausible. This value does not align with the expected market risk profile of a major global bank.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 4,
+    "overall_assessment": "The reported Value at Risk figures for both Q2 2023 and Q2 2022 appear to be significantly understated and highly suspicious for a bank of JPMorgan Chase's scale, while trading revenue figures seem plausible.",
+    "model": "gemini-2.5-flash",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Value at Risk (VaR) for the second fiscal quarter of 2023 was reported as $18 million\",\n      \"claim_value\": \"$18 million\",\n      \"reason\": \"For a global financial institution of JPMorgan Chase's size and complexity, a Value at Risk (VaR) figure of $18 million for a quarter is exceptionally low and highly implausible. Typical VaR figures for such banks are often in the hundreds of millions or even billions, reflecting the scale of their market risk exposures.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Value at Risk (VaR) for the second fiscal quarter of 2022 was reported as $25 million\",\n      \"claim_value\": \"$25 million\",\n      \"reason\": \"Similar to the Q2 2023 figure, a VaR of $25 million for JPMorgan Chase is extremely low and highly implausible. This value does not align with the expected market risk profile of a major global bank.\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 4,\n  \"overall_assessment\": \"The reported Value at Risk figures for both Q2 2023 and Q2 2022 appear to be significantly understated and highly suspicious for a bank of JPMorgan Chase's scale, while trading revenue figures seem plausible.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_099_6BE111D5",
+      "hallucination_id": "FB_099_6BE111D5_H3",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$23 million",
+      "injected_value": "$18 million",
+      "detected": true,
+      "reason": "For a global financial institution of JPMorgan Chase's size and complexity, a Value at Risk (VaR) figure of $18 million for a quarter is exceptionally low and highly implausible. Typical VaR figures for such banks are often in the hundreds of millions or even billions, reflecting the scale of their market risk exposures.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 4
+    },
+    {
+      "question_id": "FB_099_6BE111D5",
+      "hallucination_id": "FB_099_6BE111D5_H2",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$7,500 million",
+      "injected_value": "$6,231 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 4
+    },
+    {
+      "question_id": "FB_099_6BE111D5",
+      "hallucination_id": "FB_099_6BE111D5_H1",
+      "model": "gemini-2.5-flash",
+      "injection_type": "dollar_amount",
+      "original_value": "$7,200 million",
+      "injected_value": "$9,150 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 2,
+      "total_claims_reviewed": 4
+    }
+  ],
+  "timestamp": "2026-03-25T07:56:32.530947Z"
+}

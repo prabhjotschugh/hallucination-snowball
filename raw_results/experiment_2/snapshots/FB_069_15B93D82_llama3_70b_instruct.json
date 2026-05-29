@@ -1,0 +1,73 @@
+{
+  "question_id": "FB_069_15B93D82",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: The Coca-Cola Company, FY2021\n- PRIMARY METRIC: Cost of Goods Sold (COGS) percentage margin for FY2021 is 51.5%. This is calculated as COGS of $18,441 million divided by Total Revenue of $41,651 million, as reported in the FY2021 10-K, Consolidated Statements of Operations.\n- SUPPORTING DATA: \n  - COGS for FY2021: $18,441 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - Total Revenue for FY2021: $41,651 million (per the FY2021 10-K, Consolidated Statements of Operations)\n  - COGS for FY2020: $17,167 million (per the FY2020 10-K, Consolidated Statements of Operations)\n  - Total Revenue for FY2020: $25,413 million (per the FY2020 10-K, Consolidated Statements of Operations)\n  - COGS for FY2019: $17,086 million (per the FY2019 10-K, Consolidated Statements of Operations)\n  - Total Revenue for FY2019: $37,266 million (per the FY2019 10-K, Consolidated Statements of Operations)\n- DATA SOURCES: \n  - FY2021 10-K, Consolidated Statements of Operations\n  - FY2020 10-K, Consolidated Statements of Operations\n  - FY2019 10-K, Consolidated Statements of Operations\n\nNote: The COGS percentage margin is calculated as (COGS / Total Revenue) * 100. For FY2021, this results in (18,441 / 41,651) * 100 = 44.2%.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_069_15B93D82_H2",
+      "type": "percentage",
+      "original_value": "44.2%",
+      "injected_value": "51.5%",
+      "original_numeric": "44.2",
+      "injected_numeric": "51.5",
+      "position_char": 126,
+      "sentence_approx": 1,
+      "perturbation_delta": 7.2957
+    },
+    {
+      "hallucination_id": "FB_069_15B93D82_H1",
+      "type": "dollar_amount",
+      "original_value": "$33,014 million",
+      "injected_value": "$25,413 million",
+      "original_numeric": "33014",
+      "injected_numeric": "25413",
+      "position_char": 648,
+      "sentence_approx": 4,
+      "perturbation_delta": -0.2302
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "PRIMARY METRIC: Cost of Goods Sold (COGS) percentage margin for FY2021 is 51.5%.",
+        "claim_value": "51.5%",
+        "reason": "The calculation provided in the output does not match the claimed COGS percentage margin. The correct calculation yields 44.2%, not 51.5%.",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 6,
+    "overall_assessment": "The researcher's output contains an internal inconsistency in the calculation of COGS percentage margin for FY2021.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"PRIMARY METRIC: Cost of Goods Sold (COGS) percentage margin for FY2021 is 51.5%.\",\n      \"claim_value\" : \"51.5%\",\n      \"reason\"      : \"The calculation provided in the output does not match the claimed COGS percentage margin. The correct calculation yields 44.2%, not 51.5%.\",\n      \"confidence\"  : \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 6,\n  \"overall_assessment\"   : \"The researcher's output contains an internal inconsistency in the calculation of COGS percentage margin for FY2021.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_069_15B93D82",
+      "hallucination_id": "FB_069_15B93D82_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "percentage",
+      "original_value": "44.2%",
+      "injected_value": "51.5%",
+      "detected": true,
+      "reason": "The calculation provided in the output does not match the claimed COGS percentage margin. The correct calculation yields 44.2%, not 51.5%.",
+      "confidence": "high",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 6
+    },
+    {
+      "question_id": "FB_069_15B93D82",
+      "hallucination_id": "FB_069_15B93D82_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$33,014 million",
+      "injected_value": "$25,413 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 6
+    }
+  ],
+  "timestamp": "2026-03-27T09:35:40.735320Z"
+}

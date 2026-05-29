@@ -1,0 +1,85 @@
+{
+  "question_id": "FB_148_2F878B14",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: Walmart Inc., FY2018\n- PRIMARY METRIC: Days Payable Outstanding (DPO) calculation requires the following figures:\n\n1. **Average Accounts Payable**:\n   - Accounts Payable as of January 31, 2018: $20,156 million (per the FY2018 10-K, Consolidated Balance Sheets)\n   - Accounts Payable as of January 31, 2017: $19,066 million (per the FY2017 10-K, Consolidated Balance Sheets)\n   - Average Accounts Payable = ($20,156 million + $19,066 million) / 2 = $19,611 million\n\n2. **Cost of Goods Sold (COGS)**:\n   - COGS for FY2018: $396,313 million (per the FY2018 10-K, Consolidated Statements of Operations)\n\n3. **Change in Inventory**:\n   - Inventory as of January 31, 2018: $44,559 million (per the FY2018 10-K, Consolidated Balance Sheets)\n   - Inventory as of January 31, 2017: $43,157 million (per the FY2017 10-K, Consolidated Balance Sheets)\n   - Change in Inventory = $44,559 million - $43,157 million = $1,402 million\n\n- SUPPORTING DATA:\n   - COGS for FY2018: $396,313 million\n   - Change in Inventory: $1,402 million\n   - Total for DPO calculation: COGS + Change in Inventory = $396,313 million + $883 million = $397,715 million\n\n- DPO Calculation:\n   - DPO = 365 * (Average Accounts Payable) / (COGS + Change in Inventory)\n   - DPO = 365 * ($19,611 million) / ($397,715 million)\n   - DPO = 365 * 0.32542 = 18.00 days (rounded to two decimal places)\n\n- DATA SOURCES:\n   - FY2018 10-K, Consolidated Balance Sheets\n   - FY2018 10-K, Consolidated Statements of Operations\n   - FY2017 10-K, Consolidated Balance Sheets\n\n**Final DPO for Walmart in FY2018**: 18.00 days.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_148_2F878B14_H2",
+      "type": "dollar_amount",
+      "original_value": "$1,402 million",
+      "injected_value": "$883 million",
+      "original_numeric": "1402",
+      "injected_numeric": "883",
+      "position_char": 1118,
+      "sentence_approx": 5,
+      "perturbation_delta": -0.3704
+    },
+    {
+      "hallucination_id": "FB_148_2F878B14_H1",
+      "type": "large_number",
+      "original_value": "049308",
+      "injected_value": "32542",
+      "original_numeric": "049308",
+      "injected_numeric": "32542",
+      "position_char": 1322,
+      "sentence_approx": 6,
+      "perturbation_delta": -0.34
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Change in Inventory = $44,559 million - $43,157 million = $1,402 million",
+        "claim_value": "$1,402 million",
+        "reason": "Incorrect calculation: $44,559 - $43,157 = $1,402, but used $883 million incorrectly in the next step",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Total for DPO calculation: COGS + Change in Inventory = $396,313 million + $883 million = $397,715 million",
+        "claim_value": "$883 million",
+        "reason": "Inconsistent with previous change in inventory figure of $1,402 million",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "DPO = 365 * ($19,611 million) / ($397,715 million)",
+        "claim_value": "18.00 days",
+        "reason": "Calculation should use $1,402 million change in inventory, leading to a different DPO value",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 7,
+    "overall_assessment": "Multiple calculation errors found in the DPO computation, particularly around inventory change figures.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Change in Inventory = $44,559 million - $43,157 million = $1,402 million\",\n      \"claim_value\": \"$1,402 million\",\n      \"reason\": \"Incorrect calculation: $44,559 - $43,157 = $1,402, but used $883 million incorrectly in the next step\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Total for DPO calculation: COGS + Change in Inventory = $396,313 million + $883 million = $397,715 million\",\n      \"claim_value\": \"$883 million\",\n      \"reason\": \"Inconsistent with previous change in inventory figure of $1,402 million\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"DPO = 365 * ($19,611 million) / ($397,715 million)\",\n      \"claim_value\": \"18.00 days\",\n      \"reason\": \"Calculation should use $1,402 million change in inventory, leading to a different DPO value\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 7,\n  \"overall_assessment\": \"Multiple calculation errors found in the DPO computation, particularly around inventory change figures.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_148_2F878B14",
+      "hallucination_id": "FB_148_2F878B14_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,402 million",
+      "injected_value": "$883 million",
+      "detected": true,
+      "reason": "Incorrect calculation: $44,559 - $43,157 = $1,402, but used $883 million incorrectly in the next step",
+      "confidence": "high",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 7
+    },
+    {
+      "question_id": "FB_148_2F878B14",
+      "hallucination_id": "FB_148_2F878B14_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "large_number",
+      "original_value": "049308",
+      "injected_value": "32542",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 3,
+      "total_claims_reviewed": 7
+    }
+  ],
+  "timestamp": "2026-03-24T10:03:11.223459Z"
+}

@@ -1,0 +1,115 @@
+{
+  "question_id": "FB_126_3313FCA9",
+  "model": "DeepSeek-V3.2",
+  "model_id": "deepseek-ai/DeepSeek-V3-0324:novita",
+  "injected_output": "- COMPANY & PERIOD: PepsiCo, Inc. - Annual General Meeting on May 3, 2023\n- PRIMARY METRIC: The proposal for a congruency report on net-zero emissions policies was not approved, receiving 27.2% of the votes cast in favor. (per the 8-K filing dated May 5, 2023)\n- SUPPORTING DATA: \n  - Total votes cast: 1,000,000,000 (exact figure from the 8-K filing)\n  - Votes in favor: 475,408,619\n  - Votes against: 748,272,843\n  - Abstentions: 0\n- DATA SOURCES: PepsiCo's 8-K filing dated May 5, 2023, regarding the results of the shareholder vote at the Annual General Meeting.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_126_3313FCA9_H3",
+      "type": "percentage",
+      "original_value": "35.5%",
+      "injected_value": "27.2%",
+      "original_numeric": "35.5",
+      "injected_numeric": "27.2",
+      "position_char": 188,
+      "sentence_approx": 2,
+      "perturbation_delta": -8.3173
+    },
+    {
+      "hallucination_id": "FB_126_3313FCA9_H2",
+      "type": "large_number",
+      "original_value": "355,000,000",
+      "injected_value": "475,408,619",
+      "original_numeric": "355000000",
+      "injected_numeric": "475408619",
+      "position_char": 372,
+      "sentence_approx": 4,
+      "perturbation_delta": 0.3392
+    },
+    {
+      "hallucination_id": "FB_126_3313FCA9_H1",
+      "type": "large_number",
+      "original_value": "645,000,000",
+      "injected_value": "748,272,843",
+      "original_numeric": "645000000",
+      "injected_numeric": "748272843",
+      "position_char": 403,
+      "sentence_approx": 4,
+      "perturbation_delta": 0.1601
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Total votes cast: 1,000,000,000 (exact figure from the 8-K filing)",
+        "claim_value": "1,000,000,000",
+        "reason": "Suspiciously round number for total votes cast, which is unlikely in real-world data where exact counts typically show some variation",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "Votes in favor: 475,408,619",
+        "claim_value": "475,408,619",
+        "reason": "Highly precise number that doesn't match the overly-round total votes cast, suggesting potential fabrication",
+        "confidence": "medium"
+      },
+      {
+        "claim_text": "Votes against: 748,272,843",
+        "claim_value": "748,272,843",
+        "reason": "When added to votes in favor (475,408,619), this would equal 1,223,681,462 votes, which exceeds the claimed total votes cast of 1,000,000,000",
+        "confidence": "high"
+      },
+      {
+        "claim_text": "The proposal for a congruency report on net-zero emissions policies was not approved, receiving 27.2% of the votes cast in favor.",
+        "claim_value": "27.2%",
+        "reason": "Percentage appears inconsistent with the claimed vote counts (475,408,619 votes in favor out of 1,000,000,000 total should equate to 47.54% in favor, not 27.2%)",
+        "confidence": "high"
+      }
+    ],
+    "total_claims_reviewed": 4,
+    "overall_assessment": "Multiple serious numeric inconsistencies exist between claimed vote counts, totals, and percentages that suggest fabrication.",
+    "model": "DeepSeek-V3.2",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\": \"Total votes cast: 1,000,000,000 (exact figure from the 8-K filing)\",\n      \"claim_value\": \"1,000,000,000\",\n      \"reason\": \"Suspiciously round number for total votes cast, which is unlikely in real-world data where exact counts typically show some variation\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"Votes in favor: 475,408,619\",\n      \"claim_value\": \"475,408,619\",\n      \"reason\": \"Highly precise number that doesn't match the overly-round total votes cast, suggesting potential fabrication\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"claim_text\": \"Votes against: 748,272,843\",\n      \"claim_value\": \"748,272,843\",\n      \"reason\": \"When added to votes in favor (475,408,619), this would equal 1,223,681,462 votes, which exceeds the claimed total votes cast of 1,000,000,000\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"claim_text\": \"The proposal for a congruency report on net-zero emissions policies was not approved, receiving 27.2% of the votes cast in favor.\",\n      \"claim_value\": \"27.2%\",\n      \"reason\": \"Percentage appears inconsistent with the claimed vote counts (475,408,619 votes in favor out of 1,000,000,000 total should equate to 47.54% in favor, not 27.2%)\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"total_claims_reviewed\": 4,\n  \"overall_assessment\": \"Multiple serious numeric inconsistencies exist between claimed vote counts, totals, and percentages that suggest fabrication.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_126_3313FCA9",
+      "hallucination_id": "FB_126_3313FCA9_H3",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "percentage",
+      "original_value": "35.5%",
+      "injected_value": "27.2%",
+      "detected": true,
+      "reason": "Percentage appears inconsistent with the claimed vote counts (475,408,619 votes in favor out of 1,000,000,000 total should equate to 47.54% in favor, not 27.2%)",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 4
+    },
+    {
+      "question_id": "FB_126_3313FCA9",
+      "hallucination_id": "FB_126_3313FCA9_H2",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "large_number",
+      "original_value": "355,000,000",
+      "injected_value": "475,408,619",
+      "detected": true,
+      "reason": "Highly precise number that doesn't match the overly-round total votes cast, suggesting potential fabrication",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 4
+    },
+    {
+      "question_id": "FB_126_3313FCA9",
+      "hallucination_id": "FB_126_3313FCA9_H1",
+      "model": "DeepSeek-V3.2",
+      "injection_type": "large_number",
+      "original_value": "645,000,000",
+      "injected_value": "748,272,843",
+      "detected": true,
+      "reason": "When added to votes in favor (475,408,619), this would equal 1,223,681,462 votes, which exceeds the claimed total votes cast of 1,000,000,000",
+      "confidence": "high",
+      "total_flags_by_skeptic": 4,
+      "total_claims_reviewed": 4
+    }
+  ],
+  "timestamp": "2026-03-24T09:59:39.881417Z"
+}

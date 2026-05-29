@@ -1,0 +1,97 @@
+{
+  "question_id": "FB_133_F4882588",
+  "model": "Meta-Llama-3-70B-Instruct",
+  "model_id": "meta-llama/Meta-Llama-3-70B-Instruct:novita",
+  "injected_output": "- COMPANY & PERIOD: Pfizer Inc. - Fiscal Year 2021\n- PRIMARY METRIC: \n  1. **Array BioPharma Inc.** - Acquired for approximately **$14,483 million** (USD) on July 1, 2020, as reported in the FY2021 10-K, Note 3: Acquisitions.\n  2. **Trillium Therapeutics Inc.** - Acquired for approximately **$2,747 million** (USD) on April 30, 2021, as reported in the FY2021 10-K, Note 3: Acquisitions.\n  3. **Biontech SE (additional stake)** - Pfizer acquired an additional stake in BioNTech, with total investment amounting to approximately **$1,317 million** (USD) during 2021, as reported in the FY2021 10-K, Note 3: Acquisitions.\n\n- SUPPORTING DATA: \n  - **Total Acquisitions in FY2021**: Pfizer reported total acquisition-related expenses of **$14,400 million** (USD) in FY2021.\n  - **Revenue Impact**: Total revenue for Pfizer in FY2021 was **$81,288 million** (USD), with the impact of these acquisitions contributing to an increase in the oncology segment.\n\n- DATA SOURCES: \n  - Pfizer Inc. FY2021 10-K, Note 3: Acquisitions, pages 110-115.\n  - Pfizer Inc. FY2021 10-K, Consolidated Statements of Operations, page 66.\n\nPlease note that the analysis of strategic implications, financial ratios, and narrative report are outside the scope of the data extraction task and will need to be conducted by downstream analysts.",
+  "injection_log": [
+    {
+      "hallucination_id": "FB_133_F4882588_H3",
+      "type": "dollar_amount",
+      "original_value": "$11,400 million",
+      "injected_value": "$14,483 million",
+      "original_numeric": "11400",
+      "injected_numeric": "14483",
+      "position_char": 131,
+      "sentence_approx": 4,
+      "perturbation_delta": 0.2705
+    },
+    {
+      "hallucination_id": "FB_133_F4882588_H2",
+      "type": "dollar_amount",
+      "original_value": "$2,000 million",
+      "injected_value": "$2,747 million",
+      "original_numeric": "2000",
+      "injected_numeric": "2747",
+      "position_char": 293,
+      "sentence_approx": 7,
+      "perturbation_delta": 0.3737
+    },
+    {
+      "hallucination_id": "FB_133_F4882588_H1",
+      "type": "dollar_amount",
+      "original_value": "$1,000 million",
+      "injected_value": "$1,317 million",
+      "original_numeric": "1000",
+      "injected_numeric": "1317",
+      "position_char": 531,
+      "sentence_approx": 9,
+      "perturbation_delta": 0.3168
+    }
+  ],
+  "skeptic_response": {
+    "flagged_claims": [
+      {
+        "claim_text": "Total Acquisitions in FY2021: Pfizer reported total acquisition-related expenses of $14,400 million (USD) in FY2021.",
+        "claim_value": "$14,400 million",
+        "reason": "The total acquisition-related expenses seem suspiciously close to the acquisition cost of Array BioPharma Inc. ($14,483 million), which might indicate a copying error or fabrication.",
+        "confidence": "medium"
+      }
+    ],
+    "total_claims_reviewed": 5,
+    "overall_assessment": "The output appears mostly plausible, but the total acquisition-related expenses seem suspiciously similar to one of the acquisition costs.",
+    "model": "Meta-Llama-3-70B-Instruct",
+    "raw_response": "{\n  \"flagged_claims\": [\n    {\n      \"claim_text\"  : \"Total Acquisitions in FY2021: Pfizer reported total acquisition-related expenses of $14,400 million (USD) in FY2021.\",\n      \"claim_value\" : \"$14,400 million\",\n      \"reason\"      : \"The total acquisition-related expenses seem suspiciously close to the acquisition cost of Array BioPharma Inc. ($14,483 million), which might indicate a copying error or fabrication.\",\n      \"confidence\"  : \"medium\"\n    }\n  ],\n  \"total_claims_reviewed\": 5,\n  \"overall_assessment\"   : \"The output appears mostly plausible, but the total acquisition-related expenses seem suspiciously similar to one of the acquisition costs.\"\n}"
+  },
+  "detections": [
+    {
+      "question_id": "FB_133_F4882588",
+      "hallucination_id": "FB_133_F4882588_H3",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$11,400 million",
+      "injected_value": "$14,483 million",
+      "detected": true,
+      "reason": "The total acquisition-related expenses seem suspiciously close to the acquisition cost of Array BioPharma Inc. ($14,483 million), which might indicate a copying error or fabrication.",
+      "confidence": "medium",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 5
+    },
+    {
+      "question_id": "FB_133_F4882588",
+      "hallucination_id": "FB_133_F4882588_H2",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$2,000 million",
+      "injected_value": "$2,747 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 5
+    },
+    {
+      "question_id": "FB_133_F4882588",
+      "hallucination_id": "FB_133_F4882588_H1",
+      "model": "Meta-Llama-3-70B-Instruct",
+      "injection_type": "dollar_amount",
+      "original_value": "$1,000 million",
+      "injected_value": "$1,317 million",
+      "detected": false,
+      "reason": "",
+      "confidence": "",
+      "total_flags_by_skeptic": 1,
+      "total_claims_reviewed": 5
+    }
+  ],
+  "timestamp": "2026-03-27T09:44:47.085052Z"
+}

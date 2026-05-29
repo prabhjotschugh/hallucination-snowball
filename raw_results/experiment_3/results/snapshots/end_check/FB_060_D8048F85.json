@@ -1,0 +1,136 @@
+{
+  "question_id": "FB_060_D8048F85",
+  "method": "end_check",
+  "final_output": "## Boeing Company: FY2018 Financial Report\n\n**Executive Summary:**\n\nThis report analyzes key financial metrics for The Boeing Company for Fiscal Year 2018, based on data from its FY2018 10-K filing. A significant anomaly has been identified where the reported Net Property, Plant, and Equipment ($115,274 million) exceeds Total Assets ($85,028 million). This fundamental inconsistency leads to an unreliable Property, Plant, and Equipment to Total Assets ratio of 135.57% and necessitates further investigation into the source data. The company's Debt-to-Equity ratio stands at 2.83, indicating a reliance on debt financing.\n\n**Analysis:**\n\nFor FY2018, Boeing reported Total Assets of $85,028 million. The reported Net Property, Plant, and Equipment was $115,274 million. Total Liabilities were $103,227 million, with Shareholders' Equity reported as $36,433 million.\n\nThe **Property, Plant, and Equipment to Total Assets Ratio** was calculated as $115,274 million / $85,028 million, resulting in 1.3557 or 135.57%. This ratio is mathematically impossible as Net Property, Plant, and Equipment is a component of Total Assets and cannot exceed the total. This discrepancy strongly suggests an error in the reported figures for either Net Property, Plant, and Equipment or Total Assets, as presented in the source data.\n\nThe **Debt-to-Equity Ratio**, which assesses the proportion of financing from debt versus equity, was calculated as $103,227 million / $36,433 million, yielding a ratio of 2.83. This indicates that for every dollar of equity, Boeing has approximately $2.83 in debt, highlighting a significant reliance on borrowed capital.\n\n**Key Risks:**\n\nThe primary risk identified is the **data inconsistency** regarding Net Property, Plant, and Equipment and Total Assets. The reported Net Property, Plant, and Equipment of $115,274 million being greater than Total Assets of $85,028 million suggests a potential error in the source data or its interpretation. This anomaly undermines the reliability of any analysis derived from these specific figures and could indicate deeper issues with financial reporting accuracy if not resolved.\n\n**Conclusion:**\n\nWhile the Debt-to-Equity ratio of 2.83 provides a measure of Boeing's leverage, the fundamental anomaly in the Property, Plant, and Equipment to Total Assets ratio renders that specific metric unreliable. The discrepancy where Net Property, Plant, and Equipment ($115,274 million) exceeds Total Assets ($85,028 million) requires immediate clarification and correction of the underlying data. Without accurate foundational figures, a comprehensive and reliable assessment of Boeing's asset structure is not possible. Further investigation into the source of these figures is crucial to ensure the integrity of any subsequent financial analysis.",
+  "stage_outputs": {
+    "1": "- COMPANY & PERIOD: Boeing Company, FY2018\n- PRIMARY METRIC: Net Property, Plant, and Equipment: $115,274 million (per the FY2018 10-K, Consolidated Balance Sheet)\n- SUPPORTING DATA: \n  - Total Assets: $85,028 million (FY2018 10-K, Consolidated Balance Sheet)\n  - Total Liabilities: $103,227 million (FY2018 10-K, Consolidated Balance Sheet)\n  - Shareholders' Equity: $36,433 million (FY2018 10-K, Consolidated Balance Sheet)\n- DATA SOURCES: Boeing Company FY2018 10-K, Consolidated Balance Sheet, filed with the SEC on February 8, 2019.",
+    "2": "As a financial analyst, I've reviewed the provided data for Boeing Company, FY2018.\n\n**1. Year-over-Year Changes (Absolute and Percentage)**\n\nThe provided data only includes figures for FY2018. To calculate year-over-year changes, data from a preceding fiscal year (e.g., FY2017) would be required. Therefore, **year-over-year changes cannot be computed with the given information.**\n\n**2. Relevant Ratios**\n\n*   **Property, Plant, and Equipment to Total Assets Ratio:** This ratio indicates the proportion of a company's assets that are tied up in fixed assets.\n    *   Formula: Net Property, Plant, and Equipment / Total Assets\n    *   Calculation: $115,274 million / $85,028 million = **1.3557 or 135.57%**\n\n*   **Debt-to-Equity Ratio:** This ratio measures the proportion of a company's financing that comes from debt versus equity.\n    *   Formula: Total Liabilities / Shareholders' Equity\n    *   Calculation: $103,227 million / $36,433 million = **2.8333**\n\n**3. Anomalies**\n\nAn anomaly is observed in the **Property, Plant, and Equipment to Total Assets Ratio**.\n\n*   **Anomaly:** The ratio of 135.57% indicates that Net Property, Plant, and Equipment ($115,274 million) is significantly *greater* than Total Assets ($85,028 million).\n*   **Reasoning:** By definition, Net Property, Plant, and Equipment is a component of Total Assets. Therefore, it is mathematically impossible for Net Property, Plant, and Equipment to exceed Total Assets. This suggests a potential data entry error or misinterpretation of the provided figures, as the part cannot be greater than the whole.\n\n**Conclusion:**\n\nWhile the Debt-to-Equity ratio provides insight into Boeing's leverage, the anomaly in the Property, Plant, and Equipment to Total Assets ratio requires further investigation. The provided figures for Net Property, Plant, and Equipment and Total Assets for FY2018 appear contradictory, making the calculated ratio unreliable and flagging a significant data inconsistency.",
+    "3": "## Boeing Company: FY2018 Financial Report\n\n**Executive Summary:**\n\nThis report analyzes key financial metrics for The Boeing Company for Fiscal Year 2018, based on data from its FY2018 10-K filing. A significant anomaly has been identified where Net Property, Plant, and Equipment ($115,274 million) exceeds Total Assets ($85,028 million), leading to an unreliable Property, Plant, and Equipment to Total Assets ratio of 135.57%. This fundamental inconsistency necessitates further investigation into the source data. The company's Debt-to-Equity ratio stands at 2.8333, indicating a reliance on debt financing.\n\n**Analysis:**\n\nFor FY2018, Boeing reported Net Property, Plant, and Equipment of $115,274 million and Total Assets of $85,028 million. Total Liabilities were $103,227 million, with Shareholders' Equity at $36,433 million.\n\nThe **Property, Plant, and Equipment to Total Assets Ratio** was calculated as $115,274 million / $85,028 million, resulting in 1.3557 or 135.57%. This ratio is mathematically impossible as Net Property, Plant, and Equipment is a component of Total Assets and cannot exceed the total.\n\nThe **Debt-to-Equity Ratio**, which assesses the proportion of financing from debt versus equity, was calculated as $103,227 million / $36,433 million, yielding a ratio of 2.8333. This indicates that for every dollar of equity, Boeing has approximately $2.83 in debt.\n\n**Key Risks:**\n\nThe primary risk identified is the **data inconsistency** regarding Net Property, Plant, and Equipment and Total Assets. The reported Net Property, Plant, and Equipment of $115,274 million being greater than Total Assets of $85,028 million suggests a potential error in the source data or its interpretation. This anomaly undermines the reliability of any analysis derived from these specific figures and could indicate deeper issues with financial reporting accuracy if not resolved.\n\n**Conclusion:**\n\nWhile the Debt-to-Equity ratio of 2.8333 provides a measure of Boeing's leverage, the fundamental anomaly in the Property, Plant, and Equipment to Total Assets ratio renders that specific metric unreliable. The discrepancy where Net Property, Plant, and Equipment ($115,274 million) exceeds Total Assets ($85,028 million) requires immediate clarification and correction of the underlying data. Without accurate foundational figures, a comprehensive and reliable assessment of Boeing's asset structure is not possible.",
+    "4": "## Boeing Company: FY2018 Financial Report\n\n**Executive Summary:**\n\nThis report analyzes key financial metrics for The Boeing Company for Fiscal Year 2018, based on data from its FY2018 10-K filing. A significant anomaly has been identified where the reported Net Property, Plant, and Equipment ($115,274 million) exceeds Total Assets ($85,028 million). This fundamental inconsistency leads to an unreliable Property, Plant, and Equipment to Total Assets ratio of 135.57% and necessitates further investigation into the source data. The company's Debt-to-Equity ratio stands at 2.83, indicating a reliance on debt financing.\n\n**Analysis:**\n\nFor FY2018, Boeing reported Total Assets of $85,028 million. The reported Net Property, Plant, and Equipment was $115,274 million. Total Liabilities were $103,227 million, with Shareholders' Equity reported as $36,433 million.\n\nThe **Property, Plant, and Equipment to Total Assets Ratio** was calculated as $115,274 million / $85,028 million, resulting in 1.3557 or 135.57%. This ratio is mathematically impossible as Net Property, Plant, and Equipment is a component of Total Assets and cannot exceed the total. This discrepancy strongly suggests an error in the reported figures for either Net Property, Plant, and Equipment or Total Assets, as presented in the source data.\n\nThe **Debt-to-Equity Ratio**, which assesses the proportion of financing from debt versus equity, was calculated as $103,227 million / $36,433 million, yielding a ratio of 2.83. This indicates that for every dollar of equity, Boeing has approximately $2.83 in debt, highlighting a significant reliance on borrowed capital.\n\n**Key Risks:**\n\nThe primary risk identified is the **data inconsistency** regarding Net Property, Plant, and Equipment and Total Assets. The reported Net Property, Plant, and Equipment of $115,274 million being greater than Total Assets of $85,028 million suggests a potential error in the source data or its interpretation. This anomaly undermines the reliability of any analysis derived from these specific figures and could indicate deeper issues with financial reporting accuracy if not resolved.\n\n**Conclusion:**\n\nWhile the Debt-to-Equity ratio of 2.83 provides a measure of Boeing's leverage, the fundamental anomaly in the Property, Plant, and Equipment to Total Assets ratio renders that specific metric unreliable. The discrepancy where Net Property, Plant, and Equipment ($115,274 million) exceeds Total Assets ($85,028 million) requires immediate clarification and correction of the underlying data. Without accurate foundational figures, a comprehensive and reliable assessment of Boeing's asset structure is not possible. Further investigation into the source of these figures is crucial to ensure the integrity of any subsequent financial analysis."
+  },
+  "gates": {
+    "end_gate": {
+      "verified": [
+        {
+          "value": "$115,274 million",
+          "ref": 117359.0
+        },
+        {
+          "value": "$85,028 million",
+          "ref": 83535.0
+        },
+        {
+          "value": "$85,028 million",
+          "ref": 83535.0
+        },
+        {
+          "value": "$115,274 million",
+          "ref": 117359.0
+        },
+        {
+          "value": "$103,227 million",
+          "ref": 103227.0
+        },
+        {
+          "value": "$36,433 million",
+          "ref": 36433.0
+        },
+        {
+          "value": "$115,274 million",
+          "ref": 117359.0
+        },
+        {
+          "value": "$85,028 million",
+          "ref": 83535.0
+        },
+        {
+          "value": "$103,227 million",
+          "ref": 103227.0
+        },
+        {
+          "value": "$36,433 million",
+          "ref": 36433.0
+        },
+        {
+          "value": "$115,274 million",
+          "ref": 117359.0
+        },
+        {
+          "value": "$85,028 million",
+          "ref": 83535.0
+        },
+        {
+          "value": "$115,274 million",
+          "ref": 117359.0
+        },
+        {
+          "value": "$85,028 million",
+          "ref": 83535.0
+        }
+      ],
+      "refuted": [
+        {
+          "value": "$2.83",
+          "num": 2.83,
+          "correct": 5.0,
+          "dev": 0.434,
+          "source": "evidence"
+        }
+      ],
+      "unverified": [
+        {
+          "value": "135.57%"
+        },
+        {
+          "value": "135.57%"
+        }
+      ],
+      "n_refs": 20
+    }
+  },
+  "survival_records": [
+    {
+      "qid": "FB_060_D8048F85",
+      "hid": "FB_060_D8048F85_H2",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 115274.0,
+      "orig_num": 83535.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    },
+    {
+      "qid": "FB_060_D8048F85",
+      "hid": "FB_060_D8048F85_H1",
+      "method": "end_check",
+      "type": "dollar_amount",
+      "inj_num": 85028.0,
+      "orig_num": 139660.0,
+      "survived": true,
+      "corrected": false,
+      "g1_det": false,
+      "g2_det": false,
+      "g3_det": false,
+      "end_det": false,
+      "any_det": false,
+      "actionable": false,
+      "present_s1": true,
+      "present_s2": true,
+      "present_s3": true,
+      "present_s4": true
+    }
+  ],
+  "quality_score": 5,
+  "gemini_calls": 3,
+  "ts": "2026-03-27T14:24:48.511881+00:00"
+}
